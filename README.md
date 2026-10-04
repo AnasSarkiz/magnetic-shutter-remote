@@ -4,7 +4,7 @@ Untested engineering prototype: rechargeable Bluetooth camera shutter remote, 36
 
 `index.circuit.tsx` is the board entry. `dist/index/circuit.json` is included deliberately. `enclosure.assembly.tsx`, `enclosure.remote.tsx`, `enclosure.cutaway.tsx` and `enclosure.exploded.tsx` are the native assembly views.
 
-Install the locked toolchain with `bun install --frozen-lockfile`; build the board with `bun run build`; view with `bun run dev`. View the enclosure with `bun run dev enclosure.assembly.tsx`. Exact qualified local dependency archives are included under `dependencies/`, because unpublished tooling fixes are needed to reproduce R6. They preserve supplier imports and are not substitute component definitions.
+Install the locked toolchain with `bun install --frozen-lockfile`; build the board with `bun run build`; view with `bun run dev`. View the enclosure with `bun run dev enclosure.assembly.tsx`. Exact qualified dependency archives are included under `dependencies/`; CLI/eval are also pinned to immutable public GitHub archive URLs, because unpublished tooling fixes are needed to reproduce R6. They preserve supplier imports and are not substitute component definitions.
 
 Physical battery, thermal, RF, runtime, phone and enclosure-fit validation remains pending. Production stencil/reflow and four USB shell-anchor process qualification remains pending; first-prototype manual shell rework may be required. Public availability is not fabrication approval. No board has been ordered.
 

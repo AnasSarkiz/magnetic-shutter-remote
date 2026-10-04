@@ -19,8 +19,8 @@
     "circuit-json": "file:dependencies/circuit-json-qualified-source.tgz",
     "@tscircuit/circuit-json-util": "file:dependencies/circuit-json-util-qualified-source.tgz",
     "circuit-to-svg": "file:dependencies/circuit-to-svg-qualified-source.tgz",
-    "@tscircuit/eval": "0.0.1506",
-    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/b7f016a4f375006fa50cb819c6edadfa22eb24e2/dependencies/eval-qualified-source.tgz",
+    "@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/b7f016a4f375006fa50cb819c6edadfa22eb24e2/dependencies/cli-qualified-source.tgz",
     "tscircuit": "0.0.2702",
     "typescript": "5.9.3",
     "@types/bun": "1.3.9"
@@ -32,8 +32,8 @@
     "@tscircuit/capacity-autorouter": "0.0.951",
     "@tscircuit/props": "file:dependencies/props-qualified-source.tgz",
     "circuit-to-svg": "file:dependencies/circuit-to-svg-qualified-source.tgz",
-    "@tscircuit/eval": "0.0.1506",
-    "@tscircuit/cli": "0.1.2237"
+    "@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/b7f016a4f375006fa50cb819c6edadfa22eb24e2/dependencies/eval-qualified-source.tgz",
+    "@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/b7f016a4f375006fa50cb819c6edadfa22eb24e2/dependencies/cli-qualified-source.tgz"
   },
   "repository": {
     "type": "git",
