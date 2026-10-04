@@ -1,0 +1,13 @@
+# Public publication validation — 2026-10-04
+
+Scope: publish frozen R6 + E1 runtime and generated Circuit JSON. No component, footprint, placement, routing, BOM/CPL or enclosure design changes. No R7.
+
+Earlier R6 design evidence: 65 board tests PASS; focused importer 7,685 assertions PASS; 33 baseline full-importer-suite failures remain; 37/37 assembly registration; 16/16 J1 paste apertures; four plated shell slots. These checks are preserved evidence, not newly rerun here. E1 has nine focused mechanical tests; physical mating/printing/radio/phone tests remain pending.
+
+Publication checks and exact remote verification results will be added after the supported build and uploads finish. No order, payment or supplier approval is authorized by publication.
+
+Independent `bun install --frozen-lockfile`: PASS (285 packages). Supported `tsci build index.circuit.tsx`: PASS. Every Circuit JSON record except the project VFS provenance hash is identical to frozen R6, including all traces, pads, vias, components, pours, holes and schematic connections. No generated Circuit JSON was edited. Published build SHA256: `ea4e922108e677217720f976f4a69d1442f9e5ec3a0e36d4be13c157b1beec81`. Frozen project artifact remains unchanged. Accepted original warnings concern Q1/Q2 symbol metadata, J2 internal mating access, route-cache serialization and 59 small-via fabrication surcharges; none was suppressed.
+
+Tscircuit package is public, public dist enabled. GitHub repository: `AnasSarkiz/magnetic-shutter-remote`, public. Automatic GitHub linkage is blocked: `repository_not_accessible` HTTP 403; the tscircuit GitHub app does not have access to the new repository. This does not block direct public repository push or registry publication. Exact post-upload hash verification is recorded locally and is required before claiming publication completed.
+
+Initial fresh-install shorts command: FAILED before checking copper (`Unsupported shape polygon`). The upstream CLI lacks the already-qualified local polygon integration (existing issue 062). This must be corrected in publication toolchain pins before final verification. Curated files and included tooling archives checked for credential-like content: no findings. README and VALIDATION are GitHub-only; the registry receives runtime/configuration/dependencies and generated JSON only.

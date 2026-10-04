@@ -1,0 +1,6 @@
+node_modules/
+.tscircuit/
+.env
+.env.*
+.DS_Store
+# The generated Circuit JSON is intentionally tracked.

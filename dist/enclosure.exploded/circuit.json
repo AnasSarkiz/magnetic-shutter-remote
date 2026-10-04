@@ -1,0 +1,2792 @@
+[
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_0",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_Box0"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_1",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_2",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_3",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C3"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_4",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C4"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_5",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C5"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_6",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C6"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_7",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C7"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_8",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C8"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_9",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_C9"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_10",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_J1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_11",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_J2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_12",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_J3"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_13",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_LED1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_14",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_LED2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_15",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_Q1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_16",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_Q2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_17",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_18",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R10"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_19",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R11"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_20",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R12"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_21",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R13"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_22",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_23",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R3"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_24",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R4"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_25",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R5"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_26",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R6"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_27",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R7"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_28",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R8"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_29",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_R9"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_30",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_SW1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_31",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_SW2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_32",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_SW3"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_33",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_U1"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_34",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_U2"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_35",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_U3"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_36",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_U4"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_37",
+    "ftype": "simple_chip",
+    "name": "FrozenR6_U5"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_38",
+    "ftype": "simple_chip",
+    "name": "FrozenR6PCB37TopComponents"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_39",
+    "ftype": "simple_chip",
+    "name": "RemoteBase"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_40",
+    "ftype": "simple_chip",
+    "name": "RemoteLid"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_41",
+    "ftype": "simple_chip",
+    "name": "StatusRingLightGuide"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_42",
+    "ftype": "simple_chip",
+    "name": "ChargeWindowLightGuide"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_43",
+    "ftype": "simple_chip",
+    "name": "ShutterPlunger"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_44",
+    "ftype": "simple_chip",
+    "name": "PairPlunger"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_45",
+    "ftype": "simple_chip",
+    "name": "ShutterSoftSkin"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_46",
+    "ftype": "simple_chip",
+    "name": "PowerSlider"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_47",
+    "ftype": "simple_chip",
+    "name": "BatteryCarrier"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_48",
+    "ftype": "simple_chip",
+    "name": "BatteryDTP401525MaximumEnvelope"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_49",
+    "ftype": "simple_chip",
+    "name": "MagneticGripDock"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_50",
+    "ftype": "simple_chip",
+    "name": "BatteryThermalPadCompressedEnvelope"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_51",
+    "ftype": "simple_chip",
+    "name": "BatteryHarnessPositiveReservation"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_52",
+    "ftype": "simple_chip",
+    "name": "BatteryHarnessNegativeReservation"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_53",
+    "ftype": "simple_chip",
+    "name": "PhoneReceiverPlateEnvelope"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_54",
+    "ftype": "simple_chip",
+    "name": "LidScrewM2x14Left"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_55",
+    "ftype": "simple_chip",
+    "name": "M2InsertEnvelopeLeft"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_56",
+    "ftype": "simple_chip",
+    "name": "LidScrewM2x14Right"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_57",
+    "ftype": "simple_chip",
+    "name": "M2InsertEnvelopeRight"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_58",
+    "ftype": "simple_chip",
+    "name": "RemoteMagnetLeft"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_59",
+    "ftype": "simple_chip",
+    "name": "DockMagnetLeft"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_60",
+    "ftype": "simple_chip",
+    "name": "RemoteMagnetInsulatingCapLeft"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_61",
+    "ftype": "simple_chip",
+    "name": "DockMagnetInsulatingCapLeft"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_62",
+    "ftype": "simple_chip",
+    "name": "RemoteMagnetRight"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_63",
+    "ftype": "simple_chip",
+    "name": "DockMagnetRight"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_64",
+    "ftype": "simple_chip",
+    "name": "RemoteMagnetInsulatingCapRight"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_65",
+    "ftype": "simple_chip",
+    "name": "DockMagnetInsulatingCapRight"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_66",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetLeft28"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_67",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetInsulatingCapLeft28"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_68",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetLeft56"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_69",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetInsulatingCapLeft56"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_70",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetRight28"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_71",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetInsulatingCapRight28"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_72",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetRight56"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_73",
+    "ftype": "simple_chip",
+    "name": "PhoneMagnetInsulatingCapRight56"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_74",
+    "ftype": "simple_chip",
+    "name": "OriginalEnclosureE1"
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_0",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-Box0.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_0",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 36,
+      "y": 56,
+      "z": 1
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_1",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_1",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6000003814697266,
+      "y": 0.7999992370605469,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_2",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_2",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6000001430511475,
+      "y": 0.7999992370605469,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_3",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C3.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_3",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.5999999642372131,
+      "y": 0.8000000715255737,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_4",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C4.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_4",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6000003814697266,
+      "y": 0.8000001907348633,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_5",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C5.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_5",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.600000023841858,
+      "y": 0.8000001907348633,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_6",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C6.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_6",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6000003814697266,
+      "y": 0.8000000715255737,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_7",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C7.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_7",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.5999999642372131,
+      "y": 0.7999992370605469,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_8",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C8.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_8",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2,
+      "y": 1.3000011444091797,
+      "z": 1.2999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_9",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-C9.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_9",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6000003814697266,
+      "y": 0.7999992370605469,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_10",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-J1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_10",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 8.940000057220459,
+      "y": 6.799999237060547,
+      "z": 4.060000061988831
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_11",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-J2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_11",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 7.899999618530273,
+      "y": 8.599999904632568,
+      "z": 5.500999927520752
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_12",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-J3.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_12",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 7.999999046325684,
+      "y": 3.6099987030029297,
+      "z": 4.260000228881836
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_13",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-LED1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_13",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8000011444091797,
+      "z": 0.7100000381469727
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_14",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-LED2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_14",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.7999999821186066,
+      "z": 0.7100000381469727
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_15",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-Q1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_15",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2.505579948425293,
+      "y": 2.9000000953674316,
+      "z": 1.04920494556427
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_16",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-Q2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_16",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2.505579948425293,
+      "y": 2.9000000953674316,
+      "z": 1.04920494556427
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_17",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_17",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8100013732910156,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_18",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R10.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_18",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8100004196166992,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_19",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R11.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_19",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8100004196166992,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_20",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R12.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_20",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6200008392333984,
+      "y": 0.8099994659423828,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_21",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R13.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_21",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6200003623962402,
+      "y": 0.8099994659423828,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_22",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_22",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6200000047683716,
+      "y": 0.8100013732910156,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_23",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R3.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_23",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8099994659423828,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_24",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R4.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_24",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6200003623962402,
+      "y": 0.8100013732910156,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_25",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R5.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_25",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.809999942779541,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_26",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R6.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_26",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.809999942779541,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_27",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R7.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_27",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.809999942779541,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_28",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R8.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_28",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.619999885559082,
+      "y": 0.8100004196166992,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_29",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-R9.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_29",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.6199999451637268,
+      "y": 0.8100013732910156,
+      "z": 0.44999998807907104
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_30",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-SW1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_30",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 5.199999809265137,
+      "y": 7.799999952316284,
+      "z": 1.9999999403953552
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_31",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-SW2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_31",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 4.799999237060547,
+      "y": 2.9000282287597656,
+      "z": 1.9500000476837158
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_32",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-SW3.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_32",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 4.799999237060547,
+      "y": 2.9000279903411865,
+      "z": 1.9500000476837158
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_33",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-U1.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_33",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 13,
+      "y": 17.999999523162842,
+      "z": 3
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_34",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-U2.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_34",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2.009999990463257,
+      "y": 2.2200002670288086,
+      "z": 0.7999999523162842
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_35",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-U3.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_35",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2.8999998569488525,
+      "y": 2.899999976158142,
+      "z": 1.100000023841858
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_36",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-U4.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_36",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2.505579948425293,
+      "y": 2.899999976158142,
+      "z": 1.04920494556427
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_37",
+    "model_glb_url": "./enclosure-design/models/FrozenR6-U5.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_37",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 1.600000023841858,
+      "y": 1.5999999046325684,
+      "z": 0.6100000143051147
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_38",
+    "model_glb_url": "./enclosure-design/models/RemoteBase.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -14
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_39",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 46,
+      "y": 64,
+      "z": 17.100000381469727
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_39",
+    "model_glb_url": "./enclosure-design/models/RemoteLid.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 33
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_40",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 46,
+      "y": 64,
+      "z": 12.500000357627869
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_40",
+    "model_glb_url": "./enclosure-design/models/StatusRingLightGuide.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 23
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_41",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 31.25,
+      "y": 14.75,
+      "z": 11.400000214576721
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": true
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_41",
+    "model_glb_url": "./enclosure-design/models/ChargeWindowLightGuide.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 23
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_42",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 3.200000286102295,
+      "y": 3.200000762939453,
+      "z": 11.400000214576721
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": true
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_42",
+    "model_glb_url": "./enclosure-design/models/ShutterPlunger.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 40
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_43",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 10.299999237060547,
+      "y": 10.299999594688416,
+      "z": 11.499999761581421
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_43",
+    "model_glb_url": "./enclosure-design/models/PairPlunger.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 40
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_44",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 8,
+      "y": 8,
+      "z": 10.999999761581421
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_44",
+    "model_glb_url": "./enclosure-design/models/ShutterSoftSkin.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 45
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_45",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 9.59999942779541,
+      "y": 9.600000143051147,
+      "z": 0.9500007629394531
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_45",
+    "model_glb_url": "./enclosure-design/models/PowerSlider.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 14
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_46",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 7.650001525878906,
+      "y": 4.799999952316284,
+      "z": 2.099999964237213
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_46",
+    "model_glb_url": "./enclosure-design/models/BatteryCarrier.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 9
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_47",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 40.70000076293945,
+      "y": 29.000000476837158,
+      "z": 5
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_47",
+    "model_glb_url": "./enclosure-design/models/BatteryDTP401525MaximumEnvelope.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 15
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_48",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 15.5,
+      "y": 26.999999046325684,
+      "z": 4.200000047683716
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_48",
+    "model_glb_url": "./enclosure-design/models/MagneticGripDock.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_49",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 72,
+      "y": 114,
+      "z": 8.900000095367432
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_49",
+    "model_glb_url": "./enclosure-design/models/BatteryThermalPadCompressedEnvelope.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 6
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_50",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 2,
+      "y": 2,
+      "z": 1.6999999284744263
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_50",
+    "model_glb_url": "./enclosure-design/models/BatteryHarnessPositiveReservation.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 16
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_51",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 21.200000762939453,
+      "y": 26.050000190734863,
+      "z": 4.700000286102295
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_51",
+    "model_glb_url": "./enclosure-design/models/BatteryHarnessNegativeReservation.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 16
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_52",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 21.199999999254942,
+      "y": 24.750000953674316,
+      "z": 4.700000047683716
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_52",
+    "model_glb_url": "./enclosure-design/models/PhoneReceiverPlateEnvelope.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -31
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_53",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 45,
+      "y": 45,
+      "z": 0.5
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_53",
+    "model_glb_url": "./enclosure-design/models/LidScrewM2x14Left.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 50
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_54",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 4,
+      "y": 4,
+      "z": 15.600000381469727
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_54",
+    "model_glb_url": "./enclosure-design/models/M2InsertEnvelopeLeft.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_55",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 3.200000762939453,
+      "y": 3.200000762939453,
+      "z": 3.0000000596046448
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_55",
+    "model_glb_url": "./enclosure-design/models/LidScrewM2x14Right.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 50
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_56",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 4,
+      "y": 4,
+      "z": 15.600000381469727
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_56",
+    "model_glb_url": "./enclosure-design/models/M2InsertEnvelopeRight.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_57",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 3.200000762939453,
+      "y": 3.200000762939453,
+      "z": 3.0000000596046448
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_57",
+    "model_glb_url": "./enclosure-design/models/RemoteMagnetLeft.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_58",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.34999942779541,
+      "z": 3.175000011920929
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_58",
+    "model_glb_url": "./enclosure-design/models/DockMagnetLeft.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_59",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.34999942779541,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_59",
+    "model_glb_url": "./enclosure-design/models/RemoteMagnetInsulatingCapLeft.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_60",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.59999942779541,
+      "z": 0.25
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_60",
+    "model_glb_url": "./enclosure-design/models/DockMagnetInsulatingCapLeft.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_61",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.59999942779541,
+      "z": 0.5
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_61",
+    "model_glb_url": "./enclosure-design/models/RemoteMagnetRight.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_62",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.34999942779541,
+      "z": 3.175000011920929
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_62",
+    "model_glb_url": "./enclosure-design/models/DockMagnetRight.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_63",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.34999942779541,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_63",
+    "model_glb_url": "./enclosure-design/models/RemoteMagnetInsulatingCapRight.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_64",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.59999942779541,
+      "z": 0.25
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_64",
+    "model_glb_url": "./enclosure-design/models/DockMagnetInsulatingCapRight.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_65",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.59999942779541,
+      "z": 0.5
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_65",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetLeft28.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_66",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.349998474121094,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_66",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetInsulatingCapLeft28.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_67",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.599998474121094,
+      "z": 0.35000038146972656
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_67",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetLeft56.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_68",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.349998474121094,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_68",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetInsulatingCapLeft56.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_69",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.599998474121094,
+      "z": 0.35000038146972656
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_69",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetRight28.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_70",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.349998474121094,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_70",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetInsulatingCapRight28.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_71",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.599998474121094,
+      "z": 0.35000038146972656
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_71",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetRight56.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_72",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.34999942779541,
+      "y": 6.349998474121094,
+      "z": 3.1750001907348633
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_72",
+    "model_glb_url": "./enclosure-design/models/PhoneMagnetInsulatingCapRight56.glb",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -25
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_73",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "model_board_normal_direction": "z+",
+    "size": {
+      "x": 6.59999942779541,
+      "y": 6.599998474121094,
+      "z": 0.35000038146972656
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "source_project_metadata",
+    "source_filesystem_md5_hash": "ee9c45addce3a9a656c609f43b5c3156"
+  }
+]

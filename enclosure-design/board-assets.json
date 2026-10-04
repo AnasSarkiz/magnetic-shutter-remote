@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Box0",
+    "file": "FrozenR6-Box0.glb",
+    "nodes": 3,
+    "bytes": 90628,
+    "sha256": "5ca1a2ae1f35520aeaa0bfa79219403535faa9d6812c652153cc5ebbcd935621"
+  },
+  {
+    "name": "C1",
+    "file": "FrozenR6-C1.glb",
+    "nodes": 3,
+    "bytes": 127096,
+    "sha256": "6f3fed1aae3774acb43810b594f36fb74ccf7a3b570198b562212cc1aa947722"
+  },
+  {
+    "name": "C2",
+    "file": "FrozenR6-C2.glb",
+    "nodes": 3,
+    "bytes": 127100,
+    "sha256": "5a9817bfb7ea1d37e197da6fc9a1f953e693449dc263dcc8717cfeb37917dc2c"
+  },
+  {
+    "name": "C3",
+    "file": "FrozenR6-C3.glb",
+    "nodes": 3,
+    "bytes": 127108,
+    "sha256": "5dcc8ca311821a3fb03ce319d84dcb41f7851be3949cd0b56d08ffce2e6695b9"
+  },
+  {
+    "name": "C4",
+    "file": "FrozenR6-C4.glb",
+    "nodes": 3,
+    "bytes": 127108,
+    "sha256": "718cfe14aa01fc94d143c3b605b033e703ea8ac3aac62595ba68b377d4c7134b"
+  },
+  {
+    "name": "C5",
+    "file": "FrozenR6-C5.glb",
+    "nodes": 3,
+    "bytes": 127104,
+    "sha256": "8df1c458e5a905464f948390f39b3691ddc6e2c4f9f8a7a8926773000031601b"
+  },
+  {
+    "name": "C6",
+    "file": "FrozenR6-C6.glb",
+    "nodes": 3,
+    "bytes": 127108,
+    "sha256": "3d73d926068ab2fa158e4bf291cfc84c286617f16cbdc36b4ac269d458e63174"
+  },
+  {
+    "name": "C7",
+    "file": "FrozenR6-C7.glb",
+    "nodes": 3,
+    "bytes": 127092,
+    "sha256": "da468935aed2b3aaf1c7e430cd6b562676851da9cbb3e17bcb8680f2fc83115d"
+  },
+  {
+    "name": "C8",
+    "file": "FrozenR6-C8.glb",
+    "nodes": 3,
+    "bytes": 127184,
+    "sha256": "e2d342bc3074a1b7bf44ba82e2e5e0a456143865b1be5e9f3323dd4c4ce54ffd"
+  },
+  {
+    "name": "C9",
+    "file": "FrozenR6-C9.glb",
+    "nodes": 3,
+    "bytes": 127104,
+    "sha256": "37013c6b72b1d39c0dee07c91759babdaa4bd7e2b8f34f53fa5f1100c6589045"
+  },
+  {
+    "name": "J1",
+    "file": "FrozenR6-J1.glb",
+    "nodes": 4,
+    "bytes": 189076,
+    "sha256": "1e466b5173541b32a12395f9b0e5f9347e52690efb906bf3025886d3e3526322"
+  },
+  {
+    "name": "J2",
+    "file": "FrozenR6-J2.glb",
+    "nodes": 3,
+    "bytes": 525392,
+    "sha256": "ac777b09c871466b415fb2cb28e3b6b5824183f9856e2deb10a39d6ea55f4dc9"
+  },
+  {
+    "name": "J3",
+    "file": "FrozenR6-J3.glb",
+    "nodes": 3,
+    "bytes": 102812,
+    "sha256": "35400fea9622fdbe9fac4788645adf160334d922d08a48adeb57a6a4a85c0b9a"
+  },
+  {
+    "name": "LED1",
+    "file": "FrozenR6-LED1.glb",
+    "nodes": 5,
+    "bytes": 66284,
+    "sha256": "2a7071cbf515ca034f824ceb9929887d395f5f311e9125ca09f3e7b773f8fe7b"
+  },
+  {
+    "name": "LED2",
+    "file": "FrozenR6-LED2.glb",
+    "nodes": 5,
+    "bytes": 66304,
+    "sha256": "8d1720fb7ad841603e1b88bed6540594ebadef4a63a6517f45db80bedfdb75f8"
+  },
+  {
+    "name": "Q1",
+    "file": "FrozenR6-Q1.glb",
+    "nodes": 4,
+    "bytes": 715116,
+    "sha256": "f2dca4184e3782fe951fe645c174a59fb34b98d3405b587519a3bfd3d74586e2"
+  },
+  {
+    "name": "Q2",
+    "file": "FrozenR6-Q2.glb",
+    "nodes": 4,
+    "bytes": 715108,
+    "sha256": "be83d8a791a45a990c149af63b6e02d30574de1cd98eb284b87604c84352dc1d"
+  },
+  {
+    "name": "R1",
+    "file": "FrozenR6-R1.glb",
+    "nodes": 5,
+    "bytes": 176628,
+    "sha256": "f02def155c39941a353d23ec75ea0b151bab6bbc3cf0f750b1ef58f78d599dcc"
+  },
+  {
+    "name": "R10",
+    "file": "FrozenR6-R10.glb",
+    "nodes": 5,
+    "bytes": 176624,
+    "sha256": "ca8b96684765c795379c07f71794850e84d52ec48314df9b756ad63c376db9ff"
+  },
+  {
+    "name": "R11",
+    "file": "FrozenR6-R11.glb",
+    "nodes": 5,
+    "bytes": 176612,
+    "sha256": "377594b133ab71996491d8be2a5a84f3dbdca30dee1262b26639f04cad799d71"
+  },
+  {
+    "name": "R12",
+    "file": "FrozenR6-R12.glb",
+    "nodes": 5,
+    "bytes": 176616,
+    "sha256": "f3714fe963670de32b234a4f420f8b58380f4f4d5e25439421bce253c0317d3e"
+  },
+  {
+    "name": "R13",
+    "file": "FrozenR6-R13.glb",
+    "nodes": 5,
+    "bytes": 176620,
+    "sha256": "2510009d1d9de1dfd7a83d0a19cbc19cb0680895489b85ffb3a8ba6e877271a6"
+  },
+  {
+    "name": "R2",
+    "file": "FrozenR6-R2.glb",
+    "nodes": 5,
+    "bytes": 176632,
+    "sha256": "a917a81e76fb55fc55a693b31e922fb171cd10fed38fd833f3d4d3042c246282"
+  },
+  {
+    "name": "R3",
+    "file": "FrozenR6-R3.glb",
+    "nodes": 5,
+    "bytes": 176608,
+    "sha256": "2023ec43495ca857402f869873b8cf77a2cb595871f552b9652dd4213439f522"
+  },
+  {
+    "name": "R4",
+    "file": "FrozenR6-R4.glb",
+    "nodes": 5,
+    "bytes": 176616,
+    "sha256": "43a89dab530c6a581fc543e3b0200d222e356866bb23edff08f65e3c686ade8c"
+  },
+  {
+    "name": "R5",
+    "file": "FrozenR6-R5.glb",
+    "nodes": 5,
+    "bytes": 176620,
+    "sha256": "e4beed940926b7159092ecfa7123ee8bacf27cf9bc98486291664d30b6b7e6fc"
+  },
+  {
+    "name": "R6",
+    "file": "FrozenR6-R6.glb",
+    "nodes": 5,
+    "bytes": 176616,
+    "sha256": "61038854b1bf6c5ef2d9e2842a1209aad012523894a6a5a11c81f3d0df6ae3f5"
+  },
+  {
+    "name": "R7",
+    "file": "FrozenR6-R7.glb",
+    "nodes": 5,
+    "bytes": 176628,
+    "sha256": "6127ff1ae1e123d2fe1083c58c730fba2e48680ea8cf71947092a77c7b0663c9"
+  },
+  {
+    "name": "R8",
+    "file": "FrozenR6-R8.glb",
+    "nodes": 5,
+    "bytes": 176628,
+    "sha256": "c322ecbfb3c62e8c2da65ff25ff7c9ce25803cbdae9988715c51f212cc670178"
+  },
+  {
+    "name": "R9",
+    "file": "FrozenR6-R9.glb",
+    "nodes": 5,
+    "bytes": 176632,
+    "sha256": "9411abbe78757223f59b4729919f48740ce8326104b72098532a553f3774fa52"
+  },
+  {
+    "name": "SW1",
+    "file": "FrozenR6-SW1.glb",
+    "nodes": 3,
+    "bytes": 200436,
+    "sha256": "7f0acb33263b6040485dda336482adeccce03766148ce24ca18648db0ec7dac0"
+  },
+  {
+    "name": "SW2",
+    "file": "FrozenR6-SW2.glb",
+    "nodes": 3,
+    "bytes": 159952,
+    "sha256": "419eab411d56ef645a0b42288732bbb117cb33672452bf5fea3fab21dea42a4e"
+  },
+  {
+    "name": "SW3",
+    "file": "FrozenR6-SW3.glb",
+    "nodes": 3,
+    "bytes": 159948,
+    "sha256": "8bc0f7bb3632bd3ba0ccfc4cb560a9205e369ee3315f3ca08a69ed55fa38ab11"
+  },
+  {
+    "name": "U1",
+    "file": "FrozenR6-U1.glb",
+    "nodes": 6,
+    "bytes": 219988,
+    "sha256": "7d316b74ddb6969ecfe64a51e72ebd389efa6e6a440bc9a45c0ff4a76867f7ef"
+  },
+  {
+    "name": "U2",
+    "file": "FrozenR6-U2.glb",
+    "nodes": 3,
+    "bytes": 191780,
+    "sha256": "d4896546b4ccfda602e82b79cf0ab110fd08d648c1b1d20d0d7c75be8c2bc06d"
+  },
+  {
+    "name": "U3",
+    "file": "FrozenR6-U3.glb",
+    "nodes": 3,
+    "bytes": 160496,
+    "sha256": "07e12a464ec6d946db93200e6491710db63c4d2fdef6a60b7dd5783685c190de"
+  },
+  {
+    "name": "U4",
+    "file": "FrozenR6-U4.glb",
+    "nodes": 4,
+    "bytes": 715128,
+    "sha256": "ba5b5e6105fe02d046b5e190ea7201236f4b09f007ecc22050a511520f72b441"
+  },
+  {
+    "name": "U5",
+    "file": "FrozenR6-U5.glb",
+    "nodes": 3,
+    "bytes": 223684,
+    "sha256": "d0e5fbb2623db76e293ef01074d19a2fd0e2a23f0d26be4981f83b3829fef0f4"
+  }
+]
