@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-10-05T22:04:29.800Z",
+  "commit": "a00c9d79d6612eb9edf5c73b01d3b7c22a3cf9c2",
+  "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/a00c9d79d6612eb9edf5c73b01d3b7c22a3cf9c2/dist/index/circuit.json",
+  "status": 200,
+  "bytes": 1445989,
+  "local_sha256": "8db03c1b6b7e1ffc73ad3a49100bc2191e75db50f8de6de8ab36e922676e98f5",
+  "public_sha256": "8db03c1b6b7e1ffc73ad3a49100bc2191e75db50f8de6de8ab36e922676e98f5",
+  "exact_match": true
+}

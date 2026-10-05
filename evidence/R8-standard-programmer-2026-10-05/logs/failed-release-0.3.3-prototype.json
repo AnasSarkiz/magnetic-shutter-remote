@@ -1,0 +1,931 @@
+{
+  "observed_utc": "2026-10-05T22:12:51.422Z",
+  "release": {
+    "package_release_id": "40705ac2-1981-42a4-8df8-fdabad5d81da",
+    "package_id": "801d06b7-add2-4b80-a025-48f1ba5dd8a3",
+    "version": "0.3.3-prototype",
+    "github_commit_sha": null,
+    "is_locked": false,
+    "is_latest": true,
+    "ready_to_build": false,
+    "is_pr_preview": false,
+    "created_at": "2026-10-05T22:02:49.959Z",
+    "circuit_json_build_error": null,
+    "circuit_json_build_error_last_updated_at": null,
+    "has_transpiled": false,
+    "transpilation_error": null,
+    "transpilation_logs": null,
+    "transpilation_in_progress": false,
+    "transpilation_started_at": null,
+    "transpilation_completed_at": null,
+    "transpilation_is_stale": false,
+    "transpilation_display_status": "pending",
+    "fs_sha": "md5-b0b7d9f9c934d609e30dc6fda3bee68b",
+    "circuit_json_build_logs": null,
+    "circuit_json_build_in_progress": false,
+    "circuit_json_build_started_at": null,
+    "circuit_json_build_completed_at": null,
+    "circuit_json_build_is_stale": false,
+    "circuit_json_build_display_status": "pending",
+    "image_generation_error": null,
+    "image_generation_error_last_updated_at": null,
+    "image_generation_logs": null,
+    "image_generation_in_progress": false,
+    "image_generation_started_at": null,
+    "image_generation_completed_at": null,
+    "image_generation_is_stale": false,
+    "image_generation_display_status": "pending",
+    "pcb_preview_image_url": null,
+    "sch_preview_image_url": null,
+    "cad_preview_image_url": null,
+    "package_release_website_url": null,
+    "display_status": "pending",
+    "latest_package_build_id": null,
+    "user_code_job_started_at": null,
+    "user_code_job_completed_at": null,
+    "user_code_job_error": null,
+    "user_code_job_completed_logs": null,
+    "user_code_job_log_stream_url": null,
+    "ai_review_requested": false,
+    "github_pr_number": null,
+    "github_pr_title": null,
+    "github_branch_name": null
+  },
+  "files": [
+    {
+      "file_path": "BOM.csv",
+      "package_file_id": "9ed125e0-e3cd-4f62-a464-d14769aa358f"
+    },
+    {
+      "file_path": "BOM.md",
+      "package_file_id": "bce165af-404c-4a2d-95ea-5cbc7d919166"
+    },
+    {
+      "file_path": "README.md",
+      "package_file_id": "59cf2b88-66f9-4872-b3ff-2247502d5925"
+    },
+    {
+      "file_path": "VALIDATION.md",
+      "package_file_id": "03dfe67a-3194-4eb5-9943-09dfac8d9b16"
+    },
+    {
+      "file_path": "bom.json",
+      "package_file_id": "32952e07-a2ad-4865-b9f4-b549654e44ad"
+    },
+    {
+      "file_path": "bun.lock",
+      "package_file_id": "672b1ef0-3876-4367-827a-44a5e00eee1f"
+    },
+    {
+      "file_path": "dist/index/circuit.json",
+      "package_file_id": "aad7fbc1-b8d5-4576-85e4-bf072c60ccb9"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/J3-supplier-terminal-registration.json",
+      "package_file_id": "5b7c5aad-6acf-4c88-abc5-b21322897a59"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md",
+      "package_file_id": "ee346295-8afa-4aef-935e-c8fc1ab91752"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/REVIEW.md",
+      "package_file_id": "dd083056-e0df-4263-9e51-9c9bc6b31585"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/SW2-supplier-terminal-registration.json",
+      "package_file_id": "7495b507-5d2f-48eb-8b7a-09ba877b7334"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/final-manufacturing.json",
+      "package_file_id": "82a69c90-a00e-4ddc-9f79-2badcba41903"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/final-native-checks.json",
+      "package_file_id": "8a4ca5de-4123-48dc-b600-2fd815e060dc"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/final-process/process-review.json",
+      "package_file_id": "ac5f547b-4686-4399-b172-1ca4c60c24d1"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/final-readback/readback.json",
+      "package_file_id": "f4199ca3-3fb3-498b-92e4-e55b58cf48ad"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/physical-connectivity.json",
+      "package_file_id": "34d3f287-8874-4c8e-950a-637e5fd7ee49"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/power-path-measurements.json",
+      "package_file_id": "0c149d1c-ff89-4f37-9ebe-e83663949851"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/C160389-supplier.json",
+      "package_file_id": "27a5b32f-254e-448d-b8f4-0414de8482aa"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md",
+      "package_file_id": "ed2353f4-3a57-437c-b499-d48589a83722"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/land-audit.json",
+      "package_file_id": "7de98a90-68c7-49d3-971f-945028984653"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json",
+      "package_file_id": "4efbda59-c430-41a8-84a6-53db8db660e5"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/programmer-release.json",
+      "package_file_id": "bc3afd51-3557-4228-a7fa-02740ec0a8c2"
+    },
+    {
+      "file_path": "evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json",
+      "package_file_id": "18222089-ade0-44d4-a05c-9d3c72e278c3"
+    },
+    {
+      "file_path": "firmware/README.md",
+      "package_file_id": "6321ff23-404a-4553-9449-03ede66ad177"
+    },
+    {
+      "file_path": "firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json",
+      "package_file_id": "3cdd8de4-064c-4b14-9886-5afe85470882"
+    },
+    {
+      "file_path": "firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin",
+      "package_file_id": "5a2e9bce-bc5e-4c2b-8294-cab756420e7a"
+    },
+    {
+      "file_path": "imports/A_0603WAF1001T5E.tsx",
+      "package_file_id": "7710e97a-be51-4b0b-ab39-735381800b8b"
+    },
+    {
+      "file_path": "imports/A_0603WAF1002T5E.tsx",
+      "package_file_id": "dad7b3c4-5470-4977-ae4c-a00f9541e6bd"
+    },
+    {
+      "file_path": "imports/A_0603WAF1003T5E.tsx",
+      "package_file_id": "4872fdc2-d7cf-44f7-b50b-8ae21208638d"
+    },
+    {
+      "file_path": "imports/A_0603WAF1303T5E.tsx",
+      "package_file_id": "9fbbad87-b01b-4699-a2a8-a333f9fb414f"
+    },
+    {
+      "file_path": "imports/A_0603WAF1621T5E.tsx",
+      "package_file_id": "4a9cca89-f87f-4019-9301-a2ba5410afc7"
+    },
+    {
+      "file_path": "imports/A_0603WAF1872T5E.tsx",
+      "package_file_id": "971443b2-5c65-4e28-bd51-117dfda9f6a8"
+    },
+    {
+      "file_path": "imports/A_0603WAF5101T5E.tsx",
+      "package_file_id": "620db9e4-764f-4719-ae1e-4bb32e74c3ba"
+    },
+    {
+      "file_path": "imports/A_2N7002.tsx",
+      "package_file_id": "cd81d3ff-34e8-47d8-af82-b4b77759afae"
+    },
+    {
+      "file_path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj",
+      "package_file_id": "034e56c9-ccc5-419f-9275-14a2dfd4a58c"
+    },
+    {
+      "file_path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step",
+      "package_file_id": "5a68a6e8-98e6-490f-857b-51d67a48b963"
+    },
+    {
+      "file_path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx",
+      "package_file_id": "9fbc32a0-b7db-4dd1-8ef3-f2a066cee85a"
+    },
+    {
+      "file_path": "imports/BQ25185DLHR.tsx",
+      "package_file_id": "3914c886-4425-4246-a7df-a4a5dcbba725"
+    },
+    {
+      "file_path": "imports/CC0603KRX7R9BB104.tsx",
+      "package_file_id": "33e48222-a3d2-4c1d-8e86-7ea40f40b2ea"
+    },
+    {
+      "file_path": "imports/CL10A475KO8NNNC.tsx",
+      "package_file_id": "acf29af2-0773-4681-98de-d0474b3f2766"
+    },
+    {
+      "file_path": "imports/CL21A106KAYNNNE.tsx",
+      "package_file_id": "899beead-15e8-4bc2-b7d7-ca08859e4544"
+    },
+    {
+      "file_path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj",
+      "package_file_id": "6b84947e-c559-4261-9aa4-14e6ff14bc00"
+    },
+    {
+      "file_path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step",
+      "package_file_id": "4a3ce7c9-5afa-4bf1-80dc-5ef234d25284"
+    },
+    {
+      "file_path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx",
+      "package_file_id": "7adeae70-9814-48f3-aa8b-c540cb15b6e6"
+    },
+    {
+      "file_path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.obj",
+      "package_file_id": "34b371a2-c4f3-4ee1-89c8-0e73f39d8ec2"
+    },
+    {
+      "file_path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.step",
+      "package_file_id": "740c13b2-c4e3-48b8-966b-8de9e60dba61"
+    },
+    {
+      "file_path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx",
+      "package_file_id": "1eec3092-72b8-4e5a-b564-f9e75e9ae58c"
+    },
+    {
+      "file_path": "imports/ESPC3_12_N4/ESPC3_12_N4.obj",
+      "package_file_id": "22b846cf-72ed-43fc-aa6e-87d98d2614ce"
+    },
+    {
+      "file_path": "imports/ESPC3_12_N4/ESPC3_12_N4.step",
+      "package_file_id": "d7c49115-56df-40f5-8a85-1c192443afdc"
+    },
+    {
+      "file_path": "imports/ESPC3_12_N4/ESPC3_12_N4.tsx",
+      "package_file_id": "96a34181-ad5b-487a-8988-b8400ef60a7a"
+    },
+    {
+      "file_path": "imports/KT_0603R.tsx",
+      "package_file_id": "6c0bcf2a-811d-4b79-b41b-dcc60106a7ff"
+    },
+    {
+      "file_path": "imports/MSK12C02.tsx",
+      "package_file_id": "93790261-c3d4-49da-b4ea-e0cdf88a2203"
+    },
+    {
+      "file_path": "imports/SKRTLAE010/SKRTLAE010.obj",
+      "package_file_id": "68fd2883-6d68-43b7-9b8c-e90d15e12522"
+    },
+    {
+      "file_path": "imports/SKRTLAE010/SKRTLAE010.step",
+      "package_file_id": "58f591f8-5f4b-4614-9192-5c44168a7194"
+    },
+    {
+      "file_path": "imports/SKRTLAE010/SKRTLAE010.tsx",
+      "package_file_id": "f610f5b1-4862-4ab0-a5cb-3368186e9dff"
+    },
+    {
+      "file_path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj",
+      "package_file_id": "27d9750a-d896-4210-95d4-cc16073480e7"
+    },
+    {
+      "file_path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step",
+      "package_file_id": "16729fc5-5e90-4564-bf9f-baa3ef299765"
+    },
+    {
+      "file_path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx",
+      "package_file_id": "9df1e8dd-1b93-4ab3-b175-ac8394576415"
+    },
+    {
+      "file_path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj",
+      "package_file_id": "d374e441-3505-4954-9a6f-d5a357ee5b53"
+    },
+    {
+      "file_path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step",
+      "package_file_id": "aad36d6c-110d-4371-a8b5-ccf552a17fec"
+    },
+    {
+      "file_path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx",
+      "package_file_id": "3db215e5-b32b-4d21-aadf-bc0a31765f01"
+    },
+    {
+      "file_path": "imports/TCC0603COG470J500CT.tsx",
+      "package_file_id": "1607dd40-7345-483d-9669-078ccf3dd53b"
+    },
+    {
+      "file_path": "imports/TMP390A2DRLR.tsx",
+      "package_file_id": "35d4b63c-4272-490a-95da-50e6f3029535"
+    },
+    {
+      "file_path": "imports/TPS3839G33DBZR.tsx",
+      "package_file_id": "4a15625c-4547-4220-9d8b-cec931dcdb0f"
+    },
+    {
+      "file_path": "imports/TPS63031DSKR/TPS63031DSKR.obj",
+      "package_file_id": "83f75182-26ab-46d5-948f-3867b239471b"
+    },
+    {
+      "file_path": "imports/TPS63031DSKR/TPS63031DSKR.step",
+      "package_file_id": "d4d69b33-b6db-413d-a113-1715f35bf668"
+    },
+    {
+      "file_path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+      "package_file_id": "73957cbd-cbf1-44a8-83f6-c6825608473f"
+    },
+    {
+      "file_path": "imports/TS24CA/TS24CA.obj",
+      "package_file_id": "2bde506d-24fc-40a8-8849-8e675d20cfc9"
+    },
+    {
+      "file_path": "imports/TS24CA/TS24CA.step",
+      "package_file_id": "4c32ef17-09f8-47dc-91df-29e8842fddbb"
+    },
+    {
+      "file_path": "imports/TS24CA/TS24CA.tsx",
+      "package_file_id": "651c2504-7e6a-4800-bfa5-62ba67f1885e"
+    },
+    {
+      "file_path": "imports/TS_1088_AR02016.tsx",
+      "package_file_id": "c134e351-8810-40b5-8144-2a2f43375f8e"
+    },
+    {
+      "file_path": "imports/USB4215_03_A.tsx",
+      "package_file_id": "4305d62f-c8a6-4fbc-b4a6-d12650250175"
+    },
+    {
+      "file_path": "index.circuit.tsx",
+      "package_file_id": "84a9cab3-7bbd-418a-8034-d04a51b97556"
+    },
+    {
+      "file_path": "package.json",
+      "package_file_id": "188b40e6-772d-406e-ad39-9df31e37bf07"
+    },
+    {
+      "file_path": "registry-source-manifest.json",
+      "package_file_id": "c8e73b44-cb82-4c90-b8cd-98911471d532"
+    },
+    {
+      "file_path": "scripts/audit-authored-placements.ts",
+      "package_file_id": "99f7b7b4-0856-425a-aec9-74a560cbfc86"
+    },
+    {
+      "file_path": "scripts/audit-drills.ts",
+      "package_file_id": "b2199fc7-cc6d-4610-b4d4-2a318fa10ee0"
+    },
+    {
+      "file_path": "scripts/audit-r4-qualification.py",
+      "package_file_id": "d83a91e5-cd29-4311-9238-61653993cebf"
+    },
+    {
+      "file_path": "scripts/audit-r6-registration.py",
+      "package_file_id": "2279eb64-3e0c-4f3a-9355-7e707e7a138e"
+    },
+    {
+      "file_path": "scripts/audit-r7-led-fixtures.ts",
+      "package_file_id": "1c878662-f813-4590-ab0c-9a8b18de7873"
+    },
+    {
+      "file_path": "scripts/audit-r8-circuit.ts",
+      "package_file_id": "5a221ec4-a8bc-4569-b418-cdc570bac239"
+    },
+    {
+      "file_path": "scripts/audit-r8-jst3.py",
+      "package_file_id": "78e05711-f936-4ab9-826a-c92d80811bc6"
+    },
+    {
+      "file_path": "scripts/audit-r8-module.py",
+      "package_file_id": "933ea3ba-df23-42f4-a032-eac5dc09d40d"
+    },
+    {
+      "file_path": "scripts/audit-radio.py",
+      "package_file_id": "f00ff28a-a364-4583-ab40-6216945ea4e9"
+    },
+    {
+      "file_path": "scripts/audit-side-shutter.py",
+      "package_file_id": "caf8b97c-b4da-4ab1-96f4-d2936b30fc28"
+    },
+    {
+      "file_path": "scripts/audit_r7_jst7.py",
+      "package_file_id": "90b9ca4a-0fd8-4b81-b7ca-06ef88b8615d"
+    },
+    {
+      "file_path": "scripts/audit_r7_paste_fixture.py",
+      "package_file_id": "356f375e-0fb7-4983-a2b2-1c536706ae7a"
+    },
+    {
+      "file_path": "scripts/check-mechanical-meshes.py",
+      "package_file_id": "072f7bce-b422-4f1c-8dd8-66d46f0f3c02"
+    },
+    {
+      "file_path": "scripts/check-r6-mechanical-meshes.py",
+      "package_file_id": "ed528a83-7501-4094-aa2d-6641ac2acd0b"
+    },
+    {
+      "file_path": "scripts/check-r6-preservation.py",
+      "package_file_id": "dadd6e19-e856-4288-9fc1-e100492eed2c"
+    },
+    {
+      "file_path": "scripts/check-r8-output.ts",
+      "package_file_id": "1192f620-7870-43e9-a651-7ad68b26f972"
+    },
+    {
+      "file_path": "scripts/check-routed.ts",
+      "package_file_id": "780e548a-0be7-4f57-8836-b81ad7422cb8"
+    },
+    {
+      "file_path": "scripts/compare-r5-r6.py",
+      "package_file_id": "747cedb8-7ff3-41fd-9587-c4d19f7408d7"
+    },
+    {
+      "file_path": "scripts/curved_geometry.py",
+      "package_file_id": "c606df4a-187a-466c-8d10-6b5d1e3b775c"
+    },
+    {
+      "file_path": "scripts/draw-assembly-review.py",
+      "package_file_id": "147579ed-94ed-4fdf-8266-454f125b434e"
+    },
+    {
+      "file_path": "scripts/draw-r4-assembly.py",
+      "package_file_id": "1a33ebff-e5e1-4085-9a26-bf0f5ceb3fcd"
+    },
+    {
+      "file_path": "scripts/draw-r5-dimensions.py",
+      "package_file_id": "cea77219-7c1b-42af-a698-a25c77d7d92e"
+    },
+    {
+      "file_path": "scripts/draw-r5-review.py",
+      "package_file_id": "1b728d64-b8e3-40d1-ac39-157aa07da4d2"
+    },
+    {
+      "file_path": "scripts/draw-r6-dimensions.py",
+      "package_file_id": "e7a79be3-8ca6-4252-a6c5-91182d0f6582"
+    },
+    {
+      "file_path": "scripts/draw-r6-review.py",
+      "package_file_id": "25971119-0e14-40b1-9f56-f18825a74e8c"
+    },
+    {
+      "file_path": "scripts/draw-usb-qualification.py",
+      "package_file_id": "928aa4bb-8269-4a34-87a2-f993d6a5e44a"
+    },
+    {
+      "file_path": "scripts/export-assembly.ts",
+      "package_file_id": "42aeec5f-ed58-4894-996b-fa1c0104426e"
+    },
+    {
+      "file_path": "scripts/export-gerbers.ts",
+      "package_file_id": "bc67d935-9869-4db9-8550-f58c753b27b6"
+    },
+    {
+      "file_path": "scripts/fetch-qualified-datasheets.py",
+      "package_file_id": "f846f7ca-68d7-46a8-9ae7-c6fe143a9ebf"
+    },
+    {
+      "file_path": "scripts/finalize-r2-bom.py",
+      "package_file_id": "80cea4b0-0c15-42b8-8a0e-49b3421d1eb0"
+    },
+    {
+      "file_path": "scripts/flash-r8-standard-jst.py",
+      "package_file_id": "464c2db8-cda4-4dac-b7db-81a6095eb37a"
+    },
+    {
+      "file_path": "scripts/inspect-exported-slots.py",
+      "package_file_id": "70fcea26-f98a-44e6-a51c-2457de61c182"
+    },
+    {
+      "file_path": "scripts/lib/qualification-source-placements.ts",
+      "package_file_id": "1804c22e-262a-480a-bca7-3d868e85858c"
+    },
+    {
+      "file_path": "scripts/manufacturing-audit.py",
+      "package_file_id": "605c735f-96a7-45f1-b0cb-c800a892d562"
+    },
+    {
+      "file_path": "scripts/measure-j1-export.py",
+      "package_file_id": "24c41336-43c3-4d20-aa05-7a08f2d106cc"
+    },
+    {
+      "file_path": "scripts/package_draft.py",
+      "package_file_id": "7e23e3d1-ab68-4f53-a3d1-ebf0e2ab914c"
+    },
+    {
+      "file_path": "scripts/package_r2.py",
+      "package_file_id": "fbca735e-708b-4f96-951b-67fbd736c147"
+    },
+    {
+      "file_path": "scripts/package_r3.py",
+      "package_file_id": "e1da58a7-a0a1-4f2f-99d6-4925616c5632"
+    },
+    {
+      "file_path": "scripts/package_r4_dfm.py",
+      "package_file_id": "50efe048-8468-4729-bf9a-0297ece48022"
+    },
+    {
+      "file_path": "scripts/package_r5_dfm.py",
+      "package_file_id": "3ff65e9c-2234-45ec-9450-9fd1c9f84cdd"
+    },
+    {
+      "file_path": "scripts/package_r6_prototype.py",
+      "package_file_id": "1d13952b-332d-48c7-b2b2-056c9e404cd3"
+    },
+    {
+      "file_path": "scripts/place-r5-markings.py",
+      "package_file_id": "0b2deebb-8014-45e1-9ae8-530e26eb9f75"
+    },
+    {
+      "file_path": "scripts/qualification_paths.py",
+      "package_file_id": "6783d117-ca99-427b-91e4-6b55ac4522ff"
+    },
+    {
+      "file_path": "scripts/r7_power_budget.py",
+      "package_file_id": "dac23178-29a0-4f4f-bb1b-aa8eaec0c7bc"
+    },
+    {
+      "file_path": "scripts/recheck_board_sourcing.py",
+      "package_file_id": "fd50b04c-2581-4ac3-9240-75a8caca27b6"
+    },
+    {
+      "file_path": "scripts/record-r3-tooling.py",
+      "package_file_id": "784ba212-cc8a-453e-a84a-a0f0185022e6"
+    },
+    {
+      "file_path": "scripts/record-r5-tooling.py",
+      "package_file_id": "f5bcf347-f639-4d1d-ae61-0545a9d23aee"
+    },
+    {
+      "file_path": "scripts/record-r6-tooling.py",
+      "package_file_id": "c3c210de-2d31-4656-9321-c94bb57ea336"
+    },
+    {
+      "file_path": "scripts/render-final-cam.py",
+      "package_file_id": "2fd46455-f84a-4170-bf54-34e7e7527eba"
+    },
+    {
+      "file_path": "scripts/render-legend-review.py",
+      "package_file_id": "a546bd31-dfd5-45be-9386-41cc1ac01c38"
+    },
+    {
+      "file_path": "scripts/render-r6-pcb.ts",
+      "package_file_id": "f7cee960-865a-405a-b7ee-41baf0591294"
+    },
+    {
+      "file_path": "scripts/render-r6-review.ts",
+      "package_file_id": "7ec2d30e-5864-46a0-b93d-7a8e2d55174c"
+    },
+    {
+      "file_path": "scripts/render-r8-land-comparison.py",
+      "package_file_id": "63cd1ce5-9a11-4216-9b68-2314eea05583"
+    },
+    {
+      "file_path": "scripts/render-r8-review.ts",
+      "package_file_id": "c88497f9-8173-47e2-b5ce-79dd69f2bbaa"
+    },
+    {
+      "file_path": "scripts/render-regression.ts",
+      "package_file_id": "7d600c99-c0bc-4a1c-8638-b92fe7429f7b"
+    },
+    {
+      "file_path": "scripts/render-sheets.ts",
+      "package_file_id": "817f2133-4268-4f37-ace3-7d96788ab6f9"
+    },
+    {
+      "file_path": "scripts/review-gerbers.py",
+      "package_file_id": "12ab2360-41ef-4cf4-a0a4-c5201d73d6e1"
+    },
+    {
+      "file_path": "scripts/review-order-usb-mask.py",
+      "package_file_id": "982e83d8-1a95-4542-acbb-cf24c340d01b"
+    },
+    {
+      "file_path": "scripts/review-r3-exports.py",
+      "package_file_id": "3104dd10-9fa5-454e-b5af-a8e0c83b8185"
+    },
+    {
+      "file_path": "scripts/review-r4-manufacturing.py",
+      "package_file_id": "a2da3494-7c8b-42ab-a1bf-32f68b2e396b"
+    },
+    {
+      "file_path": "scripts/review-r5-ground.py",
+      "package_file_id": "9d2ccc84-2c5e-4d45-8128-2d13a21a6046"
+    },
+    {
+      "file_path": "scripts/review-r5-legend.py",
+      "package_file_id": "19fd13da-1628-41b3-9208-3e32aba97854"
+    },
+    {
+      "file_path": "scripts/review-r5-manufacturing.py",
+      "package_file_id": "c1884788-59cf-42e9-a2a9-ab5e612c9241"
+    },
+    {
+      "file_path": "scripts/review-r5-stencil.py",
+      "package_file_id": "faaa4073-a27c-4db8-9dd5-e68b048cb502"
+    },
+    {
+      "file_path": "scripts/review-r5-usb-pins.py",
+      "package_file_id": "00a823f3-2aea-4354-871b-6d4b9c482ba8"
+    },
+    {
+      "file_path": "scripts/review-r6-3d.py",
+      "package_file_id": "e91a2500-2017-4b7a-b75d-67b5bc804b8f"
+    },
+    {
+      "file_path": "scripts/review-r6-ground.py",
+      "package_file_id": "db42e7c2-dfaf-4c3d-8a7d-8858a341729d"
+    },
+    {
+      "file_path": "scripts/review-r6-legend.py",
+      "package_file_id": "338d93f4-fc1f-4d97-8a7f-8f9c2cbe5a9b"
+    },
+    {
+      "file_path": "scripts/review-r6-manufacturing.py",
+      "package_file_id": "b0addb32-3382-40bf-b4fb-48f9902e009b"
+    },
+    {
+      "file_path": "scripts/review-r6-mechanics.py",
+      "package_file_id": "0960434e-9434-4a55-829f-f850ec069216"
+    },
+    {
+      "file_path": "scripts/review-r6-stencil.py",
+      "package_file_id": "8e65e4c1-5fbc-403e-9ec5-7162190c0622"
+    },
+    {
+      "file_path": "scripts/review-r8-connectivity.py",
+      "package_file_id": "d9508c94-0ad2-42a5-bbb5-234357714c7f"
+    },
+    {
+      "file_path": "scripts/review-r8-exports.py",
+      "package_file_id": "0243290c-b566-4634-a8b7-a70edc89a80c"
+    },
+    {
+      "file_path": "scripts/review-r8-power.py",
+      "package_file_id": "08f933a8-520c-4c8f-9dff-b1c7eaf7d71a"
+    },
+    {
+      "file_path": "scripts/review-r8-process.py",
+      "package_file_id": "0999390f-8934-434f-bab1-350b0f26d144"
+    },
+    {
+      "file_path": "scripts/stage-registry.py",
+      "package_file_id": "5d985d27-1ccc-42df-b55f-f3f51cade3a1"
+    },
+    {
+      "file_path": "scripts/update-r2-bom.py",
+      "package_file_id": "5ec66ede-d36c-4255-a853-c78d973744e8"
+    },
+    {
+      "file_path": "scripts/validate-r2.py",
+      "package_file_id": "c85fa2a3-f2d7-4039-9f23-a02da985126e"
+    },
+    {
+      "file_path": "scripts/validate-r5.py",
+      "package_file_id": "92ff3725-7160-42fb-a643-ede11667d75e"
+    },
+    {
+      "file_path": "scripts/validate-r6-outputs.py",
+      "package_file_id": "a44b838e-834e-4f66-97d2-1d959002d84f"
+    },
+    {
+      "file_path": "scripts/validate-r6.py",
+      "package_file_id": "891d42f1-8196-47c5-8f2f-f09b5d1f3dea"
+    },
+    {
+      "file_path": "scripts/write-r3-bom.py",
+      "package_file_id": "48a3c176-5350-4b42-8a3f-d38f671ad330"
+    },
+    {
+      "file_path": "scripts/write-r4-reviews.py",
+      "package_file_id": "29564c9d-3e75-4af5-a8d2-3032d0fe58ff"
+    },
+    {
+      "file_path": "scripts/write-r5-issues.py",
+      "package_file_id": "a8323621-e0da-4106-8c39-662cd332bb81"
+    },
+    {
+      "file_path": "scripts/write-r6-documents.py",
+      "package_file_id": "0f5da5c2-d212-4c20-81f8-cfc03038c728"
+    },
+    {
+      "file_path": "scripts/write-r6-issues.py",
+      "package_file_id": "617172b3-19bd-40bf-8b31-104a96ef55f9"
+    },
+    {
+      "file_path": "scripts/write-r8-bom.py",
+      "package_file_id": "a4933d62-b53c-45f8-8c08-cb818b4621f6"
+    },
+    {
+      "file_path": "src/c7-escape-paths.ts",
+      "package_file_id": "59004b4a-a2bf-4e8c-a3c3-b040a63aa863"
+    },
+    {
+      "file_path": "src/charger-escape-paths.ts",
+      "package_file_id": "296ee990-1828-4c17-a2b5-4120af8fb0ca"
+    },
+    {
+      "file_path": "src/functional-markings.tsx",
+      "package_file_id": "37ad6a3c-2704-478d-a459-5ea2b2510bec"
+    },
+    {
+      "file_path": "src/r8-battery-cap-paths.ts",
+      "package_file_id": "966e4fc9-6fc1-41f7-96f7-d829debb7768"
+    },
+    {
+      "file_path": "src/r8-battery-ok-paths.ts",
+      "package_file_id": "7619c996-df65-45e2-bbe5-b973d1a87ef9"
+    },
+    {
+      "file_path": "src/r8-boot-paths.ts",
+      "package_file_id": "35c3f43f-e152-474c-8e6e-805e77bc36e7"
+    },
+    {
+      "file_path": "src/r8-bulk-cap-paths.ts",
+      "package_file_id": "08ea5fef-29dc-417d-bdb1-89cbea39d8a8"
+    },
+    {
+      "file_path": "src/r8-cc-paths.ts",
+      "package_file_id": "31daf3ca-c8c4-46e2-8a4b-5b797bde9854"
+    },
+    {
+      "file_path": "src/r8-charge-stat-paths.ts",
+      "package_file_id": "2c8f39b3-f490-403e-91f0-9228afdec238"
+    },
+    {
+      "file_path": "src/r8-connector-paths.ts",
+      "package_file_id": "72902065-d3b8-42c2-85d7-0216bd6f1f48"
+    },
+    {
+      "file_path": "src/r8-mosfet-paths.ts",
+      "package_file_id": "f3836e70-0c46-4224-95fc-4fa79f770986"
+    },
+    {
+      "file_path": "src/r8-power-paths.ts",
+      "package_file_id": "c5f1f431-2b24-4c23-bc61-d9d0428b8d58"
+    },
+    {
+      "file_path": "src/r8-prog-paths.ts",
+      "package_file_id": "2fd8b1a9-7400-4bb7-b499-3f10885796da"
+    },
+    {
+      "file_path": "src/r8-prog-routing-paths.ts",
+      "package_file_id": "4c1c6c74-2c3b-470f-b095-40c69c5f8884"
+    },
+    {
+      "file_path": "src/r8-radio-cap-paths.ts",
+      "package_file_id": "4481b771-80a1-4134-8d49-f4cdfdb08b21"
+    },
+    {
+      "file_path": "src/r8-supervisor-vbat-paths.ts",
+      "package_file_id": "88489b50-d3d9-403b-b2b4-e5a17dfdfc3d"
+    },
+    {
+      "file_path": "src/r8-sys-paths.ts",
+      "package_file_id": "8104e065-a6ba-4b89-b320-3b5dc4bb414d"
+    },
+    {
+      "file_path": "src/r8-temperature-hot-paths.ts",
+      "package_file_id": "001c4c6e-525c-4c4f-bbf4-e448a55d1be2"
+    },
+    {
+      "file_path": "src/r8-ts-bias-paths.ts",
+      "package_file_id": "ef14a543-49c7-466c-aa93-e116378b6968"
+    },
+    {
+      "file_path": "src/r8-uart-rx-paths.ts",
+      "package_file_id": "a32f6958-34a0-40cf-93a4-0512833b7962"
+    },
+    {
+      "file_path": "src/r8-usb-disable-paths.ts",
+      "package_file_id": "5629bf85-1af6-4131-88e4-90be6154aae3"
+    },
+    {
+      "file_path": "src/r8-vset-paths.ts",
+      "package_file_id": "b6443fb5-0953-4ab5-be56-e1dd057cf391"
+    },
+    {
+      "file_path": "src/remote-circuit.tsx",
+      "package_file_id": "45474047-4b96-442b-b494-a0c70982eb65"
+    },
+    {
+      "file_path": "src/sensor-escape-paths.ts",
+      "package_file_id": "a17af20a-9aea-484f-a78d-7deab0678517"
+    },
+    {
+      "file_path": "src/temperature-escape-paths.ts",
+      "package_file_id": "e9b6724b-f223-4402-a538-12574361a348"
+    },
+    {
+      "file_path": "src/usb-escape-paths.ts",
+      "package_file_id": "92f42a86-fbc5-4798-82c1-d304b9276aad"
+    },
+    {
+      "file_path": "tests/cam/test_exported_trace_geometry.py",
+      "package_file_id": "0ecfe591-59db-4ace-bf40-51ad8af8aef8"
+    },
+    {
+      "file_path": "tests/cam/test_process_metrics.py",
+      "package_file_id": "249bde69-10aa-40e9-adfc-9e24afd2c27c"
+    },
+    {
+      "file_path": "tests/cam/test_through_pad_geometry.py",
+      "package_file_id": "880a61e7-45d5-4c3f-80c9-4e660a90bf71"
+    },
+    {
+      "file_path": "tests/fixtures/alps-side-shutter.circuit.tsx",
+      "package_file_id": "a856a181-2573-436a-a325-87afa0d717de"
+    },
+    {
+      "file_path": "tests/fixtures/alps-supplier.circuit.tsx",
+      "package_file_id": "8bea2999-96f3-4b7c-ab70-428315c510a4"
+    },
+    {
+      "file_path": "tests/fixtures/esp32-import.circuit.tsx",
+      "package_file_id": "4d499e7f-449b-43c5-a2fd-0597ec111724"
+    },
+    {
+      "file_path": "tests/fixtures/espc2-import.circuit.tsx",
+      "package_file_id": "60025604-d59e-400f-ac10-0747d9cde1f5"
+    },
+    {
+      "file_path": "tests/fixtures/espc3-import.circuit.tsx",
+      "package_file_id": "b7d9c1ad-3877-4339-9d47-09b44e2c9035"
+    },
+    {
+      "file_path": "tests/fixtures/r8-jst3-supplier.circuit.tsx",
+      "package_file_id": "21f332e1-e2f5-4836-80f0-4cb56335af67"
+    },
+    {
+      "file_path": "tests/fixtures/r8-side-placement.circuit.tsx",
+      "package_file_id": "6a6039e1-541f-4db8-b1f3-2241f9ca6401"
+    },
+    {
+      "file_path": "tests/fixtures/r8-standard-placement.circuit.tsx",
+      "package_file_id": "58fbfd3b-33e8-4212-b330-19d28997143f"
+    },
+    {
+      "file_path": "tests/fixtures/side-shutter-supplier.circuit.tsx",
+      "package_file_id": "ddae70df-84df-4000-a39d-eb442ea95a61"
+    },
+    {
+      "file_path": "tests/fixtures/side-shutter.circuit.tsx",
+      "package_file_id": "12bda08f-f047-4c12-8ed1-88377e3e6e51"
+    },
+    {
+      "file_path": "tests/r8-power-metadata.test.ts",
+      "package_file_id": "7f8496ac-272e-4a3f-bdf2-fcf58bfe1bdc"
+    },
+    {
+      "file_path": "tests/test_cloud_runner.py",
+      "package_file_id": "47be3e73-7004-4abf-bbe8-5b901217a794"
+    },
+    {
+      "file_path": "tests/test_r8_alternative_radio.py",
+      "package_file_id": "29bdf433-5811-4c23-96d4-7f7e459f33f9"
+    },
+    {
+      "file_path": "tests/test_r8_c3_radio.py",
+      "package_file_id": "6d24353f-639c-4223-bd22-332ae2365d27"
+    },
+    {
+      "file_path": "tests/test_r8_qualification.py",
+      "package_file_id": "08b85043-5dad-4d65-b82c-7ac68554ccc7"
+    },
+    {
+      "file_path": "tests/test_side_shutter.py",
+      "package_file_id": "b1f42be5-3b55-452c-bdad-c49b4af86794"
+    },
+    {
+      "file_path": "tests/test_standard_jst_programmer.py",
+      "package_file_id": "90593435-776a-4d05-8593-c7c3208dc92c"
+    },
+    {
+      "file_path": "tooling/vendor/circuit-json-qualified-source.tgz",
+      "package_file_id": "50ad30a8-c0f8-4d00-b485-b72bdbb46d2f"
+    },
+    {
+      "file_path": "tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+      "package_file_id": "dbc0382b-a72f-4870-8b8d-71d0e5891e57"
+    },
+    {
+      "file_path": "tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+      "package_file_id": "0ca6a292-f71f-4817-aded-6a007f759c65"
+    },
+    {
+      "file_path": "tooling/vendor/circuit-json-util-qualified-source.tgz",
+      "package_file_id": "1530d0d1-2e38-4504-b53d-93f05dfb3911"
+    },
+    {
+      "file_path": "tooling/vendor/circuit-to-svg-qualified-source.tgz",
+      "package_file_id": "81e2a969-a3ae-4eb6-ad16-b9260e4f86b4"
+    },
+    {
+      "file_path": "tooling/vendor/core-r8-silk-visibility.tgz",
+      "package_file_id": "e5a27f2d-bc88-46f6-a11f-114f5cd277d0"
+    },
+    {
+      "file_path": "tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+      "package_file_id": "317d86b7-b4d3-4981-beec-dd384aeb511b"
+    },
+    {
+      "file_path": "tooling/vendor/props-r8-mask-style.tgz",
+      "package_file_id": "ed1280bd-bb79-4b63-9dce-ad688133180a"
+    },
+    {
+      "file_path": "tscircuit.config.json",
+      "package_file_id": "dbd5509e-4a48-4df4-85c3-d4e7dd28d0e1"
+    },
+    {
+      "file_path": "tsconfig.json",
+      "package_file_id": "adff4d66-62ec-4b99-9b74-da8777eace8c"
+    }
+  ],
+  "native_failed_file": "dist/index/circuit.json",
+  "native_failure": "Ky default10000ms package_files/create timeout; CLI has no supported timeout/resume flag",
+  "registry_has_circuit_file": true
+}

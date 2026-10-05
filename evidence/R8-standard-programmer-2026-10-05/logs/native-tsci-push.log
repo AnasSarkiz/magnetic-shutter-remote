@@ -1,0 +1,275 @@
+{
+  "started_utc": "20261005T220243056530Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/registry-package-r8-standard-20261005 && exec /workspace/magnetic-shutter-remote/node_modules/.bin/tsci push index.circuit.tsx --include-dist --version-tag prototype"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+⬆︎ BOM.csv
+⬆︎ BOM.md
+⬆︎ README.md
+⬆︎ VALIDATION.md
+⬆︎ bom.json
+⬆︎ bun.lock
+  dist/index/circuit.json - failed
+⬆︎ evidence/R8-standard-programmer-2026-10-05/J3-supplier-terminal-registration.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md
+⬆︎ evidence/R8-standard-programmer-2026-10-05/REVIEW.md
+⬆︎ evidence/R8-standard-programmer-2026-10-05/SW2-supplier-terminal-registration.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/final-manufacturing.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/final-native-checks.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/final-process/process-review.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/final-readback/readback.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/physical-connectivity.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/power-path-measurements.json
+📦 evidence/R8-standard-programmer-2026-10-05/qualification/C160389-supplier.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/land-audit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-release.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json
+⬆︎ firmware/README.md
+⬆︎ firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json
+📦 firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin
+⬆︎ imports/A_0603WAF1001T5E.tsx
+⬆︎ imports/A_0603WAF1002T5E.tsx
+⬆︎ imports/A_0603WAF1003T5E.tsx
+⬆︎ imports/A_0603WAF1303T5E.tsx
+⬆︎ imports/A_0603WAF1621T5E.tsx
+⬆︎ imports/A_0603WAF1872T5E.tsx
+⬆︎ imports/A_0603WAF5101T5E.tsx
+⬆︎ imports/A_2N7002.tsx
+📦 imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx
+⬆︎ imports/BQ25185DLHR.tsx
+⬆︎ imports/CC0603KRX7R9BB104.tsx
+⬆︎ imports/CL10A475KO8NNNC.tsx
+⬆︎ imports/CL21A106KAYNNNE.tsx
+📦 imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj
+⬆︎ imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step
+⬆︎ imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx
+📦 imports/ESPC2_12E_N4/ESPC2_12E_N4.obj
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.step
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx
+📦 imports/ESPC3_12_N4/ESPC3_12_N4.obj
+⬆︎ imports/ESPC3_12_N4/ESPC3_12_N4.step
+⬆︎ imports/ESPC3_12_N4/ESPC3_12_N4.tsx
+⬆︎ imports/KT_0603R.tsx
+⬆︎ imports/MSK12C02.tsx
+📦 imports/SKRTLAE010/SKRTLAE010.obj
+⬆︎ imports/SKRTLAE010/SKRTLAE010.step
+⬆︎ imports/SKRTLAE010/SKRTLAE010.tsx
+📦 imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj
+⬆︎ imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step
+⬆︎ imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx
+📦 imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj
+⬆︎ imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step
+⬆︎ imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx
+⬆︎ imports/TCC0603COG470J500CT.tsx
+⬆︎ imports/TMP390A2DRLR.tsx
+⬆︎ imports/TPS3839G33DBZR.tsx
+📦 imports/TPS63031DSKR/TPS63031DSKR.obj
+⬆︎ imports/TPS63031DSKR/TPS63031DSKR.step
+⬆︎ imports/TPS63031DSKR/TPS63031DSKR.tsx
+📦 imports/TS24CA/TS24CA.obj
+⬆︎ imports/TS24CA/TS24CA.step
+⬆︎ imports/TS24CA/TS24CA.tsx
+⬆︎ imports/TS_1088_AR02016.tsx
+⬆︎ imports/USB4215_03_A.tsx
+⬆︎ index.circuit.tsx
+⬆︎ package.json
+⬆︎ registry-source-manifest.json
+⬆︎ scripts/audit-authored-placements.ts
+⬆︎ scripts/audit-drills.ts
+⬆︎ scripts/audit-r4-qualification.py
+⬆︎ scripts/audit-r6-registration.py
+⬆︎ scripts/audit-r7-led-fixtures.ts
+⬆︎ scripts/audit-r8-circuit.ts
+⬆︎ scripts/audit-r8-jst3.py
+⬆︎ scripts/audit-r8-module.py
+⬆︎ scripts/audit-radio.py
+⬆︎ scripts/audit-side-shutter.py
+⬆︎ scripts/audit_r7_jst7.py
+⬆︎ scripts/audit_r7_paste_fixture.py
+⬆︎ scripts/check-mechanical-meshes.py
+⬆︎ scripts/check-r6-mechanical-meshes.py
+⬆︎ scripts/check-r6-preservation.py
+⬆︎ scripts/check-r8-output.ts
+⬆︎ scripts/check-routed.ts
+⬆︎ scripts/compare-r5-r6.py
+⬆︎ scripts/curved_geometry.py
+⬆︎ scripts/draw-assembly-review.py
+⬆︎ scripts/draw-r4-assembly.py
+⬆︎ scripts/draw-r5-dimensions.py
+⬆︎ scripts/draw-r5-review.py
+⬆︎ scripts/draw-r6-dimensions.py
+⬆︎ scripts/draw-r6-review.py
+⬆︎ scripts/draw-usb-qualification.py
+⬆︎ scripts/export-assembly.ts
+⬆︎ scripts/export-gerbers.ts
+⬆︎ scripts/fetch-qualified-datasheets.py
+⬆︎ scripts/finalize-r2-bom.py
+⬆︎ scripts/flash-r8-standard-jst.py
+⬆︎ scripts/inspect-exported-slots.py
+⬆︎ scripts/lib/qualification-source-placements.ts
+⬆︎ scripts/manufacturing-audit.py
+⬆︎ scripts/measure-j1-export.py
+⬆︎ scripts/package_draft.py
+⬆︎ scripts/package_r2.py
+⬆︎ scripts/package_r3.py
+⬆︎ scripts/package_r4_dfm.py
+⬆︎ scripts/package_r5_dfm.py
+⬆︎ scripts/package_r6_prototype.py
+⬆︎ scripts/place-r5-markings.py
+⬆︎ scripts/qualification_paths.py
+⬆︎ scripts/r7_power_budget.py
+⬆︎ scripts/recheck_board_sourcing.py
+⬆︎ scripts/record-r3-tooling.py
+⬆︎ scripts/record-r5-tooling.py
+⬆︎ scripts/record-r6-tooling.py
+⬆︎ scripts/render-final-cam.py
+⬆︎ scripts/render-legend-review.py
+⬆︎ scripts/render-r6-pcb.ts
+⬆︎ scripts/render-r6-review.ts
+⬆︎ scripts/render-r8-land-comparison.py
+⬆︎ scripts/render-r8-review.ts
+⬆︎ scripts/render-regression.ts
+⬆︎ scripts/render-sheets.ts
+⬆︎ scripts/review-gerbers.py
+⬆︎ scripts/review-order-usb-mask.py
+⬆︎ scripts/review-r3-exports.py
+⬆︎ scripts/review-r4-manufacturing.py
+⬆︎ scripts/review-r5-ground.py
+⬆︎ scripts/review-r5-legend.py
+⬆︎ scripts/review-r5-manufacturing.py
+⬆︎ scripts/review-r5-stencil.py
+⬆︎ scripts/review-r5-usb-pins.py
+⬆︎ scripts/review-r6-3d.py
+⬆︎ scripts/review-r6-ground.py
+⬆︎ scripts/review-r6-legend.py
+⬆︎ scripts/review-r6-manufacturing.py
+⬆︎ scripts/review-r6-mechanics.py
+⬆︎ scripts/review-r6-stencil.py
+⬆︎ scripts/review-r8-connectivity.py
+⬆︎ scripts/review-r8-exports.py
+⬆︎ scripts/review-r8-power.py
+⬆︎ scripts/review-r8-process.py
+⬆︎ scripts/stage-registry.py
+⬆︎ scripts/update-r2-bom.py
+⬆︎ scripts/validate-r2.py
+⬆︎ scripts/validate-r5.py
+⬆︎ scripts/validate-r6-outputs.py
+⬆︎ scripts/validate-r6.py
+⬆︎ scripts/write-r3-bom.py
+⬆︎ scripts/write-r4-reviews.py
+⬆︎ scripts/write-r5-issues.py
+⬆︎ scripts/write-r6-documents.py
+⬆︎ scripts/write-r6-issues.py
+⬆︎ scripts/write-r8-bom.py
+⬆︎ src/c7-escape-paths.ts
+⬆︎ src/charger-escape-paths.ts
+⬆︎ src/functional-markings.tsx
+⬆︎ src/r8-battery-cap-paths.ts
+⬆︎ src/r8-battery-ok-paths.ts
+⬆︎ src/r8-boot-paths.ts
+⬆︎ src/r8-bulk-cap-paths.ts
+⬆︎ src/r8-cc-paths.ts
+⬆︎ src/r8-charge-stat-paths.ts
+⬆︎ src/r8-connector-paths.ts
+⬆︎ src/r8-mosfet-paths.ts
+⬆︎ src/r8-power-paths.ts
+⬆︎ src/r8-prog-paths.ts
+⬆︎ src/r8-prog-routing-paths.ts
+⬆︎ src/r8-radio-cap-paths.ts
+⬆︎ src/r8-supervisor-vbat-paths.ts
+⬆︎ src/r8-sys-paths.ts
+⬆︎ src/r8-temperature-hot-paths.ts
+⬆︎ src/r8-ts-bias-paths.ts
+⬆︎ src/r8-uart-rx-paths.ts
+⬆︎ src/r8-usb-disable-paths.ts
+⬆︎ src/r8-vset-paths.ts
+⬆︎ src/remote-circuit.tsx
+⬆︎ src/sensor-escape-paths.ts
+⬆︎ src/temperature-escape-paths.ts
+⬆︎ src/usb-escape-paths.ts
+⬆︎ tests/cam/test_exported_trace_geometry.py
+⬆︎ tests/cam/test_process_metrics.py
+⬆︎ tests/cam/test_through_pad_geometry.py
+⬆︎ tests/fixtures/alps-side-shutter.circuit.tsx
+⬆︎ tests/fixtures/alps-supplier.circuit.tsx
+⬆︎ tests/fixtures/esp32-import.circuit.tsx
+⬆︎ tests/fixtures/espc2-import.circuit.tsx
+⬆︎ tests/fixtures/espc3-import.circuit.tsx
+⬆︎ tests/fixtures/r8-jst3-supplier.circuit.tsx
+⬆︎ tests/fixtures/r8-side-placement.circuit.tsx
+⬆︎ tests/fixtures/r8-standard-placement.circuit.tsx
+⬆︎ tests/fixtures/side-shutter-supplier.circuit.tsx
+⬆︎ tests/fixtures/side-shutter.circuit.tsx
+⬆︎ tests/r8-power-metadata.test.ts
+⬆︎ tests/test_cloud_runner.py
+⬆︎ tests/test_r8_alternative_radio.py
+⬆︎ tests/test_r8_c3_radio.py
+⬆︎ tests/test_r8_qualification.py
+⬆︎ tests/test_side_shutter.py
+⬆︎ tests/test_standard_jst_programmer.py
+📦 tooling/vendor/circuit-json-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
+📦 tooling/vendor/circuit-json-util-qualified-source.tgz
+📦 tooling/vendor/circuit-to-svg-qualified-source.tgz
+📦 tooling/vendor/core-r8-silk-visibility.tgz
+📦 tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+📦 tooling/vendor/props-r8-mask-style.tgz
+⬆︎ tscircuit.config.json
+⬆︎ tsconfig.json
+
+
+Upload Summary
+  Succeeded: 217 files
+  Failed: 1 files
+    - dist/index/circuit.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+
+Publish completed with 217 files uploaded and 1 failed upload(s)
+{
+  "started_utc": "20261005T220243056530Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/registry-package-r8-standard-20261005 && exec /workspace/magnetic-shutter-remote/node_modules/.bin/tsci push index.circuit.tsx --include-dist --version-tag prototype"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T22:11:05.636977+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 883976,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T220243056530Z.log"
+}
