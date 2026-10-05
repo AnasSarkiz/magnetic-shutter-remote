@@ -41,7 +41,17 @@ for (const layer of ["top", "bottom"] as const) {
 	);
 }
 for (const sheet of circuit.filter((e) => e.type === "schematic_sheet")) {
-	// Read-only detail view omits page furniture; complete native A4 files stay in dist.
+	const fullSheet = convertCircuitJsonToSchematicSvg(circuit, {
+		schematicSheetId: sheet.schematic_sheet_id,
+	});
+	await Bun.write(`${directory}/${sheet.name}-a4.svg`, fullSheet);
+	await Bun.write(
+		`${directory}/${sheet.name}-a4.png`,
+		new Resvg(fullSheet, { fitTo: { mode: "width", value: 2200 } })
+			.render()
+			.asPng(),
+	);
+	// Detail view omits furniture; the complete native A4 view is retained above.
 	const detail = circuit.filter(
 		(e) =>
 			!e.type.startsWith("schematic_") ||

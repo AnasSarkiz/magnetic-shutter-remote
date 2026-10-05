@@ -1,0 +1,1525 @@
+{
+  "started_utc": "20261005T214606810852Z",
+  "command": [
+    "bun",
+    "install",
+    "--ignore-scripts",
+    "--verbose",
+    "--network-concurrency",
+    "4"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun install v1.3.9 (cf6cdbbb)
+Overrides changed since last install
+info: cannot move files from tempdir: RenameAcrossMountPoints, using fallback
+Enqueue package manifest for download: @tscircuit/capacity-autorouter
+Resolving dependencies
+ package.json
+ LICENSE
+ README.md
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+[@tscircuit/circuit-json-util] Extract .fdfbf45f5eddf1cf-00000002.circuit-json-util (decompressed 126.81 KB tgz file in 962.955us)
+[@tscircuit/circuit-json-util] Extracted to .fdfbf45f5eddf1cf-00000002.circuit-json-util (2.633ms)
+Enqueue package manifest for download: @flatten-js/core
+Enqueue package manifest for download: parsel-js
+ package.json
+ LICENSE
+ README.md
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+[circuit-json-to-pnp-csv] Extract .dcffecfd7b5f55ff-00000006.circuit-json-to-pnp-csv (decompressed 12.72 KB tgz file in 106.629us)
+[circuit-json-to-pnp-csv] Extracted to .dcffecfd7b5f55ff-00000006.circuit-json-to-pnp-csv (666.914us)
+[PackageManager] waiting for 13 tasks
+Enqueue package manifest for download: papaparse
+Enqueue package manifest for download: transformation-matrix
+ package.json
+ README.md
+ dist/index.d.mts
+ dist/index.mjs
+ dist/index.mjs.map
+[circuit-json] Extract .3bdfeed95ecf7fdd-00000001.circuit-json (decompressed 0.27 MB tgz file in 3.42ms)
+[circuit-json] Extracted to .3bdfeed95ecf7fdd-00000001.circuit-json (6.137ms)
+[PackageManager] waiting for 14 tasks
+ package.json
+ LICENSE
+ README.md
+ dist/chunk-26VD37O6.js
+ dist/chunk-26VD37O6.js.map
+ dist/chunk-FJWGTRPI.js
+ dist/chunk-FJWGTRPI.js.map
+ dist/cli.d.ts
+ dist/cli.js
+ dist/cli.js.map
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+[circuit-json-to-gerber] Extract .3ddfff5bdf7fbffe-00000007.circuit-json-to-gerber (decompressed 172.71 KB tgz file in 1.011ms)
+[circuit-json-to-gerber] Extracted to .3ddfff5bdf7fbffe-00000007.circuit-json-to-gerber (2.143ms)
+[PackageManager] waiting for 13 tasks
+Enqueue package manifest for download: @tscircuit/alphabet
+Enqueue package manifest for download: fast-json-stable-stringify
+Enqueue package manifest for download: polygon-clipping
+ package.json
+ README.md
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+[circuit-to-svg] Extract .7edbccdfdb3bffef-00000008.circuit-to-svg (decompressed 0.32 MB tgz file in 1.425ms)
+[circuit-to-svg] Extracted to .7edbccdfdb3bffef-00000008.circuit-to-svg (2.32ms)
+[PackageManager] waiting for 15 tasks
+Enqueue package manifest for download: @types/node
+Enqueue package manifest for download: bun-types
+Enqueue package manifest for download: calculate-elbow
+Enqueue package manifest for download: debug
+Enqueue package manifest for download: svg-path-commander
+Enqueue package manifest for download: svgson
+> HTTP/1.1 GET https://registry.npmjs.org/@flatten-js%2fcore
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: raw.githubusercontent.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: raw.githubusercontent.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://registry.npmjs.org/@tscircuit%2fcapacity-autorouter
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+ package.json
+ LICENSE
+ README.md
+ dist/index.d.ts
+ dist/index.js
+[@tscircuit/core] Extract .7edbea5f7afeecef-00000004.core (decompressed 1.18 MB tgz file in 12.729ms)
+[@tscircuit/core] Extracted to .7edbea5f7afeecef-00000004.core (28.46ms)
+[PackageManager] waiting for 20 tasks
+Enqueue package manifest for download: @lume/kiwi
+Enqueue package manifest for download: calculate-cell-boundaries
+Enqueue package manifest for download: calculate-packing
+Enqueue package manifest for download: css-select
+Enqueue package manifest for download: format-si-unit
+Enqueue package manifest for download: nanoid
+Enqueue package manifest for download: performance-now
+Enqueue package manifest for download: react-reconciler
+Enqueue package manifest for download: zod
+ package.json
+ LICENSE
+ README.md
+ dist/index.d.ts
+ dist/index.js
+[@tscircuit/core] Extract .dafbca5b7bdf1fa7-00000003.core (decompressed 1.18 MB tgz file in 23.5ms)
+[@tscircuit/core] Extracted to .dafbca5b7bdf1fa7-00000003.core (30.281ms)
+[PackageManager] waiting for 28 tasks
+ package.json
+ LICENSE
+ README.md
+ dist/browser/index.d.ts
+ dist/browser/index.js
+ dist/browser/index.js.map
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+ dist/main.cjs
+ dist/main.cjs
+ dist/main.cjs.map
+ dist/main.d.cts
+[easyeda] Extract .39dfecdd7bad7ee9-00000009.easyeda (decompressed 1.41 MB tgz file in 14.04ms)
+[easyeda] Extracted to .39dfecdd7bad7ee9-00000009.easyeda (19.578ms)
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+ package.json
+ LICENSE
+ README.md
+ dist/index.d.ts
+ dist/index.js
+ dist/index.js.map
+ lib/assembly/cadassembly.ts
+ lib/assembly/device.ts
+ lib/assembly/index.ts
+ lib/assembly/screen.ts
+ lib/assembly/subassembly.ts
+ lib/common/autocomplete.ts
+ lib/common/cadModel.ts
+ lib/common/commonShape.ts
+ lib/common/connectionsProp.ts
+ lib/common/direction.ts
+ lib/common/distance.ts
+ lib/common/fanoutBoundaryPadding.ts
+ lib/common/fanoutProps.ts
+ lib/common/fanoutTracePath.ts
+ lib/common/fivePointAnchor.ts
+ lib/common/footprintProp.ts
+ lib/common/implicitBreakoutPointSolver.ts
+ lib/common/kicadFootprintMetadata.ts
+ lib/common/kicadPinMetadata.ts
+ lib/common/kicadSymbolMetadata.ts
+ lib/common/layout.ts
+ lib/common/ninePointAnchor.ts
+ lib/common/pcbOrientation.ts
+ lib/common/pcbPath.ts
+ lib/common/pcbStyle.ts
+ lib/common/pcbSx.ts
+ lib/common/pinAttributeMap.ts
+ lib/common/point.ts
+ lib/common/point3.ts
+ lib/common/portHints.ts
+ lib/common/schStyle.ts
+ lib/common/schematicOrientation.ts
+ lib/common/schematicPinDefinitions.ts
+ lib/common/schematicPinLabel.ts
+ lib/common/schematicPinStyle.ts
+ lib/common/schematicSize.ts
+ lib/common/symbolProp.ts
+ lib/common/url.ts
+ lib/components/ammeter.ts
+ lib/components/analogacsweepsimulation.ts
+ lib/components/analogdcoperatingpointsimulation.ts
+ lib/components/analogdcsweepsimulation.ts
+ lib/components/analogsimulation.ts
+ lib/components/analogsweepparameter.ts
+ lib/components/analogtransientsimulation.ts
+ lib/components/antenna.ts
+ lib/components/autoroutingphase.ts
+ lib/components/battery.ts
+ lib/components/board.ts
+ lib/components/breakout.ts
+ lib/components/breakoutpoint.ts
+ lib/components/bus.ts
+ lib/components/cadassembly.ts
+ lib/components/cadmodel.ts
+ lib/components/capacitor.ts
+ lib/components/chip.ts
+ lib/components/connector.ts
+ lib/components/constrainedlayout.ts
+ lib/components/constraint.ts
+ lib/components/copper-pour.ts
+ lib/components/copper-text.ts
+ lib/components/courtyard-circle.ts
+ lib/components/courtyard-outline.ts
+ lib/components/courtyard-pill.ts
+ lib/components/courtyard-rect.ts
+ lib/components/crystal.ts
+ lib/components/currentsource.ts
+ lib/components/cutout.ts
+ lib/components/differentialpair.ts
+ lib/components/diode.ts
+ lib/components/drc-check.ts
+ lib/components/fabrication-note-dimension.ts
+ lib/components/fabrication-note-path.ts
+ lib/components/fabrication-note-rect.ts
+ lib/components/fabrication-note-text.ts
+ lib/components/fiducial.ts
+ lib/components/footprint.ts
+ lib/components/fuse.ts
+ lib/components/group.ts
+ lib/components/hole.ts
+ lib/components/inductor.ts
+ lib/components/interconnect.ts
+ lib/components/internal-circuit.ts
+ lib/components/jumper.ts
+ lib/components/led.ts
+ lib/components/mosfet.ts
+ lib/components/mountedboard.ts
+ lib/components/net.ts
+ lib/components/netalias.ts
+ lib/components/netlabel.ts
+ lib/components/opamp.ts
+ lib/components/panel.ts
+ lib/components/pcb-bend.ts
+ lib/components/pcb-keepout.ts
+ lib/components/pcb-note-dimension.ts
+ lib/components/pcb-note-line.ts
+ lib/components/pcb-note-path.ts
+ lib/components/pcb-note-rect.ts
+ lib/components/pcb-note-text.ts
+ lib/components/pcb-stiffener.ts
+ lib/components/pcb-trace.ts
+ lib/components/pin-header.ts
+ lib/components/pinout.ts
+ lib/components/platedhole.ts
+ lib/components/port.ts
+ lib/components/potentiometer.ts
+ lib/components/power-source.ts
+ lib/components/push-button.ts
+ lib/components/resistor.ts
+ lib/components/resonator.ts
+ lib/components/schematic-arc.ts
+ lib/components/schematic-box.ts
+ lib/components/schematic-cell.ts
+ lib/components/schematic-circle.ts
+ lib/components/schematic-graphic.ts
+ lib/components/schematic-line.ts
+ lib/components/schematic-path.ts
+ lib/components/schematic-rect.ts
+ lib/components/schematic-row.ts
+ lib/components/schematic-section.ts
+ lib/components/schematic-sheet.ts
+ lib/components/schematic-symbol.ts
+ lib/components/schematic-table.ts
+ lib/components/schematic-text.ts
+ lib/components/silkscreen-circle.ts
+ lib/components/silkscreen-graphic.ts
+ lib/components/silkscreen-line.ts
+ lib/components/silkscreen-path.ts
+ lib/components/silkscreen-rect.ts
+ [PackageManager] waiting for 27 tasks
+lib/components/silkscreen-text.ts
+ lib/components/smtpad.ts
+ lib/components/solderjumper.ts
+ lib/components/solderpaste.ts
+ lib/components/spicemodel.ts
+ lib/components/stampboard.ts
+ lib/components/subcircuit.ts
+ lib/components/subpanel.ts
+ lib/components/switch.ts
+ lib/components/symbol.ts
+ lib/components/testpoint.ts
+ lib/components/toolingrail.ts
+ lib/components/trace-hint.ts
+ lib/components/trace.ts
+ lib/components/transistor.ts
+ lib/components/via.ts
+ lib/components/voltageprobe.ts
+ lib/components/voltagesource.ts
+ lib/customDrc.ts
+ lib/enclosure/cutout-aperture.ts
+ lib/enclosure/fdm/box.ts
+ lib/enclosure/fdm/index.ts
+ lib/enclosure/index.ts
+ lib/generated/footprinter-autocomplete.ts
+ lib/generated/jlcpcb-autocomplete.ts
+ lib/generated/kicad-autocomplete.ts
+ lib/generated/kicad-footprint-strings.ts
+ lib/index.ts
+ lib/manual-edits/index.ts
+ lib/manual-edits/manual-edit-events/base_manual_edit_event.ts
+ lib/manual-edits/manual-edit-events/edit_pcb_component_location_event.ts
+ lib/manual-edits/manual-edit-events/edit_pcb_group_location_event.ts
+ lib/manual-edits/manual-edit-events/edit_schematic_component_location_event.ts
+ lib/manual-edits/manual-edit-events/edit_schematic_group_location_event.ts
+ lib/manual-edits/manual-edit-events/edit_trace_hint_event.ts
+ lib/manual-edits/manual-edit-events/index.ts
+ lib/manual-edits/manual_edit_event.ts
+ lib/manual-edits/manual_edits_file.ts
+ lib/manual-edits/manual_pcb_placement.ts
+ lib/manual-edits/manual_schematic_placement.ts
+ lib/manual-edits/manual_trace_hint.ts
+ lib/platformConfig.ts
+ lib/projectConfig.ts
+ lib/typecheck.ts
+ lib/utility-types/connections-and-selectors.ts
+[@tscircuit/props] Extract .b8dbfd795f7adacf-00000005.props (decompressed 0.92 MB tgz file in 10.264ms)
+[@tscircuit/props] Extracted to .b8dbfd795f7adacf-00000005.props (33.449ms)
+[PackageManager] waiting for 26 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=gaZJFtBv9TGakEb_QogneexzXOVgUYcUaU5XVuGe6so-1791236766.92471-1.0.1.1-4l4G2oOf6Cr08Z.sbB2rD3i9iFH7c7WNvW_9OZHOkoL4YZtiPt5RM0poEmGcbRKScFRj1HiSV4l3kvp99b04MLQMmr2rCQuHclKA3iUFb8Q0RpjEdLLkkJJ7KHFCMzi6; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:06 GMT
+< set-cookie: _cfuvid=AYgqt48NoTmxUroqMjGQL009NFL0cjOdExE3rtQguts-1791236766.92471-1.0.1.1-SntLfS5ry8fZaSQ3VN2w1a99TL_II_JR6YxskP1P2sw; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e014c1a164e-SYD
+< cf-cache-status: HIT
+< etag: W/"89fa4724227b0c0537659633956b900a"
+< access-control-allow-origin: *
+< age: 63
+< cache-control: public, max-age=300
+< last-modified: Tue, 18 Aug 2026 19:39:24 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 53
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 25 tasks
+    [125.72ms]
+Downloaded @flatten-js/core versions
+> HTTP/1.1 GET https://registry.npmjs.org/parsel-js
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+[PackageManager] waiting for 25 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=0wu1yCFrM_GQV6MJwsdPRJIPVYMwTVOumwRuZNiG6ms-1791236766.9933393-1.0.1.1-gJYBBKQWfng52bLpx.4b6k2tkH5SjzkDnJKBPTHOl2a8SyQi81a8NXgwhViUNFZBtQupyhwD7ofPlmK1Pu5bYu2z80XtwgeH6N4K4GS8I2bRvxP7XJ2w7jHjJjArJ86o; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=TPFM0eSEUrEMnJ68yyUHXIcrYXTC6JJtCqmiOl4b_2s-1791236766.9933393-1.0.1.1-KJnpupKp06XSZhcI3asqNHijf.kFXVlO47ZpzJ7UYEU; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e01bc131505-SYD
+< cf-cache-status: HIT
+< etag: W/"80cd728f337de6db64df8b26faa9c2ad"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Tue, 23 Jun 2026 02:02:49 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 187
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 24 tasks
+    [208.28ms]
+Downloaded parsel-js versions
+[PackageManager] waiting for 24 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/papaparse
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=39RVHtzA7eXyXhADbPoQeu1VxW1P_VsG2DJORUR4P4g-1791236767.2065856-1.0.1.1-4NK85W.9qihNT2UhU_SDCru0LFUB3BDMFi6744AgebzQF7FoZmi8mCtAP1Lu9CGxMXQdTYB9aeolufOKuod8o1SohnAcOg2K2RaTndW2GVG7V5eeQRATkWhF5IAfb1nN; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=vYk.fLYRjse1XHG9bKg0iwn7cgkPtiYJxRy52Hs.ZLw-1791236767.2065856-1.0.1.1-P9PZXKMpHaokLqifYGSLY1DO8LDF0ngmdLE9q4dg1i8; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e030f088a71-SYD
+< cf-cache-status: HIT
+< etag: W/"90750df08b50ed7a0070b3a47d4e7d00"
+< access-control-allow-origin: *
+< age: 254
+< cache-control: public, max-age=300
+< last-modified: Mon, 24 Aug 2026 14:28:24 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 39
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 23 tasks
+    [63.37ms]
+Downloaded papaparse versions
+[PackageManager] waiting for 23 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/transformation-matrix
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=Qrakyomsy42L_VhlW0T515CJjmFgcn1Zgfqw3VCSSic-1791236767.270099-1.0.1.1-XwzPyMTjyzXKM9KakvhaAp3QuQ1IrFCBNabvu4Dly4YORR29PxUs_9B3R7Y32EoPzUVnsIF9W.9TDcN7oGRfu5GVTAEO077I9dvKrQgGQxPEEfNxQbEn8wmdXNgTyVOH; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=ZLJS8lSwObJlwRJn3c45RWflaZCV4HORKFCjFr9R6Do-1791236767.270099-1.0.1.1-BCAwfERvTuU7UKWmwHmdD1fXZWKrVoRPlFU4hvMh8TI; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e036cd56a54-SYD
+< cf-cache-status: HIT
+< etag: W/"6364297900cb1316d6047d3150d026db"
+< access-control-allow-origin: *
+< age: 272
+< cache-control: public, max-age=300
+< last-modified: Mon, 18 Aug 2025 15:03:28 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 44
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 22 tasks
+    [66.87ms]
+Downloaded transformation-matrix versions
+[PackageManager] waiting for 22 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/@tscircuit%2falphabet
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:06 GMT
+< server: envoy
+
+< 200 OK
+< cache-control: max-age=300
+< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< content-type: application/octet-stream
+< etag: W/"db76b99e7b8c7a7b166c37aaa3da29e19c74514c66bcc57aa09d805911ec03d3"
+< strict-transport-security: max-age=31536000
+< x-content-type-options: nosniff
+< x-frame-options: deny
+< x-xss-protection: 1; mode=block
+< x-github-request-id: 8868:306DD:30827:BF0C3:6AC41A20
+< x-github-edge-region: westus2
+< accept-ranges: bytes
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< via: 1.1 varnish
+< x-served-by: cache-sjc10063-SJC
+< x-cache: HIT
+< x-cache-hits: 0
+< x-timer: S1791236767.466213,VS0,VE1
+< vary: Authorization,Accept-Encoding
+< access-control-allow-origin: *
+< cross-origin-resource-policy: cross-origin
+< x-fastly-request-id: 2b0f8a46163d9e0d3eb5e56af612c346d8c5a658
+< expires: Mon, 05 Oct 2026 21:51:07 GMT
+< source-age: 127
+< content-length: 12238126
+< x-envoy-upstream-service-time: 657
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=PgaBHa1lN.2WDkmJ6AQoPRdDSpD1ZA2.igrGnk4TiYg-1791236766.9244697-1.0.1.1-d6tFjNmhmpyDW96SzC8yD5ctz2qlLXUixWQSHavFWpNtq.qp1pQT1Q4V2ZrwaRD7g80IhOGVOcIsyhJ8LGHVBUhfKOMy41_FyomlVXOCw6Y2n8548Wd8T_w2gt_A5kVm; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=nk7NcKoAtkmUyNeVHG24gUrznRSlqeEUEwvoHTfPueI-1791236766.9244697-1.0.1.1-85ZJqSUBlpluA09gmBmBhxvK5Z_mUWjUcU9l9mG98VI; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e014e2af8b4-SYD
+< cf-cache-status: HIT
+< etag: W/"e4422056d15cf4914f9baa447059e804"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Mon, 05 Oct 2026 19:13:39 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 670
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 21 tasks
+    [951.57ms]
+Downloaded @tscircuit/capacity-autorouter versions
+> HTTP/1.1 GET https://registry.npmjs.org/fast-json-stable-stringify
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< cache-control: max-age=300
+< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< content-type: application/octet-stream
+< etag: W/"ef4c6bac081eea262ef86125f03d2fe28260e873427ce9604882ea34b56fb67c"
+< strict-transport-security: max-age=31536000
+< x-content-type-options: nosniff
+< x-frame-options: deny
+< x-xss-protection: 1; mode=block
+< x-github-request-id: 8DFA:D81CD:1A34FD:2508B1:6AC41A9E
+< x-github-edge-region: iad
+< accept-ranges: bytes
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< via: 1.1 varnish
+< x-served-by: cache-dfw-kdfw8210026-DFW
+< x-cache: MISS
+< x-cache-hits: 0
+< x-timer: S1791236767.375855,VS0,VE312
+< vary: Authorization,Accept-Encoding
+< access-control-allow-origin: *
+< cross-origin-resource-policy: cross-origin
+< x-fastly-request-id: aceef345969e3340e5b2d3de2fd6390d925932e9
+< expires: Mon, 05 Oct 2026 21:51:07 GMT
+< source-age: 0
+< content-length: 10228704
+< x-envoy-upstream-service-time: 894
+< server: envoy
+
+[PackageManager] waiting for 21 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=h0qJEFrXhP3N2hOrYmATGkCZh1oHFP3X2BH5.afqdgg-1791236767.8203783-1.0.1.1-0UcrEANAjxF8XpMkqmw_93_oO8sJD7lrSSpXtdo2ZStDOS5ZOk5vvAAmhu0wSywUqPmCcBu4.Ct_nUDc6ezrzLa6qgwXBa9V74qbW8wirgPxTxC3ISMMosmmZ1UXRpUi; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=mIrxa6u2GHjmeU0yafRL.3h7mROV_kPiZs_gFvBEyCg-1791236767.8203783-1.0.1.1-_wgSXh_O3cqXD7FpLMam5t0eKPsqBsrTUcs.lcKElu4; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e06da8e2def-SYD
+< cf-cache-status: HIT
+< etag: W/"3802f79c4846c0e60aa718823ad2666c"
+< access-control-allow-origin: *
+< age: 118
+< cache-control: public, max-age=300
+< last-modified: Thu, 22 Jun 2023 16:31:55 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 38
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 20 tasks
+    [59.55ms]
+Downloaded fast-json-stable-stringify versions
+[PackageManager] waiting for 20 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/polygon-clipping
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=E0HljLT3TpoQpMcuIoQMnx2U6gZtuOglulKAedjNwOo-1791236767.3244057-1.0.1.1-qULEsz5R37P17_ClCFOnqYFrz0lpieqA5XhLdul98QquRA5GjJKDzXogRBqhhtSZ9Yb.FmgFXLTU8.rLkAG.NrSbeMj_TuxDtt5QweniS3W6JJgBC7ZqmieqC2ooc0VO; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:07 GMT
+< set-cookie: _cfuvid=UJg_LeTsWvRuU.ezpPvwjJQWsVixvVOXJz10cSCddxU-1791236767.3244057-1.0.1.1-fVr4UWPSKBnpBqujRwzjXwkhlHCmXHQE0tmsWs61_Dw; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e03cc9785ba-SYD
+< cf-cache-status: HIT
+< etag: W/"5dd6d7ea9b2b155ac09a169d8d439a9e"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Sat, 12 Sep 2026 20:59:35 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 664
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 19 tasks
+    [686.92ms]
+Downloaded @tscircuit/alphabet versions
+[PackageManager] waiting for 19 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/@types%2fnode
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=aVib44nVQ8JiOLRIMzK9OZ2ioSf0jI1Zb1qbpxVDld8-1791236767.8837621-1.0.1.1-vh_3UKlsTlapC_61zmy9dxQOv.PfY7WQyT722Q9HzWd_eb_LHaVUCRyvwaHDADA74m92xaOLNTfHE_7Q.H9ob.l6UIkilgmjmqOKoWTbkfoKQkDA02di6kiOw6HqK4Qw; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=yvcOmeTtNm48LNQsfeQVrbDE6HBIq42RuuISHQ3NXnM-1791236767.8837621-1.0.1.1-JmXZ5fBbBynlx4NjPXaNRn5aygSoHLfqjXcsj2Rigis; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0748e4f49d-SYD
+< cf-cache-status: HIT
+< etag: W/"3a801de36096c1218da6917ff0809c27"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Mon, 18 Dec 2023 15:38:07 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 193
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 18 tasks
+    [214.32ms]
+Downloaded polygon-clipping versions
+[PackageManager] waiting for 18 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/bun-types
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=gw1pFqFnEWgBol5zlYpz9LMCM5FulqLHdrhL5bLaNYs-1791236768.1138828-1.0.1.1-1OW3d1IRky_QxB_J1vcDq4c7pWvloP1OQBUqBBbgfQG3uYWjnYgGQKNVR80jzcIE_QfkyVqxXCuRAjXG8MB2E14wfLYBroQsWiNCEe0OjvT3JU61WCpDa8DdEBkMKlBq; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=alGdXKaVJ4lBdrTdXcmShv_xienSCy0vBE_ylkbuyP4-1791236768.1138828-1.0.1.1-d2iPxjNi.W7sFz533kyAEQybNyROqdHLsoGckMSU_wc; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e08bedee8dc-SYD
+< cf-cache-status: HIT
+< etag: W/"572139bef30415d62cdf3d49d8f2216e"
+< access-control-allow-origin: *
+< age: 55
+< cache-control: public, max-age=300
+< last-modified: Mon, 05 Oct 2026 14:19:56 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 57
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 17 tasks
+    [103.73ms]
+Downloaded bun-types versions
+> HTTP/1.1 GET https://registry.npmjs.org/calculate-elbow
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+[PackageManager] waiting for 17 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=K0hd0ChOJr2c93zVTotNnZFP6ldRaAaYcmk8Foh.U2Q-1791236768.024894-1.0.1.1-f0s64VyQwqKd7Nf_7CX4XsQUQWk9XJ9T2VN66c73E93dGdxhVU_Of.n.d.5OuHEZoqVZSw1gYBxLPEFxfRzKAmqQfRqONZueh7E7L5llKzt7z3pmubT6cvN1Grh44bKo; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=5Id.hTyn_uXHk9i2.eMDmCWfxFqXIyt8XRRGTZI6VOw-1791236768.024894-1.0.1.1-a.s0Rnu1fIInHN70hgjJK.KdKUYc7HZbjYMimMWl_do; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e082d80392f-SYD
+< cf-cache-status: HIT
+< etag: W/"71063cb9b1acb29c45f6e64aa00fe238"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Thu, 01 Oct 2026 22:39:38 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 217
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 16 tasks
+    [270.86ms]
+Downloaded @types/node versions
+> HTTP/1.1 GET https://registry.npmjs.org/debug
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+[PackageManager] waiting for 16 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=2j0ZWj2QmrIr0ORrmAngJDetza5AR3yLQPn2zaYIRAo-1791236768.2990594-1.0.1.1-UOgQIs7AqLEfkb8K_N9b3jpICVyjcX0jJOXp43KjK6KkZGHp8dMkMu8YPSky65G4fkDfyGtKNlJtnxD.8_RQQeq4Gzc.8CE5iBZrSL.RaRZHBtxp7IucYELu3MgIaaT4; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=D1qy5GP1r89K4mOwKTipES7JDkLhSiHN4ICq_k4Ee4k-1791236768.2990594-1.0.1.1-EvXQ0PFZkyVhMM14yWHKKgQmKPAhaY3oRkXVfVUZmvg; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e09dd3485ba-SYD
+< cf-cache-status: HIT
+< etag: W/"7461196c1dbad89c07383a0d91846887"
+< access-control-allow-origin: *
+< age: 156
+< cache-control: public, max-age=300
+< last-modified: Sat, 13 Sep 2025 17:25:21 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 38
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 15 tasks
+    [62.99ms]
+Downloaded debug versions
+[PackageManager] waiting for 15 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/svg-path-commander
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=vgwiO_7fJDlQqMsXAXlmlbDOjITWUkPm2B7auRDaWUk-1791236768.1999183-1.0.1.1-NaUar55gEuCaUbwAri5mmlq6WojxP41bKDiYlVmVRVzNIrLTpoKDjiLgFI.Bl07py3lZzSvcW1LXi6gQIVbBIyqecm3YBR3X0r8gvPIyFe_ir0ldKAvMc7UTZsaSEQJv; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=6yhx0i2T2601k8da1cgwzWPFfNxgGW_NzUE_yov4840-1791236768.1999183-1.0.1.1-vhQ2KXJOHFOT0S.qlBYiSsTqQqCi0yUZDcU0eGjZIqY; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e09384f164e-SYD
+< cf-cache-status: HIT
+< etag: W/"09d5e3c3354cd1b3c66d1056b9cb436b"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Wed, 19 Aug 2026 23:05:58 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 185
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 14 tasks
+    [208.49ms]
+Downloaded calculate-elbow versions
+[PackageManager] waiting for 14 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/svgson
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:07 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=RQDd5_614nn4SyCJhXdRkfa_QWkFuNZsUqRZ3Mm1Csw-1791236768.3591309-1.0.1.1-QF7eq8Otd7yW5Erk1FRCjMCt4dKDrgMX.DFQG0mAAdXwHVYAZTa3zuCBGkB16ONdA01aY9_rVniKmFCsIPs3BsFWlXUc45hp36SgHj_29UI0mJWwlqM25dw5L_fUkIK.; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=9FQwKicRuQyeHJJKE7GpK5ZURokPJWY4Sjjl8_uWC0U-1791236768.3591309-1.0.1.1-k9IgvrGJ_eUxYVS3SVRU33Pc5Zj0P_NBNy7Wa1UkH28; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0a388ff426-SYD
+< cf-cache-status: HIT
+< etag: W/"f3d0257f0eb483f51823f2c0387f034c"
+< access-control-allow-origin: *
+< age: 172
+< cache-control: public, max-age=300
+< last-modified: Wed, 02 Sep 2026 07:25:06 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 42
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 13 tasks
+    [63.83ms]
+Downloaded svg-path-commander versions
+> HTTP/1.1 GET https://registry.npmjs.org/@lume%2fkiwi
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+[PackageManager] waiting for 13 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=pHWjKYjUjXIaHnWJ2NID.oxxeLRCIEecO3lzNuoy628-1791236768.4163876-1.0.1.1-SuR9aQ6LobzubXDXftgBC1vRMAqEF_X3bKmc2g68NVTZci4J4PuktS4.g94m8ON.7S58bKY1G4Hyr7Lku3SPmZnmvufMRzqlkskmffAA9E9rvCvTMlPKd2m0weXSsv1J; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=cpviHPuZeRA___87nmdxNIhQuqqin_MhY2.R1kEco0s-1791236768.4163876-1.0.1.1-wF97cAFjA9p8dnB5oboB0c9CJerQaXeKF8pGJENd7DU; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0a9b66efe3-SYD
+< cf-cache-status: HIT
+< etag: W/"606deb818da6ebc0e64478550456fd85"
+< access-control-allow-origin: *
+< age: 268
+< cache-control: public, max-age=300
+< last-modified: Mon, 17 Jul 2023 15:58:49 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 42
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 12 tasks
+    [66.07ms]
+Downloaded svgson versions
+[PackageManager] waiting for 12 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/calculate-cell-boundaries
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=KpIfDrCA03x3N5YA2Cgbj6_oxbint61F4M8Y3Kmq7kI-1791236768.4791536-1.0.1.1-KDLoghfsr_xCSqD3DsC4jLqVOxCux_tbK8wCbSpuMTxDXbZJ0op4UsNeoPG37.ubL6NoHQ3igqrnRYZ89BE7BO189M7SQ9xVjVLue99AViW8M4XeStnJuAEUmTTjG3hr; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=KSI303Hgjs7AB9RufdWUDV3tj_Pzsn0wXr_qUpKz9m0-1791236768.4791536-1.0.1.1-zitw7rjAGEIYvKmBHLuYH_hb57.fgd02_RLQ_c8iGNs; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0affbadfeb-SYD
+< cf-cache-status: HIT
+< etag: W/"844a5801aeabb7dd7fcf6a9d6e1556b8"
+< access-control-allow-origin: *
+< age: 297
+< cache-control: public, max-age=300
+< last-modified: Fri, 02 Oct 2026 11:17:44 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 37
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 11 tasks
+    [60.32ms]
+Downloaded calculate-cell-boundaries versions
+[PackageManager] waiting for 11 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/calculate-packing
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=bFzEbZLGHV6C2pvaN.kitcB4KEuzqI93mSZ7yvvTA_U-1791236768.5428288-1.0.1.1-LtduWciYmrAh0KkV8izGCkk1BCv3RaL4aSv6TEffyqMwKsHxSwnzO4pAPa2WMBSR4mfwaczDG5c4vAD_ZbwqplEqXvMCCLyfFag001TN9jsemrQ5zp0HS6e.D9AEiwri; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=.sVfD6rlK6imoqgxryNzwFJL.Txwfm3kb7_ZoHPjoyk-1791236768.5428288-1.0.1.1-WqHR3cFZDLWgpzcM1Vmw21K1sw0BfpwugT1HEJURG_U; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0b6980185b-SYD
+< cf-cache-status: HIT
+< etag: W/"a8da0fe440a0b5b0cdcbc36461b7f0b6"
+< access-control-allow-origin: *
+< age: 297
+< cache-control: public, max-age=300
+< last-modified: Wed, 23 Sep 2026 18:59:26 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 40
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 10 tasks
+    [63.45ms]
+Downloaded calculate-packing versions
+[PackageManager] waiting for 10 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/css-select
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=XfBmsvzYY5U22Zt5uQp7g.F.FbmN0KeS9Azwdyeyids-1791236768.605405-1.0.1.1-nJPLijJP6.64XtH45zflkOG.4ELxaCpUhjH4.h4tb2UIw2v7SkFAmv8A4SsYTxyzJ8HOtsm9Fov4QgfqcraBeXtbYWxM2gDXRAydK8sSy7d5fdTDlx.whrtbwEob6yGN; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=FF7uvlFVTmaTW7fMds2N3h8_7nw3mnpJ949YayWrNWY-1791236768.605405-1.0.1.1-dQJMMexUpAaRJ4YHufFGfKGu55l6kfemJ7Md_3GW4Lk; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0bcb5c6c96-SYD
+< cf-cache-status: HIT
+< etag: W/"14d11c3d0830906638c469cd23315a3a"
+< access-control-allow-origin: *
+< age: 130
+< cache-control: public, max-age=300
+< last-modified: Sun, 22 Mar 2026 22:44:28 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 36
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 9 tasks
+    [60.76ms]
+Downloaded css-select versions
+[PackageManager] waiting for 9 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/format-si-unit
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=Ry5mko0cpbE9B3hAxwWRuJyUCucm33pZi1u6ovRXgoQ-1791236768.4361873-1.0.1.1-dA3f1ZLXQyi.akQH6bH8QR9hM1ZmLJDhl8fHj2eg33apOhTNMayb2Up86MzXsAfzlRSGoNoHG0j5_ae6WrvA1pm8hd_ylhT_5whZcQ9YyrYNLESArUTxWMFuxatX9OzM; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=pP48OGIZmDMxgEh_cLtHaknzZAXik51wa06P.Rg6EdI-1791236768.4361873-1.0.1.1-kaN58La.rvddEooAsdzjbBxAAWE_ixbPjV_1hdQt_YM; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0abdc86d98-SYD
+< cf-cache-status: HIT
+< etag: W/"5908c8a389ce59922af03870fb4e5e12"
+< access-control-allow-origin: *
+< age: 149
+< cache-control: public, max-age=300
+< last-modified: Tue, 17 Sep 2024 18:44:51 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 381
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 8 tasks
+    [408.19ms]
+Downloaded @lume/kiwi versions
+[PackageManager] waiting for 8 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/nanoid
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=RFTohFkl012_R_me_RgBiUfdjRMKIePH044EkcTEd3w-1791236768.6605356-1.0.1.1-1W3gSCSe4fNnpdJYwzca2oH9xBGb7kku0oQIBRf7VrqeDVBxqF5AKFVemyevBMCdyh2C2.hqrF_JYvs5qRSKIvpO5hIEWvRuDTxaIvqk1MtBMPrPD1JxwaWBlDdnj8zO; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=eNZKNyQLfSruW2Ojy9xAahZoIDBebDeeGreIVxIartg-1791236768.6605356-1.0.1.1-F4Hhyik281yLxVZEARfU2mhjzFvZq.LApf0C1IlJiNM; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0c1878a664-SYD
+< cf-cache-status: HIT
+< etag: W/"567b57564487dd156c775b02671c76ee"
+< access-control-allow-origin: *
+< cache-control: public, max-age=300
+< last-modified: Wed, 19 Aug 2026 21:37:20 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 188
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 7 tasks
+    [208.95ms]
+Downloaded format-si-unit versions
+[PackageManager] waiting for 7 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/performance-now
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=cg3LX4c2usluLoiHBjKGQVkel7Idr9xAIyWTwnNAnU4-1791236768.8385155-1.0.1.1-rXdazSXO4PEeL9VJs4YaplFXibLU7J67eksEjN50N61h9S_8JJ5.c_dMBQiGhT1veBAoJsPPxOrlk3bA.uS8n8I8qI5HFpwNR3mH_8sNswsgf1bnkGr8IowCEuI6QvSR; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=9459airUa0GUe0cB1B7xGzxQmbcyH76tPxPlWQHzAxQ-1791236768.8385155-1.0.1.1-ol5B.f7BrPa1hfz8k52spZtNIbLV1i9keWItaV.62yM; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0d3ac552b8-SYD
+< cf-cache-status: HIT
+< etag: W/"7a11fd524b47102e3b9bc8d3b04dcdb0"
+< access-control-allow-origin: *
+< age: 178
+< cache-control: public, max-age=300
+< last-modified: Mon, 05 Oct 2026 21:23:01 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 44
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 6 tasks
+    [67.95ms]
+Downloaded nanoid versions
+> HTTP/1.1 GET https://registry.npmjs.org/react-reconciler
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+[PackageManager] waiting for 6 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=.WupMnr8NwyfFbWXkLbyro_FUHn97glB5ED0Is4.BgU-1791236768.8782556-1.0.1.1-Di35XxCoSjJ_z_5NgI8enVDH6VAEWzRyA9MjT1QsJgmjIKsYBtJkYJoPaoTxuPrDZyDsohZqfsHLQD8grMq5R_KuEVK54_ed2_0NZKAmbmc4i8wkO_GY1_VECdrAvxa0; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=QPPRf4kKznTSQhPS6qzqnNOTQZjbSZcwCEcw3Y8zv8I-1791236768.8782556-1.0.1.1-bALZJo9yrzoWxIH8MUWTTVLLDzh3VOmD97_x8k4kkO0; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0d7e380060-SYD
+< cf-cache-status: HIT
+< etag: W/"7bece62420e67de9137cac472e906cde"
+< access-control-allow-origin: *
+< age: 85
+< cache-control: public, max-age=300
+< last-modified: Thu, 23 Jun 2022 18:23:29 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 38
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 5 tasks
+    [60.95ms]
+Downloaded performance-now versions
+[PackageManager] waiting for 5 tasks
+> HTTP/1.1 GET https://registry.npmjs.org/zod
+> Accept: application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=uQhPMyXQiUvBLyTAzKOuVG0CVVrZmCyfg9aPtsI4shw-1791236768.906283-1.0.1.1-gK9XpK0KPwljs0GhQMqjidqbOpaRWY6GZ.z_6a4D1.I_hDkp4w3.jCafJmPu4Le0ZnxD5SrKZraKoOi3XZFR7hu88j.xy4_nIjFyD3d.yNjZxSaMRxrNTKQKpIxkistv; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=jxtGS38thnTF731dOGo2Km1codgdOzb4Z79Ptythk80-1791236768.906283-1.0.1.1-45IQP2bBeZPRGrPh7IwVwIIL12BZFF6n_Qgq1tJo_vI; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0dab59aea9-SYD
+< cf-cache-status: HIT
+< etag: W/"be59e9771dcbf53d6df43948b53c2714"
+< access-control-allow-origin: *
+< age: 230
+< cache-control: public, max-age=300
+< last-modified: Fri, 02 Oct 2026 17:47:29 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 69
+< transfer-encoding: chunked
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:08 GMT
+< content-type: application/vnd.npm.install-v1+json
+< set-cookie: __cf_bm=vezbWYVVkWK2EOxO431tKEh31fh605NdVRTQXoCmhWM-1791236768.942176-1.0.1.1-tRU0nUDDXE9qUB2xSdA6zRkSDAW9V4q3NIaaTnTsTP_XTbiWorSQ50DONMAJGokBUnw7N1O1uKnBCdNc7WZ3foK5Uhs2rbHC.aUVH7ozaV.2_aMe9zqr482Q2KPvMnXF; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:08 GMT
+< set-cookie: _cfuvid=shpe0t_pWh5B6pTVFQr_IgLCFRK2haS1aavofED_t6Q-1791236768.942176-1.0.1.1-rJOYzYSWMc84tEUuNV3d7owutk760Z4U6e9SE11tMrQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e0de96d3818-SYD
+< cf-cache-status: HIT
+< etag: W/"0f54638b1a2efd30f5fbcf9f01f047ea"
+< access-control-allow-origin: *
+< age: 145
+< cache-control: public, max-age=300
+< last-modified: Fri, 02 Oct 2026 16:52:46 GMT
+< server: envoy
+< vary: accept-encoding, accept
+< content-encoding: br
+< x-envoy-upstream-service-time: 51
+< transfer-encoding: chunked
+
+[PackageManager] waiting for 4 tasks
+    [124.16ms]
+Downloaded react-reconciler versions
+[PackageManager] waiting for 4 tasks
+    [95.05ms]
+Downloaded zod versions
+[PackageManager] waiting for 4 tasks
+[PackageManager] waiting for 3 tasks
+[PackageManager] waiting for 2 tasks
+    [3.73s] Downloaded @tscircuit/eval tarball
+[PackageManager] waiting for 2 tasks
+    [3.77s] Downloaded @tscircuit/cli tarball
+ package.json
+ LICENSE
+ README.md
+ dist/blob-url.d.ts
+ dist/blob-url.js
+ dist/eval/index.d.ts
+ dist/eval/index.js
+ dist/lib/index.d.ts
+ dist/lib/index.js
+ dist/platform-config/getPlatformConfig.d.ts
+ dist/platform-config/getPlatformConfig.js
+ dist/webworker/entrypoint.d.ts
+ dist/webworker/entrypoint.js
+ dist/worker.d.ts
+ dist/worker.js
+[@tscircuit/eval] Extract .9ddfd47bbddcb7ee-0000000A.eval (decompressed 10.23 MB tgz file in 62.197ms)
+[@tscircuit/eval] Extracted to .9ddfd47bbddcb7ee-0000000A.eval (76.411ms)
+[PackageManager] waiting for 2 tasks
+ package.json
+ LICENSE
+ README.md
+ cli/entrypoint.js
+ dist/cli/build/build.worker.js
+ dist/cli/main.js
+ dist/cli/snapshot/snapshot.worker.js
+ dist/lib/index.js
+ types/fake-snippets.d.ts
+ types/static-assets/index.d.ts
+ types/tscircuit.config.schema.assert.ts
+ types/tscircuit.config.schema.json
+[@tscircuit/cli] Extract .1bfbde7effdfd5bf-0000000B.cli (decompressed 12.24 MB tgz file in 69.697ms)
+[@tscircuit/cli] Extracted to .1bfbde7effdfd5bf-0000000B.cli (79.845ms)
+[PackageManager] waiting for 1 tasks
+Resolved, downloaded and extracted [59]
+Clean lockfile: 630 packages - 619 packages in 1.3ms
+Skip installing @biomejs/cli-darwin-arm64 - cpu & os mismatch
+Skip installing @biomejs/cli-darwin-x64 - os mismatch
+Skip installing @biomejs/cli-linux-arm64 - cpu mismatch
+Skip installing @biomejs/cli-linux-arm64-musl - cpu mismatch
+Skip installing @biomejs/cli-win32-arm64 - cpu & os mismatch
+Skip installing @biomejs/cli-win32-x64 - os mismatch
+Skip installing @resvg/resvg-js-android-arm-eabi - cpu & os mismatch
+Skip installing @resvg/resvg-js-android-arm64 - cpu & os mismatch
+Skip installing @resvg/resvg-js-darwin-arm64 - cpu & os mismatch
+Skip installing @resvg/resvg-js-darwin-x64 - os mismatch
+Skip installing @resvg/resvg-js-linux-arm-gnueabihf - cpu mismatch
+Skip installing @resvg/resvg-js-linux-arm64-gnu - cpu mismatch
+Skip installing @resvg/resvg-js-linux-arm64-musl - cpu mismatch
+Skip installing @resvg/resvg-js-win32-arm64-msvc - cpu & os mismatch
+Skip installing @resvg/resvg-js-win32-ia32-msvc - cpu & os mismatch
+Skip installing @resvg/resvg-js-win32-x64-msvc - os mismatch
+Skip installing @rollup/rollup-android-arm-eabi - cpu & os mismatch
+Skip installing @rollup/rollup-android-arm64 - cpu & os mismatch
+Skip installing @rollup/rollup-darwin-arm64 - cpu & os mismatch
+Skip installing @rollup/rollup-darwin-x64 - os mismatch
+Skip installing @rollup/rollup-freebsd-arm64 - cpu & os mismatch
+Skip installing @rollup/rollup-freebsd-x64 - os mismatch
+Skip installing @rollup/rollup-linux-arm-gnueabihf - cpu mismatch
+Skip installing @rollup/rollup-linux-arm-musleabihf - cpu mismatch
+Skip installing @rollup/rollup-linux-arm64-gnu - cpu mismatch
+Skip installing @rollup/rollup-linux-arm64-musl - cpu mismatch
+Skip installing @rollup/rollup-linux-loong64-gnu - cpu mismatch
+Skip installing @rollup/rollup-linux-loong64-musl - cpu mismatch
+Skip installing @rollup/rollup-linux-ppc64-gnu - cpu mismatch
+Skip installing @rollup/rollup-linux-ppc64-musl - cpu mismatch
+Skip installing @rollup/rollup-linux-riscv64-gnu - cpu mismatch
+Skip installing @rollup/rollup-linux-riscv64-musl - cpu mismatch
+Skip installing @rollup/rollup-linux-s390x-gnu - cpu mismatch
+Skip installing @rollup/rollup-openbsd-x64 - os mismatch
+Skip installing @rollup/rollup-openharmony-arm64 - cpu & os mismatch
+Skip installing @rollup/rollup-win32-arm64-msvc - cpu & os mismatch
+Skip installing @rollup/rollup-win32-ia32-msvc - cpu & os mismatch
+Skip installing @rollup/rollup-win32-x64-gnu - os mismatch
+Skip installing @rollup/rollup-win32-x64-msvc - os mismatch
+Skip installing fsevents - os mismatch
+Skip installing @esbuild/aix-ppc64 - cpu & os mismatch
+Skip installing @esbuild/android-arm - cpu & os mismatch
+Skip installing @esbuild/android-arm64 - cpu & os mismatch
+Skip installing @esbuild/android-x64 - os mismatch
+Skip installing @esbuild/darwin-arm64 - cpu & os mismatch
+Skip installing @esbuild/darwin-x64 - os mismatch
+Skip installing @esbuild/freebsd-arm64 - cpu & os mismatch
+Skip installing @esbuild/freebsd-x64 - os mismatch
+Skip installing @esbuild/linux-arm - cpu mismatch
+Skip installing @esbuild/linux-arm64 - cpu mismatch
+Skip installing @esbuild/linux-ia32 - cpu mismatch
+Skip installing @esbuild/linux-loong64 - cpu mismatch
+Skip installing @esbuild/linux-mips64el - cpu mismatch
+Skip installing @esbuild/linux-ppc64 - cpu mismatch
+Skip installing @esbuild/linux-riscv64 - cpu mismatch
+Skip installing @esbuild/linux-s390x - cpu mismatch
+Skip installing @esbuild/netbsd-arm64 - cpu & os mismatch
+Skip installing @esbuild/netbsd-x64 - os mismatch
+Skip installing @esbuild/openbsd-arm64 - cpu & os mismatch
+Skip installing @esbuild/openbsd-x64 - os mismatch
+Skip installing @esbuild/openharmony-arm64 - cpu & os mismatch
+Skip installing @esbuild/sunos-x64 - os mismatch
+Skip installing @esbuild/win32-arm64 - cpu & os mismatch
+Skip installing @esbuild/win32-ia32 - cpu & os mismatch
+Skip installing @esbuild/win32-x64 - os mismatch
+Skip installing fsevents - os mismatch
+Skip installing lightningcss-android-arm64 - cpu & os mismatch
+Skip installing lightningcss-darwin-arm64 - cpu & os mismatch
+Skip installing lightningcss-darwin-x64 - os mismatch
+Skip installing lightningcss-freebsd-x64 - os mismatch
+Skip installing lightningcss-linux-arm-gnueabihf - cpu mismatch
+Skip installing lightningcss-linux-arm64-gnu - cpu mismatch
+Skip installing lightningcss-linux-arm64-musl - cpu mismatch
+Skip installing lightningcss-win32-arm64-msvc - cpu & os mismatch
+Skip installing lightningcss-win32-x64-msvc - os mismatch
+Skip installing @rolldown/binding-android-arm-eabi - cpu & os mismatch
+Skip installing @rolldown/binding-android-arm64 - cpu & os mismatch
+Skip installing @rolldown/binding-darwin-arm64 - cpu & os mismatch
+Skip installing @rolldown/binding-darwin-x64 - os mismatch
+Skip installing @rolldown/binding-freebsd-x64 - os mismatch
+Skip installing @rolldown/binding-linux-arm-gnueabihf - cpu mismatch
+Skip installing @rolldown/binding-linux-arm64-gnu - cpu mismatch
+Skip installing @rolldown/binding-linux-arm64-musl - cpu mismatch
+Skip installing @rolldown/binding-linux-ppc64-gnu - cpu mismatch
+Skip installing @rolldown/binding-linux-s390x-gnu - cpu mismatch
+Skip installing @rolldown/binding-openharmony-arm64 - cpu & os mismatch
+Skip installing @rolldown/binding-win32-arm64-msvc - cpu & os mismatch
+Skip installing @rolldown/binding-win32-x64-msvc - os mismatch
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.217.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://registry.npmjs.org/transformation-matrix/-/transformation-matrix-2.16.1.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://registry.npmjs.org/transformation-matrix/-/transformation-matrix-3.0.0.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: registry.npmjs.org
+> Accept-Encoding: gzip, deflate, br, zstd
+
+[PackageManager] waiting for 3 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:10 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:10 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:10 GMT
+< server: envoy
+
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:10 GMT
+< content-type: application/octet-stream
+< content-length: 84272
+< set-cookie: __cf_bm=goxsl8B1g8sYy_z.SO3qYw0jT1pnly27Bmo6qqExVPw-1791236770.7466743-1.0.1.1-9zhKGxF.nsDQu7CRfC6nkEva491iFZjop4N4ym2BKDqOg2bywb32CRVwk8ud7dcELBz2JSlDUlO4MzOVWKT74VkUajXlzLtT_rpuq4nrKPr2DodR3q5nhAV5X_4Ql.Aj; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:10 GMT
+< set-cookie: _cfuvid=qnDg9q_sPviWQrB3AR2t0yFyF59GiBM_WE7qf7N2JPI-1791236770.7466743-1.0.1.1-9sVO8n5xdZR2R4Zsd6t.4btAMM4XxNj86E1tm03MUic; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e192b499968-SYD
+< cf-cache-status: HIT
+< accept-ranges: bytes
+< access-control-allow-origin: *
+< age: 2273857
+< cache-control: public, immutable, max-age=31557600
+< etag: "ef2d29cc04ea7ab424fa4559f07e66a5"
+< last-modified: Fri, 23 Feb 2024 13:33:01 GMT
+< server: envoy
+< x-envoy-upstream-service-time: 41
+
+[PackageManager] waiting for 3 tasks
+    [80.66ms] Downloaded transformation-matrix tarball
+ LICENSE
+ build-commonjs/applyToPoint.js
+ src/applyToPoint.js
+ babel.config.js
+ build-commonjs/decompose.js
+ src/decompose.js
+ build-commonjs/flip.js
+ src/flip.js
+ build-commonjs/fromDefinition.js
+ src/fromDefinition.js
+ build-commonjs/fromMovingPoints.js
+ src/fromMovingPoints.js
+ build-commonjs/fromObject.js
+ src/fromObject.js
+ build-commonjs/fromString.js
+ src/fromString.js
+ build-commonjs/fromTransformAttribute.autogenerated.js
+ src/fromTransformAttribute.autogenerated.js
+ build-commonjs/fromTransformAttribute.js
+ src/fromTransformAttribute.js
+ build-commonjs/fromTriangles.js
+ src/fromTriangles.js
+ build-commonjs/identity.js
+ src/identity.js
+ build-commonjs/index.js
+ src/index.js
+ build-commonjs/inverse.js
+ src/inverse.js
+ build-commonjs/isAffineMatrix.js
+ src/isAffineMatrix.js
+ build-commonjs/rotate.js
+ src/rotate.js
+ build-commonjs/scale.js
+ src/scale.js
+ build-commonjs/shear.js
+ src/shear.js
+ build-commonjs/skew.js
+ src/skew.js
+ build-commonjs/smoothMatrix.js
+ src/smoothMatrix.js
+ build-commonjs/toString.js
+ src/toString.js
+ build-commonjs/transform.js
+ src/transform.js
+ build-umd/transformation-matrix.js
+ build-umd/transformation-matrix.min.js
+ build-commonjs/translate.js
+ src/translate.js
+ build-commonjs/utils.js
+ src/utils.js
+ package.json
+ build-umd/transformation-matrix.js.map
+ build-umd/transformation-matrix.min.js.map
+ README.md
+ src/fromTransformAttribute.peggy
+ src/transformation-matrix.d.ts
+[transformation-matrix] Extract .98fbe65e5f5c7fbf-0000000C.transformation-matrix (decompressed 84.27 KB tgz file in 528.615us)
+[transformation-matrix] Extracted to .98fbe65e5f5c7fbf-0000000C.transformation-matrix (3.328ms)
+[PackageManager] waiting for 3 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:10 GMT
+< content-type: application/octet-stream
+< content-length: 87129
+< set-cookie: __cf_bm=5IpL46qgn7DfiA_9IO6E9nPf9410fsPYvN6qDx4uPwQ-1791236770.7508934-1.0.1.1-1UMR4q0kop2M6_YCupfhSOqP.pmWelGjDOwdWmQUW6Lit3mBI.FZp1uayxkni1nlzTQqmbFSG0cpe7L4UXGKyzCIk3Q0AAEP7J7TZ9Ovu4EM6Gi9CuPIXc55sdw9hBoj; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Mon, 05 Oct 2026 22:16:10 GMT
+< set-cookie: _cfuvid=lBSG4nvYgiGNWB.pWl.BAl0a.E._fNDsHda5DQIPT1A-1791236770.7508934-1.0.1.1-X6hh7oqeiinF8iQcYM3fTveianL68ztdW8j_na8ru1A; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org
+< cf-ray: a45f9e192dcc29fa-SYD
+< cf-cache-status: HIT
+< accept-ranges: bytes
+< access-control-allow-origin: *
+< cache-control: public, immutable, max-age=31557600
+< etag: "11ba9ac9b1e4d8b169bb33462bc28b0e"
+< last-modified: Mon, 10 Feb 2025 18:37:11 GMT
+< server: envoy
+< x-envoy-upstream-service-time: 200
+
+[PackageManager] waiting for 2 tasks
+    [238.17ms] Downloaded transformation-matrix tarball
+ LICENSE
+ build-commonjs/applyToPoint.js
+ src/applyToPoint.js
+ babel.config.js
+ build-commonjs/decompose.js
+ src/decompose.js
+ build-commonjs/flip.js
+ src/flip.js
+ build-commonjs/fromDefinition.js
+ src/fromDefinition.js
+ build-commonjs/fromMovingPoints.js
+ src/fromMovingPoints.js
+ build-commonjs/fromObject.js
+ src/fromObject.js
+ build-commonjs/fromString.js
+ src/fromString.js
+ build-commonjs/fromTransformAttribute.autogenerated.js
+ src/fromTransformAttribute.autogenerated.js
+ build-commonjs/fromTransformAttribute.js
+ src/fromTransformAttribute.js
+ build-commonjs/fromTriangles.js
+ src/fromTriangles.js
+ build-commonjs/identity.js
+ src/identity.js
+ build-commonjs/index.js
+ src/index.js
+ build-commonjs/inverse.js
+ src/inverse.js
+ build-commonjs/isAffineMatrix.js
+ src/isAffineMatrix.js
+ build-commonjs/rotate.js
+ src/rotate.js
+ build-commonjs/scale.js
+ src/scale.js
+ build-commonjs/shear.js
+ src/shear.js
+ build-commonjs/skew.js
+ src/skew.js
+ build-commonjs/smoothMatrix.js
+ src/smoothMatrix.js
+ build-commonjs/toString.js
+ src/toString.js
+ build-commonjs/transform.js
+ src/transform.js
+ build-umd/transformation-matrix.js
+ build-umd/transformation-matrix.min.js
+ build-commonjs/translate.js
+ src/translate.js
+ build-commonjs/utils.js
+ src/utils.js
+ package.json
+ build-umd/transformation-matrix.js.map
+ build-umd/transformation-matrix.min.js.map
+ README.md
+ src/fromTransformAttribute.peggy
+ src/transformation-matrix.d.ts
+[transformation-matrix] Extract .1ffbe55ecfefedbf-0000000D.transformation-matrix (decompressed 87.13 KB tgz file in 540.397us)
+[transformation-matrix] Extracted to .1ffbe55ecfefedbf-0000000D.transformation-matrix (3.466ms)
+[PackageManager] waiting for 2 tasks
+< 200 OK
+< date: Mon, 05 Oct 2026 21:46:11 GMT
+< content-type: application/octet-stream
+< content-length: 175476
+< report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ygzR%2BH1SU7K3UWxRsoaDRAkCp0j28e%2BW4WaGEK5DqXASKKM5KRZbDhZaAK7yWn2d46eq60AtE8w3%2BXP1tvAtixeljS3EGzIFCbAIHP9Nhvuyx%2FwoDn9iMJVlN17UB489Q3GC7Ys%3D"}]}
+< nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< server: envoy
+< cf-ray: a45f9e1a2e068a71-SYD
+< x-envoy-upstream-service-time: 288
+
+[PackageManager] waiting for 1 tasks
+    [486.70ms] Downloaded @tscircuit/schematic-trace-solver tarball
+ LICENSE
+ dist/index.js
+ package.json
+ README.md
+ dist/index.d.ts
+[@tscircuit/schematic-trace-solver] Extract .7fdfdc5bfffcaf7e-0000000E.schematic-trace-solver (decompressed 175.48 KB tgz file in 736.353us)
+[@tscircuit/schematic-trace-solver] Extracted to .7fdfdc5bfffcaf7e-0000000E.schematic-trace-solver (1.123ms)
+[PackageManager] waiting for 1 tasks
+Saved lockfile
+
++ @tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz
++ @tscircuit/cli@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz
++ @tscircuit/core@tooling/vendor/core-r8-silk-visibility.tgz
++ @tscircuit/eval@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz
++ @tscircuit/props@tooling/vendor/props-r8-mask-style.tgz
++ circuit-json@tooling/vendor/circuit-json-qualified-source.tgz
++ circuit-json-to-gerber@tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
++ circuit-json-to-pnp-csv@tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
++ circuit-to-svg@tooling/vendor/circuit-to-svg-qualified-source.tgz
++ easyeda@tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+
+13 packages installed [4.36s]
+{
+  "started_utc": "20261005T214606810852Z",
+  "command": [
+    "bun",
+    "install",
+    "--ignore-scripts",
+    "--verbose",
+    "--network-concurrency",
+    "4"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:46:11.186466+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 243440,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T214606810852Z.log"
+}

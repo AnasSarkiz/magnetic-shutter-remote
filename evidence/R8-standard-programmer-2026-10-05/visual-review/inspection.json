@@ -1,0 +1,44 @@
+{
+  "circuit_sha256": "8db03c1b6b7e1ffc73ad3a49100bc2191e75db50f8de6de8ab36e922676e98f5",
+  "reviewed": [
+    "pcb-top.png",
+    "pcb-bottom.png",
+    "gerber-top.png",
+    "gerber-bottom.png",
+    "Power-a4.png",
+    "Radio-a4.png",
+    "Protection-a4.png",
+    "Power-detail.png",
+    "Radio-detail.png",
+    "Protection-detail.png"
+  ],
+  "observations": [
+    "Direct three-contact J3 and pin1 marking; top-entry cable access, USB and battery access visible.",
+    "Right-edge SW2 actuator retained; all copper within boundary and RF antenna band clear on both layers.",
+    "U2/U3 exposed-pad ground and U4/HOT/BOOT/UART routing corrections agree with independently checked native geometry.",
+    "All three A4 sheets and detail views show current BM03B header, manual BOOT/RESET and correct radio/power nets.",
+    "All functional legends retained; complete exported silk geometry passes audit."
+  ],
+  "scope": "Visual inspection of generated files; no physical fit/RF/flash/assembly claim.",
+  "artifact_hashes": {
+    "Radio-a4.png": "f0e4683a86b7a959cfddead218b73934d90f21a477a6d99ce6f2c29579be43e8",
+    "Protection-detail.png": "c0af15602f9969ba57758a357fbfb003d4ef3209285c06ee733833e05fe00d97",
+    "pcb-bottom.svg": "1ef1ebd26a43d900808bcc82e540a51bf29c5f750149f4afeefbd636f909d6a2",
+    "Protection-a4.svg": "598dcb4b6b941a78857b651dcc04e9d295941eb7da101fb3bbd0a3896549163b",
+    "pcb-top.svg": "2289790752389d603c4a5be77a3f328ddac75d8147d1fa2c1b92be1c2399ed2e",
+    "Radio-a4.svg": "bb2032d05111c5b2f078cd059d32d4c49f47ad2b5008231bb0590d125ab1c3b5",
+    "Protection-detail.svg": "81b1e9c24d4ca6d94cf0567351a037d434f52b40bdf348d49677472ff7fcd938",
+    "gerber-top.png": "7cdebfac1d741bd9f0e4b590c6770ed3fdaa0d61fd993b4af840b9fa23b22b34",
+    "Power-a4.png": "c7eae0ba48dccaf72c4ed0688ef4b649f6b5aabbc619681dc5fd81dfd065f04f",
+    "Protection-a4.png": "3509868caa5bed754f11939c000f9ffe9e9a6d213d3139e9f5e3f4a48834eed4",
+    "Power-a4.svg": "6af2b7acc359ff65c6159359714627e64d4fc0d33c5455ca1238ebffe6e30a60",
+    "pcb-bottom.png": "faf99a31f66cbd456e8b75c554c2e31e9315110f8e123b5f5aba38a681aa1529",
+    "Power-detail.png": "6958e76162f258519abd87f13d9581cfa4cf3da9be30ba577bf71a986a981278",
+    "Power-detail.svg": "990e4393f839d5b7f5605b3c85e8745ceab7123bcc15f6df9312caea820f41b2",
+    "pcb-top.png": "a5509c00a3e6b4a41271d08e63e1846cb64305c7e69d05d272ed51d4c2d39ac5",
+    "gerber-bottom.png": "683c57f855ef5e62efb1fe486efe5c34be0899ba00b00e39179e0f9f22b52c5f",
+    "Radio-detail.svg": "a38cf2daccfc7d6cd16af7a996f713301ececa3cf7a6741ca3e13aac622ce4fe",
+    "Radio-detail.png": "38c6a10950b2a28f0e4e3dcec92268f9c8a83c650f3b4dd68a5ecb5327566260"
+  },
+  "stale_artifact_disposition": "Native CLI --schematic-svgs writes only schematic.svg. Old ignored dist/index/schematic_sheet_* images were stale; full native current sheets are regenerated from exact Circuit JSON in visual-review; stale images are not staged/published."
+}

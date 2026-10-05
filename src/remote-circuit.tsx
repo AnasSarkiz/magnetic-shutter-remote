@@ -1,3 +1,5 @@
+import { r8TemperatureHotPaths } from "./r8-temperature-hot-paths";
+import { r8SupervisorVbatPaths } from "./r8-supervisor-vbat-paths";
 import { r8RadioCapPaths } from "./r8-radio-cap-paths";
 import { r8ChargeStatPaths } from "./r8-charge-stat-paths";
 import { r8ConnectorPaths } from "./r8-connector-paths";
@@ -35,7 +37,7 @@ import { TCC0603COG470J500CT } from "../imports/TCC0603COG470J500CT";
 import { TPS63031DSKR } from "../imports/TPS63031DSKR/TPS63031DSKR";
 import { USB4215_03_A } from "../imports/USB4215_03_A";
 import { SM02B_SRSS_TB_LF__SN_ } from "../imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_";
-import { BM06B_SRSS_TB_LF__SN_ } from "../imports/BM06B_SRSS_TB_LF__SN_";
+import { BM03B_SRSS_TB_LF__SN_ } from "../imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_";
 import { MSK12C02 } from "../imports/MSK12C02";
 import { TS_1088_AR02016 } from "../imports/TS_1088_AR02016";
 import { TS24CA } from "../imports/TS24CA/TS24CA";
@@ -82,6 +84,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			pcbSx={{
 				"& footprint silkscreentext": { visibility: "hidden" },
 				"& footprint silkscreenpath": { visibility: "hidden" },
+				"& footprint silkscreencircle": { visibility: "hidden" },
 			}}
 			defaultTraceWidth="0.15mm"
 		>
@@ -100,6 +103,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			<net name="UART_RX" routingPhaseIndex={2} />
 			<net name="VSET" routingPhaseIndex={2} />
 			<net name="BOOT" routingPhaseIndex={2} />
+			<net name="TEMP_SET_HOT" routingPhaseIndex={2} />
 			{routingEnabled && (
 				<autoroutingphase
 					phaseIndex={2}
@@ -109,12 +113,14 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						".R8 > port.pin1",
 						".SW4 > port.pin1",
 						".U1 > port.pin18",
+						".R10 > port.pin1",
 					]}
 					pcbTracePaths={[
 						...r8BatteryOkPaths,
 						...r8UartRxPaths,
 						...r8VsetPaths,
 						...r8BootPaths,
+						...r8TemperatureHotPaths,
 					]}
 				/>
 			)}
@@ -561,21 +567,18 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					pcbY={0}
 					pcbTracePaths={routingEnabled ? r8ConnectorPaths : []}
 				>
-					<BM06B_SRSS_TB_LF__SN_
+					<BM03B_SRSS_TB_LF__SN_
 						name="J3"
 						pcbX="13.2mm"
 						pcbY="16mm"
 						schX={7}
 						schY={-4}
 						connections={{
-							pin1: "net.V3",
-							pin2: "net.UART_RX",
-							pin3: "net.GND",
-							pin4: "net.UART_TX",
-							pin5: "net.EN",
-							pin6: "net.BOOT",
-							pin7: "net.GND",
-							pin8: "net.GND",
+							pin1: "net.UART_RX",
+							pin2: "net.GND",
+							pin3: "net.UART_TX",
+							pin4: "net.GND",
+							pin5: "net.GND",
 						}}
 					/>
 				</fanout>
@@ -729,7 +732,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						pcbX="-7mm"
 						pcbY="3mm"
 						pcbRotation={90}
-						schX={10}
+						schX={8.8}
 						schY={9}
 						schRotation={-90}
 						connections={{ pin1: "net.VBAT", pin2: "net.GND" }}
@@ -754,18 +757,25 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					/>
 				</fanout>
 
-				<TPS3839G33DBZR
-					name="U4"
-					pcbX="-18mm"
-					pcbY="0mm"
-					schX={-7}
-					schY={7}
-					connections={{
-						pin1: "net.GND",
-						pin2: "net.BATTERY_OK",
-						pin3: "net.VBAT",
-					}}
-				/>
+				<fanout
+					name="SUPERVISOR_VBAT_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8SupervisorVbatPaths : []}
+				>
+					<TPS3839G33DBZR
+						name="U4"
+						pcbX="-18mm"
+						pcbY="0mm"
+						schX={-7}
+						schY={7}
+						connections={{
+							pin1: "net.GND",
+							pin2: "net.BATTERY_OK",
+							pin3: "net.VBAT",
+						}}
+					/>
+				</fanout>
 				<CC0603KRX7R9BB104
 					name="C6"
 					schRotation={-90}

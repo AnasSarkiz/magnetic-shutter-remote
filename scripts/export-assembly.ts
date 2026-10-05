@@ -75,12 +75,23 @@ const sideSwitchFootprint = {
 			).json(),
 		),
 } as const;
+const uartFootprint = {
+	supplier: "jlcpcb",
+	circuitJson: any_circuit_element
+		.array()
+		.parse(
+			await Bun.file(
+				"evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json",
+			).json(),
+		),
+} as const;
 const options = {
 	supplier: "jlcpcb",
 	requireSupplierRotation: true,
 	supplierFootprints: {
 		C37616412: supplierFootprint,
 		C393942: sideSwitchFootprint,
+		C160389: uartFootprint,
 	},
 } as const;
 const j1Source = circuit.find(
@@ -128,6 +139,32 @@ if (
 await Bun.write(
 	`${evidenceDirectory}/SW2-supplier-terminal-registration.json`,
 	JSON.stringify(switchRegistration, null, 2),
+);
+const uartSource = circuit.find(
+	(e) => e.type === "source_component" && e.name === "J3",
+);
+if (!uartSource || uartSource.type !== "source_component")
+	throw new Error("J3 source absent");
+const uartPlacement = circuit.find(
+	(e) =>
+		e.type === "pcb_component" &&
+		e.source_component_id === uartSource.source_component_id,
+);
+if (!uartPlacement || uartPlacement.type !== "pcb_component")
+	throw new Error("J3 placement absent");
+const uartRegistration = registerSupplierTerminals({
+	circuitJson: circuit,
+	pcbComponent: uartPlacement,
+	supplierFootprint: uartFootprint,
+});
+if (
+	uartRegistration.rotationDegrees !== 0 ||
+	uartRegistration.terminalCount !== 5
+)
+	throw new Error("UART supplier contact/support registration differs");
+await Bun.write(
+	`${evidenceDirectory}/J3-supplier-terminal-registration.json`,
+	JSON.stringify(uartRegistration, null, 2),
 );
 const placement = convertCircuitJsonToPickAndPlaceRows(circuit, options);
 const expected = circuit

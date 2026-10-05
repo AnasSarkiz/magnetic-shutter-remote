@@ -12,7 +12,7 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / 'evidence/R8-side-shutter-2026-10-05'
+EVIDENCE = ROOT / 'evidence/R8-standard-programmer-2026-10-05'
 
 
 def resolve_import(specifier, parent):
@@ -49,6 +49,8 @@ def stage(destination):
     if any(element['type'].endswith('_error') for element in circuit):
         raise ValueError('Current generated circuit contains errors')
     native = json.loads((EVIDENCE / 'final-native-checks.json').read_text())
+    if native.get('circuitSha256') != hashlib.sha256((ROOT / 'dist/index/circuit.json').read_bytes()).hexdigest():
+        raise ValueError('Native checks belong to a different generated circuit')
     if (native['generatedErrors'] or native['holeTrace'] or native['dangling'] or
             native['selfShorts'] or any(e['type'].endswith('_error') for e in native['all'])):
         raise ValueError('Current native checks did not pass')
@@ -62,7 +64,9 @@ def stage(destination):
     selected = source_closure(ROOT / 'index.circuit.tsx')
     selected.update(ROOT / name for name in ['package.json', 'bun.lock', 'tsconfig.json',
                     'tscircuit.config.json', 'README.md', 'VALIDATION.md', 'BOM.csv', 'BOM.md',
-                    'bom.json', 'dist/index/circuit.json'])
+                    'bom.json', 'dist/index/circuit.json', 'firmware/README.md',
+                    'firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin',
+                    'firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json'])
     for section in ['dependencies', 'devDependencies', 'overrides']:
         for specifier in package.get(section, {}).values():
             if specifier.startswith('file:'):
@@ -73,8 +77,12 @@ def stage(destination):
                 selected.update(source_closure(path))
     selected.update(EVIDENCE / name for name in ['REVIEW.md', 'final-native-checks.json',
                     'physical-connectivity.json', 'power-path-measurements.json',
-                    'SW2-supplier-terminal-registration.json',
-                    'qualification/QUALIFICATION.md'])
+                    'SW2-supplier-terminal-registration.json', 'J3-supplier-terminal-registration.json',
+                    'qualification/QUALIFICATION.md', 'qualification/land-audit.json',
+                    'qualification/programmer-release.json', 'qualification/supplier-reference/circuit.json',
+                    'qualification/C160389-supplier.json', 'qualification/programmer-0.8.0/circuit.json',
+                    'final-manufacturing.json', 'final-process/process-review.json',
+                    'final-readback/readback.json', 'PROGRAMMING.md'])
     for path in selected:
         if not path.is_file():
             raise ValueError(f'Required registry input absent: {path.relative_to(ROOT)}')
@@ -88,7 +96,7 @@ def stage(destination):
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
         hashes[str(relative)] = hashlib.sha256(target.read_bytes()).hexdigest()
-    manifest = {'status': 'side-actuated R8 engineering prototype; physical tests pending',
+    manifest = {'status': 'R8 side-actuated shutter with standard JST UART; physical tests pending',
                 'package': package['name'], 'version': package['version'],
                 'source_sha256': hashes, 'total_bytes': sum(path.stat().st_size for path in selected)}
     (destination / 'registry-source-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

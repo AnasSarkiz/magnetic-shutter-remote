@@ -1,0 +1,74 @@
+{
+  "started_utc": "20261005T215732642911Z",
+  "command": [
+    "tsci",
+    "snapshot",
+    "--update"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-3b25b76689/subcircuit_source_group_8-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+✅ evidence/R8-standard-programmer-2026-10-05/snapshots/baselines/published-main/index.circuit-pcb.snap.svg
+✅ evidence/R8-standard-programmer-2026-10-05/snapshots/baselines/published-main/index.circuit-schematic.snap.svg
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-c7f2a9e090/subcircuit_source_group_8-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+✅ evidence/R8-standard-programmer-2026-10-05/snapshots/baselines/r7/index.circuit-pcb.snap.svg
+✅ evidence/R8-standard-programmer-2026-10-05/snapshots/baselines/r7/index.circuit-schematic.snap.svg
+
+❌ Failed to generate circuit JSON for evidence/R8-prototype-2026-10-05/source-revisions/c3-route-2/index.circuit.tsx:
+   ResolveMessage: Cannot find module '../imports/SWPA3015S1R5NT/SWPA3015S1R5NT' from '/workspace/magnetic-shutter-remote/evidence/R8-prototype-2026-10-05/source-revisions/c3-route-2/src/remote-circuit.tsx'
+
+{
+  "started_utc": "20261005T215732642911Z",
+  "command": [
+    "tsci",
+    "snapshot",
+    "--update"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:58:37.727897+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 2061064,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T215732642911Z.log"
+}

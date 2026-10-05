@@ -1,0 +1,10 @@
+{
+  "package": "tscircuit/standard-jst-programmer",
+  "version": "0.8.0",
+  "package_release_id": "3d6952c4-e6ee-4711-a7c7-dded0cdef4eb",
+  "is_public": true,
+  "native_circuit_sha256": "6bb14764192cf1a4941e70b6fe86bff7a0450be3b2bfa0b9ce13731f15fc3112",
+  "published_source": "https://tscircuit.com/tscircuit/standard-jst-programmer",
+  "upstream_debugprobe_commit": "3fff5b240ca8200c7ad538cb61c02dfc39bda831",
+  "upstream_pico_sdk_commit": "079c6f39023649b154152db30f1d781e884879bc"
+}

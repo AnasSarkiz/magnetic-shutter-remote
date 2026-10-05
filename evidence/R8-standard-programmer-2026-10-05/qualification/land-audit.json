@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "part": "C160389",
+  "mpn": "BM03B-SRSS-TB(LF)(SN)",
+  "supplier_uuid": "2889a50fb12c498ebc80e0829569fea2",
+  "maximum_conversion_difference_mm": 1.2634338020234281e-13,
+  "pitch_mm": 0.9999979999999999,
+  "copper_span_y_mm": 4.200017,
+  "pads": {
+    "5": {
+      "x_mm": -2.299843,
+      "y_mm": -1.2000103,
+      "width_mm": 1.1999976,
+      "height_mm": 1.7999964
+    },
+    "4": {
+      "x_mm": 2.299843,
+      "y_mm": -1.1997563,
+      "width_mm": 1.1999976,
+      "height_mm": 1.7999964
+    },
+    "1": {
+      "x_mm": 1.000125,
+      "y_mm": 1.3250037,
+      "width_mm": 0.5999988,
+      "height_mm": 1.5500096
+    },
+    "2": {
+      "x_mm": 0.000127,
+      "y_mm": 1.3250037,
+      "width_mm": 0.5999988,
+      "height_mm": 1.5500096
+    },
+    "3": {
+      "x_mm": -0.999871,
+      "y_mm": 1.3250037,
+      "width_mm": 0.5999988,
+      "height_mm": 1.5500096
+    }
+  },
+  "manufacturer_source": "references/JST-SH.pdf, page1 top-entry lands and page3 header table",
+  "manufacturer_sha256": "4ad9c1d0da1476a47d33d86e8b5af856a490b62561789df84492ba426fb73631",
+  "mating_direction": "+Z / top entry",
+  "contacts": {
+    "1": "UART_RX",
+    "2": "GND",
+    "3": "UART_TX"
+  },
+  "anchors": "4/5 are insulated mechanical supports; explicitly tied to PCB GND, not UART contacts",
+  "limitations": [
+    "Nominal manufacturer land guidance; physical mating and assembled enclosure clearance remain untested."
+  ]
+}

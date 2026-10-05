@@ -1,0 +1,57 @@
+{
+  "started_utc": "20261005T210639932485Z",
+  "command": [
+    "tsci",
+    "import",
+    "C160389",
+    "--jlcpcb",
+    "--use-exact-footprint",
+    "--download"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+- Searching...
+- Importing "C160389" from JLCPCB...
+✔ Imported /workspace/magnetic-shutter-remote/imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx
+{
+  "started_utc": "20261005T210639932485Z",
+  "command": [
+    "tsci",
+    "import",
+    "C160389",
+    "--jlcpcb",
+    "--use-exact-footprint",
+    "--download"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:06:52.896324+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 896000,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T210639932485Z.log"
+}

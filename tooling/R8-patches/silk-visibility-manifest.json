@@ -1,0 +1,24 @@
+{
+  "apply_after": "tooling/R8-patches/polygon-paste-manifest.json",
+  "source_overlay": "tooling/source-archives/core-R8-silk-visibility-changes.tar.gz",
+  "runtime_archive": "tooling/vendor/core-r8-silk-visibility.tgz",
+  "source_files": [
+    "lib/components/primitive-components/SilkscreenCircle.ts",
+    "tests/repros/r8/silkscreen-circle-visibility.test.tsx",
+    "package.json",
+    "bun.lock"
+  ],
+  "validation": {
+    "control": "2fail/1pass/6assertions",
+    "fixed": "22focused tests pass; canonical ESM/declaration build passes"
+  },
+  "issues": [
+    "089",
+    "090"
+  ],
+  "sha256": {
+    "tooling/R8-patches/polygon-paste-manifest.json": "2a2956e3d25dc3378a7504c54cf3135349c87f763255a86192779fdef36a597a",
+    "tooling/source-archives/core-R8-silk-visibility-changes.tar.gz": "5f75aaf749985206d7a46381180c70d896842abc4711c83e139651d4b4245e86",
+    "tooling/vendor/core-r8-silk-visibility.tgz": "3ccff16ee06041890ba68f641f94a0b32c05724b7f966caacb3a219fe2b81a03"
+  }
+}

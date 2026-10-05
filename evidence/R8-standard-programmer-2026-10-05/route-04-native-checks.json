@@ -1,0 +1,115 @@
+{
+  "circuitSha256": "c20009fd405269b5c731d3f75ddbf936cfdbef5e81793ee41090b9a4eb8bc14d",
+  "all": [
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_pcb_component_21",
+      "message": "component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
+      "pcb_component_id": "pcb_component_21",
+      "source_component_id": "source_component_21",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "y-",
+      "recommended_facing_direction": "x+",
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_107",
+        "source_port_108",
+        "source_port_109"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_156",
+        "source_port_157",
+        "source_port_158"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": [],
+  "generatedErrors": [],
+  "generatedWarnings": [
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_26",
+      "refdes": "Q1",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_1",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_43",
+      "refdes": "Q2",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_0",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "message": "component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
+      "pcb_component_id": "pcb_component_21",
+      "source_component_id": "source_component_21",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "y-",
+      "recommended_facing_direction": "x+",
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_107",
+        "source_port_108",
+        "source_port_109"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_1",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_156",
+        "source_port_157",
+        "source_port_158"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    }
+  ]
+}

@@ -117,18 +117,9 @@ const contracts = [
 	},
 	{
 		ref: "J3",
-		mpn: "BM06B-SRSS-TB(LF)(SN)",
-		part: "C160392",
-		pins: {
-			1: "V3",
-			2: "UART_RX",
-			3: "GND",
-			4: "UART_TX",
-			5: "EN",
-			6: "BOOT",
-			7: "GND",
-			8: "GND",
-		},
+		mpn: "BM03B-SRSS-TB(LF)(SN)",
+		part: "C160389",
+		pins: { 1: "UART_RX", 2: "GND", 3: "UART_TX", 4: "GND", 5: "GND" },
 	},
 	{
 		ref: "L1",

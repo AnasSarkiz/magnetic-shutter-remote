@@ -52,14 +52,14 @@ export function FunctionalMarkings() {
 				fontSize={1.8}
 			/>
 			<silkscreentext
-				text="UART 3V3 ONLY / 1:VREF 2:RX 3:GND"
+				text="UART 3V3 / 1:RX 2:GND 3:TX"
 				pcbX={0}
 				pcbY={1}
 				layer="bottom"
 				fontSize={1.8}
 			/>
 			<silkscreentext
-				text="4:TX 5:EN 6:BOOT / NO POWER INJECTION"
+				text="BATTERY POWER / MANUAL BOOT + RESET"
 				pcbX={0}
 				pcbY={-2}
 				layer="bottom"
@@ -67,7 +67,7 @@ export function FunctionalMarkings() {
 			/>
 			<silkscreentext
 				text="1"
-				pcbX={17}
+				pcbX={16}
 				pcbY={19.5}
 				layer="top"
 				fontSize={1.8}

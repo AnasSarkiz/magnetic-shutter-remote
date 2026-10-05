@@ -1,3 +1,9 @@
+# Current R8 direct JST UART programming —2026-10-05
+
+R8 now uses **J3 BM03B-SRSS-TB(LF)(SN)/C160389**,3-pin JST SH1mm: **1RX(GPIO20),2GND,3TX(GPIO21)**. Connect directly to the standard-jst-programmer0.8.0 **J5 UART** with a straight-through cable; programmer contact1TX/3RX. R8 battery POWER on, R8 USB-C unplugged; programmer target-power/SWD cables disconnected. BOOT(SW4)/RESET(SW5) remain manual. Read [the programming procedure](../evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md) before using hardware. The host helper preserves DTR on Windows/Linux/macOS and requires an explicit write flag/CDC0 port. No physical flash test is claimed.
+
+The existing reviewed DOIT C3 binary and its BUILD-MANIFEST are unchanged; no firmware/SDK rebuild was needed for this header-only change. The older six-pin header descriptions below are retained history and superseded by this pinout.
+
 # Current R8 DOIT ESP32-C3 firmware — hosted rebuild in progress
 
 The fitted DOIT ESPC3-12-N4 / C19949072 uses UART GPIO20/21 and user GPIO4/5/6. Build target is pinned Zephyr4.2.0 `esp32c3_devkitc/esp32c3`, the original C3 overlay, and the same locked Python/SDK/HAL dependencies. Explicit40 MHz silicon/board clock applies; the earlier26 MHz C2 overlay remains an unused investigation artifact. Application source is unchanged. Hosted rebuild results will be recorded separately from the historical macOS build below.

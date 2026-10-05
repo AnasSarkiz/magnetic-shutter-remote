@@ -1,0 +1,5 @@
+Current image: {'bytes': 411576, 'sha256': 'bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132', 'chip_id': 5}
+Unexpected chip id in image. Expected 5 but value was 12. Is this image for a different chip model?
+wrong-chip correctly rejected: Only ESP32-C3 images are accepted
+bad-checksum correctly rejected: ESP image segment checksum differs
+Actual pinned esptool parser checks PASS; no serial device opened.

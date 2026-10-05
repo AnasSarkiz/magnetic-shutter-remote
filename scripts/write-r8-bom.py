@@ -44,7 +44,7 @@ def write_bom(evidence_directory=EVIDENCE):
                     lcsc_link=f'https://www.lcsc.com/product-detail/{number}.html',
                     qualification=f'Engineering prototype; see {evidence_directory.relative_to(ROOT)}/REVIEW.md and current validation; physical tests pending')
         parts.append(part)
-    bom = {'revision':'R8-ESP32-C3-side-shutter-'+json.loads((ROOT/'package.json').read_text())['version'],
+    bom = {'revision':'R8-ESP32-C3-standard-programmer-'+json.loads((ROOT/'package.json').read_text())['version'],
            'status':f'{sum(p["quantity"] for p in parts)} fitted references / {len(parts)} exact supplier identities; engineering prototype; hardware unvalidated',
            'parts':parts}
     (ROOT / 'bom.json').write_text(json.dumps(bom, indent=2)+'\n')

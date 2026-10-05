@@ -16,6 +16,8 @@ command -v npm >/dev/null
 command -v python3 >/dev/null
 python3 -c 'import sys; assert sys.version_info >= (3, 11), "Python >=3.11 required"'
 mkdir -p .codex/runtime .codex/logs
+# The hosted home is read-only; keep Bun metadata/cache in this task workspace.
+export BUN_INSTALL_CACHE_DIR="$project_root/.codex/runtime/bun-cache"
 export npm_config_cache="$project_root/.codex/runtime/npm-cache"
 npm install --prefix "$project_root/.codex/runtime" --no-save --package-lock=false node@25.6.0 bun@1.3.9
 export PATH="$project_root/.codex/runtime/node_modules/.bin:$PATH"

@@ -1,0 +1,74 @@
+{
+  "started_utc": "20261005T211654829132Z",
+  "command": [
+    "tsci",
+    "build",
+    "tests/fixtures/r8-standard-placement.circuit.tsx",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building tests/fixtures/r8-standard-placement.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/fixtures/r8-standard-placement/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Generating preview images...
+[tests/fixtures/r8-standard-placement] Generating PCB SVG...
+[tests/fixtures/r8-standard-placement] Written pcb.svg
+[tests/fixtures/r8-standard-placement] Generating schematic SVG...
+[tests/fixtures/r8-standard-placement] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
+{
+  "started_utc": "20261005T211654829132Z",
+  "command": [
+    "tsci",
+    "build",
+    "tests/fixtures/r8-standard-placement.circuit.tsx",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:17:08.612320+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 1884228,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T211654829132Z.log"
+}

@@ -1,0 +1,1359 @@
+{
+  "layers": {
+    "B_Cu.gbr": {
+      "objects": 437,
+      "bounds_mm": [
+        [
+          -22.7,
+          -18.7
+        ],
+        [
+          22.7,
+          27.660166999999998
+        ]
+      ],
+      "copper_match": {
+        "source_area_mm2": 1789.2098945437856,
+        "export_area_mm2": 1789.2098936434134,
+        "comparison_bound_mm": 2e-05,
+        "source_and_export_cover_each_other": true
+      }
+    },
+    "B_Mask.gbr": {
+      "objects": 20,
+      "bounds_mm": [
+        [
+          -22.1,
+          -15.1
+        ],
+        [
+          22.650024,
+          27.710967
+        ]
+      ],
+      "all_smt_lands_open": true
+    },
+    "B_Paste.gbr": {
+      "objects": 0,
+      "bounds_mm": null,
+      "paste_match": {
+        "source_area_mm2": 0.0,
+        "export_area_mm2": 0.0,
+        "comparison_bound_mm": 2e-05,
+        "source_and_export_cover_each_other": true
+      }
+    },
+    "B_SilkScreen.gbr": {
+      "objects": 615,
+      "bounds_mm": [
+        [
+          -21.364614,
+          -15.66213
+        ],
+        [
+          21.800042,
+          1.386156
+        ]
+      ]
+    },
+    "Edge_Cuts.gbr": {
+      "objects": 132,
+      "bounds_mm": [
+        [
+          -24.025,
+          -28.025
+        ],
+        [
+          24.025,
+          28.025
+        ]
+      ]
+    },
+    "F_Cu.gbr": {
+      "objects": 854,
+      "bounds_mm": [
+        [
+          -22.775013,
+          -18.875047
+        ],
+        [
+          23.599959,
+          27.660166999999998
+        ]
+      ],
+      "copper_match": {
+        "source_area_mm2": 1698.0991532667592,
+        "export_area_mm2": 1698.0991353027343,
+        "comparison_bound_mm": 2e-05,
+        "source_and_export_cover_each_other": true
+      }
+    },
+    "F_Fab.gbr": {
+      "objects": 231,
+      "bounds_mm": [
+        [
+          -20.156183,
+          -26.951967
+        ],
+        [
+          24.732993999999998,
+          28.714242
+        ]
+      ]
+    },
+    "F_Mask.gbr": {
+      "objects": 175,
+      "bounds_mm": [
+        [
+          -22.825813,
+          -18.925847
+        ],
+        [
+          23.599959,
+          27.710967
+        ]
+      ],
+      "all_smt_lands_open": true
+    },
+    "F_Paste.gbr": {
+      "objects": 159,
+      "bounds_mm": [
+        [
+          -22.775013,
+          -18.875047
+        ],
+        [
+          23.599959,
+          27.660015
+        ]
+      ],
+      "paste_match": {
+        "source_area_mm2": 115.46008073487353,
+        "export_area_mm2": 115.46007380734709,
+        "comparison_bound_mm": 2e-05,
+        "source_and_export_cover_each_other": true
+      }
+    },
+    "F_SilkScreen.gbr": {
+      "objects": 258,
+      "bounds_mm": [
+        [
+          -22.851719,
+          -12.163295
+        ],
+        [
+          22.664137,
+          19.869545
+        ]
+      ]
+    }
+  },
+  "drills": {
+    "drill-L1-L2.drl": [
+      {
+        "source_id": "pcb_plated_hole_0",
+        "kind": "slot",
+        "position_mm": [
+          -4.3199,
+          22.560200000000002
+        ],
+        "diameter_mm": 0.599999,
+        "length_mm": 1.3999990000000007,
+        "position_error_mm": 2.392822601034412e-05,
+        "diameter_error_mm": 1.9999999989472883e-07
+      },
+      {
+        "source_id": "pcb_plated_hole_1",
+        "kind": "slot",
+        "position_mm": [
+          4.3199,
+          22.560200000000002
+        ],
+        "diameter_mm": 0.599999,
+        "length_mm": 1.3999990000000007,
+        "position_error_mm": 2.3928226013818404e-05,
+        "diameter_error_mm": 1.9999999989472883e-07
+      },
+      {
+        "source_id": "pcb_plated_hole_2",
+        "kind": "slot",
+        "position_mm": [
+          4.3199,
+          26.560200000000002
+        ],
+        "diameter_mm": 0.599999,
+        "length_mm": 1.7999989999999992,
+        "position_error_mm": 3.2190681880271894e-05,
+        "diameter_error_mm": 1.9999999989472883e-07
+      },
+      {
+        "source_id": "pcb_plated_hole_3",
+        "kind": "slot",
+        "position_mm": [
+          -4.3199,
+          26.560200000000002
+        ],
+        "diameter_mm": 0.599999,
+        "length_mm": 1.7999989999999992,
+        "position_error_mm": 3.2190681880271894e-05,
+        "diameter_error_mm": 1.9999999989472883e-07
+      },
+      {
+        "source_id": "pcb_via_0",
+        "kind": "round",
+        "position_mm": [
+          -3.6,
+          20.1
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_1",
+        "kind": "round",
+        "position_mm": [
+          -2.0,
+          19.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_2",
+        "kind": "round",
+        "position_mm": [
+          -0.8,
+          19.9
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_3",
+        "kind": "round",
+        "position_mm": [
+          0.8,
+          19.9
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_4",
+        "kind": "round",
+        "position_mm": [
+          2.0,
+          19.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_5",
+        "kind": "round",
+        "position_mm": [
+          3.6,
+          19.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_6",
+        "kind": "round",
+        "position_mm": [
+          -1.9999,
+          10.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.249999999987985e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_7",
+        "kind": "round",
+        "position_mm": [
+          -0.9998,
+          10.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 7.499999999938112e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_8",
+        "kind": "round",
+        "position_mm": [
+          -0.0003,
+          10.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 1.749999999999999e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_9",
+        "kind": "round",
+        "position_mm": [
+          0.9998,
+          10.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 7.499999999938112e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_10",
+        "kind": "round",
+        "position_mm": [
+          1.9999,
+          10.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.250000000010189e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_11",
+        "kind": "round",
+        "position_mm": [
+          1.9999,
+          15.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.250000000010189e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_12",
+        "kind": "round",
+        "position_mm": [
+          0.9998,
+          15.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 7.499999999938112e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_13",
+        "kind": "round",
+        "position_mm": [
+          -0.0003,
+          15.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 1.749999999999999e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_14",
+        "kind": "round",
+        "position_mm": [
+          -1.9999,
+          15.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.250000000010189e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_15",
+        "kind": "round",
+        "position_mm": [
+          -2.5,
+          13.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_16",
+        "kind": "round",
+        "position_mm": [
+          6.2534,
+          7.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.5999999999702936e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_17",
+        "kind": "round",
+        "position_mm": [
+          4.7466,
+          7.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.5999999999702936e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_18",
+        "kind": "round",
+        "position_mm": [
+          8.1349,
+          14.783
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 7.20000000065113e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_19",
+        "kind": "round",
+        "position_mm": [
+          3.9328,
+          14.7942
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 5.263755402073796e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_20",
+        "kind": "round",
+        "position_mm": [
+          3.8,
+          9.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_21",
+        "kind": "round",
+        "position_mm": [
+          5.2,
+          13.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_22",
+        "kind": "round",
+        "position_mm": [
+          -7.4,
+          16.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_23",
+        "kind": "round",
+        "position_mm": [
+          0.2466,
+          17.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.599999999998049e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_24",
+        "kind": "round",
+        "position_mm": [
+          1.7534,
+          18.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.6000000000147026e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_25",
+        "kind": "round",
+        "position_mm": [
+          9.2,
+          -8.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_26",
+        "kind": "round",
+        "position_mm": [
+          13.0,
+          -8.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_27",
+        "kind": "round",
+        "position_mm": [
+          10.5,
+          -5.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.000000000279556e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_28",
+        "kind": "round",
+        "position_mm": [
+          14.0,
+          -3.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.000000000279556e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_29",
+        "kind": "round",
+        "position_mm": [
+          14.2001,
+          19.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.4999999999053557e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_30",
+        "kind": "round",
+        "position_mm": [
+          13.2001,
+          19.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.6999999999333113e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_31",
+        "kind": "round",
+        "position_mm": [
+          12.2001,
+          19.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.899999999961267e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_32",
+        "kind": "round",
+        "position_mm": [
+          -1.5,
+          3.3
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_33",
+        "kind": "round",
+        "position_mm": [
+          3.0,
+          1.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_34",
+        "kind": "round",
+        "position_mm": [
+          -13.0,
+          3.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_35",
+        "kind": "round",
+        "position_mm": [
+          -8.0,
+          4.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_36",
+        "kind": "round",
+        "position_mm": [
+          -7.8,
+          0.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_37",
+        "kind": "round",
+        "position_mm": [
+          -7.5,
+          6.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_38",
+        "kind": "round",
+        "position_mm": [
+          -7.5,
+          8.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_39",
+        "kind": "round",
+        "position_mm": [
+          -15.0,
+          -3.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.000000000279556e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_40",
+        "kind": "round",
+        "position_mm": [
+          -7.9,
+          1.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_41",
+        "kind": "round",
+        "position_mm": [
+          -20.1,
+          0.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_42",
+        "kind": "round",
+        "position_mm": [
+          2.0,
+          4.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_43",
+        "kind": "round",
+        "position_mm": [
+          2.3,
+          6.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_44",
+        "kind": "round",
+        "position_mm": [
+          -2.0,
+          7.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_45",
+        "kind": "round",
+        "position_mm": [
+          -2.3,
+          6.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_46",
+        "kind": "round",
+        "position_mm": [
+          -2.0,
+          4.8
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_47",
+        "kind": "round",
+        "position_mm": [
+          0.8,
+          9.4
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_48",
+        "kind": "round",
+        "position_mm": [
+          3.2,
+          8.5
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_49",
+        "kind": "round",
+        "position_mm": [
+          -5.2534,
+          4.4
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.5999999999702936e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_50",
+        "kind": "round",
+        "position_mm": [
+          11.0,
+          6.95
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.999999999937387e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_51",
+        "kind": "round",
+        "position_mm": [
+          -4.5,
+          14.6
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.000000000279556e-06,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_52",
+        "kind": "round",
+        "position_mm": [
+          7.2499,
+          24.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.799999999998249e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_53",
+        "kind": "round",
+        "position_mm": [
+          17.8,
+          2.7501
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.2000000000032e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_54",
+        "kind": "round",
+        "position_mm": [
+          -16.0,
+          -3.4
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_55",
+        "kind": "round",
+        "position_mm": [
+          4.958,
+          -5.542
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_56",
+        "kind": "round",
+        "position_mm": [
+          -4.2466,
+          17.4
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 3.5999999999702936e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_57",
+        "kind": "round",
+        "position_mm": [
+          -3.2,
+          7.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_58",
+        "kind": "round",
+        "position_mm": [
+          0.6571,
+          3.9214
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 6.25039281586623e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_59",
+        "kind": "round",
+        "position_mm": [
+          7.9893,
+          3.7417
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 6.041413792452359e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_60",
+        "kind": "round",
+        "position_mm": [
+          -6.175,
+          0.275
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_61",
+        "kind": "round",
+        "position_mm": [
+          -2.803,
+          -12.765
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_62",
+        "kind": "round",
+        "position_mm": [
+          8.9571,
+          -13.3581
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.153841387305664e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_63",
+        "kind": "round",
+        "position_mm": [
+          16.6571,
+          3.6371
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 6.230495696334404e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_64",
+        "kind": "round",
+        "position_mm": [
+          -5.3257,
+          14.8096
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.8858326409383956e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_65",
+        "kind": "round",
+        "position_mm": [
+          2.835,
+          9.5536
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.6764513833654746e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_66",
+        "kind": "round",
+        "position_mm": [
+          4.875,
+          10.16
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 1.7763568394002505e-15,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_67",
+        "kind": "round",
+        "position_mm": [
+          -1.183,
+          25.014
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_68",
+        "kind": "round",
+        "position_mm": [
+          6.335,
+          -6.669
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.950000000025767e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_69",
+        "kind": "round",
+        "position_mm": [
+          -0.8,
+          -5.2
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_70",
+        "kind": "round",
+        "position_mm": [
+          -12.505,
+          5.85
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_71",
+        "kind": "round",
+        "position_mm": [
+          -12.3206,
+          0.4167
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.007642992202833e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_72",
+        "kind": "round",
+        "position_mm": [
+          -19.5,
+          2.775
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_73",
+        "kind": "round",
+        "position_mm": [
+          -1.593,
+          8.722
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_74",
+        "kind": "round",
+        "position_mm": [
+          6.26,
+          15.654
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_75",
+        "kind": "round",
+        "position_mm": [
+          0.0,
+          5.775
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_76",
+        "kind": "round",
+        "position_mm": [
+          4.576,
+          19.255
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_77",
+        "kind": "round",
+        "position_mm": [
+          -1.6,
+          0.0
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_78",
+        "kind": "round",
+        "position_mm": [
+          -2.5678,
+          9.2913
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.81657901166188e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_79",
+        "kind": "round",
+        "position_mm": [
+          6.8351,
+          4.8303
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.611596752646327e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_80",
+        "kind": "round",
+        "position_mm": [
+          -16.74,
+          -1.675
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_81",
+        "kind": "round",
+        "position_mm": [
+          3.7834,
+          7.1515
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 4.251138820950705e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_82",
+        "kind": "round",
+        "position_mm": [
+          6.1784,
+          22.9036
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 2.257004316100259e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_83",
+        "kind": "round",
+        "position_mm": [
+          -9.411,
+          -3.823
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_84",
+        "kind": "round",
+        "position_mm": [
+          9.6,
+          18.93
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_85",
+        "kind": "round",
+        "position_mm": [
+          15.95,
+          -9.349
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_86",
+        "kind": "round",
+        "position_mm": [
+          -18.636,
+          7.742
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_via_87",
+        "kind": "round",
+        "position_mm": [
+          -17.364,
+          5.88
+        ],
+        "diameter_mm": 0.3,
+        "length_mm": 0.3,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      }
+    ],
+    "drill_npth.drl": [
+      {
+        "source_id": "pcb_hole_0",
+        "kind": "round",
+        "position_mm": [
+          22.3,
+          -9.3498
+        ],
+        "diameter_mm": 0.700024,
+        "length_mm": 0.700024,
+        "position_error_mm": 3.5336242017418796e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_hole_1",
+        "kind": "round",
+        "position_mm": [
+          22.3,
+          -7.6498
+        ],
+        "diameter_mm": 0.700024,
+        "length_mm": 0.700024,
+        "position_error_mm": 1.6487874332069324e-05,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_hole_2",
+        "kind": "round",
+        "position_mm": [
+          21.7562,
+          3.5001
+        ],
+        "diameter_mm": 0.900024,
+        "length_mm": 0.900024,
+        "position_error_mm": 4.6593159369721886e-05,
+        "diameter_error_mm": 4.0000000001150227e-07
+      },
+      {
+        "source_id": "pcb_hole_3",
+        "kind": "round",
+        "position_mm": [
+          21.7562,
+          6.5001
+        ],
+        "diameter_mm": 0.900024,
+        "length_mm": 0.900024,
+        "position_error_mm": 4.297583623453591e-05,
+        "diameter_error_mm": 4.0000000001150227e-07
+      },
+      {
+        "source_id": "pcb_hole_4",
+        "kind": "round",
+        "position_mm": [
+          -21.0,
+          25.0
+        ],
+        "diameter_mm": 2.2,
+        "length_mm": 2.2,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_hole_5",
+        "kind": "round",
+        "position_mm": [
+          21.0,
+          25.0
+        ],
+        "diameter_mm": 2.2,
+        "length_mm": 2.2,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_hole_6",
+        "kind": "round",
+        "position_mm": [
+          -21.0,
+          -14.0
+        ],
+        "diameter_mm": 2.2,
+        "length_mm": 2.2,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      },
+      {
+        "source_id": "pcb_hole_7",
+        "kind": "round",
+        "position_mm": [
+          21.0,
+          -14.0
+        ],
+        "diameter_mm": 2.2,
+        "length_mm": 2.2,
+        "position_error_mm": 0.0,
+        "diameter_error_mm": 0.0
+      }
+    ]
+  },
+  "source": "dist/index/circuit.json",
+  "manufacturing_failures": 0
+}

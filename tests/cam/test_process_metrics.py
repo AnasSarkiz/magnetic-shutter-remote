@@ -33,5 +33,24 @@ class StencilReleaseTest(unittest.TestCase):
             METRICS.release_metrics(box(0,0,1,1),0)
 
 
+class CompleteSilkscreenTest(unittest.TestCase):
+    def test_supplier_circles_are_measured_beyond_text_only_attribution(self):
+        # Original failing native export is retained; no synthetic text mirror.
+        from zipfile import ZipFile
+        from gerbonara import GerberFile
+        from shapely.geometry import LineString
+        from shapely.ops import polygonize, unary_union
+        archive=Path(__file__).resolve().parents[2]/'fabrication/R8-standard-programmer-2026-10-05/R8-standard-programmer-route04-Gerbers.zip'
+        with ZipFile(archive) as z:
+            silk=GerberFile.from_string(z.read('F_SilkScreen.gbr').decode())
+            mask=GerberFile.from_string(z.read('F_Mask.gbr').decode())
+            edge=GerberFile.from_string(z.read('Edge_Cuts.gbr').decode())
+        outline,=polygonize(unary_union([LineString([(p.x1,p.y1),(p.x2,p.y2)]) for obj in edge.objects for p in obj.to_primitives()]))
+        result=METRICS.silkscreen_metrics(silk,METRICS.READER.copper_geometry(silk),METRICS.READER.copper_geometry(mask),outline)
+        self.assertAlmostEqual(result['minimum_stroke_mm'],.1)
+        self.assertLess(result['mask_gap_mm'],.15)
+        self.assertEqual(result['outside_outline_mm2'],0)
+
+
 if __name__=='__main__':
     unittest.main()

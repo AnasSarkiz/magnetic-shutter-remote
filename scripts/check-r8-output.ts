@@ -12,6 +12,9 @@ const circuit = any_circuit_element
 	.array()
 	.parse(await Bun.file("dist/index/circuit.json").json());
 const result = {
+	circuitSha256: new Bun.CryptoHasher("sha256")
+		.update(await Bun.file("dist/index/circuit.json").arrayBuffer())
+		.digest("hex"),
 	all: await runAllChecks(circuit),
 	holeTrace: checkHoleTraceClearance(circuit),
 	dangling: checkDanglingTraces(circuit),

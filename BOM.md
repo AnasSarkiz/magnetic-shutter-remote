@@ -21,7 +21,7 @@ Derived from generated Circuit JSON and dated exact-C-number sourcing; stock is 
 | C5, C13, C6, C7 | CC0603KRX7R9BB104 | C14663 | 4 | 12618106 |
 | SW2 | TS24CA | C393942 | 1 | 444478 |
 | SW3, SW4, SW5 | TS-1088-AR02016 | C720477 | 3 | 877449 |
-| J3 | BM06B-SRSS-TB(LF)(SN) | C160392 | 1 | 8653 |
+| J3 | BM03B-SRSS-TB(LF)(SN) | C160389 | 1 | 8526 |
 | SW1 | MSK12C02 | C431540 | 1 | 147825 |
 | R5, R6, R12, R13 | 0603WAF1003T5E | C25803 | 4 | 7990119 |
 | Q1, Q2 | 2N7002 | C8545 | 2 | 432340 |

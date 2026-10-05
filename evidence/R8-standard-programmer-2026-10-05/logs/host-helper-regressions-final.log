@@ -1,0 +1,9 @@
+test_default_image_is_preserved_c3 (test_standard_jst_programmer.StandardProgrammer.test_default_image_is_preserved_c3) ... ok
+test_image_validation_rejects_changed_wrong_chip_and_checksum (test_standard_jst_programmer.StandardProgrammer.test_image_validation_rejects_changed_wrong_chip_and_checksum) ... ok
+test_published_host_and_target_contacts (test_standard_jst_programmer.StandardProgrammer.test_published_host_and_target_contacts) ... ok
+test_serial_open_preserves_dtr_and_manual_reset (test_standard_jst_programmer.StandardProgrammer.test_serial_open_preserves_dtr_and_manual_reset) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK

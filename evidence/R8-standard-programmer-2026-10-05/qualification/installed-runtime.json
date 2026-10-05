@@ -1,0 +1,8 @@
+{
+  "runtime": "tooling/vendor/core-r8-silk-visibility.tgz",
+  "archive_sha256": "3ccff16ee06041890ba68f641f94a0b32c05724b7f966caacb3a219fe2b81a03",
+  "exact_installed_members": {
+    "dist/index.js": true,
+    "dist/index.d.ts": true
+  }
+}

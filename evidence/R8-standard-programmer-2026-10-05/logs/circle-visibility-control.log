@@ -1,0 +1,85 @@
+{
+  "started_utc": "20261005T214047289857Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/silkscreen-circle-visibility.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/silkscreen-circle-visibility.test.tsx:
+ 6 |   circuit.add(<board width={20} height={20} routingDisabled pcbSx={{"& footprint silkscreencircle":{visibility:"hidden"}}}>
+ 7 |     <chip name="U1" footprint={<footprint><silkscreencircle pcbX={1} pcbY={2} radius={0.2}/></footprint>}/>
+ 8 |     <silkscreentext text="PIN 1" pcbX={4} pcbY={4} fontSize={1.8}/>
+ 9 |   </board>)
+10 |   circuit.render()
+11 |   expect(circuit.db.pcb_silkscreen_circle.list()).toHaveLength(0)
+                                                       ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/silkscreen-circle-visibility.test.tsx:11:51)
+(fail) board footprint selector hides supplier circles while retaining functional text [62.25ms]
+19 |     <chip name="U1" pcbX={-4} footprint={footprint} pcbSx={{"& footprint silkscreencircle":{visibility:"hidden"}}}/>
+20 |     <chip name="U2" pcbX={4} footprint={footprint}/>
+21 |   </board>)
+22 |   circuit.render()
+23 |   const circles=circuit.db.pcb_silkscreen_circle.list()
+24 |   expect(circles).toHaveLength(1)
+                       ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 1
+Received length: 2
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/silkscreen-circle-visibility.test.tsx:24:19)
+(fail) component scope only hides the selected circle footprint [30.46ms]
+(pass) visible circle retains transform, radius, stroke and layer [6.21ms]
+
+ 1 pass
+ 2 fail
+ 6 expect() calls
+Ran 3 tests across 1 file. [1.66s]
+{
+  "started_utc": "20261005T214047289857Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/silkscreen-circle-visibility.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:40:48.981339+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 588996,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T214047289857Z.log"
+}

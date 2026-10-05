@@ -1,0 +1,109 @@
+{
+  "started_utc": "20261005T214128171981Z",
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd .codex/runtime/r8-tooling/core; bun test ./tests/repros/r8/silkscreen-circle-visibility.test.tsx ./tests/repros/r8/polygon-pad-paste.test.tsx ./tests/repros/r8/polygon-pad-local-bounds.test.tsx ./tests/repros/r8/smtpad-mask-default.test.tsx ./tests/repros/r8/smtpad-mask-specificity.test.tsx ./tests/repros/r8/smtpad-mask-style.test.tsx ./tests/components/primitive-components/smtpad-parent-paste-style.test.tsx ./tests/repros/r7/mixed-pad-bounds-convention.test.tsx ./tests/repros/r7/separated-mixed-ground-pads.test.tsx ./tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx; bunx --no-install biome format --write lib/components/primitive-components/SilkscreenCircle.ts tests/repros/r8/silkscreen-circle-visibility.test.tsx; bun run build"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/silkscreen-circle-visibility.test.tsx:
+(pass) board footprint selector hides supplier circles while retaining functional text [58.71ms]
+(pass) component scope only hides the selected circle footprint [28.99ms]
+(pass) visible circle retains transform, radius, stroke and layer [5.77ms]
+
+tests/repros/r8/polygon-pad-paste.test.tsx:
+(pass) polygon paste preserves concavity and registration at0deg [28.30ms]
+(pass) polygon paste preserves concavity and registration at90deg [8.39ms]
+(pass) polygon paste preserves concavity and registration at180deg [6.85ms]
+(pass) polygon paste preserves concavity and registration at270deg [6.20ms]
+(pass) covered polygon creates no solder paste [5.92ms]
+(pass) polygon paste follows a layout translation without losing its concavity [5.99ms]
+(pass) polygon paste default preserves the existing 0.7 scale [9.16ms]
+(pass) unsupported polygon paste offsets fail explicitly [2.87ms]
+
+tests/repros/r8/polygon-pad-local-bounds.test.tsx:
+(pass) offset polygon contributes its actual bounds at0deg [13.56ms]
+(pass) offset polygon contributes its actual bounds at90deg [6.24ms]
+(pass) offset polygon contributes its actual bounds at180deg [5.97ms]
+(pass) offset polygon contributes its actual bounds at270deg [5.98ms]
+
+tests/repros/r8/smtpad-mask-default.test.tsx:
+(pass) unmatched mask selector preserves explicit supplier margin [13.43ms]
+
+tests/repros/r8/smtpad-mask-specificity.test.tsx:
+(pass) specific mask selector overrides inherited general style [17.35ms]
+
+tests/repros/r8/smtpad-mask-style.test.tsx:
+(pass) mask process override preserves supplier primitive and copper [11.79ms]
+
+tests/components/primitive-components/smtpad-parent-paste-style.test.tsx:
+(pass) parent paste margins change apertures without changing copper [12.62ms]
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+(pass) SMT pad bounds use maximum Y for top in board space at every rotation and layer [449.09ms]
+
+tests/repros/r7/separated-mixed-ground-pads.test.tsx:
+(pass) Separated mixed-shape pads retain two internally connected ports rather than being merged [18.14ms]
+
+tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:
+(pass) C347356 overlapping rectangular and pill ground pads share one PCB port [81.18ms]
+
+ 22 pass
+ 0 fail
+ 286 expect() calls
+Ran 22 tests across 10 files. [2.30s]
+Formatted 2 files in 2ms. Fixed 1 file.
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 4.04 MB
+ESM ⚡️ Build success in 555ms
+DTS ⚡️ Build success in 37110ms
+DTS dist/index.d.ts 9.46 MB
+{
+  "started_utc": "20261005T214128171981Z",
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd .codex/runtime/r8-tooling/core; bun test ./tests/repros/r8/silkscreen-circle-visibility.test.tsx ./tests/repros/r8/polygon-pad-paste.test.tsx ./tests/repros/r8/polygon-pad-local-bounds.test.tsx ./tests/repros/r8/smtpad-mask-default.test.tsx ./tests/repros/r8/smtpad-mask-specificity.test.tsx ./tests/repros/r8/smtpad-mask-style.test.tsx ./tests/components/primitive-components/smtpad-parent-paste-style.test.tsx ./tests/repros/r7/mixed-pad-bounds-convention.test.tsx ./tests/repros/r7/separated-mixed-ground-pads.test.tsx ./tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx; bunx --no-install biome format --write lib/components/primitive-components/SilkscreenCircle.ts tests/repros/r8/silkscreen-circle-visibility.test.tsx; bun run build"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T21:42:08.504454+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 3004516,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T214128171981Z.log"
+}

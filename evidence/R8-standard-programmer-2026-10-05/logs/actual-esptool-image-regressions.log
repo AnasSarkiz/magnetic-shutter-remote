@@ -1,0 +1,15 @@
+Current image: {'bytes': 411576, 'sha256': 'bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132', 'chip_id': 5}
+Unexpected chip id in image. Expected 5 but value was 12. Is this image for a different chip model?
+wrong-chip correctly rejected: Only ESP32-C3 images are accepted
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/workspace/magnetic-shutter-remote/scripts/flash-r8-standard-jst.py", line 20, in validate_image
+    image=image_class(io.BytesIO(raw))
+  File "/workspace/magnetic-shutter-remote/firmware/deps/modules/hal/espressif/tools/esptool_py/esptool/bin_image.py", line 679, in __init__
+    self.load_segment(load_file)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/firmware/deps/modules/hal/espressif/tools/esptool_py/esptool/bin_image.py", line 235, in load_segment
+    raise FatalError(
+    ...<2 lines>...
+    )
+esptool.util.FatalError: End of file reading segment 0x10403800, length 1862271226 (actual length 402239)

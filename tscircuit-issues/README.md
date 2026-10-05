@@ -127,3 +127,6 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [087 — Independent polygon reader x/y failure](087-independent-polygon-reader-requires-xy.md): project checker defect fixed from original vertices, unchanged thresholds.
 
 - [088 — ALPS locating-hole/copper clearance](088-alps-side-switch-npth-copper-clearance.md): exact supplier/manufacturer lands fail unchanged NPTH minima; candidate rejected, not patched.
+
+- [089 — Full native silk omitted by text-only process audit](089-project-process-audit-omits-nontext-silk.md): project audit coverage fixed; full exported layers now checked, original supplier-circle print failure retained.
+- [090 — Silkscreen circle ignores inherited visibility](090-silkscreen-circle-ignores-pcb-sx-visibility.md): generic core primitive fix;2 failing controls,22 focused tests/286 assertions pass; separate source overlay/runtime archive.

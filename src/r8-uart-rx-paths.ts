@@ -198,14 +198,14 @@ export const r8UartRxPaths: FanoutTracePath[] = [
 			},
 			{
 				route_type: "wire",
-				x: 14.699616,
+				x: 14.200125,
 				y: 16.962623826560254,
 				width: 0.15,
 				layer: "bottom",
 			},
 			{
 				route_type: "wire",
-				x: 14.699616,
+				x: 14.200125,
 				y: 19,
 				width: 0.15,
 				layer: "bottom",
