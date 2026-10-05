@@ -1,5 +1,24 @@
 # Current R8 direct3-pin standard-programmer prototype —2026-10-05
 
+## Compact redesign and MagSafe iPhone fit — requirements update
+
+The user requires a MagSafe phone-facing grip for multiple iPhone models and
+compatible cases, retaining the detachable side-actuated shutter and direct
+three-pin JST programming connection. Requirements are recorded in
+[`mechanical/R8-MAGSAFE-REQUIREMENTS.md`](mechanical/R8-MAGSAFE-REQUIREMENTS.md).
+Official magnetic-interface and phone/camera/case dimensions, exact magnet
+assembly, complete antenna/metal clearance and smaller protected battery
+qualification remain pending. Official Apple guidance returned proxy CONNECT
+HTTP 403 at `developer.apple.com`; the exact host is saved in the restricted
+environment draft, requiring Save/Publish and an actual access retry. The
+existing four-disc/steel-plate design is historical and not MagSafe-qualified.
+No compact layout, new enclosure, routing, fit test or MagSafe publication has
+been completed. The earlier electrical pass and published Circuit JSON below
+belong to the unchanged 48 × 56 mm prototype. Physical compatibility requires
+tests for each configuration claimed, not a universal iPhone/case promise.
+
+## Existing published electrical prototype
+
 Hardware0.3.3/package0.3.4, native route06: **0 native DRC errors,0 shorts,0 independent manufacturing/process failures**. Exact C160389/JST3 import qualified; J3 1RX/2GND/3TX matches standard-jst-programmer0.8.0 J5 over straight-through SH cable. Right-edge side-actuated TS24CA/C393942, DOIT C3 and original BLE image retained. [Current review](evidence/R8-standard-programmer-2026-10-05/REVIEW.md), [programming](evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md), [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).
 
 Requirements,44-reference/25-C-number BOM, unrouted placement, routed/native/independent copper and local export/readback/process stages pass.157traces/88vias/159paste features,29 connected nets,12native Gerber/drill files,44 TOP placements.19CAM regressions and22focused core tests/286assertions pass. 33Python+2Bun/13assertions, format/type/native shorts, full-schema visual review and two successive explicit-root snapshots pass; exact results are retained in the current review. Supplier processed-preview/fabrication approval and physical programming/power/BLE/RF/runtime/thermal/enclosure are pending. No supplier upload/order is authorized.

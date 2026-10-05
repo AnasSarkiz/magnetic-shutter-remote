@@ -1,5 +1,11 @@
 # Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
+The compact redesign must use a MagSafe phone-facing grip and support multiple
+iPhone sizes and compatible cases. [Mechanical requirements](mechanical/R8-MAGSAFE-REQUIREMENTS.md)
+define the model/camera/case and antenna-clearance gates. MagSafe attachment and
+multi-model fit are pending; the historical disc-magnet/steel-plate enclosure is
+not a validated MagSafe mount.
+
 The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 48 × 56 × 1 mm, 44 fitted TOP references. No torch. The shutter uses a side-actuated TS24CA/C393942 switch on the right edge, pressed horizontally inward; GPIO4 is unchanged. Hardware revision0.3.3; direct3-pin JST UART programming revision.
 
 **Routed prototype:0 native DRC errors,0 shorts and0 independent manufacturing failures.** Physical connectivity, local fabrication readback and process checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-standard-programmer-2026-10-05/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).
