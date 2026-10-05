@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "setupTask": {
+    "id": "01a10b96-741e-7719-9924-535fffddf04a",
+    "title": "Set up magnetic-shutter-remote",
+    "host": "durable"
+  },
+  "commands": [
+    {
+      "turn": "01a10b96-887d-75ee-b02f-5b49d47ae8c5",
+      "command": "/bin/bash -lc 'set -o pipefail\nmkdir -p .codex/logs\nbash cloud/setup.sh 2>&1 | tee .codex/logs/hosted-setup.log'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "failed",
+      "exitCode": 1,
+      "durationMs": 537,
+      "output": {
+        "text": "npm error code ENOENT\nnpm error syscall mkdir\nnpm error path /home/agent/.npm/_cacache\nnpm error errno ENOENT\nnpm error enoent Invalid response body while trying to fetch https://registry.npmjs.org/bun: ENOENT: no such file or directory, mkdir '/home/agent/.npm/_cacache'\nnpm error enoent This is related to npm not being able to find a file.\nnpm error enoent\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\nnpm error Log files were not written due to an error writing to the directory: /home/agent/.npm/_logs\nnpm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b96-887d-75ee-b02f-5b49d47ae8c5",
+      "command": "/bin/bash -lc 'set -o pipefail\nexport npm_config_cache=/workspace/magnetic-shutter-remote/.codex/runtime/npm-cache\nbash cloud/setup.sh 2>&1 | tee .codex/logs/hosted-setup.log'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "failed",
+      "exitCode": 1,
+      "durationMs": 15921,
+      "output": {
+        "text": "\nadded 7 packages in 7s\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\nbun install v1.3.9 (cf6cdbbb)\nerror: GET https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.217.tgz - 403\n\nerror: GET https://api.github.com/repos/tscircuit/pcb-trace-linter/tarball/4c035f9 - 403\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b96-887d-75ee-b02f-5b49d47ae8c5",
+      "command": "/bin/bash -lc \"set -o pipefail\npython3 -m unittest discover -s tests -v 2>&1 | tee .codex/logs/hosted-focused-tests.log\npython3 scripts/audit-r8-module.py 2>&1 | tee .codex/logs/hosted-module-audit.log\npython3 -c 'import platform,runpy,json; m=runpy.run_path(\\\"cloud/run-heavy.py\\\"); print(json.dumps({\\\"platform\\\":platform.platform(),\\\"python\\\":platform.python_version(),**m[\\\"read_memory_budget\\\"](),\\\"cpu_max\\\":open(\\\"/sys/fs/cgroup/cpu.max\\\").read().strip(),\\\"oom_counters\\\":m[\\\"oom_counters\\\"]()},indent=2))' | tee .codex/logs/hosted-resources.json\ngit rev-parse HEAD | tee .codex/logs/hosted-head.txt\ngit status --porcelain=v1 | tee .codex/logs/hosted-final-status.txt\"",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 167,
+      "output": {
+        "text": "test_cgroup_limit_is_respected_instead_of_large_host (test_cloud_runner.CloudRunnerTest.test_cgroup_limit_is_respected_instead_of_large_host) ... ok\ntest_child_failure_is_recorded_and_propagated (test_cloud_runner.CloudRunnerTest.test_child_failure_is_recorded_and_propagated) ... ok\ntest_concurrent_heavy_job_is_rejected (test_cloud_runner.CloudRunnerTest.test_concurrent_heavy_job_is_rejected) ... ok\ntest_mac_does_not_execute_heavy_commands (test_cloud_runner.CloudRunnerTest.test_mac_does_not_execute_heavy_commands) ... ok\ntest_unlimited_cgroup_uses_host_and_reserves_native_memory (test_cloud_runner.CloudRunnerTest.test_unlimited_cgroup_uses_host_and_reserves_native_memory) ... ok\ntest_exact_pin_contract_matches_manufacturer_table (test_r8_qualification.QualificationTest.test_exact_pin_contract_matches_manufacturer_table) ... ok\ntest_firmware_controls_do_not_use_boot_strap_terminals (test_r8_qualification.QualificationTest.test_firmware_controls_do_not_use_boot_strap_terminals) ... ok\ntest_manufacturer_discrepancy_remains_visible_and_blocking (test_r8_qualification.QualificationTest.test_manufacturer_discrepancy_remains_visible_and_blocking) ... ok\ntest_previous_revision_manifest_remains_unchanged (test_r8_qualification.QualificationTest.test_previous_revision_manifest_remains_unchanged) ... ok\ntest_supplier_import_preserves_all_terminal_geometry (test_r8_qualification.QualificationTest.test_supplier_import_preserves_all_terminal_geometry) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.053s\n\nOK\n{\n  \"conversion_fidelity\": \"PASS\",\n  \"maximum_conversion_difference_mm\": 5.084821452783217e-14,\n  \"manufacturer_land_pattern_qualification\": \"BLOCKED \\u2014 UNQUALIFIED SUPPLIER VARIATION\"\n}\n{\n  \"platform\": \"Linux-6.18.44-x86_64-with-glibc2.41\",\n  \"python\": \"3.12.14\",\n  \"memory_limit_bytes\": 34359738368,\n  \"node_heap_mib\": 14336,\n  \"cpu_max\": \"400000 100000\",\n  \"oom_counters\": {\n    \"low\": 0,\n    \"high\": 0,\n    \"max\": 0,\n    \"oom\": 0,\n    \"oom_kill\": 0,\n    \"oom_group_kill\": 0\n  }\n}\nb25353c0a1d7adceeab9a966aaf68a6cb3594cc9\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b96-887d-75ee-b02f-5b49d47ae8c5",
+      "command": "/bin/bash -lc 'set -o pipefail\nbash cloud/smoke.sh 2>&1 | tee .codex/logs/hosted-smoke.log'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 5428,
+      "output": {
+        "text": "Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS\n$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json\nChecked 25 files in 7ms. No fixes applied.\n$ tsc --noEmit\ntest_cgroup_limit_is_respected_instead_of_large_host (test_cloud_runner.CloudRunnerTest.test_cgroup_limit_is_respected_instead_of_large_host) ... ok\ntest_child_failure_is_recorded_and_propagated (test_cloud_runner.CloudRunnerTest.test_child_failure_is_recorded_and_propagated) ... ok\ntest_concurrent_heavy_job_is_rejected (test_cloud_runner.CloudRunnerTest.test_concurrent_heavy_job_is_rejected) ... ok\ntest_mac_does_not_execute_heavy_commands (test_cloud_runner.CloudRunnerTest.test_mac_does_not_execute_heavy_commands) ... ok\ntest_unlimited_cgroup_uses_host_and_reserves_native_memory (test_cloud_runner.CloudRunnerTest.test_unlimited_cgroup_uses_host_and_reserves_native_memory) ... ok\ntest_exact_pin_contract_matches_manufacturer_table (test_r8_qualification.QualificationTest.test_exact_pin_contract_matches_manufacturer_table) ... ok\ntest_firmware_controls_do_not_use_boot_strap_terminals (test_r8_qualification.QualificationTest.test_firmware_controls_do_not_use_boot_strap_terminals) ... ok\ntest_manufacturer_discrepancy_remains_visible_and_blocking (test_r8_qualification.QualificationTest.test_manufacturer_discrepancy_remains_visible_and_blocking) ... ok\ntest_previous_revision_manifest_remains_unchanged (test_r8_qualification.QualificationTest.test_previous_revision_manifest_remains_unchanged) ... ok\ntest_supplier_import_preserves_all_terminal_geometry (test_r8_qualification.QualificationTest.test_supplier_import_preserves_all_terminal_geometry) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.041s\n\nOK\n{\n  \"conversion_fidelity\": \"PASS\",\n  \"maximum_conversion_difference_mm\": 5.084821452783217e-14,\n  \"manufacturer_land_pattern_qualification\": \"BLOCKED \\u2014 UNQUALIFIED SUPPLIER VARIATION\"\n}\nLightweight smoke checks PASS. This is not R8 electrical, routing or fabrication validation.\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b96-887d-75ee-b02f-5b49d47ae8c5",
+      "command": "/bin/bash -lc 'bash -n .codex/logs/saved-install.sh; git status --porcelain=v1 | tee .codex/logs/hosted-final-status.txt'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": null
+    },
+    {
+      "turn": "01a10b9b-c734-75f6-9374-b1f50122155f",
+      "command": "/bin/bash -lc 'set -o pipefail\nexport npm_config_cache=/workspace/magnetic-shutter-remote/.codex/runtime/npm-cache\nbash cloud/setup.sh 2>&1 | tee .codex/logs/hosted-setup-retry.log'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 5014,
+      "output": {
+        "text": "\nremoved 2 packages, and changed 2 packages in 4s\nbun install v1.3.9 (cf6cdbbb)\n\n+ @tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz\n+ @tscircuit/cli@tooling/vendor/tscircuit-cli-r7-importer-integration.tgz\n+ @tscircuit/core@tooling/vendor/core-r7-smtpad-bounds.tgz\n+ @tscircuit/eval@tooling/vendor/tscircuit-eval-0.0.1506.tgz\n+ @tscircuit/props@tooling/vendor/props-qualified-source.tgz\n+ circuit-json@tooling/vendor/circuit-json-qualified-source.tgz\n+ circuit-json-to-gerber@tooling/vendor/circuit-json-to-gerber-qualified-source.tgz\n+ circuit-json-to-pnp-csv@tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz\n+ circuit-to-svg@tooling/vendor/circuit-to-svg-qualified-source.tgz\n+ easyeda@tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz\n\n14 packages installed [1279.00ms]\nFrozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS\nv25.6.0\n1.3.9\nPython 3.12.14\nDependency setup complete. No routing, root board build, publishing or ordering was performed.\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b9b-c734-75f6-9374-b1f50122155f",
+      "command": "/bin/bash -lc 'set -o pipefail\nbash cloud/smoke.sh 2>&1 | tee .codex/logs/hosted-smoke-retry.log'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 5096,
+      "output": {
+        "text": "Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS\n$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json\nChecked 25 files in 7ms. No fixes applied.\n$ tsc --noEmit\ntest_cgroup_limit_is_respected_instead_of_large_host (test_cloud_runner.CloudRunnerTest.test_cgroup_limit_is_respected_instead_of_large_host) ... ok\ntest_child_failure_is_recorded_and_propagated (test_cloud_runner.CloudRunnerTest.test_child_failure_is_recorded_and_propagated) ... ok\ntest_concurrent_heavy_job_is_rejected (test_cloud_runner.CloudRunnerTest.test_concurrent_heavy_job_is_rejected) ... ok\ntest_mac_does_not_execute_heavy_commands (test_cloud_runner.CloudRunnerTest.test_mac_does_not_execute_heavy_commands) ... ok\ntest_unlimited_cgroup_uses_host_and_reserves_native_memory (test_cloud_runner.CloudRunnerTest.test_unlimited_cgroup_uses_host_and_reserves_native_memory) ... ok\ntest_exact_pin_contract_matches_manufacturer_table (test_r8_qualification.QualificationTest.test_exact_pin_contract_matches_manufacturer_table) ... ok\ntest_firmware_controls_do_not_use_boot_strap_terminals (test_r8_qualification.QualificationTest.test_firmware_controls_do_not_use_boot_strap_terminals) ... ok\ntest_manufacturer_discrepancy_remains_visible_and_blocking (test_r8_qualification.QualificationTest.test_manufacturer_discrepancy_remains_visible_and_blocking) ... ok\ntest_previous_revision_manifest_remains_unchanged (test_r8_qualification.QualificationTest.test_previous_revision_manifest_remains_unchanged) ... ok\ntest_supplier_import_preserves_all_terminal_geometry (test_r8_qualification.QualificationTest.test_supplier_import_preserves_all_terminal_geometry) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.045s\n\nOK\n{\n  \"conversion_fidelity\": \"PASS\",\n  \"maximum_conversion_difference_mm\": 5.084821452783217e-14,\n  \"manufacturer_land_pattern_qualification\": \"BLOCKED \\u2014 UNQUALIFIED SUPPLIER VARIATION\"\n}\nLightweight smoke checks PASS. This is not R8 electrical, routing or fabrication validation.\n",
+        "truncated": false
+      }
+    },
+    {
+      "turn": "01a10b9b-c734-75f6-9374-b1f50122155f",
+      "command": "/bin/bash -lc 'git diff --exit-code; git diff --cached --exit-code; git status --porcelain=v1 --untracked-files=all | tee .codex/logs/hosted-final-status.txt; git rev-parse HEAD; git branch --show-current; python3 cloud/verify-context.py'",
+      "cwd": "/workspace/magnetic-shutter-remote",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": {
+        "text": "b25353c0a1d7adceeab9a966aaf68a6cb3594cc9\ncloud/r8-cloud-setup\nFrozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS\n",
+        "truncated": false
+      }
+    }
+  ]
+}

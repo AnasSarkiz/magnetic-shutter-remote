@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "environmentName": "magnetic-shutter-remote-r8",
+  "state": "PUBLISHED",
+  "publicationVerifiedUTC": "2026-10-05 10:33:02 UTC",
+  "visibility": "Only me",
+  "repository": "AnasSarkiz/magnetic-shutter-remote",
+  "branch": "cloud/r8-cloud-setup",
+  "preparedSourceCommit": "b25353c0a1d7adceeab9a966aaf68a6cb3594cc9",
+  "setupTaskURL": "https://chatgpt.com/local/01a10b96-741e-7719-9924-535fffddf04a?hostId=local",
+  "observedResources": {
+    "memoryLimitBytes": 34359738368,
+    "cpuQuota": "400000 100000",
+    "effectiveCPUs": 4,
+    "nodeHeapMiB": 14336,
+    "python": "3.12.14",
+    "node": "25.6.0",
+    "bun": "1.3.9",
+    "oomCountersAllZero": true,
+    "allocationGuarantee": false
+  },
+  "validation": {
+    "setupExitCode": 0,
+    "smokeExitCode": 0,
+    "focusedTestsPassed": 10,
+    "frozenR7Hashes": "129/129 PASS",
+    "sourceRuntimeArchiveHashes": "PASS",
+    "format": "PASS",
+    "typeScript": "PASS",
+    "trackedDiff": "empty",
+    "untrackedStatus": "empty",
+    "boardRouting": "NOT RUN",
+    "rootBoardBuild": "NOT RUN",
+    "broadDFM": "NOT RUN",
+    "physicalTests": "POST-PROTOTYPE PHYSICAL VALIDATION",
+    "moduleQualification": "BLOCKED \u2014 issues075/076"
+  },
+  "network": {
+    "preset": "Package managers",
+    "additionalAllowedDomains": [
+      "jscdn.tscircuit.com",
+      "api.github.com"
+    ],
+    "unrestrictedInternet": false
+  },
+  "secretsAdded": false,
+  "configurationFiles": {
+    "installScript": "cloud/ENVIRONMENT-INSTALL.sh",
+    "startSkill": "cloud/ENVIRONMENT-START.md"
+  },
+  "evidence": "evidence/R8-components/codex-cloud-onboarding-20261005.json",
+  "notes": [
+    "GitHub installation enabled by the user; environment selects only the board repository. Existing other GitHub grants were not changed.",
+    "Prepared snapshot source is the exact tested commit above; later repository documentation records publication separately.",
+    "Published environment is execution setup, not fabrication qualification or completion of the ESP32 migration."
+  ],
+  "configurationTextNormalization": "Trailing empty line removed in the local Install script copy; saved Cloud commands unchanged."
+}

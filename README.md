@@ -2,6 +2,8 @@
 
 **Codex Cloud continuation:** use branch `cloud/r8-cloud-setup`; read [cloud setup](cloud/SETUP.md) and the complete [project handoff](cloud/HANDOFF.md). Source, imported models, relevant manufacturer evidence, exact qualified archives and frozen generated Nordic JSON are included. Heavy builds are Linux-only and never started by setup.
 
+Private Cloud environment **magnetic-shutter-remote-r8** is published: choose Work in → Cloud → that environment. Actual hosted setup/smoke passed with10 focused tests; observed32 GiB/4 CPUs. See the [environment record](cloud/ENVIRONMENT-RECORD.json), [current setup status](cloud/STATUS.md) and [continuation prompt](cloud/TASK-PROMPT.md). This local chat does not automatically move to Cloud, and environment readiness does not close board qualification gates.
+
 **COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION.**
 
 User-selected module: Espressif ESP32-C3-WROOM-02-N4 / JLCPCB C2934560. This isolated revision starts from `../magnetic-shutter-remote-r7--01a0f81f`, branch `r7-shutter-only-order-review`, commit `636d2b24eb4db775fceeb81206541f249db3b9a5`. Frozen R6 commit is `77965a8012d5544e962d987ce958c5c5614dbe3a`. Neither previous directory was modified.

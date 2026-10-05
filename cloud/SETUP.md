@@ -7,13 +7,19 @@ Current official guide: https://learn.chatgpt.com/docs/environments/cloud-enviro
 Name: `magnetic-shutter-remote-r8`. Repository/branch as above. Start from the published environment after its setup report passes. If initial checkout is `main`, use this explicit public-branch checkout during environment setup:
 
 ```sh
-git fetch origin cloud/r8-cloud-setup
-git switch --track origin/cloud/r8-cloud-setup
+git fetch origin refs/heads/cloud/r8-cloud-setup:refs/remotes/origin/cloud/r8-cloud-setup
+if git show-ref --verify --quiet refs/heads/cloud/r8-cloud-setup; then
+  git switch cloud/r8-cloud-setup
+else
+  git switch -c cloud/r8-cloud-setup refs/remotes/origin/cloud/r8-cloud-setup
+fi
 bash cloud/setup.sh
 bash cloud/smoke.sh
 ```
 
 If already on the branch, only the last two commands are needed. Never use a reset/force-checkout on a task with work in progress.
+
+The actual hosted checkout initially lacked an origin fetch mapping for this branch: a plain fetch updated FETCH_HEAD but `git switch --track origin/cloud/r8-cloud-setup` failed with `fatal: invalid reference`. The explicit ref fetch and local branch creation above succeeded at `b25353c0a1d7adceeab9a966aaf68a6cb3594cc9`. These commands are for a clean environment installation only. Startup must preserve a later task-derived working branch and require the R8 HANDOFF/context instead of resetting that task or using old main source.
 
 Install script: `bash cloud/setup.sh`. It installs exact Node25.6.0/Bun1.3.9 in ignored task-local `.codex/runtime/`, then locked board dependencies. Requires Linux, npm and Python≥3.11. No board build, routing, viewer service, supplier upload or publishing is launched. Scripts add the task-local runtime to PATH themselves, so they do not rely on an `export` from an earlier setup shell.
 
