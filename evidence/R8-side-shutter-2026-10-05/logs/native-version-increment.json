@@ -1,0 +1,11 @@
+{
+  "native_cli_version_increment": "0.3.1 -> 0.3.2",
+  "only_changed_staged_input": {
+    "package.json": {
+      "initial_sha256": "012073058bfb0712e1afbe253acb5d1be60f29b8c306ff69ea14ecb064787914",
+      "current_sha256": "ace7c58ed882e1dce8acc302cc4d8a0b149e5dd23018625ed32596cc0b804183"
+    }
+  },
+  "circuit_sha256_unchanged": "dc7327de34fa36e663db88cc7f7f7dc5ebae4cd75f720f298f078c5ac7fc9c91",
+  "note": "The native CLI increments and reformats staged package.json when a release exists. The original pre-push manifest is retained, not falsely presented as a final package.json hash."
+}
