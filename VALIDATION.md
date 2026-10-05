@@ -17,6 +17,15 @@ been completed. The earlier electrical pass and published Circuit JSON below
 belong to the unchanged 48 × 56 mm prototype. Physical compatibility requires
 tests for each configuration claimed, not a universal iPhone/case promise.
 
+Broader public research is complete: pinned magnetic-array models and printable
+mounts provide nominal reference geometry, including a cited 54.1 mm array OD.
+A third-party iPhone dimension dataset was screened but lacks MagSafe datums,
+mini/Max models and exact cases. [Research and source screening](mechanical/R8-MAGSAFE-RESEARCH.md)
+records sources and limits. This advances the design investigation without
+claiming current Apple/selected-magnet qualification or measured multi-model fit.
+No PCB/import/baseline/firmware/dependency/Circuit JSON or routed artifact was
+changed for that research.
+
 ## Existing published electrical prototype
 
 Hardware0.3.3/package0.3.4, native route06: **0 native DRC errors,0 shorts,0 independent manufacturing/process failures**. Exact C160389/JST3 import qualified; J3 1RX/2GND/3TX matches standard-jst-programmer0.8.0 J5 over straight-through SH cable. Right-edge side-actuated TS24CA/C393942, DOIT C3 and original BLE image retained. [Current review](evidence/R8-standard-programmer-2026-10-05/REVIEW.md), [programming](evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md), [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).

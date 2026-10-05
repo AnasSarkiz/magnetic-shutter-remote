@@ -4,6 +4,11 @@ Status: requirements recorded; mechanical implementation and compatibility
 qualification pending. The user requires MagSafe attachment and support for
 multiple iPhone models, rather than a mount tailored to one phone.
 
+Broader public-source discovery has produced pinned nominal array and CAD
+references. See [research and screening](R8-MAGSAFE-RESEARCH.md); these permit
+design investigation while official access is pending, but do not complete
+exact-part qualification or the iPhone/case compatibility matrix.
+
 ## Product contract
 
 - The phone-facing grip attaches to the native MagSafe interface on supported

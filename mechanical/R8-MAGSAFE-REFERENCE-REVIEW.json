@@ -1,0 +1,118 @@
+{
+  "sources": [
+    {
+      "source_url": "https://raw.githubusercontent.com/kavinaidoo/magneticallymodellingmagsafe/1e0d236cb76afa6e7517c982264b6d4ca4bd0677/script.js",
+      "source_commit": "1e0d236cb76afa6e7517c982264b6d4ca4bd0677",
+      "sha256": "10b33847387278cf6a81ab04ec47caa6aefcae984632ef77d5cd523c039e4206",
+      "classification": "THIRD-PARTY PUBLIC REFERENCE; NOT CURRENT APPLE OR SELECTED-PART QUALIFICATION"
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/kavinaidoo/magneticallymodellingmagsafe/1e0d236cb76afa6e7517c982264b6d4ca4bd0677/Magnetically_Modelling_MagSafe_magpylib.ipynb",
+      "source_commit": "1e0d236cb76afa6e7517c982264b6d4ca4bd0677",
+      "sha256": "08f19d1a201bae38f1d1294cba1354ed2e36e199b7592583deff98a92684a77d",
+      "classification": "THIRD-PARTY PUBLIC REFERENCE; NOT CURRENT APPLE OR SELECTED-PART QUALIFICATION"
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/vaaski/magsafe.scad/5b1f44ff5e61b922857db2b0584e7690ce6c0b71/magsafe.scad",
+      "source_commit": "5b1f44ff5e61b922857db2b0584e7690ce6c0b71",
+      "sha256": "c657474b8801f40de4e978961c7bcee1592300fdcdb4c911801df1b4a2f74641",
+      "classification": "THIRD-PARTY PUBLIC REFERENCE; NOT CURRENT APPLE OR SELECTED-PART QUALIFICATION"
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/Hampus-Enlund/Phone-Case-OpenSCAD-Generator/74be50092182eeebd0ddf58de31b9af7a357cc80/phone_dimensions.csv",
+      "source_commit": "74be50092182eeebd0ddf58de31b9af7a357cc80",
+      "sha256": "8a8131f9c1a5c81f01cc3f244ecc97cc511e4787c13ab42808c05c9b7660e181",
+      "classification": "THIRD-PARTY PUBLIC REFERENCE; NOT CURRENT APPLE OR SELECTED-PART QUALIFICATION"
+    }
+  ],
+  "nominal_array_reference": {
+    "inner_band_radii_mm": [
+      23.0,
+      24.15
+    ],
+    "outer_band_radii_mm": [
+      25.9,
+      27.05
+    ],
+    "overall_inner_diameter_mm": 46.0,
+    "overall_outer_diameter_mm": 54.1,
+    "reported_magnet_thickness_mm": 0.55,
+    "alignment_magnet_in_model": false,
+    "source_guidelines_revisions_cited": [
+      "R20",
+      "R21"
+    ],
+    "current_apple_guidelines_or_manufacturer_qualified": false,
+    "basis": "Numbers read from pinned third-party script and notebook; no simulation executed"
+  },
+  "other_screening": {
+    "vaaski_default_baseplate_diameter_mm": 62,
+    "vaaski_default_clock_enabled": false,
+    "vaaski_clock_disabled_reason": "Source comment: too weak with only3 magnets",
+    "phone_dimension_models": [
+      "iPhone 15",
+      "iPhone 15 pro",
+      "iPhone 16",
+      "iPhone 16 pro",
+      "iPhone 17",
+      "iPhone 17 pro",
+      "Oneplus 15",
+      "Example Phone"
+    ],
+    "phone_dimension_properties": [
+      "phone_height",
+      "phone_width",
+      "phone_depth",
+      "phone_radius",
+      "camera_width",
+      "camera_height",
+      "camera_radius",
+      "camera_offset_y",
+      "camera_offset_x",
+      "power_side",
+      "volume_side",
+      "extra_side",
+      "power_y",
+      "power_width",
+      "volume_y",
+      "volume_width",
+      "extra_y",
+      "extra_width",
+      "camera_button_y",
+      "camera_button_width",
+      "USB_width",
+      "USB_height",
+      "camera_side",
+      "camera_button_height",
+      "camera_button_radius",
+      "lip_overlap",
+      "lip_thickness",
+      "fillet_radius",
+      "button_radius",
+      "button_height"
+    ],
+    "phone_dataset_limitations": [
+      "No MagSafe centre coordinates/attachment datum",
+      "No mini or Max phone rows",
+      "No exact case dimensions",
+      "Third-party transcription; README cites Apple guide access2026-05-17; primary drawing not independently checked"
+    ]
+  },
+  "mechanical_implications": [
+    "Phone-facing ring attachment and compact detachable shutter remote remain separate interfaces",
+    "40mm remote width does not set ring-mount diameter",
+    "A40x44mm rectangle diagonal59.4643mm exceeds nominal54.1mm array diameter; do not assume its electronics fit inside the46mm opening",
+    "No completed assembly, camera clearance, magnetic force or hardware fit pass"
+  ],
+  "remaining_qualification": [
+    "Current official Apple interface/phone/camera drawings",
+    "Exact selected magnetic assembly and attachment/anti-rotation qualification",
+    "Case limits and model compatibility matrix",
+    "Smaller protected1A pack",
+    "Physical iPhone/case/BLE/RF/retention tests"
+  ],
+  "screened_on": "2026-10-06",
+  "timezone": "Europe/Tirane",
+  "board_head_during_research": "094bf72f1c49089e9cb3b64d58656af1d971365b",
+  "board_circuit_sha256": "8db03c1b6b7e1ffc73ad3a49100bc2191e75db50f8de6de8ab36e922676e98f5"
+}
