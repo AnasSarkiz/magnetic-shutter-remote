@@ -1,0 +1,309 @@
+cloud-smoke	Set up job	﻿2026-10-05T09:39:41.0364977Z Current runner version: '2.337.0'
+cloud-smoke	Set up job	2026-10-05T09:39:41.0393233Z ##[group]Runner Image Provisioner
+cloud-smoke	Set up job	2026-10-05T09:39:41.0394204Z Hosted Compute Agent
+cloud-smoke	Set up job	2026-10-05T09:39:41.0394845Z Version: 20260901.588
+cloud-smoke	Set up job	2026-10-05T09:39:41.0395461Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+cloud-smoke	Set up job	2026-10-05T09:39:41.0396278Z Build Date: 2026-09-01T19:56:44Z
+cloud-smoke	Set up job	2026-10-05T09:39:41.0396962Z Worker ID: {d1676047-174a-441c-8158-77d16d724e03}
+cloud-smoke	Set up job	2026-10-05T09:39:41.0397697Z Azure Region: eastus2
+cloud-smoke	Set up job	2026-10-05T09:39:41.0398327Z ##[endgroup]
+cloud-smoke	Set up job	2026-10-05T09:39:41.0400053Z ##[group]Operating System
+cloud-smoke	Set up job	2026-10-05T09:39:41.0400896Z Ubuntu
+cloud-smoke	Set up job	2026-10-05T09:39:41.0401429Z 24.04.5
+cloud-smoke	Set up job	2026-10-05T09:39:41.0401969Z LTS
+cloud-smoke	Set up job	2026-10-05T09:39:41.0402530Z ##[endgroup]
+cloud-smoke	Set up job	2026-10-05T09:39:41.0403074Z ##[group]Runner Image
+cloud-smoke	Set up job	2026-10-05T09:39:41.0403714Z Image: ubuntu-24.04
+cloud-smoke	Set up job	2026-10-05T09:39:41.0404280Z Version: 20260927.320.1
+cloud-smoke	Set up job	2026-10-05T09:39:41.0405331Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+cloud-smoke	Set up job	2026-10-05T09:39:41.0407216Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+cloud-smoke	Set up job	2026-10-05T09:39:41.0408363Z ##[endgroup]
+cloud-smoke	Set up job	2026-10-05T09:39:41.0409469Z ##[group]GITHUB_TOKEN Permissions
+cloud-smoke	Set up job	2026-10-05T09:39:41.0412269Z Contents: read
+cloud-smoke	Set up job	2026-10-05T09:39:41.0412912Z Metadata: read
+cloud-smoke	Set up job	2026-10-05T09:39:41.0413460Z ##[endgroup]
+cloud-smoke	Set up job	2026-10-05T09:39:41.0415798Z Secret source: Actions
+cloud-smoke	Set up job	2026-10-05T09:39:41.0416786Z Cache mode: write
+cloud-smoke	Set up job	2026-10-05T09:39:41.0417989Z Prepare workflow directory
+cloud-smoke	Set up job	2026-10-05T09:39:41.0762967Z Prepare all required actions
+cloud-smoke	Set up job	2026-10-05T09:39:41.0812911Z Getting action download info
+cloud-smoke	Set up job	2026-10-05T09:39:41.3269358Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+cloud-smoke	Set up job	2026-10-05T09:39:41.4256104Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+cloud-smoke	Set up job	2026-10-05T09:39:41.5157141Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+cloud-smoke	Set up job	2026-10-05T09:39:41.6004563Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+cloud-smoke	Set up job	2026-10-05T09:39:41.8345102Z Complete job name: cloud-smoke
+cloud-smoke	Run actions/checkout@v4	﻿2026-10-05T09:39:41.9172134Z ##[group]Run actions/checkout@v4
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9173101Z with:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9173611Z   repository: AnasSarkiz/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9177458Z   token: ***
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9177904Z   ssh-strict: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9178334Z   ssh-user: git
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9178770Z   persist-credentials: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9179248Z   clean: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9179681Z   sparse-checkout-cone-mode: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9180452Z   fetch-depth: 1
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9180876Z   fetch-tags: false
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9181315Z   show-progress: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9181756Z   lfs: false
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9182162Z   submodules: false
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9182638Z   set-safe-directory: true
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9183136Z   allow-unsafe-pr-checkout: false
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:41.9184312Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0243440Z Syncing repository: AnasSarkiz/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0246471Z ##[group]Getting Git version info
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0248069Z Working directory is '/home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote'
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0250609Z [command]/usr/bin/git version
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0349991Z git version 2.55.0
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0375475Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0394078Z Temporarily overriding HOME='/home/runner/work/_temp/4ec8d1d3-e6bb-4108-acc5-89b89bbb4eab' before making global git config changes
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0397025Z Adding repository directory to the temporary git global config as a safe directory
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0403330Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0466150Z Deleting the contents of '/home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote'
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0473329Z ##[group]Initializing the repository
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0479089Z [command]/usr/bin/git init /home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0686087Z hint: Using 'master' as the name for the initial branch. This default branch name
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0688296Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0690423Z hint: to use in all of your new repositories, which will suppress this warning,
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0691880Z hint: call:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0692683Z hint:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0693661Z hint: 	git config --global init.defaultBranch <name>
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0694981Z hint:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0696253Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0697933Z hint: 'development'. The just-created branch can be renamed via this command:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0699427Z hint:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0700573Z hint: 	git branch -m <name>
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0701532Z hint:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0702739Z hint: Disable this message with "git config set advice.defaultBranchName false"
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0705362Z Initialized empty Git repository in /home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote/.git/
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0709313Z [command]/usr/bin/git remote add origin https://github.com/AnasSarkiz/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0781316Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0782736Z ##[group]Disabling automatic garbage collection
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0808294Z [command]/usr/bin/git config --local gc.auto 0
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0862993Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0864232Z ##[group]Setting up auth
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0871288Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.0928549Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.1384271Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.1429512Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.1709143Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.1750062Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.1991901Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.2036216Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.2037233Z ##[group]Fetching the repository
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:42.2049187Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad:refs/remotes/origin/cloud/r8-cloud-setup
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1788982Z From https://github.com/AnasSarkiz/magnetic-shutter-remote
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1793012Z  * [new ref]         56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad -> origin/cloud/r8-cloud-setup
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1799190Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1801810Z ##[group]Determining the checkout info
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1803908Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1805307Z [command]/usr/bin/git sparse-checkout disable
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1863137Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1899032Z ##[group]Checking out the ref
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.1903906Z [command]/usr/bin/git checkout --progress --force -B cloud/r8-cloud-setup refs/remotes/origin/cloud/r8-cloud-setup
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.9729208Z Switched to a new branch 'cloud/r8-cloud-setup'
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.9750975Z branch 'cloud/r8-cloud-setup' set up to track 'origin/cloud/r8-cloud-setup'.
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.9781689Z ##[endgroup]
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.9854238Z [command]/usr/bin/git log -1 --format=%H
+cloud-smoke	Run actions/checkout@v4	2026-10-05T09:39:45.9882813Z 56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad
+cloud-smoke	Run actions/setup-node@v4	﻿2026-10-05T09:39:46.0225926Z ##[group]Run actions/setup-node@v4
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0226295Z with:
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0226501Z   node-version: 25.6.0
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0226735Z   always-auth: false
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0226948Z   check-latest: false
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0229400Z   token: ***
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.0229609Z ##[endgroup]
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.1645092Z Attempting to download 25.6.0...
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.1754438Z (node:2360) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.1755772Z (Use `node --trace-deprecation ...` to show where the warning was created)
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.7262195Z Not found in manifest. Falling back to download directly from Node
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:46.7837745Z Acquiring 25.6.0 - x64 from https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:47.1090552Z Extracting ...
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:47.1197178Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/ab7415c4-113a-43eb-ba95-3e6b2c50999a -f /home/runner/work/_temp/e83cd379-8b53-4f38-94eb-5d760b5ebae0
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:48.3096562Z Adding to the cache ...
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.2688546Z Done
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.2692847Z ##[group]Environment details
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.5078684Z node: v25.6.0
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.5079117Z npm: 11.8.0
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.5079424Z yarn: 1.22.22
+cloud-smoke	Run actions/setup-node@v4	2026-10-05T09:39:50.5080425Z ##[endgroup]
+cloud-smoke	Run actions/setup-python@v5	﻿2026-10-05T09:39:50.5298722Z ##[group]Run actions/setup-python@v5
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5299030Z with:
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5299240Z   python-version: 3.14
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5299474Z   check-latest: false
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5302250Z   token: ***
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5302480Z   update-environment: true
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5302725Z   allow-prereleases: false
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5302952Z   freethreaded: false
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.5303163Z ##[endgroup]
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.6668755Z ##[group]Installed versions
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.6762810Z (node:2396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.6764507Z (Use `node --trace-deprecation ...` to show where the warning was created)
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.6765541Z Successfully set up CPython (3.14.7)
+cloud-smoke	Run actions/setup-python@v5	2026-10-05T09:39:50.6766296Z ##[endgroup]
+cloud-smoke	Install pinned Cloud dependencies	﻿2026-10-05T09:39:50.6984818Z ##[group]Run bash cloud/setup.sh
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.6985205Z [36;1mbash cloud/setup.sh[0m
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7312362Z shell: /usr/bin/bash -e {0}
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7312698Z env:
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7313003Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7313498Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7313974Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7314390Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7314812Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7315259Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:50.7315620Z ##[endgroup]
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:59.6423569Z 
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:59.6424465Z added 7 packages in 9s
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:39:59.7342733Z bun install v1.3.9 (cf6cdbbb)
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8087219Z 
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8087989Z + @biomejs/biome@2.2.4
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8088885Z + @resvg/resvg-js@2.6.2
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8090001Z + @tscircuit/3d-viewer@0.0.610
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8090920Z + @tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8092037Z + @tscircuit/cli@tooling/vendor/tscircuit-cli-r7-importer-integration.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8092955Z + @tscircuit/core@tooling/vendor/core-r7-smtpad-bounds.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8093739Z + @tscircuit/eval@tooling/vendor/tscircuit-eval-0.0.1506.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8094363Z + @tscircuit/pcb-viewer@1.11.415
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8095007Z + @tscircuit/props@tooling/vendor/props-qualified-source.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8096000Z + @tscircuit/schematic-viewer@2.0.99
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8096474Z + @types/bun@1.3.9
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8096855Z + @types/react-dom@19.3.0
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8097247Z + archiver@7.0.1
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8097603Z + bun-match-svg@0.0.13
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8098237Z + circuit-json@tooling/vendor/circuit-json-qualified-source.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8098940Z + circuit-json-to-bom-csv@0.0.19
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8099995Z + circuit-json-to-gerber@tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8101164Z + circuit-json-to-pnp-csv@tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8102233Z + circuit-to-svg@tooling/vendor/circuit-to-svg-qualified-source.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8102861Z + commander@12.1.0
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8103514Z + easyeda@tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8104153Z + tscircuit@0.0.2702
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8104490Z + tsup@8.5.0
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8104827Z + typescript@5.9.3
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8105168Z + zod@3.25.76
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8105352Z 
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.8105593Z 531 packages installed [3.08s]
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.9510651Z Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.9606730Z v25.6.0
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.9629404Z 1.3.9
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.9645787Z Python 3.14.7
+cloud-smoke	Install pinned Cloud dependencies	2026-10-05T09:40:02.9649452Z Dependency setup complete. No routing, root board build, publishing or ordering was performed.
+cloud-smoke	Run lightweight context and tooling checks	﻿2026-10-05T09:40:02.9688194Z ##[group]Run bash cloud/smoke.sh
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9706923Z [36;1mbash cloud/smoke.sh[0m
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9772263Z shell: /usr/bin/bash -e {0}
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9772523Z env:
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9772795Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9773248Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9773684Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9774063Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9774451Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9774829Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:02.9775148Z ##[endgroup]
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:03.0876679Z Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:03.0955896Z $ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:03.1481351Z Checked 25 files in 10ms. No fixes applied.
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:03.1553654Z $ tsc --noEmit
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3680982Z test_cgroup_limit_is_respected_instead_of_large_host (test_cloud_runner.CloudRunnerTest.test_cgroup_limit_is_respected_instead_of_large_host) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3838708Z test_child_failure_is_recorded_and_propagated (test_cloud_runner.CloudRunnerTest.test_child_failure_is_recorded_and_propagated) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3851409Z test_concurrent_heavy_job_is_rejected (test_cloud_runner.CloudRunnerTest.test_concurrent_heavy_job_is_rejected) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3853267Z test_mac_does_not_execute_heavy_commands (test_cloud_runner.CloudRunnerTest.test_mac_does_not_execute_heavy_commands) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3855377Z test_unlimited_cgroup_uses_host_and_reserves_native_memory (test_cloud_runner.CloudRunnerTest.test_unlimited_cgroup_uses_host_and_reserves_native_memory) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3856699Z test_exact_pin_contract_matches_manufacturer_table (test_r8_qualification.QualificationTest.test_exact_pin_contract_matches_manufacturer_table) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3859465Z test_firmware_controls_do_not_use_boot_strap_terminals (test_r8_qualification.QualificationTest.test_firmware_controls_do_not_use_boot_strap_terminals) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.3869427Z test_manufacturer_discrepancy_remains_visible_and_blocking (test_r8_qualification.QualificationTest.test_manufacturer_discrepancy_remains_visible_and_blocking) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4178190Z test_previous_revision_manifest_remains_unchanged (test_r8_qualification.QualificationTest.test_previous_revision_manifest_remains_unchanged) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4186064Z test_supplier_import_preserves_all_terminal_geometry (test_r8_qualification.QualificationTest.test_supplier_import_preserves_all_terminal_geometry) ... ok
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4186801Z 
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4187082Z ----------------------------------------------------------------------
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4187525Z Ran 10 tests in 0.051s
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4187710Z 
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4187809Z OK
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4624266Z {
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4624653Z   "conversion_fidelity": "PASS",
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4625315Z   "maximum_conversion_difference_mm": 5.084821452783217e-14,
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4625993Z   "manufacturer_land_pattern_qualification": "BLOCKED \u2014 UNQUALIFIED SUPPLIER VARIATION"
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4626514Z }
+cloud-smoke	Run lightweight context and tooling checks	2026-10-05T09:40:10.4664462Z Lightweight smoke checks PASS. This is not R8 electrical, routing or fabrication validation.
+cloud-smoke	Generate the isolated unrouted module fixture	﻿2026-10-05T09:40:10.4708007Z ##[group]Run export PATH="$PWD/.codex/runtime/node_modules/.bin:$PATH"
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4708571Z [36;1mexport PATH="$PWD/.codex/runtime/node_modules/.bin:$PATH"[0m
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4709213Z [36;1m./node_modules/.bin/tsci build tests/fixtures/esp32-import.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs[0m
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4772609Z shell: /usr/bin/bash -e {0}
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4772868Z env:
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4773138Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4773597Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4774035Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4774417Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4774789Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4775171Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:10.4775500Z ##[endgroup]
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:14.4825299Z Building 1 file(s)...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:14.4831434Z Building tests/fixtures/esp32-import.circuit.tsx...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:14.4836708Z Generating circuit JSON...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9348543Z Circuit JSON written to dist/tests/fixtures/esp32-import/circuit.json
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9353830Z U1 has no pin with requires_power=true
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9359861Z Generating preview images...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9374588Z [tests/fixtures/esp32-import] Generating PCB SVG...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9492761Z [tests/fixtures/esp32-import] Written pcb.svg
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:16.9493896Z [tests/fixtures/esp32-import] Generating PCB PNG...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0491936Z [tests/fixtures/esp32-import] Written pcb.png
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0492911Z [tests/fixtures/esp32-import] Generating schematic SVG...
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0579203Z [tests/fixtures/esp32-import] Written schematic.svg
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0580061Z 
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0580268Z Build complete
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0580693Z   Circuits  1 passed
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0581280Z   Options   pcb-png, pcb-svgs, schematic-svgs
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0581841Z   Output    dist
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0582081Z 
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0582529Z ✓ Done
+cloud-smoke	Generate the isolated unrouted module fixture	2026-10-05T09:40:17.0583114Z Build exiting with code 0: build finished successfully
+cloud-smoke	Store module fixture for review	﻿2026-10-05T09:40:17.1236228Z ##[group]Run actions/upload-artifact@v4
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1236552Z with:
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1236766Z   name: cloud-unrouted-module-fixture
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1237067Z   path: dist/tests/fixtures/esp32-import/
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1237344Z   if-no-files-found: error
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1237582Z   compression-level: 6
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1237793Z   overwrite: false
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1238006Z   include-hidden-files: false
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1238232Z env:
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1238476Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1238889Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib/pkgconfig
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1239303Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1240192Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1240575Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.7/x64
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1240951Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.7/x64/lib
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.1241292Z ##[endgroup]
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.2887952Z (node:2571) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.2889710Z (Use `node --trace-deprecation ...` to show where the warning was created)
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.2980152Z With the provided path, there will be 4 files uploaded
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.2986484Z Artifact name is valid!
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.3000785Z Root directory input is valid!
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.5317904Z Beginning upload of artifact content to blob storage
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.5596251Z (node:2571) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.6125987Z Uploaded bytes 43986
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.6342601Z Finished uploading artifact content to blob storage!
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.6343945Z SHA256 digest of uploaded artifact zip is cd328987e4f681e7bd666bbf7a40c7c2e3973fe5d0ac3b5a68399a6f0c0f3f08
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.6345333Z Finalizing artifact upload
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.8675036Z Artifact cloud-unrouted-module-fixture.zip successfully finalized. Artifact ID 11336224902
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.8676362Z Artifact cloud-unrouted-module-fixture has been successfully uploaded! Final size is 43986 bytes. Artifact ID is 11336224902
+cloud-smoke	Store module fixture for review	2026-10-05T09:40:17.8681420Z Artifact download URL: https://github.com/AnasSarkiz/magnetic-shutter-remote/actions/runs/37291506181/artifacts/11336224902
+cloud-smoke	Post Run actions/setup-python@v5	﻿2026-10-05T09:40:17.8845934Z Post job cleanup.
+cloud-smoke	Post Run actions/setup-python@v5	2026-10-05T09:40:18.0051349Z (node:2584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+cloud-smoke	Post Run actions/setup-python@v5	2026-10-05T09:40:18.0052308Z (Use `node --trace-deprecation ...` to show where the warning was created)
+cloud-smoke	Post Run actions/setup-node@v4	﻿2026-10-05T09:40:18.0219403Z Post job cleanup.
+cloud-smoke	Post Run actions/setup-node@v4	2026-10-05T09:40:18.1629662Z (node:2592) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+cloud-smoke	Post Run actions/setup-node@v4	2026-10-05T09:40:18.1631372Z (Use `node --trace-deprecation ...` to show where the warning was created)
+cloud-smoke	Post Run actions/checkout@v4	﻿2026-10-05T09:40:18.1819410Z Post job cleanup.
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2737780Z [command]/usr/bin/git version
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2784130Z git version 2.55.0
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2827749Z Temporarily overriding HOME='/home/runner/work/_temp/ad1056e4-fd4d-4bf5-b82e-715d725634d1' before making global git config changes
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2829266Z Adding repository directory to the temporary git global config as a safe directory
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2834218Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/magnetic-shutter-remote/magnetic-shutter-remote
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2874653Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.2912027Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3174049Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3206808Z http.https://github.com/.extraheader
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3220860Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3258310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3541364Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+cloud-smoke	Post Run actions/checkout@v4	2026-10-05T09:40:18.3582650Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+cloud-smoke	Complete job	﻿2026-10-05T09:40:18.4000988Z Cleaning up orphan processes
+cloud-smoke	Complete job	2026-10-05T09:40:18.4313509Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

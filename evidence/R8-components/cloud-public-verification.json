@@ -1,0 +1,27 @@
+{
+  "commit": "56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad",
+  "authentication": "none",
+  "files": [
+    {
+      "path": "cloud/HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad/cloud/HANDOFF.md",
+      "http_status": 200,
+      "sha256": "ba219d3a35188cfa4d2387b175650e0b42b178cd96f9397021a0821da50dc02c",
+      "matches_local": true
+    },
+    {
+      "path": "cloud/setup.sh",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad/cloud/setup.sh",
+      "http_status": 200,
+      "sha256": "9f8ba9a32b461d2bfaddaa81d1d3453feccadfdeaab4c571a4df615cac8306b7",
+      "matches_local": true
+    },
+    {
+      "path": "baselines/published-main/dist/index/circuit.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad/baselines/published-main/dist/index/circuit.json",
+      "http_status": 200,
+      "sha256": "57294cbb70466ab3087db8471798776e5f809b2d369edf36860843d383a8a82c",
+      "matches_local": true
+    }
+  ]
+}
