@@ -1,0 +1,20 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [61]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.2.1"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+Saved lockfile
+
++ @tscircuit/circuit-json-util@../vendor/util-paste-local.tgz
++ @tscircuit/core@../vendor/core-paste-local.tgz
++ @tscircuit/props@../vendor/props-paste-local.tgz
++ circuit-json@../vendor/circuit-json-paste-local.tgz
++ circuit-json-to-gerber@../vendor/gerber-paste-local.tgz
++ circuit-to-svg@../vendor/svg-paste-local.tgz
++ easyeda@../vendor/importer-paste-local.tgz
++ tscircuit@0.0.2702
+
+29 packages installed [2.37s]

@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-fanout-schematic-group-schema.test.tsx:
+(pass) transparent fanout groups inherit the board subcircuit in schema-valid schematic output [172.63ms]
+
+tests/repros/repro-fanout-later-custom-symbol.test.tsx:
+(pass) fanout resolves a later custom-symbol switch after symbol ports initialize [32.19ms]
+
+tests/repros/repro-group-autorouter-configuration-schema.test.tsx:
+(pass) PCB groups retain explicitly configured trace clearance [38.07ms]
+
+tests/repros/repro-saved-fanout-invalidates-custom-symbol-selectors.test.tsx:
+(pass) adding a saved fanout exit preserves custom-symbol port aliases on other sheets [25.70ms]
+
+tests/repros/repro-fanout-in-schematic-sheet.test.tsx:
+(pass) schematic sheets preserve PCB fanout routing scope and custom-symbol ports [19.41ms]
+
+ 5 pass
+ 0 fail
+ 20 expect() calls
+Ran 5 tests across 5 files. [847.00ms]

@@ -1,6 +1,53 @@
+# Dependencies
 node_modules/
-.tscircuit/
+
+# Build output
+dist/*
+!dist/index/
+dist/index/*
+!dist/index/circuit.json
+build/
+
+# Environment variables
 .env
-.env.*
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
 .DS_Store
-# The generated Circuit JSON is intentionally tracked.
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# tscircuit cache
+.tscircuit/
+.codex/runtime/
+.codex/logs/
+.codex/heavy.lock
+.cloud-venv/
+.claude/
+
+# Task-local firmware SDK and build environment
+firmware/deps/
+firmware/.venv/
+firmware/build/
+firmware/zephyr-sdk-0.17.2/
+firmware/sdk-download/
+tooling/gerber-review-venv/
+__pycache__/
+
+# Supplier HTML captures contain expiring signed asset URLs; use listing-text evidence.
+evidence/R8-components/C2934560.html
+evidence/R8-components/C15516.html
+
+# Disposable native-viewer browser bundle; build log remains evidence
+evidence/R7-order-review/preview-build/

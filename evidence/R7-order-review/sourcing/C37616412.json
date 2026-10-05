@@ -1,0 +1,28 @@
+{
+  "lcsc": "C37616412",
+  "mpn": "USB4215-03-A",
+  "references": [
+    "J1"
+  ],
+  "url": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412",
+  "listing_sha256": "e6e7be0b3c84061e9f347baf570575f53f736f69a831a0c86f66bbbb3c98f46b",
+  "checked_at_utc": "2026-10-04T21:21:34.059973+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 35,
+    "overseasStockCount": 123,
+    "preMinPurchaseNum": 13
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

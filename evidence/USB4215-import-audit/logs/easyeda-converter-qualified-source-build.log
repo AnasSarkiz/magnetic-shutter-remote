@@ -1,0 +1,37 @@
+$ tsup
+CLI Building entry: lib/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tsup.config.ts
+CLI Building entry: cli/main.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tsup.config.ts
+CLI Building entry: lib/websafe/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+CLI Target: esnext
+CJS Build start
+CLI Target: esnext
+ESM Build start
+ESM dist/index.js     638.21 KB
+ESM dist/index.js.map 1.50 MB
+ESM ⚡️ Build success in 121ms
+CJS dist/main.cjs     697.85 KB
+CJS dist/main.cjs.map 1.58 MB
+CJS ⚡️ Build success in 149ms
+ESM dist/browser/index.js     897.17 KB
+ESM dist/browser/index.js.map 1.96 MB
+ESM ⚡️ Build success in 151ms
+DTS Build start
+DTS Build start
+DTS Build start
+DTS ⚡️ Build success in 4250ms
+DTS dist/main.d.cts 20.00 B
+DTS ⚡️ Build success in 4454ms
+DTS dist/index.d.ts 161.08 KB
+DTS ⚡️ Build success in 4609ms
+DTS dist/browser/index.d.ts 161.41 KB

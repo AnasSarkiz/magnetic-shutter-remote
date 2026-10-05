@@ -1,0 +1,261 @@
+[
+  {
+    "designator": "J1",
+    "mid_x": 0,
+    "mid_y": 24.5101989,
+    "layer": "top",
+    "rotation": 180
+  },
+  {
+    "designator": "R1",
+    "mid_x": -4,
+    "mid_y": 19,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R2",
+    "mid_x": 0,
+    "mid_y": 19,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "U2",
+    "mid_x": 0,
+    "mid_y": 13,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R3",
+    "mid_x": 5.5,
+    "mid_y": 9,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C1",
+    "mid_x": 8,
+    "mid_y": 20,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C2",
+    "mid_x": 4.5,
+    "mid_y": 11.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R4",
+    "mid_x": 8,
+    "mid_y": 23,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "LED1",
+    "mid_x": 8,
+    "mid_y": 26,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "J2",
+    "mid_x": -13.5,
+    "mid_y": 12,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R8",
+    "mid_x": -5,
+    "mid_y": 16,
+    "layer": "top",
+    "rotation": 180
+  },
+  {
+    "designator": "R9",
+    "mid_x": 1,
+    "mid_y": 17,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C8",
+    "mid_x": 5,
+    "mid_y": 17.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C9",
+    "mid_x": -5,
+    "mid_y": 11,
+    "layer": "top",
+    "rotation": 180
+  },
+  {
+    "designator": "U1",
+    "mid_x": 0,
+    "mid_y": -14.91448655,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C5",
+    "mid_x": 0,
+    "mid_y": -4.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "SW2",
+    "mid_x": -13.5,
+    "mid_y": -7,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "SW3",
+    "mid_x": 13.5,
+    "mid_y": -4,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R7",
+    "mid_x": 7,
+    "mid_y": -3,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "LED2",
+    "mid_x": 10,
+    "mid_y": 0,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "J3",
+    "mid_x": 13.200000000000001,
+    "mid_y": 16,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "SW1",
+    "mid_x": 15,
+    "mid_y": 5,
+    "layer": "top",
+    "rotation": 90
+  },
+  {
+    "designator": "R5",
+    "mid_x": 4,
+    "mid_y": 3,
+    "layer": "top",
+    "rotation": 180
+  },
+  {
+    "designator": "Q1",
+    "mid_x": -6,
+    "mid_y": 3.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R6",
+    "mid_x": -6,
+    "mid_y": 8,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "U3",
+    "mid_x": -5,
+    "mid_y": 0,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C3",
+    "mid_x": -0.49999999999999994,
+    "mid_y": 2,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C4",
+    "mid_x": -5,
+    "mid_y": -4,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "U4",
+    "mid_x": -9.5,
+    "mid_y": -1,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C6",
+    "mid_x": -13,
+    "mid_y": 2,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "U5",
+    "mid_x": 0,
+    "mid_y": 6,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R10",
+    "mid_x": -5.5,
+    "mid_y": 6,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R11",
+    "mid_x": 4.5,
+    "mid_y": 5.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "C7",
+    "mid_x": 1.5,
+    "mid_y": 8.5,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R12",
+    "mid_x": 9.5,
+    "mid_y": 10,
+    "layer": "top",
+    "rotation": 0
+  },
+  {
+    "designator": "R13",
+    "mid_x": 8,
+    "mid_y": 12,
+    "layer": "top",
+    "rotation": 180
+  },
+  {
+    "designator": "Q2",
+    "mid_x": 8,
+    "mid_y": 6,
+    "layer": "top",
+    "rotation": 0
+  }
+]

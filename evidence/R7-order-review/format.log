@@ -1,0 +1,146 @@
+$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json
+package.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     1  1 │   {
+     2    │ - ··"name":·"@tsci/anas-sarkiz.magnetic-shutter-remote-r7",
+     3    │ - ··"version":·"0.2.0",
+     4    │ - ··"description":·"R7·work·in·progress:·shared-battery·Bluetooth·shutter·and·tunable·camera·fill·light;·hardware·qualification·incomplete",
+     5    │ - ··"main":·"index.circuit.tsx",
+     6    │ - ··"keywords":·[
+     7    │ - ····"tscircuit",
+     8    │ - ····"circuit",
+     9    │ - ····"pcb",
+    10    │ - ····"electronics"
+    11    │ - ··],
+    12    │ - ··"scripts":·{
+    13    │ - ····"dev":·"tsci·dev",
+    14    │ - ····"build":·"tsci·build·index.circuit.tsx·--pcb-png·--pcb-svgs·--schematic-svgs·--3d-png",
+    15    │ - ····"snapshot":·"tsci·snapshot",
+    16    │ - ····"snapshot:update":·"tsci·snapshot·--update",
+    17    │ - ····"start":·"tsci·dev",
+    18    │ - ····"typecheck":·"tsc·--noEmit",
+    19    │ - ····"test":·"tooling/gerber-review-venv/bin/python·-m·unittest·discover·-s·tests·-v",
+    20    │ - ····"format":·"biome·format·--write·index.circuit.tsx·src·scripts·package.json·tsconfig.json·tscircuit.config.json",
+    21    │ - ····"format:check":·"biome·format·index.circuit.tsx·src·scripts·package.json·tsconfig.json·tscircuit.config.json",
+    22    │ - ····"render:sheets":·"bun·scripts/render-sheets.ts"
+    23    │ - ··},
+    24    │ - ··"devDependencies":·{
+    25    │ - ····"@biomejs/biome":·"2.2.4",
+    26    │ - ····"@resvg/resvg-js":·"2.6.2",
+    27    │ - ····"@tscircuit/3d-viewer":·"0.0.610",
+    28    │ - ····"@tscircuit/circuit-json-util":·"file:tooling/vendor/circuit-json-util-qualified-source.tgz",
+    29    │ - ····"@tscircuit/cli":·"file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+    30    │ - ····"@tscircuit/core":·"file:tooling/vendor/core-r7-smtpad-bounds.tgz",
+    31    │ - ····"@tscircuit/eval":·"file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+    32    │ - ····"@tscircuit/pcb-viewer":·"1.11.415",
+    33    │ - ····"@tscircuit/props":·"file:tooling/vendor/props-qualified-source.tgz",
+    34    │ - ····"@tscircuit/schematic-viewer":·"2.0.99",
+    35    │ - ····"@types/bun":·"1.3.9",
+    36    │ - ····"@types/react-dom":·"19.3.0",
+    37    │ - ····"archiver":·"7.0.1",
+    38    │ - ····"bun-match-svg":·"0.0.13",
+    39    │ - ····"circuit-json":·"file:tooling/vendor/circuit-json-qualified-source.tgz",
+    40    │ - ····"circuit-json-to-bom-csv":·"0.0.19",
+    41    │ - ····"circuit-json-to-gerber":·"file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+    42    │ - ····"circuit-json-to-pnp-csv":·"file:tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+    43    │ - ····"circuit-to-svg":·"file:tooling/vendor/circuit-to-svg-qualified-source.tgz",
+    44    │ - ····"commander":·"12.1.0",
+    45    │ - ····"easyeda":·"file:tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+    46    │ - ····"tscircuit":·"0.0.2702",
+    47    │ - ····"tsup":·"8.5.0",
+    48    │ - ····"typescript":·"5.9.3",
+    49    │ - ····"zod":·"3.25.76"
+    50    │ - ··},
+    51    │ - ··"author":·"AnasSarkiz",
+    52    │ - ··"private":·true,
+    53    │ - ··"overrides":·{
+    54    │ - ····"@tscircuit/core":·"file:tooling/vendor/core-r7-smtpad-bounds.tgz",
+    55    │ - ····"circuit-json":·"file:tooling/vendor/circuit-json-qualified-source.tgz",
+    56    │ - ····"@tscircuit/circuit-json-util":·"file:tooling/vendor/circuit-json-util-qualified-source.tgz",
+    57    │ - ····"@tscircuit/capacity-autorouter":·"0.0.951",
+    58    │ - ····"@tscircuit/props":·"file:tooling/vendor/props-qualified-source.tgz",
+    59    │ - ····"circuit-to-svg":·"file:tooling/vendor/circuit-to-svg-qualified-source.tgz",
+    60    │ - ····"circuit-json-to-gerber":·"file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+    61    │ - ····"easyeda":·"file:tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+    62    │ - ····"@tscircuit/eval":·"file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+    63    │ - ····"circuit-json-to-pnp-csv":·"file:tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+    64    │ - ····"@tscircuit/cli":·"file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz"
+    65    │ - ··}
+        2 │ + → "name":·"@tsci/anas-sarkiz.magnetic-shutter-remote-r7",
+        3 │ + → "version":·"0.2.0",
+        4 │ + → "description":·"R7·work·in·progress:·shared-battery·Bluetooth·shutter·and·tunable·camera·fill·light;·hardware·qualification·incomplete",
+        5 │ + → "main":·"index.circuit.tsx",
+        6 │ + → "keywords":·[
+        7 │ + → → "tscircuit",
+        8 │ + → → "circuit",
+        9 │ + → → "pcb",
+       10 │ + → → "electronics"
+       11 │ + → ],
+       12 │ + → "scripts":·{
+       13 │ + → → "dev":·"tsci·dev",
+       14 │ + → → "build":·"tsci·build·index.circuit.tsx·--pcb-png·--pcb-svgs·--schematic-svgs·--3d-png",
+       15 │ + → → "snapshot":·"tsci·snapshot",
+       16 │ + → → "snapshot:update":·"tsci·snapshot·--update",
+       17 │ + → → "start":·"tsci·dev",
+       18 │ + → → "typecheck":·"tsc·--noEmit",
+       19 │ + → → "test":·"tooling/gerber-review-venv/bin/python·-m·unittest·discover·-s·tests·-v",
+       20 │ + → → "format":·"biome·format·--write·index.circuit.tsx·src·scripts·package.json·tsconfig.json·tscircuit.config.json",
+       21 │ + → → "format:check":·"biome·format·index.circuit.tsx·src·scripts·package.json·tsconfig.json·tscircuit.config.json",
+       22 │ + → → "render:sheets":·"bun·scripts/render-sheets.ts"
+       23 │ + → },
+       24 │ + → "devDependencies":·{
+       25 │ + → → "@biomejs/biome":·"2.2.4",
+       26 │ + → → "@resvg/resvg-js":·"2.6.2",
+       27 │ + → → "@tscircuit/3d-viewer":·"0.0.610",
+       28 │ + → → "@tscircuit/circuit-json-util":·"file:tooling/vendor/circuit-json-util-qualified-source.tgz",
+       29 │ + → → "@tscircuit/cli":·"file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+       30 │ + → → "@tscircuit/core":·"file:tooling/vendor/core-r7-smtpad-bounds.tgz",
+       31 │ + → → "@tscircuit/eval":·"file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+       32 │ + → → "@tscircuit/pcb-viewer":·"1.11.415",
+       33 │ + → → "@tscircuit/props":·"file:tooling/vendor/props-qualified-source.tgz",
+       34 │ + → → "@tscircuit/schematic-viewer":·"2.0.99",
+       35 │ + → → "@types/bun":·"1.3.9",
+       36 │ + → → "@types/react-dom":·"19.3.0",
+       37 │ + → → "archiver":·"7.0.1",
+       38 │ + → → "bun-match-svg":·"0.0.13",
+       39 │ + → → "circuit-json":·"file:tooling/vendor/circuit-json-qualified-source.tgz",
+       40 │ + → → "circuit-json-to-bom-csv":·"0.0.19",
+       41 │ + → → "circuit-json-to-gerber":·"file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+       42 │ + → → "circuit-json-to-pnp-csv":·"file:tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+       43 │ + → → "circuit-to-svg":·"file:tooling/vendor/circuit-to-svg-qualified-source.tgz",
+       44 │ + → → "commander":·"12.1.0",
+       45 │ + → → "easyeda":·"file:tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+       46 │ + → → "tscircuit":·"0.0.2702",
+       47 │ + → → "tsup":·"8.5.0",
+       48 │ + → → "typescript":·"5.9.3",
+       49 │ + → → "zod":·"3.25.76"
+       50 │ + → },
+       51 │ + → "author":·"AnasSarkiz",
+       52 │ + → "private":·true,
+       53 │ + → "overrides":·{
+       54 │ + → → "@tscircuit/core":·"file:tooling/vendor/core-r7-smtpad-bounds.tgz",
+       55 │ + → → "circuit-json":·"file:tooling/vendor/circuit-json-qualified-source.tgz",
+       56 │ + → → "@tscircuit/circuit-json-util":·"file:tooling/vendor/circuit-json-util-qualified-source.tgz",
+       57 │ + → → "@tscircuit/capacity-autorouter":·"0.0.951",
+       58 │ + → → "@tscircuit/props":·"file:tooling/vendor/props-qualified-source.tgz",
+       59 │ + → → "circuit-to-svg":·"file:tooling/vendor/circuit-to-svg-qualified-source.tgz",
+       60 │ + → → "circuit-json-to-gerber":·"file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+       61 │ + → → "easyeda":·"file:tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+       62 │ + → → "@tscircuit/eval":·"file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+       63 │ + → → "circuit-json-to-pnp-csv":·"file:tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+       64 │ + → → "@tscircuit/cli":·"file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz"
+       65 │ + → }
+    66 66 │   }
+    67 67 │   
+  
+
+Checked 25 files in 24ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

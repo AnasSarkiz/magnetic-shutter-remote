@@ -1,0 +1,29 @@
+{
+  "lcsc": "C2286",
+  "mpn": "KT-0603R",
+  "references": [
+    "LED1",
+    "LED2"
+  ],
+  "url": "https://jlcpcb.com/partdetail/HubeiKENTOElec-KT_0603R/C2286",
+  "listing_sha256": "853a70fe11efdf54388ea8f04d00f685daa2afe534a000c980a3ce635f949053",
+  "checked_at_utc": "2026-10-04T21:21:36.503405+00:00",
+  "quantity_for_five_finished_boards": 10,
+  "stock_fields": {
+    "canPresaleNumber": 4247086,
+    "overseasStockCount": 4791906,
+    "preMinPurchaseNum": 1556
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 3",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

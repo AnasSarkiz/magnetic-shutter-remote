@@ -1,8 +1,20 @@
 {
-  "$schema": "https://cdn.jsdelivr.net/npm/@tscircuit/cli/types/tscircuit.config.schema.json",
-  "mainEntrypoint": "index.circuit.tsx",
-  "ignoredFiles": [
-    "README.md",
-    "VALIDATION.md"
-  ]
+	"$schema": "https://cdn.jsdelivr.net/npm/@tscircuit/cli/types/tscircuit.config.schema.json",
+	"ignoredFiles": [
+		"tooling/**",
+		"evidence/**",
+		"references/**",
+		"firmware/**",
+		"mechanical/**",
+		"tscircuit-issues/**",
+		"deliverables/**",
+		"fabrication/**",
+		"dist/**",
+		"__snapshots__/**",
+		"baselines/**",
+		"cloud/**",
+		"tests/**",
+		".agents/**",
+		".codex/**"
+	]
 }

@@ -1,0 +1,20 @@
+{
+  "local_packages": {
+    "circuit-json-to-gerber": "toolchain/circuit-json-to-gerber",
+    "@tscircuit/core": "toolchain/core",
+    "@tscircuit/props": "toolchain/props",
+    "circuit-json": "toolchain/circuit-json",
+    "easyeda": "toolchain/easyeda-converter",
+    "@tscircuit/circuit-json-util": "toolchain/circuit-json-util",
+    "circuit-to-svg": "toolchain/circuit-to-svg"
+  },
+  "dependency_roots": {
+    "circuit-json-to-gerber": "tooling/circuit-json-to-gerber/node_modules",
+    "core": "tooling/core/node_modules",
+    "props": "tooling/core/node_modules",
+    "circuit-json": "tooling/circuit-json/node_modules",
+    "easyeda-converter": "tooling/easyeda-converter/node_modules",
+    "circuit-json-util": "tooling/core/node_modules",
+    "circuit-to-svg": "tooling/core/node_modules"
+  }
+}

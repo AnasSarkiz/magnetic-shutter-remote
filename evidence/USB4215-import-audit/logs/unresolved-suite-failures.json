@@ -1,0 +1,398 @@
+[
+  {
+    "test": "imports C5378731 supplier fabrication notes into its footprint string",
+    "file": "tests/convert-to-ts/C5378731-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "preserves package RECT layer and line-width fields with correct stroke units",
+    "file": "tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "renders the C2941005 schematic and PCB",
+    "file": "tests/convert-to-ts/C2941005-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C136720 slide switch into a switch component with pin labels",
+    "file": "tests/convert-to-ts/C136720-to-ts.test.ts",
+    "errors": [
+      "error: expect(received).toMatchInlineSnapshot(expected)"
+    ]
+  },
+  {
+    "test": "converts C49234237 into a pushbutton component",
+    "file": "tests/convert-to-ts/C49234237-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C9900017879 into typescript file",
+    "file": "tests/convert-to-ts/C9900017879-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C2828420 diode with metadata-derived pin labels",
+    "file": "tests/convert-to-ts/C2828420-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "renders the C19943592 pin 1 rectangular footprint pad",
+    "file": "tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C2998002 into typescript file",
+    "file": "tests/convert-to-ts/C2998002-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C51950748 into typescript file",
+    "file": "tests/convert-to-ts/C51950748-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "preserves all C165948 pin aliases in generated TSX",
+    "file": "tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "renders the C488251 PCB view",
+    "file": "tests/convert-to-ts/C488251-pcb-view-repro.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "C2055640 should preserve courtyard outlines when round-tripping through TSX",
+    "file": "tests/convert-to-ts/C2055640-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C22446580 into typescript file",
+    "file": "tests/convert-to-ts/C22446580.test.ts",
+    "errors": [
+      "error: expect(received).toMatchInlineSnapshot(expected)"
+    ]
+  },
+  {
+    "test": "should convert C139797 tactile switch into a pushbutton component",
+    "file": "tests/convert-to-ts/C139797-to-ts.test.ts",
+    "errors": [
+      "error: expect(received).toMatchInlineSnapshot(expected)"
+    ]
+  },
+  {
+    "test": "repro: imports C8545 with its custom schematic symbol",
+    "file": "tests/convert-to-ts/C8545-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "preserves C490691 trailing-hash active-low pin names",
+    "file": "tests/convert-to-ts/C490691-active-low-labels.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "preserves C472489 slash-separated pin 20 label",
+    "file": "tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should normalize decorated C8598 diode polarity labels",
+    "file": "tests/convert-to-ts/C8598-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should import C2943786 into a snapshotted typescript component",
+    "file": "tests/convert-to-ts/c2943786-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "renders a payload with issue #464 variants",
+    "file": "tests/convert-to-ts/additional-payload-variants.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "renders the C55266 schematic and PCB",
+    "file": "tests/convert-to-ts/C55266-power-distribution-switch.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C5248081 into typescript file",
+    "file": "tests/convert-to-ts/C5248081-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "C2879827 preserves the board cutout in generated component TSX",
+    "file": "tests/convert-to-ts/C2879827-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C2886621 into typescript file",
+    "file": "tests/convert-to-ts/C2886621-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C113367 into typescript file",
+    "file": "tests/convert-to-ts/C113367-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C60708 into typescript file",
+    "file": "tests/convert-to-ts/C60708-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C472489 into typescript file",
+    "file": "tests/convert-to-ts/C472489-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "should convert C2652953 into typescript file",
+    "file": "tests/convert-to-ts/C2652953-to-ts.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "reproduces C1046 L0805 inductor being generated as a generic chip",
+    "file": "tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "reproduces C281113 L0805 inductor being generated as a generic chip",
+    "file": "tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "preserves rotated silkscreen text in the PCB snapshot",
+    "file": "tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "C41430893 should generate Circuit Json without errors",
+    "file": "tests/fetch-tests/c41430893.test.ts",
+    "errors": [
+      "error: "
+    ]
+  },
+  {
+    "test": "imports C5378731 supplier fabrication notes into its footprint string",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "preserves package RECT layer and line-width fields with correct stroke units",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "renders the C2941005 schematic and PCB",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C136720 slide switch into a switch component with pin labels",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "converts C49234237 into a pushbutton component",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C9900017879 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C2828420 diode with metadata-derived pin labels",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "renders the C19943592 pin 1 rectangular footprint pad",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C2998002 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C51950748 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "preserves all C165948 pin aliases in generated TSX",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "renders the C488251 PCB view",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "C2055640 should preserve courtyard outlines when round-tripping through TSX",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C22446580 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C139797 tactile switch into a pushbutton component",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "repro: imports C8545 with its custom schematic symbol",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "preserves C490691 trailing-hash active-low pin names",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "preserves C472489 slash-separated pin 20 label",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should normalize decorated C8598 diode polarity labels",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should import C2943786 into a snapshotted typescript component",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "renders a payload with issue #464 variants",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "renders the C55266 schematic and PCB",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C5248081 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "C2879827 preserves the board cutout in generated component TSX",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C2886621 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C113367 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C60708 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C472489 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "should convert C2652953 into typescript file",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "reproduces C1046 L0805 inductor being generated as a generic chip",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "reproduces C281113 L0805 inductor being generated as a generic chip",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "preserves rotated silkscreen text in the PCB snapshot",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  },
+  {
+    "test": "C41430893 should generate Circuit Json without errors",
+    "file": "tests/parse-tests/pin-label-hash.test.ts",
+    "errors": []
+  }
+]

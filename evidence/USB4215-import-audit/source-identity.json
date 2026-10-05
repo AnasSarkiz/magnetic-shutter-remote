@@ -1,0 +1,26 @@
+{
+  "manufacturer": "GCT / Global Connector Technology",
+  "manufacturer_part_number": "USB4215-03-A",
+  "lcsc_jlcpcb_number": "C37616412",
+  "drawing_revision": "A",
+  "drawing_date": "2024-04-26",
+  "specification_revision": "A",
+  "specification_date": "2024-04-26",
+  "supplier_component_uuid": "907b9bea7a60481d8a3d3aef3cba8ef1",
+  "package_uuid": "3104977db58742e399663286e4a66eac",
+  "package_title": "USB-C-SMD_GT-USB-7010B",
+  "footprint_metadata": {
+    "package": "USB-C-SMD_GT-USB-7010B",
+    "pre": "U?",
+    "Contributor": "lcsc",
+    "link": "https://atta.szlcsc.com/upload/public/pdf/source/20210607/C2837092_4B7D50FE42E911C84B6EC978FAA417B2.pdf",
+    "3DModel": "USB-C-SMD_GT-USB-7010B"
+  },
+  "stock_evidence": "stock-2026-10-03.json",
+  "raw_file": "inputs/C37616412.raweasy.json",
+  "original_import": "inputs/original-import.tsx",
+  "corrected_import": "final/USB4215_03_A.tsx",
+  "raw_sha256": "63d81d039f7d6041035b6c2361e88db3785859e3d79792ad0cb9513d315df746",
+  "official_drawing_sha256": "1659ba00769b9b774a033fac72cb2f3bfc481a3272c53f34e87520f33635a9e1",
+  "official_specification_sha256": "df4c8de86a682a3262d1006fe4b60d8930b133a4ee6402263922507474bfe178"
+}

@@ -1,0 +1,54 @@
+ICP401230UPR
+Rechargeable Lithium Ion Polymer Battery Pack 3.7 V
+Safety Circuit
+
+
+Specifications                                                                                  Dimensions
+Renata Type                                    ICP401230
+IEC Designation                                ICP051331
+Part Number                                    100642
+Contact Method:                                Wire AWG 30
+Safety Circuit                                 Yes
+
+
+Nominal Voltage                                3.7 V
+Nominal Capacity                               130 mAh
+Minimum Capacity                               125 mAh
+                                               (0.2C cut off 3.0 V at
+                                               20°C)
+Internal Impedance                             < 340 mΩ / 50% SOC
+
+Thickness ( t )                                Max 4.5 mm
+Lenghth ( l                                    Max 31.0 mm
+Width ( w )                                    Max 12.7 mm
+Weight                                         ~ 3.5 g
+
+Charging Characteristic                        CC/CV – Constant Current / Constant Voltage
+Voltage                                        4.2 V CV
+Current Normal                                 0.5 C CC – 65 mA
+Max. Charging Current                          1.0 C CC – 130 mA
+Temperature at Charging                        0 °C …. 45 °C
+
+Discharge Characteristic
+Cut off Voltage                                3.0 V
+Max discharge Current                          2.0 C – 260 mA ( for non continues discharge )
+                                               1.0 C – 130 mA ( for continues discharge )
+Temperature during Discharge                   -20 °C … 60 °C
+
+Cycle Life at Room Temperature                 > 80% of minimum capacity after 500 cycles ( 0.5 C
+                                               charge, 0.5 C discharge )
+
+Storage Temperature                            -20 °C … 45 °C
+                                               ( 0 °C … 30 °C recommended in case of storage for
+                                               more than 3 months)
+
+
+ Information and contents in this data sheet are for reference purpose only. They do not constitute any warranty or representation and
+ are subject to change without notice. For most current information and further details, please contact your Renata representative.
+
+                                                                                                                          Rev. Li Ion ICP401230 – 11.01
+
+
+Renata SA                         Tel. +41 (0)61 975 75 75        sales@renata.com
+CH-4452 Itingen/Switzerland       Fax. +41 (0)61 975 75 95        www.renata.com
+

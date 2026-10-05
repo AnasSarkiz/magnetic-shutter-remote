@@ -1,0 +1,29 @@
+{
+  "lcsc": "C23186",
+  "mpn": "0603WAF5101T5E",
+  "references": [
+    "R1",
+    "R2"
+  ],
+  "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF5101T5E/C23186",
+  "listing_sha256": "9061b6a75ed5c57ed94cde09748bc14e7b025c875ba8b5279e61c207247c3b83",
+  "checked_at_utc": "2026-10-04T21:21:35.102250+00:00",
+  "quantity_for_five_finished_boards": 10,
+  "stock_fields": {
+    "canPresaleNumber": 24176515,
+    "overseasStockCount": 25240645,
+    "preMinPurchaseNum": 5000
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

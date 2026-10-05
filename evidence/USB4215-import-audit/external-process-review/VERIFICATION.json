@@ -1,0 +1,33 @@
+{
+  "package": "deliverables/GCT-USB4215-JLCPCB-QUALIFICATION.zip",
+  "package_sha256": "71abc2821e06eea53da3ba5900c5eb08db2272a7b49e33b53d7584f052c6c9f6",
+  "package_members": 19,
+  "manifest_coverage": 18,
+  "zip_crc": "PASS",
+  "official_pdf_hashes": "PASS",
+  "image_decode": "PASS",
+  "existing_board_files_checked": 73486,
+  "existing_board_files_changed": [],
+  "protected_R5_carried_forward_count": 556,
+  "protected_R5_evidence": "Entire existing board-file superset unchanged against this run's before ledger; prior preservation records unchanged",
+  "protected_R4_count": 416,
+  "protected_R4_changed": [],
+  "prior_import_audit_manifest": {
+    "files": 300,
+    "mismatches": []
+  },
+  "previous_search_files": 82,
+  "previous_search_changed": [],
+  "frozen_source_repositories": 7,
+  "source_histories_clean": true,
+  "unique_baseline_failure_cases": 33,
+  "broken_links": [],
+  "board_source_changed": false,
+  "r6_created": false,
+  "broad_dfm_or_regression_rerun": false,
+  "visual_review": "Source, rendered JSON and actual CAM paste figures, native paste viewer, four-anchor close-up, preserved dimensioned comparison and specification reflow page inspected. One long-label overlap corrected in review images; draft preserved. Historical pre-fix copper drawing caption explicitly explained.",
+  "gct_response": "PREPARED \u2014 NOT SENT; NO RESPONSE",
+  "jlcpcb_response": "PREPARED \u2014 NOT SENT; NO RESPONSE",
+  "candidate": "BLOCKED",
+  "board_status": "R5 DFM REVIEW \u2014 NOT FOR FABRICATION"
+}

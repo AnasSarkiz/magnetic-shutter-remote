@@ -1,0 +1,398 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-circuit-json-to-gerber-files.test.ts:
+NOT IMPLEMENTED: drawing gerber for non circle holes
+NOT IMPLEMENTED: drawing gerber for non circle holes
+NOT IMPLEMENTED: drawing gerber for non-round holes
+NOT IMPLEMENTED: drawing gerber for non-round holes
+(pass) returns all Gerber and Excellon files for a multilayer board [2.64ms]
+
+tests/convert-circuit-json-api-names.test.ts:
+(pass) deprecated convertSoup exports remain compatible aliases [0.43ms]
+
+tests/excellon-drill/via-drill-deduplication-output.test.ts:
+(pass) Gerber file export emits one operation per physical via [0.99ms]
+
+tests/excellon-drill/physical-via-route-deduplication.test.ts:
+(pass) emits one drill per barrel when routes also carry drill dimensions [0.41ms]
+
+tests/excellon-drill/independent-g85-slot-records.test.ts:
+(pass) four supplier USB shell slots have self-contained start/end records and return to drill mode [750.85ms]
+
+tests/excellon-drill/via-drill-deduplication.test.ts:
+(pass) shared physical vias emit one drill despite different IDs and layer ordering [0.06ms]
+(pass) physical vias with missing trace IDs cover partial route transitions [0.08ms]
+(pass) physical vias with same trace IDs cover partial route transitions
+(pass) physical vias with different trace IDs cover partial route transitions [0.05ms]
+(pass) an explicit via and its same-span route fallback produce one drill [0.06ms]
+(pass) route-only vias remain supported and repeated reversed spans drill once [0.03ms]
+(pass) coincident route-only vias with distinct spans remain separate [0.09ms]
+(pass) coincident explicit vias with different physical spans remain separate [0.11ms]
+(pass) a route extending outside an explicit blind via keeps its own drill [1.80ms]
+(pass) stacked explicit spans do not suppress a route crossing both barrels
+(pass) different drill diameters remain separate for explicit and route vias [0.59ms]
+(pass) different x or y coordinates are not merged
+(pass) legacy explicit via spans also reconcile matching route transitions [0.10ms]
+(pass) single-span deduplication preserves input and flip_y_axis=false [0.17ms]
+(pass) single-span deduplication preserves input and flip_y_axis=true [0.02ms]
+(pass) non-plated holes and plated component holes are not deduplicated as vias [0.02ms]
+
+tests/excellon-drill/excellon-drill-stringification.test.ts:
+(pass) test that we can recreate an example drill file
+
+tests/excellon-drill/convert-soup-to-excellon-drill.test.ts:
+(pass) generate excellon drill text from axial resistor [0.25ms]
+
+tests/excellon-drill/physical-via-layer-precedence.test.ts:
+(pass) Gerber file export uses the physical through-via span [0.39ms]
+(pass) physical endpoints span all 2 board layers despite legacy endpoints [0.14ms]
+(pass) physical endpoints span all 4 board layers despite legacy endpoints [0.05ms]
+(pass) physical endpoints span all 6 board layers despite legacy endpoints
+(pass) physical endpoints span all 8 board layers despite legacy endpoints
+(pass) physical span [ "inner1", "top" ] overrides legacy through-via endpoints [0.08ms]
+(pass) physical span [ "inner2", "inner1" ] overrides legacy through-via endpoints [0.02ms]
+(pass) physical span [ "bottom", "inner2" ] overrides legacy through-via endpoints
+(pass) missing physical layers fall back to normalized legacy endpoints
+(pass) empty physical layers fall back to normalized legacy endpoints
+(pass) missing layer metadata defaults to a through-board drill
+(pass) single-span export filters by physical layers without mutating the input
+
+tests/excellon-drill/physical-via-span-compatibility.test.ts:
+(pass) preserves blind/buried physical spans and legacy endpoint-only inputs [0.93ms]
+
+tests/excellon-drill/excellon-drill-builder.test.ts:
+(pass) test that we can recreate an example drill file [1.32ms]
+
+tests/gerber/generate-gerber-with-hole-offsets.test.tsx:
+900 |     return expect(svgArray).toMatchMultipleSvgSnapshots(
+901 |       testPathOriginal,
+902 |       svgNames,
+903 |     )
+904 |   } catch (error) {
+905 |     throw new Error(`Failed to generate PCB stackup: ${error}`)
+                    ^
+error: Failed to generate PCB stackup: Error: 
+
+Snapshot hole-with-rect-pad-offsets-top does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/gerber/__snapshots__/hole-with-rect-pad-offsets-top.diff.png
+Snapshot hole-with-rect-pad-offsets-bottom does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/gerber/__snapshots__/hole-with-rect-pad-offsets-bottom.diff.png
+
+      at toMatchGerberSnapshot (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/fixtures/preload.ts:905:15)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/gerber/generate-gerber-with-hole-offsets.test.tsx:129:6)
+124 | 
+125 |   expect({
+126 |     ...gerberOutput,
+127 |     "drill.drl": excellonDrillOutput,
+128 |     "drill_npth.drl": excellonDrillOutputUnplated,
+129 |   }).toMatchGerberSnapshot(import.meta.path, "hole-with-rect-pad-offsets")
+           ^
+error: Matcher `toMatchGerberSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/gerber/generate-gerber-with-hole-offsets.test.tsx:129:6)
+(fail) Generate gerber with hole_with_rect_pad offsets and zip [65.26ms]
+
+tests/gerber/generate-gerber-with-rotated-pill-drill-repro.test.ts:
+(pass) repro: rotated pill plated hole drills as a horizontal slot [102.27ms]
+
+tests/gerber/generate-gerber-with-rotated-pill-solder-paste-repro.test.ts:
+(pass) repro: rotated pill solder paste renders paste apertures without throwing [54.82ms]
+
+tests/gerber/generate-gerber-with-oval-npth-repro.test.ts:
+(pass) USB-C oval NPTH is included in drill and Gerber clearances [49.06ms]
+
+tests/gerber/generate-gerber-with-covered-plated-hole-soldermask-repro.test.ts:
+(pass) covered plated holes do not emit soldermask openings [1.75ms]
+
+tests/gerber/generate-gerber-with-hole-soldermask-margin-repro.test.ts:
+(pass) pcb hole soldermask margin is applied to the mask opening [0.96ms]
+
+tests/gerber/generate-gerber-with-silkscreen-shapes.test.ts:
+(pass) pcb_silkscreen_rect is rendered to the gerber silkscreen layer [0.39ms]
+(pass) pcb_silkscreen_circle is rendered to the gerber silkscreen layer [0.19ms]
+(pass) pcb_silkscreen_line is rendered to the gerber silkscreen layer [0.13ms]
+(pass) pcb_silkscreen_oval is rendered to the gerber silkscreen layer
+(pass) pcb_silkscreen_pill is rendered to the gerber silkscreen layer [0.22ms]
+(pass) a silkscreen rect with has_stroke:false emits no stroke [0.30ms]
+(pass) a silkscreen rect with is_filled:true emits a filled region [0.32ms]
+(pass) a silkscreen rect with corner_radius renders rounded (arc) corners [0.47ms]
+(pass) silkscreen shapes render on the bottom silkscreen layer [0.20ms]
+
+tests/gerber/generate-board-outline-gerber.test.tsx:
+Dispatch phase complete. Created 0 sub-solvers.
+All sub-solvers finished.
+(pass) Generate simple board with a multi-layer trace [89.71ms]
+
+tests/gerber/generate-gerber-with-10-layer-board.test.ts:
+(pass) generates copper gerbers for 10 layer pcbs [10.63ms]
+
+tests/gerber/type-c-npth-positioning-hole-repro.test.ts:
+(pass) USB-C positioning holes copied from abse-pico stay NPTH while connector pad routes to resistor [132.57ms]
+
+tests/gerber/generate-gerber-will-pill-rotated.test.tsx:
+(pass) Generate gerber with pill shape rotated [8.05ms]
+
+tests/gerber/panel-board-outlines-repro.test.ts:
+(pass) repro: adding a panel replaces both board profiles with one rectangle [5.73ms]
+
+tests/gerber/generate-gerber-with-plated-hole-soldermask-margin-repro.test.ts:
+(pass) plated hole soldermask margin is applied to the mask opening [1.16ms]
+
+tests/gerber/generate-gerber-with-silkscreen-knockout-repro.test.ts:
+(pass) silkscreen knockout emits clear polarity around text [1.77ms]
+
+tests/gerber/generate-gerber-panel.test.tsx:
+(pass) Generate gerber with pinrow [17.07ms]
+
+tests/gerber/generate-gerber-with-cutout-corner-radius.test.tsx:
+(pass) pcb cutout rect with corner radius [7.74ms]
+
+tests/gerber/generate-gerber-with-covered-hole-soldermask-repro.test.ts:
+(pass) covered non-plated holes do not emit soldermask openings [1.54ms]
+
+tests/gerber/generate-gerber-with-offset-polygon-plated-hole-repro.test.ts:
+(pass) polygon plated hole pad outline is translated by x/y [54.16ms]
+
+tests/gerber/generate-gerber-with-8-layer-board.test.ts:
+(pass) generates copper gerbers for 8 layer pcbs [10.15ms]
+
+tests/gerber/generate-gerber-with-square-rect-pad.test.ts:
+(pass) square rect plated-hole pads do not emit a no-op rotation [0.49ms]
+
+tests/gerber/generate-gerber-with-trace-route-via-repro.test.ts:
+(pass) trace route vias emit via pads, drill hits, and following layer segments [1.59ms]
+(pass) through pad trace route points do not emit invalid copper coordinates
+
+tests/gerber/generate-gerber-with-copper-text.test.tsx:
+(pass) Generate gerber with copper text [3.93ms]
+
+tests/gerber/generate-gerber-with-polygon-plated-hole-support-repro.test.ts:
+(pass) repro: plated holes with polygon pads render copper regions [54.05ms]
+
+tests/gerber/generate-gerber-with-smtpad-soldermask-margin-repro.test.ts:
+(pass) smtpad soldermask margin expands the mask opening [0.90ms]
+
+tests/gerber/generate-gerber-with-pill.test.tsx:
+(pass) Generate gerber of macrokeypad [1.62ms]
+
+tests/gerber/touch-piano-mask.test.ts:
+(pass) touch piano covered rectangular electrodes [159.36ms]
+
+tests/gerber/rotated-rect-smtpad-45deg-repro.test.ts:
+(pass) repro: 45 degree rotated rectangular SMT pads [37.04ms]
+
+tests/gerber/generate-gerber-with-usb-c-rotated-pill-plated-hole-repro.test.ts:
+(pass) repro: USB-C rotated pill plated hole drill orientation [38.26ms]
+
+tests/gerber/generate-board-with-slikscreen-text.test.tsx:
+(pass) Generate simple board with a multi-layer trace [20.09ms]
+
+tests/gerber/generate-gerber-with-fabrication-text-from-kicad-footprint.test.tsx:
+(pass) exports fabrication elements from a KiCad footprint [223.67ms]
+
+tests/gerber/generate-gerber-with-pcb-panel.test.tsx:
+(pass) Generate PCB panel with boards containing silkscreen text [20.79ms]
+
+tests/gerber/generate-gerber-with-pill-plated-hole-soldermask-margin-repro.test.ts:
+(pass) pill plated hole soldermask margin aperture is used [2.13ms]
+
+tests/gerber/generate-gerber-with-physical-via-spans.test.ts:
+(pass) physical through-via layers override deprecated routing endpoints [7.18ms]
+
+tests/gerber/generate-same-position-text-anchors.test.tsx:
+(pass) Render silkscreen text with all anchors at same position [21.50ms]
+
+tests/gerber/generate-gerber-with-copper-text-knockout.test.tsx:
+(pass) Generate gerber with copper text knockout [4.26ms]
+
+tests/gerber/generate-gerber-with-anchor-side.test.tsx:
+(pass) silkscreen text respects anchor_side [33.48ms]
+
+tests/gerber/generate-gerber-with-basic-elements.test.tsx:
+(pass) Generate simple gerber with basic elements [7.22ms]
+
+tests/gerber/generate-gerber-macrokeypad.test.tsx:
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Dispatch phase complete. Created 1 sub-solvers.
+(pass) Generate gerber of macrokeypad [1433.06ms]
+
+tests/gerber/generate-gerber-with-polygon-smtpad-soldermask-repro.test.ts:
+(pass) uncovered polygon smtpads emit soldermask openings [1.25ms]
+
+tests/gerber/generate-gerber-with-cutouts.test.tsx:
+(pass) Generate gerber with cutouts [5.62ms]
+
+tests/gerber/generate-gerber-with-blind-via-drill-repro.test.ts:
+(pass) blind via is not emitted in through-board drill output [2.38ms]
+
+tests/gerber/generate-gerber-with-untented-via-soldermask-repro.test.ts:
+(pass) untented vias emit soldermask openings [0.40ms]
+
+tests/gerber/covered-rect-smtpad-mask-repro.test.tsx:
+(pass) covered smt pad soldermask repro [138.70ms]
+
+tests/gerber/generate-gerber-with-smtpad-corner-radius-repro.test.ts:
+(pass) repro: smtpad corner radius does not collapse to a plain rectangular aperture [38.75ms]
+
+tests/gerber/generate-gerber-with-per-side-via-tenting.test.ts:
+(pass) via mask flashes respect each side, legacy overrides, and physical layers [13.28ms]
+
+tests/gerber/generate-gerber-with-silkscreen-graphic.test.ts:
+(pass) pcb_silkscreen_graphic renders as a filled region [0.28ms]
+(pass) pcb_silkscreen_graphic inner rings are cut out with clear polarity [0.06ms]
+(pass) pcb_silkscreen_graphic renders on the bottom silkscreen layer
+
+tests/gerber/via-tenting-mask-snapshot.test.ts:
+(pass) visualize top and bottom mask openings for all via tenting combinations [2.97ms]
+
+tests/gerber/generate-gerber-with-four-layer-plated-hole-repro.test.tsx:
+(pass) generates four-layer plated-hole copper without inner soldermask [43.78ms]
+
+tests/gerber/generate-gerber-with-copper-pour.test.tsx:
+(pass) generate gerber with copper pour [23.39ms]
+(pass) rotated pill hole clears copper pour [1.19ms]
+
+tests/gerber/generate-gerber-with-rotated-pill-smtpad-repro.test.ts:
+(pass) repro: pill and rotated pill smtpads render copper without throwing [54.47ms]
+
+tests/gerber/generate-gerber-for-MAX3232.test.tsx:
+(pass) Generate gerber of macrokeypad [2.36ms]
+
+tests/gerber/generate-gerber-with-polygon-plated-hole-soldermask-margin-repro.test.ts:
+(pass) polygon plated hole soldermask margin is applied [1.30ms]
+
+tests/gerber/generate-gerber-with-four-layer-asset.test.ts:
+(pass) generates svg snapshots for four layer asset [23.99ms]
+
+tests/gerber/generate-gerber-with-pill-shape.test.tsx:
+(pass) Generate gerber with pill shape [9.20ms]
+
+tests/gerber/generate-gerber-with-bottom-copper-pour-hole-repro.test.tsx:
+(pass) repro: bottom copper pour with centered hole [169.47ms]
+
+tests/gerber/covered-smtpad-shapes.test.ts:
+(pass) smtpad coverage: circle case 0, top, margin 0 [1.10ms]
+(pass) smtpad coverage: circle case 0, top, margin 0.2 [1.10ms]
+(pass) smtpad coverage: circle case 0, bottom, margin 0 [0.71ms]
+(pass) smtpad coverage: circle case 0, bottom, margin 0.2 [0.75ms]
+(pass) smtpad coverage: rect case 1, top, margin 0 [0.92ms]
+(pass) smtpad coverage: rect case 1, top, margin 0.2 [1.00ms]
+(pass) smtpad coverage: rect case 1, bottom, margin 0 [0.31ms]
+(pass) smtpad coverage: rect case 1, bottom, margin 0.2 [1.21ms]
+(pass) smtpad coverage: rect case 2, top, margin 0 [0.82ms]
+(pass) smtpad coverage: rect case 2, top, margin 0.2 [0.94ms]
+(pass) smtpad coverage: rect case 2, bottom, margin 0 [0.68ms]
+(pass) smtpad coverage: rect case 2, bottom, margin 0.2 [0.77ms]
+(pass) smtpad coverage: rect case 3, top, margin 0 [0.92ms]
+(pass) smtpad coverage: rect case 3, top, margin 0.2 [0.81ms]
+(pass) smtpad coverage: rect case 3, bottom, margin 0 [0.41ms]
+(pass) smtpad coverage: rect case 3, bottom, margin 0.2 [0.40ms]
+(pass) smtpad coverage: rotated_rect case 4, top, margin 0 [1.37ms]
+(pass) smtpad coverage: rotated_rect case 4, top, margin 0.2 [0.86ms]
+(pass) smtpad coverage: rotated_rect case 4, bottom, margin 0 [0.76ms]
+(pass) smtpad coverage: rotated_rect case 4, bottom, margin 0.2 [0.70ms]
+(pass) smtpad coverage: rotated_rect case 5, top, margin 0 [0.83ms]
+(pass) smtpad coverage: rotated_rect case 5, top, margin 0.2 [0.55ms]
+(pass) smtpad coverage: rotated_rect case 5, bottom, margin 0 [0.84ms]
+(pass) smtpad coverage: rotated_rect case 5, bottom, margin 0.2 [1.11ms]
+(pass) smtpad coverage: rotated_rect case 6, top, margin 0 [0.35ms]
+(pass) smtpad coverage: rotated_rect case 6, top, margin 0.2 [0.87ms]
+(pass) smtpad coverage: rotated_rect case 6, bottom, margin 0 [0.64ms]
+(pass) smtpad coverage: rotated_rect case 6, bottom, margin 0.2 [0.64ms]
+(pass) smtpad coverage: pill case 7, top, margin 0 [0.24ms]
+(pass) smtpad coverage: pill case 7, top, margin 0.2 [0.98ms]
+(pass) smtpad coverage: pill case 7, bottom, margin 0 [0.48ms]
+(pass) smtpad coverage: pill case 7, bottom, margin 0.2 [0.53ms]
+(pass) smtpad coverage: pill case 8, top, margin 0
+(pass) smtpad coverage: pill case 8, top, margin 0.2
+(pass) smtpad coverage: pill case 8, bottom, margin 0
+(pass) smtpad coverage: pill case 8, bottom, margin 0.2 [1.99ms]
+(pass) smtpad coverage: rotated_pill case 9, top, margin 0
+(pass) smtpad coverage: rotated_pill case 9, top, margin 0.2 [1.67ms]
+(pass) smtpad coverage: rotated_pill case 9, bottom, margin 0 [0.63ms]
+(pass) smtpad coverage: rotated_pill case 9, bottom, margin 0.2 [0.40ms]
+(pass) smtpad coverage: rotated_pill case 10, top, margin 0 [0.75ms]
+(pass) smtpad coverage: rotated_pill case 10, top, margin 0.2 [0.44ms]
+(pass) smtpad coverage: rotated_pill case 10, bottom, margin 0 [0.89ms]
+(pass) smtpad coverage: rotated_pill case 10, bottom, margin 0.2 [0.59ms]
+(pass) smtpad coverage: polygon case 11, top, margin 0 [0.42ms]
+(pass) smtpad coverage: polygon case 11, top, margin 0.2 [0.87ms]
+(pass) smtpad coverage: polygon case 11, bottom, margin 0 [0.18ms]
+(pass) smtpad coverage: polygon case 11, bottom, margin 0.2 [0.92ms]
+(pass) smtpad coverage: polygon case 12, top, margin 0
+(pass) smtpad coverage: polygon case 12, top, margin 0.2
+(pass) smtpad coverage: polygon case 12, bottom, margin 0 [2.21ms]
+(pass) smtpad coverage: polygon case 12, bottom, margin 0.2 [0.20ms]
+
+tests/gerber/generate-gerber-with-physical-via-layer-precedence.test.ts:
+(pass) bottom copper and through drills agree with physical via layers [1.37ms]
+
+tests/gerber/generate-gerber-with-oval-plated-hole-repro.test.ts:
+(pass) oval plated holes export as elliptical Gerber regions [66.81ms]
+
+tests/gerber/generate-gerber-with-pinrow.test.tsx:
+(pass) Generate gerber with pinrow [15.84ms]
+
+tests/repros/repro2/generate-board-with-slikscreen-text.test.tsx:
+(pass) Generate simple board with a multi-layer trace [29.55ms]
+
+tests/repros/repro5/greenboard-outline.test.tsx:
+(pass) greenboard edge cuts follow the custom outline [27.56ms]
+
+tests/repros/repro4/repro4.test.tsx:
+(pass) Generate interconnect 15x4 board [22.28ms]
+
+tests/repros/repro3/viagrid-board.test.tsx:
+(pass) Generate viagrid board [18.53ms]
+
+tests/repros/repro6/motor-controller-shield.test.tsx:
+(pass) Generate motor controller shield board [43.76ms]
+
+tests/repros/repro1/repro1.test.tsx:
+(pass) repro1 water counter [10.42ms]
+
+tests/repros/repro8/repro8.test.tsx:
+900 |     return expect(svgArray).toMatchMultipleSvgSnapshots(
+901 |       testPathOriginal,
+902 |       svgNames,
+903 |     )
+904 |   } catch (error) {
+905 |     throw new Error(`Failed to generate PCB stackup: ${error}`)
+                    ^
+error: Failed to generate PCB stackup: Error: 
+
+Snapshot blinkByddy-top does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/repros/repro8/__snapshots__/blinkByddy-top.diff.png
+Snapshot blinkByddy-bottom does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/repros/repro8/__snapshots__/blinkByddy-bottom.diff.png
+
+      at toMatchGerberSnapshot (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/fixtures/preload.ts:905:15)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/repros/repro8/repro8.test.tsx:39:6)
+34 | 
+35 |   expect({
+36 |     ...gerberOutput,
+37 |     "drill_plated.drl": excellonDrillOutputPlated,
+38 |     "drill_unplated.drl": excellonDrillOutputUnplated,
+39 |   }).toMatchGerberSnapshot(import.meta.path, "blinkByddy")
+          ^
+error: Matcher `toMatchGerberSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/repros/repro8/repro8.test.tsx:39:6)
+(fail) repro8 blinkByddy [184.86ms]
+
+tests/repros/repro9/distance-sensor-cutout.test.ts:
+(pass) repro9 distance sensor cutouts [33.56ms]
+
+tests/repros/repro7/rotated-pill-plated-hole-copper-vs-paste.test.tsx:
+(pass) repro8: rotated pill plated hole copper vs paste mismatch [109.25ms]
+
+tests/repros/repro11/keychain.test.ts:
+(pass) repro11: keychain silkscreen text uses alphabet glyph advances [1.02ms]
+(pass) repro11: keychain Circuit JSON matches top and bottom Gerber renders [122.80ms]
+
+tests/repros/repro10/tscircuit-text-20x10.test.ts:
+(pass) repro10: gerber preserves lowercase silkscreen text glyphs [0.29ms]
+(pass) repro10: pcb viewer and gerber render preserve lowercase text [1.30ms]
+
+2 tests failed:
+(fail) Generate gerber with hole_with_rect_pad offsets and zip [65.26ms]
+(fail) repro8 blinkByddy [184.86ms]
+
+ 170 pass
+ 2 fail
+ 1 snapshots, 1640 expect() calls
+Ran 172 tests across 81 files. [5.32s]

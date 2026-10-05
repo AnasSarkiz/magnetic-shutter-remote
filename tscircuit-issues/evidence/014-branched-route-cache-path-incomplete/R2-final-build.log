@@ -1,0 +1,28 @@
+$ tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs --3d-png
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_0: Saved phase path ".J1 > port.EH1" must end at another connection endpoint; use autorouter="fanout" for saved escapes
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is facing y- but should face x- so the connector is accessible from the board edge
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating 3D PNG...
+[index] Written 3d.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs, 3d-png
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

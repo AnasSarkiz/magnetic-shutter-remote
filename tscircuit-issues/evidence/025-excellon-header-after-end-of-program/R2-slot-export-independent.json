@@ -1,0 +1,71 @@
+{
+  "reader": "pcb-tools 0.1.6",
+  "archive": "evidence/R3/R2-regenerated-slot-fix.zip",
+  "archive_sha256": "fddd5bf0c181d1427622d617d9f9bdfd4f625ba791a173ccd1139e6ab28ce486",
+  "circuit_sha256": "ef503610ad8671668c04877164961740e2b3b40a449aa45bbbe608b0284a63e3",
+  "drill_file": "drill-L1-L2.drl",
+  "slots": [
+    {
+      "source_hole_id": "pcb_plated_hole_0",
+      "start_mm": [
+        -4.32,
+        27.0401
+      ],
+      "end_mm": [
+        -4.32,
+        26.2401
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.399998999999997,
+      "endpoint_error_mm": 4.4692728714182094e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_1",
+      "start_mm": [
+        4.32,
+        27.0401
+      ],
+      "end_mm": [
+        4.32,
+        26.2401
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.399998999999997,
+      "endpoint_error_mm": 4.4692728714182094e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_2",
+      "start_mm": [
+        -4.32,
+        23.01
+      ],
+      "end_mm": [
+        -4.32,
+        21.91
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.6999990000000014,
+      "endpoint_error_mm": 3.338038346123124e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_3",
+      "start_mm": [
+        4.32,
+        23.01
+      ],
+      "end_mm": [
+        4.32,
+        21.91
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.6999990000000014,
+      "endpoint_error_mm": 3.7735924529735196e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    }
+  ],
+  "round_drill_hits": 72,
+  "scope": "PTH slots only; round drills, copper, mask, paste and outline require separate checks"
+}

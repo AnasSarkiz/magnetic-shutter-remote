@@ -1,0 +1,434 @@
+Lithium-ion Polymer 1000mAh Battery Datasheet
+
+Distributed by TinyCircuits:
+TinyCircuits Part Number: ASR00012
+Website: https://tinycircuits.com/
+Company Address: 540 S. Main St Ste 457 Akron,
+OH 44311 USA
+Battery Connector Part: JST SHR-02V-S-B
+Battery Mating Connector Part: JST SM02B-SRSS-
+TB(LF)(SN)
+
+
+Manufacturing Information:
+
+Company: Shenzhen Hondark Electronics Co., Ltd.
+Product Type: Lithium-ion Polymer Battery
+Model Name: 803040PL-1000mAh
+USHTS: 8507600020
+ECCN: EAR99
+Country of Origin: China
+                                                           Figure 1: 1000mAh Battery Drawing & Dimensions
+
+
+1. Dimensions and Appearance
+1.1 Outline Dimensions: See attached drawing, Figure
+1, for dimensions.
+Note: The thickness of the battery will swell when
+stored or used at high temperatures.
+1.2 Appearance: The outer surface of the battery is
+clean, no electrolyte leakage, no obvious scratches
+and mechanical damage, no deformation, no other
+appearance defects that affect the value of the battery.
+
+
+
+
+Revision 1                                          July 2022                                  Page 1 of 12
+TinyCircuits                      Lithium-ion Polymer 1000mAh Battery Datasheet                             July 2022
+
+
+
+2. Battery Specifications
+
+Table 1: Ratings
+
+ No.                      Item                 Specification    Unit    Notes
+                    Normal Capacity                1000         mAh
+  2.1                                                                   1.0C Discharge
+                   Minimum Capacity                1000         mAh
+  2.2               Nominal voltage                3.70          V
+  2.3              Internal Resistance             ≤180         mΩ      (with PCB)
+  2.4           Discharge Cut-off Voltage           3.0          V
+  2.5               Charge Voltage                 4.20          V
+  2.6          Maximum Charging Voltage            4.20          V
+  2.7           Standard Charge Current            500          mA      0.5C
+  2.8           Maximum Charge Current             1000         mA      1.0C
+  2.9          Maximum Discharge Current           1000         mA      1.0C
+ 2.10                    Weight                   ≈17.7          g
+                                                                ◦
+             Operating Temperature Charge         0 - +50           C
+ 2.11
+                                                                ◦
+         Operating Temperature Discharge         −10 - +60          C
+                                                                ◦
+         Storage Temperature (≤ 1 month)         −20 - +60          C
+                                                                        Storage Temperature: 20 - 25 ◦ C
+ 2.12                                                           ◦
+        Storage Temperature (≤ 3 months)         −20 - +45          C
+                                                                ◦
+          Storage Temperature (≤ 1 year)         −20 - +35          C
+ 2.13              Operation Humidity             ≤ 85%         RH      Not condensed
+ 2.14               Storage Humidity              ≤ 85%         RH      Not condensed
+                                                                                                 ◦
+ 2.15          Standard Testing Condition                               Temperature:     23±2        C,    Humidity:
+                                                                        ≤65±20%RH
+
+
+
+
+Revision 1                                          July 2022                                             Page 2 of 12
+TinyCircuits                   Lithium-ion Polymer 1000mAh Battery Datasheet                           July 2022
+
+
+
+3. General Performance
+
+ Item                Measuring Procedure                                            Requirements
+ Initial Capacity    Standard charge and discharge three cycles and then mea-       The initial capacity should
+                     sure the final discharged capacity.                            be higher than the minimum
+                                                                                    capacity.
+ Cycle Life (25°C)   The battery pack is charged and discharged using the Stan-     Cycle life ≥ 300 cycles
+                     dard method defined above under 3.2 Standard Test Condi-
+                     tions. The battery is rested for 10 minutes each charge and
+                     discharge. Repeat the above steps 300 times. The capac-
+                     ity of the cells should be higher than 80% of the minimum
+                     capacity.
+ Storage             The battery pack is fully charged according to standard con-   The remaining capacity
+ (23±2°C)            ditions and stored at a temperature of 23±2°C for 30 days      should be higher than 90%
+                     and its capacity is measured under standard discharge con-     of the minimum capacity.
+                     ditions.
+
+
+Capacity at Different Temperatures
+
+The relative value or Discharge Capacity at various temperatures compared with the Standard Discharge Capacity
+at 100%. Charge under standard charging conditions. Standard discharge at different temperatures:
+
+ Relative Capacity     70%                    80%                    100%                   95%
+ Temperature           -10°C                  0°C                    23°C                   60°C
+
+
+
+Charging Characteristic
+
+Temp: 25°C, Charging: CC-CV: 500mA-4.2V
+
+
+
+
+Figure 2: 1000mAh Battery Charging Characteristics
+
+
+
+Revision 1                                          July 2022                                       Page 3 of 12
+TinyCircuits                 Lithium-ion Polymer 1000mAh Battery Datasheet     July 2022
+
+
+Discharging Characteristic
+
+Temp: 25°C, Discharging: CC -3.0V
+
+
+
+
+Figure 3: 1000mAh Battery Discharging Characteristics
+
+
+
+
+Revision 1                                     July 2022                     Page 4 of 12
+TinyCircuits                Lithium-ion Polymer 1000mAh Battery Datasheet                           July 2022
+
+
+
+4. Environmental Performance
+
+Mechanical Properties
+
+ Item             Measuring Procedure                                                     Requirements
+ Vibration Test   After standard charging, the battery is to be tested under the fol-     The battery has no
+                  lowing conditions:                                                      leakage, smoke, or
+                  Displacement Amplitude: 0.8mm                                           explosion.
+                  Frequency: 10-55Hz (sweep:1Hz/min)
+                  Direction for vibration: X/Y/Z axis for 30min. The battery is to be
+                  tested in three mutually perpendicular axes.
+ Drop Test        After standard charging, the drop test shall be carried out according   The battery has no
+                  to the following conditions:                                            leakage, smoke or
+                  Drop height: 1.0m                                                       explosion.
+                  Surface: 18-20mm or more thick hardwood or concrete
+                  Falling direction: fall in the positive and negative directions of X,
+                  Y, and Z (six directions)
+
+
+
+
+Revision 1                                       July 2022                                        Page 5 of 12
+TinyCircuits                  Lithium-ion Polymer 1000mAh Battery Datasheet                               July 2022
+
+
+
+5. Safety Performance
+
+ Item                      Measuring Procedure                                               Requirements
+ 5.1 Over-Charge Test      After standard charging, the battery and the sliding rheostat     No explosion, no fire
+                           are connected in series with a constant current and constant
+                           voltage source, the voltage is adjusted to 4.6V, the current is
+                           adjusted to 3.0C through the sliding rheostat, and then the
+                           battery is charged at 3.0C. The test time is 2.5H.
+ 5.2 Over-Discharge Test   The fully discharged cell is continually discharged for 24h       No explosion, no fire
+                           with the (30×n) load at 23±2°C
+ 5.3 Short-Circuit Test    After standard charge, short-circuit the battery by connect-      No explosion, no fire.
+                           ing the positive and negative terminals of the battery with       The external tem-
+                           copper wire having a maximum resistance load of 0.1Ω              perature of the bat-
+                                                                                             tery shall not exceed
+                                                                                             160◦ C
+
+
+
+
+Revision 1                                         July 2022                                           Page 6 of 12
+TinyCircuits                Lithium-ion Polymer 1000mAh Battery Datasheet                     July 2022
+
+
+
+6. Protection Circuit Characteristics
+
+Table 2: PCM Standard (Protection Board Standard)
+
+ Item                       Details                                         Standard
+                            Overcharge detection voltage                    4.28±0.05V
+ Overcharge Protection      Overcharge detection delay time                 1.2s-4.6s
+                            Overcharge release voltage                      4.06±0.05V
+                            Overdischarge detection voltage                 <3.0±0.1V
+ Overdischarge Protection
+                            Overdischarge release voltage                   >3.0±0.1V
+                            Overdischarge detection delay time              144ms - 290ms
+                            Overcurrent voltage drop detection              U>0.08 ±0.03V
+                            Overcurrent detection delay time                10ms - 20ms
+ Overcurrent Protection
+                            Protection release condition                    Disconnect load
+                            Protection condition detected at voltage drop   1.0V-1.7V
+ Short Circuit Protection   Detection delay time                            500µs (Max.)
+                            Protection release conditions                   Break the short circuit
+                            Normal operation                                1.0µA-7.0µA
+ Current Consumption
+                            During low power/sleep                          0.1µs (Max.)
+ Internal resistance        Main circuit on-state internal resistance       ≤60mΩ
+ 0V Recharge                Is it possible to charge the 0V battery?        Yes
+
+
+
+
+Revision 1                                      July 2022                                  Page 7 of 12
+TinyCircuits                    Lithium-ion Polymer 1000mAh Battery Datasheet                   July 2022
+
+
+
+7. PCM Schematic Diagram & Table
+
+
+
+
+Figure 4: 1000mAh Battery Schematic
+
+Table 3: PCM BOM List
+
+ No.    Component                                        Label     Specification   Package   Unit   Qty.
+  1     Silicon MOSFET                                    U2          8205A        TSSOP-6   pcs     1
+  2     Battery protection IC                             U1          DW01         TSSOP-6   pcs     1
+  3     Resistance                                        R1      100Ω 5% 1/16W     0603     pcs     1
+  4     Resistance                                        R2      1KΩ 5% 1/16W      0603     pcs     1
+  5     Capacitance                                       C1      0.1µF 5% 1/16W    0402     pcs     1
+  6     PCB                                                   -    17*3.8*0.6M      FR4      pcs     1
+  7     Nickel Sheets                                         -     6*3*0.3MM      TSSOP-6   PCS     2
+
+
+
+
+Revision 1                                        July 2022                                  Page 8 of 12
+TinyCircuits                    Lithium-ion Polymer 1000mAh Battery Datasheet                             July 2022
+
+
+
+Reference Battery Charging Schematic Diagram & Table
+The following schematic and list of parts is implemented in a lithium ion polymer battery charging diagram that is a
+simplified version of the TinyCircuits Battery Charger, product ASL2112*.
+
+*The ASL2112 is a standalone Lithium battery charger that can be used with a Micro USB B cable. Use the JST SH
+connector on the ASL2112 board to easily plug-in a battery (compatible batteries sold at https://tinycircuits.com/).
+Alternatively, a battery can be connected without the JST SH connector by using the two through holes, J3 and J4,
+to connect to a battery pack. To charge a battery with ASL2112, plug the USB B side of the charger into a power
+source using a compatible cable, and plug a lithium polymer or lithium ion rechargeable (3.7V / 4.2V) battery into
+the other side. A status LED on the board will indicate when a battery is charging, and the LED will turn off when
+the battery is fully charged.
+
+
+
+
+Figure 5: Sample Battery Charger Schematic
+
+Table 4: PCM BOM List
+
+ Component       Label             Specification             Notes
+      IC           U1               MCP73831
+       R           R1                   1KΩ
+       R           R2                  2KΩ 2
+       C         C1,C3                  10µF
+       C           C2                  0.1µF
+  LED Diode        D1                 AMBER                  Charging Status LED
+  Connector        J2     JST SM02B-SRSS-TB(LF)(SN)          Compatible Battery Connector: JST SHR-02V-S-B
+
+
+
+
+Revision 1                                           July 2022                                        Page 9 of 12
+TinyCircuits                     Lithium-ion Polymer 1000mAh Battery Datasheet                             July 2022
+
+
+
+Handling Instruction and Warnings
+Read and observe the following precautions carefully to ensure the correct use of lithium-ion batteries. Our com-
+pany is not responsible for any problems arising from violation of the following precautions.
+
+Failure to observe the following precautions may result in battery leakage, overheating, explosion and/ or fire.
+
+Battery Environment
+
+  • Do not immerse the pack in water, seawater, or other liquids.
+
+  • Do not use, or leave the battery near heat sources such as a fire or heater.
+
+  • Do not use or store the battery where it is exposed to an extremely hot environment, such as in a car under
+    direct sunlight or on a hot day. Otherwise, the battery will overheat and may catch fire (ignite). This can also
+    reduce battery performance and/or shorten service life.
+
+  • Do not place the battery in a microwave oven or pressurized container.
+
+  • Do not use the battery in a location where static electricity or magnetic fields are great, otherwise, the safety
+    devices in the pack may be damaged, which may cause unsafe risks.
+
+  • Keep the batteries out of the reach of young children. If a child somehow swallows a battery, seek medical
+    attention immediately. In cases where children use the battery, instruct them on the contents of this document
+    and supervise them to ensure that the battery is being used correctly.
+
+  • Use the battery only under the environmental conditions mentioned in this document. Failure to do so can
+    result in reduced performance or a shorten service life. Using the battery outside this temperature range can
+    cause the battery to overheat, explode or catch fire.
+
+
+Aluminum Foil Flexible Packaging
+
+  • The aluminum foil flexible packaging encasing the battery cells is vulnerable to sharp objects that could punc-
+    ture or damage the integrity of the aluminum.
+
+  • Do not transport or store the battery together with metal objects such as keys, necklaces etc.
+
+  • Do not strike at pack with any sharp objects. The soft aluminum packing foil may be easily damaged by sharp
+    edge parts such as Ni-tabs, pins and needles.
+
+  • Do not strike the battery with any sharp-edged parts.
+
+  • Trim nails or wear gloves before handling batteries.
+
+  • Clean worktable where battery is used to avoid any sharp objects.
+
+  • Polymer batteries have lower mechanical durability than metal shell prismatic batteries. Drops, collisions,
+    bending, etc. may reduce the performance of polymer batteries.
+
+
+Battery Electrolyte
+
+  • If the pack leaks and the electrolyte get into the eyes, do not rub eyes. Instead, rinse the eyes with clean
+    running water, and immediately seek medical attention. Otherwise, eye injury may result.
+
+  • If the battery leaks and electrolyte gets on your skin or clothing, immediately rinse the affected area with clean
+    running water. If left as is, skin inflammation can occur.
+
+
+Revision 1                                           July 2022                                         Page 10 of 12
+TinyCircuits                     Lithium-ion Polymer 1000mAh Battery Datasheet                                July 2022
+
+
+  • Pay attention to the use of insulation structures between the battery core (the exposed aluminum layer on the
+    side and the top edge of the package sealing film) and the PCB, as well as between the battery core and
+    electrical appliances. Pay special attention to the insulation between the aluminum layer and positive and
+    negative terminals of the battery. Contact of the poles and aluminum layer or electrical equipment may cause
+    battery leakage or swelling.
+  • If the battery leaks or emits an odor, immediately remove it from the proximity of any exposed flame. The
+    leaking electrolyte can ignite and cause a fire or explosion.
+
+Prohibit Short Circuit
+
+  • A short circuit will generate high current and may cause the battery to generate heat, leak electrolyte, smoke,
+    and/or explode.
+  • Do not short-circuit the pack by connecting the positive and negative terminals directly, or by using conductive
+    materials such as metal wire.
+  • Short circuiting is very dangerous. The battery tabs may be short-circuited by putting them on a conductive
+    surface. An external short circuit such as this may lead to heat generation and damage to the battery.
+
+Electrical Application
+
+  • Do not use the battery in combination with batteries of different capacity, type, or brand.
+  • Do not attempt to disassemble or modify the battery in any way.
+  • Do not use any chargers other than those recommended for Lithium-ion Polymer batteries. Consider using
+    TinyCircuits’ Battery Charger product ASL2112.
+  • Do not reverse the positive (+) and negative (-) terminals.
+  • Do not connect the pack to an electrical outlet, such as wall outlets or car cigarette-lighter sockets.
+  • Do not directly solder the pack or battery terminals.
+  • If the pack emits an odor, generates heat, becomes discolored or deformed, or any abnormal phenomenon
+    occurs during charging, recharging or storage, immediately remove the battery from the charger or device,
+    and stop use.
+  • If the case pack terminals are dirty, clean the terminals with a dry cloth before use. Otherwise power failure or
+    charge failure may occur due to the poor connection with the instrument.
+  • Be aware that discharged battery may cause fire or smoke; tape the terminals with insulating paper to insulate
+    them.
+  • For directions on battery installation and removal, read the instruction manual that accompanies the equipment
+    in which the battery will be used.
+  • The load circuit may generate voltage and current, which will be reversed to the battery pack (including PCM).
+    The voltage and current cannot exceed the reverse withstand voltage (RWV) and current (RWI) value of the
+    protection board itself. High voltage or current can damage the protection board in the battery pack.
+
+Storage
+
+If a device is not used for an extended period, the battery should be removed and stored in a cool, dry place.
+Otherwise, resting, or reduced performance may occur.
+The pack should be stored at room temperature, charged to about 40% to 60% of capacity. In case of over-
+discharge, a pack should be charged once every 3 months while storing and batteries should be discharged and
+charged after being stored more than a year in order to activate and restore energy.
+
+
+Revision 1                                           July 2022                                         Page 11 of 12
+TinyCircuits                      Lithium-ion Polymer 1000mAh Battery Datasheet                              July 2022
+
+
+
+Vendor Notes
+The customer is requested to contact TinyCircuits in advance, if and when the customer needs other applications
+or operating conditions than those described in this document. Additional experimentation may be required to
+verify performance and safety under such conditions.
+
+TinyCircuits will take no responsibility for any accident when the battery is used under other conditions than those
+described in this Document.
+
+TinyCircuits will inform, in a written form, the customer of improvement(s) regarding proper use and handing of the
+battery, if it is deemed necessary.
+
+Any matters that this specification does not cover should be conferred between the customer and TinyCircuits.
+
+
+Period of Warranty
+The period of warranty is 90 days from the date of shipment. If you find that the product does not perform to
+specifications at any time within ninety (90) calendar days of purchase, TinyCircuits will gladly replace the defective
+product. If the problem is caused by the user’s misuse, it will not be replaced.
+
+
+Amendment of this Specification
+The company, TinyCircuits, has the right to revise this product specification. After revising the product specification,
+our company will notify the customer.
+
+
+
+
+Revision 1                                            July 2022                                          Page 12 of 12
+

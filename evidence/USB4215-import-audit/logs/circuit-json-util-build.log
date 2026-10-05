@@ -1,0 +1,23 @@
+$ tsup-node ./index.ts --format esm --dts --sourcemap
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Target: es2022
+ESM Build start
+ESM dist/index.js     117.04 KB
+ESM dist/index.js.map 236.35 KB
+ESM ⚡️ Build success in 58ms
+DTS Build start
+lib/transform-soup-elements.ts(176,9): error TS2339: Property 'center' does not exist on type '{ type: "pcb_keepout"; width: number; height: number; shape: "rect"; layers: string[]; center: { x: number; y: number; }; pcb_keepout_id: string; description?: string | undefined; subcircuit_id?: string | undefined; ... 4 more ...; allow_placements?: boolean | undefined; } | { ...; } | { ...; } | { ...; }'.
+  Property 'center' does not exist on type '{ type: "pcb_keepout"; shape: "outline"; layers: string[]; outline: { x: number; y: number; }[]; stroke_width: number; pcb_keepout_id: string; description?: string | undefined; subcircuit_id?: string | undefined; ... 4 more ...; allow_placements?: boolean | undefined; }'.
+lib/transform-soup-elements.ts(176,43): error TS2339: Property 'center' does not exist on type '{ type: "pcb_keepout"; width: number; height: number; shape: "rect"; layers: string[]; center: { x: number; y: number; }; pcb_keepout_id: string; description?: string | undefined; subcircuit_id?: string | undefined; ... 4 more ...; allow_placements?: boolean | undefined; } | { ...; } | { ...; } | { ...; }'.
+  Property 'center' does not exist on type '{ type: "pcb_keepout"; shape: "outline"; layers: string[]; outline: { x: number; y: number; }[]; stroke_width: number; pcb_keepout_id: string; description?: string | undefined; subcircuit_id?: string | undefined; ... 4 more ...; allow_placements?: boolean | undefined; }'.
+
+Error: error occurred in dts build
+    at Worker.<anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/core/node_modules/tsup/dist/index.js:1545:26)
+    at Worker.emit (node:events:508:20)
+    at MessagePort.<anonymous> (node:internal/worker:333:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:843:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+DTS Build error
+error: script "build" exited with code 1

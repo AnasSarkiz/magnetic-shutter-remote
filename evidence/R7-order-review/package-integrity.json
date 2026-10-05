@@ -1,0 +1,9 @@
+{
+  "archive": "deliverables/magnetic-shutter-remote-shutter-only-JLCPCB-review.zip",
+  "sha256": "76f7855fcc6006636debf3e19c6e9e5a1c0a3ed402842ed37da93f78a94cfe93",
+  "bytes": 2167204,
+  "entries": 53,
+  "member_hashes_verified": 52,
+  "status": "REVIEW ONLY \u2014 NOT APPROVED FOR PAYMENT",
+  "no_torch_design_files": true
+}

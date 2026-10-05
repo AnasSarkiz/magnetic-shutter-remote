@@ -1,0 +1,1232 @@
+       www.osram-os.com
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+
+                                        GW VJLPL1.CM
+    Datasheet
+
+
+                                    ﻿
+
+
+
+
+    Published by ams-OSRAM AG
+﻿   Tobelbader Strasse 30, 8141 Premstaetten, Austria
+    Phone +43 3136 500-0
+    ams-osram.com
+    ©1All |rights
+             Version   1.4 | 2025-01-16
+                  reserved
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+
+    OSLON® Pure 1414
+
+    GW VJLPL1.CM
+    The OSLON Pure® 1414, one of the best lumen density, excel-
+    lent efficiency and color homogeneity.
+    The OSLON Pure® 1414 come with full color spectrum and
+    color temperature of 1800K to 6500K that enable customer to
+    perform color tuning and tight clustering. It can be use stand
+    alone as well as in cluster together to achieve the spectrum that
+    you need.
+
+
+
+
+    Applications
+    - Appliances & Tools                                       - Medical Lighting
+    - Entertainment                                            - Outdoor & Industrial Lighting
+    - Factory Automation                                       - Projection & Display
+
+
+
+                                 ﻿
+    - Indoor Lighting                                          - Robotics
+
+
+
+    Features
+    - Package: chip level conversion
+    - Typ. Radiation: 120° (Lambertian emitter)
+    - Color temperature: 1800K - 6500K
+    - CRI: 90 (min.), 91 (typ.), R9: 50 (min.)
+    - ESD: 2 kV acc. to ANSI/ESDA/JEDEC JS-001 (HBM, Class 2)
+    - Luminous Flux: typ. 122 lm @ 4000 K, 85 °C
+    - Luminous efficacy: typ. 124 lm/W @ 4000 K, 85 °C
+
+
+
+
+﻿
+
+
+     2 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Ordering Information
+    Type                            Color temperature   Luminous Flux 1)    Ordering Code
+                                                        IF = 350 mA
+                                                        ΦV
+
+    GW VJLPL1.CM-JGK2-XX512-1        1800 K                 70 ... 100 lm   Q65113A7112
+    GW VJLPL1.CM-LTLV-XX58-1         2700 K               105 ... 135 lm    Q65113A7115
+    GW VJLPL1.CM-LTLV-XX57-1         3000 K               105 ... 135 lm    Q65113A7110
+    GW VJLPL1.CM-K3LX-XX56-1         3500 K               115 ... 145 lm    Q65113A7108
+    GW VJLPL1.CM-K3LX-XX55-1         4000 K               115 ... 145 lm    Q65113A7109
+    GW VJLPL1.CM-K4LY-XX53-1         5000 K               120 ... 150 lm    Q65113A7114
+    GW VJLPL1.CM-K4LW-XX52-1         5700 K               120 ... 140 lm    Q65115A0061
+    GW VJLPL1.CM-K3LX-XX51-1         6500 K               115 ... 145 lm    Q65113A7113
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+     3 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Maximum Ratings
+    Parameter                                                     Symbol                    Values
+
+    Operating Temperature                                         Top      min.             -40 °C
+                                                                           max.             100 °C
+    Storage Temperature                                           Tstg     min.             -40 °C
+                                                                           max.             100 °C
+    Junction Temperature                                          Tj       max.             135 °C
+    Forward Current                                               IF       min.             10 mA
+    TJ = 85 °C                                                             max.           1000 mA
+    Surge Current                                                 IFS      max.           2000 mA
+    t ≤ 10 µs; D = 0.005 ; TJ = 85 °C
+    Reverse voltage 2)                                            VR               Not designed for
+                                                                                  reverse operation
+    ESD withstand voltage                                         VESD                        2 kV
+    acc. to ANSI/ESDA/JEDEC JS-001 (HBM, Class 2)
+
+
+    Note : Maximum Junction Temperature for 1800K CCT is 125°C.
+
+
+
+
+                                  ﻿
+
+
+
+
+﻿
+
+
+     4 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Characteristics
+    IF = 350 mA; TJ = 85 °C
+    Parameter                                            Symbol                     Values
+
+    Viewing angle at 50% IV                              2φ            typ.          120 °
+    Forward Voltage 3)                                   VF            min.         2.60 V
+    IF = 350 mA                                                        typ.         2.80 V
+                                                                       max.         3.00 V
+    Reverse current 2)                                   IR                   Not designed
+                                                                                for reverse
+                                                                                  operation
+    Color Rendering Index 4)                             CRI           min.             90
+                                                                       typ.             91
+    Color Rendering Index (R9) 4)                        CRI (R9)      min.             50
+    Electrical thermal resistance junction/solderpoint   RthJS elec.   typ.      5.9 K / W
+    with efficiency ηe = 40.0 %
+
+
+
+
+                                 ﻿
+
+
+
+
+﻿
+
+
+     5 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Brightness Groups
+    Group                      Luminous Flux 1)    Luminous Flux 1)
+                               IF = 350 mA         IF = 350 mA
+                               min.                max.
+                               ΦV                  ΦV
+
+    JG                               70 lm             75 lm
+    KY                               75 lm             80 lm
+    KZ                               80 lm             85 lm
+    KS                               85 lm             90 lm
+    K1                               90 lm             95 lm
+    K2                               95 lm            100 lm
+    LT                              105 lm            110 lm
+    LU                              110 lm            115 lm
+    K3                              115 lm            120 lm
+    K4                              120 lm            125 lm
+    K5                              125 lm            130 lm
+    LV                              130 lm            135 lm
+    LW                              135 lm            140 lm
+    LX                              140 lm            145 lm
+    LY                              145 lm            150 lm
+
+
+
+    Forward Voltage Groups
+
+
+                              ﻿
+    Group                     Forward Voltage 3)   Forward Voltage 3)
+                              IF = 350 mA          IF = 350 mA
+                              min.                 max.
+                              VF                   VF
+
+    K1                              2.60 V              2.70 V
+    K2                              2.70 V              2.80 V
+    L1                              2.80 V              2.90 V
+    L2                              2.90 V              3.00 V
+
+
+
+
+﻿
+
+
+     6 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Chromaticity Coordinate Groups 5)
+
+
+
+
+    Chromaticity Coordinate Groups 5)
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+     7 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Chromaticity Coordinate Groups
+                    Center          Center    3step    3step    5step    5step    Ø
+    CCT              Cx              Cy         a        b        a        b
+
+    1800 K            0.5492         0.4082   0.0096   0.0046   0.016    0.0077   47.3
+    2700 K            0.4577         0.4098   0.008    0.0041   0.0133   0.0068   54.1
+    3000 K            0.4339         0.4032   0.0086   0.0042   0.0142   0.0069   53.7
+    3500 K            0.4077         0.3929   0.0093   0.0042   0.0155   0.0069   53.9
+    4000 K            0.3818         0.3796   0.0094   0.0041   0.0157   0.0068   53.4
+    5000 K            0.3446         0.3551   0.0081   0.0035   0.0135   0.0059   59.8
+    5700 K            0.3287         0.3425   0.0072   0.0032   0.0119   0.0052   58.8
+    6500 K            0.3123         0.3282   0.0066   0.0027   0.011    0.0045   58.1
+
+
+
+
+                               ﻿
+
+
+
+
+﻿
+
+
+     8 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+
+                              1                 2                 3                 4                 5
+    CCT      Group     Cx         Cy     Cx         Cy     Cx         Cy     Cx         Cy     Cx         Cy
+    1800 K     E     0.5566   0.4195   0.5427   0.4099   0.5452   0.4091   0.5536   0.4150
+               F     0.5566   0.4195   0.5555   0.4061   0.5529   0.4069   0.5536   0.4150
+               G     0.5555   0.4061   0.5418   0.3969   0.5448   0.4015   0.5529   0.4069
+               H     0.5448   0.4015   0.5452   0.4091   0.5427   0.4099   0.5418   0.3969
+    2700 K     E     0.4637   0.4212   0.4491   0.4081   0.4526   0.4088   0.4613   0.4166
+               F     0.4637   0.4212   0.4663   0.4115   0.4628   0.4108   0.4613   0.4166
+               G     0.4663   0.4115   0.4517   0.3984   0.4541   0.4030   0.4628   0.4108
+               H     0.4541   0.4030   0.4526   0.4088   0.4491   0.4081   0.4517   0.3984
+    3000 K     E     0.4393   0.4153   0.4246   0.4002   0.4283   0.4014   0.4371   0.4105
+               F     0.4393   0.4153   0.4432   0.4062   0.4395   0.4050   0.4371   0.4105
+               G     0.4432   0.4062   0.4285   0.3911   0.4307   0.3960   0.4395   0.4050
+               H     0.4307   0.3960   0.4283   0.4014   0.4246   0.4002   0.4285   0.3911
+    3500 K     E     0.4118   0.4054   0.3977   0.3883   0.4017   0.3902   0.4102   0.4004
+               F     0.4118   0.4054   0.4177   0.3975   0.4137   0.3956   0.4102   0.4004
+               G     0.4177   0.3975   0.4036   0.3804   0.4052   0.3854   0.4137   0.3956
+               H     0.4052   0.3854   0.4017   0.3902   0.3977   0.3883   0.4036   0.3804
+    4000 K     E     0.3845   0.3913   0.3714   0.3737   0.3756   0.3760   0.3834   0.3866
+               F     0.3845   0.3913   0.3922   0.3855   0.3880   0.3832   0.3834   0.3866
+               G     0.3922   0.3855   0.3791   0.3679   0.3802   0.3726   0.3880   0.3832
+
+
+                                  ﻿
+               H     0.3802   0.3726   0.3756   0.3760   0.3714   0.3737   0.3791   0.3679
+    5000 K     E     0.3451   0.3648   0.3372   0.3528   0.3371   0.3496   0.3396   0.3514   0.3449   0.3609
+               F     0.3451   0.3648   0.3530   0.3612   0.3496   0.3588   0.3449   0.3609
+               G     0.3530   0.3612   0.3441   0.3454   0.3443   0.3493   0.3496   0.3588
+               H     0.3443   0.3493   0.3396   0.3514   0.3371   0.3496   0.3369   0.3445   0.3441   0.3454
+    5700 K     E     0.3283   0.3502   0.3212   0.3373   0.3213   0.3365   0.3242   0.3388   0.3284   0.3471
+               F     0.3283   0.3502   0.3363   0.3486   0.3332   0.3462   0.3284   0.3471
+               G     0.3363   0.3486   0.3291   0.3348   0.3290   0.3379   0.3332   0.3462
+               H     0.3291   0.3348   0.3215   0.3337   0.3213   0.3365   0.3242   0.3388   0.3290   0.3379
+    6500 K     E     0.3110   0.3340   0.3054   0.3220   0.3082   0.3245   0.3115   0.3317
+               F     0.3110   0.3340   0.3192   0.3344   0.3165   0.3319   0.3115   0.3317
+               G     0.3192   0.3344   0.3136   0.3224   0.3131   0.3247   0.3165   0.3319
+               H     0.3136   0.3224   0.3054   0.3220   0.3082   0.3245   0.3131   0.3247
+﻿
+
+
+     9 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Group Name on Label
+    Example: JG-35-K1
+    Brightness                      Color Chromaticity   Forward Voltage
+
+    JG                                  35               K1
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+    10 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Relative Spectral Emission 6)
+    Φrel = f (λ); IF = 350 mA; TJ = 85 °C
+
+                                                                             GW VJLPL1.CM
+                                1,0
+                         rel
+                                                                                                               : V
+                                                                                                               : 1800K
+                                                                                                               : 3000K
+                                0,8
+                                                                                                               : 4000K
+                                                                                                               : 6500K
+
+
+                                0,6
+
+
+
+                                0,4
+
+
+
+                                0,2
+
+
+
+                                0,0
+                                  250    300      350      400      450      500       550   600   650   700   750     800
+                                                                                                                   / nm
+
+
+
+
+    Radiation Characteristics 6)
+    Irel = f (φ); TJ = 85 °C
+                                                                        GW VJLPL1.CM
+                                                                          ϕ/°
+                                                                 -10°      0° 10° 20° 30° 40° 50° 60° 70° 80° 90°
+                                                        -20°                                                    1,0
+
+
+
+                                          ﻿
+                                                                                                                         Irel
+                                               -30°
+                                        -40°                                                                      0,8
+
+                                 -50°
+                                                                                                                  0,6
+                          -60°
+
+                                                                                                                  0,4
+                     -70°
+
+
+                   -80°                                                                                           0,2
+
+
+                  -90°                                                                                            0,0
+
+
+                  -100°
+
+
+
+
+﻿
+
+
+    11 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Forward current 6)                                                 Relative Luminous Flux 6),                7)
+
+    IF = f(VF); TJ = 85 °C                                             Φv/Φv(350 mA) = f(IF); TJ = 85 °C
+
+                                      GW VJLPL1.CM                                                GW VJLPL1.CM
+                    1000                                                     ΦV       2,5
+          IF / mA
+                                                                          ΦV(350mA)
+
+                                                                                      2,0
+                     800
+
+
+                                                                                      1,5
+                     600
+
+                                                                                      1,0
+                     400
+
+                                                                                      0,5
+
+                     200
+                                                                                      0,0
+
+                      10                                                               10   20    40    60    80      10
+                       2,4      2,6          2,8     3,0         3,2                          0     0     0     0        00
+                                                            VF / V                                                IF / mA
+
+
+
+
+    Chromaticity Coordinate Shift 6)
+    ΔCx, ΔCy = f(IF); TJ = 85 °C
+
+                                      GW VJLPL1.CM
+                    0,03
+            ∆Cx
+            ∆Cy                                        : ∆ Cx
+                                                       : ∆ Cy
+
+
+
+
+                                         ﻿
+                    0,02
+
+
+                    0,01
+
+
+                    0,00
+
+
+                    -0,01
+
+
+                    -0,02
+
+
+                    -0,03
+                       10    20 0     40 0    60 0   80 0    10
+                                                               00
+                                                       IF / mA
+
+
+
+
+﻿
+
+
+    12 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Forward Voltage 6)                                   Relative Luminous Flux 6)
+    ΔVF = VF - VF(85 °C) = f(Tj); IF = 350 mA            Φv/Φv(85 °C) = f(Tj); IF = 350 mA
+
+                                 GW VJLPL1.CM                                       GW VJLPL1.CM
+                     0,3                                        Φv      1,4
+          ∆VF / V
+                                                             Φv(85°C)
+
+                                                                        1,2
+                     0,2
+
+                                                                        1,0
+                     0,1
+
+                                                                        0,8
+                     0,0
+                                                                        0,6
+
+                    -0,1
+                                                                        0,4
+
+                    -0,2
+                                                                        0,2
+
+
+                    -0,3                                                0,0
+                       -40 -20 0 20 40 60 80 100 120                      -40 -20 0 20 40 60 80 100 120
+                                               Tj / °C                                            Tj / °C
+
+
+
+
+    Chromaticity Coordinate Shift 6)
+    ΔCx, ΔCy = f(Tj); IF = 350 mA
+
+                                 GW VJLPL1.CM
+                    0,03
+            ∆Cx
+            ∆Cy                                 : ∆ Cx
+                                                : ∆ Cy
+
+
+
+
+                                   ﻿
+                    0,02
+
+
+                    0,01
+
+
+                    0,00
+
+
+                  -0,01
+
+
+                  -0,02
+
+
+                  -0,03
+                      -40 -20 0 20 40 60 80 100 120
+                                              Tj / °C
+
+
+
+
+﻿
+
+
+    13 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Max. Permissible Forward Current 8)
+    IF = f(T)
+
+                                                    GW VJLPL1.CM
+                1100
+     IF / mA
+                1000
+
+                  900
+
+                  800
+
+                  700
+
+                  600
+
+                  500
+
+                  400
+
+                  300
+
+                  200
+
+                  100
+
+                   0
+                        0   20    40       60       80      100
+                                                         Ts / °C
+
+
+
+
+    Permissible Pulse Handling Capability                          Permissible Pulse Handling Capability
+    IF = f (tp); duty cycle D = parameter; Ts = 25°C               IF = f (tp); duty cycle D = parameter; Ts = 100°C
+                                                    GW VJLPL1.CM                                                  GW VJLPL1.CM
+
+
+
+         IF / A                                                        IF / A
+                  2,4                                                           2,4
+
+                  2,2
+
+                  2,0
+                                       ﻿                                        2,2
+
+                                                                                2,0
+                                                    : D = 1.0                                                     : D = 1.0
+                                                    : D = 0.5                                                     : D = 0.5
+                  1,8                               : D = 0.2                   1,8                               : D = 0.2
+                                                    : D = 0.1                                                     : D = 0.1
+                                                    : D = 0.05                                                    : D = 0.05
+                  1,6                                                           1,6
+                                                    : D = 0.02                                                    : D = 0.02
+                                                    : D = 0.01                                                    : D = 0.01
+                                                    : D = 0.005                 1,4                               : D = 0.005
+                  1,4
+
+                                                                                1,2
+                  1,2
+
+                                                                                1,0
+                  1,0
+
+                   10-6 10-5 10-4 10-3 0,01 0,1     1 10                         10-6 10-5 10-4 10-3 0,01 0,1     1 10
+                                                  Pulse time / s                                                Pulse time / s
+
+
+
+
+﻿
+
+
+    14 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Dimensional Drawing 9)
+
+
+
+
+    Further Information:
+    Approximate Weight:           6.0 mg
+
+    Package marking:              Cathode
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+    15 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Recommended Solder Pad 9)
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+    16 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Reflow Soldering Profile
+    Product complies to MSL Level 2 acc. to JEDEC J-STD-020E
+                                                                                                            OHA04525
+                     300
+                      ˚C
+                  T 250
+                               240 ˚C                                                                 Tp 245 ˚C
+                               217 ˚C                                                      tP
+                     200
+                                                                                           tL
+
+                     150
+                                                          tS
+
+                     100
+
+
+                      50
+                               25 ˚C
+                       0
+                           0           50           100           150            200            250      s 300
+                                                                                                        t
+
+    Profile Feature                                Symbol              Pb-Free (SnAgCu) Assembly                       Unit
+                                                                 Minimum   Recommendation Maximum
+    Ramp-up rate to preheat*)                                                          2                    3          K/s
+    25 °C to 150 °C
+    Time tS                                        tS                 60          100                 120              s
+    TSmin to TSmax
+    Ramp-up rate to peak*)                                                             2                    3          K/s
+
+
+                                    ﻿
+    TSmax to TP
+    Liquidus temperature                           TL                             217                                  °C
+    Time above liquidus temperature                tL                               80                100              s
+    Peak temperature                               TP                             245                 260              °C
+    Time within 5 °C of the specified peak         tP                 10            20                  30             s
+    temperature TP - 5 K
+    Ramp-down rate*                                                                    3                    6          K/s
+    TP to 100 °C
+    Time                                                                                              480              s
+    25 °C to TP
+
+    All temperatures refer to the center of the package, measured on the top of the component
+    * slope calculation DT/Dt: Dt max. 5 s; fulfillment for the whole T-range
+
+
+
+﻿
+
+
+    17 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Taping 9)
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+    18 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Tape and Reel 10)
+
+
+
+
+    Reel Dimensions
+    A             W                         Nmin           W1                W2 max        Pieces per PU
+
+    180 mm             8 + 0.3 / - 0.1 mm          60 mm        8.4 + 2 mm       14.4 mm    1000
+
+
+
+
+                              ﻿
+
+
+
+
+﻿
+
+
+    19 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Barcode-Product-Label (BPL)
+
+
+
+
+    Dry Packing Process and Materials 9)
+                                                                                                                                                                                                            Moisture-sensitive label or print
+
+                                                                 N   s   E RS
+                                                                                                               L
+
+
+
+
+                                                                                                                 re
+                                                                                                                   E
+                                                                                                                       V
+                                                                                                                        E
+
+
+
+
+                                                                                                                       tiv
+                                                                                                                    la ared ag
+                                                                                                                       fr
+                                                                                                                     in pa
+                                                                                                                           If
+
+
+
+
+                                                                                                                           e
+                                                                                                                              hu
+
+
+                                                                                                                              ck
+                                                                                                                                L
+
+
+
+                                                                                                                                  an
+                                                                                                                                bl r co
+                                                                                                                                ba
+
+                                                                                                                                  m
+                                                                                                                                   id
+
+                                                                                                                                     e
+                                                                                                                                      k,
+                                                                                                                                        de
+                                                                                                                                          sela
+
+
+
+                                                                                                                                         ity
+
+
+
+
+                                                                                                                                          30
+                                                                                                                                            e be
+
+
+                                                                                                                                             (R
+
+
+
+
+                                                                                                                                              ˚C
+                                                                                                                                                 l
+
+
+                                                                                                                                                 H
+                                                                                                                                                   ).
+
+
+
+
+                                                                                                                                                  /6
+                                                                                                                                                     0%
+                                                                                                                                                        R
+                                                                                                                                                         H
+                                                                                                                                                          .
+                                                                                                                                                                                                               Barcode label
+                                                           TIO
+                                                                                                                                       <
+                                                                                                                                       _
+                                                                   in IV O                                  %          k
+                                                                     IT T                                                          of
+                                                               nta
+                                                                                                       90        to                                                                              rs
+                                                                    S C                            <         d     ea           s                                            ).                     rs
+                                                                 N U                                                                                                                          ou
+                                                       U coSEND                                d         te (p               on                ,
+                                                                                                                                                  or                      de                H          rs
+                                                                                                                         iti                                                                    ou
+                                                                                              an bjec ng
+
+
+
+
+                                                                                                                                                                               ﻿
+                                                                                                                                                                                                   ou rs
+                                                    A bUagRMEICO                                                                            ˚C                        co               72     H
+                                                                                                      si              nd                 5                                                      H ou
+                                                                                         ˚C su es                                                                  te                     48
+                                                   CThis                                                          co                 ±                                              e              H
+                                                                                                               y                                               da                      e     24 6
+                                                         T                        40 be oc                                                                                      tim
+                                                      IS SE                     <     ill pr).         ct
+                                                                                                          or                    ˚C                        ith               or    tim     e
+                                                        O                          w nt                                     23                         w                             tim e
+                                                     M TO
+                                                                            at                      fa                                                                   lo    or
+                                                                         s      at le ˚C at                             at              e.          al                 F    lo    or    tim
+                                                       P              th    th va          l                                                    tic                       F    lo or
+                                                    O            on       s ui        be                    if: read
+                                                                                                                                    ur                                       F lo
+                                                              m       ce eq        la        lo
+                                                                                                w                               ed
+                                                                                                                                          id
+                                                                                                                                             en               l 4 5             F
+                                                                   vi                                  g, n                  oc                           ve     l
+                                                          24          or       de       be          in                   pr           is                              5a
+                                                              de ,                  e             nt whe                                              Le     ve l       6
+                                                                                                                                  te
+                                                      g:    , w
+                                                                        r
+                                                                           co
+                                                                                 se           ou                    ke                              e    Le ve l
+                                                                                                                              da                            Le ve
+                                                  ba ed flo
+                                                                    ba        e           m %                    ba       al                  st
+                                                                                                                                                 ur    e
+                                                     en re                                                    r                                     ur e        Le
+                                             ed        e         e      tim           re> 10              fo          se                   oi    st    ur    e
+                                          al     op          se                   fo                                                    M     oi st ur
+                                       se    is    as               or .             is              33            k,                      M oi st
+                                                         k,      lo H          bed
+                                    in    g ph                               ,                    -0          an                              M oi
+                                  e         r-       an in F R ng ar                            D          bl                                    M
+                                       ba
+                              lif   is   po If bl ith         %       ki r C.             S
+                                                                                              T       (if                    r
+                           lf     th va   p.       w      10 ba to et                  J-                                ea r ks
+                        he     r w,      m              <
+                                                        _               m                                              Y ea              rs
+                     S                te      ed            iredicat          d, EC                                 1    Y      ee
+                  1.
+                          fte
+                        A flody
+                                           nt
+                                                 d
+                                                    at
+                                                         qu In no ire          D                                 >     1     W Hou
+                                        ou                                                                   e            4 8
+                     2.   re
+                             bo      M        re     reity is        qu/JE                                       e
+                                           to es id 2b            re C                        :        tim          e      16
+                                  a)     S                                                                 tim
+                                              ic              is IP                       ed loor              tim e
+                                      b) ev Humor              e                                      or
+                                                                                     en        F
+                                         D       2a king    nc         te                        F
+                                                                                                   lo     or      tim
+                                          a)                                     op                   lo or
+                                     3.     b) ba re              da           e                    F lo
+                                                If    fe
+                                                              al                    l 1 2              F
+                                                   re                    tim ve         l
+                                            4.             se         d                     l 2a
+                                                                            Le      ve          3
+                                                      ag          an      e     Le     ve l
+                                                    B          e      ur     e    Le      ve
+                                                           at      st     ur    e
+                                                         D                            Le
+                                                                oi     st    ur e
+                                                             M     oi     st ur
+                                                                M      oi st
+                                                                    M oi
+                                                                       M
+
+
+
+
+                                                                                                                                                               M
+                                                                                                                                                        RA
+                                                                                                                                       OS
+
+
+
+
+                                                                                                                                                                                                                                                                             Humidity indicator
+                                                                                                                                                                                                                                                                                       Barcode label
+                                                                                                                                                                                                                            Please check the HIC immidiately after
+                                                                                                                                                                                                                                        bag opening.
+                                                                                                                                                                                                                                  Discard if circles overrun.
+                                                                                                                                                                                                                                     Avoid metal contact.
+                                                                                                                                                                                                                                         Do not eat.
+
+
+
+                                                                                                                                                                                                                                        Comparator
+                                                                                                                                                                                                                                        check dot       WET
+
+
+                                                                                                                                                                                                                        If wet,
+                                                                                                                                                                                                                        examine units, if necessary
+                                                                                                                                                                                                                        bake units
+                                                                                                                                                                                                                                                        15%
+
+
+                                                                                                                                                                                                                        If wet,
+                                                                                                                                                                                                                        examine units, if necessary
+                                                                                                                                                                                                                        bake units
+                                                                                                                                                                                                                                                        10%
+
+
+                                                                                                                                                                                                                          If wet,
+                                                                                                                                                                                                                          parts still adequately dry.
+                                                                                                                                                                                                                          change desiccant
+                                                                                                                                                                                                                                                           5%
+
+                                                                                                                                                                                                                                      Humidity Indicator
+                                                                                                                                                                                                                                        MIL-I-8835
+
+
+
+
+                 Desiccant
+                                                                                                                                                                                                                                                                        AM
+                                                                                                                                                                                                                                                                     OSR
+
+
+
+
+                                                                                                                                                                                                                                                                                            OHA00539
+    Moisture-sensitive product is packed in a dry bag containing desiccant and a humidity card according JEDEC-STD-033.
+
+
+
+﻿
+
+
+    20 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Notes
+    The evaluation of eye safety occurs according to the standard IEC 62471:2006 (photo biological safety of
+    lamps and lamp systems). Within the risk grouping system of this IEC standard, the device specified in this
+    data sheet fall into the class moderate risk (exposure time 0.25 s). Under real circumstances (for exposure
+    time, conditions of the eye pupils, observation distance), it is assumed that no endangerment to the eye ex-
+    ists from these devices. As a matter of principle, however, it should be mentioned that intense light sources
+    have a high secondary exposure potential due to their blinding effect. When looking at bright light sources
+    (e.g. headlights), temporary reduction in visual acuity and afterimages can occur, leading to irritation, annoy-
+    ance, visual impairment, and even accidents, depending on the situation.
+    Subcomponents of this device contain, in addition to other substances, metal filled materials including silver.
+    Metal filled materials can be affected by environments that contain traces of aggressive substances. There-
+    fore, we recommend that customers minimize device exposure to aggressive substances during storage,
+    production, and use. Devices that showed visible discoloration when tested using the described tests above
+    did show no performance deviations within failure limits during the stated test duration. Respective failure
+    limits are described in the IEC60810.
+
+
+    This device is designed for specific/recommended applications only. Please consult OSRAM Opto
+    Semiconductors Sales Staff in advance for detailed information on other non-recommended applications
+    (e.g. automotive).
+
+    Change management for this component is aligned with the requirements of the lighting market.
+    For further application related information please visit https://ams-osram.com/support/application-notes
+
+
+
+
+                                 ﻿
+
+
+
+
+﻿
+
+
+    21 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Disclaimer
+    Attention please!
+    The information describes the type of component and shall not be considered as assured characteristics.
+    Terms of delivery and rights to change design reserved. Due to technical requirements components may
+    contain dangerous substances.
+    For information on the types in question please contact our Sales Organization.
+    If printed or downloaded, please find the latest version on our website.
+
+    Packing
+    Please use the recycling operators known to you. We can also help you – get in touch with your nearest
+    sales office. By agreement we will take packing material back, if it is sorted. You must bear the costs of
+    transport. For packing material that is returned to us unsorted or which we are not obliged to accept, we
+    shall have to invoice you for any costs incurred.
+
+    Product and functional safety devices/applications or medical devices/applications
+    Our components are not developed, constructed or tested for the application as safety relevant component
+    or for the application in medical devices.
+    Our products are not qualified at module and system level for such application.
+
+    In case buyer – or customer supplied by buyer – considers using our components in product safety devices/
+    applications or medical devices/applications, buyer and/or customer has to inform our local sales partner
+    immediately and we and buyer and /or customer will analyze and coordinate the customer-specific request
+    between us and buyer and/or customer.
+
+
+
+
+                                 ﻿
+
+
+
+
+﻿
+
+
+    22 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Glossary
+    1)
+          Brightness: Brightness values are measured during a current pulse of typically 10 ms, with a tolerance
+          of +/- 7%.
+    2)
+          Reverse Operation: Not designed for reverse operation. Continuous reverse operation can cause mi-
+          gration and damage of the device.
+    3)
+          Forward Voltage: The Forward voltage is measured during a current pulse duration of typically 1 ms
+          with a tolerance of ± 0.05V .
+    4)
+          Color reproduction index: Color reproduction index values (CRI-RA) are measured during a current
+          pulse of typically 10 ms and with a tolerance of ±2.
+    5)
+          Chromaticity coordinate groups: Chromaticity coordinate groups are measured during a current pulse
+          duration of typically 10ms with a tolerance of ±0.005.
+    6)
+          Typical Values: Due to the special conditions of the manufacturing processes of semiconductor devic-
+          es, the typical data or calculated correlations of technical parameters can only reflect statistical figures.
+          These do not necessarily correspond to the actual parameters of each single product, which could dif-
+          fer from the typical data and calculated correlations or the typical characteristic line. If requested, e.g.
+          because of technical improvements, these typ. data will be changed without any further notice.
+    7)
+          Characteristic curve: In the range where the line of the graph is broken, you must expect higher differ-
+          ences between single devices within one packing unit.
+    8)
+          Thermal Resistance: Rth max is based on statistic values (6σ) used for Derating.
+    9)
+          Tolerance of Measure: Unless otherwise noted in drawing, tolerances are specified with ±0.1 and
+          dimensions are specified in mm.
+    10)
+          Tape and Reel: All dimensions and tolerances are specified acc. IEC 60286-3 and specified in mm.
+
+
+
+
+                                  ﻿
+
+
+
+
+﻿
+
+
+    23 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+    Revision History
+    Version       Date              Change
+
+    1.0           2023-11-06        Initial Version
+    1.1           2024-02-05        Description
+    1.3           2024-04-03        Certificate Logo
+                                    Applications
+                                    Characteristics
+    1.4           2025-01-16        Ordering Information
+                                    Chromaticity Coordinate Groups
+
+
+
+
+                               ﻿
+
+
+
+
+﻿
+
+
+    24 | Version 1.4 | 2025-01-16
+    GW VJLPL1.CM
+    DATASHEET
+
+
+
+
+                                    ﻿
+
+
+
+
+    Published by ams-OSRAM AG
+    Tobelbader Strasse 30, 8141 Premstaetten, Austria
+﻿   Phone +43 3136 500-0
+    ams-osram.com
+    © All rights reserved
+    25 | Version 1.4 | 2025-01-16
+

@@ -1,0 +1,12 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-fanout-schematic-group-schema.test.tsx:
+(pass) transparent fanout groups inherit the board subcircuit in schema-valid schematic output [187.93ms]
+
+tests/repros/repro-group-autorouter-configuration-schema.test.tsx:
+(pass) PCB groups retain explicitly configured trace clearance [37.58ms]
+
+ 2 pass
+ 0 fail
+ 7 expect() calls
+Ran 2 tests across 2 files. [961.00ms]

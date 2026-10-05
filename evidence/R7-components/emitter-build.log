@@ -1,0 +1,55 @@
+Building 1 file(s)...
+Building fill-light-ring.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/fill-light-ring/circuit.json
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on D3 are underspecified (no pinAttributes set)
+All pins on D4 are underspecified (no pinAttributes set)
+All pins on D5 are underspecified (no pinAttributes set)
+All pins on D6 are underspecified (no pinAttributes set)
+All pins on D7 are underspecified (no pinAttributes set)
+All pins on D8 are underspecified (no pinAttributes set)
+All pins on D9 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on D12 are underspecified (no pinAttributes set)
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+D3 has no pin with requires_power=true
+D4 has no pin with requires_power=true
+D5 has no pin with requires_power=true
+D6 has no pin with requires_power=true
+D7 has no pin with requires_power=true
+D8 has no pin with requires_power=true
+D9 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+D12 has no pin with requires_power=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+D3 has no pin with requires_ground=true
+D4 has no pin with requires_ground=true
+D5 has no pin with requires_ground=true
+D6 has no pin with requires_ground=true
+D7 has no pin with requires_ground=true
+D8 has no pin with requires_ground=true
+D9 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+D12 has no pin with requires_ground=true
+Generating preview images...
+[fill-light-ring] Generating PCB SVG...
+[fill-light-ring] Written pcb.svg
+[fill-light-ring] Generating PCB PNG...
+[fill-light-ring] Written pcb.png
+[fill-light-ring] Generating schematic SVG...
+[fill-light-ring] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -1,0 +1,234 @@
+{
+  "revision": "R6 engineering prototype \u2014 2026-10-03; calculated fit only",
+  "units": "mm",
+  "datum": "PCB centre XY, +Y toward USB; enclosure back Z=0; PCB bottom Z=5",
+  "provenance": "Original engineering design; not JJC internal dimensions",
+  "pcb": {
+    "width": 36,
+    "length": 56,
+    "thickness": 1,
+    "corner_radius": 2,
+    "outline_tolerance": 0.2,
+    "thickness_tolerance": 0.1,
+    "holes": [
+      {
+        "name": "H1",
+        "x": -13,
+        "y": 24,
+        "diameter": 2.2
+      },
+      {
+        "name": "H2",
+        "x": 13,
+        "y": 24,
+        "diameter": 2.2
+      }
+    ]
+  },
+  "remote": {
+    "body_width": 40,
+    "body_length": 60,
+    "body_height": 16.8,
+    "maximum_width_with_slider": 42.4,
+    "maximum_height_with_buttons": 17.5,
+    "corner_radius": 3,
+    "wall": 1.2,
+    "internal_width": 37.6,
+    "internal_length": 57.6,
+    "lid_underside_z": 15.6,
+    "pcb_bottom_z": 5,
+    "pcb_top_z": 6,
+    "printed_tolerance_target": 0.2
+  },
+  "battery": {
+    "mpn": "DTP401525(PHR)",
+    "maximum_width": 15.5,
+    "maximum_length": 27,
+    "maximum_thickness": 4.2,
+    "minimum_x": -7.75,
+    "minimum_y": -5.7,
+    "bottom_z": 8.3,
+    "nest_width": 16.6,
+    "nest_length": 28,
+    "source": "DTP401525-PHR-v2.pdf page 9",
+    "assembly_top_z": 12.5,
+    "shim_instruction": "Seat bottom Z=8.3 +/-0.1 using carrier; measured cell top must remain <=12.6. Verify actual sensor-to-cell gap without clamping pouch.",
+    "carrier_reliefs": [
+      {
+        "centre": [
+          0,
+          6
+        ],
+        "size": [
+          2.4,
+          2.4
+        ],
+        "purpose": "thermal contact"
+      },
+      {
+        "centre": [
+          5,
+          17.5
+        ],
+        "size": [
+          5,
+          3
+        ],
+        "purpose": "C8 mechanical relief"
+      }
+    ],
+    "c8_clearance": {
+      "nominal": 0.85,
+      "worst_case_allocation": 0.35,
+      "basis": "C8 maximum 1.45; PCB height allowance 0.3 and carrier height allowance 0.2; calculated only"
+    },
+    "assembly_bottom_tolerance": 0.1
+  },
+  "usb": {
+    "anchor_x": 0,
+    "anchor_y": 23.9852,
+    "rotation": 180,
+    "opening_width": 12,
+    "opening_height": 9.5,
+    "opening_centre_z": 8,
+    "opening_y": 29,
+    "source": "GCT USB4215 Rev A 2024-04-26 official land/outline drawing; exact supplier package 3104977db58742e399663286e4a66eac",
+    "body_maximum_height": 3.41,
+    "body_nominal_width": 8.94,
+    "body_nominal_length": 6.5,
+    "manufacturer": "GCT",
+    "mpn": "USB4215-03-A",
+    "lcsc": "C37616412",
+    "slot_width": 0.5999988,
+    "manufacturer_recommended_slot_width": 0.6,
+    "mouth_y": 28.6601694,
+    "slot_lengths": [
+      1.3999972,
+      1.7999964
+    ],
+    "manufacturer_recommended_slot_lengths": [
+      1.4,
+      1.8
+    ],
+    "mating_face_from_front_slot_centre": 2.1
+  },
+  "buttons": [
+    {
+      "name": "shutter",
+      "x": -13.5,
+      "y": -7
+    },
+    {
+      "name": "pair",
+      "x": 13.5,
+      "y": -4
+    }
+  ],
+  "button_geometry": {
+    "lid_hole_diameter": 6.2,
+    "cap_diameter": 5.8,
+    "stem_diameter": 1.6,
+    "stem_tip_rest_z": 8.2,
+    "switch_nominal_top_z": 8,
+    "nominal_free_gap": 0.2,
+    "switch_travel": 0.2,
+    "switch_travel_tolerance": 0.1,
+    "source": "XUNPU C720477 manufacturer drawing + designed TPU plunger",
+    "stem_length": 6.6
+  },
+  "antenna": {
+    "keepout_x_min": -18,
+    "keepout_x_max": 18,
+    "keepout_y_min": -28,
+    "keepout_y_max": -22.9,
+    "metal_separation_target": 15,
+    "source": "Ebyte prohibition of nearby metal; numerical margins are engineering allocations"
+  },
+  "grip": {
+    "width": 68,
+    "length": 108,
+    "thickness": 6.5,
+    "corner_radius": 16,
+    "centre_y": -20,
+    "remote_centre_y": -42,
+    "remote_back_z": 6.8,
+    "rail_inside_width": 40.6,
+    "rail_height": 3.3,
+    "phone_plate_width": 45,
+    "phone_plate_length": 45,
+    "phone_plate_thickness": 0.5,
+    "phone_bottom_y_nominal": -35,
+    "phone_bottom_alignment_tolerance": 5,
+    "stop_centre_y": -10.9,
+    "stop_end_gap": 0.3,
+    "thickness_definition": "base plate only, excluding rails",
+    "maximum_rail_height_z": 9.8,
+    "docked_body_height_z": 23.6,
+    "docked_button_height_z": 24.3,
+    "external_steel_plate_min_z": -0.5,
+    "plate_to_button_stack_height": 24.8
+  },
+  "magnets": {
+    "mpn": "K&J D42",
+    "diameter": 6.35,
+    "thickness": 3.175,
+    "pocket_diameter": 6.65,
+    "remote_centres": [
+      [
+        -13,
+        16
+      ],
+      [
+        13,
+        16
+      ]
+    ],
+    "dock_centres": [
+      [
+        -13,
+        -26
+      ],
+      [
+        13,
+        -26
+      ]
+    ],
+    "phone_centres": [
+      [
+        -14,
+        -14
+      ],
+      [
+        -14,
+        14
+      ],
+      [
+        14,
+        -14
+      ],
+      [
+        14,
+        14
+      ]
+    ],
+    "source": "K&J D42 product drawing; positions are engineering design"
+  },
+  "thermal_pad": {
+    "mpn": "GP1500-0.080-02-0404",
+    "supplier": "DigiKey BER164-ND",
+    "cut_width": 2,
+    "cut_length": 2,
+    "nominal_free_thickness": 2.032,
+    "assembled_gap_target": 1.7,
+    "nominal_compression_percent": 16.34,
+    "conductivity_W_per_mK": 1.5,
+    "source": "https://datasheets.tdx.henkel.com/BERGQUIST-GAP-PAD-TGP-1500-en_GL.pdf"
+  },
+  "sensor": {
+    "x": 0,
+    "y": 6,
+    "layer": "top",
+    "maximum_height": 0.6,
+    "source": "TMP390.pdf DRL0006A package outline"
+  }
+}

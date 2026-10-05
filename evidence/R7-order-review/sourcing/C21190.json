@@ -1,0 +1,29 @@
+{
+  "lcsc": "C21190",
+  "mpn": "0603WAF1001T5E",
+  "references": [
+    "R4",
+    "R7"
+  ],
+  "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1001T5E/C21190",
+  "listing_sha256": "12525b9b3b1ff3751d0c3c546c6150058c2178208d6053ba177d9a47b4fc5add",
+  "checked_at_utc": "2026-10-04T21:21:35.367639+00:00",
+  "quantity_for_five_finished_boards": 10,
+  "stock_fields": {
+    "canPresaleNumber": 16137487,
+    "overseasStockCount": 21515597,
+    "preMinPurchaseNum": 4512
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

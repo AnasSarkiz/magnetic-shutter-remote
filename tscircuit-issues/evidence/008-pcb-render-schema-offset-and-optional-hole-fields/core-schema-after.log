@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-pcb-schema-export.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/__snapshots__/repro-pcb-schema-export-pcb.snap.svg
+(pass) board holes, explicit positions and rotated pill paste satisfy export schema [51.58ms]
+
+ 1 pass
+ 0 fail
+ 12 expect() calls
+Ran 1 test across 1 file. [667.00ms]

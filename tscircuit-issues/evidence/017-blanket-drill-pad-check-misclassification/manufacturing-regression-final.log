@@ -1,0 +1,14 @@
+test_layer_span_and_inner_pth (test_manufacturing_audit.ManufacturingRules.test_layer_span_and_inner_pth) ... ok
+test_missing_net_not_treated_as_same_net (test_manufacturing_audit.ManufacturingRules.test_missing_net_not_treated_as_same_net) ... ok
+test_npth_same_footprint_same_net_still_fails (test_manufacturing_audit.ManufacturingRules.test_npth_same_footprint_same_net_still_fails) ... ok
+test_pour_not_ignored (test_manufacturing_audit.ManufacturingRules.test_pour_not_ignored) ... ok
+test_pth_and_via_annuli_have_distinct_limits (test_manufacturing_audit.ManufacturingRules.test_pth_and_via_annuli_have_distinct_limits) ... ok
+test_pth_track_minimum_028 (test_manufacturing_audit.ManufacturingRules.test_pth_track_minimum_028) ... ok
+test_real_r2_j1_detected (test_manufacturing_audit.ManufacturingRules.test_real_r2_j1_detected) ... ok
+test_rotated_rectangle_not_bounding_box (test_manufacturing_audit.ManufacturingRules.test_rotated_rectangle_not_bounding_box) ... ok
+test_via_own_annulus_and_feed_are_classified (test_manufacturing_audit.ManufacturingRules.test_via_own_annulus_and_feed_are_classified) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 10.735s
+
+OK

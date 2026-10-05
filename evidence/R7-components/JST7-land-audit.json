@@ -1,0 +1,92 @@
+{
+  "status": "PASS \u2014 JST7 CATALOGUE LAND GEOMETRY / UNROUTED EMITTER FIXTURE",
+  "manufacturer_source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+  "copper_span_y_mm": 4.200016999999999,
+  "rows": [
+    {
+      "pin": 1,
+      "x_mm": 2.999994,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 2,
+      "x_mm": 1.999996,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 3,
+      "x_mm": 0.999998,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 4,
+      "x_mm": 0,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 5,
+      "x_mm": -0.999998,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 6,
+      "x_mm": -1.999996,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 7,
+      "x_mm": -2.999994,
+      "y_mm": -25.6749963,
+      "width_mm": 0.5999988,
+      "length_mm": 1.5500096,
+      "purpose": "signal contact"
+    },
+    {
+      "pin": 8,
+      "x_mm": -4.299966,
+      "y_mm": -28.2000103,
+      "width_mm": 1.1999976,
+      "length_mm": 1.7999964,
+      "purpose": "mechanical solder anchor / board GND"
+    },
+    {
+      "pin": 9,
+      "x_mm": 4.299966,
+      "y_mm": -28.2000103,
+      "width_mm": 1.1999976,
+      "length_mm": 1.7999964,
+      "purpose": "mechanical solder anchor / board GND"
+    }
+  ],
+  "mating_direction": "+Z / TOP / from_above",
+  "mated_height_reference_mm": 6.3,
+  "stock_check_date": "2026-10-04",
+  "stock_observed": 32550,
+  "orderable_observed": 31715,
+  "assembly": "Extended SMT \u2014 Economic / Standard; MSL1",
+  "stock_source": "https://jlcpcb.com/partdetail/C160393",
+  "stock_evidence": "Live official product page inspected; not a stock reservation",
+  "limitations": [
+    "No mating housing installed or physical fit test",
+    "Reserved sensor contacts remain NC",
+    "Not a complete R7 power harness qualification"
+  ]
+}

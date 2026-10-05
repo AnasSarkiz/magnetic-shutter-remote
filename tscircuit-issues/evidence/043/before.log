@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tscircuit-issues/evidence/043/repro-direct-board-frame.py", line 7, in <module>
+    if placed['positioned_relative_to_pcb_board_id'] != 'pcb_board_0':
+       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'positioned_relative_to_pcb_board_id'

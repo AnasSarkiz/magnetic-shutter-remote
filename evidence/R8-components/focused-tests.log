@@ -1,0 +1,10 @@
+test_exact_pin_contract_matches_manufacturer_table (test_r8_qualification.QualificationTest.test_exact_pin_contract_matches_manufacturer_table) ... ok
+test_firmware_controls_do_not_use_boot_strap_terminals (test_r8_qualification.QualificationTest.test_firmware_controls_do_not_use_boot_strap_terminals) ... ok
+test_manufacturer_discrepancy_remains_visible_and_blocking (test_r8_qualification.QualificationTest.test_manufacturer_discrepancy_remains_visible_and_blocking) ... ok
+test_previous_revision_manifest_remains_unchanged (test_r8_qualification.QualificationTest.test_previous_revision_manifest_remains_unchanged) ... ok
+test_supplier_import_preserves_all_terminal_geometry (test_r8_qualification.QualificationTest.test_supplier_import_preserves_all_terminal_geometry) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.079s
+
+OK

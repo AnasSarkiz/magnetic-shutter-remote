@@ -1,0 +1,1918 @@
+                                 Product       Sample &        Technical             Tools &             Support &
+                                 Folder        Buy             Documents             Software            Community
+
+
+
+                                                                                                                                TPS61085
+                                                                                           SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+                            TPS61085 650-kHz,1.2-MHz, 18.5-V Step-Up DC-DC Converter
+1 Features                                                             3 Description
+•
+1   2.3 V to 6 V Input Voltage Range                                   The TPS61085 is a high frequency, high efficiency
+                                                                       DC-DC converter with an integrated 2.0-A, 0.13-Ω
+•   18.5-V Boost Converter With 2.0-A Switch Current                   power switch capable of providing an output voltage
+•   650-kHz/1.2-MHz Selectable Switching Frequency                     up to 18.5 V. The selectable frequency of 650 kHz or
+•   Adjustable Soft-Start                                              1.2 MHz allows the use of small external inductors
+•   Thermal Shutdown                                                   and capacitors and provides fast transient response.
+                                                                       The external compensation allows optimizing the
+•   Undervoltage Lockout                                               application for specific conditions. A capacitor
+•   8-Pin VSSOP Package                                                connected to the soft-start pin minimizes inrush
+•   8-Pin TSSOP Package                                                current at startup.
+
+                                                                                                Device Information(1)
+2 Applications
+                                                                           PART NUMBER               PACKAGE           BODY SIZE (NOM)
+•   Handheld Devices                                                                             VSSOP (8)             3.00 mm × 3.00 mm
+•   GPS Receivers                                                         TPS61085
+                                                                                                 TSSOP (8)             3.00 mm × 4.40 mm
+•   Digital Still Cameras
+                                                                          (1) For all available packages, see the orderable addendum at
+•   Portable Applications                                                     the end of the datasheet.
+•   DSL Modems
+•   PCMCIA Cards
+•   TFT LCD Bias Supply
+
+4 Simplified Schematic
+                                                        L
+                                                     3.3 mH
+
+
+
+
+        VIN                                                                                D                                   VS
+                                                                                      PMEG2010AEH                         12 V/300 mA
+    2.3 V to 6 V                           6                               5
+                                               IN                   SW
+                                    CBY                                                                      R1
+                                   1 µF                                                                      158 kΩ
+                      CIN          16 V    3                               2                                             COUT
+                                               EN                    FB
+                   10 µF
+                    16 V                                                                                     R2          2* 10 µF
+                                                                                                             18.2 kΩ     25 V
+                                           7                               1
+                                               FREQ               COMP
+
+                                                                                                 RCOMP
+                                           4                               8                     51 kΩ
+                                               GND                   SS
+                                                                                                  CCOMP
+                                                       TPS61085                                   1.1 nF
+                                                                                     CSS
+                                                                                     100 nF
+
+
+
+
+1
+
+
+
+
+       An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+       intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                                                                 www.ti.com
+
+
+                                                                           Table of Contents
+    1    Features .................................................................. 1                       8.3 Feature Description................................................... 8
+    2    Applications ........................................................... 1                          8.4 Device Functional Modes.......................................... 8
+    3    Description ............................................................. 1                 9      Application and Implementation .......................... 9
+    4    Simplified Schematic............................................. 1                                 9.1 Application Information.............................................. 9
+                                                                                                             9.2 Typical Application .................................................... 9
+    5    Revision History..................................................... 2
+                                                                                                             9.3 System Examples ................................................... 15
+    6    Pin Configuration and Functions ......................... 3
+                                                                                                     10 Power Supply Recommendations ..................... 18
+    7    Specifications......................................................... 3
+         7.1    Absolute Maximum Ratings ...................................... 3                    11 Layout................................................................... 19
+                                                                                                             11.1 Layout Guidelines ................................................. 19
+         7.2    ESD Ratings.............................................................. 3
+                                                                                                             11.2 Layout Example .................................................... 19
+         7.3    Recommended Operating Conditions....................... 4
+         7.4    Thermal Information .................................................. 4             12 Device and Documentation Support ................. 20
+         7.5    Electrical Characteristics........................................... 4                      12.1 Trademarks ........................................................... 20
+         7.6    Typical Characteristics .............................................. 5                     12.2 Electrostatic Discharge Caution ............................ 20
+                                                                                                             12.3 Glossary ................................................................ 20
+    8    Detailed Description .............................................. 7
+         8.1 Overview ................................................................... 7          13 Mechanical, Packaging, and Orderable
+         8.2 Functional Block Diagram ......................................... 7
+                                                                                                        Information ........................................................... 20
+
+
+
+5 Revision History
+Changes from Revision A (April 2012) to Revision B                                                                                                                                   Page
+
+•   Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and Implementation
+    section, Power Supply Recommendations section, Layout section, Device and Documentation Support section, and
+    Mechanical, Packaging, and Orderable Information section .................................................................................................. 1
+
+
+Changes from Original (June 2008) to Revision A                                                                                                                                      Page
+
+•   Changed the circuit illustration value of CCOMP From: 1.6 nF To: 1.1 nF ............................................................................... 1
+•   Deleted Lead Temperature from the Abs Max table .............................................................................................................. 3
+•   Added a conditions statement and two new graphs (Max Load Current vs Input Voltage) to the Typical
+    Characteristics graphs ............................................................................................................................................................ 5
+•   Added three paragraphs of text to the Detailed Description. ................................................................................................. 7
+•   Changed Figure 8 to Figure 17 .............................................................................................................................................. 9
+•   Changed the Design Procudures step 3 details following Equation 4 ................................................................................ 10
+•   Changed text in the Inductor Selection section "inductor current ripple is below 20%" to " inductor current ripple is
+    below 35%" .......................................................................................................................................................................... 10
+•   Changed Equation 8............................................................................................................................................................. 12
+•   Added Used IOUT to Table 5.................................................................................................................................................. 12
+•   Added Equation 10 ............................................................................................................................................................... 13
+•   Changed the White LED Applications optional Zener connection for Figure 19 to Figure 21.............................................. 17
+
+
+
+
+2        Submit Documentation Feedback                                                                                   Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                                         Product Folder Links: TPS61085
+                                                                                                                                        TPS61085
+www.ti.com                                                                                        SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+6 Pin Configuration and Functions
+
+                                                               DGK, PW Packages
+                                                                     8 Pins
+                                                                   Top View
+
+                                                        COMP   1                     8    SS
+
+                                                          FB   2                     7    FREQ
+
+                                                          EN   3                     6    IN
+
+                                                        PGND   4                     5    SW
+
+               8-PIN 4.9-mm × 3-mm × 1.1-mm VSSOP (DGK)
+               8-PIN 6.4-mm × 3-mm × 1.2-mm TSSOP (PW)
+
+                                                                   Pin Functions
+         PIN
+                       I/O                                                      DESCRIPTION
+  NAME          NO.
+COMP             1     I/O   Compensation pin
+EN               3      I    Shutdown control input. Connect this pin to logic high level to enable the device
+FB               2      I    Feedback pin
+FREQ             7      I    Frequency select pin. The power switch operates at 650 kHz if FREQ is connected to GND and at 1.2 MHz if
+                             FREQ is connected to IN
+IN               6      I    Input supply pin
+PGND             4           Power ground
+SS               8     O     Soft-start control pin. Connect a capacitor to this pin if soft-start needed. Open = no soft-start
+SW               5      I    Switch pin
+
+
+7 Specifications
+7.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted) (1) (2)
+                                                                                                             MIN                  MAX      UNIT
+Input voltage range IN                                                                                       –0.3                  7           V
+Voltage range on pins EN, FB, SS, FREQ, COMP                                                                 –0.3                  7           V
+Voltage on pin SW                                                                                            -0.3                 20           V
+Continuous power dissipation                                                                                    See Thermal Information
+Operating junction temperature                                                                               –40                  150       °C
+Storage temperature                                                                                          –65                  150       °C
+
+(1)   Stresses beyond those listed under absolute maximum ratings may cause permanent damage to the device. These are stress ratings
+      only, and functional operation of the device at these or any other conditions beyond those indicated under recommended operating
+      conditions is not implied. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability
+(2)   All voltage values are with respect to network ground terminal.
+
+7.2 ESD Ratings
+                                                                                                                            VALUE         UNIT
+                                           Human body model (HBM), per ANSI/ESDA/JEDEC JS-001 (1)                           ±2000
+                                           Charged-device model (CDM), per JEDEC specification JESD22-                       ±500
+V(ESD)     Electrostatic discharge                                                                                                         V
+                                           C101 (2)
+                                           Machine model (MM)                                                                ±200
+
+(1)   JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with
+      less than 500-V HBM is possible with the necessary precautions. Pins listed as ±XXX V may actually have higher performance.
+(2)   JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with
+      less than 250-V CDM is possible with the necessary precautions. Pins listed as ±YYY V may actually have higher performance.
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                    Submit Documentation Feedback             3
+                                                          Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                                www.ti.com
+
+
+7.3 Recommended Operating Conditions
+                                                                                                                   MIN       TYP     MAX         UNIT
+VIN         Input voltage range                                                                                     2.3                     6      V
+VS          Boost output voltage range                                                                         VIN + 0.5              18.5         V
+TA          Operating free-air temperature                                                                          –40                 85        °C
+TJ          Operating junction temperature                                                                          –40                125        °C
+
+
+7.4 Thermal Information
+                                                                                                               TPS61085
+                                        THERMAL METRIC (1)                                            DGK                    PW                 UNIT
+                                                                                                      8 PINS               8 PINS
+RθJA             Junction-to-ambient thermal resistance                                               189.3                 183.3
+RθJC(top)        Junction-to-case (top) thermal resistance                                             57.1                 66.7
+RθJB             Junction-to-board thermal resistance                                                 109.9                 112.0               °C/W
+ψJT              Junction-to-top characterization parameter                                            3.5                   8.3
+ψJB              Junction-to-board characterization parameter                                         108.3                 110.3
+
+(1)    For more information about traditional and new thermal metrics, see the IC Package Thermal Metrics application report, SPRA953.
+
+7.5 Electrical Characteristics
+VIN = 3.3 V, EN = VIN, VS = 12 V, TA = –40°C to 85°C, typical values are at TA = 25°C (unless otherwise noted)
+                         PARAMETER                                          TEST CONDITIONS                       MIN       TYP     MAX          UNIT
+SUPPLY
+VIN                Input voltage range                                                                             2.3                 6          V
+IQ                 Operating quiescent current into IN        Device not switching, VFB = 1.3 V                              70      100          μA
+ISDVIN             Shutdown current into IN                   EN = GND                                                                 1          μA
+UVLO               Undervoltage lockout threshold             VIN falling                                                             2.2         V
+                                                              VIN rising                                                              2.3         V
+TSD                Thermal shutdown                           Temperature rising                                            150                   °C
+TSD(HYS)           Thermal shutdown hysteresis                                                                               14                   °C
+LOGIC SIGNALS EN, FREQ
+VIH                High level input voltage                   VIN = 2.3 V to 6 V                                     2                            V
+VIL                Low level input voltage                    VIN = 2.3 V to 6 V                                                      0.5         V
+Ilkg               Input leakage current                      EN = FREQ = GND                                                         0.1         μA
+BOOST CONVERTER
+VS                 Boost output voltage                                                                          VIN +               18.5         V
+                                                                                                                   0.5
+VFB                Feedback regulation voltage                                                                  1.230      1.238    1.246         V
+gm                 Transconductance error amplifier                                                                         107                  μA/V
+IFB                Feedback input bias current                VFB = 1.238 V                                                           0.1         μA
+rDS(on)            N-channel MOSFET on-resistance             VIN = VGS = 5 V, ISW = current limit                          0.13     0.20         Ω
+                                                              VIN = VGS = 3.3V, ISW = current limit                         0.15     0.24
+Ilkg               SW leakage current                         EN = GND, VSW = 6V TBD                                                  10          µA
+ILIM               N-Channel MOSFET current limit                                                                  2.0       2.6      3.2         A
+ISS                Soft-start current                         VSS = 1.238 V                                          7       10       13          μA
+fS                 Oscillator frequency                       FREQ = VIN                                           0.9       1.2      1.5        MHz
+                                                              FREQ = GND                                          480       650      820         kHz
+                   Line regulation                            VIN = 2.3 V to 6 V, IOUT = 10 mA                           0.0002                  %/V
+                   Load regulation                            VIN = 3.3 V, IOUT = 1 mA to 400 mA                            0.11                 %/A
+
+
+
+
+4         Submit Documentation Feedback                                                        Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                          Product Folder Links: TPS61085
+                                                                                                                                                                                                                          TPS61085
+www.ti.com                                                                                                                                                             SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+7.6 Typical Characteristics
+The typical characteristics are measured with the inductors 7447789003 3.3 µH (high frequency) or B82464G4 6.8 µH (low
+frequency) from Epcos and the rectifier diode SL22.
+                                                                                               Table 1. Table Of Graphs
+                                                                                                                                                                                                                          FIGURE
+                                                                                                         vs Input voltage at high frequency (1.2 MHz)                                                                     Figure 1
+IOUT(max)                             Maximum load current
+                                                                                                         vs Input voltage at low frequency (650 kHz)                                                                      Figure 2
+                                                                                                         vs Load current, VS = 12 V, VIN = 3.3 V                                                                          Figure 3
+η                                     Efficiency
+                                                                                                         vs Load current, VS = 9 V, VIN = 3.3 V                                                                           Figure 4
+                                      Supply current                                                     vs Supply voltage                                                                                                Figure 5
+                                      Frequency                                                          vs Load current                                                                                                  Figure 6
+                                      Frequency                                                          vs Supply voltage                                                                                                Figure 7
+
+
+                                    1.6                                                                                                                  1.6
+                                            fS = 1.2 MHz                                                                                                         fS = 1.2 MHz
+
+                                    1.4                             VOUT = 9 V                                                                           1.4                             VOUT = 9 V
+
+
+                                    1.2                                                                                                                  1.2
+
+
+
+
+        IOUT − Output Current (A)                                                                                            IOUT − Output Current (A)
+                                                VOUT = 12 V                                                                                                          VOUT = 12 V
+                                     1                                                                                                                    1
+
+
+                                    0.8                                                                                                                  0.8
+
+
+                                    0.6                                                                                                                  0.6
+
+
+                                    0.4                                                                                                                  0.4
+                                                                                                                                                                                                          VOUT = 15 V
+                                    0.2                                              VOUT = 15 V                                                         0.2
+                                                                  VOUT = 18.5 V                                                                                                       VOUT = 18.5 V
+                                     0                                                                                                                    0
+                                      2.5       3.0        3.5        4.0      4.5       5.0       5.5      6.0                                            2.5       3.0        3.5        4.0      4.5       5.0       5.5   6.0
+                                                                 VIN − Input Voltage (V)                                                                                              VIN − Input Voltage (V)
+                                                                                                             G000                                                                                                              G000
+
+                                    Figure 1. Maximum Load Current vs Input Voltage                                                                      Figure 2. Maximum Load Current vs Input Voltage
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                                                                                            Submit Documentation Feedback                        5
+                                                                                               Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                                                                                                                         www.ti.com
+
+                        100                                                                                                                                         100
+                                                                                                       fS = 650 kHz                                                                                                     fS = 650 kHz
+                                   90                                                                  L = 6.8 µH                                                    90                                                 L = 6.8 µH
+
+                                   80                             fS = 1.2 MHz                                                                                       80                               fS = 1.2 MHz
+                                                                  L = 3.3 µH                                                                                                                          L = 3.3 µH
+                                   70                                                                                                                                70
+
+
+
+
+      Efficiency - %                                                                                                                       Efficiency - %
+                                   60                                                                                                                                60
+
+                                   50                                                                                                                                50
+
+                                   40                                                                                                                                40
+
+                                   30                                                                                                                                30
+
+                                   20                                                                                                                                20
+                                                                                                       VIN = 3.3 V                                                                                                     VIN = 3.3 V
+                                   10                                                                                                                                10
+                                                                                                       VS = 12 V                                                                                                       VS = 9 V
+                                    0                                                                                                                                 0
+                                        0       0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50                                                                         0   0.10    0.20     0.30     0.40   0.50    0.60    0.70 0.80
+                                                              IOUT - Load current - A
+                                                                                                                                                                                         IOUT - Load current - A
+                                                   Figure 3. Efficiency vs Load Current                                                                                       Figure 4. Efficiency vs Load Current
+                                        2                                                                                                                           1600
+
+                                   1.8
+                                                                                                                                                                    1400                                               FREQ = VIN
+                                                                  Switching
+                                   1.6                            fS = 1.2 MHz                                                                                                                                         L = 3.3 µH
+                                                                  L = 3.3 µH                                                                                        1200
+
+
+
+
+       ICC - Supply Current - mA
+                                   1.4
+
+
+
+
+                                                                                                                                             fS - Frequency - kHz
+                                                                                                                                                                    1000
+                                   1.2
+
+                                        1                                                                                                                            800                                              FREQ = GND
+                                                                                                                                                                                                                      L = 6.8 µH
+                                   0.8                                                                 Switching
+                                                                                                                                                                     600
+                                                                                                       fS = 650 kHz
+                                   0.6                                                                 L = 6.8 µH
+                                                                                                                                                                     400
+                                   0.4                                                                                                                                        VIN = 3.3 V
+                                                                                                                                                                     200      VS = 12 V
+                                   0.2                              Not Switching
+
+                                        0                                                                                                                              0
+                                            2      2.5    3      3.5    4    4.5      5                          5.5     6                                             0.0      0.1          0.2        0.3      0.4          0.5      0.6
+                                                              VCC - Supply Current - V                                                                                                  IOUT - Load current - mA
+                                                Figure 5. Supply Current vs Supply Voltage                                                                                    Figure 6. Frequency vs Load Current
+                                                                                                    1400
+
+
+                                                                                                    1200
+                                                                                                                                                                      FREQ = VIN
+                                                                                                                                                                      L = 3.3 µH
+                                                                                                    1000
+
+
+
+
+                                                                             fS - Frequency - kHz
+                                                                                                     800                           FREQ = GND
+                                                                                                                                   L = 6.8 µH
+
+                                                                                                     600
+
+
+                                                                                                     400
+
+
+                                                                                                     200     VS = 12 V / 200 mA
+
+                                                                                                       0
+                                                                                                           2.5     3.0       3.5     4.0       4.5                     5.0     5.5     6.0
+                                                                                                                         VCC - Supply Voltage - V
+                                                                                                            Figure 7. Frequency vs Supply Voltage
+
+
+6                  Submit Documentation Feedback                                                                                                                                Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                                                                                 Product Folder Links: TPS61085
+                                                                                                                                   TPS61085
+www.ti.com                                                                                        SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+8 Detailed Description
+
+8.1 Overview
+The boost converter is designed for output voltages up to 18.5 V with a switch peak current limit of 2.0 A
+minimum. The device, which operates in a current mode scheme with quasi-constant frequency, is externally
+compensated for maximum flexibility and stability. The switching frequency is selectable between 650 kHz and
+1.2 MHz and the minimum input voltage is 2.3 V. To control the inrush current at start-up a soft-start pin is
+available.
+TPS61085 boost converter’s novel topology using adaptive off-time provides superior load and line transient
+responses and operates also over a wider range of applications than conventional converters.
+The selectable switching frequency offers the possibility to optimize the design either for the use of small sized
+components (1.2 MHz) or for higher system efficiency (650 kHz). However, the frequency changes slightly
+because the voltage drop across the rDS(on) has some influence on the current and voltage measurement and
+thus on the on-time (the off-time remains constant).
+The converter operates in continuous conduction mode (CCM) as soon as the input current increases above half
+the ripple current in the inductor, for lower load currents it switches into discontinuous conduction mode (DCM). If
+the load is further reduced, the part starts to skip pulses to maintain the output voltage.
+
+8.2 Functional Block Diagram
+
+VIN                                                                                                                                        VS
+
+
+
+                     EN                IN             FREQ                                                SW
+
+
+
+
+        SS                            Current limit
+                                          and
+                                       Soft Start
+
+
+                                                                  tOFF Generator
+
+                      Bias Vref = 1.238V
+                            UVLO
+                     Thermal Shutdown             tON
+                                                                                       Gate Driver of
+                                                                     PWM
+                                                                                          Power
+                                                                    Generator
+                                                                                        Transistor
+
+      COMP
+
+                                                                     GM Amplifier
+
+
+                                                                                                                              FB
+
+                                                                                     V ref
+
+
+                                                                                                        PGND
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                     Submit Documentation Feedback     7
+                                                             Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                            www.ti.com
+
+
+8.3 Feature Description
+8.3.1 Soft-Start
+The boost converter has an adjustable soft-start to prevent high inrush current during start-up. To minimize the
+inrush current during start-up an external capacitor connected to the soft-start pin SS and charged with a
+constant current, is used to slowly ramp up the internal current limit of the boost converter when charged with a
+constant current. When the EN pin is pulled high, the soft-start capacitor CSS is immediately charged to 0.3 V.
+The capacitor is then charged at a constant current of 10 μA typically until the output of the boost converter VS
+has reached its Power Good threshold (roughly 98% of VS nominal value). During this time, the SS voltage
+directly controls the peak inductor current, starting with 0 A at VSS = 0.3 V up to the full current limit at VSS =0.8
+V. The maximum load current is available after the soft-start is completed. The larger the capacitor the slower the
+ramp of the current limit and the longer the soft-start time. A 100 nF capacitor is usually sufficient for most of the
+applications. When the EN pin is pulled low, the soft-start capacitor is discharged to ground.
+
+8.3.2 Frequency Select Pin (FREQ)
+The frequency select pin FREQ allows to set the switching frequency of the device to 650 kHz (FREQ = low) or
+1.2 MHz (FREQ = high). Higher switching frequency improves load transient response but reduces slightly the
+efficiency. The other benefits of higher switching frequency are a lower output ripple voltage. The use of the 1.2
+MHz switching frequency is recommended unless light load efficiency is a major concern.
+
+8.3.3 Undervoltage Lockout (UVLO)
+To avoid mis-operation of the device at low input voltages an undervoltage lockout is included that disables the
+device, if the input voltage falls below 2.2 V.
+
+8.3.4 Thermal Shutdown
+A thermal shutdown is implemented to prevent damages due to excessive heat and power dissipation. Typically
+the thermal shutdown threshold happens at a junction temperature of 150°C. When the thermal shutdown is
+triggered the device stops switching until the temperature falls below typically 136°C. Then the device starts
+switching again.
+
+8.3.5 Overvoltage Prevention
+If overvoltage is detected on the FB pin (typically 3 % above the nominal value of 1.238 V) the part stops
+switching immediately until the voltage on this pin drops to its nominal value. This prevents overvoltage on the
+output and secures the circuits connected to the output from excessive overvoltage.
+
+8.4 Device Functional Modes
+The converter operates in continuous conduction mode (CCM) as soon as the input current increases above half
+the ripple current in the inductor, for lower load currents it switches into discontinuous conduction mode (DCM). If
+the load is further reduced, the part starts to skip pulses to maintain the output voltage.
+
+
+
+
+8      Submit Documentation Feedback                                            Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                               Product Folder Links: TPS61085
+                                                                                                                                 TPS61085
+www.ti.com                                                                                     SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+9 Application and Implementation
+
+                                                           NOTE
+               Information in the following applications sections is not part of the TI component
+               specification, and TI does not warrant its accuracy or completeness. TI’s customers are
+               responsible for determining suitability of components for their purposes. Customers should
+               validate and test their design implementation to confirm system functionality.
+
+
+9.1 Application Information
+The TPS61085 is designed for output voltages up to 18.5 V with a switch peak current limit of 2.0 A minimum.
+The device, which operates in a current mode scheme with quasi-constant frequency, is externally compensated
+for maximum flexibility and stability. The switching frequency is selectable between 650 kHz and 1.2 MHz, and
+the input voltage range is 2.3 V to 6.0V. To control the inrush current at start-up a soft-start pin is available. The
+following section provides a step-by-step design approach for configuring the TPS61085 as a voltage regulating
+boost converter.
+
+9.2 Typical Application
+                                                            L
+                                                         3.3 µH
+
+
+
+                                                                                           D                                 VS
+         VIN
+                                                                                      PMEG2010AEH
+     3.3 V ±20%                                6                              5                                       12 V/600 mA max
+                                                   IN                   SW
+                                      CBY                                                                   R1
+                                     1 µF                                                                   158 kΩ
+                                     16 V      3                              2                                        COUT
+                     CIN                           EN                    FB
+                  10 µF                                                                                     R2        2* 10 µF
+                   16 V                                                                                     18.2 kΩ   25 V
+                                               7                              1
+                                                   FREQ               COMP
+
+                                                                                                RCOMP
+                                               4                              8                 47 kΩ
+                                                   GND                   SS
+                                                                                                 CCOMP
+                                                                                       CSS       1.6 nF
+                                                           TPS61085
+                                                                                      100 nF
+
+
+
+
+                                  Figure 8. Typical Application, 3.3 V to 12 V (fS = 1.2 MHz)
+
+9.2.1 Design Requirements
+
+                                       Table 2. TPS61085 12V Output Design Requirements
+                              PARAMETERS                                                                  VALUES
+                               Input Voltage                                                          3.3V ± 20%
+                              Output Voltage                                                               12V
+                              Output Current                                                              600mA
+                           Switching Frequency                                                            1.2MHz
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                Submit Documentation Feedback       9
+                                                          Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                         www.ti.com
+
+
+
+9.2.2 Detailed Design Procedure
+
+9.2.2.1 Design Procedure
+The first step in the design procedure is to verify that the maximum possible output current of the boost converter
+supports the specific application requirements. A simple approach is to estimate the converter efficiency, by
+taking the efficiency numbers from the provided efficiency curves or to use a worst case assumption for the
+expected efficiency, e.g. 90%.
+1. Duty cycle, D:
+                  VIN ×h
+        D = 1-
+                    VS
+                                                                                                                                              (1)
+2. Maximum output current, IOUT(max) :
+                   æ              DI ö
+     I OUT (max) = ç I LIM (min) - L ÷ × (1 - D )
+                   è               2 ø                                                                                                        (2)
+3. Peak switch current in application, ISW(peak) :
+                    DI   I
+     I SW ( peak ) = L + OUT
+                     2 1- D                                                                                                                   (3)
+with the inductor peak-to-peak ripple current, ΔIL
+                 VIN × D
+        DI L =
+                  fS × L
+                                                                                                                                              (4)
+and
+
+VIN              Minimum input voltage
+VS               Output voltage
+ILIM(min)        Converter switch current limit (minimum switch current limit = 3.2 A)
+fS               Converter switching frequency (typically 1.2 MHz or 650 kHz)
+L                Selected inductor value
+η                Estimated converter efficiency (please use the number from the efficiency plots or 90% as an estimation)
+
+The peak switch current is the steady state peak switch current that the integrated switch, inductor and external
+Schottky diode has to be able to handle. The calculation must be done for the minimum input voltage where the
+peak switch current is the highest.
+
+9.2.2.2 Inductor Selection
+The TPS61085 is designed to work with a wide range of inductors. The main parameter for the inductor selection
+is the saturation current of the inductor which should be higher than the peak switch current as calculated in the
+Design Procedure section with additional margin to cover for heavy load transients. An alternative, more
+conservative, is to choose an inductor with a saturation current at least as high as the maximum switch current
+limit of 3.2 A. The other important parameter is the inductor DC resistance. Usually, the lower the DC resistance
+the higher the efficiency. It is important to note that the inductor DC resistance is not the only parameter
+determining the efficiency. Especially for a boost converter where the inductor is the energy storage element, the
+type and core material of the inductor influences the efficiency as well. At high switching frequencies of 1.2 MHz
+inductor core losses, proximity effects and skin effects become more important. Usually, an inductor with a larger
+form factor gives higher efficiency. The efficiency difference between different inductors can vary between 2% to
+10%. For the TPS61085, inductor values between 3 μH and 6 μH are a good choice with a switching frequency
+of 1.2 MHz, typically 3.3 μH. At 650 kHz inductors between 6 μH and 13 μH, typically 6.8 μH are recommended.
+Possible inductors are shown in Table 3.
+Typically, it is recommended that the inductor current ripple is below 35% of the average inductor current.
+Therefore, the following equation can be used to calculate the inductor value, L:
+
+
+10          Submit Documentation Feedback                                                    Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                         Product Folder Links: TPS61085
+                                                                                                                                   TPS61085
+www.ti.com                                                                                          SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+                     2
+           æ V ö æ V -V ö æ h ö
+       L = ç IN ÷ × ç S IN ÷ × ç         ÷
+           è VS ø è I OUT × f S ø è 0.35 ø                                                                                                   (5)
+with
+
+VIN             Minimum input voltage
+VS              Output voltage
+Iout            Maximum output current in the application
+fS              Converter switching frequency (typically 1.2 MHz or 650 kHz)
+η               Estimated converter efficiency (please use the number from the efficiency plots or 90% as an estimation)
+
+
+                                                         Table 3. Inductor Selection
+                       L                                         COMPONENT             SIZE                DCR TYP
+                                     SUPPLIER                                                                           Isat (A)
+                     (μH)                                          CODE             (L×W×H mm)              (mΩ)
+                                                                       1.2 MHz
+                      3.3              Sumida                     CDH38D09             4x4x1                 240         1.25
+                      4.7              Sumida                    CDPH36D13            5 × 5 × 1.5            155         1.36
+                      3.3              Sumida                    CDPH4D19F           5.2 x 5.2 x 2           33           1.5
+                      3.3              Sumida                     CDRH6D12          6.7 x 6.7 x 1.5          62           2.2
+                      4.7          Würth Elektronik               7447785004        5.9 × 6.2 × 3.3          60           2.5
+                         5             Coilcraft                   MSS7341          7.3 × 7.3 × 4.1          24           2.9
+                                                                       650 kHz
+                      6.8              Sumida                     CDP14D19           5.2 x 5.2 x 2           50              1
+                      10               Coilcraft                   LPS4414          4.3 × 4.3 × 1.4          380          1.2
+                      6.8              Sumida                    CDRH6D12/LD        6.7 x 6.7 x 1.5          95          1.25
+                      10               Sumida                     CDR6D23             5 × 5 × 2.4            133         1.75
+                      10           Würth Elektronik               744778910         7.3 × 7.3 × 3.2          51           2.2
+                      6.8              Sumida                    CDRH6D26HP           7 x 7 x 2.8            52           2.9
+
+9.2.2.3 Rectifier Diode Selection
+To achieve high efficiency, a Schottky type should be used for the rectifier diode. The reverse voltage rating
+should be higher than the maximum output voltage of the converter. The averaged rectified forward current Iavg,
+the Schottky diode needs to be rated for, is equal to the output current IOUT:
+     I avg = I OUT
+                                                                                                                                             (6)
+Usually a Schottky diode with 2 A maximum average rectified forward current rating is sufficient for most
+applications. The Schottky rectifier can be selected with lower forward current capability depending on the output
+current Iout but has to be able to dissipate the power. The dissipated power, PD , is the average rectified forward
+current times the diode forward voltage, Vforward .
+        PD = I avg × V forward
+                                                                                                                                             (7)
+Typically the diode should be able to dissipate around 500mW depending on the load current and forward
+voltage.
+
+                                                     Table 4. Rectifier Diode Selection
+                     CURRENT                                                                COMPONENT                PACKAGE
+                                        Vr     Vforward / Iavg          SUPPLIER
+                    RATING Iavg                                                               CODE                     TYPE
+                         750 mA       20 V         0.425 V /      Fairchild Semiconductor     FYV0704S                SOT 23
+                                                    750 mA
+                             1A       20 V      0.39 V / 1 A               NXP              PMEG2010AEH              SOD 123
+                             1A       20 V      0.52 V / 1 A      Vishay Semiconductor              B120               SMA
+                             1A       20 V         0.5 V / 1 A    Vishay Semiconductor              SS12               SMA
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                      Submit Documentation Feedback     11
+                                                           Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                        www.ti.com
+
+
+                                          Table 4. Rectifier Diode Selection (continued)
+                   CURRENT                                                                COMPONENT           PACKAGE
+                                     Vr      Vforward / Iavg         SUPPLIER
+                  RATING Iavg                                                               CODE                TYPE
+                      1A          20 V       0.44 V / 1 A        Vishay Semiconductor      MSS1P2L            μ-SMP (Low
+                                                                                                                Profile)
+
+9.2.2.4 Setting the Output Voltage
+The output voltage is set by an external resistor divider. Typically, a minimum current of 50 μA flowing through
+the feedback divider gives good accuracy and noise covering. A standard low side resistor of 18 kΩ is typically
+selected. The resistors are then calculated as:
+                                                                                VS
+
+             V                               æ V    ö
+       R 2 = FB » 18k W           R1 = R 2 × ç S - 1÷
+            70 m A                           è VFB  ø                                R1
+
+                                                                          VFB
+
+       VFB = 1.238V                                                                  R2
+
+                                                                                                                                             (8)
+
+9.2.2.5 Compensation (COMP)
+The regulator loop can be compensated by adjusting the external components connected to the COMP pin. The
+COMP pin is the output of the internal transconductance error amplifier.
+Standard values of RCOMP = 13 kΩ and CCOMP = 3.3 nF will work for the majority of the applications.
+See Table 5 for dedicated compensation networks giving an improved load transient response. The following
+equations can be used to calculate RCOMP and CCOMP :
+               110 × VIN × VS × COUT                    Vs × COUT
+     RCOMP =                              CCOMP =
+                     L × I OUT                     7.5 × I OUT × RCOMP                                 (9)
+with
+
+VIN          Minimum input voltage
+VS           Output voltage
+Cout         Output capacitance
+L            Inductor value, e.g. 3.3 μH or 6.8 μH
+IOUT         Maximum output current in the application
+
+Make sure that RCOMP < 120 kΩ and CCOMP> 820 pF, independent of the results of the above formulas.
+
+                  Table 5. Recommended Compensation Network Values at High/Low Frequency
+    FREQUENCY         L              VS               VIN ± 20%                  RCOMP                  CCOMP                  Used IOUT
+                                                          5V                     82 kΩ                   1.1 nF                   0.7A
+                                     15 V
+                                                         3.3 V                   75 kΩ                   1.6 nF                   0.5A
+                                                          5V                     51 kΩ                   1.1 nF                   0.9A
+ High (1.2 MHz)     3.3 µH           12 V
+                                                         3.3 V                   47 kΩ                   1.6 nF                   0.6A
+                                                          5V                     30 kΩ                   1.1 nF                   1.2A
+                                     9V
+                                                         3.3 V                   27 kΩ                   1.6 nF                   0.8A
+                                                          5V                     43 kΩ                   2.2 nF                   0.7A
+                                     15 V
+                                                         3.3 V                   39 kΩ                   3.3 nF                   0.5A
+                                                          5V                     27 kΩ                   2.2 nF                   0.9A
+ Low (650 kHz)      6.8 µH           12 V
+                                                         3.3 V                   24 kΩ                   3.3 nF                   0.6A
+                                                          5V                     15 kΩ                   2.2 nF                   1.2A
+                                     9V
+                                                         3.3 V                   13 kΩ                   3.3 nF                   0.8A
+
+
+
+
+12     Submit Documentation Feedback                                                        Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                        Product Folder Links: TPS61085
+                                                                                                                            TPS61085
+www.ti.com                                                                                   SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+Table 5 gives conservative RCOMP and CCOMP values for certain inductors, input and output voltages providing a
+very stable system. For a faster response time, a higher RCOMP value can be used to enlarge the bandwidth, as
+well as a slightly lower value of CCOMP to keep enough phase margin. These adjustments should be performed in
+parallel with the load transient response monitoring of TPS61087.
+
+9.2.2.6 Input Capacitor Selection
+For good input voltage filtering low ESR ceramic capacitors are recommended. TPS61085 has an analog input
+IN. Therefore, a 1 μF bypass is highly recommended as close as possible to the IC from IN to GND.
+One 10 μF ceramic input capacitors are sufficient for most of the applications. For better input voltage filtering
+this value can be increased. Refer to Table 6 and typical applications for input capacitor recommendations.
+
+9.2.2.7 Output Capacitor Selection
+For best output voltage filtering a low ESR output capacitor like ceramic capcaitor is recommended. Two 10 μF
+ceramic output capacitors (or one 22 μF) work for most of the applications. Higher capacitor values can be used
+to improve the load transient response. Refer to Table 6 for the selection of the output capacitor.
+
+                                    Table 6. Rectifier Input and Output Capacitor Selection
+                                    CAPACITOR           VOLTAGE RATING             SUPPLIER         COMPONENT CODE
+                        CIN          10 μF/1206                  16 V             Taiyo Yuden        EMK212 BJ 106KG
+                    IN bypass         1 μF/0603                  16 V             Taiyo Yuden        EMK107 BJ 105KA
+                       COUT          10 μF/1206                  25 V             Taiyo Yuden        TMK316 BJ 106KL
+
+To calculate the output voltage ripple, Equation 10 can be used:
+            V - VIN I OUT
+     DVC = S          ×               DVC _ ESR = I L ( peak ) × RC _ ESR
+             VS × f S COUT                                                                                                          (10)
+with
+
+ΔVC            Output voltage ripple dependent on output capacitance,output current and switching frequency
+VS             Output voltage
+VIN            Minimum input voltage of boost converter
+fS             Converter switching frequency (typically 1.2 MHz or 650 kHz)
+Iout           Output capacitance
+ΔVC_ESR        Output voltage ripple due to output capacitors ESR (equivalent series resistance)
+ISWPEAK        Inductor peak switch current in the application
+RC_ESR         Output capacitors equivalent series resistance (ESR)
+
+ΔVC_ESR can be neglected in many cases since ceramic capacitors provide low ESR.
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                              Submit Documentation Feedback      13
+                                                        Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                             www.ti.com
+
+
+9.2.3 Application Curves
+
+
+
+            VSW                                                                       VSW
+          5 V/div                                                                   5 V/div
+
+
+
+
+                                                                                 VS_AC
+           VS_AC
+                                                                              50 mV/div
+        50 mV/div
+                     VIN = 3.3 V
+                     VS = 12 V/1 mA
+                                                                                         IL
+                     fS = 1.2 MHz
+                                                                                    1 A/div
+                                                                                              VIN = 3.3 V
+              IL                                                                              VS = 12 V/300 mA
+      200 mA/div                                                                              fS = 1.2 MHz
+
+                                      200 ns/div                                                               200 ns/div
+       Figure 9. PWM Switching Discontinuous Conduction Mode                   Figure 10. PWM Switching Continuous Conduction Mode
+
+
+                    VIN = 3.3 V                    COUT = 20 µF                               VIN = 3.3 V               COUT = 20 µF
+                    VS = 12 V                      L = 3.3 µH                                 VS = 12 V                 L = 6.8 µH
+                                                   RCOMP = 51 kΩ                                                        RCOMP = 24 kΩ
+                                                   CCOMP = 1.6 nF                                                       CCOMP = 3.3 nF
+
+
+         VS_AC                                                                  VS_AC
+     200 mV/div                                                             200 mV/div
+
+
+
+
+                    IOUT = 50 mA - 200 mA                                                     IOUT = 50 mA - 200 mA
+
+
+
+          IOUT                                                                  IOUT
+     100 mA/div                                                            100 mA/div
+
+                                                                                                            200µs/div
+                                      200 µs/div                                                                 200 µs/div
+        Figure 11. Load Transient Response High Frequency (1.2                 Figure 12. Load Transient Response Low Frequency (650
+                                  MHz)                                                                   kHz)
+
+
+
+
+                                                 EN
+                                             5 V/div
+
+
+
+                                                                               VIN = 3.3 V
+                                                                               VS = 12 V/300 mA
+                                                 VS
+                                             5 V/div
+
+
+
+                                                  IL                           CSS = 100 nF
+                                             1 A/div
+
+
+                                                                         2 ms/div
+                                                                Figure 13. Soft-Start
+
+
+
+
+14      Submit Documentation Feedback                                                         Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                        Product Folder Links: TPS61085
+                                                                                                                               TPS61085
+www.ti.com                                                                                      SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+9.3 System Examples
+9.3.1 General Boost Application Circuits
+                                                             L
+                                                          6.8 µH
+
+
+
+         VIN                                                                                 D                               VS
+     3.3 V ±20%                                                                         PMEG2010AEH                   12 V/600 mA max
+                                                6                               5
+                                                    IN                    SW
+                                      CBY                                                                   R1
+                                     1 µF                                                                   158 kΩ
+                     CIN             16 V       3                               2                                       COUT
+                                                    EN                    FB
+                  10 µF
+                   16 V                                                                                     R2          2* 10 µF
+                                                                                                            18.2 kΩ     25 V
+                                                7                               1
+                                                    FREQ                COMP
+                                                                                                  RCOMP
+                                                4                               8                 24 kΩ
+                                                    GND                   SS
+                                                                                                  CCOMP
+                                                                                        CSS       3.3 nF
+                                                            TPS61085
+                                                                                      100 nF
+
+
+
+
+                                 Figure 14. Typical Application, 3.3 V to 12 V (fS = 650 kHz)
+
+                                                             L
+                                                          3.3 µH
+
+
+
+         VIN                                                                                     D                           VS
+     3.3 V ±20%                                                                             PMEG2010AEH                9 V/800 mA max
+                                                6                               5
+                                                    IN                    SW
+                                       CBY                                                                  R1
+                                      1 µF                                                                  113 kΩ
+                      CIN             16 V      3                               2                                       COUT
+                                                    EN                     FB
+                   10 µF
+                    16 V                                                                                     R2         2* 10 µF
+                                                                                                             18 kΩ      25 V
+                                                7                               1
+                                                    FREQ                COMP
+                                                                                                  RCOMP
+                                                4                               8                 27 kΩ
+                                                    GND                    SS
+                                                                                                   CCOMP
+                                                                                        CSS        1.6 nF
+                                                             TPS61085
+                                                                                       100 nF
+
+
+
+
+                                  Figure 15. Typical Application, 3.3 V to 9 V (fS = 1.2 MHz)
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                 Submit Documentation Feedback      15
+                                                           Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                            www.ti.com
+
+
+System Examples (continued)
+
+                                                            L
+                                                         6.8 µH
+
+
+
+         VIN                                                                                   D                                  VS
+     3.3 V ±20%                                                                           PMEG2010AEH                       9 V/800 mA max
+                                               6                                5
+                                                   IN                      SW
+                                    CBY                                                                        R1
+                                   1 µF                                                                        113 kΩ
+                     CIN           16 V        3                                2                                            COUT
+                                                   EN                      FB
+                  10 µF
+                   16 V                                                                                        R2            2* 10 µF
+                                                                                                               18 kΩ         25 V
+                                               7                                1
+                                                   FREQ                COMP
+                                                                                                    RCOMP
+                                               4                                8                   13 kΩ
+                                                   GND                     SS
+                                                                                                    CCOMP
+                                                                                         CSS        3.3 nF
+                                                            TPS61085
+                                                                                        100 nF
+
+
+
+
+                                Figure 16. Typical Application, 3.3 V to 9 V (fS = 650 kHz)
+
+                                                               RISO
+                                                              10 kΩ
+
+
+                                                      L
+                                                   6.8 µH
+
+         VIN                                                                             D             BC857C                        VS
+                                 CBY
+     3.3 V ±20%                                                                     PMEG2010AEH                                 12 V/300 mA
+                              1 µF/16 V 6                              5
+                                              IN                  SW
+                                                                                                 CISO
+                CIN                       3                            2                         1 µF/ 25 V       R1
+             10 µF                            EN                  FB                                              158 kΩ       COUT
+              16 V                                                                                                             2*10 µF
+                                          7                            1                                                       25 V
+                                              FREQ             COMP                                               R2
+                                                                                          RCOMP
+                                                                                                                  18.2 kΩ
+                                          4                            8                  24 kΩ
+                                              GND                 SS
+                                                                                          CCOMP
+                                                                                CSS       3.3 nF
+                                                    TPS61085
+                                                                            100nF
+
+
+
+                           Figure 17. Typical Application With External Load Disconnect Switch
+
+
+
+
+16      Submit Documentation Feedback                                                          Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                         Product Folder Links: TPS61085
+                                                                                                                                                                      TPS61085
+www.ti.com                                                                                                            SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+System Examples (continued)
+9.3.2 TFT LCD Application Circuit
+                                                                                                                                                            T2             VGH
+                                                                                                                                                          BC850B        20 V/20 mA
+                                                                                                                                   3* VS
+                                                                                                     C4
+                                             T1                             D2                      100nF/      D4
+                              VGL                                                                                            C6
+                                           BC857B                                                    50V     BAT54S
+                          -7 V/ 20 mA                               -VS   BAT54S                                           470 nF                  R10
+                                                                                                                            50 V                  13 kΩ
+                                                             C2                          C3                    D5                                                  C8
+                                                        R8
+                                  C1                  7 kΩ 470 nF                       100 nF               BAT54S                2*VS
+                                                                                                     C5                                                          1 µF
+                                 1µF/                        25 V                        50 V                                                                    35 V
+                                                                                                   100 nF      D6          C7
+                                 35V                                        D3                      50 V
+                                                                          BAT54S                             BAT54S       470 nF                      D8
+                                            D1                                                                             50 V                   BZX84C 20V
+                                         BZX84C7V5
+                                                                                                               D7
+                                                                                                             BAT54S
+
+
+                                                               L
+                                                            3.3µH
+
+
+
+       VIN                                                                                              D                                              VS
+   3.3 V± 20%                                                                                      PMEG2010AEH                                    9 V/500 mA
+                                             6                                      5
+                                                     VIN                      SW
+                                  CBY
+                                  1 µF                                                                                     R1
+                 CIN              16 V       3                                      2                                     113 kΩ           COUT
+                                                     EN                        FB
+                10 µF                                                                                                                      2*10 µF
+                 16 V                                                                                                      R2
+                                             7                                      1                                     18 kΩ              25 V
+                                                     FREQ                   COMP
+                                                                                                              RCOMP
+                                             4                                      8                         27 kΩ
+                                                     GND                      SS
+                                                                                                              CCOMP
+                                                                                                  CSS         1.6 nF
+                                                             TPS 61085
+                                                                                                 100 nF
+
+
+
+
+    Figure 18. Typical Application 3.3 V to 9 V (fS = 1.2 MHz) for TFT LCD With External Charge Pumps
+                                                 (VGH, VGL)
+
+9.3.3 WHITE LED Application Circuits
+                                                               L
+                                                            6.8 µH
+
+                                                                                                             optional
+                                       CBY
+               VIN                  1 µF/ 16 V                                                    D           DZ            3S3P wLED                            VS
+            5 V ± 20%                                                                            SL22     BZX84C 18 V        LW E67C
+                                                 6                                  5                                                                          500 mA
+                                                      IN                      SW
+
+                           CIN                   3                                                                                                        COUT
+                                                      EN
+                        10 µF/                                                                                                                            2* 10 µF/
+                         16 V                                                                                                                             25 V
+                                                                                    2
+                                                                              FB
+                                                                                                                RLIMIT
+                                                 7                                  1                           110 Ω                       RSENSE
+                                                      FREQ                 COMP                                                             15 Ω
+                                                                                                             RCOMP
+                                                 4                                  8                        24 kΩ
+                                                      PGND                    SS
+                                                                                                             CCOMP
+                                                               TPS61085                     CSS              3.3 nF
+                                                                                            100 nF
+
+
+
+
+                  Figure 19. Simple Application (3.3 V Input - fsw = 650 kHz) for wLED Supply (3S3P)
+                                       (With Optional Clamping Zener Diode)
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                                                       Submit Documentation Feedback                            17
+                                                                    Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                                                 www.ti.com
+
+
+System Examples (continued)
+
+                                                          L
+                                                       6.8 µH
+
+                                                                                                     optional
+                                    CBY
+             VIN                 1 µF/ 16 V                                              D           DZ                3S3P wLED                     VS
+          5 V ± 20%                                                                     SL22     BZX84C 18 V            LW E67C
+                                              6                               5                                                                    500 mA
+                                                  IN                   SW
+
+                         CIN                  3                                                                                              COUT
+                                                  EN
+                      10 µF/                                                                                                                 2* 10 µF/
+                       16 V                                                                                                                  25 V
+                                                                              2
+                                                                       FB
+                                                                                                        RLIMIT
+                                              7                               1                         110 Ω                      RSENSE
+                                                  FREQ               COMP                                                          15 Ω
+                   PWM                                                                               RCOMP
+              100 Hz to 500 Hz                4                               8                      24 kΩ
+                                                  PGND                 SS
+                                                                                                     CCOMP
+                                                          TPS61085                    CSS            3.3 nF
+                                                                                      100 nF
+
+
+
+
+     Figure 20. Simple Application (3.3V Input - fsw = 650 kHz) for wLED Supply (3S3P) With Adjustable
+                        Brightness Control Using a PWM Signal on the Enable Pin
+                                  (With Optional Clamping Zener Diode)
+
+                                                            L
+                                                         6.8 µH
+
+                                                                                                      optional
+                                    CBY
+             VIN                 1 µF/ 16 V                                               D           DZ               3S3P wLED                      VS
+          5 V ± 20%                                                                      SL22     BZX84C 18 V           LW E67C
+                                              6                               5                                                                     500 mA
+                                                  IN                   SW
+
+                         CIN                  3                                                                                                  COUT
+                                                  EN
+                      10 µF/                                                                                                                     2* 10 µF/
+                       16 V                                                                                                                      25 V
+                                                                              2                 R1            RLIMIT
+                                                                        FB
+                                                                                               180 kΩ         110 Ω
+                                              7                               1                                                     RSENSE
+                                                  FREQ                COMP                                                          15 Ω
+                                                                                           RCOMP              R2
+                                              4                               8            24 kΩ              127 kΩ
+                                                  PGND                  SS
+                                                                                           CCOMP
+                                                           TPS61085                        3.3 nF       Analog Brightness Control
+                                                                             CSS                        3.3 V ~ wLED off
+                                                                             100 nF                     0 V ~ lLED = 30 mA (each string)
+                                                                                                        PWM Signal
+                                                                                                        Can be used swinging from 0 V to 3.3 V
+
+
+     Figure 21. Simple Application (3.3 V Input - fsw = 650 kHz) for wLED Supply (3S3P) With Adjustable
+                     Brightness Control Using an Analog Signal on the Feedback Pin
+                                   (With Optional Clamping Zener Diode)
+
+
+10 Power Supply Recommendations
+The TPS61085 is designed to operate from an input voltage supply range between 2.3 V and 6.0 V. The power
+supply to the TPS61085 needs to have a current rating according to the supply voltage, output voltage and
+output current of the TPS61085.
+
+
+
+
+18     Submit Documentation Feedback                                                                     Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                             Product Folder Links: TPS61085
+                                                                                                                           TPS61085
+www.ti.com                                                                                  SLVS859B – JUNE 2008 – REVISED DECEMBER 2014
+
+
+11 Layout
+
+11.1 Layout Guidelines
+For all switching power supplies, the layout is an important step in the design, especially at high peak currents
+and high switching frequencies. If the layout is not carefully done, the regulator could show stability problems as
+well as EMI problems. Therefore, use wide and short traces for the main current path and for the power ground
+tracks. The input capacitor, output capacitor, and the inductor should be placed as close as possible to the IC.
+Use a common ground node for power ground and a different one for control ground to minimize the effects of
+ground noise. Connect these ground nodes at the GND terminal of the IC. The most critical current path for all
+boost converters is from the switching FET, through the rectifier diode, then the output capacitors, and back to
+ground of the switching FET. Therefore, the output capacitors and their traces should be placed on the same
+board layer as the IC and as close as possible between the IC’s SW and GND terminal.
+
+11.2 Layout Example
+
+
+
+
+                             VIN                                                                      VOUT
+                                                               SS   FREQ   IN   SW
+
+
+
+
+                                                               8    7      6    5
+
+
+
+
+                                           GND                 TPS61085
+
+                                                               1    2      3    4
+
+
+                                                        COMP                         PGND
+
+                                                                    FB     EN
+
+
+
+
+                                                Figure 22. TPS61085 Layout Example
+
+
+
+
+Copyright © 2008–2014, Texas Instruments Incorporated                                             Submit Documentation Feedback      19
+                                                        Product Folder Links: TPS61085
+TPS61085
+SLVS859B – JUNE 2008 – REVISED DECEMBER 2014                                                                                    www.ti.com
+
+
+12 Device and Documentation Support
+12.1 Trademarks
+All trademarks are the property of their respective owners.
+12.2 Electrostatic Discharge Caution
+         These devices have limited built-in ESD protection. The leads should be shorted together or the device placed in conductive foam
+         during storage or handling to prevent electrostatic damage to the MOS gates.
+
+
+12.3 Glossary
+SLYZ022 — TI Glossary.
+   This glossary lists and explains terms, acronyms, and definitions.
+
+13 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+20     Submit Documentation Feedback                                                    Copyright © 2008–2014, Texas Instruments Incorporated
+
+                                                    Product Folder Links: TPS61085
+                                                                                                                                                                     PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   10-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier       RoHS             Lead finish/               MSL rating/          Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)            Ball material              Peak reflow                                           (6)
+                                                                                                                                          (4)                       (5)
+
+          TPS61085DGKR                Active      Production       VSSOP (DGK) | 8       2500 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   PMKI
+         TPS61085DGKR.B               Active      Production       VSSOP (DGK) | 8       2500 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   PMKI
+          TPS61085DGKT                Active      Production       VSSOP (DGK) | 8        250 | SMALL T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   PMKI
+         TPS61085DGKT.B               Active      Production       VSSOP (DGK) | 8        250 | SMALL T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   PMKI
+         TPS61085DGKTG4               Active      Production       VSSOP (DGK) | 8        250 | SMALL T&R            Yes               NIPDAU            Level-1-260C-UNLIM             -40 to 85                   PMKI
+            TPS61085PW                Active      Production        TSSOP (PW) | 8           150 | TUBE              Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   61085
+           TPS61085PW.B               Active      Production        TSSOP (PW) | 8           150 | TUBE              Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   61085
+          TPS61085PWG4                Active      Production        TSSOP (PW) | 8           150 | TUBE              Yes               NIPDAU            Level-1-260C-UNLIM             -40 to 85                   61085
+           TPS61085PWR                Active      Production        TSSOP (PW) | 8       2000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   61085
+          TPS61085PWR.B               Active      Production        TSSOP (PW) | 8       2000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                   61085
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+
+
+                                                                                                          Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+    www.ti.com                                                                                                                                                                                           10-Nov-2025
+
+
+
+
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 2
+                                                                              PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                   10-Aug-2026
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                     TAPE DIMENSIONS
+                                                                                      K0       P1
+
+
+
+                                                                                                                     B0 W
+                                        Reel
+                                      Diameter
+                                                                                   Cavity           A0
+                                                               A0   Dimension designed to accommodate the component width
+                                                               B0   Dimension designed to accommodate the component length
+                                                               K0   Dimension designed to accommodate the component thickness
+                                                               W    Overall width of the carrier tape
+                                                               P1   Pitch between successive cavity centers
+
+
+                                       Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                    Sprocket Holes
+
+
+                                                 Q1       Q2          Q1    Q2
+
+                                                 Q3       Q4          Q3    Q4                  User Direction of Feed
+
+
+
+                                                           Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins             SPQ        Reel   Reel   A0                 B0         K0     P1     W     Pin1
+                               Type Drawing                             Diameter Width (mm)               (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                          (mm) W1 (mm)
+     TPS61085DGKR             VSSOP     DGK           8        2500        330.0        12.4        5.3    3.4       1.4    8.0    12.0    Q1
+     TPS61085DGKT             VSSOP     DGK           8         250        180.0        12.4        5.3    3.4       1.4    8.0    12.0    Q1
+     TPS61085PWR              TSSOP      PW           8        2000        330.0        12.4        7.0    3.6       1.6    8.0    12.0    Q1
+
+
+
+
+                                                                      Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              10-Aug-2026
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TPS61085DGKR               VSSOP             DGK           8           2500      353.0        353.0         32.0
+     TPS61085DGKT               VSSOP             DGK           8           250       213.0        191.0         35.0
+      TPS61085PWR               TSSOP              PW           8           2000      353.0        353.0         32.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                 PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                   10-Aug-2026
+
+
+
+TUBE
+
+       T - Tube
+        height                                                     L - Tube length
+
+
+                      W - Tube
+                       width
+
+
+         B - Alignment groove width
+
+*All dimensions are nominal
+             Device           Package Name   Package Type   Pins       SPQ     L (mm)   W (mm)   T (µm)   B (mm)
+       TPS61085PW                 PW           TSSOP         8          150     530      10.2    3600      3.5
+      TPS61085PW.B                PW           TSSOP         8          150     530      10.2    3600      3.5
+     TPS61085PWG4                 PW           TSSOP         8          150     530      10.2    3600      3.5
+
+
+
+
+                                                       Pack Materials-Page 3
+                                                                                                            PACKAGE OUTLINE
+PW0008A                                                         SCALE 2.800
+                                                                                                      TSSOP - 1.2 mm max height
+                                                                                                                    SMALL OUTLINE PACKAGE
+
+
+
+
+                                                                                                                             C
+                                        6.6                                                                SEATING PLANE
+                                            TYP
+                                        6.2
+
+           A                                  PIN 1 ID                                                                0.1 C
+                                              AREA
+                                                                                           6X 0.65
+                                                                                8
+                  1
+
+          3.1                                                                           2X
+          2.9
+         NOTE 3                                                                        1.95
+
+                  4
+                                                                                5
+                                                                                           0.30
+                                                                                      8X
+                                                                                           0.19
+                                          4.5                                                                              1.2 MAX
+                      B                                                                     0.1      C A    B
+                                          4.3
+                                        NOTE 4
+
+
+
+
+                                                                                      (0.15) TYP
+                                    SEE DETAIL A
+
+
+
+
+                                                                                      0.25
+                                                                               GAGE PLANE
+
+
+
+
+                                                                                                                   0.75                   0.15
+                                                                                    0 -8                                                  0.05
+                                                                                                                   0.50
+
+                                                                                                                  DETAIL A
+                                                                                                                   TYPICAL
+
+
+                                                                                                                                 4221848/A 02/2015
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+   exceed 0.15 mm per side.
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. Reference JEDEC registration MO-153, variation AA.
+
+
+
+
+                                                                              www.ti.com
+                                                                                EXAMPLE BOARD LAYOUT
+PW0008A                                                                                 TSSOP - 1.2 mm max height
+                                                                                                        SMALL OUTLINE PACKAGE
+
+
+
+
+                                             8X (1.5)
+                        8X (0.45)                                SYMM
+                                                                                                     (R0.05)
+                                         1                                                           TYP
+                                                                                                8
+
+                                                                                                     SYMM
+
+
+                            6X (0.65)
+                                                                                                5
+                                         4
+
+
+                                                                  (5.8)
+
+
+                                                        LAND PATTERN EXAMPLE
+                                                              SCALE:10X
+
+
+
+
+                SOLDER MASK                                               METAL UNDER                   SOLDER MASK
+                                                  METAL                                                 OPENING
+                OPENING                                                   SOLDER MASK
+
+
+
+
+                                        0.05 MAX                                            0.05 MIN
+                                        ALL AROUND                                          ALL AROUND
+
+                             NON SOLDER MASK                                            SOLDER MASK
+                                 DEFINED                                                  DEFINED
+
+                                                        SOLDER MASK DETAILS
+                                                             NOT TO SCALE
+
+
+
+
+                                                                                                               4221848/A 02/2015
+NOTES: (continued)
+
+6. Publication IPC-7351 may have alternate designs.
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+
+
+
+
+                                                                www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+PW0008A                                                                                 TSSOP - 1.2 mm max height
+                                                                                                         SMALL OUTLINE PACKAGE
+
+
+
+
+                                           8X (1.5)
+                                                                 SYMM                                (R0.05) TYP
+                         8X (0.45)
+                                       1
+                                                                                                 8
+
+                                                                                                     SYMM
+
+
+                           6X (0.65)
+                                                                                                 5
+                                       4
+
+                                                                  (5.8)
+
+
+
+                                                      SOLDER PASTE EXAMPLE
+                                                  BASED ON 0.125 mm THICK STENCIL
+                                                             SCALE:10X
+
+
+
+
+                                                                                                                   4221848/A 02/2015
+NOTES: (continued)
+
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations.
+9. Board assembly site may have different recommendations for stencil design.
+
+
+
+
+                                                                 www.ti.com
+                                                                                                        PACKAGE OUTLINE
+DGK0008A                                                 SCALE 4.000
+                                                                                                VSSOP - 1.1 mm max height
+                                                                                                                 SMALL OUTLINE PACKAGE
+
+
+
+
+                                                                                                                   C
+                                          5.05
+                                               TYP
+          A                               4.75
+                                                                                                               0.1 C
+                                               PIN 1 INDEX AREA
+                                                                                                                                      SEATING
+                                                                                                                                      PLANE
+                                                                                         6X 0.65
+                                                                              8
+                1
+
+
+                                                                                            2X
+        3.1
+                                                                                           1.95
+        2.9
+       NOTE 3
+
+
+                4
+                                                                              5                 0.38
+                                                                                           8X
+                                                                                                0.25
+                                            3.1                                                  0.13   C A B
+                     B
+                                            2.9
+                                           NOTE 4
+
+
+
+
+                                                                                         0.23
+                                                                                         0.13
+
+
+
+
+                                          SEE DETAIL A
+                                                                                                   0.25
+                                                                                                   GAGE PLANE
+
+                                                                                                                                        1.1 MAX
+
+
+
+
+                                                                                                         0.7                              0.15
+                                                                                  0 -8                   0.4                              0.05
+                                                                                                                   DETAIL A
+                                                                                                                         A 20
+
+
+
+
+                                                                                                                       TYPICAL
+
+                                                                                                                                4214862/A 04/2023
+                                                                                                PowerPAD is a trademark of Texas Instruments.
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+   exceed 0.15 mm per side.
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. Reference JEDEC registration MO-187.
+
+
+
+
+                                                                       www.ti.com
+                                                                                          EXAMPLE BOARD LAYOUT
+                                                                                             TM
+DGK0008A                                                                                          VSSOP - 1.1 mm max height
+                                                                                                                  SMALL OUTLINE PACKAGE
+
+
+
+
+                                                                            SYMM
+                                        8X (1.4)                                                                    (R0.05) TYP
+
+
+
+                    8X (0.45)    1                                                                          8
+
+
+
+                                                                                                                 SYMM
+
+
+
+                       6X (0.65)
+                                                                                                            5
+                                   4
+
+
+                                                                                                                SEE DETAILS
+
+                                                                            (4.4)
+
+                                                       LAND PATTERN EXAMPLE
+                                                          EXPOSED METAL SHOWN
+                                                               SCALE: 15X
+
+
+
+
+                   SOLDER MASK                                                      METAL UNDER                   SOLDER MASK
+                                                      METAL
+                       OPENING                                                      SOLDER MASK                   OPENING
+
+
+          EXPOSED METAL                                                                                                  EXPOSED METAL
+
+                                        0.05 MAX                                                        0.05 MIN
+                                        ALL AROUND                                                      ALL AROUND
+
+                                NON-SOLDER MASK                                                    SOLDER MASK
+                                    DEFINED                                                          DEFINED
+                                  (PREFERRED)
+                                                           SOLDER MASK DETAILS
+                                                                   15.000
+
+
+
+
+                                                                                                                            4214862/A 04/2023
+NOTES: (continued)
+
+ 6. Publication IPC-7351 may have alternate designs.
+ 7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+ 8. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+    on this view. It is recommended that vias under paste be filled, plugged or tented.
+ 9. Size of metal pad may vary due to creepage requirement.
+
+
+
+
+                                                                             www.ti.com
+                                                                              EXAMPLE STENCIL DESIGN
+                                                                                     TM
+DGK0008A                                                                                  VSSOP - 1.1 mm max height
+                                                                                                         SMALL OUTLINE PACKAGE
+
+
+
+
+                                                                SYMM
+
+                                        8X (1.4)                                                            (R0.05) TYP
+
+
+                     8X (0.45)      1                                                                8
+
+
+
+                                                                                                         SYMM
+
+
+
+                        6X (0.65)
+                                                                                                     5
+                                    4
+
+
+
+
+                                                                 (4.4)
+
+
+
+                                                   SOLDER PASTE EXAMPLE
+                                                              SCALE: 15X
+
+
+
+
+                                                                                                                  4214862/A 04/2023
+NOTES: (continued)
+
+11. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.
+12. Board assembly site may have different recommendations for stencil design.
+
+
+
+
+                                                                 www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2026, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

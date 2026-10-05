@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-05",
+  "source_commit": "636d2b24eb4db775fceeb81206541f249db3b9a5",
+  "scope": "Cost analysis only; not a supplier quote or fabrication approval",
+  "component_prices_evidence_date": "2026-10-04",
+  "finished_components_per_board": 37,
+  "exact_part_identities": 24,
+  "tariff_assumption_percent": 35,
+  "san_francisco_tax_rate_percent": 8.625,
+  "tax_base_assumption": "Goods plus assumed import duty; actual taxable basis/collection to be confirmed",
+  "scenarios": [
+    {
+      "finished_boards": 5,
+      "component_subtotal_usd": "63.2290",
+      "setup_stencil_feeders_placement_packing_usd": "71.4430240",
+      "xray_usd": "8.20",
+      "assembly_minimum_allowance_usd": "2.40",
+      "pcb_finish_attrition_allowance_usd": [
+        30,
+        60
+      ],
+      "optional_process_allowance_usd": [
+        0,
+        25
+      ],
+      "freight_allowance_usd": [
+        25,
+        45
+      ],
+      "estimated_delivered_usd": [
+        282.03,
+        382.68
+      ],
+      "estimated_per_board_usd": [
+        56.41,
+        76.54
+      ]
+    },
+    {
+      "finished_boards": 10,
+      "component_subtotal_usd": "117.7340",
+      "setup_stencil_feeders_placement_packing_usd": "71.4460480",
+      "xray_usd": "16.40",
+      "assembly_minimum_allowance_usd": "4.80",
+      "pcb_finish_attrition_allowance_usd": [
+        40,
+        75
+      ],
+      "optional_process_allowance_usd": [
+        0,
+        25
+      ],
+      "freight_allowance_usd": [
+        30,
+        50
+      ],
+      "estimated_delivered_usd": [
+        397.17,
+        505.15
+      ],
+      "estimated_per_board_usd": [
+        39.72,
+        50.52
+      ]
+    },
+    {
+      "finished_boards": 20,
+      "component_subtotal_usd": "227.0480",
+      "setup_stencil_feeders_placement_packing_usd": "71.4520960",
+      "xray_usd": "16.40",
+      "assembly_minimum_allowance_usd": "9.60",
+      "pcb_finish_attrition_allowance_usd": [
+        55,
+        100
+      ],
+      "optional_process_allowance_usd": [
+        0,
+        25
+      ],
+      "freight_allowance_usd": [
+        35,
+        60
+      ],
+      "estimated_delivered_usd": [
+        591.51,
+        719.16
+      ],
+      "estimated_per_board_usd": [
+        29.58,
+        35.96
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "evidence/R7-order-review/sourcing/C356849.html",
+      "sha256": "80e805e02db30326e95749747538001fc112637248f9237c7af24a18af8d3c17",
+      "source": "https://jlcpcb.com/partdetail/Chengdu_Ebyte_ElecTech-E732G4M08S1C/C356849"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C19725033.html",
+      "sha256": "d7836077cc616188af9f9a77a873db34e4c143495e924572463f1de8cb56e785",
+      "source": "https://jlcpcb.com/partdetail/BQ25185DLHR/C19725033"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C5219772.html",
+      "sha256": "43b11d08dc7a7641a848080cd21bea352d8e981a98f5a99d94cfe893f7cce495",
+      "source": "https://jlcpcb.com/partdetail/TMP390A2DRLR/C5219772"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C485802.html",
+      "sha256": "497af01fcb583b85e9e588976181cbd7a8d67261328c5b7ab79e6f0ca42142b8",
+      "source": "https://jlcpcb.com/partdetail/TPS3839G33DBZR/C485802"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C22809.html",
+      "sha256": "70908bf9d49468bea96ffe776d767b140dd3ba1e1f0e1806ca64af909b9b7a42",
+      "source": "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C22795.html",
+      "sha256": "61eceab4bf8194adc0d287ce9ab840841105e08e78f8830d0e86051aa930ee1e",
+      "source": "https://jlcpcb.com/partdetail/0603WAF1303T5E/C22795"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C25804.html",
+      "sha256": "56d00b29bb830d0cc7ffa497a4cb2c2596681f43ebe9b77811161f15bf58e51c",
+      "source": "https://jlcpcb.com/partdetail/0603WAF1002T5E/C25804"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C22844.html",
+      "sha256": "752fba8a87827d4576543b0f2b25204be4812c20bee61dc46b5f82c89ace26aa",
+      "source": "https://jlcpcb.com/partdetail/0603WAF1621T5E/C22844"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C22893.html",
+      "sha256": "3263ea43cf37152fba4aae90c50fa0a6bf964102915d30a531fe024ca7bc9679",
+      "source": "https://jlcpcb.com/partdetail/0603WAF1872T5E/C22893"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C15850.html",
+      "sha256": "e2ead44fe5e2b27abbe243cd44765326bdad161a5736b4cc52d374efd1b31005",
+      "source": "https://jlcpcb.com/partdetail/CL21A106KAYNNNE/C15850"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C282505.html",
+      "sha256": "cfc54af4553a8adfa2b2ed5de02c7a8d831cfeadab97a5accd869bdf77ac7526",
+      "source": "https://jlcpcb.com/partdetail/TCC0603COG470J500CT/C282505"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C3747031.html",
+      "sha256": "a4b346bd2b7ee7e8ffa9b863761dbc6913a95b1cf881d34c2834a330d38f2250",
+      "source": "https://jlcpcb.com/partdetail/TexasInstruments-TPS7A0230PDBVR/C3747031"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C37616412.html",
+      "sha256": "e6e7be0b3c84061e9f347baf570575f53f736f69a831a0c86f66bbbb3c98f46b",
+      "source": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C295747.html",
+      "sha256": "0a602124fa34ea2925a271ffdc8be6f3f7fa590eadb51ece8f58cd3dffed3bbd",
+      "source": "https://jlcpcb.com/partdetail/JST-S2B_PH_SM4_TB_LF_SN/C295747"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C160392.html",
+      "sha256": "29fe058e4c0665076b459a5b27792cc4bc313d1102ed31261cfb0cba72751ba1",
+      "source": "https://jlcpcb.com/partdetail/JST-BM06B_SRSS_TB_LF_SN/C160392"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C431540.html",
+      "sha256": "daaf91c42b848b614166876f1ca7ce6388d4a0615511930e2327afa6bf18837c",
+      "source": "https://jlcpcb.com/partdetail/MSK12C02/C431540"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C720477.html",
+      "sha256": "bc17a1aa7b0aa97f7e1ef1ad982de3d4da956474fe8a130506abf91e7559c8ab",
+      "source": "https://jlcpcb.com/partdetail/SHOUHAN-TS_1088_AR02016/C720477"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C8545.html",
+      "sha256": "64de5f7d64ea8621e3d299f148d44ee5456c012563b403e51787a35d23c7d213",
+      "source": "https://jlcpcb.com/partdetail/JiangsuChangjingElectronicsTechnologyCoLtd-2N7002/C8545"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C23186.html",
+      "sha256": "9061b6a75ed5c57ed94cde09748bc14e7b025c875ba8b5279e61c207247c3b83",
+      "source": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF5101T5E/C23186"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C21190.html",
+      "sha256": "12525b9b3b1ff3751d0c3c546c6150058c2178208d6053ba177d9a47b4fc5add",
+      "source": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1001T5E/C21190"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C25803.html",
+      "sha256": "1f068c3cc1444ed10f5a78f27d62e4f2b5f276743491733f49a63c5ab59137de",
+      "source": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1003T5E/C25803"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C19666.html",
+      "sha256": "b436287bc4331ce425d65abf286b21f58238476601843515553b8a8f24df00eb",
+      "source": "https://jlcpcb.com/partdetail/Samsung-CL10A475KO8NNNC/C19666"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C14663.html",
+      "sha256": "8242f50b543e8214f66526ee44e642638de5a105a649f2f538e0b91f880812c3",
+      "source": "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "path": "evidence/R7-order-review/sourcing/C2286.html",
+      "sha256": "853a70fe11efdf54388ea8f04d00f685daa2afe534a000c980a3ce635f949053",
+      "source": "https://jlcpcb.com/partdetail/HubeiKENTOElec-KT_0603R/C2286"
+    }
+  ]
+}

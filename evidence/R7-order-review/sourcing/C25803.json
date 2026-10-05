@@ -1,0 +1,31 @@
+{
+  "lcsc": "C25803",
+  "mpn": "0603WAF1003T5E",
+  "references": [
+    "R5",
+    "R6",
+    "R12",
+    "R13"
+  ],
+  "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1003T5E/C25803",
+  "listing_sha256": "1f068c3cc1444ed10f5a78f27d62e4f2b5f276743491733f49a63c5ab59137de",
+  "checked_at_utc": "2026-10-04T21:21:35.607653+00:00",
+  "quantity_for_five_finished_boards": 20,
+  "stock_fields": {
+    "canPresaleNumber": 20164716,
+    "overseasStockCount": 22078786,
+    "preMinPurchaseNum": 3760
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

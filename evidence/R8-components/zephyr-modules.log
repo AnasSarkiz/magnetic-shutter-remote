@@ -1,0 +1,16 @@
+=== updating hal_espressif (modules/hal/espressif):
+--- hal_espressif: initializing
+Initialized empty Git repository in /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif/.git/
+--- hal_espressif: fetching, need revision f3453bdeced28642424692aae32cce4eec3f2d7f
+From https://github.com/zephyrproject-rtos/hal_espressif
+ * branch                f3453bdeced28642424692aae32cce4eec3f2d7f -> FETCH_HEAD
+HEAD is now at f3453bdec wifi: fix internal malloc wrappers reference
+HEAD is now at f3453bdec wifi: fix internal malloc wrappers reference
+=== updating mbedtls (modules/crypto/mbedtls):
+--- mbedtls: initializing
+Initialized empty Git repository in /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/crypto/mbedtls/.git/
+--- mbedtls: fetching, need revision 85440ef5fffa95d0e9971e9163719189cf34d979
+From https://github.com/zephyrproject-rtos/mbedtls
+ * branch                85440ef5fffa95d0e9971e9163719189cf34d979 -> FETCH_HEAD
+HEAD is now at 85440ef5f Merge pull request #74 from ceolin/v3.6.4
+HEAD is now at 85440ef5f Merge pull request #74 from ceolin/v3.6.4

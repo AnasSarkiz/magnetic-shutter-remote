@@ -1,0 +1,48 @@
+{
+  "status": "PASS \u2014 FIVE-APERTURE IMPORT/CAM FIXTURE ONLY",
+  "scope": "Paste fidelity, not driver qualification, routing or fabrication approval",
+  "apertures": 5,
+  "duplicates_or_overlaps": 0,
+  "source_to_circuit_max_contour_mm": 9.767462407179569e-05,
+  "circuit_to_gerber_max_contour_mm": 6.400707352877591e-07,
+  "source_reader_sagitta_mm": 1e-06,
+  "importer_chord_limit_mm": 0.0001,
+  "cam_serialization_limit_mm": 2e-06,
+  "hashes": {
+    "evidence/R7-components/C347356.raweasy.json": "33cc61bc41b768c0c0c11450862cecbe02cb022b4b3c4f5647e23e2f9a2f456d",
+    "dist/fixtures/r7/pt4115-import/circuit.json": "9663382efb24aca2210c38738352d0e7de016a46015acc5c8e3ccdd3b2614795",
+    "evidence/R7-components/PT4115-fixture-CAM.zip": "15e2d8afdff0b6e2d62a6eee26fc9907e2d8c344b38daf66094e6f7a43040560"
+  },
+  "rows": [
+    {
+      "source_aperture": 0,
+      "source_area_mm2": 0.8609820780324466,
+      "imported_area_mm2": 0.8609820780322761,
+      "source_to_circuit_mm": 1.1368683772161603e-13
+    },
+    {
+      "source_aperture": 1,
+      "source_area_mm2": 0.8609820780326172,
+      "imported_area_mm2": 0.8609820780324466,
+      "source_to_circuit_mm": 1.1368683772161603e-13
+    },
+    {
+      "source_aperture": 2,
+      "source_area_mm2": 0.8609820780323814,
+      "imported_area_mm2": 0.8609820780322761,
+      "source_to_circuit_mm": 1.1368683772161603e-13
+    },
+    {
+      "source_aperture": 3,
+      "source_area_mm2": 0.8609820780325519,
+      "imported_area_mm2": 0.8609820780324466,
+      "source_to_circuit_mm": 1.1368683772161603e-13
+    },
+    {
+      "source_aperture": 4,
+      "source_area_mm2": 5.709345467488815,
+      "imported_area_mm2": 5.7090620017195945,
+      "source_to_circuit_mm": 9.767462407179569e-05
+    }
+  ]
+}

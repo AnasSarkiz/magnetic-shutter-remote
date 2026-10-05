@@ -1,0 +1,28 @@
+{
+  "lcsc": "C431540",
+  "mpn": "MSK12C02",
+  "references": [
+    "SW1"
+  ],
+  "url": "https://jlcpcb.com/partdetail/MSK12C02/C431540",
+  "listing_sha256": "daaf91c42b848b614166876f1ca7ce6388d4a0615511930e2327afa6bf18837c",
+  "checked_at_utc": "2026-10-04T21:21:34.574258+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 186735,
+    "overseasStockCount": 192876,
+    "preMinPurchaseNum": 196
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

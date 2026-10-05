@@ -1,0 +1,1374 @@
+{
+  "coverage": 37,
+  "registration": [
+    {
+      "ref": "J1",
+      "authored": {
+        "ref": "J1",
+        "x_mm": 0,
+        "y_mm": 23.9852,
+        "ccw_rotation_degrees": 180,
+        "rotation_explicit": true,
+        "line": 130
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": 24.5101989
+      },
+      "circuit_ccw_rotation_degrees": 180,
+      "cpl": {
+        "Designator": "J1",
+        "Mid X": "0.000",
+        "Mid Y": "24.510",
+        "Layer": "top",
+        "Rotation": "180"
+      },
+      "drawing": {
+        "ref": "J1",
+        "mpn": "USB4215-03-A",
+        "lcsc": "C37616412",
+        "x_mm": 0.0,
+        "y_mm": 24.51,
+        "ccw_rotation_degrees": 180.0
+      },
+      "supplier_frame": "exact supplier terminal registration",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0.5249988999999999
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R1",
+      "authored": {
+        "ref": "R1",
+        "x_mm": -4,
+        "y_mm": 19,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 152
+      },
+      "circuit_centroid_mm": {
+        "x": -4,
+        "y": 19
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R1",
+        "Mid X": "-4.000",
+        "Mid Y": "19.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R1",
+        "mpn": "0603WAF5101T5E",
+        "lcsc": "C23186",
+        "x_mm": -4.0,
+        "y_mm": 19.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R2",
+      "authored": {
+        "ref": "R2",
+        "x_mm": 0,
+        "y_mm": 19,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 161
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": 19
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R2",
+        "Mid X": "0.000",
+        "Mid Y": "19.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R2",
+        "mpn": "0603WAF5101T5E",
+        "lcsc": "C23186",
+        "x_mm": 0.0,
+        "y_mm": 19.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "U2",
+      "authored": {
+        "ref": "U2",
+        "x_mm": 0,
+        "y_mm": 13,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 176
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": 13
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "U2",
+        "Mid X": "0.000",
+        "Mid Y": "13.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "U2",
+        "mpn": "BQ25185DLHR",
+        "lcsc": "C19725033",
+        "x_mm": 0.0,
+        "y_mm": 13.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "bottomside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R3",
+      "authored": {
+        "ref": "R3",
+        "x_mm": 5.5,
+        "y_mm": 9,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 228
+      },
+      "circuit_centroid_mm": {
+        "x": 5.5,
+        "y": 9
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R3",
+        "Mid X": "5.500",
+        "Mid Y": "9.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R3",
+        "mpn": "0603WAF1502T5E",
+        "lcsc": "C22809",
+        "x_mm": 5.5,
+        "y_mm": 9.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C1",
+      "authored": {
+        "ref": "C1",
+        "x_mm": 8,
+        "y_mm": 20,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 237
+      },
+      "circuit_centroid_mm": {
+        "x": 8,
+        "y": 20
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C1",
+        "Mid X": "8.000",
+        "Mid Y": "20.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C1",
+        "mpn": "CL10A475KO8NNNC",
+        "lcsc": "C19666",
+        "x_mm": 8.0,
+        "y_mm": 20.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C2",
+      "authored": {
+        "ref": "C2",
+        "x_mm": 4.5,
+        "y_mm": 11.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 252
+      },
+      "circuit_centroid_mm": {
+        "x": 4.5,
+        "y": 11.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C2",
+        "Mid X": "4.500",
+        "Mid Y": "11.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C2",
+        "mpn": "CL10A475KO8NNNC",
+        "lcsc": "C19666",
+        "x_mm": 4.5,
+        "y_mm": 11.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R4",
+      "authored": {
+        "ref": "R4",
+        "x_mm": 8,
+        "y_mm": 23,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 262
+      },
+      "circuit_centroid_mm": {
+        "x": 8,
+        "y": 23
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R4",
+        "Mid X": "8.000",
+        "Mid Y": "23.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R4",
+        "mpn": "0603WAF1001T5E",
+        "lcsc": "C21190",
+        "x_mm": 8.0,
+        "y_mm": 23.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "LED1",
+      "authored": {
+        "ref": "LED1",
+        "x_mm": 8,
+        "y_mm": 26,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 271
+      },
+      "circuit_centroid_mm": {
+        "x": 8,
+        "y": 26
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "LED1",
+        "Mid X": "8.000",
+        "Mid Y": "26.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "LED1",
+        "mpn": "KT-0603R",
+        "lcsc": "C2286",
+        "x_mm": 8.0,
+        "y_mm": 26.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "bottomside_right",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "J2",
+      "authored": {
+        "ref": "J2",
+        "x_mm": -13.5,
+        "y_mm": 12,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 282
+      },
+      "circuit_centroid_mm": {
+        "x": -13.5,
+        "y": 12
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "J2",
+        "Mid X": "-13.500",
+        "Mid Y": "12.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "J2",
+        "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+        "lcsc": "C295747",
+        "x_mm": -13.5,
+        "y_mm": 12.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R8",
+      "authored": {
+        "ref": "R8",
+        "x_mm": -5,
+        "y_mm": 16,
+        "ccw_rotation_degrees": 180,
+        "rotation_explicit": true,
+        "line": 296
+      },
+      "circuit_centroid_mm": {
+        "x": -5,
+        "y": 16
+      },
+      "circuit_ccw_rotation_degrees": 180,
+      "cpl": {
+        "Designator": "R8",
+        "Mid X": "-5.000",
+        "Mid Y": "16.000",
+        "Layer": "top",
+        "Rotation": "180"
+      },
+      "drawing": {
+        "ref": "R8",
+        "mpn": "0603WAF1303T5E",
+        "lcsc": "C22795",
+        "x_mm": -5.0,
+        "y_mm": 16.0,
+        "ccw_rotation_degrees": 180.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R9",
+      "authored": {
+        "ref": "R9",
+        "x_mm": 1,
+        "y_mm": 17,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 306
+      },
+      "circuit_centroid_mm": {
+        "x": 1,
+        "y": 17
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R9",
+        "Mid X": "1.000",
+        "Mid Y": "17.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R9",
+        "mpn": "0603WAF1002T5E",
+        "lcsc": "C25804",
+        "x_mm": 1.0,
+        "y_mm": 17.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C8",
+      "authored": {
+        "ref": "C8",
+        "x_mm": 5,
+        "y_mm": 17.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 315
+      },
+      "circuit_centroid_mm": {
+        "x": 5,
+        "y": 17.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C8",
+        "Mid X": "5.000",
+        "Mid Y": "17.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C8",
+        "mpn": "CL21A106KAYNNNE",
+        "lcsc": "C15850",
+        "x_mm": 5.0,
+        "y_mm": 17.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C9",
+      "authored": {
+        "ref": "C9",
+        "x_mm": -5,
+        "y_mm": 11,
+        "ccw_rotation_degrees": 180,
+        "rotation_explicit": true,
+        "line": 325
+      },
+      "circuit_centroid_mm": {
+        "x": -5,
+        "y": 11
+      },
+      "circuit_ccw_rotation_degrees": 180,
+      "cpl": {
+        "Designator": "C9",
+        "Mid X": "-5.000",
+        "Mid Y": "11.000",
+        "Layer": "top",
+        "Rotation": "180"
+      },
+      "drawing": {
+        "ref": "C9",
+        "mpn": "TCC0603COG470J500CT",
+        "lcsc": "C282505",
+        "x_mm": -5.0,
+        "y_mm": 11.0,
+        "ccw_rotation_degrees": 180.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "U1",
+      "authored": {
+        "ref": "U1",
+        "x_mm": 0,
+        "y_mm": -16,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 348
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": -14.91448655
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "U1",
+        "Mid X": "0.000",
+        "Mid Y": "-14.914",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "U1",
+        "mpn": "E73-2G4M08S1C",
+        "lcsc": "C356849",
+        "x_mm": 0.0,
+        "y_mm": -14.914,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 1.0855134500000005
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C5",
+      "authored": {
+        "ref": "C5",
+        "x_mm": 0,
+        "y_mm": -4.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 369
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": -4.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C5",
+        "Mid X": "0.000",
+        "Mid Y": "-4.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C5",
+        "mpn": "CC0603KRX7R9BB104",
+        "lcsc": "C14663",
+        "x_mm": 0.0,
+        "y_mm": -4.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "SW2",
+      "authored": {
+        "ref": "SW2",
+        "x_mm": -13.5,
+        "y_mm": -7,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 378
+      },
+      "circuit_centroid_mm": {
+        "x": -13.5,
+        "y": -7
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "SW2",
+        "Mid X": "-13.500",
+        "Mid Y": "-7.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "SW2",
+        "mpn": "TS-1088-AR02016",
+        "lcsc": "C720477",
+        "x_mm": -13.5,
+        "y_mm": -7.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "SW3",
+      "authored": {
+        "ref": "SW3",
+        "x_mm": 13.5,
+        "y_mm": -4,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 387
+      },
+      "circuit_centroid_mm": {
+        "x": 13.5,
+        "y": -4
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "SW3",
+        "Mid X": "13.500",
+        "Mid Y": "-4.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "SW3",
+        "mpn": "TS-1088-AR02016",
+        "lcsc": "C720477",
+        "x_mm": 13.5,
+        "y_mm": -4.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R7",
+      "authored": {
+        "ref": "R7",
+        "x_mm": 7,
+        "y_mm": -3,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 396
+      },
+      "circuit_centroid_mm": {
+        "x": 7,
+        "y": -3
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R7",
+        "Mid X": "7.000",
+        "Mid Y": "-3.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R7",
+        "mpn": "0603WAF1001T5E",
+        "lcsc": "C21190",
+        "x_mm": 7.0,
+        "y_mm": -3.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "LED2",
+      "authored": {
+        "ref": "LED2",
+        "x_mm": 10,
+        "y_mm": 0,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 404
+      },
+      "circuit_centroid_mm": {
+        "x": 10,
+        "y": 0
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "LED2",
+        "Mid X": "10.000",
+        "Mid Y": "0.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "LED2",
+        "mpn": "KT-0603R",
+        "lcsc": "C2286",
+        "x_mm": 10.0,
+        "y_mm": 0.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "bottomside_right",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "J3",
+      "authored": {
+        "ref": "J3",
+        "x_mm": 13.2,
+        "y_mm": 16,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 413
+      },
+      "circuit_centroid_mm": {
+        "x": 13.200000000000001,
+        "y": 16
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "J3",
+        "Mid X": "13.200",
+        "Mid Y": "16.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "J3",
+        "mpn": "BM06B-SRSS-TB(LF)(SN)",
+        "lcsc": "C160392",
+        "x_mm": 13.2,
+        "y_mm": 16.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_right",
+      "anchor_to_centroid_mm": {
+        "x": 1.7763568394002505e-15,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "SW1",
+      "authored": {
+        "ref": "SW1",
+        "x_mm": 15,
+        "y_mm": 5,
+        "ccw_rotation_degrees": 90,
+        "rotation_explicit": true,
+        "line": 438
+      },
+      "circuit_centroid_mm": {
+        "x": 15,
+        "y": 5
+      },
+      "circuit_ccw_rotation_degrees": 90,
+      "cpl": {
+        "Designator": "SW1",
+        "Mid X": "15.000",
+        "Mid Y": "5.000",
+        "Layer": "top",
+        "Rotation": "90"
+      },
+      "drawing": {
+        "ref": "SW1",
+        "mpn": "MSK12C02",
+        "lcsc": "C431540",
+        "x_mm": 15.0,
+        "y_mm": 5.0,
+        "ccw_rotation_degrees": 90.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R5",
+      "authored": {
+        "ref": "R5",
+        "x_mm": 4,
+        "y_mm": 3,
+        "ccw_rotation_degrees": 180,
+        "rotation_explicit": true,
+        "line": 452
+      },
+      "circuit_centroid_mm": {
+        "x": 4,
+        "y": 3
+      },
+      "circuit_ccw_rotation_degrees": 180,
+      "cpl": {
+        "Designator": "R5",
+        "Mid X": "4.000",
+        "Mid Y": "3.000",
+        "Layer": "top",
+        "Rotation": "180"
+      },
+      "drawing": {
+        "ref": "R5",
+        "mpn": "0603WAF1003T5E",
+        "lcsc": "C25803",
+        "x_mm": 4.0,
+        "y_mm": 3.0,
+        "ccw_rotation_degrees": 180.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "Q1",
+      "authored": {
+        "ref": "Q1",
+        "x_mm": -6,
+        "y_mm": 3.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 461
+      },
+      "circuit_centroid_mm": {
+        "x": -6,
+        "y": 3.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "Q1",
+        "Mid X": "-6.000",
+        "Mid Y": "3.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "Q1",
+        "mpn": "2N7002",
+        "lcsc": "C8545",
+        "x_mm": -6.0,
+        "y_mm": 3.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R6",
+      "authored": {
+        "ref": "R6",
+        "x_mm": -6,
+        "y_mm": 8,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 481
+      },
+      "circuit_centroid_mm": {
+        "x": -6,
+        "y": 8
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R6",
+        "Mid X": "-6.000",
+        "Mid Y": "8.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R6",
+        "mpn": "0603WAF1003T5E",
+        "lcsc": "C25803",
+        "x_mm": -6.0,
+        "y_mm": 8.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "U3",
+      "authored": {
+        "ref": "U3",
+        "x_mm": -5,
+        "y_mm": 0,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 496
+      },
+      "circuit_centroid_mm": {
+        "x": -5,
+        "y": 0
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "U3",
+        "Mid X": "-5.000",
+        "Mid Y": "0.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "U3",
+        "mpn": "TPS7A0230PDBVR",
+        "lcsc": "C3747031",
+        "x_mm": -5.0,
+        "y_mm": 0.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C3",
+      "authored": {
+        "ref": "C3",
+        "x_mm": -0.5,
+        "y_mm": 2,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 522
+      },
+      "circuit_centroid_mm": {
+        "x": -0.49999999999999994,
+        "y": 2
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C3",
+        "Mid X": "-0.500",
+        "Mid Y": "2.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C3",
+        "mpn": "CL10A475KO8NNNC",
+        "lcsc": "C19666",
+        "x_mm": -0.5,
+        "y_mm": 2.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 5.551115123125783e-17,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C4",
+      "authored": {
+        "ref": "C4",
+        "x_mm": -5,
+        "y_mm": -4,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 531
+      },
+      "circuit_centroid_mm": {
+        "x": -5,
+        "y": -4
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C4",
+        "Mid X": "-5.000",
+        "Mid Y": "-4.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C4",
+        "mpn": "CL10A475KO8NNNC",
+        "lcsc": "C19666",
+        "x_mm": -5.0,
+        "y_mm": -4.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "U4",
+      "authored": {
+        "ref": "U4",
+        "x_mm": -9.5,
+        "y_mm": -1,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 541
+      },
+      "circuit_centroid_mm": {
+        "x": -9.5,
+        "y": -1
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "U4",
+        "Mid X": "-9.500",
+        "Mid Y": "-1.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "U4",
+        "mpn": "TPS3839G33DBZR",
+        "lcsc": "C485802",
+        "x_mm": -9.5,
+        "y_mm": -1.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C6",
+      "authored": {
+        "ref": "C6",
+        "x_mm": -13,
+        "y_mm": 2,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 553
+      },
+      "circuit_centroid_mm": {
+        "x": -13,
+        "y": 2
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C6",
+        "Mid X": "-13.000",
+        "Mid Y": "2.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C6",
+        "mpn": "CC0603KRX7R9BB104",
+        "lcsc": "C14663",
+        "x_mm": -13.0,
+        "y_mm": 2.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "U5",
+      "authored": {
+        "ref": "U5",
+        "x_mm": 0,
+        "y_mm": 6,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 568
+      },
+      "circuit_centroid_mm": {
+        "x": 0,
+        "y": 6
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "U5",
+        "Mid X": "0.000",
+        "Mid Y": "6.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "U5",
+        "mpn": "TMP390A2DRLR",
+        "lcsc": "C5219772",
+        "x_mm": 0.0,
+        "y_mm": 6.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R10",
+      "authored": {
+        "ref": "R10",
+        "x_mm": -5.5,
+        "y_mm": 6,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 591
+      },
+      "circuit_centroid_mm": {
+        "x": -5.5,
+        "y": 6
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R10",
+        "Mid X": "-5.500",
+        "Mid Y": "6.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R10",
+        "mpn": "0603WAF1621T5E",
+        "lcsc": "C22844",
+        "x_mm": -5.5,
+        "y_mm": 6.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R11",
+      "authored": {
+        "ref": "R11",
+        "x_mm": 4.5,
+        "y_mm": 5.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 602
+      },
+      "circuit_centroid_mm": {
+        "x": 4.5,
+        "y": 5.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R11",
+        "Mid X": "4.500",
+        "Mid Y": "5.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R11",
+        "mpn": "0603WAF1872T5E",
+        "lcsc": "C22893",
+        "x_mm": 4.5,
+        "y_mm": 5.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "C7",
+      "authored": {
+        "ref": "C7",
+        "x_mm": 1.5,
+        "y_mm": 8.5,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 618
+      },
+      "circuit_centroid_mm": {
+        "x": 1.5,
+        "y": 8.5
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "C7",
+        "Mid X": "1.500",
+        "Mid Y": "8.500",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "C7",
+        "mpn": "CC0603KRX7R9BB104",
+        "lcsc": "C14663",
+        "x_mm": 1.5,
+        "y_mm": 8.5,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R12",
+      "authored": {
+        "ref": "R12",
+        "x_mm": 9.5,
+        "y_mm": 10,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 629
+      },
+      "circuit_centroid_mm": {
+        "x": 9.5,
+        "y": 10
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "R12",
+        "Mid X": "9.500",
+        "Mid Y": "10.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "R12",
+        "mpn": "0603WAF1003T5E",
+        "lcsc": "C25803",
+        "x_mm": 9.5,
+        "y_mm": 10.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0.0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "R13",
+      "authored": {
+        "ref": "R13",
+        "x_mm": 8,
+        "y_mm": 12,
+        "ccw_rotation_degrees": 180,
+        "rotation_explicit": true,
+        "line": 639
+      },
+      "circuit_centroid_mm": {
+        "x": 8,
+        "y": 12
+      },
+      "circuit_ccw_rotation_degrees": 180,
+      "cpl": {
+        "Designator": "R13",
+        "Mid X": "8.000",
+        "Mid Y": "12.000",
+        "Layer": "top",
+        "Rotation": "180"
+      },
+      "drawing": {
+        "ref": "R13",
+        "mpn": "0603WAF1003T5E",
+        "lcsc": "C25803",
+        "x_mm": 8.0,
+        "y_mm": 12.0,
+        "ccw_rotation_degrees": 180.0
+      },
+      "supplier_frame": "topside_left",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    },
+    {
+      "ref": "Q2",
+      "authored": {
+        "ref": "Q2",
+        "x_mm": 8,
+        "y_mm": 6,
+        "ccw_rotation_degrees": 0,
+        "rotation_explicit": false,
+        "line": 650
+      },
+      "circuit_centroid_mm": {
+        "x": 8,
+        "y": 6
+      },
+      "circuit_ccw_rotation_degrees": 0,
+      "cpl": {
+        "Designator": "Q2",
+        "Mid X": "8.000",
+        "Mid Y": "6.000",
+        "Layer": "top",
+        "Rotation": "0"
+      },
+      "drawing": {
+        "ref": "Q2",
+        "mpn": "2N7002",
+        "lcsc": "C8545",
+        "x_mm": 8.0,
+        "y_mm": 6.0,
+        "ccw_rotation_degrees": 0.0
+      },
+      "supplier_frame": "rightside_bottom",
+      "anchor_to_centroid_mm": {
+        "x": 0,
+        "y": 0
+      },
+      "status": "PASS \u2014 AUTHORITATIVELY VERIFIED"
+    }
+  ]
+}

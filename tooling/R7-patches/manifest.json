@@ -1,0 +1,107 @@
+{
+  "sources": [
+    {
+      "tool": "easyeda",
+      "base_archive": "evidence/USB4215-import-audit/source-bases/easyeda-converter-fixed.tar.gz",
+      "base_sha256": "e5d22a045742b33cf7aa95573da59d58558494f7528f5ab1e30c02612e4d5a17",
+      "patch": "tooling/R7-patches/easyeda.patch",
+      "changed_files": [
+        {
+          "path": "lib/convert-easyeda-json-to-tscircuit-soup-json.ts",
+          "before_sha256": "536f3e116a23c078e0d5250d1a66e733be04ca86280de974dc7c7ab0afec81eb",
+          "after_sha256": "f5d4ea38e8248726c81e85366c221c3bb06194c260cdf046709f537e88bde03b"
+        },
+        {
+          "path": "lib/utils/closed-paste-path-to-points.ts",
+          "before_sha256": null,
+          "after_sha256": "bc49b2713ee983d4246fa7d27b35b8b91eb9dbde0beaa26d2272d4e00bc6d209"
+        },
+        {
+          "path": "tests/circular-paste-path.test.ts",
+          "before_sha256": null,
+          "after_sha256": "fab149e4f16613160e2e2888d1a52bda941bdd4bcf0086e84227fd1baadc8a71"
+        },
+        {
+          "path": "package.json",
+          "before_sha256": "25779a4d4fe9b20e3aa86b036bef58264fac25495f4b9da4d38742d43ac5c16c",
+          "after_sha256": "10322858376ee45a1e4e5e386db3a9cda55b6b552979cd91f29244fbe13dab11"
+        },
+        {
+          "path": "bun.lock",
+          "before_sha256": "34cba2b0d44e2007a6e7bc010f1ab53d986500cf2cb04f61eb839716e3c689c1",
+          "after_sha256": "2f449e3f4df9fdf6c0fa824d7a734e13e733976aad675b5e5c6724dba31e1d6b"
+        }
+      ]
+    },
+    {
+      "tool": "core",
+      "base_archive": "evidence/USB4215-import-audit/source-bases/core-fixed.tar.gz",
+      "base_sha256": "6acf7bc8a373d271a6ce04c0819c3be3884b630708abe2875c5e58bc102cbcfc",
+      "patch": "tooling/R7-patches/core.patch",
+      "changed_files": [
+        {
+          "path": "lib/components/primitive-components/SmtPad.ts",
+          "before_sha256": "075f383816927085b12d3e48ef9200af98dcc01c7fe1f15f2cea4d08e2b0d718",
+          "after_sha256": "41493fbffa321133081b9f09dedc3a06c41a15bb5b94b20bb0f4bd3f8620c6a9"
+        },
+        {
+          "path": "tests/repros/r7/mixed-pad-bounds-convention.test.tsx",
+          "before_sha256": null,
+          "after_sha256": "6d4fdd949fd781b98465b1118a513a49972aeb370c0ae86b2df3a3a02756bf49"
+        },
+        {
+          "path": "tests/repros/r7/separated-mixed-ground-pads.test.tsx",
+          "before_sha256": null,
+          "after_sha256": "5d5006d6d4f2f52ef7f485c49dbc72b386ea68df56846249b322623426ef3742"
+        },
+        {
+          "path": "tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx",
+          "before_sha256": null,
+          "after_sha256": "ff1b24bccaee9d5520b819c9366c4bba63d012a7f4e02c9562ca3349652cafd6"
+        },
+        {
+          "path": "package.json",
+          "before_sha256": "5af661998f1e438b5fb6967719abbf852e682051523ec933b13b9bf22a4d4c79",
+          "after_sha256": "e8306a3539674a8d4cc41311672a416c02a701af43f1bcb80f44796ee27b06f0"
+        },
+        {
+          "path": "bun.lock",
+          "before_sha256": "131b3d7dbfb5b7214fa2b14073fc6345a893f51cbbfe33de3c0c966f8457bc08",
+          "after_sha256": "e7253fb22120caa230eed7ff02ab17f0aba042ef865152153f7bdf6dfe920c22"
+        }
+      ]
+    },
+    {
+      "tool": "cli",
+      "base_archive": "tooling/source-archives/cli-R6-source.tar.gz",
+      "base_sha256": "dcacbf2717ed9d0ec919f19fd6501464fb967883de57200316c3295e4194f16e",
+      "patch": "tooling/R7-patches/cli.patch",
+      "changed_files": [
+        {
+          "path": "package.json",
+          "before_sha256": "3f90969f1b02d82b51328f0aa0ee3d72c80b054b7f99de5f2c0dcfe995ad16a8",
+          "after_sha256": "00cec9acbadce968a8ccc0534f3a4cc5f67bd98b45030cd5f44dd07ee353a0c5"
+        },
+        {
+          "path": "bun.lock",
+          "before_sha256": "deb35f65d6748bdf0cb7c7ae6b29d712b7bcd9d5c5ed347d90a3f12f34b456d6",
+          "after_sha256": "9dde6b72e3db52d75a22fe40226a1085364d0e975e4175aaa6da398013bc5489"
+        }
+      ]
+    }
+  ],
+  "runtime_archives": [
+    {
+      "path": "tooling/vendor/core-r7-smtpad-bounds.tgz",
+      "sha256": "0a2fe46c3e4857a93aded48f72ca0a1acfc63fd7aead59ecc4d482d1b3b34afd"
+    },
+    {
+      "path": "tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+      "sha256": "4199c36bced646224cd642addad95fa125a84c651bdcbecbe0e7460663e60b01"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+      "sha256": "b8bdbdc2a2aed5fb1fef173f3d7e57307255f4fca89de02caf822ee51e46842f"
+    }
+  ]
+}

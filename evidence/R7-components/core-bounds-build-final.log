@@ -1,0 +1,12 @@
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+ESM dist/index.js 4.04 MB
+ESM ⚡️ Build success in 1122ms
+DTS Build start
+DTS ⚡️ Build success in 55978ms
+DTS dist/index.d.ts 9.46 MB

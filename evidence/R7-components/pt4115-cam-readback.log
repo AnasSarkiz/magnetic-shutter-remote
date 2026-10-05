@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/scripts/review-r3-exports.py", line 244, in <module>
+    result = inspect_exports(ExportReviewPaths(args.archive, args.circuit, args.output_directory))
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/scripts/review-r3-exports.py", line 162, in inspect_exports
+    raise ValueError("Cannot validate fabrication from an erroneous or unrouted circuit")
+ValueError: Cannot validate fabrication from an erroneous or unrouted circuit

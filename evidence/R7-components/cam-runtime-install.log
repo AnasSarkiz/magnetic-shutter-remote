@@ -1,0 +1,111 @@
+Collecting aiofiles==25.1.0 (from -r tooling/gerber-review-requirements.txt (line 1))
+  Downloading aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting blinker==1.9.0 (from -r tooling/gerber-review-requirements.txt (line 2))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click==8.5.0 (from -r tooling/gerber-review-requirements.txt (line 3))
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting Flask==3.1.3 (from -r tooling/gerber-review-requirements.txt (line 4))
+  Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting gerbonara==1.5.0 (from -r tooling/gerber-review-requirements.txt (line 5))
+  Downloading gerbonara-1.5.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting h11==0.16.0 (from -r tooling/gerber-review-requirements.txt (line 6))
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting h2==4.4.1 (from -r tooling/gerber-review-requirements.txt (line 7))
+  Downloading h2-4.4.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting hpack==4.2.0 (from -r tooling/gerber-review-requirements.txt (line 8))
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting Hypercorn==0.18.0 (from -r tooling/gerber-review-requirements.txt (line 9))
+  Downloading hypercorn-0.18.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting hyperframe==6.1.0 (from -r tooling/gerber-review-requirements.txt (line 10))
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting itsdangerous==2.2.0 (from -r tooling/gerber-review-requirements.txt (line 11))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting Jinja2==3.1.6 (from -r tooling/gerber-review-requirements.txt (line 12))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting MarkupSafe==3.0.3 (from -r tooling/gerber-review-requirements.txt (line 13))
+  Downloading markupsafe-3.0.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting numpy==2.5.3 (from -r tooling/gerber-review-requirements.txt (line 14))
+  Downloading numpy-2.5.3-cp314-cp314-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting priority==2.0.0 (from -r tooling/gerber-review-requirements.txt (line 15))
+  Downloading priority-2.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting Quart==0.23.1 (from -r tooling/gerber-review-requirements.txt (line 16))
+  Downloading quart-0.23.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting rtree==1.4.1 (from -r tooling/gerber-review-requirements.txt (line 17))
+  Downloading rtree-1.4.1-py3-none-macosx_11_0_arm64.whl.metadata (2.1 kB)
+Collecting shapely==2.1.2 (from -r tooling/gerber-review-requirements.txt (line 18))
+  Downloading shapely-2.1.2-cp314-cp314-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Collecting Werkzeug==3.1.9 (from -r tooling/gerber-review-requirements.txt (line 19))
+  Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+Collecting wsproto==1.3.2 (from -r tooling/gerber-review-requirements.txt (line 20))
+  Downloading wsproto-1.3.2-py3-none-any.whl.metadata (5.2 kB)
+Collecting pcb-tools==0.1.6 (from -r tooling/gerber-review-requirements.txt (line 21))
+  Downloading pcb-tools-0.1.6.tar.gz (69 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting reportlab==4.4.3 (from -r tooling/gerber-review-requirements.txt (line 22))
+  Downloading reportlab-4.4.3-py3-none-any.whl.metadata (1.7 kB)
+Collecting pillow==12.3.0 (from -r tooling/gerber-review-requirements.txt (line 23))
+  Downloading pillow-12.3.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting charset-normalizer==3.5.2 (from -r tooling/gerber-review-requirements.txt (line 24))
+  Downloading charset_normalizer-3.5.2-cp314-cp314-macosx_10_15_universal2.whl.metadata (46 kB)
+Collecting cairocffi~=0.6 (from pcb-tools==0.1.6->-r tooling/gerber-review-requirements.txt (line 21))
+  Downloading cairocffi-0.9.0.tar.gz (84 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting cffi>=1.1.0 (from cairocffi~=0.6->pcb-tools==0.1.6->-r tooling/gerber-review-requirements.txt (line 21))
+  Using cached cffi-2.1.1-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=1.1.0->cairocffi~=0.6->pcb-tools==0.1.6->-r tooling/gerber-review-requirements.txt (line 21))
+  Using cached pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Downloading aiofiles-25.1.0-py3-none-any.whl (14 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+Downloading gerbonara-1.5.0-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 9.7 MB/s  0:00:00
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading h2-4.4.1-py3-none-any.whl (62 kB)
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Downloading hypercorn-0.18.0-py3-none-any.whl (61 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp314-cp314-macosx_11_0_arm64.whl (12 kB)
+Downloading numpy-2.5.3-cp314-cp314-macosx_14_0_arm64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 22.6 MB/s  0:00:00
+Downloading priority-2.0.0-py3-none-any.whl (8.9 kB)
+Downloading quart-0.23.1-py3-none-any.whl (79 kB)
+Downloading rtree-1.4.1-py3-none-macosx_11_0_arm64.whl (436 kB)
+Downloading shapely-2.1.2-cp314-cp314-macosx_11_0_arm64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 23.6 MB/s  0:00:00
+Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+Downloading wsproto-1.3.2-py3-none-any.whl (24 kB)
+Downloading reportlab-4.4.3-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 37.3 MB/s  0:00:00
+Downloading pillow-12.3.0-cp314-cp314-macosx_11_0_arm64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 23.3 MB/s  0:00:00
+Downloading charset_normalizer-3.5.2-cp314-cp314-macosx_10_15_universal2.whl (367 kB)
+Using cached cffi-2.1.1-cp314-cp314-macosx_11_0_arm64.whl (184 kB)
+Using cached pycparser-3.0-py3-none-any.whl (48 kB)
+Building wheels for collected packages: pcb-tools, cairocffi
+  Building wheel for pcb-tools (pyproject.toml): started
+  Building wheel for pcb-tools (pyproject.toml): finished with status 'done'
+  Created wheel for pcb-tools: filename=pcb_tools-0.1.6-py3-none-any.whl size=85219 sha256=4afba7787658cf8a2a49eac3cba037a74d00269e2c31d9c51d957dc3a8e3b39a
+  Stored in directory: /Users/anassarkiz/Library/Caches/pip/wheels/b3/5a/bf/b58535dccc6fe2d31cddf9430405bb67eff5a40e6fa1f4817a
+  Building wheel for cairocffi (pyproject.toml): started
+  Building wheel for cairocffi (pyproject.toml): finished with status 'done'
+  Created wheel for cairocffi: filename=cairocffi-0.9.0-py3-none-any.whl size=88337 sha256=d514defaf38bb89b78a8f31a44b7f1d10a5aca0429273661e8e6bb646d57743d
+  Stored in directory: /Users/anassarkiz/Library/Caches/pip/wheels/95/fd/b7/d384c98abd24a0b6193891431cc55c41bc88d633191b2c980c
+Successfully built pcb-tools cairocffi
+Installing collected packages: rtree, pycparser, priority, pillow, numpy, MarkupSafe, itsdangerous, hyperframe, hpack, h11, click, charset-normalizer, blinker, aiofiles, wsproto, Werkzeug, shapely, reportlab, Jinja2, h2, cffi, Hypercorn, Flask, cairocffi, Quart, pcb-tools, gerbonara
+
+Successfully installed Flask-3.1.3 Hypercorn-0.18.0 Jinja2-3.1.6 MarkupSafe-3.0.3 Quart-0.23.1 Werkzeug-3.1.9 aiofiles-25.1.0 blinker-1.9.0 cairocffi-0.9.0 cffi-2.1.1 charset-normalizer-3.5.2 click-8.5.0 gerbonara-1.5.0 h11-0.16.0 h2-4.4.1 hpack-4.2.0 hyperframe-6.1.0 itsdangerous-2.2.0 numpy-2.5.3 pcb-tools-0.1.6 pillow-12.3.0 priority-2.0.0 pycparser-3.0 reportlab-4.4.3 rtree-1.4.1 shapely-2.1.2 wsproto-1.3.2

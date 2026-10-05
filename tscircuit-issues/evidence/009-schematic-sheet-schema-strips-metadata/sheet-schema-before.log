@@ -1,0 +1,36 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/schematic-sheet-render-metadata.test.ts:
+10 |     center: { x: 0.12, y: 0.5 },
+11 |     sheet_size: "a4",
+12 |     sheet_width: 297,
+13 |     sheet_height: 210,
+14 |   }
+15 |   expect(schematic_sheet.parse(sheet)).toEqual(sheet)
+                                            ^
+error: expect(received).toEqual(expected)
+
+  {
+-   "center": {
+-     "x": 0.12,
+-     "y": 0.5,
+-   },
+-   "display_name": "Charge temperature window",
+    "name": "Protection",
+    "schematic_sheet_id": "schematic_sheet_2",
+    "sheet_height": 210,
+    "sheet_size": "a4",
+    "sheet_width": 297,
+    "type": "schematic_sheet",
+  }
+
+- Expected  - 5
++ Received  + 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json/tests/schematic-sheet-render-metadata.test.ts:15:40)
+(fail) schematic sheet retains its layout centre and display title through validation [1.09ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [16.00ms]

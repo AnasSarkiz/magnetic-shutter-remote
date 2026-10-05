@@ -1,0 +1,29 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solderpaste-polygon-transform.test.tsx:
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. See https://react.dev/link/warning-keys for more information.
+21 |     const row=Math.floor(index/4),column=index%4,angle=[0,90,180,270][column]
+22 |     const placement=compose(translate(-13+column*8,row===0?5:-5),row===1?flipY():translate(0,0),rotateDEG(angle))
+23 |     expect(aperture.layer).toBe(row===0?"top":"bottom")
+24 |     for(const [vertex,point] of aperture.points.entries()) {
+25 |       const expected=applyToPoint(placement,points[vertex])
+26 |       expect(point.x).toBeCloseTo(expected.x,8)
+                           ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: -4.9
+Received: -5.1
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 0.1999999999999993
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/core/tests/solderpaste-polygon-transform.test.tsx:26:23)
+(fail) explicit paste follows footprint translation, rotation and layer reflection [67.86ms]
+
+ 0 pass
+ 1 fail
+ 58 expect() calls
+Ran 1 test across 1 file. [920.00ms]

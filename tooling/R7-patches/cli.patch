@@ -1,0 +1,91 @@
+--- a/package.json
++++ b/package.json
+@@ -66,7 +66,7 @@
+     "debug": "^4.4.0",
+     "delay": "^6.0.0",
+     "dsn-converter": "^0.0.90",
+-    "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
++    "easyeda": "file:../vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+     "fuse.js": "^7.1.0",
+     "get-port": "^7.1.0",
+     "globby": "^14.1.0",
+@@ -97,7 +97,7 @@
+     "tsx": "^4.7.1",
+     "typed-ky": "^0.0.4",
+     "zod": "^3.23.8",
+-    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz"
++    "@tscircuit/core": "file:../vendor/core-r7-smtpad-bounds.tgz"
+   },
+   "peerDependencies": {
+     "circuit-json": "^0.0.489",
+@@ -120,12 +120,12 @@
+     "circuit-json": "file:../vendor/circuit-json-qualified-source.tgz",
+     "altiumts": "0.0.59",
+     "poppygl": "0.0.30",
+-    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
++    "@tscircuit/core": "file:../vendor/core-r7-smtpad-bounds.tgz",
+     "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
+     "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
+     "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
+     "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
+-    "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
++    "easyeda": "file:../vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+     "@tscircuit/eval": "file:../vendor/tscircuit-eval-0.0.1506.tgz",
+     "circuit-json-to-pnp-csv": "file:../vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+     "@tscircuit/capacity-autorouter": "0.0.951"
+--- a/bun.lock
++++ b/bun.lock
+@@ -12,7 +12,7 @@
+         "@tscircuit/circuit-json-routing-analysis": "^0.0.8",
+         "@tscircuit/circuit-json-schematic-placement-analysis": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/0.0.33.tgz",
+         "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
+-        "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
++        "@tscircuit/core": "file:../vendor/core-r7-smtpad-bounds.tgz",
+         "@tscircuit/eval": "file:../vendor/tscircuit-eval-0.0.1506.tgz",
+         "@tscircuit/fake-snippets": "^0.0.182",
+         "@tscircuit/file-server": "^0.0.32",
+@@ -61,7 +61,7 @@
+         "debug": "^4.4.0",
+         "delay": "^6.0.0",
+         "dsn-converter": "^0.0.90",
+-        "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
++        "easyeda": "file:../vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+         "fuse.js": "^7.1.0",
+         "get-port": "^7.1.0",
+         "globby": "^14.1.0",
+@@ -102,7 +102,7 @@
+   "overrides": {
+     "@tscircuit/capacity-autorouter": "0.0.951",
+     "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
+-    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
++    "@tscircuit/core": "file:../vendor/core-r7-smtpad-bounds.tgz",
+     "@tscircuit/eval": "file:../vendor/tscircuit-eval-0.0.1506.tgz",
+     "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
+     "altiumts": "0.0.59",
+@@ -110,7 +110,7 @@
+     "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
+     "circuit-json-to-pnp-csv": "file:../vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+     "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
+-    "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
++    "easyeda": "file:../vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+     "poppygl": "0.0.30",
+   },
+   "packages": {
+@@ -420,7 +420,7 @@
+ 
+     "@tscircuit/copper-pour-solver": ["@tscircuit/copper-pour-solver@0.0.62", "", { "dependencies": { "@tscircuit/manifold-2d": "^0.0.6" }, "peerDependencies": { "typescript": "^5" } }, "sha512-1bVypQqhpOBeRWAyoewv84PZLGLQMBFEuga3z4AOQ/S3XEvzbg1ewrGC8vc0Mqq27kWuFI80/JVO4qqrv+j+2A=="],
+ 
+-    "@tscircuit/core": ["@tscircuit/core@../vendor/core-qualified-source.tgz", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.24", "calculate-packing": "^0.0.90", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }],
++    "@tscircuit/core": ["@tscircuit/core@../vendor/core-r7-smtpad-bounds.tgz", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.24", "calculate-packing": "^0.0.90", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }],
+ 
+     "@tscircuit/create-fdm-enclosure": ["@tscircuit/create-fdm-enclosure@0.0.4", "", { "dependencies": { "@tscircuit/solver-utils": "^0.0.19", "graphics-debug": "^0.0.96", "jscad-planner": "^0.0.14" }, "peerDependencies": { "typescript": "^5" } }, "sha512-mJzfM2lG7QIJScb2WwzM91mXBMSC5l9hbAKYl5rjnYB+jjQGdjwRPA61SiUUUcixiZ5fcxgY8k/szpOiyAorqg=="],
+ 
+@@ -726,7 +726,7 @@
+ 
+     "earcut": ["earcut@3.2.3", "", {}, "sha512-vnS4AVwp1KHAF13i1vp1/2D5evWy3k5u/iW/B81QVsUZtV8cv2tU0b2VNFlqvh4kYwrFMDdjPCfAmfyJW9y14Q=="],
+ 
+-    "easyeda": ["easyeda@../vendor/easyeda-converter-qualified-source.tgz", { "peerDependencies": { "typescript": "^5.5.2", "zod": "3" }, "bin": { "easyeda-converter": "./dist/main.cjs", "easyeda": "./dist/main.cjs" } }],
++    "easyeda": ["easyeda@../vendor/easyeda-converter-r7-circular-paste-v2.tgz", { "peerDependencies": { "typescript": "^5.5.2", "zod": "3" }, "bin": { "easyeda-converter": "./dist/main.cjs", "easyeda": "./dist/main.cjs" } }],
+ 
+     "ecdsa-sig-formatter": ["ecdsa-sig-formatter@1.0.11", "", { "dependencies": { "safe-buffer": "^5.0.1" } }, "sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ=="],
+ 

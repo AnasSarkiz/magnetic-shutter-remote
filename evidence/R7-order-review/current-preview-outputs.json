@@ -1,0 +1,26 @@
+{
+  "circuit_sha256": "68b46821c2155c58745ac16b71f3bb7ae120b80cce0a51de811fe6677944b07d",
+  "outputs": {
+    "circuit.json": "68b46821c2155c58745ac16b71f3bb7ae120b80cce0a51de811fe6677944b07d",
+    "pcb.svg": "7cc7712134f401295475ce0d1a08a48ea96b2175cc46283dc746b2e958e2423b",
+    "pcb.png": "41e78f8fd62bca4e27fb04e828bdd99018b63eb4f61a2b682281716f3dd91784",
+    "pcb-bottom.svg": "80f0675b0e33ce0cf1b7fe4899eb2c010f33ac527506a7d789c64816ce70ff90",
+    "pcb-bottom.png": "8762cbb42cc808639fe3400d8dc73d58b3d9689aa765c87fd3a1926766431e8a",
+    "schematic.svg": "bedf5232c5bb3069324330e491977c2254e63e8bbfc01699b13d93172fa4e708",
+    "schematic_sheet_0.svg": "bedf5232c5bb3069324330e491977c2254e63e8bbfc01699b13d93172fa4e708",
+    "schematic_sheet_0.png": "0fb75193b0433887c11287b1481647970fcadd0dfc0d0f9070dff1f37cebb5ab",
+    "schematic_sheet_1.svg": "42db19edc7c42ad23ee931c35567163c9d54d0bf4891f7947ae04c438252a02a",
+    "schematic_sheet_1.png": "612a35772a6fa629e9e1db3764a3b7040f05e98c82db935f120c7f0949b79327",
+    "schematic_sheet_2.svg": "584753615b8c395d0dc58ad528091421825209387822ddf1dd8a62f2fae6a5ef",
+    "schematic_sheet_2.png": "29ae72bbfa29b79295444ef1dbe0c66b6a8d251593b60837c3d50d9895f51429",
+    "3d.png": "4b28eeda014fcd5de57c2bdc8df661cc45dea9aaad4901c3b10c413807c14ecd",
+    "3d.glb": "9938320334f8a38da2282a16299783e02b3a7eb103bff96e2c889a509517901f"
+  },
+  "excluded_legacy_files": [
+    "board.glb",
+    "final-pcb-bottom.png",
+    "final-schematic-sheet-0.png",
+    "final-schematic-sheet-1.png",
+    "final-schematic-sheet-2.png"
+  ]
+}

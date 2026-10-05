@@ -1,0 +1,52 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 39.433% (794.977mm^2 of 2016mm^2)
+- empty spaces over 5% of board area:
+  - 11.281% (227.416mm^2); bounds=(minX=7.768mm, maxX=18mm, minY=-28mm, maxY=-5.774mm)
+  - 9.781% (197.194mm^2); bounds=(minX=-18mm, maxX=-7.743mm, minY=-28mm, maxY=-8.774mm)
+  - 6.756% (136.191mm^2); bounds=(minX=-18mm, maxX=-5.647mm, minY=16.975mm, maxY=28mm)
+
+board-edge status:
+- J1: 0.34mm inside bottom edge
+- R1: 8.568mm inside bottom edge
+- R2: 8.568mm inside bottom edge
+- U2: 13.7mm inside bottom edge
+- R3: 11.343mm inside right edge
+- C1: 7.55mm inside bottom edge
+- C2: 12.4mm inside right edge
+- R4: 4.568mm inside bottom edge
+- LED1: 1.6mm inside bottom edge
+- J2: 0.4mm inside left edge
+- R8: 11.568mm inside bottom edge
+- R9: 10.568mm inside bottom edge
+- C8: 9.825mm inside bottom edge
+- C9: 11.9mm inside left edge
+- U1: 5.346mm inside top edge
+- C5: 16.9mm inside left edge
+- SW2: 1.7mm inside left edge
+- SW3: 1.7mm inside right edge
+- R7: 9.843mm inside right edge
+- LED2: 6.85mm inside right edge
+- J3: 0.4mm inside right edge
+- SW1: 0.744mm inside right edge
+- R5: 12.843mm inside right edge
+- Q1: 10.5mm inside left edge
+- R6: 10.843mm inside left edge
+- U3: 11.4mm inside left edge
+- C3: 16.4mm inside left edge
+- C4: 11.9mm inside left edge
+- U4: 7mm inside left edge
+- C6: 3.9mm inside left edge
+- U5: 16.95mm inside left edge
+- R10: 11.343mm inside left edge
+- R11: 12.343mm inside right edge
+- C7: 15.4mm inside right edge
+- R12: 7.343mm inside right edge
+- R13: 8.843mm inside right edge
+- Q2: 8.5mm inside right edge
+
+placement drc:
+Errors: 0
+Warnings: 1
+- pcb_connector_not_in_accessible_orientation_warning: component is facing y- but should face x- so the connector is accessible from the board edge

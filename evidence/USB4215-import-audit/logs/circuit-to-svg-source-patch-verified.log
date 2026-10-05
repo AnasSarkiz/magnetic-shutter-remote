@@ -1,0 +1,3 @@
+patching file 'lib/pcb/svg-object-fns/convert-circuit-json-to-solder-paste-mask.ts'
+patching file 'tests/pcb/__snapshots__/solder-paste-polygon.snap.svg'
+patching file 'tests/pcb/solder-paste-polygon.test.ts'

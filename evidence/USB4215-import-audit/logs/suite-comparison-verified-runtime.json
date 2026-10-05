@@ -1,0 +1,31 @@
+{
+  "baseline_summary": [
+    "235 pass\n",
+    "74 fail\n",
+    "Ran 309 tests across 165 files. [22.06s]"
+  ],
+  "corrected_summary": [
+    "221 pass\n",
+    "89 fail\n",
+    "Ran 310 tests across 166 files. [23.10s]"
+  ],
+  "new_failures": [
+    "converts C107701 R0603 to a resistor",
+    "converts C11702 R0402 to a resistor",
+    "converts C1525 to a capacitor with its exact footprint",
+    "converts C17168 R0402 to a resistor",
+    "converts C25744 R0402 to a resistor",
+    "converts C2929994 R0402 to a resistor",
+    "converts C3273487 coupled inductor without losing terminals",
+    "normalizes C15464 active-low pin aliases",
+    "preserves C2848306 EasyEDA-hidden EP pin visibility",
+    "repro: converts C20526 with a schematic snapshot",
+    "should convert C12084 into typescript file",
+    "should convert C7203002 into typescript file",
+    "should convert diode category components to diode elements",
+    "should convert led category components to led elements",
+    "should include both obj and step cad model urls"
+  ],
+  "baseline_only_failures": [],
+  "common_failure_count": 73
+}

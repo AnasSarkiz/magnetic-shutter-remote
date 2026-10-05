@@ -1,0 +1,98 @@
+R6 — ENGINEERING PROTOTYPE
+37 TOP fitted parts. Not production qualified. Physical tests not performed.
+
+
+
+
+PCB: original 36 x 56 x 1 mm, two layers, 2 mm corner radius.
+Mounting: H1 (-13,24), H2 (13,24), diameter 2.2 mm. Engineering design.
+GCT USB4215; four shell anchors require prototype inspection; rework possible.
+Stencil strategy: 0.10 mm, qualified numeric aperture release geometry.
+SWD: TOP pin 1 marked; BOTTOM table. BAT + is J2 pin 1, BAT - pin 2.
+Source: index.circuit.tsx / src/remote-circuit.tsx; actual Gerbers and drills reviewed.
+Battery, RF, thermal, runtime, fit and phone: POST-PROTOTYPE PHYSICAL VALIDATION.
+Exact placement registration — TOP view
+
+
+ Ref     Exact MPN                                      C-number          X mm          Y mm      CPL deg   Method
+
+ J1      USB4215-03-A                                   C37616412         0.000         24.510    180       SMT + shell
+
+ R1      0603WAF5101T5E                                 C23186            -4.000        19.000    0         TOP SMT
+
+ R2      0603WAF5101T5E                                 C23186            0.000         19.000    0         TOP SMT
+
+ U2      BQ25185DLHR                                    C19725033         0.000         13.000    0         TOP SMT
+
+ R3      0603WAF1502T5E                                 C22809            5.500         9.000     0         TOP SMT
+
+ C1      CL10A475KO8NNNC                                C19666            8.000         20.000    0         TOP SMT
+
+ C2      CL10A475KO8NNNC                                C19666            4.500         11.500    0         TOP SMT
+
+ R4      0603WAF1001T5E                                 C21190            8.000         23.000    0         TOP SMT
+
+ LED1    KT-0603R                                       C2286             8.000         26.000    0         TOP SMT
+
+ J2      S2B-PH-SM4-TB(LF)(SN)                          C295747           -13.500       12.000    0         TOP SMT
+
+ R8      0603WAF1303T5E                                 C22795            -5.000        16.000    180       TOP SMT
+
+ R9      0603WAF1002T5E                                 C25804            1.000         17.000    0         TOP SMT
+
+ C8      CL21A106KAYNNNE                                C15850            5.000         17.500    0         TOP SMT
+
+ C9      TCC0603COG470J500CT                            C282505           -5.000        11.000    180       TOP SMT
+
+ U1      E73-2G4M08S1C                                  C356849           0.000         -14.914   0         TOP SMT
+
+ C5      CC0603KRX7R9BB104                              C14663            0.000         -4.500    0         TOP SMT
+
+ SW2     TS-1088-AR02016                                C720477           -13.500       -7.000    0         TOP SMT
+
+ SW3     TS-1088-AR02016                                C720477           13.500        -4.000    0         TOP SMT
+
+ R7      0603WAF1001T5E                                 C21190            7.000         -3.000    0         TOP SMT
+
+ LED2    KT-0603R                                       C2286             10.000        0.000     0         TOP SMT
+
+ J3      BM06B-SRSS-TB(LF)(SN)                          C160392           13.200        16.000    0         TOP SMT
+
+ SW1     MSK12C02                                       C431540           15.000        5.000     90        TOP SMT
+
+ R5      0603WAF1003T5E                                 C25803            4.000         3.000     180       TOP SMT
+
+ Q1      2N7002                                         C8545             -6.000        3.500     0         TOP SMT
+
+ R6      0603WAF1003T5E                                 C25803            -6.000        8.000     0         TOP SMT
+
+ U3      TPS7A0230PDBVR                                 C3747031          -5.000        0.000     0         TOP SMT
+
+ C3      CL10A475KO8NNNC                                C19666            -0.500        2.000     0         TOP SMT
+
+ C4      CL10A475KO8NNNC                                C19666            -5.000        -4.000    0         TOP SMT
+
+ U4      TPS3839G33DBZR                                 C485802           -9.500        -1.000    0         TOP SMT
+
+ C6      CC0603KRX7R9BB104                              C14663            -13.000       2.000     0         TOP SMT
+
+ U5      TMP390A2DRLR                                   C5219772          0.000         6.000     0         TOP SMT
+
+ R10     0603WAF1621T5E                                 C22844            -5.500        6.000     0         TOP SMT
+
+ R11     0603WAF1872T5E                                 C22893            4.500         5.500     0         TOP SMT
+
+ C7      CC0603KRX7R9BB104                              C14663            1.500         8.500     0         TOP SMT
+
+ R12     0603WAF1003T5E                                 C25803            9.500         10.000    0         TOP SMT
+
+ R13     0603WAF1003T5E                                 C25803            8.000         12.000    180       TOP SMT
+
+ Q2      2N7002                                         C8545             8.000         6.000     0         TOP SMT
+
+
+
+
+XY datum: PCB centre. +X right, +Y up. Positions are centroids, not authored anchors.
+J1 authored anchor (0,23.9852); exact centroid above. CPL rotation 180 deg.
+

@@ -1,0 +1,1431 @@
+                                                                                                                                         TMP390
+                                                                                                     SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+               TMP390 Ultra-Small, Dual-Channel (Hot and Cold Trip), 0.5-µA, Resistor-
+                               Programmable Temperature Switch
+
+1 Features                                                                    3 Description
+•     Resistor programmable temperature trip points                           The TMP390 device is part of a family of ultra-
+      and hysteresis options                                                  low power, dual channel, resistor programmable
+      – Resistor tolerances contribute zero error                             temperature switches that enable protection and
+      – Hysteresis options: 5°C, 10°C and 20°C                                detection of system thermal events from –50°C
+•     Separate outputs for overtemperature or                                 to 130°C. The TMP390 offers independent
+      undertemperature detection                                              overtemperature (hot) and undertemperature (cold)
+      – Channel A (overtemperature): +30 to +124°C,                           detection . The trip temperatures (TTRIP) and thermal
+          2°C steps                                                           hysteresis (THYST) options are programmed by two
+      – Channel B (undertemperature): –50 to +25°C,                           E96-series resistors (1% tolerance) on the SETA and
+          5°C steps                                                           SETB pins. Channel A resistors can range from 1.05
+•     Accuracy level options (maximum at −55°C to                             KΩ to 909 KΩ, representing one of 48 unique values.
+      +130°C):                                                                Channel B resistors can range from 10.5 KΩ to 909
+      – A2 Level: ±3.0°C (±1.5°C from 0°C to +70°C)                           KΩ
+      – A3 Level: ±3.5°C (±2.0°C from 0°C to +70°C)                           The value of the resistor to ground on SETA input
+•     Ultra-low power consumption: 0.5 µA typical at                          sets the TTRIP threshold of Channel A. The value
+      25°C                                                                    of the resistor to ground on SETB input sets the
+•     Supply voltage: 1.62 to 5.5 V                                           TTRIP threshold of Channel B, as well as the THYST
+•     Open-drain outputs                                                      options of 5°C, or 10°C for both channels, to prevent
+•     Trip test function enables in-system testing                            undesired digital output switching. When the SETB
+•     Available in a SOT-563 (1.60-mm × 1.20-mm),                             input is connected to ground, Channel A operates with
+      6-pin package                                                           20°C hysteresis. Resistors accuracy has no impact to
+                                                                              TTRIP accuracy.
+2 Applications
+•     DC/AC inverter                                                          To enable customer board-level manufacturing, the
+•     DC/DC converter                                                         TMP390 supports a trip test function where the digital
+•     Temperature transmitters                                                outputs are activated by exercising the SETA or SETB
+•     Environmental control systems (ECS)                                     pin.
+•     Power tools                                                                                  Device Information
+•     Power banks                                                                    PART                         (1)
+                                                                                                    PACKAGE                BODY SIZE (NOM)
+•     Wireless infrastructure                                                       NUMBER
+      – WLAN/Wi-Fi access points                                              TMP390            SOT-563 (6)             1.60 mm × 1.20 mm
+      – Core routers
+                                                                              (1)    For all available packages, see the orderable addendum at
+      – Edge routers                                                                 the end of the data sheet.
+      – Macro remote radio units (RRU)
+              RSETA and RSETB select trip                                                          Device Comparison
+                                                          VDD or VDDIO
+            thresholds and hysteresis options.                                      PART NUMBER           FUNCTION            OUTPUT TYPE
+                                                  VDD
+                                                           RP     RP          TMP390                 Hot / Cold
+                                                                                                                            Open-Drain
+                                SETA                                   OUTA   TMP392                 Hot / Warm
+    Optional Trip
+            Test                SETB             TMP39x
+                                                                       OUTB
+                    RSETA      RSETB
+
+
+
+
+                            Simplified Schematic
+
+
+
+
+         An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+         intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                                                                        www.ti.com
+
+
+                                                                        Table of Contents
+1 Features............................................................................1     7.4 Device Functional Modes..........................................10
+2 Applications..................................................................... 1     8 Application and Implementation.................................. 11
+3 Description.......................................................................1       8.1 Applications Information............................................11
+4 Revision History.............................................................. 2          8.2 Typical Applications...................................................11
+5 Pin Configuration and Functions...................................3                     9 Power Supply Recommendations................................17
+  Pin Functions.................................................................... 3     10 Layout...........................................................................18
+6 Specifications.................................................................. 4        10.1 Layout Guidelines................................................... 18
+  6.1 Absolute Maximum Ratings........................................ 4                    10.2 Layout Example...................................................... 18
+  6.2 ESD Ratings............................................................... 4        11 Device and Documentation Support..........................19
+  6.3 Recommended Operating Conditions.........................4                            11.1 Receiving Notification of Documentation Updates.. 19
+  6.4 Thermal Information....................................................4              11.2 Support Resources................................................. 19
+  6.5 Electrical Characteristics.............................................5              11.3 Trademarks............................................................. 19
+  6.6 Typical Characteristics................................................ 6             11.4 Electrostatic Discharge Caution.............................. 19
+7 Detailed Description........................................................7             11.5 Glossary.................................................................. 19
+  7.1 Overview..................................................................... 7     12 Mechanical, Packaging, and Orderable
+  7.2 Functional Block Diagram........................................... 7                 Information.................................................................... 19
+  7.3 Feature Description.....................................................7
+
+
+
+4 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision * (May 2019) to Revision A (August 2020)                                                                                     Page
+• Updated the numbering format for tables, figures, and cross-references throughout the document..................1
+• Added Hot and Cold Trip in the Title...................................................................................................................1
+• Updated TJ to 150°C from 155°C....................................................................................................................... 4
+• Updated Tstg to 150°C from 155°C..................................................................................................................... 4
+• Removed TA section on unspecified performance .............................................................................................4
+• Updated RΘJA from 210.3 °C/W to 230 °C/W..................................................................................................... 4
+• Updated RΘJC(top) from 105 °C/W to 103.4 °C/W ...............................................................................................4
+• Updated RΘJB from 87.5 °C/W to 111.6 °C/W ....................................................................................................4
+• Updated ψJT from 6.1 °C/W to 5.3 °C/W ............................................................................................................4
+• Updated ψJB from 87 °C/W to 110.5 °C/W..........................................................................................................4
+• Added Thermal Mass paramater........................................................................................................................ 4
+• Added 20°C hysteresis option for single channel operation .............................................................................. 5
+• Updated to separate SETA and SETB resistor ranges.......................................................................................5
+• Added test condition for average quiescent current .......................................................................................... 5
+• Changed standby current from 0.2µA to 0.25µA................................................................................................ 5
+• Changed power-on reset threshold voltage from 1.55V to 1.5V ........................................................................5
+
+
+
+
+2       Submit Document Feedback                                                                                           Copyright © 2022 Texas Instruments Incorporated
+
+                                                                      Product Folder Links: TMP390
+                                                                                                                                          TMP390
+www.ti.com                                                                                          SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+5 Pin Configuration and Functions
+
+                                                    SETA            1           6         OUTA
+
+                                                    SETB            2           5         VDD
+
+                                                     GND            3           4         OUTB
+
+
+
+                                                                Not to scale
+
+                                         Figure 5-1. DRL Package 6-Pin SOT-563 Top View
+
+Pin Functions
+               PIN
+                                         I/O                                                DESCRIPTION
+ NO.                  NAME
+                                                   Channel A temperature set point. Connect a standard E96, 1% resistance between SETA
+ 1                     SETA             Input
+                                                   and GND.
+                                                   Channel B temperature and Hysteresis set point. Connect a standard E96, 1% resistance
+ 2                    SETB              Input
+                                                   between SETB and GND.
+ 3                     GND            Ground       Device ground.
+                                                   Channel B logic open-drain active low output. If unused, the output can be left floating or
+ 4                    OUTB          Logic Output
+                                                   connected to GND.
+ 5                     VDD             Supply      Power supply voltage (1.62 V – 5.5 V).
+                                                   Channel A logic open-drain active low output. If unused, the output can be left floating or
+ 6                    OUTA          Logic Output
+                                                   connected to GND.
+
+
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                                  Submit Document Feedback          3
+                                                           Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                                                             www.ti.com
+
+
+6 Specifications
+6.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1) (2)
+                                                                                                                          MIN              MAX         UNIT
+    Supply voltage                 VDD                                                                                    –0.3                   6      V
+    Voltage at                     OUTA, OUTB                                                                             -0.3                   6      V
+    Voltage at                     SETA, SETB                                                                             –0.3      VDD + 0.3           V
+    Junction temperature, TJ                                                                                              –55               150         °C
+    Storage temperature, Tstg                                                                                             –60               150         °C
+
+(1)          Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress
+             ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under
+             Recommended Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device
+             reliability.
+(2)          Powering the device when the operating junction temperature is outside the Recommended Operating Conditions, may affect the
+             functional operation of the device. The device must be power cycled after the system has returned to conditions as indicated under
+             Recommended Operating Conditions.
+
+6.2 ESD Ratings
+                                                                                                                                        VALUE           UNIT
+                                                    Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1)                               ±2000
+    V(ESD)        Electrostatic discharge                                                                                                                V
+                                                    Charged-device model (CDM), per JEDEC specification JESD22-C101(2)                   ±500
+
+(1)          JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)          JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+6.3 Recommended Operating Conditions
+                                                                                                           MIN            NOM               MAX        UNIT
+    VDD          Supply voltage                                                                            1.62             3.3                 5.5      V
+    VOUTA        Channel A output pull-up voltage (open-drain)                                                                          VDD + 0.3        V
+    VOUTB        Channel B output pull-up voltage (open-drain)                                                                          VDD + 0.3        V
+    ISETA        SETA pin circuit leakage current                                                           -20                                  20     nA
+    ISETB        SETB pin circuit leakage current                                                           -20                                  20     nA
+    RPA          Pullup resistor connected from OUTA to VDDIO(1)
+                                                                                                             1              10                          kΩ
+    RPB          Pullup resistor connected from OUTB to VDDIO(1)
+    TA           Operating free-air temperature (specified performance)                                    –55                                  130     °C
+
+(1)          Where VDDIO is an independent power supply other than VDD, and shall not exceed (VDD + 0.3) V.
+
+6.4 Thermal Information
+                                                                                                                             TMP390
+                                                    THERMAL METRIC(1)                                                      DRL (SOT)                   UNIT
+                                                                                                                             6 PINS
+    RθJA                Junction-to-ambient thermal resistance                                                                    230                  °C/W
+    RθJC(top)           Junction-to-case (top) thermal resistance                                                             103.4                    °C/W
+    RθJB                Junction-to-board thermal resistance                                                                  111.6                    °C/W
+    ψJT                 Junction-to-top characterization parameter                                                                5.3                  °C/W
+    ψJB                 Junction-to-board characterization parameter                                                          110.5                    °C/W
+    MT                  Thermal Mass                                                                                             1.83                 mJ/°C
+
+(1)          For more information about traditional and new thermal metrics, see the Semiconductor IC Package Thermal Metrics application
+             report, (SPRA953).
+
+
+
+
+4            Submit Document Feedback                                                                             Copyright © 2022 Texas Instruments Incorporated
+
+                                                                     Product Folder Links: TMP390
+                                                                                                                            TMP390
+www.ti.com                                                                                  SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+6.5 Electrical Characteristics
+Minimum and maximum specifications are over -55°C to 130°C and VDD = 1.62V - 5.5V (unless otherwise noted); typical
+specifications are at TA = 25°C and VDD = 3.3 V.
+                  PARAMETER                                  TEST CONDITIONS                  MIN        TYP         MAX    UNIT
+ TEMPERATURE TO DIGITAL CONVERTER
+ TEMPERATURE MEASUREMENT
+                                                                 0°C to 70°C, VDD = 2.5V
+                                                                                              -1.5       ±0.5         1.5
+                                                                 to 5.5V
+                                                                 0°C to 70°C, VDD = 1.62V
+                                                                                              -2.0       ±0.5         2.0
+                                                                 to 2.5V
+                                                   TMP390A2                                                                   °C
+                                                                 -55°C to 130°C, VDD =
+             Trip Point Accuracy                                                              -2.5       ±0.5         2.5
+                                                                 2.5V to 5.5V
+                                                                 -55°C to 130°C, VDD =
+                                                                                              -3.0       ±0.5         3.0
+                                                                 1.62V to 2.5V
+                                                                 0°C to 70°C                  -2.0       ±0.5         2.0     °C
+                                                   TMP390A3
+                                                                 -55°C to130°C                -3.5                    3.5     °C
+                                                   Table 7-2 selection column 2                             5                 °C
+                                                   Table 7-2 selection column 3                            10                 °C
+ THYST       Trip point hysteresis
+                                                   Channel A only when SETB connected to
+                                                                                                           20                 °C
+                                                   GND
+ TRIP POINT RESISTOR PROGRAMMING
+             SETA resistor range                                                              1.05                    909    kΩ
+             SETB resistor range                                                              10.5                    909    kΩ
+             SETA & SETB resistor tolerance        TA=25°C                                    -1.0                    1.0     %
+             SETA & SETB resistor
+                                                                                              -100                    100   ppm/°C
+             temperature coefficient
+             SETA & SETB resistor lifetime drift                                              -0.2                    0.2     %
+ DIGITAL INPUT/OUTPUT
+             Input capacitance for SETA &
+ CIN                                                                                                                   50     pF
+             SETB (includes PCB)
+ RPD         Internal Pull down resistance         SETA & SETB                                            125                kΩ
+ VOL         Output logic low level                IOL = -3 mA                                   0                    0.4     V
+             Leakage current on output high
+ ILKG                                                                                         -0.1                    0.1    µA
+             level
+ TCov        Conversion duration                                                                         0.65                ms
+ TS          Sampling period                                                                              0.5                 s
+ POWER SUPPLY
+ IQ          Average Quiescent current             VDD = 1.62V to 3.3V                                    0.5           1
+                                                                                                                             μA
+ IStandby    Standby current                                                                             0.25
+ IConv       Conversion current                                                                           135                μA
+ ISU         Startup (Reset) peak current          Reset Time interval only.                              250                μA
+ VPOR        Power-on-reset threshold voltage      Supply going up                                        1.5                 V
+             Brownout detect                       Supply going down                                      1.1                 V
+                                                   Time required by device to reset after
+             Power Reset Time                                                                              10                ms
+                                                   power up
+
+
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                       Submit Document Feedback          5
+                                                          Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                                                                                                                                           www.ti.com
+
+6.6 Typical Characteristics
+
+                   1.4                                                                                                                                       3
+                                 1.62 V
+                                                                                                                                                        2.5
+                   1.2           3.3 V
+                                 4.4 V                                                                                                                       2
+                                 5.5 V                                                                                                                  1.5
+                       1
+                                                                                                                                                             1
+
+
+
+                                                                                                                            Trip Error (qC)
+                   0.8                                                                                                                                  0.5
+      I (uA)                                                                                                                                                 0
+                   0.6
+                                                                                                                                                    -0.5
+                   0.4                                                                                                                                       -1
+                                                                                                                                                    -1.5
+                   0.2                                                                                                                                       -2
+                                                                                                                                                    -2.5
+                       0
+                       -60     -40   -20     0       20 40 60 80                    100 120 140 160                                                          -3
+                                                      Temperature (qC)                                                                                        -50     -30      -10        10         30    50      70    90    110        130
+                                                                                                              D002
+                                                                                                                                                                                                  Temperature (qC)                         D003
+         (VS = 1.62 V, 3.3 V, 4.4 V, 5.5 V)
+                                                                                                                                                 (VS = 3.3 V)
+    Figure 6-1. Average Supply Current vs. Operating
+                                                                                                                                       Figure 6-2. Trip Point Accuracy vs. Operating
+                      Temperature
+                                                                                                                                                        Temperature
+                       6                                                                                                                                     200
+                       5         -55qC
+                                 25qC                                                                                                                        190
+                       4         130qC                                                                                                                       180
+                       3
+                                                                                                                                                             170
+                       2
+
+
+
+          Change (%)                                                                                                                          Current (uA)
+                       1                                                                                                                                     160
+                       0                                                                                                                                     150
+                       -1                                                                                                                                    140
+                       -2
+                                                                                                                                                             130
+                       -3
+                                                                                                                                                             120
+                       -4
+                       -5                                                                                                                                    110
+                       -6                                                                                                                                    100
+                         1.5     2     2.5       3      3.5      4    4.5               5       5.5       6                                                     1.5        2       2.5        3      3.5      4    4.5   5    5.5     6
+                                                     Supply Voltage (V)                                   D001
+                                                                                                                                                                                                  Supply Voltage (V)                  D005
+
+    Figure 6-3. Sampling Period Variation vs. Supply                                                                     Figure 6-4. Conversion Current vs. Supply Voltage
+                        Voltage
+                                                                              200
+                                                                                            1.62 V
+                                                                              180           2.2 V
+                                                                              160           3.3 V
+                                                                                            5.5 V
+                                                                              140
+
+
+
+                                                                  VOUT (mV)
+                                                                              120
+                                                                              100
+                                                                               80
+                                                                               60
+                                                                               40
+                                                                               20
+                                                                                0
+                                                                                    0       1         2       3     4    5      6                                 7    8       9         10
+                                                                                                                  Load Current (mA)                                                      D004
+
+         (TAMB = 25°C)
+
+                                                                  Figure 6-5. Output Voltage vs. Load Current
+
+
+
+
+6        Submit Document Feedback                                                                                                                                                             Copyright © 2022 Texas Instruments Incorporated
+
+                                                                                                Product Folder Links: TMP390
+                                                                                                                               TMP390
+www.ti.com                                                                                     SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+7 Detailed Description
+7.1 Overview
+The TMP390 ultra-low power, dual channel, resistor programmable temperature switches enable detection
+and protection of system thermal events over a wide temperature range. The TMP390 offers independent
+overtemperature (hot) and undertemperature (cold) detection. The trip temperatures and hysteresis options
+are programmed by two E96-series (1%) standard decade value resistors on the SETA and SETB pins. The
+TMP390 can enable a customer board-level manufacturing test through the trip test function that can force the
+SETA or SETB pins to logic high to activates the digital outputs.
+7.2 Functional Block Diagram
+                             RSETA and RSETB select trip
+                         thresholds and hysteresis options.
+                                                                      VDD                VDD or VDDIO
+
+
+                                                                                          RP          RP
+                                                  SETA
+                                                                                                           OUTA
+                                   C                                TMP39x
+                                                  SETB
+                                                                                                           OUTB
+                                   RSETA          RSETB
+
+
+
+                                                  Figure 7-1. Simplified Schematic
+
+7.3 Feature Description
+The TMP390 requires two resistors to set the two trip points and hysteresis, according to Table 7-1 and Table
+7-2, for the hot and cold channel device. The output of the TMP390 is open-drain and requires two pullup
+resistors. TI recommends to use a pullup voltage supply that does not exceed VDD + 0.3 V. The pullup resistors
+used in between the OUTA and OUTB pins and the pullup supply should be greater than 1 kΩ. The device
+powers on when the supply voltage goes beyond 1.5 V, and starts sampling the input resistors to set the two
+trip points and hysteresis value after power-on. These values will remain the same until the device goes through
+a power cycle. After the device sets the trip points and hysteresis level, the device will update the output every
+half a second. The conversion time is typically 0.65 ms when the temperature is checked against the trip points
+and the outputs are updated. The device remains in standby mode between conversions. If either channel is not
+used, the output can be grounded or left floating.
+7.3.1 TMP390 Programming Tables
+The temperature threshold and hysteresis options for the TMP390 device are programmed using two external
+1% E96 standard resistors. The specific resistor value to ground on the SETA input sets the temperature
+threshold of channel A. The specific resistor value to ground on the SETB input sets the temperature threshold
+of channel B, as well as the hysteresis for both channel A and channel B.
+                                          Table 7-1. TMP390 Channel A Threshold Setting
+   CHANNEL A (HOT)                                                CHANNEL A (HOT) TRIP                  CHANNEL A (HOT) TRIP
+                              CHANNEL A NOMINAL 1%
+  TRIP TEMPERATURE                                             RESET TEMPERATURE (°C) FOR            RESET TEMPERATURE (°C) FOR
+                                 RESISTORS (KΩ)
+         (°C)                                                       HYSTERESIS = 5°C                     HYSTERESIS = 10°C
+             30                            1.05                               25                                    20
+             32                            1.21                               27                                    22
+             34                            1.40                               29                                    24
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                            Submit Document Feedback        7
+                                                          Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                    www.ti.com
+
+                           Table 7-1. TMP390 Channel A Threshold Setting (continued)
+     CHANNEL A (HOT)                                CHANNEL A (HOT) TRIP           CHANNEL A (HOT) TRIP
+                         CHANNEL A NOMINAL 1%
+    TRIP TEMPERATURE                             RESET TEMPERATURE (°C) FOR     RESET TEMPERATURE (°C) FOR
+                            RESISTORS (KΩ)
+           (°C)                                       HYSTERESIS = 5°C              HYSTERESIS = 10°C
+           36                       1.62                        31                                26
+           38                       1.87                        33                                28
+           40                       2.15                        35                                30
+           42                       2.49                        37                                32
+           44                       2.87                        39                                34
+           46                       3.32                        41                                36
+           48                       3.83                        43                                38
+           50                       4.42                        45                                40
+           52                       5.11                        47                                42
+           54                       5.90                        49                                44
+           56                       6.81                        51                                46
+           58                       7.87                        53                                48
+           60                       9.09                        55                                50
+           62                       10.5                        57                                52
+           64                       12.1                        59                                54
+           66                       14.0                        61                                56
+           68                       16.2                        63                                58
+           70                       18.7                        65                                60
+           72                       21.5                        67                                62
+           74                       24.9                        69                                64
+           76                       28.7                        71                                66
+           78                       33.2                        73                                68
+           80                       38.3                        75                                70
+           82                       44.2                        77                                72
+           84                       51.1                        79                                74
+           86                       59.0                        81                                76
+           88                       68.1                        83                                78
+           90                       78.7                        85                                80
+           92                       90.9                        87                                82
+           94                       105                         89                                84
+           96                       121                         91                                86
+           98                       140                         93                                88
+           100                      162                         95                                90
+           102                      187                         97                                92
+           104                      215                         99                                94
+           106                      249                        101                                96
+           108                      287                        103                                98
+           110                      332                        105                               100
+           112                      383                        107                               102
+           114                      442                        109                               104
+           116                      511                        111                               106
+           118                      590                        113                               108
+           120                      681                        115                               110
+           122                      787                        117                               112
+
+
+8      Submit Document Feedback                                               Copyright © 2022 Texas Instruments Incorporated
+
+                                            Product Folder Links: TMP390
+                                                                                                                          TMP390
+www.ti.com                                                                                SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+                                 Table 7-1. TMP390 Channel A Threshold Setting (continued)
+   CHANNEL A (HOT)                                           CHANNEL A (HOT) TRIP                   CHANNEL A (HOT) TRIP
+                              CHANNEL A NOMINAL 1%
+  TRIP TEMPERATURE                                        RESET TEMPERATURE (°C) FOR             RESET TEMPERATURE (°C) FOR
+                                 RESISTORS (KΩ)
+         (°C)                                                  HYSTERESIS = 5°C                      HYSTERESIS = 10°C
+             124                             909                        119                                   114
+
+
+                                                                Note
+       When the SETA pin is grounded or left floating during the device power up, the OUTA pin always stays
+       low. The Channel B functionality is not affected by the SETA channel.
+
+                               Table 7-2. TMP390 Channel B Threshold and Hysteresis Setting
+    CHANNEL B               CHANNEL B NOMINAL 1% RESISTORS (KΩ)           CHANNEL B (COLD) TRIP RESET TEMPERATURE (°C)
+    (COLD) TRIP
+ TEMPERATURE (°C)             HYSTERESIS = 5°C     HYSTERESIS = 10°C          HYSTERESIS = 5°C           HYSTERESIS = 10°C
+
+           –50                        90.9                105                       –45                             –40
+           –45                        78.7                121                       –40                             –35
+           –40                        68.1                140                       –35                             –30
+           –35                        59.0                162                       –30                             –25
+           –30                        51.1                187                       –25                             –20
+           –25                        44.2                215                       –20                             –15
+           –20                        38.3                249                       –15                             –10
+           –15                        33.2                287                       –10                             –5
+           –10                        28.7                332                        –5                             0
+            –5                        24.9                383                        0                              5
+            0                         21.5                442                        5                              10
+            5                         18.7                511                        10                             15
+            10                        16.2                590                        15                             20
+            15                        14.0                681                        20                             25
+            20                        12.1                787                        25                             30
+            25                        10.5                909                        30                             35
+
+
+7.3.2 Trip Test
+The purpose of the trip test is in system manufacturing test without putting the TMP390 through costly
+temperature verification of the assembly of TMP390 and pullup resistors. When the SETA or SETB pin is set
+to a high logic level, the associated output goes low. When the input pin level goes low, the output goes to its
+previous condition before the trip test. The trip test does not affect the current condition of the device. The trip
+test signals should stay above 0.8 × VDD for logic high and below 0.2 × VDD for logic low.
+The trip test operation is shown in Figure 7-2. The trip test must be performed with a single toggle when the
+device is operating at a temperature that will not cause the corresponding output to trip. The trip test is intended
+for production testing after assembly, and must not be used as a functional feature.
+
+
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                     Submit Document Feedback          9
+                                                     Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                                www.ti.com
+
+
+
+
+                                                                                             (Channel A)
+                                                                                             Hot threshold
+
+
+                     Measured
+                                                                                                    Hysteresis:
+                                                                                                   5°C, or 10°C
+
+                  Temperature (°C)                                                           (Channel B)
+                                                                                             Cold threshold
+
+
+
+                                                                                              Time (s)
+
+
+
+                OUTA
+
+
+
+
+                OUTB
+
+
+
+                                        Trip test
+                                     asserts output
+                SETA
+
+
+
+
+                SETB
+                                                                                              Time (s)
+
+                                                 Figure 7-2. TMP390 Trip Test Operation
+
+7.3.3 20°C Hysteresis
+The 20°C hysteresis feature is only available on Channel A. To activate the feature, the SETB pin must be
+connected to ground and SETA pin connected to the resistor to set the appropriate trip point on Channel A.
+7.4 Device Functional Modes
+The device has one mode of operation, as described above, that applies when operated within the
+Recommended Operating Conditions.
+
+
+
+
+10    Submit Document Feedback                                                            Copyright © 2022 Texas Instruments Incorporated
+
+                                                        Product Folder Links: TMP390
+                                                                                                                               TMP390
+www.ti.com                                                                                     SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+8 Application and Implementation
+                                                                     Note
+       Information in the following applications sections is not part of the TI component specification,
+       and TI does not warrant its accuracy or completeness. TI’s customers are responsible for
+       determining suitability of components for their purposes, as well as validating and testing their design
+       implementation to confirm system functionality.
+
+8.1 Applications Information
+The TMP390 device is part of a family of ultra-low power, dual channel, resistor programmable temperature
+switches that can enable detection and protection of system thermal events over a wide temperature range. The
+trip temperatures (TTRIP) and hysteresis options are programmed by two E96-series (1%) standard decade value
+resistors on the SETA and SETB pins. The thermal hysteresis (THYST) function is to prevent undesired digital
+output switching due to small temperature changes.
+8.2 Typical Applications
+8.2.1 Simplified Application Schematic
+Figure 8-1 shows the simplified schematic where RSETA and RSETB are used to set channel A trip point (SETA)
+and channel B trip point and hysteresis for both channels (SETB). SETA and SETB can be programmed at a
+variety of temperatures based on the device, as described in Table 7-1 for channel A trip point, and Table 7-2 for
+channel B trip point and hysteresis for both channels. OUTA and OUTB outputs correspond to the temperature
+threshold detection at SETA and SETB, respectively.
+                                        RSETA and RSETB select trip                      VDD or VDDIO
+                                      thresholds and hysteresis options.
+                                                                            VDD
+                                                                                          RP         RP
+                                                           SETA                                           OUTA
+                            Optional Trip
+                                    Test                   SETB            TMP39x
+                                                                                                          OUTB
+                                              RSETA        RSETB
+
+
+
+                                                      Figure 8-1. Simplified Schematic
+
+8.2.1.1 Design Requirements
+The TMP390 requires two resistors to set the high and low trip points and hysteresis, and two pullup resistors for
+the open-drain device. TI also highly recommends to place a 0.1-µF, power-supply bypassing capacitor close to
+the VDD supply pin. To minimize the internal power dissipation, use two pullup resistors greater than 1 kΩ from
+the OUTA and OUTB pins to the VDD pin. A separate supply, VDDIO, may be used for the pullup voltage to set
+the output voltage level to the level required by the MCU, as shown in Figure 8-1. The open-drain output gives
+flexibility of pulling up to any voltage independent of VDD (VDDIO must be less than or equal to VDD + 0.3 V).
+This allows for use of longer cables or different power supply options. If a separate voltage level is not required,
+TI recommends to tie the pullup to the TMP390 VDD.
+If the SETA or SETB connected resistor value is outside the legal range, the associated output goes to
+permanent output zero stage and the channel cannot be used. The other channel still will be in operating
+condition, and device can be used in one channel mode. If the SETB input is grounded or left floating, the
+Channel B cannot be used and the hysteresis for Channel A will be 20°C. The SETA and SETB connected
+resistors are measured during POR. If two consecutive measurements are not matching each other, then
+the device sets the associated channel output to zero and repeats the resistor measurements until the
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                           Submit Document Feedback     11
+                                                          Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                            www.ti.com
+
+measurements match. When the measurements match, the channel output is released. Note that it is possible to
+connect some device outputs together by shorting the OUTA or OUTB line.
+8.2.1.2 Detailed Design Procedure
+The resistor to ground values on the SETA input sets the TTRIP threshold of Channel A. The resistor to ground
+value on the SETB input sets the TTRIP threshold of Channel B as well as the THYST 5°C and 10°C options.
+TI recommends that the resistors at SETA and SETB have a 1% tolerance at room temperature. Each resistor
+can range from 1.05 KΩ to 909 KΩ, representing one of 48 unique values. The exact temperature thresholds
+and trip points are shown in Table 7-1 and Table 7-2. The pullup resistors should be at least 1 kΩ to minimize
+internal power dissipation. To get the correct threshold for resistor values, take care to minimize the board level
+capacitance and leakage at the SETA and SETB pins.
+The waveform for the TMP390 output under the hot/cold thresholds is shown in Figure 8-2. The hysteresis can
+be set to 5°C, 10°C or 20°C. When the temperature exceeds the hot trip point threshold, OUTA goes low until
+the temperature drops below the hysteresis threshold. When the temperature drops below the cold trip threshold,
+OUTB goes low and returns high after the temperature rises above the hysteresis threshold. If the switch has
+already tripped and the temperature is in the hysteresis band, a POR event will cause the output to go high after
+the power is restored.
+8.2.1.3 Application Curves
+
+
+
+                                                                                            (Channel A)
+                                                                                            Hot threshold
+
+
+                 Measured
+                                                                                                   Hysteresis
+                                                                                                  5°C, or 10°C
+
+              Temperature (°C)                                                              (Channel B)
+                                                                                            Cold threshold
+
+
+
+                                                                                            Time (s)
+
+
+
+             OUTA
+
+
+
+
+             OUTB
+
+
+
+                                                                                            Time (s)
+                                 Figure 8-2. TMP390 Output With Hot/Cold Thresholds With Hysteresis
+
+
+
+
+12    Submit Document Feedback                                                        Copyright © 2022 Texas Instruments Incorporated
+
+                                                       Product Folder Links: TMP390
+                                                                                                                             TMP390
+www.ti.com                                                                                   SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+8.2.2 TMP390 With 10°C Hysteresis
+Figure 8-3 shows an example circuit for overtemperature and undertemperature protection using the TMP390. In
+this example, the trip points are set at –25°C and +90°C with 10°C hysteresis.
+                                                                VDD = 3.0 V
+
+                                                          0.1 µF
+                                                                                                                    3.3 V
+
+
+
+                                                                   VDD                     10 kŸ                    VCC
+                                                         SETA                 OUTA
+
+                        78.7 kŸ
+ Channel A Trip Temp = +90°C                                     TMP390                            10 kŸ     Microprocessor
+    and Hysteresis = 10°C
+                                                         SETB                 OUTB
+                               215 kŸ                              GND                                              GND
+Channel B Trip Temp = ±25°C
+   and Hysteresis = 10°C
+
+
+            Figure 8-3. TMP390 Example Circuit at +90°C and –25°C Thresholds With 10°C Hysteresis
+
+8.2.2.1 Design Requirements
+In this example, VDD can be ≥ 3 V. The output pins may be tied to a switch to control a fan or other analog
+circuitry. Figure 8-3 uses 10-kΩ pullup resistors at the OUTA and OUTB outputs. Place a 0.1-µF bypass
+capacitor close to the TMP390 device to reduce noise coupled from the power supply. If needed, the output of
+multiple parts can be connected together.
+8.2.2.2 Detailed Design Procedure
+SETA sets the +90°C threshold using 78.7 kΩ. SETB sets the –25°C trip point and 10°C hysteresis using 215
+kΩ. These values were determined using Table 7-1 and Table 7-2. These resistors should have maximum of
+1% tolerance and 100 ppm/°C or less over the desired temperature range. A summary of the resistor settings
+used in this example is shown in Table 8-1. See Table 7-1 and Table 7-2 for additional trip points and hysteresis
+configurations.
+The switching output of the TMP390 can be visualized with the output diagram shown in Figure 8-4. It is key
+to notice that hysteresis is subtracted from the Channel A threshold and added to the Channel B threshold
+values. OUTA remains high until the sensor reaches +90°C where the output goes low, and returns high after the
+temperature drops back down to +80°C. OUTB trips when the temperature stays below –25°C and goes low until
+the temperature rises above –15°C.
+                                      Table 8-1. Example Resistor Settings and Trip Points
+       CHANNEL                      RESISTOR SETTING (kΩ)                HYSTERESIS (°C)            TRIP TEMPERATURE (°C)
+          SETA                                    78.7                                                        +90
+                                                                                10
+          SETB                                    215                                                         –25
+
+
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                        Submit Document Feedback      13
+                                                         Product Folder Links: TMP390
+ TMP390
+ SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                   www.ti.com
+
+  8.2.2.3 Application Curve
+
+OUTA                                                                                                                  OUTB
+
+
+VCC                                                                                                                   VCC
+
+
+
+
+                        +80°C         +90°C     TTRIP             TTRIP      ±25°C         ±15°C
+                                Figure 8-4. TMP390 Output Response With Hysteresis
+
+
+
+
+ 14    Submit Document Feedback                                               Copyright © 2022 Texas Instruments Incorporated
+
+                                              Product Folder Links: TMP390
+                                                                                                                    TMP390
+www.ti.com                                                                          SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+8.2.3 One Channel Operation for Hot Trip Point up to 124°C
+Figure 8-5 shows the TMP390 configured for one channel operation, with a single resistor to set the hot trip point
+and hysteresis. Table 8-2 shows the possible resistor values and hysteresis values that may be used for one
+channel applications.
+                                                                3.3 V
+
+                                                      0.1 µF
+
+
+
+                                                                                            10 kŸ
+                                                                VDD
+                                                     SETA                 OUTA
+
+                       33.2 kŸ
+                                                            TMP39x
+
+                                                     SETB                 OUTB
+
+                                                                GND
+
+
+
+
+        Figure 8-5. TMP390 One Channel (Hot) Operation Example Circuit With 78°C Trip Point and 5°C
+                                               Hysteresis
+
+                                          Table 8-2. Single Resistor One Channel Setting
+                                                        CHANNEL A TRIP
+           NOMINAL 1% RESISTOR (KΩ)                                                        HYSTERESIS (°C)
+                                                       TEMPERATURE (°C)
+                         10.5                                  62                                 5
+                         12.1                                  64                                 5
+                         14.0                                  66                                 5
+                         16.2                                  68                                 5
+                         18.7                                  70                                 5
+                         21.5                                  72                                 5
+                         24.9                                  74                                 5
+                         28.7                                  76                                 5
+                         33.2                                  78                                 5
+                         38.3                                  80                                 5
+                         44.2                                  82                                 5
+                         51.1                                  84                                 5
+                         59.0                                  86                                 5
+                         68.1                                  88                                 5
+                         78.7                                  90                                 5
+                         90.0                                  92                                 5
+                          105                                  94                                 10
+                          121                                  96                                 10
+                          140                                  98                                 10
+                          162                                  100                                10
+                          187                                  102                                10
+
+Copyright © 2022 Texas Instruments Incorporated                                               Submit Document Feedback      15
+                                                     Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                                          www.ti.com
+
+                                      Table 8-2. Single Resistor One Channel Setting (continued)
+                                                              CHANNEL A TRIP
+         NOMINAL 1% RESISTOR (KΩ)                                                                      HYSTERESIS (°C)
+                                                             TEMPERATURE (°C)
+                             215                                     104                                        10
+                             249                                     106                                        10
+                             287                                     108                                        10
+                             332                                     110                                        10
+                             383                                     112                                        10
+                             442                                     114                                        10
+                             511                                     116                                        10
+                             590                                     118                                        10
+                             681                                     120                                        10
+                             787                                     122                                        10
+                             909                                     124                                        10
+
+
+8.2.3.1 Application Curve
+
+
+
+                    Measured
+                                                                                                            (Channel A)
+                                                                                                            Hot threshold
+
+
+
+                 Temperature (°C)
+                                                                                                               Hysteresis
+                                                                                                                  5°C
+
+
+
+                                                                                                            Time (s)
+
+
+
+                OUTA
+
+
+
+
+                   VDD
+
+                                    When VDD supply voltage is zero, the pullup output voltage is still present
+                                                                                                            Time (s)
+
+                 Figure 8-6. TMP390 One Channel (Hot) Operation Thresholds and Hysteresis
+
+
+
+
+16    Submit Document Feedback                                                                      Copyright © 2022 Texas Instruments Incorporated
+
+                                                            Product Folder Links: TMP390
+                                                                                                                 TMP390
+www.ti.com                                                                       SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+8.2.4 One Channel Operation for Cold Trip Point
+Figure 8-7 shows the TMP390 configured for one channel operation, with a single resistor to set the warm trip
+point and hysteresis. The resistor values for one channel warm trip point is same as described in Table 7-2.
+                                                             3.3 V
+
+                                                   0.1 µF
+
+
+
+                                                                                         10 NŸ
+                                                             VDD
+                                                  SETA                 OUTA
+
+
+                                                          TMP390
+                                       249 NŸ
+                                                  SETB                 OUTB
+
+                                                             GND
+
+
+
+
+     Figure 8-7. TMP390 One Channel (Cold) Operation Example Circuit With –20°C Trip Point and 10°C
+                                              Hysteresis
+
+8.2.4.1 Application Curve
+
+
+
+                       Measured                                                              Hysteresis
+                                                                                               10°C
+
+
+                    Temperature (°C)
+                                                                                            (Channel B)
+                                                                                           Cold threshold
+
+
+
+                                                                                          Time (s)
+
+
+
+                  OUTB
+
+
+
+                                                                                          Time (s)
+
+                     Figure 8-8. TMP390 One Channel (Cold) Operation Thresholds and Hysteresis
+
+9 Power Supply Recommendations
+The low supply current and wide supply range of the TMP390 allow the device to be powered from many
+sources. VDDIO must always be lower than or equal to VDD + 0.3 V.
+Power supply bypassing is strongly recommended by adding a 0.1-µF capacitor from VDD to GND. In noisy
+environments, TI recommends to add a filter with 0.1-µF capacitor and 100-Ω resistor between external supply
+and VDD to limit the power supply noise.
+
+
+Copyright © 2022 Texas Instruments Incorporated                                            Submit Document Feedback      17
+                                                  Product Folder Links: TMP390
+TMP390
+SBOS904A – MAY 2019 – REVISED AUGUST 2020                                                                       www.ti.com
+
+
+10 Layout
+10.1 Layout Guidelines
+The TMP390 is extremely simple to layout. Place the power supply bypass capacitor as close to the device
+as possible, and connect the capacitor as shown in Figure 10-1. Place the RSETA and RSETB resistors as close
+to the device as possible. Carefully consider the resistor placement to avoid additional leakage or parasitic
+capacitance, as this may affect the actual resistor sense value for the trip thresholds and hysteresis. If there
+is a possibility of moisture condensation on the SETA and SETB circuits, which may lead to additional leakage
+current, consider adding a conformal coating to the circuits.
+10.2 Layout Example
+
+                           VIA to ground plane
+
+                           VIA to power plane
+
+
+
+                        RSETA
+                                                   SETA      OUTA
+
+                        RSETB                                                   0.1 …F
+                                                   SETB       VDD
+
+
+
+                                                   GND       OUTB
+
+
+
+
+                                     Figure 10-1. TMP390 Recommended Layout
+
+
+
+
+18    Submit Document Feedback                                                   Copyright © 2022 Texas Instruments Incorporated
+
+                                                 Product Folder Links: TMP390
+                                                                                                                                  TMP390
+www.ti.com                                                                                     SBOS904A – MAY 2019 – REVISED AUGUST 2020
+
+
+11 Device and Documentation Support
+11.1 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Subscribe to updates to register and receive a weekly digest of any product information that has changed. For
+change details, review the revision history included in any revised document.
+11.2 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+11.3 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+11.4 Electrostatic Discharge Caution
+                    This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                    with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+                    ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+                    be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                    specifications.
+
+
+11.5 Glossary
+ TI Glossary             This glossary lists and explains terms, acronyms, and definitions.
+
+12 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+Copyright © 2022 Texas Instruments Incorporated                                                            Submit Document Feedback          19
+                                                        Product Folder Links: TMP390
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   25-Sep-2026
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier        RoHS             Lead finish/              MSL rating/               Op temp (°C)          Part marking
+                                        (1)            (2)                                                             (3)            Ball material             Peak reflow                                           (6)
+                                                                                                                                            (4)                      (5)
+
+          TMP390A2DRLR                Active      Production      SOT-5X3 (DRL) | 6      4000 | LARGE T&R             Yes              NIPDAUAG           Level-2-260C-1 YEAR              -55 to 130                1C4
+         TMP390A2DRLR.A               Active      Production      SOT-5X3 (DRL) | 6      4000 | LARGE T&R             Yes              NIPDAUAG           Level-2-260C-1 YEAR              -55 to 130                1C4
+          TMP390A2DRLT               Obsolete     Production      SOT-5X3 (DRL) | 6                -                    -                 Call TI                  Call TI                 -55 to 130                1C4
+          TMP390A3DRLR                Active      Production      SOT-5X3 (DRL) | 6      4000 | LARGE T&R             Yes              NIPDAUAG           Level-2-260C-1 YEAR              -55 to 130                1C6
+         TMP390A3DRLR.A               Active      Production      SOT-5X3 (DRL) | 6      4000 | LARGE T&R             Yes              NIPDAUAG           Level-2-260C-1 YEAR              -55 to 130                1C6
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 1
+                                                                                                                          PACKAGE OPTION ADDENDUM
+
+   www.ti.com                                                                                                                               25-Sep-2026
+
+
+
+
+OTHER QUALIFIED VERSIONS OF TMP390 :
+
+• Automotive : TMP390-Q1
+
+NOTE: Qualified Version Definitions:
+
+       • Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+
+
+
+
+                                                                                                        Addendum-Page 2
+                                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                        20-Feb-2024
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                       TAPE DIMENSIONS
+                                                                                        K0         P1
+
+
+
+                                                                                                                          B0 W
+                                          Reel
+                                        Diameter
+                                                                                     Cavity             A0
+                                                                 A0   Dimension designed to accommodate the component width
+                                                                 B0   Dimension designed to accommodate the component length
+                                                                 K0   Dimension designed to accommodate the component thickness
+                                                                 W    Overall width of the carrier tape
+                                                                 P1   Pitch between successive cavity centers
+
+
+                                         Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                         Sprocket Holes
+
+
+                                                   Q1       Q2          Q1    Q2
+
+                                                   Q3       Q4          Q3    Q4                    User Direction of Feed
+
+
+
+                                                             Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins               SPQ       Reel   Reel   A0                     B0         K0     P1     W     Pin1
+                               Type Drawing                              Diameter Width (mm)                   (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                           (mm) W1 (mm)
+     TMP390A2DRLR             SOT-5X3     DRL           6        4000        180.0           8.4        1.98   1.78       0.69   4.0    8.0     Q3
+     TMP390A3DRLR             SOT-5X3     DRL           6        4000        180.0           8.4        1.98   1.78       0.69   4.0    8.0     Q3
+
+
+
+
+                                                                       Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              20-Feb-2024
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TMP390A2DRLR               SOT-5X3           DRL           6           4000      213.0        191.0         35.0
+     TMP390A3DRLR               SOT-5X3           DRL           6           4000      213.0        191.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                                                                PACKAGE OUTLINE
+ DRL0006A                                                          SCALE 8.000
+                                                                                                                SOT - 0.6 mm max height
+                                                                                                                        PLASTIC SMALL OUTLINE
+
+
+
+
+                                                   1.7
+                                                   1.5
+                                                         PIN 1                            A
+                                                         ID AREA
+
+
+                                 1
+                                                                                    6
+
+                        4X 0.5
+
+                                                                                         1.7
+                 2X 1
+                                                                                         1.5
+                                                                                        NOTE 3
+
+
+                                                                                    4                       2X 0 -10
+                                 3
+
+
+
+                                                   1.3                                       0.3                       0.05
+                                 B                                                      6X                                  TYP
+                                                   1.1                                       0.1                       0.00
+
+
+                                                                                   2X 4 -15
+
+
+
+                    0.6 MAX
+                                                                                                   C
+
+                                                                                                       SEATING PLANE
+                        0.18
+                   6X                                                                                  0.05 C
+                        0.08
+                                                 SYMM
+
+
+
+
+                        SYMM
+
+
+
+
+                                                                                                   0.27
+                                                                                              6X
+                                                                                                   0.15
+                                                                                                     0.1    C A B
+                                                          0.4
+                                                     6X                                              0.05    C
+                                                          0.2
+                                                                                                                                  4223266/F 11/2024
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+   exceed 0.15 mm per side.
+4. Reference JEDEC registration MO-293 Variation UAAD
+
+
+
+
+                                                                                 www.ti.com
+                                                                                  EXAMPLE BOARD LAYOUT
+ DRL0006A                                                                                     SOT - 0.6 mm max height
+                                                                                                           PLASTIC SMALL OUTLINE
+
+
+
+
+                                                6X (0.67)
+                                                                  SYMM
+                                            1
+
+                                 6X (0.3)                                                     6
+
+
+
+                                                                                                  SYMM
+
+
+                               4X (0.5)
+
+                                                                                              4
+                                            3
+
+                           (R0.05) TYP
+                                                                  (1.48)
+
+
+
+                                                    LAND PATTERN EXAMPLE
+                                                               SCALE:30X
+
+
+
+
+                   0.05 MAX                                                0.05 MIN
+                   AROUND                                                  AROUND
+
+
+
+
+                 SOLDER MASK                        METAL                  METAL UNDER                     SOLDER MASK
+                 OPENING                                                   SOLDER MASK                     OPENING
+                                NON SOLDER MASK                                          SOLDER MASK
+                                    DEFINED                                                DEFINED
+                                  (PREFERRED)
+
+                                                       SOLDERMASK DETAILS
+
+
+
+
+                                                                                                                 4223266/F 11/2024
+
+NOTES: (continued)
+
+5. Publication IPC-7351 may have alternate designs.
+6. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+7. Land pattern design aligns to IPC-610, Bottom Termination Component (BTC) solder joint inspection criteria.
+
+
+
+
+                                                                  www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+ DRL0006A                                                                                    SOT - 0.6 mm max height
+                                                                                                           PLASTIC SMALL OUTLINE
+
+
+
+
+                                                  6X (0.67)
+                                                                   SYMM
+                                              1
+
+                                   6X (0.3)                                                    6
+
+
+
+                                                                                                    SYMM
+
+
+                                 4X (0.5)
+
+                                                                                                4
+                                              3
+
+                            (R0.05) TYP
+                                                                   (1.48)
+
+
+                                                      SOLDER PASTE EXAMPLE
+                                                     BASED ON 0.1 mm THICK STENCIL
+                                                              SCALE:30X
+
+
+
+
+                                                                                                                   4223266/F 11/2024
+
+NOTES: (continued)
+
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations.
+9. Board assembly site may have different recommendations for stencil design.
+
+
+
+
+                                                                  www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2026, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

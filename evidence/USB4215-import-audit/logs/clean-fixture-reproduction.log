@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/reproduce-fixture.py", line 39, in <module>
+    run([str(args.cam_python.resolve()), str(output / "test_cam_geometry.py")], "cam.log")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/reproduce-fixture.py", line 26, in run
+    subprocess.run(command, cwd=output / "fixture", stdout=log, stderr=subprocess.STDOUT, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/bin/python3.14', '/private/tmp/usb4215-qualification-reproduce-20261003-final/test_cam_geometry.py']' returned non-zero exit status 1.

@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/explicit-paste-regions.test.ts:
+ 7 | test("preserves explicit supplier paste polygons and per-pad expansion", () => {
+ 8 |   const parsed = EasyEdaJsonSchema.parse(rawEasy)
+ 9 |   expect(parsed.packageDetail.dataStr.shape.filter(s => s.type === "SOLIDREGION" && s.layermask === 5)).toHaveLength(16)
+10 |   const circuitJson = convertEasyEdaJsonToCircuitJson(parsed, {shouldRecenter:false, showDesignator:false})
+11 |   const paste = circuitJson.filter(e => e.type === "pcb_solder_paste")
+12 |   expect(paste).toHaveLength(16)
+                     ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 16
+Received length: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tests/explicit-paste-regions.test.ts:12:17)
+(fail) preserves explicit supplier paste polygons and per-pad expansion [81.26ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [2.76s]

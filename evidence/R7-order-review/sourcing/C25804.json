@@ -1,0 +1,28 @@
+{
+  "lcsc": "C25804",
+  "mpn": "0603WAF1002T5E",
+  "references": [
+    "R9"
+  ],
+  "url": "https://jlcpcb.com/partdetail/0603WAF1002T5E/C25804",
+  "listing_sha256": "56d00b29bb830d0cc7ffa497a4cb2c2596681f43ebe9b77811161f15bf58e51c",
+  "checked_at_utc": "2026-10-04T21:21:32.886003+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 22080534,
+    "overseasStockCount": 29895631,
+    "preMinPurchaseNum": 5000
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

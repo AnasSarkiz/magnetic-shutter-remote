@@ -1,0 +1,27 @@
+{
+  "board_target": "esp32c3_devkitc/esp32c3",
+  "module": "ESP32-C3-WROOM-02-N4",
+  "pin_contract_status": "PROPOSED \u2014 NOT REGISTERED TO A ROUTED R8 PCB",
+  "hardware_tested": false,
+  "framework_revisions": {
+    "zephyr": "413b789deb391d3a37d06b463288a5fe765ee57e",
+    "hal_espressif": "f3453bdeced28642424692aae32cce4eec3f2d7f",
+    "mbedtls": "85440ef5fffa95d0e9971e9163719189cf34d979"
+  },
+  "zephyr_sdk": "0.17.2",
+  "riscv_gcc": "12.2.0",
+  "python": "3.14.7",
+  "artifact_sha256": {
+    "zephyr.bin": "e5457ec5830105ef0eaa3999b9fe1393dba666144a8aea953313fc763fa8c1b4",
+    "zephyr.elf": "0601726f2e4073fb7da005782e6978cd84694e1ec7cbeccfd7ad780efbe961c2"
+  },
+  "source_sha256": {
+    "firmware/src/main.c": "9c150e76279cd57a42e61181c572bd131697641948b64d39851a9ce6d4c711d8",
+    "firmware/src/hid.c": "2b479d1b630b1a51c0fce2cdf19de4f34ebd75bece03cb169841a170a568177c",
+    "firmware/src/hid.h": "2fca8bd143550ccda73bed510386f7e2bd213ffc2b932a2e44402662ab5032d6",
+    "firmware/prj.conf": "2ff44054ade0c753f4693391709bede8f745ab0f3ec46b6289fdfd3a97768ada",
+    "firmware/boards/esp32c3_devkitc.overlay": "edae4ae151a4cbbc2a50f9564f53d065c830b23f515bb8f34228d52d39217e6f",
+    "firmware/CMakeLists.txt": "832842adc0c1004a1de8cd7dbe5582ffcc5610315f36738f55fa63be3f911a29",
+    "firmware/requirements-lock.txt": "a85e0de5dceb6ba3c1c31c950ab531d81fac066dcd536c1125971b938a1bf360"
+  }
+}

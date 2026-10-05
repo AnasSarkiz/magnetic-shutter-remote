@@ -1,0 +1,15 @@
+{
+	"$schema": "https://cdn.jsdelivr.net/npm/@tscircuit/cli/types/tscircuit.config.schema.json",
+	"ignoredFiles": [
+		"tooling/**",
+		"evidence/**",
+		"references/**",
+		"firmware/**",
+		"mechanical/**",
+		"tscircuit-issues/**",
+		"deliverables/**",
+		"fabrication/**",
+		"dist/**",
+		"__snapshots__/**"
+	]
+}

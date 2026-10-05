@@ -1,0 +1,27 @@
+{
+  "source_commit": "4ecd8f0b7fd6cfcbf7cba8f4d603377f3b9e1041",
+  "branch": "r7-shutter-only-order-review",
+  "frozen_R6_commit": "77965a8012d5544e962d987ce958c5c5614dbe3a",
+  "PCB_source_changed": false,
+  "torch_scope": "CANCELLED",
+  "local_design_CAM": "PASS",
+  "overall_board_suite": "77 PASS / 1 FAIL (missing historical R5 ZIP) / 1 SKIPPED (missing R2 input)",
+  "supplier_preview": "NOT PROVIDED",
+  "payment": "HOLD",
+  "R6_protected_files": 2898,
+  "R6_mismatches": [],
+  "R4_R5_preservation": "971/972 match; historical R5 ZIP absent",
+  "github_remote": null,
+  "tscircuit_R7_destination": "NOT CONFIRMED",
+  "remote_updates": "NONE",
+  "order_or_payment": "NONE",
+  "review_package": {
+    "archive": "deliverables/magnetic-shutter-remote-shutter-only-JLCPCB-review.zip",
+    "sha256": "76f7855fcc6006636debf3e19c6e9e5a1c0a3ed402842ed37da93f78a94cfe93",
+    "bytes": 2167204,
+    "entries": 53,
+    "member_hashes_verified": 52,
+    "status": "REVIEW ONLY \u2014 NOT APPROVED FOR PAYMENT",
+    "no_torch_design_files": true
+  }
+}

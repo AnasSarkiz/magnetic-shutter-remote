@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/excellon-drill/independent-g85-slot-records.test.ts:
+ 8 |   const lines = stringifyExcellonDrill(commands).split("\n")
+ 9 |   const slots = lines.flatMap((line,index) => line.includes("G85") ? [{line,index}] : [])
+10 |   expect(slots).toHaveLength(4)
+11 |   for (const {line,index} of slots) {
+12 |     const match = /^X(-?[\d.]+)Y(-?[\d.]+)G85X(-?[\d.]+)Y(-?[\d.]+)$/.exec(line)
+13 |     expect(match).not.toBeNull()
+                           ^
+error: expect(received).not.toBeNull()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-to-gerber/tests/excellon-drill/independent-g85-slot-records.test.ts:13:23)
+(fail) four supplier USB shell slots have self-contained start/end records and return to drill mode [858.49ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [1.92s]

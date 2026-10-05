@@ -1,0 +1,50 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-saved-fanout-plated-terminal-bottom.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: Saved fanout path "J1.pin1" does not cover its connection endpoints
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:105:19)
+    at map (native:1:11)
+    at getSavedFanoutTraces (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:31:62)
+    at getPrecomputedRoutingResult (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts:510:19)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Group/Group.ts:1745:26)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Group/Group.ts:2064:14)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:310:16)
+    at _startAsyncAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Group/Group.ts:2063:12)
+    at doInitialPcbTraceRender (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Group/Group.ts:2112:10)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:519:34)
+    at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:456:12)
+    at render (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/IsolatedCircuit.ts:211:16)
+    at renderUntilSettled (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/IsolatedCircuit.ts:244:14)
+    at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-saved-fanout-plated-terminal-bottom.test.tsx:53:17)
+    at processTicksAndRejections (native:7:39)
+49 |         connections={{ pin1: "net.GND" }}
+50 |       />
+51 |     </board>,
+52 |   )
+53 |   await circuit.renderUntilSettled()
+54 |   expect(circuit.db.pcb_autorouting_error.list()).toEqual([])
+                                                       ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "error_type": "pcb_autorouting_error",
++     "message": "Saved fanout path "J1.pin1" does not cover its connection endpoints",
++     "pcb_autorouting_error_id": "pcb_autorouting_error_0",
++     "pcb_error_id": "pcb_autorouter_error_subcircuit_subcircuit_source_group_1",
++     "type": "pcb_autorouting_error",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 9
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-saved-fanout-plated-terminal-bottom.test.tsx:54:51)
+(fail) saved bottom copper contacts an actual plated connector terminal [101.86ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [699.00ms]

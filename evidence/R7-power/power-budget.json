@@ -1,0 +1,71 @@
+{
+  "revision": "R7 feasibility \u2014 components/layout not yet qualified",
+  "date": "2026-10-04",
+  "battery_candidate": "DTP603443 / SparkFun PRT-13854 (external item, no C-number)",
+  "scenarios": [
+    {
+      "inputs": {
+        "led_power_w": 1.5,
+        "minimum_loaded_supply_v": 3.3,
+        "assumed_minimum_conversion_efficiency": 0.8,
+        "radio_and_control_reserve_a": 0.02,
+        "capacity_ah": 0.85,
+        "nominal_battery_v": 3.7,
+        "assumed_usable_energy_fraction": 0.65,
+        "maximum_continuous_battery_a": 0.85
+      },
+      "torch_input_a": 0.5681818181818182,
+      "total_battery_a": 0.5881818181818183,
+      "continuous_current_margin_a": 0.2618181818181817,
+      "estimated_runtime_minutes": 62.93227296049256,
+      "runtime_status": "MODEL ONLY \u2014 POST-PROTOTYPE PHYSICAL VALIDATION"
+    },
+    {
+      "inputs": {
+        "led_power_w": 1.7,
+        "minimum_loaded_supply_v": 3.3,
+        "assumed_minimum_conversion_efficiency": 0.8,
+        "radio_and_control_reserve_a": 0.02,
+        "capacity_ah": 0.85,
+        "nominal_battery_v": 3.7,
+        "assumed_usable_energy_fraction": 0.65,
+        "maximum_continuous_battery_a": 0.85
+      },
+      "torch_input_a": 0.6439393939393939,
+      "total_battery_a": 0.6639393939393939,
+      "continuous_current_margin_a": 0.18606060606060604,
+      "estimated_runtime_minutes": 55.77762619372442,
+      "runtime_status": "MODEL ONLY \u2014 POST-PROTOTYPE PHYSICAL VALIDATION"
+    },
+    {
+      "inputs": {
+        "led_power_w": 2.0,
+        "minimum_loaded_supply_v": 3.3,
+        "assumed_minimum_conversion_efficiency": 0.8,
+        "radio_and_control_reserve_a": 0.02,
+        "capacity_ah": 0.85,
+        "nominal_battery_v": 3.7,
+        "assumed_usable_energy_fraction": 0.65,
+        "maximum_continuous_battery_a": 0.85
+      },
+      "torch_input_a": 0.7575757575757576,
+      "total_battery_a": 0.7775757575757576,
+      "continuous_current_margin_a": 0.07242424242424239,
+      "estimated_runtime_minutes": 47.651515151515156,
+      "runtime_status": "MODEL ONLY \u2014 POST-PROTOTYPE PHYSICAL VALIDATION"
+    }
+  ],
+  "current_limiter_candidate_35_7k_1pct": {
+    "minimum_ma": 660.7175263876554,
+    "nominal_ma": 728.3643326127404,
+    "maximum_ma": 805.2761158367376
+  },
+  "gates": {
+    "led_voltage_current_envelope": "PENDING EXACT LED SELECTION",
+    "loaded_supply_floor": "3.3 V DESIGN ASSUMPTION; NOT IMPLEMENTED OR VALIDATED",
+    "efficiency": "0.80 ASSUMPTION; PROTOTYPE MEASUREMENT REQUIRED",
+    "battery_harness_and_pack_envelope": "PENDING DRAWING REVIEW",
+    "thermal": "PENDING LED SELECTION AND ENCLOSURE ANALYSIS",
+    "no_firmware_only_fault_protection": "HARDWARE CURRENT LIMIT REQUIRED"
+  }
+}

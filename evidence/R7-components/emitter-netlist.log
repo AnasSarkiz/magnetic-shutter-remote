@@ -1,0 +1,141 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - J1: J1, source_component
+ - D1: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D2: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D3: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D4: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D5: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D6: GW VJLPL1.CM-LTLV-XX58-1-350-R18
+ - D7: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+ - D8: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+ - D9: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+ - D10: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+ - D11: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+ - D12: GW VJLPL1.CM-K3LX-XX51-1-350-R18
+
+NET: GND
+  - J1 pin8
+  - J1 pin7
+  - J1 pin6
+  - J1 pin5
+
+NET: WARM_A
+  - D1 pin2
+  - J1 pin1
+
+NET: WARM_1
+  - D2 pin2
+  - D1 pin1
+
+NET: WARM_2
+  - D3 pin2
+  - D2 pin1
+
+NET: WARM_3
+  - D4 pin2
+  - D3 pin1
+
+NET: WARM_4
+  - D5 pin2
+  - D4 pin1
+
+NET: WARM_5
+  - D6 pin2
+  - D5 pin1
+
+NET: WARM_K
+  - D6 pin1
+  - J1 pin2
+
+NET: COOL_A
+  - D7 pin2
+  - J1 pin3
+
+NET: COOL_1
+  - D8 pin2
+  - D7 pin1
+
+NET: COOL_2
+  - D9 pin2
+  - D8 pin1
+
+NET: COOL_3
+  - D10 pin2
+  - D9 pin1
+
+NET: COOL_4
+  - D11 pin2
+  - D10 pin1
+
+NET: COOL_5
+  - D12 pin2
+  - D11 pin1
+
+NET: COOL_K
+  - D12 pin1
+  - J1 pin4
+
+
+COMPONENT_PINS:
+J1 (BM06B-SRSS-TB(LF)(SN))
+- pin1: NETS(WARM_A)
+- pin2: NETS(WARM_K)
+- pin3: NETS(COOL_A)
+- pin4: NETS(COOL_K)
+- pin5: NETS(GND)
+- pin6: NETS(GND)
+- pin7: NETS(GND)
+- pin8: NETS(GND)
+
+D1 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_1)
+- pin2(A): NETS(WARM_A)
+
+D2 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_2)
+- pin2(A): NETS(WARM_1)
+
+D3 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_3)
+- pin2(A): NETS(WARM_2)
+
+D4 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_4)
+- pin2(A): NETS(WARM_3)
+
+D5 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_5)
+- pin2(A): NETS(WARM_4)
+
+D6 (GW VJLPL1.CM-LTLV-XX58-1-350-R18)
+- pin1(C): NETS(WARM_K)
+- pin2(A): NETS(WARM_5)
+
+D7 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_1)
+- pin2(A): NETS(COOL_A)
+
+D8 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_2)
+- pin2(A): NETS(COOL_1)
+
+D9 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_3)
+- pin2(A): NETS(COOL_2)
+
+D10 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_4)
+- pin2(A): NETS(COOL_3)
+
+D11 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_5)
+- pin2(A): NETS(COOL_4)
+
+D12 (GW VJLPL1.CM-K3LX-XX51-1-350-R18)
+- pin1(C): NETS(COOL_K)
+- pin2(A): NETS(COOL_5)
+

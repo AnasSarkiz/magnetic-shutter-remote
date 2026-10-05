@@ -1,0 +1,2590 @@
+{
+  "thickness_mm": 0.1,
+  "aperture_count": 161,
+  "usb_aperture_count": 16,
+  "usb_polygon_count": 16,
+  "minimum_area_ratio": 0.6999985999999996,
+  "minimum_aspect_ratio": 1.9999959999999994,
+  "exposed_pad_coverage_percent": 67.40734814804152,
+  "release_failures": [],
+  "apertures": [
+    {
+      "id": "pcb_solder_paste_0",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -1.4000733999998831,
+        21.360230600000058,
+        -1.1000740000000635,
+        22.560253600000046
+      ],
+      "area_mm2": 0.3600061799859798,
+      "perimeter_mm": 3.000044799999614,
+      "area_ratio": 1.2000026799134,
+      "aspect_ratio": 2.999993999998196,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_1",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -1.900199399999906,
+        21.360230600000058,
+        -1.6001999999999728,
+        22.560253600000046
+      ],
+      "area_mm2": 0.36000617998611617,
+      "perimeter_mm": 3.0000447999998414,
+      "area_ratio": 1.200002679913764,
+      "aspect_ratio": 2.9999939999993352,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_2",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        2.9000196000000638,
+        21.360230600000058,
+        3.500018399999931,
+        22.560253600000046
+      ],
+      "area_mm2": 0.7200123599722323,
+      "perimeter_mm": 3.600043599999708,
+      "area_ratio": 2.0000101109116866,
+      "aspect_ratio": 5.999987999998666,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_3",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -0.9002014000000148,
+        21.360230600000058,
+        -0.600201999999854,
+        22.560253600000046
+      ],
+      "area_mm2": 0.36000617998638906,
+      "perimeter_mm": 3.000044800000296,
+      "area_ratio": 1.2000026799144916,
+      "aspect_ratio": 2.9999940000016068,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_4",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -2.700172399999929,
+        21.360230600000058,
+        -2.100173600000062,
+        22.560253600000046
+      ],
+      "area_mm2": 0.7200123599722323,
+      "perimeter_mm": 3.600043599999708,
+      "area_ratio": 2.0000101109116866,
+      "aspect_ratio": 5.9999879999986705,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_5",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -0.40007539999999187,
+        21.360230600000058,
+        -0.10007599999994472,
+        22.560253600000046
+      ],
+      "area_mm2": 0.3600061799862526,
+      "perimeter_mm": 3.000044800000069,
+      "area_ratio": 1.2000026799141277,
+      "aspect_ratio": 2.99999400000047,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_6",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        0.09979659999999026,
+        21.360230600000058,
+        0.3997960000000374,
+        22.560253600000046
+      ],
+      "area_mm2": 0.3600061799862526,
+      "perimeter_mm": 3.000044800000069,
+      "area_ratio": 1.2000026799141277,
+      "aspect_ratio": 2.99999400000047,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_7",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        2.0999196000000206,
+        21.360230600000058,
+        2.699918400000115,
+        22.560253600000046
+      ],
+      "area_mm2": 0.7200123599725052,
+      "perimeter_mm": 3.6000436000001628,
+      "area_ratio": 2.000010110912192,
+      "aspect_ratio": 5.999988000000944,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_8",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        0.5999225999998995,
+        21.360230600000058,
+        0.8999220000000603,
+        22.560253600000046
+      ],
+      "area_mm2": 0.36000617998638906,
+      "perimeter_mm": 3.000044800000296,
+      "area_ratio": 1.2000026799144916,
+      "aspect_ratio": 2.9999940000016068,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_9",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        1.099794600000109,
+        21.360230600000058,
+        1.3997940000000424,
+        22.560253600000046
+      ],
+      "area_mm2": 0.36000617998611617,
+      "perimeter_mm": 3.0000447999998414,
+      "area_ratio": 1.200002679913764,
+      "aspect_ratio": 2.999993999999333,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_10",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        1.599920600000132,
+        21.360230600000058,
+        1.8999199999999516,
+        22.560253600000046
+      ],
+      "area_mm2": 0.3600061799859798,
+      "perimeter_mm": 3.000044799999614,
+      "area_ratio": 1.2000026799134,
+      "aspect_ratio": 2.9999939999981984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_11",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -3.500018400000045,
+        21.3602560000002,
+        -2.9000195999999505,
+        22.560253600000046
+      ],
+      "area_mm2": 0.719997120002901,
+      "perimeter_mm": 3.5999927999998818,
+      "area_ratio": 1.9999960000001238,
+      "aspect_ratio": 5.99998800000094,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_12",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        3.819905999999946,
+        21.6603316000001,
+        4.819904000000065,
+        23.46002320000006
+      ],
+      "area_mm2": 1.5850634808345345,
+      "perimeter_mm": 4.741252219142812,
+      "area_ratio": 3.3431325893923947,
+      "aspect_ratio": 9.999980000001191,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_13",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -4.819903999999951,
+        21.6603316000001,
+        -3.8199059999999463,
+        23.46002320000006
+      ],
+      "area_mm2": 1.5850634808344493,
+      "perimeter_mm": 4.741252219142823,
+      "area_ratio": 3.3431325893922064,
+      "aspect_ratio": 9.99998000000005,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_14",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        3.8199059999999467,
+        25.46032400000005,
+        4.819904000000065,
+        27.66001480000015
+      ],
+      "area_mm2": 1.9850618808361908,
+      "perimeter_mm": 5.541250619142829,
+      "area_ratio": 3.582335500182192,
+      "aspect_ratio": 9.999980000001182,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_15",
+      "ref": "J1",
+      "shape": "polygon",
+      "bounds_mm": [
+        -4.819903999999951,
+        25.46032400000005,
+        -3.819905999999946,
+        27.66001480000015
+      ],
+      "area_mm2": 1.9850618808360607,
+      "perimeter_mm": 5.541250619142842,
+      "area_ratio": 3.582335500181949,
+      "aspect_ratio": 9.999980000000054,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_16",
+      "ref": "R1",
+      "shape": "rect",
+      "bounds_mm": [
+        -3.52890239,
+        18.69759776,
+        -2.9643696100000003,
+        19.30240224
+      ],
+      "area_mm2": 0.3414319544508533,
+      "perimeter_mm": 2.338674519999996,
+      "area_ratio": 1.4599378901637576,
+      "aspect_ratio": 5.6453278,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_17",
+      "ref": "R1",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.035630390000001,
+        18.69759776,
+        -4.47109761,
+        19.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_18",
+      "ref": "R2",
+      "shape": "rect",
+      "bounds_mm": [
+        0.47109761000000006,
+        18.69759776,
+        1.0356303900000001,
+        19.30240224
+      ],
+      "area_mm2": 0.3414319544508536,
+      "perimeter_mm": 2.338674519999997,
+      "area_ratio": 1.4599378901637585,
+      "aspect_ratio": 5.6453278,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_19",
+      "ref": "R2",
+      "shape": "rect",
+      "bounds_mm": [
+        -1.0356303900000001,
+        18.69759776,
+        -0.47109761000000006,
+        19.30240224
+      ],
+      "area_mm2": 0.3414319544508536,
+      "perimeter_mm": 2.338674519999997,
+      "area_ratio": 1.4599378901637585,
+      "aspect_ratio": 5.6453278,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_20",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.8999728,
+        11.6999645,
+        -0.6999732000000001,
+        12.199963499999999
+      ],
+      "area_mm2": 0.09999960000039977,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_21",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.4999228,
+        11.7002185,
+        -0.29992319999999995,
+        12.200217499999999
+      ],
+      "area_mm2": 0.09999960000039983,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_22",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.1001268,
+        11.7002185,
+        0.0998728,
+        12.200217499999999
+      ],
+      "area_mm2": 0.0999996000003998,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142853,
+      "aspect_ratio": 1.9999959999999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_23",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        0.29992319999999995,
+        11.7002185,
+        0.4999228,
+        12.200217499999999
+      ],
+      "area_mm2": 0.09999960000039983,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_24",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        0.6999732000000001,
+        11.7002185,
+        0.8999728,
+        12.200217499999999
+      ],
+      "area_mm2": 0.09999960000039977,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_25",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        0.6999732000000001,
+        13.800036500000001,
+        0.8999728,
+        14.3000355
+      ],
+      "area_mm2": 0.09999960000039977,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_26",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        0.29992319999999995,
+        13.800036500000001,
+        0.4999228,
+        14.3000355
+      ],
+      "area_mm2": 0.09999960000039983,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_27",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.1001268,
+        13.800036500000001,
+        0.0998728,
+        14.3000355
+      ],
+      "area_mm2": 0.0999996000003998,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142853,
+      "aspect_ratio": 1.9999959999999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_28",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.4999228,
+        13.800036500000001,
+        -0.29992319999999995,
+        14.3000355
+      ],
+      "area_mm2": 0.09999960000039983,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_29",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.8999728,
+        13.800036500000001,
+        -0.6999732000000001,
+        14.3000355
+      ],
+      "area_mm2": 0.09999960000039977,
+      "perimeter_mm": 1.3999971999999978,
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_30",
+      "ref": "U2",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.6501255,
+        12.6500009,
+        0.6498715,
+        13.3499991
+      ],
+      "area_mm2": 0.9099955600053995,
+      "perimeter_mm": 3.9999903999999997,
+      "area_ratio": 2.2749943599999627,
+      "aspect_ratio": 6.999981999999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_31",
+      "ref": "R3",
+      "shape": "rect",
+      "bounds_mm": [
+        5.97109761,
+        8.69759776,
+        6.535630390000001,
+        9.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_32",
+      "ref": "R3",
+      "shape": "rect",
+      "bounds_mm": [
+        4.464369609999999,
+        8.69759776,
+        5.02890239,
+        9.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_33",
+      "ref": "C1",
+      "shape": "rect",
+      "bounds_mm": [
+        8.42002456,
+        19.68500063,
+        8.980023439999998,
+        20.31499937
+      ],
+      "area_mm2": 0.35279858880140896,
+      "perimeter_mm": 2.3799952399999924,
+      "area_ratio": 1.4823499764705836,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_34",
+      "ref": "C1",
+      "shape": "rect",
+      "bounds_mm": [
+        7.01997656,
+        19.68500063,
+        7.57997544,
+        20.31499937
+      ],
+      "area_mm2": 0.3527985888014101,
+      "perimeter_mm": 2.379995239999996,
+      "area_ratio": 1.482349976470586,
+      "aspect_ratio": 5.599988800000011,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_35",
+      "ref": "C2",
+      "shape": "rect",
+      "bounds_mm": [
+        4.92002456,
+        11.18500063,
+        5.48002344,
+        11.81499937
+      ],
+      "area_mm2": 0.35279858880141207,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_36",
+      "ref": "C2",
+      "shape": "rect",
+      "bounds_mm": [
+        3.51997656,
+        11.18500063,
+        4.07997544,
+        11.81499937
+      ],
+      "area_mm2": 0.35279858880141207,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.5999887999999975,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_37",
+      "ref": "R4",
+      "shape": "rect",
+      "bounds_mm": [
+        8.47109761,
+        22.69759776,
+        9.03563039,
+        23.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_38",
+      "ref": "R4",
+      "shape": "rect",
+      "bounds_mm": [
+        6.964369609999999,
+        22.69759776,
+        7.52890239,
+        23.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_39",
+      "ref": "LED1",
+      "shape": "rect",
+      "bounds_mm": [
+        6.96993856,
+        25.72000056,
+        7.52993744,
+        26.27999944
+      ],
+      "area_mm2": 0.3135987456012556,
+      "perimeter_mm": 2.2399955200000043,
+      "area_ratio": 1.3999972000000027,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_40",
+      "ref": "LED1",
+      "shape": "rect",
+      "bounds_mm": [
+        8.47006256,
+        25.72000056,
+        9.030061439999999,
+        26.27999944
+      ],
+      "area_mm2": 0.3135987456012546,
+      "perimeter_mm": 2.239995520000001,
+      "area_ratio": 1.3999972000000003,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_41",
+      "ref": "J2",
+      "shape": "rect",
+      "bounds_mm": [
+        -14.8499973,
+        13.49506686,
+        -14.1499987,
+        16.15506154
+      ],
+      "area_mm2": 1.861992552007449,
+      "perimeter_mm": 6.719986559999999,
+      "area_ratio": 2.7708277916666684,
+      "aspect_ratio": 6.999986000000007,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_42",
+      "ref": "J2",
+      "shape": "rect",
+      "bounds_mm": [
+        -12.8500013,
+        13.49506686,
+        -12.1500027,
+        16.15506154
+      ],
+      "area_mm2": 1.861992552007449,
+      "perimeter_mm": 6.719986559999999,
+      "area_ratio": 2.7708277916666684,
+      "aspect_ratio": 6.999986000000007,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_43",
+      "ref": "J2",
+      "shape": "rect",
+      "bounds_mm": [
+        -10.67499295,
+        7.78493858,
+        -9.624995049999999,
+        10.16493382
+      ],
+      "area_mm2": 2.498990004009998,
+      "perimeter_mm": 6.859986280000001,
+      "area_ratio": 3.64284985714286,
+      "aspect_ratio": 10.49997900000001,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_44",
+      "ref": "J2",
+      "shape": "rect",
+      "bounds_mm": [
+        -17.37500495,
+        7.78493858,
+        -16.32500705,
+        10.16493382
+      ],
+      "area_mm2": 2.498990004009998,
+      "perimeter_mm": 6.859986280000001,
+      "area_ratio": 3.64284985714286,
+      "aspect_ratio": 10.49997900000001,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_45",
+      "ref": "R8",
+      "shape": "rect",
+      "bounds_mm": [
+        -6.035630390000001,
+        15.69759776,
+        -5.47109761,
+        16.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_46",
+      "ref": "R8",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.52890239,
+        15.69759776,
+        -3.9643696099999994,
+        16.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_47",
+      "ref": "R9",
+      "shape": "rect",
+      "bounds_mm": [
+        1.47109761,
+        16.69759776,
+        2.0356303899999997,
+        17.30240224
+      ],
+      "area_mm2": 0.3414319544508534,
+      "perimeter_mm": 2.3386745199999965,
+      "area_ratio": 1.4599378901637576,
+      "aspect_ratio": 5.645327799999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_48",
+      "ref": "R9",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.03563039000000001,
+        16.69759776,
+        0.52890239,
+        17.30240224
+      ],
+      "area_mm2": 0.34143195445085356,
+      "perimeter_mm": 2.338674519999997,
+      "area_ratio": 1.4599378901637583,
+      "aspect_ratio": 5.6453278,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_49",
+      "ref": "C8",
+      "shape": "rect",
+      "bounds_mm": [
+        5.50649632,
+        17.0274965,
+        6.493499679999999,
+        17.9725035
+      ],
+      "area_mm2": 0.9327250842235161,
+      "perimeter_mm": 3.864020719999992,
+      "area_ratio": 2.4138718495886273,
+      "aspect_ratio": 9.450069999999968,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_50",
+      "ref": "C8",
+      "shape": "rect",
+      "bounds_mm": [
+        3.5065003200000002,
+        17.0274965,
+        4.49350368,
+        17.9725035
+      ],
+      "area_mm2": 0.9327250842235165,
+      "perimeter_mm": 3.864020719999993,
+      "area_ratio": 2.4138718495886278,
+      "aspect_ratio": 9.450069999999968,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_51",
+      "ref": "C9",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.98002344,
+        10.68500063,
+        -5.42002456,
+        11.31499937
+      ],
+      "area_mm2": 0.35279858880141207,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_52",
+      "ref": "C9",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.57997544,
+        10.68500063,
+        -4.01997656,
+        11.31499937
+      ],
+      "area_mm2": 0.35279858880141207,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_53",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -22.519457369999998,
+        -5.804941400000001,
+        -21.88945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_54",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.719867369999999,
+        -21.88445737,
+        -4.08986863,
+        -21.254458630000002
+      ],
+      "area_mm2": 0.3968984124015859,
+      "perimeter_mm": 2.5199949599999947,
+      "area_ratio": 1.5749968499999965,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_55",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -21.24945737,
+        -5.804941400000001,
+        -20.61945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_56",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -20.61445737,
+        -4.090122630000001,
+        -19.984458630000002
+      ],
+      "area_mm2": 0.3968984124015859,
+      "perimeter_mm": 2.5199949599999947,
+      "area_ratio": 1.5749968499999965,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_57",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -19.97945737,
+        -5.804941400000001,
+        -19.34945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_58",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -19.344457369999997,
+        -4.090122630000001,
+        -18.71445863
+      ],
+      "area_mm2": 0.3968984124015859,
+      "perimeter_mm": 2.5199949599999947,
+      "area_ratio": 1.5749968499999965,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_59",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -18.70945737,
+        -5.804941400000001,
+        -18.07945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_60",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -18.074457369999998,
+        -4.090122630000001,
+        -17.44445863
+      ],
+      "area_mm2": 0.3968984124015859,
+      "perimeter_mm": 2.5199949599999947,
+      "area_ratio": 1.5749968499999965,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_61",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -17.43945737,
+        -5.804941400000001,
+        -16.80945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_62",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -16.804457369999998,
+        -4.090122630000001,
+        -16.17445863
+      ],
+      "area_mm2": 0.3968984124015859,
+      "perimeter_mm": 2.5199949599999947,
+      "area_ratio": 1.5749968499999965,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_63",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -16.16945737,
+        -5.804941400000001,
+        -15.539458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000031,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_64",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -15.53445737,
+        -4.090122630000001,
+        -14.904458629999999
+      ],
+      "area_mm2": 0.3968984124015882,
+      "perimeter_mm": 2.519994960000002,
+      "area_ratio": 1.574996850000001,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_65",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -14.89945737,
+        -5.804941400000001,
+        -14.269458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000031,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_66",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -14.26445737,
+        -4.090122630000001,
+        -13.63445863
+      ],
+      "area_mm2": 0.3968984124015882,
+      "perimeter_mm": 2.519994960000002,
+      "area_ratio": 1.574996850000001,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_67",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -13.62945737,
+        -5.804941400000001,
+        -12.99945863
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_68",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.72012137,
+        -12.994457370000001,
+        -4.090122630000001,
+        -12.36445863
+      ],
+      "area_mm2": 0.3968984124015882,
+      "perimeter_mm": 2.519994960000002,
+      "area_ratio": 1.574996850000001,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_69",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -12.359457370000001,
+        -5.804941400000001,
+        -11.72945863
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000013,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_70",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.2049386,
+        -11.08945737,
+        -5.804941400000001,
+        -10.459458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000013,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_71",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.75999937,
+        -8.874512600000001,
+        -4.1300006300000005,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035277,
+      "perimeter_mm": 4.05999188,
+      "area_ratio": 2.1724094482758614,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_72",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.12499937,
+        -10.58958537,
+        -3.4950006300000003,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.39689841240158846,
+      "perimeter_mm": 2.5199949600000027,
+      "area_ratio": 1.5749968500000018,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_73",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -3.4899993699999996,
+        -8.874512600000001,
+        -2.86000063,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035277,
+      "perimeter_mm": 4.05999188,
+      "area_ratio": 2.1724094482758614,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_74",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -2.85499937,
+        -10.58958537,
+        -2.2250006300000003,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.3968984124015882,
+      "perimeter_mm": 2.519994960000002,
+      "area_ratio": 1.574996850000001,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_75",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -2.21999937,
+        -8.874512600000001,
+        -1.59000063,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035283,
+      "perimeter_mm": 4.059991880000001,
+      "area_ratio": 2.1724094482758622,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_76",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -1.58499937,
+        -10.58958537,
+        -0.95500063,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.39689841240158846,
+      "perimeter_mm": 2.5199949600000027,
+      "area_ratio": 1.5749968500000018,
+      "aspect_ratio": 6.299987400000001,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_77",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.94999937,
+        -8.874512600000001,
+        -0.32000063000000006,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035283,
+      "perimeter_mm": 4.059991880000001,
+      "area_ratio": 2.1724094482758622,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_78",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.31499936999999995,
+        -10.58958537,
+        0.31499936999999995,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.39689841240158835,
+      "perimeter_mm": 2.5199949600000027,
+      "area_ratio": 1.5749968500000013,
+      "aspect_ratio": 6.299987399999998,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_79",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        0.32000063000000006,
+        -8.874512600000001,
+        0.94999937,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035283,
+      "perimeter_mm": 4.059991880000001,
+      "area_ratio": 2.1724094482758622,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_80",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        0.95500063,
+        -10.58958537,
+        1.58499937,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.39689841240158846,
+      "perimeter_mm": 2.5199949600000027,
+      "area_ratio": 1.5749968500000018,
+      "aspect_ratio": 6.299987400000001,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_81",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        1.59000063,
+        -8.874512600000001,
+        2.21999937,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035283,
+      "perimeter_mm": 4.059991880000001,
+      "area_ratio": 2.1724094482758622,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_82",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        2.2250006300000003,
+        -10.58958537,
+        2.85499937,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.3968984124015882,
+      "perimeter_mm": 2.519994960000002,
+      "area_ratio": 1.574996850000001,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_83",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        2.86000063,
+        -8.874512600000001,
+        3.4899993699999996,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035277,
+      "perimeter_mm": 4.05999188,
+      "area_ratio": 2.1724094482758614,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_84",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        3.4950006300000003,
+        -10.58958537,
+        4.12499937,
+        -9.959586629999999
+      ],
+      "area_mm2": 0.39689841240158846,
+      "perimeter_mm": 2.5199949600000027,
+      "area_ratio": 1.5749968500000018,
+      "aspect_ratio": 6.2999874,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_85",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        4.1300006300000005,
+        -8.874512600000001,
+        4.75999937,
+        -7.4745154000000005
+      ],
+      "area_mm2": 0.8819964720035277,
+      "perimeter_mm": 4.05999188,
+      "area_ratio": 2.1724094482758614,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_86",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -11.08945737,
+        7.2049386,
+        -10.459458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000013,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_87",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -12.359457370000001,
+        7.2049386,
+        -11.72945863
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000013,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_88",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -13.62945737,
+        7.2049386,
+        -12.99945863
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987399999996,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_89",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -14.89945737,
+        7.2049386,
+        -14.269458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000031,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_90",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -16.16945737,
+        7.2049386,
+        -15.539458629999999
+      ],
+      "area_mm2": 0.8819964720035296,
+      "perimeter_mm": 4.059991880000002,
+      "area_ratio": 2.172409448275865,
+      "aspect_ratio": 6.299987400000031,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_91",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -17.43945737,
+        7.2049386,
+        -16.80945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_92",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -18.70945737,
+        7.2049386,
+        -18.07945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_93",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.8001154,
+        -20.00434937,
+        7.2001126,
+        -19.374350630000002
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_94",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -21.24945737,
+        7.2049386,
+        -20.61945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_95",
+      "ref": "U1",
+      "shape": "rect",
+      "bounds_mm": [
+        5.804941400000001,
+        -22.519457369999998,
+        7.2049386,
+        -21.88945863
+      ],
+      "area_mm2": 0.8819964720035246,
+      "perimeter_mm": 4.059991879999995,
+      "area_ratio": 2.1724094482758565,
+      "aspect_ratio": 6.299987399999978,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_96",
+      "ref": "C5",
+      "shape": "rect",
+      "bounds_mm": [
+        0.42002456,
+        -4.81499937,
+        0.98002344,
+        -4.18500063
+      ],
+      "area_mm2": 0.35279858880141096,
+      "perimeter_mm": 2.379995239999999,
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988799999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_97",
+      "ref": "C5",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.98002344,
+        -4.81499937,
+        -0.42002456,
+        -4.18500063
+      ],
+      "area_mm2": 0.35279858880141096,
+      "perimeter_mm": 2.379995239999999,
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988799999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_98",
+      "ref": "SW2",
+      "shape": "rect",
+      "bounds_mm": [
+        -16.11540625,
+        -7.65099692,
+        -15.25440975,
+        -6.34900308
+      ],
+      "area_mm2": 1.1210121392615582,
+      "perimeter_mm": 4.325980679999997,
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.609964999999988,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_99",
+      "ref": "SW2",
+      "shape": "rect",
+      "bounds_mm": [
+        -11.74559025,
+        -7.65099692,
+        -10.88459375,
+        -6.34900308
+      ],
+      "area_mm2": 1.1210121392615582,
+      "perimeter_mm": 4.325980679999997,
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.609964999999988,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_100",
+      "ref": "SW3",
+      "shape": "rect",
+      "bounds_mm": [
+        10.88459375,
+        -4.65099692,
+        11.74559025,
+        -3.34900308
+      ],
+      "area_mm2": 1.1210121392615582,
+      "perimeter_mm": 4.325980679999997,
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.609964999999988,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_101",
+      "ref": "SW3",
+      "shape": "rect",
+      "bounds_mm": [
+        15.25440975,
+        -4.65099692,
+        16.11540625,
+        -3.34900308
+      ],
+      "area_mm2": 1.1210121392615582,
+      "perimeter_mm": 4.325980679999997,
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.609964999999988,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_102",
+      "ref": "R7",
+      "shape": "rect",
+      "bounds_mm": [
+        7.47109761,
+        -3.30240224,
+        8.03563039,
+        -2.69759776
+      ],
+      "area_mm2": 0.3414319544508543,
+      "perimeter_mm": 2.3386745199999996,
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.645327799999986,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_103",
+      "ref": "R7",
+      "shape": "rect",
+      "bounds_mm": [
+        5.964369609999999,
+        -3.30240224,
+        6.52890239,
+        -2.69759776
+      ],
+      "area_mm2": 0.34143195445085484,
+      "perimeter_mm": 2.3386745200000014,
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_104",
+      "ref": "LED2",
+      "shape": "rect",
+      "bounds_mm": [
+        8.969938560000001,
+        -0.27999944,
+        9.52993744,
+        0.27999944
+      ],
+      "area_mm2": 0.3135987456012535,
+      "perimeter_mm": 2.239995519999997,
+      "area_ratio": 1.399997199999998,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_105",
+      "ref": "LED2",
+      "shape": "rect",
+      "bounds_mm": [
+        10.47006256,
+        -0.27999944,
+        11.030061439999999,
+        0.27999944
+      ],
+      "area_mm2": 0.3135987456012535,
+      "perimeter_mm": 2.239995519999997,
+      "area_ratio": 1.399997199999998,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_106",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        10.49013242,
+        16.782246339999997,
+        10.91013158,
+        17.86725306
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_107",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        16.58009484,
+        14.16973696,
+        17.42009316,
+        15.429734439999999
+      ],
+      "area_mm2": 1.058395766404232,
+      "perimeter_mm": 4.199991599999997,
+      "area_ratio": 2.5199949599999982,
+      "aspect_ratio": 8.399983199999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_108",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        8.97990684,
+        14.16973696,
+        9.81990516,
+        15.429734439999999
+      ],
+      "area_mm2": 1.058395766404232,
+      "perimeter_mm": 4.199991599999997,
+      "area_ratio": 2.5199949599999982,
+      "aspect_ratio": 8.399983199999994,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_109",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        11.48962242,
+        16.78275434,
+        11.90962158,
+        17.867761060000003
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_110",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        12.48962042,
+        16.78275434,
+        12.90961958,
+        17.867761060000003
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_111",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        13.48961842,
+        16.78275434,
+        13.909617579999999,
+        17.867761060000003
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_112",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        14.489616419999999,
+        16.78275434,
+        14.909615579999999,
+        17.867761060000003
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999979,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_113",
+      "ref": "J3",
+      "shape": "rect",
+      "bounds_mm": [
+        15.489614419999999,
+        16.78275434,
+        15.909613579999998,
+        17.867761060000003
+      ],
+      "area_mm2": 0.455701910994356,
+      "perimeter_mm": 3.0100117600000047,
+      "area_ratio": 1.5139539222077831,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_114",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        14.361052840000001,
+        8.17994284,
+        14.85105186,
+        9.01994116
+      ],
+      "area_mm2": 0.4115983536016453,
+      "perimeter_mm": 2.659994679999997,
+      "area_ratio": 1.5473653263157872,
+      "aspect_ratio": 4.899990199999991,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_115",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        16.66102284,
+        8.17994284,
+        17.15102186,
+        9.01994116
+      ],
+      "area_mm2": 0.4115983536016453,
+      "perimeter_mm": 2.659994679999997,
+      "area_ratio": 1.5473653263157872,
+      "aspect_ratio": 4.899990199999991,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_116",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        16.66102284,
+        0.98005884,
+        17.15102186,
+        1.8200571600000002
+      ],
+      "area_mm2": 0.4115983536016457,
+      "perimeter_mm": 2.6599946799999987,
+      "area_ratio": 1.5473653263157874,
+      "aspect_ratio": 4.899990199999991,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_117",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        14.361052840000001,
+        0.98005884,
+        14.85105186,
+        1.8200571600000002
+      ],
+      "area_mm2": 0.4115983536016457,
+      "perimeter_mm": 2.6599946799999987,
+      "area_ratio": 1.5473653263157874,
+      "aspect_ratio": 4.899990200000008,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_118",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        12.97257835,
+        7.0399324199999995,
+        14.03937835,
+        7.459931579999999
+      ],
+      "area_mm2": 0.44805510388799996,
+      "perimeter_mm": 2.9735983200000007,
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_119",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        12.97257835,
+        5.54006242,
+        14.03937835,
+        5.96006158
+      ],
+      "area_mm2": 0.44805510388799996,
+      "perimeter_mm": 2.9735983200000007,
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_120",
+      "ref": "SW1",
+      "shape": "rect",
+      "bounds_mm": [
+        12.97257835,
+        2.5400684200000003,
+        14.03937835,
+        2.96006758
+      ],
+      "area_mm2": 0.44805510388799996,
+      "perimeter_mm": 2.9735983200000007,
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_121",
+      "ref": "R5",
+      "shape": "rect",
+      "bounds_mm": [
+        2.9643696100000003,
+        2.69759776,
+        3.52890239,
+        3.30240224
+      ],
+      "area_mm2": 0.3414319544508543,
+      "perimeter_mm": 2.3386745199999996,
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.6453278,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_122",
+      "ref": "R5",
+      "shape": "rect",
+      "bounds_mm": [
+        4.47109761,
+        2.69759776,
+        5.035630390000001,
+        3.30240224
+      ],
+      "area_mm2": 0.34143195445085484,
+      "perimeter_mm": 2.3386745200000014,
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_123",
+      "ref": "Q1",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.350001300000001,
+        2.3225360100000003,
+        -4.6500027,
+        2.77754399
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_124",
+      "ref": "Q1",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.350001300000001,
+        4.22245601,
+        -4.6500027,
+        4.67746399
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_125",
+      "ref": "Q1",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.3499973,
+        3.2724960100000002,
+        -6.649998699999999,
+        3.7275039899999998
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_126",
+      "ref": "R6",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.52890239,
+        7.69759776,
+        -4.964369609999999,
+        8.30240224
+      ],
+      "area_mm2": 0.34143195445085434,
+      "perimeter_mm": 2.3386745199999996,
+      "area_ratio": 1.4599378901637599,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_127",
+      "ref": "R6",
+      "shape": "rect",
+      "bounds_mm": [
+        -7.035630390000001,
+        7.69759776,
+        -6.47109761,
+        8.30240224
+      ],
+      "area_mm2": 0.34143195445085434,
+      "perimeter_mm": 2.3386745199999996,
+      "area_ratio": 1.4599378901637599,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_128",
+      "ref": "U3",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.2499253,
+        -0.21012658,
+        -3.5499267,
+        0.20987258000000003
+      ],
+      "area_mm2": 0.2939988240011761,
+      "perimeter_mm": 2.239995520000001,
+      "area_ratio": 1.312497375,
+      "aspect_ratio": 4.1999916,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_129",
+      "ref": "U3",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.2499253,
+        0.7398334200000001,
+        -3.5499267,
+        1.15983258
+      ],
+      "area_mm2": 0.29399882400117605,
+      "perimeter_mm": 2.2399955200000004,
+      "area_ratio": 1.312497375,
+      "aspect_ratio": 4.199991599999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_130",
+      "ref": "U3",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.2499253,
+        -1.15983258,
+        -3.5499267,
+        -0.7398334200000001
+      ],
+      "area_mm2": 0.29399882400117605,
+      "perimeter_mm": 2.2399955200000004,
+      "area_ratio": 1.312497375,
+      "aspect_ratio": 4.199991599999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_131",
+      "ref": "U3",
+      "shape": "rect",
+      "bounds_mm": [
+        -6.450073300000001,
+        0.74008742,
+        -5.7500747,
+        1.16008658
+      ],
+      "area_mm2": 0.2939988240011762,
+      "perimeter_mm": 2.2399955200000012,
+      "area_ratio": 1.3124973750000002,
+      "aspect_ratio": 4.1999916,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_132",
+      "ref": "U3",
+      "shape": "rect",
+      "bounds_mm": [
+        -6.450073300000001,
+        -1.16008658,
+        -5.7500747,
+        -0.74008742
+      ],
+      "area_mm2": 0.2939988240011762,
+      "perimeter_mm": 2.2399955200000012,
+      "area_ratio": 1.3124973750000002,
+      "aspect_ratio": 4.1999916,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_133",
+      "ref": "C3",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.07997544000000001,
+        1.68500063,
+        0.48002343999999997,
+        2.31499937
+      ],
+      "area_mm2": 0.3527985888014111,
+      "perimeter_mm": 2.3799952399999995,
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988799999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_134",
+      "ref": "C3",
+      "shape": "rect",
+      "bounds_mm": [
+        -1.48002344,
+        1.68500063,
+        -0.92002456,
+        2.31499937
+      ],
+      "area_mm2": 0.35279858880141113,
+      "perimeter_mm": 2.3799952399999995,
+      "area_ratio": 1.482349976470588,
+      "aspect_ratio": 5.599988799999999,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_135",
+      "ref": "C4",
+      "shape": "rect",
+      "bounds_mm": [
+        -4.57997544,
+        -4.31499937,
+        -4.01997656,
+        -3.68500063
+      ],
+      "area_mm2": 0.3527985888014111,
+      "perimeter_mm": 2.3799952399999995,
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_136",
+      "ref": "C4",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.98002344,
+        -4.31499937,
+        -5.42002456,
+        -3.68500063
+      ],
+      "area_mm2": 0.3527985888014111,
+      "perimeter_mm": 2.3799952399999995,
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988800000002,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_137",
+      "ref": "U4",
+      "shape": "rect",
+      "bounds_mm": [
+        -8.8500013,
+        -2.1774639899999997,
+        -8.1500027,
+        -1.72245601
+      ],
+      "area_mm2": 0.31850494898882814,
+      "perimeter_mm": 2.310013160000001,
+      "area_ratio": 1.378801447991872,
+      "aspect_ratio": 4.5500798,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_138",
+      "ref": "U4",
+      "shape": "rect",
+      "bounds_mm": [
+        -8.8500013,
+        -0.27754398999999996,
+        -8.1500027,
+        0.17746399000000002
+      ],
+      "area_mm2": 0.3185049489888283,
+      "perimeter_mm": 2.3100131600000013,
+      "area_ratio": 1.3788014479918724,
+      "aspect_ratio": 4.5500798,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_139",
+      "ref": "U4",
+      "shape": "rect",
+      "bounds_mm": [
+        -10.8499973,
+        -1.22750399,
+        -10.1499987,
+        -0.77249601
+      ],
+      "area_mm2": 0.3185049489888283,
+      "perimeter_mm": 2.3100131600000013,
+      "area_ratio": 1.3788014479918724,
+      "aspect_ratio": 4.5500798,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_140",
+      "ref": "C6",
+      "shape": "rect",
+      "bounds_mm": [
+        -12.57997544,
+        1.68500063,
+        -12.019976560000002,
+        2.31499937
+      ],
+      "area_mm2": 0.3527985888014101,
+      "perimeter_mm": 2.3799952399999964,
+      "area_ratio": 1.4823499764705856,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_141",
+      "ref": "C6",
+      "shape": "rect",
+      "bounds_mm": [
+        -13.980023439999998,
+        1.68500063,
+        -13.42002456,
+        2.31499937
+      ],
+      "area_mm2": 0.3527985888014101,
+      "perimeter_mm": 2.3799952399999964,
+      "area_ratio": 1.4823499764705856,
+      "aspect_ratio": 5.599988799999984,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_142",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.95998538,
+        5.89487321,
+        -0.5399862200000001,
+        6.10487279
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999957999999896,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_143",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        0.5399862200000001,
+        5.89487321,
+        0.95998538,
+        6.10487279
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999957999999896,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_144",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        0.5399862200000001,
+        6.39499921,
+        0.95998538,
+        6.60499879
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_145",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        0.5399862200000001,
+        5.39500121,
+        0.95998538,
+        5.60500079
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_146",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.95998538,
+        6.39499921,
+        -0.5399862200000001,
+        6.60499879
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_147",
+      "ref": "U5",
+      "shape": "rect",
+      "bounds_mm": [
+        -0.95998538,
+        5.39500121,
+        -0.5399862200000001,
+        5.60500079
+      ],
+      "area_mm2": 0.08819964720035273,
+      "perimeter_mm": 1.2599974799999996,
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_148",
+      "ref": "R10",
+      "shape": "rect",
+      "bounds_mm": [
+        -5.02890239,
+        5.69759776,
+        -4.464369609999999,
+        6.30240224
+      ],
+      "area_mm2": 0.34143195445085484,
+      "perimeter_mm": 2.3386745200000014,
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_149",
+      "ref": "R10",
+      "shape": "rect",
+      "bounds_mm": [
+        -6.535630390000001,
+        5.69759776,
+        -5.97109761,
+        6.30240224
+      ],
+      "area_mm2": 0.34143195445085484,
+      "perimeter_mm": 2.3386745200000014,
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_150",
+      "ref": "R11",
+      "shape": "rect",
+      "bounds_mm": [
+        4.97109761,
+        5.19759776,
+        5.535630390000001,
+        5.80240224
+      ],
+      "area_mm2": 0.34143195445085484,
+      "perimeter_mm": 2.3386745200000014,
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_151",
+      "ref": "R11",
+      "shape": "rect",
+      "bounds_mm": [
+        3.4643696100000003,
+        5.19759776,
+        4.02890239,
+        5.80240224
+      ],
+      "area_mm2": 0.3414319544508543,
+      "perimeter_mm": 2.3386745199999996,
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.645327799999995,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_152",
+      "ref": "C7",
+      "shape": "rect",
+      "bounds_mm": [
+        1.9200245599999999,
+        8.18500063,
+        2.48002344,
+        8.81499937
+      ],
+      "area_mm2": 0.35279858880141207,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_153",
+      "ref": "C7",
+      "shape": "rect",
+      "bounds_mm": [
+        0.51997656,
+        8.18500063,
+        1.0799754400000001,
+        8.81499937
+      ],
+      "area_mm2": 0.352798588801412,
+      "perimeter_mm": 2.379995240000003,
+      "area_ratio": 1.4823499764705896,
+      "aspect_ratio": 5.5999888,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_154",
+      "ref": "R12",
+      "shape": "rect",
+      "bounds_mm": [
+        9.97109761,
+        9.69759776,
+        10.53563039,
+        10.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_155",
+      "ref": "R12",
+      "shape": "rect",
+      "bounds_mm": [
+        8.46436961,
+        9.69759776,
+        9.02890239,
+        10.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_156",
+      "ref": "R13",
+      "shape": "rect",
+      "bounds_mm": [
+        6.964369609999999,
+        11.69759776,
+        7.52890239,
+        12.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_157",
+      "ref": "R13",
+      "shape": "rect",
+      "bounds_mm": [
+        8.47109761,
+        11.69759776,
+        9.03563039,
+        12.30240224
+      ],
+      "area_mm2": 0.34143195445085384,
+      "perimeter_mm": 2.338674519999998,
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_158",
+      "ref": "Q2",
+      "shape": "rect",
+      "bounds_mm": [
+        8.6499987,
+        4.82253601,
+        9.3499973,
+        5.27754399
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_159",
+      "ref": "Q2",
+      "shape": "rect",
+      "bounds_mm": [
+        8.6499987,
+        6.72245601,
+        9.3499973,
+        7.17746399
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.5500797999999865,
+      "release_pass": true
+    },
+    {
+      "id": "pcb_solder_paste_160",
+      "ref": "Q2",
+      "shape": "rect",
+      "bounds_mm": [
+        6.6500027,
+        5.77249601,
+        7.350001300000001,
+        6.22750399
+      ],
+      "area_mm2": 0.318504948988828,
+      "perimeter_mm": 2.3100131600000005,
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "release_pass": true
+    }
+  ],
+  "process_reference": "TI SLUA271C sections 4.2\u20134.4; 0.10 mm stencil strategy retained from R5",
+  "scope": "Calculated release geometry, not measured paste transfer; GCT production process approval pending, prototype shell inspection/manual rework may be required."
+}

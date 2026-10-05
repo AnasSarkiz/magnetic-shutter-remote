@@ -1,0 +1,37 @@
+[
+  {
+    "repository": "circuit-json",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "props",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-json-util",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "core",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "easyeda-converter",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-json-to-gerber",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-to-svg",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  }
+]

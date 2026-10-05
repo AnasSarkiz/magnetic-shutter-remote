@@ -1,0 +1,24 @@
+BLOCKED {'lcsc': 'C485802', 'error': 'HTTP Error 429: Too Many Requests'}
+C356849 PASS {'canPresaleNumber': 1192, 'overseasStockCount': 1669, 'preMinPurchaseNum': 2}
+C5219772 PASS {'canPresaleNumber': 37545, 'overseasStockCount': 37585, 'preMinPurchaseNum': 26}
+C19725033 PASS {'canPresaleNumber': 3604, 'overseasStockCount': 3702, 'preMinPurchaseNum': 6}
+C22809 PASS {'canPresaleNumber': 4236701, 'overseasStockCount': 4586462, 'preMinPurchaseNum': 4102}
+C22795 PASS {'canPresaleNumber': 538478, 'overseasStockCount': 587417, 'preMinPurchaseNum': 5000}
+C25804 PASS {'canPresaleNumber': 22080534, 'overseasStockCount': 29895631, 'preMinPurchaseNum': 5000}
+C22844 PASS {'canPresaleNumber': 27591, 'overseasStockCount': 27688, 'preMinPurchaseNum': 5000}
+C22893 PASS {'canPresaleNumber': 124533, 'overseasStockCount': 127883, 'preMinPurchaseNum': 5000}
+C15850 PASS {'canPresaleNumber': 3563475, 'overseasStockCount': 4919468, 'preMinPurchaseNum': 139}
+C282505 PASS {'canPresaleNumber': 7989, 'overseasStockCount': 8003, 'preMinPurchaseNum': 3610}
+C3747031 PASS {'canPresaleNumber': 37392, 'overseasStockCount': 37468, 'preMinPurchaseNum': 26}
+C37616412 PASS {'canPresaleNumber': 35, 'overseasStockCount': 123, 'preMinPurchaseNum': 13}
+C295747 PASS {'canPresaleNumber': 17456, 'overseasStockCount': 18159, 'preMinPurchaseNum': 39}
+C160392 PASS {'canPresaleNumber': 27229, 'overseasStockCount': 33926, 'preMinPurchaseNum': 27}
+C431540 PASS {'canPresaleNumber': 186735, 'overseasStockCount': 192876, 'preMinPurchaseNum': 196}
+C720477 PASS {'canPresaleNumber': 728676, 'overseasStockCount': 780187, 'preMinPurchaseNum': 214}
+C23186 PASS {'canPresaleNumber': 24176515, 'overseasStockCount': 25240645, 'preMinPurchaseNum': 5000}
+C21190 PASS {'canPresaleNumber': 16137487, 'overseasStockCount': 21515597, 'preMinPurchaseNum': 4512}
+C25803 PASS {'canPresaleNumber': 20164716, 'overseasStockCount': 22078786, 'preMinPurchaseNum': 3760}
+C19666 PASS {'canPresaleNumber': 1919691, 'overseasStockCount': 2519891, 'preMinPurchaseNum': 519}
+C8545 PASS {'canPresaleNumber': 1473403, 'overseasStockCount': 1611868, 'preMinPurchaseNum': 640}
+C14663 PASS {'canPresaleNumber': 43868955, 'overseasStockCount': 57968048, 'preMinPurchaseNum': 1026}
+C2286 PASS {'canPresaleNumber': 4247086, 'overseasStockCount': 4791906, 'preMinPurchaseNum': 1556}

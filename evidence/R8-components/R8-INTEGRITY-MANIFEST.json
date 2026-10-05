@@ -1,0 +1,1000 @@
+{
+  "revision": "R8-qualification-2026-10-05",
+  "status": "COMPONENT QUALIFICATION BLOCKED \u2014 NOT FOR FABRICATION",
+  "source_baseline_commit": "636d2b24eb4db775fceeb81206541f249db3b9a5",
+  "scope": "Independent import/firmware qualification; root circuit remains unmodified Nordic starting copy",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "cd851bf1a5338867e80d031633bb89c39aa8d6ac27e0182f0346af0e6abcc639"
+    },
+    {
+      "path": "README.md",
+      "sha256": "4763b14097e65afb2a137c68a3dd6f88c58e10413b63fb42cdd68c1a65c9e28c"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "7c3cda19cfe2a62d7516e27d2c694febdd6bbbb39c5e3d05400cff04821c2b74"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11"
+    },
+    {
+      "path": "evidence/R8-components/ASR00012-1000mAh.pdf",
+      "sha256": "70ec149dff1d37208c4a0ce9eaf4104f80378b2173c8025716f2a7f4a0104e5a"
+    },
+    {
+      "path": "evidence/R8-components/ASR00012-1000mAh.txt",
+      "sha256": "9afd3786fffc42a42526433bf1855dc2a99537747adf0f7ea92e98e430d2adb3"
+    },
+    {
+      "path": "evidence/R8-components/C15516-listing-text.txt",
+      "sha256": "e81d3beb7b3596db9b646a77ddc05e521826e79e3b29989c79fc09a0756ca263"
+    },
+    {
+      "path": "evidence/R8-components/C2934560-listing-text.txt",
+      "sha256": "aac353b9ef41f00107f8ab8a9fe3b72a725f702c6a489d28c2eb4e272203ef1f"
+    },
+    {
+      "path": "evidence/R8-components/C2934560-supplier-raw.json",
+      "sha256": "6ca9d761829155b25fc1562356de81bc74d86860f338fcdff404db448385b51e"
+    },
+    {
+      "path": "evidence/R8-components/C9900000362-supplier-raw.json",
+      "sha256": "d2ec65a8258af5ecc4d7f7f4709faa71e8a38babf0a71575cc84c305603e888c"
+    },
+    {
+      "path": "evidence/R8-components/ESP32-GEOMETRY.md",
+      "sha256": "b29d21f458b1967c346d896d01375ed5ff02ebadf84f2891d7ecd3d9962d2211"
+    },
+    {
+      "path": "evidence/R8-components/ESP32-footprint-audit.json",
+      "sha256": "7197b154a7e717c7c16b8d0b0516049ab03502a46cff6341e836f44fbe0099a4"
+    },
+    {
+      "path": "evidence/R8-components/POWER-FEASIBILITY.md",
+      "sha256": "4cd4535cd642d405a3e3feb27f6a018123c1953f3d33a73cd7238a5494917cef"
+    },
+    {
+      "path": "evidence/R8-components/TPS63031-current.pdf",
+      "sha256": "7332b6b39605281419571ff4564e6bda5217dbaa2458b77b130bb81956d20a54"
+    },
+    {
+      "path": "evidence/R8-components/TPS63031-current.txt",
+      "sha256": "a1ee2a5648cbd94269989e33f858c746b8509d5fbee76c990d656d85a995201c"
+    },
+    {
+      "path": "evidence/R8-components/dependency-lock-update.log",
+      "sha256": "783be8ff811dcac00687b74b8329cc886bae0db6044721b88aae543cebe80017"
+    },
+    {
+      "path": "evidence/R8-components/esp32-c3-wroom-02-datasheet-v1.7.pdf",
+      "sha256": "2375b1be75ebbfcffa050e6a26c3ee7957bc7171b319066081a491d1b2e21161"
+    },
+    {
+      "path": "evidence/R8-components/esp32-datasheet.txt",
+      "sha256": "e53a63a4a2c34aaa64bd1ea6dbf05ff0d62da07a8573f1e75b772fb219dd3ab6"
+    },
+    {
+      "path": "evidence/R8-components/esp32-dimensions.png",
+      "sha256": "d15822931909a82e0360590b92ea9aa8cb556800ed7d311422d65dcbce014083"
+    },
+    {
+      "path": "evidence/R8-components/esp32-land-pattern.png",
+      "sha256": "35a17ee725ff1c15a46709d84eeb4ff2e3406c1d1f18c6c4024293db7cd9e738"
+    },
+    {
+      "path": "evidence/R8-components/firmware-build-first-attempt.log",
+      "sha256": "f5ded7d6b0d6cc6fb1bdfb8e1e55e9d2428cc5e5f48ef2be37a9b81f6066ba8c"
+    },
+    {
+      "path": "evidence/R8-components/firmware-build-second-attempt.log",
+      "sha256": "5b674c9d3e252650d013b6319bb8e74d1b30c08e4081642c298c6b834e8b0969"
+    },
+    {
+      "path": "evidence/R8-components/firmware-build-third-attempt.log",
+      "sha256": "214bf9aec7a8f1438e1fea052a52e7788476522304c95429bd419268c9a7d921"
+    },
+    {
+      "path": "evidence/R8-components/firmware-build.log",
+      "sha256": "15e9c95110e7a043c8ecbd3a77a07e5874e7331d1c3a11b99d999df893252e58"
+    },
+    {
+      "path": "evidence/R8-components/firmware-image-info.log",
+      "sha256": "572c8fe4b9efb96abaaf6338b38232feaaad0104c9184b985122c0472e2bde48"
+    },
+    {
+      "path": "evidence/R8-components/firmware-python-install.log",
+      "sha256": "b75f5348e0c21b4dad4443ee0f6dcb4ad26192dc32d51794138052e9c2403050"
+    },
+    {
+      "path": "evidence/R8-components/firmware-requests-install.log",
+      "sha256": "c9803282ae380d3605485ca619bd7b5ed99201fd6a231029963af4071e50b29a"
+    },
+    {
+      "path": "evidence/R8-components/firmware-serial-install.log",
+      "sha256": "65f6d18af60e3ac27286192187e6e02a0db01cf73ba6b63be58fbdc59f5e5d21"
+    },
+    {
+      "path": "evidence/R8-components/fixture-build.log",
+      "sha256": "ff72710d137b072a08930c3dddafe18d5bce105605a113c28e816a3b9f24b046"
+    },
+    {
+      "path": "evidence/R8-components/fixture-format-check.log",
+      "sha256": "fccbba1da35e39ef217935089a5877ff9da111fc45e2faa0e5e032eda934d1be"
+    },
+    {
+      "path": "evidence/R8-components/focused-tests.log",
+      "sha256": "a2c8e38484996143eb62509650586cba502d43bfc424be4ea56c0d31c1b9ef66"
+    },
+    {
+      "path": "evidence/R8-components/format-check.log",
+      "sha256": "97b2f7d60d09dde74f7985224eecdd516ea652ef4c95a687095e69a1020300bc"
+    },
+    {
+      "path": "evidence/R8-components/module-audit.log",
+      "sha256": "46c2191bd7e381a666311d0e50f293635c0cd90803e7cc02fad7f808d53a34e2"
+    },
+    {
+      "path": "evidence/R8-components/official-devkit-pcb.pdf",
+      "sha256": "680ce4c040a3a0f4fd23089311e0b5711cc46a25ea41ef69951c2de3e17b44e7"
+    },
+    {
+      "path": "evidence/R8-components/official-devkit-top.png",
+      "sha256": "e785b027416e4b06e159495a72e3385808416a9b38ed86ab970f29ed15e32d5c"
+    },
+    {
+      "path": "evidence/R8-components/typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/R8-components/upstream-infer-pin-attributes.ts",
+      "sha256": "1354d35d09d36b54f8b60f439c9e73d7dd9e67dbf8f33270c3b444ab3be01864"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-blobs-first-attempt.log",
+      "sha256": "0e50523d577a30d3cf2e313aa11982e1aaa8e44908c5d2ae77bb1418c7151451"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-blobs-retry.log",
+      "sha256": "5a6274a44b20fa09993d8e0206b67228ee30fa87006a6eb50444b3a6fdb8b9bd"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-blobs.log",
+      "sha256": "0e50523d577a30d3cf2e313aa11982e1aaa8e44908c5d2ae77bb1418c7151451"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-download.log",
+      "sha256": "a378b93bbe43f83c17a0f5ace44232a00c19fe4c11bb982e8aa1c4bf8682d9d4"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-modules.log",
+      "sha256": "368a2429bdd31d2f6cd3615b3fd52743515d9203470bde64ec18acb1ebf580e7"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-v4.2.0/board.yml",
+      "sha256": "ee554086365368419e174d48411b94196124828334a2d3bb264739062da3c11c"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-v4.2.0/esp32c3_devkitc.dts",
+      "sha256": "3b2236ac01f4642afdffba75e418bf3eb701fd5a522fefdd4454fd820db125c8"
+    },
+    {
+      "path": "evidence/R8-components/zephyr-v4.2.0/esp32c3_devkitc_defconfig",
+      "sha256": "ef0078cb6ba9daf0d840d231f431a0e9f4a2918019aa13f7fd5dfa1e485d1eda"
+    },
+    {
+      "path": "evidence/baseline/R7-preservation-manifest.json",
+      "sha256": "de78b9bba05958a579049e984bfeaee01d18574bb8eb82c3293428dc5829f27b"
+    },
+    {
+      "path": "firmware/CMakeLists.txt",
+      "sha256": "832842adc0c1004a1de8cd7dbe5582ffcc5610315f36738f55fa63be3f911a29"
+    },
+    {
+      "path": "firmware/README.md",
+      "sha256": "3a05d39227474cfbb4be947415d2b2c334e621b630ab22038ee2f63609b96273"
+    },
+    {
+      "path": "firmware/artifacts/R8-candidate/BUILD-MANIFEST.json",
+      "sha256": "859f4cfcbb0e26c0d41de3a687d453cac0ebb80109b5ac250fef6c07e1e2dfdd"
+    },
+    {
+      "path": "firmware/artifacts/R8-candidate/zephyr.bin",
+      "sha256": "e5457ec5830105ef0eaa3999b9fe1393dba666144a8aea953313fc763fa8c1b4"
+    },
+    {
+      "path": "firmware/artifacts/R8-candidate/zephyr.elf",
+      "sha256": "0601726f2e4073fb7da005782e6978cd84694e1ec7cbeccfd7ad780efbe961c2"
+    },
+    {
+      "path": "firmware/boards/esp32c3_devkitc.overlay",
+      "sha256": "edae4ae151a4cbbc2a50f9564f53d065c830b23f515bb8f34228d52d39217e6f"
+    },
+    {
+      "path": "firmware/build.sh",
+      "sha256": "b6f20a554bcaf0db4107bde58283046170c98c2d9629643f436427cb545437d5"
+    },
+    {
+      "path": "firmware/prj.conf",
+      "sha256": "2ff44054ade0c753f4693391709bede8f745ab0f3ec46b6289fdfd3a97768ada"
+    },
+    {
+      "path": "firmware/requirements-lock.txt",
+      "sha256": "a85e0de5dceb6ba3c1c31c950ab531d81fac066dcd536c1125971b938a1bf360"
+    },
+    {
+      "path": "firmware/sdk-download/sha256.sum",
+      "sha256": "e62647e3eab45c5b836426bf8d6675e34a7ca2cd98e7ce74655f2488ad4b4f9d"
+    },
+    {
+      "path": "firmware/src/hid.c",
+      "sha256": "2b479d1b630b1a51c0fce2cdf19de4f34ebd75bece03cb169841a170a568177c"
+    },
+    {
+      "path": "firmware/src/hid.h",
+      "sha256": "2fca8bd143550ccda73bed510386f7e2bd213ffc2b932a2e44402662ab5032d6"
+    },
+    {
+      "path": "firmware/src/main.c",
+      "sha256": "9c150e76279cd57a42e61181c572bd131697641948b64d39851a9ce6d4c711d8"
+    },
+    {
+      "path": "imports/AL1792AFE_13.tsx",
+      "sha256": "821ef8cca73b31598b6dc3dc2c4e3575755dcf2aba03b113ef97ce7ab0e77a9b"
+    },
+    {
+      "path": "imports/AL1793AFE_13/AL1793AFE_13.obj",
+      "sha256": "7136dc92f880e95e8e73f1c88e251ccc17927984dc8c74bdc7acd10f9f9d7163"
+    },
+    {
+      "path": "imports/AL1793AFE_13/AL1793AFE_13.step",
+      "sha256": "7c73cdd10903b43a0d582b2cadb08aec986f2dcf3944479383076fb05ea52fff"
+    },
+    {
+      "path": "imports/AL1793AFE_13/AL1793AFE_13.tsx",
+      "sha256": "e0cc4c7d73b273bc848f6ff5fae85895cbc278b7b8ac068ac2df5ed5619a09c6"
+    },
+    {
+      "path": "imports/AL8860WT_7/AL8860WT_7.obj",
+      "sha256": "d6cac869b152ff708dc4b3dfc70c9710cb1d3c1e492c59d8ce65d3e3a8340e78"
+    },
+    {
+      "path": "imports/AL8860WT_7/AL8860WT_7.step",
+      "sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27"
+    },
+    {
+      "path": "imports/AL8860WT_7/AL8860WT_7.tsx",
+      "sha256": "c4ee5054a2bf656e0400a3a711ed92c26f9a3d47393bea84b833fae92c21f65d"
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb"
+    },
+    {
+      "path": "imports/A_0603WAF1002T5E.tsx",
+      "sha256": "14e67b635c74e96a370432e3723046ffeea0271eb44df5c5614e155daf9b0a4a"
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777"
+    },
+    {
+      "path": "imports/A_0603WAF1004T5E.tsx",
+      "sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929"
+    },
+    {
+      "path": "imports/A_0603WAF1303T5E.tsx",
+      "sha256": "f2389c6dabc235506aa5635c75b9867a4e198dff72233e4aaa7c25278a475ab5"
+    },
+    {
+      "path": "imports/A_0603WAF1502T5E.tsx",
+      "sha256": "81a1c3f039dc265ce316aeaf4ad8650ddd24e660aaa37a6b4fa1f87c32e7a2ff"
+    },
+    {
+      "path": "imports/A_0603WAF1621T5E.tsx",
+      "sha256": "ebd1618b03fa9038c187a9a6bd4b57463800923773132a0a2dde8fa07532d134"
+    },
+    {
+      "path": "imports/A_0603WAF1872T5E.tsx",
+      "sha256": "860459a62194e9cb6ec064f752c6314d897f5180bc72bb3927b283971657e861"
+    },
+    {
+      "path": "imports/A_0603WAF4702T5E.tsx",
+      "sha256": "339b16b895d273f4a5c97d86bfd9550754e82b808cb19abc3de32498e0b0a9b2"
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070"
+    },
+    {
+      "path": "imports/A_2N7002.tsx",
+      "sha256": "f05d010f18bb42714692e8c4b5e04f418fcd8726c43c9dbaa5c75c2b0aadc34b"
+    },
+    {
+      "path": "imports/BM06B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "bd29ae89e77997b5cdfa29a85ac776b84b7161796acd5c45182822a6dce2bcf1"
+    },
+    {
+      "path": "imports/BM07B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "78afcaaa8d917d6772ed8c0c3965ca312b0d73b8cd8b5b2aa99327b4c3f99dee"
+    },
+    {
+      "path": "imports/BM08B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "36bf7bf9324db4c4db842f7dbf1eaaf2927202d2ed6b8b577a31641d900f6c06"
+    },
+    {
+      "path": "imports/BQ25185DLHR.tsx",
+      "sha256": "d4d4b0d03b130745f14a28f60df8a2b22fd8a0a6249f3108f1db5eee58a89517"
+    },
+    {
+      "path": "imports/BSS138LT1G.tsx",
+      "sha256": "cdba08e154fe8fac27da7cca5007a28263c297c5dfbf0391a9421c7a6521e12e"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462"
+    },
+    {
+      "path": "imports/CL21A106KAYNNNE.tsx",
+      "sha256": "bae4ddb2455163960807007782a51ce608a163ced35f24317c4837bc5df18b57"
+    },
+    {
+      "path": "imports/E73_2G4M08S1C.tsx",
+      "sha256": "e6e5d2f7955242c96dad3743d5d77f024bde741651d2f2f400a9047e2b510868"
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj",
+      "sha256": "81dc361ce8ded18a36e1fa93de03cffe7e5ec8bb1ba20ea96edce6fddf6ce97f"
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step",
+      "sha256": "bba95db596c0dad394f36dc2246eed661700e66cecca5bbcc5b17efa93279467"
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx",
+      "sha256": "2a4c291692d6281e8e96a834cf482c53d7ef439dd1e225f4bcb24e392968e31b"
+    },
+    {
+      "path": "imports/GW_VJLPL1_CM_K3LX_XX51_1_350_R18/GW_VJLPL1_CM_K3LX_XX51_1_350_R18.tsx",
+      "sha256": "e1ed244f58e7b6e7da273a63272ff0e3c3e73e375ebcc653cc8d6beb5ab5dc70"
+    },
+    {
+      "path": "imports/GW_VJLPL1_CM_LTLV_XX58_1_350_R18/GW_VJLPL1_CM_LTLV_XX58_1_350_R18.tsx",
+      "sha256": "a04a3d2ebae6a7e3594b9cac4f71deed1867816d9e8dec52ccaa7d5dd70432f1"
+    },
+    {
+      "path": "imports/HC_TYPE_C_6P_01A.tsx",
+      "sha256": "2bd46a167e3def7946c00092e0ac970960bdec77d94fc812df3791e6e3755c4e"
+    },
+    {
+      "path": "imports/JS102011SAQN.tsx",
+      "sha256": "64b5e7077702f4c589ea991c71f4ffc45d4910efcba412162f14a96daec3a81a"
+    },
+    {
+      "path": "imports/KT_0603R.tsx",
+      "sha256": "e1bab4c8e862c0801a35cfd7e14d73ca942feae8b65548f725ce162931592e96"
+    },
+    {
+      "path": "imports/MCP73831T_2ACI_OT.tsx",
+      "sha256": "303429accdddc54ccd29c6f0d7caf243b4f1e47bf861fc2574c97a50f0ee5670"
+    },
+    {
+      "path": "imports/MSK12C02.tsx",
+      "sha256": "7b94b10180da219ebe17874486cfa37a596668e29a15ad48e94d67cce7f19658"
+    },
+    {
+      "path": "imports/PT4115.tsx",
+      "sha256": "8ea4c3842f164f0aa3ed3f29081f80bb0e0917be8aabdec805fa068f8bf9527a"
+    },
+    {
+      "path": "imports/S2B_PH_SM4_TB_LF__SN_.tsx",
+      "sha256": "b58ea3cb2e20472b6bf9fa0ec7bd8765a64df162fd5dc1341a49a910659d7080"
+    },
+    {
+      "path": "imports/TCC0603COG470J500CT.tsx",
+      "sha256": "fe68decd2af2b035d732c3b1a62faeec08e89ed7e56a20ab97b47c9d1e75e47c"
+    },
+    {
+      "path": "imports/TMP390A2DRLR.tsx",
+      "sha256": "38b0189e7e012e95027c5eeb60bb64d0e3c4e3859bbc34378a1fb3dfc2e99124"
+    },
+    {
+      "path": "imports/TPS2553DBVR_1/TPS2553DBVR_1.obj",
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45"
+    },
+    {
+      "path": "imports/TPS2553DBVR_1/TPS2553DBVR_1.step",
+      "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff"
+    },
+    {
+      "path": "imports/TPS2553DBVR_1/TPS2553DBVR_1.tsx",
+      "sha256": "feebd55fe84a372a26bba9d8bdd5ef65bd8a11151e48a715735aa5d13f409486"
+    },
+    {
+      "path": "imports/TPS3839G33DBZR.tsx",
+      "sha256": "be6475d461bd2a33e320dc674b0b88a3ff52a9bfe8d0bc5dc0f8a8775360f09c"
+    },
+    {
+      "path": "imports/TPS61085DGKR/TPS61085DGKR.obj",
+      "sha256": "19596dfc408966a1ef362344664739cf9ec9131ce58068232c5c7ae2463302b1"
+    },
+    {
+      "path": "imports/TPS61085DGKR/TPS61085DGKR.step",
+      "sha256": "12a3c9e8f11c088fb052da368a883c5f1b34ab83ac9251f814b06a36fb4cecdb"
+    },
+    {
+      "path": "imports/TPS61085DGKR/TPS61085DGKR.tsx",
+      "sha256": "6c8026f8c84ec5652960e954ee2d31808ea7247aa3b031878a0cf10a81e440f9"
+    },
+    {
+      "path": "imports/TPS61165DBVR/TPS61165DBVR.obj",
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45"
+    },
+    {
+      "path": "imports/TPS61165DBVR/TPS61165DBVR.step",
+      "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff"
+    },
+    {
+      "path": "imports/TPS61165DBVR/TPS61165DBVR.tsx",
+      "sha256": "e655b9d1818216da822be88c62b0ef84c8b34b156127f592987c98232582266f"
+    },
+    {
+      "path": "imports/TPS61169DCKR/TPS61169DCKR.obj",
+      "sha256": "d6d072766bb2d6afc659ce9490b8efc52c5323b9e9a06123e05f4a0870c1a65d"
+    },
+    {
+      "path": "imports/TPS61169DCKR/TPS61169DCKR.step",
+      "sha256": "7e9cf59ff234090c6d2a9273e3e57640409f41adbf8a7bae7bd2b88b5522667e"
+    },
+    {
+      "path": "imports/TPS61169DCKR/TPS61169DCKR.tsx",
+      "sha256": "ba2505024418478c8e3ade357feda243995b6faefdcd5395a17a960c0cdaece9"
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.obj",
+      "sha256": "d2a529438f9e879641c132027628e0bd1c10437513947f367e19dc91268a5633"
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.step",
+      "sha256": "796d0eb1f197584d2111f35840402f83d583c9497630171950e7c1164fc1fe9d"
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+      "sha256": "313da677fe688ca866f49e57ba0aff17e1775470cf47860a440693745d8709cb"
+    },
+    {
+      "path": "imports/TPS7A0230PDBVR.tsx",
+      "sha256": "6b719dddb5b4400fda5665a45332178a0a8d2d8e33417f9c556d16521b2be683"
+    },
+    {
+      "path": "imports/TS_1088_AR02016.tsx",
+      "sha256": "3316a9df5459737097fe9323ac72a2672687af4b93d0e9414119a3ce7b6aeeb4"
+    },
+    {
+      "path": "imports/TYPEC_250Y_BRP6L68.tsx",
+      "sha256": "033cd9fac3244cb6bf25ed1db2cc103b63f55293bb87797842e51c82502dd298"
+    },
+    {
+      "path": "imports/USB4105_GF_A.tsx",
+      "sha256": "5a2733e931dab0e3d95bb631ab9e5751b054accbf0bd123c1bbd6d72da2da313"
+    },
+    {
+      "path": "imports/USB4105_GF_A_120.tsx",
+      "sha256": "7b692886e1dc26ce6bcfcb0e58a9b48093eac734270521966392adefc7e280b6"
+    },
+    {
+      "path": "imports/USB4215_03_A.tsx",
+      "sha256": "4acb1cf6bed10acaa982c0546567c4699bc0315195e5f4e3afc3ec60cdfa3ec9"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "27b57f99a5782ed5c962678d04993512cdbc5f21de9233693965d1ef958c4ce6"
+    },
+    {
+      "path": "package.json",
+      "sha256": "03ccaf1f5eadb521e226388ac0e3c31907fbceba038d8b62f1a9fa98e3f005bf"
+    },
+    {
+      "path": "scripts/audit-authored-placements.ts",
+      "sha256": "65de6d6f30d3d878b2d7ed533ab8c1dd64537aa4feb9182d0ca8e9cf5741ed5a"
+    },
+    {
+      "path": "scripts/audit-drills.ts",
+      "sha256": "0dffe1c742417c3c87e4be2c921fcf6ee200128b881d32665dc321dd1393074f"
+    },
+    {
+      "path": "scripts/audit-r4-qualification.py",
+      "sha256": "ac69f45aa796d43a4dc0add8b634fa7f9b30e2f5f943f47897b8fc37b7c3f2c9"
+    },
+    {
+      "path": "scripts/audit-r6-registration.py",
+      "sha256": "f19f472b19e8decfe21020931e568595030e65d1841aa578f457c3bd0af63c95"
+    },
+    {
+      "path": "scripts/audit-r7-led-fixtures.ts",
+      "sha256": "42083432b9478e07839eff879efd8dda393117546fba06e27a92e61f15877c32"
+    },
+    {
+      "path": "scripts/audit-r8-module.py",
+      "sha256": "0c4d1a16c61276720a2ae49c2fdb54a500126d307e8568750dec9a40c300caee"
+    },
+    {
+      "path": "scripts/audit-radio.py",
+      "sha256": "322a908352bb2ecd289fef336d15ad27d33eb5bbf9b71254f0e25bdb196b6c9f"
+    },
+    {
+      "path": "scripts/audit_r7_jst7.py",
+      "sha256": "875cf9f4f609ffe8ff25312f0942320631d9c302ac54ef86ef0ebfa51f28de23"
+    },
+    {
+      "path": "scripts/audit_r7_paste_fixture.py",
+      "sha256": "b2eb92b899b01e0ed114a0a6a52db1912716bf3a2e59286d68fecf033bd37deb"
+    },
+    {
+      "path": "scripts/check-mechanical-meshes.py",
+      "sha256": "5c388d8d69152c4694c1c84fa54d44c4818aba58e6b3fcc6e5ad8ceb699ef555"
+    },
+    {
+      "path": "scripts/check-r6-mechanical-meshes.py",
+      "sha256": "5bd3a550e04fa768e2a75aded2675b4a41f8f0103a8e6c5ed33974cece8f5e14"
+    },
+    {
+      "path": "scripts/check-r6-preservation.py",
+      "sha256": "4db3c0049c536d13cbc29e78ad0854331b3c30012a926f26c9aeec1b308cb766"
+    },
+    {
+      "path": "scripts/check-routed.ts",
+      "sha256": "849fe7f998fed9f968b6452990cb6f297dd39ba0920eb1579c17a5c04e5a52ae"
+    },
+    {
+      "path": "scripts/compare-r5-r6.py",
+      "sha256": "c9c7c06ac248242e7e235e913f7f8d13339b0eab3fc918e277a95ca3dfc5215b"
+    },
+    {
+      "path": "scripts/curved_geometry.py",
+      "sha256": "88bdc260494aed8823456835bc620c756f8ea1aa4f2b289343c40b83bdb4e7de"
+    },
+    {
+      "path": "scripts/draw-assembly-review.py",
+      "sha256": "701293e64aaee98629cde4112758afad8969481436bb1e5ddaa08296f5499115"
+    },
+    {
+      "path": "scripts/draw-r4-assembly.py",
+      "sha256": "22b3143edda1f50241eb1b5488b6fbc8c231b82ce42e2faf0943a1e448269dc6"
+    },
+    {
+      "path": "scripts/draw-r5-dimensions.py",
+      "sha256": "6eb119697998b12fda9118e5d5fb6467c4e521e581163b010b9d23b6f587c967"
+    },
+    {
+      "path": "scripts/draw-r5-review.py",
+      "sha256": "4c37c8e6909b784dfa4134e503529e579e7cc17ef3102536479f88bea4c9f9e0"
+    },
+    {
+      "path": "scripts/draw-r6-dimensions.py",
+      "sha256": "662d17f1bbd1e11ef49eeaa940a63d64f79ba312c6d5c06cf02c4549bcd92905"
+    },
+    {
+      "path": "scripts/draw-r6-review.py",
+      "sha256": "40d8a84fae6792ebc3e282a97185fb0320d0e93cec0b7a62687ee5a20ece16af"
+    },
+    {
+      "path": "scripts/draw-usb-qualification.py",
+      "sha256": "9da286aff66d658de7e84b7f3ab2d13c275892c8fef3de4b712c68458c71e588"
+    },
+    {
+      "path": "scripts/export-assembly.ts",
+      "sha256": "c63bb6b4a69dfaab5b1ff0f78a247d1c3b7e88e589c86ef010d0c00f0bd09d86"
+    },
+    {
+      "path": "scripts/fetch-qualified-datasheets.py",
+      "sha256": "53645504e126de5ba5136aaa6f0024108ce13672478a89fe7bcca58ab2cfd958"
+    },
+    {
+      "path": "scripts/finalize-r2-bom.py",
+      "sha256": "a92b9589be8145ba8f406545de2ff60462e8e1b481830fc9a7141ac1b1a81e86"
+    },
+    {
+      "path": "scripts/inspect-exported-slots.py",
+      "sha256": "9731331400e7189e9c3ecba7e2d239580c3a178824ee5a04bdb0d7eb9fa38792"
+    },
+    {
+      "path": "scripts/lib/qualification-source-placements.ts",
+      "sha256": "21b00cc88efaac0648e250047da6a6268f3f4c947df92585acc4c494d39c2add"
+    },
+    {
+      "path": "scripts/manufacturing-audit.py",
+      "sha256": "3b6d34a53584252b0751a3245bb7417a0b0525c479c1b774c8b044e9bd455a22"
+    },
+    {
+      "path": "scripts/measure-j1-export.py",
+      "sha256": "c3a5be2a53634023451aa38638b216b8023343c0de7ec9ce336ceaaba5e31799"
+    },
+    {
+      "path": "scripts/package_draft.py",
+      "sha256": "c33f51283f504fc44a82b67f6093a026dceced14679e0b61ecbd4ff23964a38c"
+    },
+    {
+      "path": "scripts/package_r2.py",
+      "sha256": "b775ce118f96dc91c08b8e62222bf6c4fff9f64a120864fa95da7f117ed86803"
+    },
+    {
+      "path": "scripts/package_r3.py",
+      "sha256": "3e923104e4af53120160788c90591fe5c84bb12256714e1acac5aa807a878b59"
+    },
+    {
+      "path": "scripts/package_r4_dfm.py",
+      "sha256": "5ea2c6d3d010e4a495b9336b429efac6df24dd86161ea202a6c95e6932a4a1d0"
+    },
+    {
+      "path": "scripts/package_r5_dfm.py",
+      "sha256": "bdef8e94ba1b57114871d0fd4e4fbd7dbe5ccee4895ab8bba96072aeb480ea3b"
+    },
+    {
+      "path": "scripts/package_r6_prototype.py",
+      "sha256": "16fb1104665549faaede87d9bb2783fedc036bead65424db3e70e3e0fd137655"
+    },
+    {
+      "path": "scripts/place-r5-markings.py",
+      "sha256": "22dd75450e4c54fe6d9e5522c7db846277ab23f94309d856d31e167d7575d40f"
+    },
+    {
+      "path": "scripts/qualification_paths.py",
+      "sha256": "1adf9380024061da1912a3690cab1624aee319310aceb2819ecfcf9d59dc6e14"
+    },
+    {
+      "path": "scripts/r7_power_budget.py",
+      "sha256": "ac6627b50b695ee17680170a3607f45c248191df66e5bdf582e1c361bb33cf1e"
+    },
+    {
+      "path": "scripts/recheck_board_sourcing.py",
+      "sha256": "0c1b18e2a8299999101a932ccaad802ace96c16bb79301b779a1033b413731b9"
+    },
+    {
+      "path": "scripts/record-r3-tooling.py",
+      "sha256": "a0bc13915bf94390afbf0655c0456d44217ea4128967d57e7a9898d5106e2277"
+    },
+    {
+      "path": "scripts/record-r5-tooling.py",
+      "sha256": "737268acb0e0e33e42e60bafe3eaf3e710b39b4a4fdd013638ed59ae222da3ec"
+    },
+    {
+      "path": "scripts/record-r6-tooling.py",
+      "sha256": "206339721275a2ac5f110c2f2b5e79b6f00e36d1009c0f11b5c50a4f78e2870e"
+    },
+    {
+      "path": "scripts/regenerate-qualified-imports.sh",
+      "sha256": "4a78d652bf6a35339d37fcf8d44910dfda671245c8d9751e934d469f63487274"
+    },
+    {
+      "path": "scripts/render-final-cam.py",
+      "sha256": "1b80cebd950254f3f11f6afab4453cde32617a643fe6655ea4913f2e5cd1f91c"
+    },
+    {
+      "path": "scripts/render-legend-review.py",
+      "sha256": "b569122c2bb4a54ebc18654b9c7e6dbae5e54094c4e800e679dff5d0142131e7"
+    },
+    {
+      "path": "scripts/render-r6-pcb.ts",
+      "sha256": "4f752eddb50f5169930b5c15d10e780dce452f7dcedf565cf41ddaa926eb5686"
+    },
+    {
+      "path": "scripts/render-r6-review.ts",
+      "sha256": "1ba4c3b53ec2aea59dc7f714f36517664079b41162a225fe26de45685b0bc1cc"
+    },
+    {
+      "path": "scripts/render-r8-land-comparison.py",
+      "sha256": "012382fe74559254b6a3ea2b38094bb4eefad790144820817bc32a80684e66cd"
+    },
+    {
+      "path": "scripts/render-regression.ts",
+      "sha256": "41a2bac615c21e2969f5260e1a28fac8a78250d4176f64756b6e98a18d6b10dc"
+    },
+    {
+      "path": "scripts/render-sheets.ts",
+      "sha256": "ff054cea26173093fd2bcef8c82ee76653a3ae905c79a98af7443272f440d923"
+    },
+    {
+      "path": "scripts/review-gerbers.py",
+      "sha256": "94292251cf3601b7879111ef14d1ce0f80b97c210a70e7fc7fe6190437f570a4"
+    },
+    {
+      "path": "scripts/review-order-usb-mask.py",
+      "sha256": "1b2fa705858521a2b80150267c80f6538930916aa0fa8382d2d006a1c96cf444"
+    },
+    {
+      "path": "scripts/review-r3-exports.py",
+      "sha256": "9f2499c10a3856957e49a41dd0751c8abf71716306713e9751b884cffa190146"
+    },
+    {
+      "path": "scripts/review-r4-manufacturing.py",
+      "sha256": "d4d50bbc5b2f2171d91f0c5c77080d9b5a059158c56bd4c906812d305aacc74c"
+    },
+    {
+      "path": "scripts/review-r5-ground.py",
+      "sha256": "b733f0ea9e8938a1d40152b8706e2a1963b6e321a4146fd4c170b0e35fa37083"
+    },
+    {
+      "path": "scripts/review-r5-legend.py",
+      "sha256": "0e4bb57ce99571053ddc44b3c05b83254efff91500398566deac7d81b063cdd1"
+    },
+    {
+      "path": "scripts/review-r5-manufacturing.py",
+      "sha256": "9791fe350b52c38597ed1db7a66604bcadb72ff10089310e35388d8bd655fc68"
+    },
+    {
+      "path": "scripts/review-r5-stencil.py",
+      "sha256": "160e583db8a577625cdf6e3a9b952cd53e81e79c64c94095536a5f2d2e6c6311"
+    },
+    {
+      "path": "scripts/review-r5-usb-pins.py",
+      "sha256": "97716f4bcd0db46713019eba03abb9616cd473299a4b5ad8755a6e1dcff421dc"
+    },
+    {
+      "path": "scripts/review-r6-3d.py",
+      "sha256": "690e5403e312d8e84fa767931cc8d8bf52d49e0b0b2b74b691bb468204950578"
+    },
+    {
+      "path": "scripts/review-r6-ground.py",
+      "sha256": "0bc95b5aad55a45e29f03a54fd32a413eb7c109ecf259577ce5381b2ce304d7c"
+    },
+    {
+      "path": "scripts/review-r6-legend.py",
+      "sha256": "b081c8fc37ff0925980b9b0d2b50e49f7c710c39c642cd7b430724cf681a9c5b"
+    },
+    {
+      "path": "scripts/review-r6-manufacturing.py",
+      "sha256": "8585013bdb7687b6fa0a4a1c527f9bc544f8370240746fc1baab8030e442031c"
+    },
+    {
+      "path": "scripts/review-r6-mechanics.py",
+      "sha256": "cbaa2618bc92c793929f37e18a12239b484b9c0404a96954ca28a12d16eb7405"
+    },
+    {
+      "path": "scripts/review-r6-stencil.py",
+      "sha256": "85fe7679f31f0a532093b89a8e7fc9972def1690640a77d8e5f5049b1d09af40"
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "sha256": "4f74557f674e5119528ff6f47ec054b9cec4991616bd07dd1d6be22fef041938"
+    },
+    {
+      "path": "scripts/update-r2-bom.py",
+      "sha256": "522861502a0308a4f89164a4eee253d70b810d5ff682190af0a76839bb626aec"
+    },
+    {
+      "path": "scripts/validate-r2.py",
+      "sha256": "6b316d6703b4f82a351cad2df00538e6bd45d79e44b22c4388a6477e8256e4bc"
+    },
+    {
+      "path": "scripts/validate-r4.sh",
+      "sha256": "76528b3dc0e664c80cf61bf569acec0bf624342be63b6022e365c92cd5731857"
+    },
+    {
+      "path": "scripts/validate-r5.py",
+      "sha256": "04892a34c246a8740fe13466031a880c36a562456064e7f23169d33f435a014f"
+    },
+    {
+      "path": "scripts/validate-r6-outputs.py",
+      "sha256": "66f4e6fdefdea6ae41d7c40f8b1b58df2dbd5aca935e20f420ba085a86425c45"
+    },
+    {
+      "path": "scripts/validate-r6.py",
+      "sha256": "5af58a0874d00eaac8e57dbb7aa88437562a55b8e2ed695d5f158e36a061d29a"
+    },
+    {
+      "path": "scripts/write-r3-bom.py",
+      "sha256": "b1bfc6ee0850a9c9fad1e3af254827a2deccc9770d13cc3394d660fd299c190c"
+    },
+    {
+      "path": "scripts/write-r4-reviews.py",
+      "sha256": "d490cacef56867b6d8d4b20c9b9fd68d699adb3c7b279a7c2fec2cd42c26811e"
+    },
+    {
+      "path": "scripts/write-r5-issues.py",
+      "sha256": "9fde3edc24d64d5a297356c39e63c89d27b5a5553d1d5b36b801519ee677fa85"
+    },
+    {
+      "path": "scripts/write-r6-documents.py",
+      "sha256": "fee5958ef7f5d3087e1bf073f4c8336de350b34cff08a5fbc4f08189d7126f8a"
+    },
+    {
+      "path": "scripts/write-r6-issues.py",
+      "sha256": "15138a1b35636e97af1527d075f42a7f3511c8746780cb13873c0dbb1ef9f18d"
+    },
+    {
+      "path": "src/c2-escape-paths.ts",
+      "sha256": "57c5dc1de3a61f5603c9fe061e7d9b7defc26e404c479d5ae361c27e519989e2"
+    },
+    {
+      "path": "src/c7-escape-paths.ts",
+      "sha256": "0339fff38d75e5b2c6e53fb115d1f364712f4bfa2cb6b1c9cf1fb4abdca944e3"
+    },
+    {
+      "path": "src/charger-escape-paths.ts",
+      "sha256": "6fc6da1b2b0778ae1877d75e747bddeb326c870b5787498f70e03ef3f8376b8a"
+    },
+    {
+      "path": "src/fill-light-ring.tsx",
+      "sha256": "852db935d7a5e1a617bac9b22a52f17761a2cd2d298f63d5d38172108c28463a"
+    },
+    {
+      "path": "src/functional-markings.tsx",
+      "sha256": "9c0546feaffa4f13e3c20b4d9a47132af49feb0bbf21aa9b79b117bc7e8fef6c"
+    },
+    {
+      "path": "src/radio-escape-paths.ts",
+      "sha256": "17a11736395c85cc83316aaba6b0e6c84f7af12838e74235c02dee3631b1c0ff"
+    },
+    {
+      "path": "src/regulator-escape-paths.ts",
+      "sha256": "a3baef154b8851f03427460dbe25ac9ee389867e0485864736c02d49016a9d6d"
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "fc89beab1fe6d741832068ff0e42527d64c742b87416bfa5ed887c6961a46ff8"
+    },
+    {
+      "path": "src/sensor-escape-paths.ts",
+      "sha256": "3ebfe10d5a7256c09bc8ef49ca35a2be164cb566457feb47992bbd5f8affcc3a"
+    },
+    {
+      "path": "src/temperature-escape-paths.ts",
+      "sha256": "514f70b3d69bbfab0bca4389f24859f3026f938e987d903d48e1c65a0d73d53e"
+    },
+    {
+      "path": "src/usb-escape-paths.ts",
+      "sha256": "d72f5af19ef12be487e308a61a27086639ba73088cfd4e9e7a450b7383238d84"
+    },
+    {
+      "path": "tests/fixtures/esp32-import.circuit.tsx",
+      "sha256": "6432281aeec54d4c796a636476b270eaab212813c370e428140f2807ec2c7838"
+    },
+    {
+      "path": "tests/test_r8_qualification.py",
+      "sha256": "de46acdccb403cbf71453e5edd9b618b767241d610b21117fbf9164800524f19"
+    },
+    {
+      "path": "tooling/R7-patches/cli.patch",
+      "sha256": "ee99378ad1d823126bf80b1bd9db5e62498dfeb63d43ff12b3d10588f58c41b9"
+    },
+    {
+      "path": "tooling/R7-patches/core.patch",
+      "sha256": "6d8242147f927511029e6e10d482db4880f3516e8f4a2ef393f47c278700e2fd"
+    },
+    {
+      "path": "tooling/R7-patches/easyeda.patch",
+      "sha256": "ad70aaf861dde2cb57c70ca986b7e508289f80f843a3326d73134b60a23b0927"
+    },
+    {
+      "path": "tooling/R7-patches/manifest.json",
+      "sha256": "06965d6ba6f9f80358dfea90eec6cb01986cd0192cf412f8d5abeb379b388911"
+    },
+    {
+      "path": "tooling/vendor/circuit-json-0.0.509-r5-silk-owner.tgz",
+      "sha256": "3c57c8f7deaff9ab9dc4d823cae9d40e2f962958896700e13ea279d1c427b7db"
+    },
+    {
+      "path": "tooling/vendor/circuit-json-qualified-source.tgz",
+      "sha256": "3c57c8f7deaff9ab9dc4d823cae9d40e2f962958896700e13ea279d1c427b7db"
+    },
+    {
+      "path": "tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+      "sha256": "491b9c0937013290a5adecb247e7dd3c3c8ca903c09464d4c9eb94c8d91f27ea"
+    },
+    {
+      "path": "tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+      "sha256": "52dcfad58e8f65633147ccd3ae531aa59111c2a80191be26f3cdd4e64631127a"
+    },
+    {
+      "path": "tooling/vendor/circuit-json-util-qualified-source.tgz",
+      "sha256": "4484e5818b8ea7975cc62e94550bd1dca9eb91f3fe029eabe67fe1cf48e993b2"
+    },
+    {
+      "path": "tooling/vendor/circuit-to-svg-qualified-source.tgz",
+      "sha256": "474295e477b5226dc65094555f62effab3dd8abad4f80d4952912d5296b97ded"
+    },
+    {
+      "path": "tooling/vendor/core-qualified-source.tgz",
+      "sha256": "6648764217f7f120f910a8794d256b50eac46728c25690da1a81404d2789b6f5"
+    },
+    {
+      "path": "tooling/vendor/core-r7-smtpad-bounds.tgz",
+      "sha256": "0a2fe46c3e4857a93aded48f72ca0a1acfc63fd7aead59ecc4d482d1b3b34afd"
+    },
+    {
+      "path": "tooling/vendor/easyeda-0.0.364.tgz",
+      "sha256": "4199c36bced646224cd642addad95fa125a84c651bdcbecbe0e7460663e60b01"
+    },
+    {
+      "path": "tooling/vendor/easyeda-converter-qualified-source.tgz",
+      "sha256": "915895facccba4df7710038b9c4a2a7f42b8a1d5102fa9b622b0bd85f2acc36d"
+    },
+    {
+      "path": "tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+      "sha256": "4199c36bced646224cd642addad95fa125a84c651bdcbecbe0e7460663e60b01"
+    },
+    {
+      "path": "tooling/vendor/easyeda-converter-r7-circular-paste.tgz",
+      "sha256": "a983b11651121d7ae54a774a7389e85f54665821f2ef80df7525cf136e19389c"
+    },
+    {
+      "path": "tooling/vendor/props-qualified-source.tgz",
+      "sha256": "609b7c16df7a1e681b557581440416cd770256d1281ce647569e611af7fd06c8"
+    },
+    {
+      "path": "tooling/vendor/schematic-trace-solver-0.0.217.tgz",
+      "sha256": "696bcd6600681772d3ba08a5e892a98f561cf33e063d4dcd1e0cbf24f177dc46"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-cli-0.1.2237.tgz",
+      "sha256": "bffdf19f1d4cdd636b287fdabb69aa1a13d2688813fe7f0614610299731147f5"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+      "sha256": "b8bdbdc2a2aed5fb1fef173f3d7e57307255f4fca89de02caf822ee51e46842f"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-core-0.0.2035.tgz",
+      "sha256": "0a2fe46c3e4857a93aded48f72ca0a1acfc63fd7aead59ecc4d482d1b3b34afd"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+      "sha256": "541a04d695743b6349ae9f7cb145b3fb4bc60eb1e5f46c4b3b84aaacbbc2ed44"
+    },
+    {
+      "path": "tooling/vendor/tscircuit-props-0.0.672-r5-paste-style.tgz",
+      "sha256": "609b7c16df7a1e681b557581440416cd770256d1281ce647569e611af7fd06c8"
+    },
+    {
+      "path": "tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md",
+      "sha256": "4d490231715f05c31a43e777ab7648c92b2d9ca21edf6cbbc0ad6a093ab16fdf"
+    },
+    {
+      "path": "tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md",
+      "sha256": "1125fbdf7b7371346044349b4d7b254001e9054550c3ca234a46be326a8dee69"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/fixture-build.log",
+      "sha256": "ff72710d137b072a08930c3dddafe18d5bce105605a113c28e816a3b9f24b046"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/imported-3d.png",
+      "sha256": "a63efc3a89d03dc1f94370678f9064671c3d722669e7cd3571863c38a5fed1b3"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/imported-pcb.png",
+      "sha256": "1f7f34f0e2e56e38495e29907f513a6da1fe3b9d3dadf862bdaf612717490bcf"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/imported-schematic.png",
+      "sha256": "1abc074ad94b6347bbf5d928b5f4e99b495e1ff0e7b652737cbe992fe2c87448"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/land-comparison.pdf",
+      "sha256": "533a690985e4b2790b2304a37ed1d383a969147575f231ae02445a00369dd224"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/land-comparison.png",
+      "sha256": "26e250fb3db74a134a14602e2840bcde7b3767b3431b5ed8d5ff57d0e3895cdf"
+    },
+    {
+      "path": "tscircuit-issues/evidence/075/manufacturer-land-pattern.png",
+      "sha256": "35a17ee725ff1c15a46709d84eeb4ff2e3406c1d1f18c6c4024293db7cd9e738"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "83d856113a43a44455d47e5a747463212a6c662c802bf84e6e055b513dea389d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "9c45c2b89939286f54d5acc9e2d73d305e6e9568f712119c70559b3c31c9097e"
+    }
+  ]
+}

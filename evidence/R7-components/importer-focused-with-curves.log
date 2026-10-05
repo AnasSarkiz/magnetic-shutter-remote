@@ -1,0 +1,20 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-paste-mask-field-fidelity.test.ts:
+(pass) preserves raw source margins and paste contours across existing import fixtures [129.67ms]
+
+tests/explicit-paste-regions.test.ts:
+(pass) preserves explicit supplier paste polygons and per-pad expansion [4.82ms]
+
+tests/circular-paste-path.test.ts:
+(pass) straight paste preserves every source vertex exactly [0.43ms]
+(pass) circular arcs preserve flags and bound chord error independently [0.36ms]
+(pass) relative arcs and radius correction follow SVG endpoint semantics
+(pass) unclosed, multi-contour and unsupported paths remain explicit failures [0.30ms]
+(pass) C347356 retains all five supplier paste contours through supported TSX generation [1.65ms]
+(pass) unrepresentable chord tolerances fail explicitly rather than looping forever [0.05ms]
+
+ 8 pass
+ 0 fail
+ 9174 expect() calls
+Ran 8 tests across 3 files. [413.00ms]

@@ -1,0 +1,29 @@
+{
+  "lcsc": "C720477",
+  "mpn": "TS-1088-AR02016",
+  "references": [
+    "SW2",
+    "SW3"
+  ],
+  "url": "https://jlcpcb.com/partdetail/SHOUHAN-TS_1088_AR02016/C720477",
+  "listing_sha256": "bc17a1aa7b0aa97f7e1ef1ad982de3d4da956474fe8a130506abf91e7559c8ab",
+  "checked_at_utc": "2026-10-04T21:21:34.733406+00:00",
+  "quantity_for_five_finished_boards": 10,
+  "stock_fields": {
+    "canPresaleNumber": 728676,
+    "overseasStockCount": 780187,
+    "preMinPurchaseNum": 214
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

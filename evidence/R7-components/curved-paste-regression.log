@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/circular-paste-path.test.ts:
+(pass) straight paste preserves every source vertex exactly [2.29ms]
+(pass) circular arcs preserve flags and bound chord error independently [0.72ms]
+(pass) relative arcs and radius correction follow SVG endpoint semantics
+(pass) unclosed, multi-contour and unsupported paths remain explicit failures [0.30ms]
+(pass) C347356 retains all five supplier paste contours through supported TSX generation [9.82ms]
+
+ 5 pass
+ 0 fail
+ 1488 expect() calls
+Ran 5 tests across 1 file. [861.00ms]

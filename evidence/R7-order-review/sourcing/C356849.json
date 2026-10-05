@@ -1,0 +1,28 @@
+{
+  "lcsc": "C356849",
+  "mpn": "E73-2G4M08S1C",
+  "references": [
+    "U1"
+  ],
+  "url": "https://jlcpcb.com/partdetail/Chengdu_Ebyte_ElecTech-E732G4M08S1C/C356849",
+  "listing_sha256": "80e805e02db30326e95749747538001fc112637248f9237c7af24a18af8d3c17",
+  "checked_at_utc": "2026-10-04T21:21:31.980887+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 1192,
+    "overseasStockCount": 1669,
+    "preMinPurchaseNum": 2
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": true,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

@@ -1,0 +1,28 @@
+{
+  "lcsc": "C22795",
+  "mpn": "0603WAF1303T5E",
+  "references": [
+    "R8"
+  ],
+  "url": "https://jlcpcb.com/partdetail/0603WAF1303T5E/C22795",
+  "listing_sha256": "61eceab4bf8194adc0d287ce9ab840841105e08e78f8830d0e86051aa930ee1e",
+  "checked_at_utc": "2026-10-04T21:21:32.670642+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 538478,
+    "overseasStockCount": 587417,
+    "preMinPurchaseNum": 5000
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

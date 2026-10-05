@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-pcb-schema-export.test.tsx:
+29 |       />
+30 |     </board>,
+31 |   )
+32 |   circuit.render()
+33 |   const component = circuit.db.pcb_component.list()[0]!
+34 |   expect(component.display_offset_x).toBe("-2mm")
+                                          ^
+error: expect(received).toBe(expected)
+
+Expected: "-2mm"
+Received: -2
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-pcb-schema-export.test.tsx:34:38)
+(fail) board holes, explicit positions and rotated pill paste satisfy export schema [29.97ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [803.00ms]

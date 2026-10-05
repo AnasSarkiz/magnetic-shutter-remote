@@ -1,0 +1,24 @@
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py:573: SyntaxWarning: evidence/USB4215-import-audit/final/drill-L1-L2.drl:12 "G90": G90 header statement found after end of header
+  warnings.warn(f'{self.filename}:{self.lineno} "{self.line}": {msg}', SyntaxWarning)
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 604, in do_parse
+    raise ValueError('Unknown excellon statement:', line)
+ValueError: ('Unknown excellon statement:', 'X4.3199Y1.0250G85X4.3199Y1.8250')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from gerbonara import ExcellonFile; ExcellonFile.open("evidence/USB4215-import-audit/final/drill-L1-L2.drl")
+                                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 346, in open
+    return kls.from_string(filename.read_text(), settings=settings,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            filename=filename, plated=plated, external_tools=external_tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 358, in from_string
+    parser.do_parse(data, filename=filename)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 606, in do_parse
+    raise SyntaxError(f'{filename}:{lineno} "{line}": {e}') from e
+SyntaxError: evidence/USB4215-import-audit/final/drill-L1-L2.drl:15 "X4.3199Y1.0250G85X4.3199Y1.8250": ('Unknown excellon statement:', 'X4.3199Y1.0250G85X4.3199Y1.8250')

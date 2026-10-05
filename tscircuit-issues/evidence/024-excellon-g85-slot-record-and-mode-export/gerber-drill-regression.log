@@ -1,0 +1,59 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/excellon-drill/via-drill-deduplication-output.test.ts:
+(pass) Gerber file export emits one operation per physical via [4.01ms]
+
+tests/excellon-drill/physical-via-route-deduplication.test.ts:
+(pass) emits one drill per barrel when routes also carry drill dimensions [0.48ms]
+
+tests/excellon-drill/independent-g85-slot-records.test.ts:
+(pass) four supplier USB shell slots have self-contained start/end records and return to drill mode [839.03ms]
+
+tests/excellon-drill/via-drill-deduplication.test.ts:
+(pass) shared physical vias emit one drill despite different IDs and layer ordering [2.65ms]
+(pass) physical vias with missing trace IDs cover partial route transitions
+(pass) physical vias with same trace IDs cover partial route transitions [0.02ms]
+(pass) physical vias with different trace IDs cover partial route transitions [0.03ms]
+(pass) an explicit via and its same-span route fallback produce one drill [0.04ms]
+(pass) route-only vias remain supported and repeated reversed spans drill once [0.06ms]
+(pass) coincident route-only vias with distinct spans remain separate [0.09ms]
+(pass) coincident explicit vias with different physical spans remain separate [0.09ms]
+(pass) a route extending outside an explicit blind via keeps its own drill [0.03ms]
+(pass) stacked explicit spans do not suppress a route crossing both barrels [0.09ms]
+(pass) different drill diameters remain separate for explicit and route vias [0.21ms]
+(pass) different x or y coordinates are not merged
+(pass) legacy explicit via spans also reconcile matching route transitions
+(pass) single-span deduplication preserves input and flip_y_axis=false [0.29ms]
+(pass) single-span deduplication preserves input and flip_y_axis=true [0.04ms]
+(pass) non-plated holes and plated component holes are not deduplicated as vias [0.07ms]
+
+tests/excellon-drill/excellon-drill-stringification.test.ts:
+(pass) test that we can recreate an example drill file [0.06ms]
+
+tests/excellon-drill/convert-soup-to-excellon-drill.test.ts:
+(pass) generate excellon drill text from axial resistor [0.49ms]
+
+tests/excellon-drill/physical-via-layer-precedence.test.ts:
+(pass) Gerber file export uses the physical through-via span [0.46ms]
+(pass) physical endpoints span all 2 board layers despite legacy endpoints [0.05ms]
+(pass) physical endpoints span all 4 board layers despite legacy endpoints [0.02ms]
+(pass) physical endpoints span all 6 board layers despite legacy endpoints [0.03ms]
+(pass) physical endpoints span all 8 board layers despite legacy endpoints [0.02ms]
+(pass) physical span [ "inner1", "top" ] overrides legacy through-via endpoints
+(pass) physical span [ "inner2", "inner1" ] overrides legacy through-via endpoints [0.07ms]
+(pass) physical span [ "bottom", "inner2" ] overrides legacy through-via endpoints [0.01ms]
+(pass) missing physical layers fall back to normalized legacy endpoints [0.02ms]
+(pass) empty physical layers fall back to normalized legacy endpoints
+(pass) missing layer metadata defaults to a through-board drill
+(pass) single-span export filters by physical layers without mutating the input [0.09ms]
+
+tests/excellon-drill/physical-via-span-compatibility.test.ts:
+(pass) preserves blind/buried physical spans and legacy endpoint-only inputs [0.31ms]
+
+tests/excellon-drill/excellon-drill-builder.test.ts:
+(pass) test that we can recreate an example drill file [1.40ms]
+
+ 35 pass
+ 0 fail
+ 1 snapshots, 127 expect() calls
+Ran 35 tests across 9 files. [969.00ms]

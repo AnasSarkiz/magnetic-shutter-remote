@@ -1,0 +1,12 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-paste-mask-field-fidelity.test.ts:
+(pass) preserves raw source margins and paste contours across existing import fixtures [474.42ms]
+
+tests/explicit-paste-regions.test.ts:
+(pass) preserves explicit supplier paste polygons and per-pad expansion [12.39ms]
+
+ 2 pass
+ 0 fail
+ 7685 expect() calls
+Ran 2 tests across 2 files. [747.00ms]

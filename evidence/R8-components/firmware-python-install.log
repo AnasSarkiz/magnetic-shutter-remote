@@ -1,0 +1,54 @@
+Collecting cmake==3.31.10 (from -r firmware/requirements-lock.txt (line 1))
+  Downloading cmake-3.31.10-py3-none-macosx_10_10_universal2.whl.metadata (6.3 kB)
+Collecting colorama==0.4.6 (from -r firmware/requirements-lock.txt (line 2))
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting docopt==0.6.2 (from -r firmware/requirements-lock.txt (line 3))
+  Downloading docopt-0.6.2.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting intelhex==2.3.0 (from -r firmware/requirements-lock.txt (line 4))
+  Downloading intelhex-2.3.0-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting ninja==1.13.0 (from -r firmware/requirements-lock.txt (line 5))
+  Downloading ninja-1.13.0-py3-none-macosx_10_9_universal2.whl.metadata (5.1 kB)
+Collecting packaging==26.3 (from -r firmware/requirements-lock.txt (line 6))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyelftools==0.33 (from -r firmware/requirements-lock.txt (line 7))
+  Downloading pyelftools-0.33-py3-none-any.whl.metadata (1.0 kB)
+Collecting pykwalify==1.8.0 (from -r firmware/requirements-lock.txt (line 8))
+  Downloading pykwalify-1.8.0-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r firmware/requirements-lock.txt (line 9))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting PyYAML==6.0.3 (from -r firmware/requirements-lock.txt (line 10))
+  Downloading pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting ruamel.yaml==0.19.1 (from -r firmware/requirements-lock.txt (line 11))
+  Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+Collecting six==1.17.0 (from -r firmware/requirements-lock.txt (line 12))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting west==1.5.0 (from -r firmware/requirements-lock.txt (line 13))
+  Downloading west-1.5.0-py3-none-any.whl.metadata (19 kB)
+Downloading cmake-3.31.10-py3-none-macosx_10_10_universal2.whl (48.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.0/48.0 MB 31.8 MB/s  0:00:01
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading intelhex-2.3.0-py2.py3-none-any.whl (50 kB)
+Downloading ninja-1.13.0-py3-none-macosx_10_9_universal2.whl (310 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pyelftools-0.33-py3-none-any.whl (201 kB)
+Downloading pykwalify-1.8.0-py2.py3-none-any.whl (24 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl (173 kB)
+Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading west-1.5.0-py3-none-any.whl (106 kB)
+Building wheels for collected packages: docopt
+  Building wheel for docopt (pyproject.toml): started
+  Building wheel for docopt (pyproject.toml): finished with status 'done'
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13783 sha256=daec885efa552ec3dd766164850d959e8c8efba6bf49367038077338cd0a1337
+  Stored in directory: /Users/anassarkiz/Library/Caches/pip/wheels/79/6f/5f/26c3d1a144117ef52122d67c32b9f3c297c3dec4fea00a31ac
+Successfully built docopt
+Installing collected packages: intelhex, docopt, six, ruamel.yaml, PyYAML, pyelftools, packaging, ninja, colorama, cmake, python-dateutil, pykwalify, west
+
+Successfully installed PyYAML-6.0.3 cmake-3.31.10 colorama-0.4.6 docopt-0.6.2 intelhex-2.3.0 ninja-1.13.0 packaging-26.3 pyelftools-0.33 pykwalify-1.8.0 python-dateutil-2.9.0.post0 ruamel.yaml-0.19.1 six-1.17.0 west-1.5.0

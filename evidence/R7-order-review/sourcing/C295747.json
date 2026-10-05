@@ -1,0 +1,28 @@
+{
+  "lcsc": "C295747",
+  "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+  "references": [
+    "J2"
+  ],
+  "url": "https://jlcpcb.com/partdetail/JST-S2B_PH_SM4_TB_LF_SN/C295747",
+  "listing_sha256": "0a602124fa34ea2925a271ffdc8be6f3f7fa590eadb51ece8f58cd3dffed3bbd",
+  "checked_at_utc": "2026-10-04T21:21:34.206323+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 17456,
+    "overseasStockCount": 18159,
+    "preMinPurchaseNum": 39
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

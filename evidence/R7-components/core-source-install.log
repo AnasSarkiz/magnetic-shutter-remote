@@ -1,0 +1,6 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [14]
+error: ENOENT extracting tarball from circuit-json
+
+error: ENOENT extracting tarball from @tscircuit/props

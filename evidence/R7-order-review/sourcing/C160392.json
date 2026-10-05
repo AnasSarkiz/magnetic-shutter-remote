@@ -1,0 +1,28 @@
+{
+  "lcsc": "C160392",
+  "mpn": "BM06B-SRSS-TB(LF)(SN)",
+  "references": [
+    "J3"
+  ],
+  "url": "https://jlcpcb.com/partdetail/JST-BM06B_SRSS_TB_LF_SN/C160392",
+  "listing_sha256": "29fe058e4c0665076b459a5b27792cc4bc313d1102ed31261cfb0cba72751ba1",
+  "checked_at_utc": "2026-10-04T21:21:34.280481+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 27229,
+    "overseasStockCount": 33926,
+    "preMinPurchaseNum": 27
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

@@ -1,0 +1,23 @@
+bun pack v1.3.9 (cf6cdbbb)
+
+packed 2.23KB package.json
+packed 1.1KB LICENSE
+packed 4.40KB README.md
+packed 165.28KB dist/browser/index.d.ts
+packed 0.80MB dist/browser/index.js
+packed 1.81MB dist/browser/index.js.map
+packed 164.95KB dist/index.d.ts
+packed 0.66MB dist/index.js
+packed 1.57MB dist/index.js.map
+packed 0.72MB dist/main.cjs
+packed 0.72MB dist/main.cjs
+packed 1.66MB dist/main.cjs.map
+packed 20B dist/main.d.cts
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/vendor/easyeda-0.0.364.tgz
+
+Total files: 13
+Shasum: b8f3f35fd8053b2ebb17f85e32fe9c5159b8a2fc
+Integrity: sha512-Si+ZvpmjROsfP[...]aKzaL+RMIA89Q==
+Unpacked size: 8.26MB
+Packed size: 1.41MB

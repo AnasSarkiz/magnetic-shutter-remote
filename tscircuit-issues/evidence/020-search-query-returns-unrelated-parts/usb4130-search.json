@@ -1,0 +1,16 @@
+{
+  "query": "USB4130",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 3523449,
+      "mfr": "CFR16J1K0",
+      "package": "插件",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-450ppm/℃~0ppm/℃ -55℃~+155℃ 1kΩ 250mW Carbon Film Resistor ±5% 插件 Through Hole Resistors ROHS",
+      "stock": 85,
+      "price": 0.051
+    }
+  ]
+}

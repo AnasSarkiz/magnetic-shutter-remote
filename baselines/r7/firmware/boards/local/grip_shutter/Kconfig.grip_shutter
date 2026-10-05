@@ -1,0 +1,2 @@
+config BOARD_GRIP_SHUTTER
+	select SOC_NRF52840_QIAA

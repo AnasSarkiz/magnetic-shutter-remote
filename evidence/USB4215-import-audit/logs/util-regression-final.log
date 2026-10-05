@@ -1,0 +1,227 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/transform-paste-polygon.test.ts:
+109 |     }
+110 |     parse(data, params) {
+111 |         const result = this.safeParse(data, params);
+112 |         if (result.success)
+113 |             return result.data;
+114 |         throw result.error;
+                           ^
+ZodError: [
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_union",
+            "unionErrors": [
+              {
+                "issues": [
+                  {
+                    "received": "outline",
+                    "code": "invalid_literal",
+                    "expected": "rect",
+                    "path": [
+                      "shape"
+                    ],
+                    "message": "Invalid literal value, expected \"rect\""
+                  },
+                  {
+                    "code": "invalid_type",
+                    "expected": "object",
+                    "received": "undefined",
+                    "path": [
+                      "center"
+                    ],
+                    "message": "Required"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "unionErrors": [
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "string",
+                            "received": "undefined",
+                            "path": [
+                              "width"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      },
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "number",
+                            "received": "undefined",
+                            "path": [
+                              "width"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      }
+                    ],
+                    "path": [
+                      "width"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "unionErrors": [
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "string",
+                            "received": "undefined",
+                            "path": [
+                              "height"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      },
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "number",
+                            "received": "undefined",
+                            "path": [
+                              "height"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      }
+                    ],
+                    "path": [
+                      "height"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_type",
+                    "expected": "string",
+                    "received": "undefined",
+                    "path": [
+                      "pcb_keepout_id"
+                    ],
+                    "message": "Required"
+                  }
+                ],
+                "name": "ZodError"
+              },
+              {
+                "issues": [
+                  {
+                    "received": "outline",
+                    "code": "invalid_literal",
+                    "expected": "circle",
+                    "path": [
+                      "shape"
+                    ],
+                    "message": "Invalid literal value, expected \"circle\""
+                  },
+                  {
+                    "code": "invalid_type",
+                    "expected": "object",
+                    "received": "undefined",
+                    "path": [
+                      "center"
+                    ],
+                    "message": "Required"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "unionErrors": [
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "string",
+                            "received": "undefined",
+                            "path": [
+                              "radius"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      },
+                      {
+                        "issues": [
+                          {
+                            "code": "invalid_type",
+                            "expected": "number",
+                            "received": "undefined",
+                            "path": [
+                              "radius"
+                            ],
+                            "message": "Required"
+                          }
+                        ],
+                        "name": "ZodError"
+                      }
+                    ],
+                    "path": [
+                      "radius"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_type",
+                    "expected": "string",
+                    "received": "undefined",
+                    "path": [
+                      "pcb_keepout_id"
+                    ],
+                    "message": "Required"
+                  }
+                ],
+                "name": "ZodError"
+              }
+            ],
+            "path": [],
+            "message": "Invalid input"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "undefined",
+            "path": [
+              "pcb_keepout_id"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [],
+    "message": "Invalid input"
+  }
+]
+      at parse (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/circuit-json/node_modules/zod/v3/types.js:114:22)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/circuit-json-util/tests/transform-paste-polygon.test.ts:7:28)
+(fail) polygon paste and outline keepouts retain world points when recentered [3.38ms]
+
+ 0 pass
+ 1 fail
+Ran 1 test across 1 file. [68.00ms]

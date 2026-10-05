@@ -1,0 +1,102 @@
+$ MAGNETIC_REVIEW_EVIDENCE=evidence/R7-order-review MAGNETIC_REVIEW_FABRICATION=fabrication/R7-order-review MAGNETIC_REVIEW_CAM=R7-gerbers.zip tooling/gerber-review-venv/bin/python -m unittest discover -s tests -v
+test_brep_hole_remains_empty (test_curved_geometry.CurvedGeometryTests.test_brep_hole_remains_empty) ... ok
+test_bulge_orientation_and_independent_region (test_curved_geometry.CurvedGeometryTests.test_bulge_orientation_and_independent_region) ... ok
+test_invalid_ring_is_rejected (test_curved_geometry.CurvedGeometryTests.test_invalid_ring_is_rejected) ... ok
+test_cc_pulldowns_are_independent_and_not_usb_data (test_design_contract.DesignContract.test_cc_pulldowns_are_independent_and_not_usb_data) ... ok
+test_every_fitted_part_matches_source_bom (test_design_contract.DesignContract.test_every_fitted_part_matches_source_bom) ... ok
+test_firmware_config_uses_rc_and_persistent_encrypted_pairing (test_design_contract.DesignContract.test_firmware_config_uses_rc_and_persistent_encrypted_pairing) ... ok
+test_firmware_gpio_and_debug_map_match_module_connections (test_design_contract.DesignContract.test_firmware_gpio_and_debug_map_match_module_connections) ... ok
+test_hid_descriptor_is_one_bit_consumer_volume_up (test_design_contract.DesignContract.test_hid_descriptor_is_one_bit_consumer_volume_up) ... ok
+test_normal_voltage_mode_and_unused_high_voltage_usb_inputs (test_design_contract.DesignContract.test_normal_voltage_mode_and_unused_high_voltage_usb_inputs) ... ok
+test_power_interlock_connectivity (test_design_contract.DesignContract.test_power_interlock_connectivity) ... ok
+test_routed_geometry_and_a4_sheets (test_design_contract.DesignContract.test_routed_geometry_and_a4_sheets) ... ok
+test_single_top_side_assembly (test_design_contract.DesignContract.test_single_top_side_assembly) ... ok
+test_temperature_interlock_and_supervisor_are_not_bypassed (test_design_contract.DesignContract.test_temperature_interlock_and_supervisor_are_not_bypassed) ... ok
+test_actual_slot_diameter_error_is_rejected (test_export_readback.ExportReadbackTests.test_actual_slot_diameter_error_is_rejected) ... ok
+test_missing_drill_is_rejected (test_export_readback.ExportReadbackTests.test_missing_drill_is_rejected) ... ok
+test_missing_header_is_rejected (test_export_readback.ExportReadbackTests.test_missing_header_is_rejected) ... ok
+test_missing_or_extra_stencil_geometry_is_rejected (test_export_readback.ExportReadbackTests.test_missing_or_extra_stencil_geometry_is_rejected) ... ok
+test_original_inline_g85_and_following_round (test_export_readback.ExportReadbackTests.test_original_inline_g85_and_following_round) ... ok
+test_qualified_paste_reduction_compares_to_explicit_aperture (test_export_readback.ExportReadbackTests.test_qualified_paste_reduction_compares_to_explicit_aperture) ... ok
+test_common_smt_pad_junction_and_remote_spacing (test_manufacturing_audit.ManufacturingRules.test_common_smt_pad_junction_and_remote_spacing) ... ok
+test_common_via_does_not_exempt_remote_parallel_tracks (test_manufacturing_audit.ManufacturingRules.test_common_via_does_not_exempt_remote_parallel_tracks) ... ok
+test_common_via_junction_is_audited_outside_actual_annulus (test_manufacturing_audit.ManufacturingRules.test_common_via_junction_is_audited_outside_actual_annulus) ... ok
+test_explicit_internal_ports_resolve_transitively (test_manufacturing_audit.ManufacturingRules.test_explicit_internal_ports_resolve_transitively) ... ok
+test_internal_connection_conflicting_nets_fails (test_manufacturing_audit.ManufacturingRules.test_internal_connection_conflicting_nets_fails) ... ok
+test_layer_span_and_inner_pth (test_manufacturing_audit.ManufacturingRules.test_layer_span_and_inner_pth) ... ok
+test_missing_net_not_treated_as_same_net (test_manufacturing_audit.ManufacturingRules.test_missing_net_not_treated_as_same_net) ... ok
+test_npth_same_footprint_same_net_still_fails (test_manufacturing_audit.ManufacturingRules.test_npth_same_footprint_same_net_still_fails) ... ok
+test_pour_not_ignored (test_manufacturing_audit.ManufacturingRules.test_pour_not_ignored) ... ok
+test_pth_and_via_annuli_have_distinct_limits (test_manufacturing_audit.ManufacturingRules.test_pth_and_via_annuli_have_distinct_limits) ... ok
+test_pth_track_minimum_028 (test_manufacturing_audit.ManufacturingRules.test_pth_track_minimum_028) ... ok
+test_real_r2_j1_detected (test_manufacturing_audit.ManufacturingRules.test_real_r2_j1_detected) ... skipped 'Run from board root'
+test_rotated_rectangle_not_bounding_box (test_manufacturing_audit.ManufacturingRules.test_rotated_rectangle_not_bounding_box) ... ok
+test_unattributed_trace_fails_without_recursion (test_manufacturing_audit.ManufacturingRules.test_unattributed_trace_fails_without_recursion) ... ok
+test_via_own_annulus_and_feed_are_classified (test_manufacturing_audit.ManufacturingRules.test_via_own_annulus_and_feed_are_classified) ... ok
+test_archive_path_and_non_zip_are_rejected (test_qualification_paths.QualificationPaths.test_archive_path_and_non_zip_are_rejected) ... ok
+test_directory_escape_is_rejected (test_qualification_paths.QualificationPaths.test_directory_escape_is_rejected) ... ok
+test_legacy_defaults_are_retained (test_qualification_paths.QualificationPaths.test_legacy_defaults_are_retained) ... ok
+test_new_review_remains_separate (test_qualification_paths.QualificationPaths.test_new_review_remains_separate) ... ok
+test_global_quarter_turn_rejected (test_r4_registration.RegistrationTests.test_global_quarter_turn_rejected) ... ok
+test_lower_left_origin_mismatch_rejected (test_r4_registration.RegistrationTests.test_lower_left_origin_mismatch_rejected) ... ok
+test_nonzero_group_anchor_rejected (test_r4_registration.RegistrationTests.test_nonzero_group_anchor_rejected) ... ok
+test_pdf_rotation_error_rejected (test_r4_registration.RegistrationTests.test_pdf_rotation_error_rejected) ... ok
+test_source_anchor_used_as_usb_centroid_rejected (test_r4_registration.RegistrationTests.test_source_anchor_used_as_usb_centroid_rejected) ... ok
+test_stencil_release_ratio_is_not_area_coverage (test_r4_registration.RegistrationTests.test_stencil_release_ratio_is_not_area_coverage) ... ok
+test_x_mirror_rejected (test_r4_registration.RegistrationTests.test_x_mirror_rejected) ... ok
+test_y_axis_flip_rejected (test_r4_registration.RegistrationTests.test_y_axis_flip_rejected) ... ok
+test_actual_dnp_component_rejected (test_r4_review.R4ReviewTests.test_actual_dnp_component_rejected) ... ok
+test_duplicate_ref_rejected (test_r4_review.R4ReviewTests.test_duplicate_ref_rejected) ... ok
+test_paste_outside_board_rejected (test_r4_review.R4ReviewTests.test_paste_outside_board_rejected) ... ok
+test_paste_outside_mask_rejected (test_r4_review.R4ReviewTests.test_paste_outside_mask_rejected) ... ok
+test_final_ground_plane_and_returns (test_r5_contract.R5ContractTests.test_final_ground_plane_and_returns) ... ok
+test_original_imports_unchanged (test_r5_contract.R5ContractTests.test_original_imports_unchanged) ... ok
+test_printed_functional_geometry (test_r5_contract.R5ContractTests.test_printed_functional_geometry) ... ok
+test_same_revision_complete_cam (test_r5_contract.R5ContractTests.test_same_revision_complete_cam) ... ok
+test_stencil_release_and_coverage (test_r5_contract.R5ContractTests.test_stencil_release_and_coverage) ... ok
+test_972_original_files (test_r6_qualification.R6Qualification.test_972_original_files) ... FAIL
+test_actual_ground_and_rf (test_r6_qualification.R6Qualification.test_actual_ground_and_rf) ... ok
+test_current_37_registration (test_r6_qualification.R6Qualification.test_current_37_registration) ... ok
+test_current_previews_only (test_r6_qualification.R6Qualification.test_current_previews_only) ... ok
+test_exact_cam_paste_slots (test_r6_qualification.R6Qualification.test_exact_cam_paste_slots) ... ok
+test_failed_supplier_pose_rejected (test_r6_qualification.R6Qualification.test_failed_supplier_pose_rejected) ... ok
+test_import_is_unchanged_supplier_generator_output (test_r6_qualification.R6Qualification.test_import_is_unchanged_supplier_generator_output) ... ok
+test_mirrored_cpl_rejected (test_r6_qualification.R6Qualification.test_mirrored_cpl_rejected) ... ok
+test_missing_supplier_terminals_rejected (test_r6_qualification.R6Qualification.test_missing_supplier_terminals_rejected) ... ok
+test_no_none_orientation_acceptance (test_r6_qualification.R6Qualification.test_no_none_orientation_acceptance) ... ok
+test_r5_non_usb_invariants (test_r6_qualification.R6Qualification.test_r5_non_usb_invariants) ... ok
+test_usb_quarter_turn_rejected (test_r6_qualification.R6Qualification.test_usb_quarter_turn_rejected) ... ok
+test_wrong_pdf_rotation_rejected (test_r6_qualification.R6Qualification.test_wrong_pdf_rotation_rejected) ... ok
+test_wrong_usb_centroid_rejected (test_r6_qualification.R6Qualification.test_wrong_usb_centroid_rejected) ... ok
+test_changed_contour_is_measured_not_registered_away (test_r7_paste_fixture.IndependentPasteAuditTests.test_changed_contour_is_measured_not_registered_away) ... ok
+test_duplicate_aperture_fails (test_r7_paste_fixture.IndependentPasteAuditTests.test_duplicate_aperture_fails) ... ok
+test_missing_aperture_fails (test_r7_paste_fixture.IndependentPasteAuditTests.test_missing_aperture_fails) ... ok
+test_permutation_matches_without_moving_any_geometry (test_r7_paste_fixture.IndependentPasteAuditTests.test_permutation_matches_without_moving_any_geometry) ... ok
+test_600ma_pack_cannot_supply_two_watts_under_design_assumptions (test_r7_power_budget.PowerBudgetTests.test_600ma_pack_cannot_supply_two_watts_under_design_assumptions) ... ok
+test_850ma_candidate_has_current_and_energy_margin_at_1_7w (test_r7_power_budget.PowerBudgetTests.test_850ma_candidate_has_current_and_energy_margin_at_1_7w) ... ok
+test_current_limiter_fault_max_plus_radio_below_pack_limit (test_r7_power_budget.PowerBudgetTests.test_current_limiter_fault_max_plus_radio_below_pack_limit) ... ok
+test_no_free_energy_or_efficiency_inputs (test_r7_power_budget.PowerBudgetTests.test_no_free_energy_or_efficiency_inputs) ... ok
+test_ti_published_table_2_not_project_generated_expectations (test_r7_power_budget.PowerBudgetTests.test_ti_published_table_2_not_project_generated_expectations) ... ok
+test_two_watts_near_empty_exceeds_minimum_limiter_threshold (test_r7_power_budget.PowerBudgetTests.test_two_watts_near_empty_exceeds_minimum_limiter_threshold) ... ok
+
+======================================================================
+FAIL: test_972_original_files (test_r6_qualification.R6Qualification.test_972_original_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tests/test_r6_qualification.py", line 50, in test_972_original_files
+    report=json.loads((REVIEW_PATHS.evidence/'protected-baselines.json').read_text());self.assertEqual(report['total'],972);self.assertEqual(report['modified_or_missing'],[])
+                                                                                                                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['/Users/anassarkiz/tsci/tscircuit-store/b[94 chars]zip'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/deliverables/magnetic-shutter-remote-R5-DFM-REVIEW.zip'
+
+- ['/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/deliverables/magnetic-shutter-remote-R5-DFM-REVIEW.zip']
++ []
+
+----------------------------------------------------------------------
+Ran 79 tests in 0.220s
+
+FAILED (failures=1, skipped=1)
+error: script "test" exited with code 1

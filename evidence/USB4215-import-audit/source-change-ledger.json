@@ -1,0 +1,421 @@
+[
+  {
+    "repository": "circuit-json",
+    "upstream_package_version": "0.0.509",
+    "base_source_directory": "tooling/circuit-json",
+    "changes": [
+      {
+        "path": "src/pcb/pcb_solder_paste.ts",
+        "base_sha256": "30503f9e7c785fb517abd8177bf831310e14da5a9a84f27c1d22598f42d918af",
+        "fixed_sha256": "837910aa1bd294ec70b2e6f9240debd770aee6d2643c368ddc30d52f1bd63a60"
+      }
+    ]
+  },
+  {
+    "repository": "props",
+    "upstream_package_version": "0.0.672",
+    "base_source_directory": "tooling/props",
+    "changes": [
+      {
+        "path": "generated/COMPONENT_TYPES.md",
+        "base_sha256": "b3ec6b9d62b7d50c947b02eece545d1e6a49c47451e313a967bc8d7e51493d02",
+        "fixed_sha256": "b97a309b798cd04a1cd67eac7084dc21545095fa62dfdc9889e71ae664cde13e"
+      },
+      {
+        "path": "generated/PROPS_OVERVIEW.md",
+        "base_sha256": "87c93a6894a224b390b2dcfbde6f1475ff2f2c689448aa816aca5132a65c67ef",
+        "fixed_sha256": "ce622a05be4d7b98dff31f7aac2e7515e6cfd26344fde9cdaa600cc404be0f0e"
+      },
+      {
+        "path": "lib/components/solderpaste.ts",
+        "base_sha256": "7cc788ef9d434451702776fb909d2cc41097d81827f1245e4539755e16e04b81",
+        "fixed_sha256": "0adf2abfad7c0a09af3b8fda1b4782a68701bfaa0439b0a2426654bb0cf1ead9"
+      }
+    ]
+  },
+  {
+    "repository": "circuit-json-util",
+    "upstream_package_version": "0.0.117",
+    "base_source_directory": "tooling/circuit-json-util",
+    "changes": [
+      {
+        "path": "lib/transform-soup-elements.ts",
+        "base_sha256": "7464adee15dfd6e41c2d6b85310aeab571838c69b6c97cd3a2a590ddad7cda37",
+        "fixed_sha256": "0211498078d1673264550dd62ad485e6cad20e4a0e4de5750cc54ecc8de2553f"
+      },
+      {
+        "path": "tests/transform-paste-polygon.test.ts",
+        "base_sha256": null,
+        "fixed_sha256": "f2da0017910cc666d77fda6fbb6463954138ad0a8474b912b9dc8926a42f3422"
+      }
+    ]
+  },
+  {
+    "repository": "core",
+    "upstream_package_version": "0.0.2035",
+    "base_source_directory": "tooling/core",
+    "changes": [
+      {
+        "path": "lib/components/index.ts",
+        "base_sha256": "de0028900440a596cc909bae7b7eabf5c35ac0cfc5bf86040685d3ee82a5f3a5",
+        "fixed_sha256": "a0f400cc178e9658149542a16b376b8421dda1872c712f308a70e05ab25fb248"
+      },
+      {
+        "path": "lib/components/primitive-components/SolderPaste.ts",
+        "base_sha256": null,
+        "fixed_sha256": "11ef532552de1485d80a59a312f098300485c3a039ccbc2be1946ff1128fd128"
+      },
+      {
+        "path": "lib/fiber/intrinsic-jsx.ts",
+        "base_sha256": "9c6cd6706dbd7161d12c4a3f50068d564455e8ffe5f45dea253745d15f31656b",
+        "fixed_sha256": "a66f149afcba13765045f40efe7aa5b44a0b66b9bed1044681d513d9721a0c5b"
+      },
+      {
+        "path": "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts",
+        "base_sha256": "44145751853dce9862107ade6121e49947de385c7e494ad739739be368ca5e12",
+        "fixed_sha256": "bb4d2f8e7a57685c01abbb4176025e33a34597f1f5abc5e298b4521722bd1e6c"
+      },
+      {
+        "path": "tests/__snapshots__/solderpaste-polygon-transform-pcb.snap.png",
+        "base_sha256": null,
+        "fixed_sha256": "abcc2f30254f6071f4b51efa6c88b8a21cf20f226dedc81be3bdfc064d765c24"
+      },
+      {
+        "path": "tests/__snapshots__/solderpaste-polygon-transform-pcb.snap.svg",
+        "base_sha256": null,
+        "fixed_sha256": "530bea8a45d3e474e3e44e678d24e0d1188a920413243700205b39841bc813c6"
+      },
+      {
+        "path": "tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx",
+        "base_sha256": "ca0c9524e7cc453db83933199fbf8db44f15f6f318d8929ef61c8d6b83bd134b",
+        "fixed_sha256": "4204af401083c1a2c5038deb12796ab8c97b05964c8b430051e2ad45b25ed655"
+      },
+      {
+        "path": "tests/solderpaste-polygon-transform.test.tsx",
+        "base_sha256": null,
+        "fixed_sha256": "b7d9850b0c3ed2fda23212a7d52f3083be7fcc08ffe745e17067ee1bbdc8033a"
+      },
+      {
+        "path": "tests/solderpaste-routing-neutrality.test.tsx",
+        "base_sha256": null,
+        "fixed_sha256": "9637cf4e5a1da3292cdb7a700d2ce7e0ad3416247842c500ba4cdf6ce3f10725"
+      }
+    ]
+  },
+  {
+    "repository": "easyeda-converter",
+    "upstream_package_version": "0.0.364",
+    "base_source_directory": "tooling/easyeda-converter",
+    "changes": [
+      {
+        "path": "lib/convert-easyeda-json-to-tscircuit-soup-json.ts",
+        "base_sha256": "1cd9006e6450ababa410304ca6ddfee0bc2c18c26a8f01da8487b1eddbf48447",
+        "fixed_sha256": "536f3e116a23c078e0d5250d1a66e733be04ca86280de974dc7c7ab0afec81eb"
+      },
+      {
+        "path": "lib/schemas/package-detail-shape-schema.ts",
+        "base_sha256": "12ef2f1f784d7ed0893d7cf1e7f6baf78ba39c519915ad5c88b5218f3c8b84f0",
+        "fixed_sha256": "039c20915564c9a26da6894b1f3afb77567435c0f6a78e484822785268e6b3d6"
+      },
+      {
+        "path": "lib/websafe/generate-footprint-tsx.ts",
+        "base_sha256": "619b610e77552a3db35d5a80eb5b4bd8f7b0477e43599708b6e0511573ead231",
+        "fixed_sha256": "aad6962936c54765813a5aed2f608e489e1fa5ae5fd9c5720371b4824b3fb1e1"
+      },
+      {
+        "path": "tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts",
+        "base_sha256": "b57111e172835feedf1040242d15f51a9d4aa494257da979d971ff4d100584bc",
+        "fixed_sha256": "49328ba707c1f94fa78f2c86eee2cc16c3de901b599b584f4f4662de94ad8761"
+      },
+      {
+        "path": "tests/convert-to-ts/C1046-to-ts.test.ts",
+        "base_sha256": "56d3b37398612e1ffdf35ffc6c63810aef3e1ea5866caa82420ccb114535e13e",
+        "fixed_sha256": "2243f004751ae8f5f3d220513f3394be4e915d825472924378ccdd9b0f8d5903"
+      },
+      {
+        "path": "tests/convert-to-ts/C105419-to-ts.test.ts",
+        "base_sha256": "50b574d8bee4917ea19de3f8955f01a7d6cffb7c9a9c6dc9b9f74607fcfbe00a",
+        "fixed_sha256": "c5607f8a642a72b18f3dd4532a4e9f9c58e24a80362d61527b5c4622e0f5db54"
+      },
+      {
+        "path": "tests/convert-to-ts/C12084-to-ts.test.ts",
+        "base_sha256": "abda246109de6731d9a7e007837dea8489972597231759226ce3e186a5cfce6b",
+        "fixed_sha256": "8025406fe74a2ab7031bcda70d6ad98052c8a3250e53c38d529d4354ac79126b"
+      },
+      {
+        "path": "tests/convert-to-ts/C128415-to-ts.test.ts",
+        "base_sha256": "6c80e55d414b8149df7b101b8155799767208ddfa110614f179379b8930ef11b",
+        "fixed_sha256": "d2f8577ea476b51203a5475e395c10d4a7e4d3f05800ecd5e8d1297504698337"
+      },
+      {
+        "path": "tests/convert-to-ts/C131337-to-ts.test.ts",
+        "base_sha256": "2598a17c304041bf64c15137feeeda567c366fe493074fe0f43a340979d1f01d",
+        "fixed_sha256": "153823fcf830a419186e7719beffd2789380027e97a614e07336e7ede94515ae"
+      },
+      {
+        "path": "tests/convert-to-ts/C14877-to-ts.test.ts",
+        "base_sha256": "24bf3e0b62935cc29832ca6fa74263e470512aad92682ff08ad23501190f8c0a",
+        "fixed_sha256": "1a4021cfd37aba1b48777193a1b9a7bbf63e4ba586ae0b8d0a1e7f20f386771b"
+      },
+      {
+        "path": "tests/convert-to-ts/C1525-to-ts.test.ts",
+        "base_sha256": "dce1e639d77fb2bff8fcee7029433eae1a1dccea0d898dff8c2514bfeded585d",
+        "fixed_sha256": "2d79ff78e90fb2d21624830a1bfa5915f0d0b05391503206d50383acbefe2a9c"
+      },
+      {
+        "path": "tests/convert-to-ts/C15464-to-ts.test.ts",
+        "base_sha256": "b2da798b530c7eb2c9d1b55212dba7fa217e97f6e37622a9464eb25c2e8f221a",
+        "fixed_sha256": "62d13bd88ac28d0939f0bec51af72c39412143467af4512d406aa3199eb0d5c6"
+      },
+      {
+        "path": "tests/convert-to-ts/C157929-to-ts.test.ts",
+        "base_sha256": "53e85ef87057c18360aaeb49b96e0924155fa1a66cdd02e8dc50c4627c0a776d",
+        "fixed_sha256": "b428789a4f0b197de2e9905ba46e28bc25694b994415d7e400b9a06c00f4c21c"
+      },
+      {
+        "path": "tests/convert-to-ts/C157947-to-ts.test.ts",
+        "base_sha256": "07c3d33326f05c583cec7f8f1c2e043e7ba277e6c4ae5a3be140f4448f26e6d9",
+        "fixed_sha256": "a38865e3701d6578495fd88dd9e92498f5a7eef1de9cca6dfca0855335aec55d"
+      },
+      {
+        "path": "tests/convert-to-ts/C158012-to-ts.test.ts",
+        "base_sha256": "d0fece5d1f7f609e58cc4bbd074eea080248f06f87691b160bb1a420edc61886",
+        "fixed_sha256": "0a2b56200b2d249fb5c00860b5a74aa87983d81afe2438653e7ff8bcfd67ba78"
+      },
+      {
+        "path": "tests/convert-to-ts/C160354-to-ts.test.ts",
+        "base_sha256": "aefa9d7abb03fbea8b81aba29fb8cff504ced80ed97867f544cb0b557e29faf0",
+        "fixed_sha256": "754ef438ee3ea9b01ab46e95a44b98b4d707621278116056a3432d08e58bae36"
+      },
+      {
+        "path": "tests/convert-to-ts/C165948-to-ts.test.ts",
+        "base_sha256": "c07eff9a420b7c0f05367629200364bb18ccd10b25deb44dd07d5dd18d34c26f",
+        "fixed_sha256": "f32eadd13e927849f36b8510c7ad8bcd77eb2ce1277bec7fc24abd25b2e3352a"
+      },
+      {
+        "path": "tests/convert-to-ts/C18185602-to-ts.test.ts",
+        "base_sha256": "f70b64feaa90d79ddbe28a3fb5ab96f9ecf5933b4477a9426278f19bcc7999c3",
+        "fixed_sha256": "451bbde0effe303397b44e4974358d31dcba0dc7ac4d7660d8a5350c40d2be60"
+      },
+      {
+        "path": "tests/convert-to-ts/C19076967-to-ts.test.ts",
+        "base_sha256": "60eccab47a58feb002405945af2ba288a8b9dd57f972f8ce16da3c3e37d8c686",
+        "fixed_sha256": "8185321bdf91b3733bbdcbd372b7c37ba714eebeaa7cc789b577d6eae59bec5e"
+      },
+      {
+        "path": "tests/convert-to-ts/C19795120-to-ts.test.ts",
+        "base_sha256": "dd22d589f37d5e2ac7a24df34f64135770549853a01a5587e12d175a7c12ab0a",
+        "fixed_sha256": "ce5c1ac14122590bb5ab099d6ef834e906d87e1093cb6f8a4eca3bd39d23a618"
+      },
+      {
+        "path": "tests/convert-to-ts/C2040-to-ts.test.ts",
+        "base_sha256": "2b29096819b3189e4b6557adda15e37584486eb8e05e5d0b3072f20b9eda3edc",
+        "fixed_sha256": "dc8ce4efc14f7ced67ed382c3e068b2865d080c58c6df5447202368018615f6c"
+      },
+      {
+        "path": "tests/convert-to-ts/C20526-to-ts.test.ts",
+        "base_sha256": "d4e993eaec5c7d0b832f71803a0075033685ebcaadfb9b7a457be1c59198a76e",
+        "fixed_sha256": "27151a483152c68106ecfdbc463952b0eaa5c9f7e877b9511ccb20da2d43a7f0"
+      },
+      {
+        "path": "tests/convert-to-ts/C22446580-to-ts.test.ts",
+        "base_sha256": "d5900f255aee7ddbc13de6faac6e666801ddfe0117576c03a50df5dd353fdea0",
+        "fixed_sha256": "0fdfe55f6aff074f52d4fb28ae7877637c6624155c611c1a6f4d88091605dd38"
+      },
+      {
+        "path": "tests/convert-to-ts/C23689428-to-ts.test.ts",
+        "base_sha256": "199e90003942a786c6c654a0dc5087f3250f47aa0abcf9c0ba70f5c0edea40dc",
+        "fixed_sha256": "32fada93b64f8c30013c429098e80cf7f2e01db053c02bdbf6a136322f4d045a"
+      },
+      {
+        "path": "tests/convert-to-ts/C265111-to-ts.test.ts",
+        "base_sha256": "ca137025893ed733682a449d027e466354cdb7602feb4e9d2c6053cd8af0c148",
+        "fixed_sha256": "2aed4c46d7219f040e1c51050d217322f141ff571ee8b1c0ec3673aa375785f7"
+      },
+      {
+        "path": "tests/convert-to-ts/C281113-to-ts.test.ts",
+        "base_sha256": "5b3da2532229d236af1c23b2d5b64669d552e14f9666156445822db3f226dcf3",
+        "fixed_sha256": "fb45999cfb46189878f457d34691e2ba2371195c3e628f1a275327a6d5b70254"
+      },
+      {
+        "path": "tests/convert-to-ts/C2838502-to-ts.test.ts",
+        "base_sha256": "97934948f83e3ac475e7bad895291062cab5bd8ed3f260ee9ea66f7efcbe61a2",
+        "fixed_sha256": "06a47211af658c8069eb8ead4da66d9b971daf1e7ebd16702660d028f147d4c2"
+      },
+      {
+        "path": "tests/convert-to-ts/C2848306-to-ts.test.ts",
+        "base_sha256": "8b7cf610b2b89019262583e828e1cbc968e51fa02eb19d1f89ff56008815b6af",
+        "fixed_sha256": "72dcae98335820103db01d1bb54b0d0c9eb47c0dceb3bcc30653da4da022faac"
+      },
+      {
+        "path": "tests/convert-to-ts/C2913206-to-ts.test.ts",
+        "base_sha256": "fe40c92f5a06f12e57264d73c394245fbd41051423329f842465475e31c6343f",
+        "fixed_sha256": "6c2b0215832cfd2077443f4fd56e42d3ce6bd1c5af4325ec3e534d006ee9d075"
+      },
+      {
+        "path": "tests/convert-to-ts/C2961147-to-ts.test.ts",
+        "base_sha256": "9835eb520dba7d4424faf76d3972d5bf3076c02ab6850bbe4ebadfbcff253757",
+        "fixed_sha256": "a9ab3243b1293c06ab13135eb55bac0d5eaf3187f327422aeb1eb0e9f6a8eaf4"
+      },
+      {
+        "path": "tests/convert-to-ts/C2979182-to-ts.test.ts",
+        "base_sha256": "1c2e1b8d8c8f8e2fe6b96888666c152f277ff682ff78627b73f0cb13a72c9315",
+        "fixed_sha256": "3664d612fac7fe1f47c5bf015f1c8db815a4a374761bfdb0b680a81e1c596e44"
+      },
+      {
+        "path": "tests/convert-to-ts/C309274-to-ts.test.ts",
+        "base_sha256": "d2474a9625ed337fb7f36506e5bfb6bb07adab94a1ded66dca3955e12765f5aa",
+        "fixed_sha256": "50be0ac20e5992411e1b16091cfa9619496615b61c4a214818cc238bf8c1ae88"
+      },
+      {
+        "path": "tests/convert-to-ts/C3178291-to-ts.test.ts",
+        "base_sha256": "df2b8d05439da38b606d0a50b9ed7338cc3b076ec7a5855dd055bc06cd563033",
+        "fixed_sha256": "42824da7a5c186db2375ecbccd5efc9e33466b0fa4b00042b9b0c01a83935db8"
+      },
+      {
+        "path": "tests/convert-to-ts/C3273487-to-ts.test.ts",
+        "base_sha256": "648e085110b36df9b5242f3e40909188794c91b1c12eca5c6ea0d2bb30bed0fd",
+        "fixed_sha256": "ee1935ec8a968e3c21618f557c90af847ae7fd9cfcc2a9cc6fdd8e5d956b7744"
+      },
+      {
+        "path": "tests/convert-to-ts/C393941-to-ts.test.ts",
+        "base_sha256": "62b63509d3cc67e226f6862c57e4dd2aa6ce797381461d89d1274ca4c324b80f",
+        "fixed_sha256": "38a53ab66e340837faf96436e5f9ab693f4f43b42db08c8146f1a0446bb3935c"
+      },
+      {
+        "path": "tests/convert-to-ts/C410353-to-ts.test.ts",
+        "base_sha256": "e261a8478eea5f0cfbf8dead0666233526e92490e47780cb01a553fc20f8e1b9",
+        "fixed_sha256": "1e190f56d075fc56a474306e58672b706e7b8fcdbed12dc76cf5e27e5da828c3"
+      },
+      {
+        "path": "tests/convert-to-ts/C46497-to-ts.test.ts",
+        "base_sha256": "cf4906da00e3528587398ca65df7739d1be9ac04da5a55acf61d49485aca1e22",
+        "fixed_sha256": "fa7dc9b4d29201343217b2a2511b7bb999277b070f080c7da542cc6b23ee9900"
+      },
+      {
+        "path": "tests/convert-to-ts/C46749-to-ts.test.ts",
+        "base_sha256": "8eda600ced968cd550389f19b695e92b426e9e8c472662517d32d046aa4ba547",
+        "fixed_sha256": "2117b6e6d5ea88a82de6ff261e0c7a6b34bf25b6ff0ea7f6b59918be8e365a89"
+      },
+      {
+        "path": "tests/convert-to-ts/C490691-to-ts.test.ts",
+        "base_sha256": "139f7003f9feacef4fffb3ab0b92f7b3837eb3ca3f04807627c4d3bc72a9eb0e",
+        "fixed_sha256": "f36a301bc29cb0f7db9273988f6380c7e6fa0cf2c9bc7eb38e9392c32dd7b7f4"
+      },
+      {
+        "path": "tests/convert-to-ts/C561765-to-ts.test.ts",
+        "base_sha256": "1d240c0895b532e1a1df8c4779bb24de11fcfc924110dde46a7db94d9f7baca7",
+        "fixed_sha256": "0ebf0bd4b42240bdd91f8fd2536631e44a094c1aef44c55b087c21b9f8e76ce8"
+      },
+      {
+        "path": "tests/convert-to-ts/C57759-to-led.test.ts",
+        "base_sha256": "91b9202d71541cb208f3cb4fb40a351ecdbd743731fbe278aacfa36b11e48363",
+        "fixed_sha256": "608ec649be804d0a56cbd0e8a27c709b2a15fa3f552ce7eec2266e60e6399da3"
+      },
+      {
+        "path": "tests/convert-to-ts/C57759-to-ts.test.ts",
+        "base_sha256": "a9ad216505ebdbc3894a0fe37181224740361c0efcbd63ce3127b51345ced3d2",
+        "fixed_sha256": "508cc88a4cde255ca0ada9cb489e1458d4fa73f6f011b6696887044a58188c37"
+      },
+      {
+        "path": "tests/convert-to-ts/C5830143-to-ts.test.ts",
+        "base_sha256": "bec2c55124aa1b196cfc443f57f3130b76f42e7f9ce931ee2c764ec55969cbdb",
+        "fixed_sha256": "19ee8e9bb8a31be45eeaaf736211100625227fbd3f1c47f9a17c06922ee1ffe3"
+      },
+      {
+        "path": "tests/convert-to-ts/C6186-to-ts.test.ts",
+        "base_sha256": "732f9ed9f3f6cd2118a40f8a4ca797c2164bf6259ab2abfb3f828cc2e568a988",
+        "fixed_sha256": "04f07bd8b33b6ebf1a8b18e5f53d00c937e4a958d5a343644eb3a5acb9e5b82b"
+      },
+      {
+        "path": "tests/convert-to-ts/C7203002-to-ts.test.ts",
+        "base_sha256": "c41921d3e9bcf8a58bb6c2925e7f5d3bb6454c9fe6bd26b81028f7644b0176be",
+        "fixed_sha256": "0498af3b671ce0494a99dea0a1cca868c4ae2871bcbd8e39b4afb2328bc2b0c8"
+      },
+      {
+        "path": "tests/convert-to-ts/C75749-to-ts.test.ts",
+        "base_sha256": "e1631b00562b532531ec2bf3e96366416d4d6fec2eeab098eac8b9b8c420c9b1",
+        "fixed_sha256": "eaab219e957bd0687e7707e3bca82f40713e49c11ff67626893ec1767f748419"
+      },
+      {
+        "path": "tests/convert-to-ts/C8465-to-ts.test.ts",
+        "base_sha256": "0103b6dadc851557997f18e3199642dbb4dc1143af3e8f69bfc8366a17c04600",
+        "fixed_sha256": "bbf495ed2edeea11a4b430e31c5a693c01d77f40cab30c80aa6e0f3dd61b9685"
+      },
+      {
+        "path": "tests/convert-to-ts/C88224-to-ts.test.ts",
+        "base_sha256": "78f878cc10a171e29d476047874835e1b6f343b6e289adc7d8c79322024de343",
+        "fixed_sha256": "bfea40561e4be6fd624168ef9e305fc5305e13eb5fe8ccfa7991a0d50dace147"
+      },
+      {
+        "path": "tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts",
+        "base_sha256": "90805e7e7a29af25dac5ff29d1cdb943303bcbb7921a8517d78c7633edeafee7",
+        "fixed_sha256": "ddcb8790249be40b7e2bc3e5802ea378d5f7d09c116aa258f260e3946f0ecbcc"
+      },
+      {
+        "path": "tests/convert-to-ts/smd-resistors-to-ts.test.ts",
+        "base_sha256": "f78daca60f1b61d67e8c68c24125af76c2cc66c2996eb49ce31597f87d396d62",
+        "fixed_sha256": "f402c463952ac9f0cb1fa6af527e29ad3a23170f8776b83d8cd7e11573c16340"
+      },
+      {
+        "path": "tests/explicit-paste-regions.test.ts",
+        "base_sha256": null,
+        "fixed_sha256": "a8d86b82365dbdc9dfa974632028198653355976aa5e114824f17a79aa70710b"
+      },
+      {
+        "path": "tests/source-paste-mask-field-fidelity.test.ts",
+        "base_sha256": null,
+        "fixed_sha256": "5f36a62e7a99c96458c5f29c515a43a00f1e4757c44335fc3de2505c90776837"
+      }
+    ]
+  },
+  {
+    "repository": "circuit-json-to-gerber",
+    "upstream_package_version": "0.0.109",
+    "base_source_directory": "tooling/circuit-json-to-gerber",
+    "changes": [
+      {
+        "path": "src/gerber/convert-soup-to-gerber-commands/defineAperturesForLayer.ts",
+        "base_sha256": "a359dfa2c9524ad24b3b27b0b71327d4f64f69665018cee784d27681d85417e0",
+        "fixed_sha256": "9175166298af981b4cd7b02ece6f6ec9e72e0ac294a33e8713c31b7246939686"
+      },
+      {
+        "path": "src/gerber/convert-soup-to-gerber-commands/index.ts",
+        "base_sha256": "15443479e54018a219e2e686eb2c11da97bbf128bb9340d9dbfce61ab6f153b5",
+        "fixed_sha256": "5fd5b33a405475a154917466ab888fee917a9529da668d9a98d070b3aa5927e9"
+      },
+      {
+        "path": "tests/gerber/polygon-solder-paste.test.ts",
+        "base_sha256": null,
+        "fixed_sha256": "3d15cba91fd979549b34d7b8a685654a3f458930e913343000733ed8908acafb"
+      }
+    ]
+  },
+  {
+    "repository": "circuit-to-svg",
+    "upstream_package_version": "0.0.433",
+    "base_source_directory": "evidence/USB4215-import-audit/source-bases/circuit-to-svg",
+    "changes": [
+      {
+        "path": "lib/pcb/svg-object-fns/convert-circuit-json-to-solder-paste-mask.ts",
+        "base_sha256": "c8f9b3983e015ab888dd172f6278098954193bd17bd35a40b06a3a37ea490536",
+        "fixed_sha256": "4b41ce19c4f2d7a09cb0fbf90abccafcdb78c04cdac64496fd78033398cc6bd1"
+      },
+      {
+        "path": "tests/pcb/__snapshots__/solder-paste-polygon.snap.png",
+        "base_sha256": null,
+        "fixed_sha256": "6bcc5a2c5d2638e250a0a592c0aa2888ddb7d7aabf786fb111fdcbb82bf56baf"
+      },
+      {
+        "path": "tests/pcb/__snapshots__/solder-paste-polygon.snap.svg",
+        "base_sha256": null,
+        "fixed_sha256": "81061b8dffa26be5b8a2a80673a6fe6d3152aac1758b9cd35d367475a145f761"
+      },
+      {
+        "path": "tests/pcb/solder-paste-polygon.test.ts",
+        "base_sha256": null,
+        "fixed_sha256": "7aa76ab812d4caa0b3bda9bdbfa80356179e7c2267d4a270df6ca97aad77b823"
+      }
+    ]
+  }
+]

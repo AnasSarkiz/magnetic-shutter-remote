@@ -1,0 +1,34 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-to-ts/switch-category.test.ts:
+(pass) does not treat Power Distribution Switches as a mechanical switch [1.75ms]
+(pass) does not treat Power-Distribution Switch as a mechanical switch [0.07ms]
+(pass) does not treat PMIC - Power Distribution Switches, Load Drivers as a mechanical switch
+(pass) does not treat Load Switches as a mechanical switch
+(pass) does not treat LOAD-SWITCH as a mechanical switch
+(pass) does not treat Analog Switches / Multiplexers as a mechanical switch
+(pass) does not treat Analog-Switch as a mechanical switch
+(pass) does not treat Switching Diodes as a mechanical switch [0.30ms]
+(pass) does not treat Switch ICs as a mechanical switch
+(pass) retains mechanical Slide Switches categories [0.23ms]
+(pass) retains mechanical Toggle Switches categories [0.01ms]
+(pass) retains mechanical DIP Switches categories
+(pass) retains mechanical Key Switches categories [0.02ms]
+(pass) retains mechanical Micro Switches categories
+(pass) retains mechanical Limit Switches categories [0.02ms]
+(pass) retains mechanical Power Toggle Switches categories
+(pass) ignores absent and non-string categories
+(pass) semiconductor tags override a generic switch category [4.27ms]
+(pass) semiconductor category metadata overrides generic switch tags [1.37ms]
+(pass) semiconductor Category metadata overrides generic switch tags [2.24ms]
+(pass) semiconductor LCSC Category metadata overrides generic switch tags [0.78ms]
+(pass) semiconductor JLCPCB Category metadata overrides generic switch tags [1.18ms]
+(pass) a semiconductor top-level category overrides generic switch tags [0.82ms]
+
+tests/convert-to-ts/thermostat-category.test.ts:
+(pass) semiconductor thermostat switches are not mechanical switches [0.04ms]
+
+ 24 pass
+ 0 fail
+ 49 expect() calls
+Ran 24 tests across 2 files. [236.00ms]

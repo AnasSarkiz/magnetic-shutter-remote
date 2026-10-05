@@ -1,0 +1,433 @@
+                        DATA POWER TECHNOLOGY LIMITED              File No:E-SPE-1106-01
+                                                                   Ver: 1.0
+                               Product Specifications              Page: 1/ 10
+                                                                   Date: 2015-11-06
+
+
+
+
+                         Product Specifications
+                         Type：Polymer Li-ion Rechargeable Battery
+
+                         Model：DTP401525
+
+                         Specification：3.7V/110mAh
+
+
+
+     Prepared By/Date                Checked By/Date         Approved By/Date
+
+      Yang qin    2015/11/06
+
+
+
+
+Customer confirmation：
+
+
+
+
+                                                           Sign/Date:
+
+Tel: +86-755 23460581       Fax: +86-755 23460503
+
+
+Http://www.dtpbattery.com    E-mail: info@dtpbattery.com
+               DATA POWER TECHNOLOGY LIMITED                               File.No:E-SPE-1106-01
+                                                                           Ver:1.0
+                                                                           Page: 2 /10
+                         Product Specifications
+                                                                           Date: 2015-11-06
+
+
+                             Revise the history
+
+Revision Num      Date                       Revise the items
+
+
+    00          2015-11-06       Publishes for the first time-----------
+                DATA POWER TECHNOLOGY LIMITED                 File.No:E-SPE-1106-01
+                                                              Ver:1.0
+                                                              Page: 3 /10
+                        Product Specifications
+                                                              Date: 2015-11-06
+
+Contents
+ 1 Scope ……………………………………………………………………………………………………                                 4
+ 2 Product Type and Product Model ...………………………………………………………………........           4
+   2.1   Type………………………………………………………………………………………………                               4
+   2.2   Model……………………………………………………………………………………………                               4
+ 3 Basic Product Characteristics …………………………………………………………………………                   4
+   3.1   Rated Capacity …………………………………………………………………………………                         4
+   3.2   Minimum Capacity………………………………………………………………………………                         4
+   3.3   Nominal Voltage …………………………………………………………………………………                        4
+   3.4   Charge Limited Voltage…………………………………………………………………………                     4
+   3.5   Discharge Cut-off Voltage…………………………………………………………………………                  4
+   3.6   End-of-charge Current……………………………………………………………………………                     4
+   3.7   Standard Charge…………………………………………………………………………………                         4
+   3.8   Standard Discharge ……………………………………………………………………………                       4
+   3.9   Maximum Continuous Charge Current ………………………………………………………                4
+   3.10 Maximum Continuous Discharge Current……………………………………………………                4
+   3.11 Operating And Storage Temperature Range …………………………………………………             4
+   3.12 Operating And Storage Humidity Range……………………………………………………                4
+   3.13 Weight……………………………………………………………………………………………                               4
+ 4 External Dimension……………………………………………………………………………………                           4
+ 5 Outside Appearance………………………………………………………………………………………                          5
+ 6 Basic Electrical Characteristics…………………………………………………………………………….               5
+   6.1   Open Circuit Voltage………………………………………………………………………………                     5
+   6.2   Internal Impedance …………………………………………………………………………………                     5
+   6.3   Rated Capacity (0.2C5A)……………………………………………………………………………                   5
+   6.4   1C5A Capacity………………………………………………………………………………………                         5
+   6.5   Temperature Characteristics………………………………………………………………………                 5
+   6.6   Storage Characteristics……………………………………………………………………………                   5
+   6.7   Cycle Life (20℃) ……………………………………………………………………………………                      5
+ 7 Safety Characteristics ……………………………………………………………………………………                      5
+   7.1   Overcharge Characteristics ………………………………………………………………………                 5
+   7.2   Over-discharge Characteristics....…………………………………………………………………            6
+   7.3   Short-circuit Characteristics………………………………………………………………………               6
+   7.4   Hot Oven Characteristics……………………………………………………………………………                  6
+   7.5   Heavy Collision………………………………………………………………………………                          6
+ 8 Reliability Characteristics ……………………………………………………………………………                    6
+   8.1   Static Humidity and Temperature Characteristics…………………………………………………     6
+   8.2   Vibration Characteristics ……………………………………………………………………………                6
+   8.3    Bump Characteristics ……………………………………………………………………………                    7
+   8.4   Free Drop Characteristics…………………………………………………………………………                  7
+ 9 Assembling Request…………………………………………………………………………………                            7
+   9.1   List of Parameter…………………………………………………………………………………                       7
+   9.2   Parts list………………………………………………………………………………………                            7
+   9.3 Application Circuit…………………………………………………………………………………                       7
+   9.4   Maps……………………………………………………………………………………………                                8
+   9.5   External Dimension Drawing…………………………………………………………………………                 9
+10 Guarantee Period of Quality…………………………………………………………………………                      9
+11 Matters needing attention……………………………………………………………………………                       9
+12 Statement…………………………………………………………………………... ………………….                           10
+                          DATA POWER TECHNOLOGY LIMITED                                      File.No:E-SPE-1106-01
+                                                                                             Ver:1.0
+                                                                                             Page: 4 /10
+                                        Product Specifications
+                                                                                             Date: 2015-11-06
+
+1.    Scope
+       This specification shall be applied to the batteries from Data Power Technology Limited’s product.
+2.    Product Type and Product Model
+ 2.1 Type：Polymer Li-ion Recharged Battery
+ 2.2 Model：DTP401525
+3. Product Basic Characteristics
+     No                       Item                                             Characteristics
+     3.1    Rated Capacity                                                          110mAh
+     3.2    Minimum Capacity                                                        110mAh
+     3.3    Nominal Voltage                                                          3.70V
+     3.4    Charge Limited Voltage                                                   4.20V
+     3.5    Discharge Cut-off Voltage                                                2.80V
+     3.6    End-of-charge Current                                                 0.01C
+                                                   Charge with 0.2C(22mA) up to Limited Voltage , Charge with limited
+     3.7    Standard Charge
+                                                   Voltage up to end-of-charge current.
+                                                   Using 0.2C(22mA) constant current discharge to the Discharge Cut-off
+     3.8    Standard Discharge
+                                                   Voltage.
+     3.9    Maximum Continuous Charge Current                                  1C     (110mA)
+
+     3.10 Maximum Continuous Discharge Current                                 1C     (110mA)
+                                                                          Charge          0 ~ 45℃
+            Operating Temperature Range
+     3.11                                                                Discharge       – 20 ~ 60℃
+            Storage Temperature Range                                            -20 ~ 60℃
+     3.12 Operating And Storage Humidity Range                                   65±20% RH
+     3.13 Weight                                                                Less than 8g
+4. Cell Dimension
+            Item   Dimension（mm）                                           M
+                                                              N
+            T            Max 4.0                                                                L3
+             W          Max 15.0
+             L          Max 25.0
+                                                                     +               -
+            L1          Max 21.0
+            L2          Max 25.3
+            L3           5.0±1.0                    L2
+                                                                                                            L1
+             M           6.0±2.0
+             N           2.0±0.1                         L
+
+
+
+
+                                                                            W                         T
+                          DATA POWER TECHNOLOGY LIMITED                                    File.No:E-SPE-1106-01
+                                                                                           Ver:1.0
+                                                                                           Page: 5 /10
+                                       Product Specifications
+                                                                                           Date: 2015-11-06
+
+5.Appearance
+       It shall be free from any defects such as remarkable scratches, breaks, cracks, discoloration, leakage, or middle
+deformation
+6. Basic Electrical Characteristics
+ No.       Items                       Criteria                                    Test Method
+     Open Circuit
+ 6.1                      3.75V～3.95V                    Measure with voltmeter.
+     Voltage
+     Internal                                            Measure cells using an alternate current impedance meter at
+ 6.2                      ≤180mΩ
+     Impedance                                           1kHz .
+                                                         Discharged after the standard charged cells rest 10min
+        Rated Capacity
+ 6.3                   ≥110mAh                           at 23±2℃，Test can be discontinued when more than Rated
+        (0.2C5A)
+                                                         capacity. Three cycles are permitted..
+                                                         Discharged after the standard charged cells rest 10min
+        1C5A.discharge
+ 6.4                   ≥110×90%                          at 23±2℃ ，Test can be discontinued when more than
+        capacity
+                                                         90%*rated capacity. Three cycles are permitted.
+                          1. Appearance：
+                                                         Measured the 0.2C5A capacity at 23±2℃ as the initial
+                          No deformation、ruptures nor
+                            leakage。                     capacity. Stored the rechargeable batteries for 16-20hrs at
+        Temperature
+ 6.5                                                     -10 ± 2℃；2h for 55 ± 2℃, and then 0.2C5A discharged at
+        Characteristics   2.Discharge Capacity：
+                                                         this temperature, Checked the batteries’ appearance after rest
+                          55℃:≥85％×initial capacity；
+                                                         for 2 hrs at room temperature.
+                          -10℃≥70％×initial capacity
+
+                                                         Measured the0.2C5A capacity at (20±5)℃ as the initial
+                          Retention Capacity:
+        Storage                                          capacity. Stored the recharged cells for 6 days at 20 ± 5℃ and
+ 6.6                      ≥85% ×initial capacity
+        Characteristics                                  then rest for 2 hrs at room temperature, 0.2C5A discharged
+                                                         after checked the cells’ appearance.
+
+        Cycle Life        Capacity≥initial capacity×      0.5C discharged after 0.5C5A full charges at 20± 5℃.Carry
+ 6.7
+         (20℃)            80%                            out 300 cycles
+
+   Remark 1          Standard charge ： 0.2C5A charge up to charge limited voltage at (20±5)℃. Charge with limited
+voltage up to end of current. It is the same to the next content
+7.Safety Characteristics
+No.        Items                    Criteria                                       Test Method
+                                                          When the battery is fully charged, go on loading for 8h with
+       Overcharge      Appearance: No rupture, fire,      a twice rating voltage, 2.0C5A      out put current, it starts
+7.1
+       Characteristics smoke, nor leakage.                the over charge protection function.
+                            DATA POWER TECHNOLOGY LIMITED                                        File.No:E-SPE-1106-01
+                                                                                                 Ver:1.0
+                                                                                                 Page: 6 /10
+                                         Product Specifications
+                                                                                                 Date: 2015-11-06
+
+
+
+                                                        The battery is discharged at 0.2C5A    in the constant current till it
+      Over-discharge Appearance: No rupture,
+7.2                                                     reaches over discharge protection voltage at（20±5）℃, connected
+      Characteristics fire, smoke, nor leakage.
+                                                        with a 30Ω lead and discharged for 24h
+                                                        As the battery has completed charging, short circuit the positive
+                      OCV ≥3.6V;                        and negative contacts with 0.1Ω resistor for 1h for appearance
+      Short-circuit
+7.3                   Appearance: No rupture,           check, then disconnect the resistor between the contacts, the
+      Characteristics
+                      fire, smoke, nor leakage.         battery shall be charged at 1.0C5A mA in the constant current for
+                                                        5S
+                                                        The battery is to be heated in a gravity convection
+                                                        or circulating  air     oven      after  standard      charged    at
+      Hot Oven        Appearance:.No
+7.4                                                     23±2℃,The temperature of the oven is to be raised at a rate of 5±2℃
+      Characteristics explode.No fire.
+                                                        /min. The oven is to remain for 30 minutes at
+                                                        400±2℃ before the test is discontinued.
+      Heavy               Appearance:.No                Putting the battery on the platform, using 10KG heavy hammer free
+7.5
+      Collision           explode.No fire.              drop from 1M height onto the fixed battery.
+
+
+ Remark 2         All safety characteristics are carried out by specialized personnel familiar with Li-ion
+knowledge or under instruction of our technical personnel after detailed consultation.
+
+8.Reliability Characteristics
+  No.             Items                      Criteria                                   Test Method
+                                                 Measured the 1C5A capacity at 23±2℃ as the
+                               Retention Capacity:
+                                                 initial capacity. Stored the rechargeable batteries for 2 days at
+         Static Humidity
+                         ≥60%× initial capacity  40 ± 2 ℃ and 90%-95%RH, then rest for 2 hrs at room
+  8.1    and Temperature
+                         Appearance: No leakage, temperature. 0.2C5A discharged after checked the
+         Characteristics
+                         damage,smoke,ruputer.   batteries appearance. Measured          recoverable        1C5A
+                                                 discharge capacity with 3 cycles..
+                                                                 After fully charging, fixing the battery onto the vibration
+                                                             platform. with amplitude 0.38mm circularly scanning
+                               OCV ≥3.6V;
+         Vibration                                           vibrating in the frequency of 10HZ-55HZ from three
+  8.2                          Appearance: No fire, leakage,
+         Characteristics                                     directions X、Y、Z for 30min respectively in its scanning
+                               explode, rupture
+                                                             frequency velocity 10CT/min.
+                            DATA POWER TECHNOLOGY LIMITED                                 File.No:E-SPE-1106-01
+                                                                                          Ver:1.0
+                                                                                          Page: 7 /10
+                                     Product Specifications
+                                                                                          Date: 2015-11-06
+
+
+
+                                                            After vibration testing, use a clip or directly fix the
+                                                            battery on to the platform in the direction of X 、 Y 、 Z
+                             OCV ≥3.6V;                    vertical complementary axis, then adjust its
+          Bump
+  8.3                        Appearance: No fire, leakage, acceleration and pulse duration as below to have a
+          Characteristics
+                             explode, rupture              bump test. Pulse peak acceleration 100m/s2. Bumps
+                                                            per minute 40-80.Pulse duration 16ms. Bump times
+                                                            1000±10.
+                                                            After bump testing, the battery shall be immediately
+                             Retention Capacity:           dropped from the height of 1000mm （minimum height）
+          Free Drop          ≥85% ×nominal capacity. onto a 18mm～20mm hard board on the cement floor.
+  8.4
+          Characteristics    Appearance: No fire, leakage, Free drop one time respectively from X、Y、Z positive
+                             explode, rupture              and negative axis(six directions). After that, the battery
+                                                            is discharged at 1C5A to its final voltage.
+9. Assembling Request
+ 9.1     List of Parameter
+              Item                 Symbol                      Content                                Criterion
+                                    VDET1        Over charge detection voltage             4.200V±0.050V
+  Over charge Protection
+                                   tVDET1       Over charge detection delay time           80 ms
+                                    VREL1          Over charge release voltage             4.100±0.050V
+                                    VDET2       Over discharge detection voltage           2.4V±0.100V
+Over discharge protection
+                                   tVDET2     Over discharge detection delay time 20ms
+                                    VREL2        Over discharge release voltage            2.80V±0.100V
+                                    VDET3        Over current detection voltage            0.150±0.030V
+ Over current protection             IDP         Over current detection current            2.5～4.5A
+                                   tVDET3              Detection delay time                10ms
+                                                          Release condition                Cut load
+                                                        Detection condition                 Exterior short circuit
+        Short protection
+                                   TSHORT              Detection delay time                         ≤5us
+                                                         Release condition                    Cut short circuit
+      Interior resistance
+                                     RDS         Main loop electrify resistance             VC=3.6V；RDS≤60mΩ
+
+
+ 9.2 Parts list
+
+ NO.      Location             Part name              Specification          Pack type      Q’ty       Maker/Remark
+
+  1           U1       Battery protection IC       DW01+                    SOT23-6           1       Fortune
+  2           U2             Silicon MOSFET        8205                     SOT-6             1       MT
+  3           R1              Resistance           SMD 100Ω±5%              0603              1       YAGEO
+  4           R2              Resistance           SMD 1KΩ±5%               0603              1       YAGEO
+  5           C1              Capacitance          SMD 0.1μF                0603              1       TDK
+  6          PCB        Print circuit board                                                   1
+                        DATA POWER TECHNOLOGY LIMITED                                     File.No:E-SPE-1106-01
+                                                                                          Ver:1.0
+                                                                                          Page: 8 /10
+                               Product Specifications
+                                                                                          Date: 2015-11-06
+
+9.3 Application Circuit
+               B+                                                           P+
+                    1                                                            1
+
+
+
+                                                R1
+
+
+
+
+                                         5
+                          C1
+                                4
+                                          VDD
+                                    NC
+                                                 U1            2
+                                6                         CS
+                                    VSS
+                                          OD          OC
+                                                                       R2
+                                         1            3
+
+                                         4            5
+                                                                                     PN
+               BN 1             3                                  7             1
+                                2                18                6
+
+
+                                         U2A               U2B
+
+
+9.4 Maps
+                        DATA POWER TECHNOLOGY LIMITED                                      File.No:E-SPE-1106-01
+                                                                                           Ver:1.0
+                                                                                           Page: 9 /10
+                                      Product Specifications
+                                                                                           Date: 2015-11-06
+
+
+9.5 External Dimension Drawing
+
+
+
+
+10. Guarantee Period of Quality
+    Guarantee period of quality is 12 months after sold.
+11. Matters needing attention
+      Strictly observes the following needing attention. Data Power will not be responsible for any accident occurred by
+handling outside of the precautions in this specification.
+! Danger
+        Strictly prohibits heat or throw cell into fire.
+        Strictly prohibits throw and wet cell in liquid such as water、gasoline or drink etc.
+        Strictly prohibits use leave cell close to fire or inside of a car where temperature may be above 60℃. Also do
+         not charge / discharge in such conditions.
+        Strictly prohibits put batteries in your pockets or a bag together with metal objects such as necklaces. Hairpins,
+         coins, or screws. Do not store or transportation batteries with such objects.
+        Strictly prohibits short circuit the (+) and (-) terminals with other metals.
+                        DATA POWER TECHNOLOGY LIMITED                                      File.No:E-SPE-1106-01
+                                                                                           Ver:1.0
+                                                                                           Page: 10 /10
+                                    Product Specifications
+                                                                                           Date: 2015-11-06
+
+         Strictly prohibits welding a cell directly.
+         Do not use a Cell with serious scar or deformation.
+         Thoroughly read the user’s manual before use, inaccurate handling of lithium ion rechargeable cell may cause
+          leakage, heat, smoke, an explosion, or fire, capacity decreasing.
+! Warning
+         Strictly prohibits put cell into a microware oven, dryer, or high-pressure container.
+         Strictly prohibits use cell with dry cells and other primary batteries, or new and old battery or batteries of a
+          different package, type, or brand.
+         Stop charging the Cell if charging is not completed within the specified time.
+         Stop using the Cell if abnormal heat, odor, discoloration, deformation or abnormal condition is detected during
+          use, charge, or storage.
+         Keep away from fire immediately when leakage or foul odor is detected.
+         If liquid leaks onto your skin or clothes, wash well with fresh water immediately.
+         If liquid leaking from the Cell gets into your eyes, do not rub your eyes. Wash them well with clean edible oil
+          and go to see a doctor immediately.
+! Caution
+     Before using the Cell, be sure to read the user’s manual and cautions on handling thoroughly.
+     Charging with specific charger according to product specification. Charge with CC/CV method. Strictly
+      prohibits revered charging. Connect cell reverse will not charge the cel. At the same time, it will reduce the
+      charge-discharge characteristics and safety characteristics, this will lead to product heat and leakage.
+    Store batteries out of reach of children so that they are not accidentally swallowed.
+    If younger children use the Cell, their guardians should explain the proper handling.
+    Before using the Cell, be sure to read the user’s manual and cautions on handling thoroughly.
+    Batteries have life cycles. If the time that the Cell powers equipment becomes much shorter than usual, the Cell
+      life is at an end. Replace the Cell with a new same one.
+    When not using Cell for an extended period, remove it from the equipment and store in a place with low
+      humidity and low temperature.
+    While the Cell pack is charged, used and stored, keep it away from objects or materials with static electric charges.
+    If the terminals of the Cell become dirty, wipe with a dry clothe before using the Cell.
+     Storage the cells in storage temperature range as the specifications, Afer full discharged, we suggest that
+        charging to 3.9~4.0V with no using for a long time.
+     Do not exceed these ranges of the following temperature ranges.
+       Charge temperature range : 0 ℃ to 45 ℃ ;           Discharge temperature range : -20 ℃ to 60 ℃ .(When using
+       equipment)
+11. Statement
+   If our specifications material, product process or product control system has changed, the information will be
+transmitted to consumer by way of written with quality and reliability data.
+

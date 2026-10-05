@@ -1,0 +1,112 @@
+{
+  "core": {
+    "base_commit": "3fcbb3842b8ab1c0af324078f6eb55c3dbcba1a0",
+    "version": "0.0.2035",
+    "patch_file": "tooling/patches/core.patch",
+    "source_directory": "tooling/core",
+    "untracked_source_files": [
+      "bun.lock",
+      "lib/components/primitive-components/Breakout/get-routing-scope-or-throw.ts",
+      "scripts/inspect-fanout-schema.tsx",
+      "tests/fixtures/imported-r3/A_2N7002.tsx",
+      "tests/fixtures/imported-r3/CL10A475KO8NNNC.tsx",
+      "tests/fixtures/imported-r3/HC_TYPE_C_6P_01A.tsx",
+      "tests/fixtures/imported-r3/MSK12C02.tsx",
+      "tests/repros/__snapshots__/repro-custom-symbol-repeated-pads.snap.svg",
+      "tests/repros/__snapshots__/repro-fanout-in-schematic-sheet-schematic.snap.svg",
+      "tests/repros/__snapshots__/repro-fanout-later-custom-symbol-schematic.snap.svg",
+      "tests/repros/__snapshots__/repro-fanout-schematic-group-schema-schematic.snap.svg",
+      "tests/repros/__snapshots__/repro-pcb-schema-export-pcb.snap.svg",
+      "tests/repros/__snapshots__/repro-routed-trace-between-saved-fanouts-pcb.snap.svg",
+      "tests/repros/__snapshots__/repro-saved-fanout-invalidates-custom-symbol-selectors-schematic.snap.svg",
+      "tests/repros/__snapshots__/repro-saved-fanout-plated-terminal-bottom-pcb.snap.svg",
+      "tests/repros/__snapshots__/repro-symbol-reference-owner-schematic.snap.svg",
+      "tests/repros/repro-custom-symbol-repeated-pads.test.tsx",
+      "tests/repros/repro-fanout-in-schematic-sheet.test.tsx",
+      "tests/repros/repro-fanout-later-custom-symbol.test.tsx",
+      "tests/repros/repro-fanout-schematic-group-schema.test.tsx",
+      "tests/repros/repro-group-autorouter-configuration-schema.test.tsx",
+      "tests/repros/repro-pcb-schema-export.test.tsx",
+      "tests/repros/repro-plated-hole-unrequested-paste.test.tsx",
+      "tests/repros/repro-routed-trace-between-saved-fanouts.test.tsx",
+      "tests/repros/repro-saved-fanout-invalidates-custom-symbol-selectors.test.tsx",
+      "tests/repros/repro-saved-fanout-plated-terminal-bottom.test.tsx",
+      "tests/repros/repro-saved-fanout-smt-terminal-wrong-layer.test.tsx",
+      "tests/repros/repro-symbol-port-selector.test.tsx",
+      "tests/repros/repro-symbol-reference-owner.test.tsx"
+    ],
+    "patch_sha256": "590199a993ee00bed2e3f529dc63ac117f537e8a3088a566ac2cd2a34f501e6d"
+  },
+  "easyeda-converter": {
+    "base_commit": "140046d000238f3d6c8611989682efb2872f25a9",
+    "version": "0.0.364",
+    "patch_file": "tooling/patches/easyeda-converter.patch",
+    "source_directory": "tooling/easyeda-converter",
+    "untracked_source_files": [
+      "bun.lock",
+      "lib/websafe/convert-to-typescript-component/conversion-options.ts",
+      "tests/assets/C160392.raweasy.json",
+      "tests/assets/C221660.raweasy.json",
+      "tests/assets/C5184243.raweasy.json",
+      "tests/cli-tests/download-error-exit.test.ts",
+      "tests/cli-tests/missing-component-preload.ts",
+      "tests/convert-to-soup-tests/declared-slot-length.test.ts",
+      "tests/convert-to-ts/custom-symbol-refdes.test.ts",
+      "tests/convert-to-ts/manufacturer-metadata.test.ts",
+      "tests/convert-to-ts/thermostat-category.test.ts",
+      "tests/convert-to-ts/usb-type-c-category.test.ts"
+    ],
+    "patch_sha256": "135fa9fea65458fd6449ba8f0bfdfc78a197762f4635a75d59279d3d53c34274"
+  },
+  "circuit-json": {
+    "base_commit": "f77697ec477bf173b13f6da2f92e82fc45969cf4",
+    "version": "0.0.509",
+    "patch_file": "tooling/patches/circuit-json.patch",
+    "source_directory": "tooling/circuit-json",
+    "untracked_source_files": [
+      "tests/schematic-sheet-render-metadata.test.ts"
+    ],
+    "patch_sha256": "0936b8c1ef0319bd2459a7dc0f34c56ad44daf3c6cd25baea8c7e67a6fb1ec43"
+  },
+  "circuit-json-util": {
+    "base_commit": "387e3a0f103a5c4a5665925d01617e12f5194ae2",
+    "version": "0.0.117",
+    "patch_file": "tooling/patches/circuit-json-util.patch",
+    "source_directory": "tooling/circuit-json-util",
+    "untracked_source_files": [
+      "bun.lock"
+    ],
+    "patch_sha256": "850d114b1b3b48bc4fdc1e502fdc17a2454ab8daa81f27c8e3cf9d002a40e8fe"
+  },
+  "circuit-json-to-gerber": {
+    "base_commit": "40dbb6c0ebae9c63ef5a52292e8521de6060c548",
+    "version": "0.0.109",
+    "patch_file": "tooling/patches/circuit-json-to-gerber.patch",
+    "source_directory": "tooling/circuit-json-to-gerber",
+    "untracked_source_files": [
+      "bun.lock",
+      "tests/excellon-drill/independent-g85-slot-records.test.ts",
+      "tests/fixtures/r3-slot-export/circuit.json"
+    ],
+    "patch_sha256": "527dcdb9731cda0fcf11f175d704ec42215ebbb5869d1b940a85e7d9af32df7c"
+  },
+  "eval": {
+    "base_commit": "1dbe9496d23b915ba3d7576f4e4608fefae57871",
+    "version": "0.0.1506",
+    "patch_file": "tooling/patches/eval.patch",
+    "source_directory": "tooling/eval",
+    "untracked_source_files": [],
+    "patch_sha256": "c696906aeac7f1c311e39a930e2ffa6cff8ce07fba1069928021aab2e58d7c4d"
+  },
+  "runframe": {
+    "base_commit": "48a7cdbf6092aa7fce9e5bc8008a547a2d9b6c92",
+    "version": "0.0.2883",
+    "patch_file": "tooling/patches/runframe.patch",
+    "source_directory": "tooling/runframe",
+    "untracked_source_files": [
+      "lib/utils/resolve-standalone-worker-blob-url.ts",
+      "tests/standalone-matching-worker.test.ts"
+    ],
+    "patch_sha256": "95e440cce51c9252b5236d74194c472c032a4d8612f625e3e01d6f0489d03720"
+  }
+}

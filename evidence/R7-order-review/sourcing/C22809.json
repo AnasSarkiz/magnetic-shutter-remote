@@ -1,0 +1,28 @@
+{
+  "lcsc": "C22809",
+  "mpn": "0603WAF1502T5E",
+  "references": [
+    "R3"
+  ],
+  "url": "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809",
+  "listing_sha256": "70908bf9d49468bea96ffe776d767b140dd3ba1e1f0e1806ca64af909b9b7a42",
+  "checked_at_utc": "2026-10-04T21:21:32.457406+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 4236701,
+    "overseasStockCount": 4586462,
+    "preMinPurchaseNum": 4102
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

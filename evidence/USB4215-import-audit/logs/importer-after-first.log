@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/explicit-paste-regions.test.ts:
+(pass) preserves explicit supplier paste polygons and per-pad expansion [43.13ms]
+
+ 1 pass
+ 0 fail
+ 1205 expect() calls
+Ran 1 test across 1 file. [320.00ms]

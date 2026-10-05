@@ -1,0 +1,298 @@
+[
+  {
+    "ref": "J1",
+    "x_mm": 0,
+    "y_mm": 23.9852,
+    "ccw_rotation_degrees": 180,
+    "rotation_explicit": true,
+    "line": 130
+  },
+  {
+    "ref": "R1",
+    "x_mm": -4,
+    "y_mm": 19,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 152
+  },
+  {
+    "ref": "R2",
+    "x_mm": 0,
+    "y_mm": 19,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 161
+  },
+  {
+    "ref": "U2",
+    "x_mm": 0,
+    "y_mm": 13,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 176
+  },
+  {
+    "ref": "R3",
+    "x_mm": 5.5,
+    "y_mm": 9,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 228
+  },
+  {
+    "ref": "C1",
+    "x_mm": 8,
+    "y_mm": 20,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 237
+  },
+  {
+    "ref": "C2",
+    "x_mm": 4.5,
+    "y_mm": 11.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 252
+  },
+  {
+    "ref": "R4",
+    "x_mm": 8,
+    "y_mm": 23,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 262
+  },
+  {
+    "ref": "LED1",
+    "x_mm": 8,
+    "y_mm": 26,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 271
+  },
+  {
+    "ref": "J2",
+    "x_mm": -13.5,
+    "y_mm": 12,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 282
+  },
+  {
+    "ref": "R8",
+    "x_mm": -5,
+    "y_mm": 16,
+    "ccw_rotation_degrees": 180,
+    "rotation_explicit": true,
+    "line": 296
+  },
+  {
+    "ref": "R9",
+    "x_mm": 1,
+    "y_mm": 17,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 306
+  },
+  {
+    "ref": "C8",
+    "x_mm": 5,
+    "y_mm": 17.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 315
+  },
+  {
+    "ref": "C9",
+    "x_mm": -5,
+    "y_mm": 11,
+    "ccw_rotation_degrees": 180,
+    "rotation_explicit": true,
+    "line": 325
+  },
+  {
+    "ref": "U1",
+    "x_mm": 0,
+    "y_mm": -16,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 348
+  },
+  {
+    "ref": "C5",
+    "x_mm": 0,
+    "y_mm": -4.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 369
+  },
+  {
+    "ref": "SW2",
+    "x_mm": -13.5,
+    "y_mm": -7,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 378
+  },
+  {
+    "ref": "SW3",
+    "x_mm": 13.5,
+    "y_mm": -4,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 387
+  },
+  {
+    "ref": "R7",
+    "x_mm": 7,
+    "y_mm": -3,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 396
+  },
+  {
+    "ref": "LED2",
+    "x_mm": 10,
+    "y_mm": 0,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 404
+  },
+  {
+    "ref": "J3",
+    "x_mm": 13.2,
+    "y_mm": 16,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 413
+  },
+  {
+    "ref": "SW1",
+    "x_mm": 15,
+    "y_mm": 5,
+    "ccw_rotation_degrees": 90,
+    "rotation_explicit": true,
+    "line": 438
+  },
+  {
+    "ref": "R5",
+    "x_mm": 4,
+    "y_mm": 3,
+    "ccw_rotation_degrees": 180,
+    "rotation_explicit": true,
+    "line": 452
+  },
+  {
+    "ref": "Q1",
+    "x_mm": -6,
+    "y_mm": 3.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 461
+  },
+  {
+    "ref": "R6",
+    "x_mm": -6,
+    "y_mm": 8,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 481
+  },
+  {
+    "ref": "U3",
+    "x_mm": -5,
+    "y_mm": 0,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 496
+  },
+  {
+    "ref": "C3",
+    "x_mm": -0.5,
+    "y_mm": 2,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 522
+  },
+  {
+    "ref": "C4",
+    "x_mm": -5,
+    "y_mm": -4,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 531
+  },
+  {
+    "ref": "U4",
+    "x_mm": -9.5,
+    "y_mm": -1,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 541
+  },
+  {
+    "ref": "C6",
+    "x_mm": -13,
+    "y_mm": 2,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 553
+  },
+  {
+    "ref": "U5",
+    "x_mm": 0,
+    "y_mm": 6,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 568
+  },
+  {
+    "ref": "R10",
+    "x_mm": -5.5,
+    "y_mm": 6,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 591
+  },
+  {
+    "ref": "R11",
+    "x_mm": 4.5,
+    "y_mm": 5.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 602
+  },
+  {
+    "ref": "C7",
+    "x_mm": 1.5,
+    "y_mm": 8.5,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 618
+  },
+  {
+    "ref": "R12",
+    "x_mm": 9.5,
+    "y_mm": 10,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 629
+  },
+  {
+    "ref": "R13",
+    "x_mm": 8,
+    "y_mm": 12,
+    "ccw_rotation_degrees": 180,
+    "rotation_explicit": true,
+    "line": 639
+  },
+  {
+    "ref": "Q2",
+    "x_mm": 8,
+    "y_mm": 6,
+    "ccw_rotation_degrees": 0,
+    "rotation_explicit": false,
+    "line": 650
+  }
+]

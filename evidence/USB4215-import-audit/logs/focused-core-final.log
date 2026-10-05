@@ -1,0 +1,31 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solderpaste-polygon-transform.test.tsx:
+(pass) explicit paste follows footprint translation, rotation and layer reflection [150.14ms]
+
+tests/solderpaste-routing-neutrality.test.tsx:
+(pass) paste is retained in Circuit JSON without changing the copper routing problem [77.85ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx:
+33 |   circuit.render()
+34 | 
+35 |   const solder_paste = circuit.db.pcb_solder_paste.list()
+36 |   const platedhole = circuit.db.pcb_plated_hole.list()
+37 |   const smtpad = circuit.db.pcb_smtpad.list()
+38 |   expect(solder_paste.length).toBe(6) //the pill should have top and bottom solder paste
+                                   ^
+error: expect(received).toBe(expected)
+
+Expected: 6
+Received: 4
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/core/tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx:38:31)
+(fail) create solderpaste from smtpad [26.10ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad.test.tsx:
+(pass) create solderpaste from smtpad [5.59ms]
+
+ 3 pass
+ 1 fail
+ 98 expect() calls
+Ran 4 tests across 4 files. [1.61s]

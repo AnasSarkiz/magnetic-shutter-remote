@@ -1,0 +1,29 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-fanout-later-custom-symbol.test.tsx:
+497 | }: {
+498 |   routingScope: Group<z.ZodType>
+499 |   automaticBreakouts: readonly Breakout[]
+500 | }): string[] => {
+501 |   let coordinatedLayers = getBoardAvailableLayers(
+502 |     routingScope._getSubcircuitLayerCount(),
+                       ^
+TypeError: routingScope._getSubcircuitLayerCount is not a function. (In 'routingScope._getSubcircuitLayerCount()', 'routingScope._getSubcircuitLayerCount' is undefined)
+      at getCoordinatedFanoutLayers (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/create-implicit-breakout-point-solver-input.ts:502:18)
+      at createImplicitBreakoutPointSolverContext (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/create-implicit-breakout-point-solver-input.ts:595:22)
+      at solveScope (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/solve-implicit-breakout-points.ts:44:19)
+      at solveImplicitBreakoutPoints (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/solve-implicit-breakout-points.ts:133:16)
+      at doInitialPcbAutoplaceBreakoutPoints (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/primitive-components/Breakout/Breakout.ts:162:30)
+      at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:519:34)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:540:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:539:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/normal-components/Board/Board.ts:662:11)
+      at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/components/base-components/Renderable.ts:455:12)
+      at render (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/IsolatedCircuit.ts:211:16)
+      at renderUntilSettled (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/lib/IsolatedCircuit.ts:225:10)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-fanout-later-custom-symbol.test.tsx:20:17)
+(fail) fanout resolves a later custom-symbol switch after symbol ports initialize [50.58ms]
+
+ 0 pass
+ 1 fail
+Ran 1 test across 1 file. [778.00ms]

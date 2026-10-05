@@ -1,0 +1,28 @@
+{
+  "lcsc": "C485802",
+  "mpn": "TPS3839G33DBZR",
+  "references": [
+    "U4"
+  ],
+  "url": "https://jlcpcb.com/partdetail/TPS3839G33DBZR/C485802",
+  "listing_sha256": "497af01fcb583b85e9e588976181cbd7a8d67261328c5b7ab79e6f0ca42142b8",
+  "checked_at_utc": "2026-10-04T21:27:08.502294+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 3366,
+    "overseasStockCount": 3400,
+    "preMinPurchaseNum": 27
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

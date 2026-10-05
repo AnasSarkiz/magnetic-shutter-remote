@@ -1,0 +1,4 @@
+thread '<unnamed>' panicked at /Users/runner/.cargo/git/checkouts/resvg-4b7e4ee32ad6d954/3495d87/crates/resvg/src/geom.rs:27:61:
+called `Option::unwrap()` on a `None` value
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+fatal runtime error: failed to initiate panic, error 5

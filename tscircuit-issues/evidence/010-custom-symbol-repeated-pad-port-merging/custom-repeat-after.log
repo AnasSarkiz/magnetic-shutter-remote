@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-custom-symbol-internally-connected-pins.test.tsx:
+(pass) imported DMT6007LFG_7 custom symbol ports support internallyConnectedPins [1163.42ms]
+
+tests/repros/repro-symbol-reference-owner.test.tsx:
+(pass) reference text outside a custom symbol body retains its component association [5.21ms]
+
+tests/repros/repro-custom-symbol-repeated-pads.test.tsx:
+Writing snapshot to /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/__snapshots__/repro-custom-symbol-repeated-pads.snap.svg
+(pass) custom symbols retain every internally connected physical pad [10.30ms]
+
+tests/repros/repro-pcb-schema-export.test.tsx:
+(pass) board holes, explicit positions and rotated pill paste satisfy export schema [22.27ms]
+
+tests/repros/repro109-non-overlapping-composite-pin-ambiguous.test.tsx:
+(pass) repro109: repeated portHints on non-overlapping pads create internally connected ports [206.79ms]
+
+ 5 pass
+ 0 fail
+ 39 expect() calls
+Ran 5 tests across 5 files. [2.11s]

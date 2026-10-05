@@ -1,0 +1,453 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - J1: J1, source_component
+ - R1: 5.1kΩ resistor
+ - R2: 5.1kΩ resistor
+ - U2: BQ25185DLHR
+ - R3: 15kΩ resistor
+ - C1: 4.7uF capacitor
+ - C2: 4.7uF capacitor
+ - R4: 1kΩ resistor
+ - LED1: LED1, source_component
+ - J2: J2, source_component
+ - R8: 130kΩ resistor
+ - R9: 10kΩ resistor
+ - C8: 10uF capacitor
+ - C9: 47pF capacitor
+ - U1: E73-2G4M08S1C
+ - C5: 100nF capacitor
+ - SW2: SW2, source_component
+ - SW3: SW3, source_component
+ - R7: 1kΩ resistor
+ - LED2: LED2, source_component
+ - J3: J3, source_component
+ - SW1: SW1, source_component
+ - R5: 100kΩ resistor
+ - Q1: 2N7002
+ - R6: 100kΩ resistor
+ - U3: TPS7A0230PDBVR
+ - C3: 4.7uF capacitor
+ - C4: 4.7uF capacitor
+ - U4: TPS3839G33DBZR
+ - C6: 100nF capacitor
+ - U5: TMP390A2DRLR
+ - R10: 1.62kΩ resistor
+ - R11: 18.7kΩ resistor
+ - C7: 100nF capacitor
+ - R12: 100kΩ resistor
+ - R13: 100kΩ resistor
+ - Q2: 2N7002
+
+NET: CC1
+  - R1 pin1
+  - J1 CC1
+
+NET: CC2
+  - R2 pin1
+  - J1 CC2
+
+NET: CHARGE_LED_A
+  - LED1 anode (+)
+  - R4 pin2
+
+NET: CHARGE_STAT
+  - LED1 cathode (-)
+  - U2 STAT2
+
+NET: VSET
+  - R8 pin1
+  - U2 ILIM
+
+NET: TS_BIAS
+  - R9 pin1
+  - U2 TS
+
+NET: CHARGER_SYS
+  - C8 pin1
+  - U2 SYS
+
+NET: PROG
+  - C9 pin1
+  - R3 pin1
+  - U2 ISET
+
+NET: SHUTTER
+  - SW2 pin1
+  - U1 pin14
+
+NET: PAIR
+  - SW3 pin1
+  - U1 pin16
+
+NET: STATUS_LED
+  - R7 pin1
+  - U1 P12
+
+NET: STATUS_LED_A
+  - LED2 anode (+)
+  - R7 pin2
+
+NET: SWDIO
+  - J3 pin2
+  - U1 SWD
+
+NET: SWCLK
+  - J3 pin4
+  - U1 SWC
+
+NET: RESET_N
+  - J3 pin5
+  - U1 RST
+
+NET: POWER_SWITCH
+  - R5 pin1
+  - SW1 pin2
+
+NET: REG_EN
+  - U3 EN
+  - Q1 pin3
+  - R5 pin2
+
+NET: V3
+  - C4 pin1
+  - U3 OUT
+  - J3 pin1
+  - C5 pin1
+  - U1 VDH
+  - U1 VCC
+
+NET: BATTERY_OK
+  - U4 N_RESET
+  - SW1 pin1
+
+NET: VBAT
+  - C6 pin1
+  - U4 VDD
+  - C3 pin1
+  - U3 IN
+  - J2 pin1
+  - R4 pin1
+  - C2 pin1
+  - U2 BAT
+
+NET: TEMP_SET_HOT
+  - R10 pin1
+  - U5 SETA
+
+NET: TEMP_SET_COLD
+  - R11 pin1
+  - U5 SETB
+
+NET: USB5V
+  - R13 pin1
+  - R12 pin1
+  - C7 pin1
+  - U5 VDD
+  - R6 pin1
+  - Q1 pin1
+  - C1 pin1
+  - U2 IN
+  - J1 VBUS2
+  - J1 VBUS1
+
+NET: TEMP_OK
+  - Q2 pin1
+  - R12 pin2
+  - U5 N_OUTA
+  - U5 N_OUTB
+
+NET: GND
+  - Q2 pin2
+  - C7 pin2
+  - R11 pin2
+  - R10 pin2
+  - U5 GND
+  - C6 pin2
+  - U4 GND
+  - C4 pin2
+  - C3 pin2
+  - U3 GND
+  - R6 pin2
+  - Q1 pin2
+  - SW1 pin4
+  - SW1 pin4_internal_1
+  - SW1 pin4_internal_2
+  - SW1 pin4_internal_3
+  - SW1 pin3
+  - J3 pin8
+  - J3 pin7
+  - J3 pin6
+  - J3 pin3
+  - LED2 cathode (-)
+  - SW3 pin2
+  - SW2 pin2
+  - C5 pin2
+  - U1 GND1
+  - U1 GND2
+  - U1 GND3
+  - C9 pin2
+  - C8 pin2
+  - R9 pin2
+  - R8 pin2
+  - J2 pin4
+  - J2 pin3
+  - J2 pin2
+  - C2 pin2
+  - C1 pin2
+  - R3 pin2
+  - U2 EP
+  - U2 GND
+  - R2 pin2
+  - R1 pin2
+  - J1 GND2
+  - J1 GND1
+  - J1 EH4
+  - J1 EH3
+  - J1 EH1
+  - J1 EH2
+
+NET: CHARGE_DISABLE
+  - Q2 pin3
+  - R13 pin2
+  - U2 N_CE
+
+
+COMPONENT_PINS:
+J1 (USB4215-03-A)
+- pin13(EH2): NETS(GND)
+- pin14(EH1): NETS(GND)
+- pin15(EH3): NETS(GND)
+- pin16(EH4): NETS(GND)
+- pin17(GND1, A1B12): NETS(GND)
+- pin18(VBUS1, A4B9): NETS(USB5V)
+- pin19(SBU2, B8): NOT_CONNECTED
+- pin20(CC1, A5): NETS(CC1)
+- pin21(Dn2, B7): NOT_CONNECTED
+- pin22(Dp1, A6): NOT_CONNECTED
+- pin23(Dn1, A7): NOT_CONNECTED
+- pin24(Dp2, B6): NOT_CONNECTED
+- pin25(SBU1, A8): NOT_CONNECTED
+- pin26(CC2, B5): NETS(CC2)
+- pin27(VBUS2, B4A9): NETS(USB5V)
+- pin28(GND2, B1A12): NETS(GND)
+
+R1 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(CC1)
+- pin2(cathode, neg, right): NETS(GND)
+
+R2 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(CC2)
+- pin2(cathode, neg, right): NETS(GND)
+
+U2 (BQ25185DLHR)
+- pin1(SYS): NETS(CHARGER_SYS)
+- pin2(BAT): NETS(VBAT)
+- pin3(STAT2): NETS(CHARGE_STAT)
+- pin4(N_CE): NETS(CHARGE_DISABLE)
+- pin5(GND): NETS(GND)
+- pin6(TS, MR): NETS(TS_BIAS)
+- pin7(ILIM, VSET): NETS(VSET)
+- pin8(ISET): NETS(PROG)
+- pin9(STAT1): NOT_CONNECTED
+- pin10(IN): NETS(USB5V)
+- pin11(EP): NETS(GND)
+
+R3 (15kΩ undefined)
+- pin1(anode, pos, left): NETS(PROG)
+- pin2(cathode, neg, right): NETS(GND)
+
+C1 (4.7uF undefined)
+- pin1: NETS(USB5V)
+- pin2: NETS(GND)
+
+C2 (4.7uF undefined)
+- pin1: NETS(VBAT)
+- pin2: NETS(GND)
+
+R4 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VBAT)
+- pin2(cathode, neg, right): NETS(CHARGE_LED_A)
+
+LED1 (KT-0603R)
+- pin1(anode, pos): NETS(CHARGE_LED_A)
+- pin2(cathode, neg): NETS(CHARGE_STAT)
+
+J2 (S2B-PH-SM4-TB(LF)(SN))
+- pin1: NETS(VBAT)
+- pin2: NETS(GND)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+R8 (130kΩ undefined)
+- pin1(anode, pos, left): NETS(VSET)
+- pin2(cathode, neg, right): NETS(GND)
+
+R9 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(TS_BIAS)
+- pin2(cathode, neg, right): NETS(GND)
+
+C8 (10uF undefined)
+- pin1: NETS(CHARGER_SYS)
+- pin2: NETS(GND)
+
+C9 (47pF undefined)
+- pin1: NETS(PROG)
+- pin2: NETS(GND)
+
+U1 (E73-2G4M08S1C)
+- pin1: NOT_CONNECTED
+- pin2: NOT_CONNECTED
+- pin3: NOT_CONNECTED
+- pin4(AI4): NOT_CONNECTED
+- pin5(GND3): NETS(GND)
+- pin6: NOT_CONNECTED
+- pin7(AI0): NOT_CONNECTED
+- pin8(AI5): NOT_CONNECTED
+- pin9(AI7): NOT_CONNECTED
+- pin10(AI6): NOT_CONNECTED
+- pin11(XL1): NOT_CONNECTED
+- pin12: NOT_CONNECTED
+- pin13(XL2): NOT_CONNECTED
+- pin14: NETS(SHUTTER)
+- pin15(AI3): NOT_CONNECTED
+- pin16: NETS(PAIR)
+- pin17: NOT_CONNECTED
+- pin18(AI2): NOT_CONNECTED
+- pin19(VCC): NETS(V3)
+- pin20(P12): NETS(STATUS_LED)
+- pin21(GND2): NETS(GND)
+- pin22: NOT_CONNECTED
+- pin23(VDH): NETS(V3)
+- pin24(GND1): NETS(GND)
+- pin25(DCH): NOT_CONNECTED
+- pin26(RST): NETS(RESET_N)
+- pin27(VBS): NOT_CONNECTED
+- pin28(P15): NOT_CONNECTED
+- pin29(D_NEG): NOT_CONNECTED
+- pin30(P17): NOT_CONNECTED
+- pin31(D_POS): NOT_CONNECTED
+- pin32: NOT_CONNECTED
+- pin33: NOT_CONNECTED
+- pin34: NOT_CONNECTED
+- pin35: NOT_CONNECTED
+- pin36: NOT_CONNECTED
+- pin37(SWD): NETS(SWDIO)
+- pin38: NOT_CONNECTED
+- pin39(SWC): NETS(SWCLK)
+- pin40: NOT_CONNECTED
+- pin41(NF1): NOT_CONNECTED
+- pin42: NOT_CONNECTED
+- pin43(NF2): NOT_CONNECTED
+
+C5 (100nF undefined)
+- pin1: NETS(V3)
+- pin2: NETS(GND)
+
+SW2 (TS-1088-AR02016)
+- pin1: NETS(SHUTTER)
+- pin2: NETS(GND)
+
+SW3 (TS-1088-AR02016)
+- pin1: NETS(PAIR)
+- pin2: NETS(GND)
+
+R7 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(STATUS_LED)
+- pin2(cathode, neg, right): NETS(STATUS_LED_A)
+
+LED2 (KT-0603R)
+- pin1(anode, pos): NETS(STATUS_LED_A)
+- pin2(cathode, neg): NETS(GND)
+
+J3 (BM06B-SRSS-TB(LF)(SN))
+- pin1: NETS(V3)
+- pin2: NETS(SWDIO)
+- pin3: NETS(GND)
+- pin4: NETS(SWCLK)
+- pin5: NETS(RESET_N)
+- pin6: NETS(GND)
+- pin7: NETS(GND)
+- pin8: NETS(GND)
+
+SW1 (MSK12C02)
+- pin4_internal_1(pin4, 4): NETS(GND)
+- pin4_internal_2(pin4, 4): NETS(GND)
+- pin4_internal_3(pin4, 4): NETS(GND)
+- pin1: NETS(BATTERY_OK)
+- pin2: NETS(POWER_SWITCH)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+R5 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(POWER_SWITCH)
+- pin2(cathode, neg, right): NETS(REG_EN)
+
+Q1 (2N7002)
+- pin1(G): NETS(USB5V)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(REG_EN)
+
+R6 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(USB5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+U3 (TPS7A0230PDBVR)
+- pin1(IN): NETS(VBAT)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(REG_EN)
+- pin4(NC): NOT_CONNECTED
+- pin5(OUT): NETS(V3)
+
+C3 (4.7uF undefined)
+- pin1: NETS(VBAT)
+- pin2: NETS(GND)
+
+C4 (4.7uF undefined)
+- pin1: NETS(V3)
+- pin2: NETS(GND)
+
+U4 (TPS3839G33DBZR)
+- pin1(GND): NETS(GND)
+- pin2(N_RESET): NETS(BATTERY_OK)
+- pin3(VDD): NETS(VBAT)
+
+C6 (100nF undefined)
+- pin1: NETS(VBAT)
+- pin2: NETS(GND)
+
+U5 (TMP390A2DRLR)
+- pin1(SETA): NETS(TEMP_SET_HOT)
+- pin2(SETB): NETS(TEMP_SET_COLD)
+- pin3(GND): NETS(GND)
+- pin4(N_OUTB): NETS(TEMP_OK)
+- pin5(VDD): NETS(USB5V)
+- pin6(N_OUTA): NETS(TEMP_OK)
+
+R10 (1.62kΩ undefined)
+- pin1(anode, pos, left): NETS(TEMP_SET_HOT)
+- pin2(cathode, neg, right): NETS(GND)
+
+R11 (18.7kΩ undefined)
+- pin1(anode, pos, left): NETS(TEMP_SET_COLD)
+- pin2(cathode, neg, right): NETS(GND)
+
+C7 (100nF undefined)
+- pin1: NETS(USB5V)
+- pin2: NETS(GND)
+
+R12 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(USB5V)
+- pin2(cathode, neg, right): NETS(TEMP_OK)
+
+R13 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(USB5V)
+- pin2(cathode, neg, right): NETS(CHARGE_DISABLE)
+
+Q2 (2N7002)
+- pin1(G): NETS(TEMP_OK)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(CHARGE_DISABLE)
+

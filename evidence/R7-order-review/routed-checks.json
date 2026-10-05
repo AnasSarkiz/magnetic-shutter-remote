@@ -1,0 +1,45 @@
+{
+  "all": [
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_pcb_component_9",
+      "message": "component is facing y- but should face x- so the connector is accessible from the board edge",
+      "pcb_component_id": "pcb_component_9",
+      "source_component_id": "source_component_9",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "y-",
+      "recommended_facing_direction": "x-",
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_23",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_23",
+      "source_port_ids": [
+        "source_port_123",
+        "source_port_124",
+        "source_port_125"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_36",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_36",
+      "source_port_ids": [
+        "source_port_158",
+        "source_port_159",
+        "source_port_160"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

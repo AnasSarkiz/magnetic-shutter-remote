@@ -1,0 +1,18 @@
+{
+  "verified_local": "2026-10-03",
+  "url": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412",
+  "manufacturer": "Global Connector Technology",
+  "part": "USB4215-03-A",
+  "c_number": "C37616412",
+  "stock": 145,
+  "available_order_qty": 63,
+  "minimum": 1,
+  "category": "Extended",
+  "assembly_type": "SMT Assembly",
+  "pcba_type": "Economic and Standard",
+  "msl": "MSL 1",
+  "library": "PCB Footprint or Symbol and rendered EasyEDA footprint available",
+  "xray": "No requirement displayed; absence is not approval",
+  "shell_process": "Not specified; four-slot solder coverage unconfirmed",
+  "channel": "Official JLCPCB product page read through browser, no contact or upload"
+}

@@ -1,0 +1,68 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C75749-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C75749-to-ts.test.ts:21:57)
+(fail) should convert C75749 into typescript file [1201.38ms]
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C309274-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C309274-to-ts.test.ts:21:57)
+(fail) should convert C309274 into typescript file [719.74ms]
+
+tests/convert-to-ts/manufacturer-metadata.test.ts:
+(pass) SPDT import preserves all supplier symbol terminals and explicit topology [2.81ms]
+(pass) multi-terminal switch refuses an unverified default SPST topology [1.75ms]
+(pass) connector import carries verified mating direction in the footprint frame [1.53ms]
+(pass) invalid manufacturer metadata is rejected rather than dropped [1.03ms]
+43 | test("connector classification preserves a supplier contact-switch symbol", async () => {
+44 |   const rawEasy = await Bun.file(new URL("../assets/C309274.raweasy.json", import.meta.url)).json()
+45 |   const tsx = await convertRawEasyToTsx({ rawEasy })
+46 |   expect(tsx).toContain("<connector")
+47 |   expect(tsx).toContain("symbol={")
+48 |   expect(tsx.match(/<port /g)).toHaveLength(7)
+                                    ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 7
+Received length: 6
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/manufacturer-metadata.test.ts:48:32)
+(fail) connector classification preserves a supplier contact-switch symbol [5.14ms]
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C18185602-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C18185602-to-ts.test.ts:21:57)
+(fail) should convert C18185602 into typescript file [728.27ms]
+
+ 4 pass
+ 4 fail
+ 22 expect() calls
+Ran 8 tests across 4 files. [3.08s]

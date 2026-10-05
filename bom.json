@@ -1,0 +1,500 @@
+{
+  "revision": "R6-engineering-prototype-2026-10-03",
+  "status": "37 fitted references; TOP only; J1 GCT USB4215-03-A. Engineering prototype \u2014 not production qualified. Shell inspection/manual rework may be required.",
+  "parts": [
+    {
+      "reference_designators": [
+        "U1"
+      ],
+      "quantity": 1,
+      "value": "E73-2G4M08S1C",
+      "manufacturer": "Chengdu Ebyte Electronic Technology",
+      "manufacturer_part_number": "E73-2G4M08S1C",
+      "package": "SMD module, 43 pads, 13 x 18 x 3 mm",
+      "lcsc": "C356849",
+      "assembly_category": "Extended",
+      "observed_stock": 1689,
+      "observed_available": 1246,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Standard only; X-ray required",
+      "source_link": "https://jlcpcb.com/partdetail/Chengdu_Ebyte_ElecTech-E732G4M08S1C/C356849",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/E73-2G4M08S1C-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C356849.html"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "package": "WSON-10, 2.2 x 2 mm, exposed pad",
+      "assembly_category": "Extended",
+      "observed_stock": 3834,
+      "observed_available": 3739,
+      "assembly_requirements": "Economic/Standard; MSL 3",
+      "source_link": "https://jlcpcb.com/partdetail/BQ25185DLHR/C19725033",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "U2"
+      ],
+      "quantity": 1,
+      "lcsc": "C19725033",
+      "manufacturer_part_number": "BQ25185DLHR",
+      "qualification": "R5 current TI SLUSF65B section 7.4.1: actual solid GND plane/returns pass. Stencil 0.10 mm / area ratios pass. Physical temperature and battery tests are POST-PROTOTYPE PHYSICAL VALIDATION.",
+      "value": "BQ25185DLHR",
+      "datasheet_file": "references/R4-qualification/BQ25185-current.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C19725033.html"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-563 / DRL-6",
+      "assembly_category": "Extended",
+      "observed_stock": 37610,
+      "observed_available": 37585,
+      "assembly_requirements": "Economic/Standard; manufacturer MSL 2",
+      "source_link": "https://jlcpcb.com/partdetail/TMP390A2DRLR/C5219772",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "U5"
+      ],
+      "quantity": 1,
+      "lcsc": "C5219772",
+      "manufacturer_part_number": "TMP390A2DRLR",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "TMP390A2DRLR",
+      "datasheet_file": "references/TMP390.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C5219772.html"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23-3 / DBZ",
+      "assembly_category": "Extended",
+      "observed_stock": 3405,
+      "observed_available": 3375,
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/TPS3839G33DBZR/C485802",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "U4"
+      ],
+      "quantity": 1,
+      "lcsc": "C485802",
+      "manufacturer_part_number": "TPS3839G33DBZR",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "TPS3839G33DBZR",
+      "datasheet_file": "references/TPS3839.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C485802.html"
+    },
+    {
+      "manufacturer": "UNI-ROYAL",
+      "package": "0603",
+      "assembly_category": "Basic",
+      "observed_stock": 4587959,
+      "observed_available": 4275297,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "R3"
+      ],
+      "quantity": 1,
+      "lcsc": "C22809",
+      "manufacturer_part_number": "0603WAF1502T5E",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "15 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C22809.html"
+    },
+    {
+      "manufacturer": "UNI-ROYAL",
+      "package": "0603",
+      "assembly_category": "Extended",
+      "observed_stock": 588652,
+      "observed_available": 546495,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/0603WAF1303T5E/C22795",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "R8"
+      ],
+      "quantity": 1,
+      "lcsc": "C22795",
+      "manufacturer_part_number": "0603WAF1303T5E",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "130 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C22795.html"
+    },
+    {
+      "manufacturer": "UNI-ROYAL",
+      "package": "0603",
+      "assembly_category": "Basic",
+      "observed_stock": 23109251,
+      "observed_available": 16156915,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/0603WAF1002T5E/C25804",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "R9"
+      ],
+      "quantity": 1,
+      "lcsc": "C25804",
+      "manufacturer_part_number": "0603WAF1002T5E",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "10 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C25804.html"
+    },
+    {
+      "manufacturer": "UNI-ROYAL",
+      "package": "0603",
+      "assembly_category": "Extended",
+      "observed_stock": 27688,
+      "observed_available": 27604,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/0603WAF1621T5E/C22844",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "R10"
+      ],
+      "quantity": 1,
+      "lcsc": "C22844",
+      "manufacturer_part_number": "0603WAF1621T5E",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "1.62 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C22844.html"
+    },
+    {
+      "manufacturer": "UNI-ROYAL",
+      "package": "0603",
+      "assembly_category": "Extended",
+      "observed_stock": 133033,
+      "observed_available": 131350,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/0603WAF1872T5E/C22893",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "R11"
+      ],
+      "quantity": 1,
+      "lcsc": "C22893",
+      "manufacturer_part_number": "0603WAF1872T5E",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "18.7 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C22893.html"
+    },
+    {
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0805",
+      "assembly_category": "Basic",
+      "observed_stock": 4997153,
+      "observed_available": 3794120,
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/CL21A106KAYNNNE/C15850",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "C8"
+      ],
+      "quantity": 1,
+      "lcsc": "C15850",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "10 \u00b5F \u00b110%, 25 V, X5R",
+      "datasheet_file": "Samsung manufacturer product-family bias curves; see ELECTRICAL-QUALIFICATION.md",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C15850.html"
+    },
+    {
+      "manufacturer": "CCTC",
+      "package": "0603",
+      "assembly_category": "Extended",
+      "observed_stock": 8123,
+      "observed_available": 8111,
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/TCC0603COG470J500CT/C282505",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "C9"
+      ],
+      "quantity": 1,
+      "lcsc": "C282505",
+      "manufacturer_part_number": "TCC0603COG470J500CT",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "47 pF \u00b15%, 50 V, C0G",
+      "datasheet_file": "references/C282505-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C282505.html"
+    },
+    {
+      "reference_designators": [
+        "U3"
+      ],
+      "quantity": 1,
+      "value": "TPS7A0230PDBVR",
+      "manufacturer": "Texas Instruments",
+      "manufacturer_part_number": "TPS7A0230PDBVR",
+      "package": "SOT-23-5 (DBV)",
+      "lcsc": "C3747031",
+      "assembly_category": "Extended",
+      "observed_stock": 37586,
+      "observed_available": 37516,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/TexasInstruments-TPS7A0230PDBVR/C3747031",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/TPS7A02.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C3747031.html"
+    },
+    {
+      "manufacturer": "GCT / Global Connector Technology",
+      "package": "SMT 16-contact USB-C; four plated shell slots",
+      "assembly_category": "Extended",
+      "observed_stock": 125,
+      "observed_available": 43,
+      "assembly_requirements": "Extended SMT; MSL 1; Economic and Standard listing. Shell-joint coverage unconfirmed; inspect and manually rework if needed for prototype. No X-ray or fixture requirement displayed, not a guarantee.",
+      "source_link": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412",
+      "availability_check_date": "2026-10-03",
+      "reference_designators": [
+        "J1"
+      ],
+      "quantity": 1,
+      "lcsc": "C37616412",
+      "manufacturer_part_number": "USB4215-03-A",
+      "qualification": "Official GCT Rev A copper and plated-slot geometry verified; 16 source paste apertures preserved through corrected supported importer; production qualification pending per user prototype acceptance.",
+      "value": "USB-C charging receptacle",
+      "datasheet_file": "references/GCT-USB4215-drawing-Rev-A.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C37616412.html",
+      "assembly_notes": "TOP SMT; PROTOTYPE MANUAL REWORK MAY BE REQUIRED FOR FOUR USB SHELL ANCHORS. PRODUCTION PROCESS QUALIFICATION PENDING."
+    },
+    {
+      "reference_designators": [
+        "J2"
+      ],
+      "quantity": 1,
+      "value": "S2B-PH-SM4-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "manufacturer_part_number": "S2B-PH-SM4-TB(LF)(SN)",
+      "package": "PH 2 mm, side-entry SMT",
+      "lcsc": "C295747",
+      "assembly_category": "Extended",
+      "observed_stock": 20971,
+      "observed_available": 20398,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/JST-S2B_PH_SM4_TB_LF_SN/C295747",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/JST-PH.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C295747.html"
+    },
+    {
+      "reference_designators": [
+        "J3"
+      ],
+      "quantity": 1,
+      "value": "BM06B-SRSS-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "manufacturer_part_number": "BM06B-SRSS-TB(LF)(SN)",
+      "package": "SH 1 mm, top-entry SMT",
+      "lcsc": "C160392",
+      "assembly_category": "Extended",
+      "observed_stock": 34461,
+      "observed_available": 28818,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/JST-BM06B_SRSS_TB_LF_SN/C160392",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/JST-SH.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C160392.html"
+    },
+    {
+      "manufacturer": "SHOU HAN",
+      "package": "SMD 8 x 2.8 mm, 3 contacts + shell",
+      "assembly_category": "Extended",
+      "observed_stock": 193532,
+      "observed_available": 188023,
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/MSK12C02/C431540",
+      "availability_check_date": "2026-10-01",
+      "reference_designators": [
+        "SW1"
+      ],
+      "quantity": 1,
+      "lcsc": "C431540",
+      "manufacturer_part_number": "MSK12C02",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "value": "SPDT slide switch",
+      "datasheet_file": "references/SHOUHAN-MSK12C02.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C431540.html"
+    },
+    {
+      "reference_designators": [
+        "SW2",
+        "SW3"
+      ],
+      "quantity": 2,
+      "value": "Normally-open tactile switch, 2 mm height",
+      "manufacturer": "XUNPU",
+      "manufacturer_part_number": "TS-1088-AR02016",
+      "package": "SMD tactile 4 x 3 x 2 mm",
+      "lcsc": "C720477",
+      "assembly_category": "Basic",
+      "observed_stock": 786967,
+      "observed_available": 742195,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL not stated",
+      "source_link": "https://jlcpcb.com/partdetail/SHOUHAN-TS_1088_AR02016/C720477",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C720477-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C720477.html"
+    },
+    {
+      "reference_designators": [
+        "Q1",
+        "Q2"
+      ],
+      "quantity": 2,
+      "value": "N-channel MOSFET, 60 V",
+      "manufacturer": "Jiangsu Changjing Electronics Technology",
+      "manufacturer_part_number": "2N7002",
+      "package": "SOT-23",
+      "lcsc": "C8545",
+      "assembly_category": "Basic",
+      "observed_stock": 1642765,
+      "observed_available": 1522993,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/JiangsuChangjingElectronicsTechnologyCoLtd-2N7002/C8545",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C8545-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C8545.html"
+    },
+    {
+      "reference_designators": [
+        "R1",
+        "R2"
+      ],
+      "quantity": 2,
+      "value": "5.1 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "manufacturer": "UNI-ROYAL",
+      "manufacturer_part_number": "0603WAF5101T5E",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C23186",
+      "assembly_category": "Basic",
+      "observed_stock": 25285299,
+      "observed_available": 24338678,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF5101T5E/C23186",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C23186.html"
+    },
+    {
+      "reference_designators": [
+        "R4",
+        "R7"
+      ],
+      "quantity": 2,
+      "value": "1 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "manufacturer": "UNI-ROYAL",
+      "manufacturer_part_number": "0603WAF1001T5E",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C21190",
+      "assembly_category": "Basic",
+      "observed_stock": 21678575,
+      "observed_available": 16868949,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1001T5E/C21190",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C21190.html"
+    },
+    {
+      "reference_designators": [
+        "R5",
+        "R6",
+        "R12",
+        "R13"
+      ],
+      "quantity": 4,
+      "value": "100 k\u03a9 \u00b11%, 0.1 W, 75 V",
+      "manufacturer": "UNI-ROYAL",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C25803",
+      "assembly_category": "Basic",
+      "observed_stock": 22171651,
+      "observed_available": 20485261,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard",
+      "source_link": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1003T5E/C25803",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C22844-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C25803.html"
+    },
+    {
+      "reference_designators": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "quantity": 4,
+      "value": "4.7 \u00b5F \u00b110%, 16 V, X5R",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10A475KO8NNNC",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C19666",
+      "assembly_category": "Basic",
+      "observed_stock": 2544067,
+      "observed_available": 2016787,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/Samsung-CL10A475KO8NNNC/C19666",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "Samsung manufacturer product-family bias curves; see ELECTRICAL-QUALIFICATION.md",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C19666.html"
+    },
+    {
+      "reference_designators": [
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "quantity": 3,
+      "value": "100 nF \u00b110%, 50 V, X7R",
+      "manufacturer": "YAGEO",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C14663",
+      "assembly_category": "Basic",
+      "observed_stock": 54430410,
+      "observed_available": 41987508,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 1",
+      "source_link": "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C14663-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C14663.html"
+    },
+    {
+      "reference_designators": [
+        "LED1",
+        "LED2"
+      ],
+      "quantity": 2,
+      "value": "Red LED",
+      "manufacturer": "Hubei KENTO Electronic",
+      "manufacturer_part_number": "KT-0603R",
+      "package": "0603 imperial / 1608 metric",
+      "lcsc": "C2286",
+      "assembly_category": "Basic",
+      "observed_stock": 4840846,
+      "observed_available": 4349467,
+      "availability_check_date": "2026-10-01",
+      "assembly_requirements": "Economic/Standard; MSL 3",
+      "source_link": "https://jlcpcb.com/partdetail/HubeiKENTOElec-KT_0603R/C2286",
+      "qualification": "Reviewed with disclosed land/derating assumptions; physical tests pending",
+      "datasheet_file": "references/C2286-manufacturer.pdf",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C2286.html"
+    }
+  ]
+}

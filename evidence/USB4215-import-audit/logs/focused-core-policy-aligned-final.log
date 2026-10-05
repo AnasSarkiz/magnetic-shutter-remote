@@ -1,0 +1,18 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solderpaste-polygon-transform.test.tsx:
+(pass) explicit paste follows footprint translation, rotation and layer reflection [73.66ms]
+
+tests/solderpaste-routing-neutrality.test.tsx:
+(pass) paste is retained in Circuit JSON without changing the copper routing problem [30.88ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx:
+(pass) automatic paste covers SMT pads and is not inferred from plated drills [13.66ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad.test.tsx:
+(pass) create solderpaste from smtpad [2.65ms]
+
+ 4 pass
+ 0 fail
+ 107 expect() calls
+Ran 4 tests across 4 files. [980.00ms]

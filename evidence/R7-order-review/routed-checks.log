@@ -1,0 +1,7 @@
+all 3
+pcb_connector_not_in_accessible_orientation_warning component is facing y- but should face x- so the connector is accessible from the board edge
+source_no_power_pin_defined_warning Q1 has no pin with requires_power=true
+source_no_power_pin_defined_warning Q2 has no pin with requires_power=true
+holeTrace 0
+dangling 0
+selfShorts 0

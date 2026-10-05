@@ -1,0 +1,16 @@
+{
+  "frozen_pcb_source_commit": "77965a8012d5544e962d987ce958c5c5614dbe3a",
+  "current_branch": "r7-shutter-only-order-review",
+  "files": {
+    "index.circuit.tsx": "27b57f99a5782ed5c962678d04993512cdbc5f21de9233693965d1ef958c4ce6",
+    "src/remote-circuit.tsx": "fc89beab1fe6d741832068ff0e42527d64c742b87416bfa5ed887c6961a46ff8",
+    "package.json": "15d1dbac6a28053d299f03066e0e0cc1b068ab49ec11e5d9d2510c9ab246f864",
+    "bun.lock": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11",
+    "dist/index/circuit.json": "68b46821c2155c58745ac16b71f3bb7ae120b80cce0a51de811fe6677944b07d",
+    "fabrication/R7-order-review/R7-gerbers.zip": "db64d84e2f518973d329a757814486d7c242f93311dd454a643982c138f47bee",
+    "fabrication/R7-order-review/JLCPCB-BOM.csv": "3897eecdb1ae8d8b20b34521c33e930339b93c5b9503cd41bdc1f613c460c687",
+    "fabrication/R7-order-review/JLCPCB-CPL.csv": "e69721bde18ade1c233de07a7dd3b1e9feb88b1cdf3b9bdcec268efd15d5d702",
+    "fabrication/R7-order-review/ASSEMBLY-DRAWING.pdf": "f6235a22ef27010c0d1f9039577d490698223d9e3c52a136adba80cd3b0d8e9f",
+    "fabrication/R7-order-review/BOARD-DIMENSIONS.pdf": "23518e6b023204e6714dfaee3c16d247a20a4a5988f9714d87babea716c2496a"
+  }
+}

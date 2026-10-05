@@ -1,0 +1,500 @@
+--- a/lib/convert-easyeda-json-to-tscircuit-soup-json.ts
++++ b/lib/convert-easyeda-json-to-tscircuit-soup-json.ts
+@@ -40,6 +40,7 @@
+   ViaSchema,
+ } from "./schemas/package-detail-shape-schema"
+ import { mil10ToMm } from "./utils/easyeda-unit-to-mm"
++import { closedPastePathToPoints } from "./utils/closed-paste-path-to-points"
+ import {
+   getSilkscreenArcPath,
+   type PackageArc,
+@@ -799,18 +800,14 @@
+       (shape.layermask === 5 || shape.layermask === 6) &&
+       shape.fillStyle === "solid"
+     ) {
+-      // Explicit paste paths must retain all vertices; unsupported curves cannot
+-      // be converted by the M/L point parser without changing the aperture.
+-      if (
+-        !/^[MLZ\s\d.,+-]+$/i.test(shape.pathData) ||
+-        (shape.pathData.match(/M/gi) ?? []).length !== 1 ||
+-        !/Z\s*$/i.test(shape.pathData)
+-      ) {
+-        throw new Error(
+-          `Unsupported curved paste SOLIDREGION ${shape.id ?? index}`,
+-        )
+-      }
+-      const points = shape.points.map((p) => ({
++      // Use the source SVG contour, including circular arcs. The previous
++      // M/L-only schema points omit arc endpoints and cannot define this paste.
++      // Maximum approximation error is 0.0001 mm (not a fabrication tolerance).
++      const sourcePoints = closedPastePathToPoints({
++        pathData: shape.pathData,
++        maximumChordError: 0.0001 / 0.254,
++      })
++      const points = sourcePoints.map((p) => ({
+         x: milx10(p.x),
+         y: milx10(p.y),
+       }))
+--- a/lib/utils/closed-paste-path-to-points.ts
++++ b/lib/utils/closed-paste-path-to-points.ts
+@@ -0,0 +1,129 @@
++import type { Point } from "../math/arc-utils"
++
++/** Convert a single closed SVG M/L/H/V/circular-A contour to bounded chords.
++ * Coordinates and chord tolerance use the same units. Unsupported commands
++ * remain errors: they must never be discarded or replaced with a straight line.
++ */
++export function closedPastePathToPoints({
++  pathData,
++  maximumChordError,
++}: {
++  pathData: string
++  maximumChordError: number
++}): Point[] {
++  if (!(maximumChordError > 0) || !Number.isFinite(maximumChordError))
++    throw new Error("Paste chord error must be finite and positive")
++  const tokens =
++    pathData.match(/[a-zA-Z]|[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g) ?? []
++  const residue = pathData.replace(
++    /[a-zA-Z]|[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?|[\s,]/g,
++    "",
++  )
++  if (residue) throw new Error("Invalid paste path token")
++  let tokenIndex = 0
++  let command = ""
++  let cursor: Point = { x: 0, y: 0 }
++  let closed = false
++  const points: Point[] = []
++  const readNumber = () => {
++    const token = tokens[tokenIndex++]
++    if (token === undefined || /^[a-zA-Z]$/.test(token))
++      throw new Error("Incomplete paste path command")
++    const coordinate = Number(token)
++    if (!Number.isFinite(coordinate))
++      throw new Error("Non-finite paste coordinate")
++    return coordinate
++  }
++  while (tokenIndex < tokens.length) {
++    if (/^[a-zA-Z]$/.test(tokens[tokenIndex])) command = tokens[tokenIndex++]
++    if (closed) throw new Error("Multiple paste contours are unsupported")
++    const absoluteCommand = command.toUpperCase()
++    const relative = command !== absoluteCommand
++    if (absoluteCommand === "Z") {
++      if (points.length < 3)
++        throw new Error("Paste contour has fewer than three points")
++      closed = true
++      continue
++    }
++    if (!points.length && absoluteCommand !== "M")
++      throw new Error("Paste contour must begin with M")
++    if (absoluteCommand === "M" || absoluteCommand === "L") {
++      if (absoluteCommand === "M" && points.length)
++        throw new Error("Multiple paste contours are unsupported")
++      const x = readNumber() + (relative ? cursor.x : 0)
++      const y = readNumber() + (relative ? cursor.y : 0)
++      cursor = { x, y }
++      points.push(cursor)
++      if (absoluteCommand === "M") command = relative ? "l" : "L"
++    } else if (absoluteCommand === "H" || absoluteCommand === "V") {
++      const coordinate = readNumber()
++      cursor =
++        absoluteCommand === "H"
++          ? { x: coordinate + (relative ? cursor.x : 0), y: cursor.y }
++          : { x: cursor.x, y: coordinate + (relative ? cursor.y : 0) }
++      points.push(cursor)
++    } else if (absoluteCommand === "A") {
++      const radiusX = Math.abs(readNumber())
++      const radiusY = Math.abs(readNumber())
++      readNumber() // Rotation cannot change a circle.
++      const largeArcFlag = readNumber()
++      const sweepFlag = readNumber()
++      if (![0, 1].includes(largeArcFlag) || ![0, 1].includes(sweepFlag))
++        throw new Error("Invalid paste arc flags")
++      if (radiusX !== radiusY || radiusX === 0)
++        throw new Error("Non-circular paste arcs are unsupported")
++      const end = {
++        x: readNumber() + (relative ? cursor.x : 0),
++        y: readNumber() + (relative ? cursor.y : 0),
++      }
++      const halfX = (cursor.x - end.x) / 2
++      const halfY = (cursor.y - end.y) / 2
++      const halfChordSquared = halfX ** 2 + halfY ** 2
++      if (halfChordSquared > 0) {
++        // SVG endpoint-to-center conversion; SVG requires radius correction
++        // when the specified radius cannot span the endpoint chord.
++        const radius = Math.max(radiusX, Math.sqrt(halfChordSquared))
++        const sign = largeArcFlag === sweepFlag ? -1 : 1
++        const factor =
++          sign * Math.sqrt(Math.max(0, radius ** 2 / halfChordSquared - 1))
++        const center = {
++          x: (cursor.x + end.x) / 2 + factor * halfY,
++          y: (cursor.y + end.y) / 2 - factor * halfX,
++        }
++        const startAngle = Math.atan2(cursor.y - center.y, cursor.x - center.x)
++        let sweepAngle =
++          Math.atan2(end.y - center.y, end.x - center.x) - startAngle
++        if (sweepFlag === 1 && sweepAngle < 0) sweepAngle += 2 * Math.PI
++        if (sweepFlag === 0 && sweepAngle > 0) sweepAngle -= 2 * Math.PI
++        // Sagitta r*(1-cos(theta/2)) bounds every chord's contour error.
++        const maximumAngle =
++          2 * Math.acos(1 - Math.min(maximumChordError / radius, 1))
++        if (!(maximumAngle > 0) || !Number.isFinite(maximumAngle))
++          throw new Error("Paste chord tolerance is below numeric resolution")
++        const segmentCount = Math.max(
++          1,
++          Math.ceil(Math.abs(sweepAngle) / maximumAngle),
++        )
++        if (!Number.isSafeInteger(segmentCount))
++          throw new Error("Paste arc requires an unsafe number of segments")
++        for (
++          let segmentIndex = 1;
++          segmentIndex < segmentCount;
++          segmentIndex++
++        ) {
++          const angle = startAngle + (sweepAngle * segmentIndex) / segmentCount
++          points.push({
++            x: center.x + radius * Math.cos(angle),
++            y: center.y + radius * Math.sin(angle),
++          })
++        }
++        points.push(end)
++      }
++      cursor = end
++    } else {
++      throw new Error(`Unsupported paste path command ${command}`)
++    }
++  }
++  if (!closed) throw new Error("Paste contour must be closed with Z")
++  return points
++}
+--- a/tests/circular-paste-path.test.ts
++++ b/tests/circular-paste-path.test.ts
+@@ -0,0 +1,133 @@
++import { expect, test } from "bun:test"
++import { closedPastePathToPoints } from "../lib/utils/closed-paste-path-to-points"
++import { EasyEdaJsonSchema } from "../lib/schemas/easy-eda-json-schema"
++import { convertEasyEdaJsonToCircuitJson } from "../lib/convert-easyeda-json-to-tscircuit-soup-json"
++import { generateFootprintTsx } from "../lib/websafe/generate-footprint-tsx"
++import rawPart from "../../../evidence/R7-components/C347356.raweasy.json"
++
++test("straight paste preserves every source vertex exactly", () => {
++  expect(
++    closedPastePathToPoints({
++      pathData: "M 0 0 L 2 0 L 2 1 L 0 1 Z",
++      maximumChordError: 0.0001,
++    }),
++  ).toEqual([
++    { x: 0, y: 0 },
++    { x: 2, y: 0 },
++    { x: 2, y: 1 },
++    { x: 0, y: 1 },
++  ])
++  expect(
++    closedPastePathToPoints({
++      pathData: "m 1e0 0 h 2 v 1 h -2 z",
++      maximumChordError: 0.0001,
++    }),
++  ).toEqual([
++    { x: 1, y: 0 },
++    { x: 3, y: 0 },
++    { x: 3, y: 1 },
++    { x: 1, y: 1 },
++  ])
++})
++
++test("circular arcs preserve flags and bound chord error independently", () => {
++  for (const sweepFlag of [0, 1]) {
++    for (const largeArcFlag of [0, 1]) {
++      const points = closedPastePathToPoints({
++        pathData: `M 1 0 A 1 1 0 ${largeArcFlag} ${sweepFlag} 0 1 L 0 0 Z`,
++        maximumChordError: 0.0001,
++      })
++      const center =
++        largeArcFlag === sweepFlag ? { x: 1, y: 1 } : { x: 0, y: 0 }
++      expect(points[0]).toEqual({ x: 1, y: 0 })
++      expect(points.at(-2)).toEqual({ x: 0, y: 1 })
++      let arcLength = 0
++      for (let index = 1; index < points.length - 1; index++) {
++        const start = points[index - 1],
++          end = points[index]
++        expect(Math.hypot(end.x - center.x, end.y - center.y)).toBeCloseTo(
++          1,
++          10,
++        )
++        const midpoint = { x: (start.x + end.x) / 2, y: (start.y + end.y) / 2 }
++        expect(
++          1 - Math.hypot(midpoint.x - center.x, midpoint.y - center.y),
++        ).toBeLessThanOrEqual(0.0001 + 1e-12)
++        const cross =
++          (start.x - center.x) * (end.y - center.y) -
++          (start.y - center.y) * (end.x - center.x)
++        expect(sweepFlag === 1 ? cross : -cross).toBeGreaterThan(0)
++        arcLength += Math.hypot(end.x - start.x, end.y - start.y)
++      }
++      expect(arcLength).toBeCloseTo(
++        largeArcFlag ? (3 * Math.PI) / 2 : Math.PI / 2,
++        3,
++      )
++    }
++  }
++})
++
++test("relative arcs and radius correction follow SVG endpoint semantics", () => {
++  const points = closedPastePathToPoints({
++    pathData: "M 1 0 a 0.1 0.1 0 0 1 -2 0 L 0 0 Z",
++    maximumChordError: 0.0001,
++  })
++  expect(points.at(-2)).toEqual({ x: -1, y: 0 })
++  for (const point of points.slice(0, -1))
++    expect(Math.hypot(point.x, point.y)).toBeCloseTo(1, 10)
++})
++
++test("unclosed, multi-contour and unsupported paths remain explicit failures", () => {
++  for (const pathData of [
++    "M 0 0 L 1 0 L 0 1",
++    "M 0 0 L 1 0 L 0 1 Z M 2 2 L 3 2 L 2 3 Z",
++    "M 0 0 A 1 2 0 0 1 1 1 L 0 1 Z",
++    "M 0 0 C 0 1 1 0 1 1 Z",
++    "M 0 0 L 1 Z",
++    "M 0 0 L 1 0 L 0 1 @ Z",
++    "M 0 0 A 1 1 0 2 0 1 1 L 0 1 Z",
++  ]) {
++    expect(() =>
++      closedPastePathToPoints({ pathData, maximumChordError: 0.0001 }),
++    ).toThrow()
++  }
++  expect(() =>
++    closedPastePathToPoints({
++      pathData: "M 0 0 L 1 0 L 0 1 Z",
++      maximumChordError: 0,
++    }),
++  ).toThrow()
++})
++
++test("C347356 retains all five supplier paste contours through supported TSX generation", () => {
++  const circuitJson = convertEasyEdaJsonToCircuitJson(
++    EasyEdaJsonSchema.parse(rawPart),
++    { shouldRecenter: false, showDesignator: false },
++  )
++  const paste = circuitJson.filter(
++    (element) => element.type === "pcb_solder_paste",
++  )
++  expect(paste).toHaveLength(5)
++  for (const aperture of paste) {
++    expect(aperture.shape).toBe("polygon")
++    if (aperture.shape !== "polygon")
++      throw new Error("Expected supplier polygon")
++    expect(aperture.points.length).toBeGreaterThanOrEqual(4)
++  }
++  const curved = paste.find(
++    (aperture) => aperture.shape === "polygon" && aperture.points.length > 4,
++  )
++  expect(curved).toBeDefined()
++  const tsx = generateFootprintTsx(circuitJson)
++  expect(tsx.match(/<solderpaste /g)).toHaveLength(5)
++  expect(tsx).toContain('shape="polygon"')
++})
++
++test("unrepresentable chord tolerances fail explicitly rather than looping forever", () => {
++  expect(() =>
++    closedPastePathToPoints({
++      pathData: "M 1 0 A 1 1 0 0 1 0 1 L 0 0 Z",
++      maximumChordError: 1e-30,
++    }),
++  ).toThrow("below numeric resolution")
++})
+--- a/package.json
++++ b/package.json
+@@ -55,5 +55,17 @@
+     "format": "biome format . --write",
+     "add-test-for-part": "bun run scripts/add-test-for-part.ts"
+   },
+-  "types": "./dist/index.d.ts"
++  "types": "./dist/index.d.ts",
++  "overrides": {
++    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
++    "circuit-json": "file:../vendor/circuit-json-qualified-source.tgz",
++    "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
++    "@tscircuit/capacity-autorouter": "0.0.951",
++    "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
++    "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
++    "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
++    "@tscircuit/eval": "file:../vendor/tscircuit-eval-0.0.1506.tgz",
++    "circuit-json-to-pnp-csv": "file:../vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
++    "@tscircuit/cli": "file:../vendor/tscircuit-cli-0.1.2237.tgz"
++  }
+ }
+--- a/bun.lock
++++ b/bun.lock
+@@ -27,6 +27,18 @@
+       },
+     },
+   },
++  "overrides": {
++    "@tscircuit/capacity-autorouter": "0.0.951",
++    "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
++    "@tscircuit/cli": "file:../vendor/tscircuit-cli-0.1.2237.tgz",
++    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
++    "@tscircuit/eval": "file:../vendor/tscircuit-eval-0.0.1506.tgz",
++    "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
++    "circuit-json": "file:../vendor/circuit-json-qualified-source.tgz",
++    "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
++    "circuit-json-to-pnp-csv": "file:../vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
++    "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
++  },
+   "packages": {
+     "@babel/code-frame": ["@babel/code-frame@8.0.6", "", { "dependencies": { "@babel/helper-validator-identifier": "^8.0.6", "js-tokens": "^10.0.0" } }, "sha512-uMHhvmDmwFiLuiozaoRYTZHqMFuu3fem/X9JY78lohAuLoh8LSGGC8JqUzo2cVuBsBxkjMZNk56CE7ock8Xxkw=="],
+ 
+@@ -224,21 +236,21 @@
+ 
+     "@tscircuit/alphabet": ["@tscircuit/alphabet@0.0.22", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-naujsK9+mHsbLPFUKueXKzuMyIuxyKrz8ZvJBGUCqzLjrajbm6TRHpdtMYEZ88GiY2Tw/p1IYNNfdXlDiAHC9g=="],
+ 
+-    "@tscircuit/capacity-autorouter": ["@tscircuit/capacity-autorouter@0.0.845", "", { "dependencies": { "fast-json-stable-stringify": "^2.1.0", "object-hash": "^3.0.0", "stack-svgs": "^0.0.1" } }, "sha512-PC5CGtzi7efGhBsWUfuipCr2jGR43+UhAvR+q8e3N4uXrz3gDV+wLI4DVK6ieLjLelpLvlX6uUqEg7vgK0cJUg=="],
++    "@tscircuit/capacity-autorouter": ["@tscircuit/capacity-autorouter@0.0.951", "", { "dependencies": { "@tscircuit/pcb-trace-linter": "github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123", "fast-json-stable-stringify": "^2.1.0", "object-hash": "^3.0.0", "stack-svgs": "^0.0.1" } }, "sha512-G2LU9lKQoKv5CWeDPyn8pZNSbR56UXCj4UGVYwmjIt7fXe/zwyCsDtXOk442nioTGPlq4XVoXHpXQtioCBAOKg=="],
+ 
+     "@tscircuit/checks": ["@tscircuit/checks@0.0.171", "", { "peerDependencies": { "@flatten-js/core": "*", "@tscircuit/math-utils": "*", "circuit-json": "*", "circuit-json-to-connectivity-map": "*", "typescript": "^5.5.3" } }, "sha512-r0NB9xKxQcyr2DXEv8/hRn6QvZR4fJcMnnFOBhEdsMu7soVnqOF921n8hElaEdqZcWYWXts5SaNRRlfcdjKuYQ=="],
+ 
+-    "@tscircuit/circuit-json-util": ["@tscircuit/circuit-json-util@0.0.111", "", { "dependencies": { "parsel-js": "^1.1.2" }, "peerDependencies": { "circuit-json": "*", "transformation-matrix": "*", "zod": "3" } }, "sha512-jInIOTEkEoaz/uYe6hrK9fj42SKNrKw1pXrbRHzdSLYnIvIxnL57Gzx0fdFzoQhi7R8p9aHl66yAFX17Uc9lhg=="],
+-
+-    "@tscircuit/cli": ["@tscircuit/cli@0.1.2212", "", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "cli/entrypoint.js" } }, "sha512-a/LwYr3oqk83zM5Z0aBz+3dhfyZSlxryqDEfxwABjrgwbyEdkKZmStt6sLBSm72AW00Eblv1NDjfb5uJA8Mg/Q=="],
++    "@tscircuit/circuit-json-util": ["@tscircuit/circuit-json-util@../vendor/circuit-json-util-qualified-source.tgz", { "dependencies": { "@flatten-js/core": "^1.6.14", "parsel-js": "^1.1.2" }, "peerDependencies": { "circuit-json": "*", "transformation-matrix": "*", "zod": "3" } }],
++
++    "@tscircuit/cli": ["@tscircuit/cli@../vendor/tscircuit-cli-0.1.2237.tgz", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "./cli/entrypoint.js" } }],
+ 
+     "@tscircuit/copper-pour-solver": ["@tscircuit/copper-pour-solver@0.0.50", "", { "dependencies": { "@tscircuit/manifold-2d": "^0.0.6" }, "peerDependencies": { "typescript": "^5" } }, "sha512-nBp8wlU6/upSlzeiwYUUuy+h2jcWLp2ALo2H8uASWeI13yOlXbAswQlSAdL91qsB7z/RQsPRPQJIhUEOyEK/JA=="],
+ 
+-    "@tscircuit/core": ["@tscircuit/core@0.0.1766", "", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.19", "calculate-packing": "^0.0.86", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }, "sha512-Xy6ntQWEGb9G/ihlzyx7HwGB6NvYb5nGcrXLjREDzGdUadCb3wI+3Ued7yWMZmqZdOwEUk/Gf2TKA7BdAgiFJg=="],
++    "@tscircuit/core": ["@tscircuit/core@../vendor/core-qualified-source.tgz", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.24", "calculate-packing": "^0.0.90", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }],
+ 
+     "@tscircuit/create-fdm-enclosure": ["@tscircuit/create-fdm-enclosure@0.0.4", "", { "dependencies": { "@tscircuit/solver-utils": "^0.0.19", "graphics-debug": "^0.0.96", "jscad-planner": "^0.0.14" }, "peerDependencies": { "typescript": "^5" } }, "sha512-mJzfM2lG7QIJScb2WwzM91mXBMSC5l9hbAKYl5rjnYB+jjQGdjwRPA61SiUUUcixiZ5fcxgY8k/szpOiyAorqg=="],
+ 
+-    "@tscircuit/eval": ["@tscircuit/eval@0.0.1277", "", { "peerDependencies": { "@tscircuit/core": "*", "circuit-json": "*", "typescript": "^5.0.0", "zod": "3" } }, "sha512-+hiR8Am/o3uaPfCRPEB7/U/9KRUXvTgQMsvtItPvj2r0e76Gq47BE9stWMzG1Povu6mT4STCYQw3R74HNAuxng=="],
++    "@tscircuit/eval": ["@tscircuit/eval@../vendor/tscircuit-eval-0.0.1506.tgz", { "peerDependencies": { "@tscircuit/core": ">=0.0.1906", "circuit-json": "*", "typescript": "^5.0.0", "zod": "3" } }],
+ 
+     "@tscircuit/fanout-solver": ["@tscircuit/fanout-solver@0.0.37", "", { "dependencies": { "@tscircuit/capacity-autorouter": "0.0.718", "@tscircuit/solver-utils": "0.0.19", "graphics-debug": "0.0.99" }, "peerDependencies": { "typescript": "^5" } }, "sha512-XE5ifJGh06pptZWyq2vJzBQLn0L5eZrXhp2A79gPhPe126GP8vn6lxm59AuRfTz/YMMSpGIntCft7S0TsS/lSg=="],
+ 
+@@ -266,7 +278,9 @@
+ 
+     "@tscircuit/ngspice-spice-engine": ["@tscircuit/ngspice-spice-engine@0.0.20", "", { "peerDependencies": { "@tscircuit/props": "*", "circuit-json": "*", "spicets": "*", "typescript": "^5" } }, "sha512-dXjH51Wl95B6yEVkWCz65DpAHWTJRLHDyD/09eJUpGwLcYfd1F9m4E0XWbuiYZ8wKygYlACTozrSX9n3/LtfwA=="],
+ 
+-    "@tscircuit/props": ["@tscircuit/props@0.0.635", "", { "peerDependencies": { "circuit-json": "*", "react": "*", "zod": "*" } }, "sha512-h0LqFYIKh2J/jdN5PWKOvZqlXUxflv+lDsx8V4FiQtWfhKowjPnQGFq46g5j/86OlkHW8sMtpPnhVzpjW8RLRg=="],
++    "@tscircuit/pcb-trace-linter": ["@tscircuit/pcb-trace-linter@github:tscircuit/pcb-trace-linter#4c035f9", { "dependencies": { "@tscircuit/copper-pour-solver": "^0.0.59", "@tscircuit/core": "0.0.1974", "@tscircuit/infer-cable-insertion-point": "^0.0.4", "@tscircuit/miniflex": "^0.0.4", "@tscircuit/schematic-trace-solver": "^0.0.208", "@tscircuit/solver-utils": "^0.0.21", "@tscircuit/soup-util": "^0.0.41", "calculate-elbow": "^0.0.13", "circuit-json": "0.0.501", "connectivity-map": "^1.0.0", "debug": "^4.4.3", "earcut": "^3.2.3", "graphics-debug": "0.0.99", "minicssgrid": "^0.0.9", "spicey": "^0.0.14" } }, "tscircuit-pcb-trace-linter-4c035f9"],
++
++    "@tscircuit/props": ["@tscircuit/props@../vendor/props-qualified-source.tgz", { "peerDependencies": { "circuit-json": "*", "react": "*", "zod": "*" } }],
+ 
+     "@tscircuit/runframe": ["@tscircuit/runframe@0.0.2560", "", { "dependencies": { "@tscircuit/core": "^0.0.1705", "@tscircuit/eval": "^0.0.1277", "@tscircuit/solver-utils": "^0.0.7", "debug": "^4.4.0", "format-si-unit": "^0.0.12" } }, "sha512-EcvHcyJ8xpg5A3GwqborYCaFFu/FL2iG8vx/BczhJZZ92VsNsedJ01TxBHUx7vZ/J/tzEpHuO9TiLfuOJ14CBg=="],
+ 
+@@ -346,7 +360,7 @@
+ 
+     "chownr": ["chownr@1.1.4", "", {}, "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="],
+ 
+-    "circuit-json": ["circuit-json@0.0.476", "", { "peerDependencies": { "format-si-unit": "*" } }, "sha512-f5FUqAlyVY5uRI8HZaayEyjVHtdS7ELFuZ8ev2vRV8GooGMC44qiE+nTOPMQ9L5Aw/QhnruDHJfIRRlzOvAHXg=="],
++    "circuit-json": ["circuit-json@../vendor/circuit-json-qualified-source.tgz", { "peerDependencies": { "format-si-unit": "*" } }],
+ 
+     "circuit-json-to-3d-png": ["circuit-json-to-3d-png@0.0.7", "", { "dependencies": { "@resvg/resvg-js": "^2.6.2", "poppygl": "^0.0.24" }, "peerDependencies": { "circuit-json": "*", "circuit-json-to-gltf": "*", "format-si-unit": "*", "typescript": "^5" } }, "sha512-zI4cwlfWmv8vSmikufXVbLANJkmyEnyHxN2KF6zKpUPqRxDTh+YAqY0y6sFs0Ti+iKc4H7VIBTIY0XfEhUjdvA=="],
+ 
+@@ -356,13 +370,13 @@
+ 
+     "circuit-json-to-gltf": ["circuit-json-to-gltf@0.0.106", "", { "dependencies": { "@jscad/modeling": "^2.12.6", "earcut": "^3.0.2", "jscad-electronics": "^0.0.135", "jscad-to-gltf": "^0.0.5", "occt-import-js": "^0.0.23" }, "peerDependencies": { "@resvg/resvg-js": "2", "@resvg/resvg-wasm": "2", "@tscircuit/circuit-json-util": "*", "circuit-json": "*", "circuit-to-svg": "*", "typescript": "^5" }, "optionalPeers": ["@resvg/resvg-js", "@resvg/resvg-wasm"] }, "sha512-U59vURQ704QTN+PxTHn8t4c0NGgdSSrNiTNYjnsXDrxK0rhtacchd9QBD4iz6x5n15QSlhcds4dyC1AVAbB9GA=="],
+ 
+-    "circuit-json-to-pnp-csv": ["circuit-json-to-pnp-csv@0.0.8", "", { "dependencies": { "papaparse": "^5.4.1" }, "peerDependencies": { "@tscircuit/soup-util": "*", "typescript": "^5.0.0" } }, "sha512-m3ycvl5Cx1woE3qNdf457f2r/6WBxBxwbbkYbXbB/a+eEe7Y1Kk9BIq8GBsq7j25MTBeR0mbDMGL6yZGqSAVDA=="],
++    "circuit-json-to-pnp-csv": ["circuit-json-to-pnp-csv@../vendor/circuit-json-to-pnp-csv-0.0.19.tgz", { "dependencies": { "@tscircuit/circuit-json-util": "^0.0.117", "papaparse": "^5.4.1", "transformation-matrix": "3.0.0" }, "peerDependencies": { "@tscircuit/soup-util": "*", "circuit-json": "^0.0.489", "typescript": "^5.0.0" } }],
+ 
+     "circuit-json-to-simple-3d": ["circuit-json-to-simple-3d@0.0.9", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-thpCtDb9LpAQfGO+Z0hae19sxVAmJAMYM/It9UTMCtyXC3zoUHwRcp/oqtMO/ZIW+JDBhiR8AHmmtKScL2kW7Q=="],
+ 
+     "circuit-json-to-spice": ["circuit-json-to-spice@0.0.45", "", { "dependencies": { "circuit-json-to-connectivity-map": "^0.0.22" }, "peerDependencies": { "@tscircuit/circuit-json-util": "*", "circuit-json": "*", "spicets": "*", "typescript": "^5.0.0" } }, "sha512-e8THrj+jWK0BEjpw0relCYNCuEYEFAy5dFRYUQgMxdnrTjs2h5WoGWRNGPndqNkrpV5b63AzdX3wVR7Mtqi1HQ=="],
+ 
+-    "circuit-to-svg": ["circuit-to-svg@0.0.408", "", { "dependencies": { "@types/node": "^22.5.5", "bun-types": "^1.1.40", "calculate-elbow": "0.0.12", "debug": "^4.4.3", "svg-path-commander": "^2.1.11", "svgson": "^5.3.1", "transformation-matrix": "^2.16.1" }, "peerDependencies": { "@tscircuit/alphabet": "*" } }, "sha512-theqIm33WmMCvb4kzzgIre/GhzkN1G6SiviNCYPyCPuXBWNWutHFm7xF7r06gNro2NoJKf306BY4UAbJ13MCDg=="],
++    "circuit-to-svg": ["circuit-to-svg@../vendor/circuit-to-svg-qualified-source.tgz", { "dependencies": { "@types/node": "^22.5.5", "bun-types": "^1.1.40", "calculate-elbow": "0.0.12", "debug": "^4.4.3", "svg-path-commander": "^2.1.11", "svgson": "^5.3.1", "transformation-matrix": "^2.16.1" }, "peerDependencies": { "@tscircuit/alphabet": "*" } }],
+ 
+     "color": ["color@4.2.3", "", { "dependencies": { "color-convert": "^2.0.1", "color-string": "^1.9.0" } }, "sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A=="],
+ 
+@@ -734,21 +748,31 @@
+ 
+     "zod": ["zod@3.25.76", "", {}, "sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ=="],
+ 
++    "@tscircuit/core/calculate-cell-boundaries": ["calculate-cell-boundaries@0.0.24", "", { "dependencies": { "@tscircuit/solver-utils": "^0.0.19", "lucide-react": "^1.17.0", "react": "^18.3.1", "react-dom": "^18.3.1" }, "peerDependencies": { "typescript": "^5" } }, "sha512-68Uw9B+ZIgEKL80nUBXGIydtR3bDFm/UZq289LROLGIouKSHWd2Rcdo5G9OTAbyGeeFok57WMdvBI8rZQdyN+g=="],
++
++    "@tscircuit/core/calculate-packing": ["calculate-packing@0.0.90", "", { "peerDependencies": { "@tscircuit/circuit-json-util": "*", "typescript": "^5" } }, "sha512-DcmNPrTrUtrDyGVGD6EBN/WnR9/Eln21OnXC58bGnWS/3LCu4jjV68AW0BUVIJ8El6SUUkBbhJ4jEPvzGmg6Jg=="],
++
+     "@tscircuit/create-fdm-enclosure/@tscircuit/solver-utils": ["@tscircuit/solver-utils@0.0.19", "", { "peerDependencies": { "graphics-debug": "*", "typescript": "^5" } }, "sha512-UPUVgRRIrylSMJfKw7QwhSCvlODD+uAAwXc9jpOG06ipqteeeLRkj/HtHns31KQfLjRCSsGTvxMYBjmhaDDLGg=="],
+ 
+     "@tscircuit/create-fdm-enclosure/graphics-debug": ["graphics-debug@0.0.96", "", { "dependencies": { "@react-hook/resize-observer": "^2.0.2", "@tscircuit/alphabet": "^0.0.25", "@types/react-router-dom": "^5.3.3", "fast-png": "^8.0.0", "polished": "^4.3.1", "react-router-dom": "^6.28.0", "react-supergrid": "^1.0.10", "svgson": "^5.3.1", "transformation-matrix": "^3.0.0", "use-mouse-matrix-transform": "^1.3.0" }, "peerDependencies": { "bun-match-svg": "*", "looks-same": "^9.0.1", "typescript": "^5.0.0" }, "bin": { "gd": "dist/cli/cli.js", "graphics-debug": "dist/cli/cli.js" } }, "sha512-o3CKFIWtbSL1GSrDYaaYMUidjtCM5PClqvc9/vZVakUT1c61I935bcE++8DnLTXoevJMM1+92y8Uinxl//SuBQ=="],
+ 
+     "@tscircuit/create-fdm-enclosure/jscad-planner": ["jscad-planner@0.0.14", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-HrS5C1iTrmIZDlvNk065vg36qjIHyeiil60MyW7wccNGaGJSy2SYgWqPNvLU58tUTTTKWECWgd1Wzah80z4Z3A=="],
+ 
+-    "@tscircuit/fanout-solver/@tscircuit/capacity-autorouter": ["@tscircuit/capacity-autorouter@0.0.718", "", { "dependencies": { "fast-json-stable-stringify": "^2.1.0", "object-hash": "^3.0.0", "stack-svgs": "^0.0.1" } }, "sha512-DxWzF6sa+0ktVgIXaBEBa5jqyQacNaEPMPZFLjb2js0zUj2PcfihfaFBb456RTNDwRqEsjEIrqlvmAknMsiVVw=="],
+-
+     "@tscircuit/fanout-solver/@tscircuit/solver-utils": ["@tscircuit/solver-utils@0.0.19", "", { "peerDependencies": { "graphics-debug": "*", "typescript": "^5" } }, "sha512-UPUVgRRIrylSMJfKw7QwhSCvlODD+uAAwXc9jpOG06ipqteeeLRkj/HtHns31KQfLjRCSsGTvxMYBjmhaDDLGg=="],
+ 
+     "@tscircuit/fanout-solver/graphics-debug": ["graphics-debug@0.0.99", "", { "dependencies": { "@react-hook/resize-observer": "^2.0.2", "@tscircuit/alphabet": "^0.0.25", "@types/react-router-dom": "^5.3.3", "fast-png": "^8.0.0", "polished": "^4.3.1", "react-router-dom": "^6.28.0", "react-supergrid": "^1.0.10", "svgson": "^5.3.1", "transformation-matrix": "^3.0.0", "use-mouse-matrix-transform": "^1.3.0" }, "peerDependencies": { "@resvg/resvg-js": "*", "@tscircuit/image-utils": "*", "typescript": "^5.0.0" }, "bin": { "gd": "dist/cli/cli.js", "graphics-debug": "dist/cli/cli.js" } }, "sha512-qXqfb95WY2E2EPKVqxkqr0nk6DyewgShcVTiBNefVX5JZy2wjJRS1WnbX1tpUzqu0lRD0mQvAYr8jDWqSluamA=="],
+ 
+     "@tscircuit/footprinter/@tscircuit/mm": ["@tscircuit/mm@0.0.8", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-nl7nxE7AhARbKuobflI0LUzoir7+wJyvwfPw6bzA/O0Q3YTcH3vBkU/Of+V/fp6ht+AofiCXj7YAH9E446138Q=="],
+ 
+-    "@tscircuit/runframe/@tscircuit/core": ["@tscircuit/core@0.0.1705", "", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.19", "calculate-packing": "^0.0.86", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }, "sha512-kGyFxiGx9XZYg96Fy33bvFhyI/2kTQV/gRbRoTASxulYGHLQal8I8Q46UxuXd4rgazYQGoyLFdiLpaRXGO2mAg=="],
++    "@tscircuit/pcb-trace-linter/@tscircuit/copper-pour-solver": ["@tscircuit/copper-pour-solver@0.0.59", "", { "dependencies": { "@tscircuit/manifold-2d": "^0.0.6" }, "peerDependencies": { "typescript": "^5" } }, "sha512-4ue1tEwz5RkvWWhlwtwe/j1CbsHuv7gsrhxQZ+OveBbZTpSx6cSZNqw7+HOmfvL/A628w8ymIz16ZU1rPBBFMQ=="],
++
++    "@tscircuit/pcb-trace-linter/@tscircuit/schematic-trace-solver": ["@tscircuit/schematic-trace-solver@0.0.208", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-QKAUIqctxywzu+oyFXsKDFvO2ulDBMrUJWhkVFk6CJMOFHv7w4dgzTnFNGB8GhvYN43or3tLdC4cCQ+TMliGag=="],
++
++    "@tscircuit/pcb-trace-linter/@tscircuit/solver-utils": ["@tscircuit/solver-utils@0.0.21", "", { "peerDependencies": { "graphics-debug": "*", "typescript": "^5" } }, "sha512-Ez6eAYLZ/Nfj1aMW2AJA6RUJkuBRRaiLEOzxJ0nD4PYUoeWqIjASGc6uZ2tjyWLXkHXg8hnC/CfNnQsNRvogxw=="],
++
++    "@tscircuit/pcb-trace-linter/calculate-elbow": ["calculate-elbow@0.0.13", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-MvzpCMHR4f7U0K2epJomBhBKWFJB5+WNoGPo2qP4N3hGbT19eZxWIRyYEopySC7i51j/RYm6THtMLb+Zxz19fA=="],
++
++    "@tscircuit/pcb-trace-linter/graphics-debug": ["graphics-debug@0.0.99", "", { "dependencies": { "@react-hook/resize-observer": "^2.0.2", "@tscircuit/alphabet": "^0.0.25", "@types/react-router-dom": "^5.3.3", "fast-png": "^8.0.0", "polished": "^4.3.1", "react-router-dom": "^6.28.0", "react-supergrid": "^1.0.10", "svgson": "^5.3.1", "transformation-matrix": "^3.0.0", "use-mouse-matrix-transform": "^1.3.0" }, "peerDependencies": { "@resvg/resvg-js": "*", "@tscircuit/image-utils": "*", "typescript": "^5.0.0" }, "bin": { "gd": "dist/cli/cli.js", "graphics-debug": "dist/cli/cli.js" } }, "sha512-qXqfb95WY2E2EPKVqxkqr0nk6DyewgShcVTiBNefVX5JZy2wjJRS1WnbX1tpUzqu0lRD0mQvAYr8jDWqSluamA=="],
+ 
+     "@tscircuit/runframe/@tscircuit/solver-utils": ["@tscircuit/solver-utils@0.0.7", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-SB5+A92BMsozxOWfi6iXrcVv1UAFfbBAbKlWHG9TXWquEvAVPSukeCZJ08Yhq0b22T4qkMNy5bZWshXwlO+BuQ=="],
+ 
+@@ -764,6 +788,8 @@
+ 
+     "circuit-json-to-connectivity-map/@tscircuit/math-utils": ["@tscircuit/math-utils@0.0.9", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-sPzfXndijet8z29X6f5vnSZddiso2tRg7m6rB+268bVj60mxnxUMD14rKuMlLn6n84fMOpD/X7pRTZUfi6M+Tg=="],
+ 
++    "circuit-json-to-pnp-csv/transformation-matrix": ["transformation-matrix@3.0.0", "", {}, "sha512-C6NlNnD6T8JqDeY4BpGznuve4d8/JlLDZLcJbnnx7gQKoyk01+uk2XYVFjBGqvNsVxJUpUwb3WZpjpdPr+05FQ=="],
++
+     "circuit-json-to-spice/circuit-json-to-connectivity-map": ["circuit-json-to-connectivity-map@0.0.22", "", { "dependencies": { "@tscircuit/math-utils": "^0.0.9" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-HN8DiISjZZLTglGEkYNRpKeQ/DMG4dDo5j4Hck0UGSJbpux9aFwtJOGszMf06Inh/gu5oKBrpZJIeWxaNacKUg=="],
+ 
+     "color/color-convert": ["color-convert@2.0.1", "", { "dependencies": { "color-name": "~1.1.4" } }, "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ=="],
+@@ -780,18 +806,20 @@
+ 
+     "tscircuit/@tscircuit/alphabet": ["@tscircuit/alphabet@0.0.25", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-PWLjptI6AlLEtF/wjN1N8uC+n3G7vtg0j3xKE1fgWHDhahtnlQRqHDrtPSLlkIR9aJjRfjplzLuaUEaCRvJmZA=="],
+ 
+-    "tscircuit/@tscircuit/circuit-json-util": ["@tscircuit/circuit-json-util@0.0.106", "", { "dependencies": { "parsel-js": "^1.1.2" }, "peerDependencies": { "circuit-json": "*", "transformation-matrix": "*", "zod": "3" } }, "sha512-7HxREkrIiC+EcuJYU4i5o9UbTRhgoeTOY03zCHeGhNUhUbUlrDdIciraI1Yn+qb+/ot5+QbhkrqZMTAV8lmpmw=="],
+-
+     "tscircuit/circuit-json-to-gltf": ["circuit-json-to-gltf@0.0.118", "", { "dependencies": { "@jscad/modeling": "^2.12.6", "earcut": "^3.0.2", "jscad-electronics": "^0.0.146", "jscad-planner": "^0.0.14", "jscad-to-gltf": "^0.0.5", "occt-import-js": "^0.0.23" }, "peerDependencies": { "@resvg/resvg-js": "2", "@resvg/resvg-wasm": "2", "@tscircuit/circuit-json-util": "*", "circuit-json": "*", "circuit-to-svg": "*", "typescript": "^5" }, "optionalPeers": ["@resvg/resvg-js", "@resvg/resvg-wasm"] }, "sha512-j0EZjW/xd2d2S+Ke8G7vrGa1+WUeyCWRgC5bWyesQV1jM/1P6X6JKuq248XZP4plrnUyvApUEnJ/OJuPgvhY6g=="],
+ 
+-    "tscircuit/circuit-to-svg": ["circuit-to-svg@0.0.407", "", { "dependencies": { "@types/node": "^22.5.5", "bun-types": "^1.1.40", "calculate-elbow": "0.0.12", "debug": "^4.4.3", "svg-path-commander": "^2.1.11", "svgson": "^5.3.1", "transformation-matrix": "^2.16.1" }, "peerDependencies": { "@tscircuit/alphabet": "*" } }, "sha512-qqEF+V6HKIgnc6SBQnJPEoM2TinsfIEwR379w/kb8pV4wdqgTrMiA8Y6zTraqTlp74wReZ0EVIsnHNW/pojK2w=="],
+-
+     "tscircuit/poppygl": ["poppygl@0.0.27", "", { "dependencies": { "fast-png": "^8.0.0", "gl-matrix": "^3.4.4", "pureimage": "^0.4.18", "readable-stream": "^4.7.0" }, "peerDependencies": { "typescript": "^5" } }, "sha512-6bfYouOFsLOuXW+wLEjkJjV8T/wdLxhjA3dJDOwjpUDnSgYUZw4yHRN7TIRY7neM8mt1aFsljKVoWNECJNBhPA=="],
+ 
+     "use-mouse-matrix-transform/react": ["react@18.3.1", "", { "dependencies": { "loose-envify": "^1.1.0" } }, "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ=="],
+ 
+     "use-mouse-matrix-transform/transformation-matrix": ["transformation-matrix@3.1.0", "", {}, "sha512-oYubRWTi2tYFHAL2J8DLvPIqIYcYZ0fSOi2vmSy042Ho4jBW2ce6VP7QfD44t65WQz6bw5w1Pk22J7lcUpaTKA=="],
+ 
++    "@tscircuit/core/calculate-cell-boundaries/@tscircuit/solver-utils": ["@tscircuit/solver-utils@0.0.19", "", { "peerDependencies": { "graphics-debug": "*", "typescript": "^5" } }, "sha512-UPUVgRRIrylSMJfKw7QwhSCvlODD+uAAwXc9jpOG06ipqteeeLRkj/HtHns31KQfLjRCSsGTvxMYBjmhaDDLGg=="],
++
++    "@tscircuit/core/calculate-cell-boundaries/react": ["react@18.3.1", "", { "dependencies": { "loose-envify": "^1.1.0" } }, "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ=="],
++
++    "@tscircuit/core/calculate-cell-boundaries/react-dom": ["react-dom@18.3.1", "", { "dependencies": { "loose-envify": "^1.1.0", "scheduler": "^0.23.2" }, "peerDependencies": { "react": "^18.3.1" } }, "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw=="],
++
+     "@tscircuit/create-fdm-enclosure/graphics-debug/@tscircuit/alphabet": ["@tscircuit/alphabet@0.0.25", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-PWLjptI6AlLEtF/wjN1N8uC+n3G7vtg0j3xKE1fgWHDhahtnlQRqHDrtPSLlkIR9aJjRfjplzLuaUEaCRvJmZA=="],
+ 
+     "@tscircuit/create-fdm-enclosure/graphics-debug/transformation-matrix": ["transformation-matrix@3.1.0", "", {}, "sha512-oYubRWTi2tYFHAL2J8DLvPIqIYcYZ0fSOi2vmSy042Ho4jBW2ce6VP7QfD44t65WQz6bw5w1Pk22J7lcUpaTKA=="],
+@@ -800,6 +828,10 @@
+ 
+     "@tscircuit/fanout-solver/graphics-debug/transformation-matrix": ["transformation-matrix@3.1.0", "", {}, "sha512-oYubRWTi2tYFHAL2J8DLvPIqIYcYZ0fSOi2vmSy042Ho4jBW2ce6VP7QfD44t65WQz6bw5w1Pk22J7lcUpaTKA=="],
+ 
++    "@tscircuit/pcb-trace-linter/graphics-debug/@tscircuit/alphabet": ["@tscircuit/alphabet@0.0.25", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-PWLjptI6AlLEtF/wjN1N8uC+n3G7vtg0j3xKE1fgWHDhahtnlQRqHDrtPSLlkIR9aJjRfjplzLuaUEaCRvJmZA=="],
++
++    "@tscircuit/pcb-trace-linter/graphics-debug/transformation-matrix": ["transformation-matrix@3.1.0", "", {}, "sha512-oYubRWTi2tYFHAL2J8DLvPIqIYcYZ0fSOi2vmSy042Ho4jBW2ce6VP7QfD44t65WQz6bw5w1Pk22J7lcUpaTKA=="],
++
+     "calculate-cell-boundaries/react-dom/scheduler": ["scheduler@0.23.2", "", { "dependencies": { "loose-envify": "^1.1.0" } }, "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ=="],
+ 
+     "circuit-json-to-spice/circuit-json-to-connectivity-map/@tscircuit/math-utils": ["@tscircuit/math-utils@0.0.9", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-sPzfXndijet8z29X6f5vnSZddiso2tRg7m6rB+268bVj60mxnxUMD14rKuMlLn6n84fMOpD/X7pRTZUfi6M+Tg=="],
+@@ -809,6 +841,8 @@
+     "tscircuit/circuit-json-to-gltf/jscad-electronics": ["jscad-electronics@0.0.146", "", { "dependencies": { "@tscircuit/mm": "^0.0.8" }, "peerDependencies": { "@jscad/modeling": "^2.12.5", "@tscircuit/alphabet": "^0.0.24", "@tscircuit/footprinter": "*", "circuit-json": "^0.0.426", "jscad-fiber": "^0.0.85", "react": "19.1.0", "react-dom": "19.1.0", "three": "^0.179.1" }, "optionalPeers": ["jscad-fiber"] }, "sha512-YXpyFDUPjywIdn13IV/dOZGWxjQb/cgrymRt8USFbNkFA6J+UpqOgMw2zEfxYTewm9EliOphlJJ8RzfeHnGT+A=="],
+ 
+     "tscircuit/circuit-json-to-gltf/jscad-planner": ["jscad-planner@0.0.14", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-HrS5C1iTrmIZDlvNk065vg36qjIHyeiil60MyW7wccNGaGJSy2SYgWqPNvLU58tUTTTKWECWgd1Wzah80z4Z3A=="],
++
++    "@tscircuit/core/calculate-cell-boundaries/react-dom/scheduler": ["scheduler@0.23.2", "", { "dependencies": { "loose-envify": "^1.1.0" } }, "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ=="],
+ 
+     "prebuild-install/tar-fs/tar-stream/readable-stream": ["readable-stream@3.6.2", "", { "dependencies": { "inherits": "^2.0.3", "string_decoder": "^1.1.1", "util-deprecate": "^1.0.1" } }, "sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA=="],
+ 

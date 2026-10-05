@@ -1,0 +1,53 @@
+{
+  "baseline_summary": [
+    "278 pass\n",
+    "31 fail\n",
+    "Ran 309 tests across 165 files. [193.46s]"
+  ],
+  "corrected_summary": [
+    "243 pass\n",
+    "68 fail\n",
+    "1 error\n",
+    "Ran 311 tests across 167 files. [193.82s]"
+  ],
+  "new_failures": [
+    "should convert C1046 into typescript file",
+    "should convert C105419 into typescript file",
+    "should convert C128415 into typescript file",
+    "should convert C131337 into typescript file",
+    "should convert C14877 into typescript file",
+    "should convert C157929 into typescript file",
+    "should convert C157947 into typescript file",
+    "should convert C158012 into typescript file",
+    "should convert C160354 into typescript file",
+    "should convert C165948 into typescript file",
+    "should convert C18185602 into typescript file",
+    "should convert C19076967 into typescript file",
+    "should convert C19795120 into typescript file",
+    "should convert C2040 into typescript file",
+    "should convert C22446580 into typescript file",
+    "should convert C23689428 into typescript file",
+    "should convert C265111 into typescript file",
+    "should convert C281113 into typescript file",
+    "should convert C2838502 into typescript file",
+    "should convert C2848306 into typescript file",
+    "should convert C2913206 into typescript file",
+    "should convert C2961147 into typescript file",
+    "should convert C2979182 / MY-18650-02 into typescript file",
+    "should convert C309274 into typescript file",
+    "should convert C3178291 into typescript file",
+    "should convert C393941 into typescript file",
+    "should convert C410353 into typescript file",
+    "should convert C46497 into typescript file",
+    "should convert C46749 into typescript file",
+    "should convert C490691 into typescript file",
+    "should convert C561765 into typescript file",
+    "should convert C5830143 into typescript file",
+    "should convert C6186 into typescript file",
+    "should convert C75749 into typescript file",
+    "should convert C8465 into typescript file",
+    "should convert C88224 into typescript file"
+  ],
+  "baseline_only_failures": [],
+  "common_failure_count": 31
+}

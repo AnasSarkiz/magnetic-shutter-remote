@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-paste-mask-field-fidelity.test.ts:
+(pass) preserves raw source margins and paste contours across existing import fixtures [47.22ms]
+
+ 1 pass
+ 0 fail
+ 4220 expect() calls
+Ran 1 test across 1 file. [183.00ms]

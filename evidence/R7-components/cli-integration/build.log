@@ -1,0 +1,6 @@
+$ bun run build:bun
+$ bun run scripts/bun-build.ts
+main.js 29.81 MB
+build.worker.js 0.94 MB
+snapshot.worker.js 0.50 MB
+index.js 16.54 MB

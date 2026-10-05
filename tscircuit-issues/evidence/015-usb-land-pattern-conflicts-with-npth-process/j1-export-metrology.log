@@ -1,0 +1,54 @@
+[
+  {
+    "source_hole_id": "pcb_hole_0",
+    "source_pad_id": "pcb_smtpad_0",
+    "reference": "J1",
+    "terminal": "pin5 / GND1",
+    "hole": {
+      "x": -2.89,
+      "y": 22.9601,
+      "diameter": 0.649986
+    },
+    "pad": {
+      "x": -3.200146,
+      "y": 21.884936,
+      "width": 0.599999,
+      "height": 1.15001,
+      "rotation_radians": 0
+    },
+    "nearest_copper_point": [
+      -2.9001465,
+      22.459941
+    ],
+    "clearance_mm": 0.17526890814737328,
+    "threshold_mm": 0.2,
+    "manufacturer_nominal_mm": 0.17509999000199944,
+    "source_clearance_mm": 0.17528646327567754
+  },
+  {
+    "source_hole_id": "pcb_hole_1",
+    "source_pad_id": "pcb_smtpad_2",
+    "reference": "J1",
+    "terminal": "pin7 / GND2",
+    "hole": {
+      "x": 2.89,
+      "y": 22.9601,
+      "diameter": 0.649986
+    },
+    "pad": {
+      "x": 3.199892,
+      "y": 21.884936,
+      "width": 0.599999,
+      "height": 1.15001,
+      "rotation_radians": 0
+    },
+    "nearest_copper_point": [
+      2.8998925,
+      22.459941
+    ],
+    "clearance_mm": 0.17526382088028636,
+    "threshold_mm": 0.2,
+    "manufacturer_nominal_mm": 0.17509999000199944,
+    "source_clearance_mm": 0.17528138222899436
+  }
+]

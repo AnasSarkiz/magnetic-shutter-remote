@@ -1,0 +1,56 @@
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:77 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:79 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:81 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:83 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:85 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:87 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:89 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/B_Paste.gbr:91 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:116 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:118 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:120 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:122 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:124 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:126 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:128 "LR180": Unknown statement found: "LR180", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/rs274x.py:690: UnknownStatementWarning: fabrication/review-gerbers/F_Paste.gbr:130 "LR0": Unknown statement found: "LR0", ignoring.
+  warnings.warn(f'{self.filename}:{self.lineno} "{self._shorten_line()}": {msg}', kls)
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py:573: SyntaxWarning: fabrication/review-gerbers/drill-L1-L2.drl:14 "G90": G90 header statement found after end of header
+  warnings.warn(f'{self.filename}:{self.lineno} "{self.line}": {msg}', SyntaxWarning)
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 604, in do_parse
+    raise ValueError('Unknown excellon statement:', line)
+ValueError: ('Unknown excellon statement:', 'G85X-4.320Y26.240')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/scripts/review-gerbers.py", line 8, in <module>
+    elif path.suffix=='.drl':parsed=ExcellonFile.open(path)
+                                    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 346, in open
+    return kls.from_string(filename.read_text(), settings=settings,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            filename=filename, plated=plated, external_tools=external_tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 358, in from_string
+    parser.do_parse(data, filename=filename)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/gerber-review-venv/lib/python3.14/site-packages/gerbonara/excellon.py", line 606, in do_parse
+    raise SyntaxError(f'{filename}:{lineno} "{line}": {e}') from e
+SyntaxError: fabrication/review-gerbers/drill-L1-L2.drl:18 "G85X-4.320Y26.240": ('Unknown excellon statement:', 'G85X-4.320Y26.240')

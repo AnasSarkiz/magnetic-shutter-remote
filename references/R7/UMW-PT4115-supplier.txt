@@ -1,0 +1,683 @@
+                                                                                  UMW PT4115
+                                                                                    30V/1.2A high dimming ratio LED constant
+                                                                                                                current driver
+
+
+
+
+1.Description                                                      2.Features
+
+UMW PT4115 is a step-down and constant current                      Very few external components
+
+source with continuous inductor current conduction                  Wide input voltage range: from 6 V to 30 v
+
+mode, which is used to drive one or more LEDs in                    Output current of 1.2 A
+
+series.The input voltage range of PT4115 is from 6V                 LED switch, analog dimming and PWM dimming
+
+to 30V, and the output current is adjustable, up to                 are realized by multiplexing dim pins
+
+1.2A.Depending on the input voltage and external                    5% accuracy of output current
+
+devices, PT4115 can drive LEDs up to tens of watts.                 Up to 97% efficiency
+
+PT4115 has built-in power switch. It uses high-end                  Constant current control method with adjustable
+
+current sampling to set the average LED current.                    output
+
+Through the dim pin, it can accept analog dimming
+
+and a wide range of PWM dimming.When the volt-
+
+age of dim is lower than 0.3 V, the power switch will
+
+be turned off and PT4115 will enter the standby state
+
+of extremely low working current.
+
+
+
+3.Applications
+
+Low voltage LED spotlight instead of halogen lamp,
+vehicle LED light,Led standby lamp, LED signal lamp
+
+
+
+
+UTD Semiconductor Co.,Limited
+www.umw-ic.com                                          Jul.2025                                                      1 of 13
+www.umw-ic.com                                                               UMW PT4115
+                                                                               30V/1.2A high dimming ratio LED constant
+                                                                                                           current driver
+
+
+
+
+4.Pinning Information
+
+
+
+                                         SW 1                    5 VIN
+
+
+
+                                        GND 2                      Esposed
+                                                                   Pad
+
+
+
+                                         DIM 3                   4 CSM
+
+
+
+
+                                                  SOT89-5
+
+
+Outlet function
+
+ SOT89-5          Pin Name                                      Description
+      1               SW        Drain end of power on
+
+      2              GND        Power and ground signals
+
+      3              DIM        Switch enable, analog and PWM dimming terminals
+
+      4              CSN        The sampling resistor is connected between CSN and VIN
+
+      5               VIN       The power input terminal must be connected with the bypass capacitor nearby
+
+      -           Exposed PAD   Cooling end, internal grounding, pasted on PCB to reduce thermal resistance
+
+
+
+
+                                                               UTD Semiconductor Co.,Limited
+2 of 13                                                                            Jul.2025
+www.umw-ic.com                                                                           UMW PT4115
+                                                                                          30V/1.2A high dimming ratio LED constant
+                                                                                                                      current driver
+
+
+
+
+5.Absolute Maximum Ratings (1)
+
+                            Parameter                                     Value                    Value                  Units
+ Supply voltage                                                             VIN                  -0.3 to 35                  V
+
+ Drain terminal of power switch                                             SW                   -0.3 to 35                  V
+
+ Current sampling terminal (relative VIN)                                  CSN                   0.3 to -6                   V
+
+ Switch enable, analog and PWM dimming terminals                           DIM                   -0.3 to 6                   V
+
+ Power switch output current                                                ISW                      1.5                     A
+
+ Power waste(2)                                                            PDMAX                     1.5                     W
+
+ Thermal resistance, SOT89-5 (θJA)                                         CSCR                      45                    °C/W
+
+ Working junction temperature range                                          TJ                 -40 to 150                   °C
+
+ Storage temperature range                                                 TSTG                 -55 to 150                   °C
+
+
+explain:
+1. "Maximum rating" refers to the possibility of chip damage beyond the operating range."Electrical parameters" define the speci-
+fications for DC and AC parameters of the device within the operating range and under test conditions that guarantee specific
+performance indicators.For the parameters without given upper and lower limits, the typical values reasonably reflect the device
+performance.
+2. The maximum power consumption decreases as the temperature increases, which is determined by the maximum junction
+temperature TJMAX, θJA, and ambient temperature TA. The maximum permissible power consumption is PDMAX =(TJMAX -TA) / θJA or
+the number given in the "Maximum Rating" (lower).
+
+
+
+
+6.Recommended scope of work (1)
+
+                            Parameter                                     Value                    Value                  Units
+ Supply voltage                                                             VIN                   6 to 30                    V
+
+ Working temperature                                                       TOCSC                 -25 to 85                   °C
+
+explain:
+1. "Recommended operating range" means that within this range, the device functions normally, but does not fully guarantee the
+performance limit."Electrical parameters" define the specifications for DC and AC parameters of the device within the operating
+range and under test conditions that guarantee specific performance indicators.
+
+
+
+
+                        UTD Semiconductor Co.,Limited
+                        Jul.2025                                                                                            3 of 13
+www.umw-ic.com                                                                   UMW PT4115
+                                                                                   30V/1.2A high dimming ratio LED constant
+                                                                                                               current driver
+
+
+
+
+7.Electrical Characteristics
+Unless otherwise specified: TA=25°C, VIN=12V
+
+                    Parameter                      Symbol      Test conditions        Min        Typ       Max Units
+ input voltage                                        VIN                               6                    30        V
+
+ Under voltage protection                           VUVLO     VIN decreased                       5.1                  V
+
+ Under voltage protection hysteresis               VUVLO, HYS VIN increased                      500                  mV
+
+ Maximum operating frequency                         FSW                                                     1       MHz
+
+ Current sampling
+
+ Average sampling voltage                            VCSN     VIN − VCSN               95        100        105       mV
+
+ Sampling voltage hysteresis                       VCSN_HYS                                      ±15                  %
+
+ Input current of CSN pin                            ICSN     VIN − VCSN=50mV                      8                  µA
+
+ Turn off current
+
+ Turn off current                                    IOFF     VDIM < 0.3V                         60                  µA
+
+ Dim input
+
+ Working voltage of internal circuit                 VDIM     Dim floating                         5                   V
+
+ Dim input high level                               VDIM_H                             2.5                             V
+
+ Dim input low level                                VDIM_L                                                  0.3        V
+
+ Analog dimming voltage range                      VDIM_DC                             0.5                  2.5        V
+
+ Maximum PWM dimming frequency                       fDIM     fOSC=500kHz                                    50      kHz
+
+ Low frequency PWM dimming duty cycle
+                                                              fDIM=100Hz             0.02%                   1
+ range around                                      DPWM_LF
+
+ Low frequency PWM dimming ratio                                                               5000:1
+
+ High frequency PWM dimming duty cycle
+                                                              fDIM=20kHz               4%                    1
+ range around                                      DPPWM_HF
+
+ Low frequency PWM dimming ratio                                                                 25:1
+
+ Dim pull up internal working voltage resistance     RDIM                                        200                  KΩ
+
+ Dim earth leakage current                           IDIM_L   VDIM=0                              4.2                 µA
+
+
+
+
+                                                                   UTD Semiconductor Co.,Limited
+4 of 13                                                                                Jul.2025
+www.umw-ic.com                                                                    UMW PT4115
+                                                                                  30V/1.2A high dimming ratio LED constant
+                                                                                                              current driver
+
+
+
+
+                Parameter                       Symbol          Test conditions      Min        Typ       Max Units
+Power switch
+
+                                                               VIN =24V                          0.4                  Ω
+SW on resistance                                      RSW
+                                                               VIN =12V                          0.6                  Ω
+
+SW continuous current                            ISWmean                                                   1.2        A
+
+SW leakage current                                    ILEAK                                      0.5        5        µA
+
+Overheating protection
+
+Overheat protection temperature                       TSD                                       160                  °C
+
+Overheating protection hysteresis                    TSD-hys                                     20                  °C
+
+
+
+
+                     UTD Semiconductor Co.,Limited
+                     Jul.2025                                                                                       5 of 13
+www.umw-ic.com                                                                    UMW PT4115
+                                                                                    30V/1.2A high dimming ratio LED constant
+                                                                                                                current driver
+
+
+
+
+8.Function Description
+Functional block diagram
+
+
+
+
+            VIN
+
+
+
+
+Working principle description
+
+UMW PT4115, inductor (L) and current sampling resistor (RS) form a self oscillating continuous inductor current
+
+mode buck constant current LED controller.When VIN is powered on, the initial current of inductance (L) and current
+sampling resistor (RS) is zero, and the output current of LED is also zero.At this time, the output of CS comparator
+
+is high, the internal power switch is on, and the potential of SW is low.The current flows from VIN to ground through
+
+inductance (L), current sampling resistor (RS), led and internal power switch. The slope of current rise is determined
+
+by VIN, inductance (L) and led voltage drop, resulting in a voltage difference VCSN on RS.When (VIN− VCSN)> 115mV,
+
+the output of CS comparator becomes low, the internal power switch is turned off, and the current flows through
+
+inductance (L), current sampling resistance (RS), led and Schottky diode (D) at another slope.(VIN-VCSN, < 85MV,
+
+the power switch is re opened, so that the average current on the LED is:
+
+
+                                                     0.085+0.115
+                                              IOUT                 0.1/RS
+                                                       2 x RS
+
+
+The high-end current sampling structure makes the number of external components very small. The sampling
+
+resistor of 1% accuracy is adopted, and the output current of LED is controlled at Accuracy of ± 5%.
+
+
+
+
+                                                                    UTD Semiconductor Co.,Limited
+6 of 13                                                                                 Jul.2025
+www.umw-ic.com                                                                     UMW PT4115
+                                                                                    30V/1.2A high dimming ratio LED constant
+                                                                                                                current driver
+
+
+
+
+  UMW PT4115 can add PWM signal to DIM pin for dimming. When the voltage of DIM pin is lower than 0.3 V, turn
+
+off LED current, and when it is higher than 2.5 V, all LED current will be turned on. The frequency range of PWM
+
+dimming is from 100 Hz to more than 20 kHz.When the high level is at Between 0.5 V and 2.5 V, dimming is also
+
+possible. See the following application instructions for details.
+
+  DIM current can also be adjusted by adjusting the maximum DC current of the LED through the external resista-
+
+nce of the LED.Mective dimming range for DC voltage (VDIM) is 0.5 V to 2.5 v. DC voltage (VDIM) is higher than the
+
+output LED current remains constant and is set by (0.1 / Rs) .The LED current can also be adjusted by connecting
+
+a resistor between DIM and ground. There is a pull-up resistor (typical 1.2 megaohm) connected to the internal reg-
+
+ulated voltage of 5V. The voltage of the DIM pin is determined by the internal and external resistance voltage.
+
+  DIM pins can float in the air during normal operation.When the voltage applied to the dim is less than 0.3 V, the
+
+internal power switch is turned off and the LED current drops to zero.During the shutdown period, the internal volta-
+
+ge stabilizing circuit maintains standby operation, and the static current is only 60μa.
+
+  In addition, in order to ensure reliability, the PT4115 contains a thermal protection function (TSD), and the packa-
+
+ge contains a heat dissipation PAD.The overheat protection function protects the chip and system when the chip is
+
+overheated (160°C), and the external heat dissipation PAD enhances the chip power consumption. Therefore,
+
+PT4115 can safely output large current.PT4115 can also connect the thermistor (NTC) to the LED through the DIM
+
+pin, detect the temperature, dynamically adjust the LED current, and protect the LED. See the application instructi-
+
+ons below for details.
+
+
+
+
+9.Application Description
+1) RS rage LED current is set by external sampling resistance R
+
+The average LED current is set by the external current sampling resistor RS.The average current of the LED is det-
+
+ermined by the resistance RS connected at both ends of VIN and CSN:
+
+
+                                                IOUT=0.1/ RS (RS ≥ 0.082 Ω)
+
+The above equation is based on the assumption that the dim terminal is floating or the external dim terminal voltage
+
+is higher than 2.5V (but must be lower than 5V).actually,RS is the maximum output current of LED. Through DIM,
+
+the actual output current of LED can be reduced to any value.
+
+
+
+
+                         UTD Semiconductor Co.,Limited
+                         Jul.2025                                                                                     7 of 13
+www.umw-ic.com                                                                         UMW PT4115
+                                                                                        30V/1.2A high dimming ratio LED constant
+                                                                                                                    current driver
+
+
+
+
+2) Analog dimming by DC voltage
+
+DC voltage(VDIM) can be applied to dim to reduce the LED output current. The maximum LED output current is
+
+set by (0.1/RS Led average output current calculation formula:
+
+                                                    0.1 x VDM
+                                            IOUT                (0.5V ≤ VDIM ≤ 2.5V)
+                                                    2.5 x Rs
+
+
+When VDIM is in the range of (2.5 V ≤ VDIM≤ 5 V), the LED maintains 100% current, which is equal to IOUT= 0.1 / Rs
+
+
+
+3) Dimming by PWM signal
+
+The maximum average current of LED is determined by the resistance RSconnected at both ends of VIN and CSN.
+
+By adding PWM signal with variable duty cycle to dim pin, the output current can be reduced to realize dimming.
+
+The calculation method is as follows:
+
+                                             0.1 x D
+                                   IOUT                  (0 ≤ D ≤100%, 2.5V<VPULSE<5V)
+                                               Rs
+
+
+If the high level is less than 2.5V, then
+
+                                       VPULSE 0.1 x D
+                                IOUT                      (0 ≤ D ≤100%, 0.5V<VPULSE<2.5V)
+                                            2.5 x Rs
+
+
+4) Turn off mode
+
+By connecting the voltage below 0.3V at the DIM terminal, the system is turned off.Normally, the quiescent current
+
+of the system is kept at 60μA following
+
+
+
+5) Soft start mode
+
+By connecting an external capacitor into the DIM, the voltage at the DIM terminal will rise slowly when starting, so
+
+that the current of LED will also rise slowly, so as to realize soft start.In general, the relationship between soft start
+
+time and external capacitance is about 0.8 ms / nF.
+
+
+
+
+                                                                        UTD Semiconductor Co.,Limited
+8 of 13                                                                                     Jul.2025
+www.umw-ic.com                                                                    UMW PT4115
+                                                                                    30V/1.2A high dimming ratio LED constant
+                                                                                                                current driver
+
+
+
+
+6) Bypass capacitance
+
+A bypass capacitor with low equivalent series resistance (ESR) must be connected to the power input. The larger
+
+the ESR, the greater the efficiency loss.The bypass capacitor should be able to withstand a large peak current,
+
+make the input current of the power supply average, and reduce the impact on the input power supply.For DC input,
+
+the minimum value of the bypass capacitance is 4.7 μF. in AC input or low voltage input, the bypass capacitance
+
+needs to be larger.The bypass capacitor is as close as possible to the input pin of the chip.In order to ensure the
+
+stability under different temperature and working voltage, it is recommended to use X5R / X7R capacitor.
+
+
+
+7) Select inductance
+
+The recommended inductance parameter range of PT4115 is 27 μH ~ 100μH.The saturation current of the inductor
+
+must be 30% to 50% higher than the output current.The smaller the output current of LED is, the larger the inducta-
+
+nce value is recommended.On the premise that the current capacity meets the requirements, it is hoped that the
+
+inductance will be larger, so that the effect of constant current will be better.The inductor should be placed as close
+
+to VIN and SW as possible to avoid efficiency loss caused by parasitic resistance.The following table gives sugge-
+
+stions for inductance selection:
+
+
+
+          Output current                         Inductance Value                       Saturation Current
+               IOUT > 1A                              27 ~ 33µH
+
+            0.8A <IOUT ≤ 1A                           33 ~ 47µH                  It is 1.3 ~ 1.5 times higher than the
+
+           0.4A <IOUT ≤ 0.8A                          47 ~ 68µH                              output current
+
+              IOUT ≤ 0.4A                             68 ~ 100µH
+
+
+8) Select diode
+
+In order to ensure maximum efficiency and performance, Schottky diodes with fast recovery, low forward voltage
+
+drop, low parasitic capacitance and low leakage current should be selected for diode (D). The current capacity and
+
+withstand voltage depend on the specific application, but a margin of 30% should be maintained, which is conducive
+
+to stable and reliable operation.It should also be noted that Schottky's reverse leakage current should be considered
+
+when the temperature is higher than 85°C.Excessive leakage will increase the power dissipation of the system.The
+
+Schottky diode with low voltage drop must be selected for AC12V rectifier diode (D) to reduce its power dissipation.
+
+
+
+
+                      UTD Semiconductor Co.,Limited
+                      Jul.2025                                                                                        9 of 13
+www.umw-ic.com                                                                     UMW PT4115
+                                                                                     30V/1.2A high dimming ratio LED constant
+                                                                                                                 current driver
+
+
+
+
+9) TSIc (TSIc protection)
+
+The over temperature protection function (TSD) is set in PT4115 to ensure the stable and reliable operation of the
+
+system.When the IC chip temperature exceeds 160°C, the IC will enter the TSD protection state and stop the curr-
+
+ent output. When the temperature is lower than 140°C, the IC will return to the working state.
+
+
+
+10) Notes on PCB layout
+
+Reasonable PCB layout is very important to ensure system stability and low noise.Using multi-layer PCB is an effe-
+
+ctive way to avoid noise interference.In order to effectively reduce the noise of the current circuit, the input bypass
+
+capacitor should be grounded separately.PCB copper foil should be well connected with heat dissipation PAD and
+
+GND of PT4115.The high current grounding circuit, the grounding lead of input bypass capacitor and the grounding
+
+lead of output filter are connected to the same point (Star grounding method) to minimize the grounding noise.
+
+
+
+10.Application Circuit Diagram
+
+
+
+
+                                                                                   PT4115
+
+
+
+
+                                    Application Figure 1, 1W spotlight application
+
+
+
+
+                                                                   UTD Semiconductor Co.,Limited
+10 of 13                                                                               Jul.2025
+www.umw-ic.com                                                              UMW PT4115
+                                                                            30V/1.2A high dimming ratio LED constant
+                                                                                                        current driver
+
+
+
+
+11.SOT89-5 Package Outline Dimensions
+
+
+
+                                            F
+
+
+
+
+                                                                        C
+                          E                                   L3
+           L2       L1
+
+
+
+
+                                                          L
+
+
+
+
+                                            H        H1
+
+
+
+
+                                            B
+
+
+
+
+                                             D
+
+
+
+
+                                                                                A
+
+
+
+
+DIMENSIONS (mm are the original dimensions)
+
+  Symbol        A        B      C       D        E   F        H    H1       L       L1      L2        L3
+    Min     1.450 2.950 0.330 4.450 2.450 1.650 0.450 0.370 0.900 4.100 4.100 4.350
+    Max     1.550 3.050 0.430 4.550 2.550 1.750 0.580 0.480 1.000 4.300 4.350 4.450
+
+
+
+
+                     UTD Semiconductor Co.,Limited
+                     Jul.2025                                                                                11 of 13
+www.umw-ic.com                                           UMW PT4115
+                                                           30V/1.2A high dimming ratio LED constant
+                                                                                       current driver
+
+
+
+
+12.Ordering Information
+
+
+
+
+                                     PT4115
+                                    UMW yyww
+                                                    yy: Year Code
+                                                    ww: Week Code
+
+
+
+           Order Code     Package          Base QTY                      Delivery Mode
+       UMW PT4115         SOT89-5              1000                        Tape and reel
+
+
+
+
+                                           UTD Semiconductor Co.,Limited
+12 of 13                                                       Jul.2025
+www.umw-ic.com                                                                    UMW PT4115
+                                                                                    30V/1.2A high dimming ratio LED constant
+                                                                                                                current driver
+
+
+
+
+13.Disclaimer
+
+UMW reserves the right to make changes to all products, specifications. Customers should obtain the latest version
+
+of product documentation and verify the completeness and currency of the information before placing an order.
+
+
+When applying our products, please do not exceed the maximum rated values, as this may affect the reliability of the
+
+entire system. Under certain conditions, any semiconductor product may experience faults or failures. Buyers are
+
+responsible for adhering to safety standards and implementing safety measures during system design, prototyping,
+
+and manufacturing when using our products to prevent potential failure risks that could lead to personal injury or
+
+property damage.
+
+
+Unless explicitly stated in writing, UMW products are not intended for use in medical, life-saving, or life-sustaining
+
+applications, nor for any other applications where product failure could result in personal injury or death. If customers
+
+use or sell the product for such applications without explicit authorization, they assume all associated risks.
+
+
+When reselling, applying, or exporting, please comply with export control laws and regulations of China, the United
+
+States, the United Kingdom, the European Union, and other relevant countries, regions, and international
+
+organizations.
+
+
+This document and any actions by UMW do not grant any intellectual property rights, whether express or implied,
+
+by estoppel or otherwise. The product names and marks mentioned herein may be trademarks of their respective
+
+owners.
+
+
+
+
+                      UTD Semiconductor Co.,Limited
+                      Jul.2025                                                                                      13 of 13
+

@@ -1,0 +1,30 @@
+{
+  "lcsc": "C14663",
+  "mpn": "CC0603KRX7R9BB104",
+  "references": [
+    "C5",
+    "C6",
+    "C7"
+  ],
+  "url": "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663",
+  "listing_sha256": "8242f50b543e8214f66526ee44e642638de5a105a649f2f538e0b91f880812c3",
+  "checked_at_utc": "2026-10-04T21:21:36.144695+00:00",
+  "quantity_for_five_finished_boards": 15,
+  "stock_fields": {
+    "canPresaleNumber": 43868955,
+    "overseasStockCount": 57968048,
+    "preMinPurchaseNum": 1026
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

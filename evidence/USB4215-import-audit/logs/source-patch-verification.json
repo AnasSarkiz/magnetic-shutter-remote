@@ -1,0 +1,41 @@
+[
+  {
+    "repository": "circuit-json",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "props",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-json-util",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "core",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": [
+      "tests/__snapshots__/solderpaste-polygon-transform-pcb.snap.svg"
+    ]
+  },
+  {
+    "repository": "easyeda-converter",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-json-to-gerber",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": []
+  },
+  {
+    "repository": "circuit-to-svg",
+    "patch_exit_code": 0,
+    "source_hash_mismatches": [
+      "tests/pcb/__snapshots__/solder-paste-polygon.snap.svg"
+    ]
+  }
+]

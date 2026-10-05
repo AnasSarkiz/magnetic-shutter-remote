@@ -1,0 +1,9 @@
+esptool.py v4.8.1
+File size: 411568 (bytes)
+Image version: 1
+Entry point: 40388188
+2 segments
+
+Segment 1: len 0x02450 load 0x3fc8fa20 file_offs 0x00000018 [DRAM,BYTE_ACCESSIBLE]
+Segment 2: len 0x0fa10 load 0x40380000 file_offs 0x00002470 [IRAM]
+Checksum: e8 (valid)

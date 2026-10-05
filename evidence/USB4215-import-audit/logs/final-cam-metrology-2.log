@@ -1,0 +1,7 @@
+test_source_mask_expansion (__main__.PasteGeometry.test_source_mask_expansion) ... ok
+test_source_to_export_geometry (__main__.PasteGeometry.test_source_to_export_geometry) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.027s
+
+OK

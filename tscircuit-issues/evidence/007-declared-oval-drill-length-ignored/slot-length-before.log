@@ -1,0 +1,98 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-to-soup-tests/declared-slot-length.test.ts:
+14 |     const holes = convertEasyEdaJsonToCircuitJson(easyEda).filter(e=>e.type==="pcb_plated_hole")
+15 |     expect(holes).toHaveLength(1)
+16 |     const hole=holes[0]!
+17 |     if (hole.shape!=="pill") throw new Error("Expected oval copper / pill drill")
+18 |     expect(hole.hole_width).toBeCloseTo(0.6,4)
+19 |     expect(hole.hole_height).toBeCloseTo(1.2,4)
+                                  ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1.2
+Received: 1.2999974
+
+Expected precision: 4
+Expected difference: < 0.00005
+Received difference: 0.09999740000000013
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-soup-tests/declared-slot-length.test.ts:19:30)
+(fail) preserves declared 1.2 mm slot at 0 degrees [14.52ms]
+14 |     const holes = convertEasyEdaJsonToCircuitJson(easyEda).filter(e=>e.type==="pcb_plated_hole")
+15 |     expect(holes).toHaveLength(1)
+16 |     const hole=holes[0]!
+17 |     if (hole.shape!=="pill") throw new Error("Expected oval copper / pill drill")
+18 |     expect(hole.hole_width).toBeCloseTo(0.6,4)
+19 |     expect(hole.hole_height).toBeCloseTo(1.2,4)
+                                  ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1.2
+Received: 1.2999974
+
+Expected precision: 4
+Expected difference: < 0.00005
+Received difference: 0.09999740000000013
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-soup-tests/declared-slot-length.test.ts:19:30)
+(fail) preserves declared 1.2 mm slot at 90 degrees [2.66ms]
+14 |     const holes = convertEasyEdaJsonToCircuitJson(easyEda).filter(e=>e.type==="pcb_plated_hole")
+15 |     expect(holes).toHaveLength(1)
+16 |     const hole=holes[0]!
+17 |     if (hole.shape!=="pill") throw new Error("Expected oval copper / pill drill")
+18 |     expect(hole.hole_width).toBeCloseTo(0.6,4)
+19 |     expect(hole.hole_height).toBeCloseTo(1.2,4)
+                                  ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1.2
+Received: 1.2999974
+
+Expected precision: 4
+Expected difference: < 0.00005
+Received difference: 0.09999740000000013
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-soup-tests/declared-slot-length.test.ts:19:30)
+(fail) preserves declared 1.2 mm slot at 180 degrees [2.71ms]
+14 |     const holes = convertEasyEdaJsonToCircuitJson(easyEda).filter(e=>e.type==="pcb_plated_hole")
+15 |     expect(holes).toHaveLength(1)
+16 |     const hole=holes[0]!
+17 |     if (hole.shape!=="pill") throw new Error("Expected oval copper / pill drill")
+18 |     expect(hole.hole_width).toBeCloseTo(0.6,4)
+19 |     expect(hole.hole_height).toBeCloseTo(1.2,4)
+                                  ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1.2
+Received: 1.2999974
+
+Expected precision: 4
+Expected difference: < 0.00005
+Received difference: 0.09999740000000013
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-soup-tests/declared-slot-length.test.ts:19:30)
+(fail) preserves declared 1.2 mm slot at 270 degrees [3.95ms]
+26 |   const easyEda=EasyEdaJsonSchema.parse(fixture)
+27 |   easyEda.packageDetail.dataStr.shape=[ShapeItemSchema.parse({type:"PAD",data:"OVAL~0~0~4~8~11~~1~1~~0~test-round~0~~Y~0~0~0"})]
+28 |   const hole=convertEasyEdaJsonToCircuitJson(easyEda).find(e=>e.type==="pcb_plated_hole")
+29 |   if (!hole || hole.shape!=="pill") throw new Error("Expected plated pad")
+30 |   expect(hole.hole_width).toBeCloseTo(0.508,4)
+31 |   expect(hole.hole_height).toBeCloseTo(0.508,4)
+                                ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 0.508
+Received: 1.524
+
+Expected precision: 4
+Expected difference: < 0.00005
+Received difference: 1.016
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-soup-tests/declared-slot-length.test.ts:31:28)
+(fail) oval copper does not imply a slotted drill [2.46ms]
+
+ 0 pass
+ 5 fail
+ 14 expect() calls
+Ran 5 tests across 1 file. [224.00ms]

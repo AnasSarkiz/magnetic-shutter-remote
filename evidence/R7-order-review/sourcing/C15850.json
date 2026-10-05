@@ -1,0 +1,28 @@
+{
+  "lcsc": "C15850",
+  "mpn": "CL21A106KAYNNNE",
+  "references": [
+    "C8"
+  ],
+  "url": "https://jlcpcb.com/partdetail/CL21A106KAYNNNE/C15850",
+  "listing_sha256": "e2ead44fe5e2b27abbe243cd44765326bdad161a5736b4cc52d374efd1b31005",
+  "checked_at_utc": "2026-10-04T21:21:33.490916+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 3563475,
+    "overseasStockCount": 4919468,
+    "preMinPurchaseNum": 139
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

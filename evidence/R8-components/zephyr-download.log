@@ -1,0 +1,20 @@
+Cloning into 'firmware/deps/zephyr'...
+warning: refs/tags/v4.2.0 8e4cf33cb92ba0f8768fac90a5fbfcab4cb8130c is not a commit!
+Note: switching to '413b789deb391d3a37d06b463288a5fe765ee57e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  26% (12876/48356)Updating files:  27% (13057/48356)Updating files:  28% (13540/48356)Updating files:  29% (14024/48356)Updating files:  30% (14507/48356)Updating files:  31% (14991/48356)Updating files:  32% (15474/48356)Updating files:  33% (15958/48356)Updating files:  34% (16442/48356)Updating files:  35% (16925/48356)Updating files:  36% (17409/48356)Updating files:  37% (17892/48356)Updating files:  38% (18376/48356)Updating files:  39% (18859/48356)Updating files:  40% (19343/48356)Updating files:  41% (19826/48356)Updating files:  42% (20310/48356)Updating files:  43% (20794/48356)Updating files:  44% (21277/48356)Updating files:  45% (21761/48356)Updating files:  46% (22244/48356)Updating files:  47% (22728/48356)Updating files:  48% (23211/48356)Updating files:  49% (23695/48356)Updating files:  50% (24178/48356)Updating files:  51% (24662/48356)Updating files:  52% (25146/48356)Updating files:  53% (25629/48356)Updating files:  54% (26113/48356)Updating files:  55% (26596/48356)Updating files:  56% (27080/48356)Updating files:  57% (27563/48356)Updating files:  58% (28047/48356)Updating files:  59% (28531/48356)Updating files:  60% (29014/48356)Updating files:  60% (29128/48356)Updating files:  61% (29498/48356)Updating files:  62% (29981/48356)Updating files:  63% (30465/48356)Updating files:  64% (30948/48356)Updating files:  65% (31432/48356)Updating files:  66% (31915/48356)Updating files:  67% (32399/48356)Updating files:  68% (32883/48356)Updating files:  69% (33366/48356)Updating files:  70% (33850/48356)Updating files:  71% (34333/48356)Updating files:  72% (34817/48356)Updating files:  73% (35300/48356)Updating files:  74% (35784/48356)Updating files:  75% (36267/48356)Updating files:  76% (36751/48356)Updating files:  77% (37235/48356)Updating files:  78% (37718/48356)Updating files:  79% (38202/48356)Updating files:  80% (38685/48356)Updating files:  81% (39169/48356)Updating files:  82% (39652/48356)Updating files:  83% (40136/48356)Updating files:  84% (40620/48356)Updating files:  85% (41103/48356)Updating files:  86% (41587/48356)Updating files:  87% (42070/48356)Updating files:  88% (42554/48356)Updating files:  89% (43037/48356)Updating files:  90% (43521/48356)Updating files:  91% (44004/48356)Updating files:  92% (44488/48356)Updating files:  93% (44972/48356)Updating files:  94% (45455/48356)Updating files:  94% (45919/48356)Updating files:  95% (45939/48356)Updating files:  96% (46422/48356)Updating files:  97% (46906/48356)Updating files:  98% (47389/48356)Updating files:  99% (47873/48356)Updating files: 100% (48356/48356)Updating files: 100% (48356/48356), done.

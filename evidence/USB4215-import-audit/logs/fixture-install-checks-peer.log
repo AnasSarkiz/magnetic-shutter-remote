@@ -1,0 +1,14 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [29]
+Saved lockfile
+
++ @tscircuit/circuit-json-util@../vendor/util-paste-local.tgz
++ @tscircuit/core@../vendor/core-paste-local.tgz
++ @tscircuit/props@../vendor/props-paste-local.tgz
++ circuit-json@../vendor/circuit-json-paste-local.tgz
++ circuit-json-to-gerber@../vendor/gerber-paste-local.tgz
++ circuit-to-svg@../vendor/svg-paste-local.tgz
++ easyeda@../vendor/importer-paste-mask-final.tgz
+
+10 packages installed [523.00ms]

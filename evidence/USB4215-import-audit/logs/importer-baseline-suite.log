@@ -1,0 +1,2018 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/generate-symbol-tsx.test.ts:
+(pass) keeps the rectangle primitive when its fill is none [11.08ms]
+(pass) keeps the rectangle primitive when its fill is #880000 [2.90ms]
+(pass) keeps the rectangle primitive when its fill is  [2.54ms]
+(pass) generates a centered symbol with positioned, aliased ports [4.91ms]
+(pass) transforms EasyEDA paths, arcs, and text into symbol-local coordinates [13.38ms]
+(pass) keeps imported crystal symbols on tscircuit's schematic grid [1.77ms]
+(pass) uses the symbol bounds when EasyEDA head coordinates are stale [2.31ms]
+(pass) maps duplicate EasyEDA symbol pin numbers to unused footprint ports [0.40ms]
+(pass) distinguishes custom symbols from chip box representations [6.85ms]
+
+tests/convert-package-rect.test.ts:
+(pass) emits package RECT shapes as silkscreen rectangles [1.34ms]
+(pass) renders package RECT shapes in the PCB snapshot [3.24ms]
+
+tests/normalize-symbol-name.test.ts:
+(pass) normalizeSymbolName > converts + to _POS [0.02ms]
+(pass) normalizeSymbolName > converts - to _NEG
+(pass) normalizeSymbolName > handles whitespace around + and -
+(pass) normalizeSymbolName > preserves other names
+(pass) normalizeSymbolName > handles names containing + or - but not exactly equal
+(pass) normalizeSymbolName > handles empty strings
+
+tests/get-easyeda-pin-aliases.test.ts:
+(pass) converts external pin name PA0/RESET#/UPDI to connection aliases [0.12ms]
+(pass) converts external pin name #RST/NMI/SBWTDIO to connection aliases
+(pass) converts external pin name PA0/RESET# to connection aliases
+(pass) converts external pin name P1.3/TA1.2/A3/C3 to connection aliases
+(pass) converts external pin name D+/D- to connection aliases
+(pass) converts external pin name SINEIN– to connection aliases
+(pass) converts external pin name SINEIN− to connection aliases
+(pass) converts external pin name –IN/−OUT to connection aliases
+(pass) converts external pin name 3V3(OUT) to connection aliases
+(pass) converts external pin name (PA0) to connection aliases
+(pass) converts external pin name _READY_ to connection aliases
+(pass) converts external pin name 1&#96; to connection aliases
+(pass) converts external pin name 2&#x60; to connection aliases
+(pass) converts external pin name 1′ to connection aliases
+(pass) converts external pin name D&#43;/D&#8722; to connection aliases
+(pass) converts external pin name  / PA0 / / UPDI /  to connection aliases
+(pass) converts external pin name  to connection aliases
+(pass) converts external pin name +/- to connection aliases
+(pass) deduplicates aliases before distinguishing shared pin functions
+
+tests/get-polarized-pin-metadata.test.ts:
+(pass) getPolarizedPinMetadata > normalizes anode pin 1
+(pass) getPolarizedPinMetadata > normalizes decorated cathode pin 1
+
+tests/arc-utils.test.ts:
+(pass) generateArcFromSweep > uses the near circle center for a small arc [0.54ms]
+(pass) generateArcFromSweep > uses the opposite circle center for a large arc [0.14ms]
+
+tests/get-board-outline-polygons.test.ts:
+(pass) joins unordered reversed tracks and removes notch edge tabs [0.26ms]
+(pass) keeps disconnected closed outlines separate [0.13ms]
+(pass) does not invent a cutout from a line or an ambiguous open path
+(pass) ignores branched outlines without losing a separate closed loop [0.08ms]
+
+tests/normalize-pin-labels.test.ts:
+(pass) normalizePinLabels > handles the documentation example correctly [0.21ms]
+(pass) normalizePinLabels > handles empty input array
+(pass) normalizePinLabels > handles pins with no labels
+(pass) normalizePinLabels > preserves unique non-numeric labels [0.02ms]
+(pass) normalizePinLabels > normalizes leading hash active-low labels [0.02ms]
+(pass) normalizePinLabels > normalizes trailing hash active-low labels without double-prefixing [0.01ms]
+(pass) normalizePinLabels > deduplicates normalized active-low labels [0.02ms]
+(pass) normalizePinLabels > handles multiple labels per pin
+(pass) normalizePinLabels > handles duplicate numeric labels
+
+tests/browser-bundle-websafe-guard.test.ts:
+(pass) browser bundle websafe guard > browser build does not include known non-websafe runtime baggage [5427.70ms]
+
+tests/get-easyeda-cad-model-placement.test.ts:
+(pass) getCadModelOffsetMmFromBounds > derives XY placement from explicit bounds even when _objMetadata is missing [6.34ms]
+(pass) getCadModelOffsetMmFromBounds > rebases XY against recentered footprint bounds [1.10ms]
+
+tests/generate-footprint-tsx.test.ts:
+(pass) generates standalone oval holes [161.81ms]
+(pass) preserves fabrication and user notes in generated footprints [115.83ms]
+
+tests/convert-to-ts/C5830143-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C5830143-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C5830143.obj?uuid=752473762ce6496fb2b01ba2bcf1ecad&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5830143-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C5830143-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5830143-to-ts.test.ts:25:29)
+(fail) should convert C5830143 into typescript file [685.65ms]
+
+tests/convert-to-ts/c82173-to-ts.test.ts:
+(pass) generates the C82173 LED driver IC as a chip [3.65ms]
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C75749-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C75749.obj?uuid=dc634ef6f677426f9bef12d13c1b02cd&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C75749-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C75749-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C75749-to-ts.test.ts:25:29)
+(fail) should convert C75749 into typescript file [342.21ms]
+
+tests/convert-to-ts/C9972-to-ts.test.ts:
+(pass) preserves the exact C9972 manufacturer part number [1.44ms]
+(pass) reports missing manufacturer part number metadata [1.11ms]
+
+tests/convert-to-ts/C335982-polarized-capacitor-repro.test.ts:
+(pass) preserves C335982's curved polarized capacitor plate [115.00ms]
+
+tests/convert-to-ts/C7434162-pin-labels-repro.test.ts:
+(pass) renders C7434162 pin 35 and 36 labels [333.10ms]
+
+tests/convert-to-ts/C96225-to-ts.test.ts:
+37 |   ).toHaveLength(6)
+38 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+39 |     import.meta.path,
+40 |     "C96225-diode-array-chip",
+41 |   )
+42 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C96225.obj?uuid=c48363a009b446bc89c236a3f3be363d&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C96225-to-ts.test.ts:42:29)
+37 |   ).toHaveLength(6)
+38 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+39 |     import.meta.path,
+40 |     "C96225-diode-array-chip",
+41 |   )
+42 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C96225-to-ts.test.ts:42:29)
+(fail) converts C96225 diode array into a six-pin chip [282.13ms]
+
+tests/convert-to-ts/C284163-to-ts.test.ts:
+(pass) converts C284163 to a four-pin crystal [1.64ms]
+
+tests/convert-to-ts/C46497-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C46497.obj?uuid=01398eb211cd42de99baf7928a6338ec&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46497-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46497-to-ts.test.ts:20:29)
+(fail) should convert C46497 into typescript file [291.81ms]
+
+tests/convert-to-ts/C14877-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C14877.obj?uuid=4d9f6c3430024506b87ce44b53201fc5&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877-to-ts.test.ts:20:29)
+(fail) should convert C14877 into typescript file [266.28ms]
+
+tests/convert-to-ts/C20526-to-ts.test.ts:
+(pass) repro: converts C20526 with a schematic snapshot [221.17ms]
+
+tests/convert-to-ts/C113367-overlapping-pin-labels.test.ts:
+(pass) reproduces overlapping pin labels in the C113367 custom symbol [237.48ms]
+
+tests/convert-to-ts/C160354-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C160354.obj?uuid=2aab12cc3f1d49b885724ec3c95374da&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C160354-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C160354-to-ts.test.ts:20:29)
+(fail) should convert C160354 into typescript file [252.48ms]
+
+tests/convert-to-ts/C6186-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C6186.obj?uuid=e80246a9471445bfb635be848806a22e&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C6186-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C6186-to-ts.test.ts:20:29)
+(fail) should convert C6186 into typescript file [251.13ms]
+
+tests/convert-to-ts/C5378731-to-ts.test.ts:
+36 |     wrapTsxWithBoardFor3dSnapshot(result),
+37 |   )
+38 |   expect(
+39 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+40 |   ).toMatchSvgSnapshot(import.meta.path)
+41 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C5378731.obj?uuid=24821b1a65784664819cc38487bec84f&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5378731-to-ts.test.ts:41:29)
+36 |     wrapTsxWithBoardFor3dSnapshot(result),
+37 |   )
+38 |   expect(
+39 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+40 |   ).toMatchSvgSnapshot(import.meta.path)
+41 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5378731-to-ts.test.ts:41:29)
+(fail) imports C5378731 supplier fabrication notes into its footprint string [283.93ms]
+
+tests/convert-to-ts/C165948-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.obj?uuid=617b05f9bba7410b96c001093d8189e4&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C165948-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C165948-to-ts.test.ts:20:29)
+(fail) should convert C165948 into typescript file [264.73ms]
+
+tests/convert-to-ts/C19795120-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C19795120.obj?uuid=9a93067adc7a4c82860f56e3024924ad&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19795120-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19795120-to-ts.test.ts:20:29)
+(fail) should convert C19795120 into typescript file [233.88ms]
+
+tests/convert-to-ts/C157929-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C157929.obj?uuid=34ff8836248648119b083f641041fec0&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157929-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157929-to-ts.test.ts:20:29)
+(fail) should convert C157929 into typescript file [244.26ms]
+
+tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts:
+(pass) preserves package RECT layer and line-width fields with correct stroke units [339.46ms]
+
+tests/convert-to-ts/C1525-to-ts.test.ts:
+(pass) normalizes the U+00B5 micro symbol [109.93ms]
+(pass) normalizes the U+03BC micro symbol [109.77ms]
+(pass) converts C1525 to a capacitor with its exact footprint [112.24ms]
+(pass) uses the native schematic symbol for an imported C1525 capacitor [148.97ms]
+(pass) preserves imported capacitor polarity with the native symbol [111.22ms]
+
+tests/convert-to-ts/C265111-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C265111.obj?uuid=e2cbbcb052e1425b939676152927732c&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C265111-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C265111-to-ts.test.ts:20:29)
+(fail) should convert C265111 into typescript file [257.90ms]
+
+tests/convert-to-ts/C2941005-to-ts.test.ts:
+(pass) renders the C2941005 schematic and PCB [241.62ms]
+(pass) preserves all six C2941005 schematic terminals and their PCB pad mappings [233.05ms]
+
+tests/convert-to-ts/C136720-to-ts.test.ts:
+(pass) converts C136720 document-layer tracks to fabrication notes [2.60ms]
+114 |     wrapTsxWithBoardFor3dSnapshot(result),
+115 |   )
+116 |   expect(
+117 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+118 |   ).toMatchSvgSnapshot(import.meta.path)
+119 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                  ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C136720.obj?uuid=694c4159502149fba0ae406b87d40894&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C136720-to-ts.test.ts:119:29)
+114 |     wrapTsxWithBoardFor3dSnapshot(result),
+115 |   )
+116 |   expect(
+117 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+118 |   ).toMatchSvgSnapshot(import.meta.path)
+119 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                  ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C136720-to-ts.test.ts:119:29)
+(fail) should convert C136720 slide switch into a switch component with pin labels [320.18ms]
+
+tests/convert-to-ts/C49234237-to-ts.test.ts:
+(pass) converts C49234237 into a pushbutton component [231.88ms]
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C309274-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C309274.obj?uuid=1d9ce8bda5164b838444742ab1b7a83d&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C309274-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C309274-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C309274-to-ts.test.ts:25:29)
+(fail) should convert C309274 into typescript file [259.29ms]
+
+tests/convert-to-ts/infer-pin-attributes.test.ts:
+(pass) infers only unambiguous IC power, ground, and no-connect attributes
+
+tests/convert-to-ts/C410353-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C410353.obj?uuid=8a059db9b0774d54b4135935351dabe2&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C410353-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C410353-to-ts.test.ts:20:29)
+(fail) should convert C410353 into typescript file [255.01ms]
+
+tests/convert-to-ts/C105419-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C105419.obj?uuid=761680ba9d244812bfb349e4268ee9de&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C105419-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C105419-to-ts.test.ts:20:29)
+(fail) should convert C105419 into typescript file [260.67ms]
+
+tests/convert-to-ts/C2765186-to-ts.test.ts:
+(pass) prefers schematic pin names over footprint pad identifiers [232.26ms]
+
+tests/convert-to-ts/C9900017879-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C9900017879-to-ts-rotation",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C9900017879.obj?uuid=4e90b6d8552a4e058d9ebe9d82e11f3a&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C9900017879-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C9900017879-to-ts-rotation",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C9900017879-to-ts.test.ts:25:29)
+(fail) should convert C9900017879 into typescript file [344.62ms]
+
+tests/convert-to-ts/C2828420-to-ts.test.ts:
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+41 |     import.meta.path,
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2828420.obj?uuid=e9d505c99b6c436aaf827a29c5ba4f84&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2828420-to-ts.test.ts:43:29)
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+41 |     import.meta.path,
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2828420-to-ts.test.ts:43:29)
+(fail) should convert C2828420 diode with metadata-derived pin labels [247.11ms]
+
+tests/convert-to-ts/C501008-mosfet-symbol-repro.test.ts:
+(pass) repro: C501008 STL130N6F7 MOSFET renders as an eight-pin chip [226.88ms]
+
+tests/convert-to-ts/switch-category.test.ts:
+(pass) does not treat Power Distribution Switches as a mechanical switch [0.20ms]
+(pass) does not treat Power-Distribution Switch as a mechanical switch
+(pass) does not treat PMIC - Power Distribution Switches, Load Drivers as a mechanical switch [0.05ms]
+(pass) does not treat Load Switches as a mechanical switch
+(pass) does not treat LOAD-SWITCH as a mechanical switch
+(pass) does not treat Analog Switches / Multiplexers as a mechanical switch
+(pass) does not treat Analog-Switch as a mechanical switch
+(pass) does not treat Switching Diodes as a mechanical switch
+(pass) does not treat Switch ICs as a mechanical switch
+(pass) retains mechanical Slide Switches categories
+(pass) retains mechanical Toggle Switches categories
+(pass) retains mechanical DIP Switches categories
+(pass) retains mechanical Key Switches categories
+(pass) retains mechanical Micro Switches categories
+(pass) retains mechanical Limit Switches categories
+(pass) retains mechanical Power Toggle Switches categories
+(pass) ignores absent and non-string categories
+(pass) semiconductor tags override a generic switch category [1.30ms]
+(pass) semiconductor category metadata overrides generic switch tags [0.26ms]
+(pass) semiconductor Category metadata overrides generic switch tags [1.61ms]
+(pass) semiconductor LCSC Category metadata overrides generic switch tags [0.66ms]
+(pass) semiconductor JLCPCB Category metadata overrides generic switch tags [0.63ms]
+(pass) a semiconductor top-level category overrides generic switch tags [0.78ms]
+
+tests/convert-to-ts/usb-type-c-category.test.ts:
+(pass) USB-C supplier prefix and package classify a connector without category tags [3.95ms]
+
+tests/convert-to-ts/special-character-pin-labels.test.ts:
+(pass) preserves C472489 special-character pin labels [329.00ms]
+(pass) preserves C14877 special-character pin labels [290.20ms]
+(pass) preserves C2886621 special-character pin labels [286.15ms]
+
+tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts:
+(pass) renders the C19943592 pin 1 rectangular footprint pad [254.73ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":60,"rotation":0} [1.74ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":72,"rotation":45} [1.02ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":72,"height":60,"rotation":90} [0.83ms]
+
+tests/convert-to-ts/C131337-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C131337.obj?uuid=ee6b32b5c03144688a5663b32f9648c4&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C131337-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C131337-to-ts.test.ts:20:29)
+(fail) should convert C131337 into typescript file [247.93ms]
+
+tests/convert-to-ts/C2913206-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2913206.obj?uuid=1270b5cf7aa247fc9d0ae79a19686940&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2913206-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2913206-to-ts.test.ts:20:29)
+(fail) should convert C2913206 into typescript file [330.17ms]
+
+tests/convert-to-ts/C7519-schematic-view-repro.test.ts:
+Error resolving EasyEDA CAD placement for C7519: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C7519.obj?uuid=229b69761e2c45dba6a83d8866dec72d",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C7519.obj?uuid=229b69761e2c45dba6a83d8866dec72d: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C7519.obj?uuid=229b69761e2c45dba6a83d8866dec72d",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+(pass) renders C7519 with a white body and visible protection diodes [238.19ms]
+
+tests/convert-to-ts/C2998002-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C2998002-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2998002.obj?uuid=499fe0b8a844428c9e2aff62131a11f8&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2998002-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C2998002-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2998002-to-ts.test.ts:25:29)
+(fail) should convert C2998002 into typescript file [275.66ms]
+
+tests/convert-to-ts/C22446580-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C22446580.obj?uuid=86016d4675144293b45eabfe7e8ef2ff&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580-to-ts.test.ts:20:29)
+(fail) should convert C22446580 into typescript file [264.82ms]
+
+tests/convert-to-ts/C51950748-to-ts.test.ts:
+26 |     "C51950748-to-ts-schematic",
+27 |   )
+28 |   expect(
+29 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+30 |   ).toMatchSvgSnapshot(import.meta.path)
+31 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C51950748.obj?uuid=f007a039d5da450c8eef355a4ad5a9ac&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C51950748-to-ts.test.ts:31:29)
+26 |     "C51950748-to-ts-schematic",
+27 |   )
+28 |   expect(
+29 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+30 |   ).toMatchSvgSnapshot(import.meta.path)
+31 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C51950748-to-ts.test.ts:31:29)
+(fail) should convert C51950748 into typescript file [312.72ms]
+
+tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts:
+(pass) preserves all C165948 pin aliases in generated TSX [259.53ms]
+
+tests/convert-to-ts/C281113-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C281113-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C281113.obj?uuid=c7acac53bcbc44d68fbab8f60a747688&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C281113-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C281113-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C281113-to-ts.test.ts:25:29)
+(fail) should convert C281113 into typescript file [254.49ms]
+
+tests/convert-to-ts/C488251-pcb-view-repro.test.ts:
+(pass) renders the C488251 PCB view [251.73ms]
+
+tests/convert-to-ts/smd-resistors-to-ts.test.ts:
+(pass) converts C17168 R0402 to a resistor [112.07ms]
+(pass) converts C11702 R0402 to a resistor [114.65ms]
+(pass) converts C25744 R0402 to a resistor [119.89ms]
+(pass) converts C2929994 R0402 to a resistor [118.11ms]
+(pass) converts C107701 R0603 to a resistor [120.10ms]
+(pass) uses the native schematic symbol for an imported C107701 resistor [171.31ms]
+
+tests/convert-to-ts/C1985372-to-ts.test.ts:
+(pass) keeps C1985372 on tscircuit's schematic grid [226.94ms]
+
+tests/convert-to-ts/C128415-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C128415.obj?uuid=ec3b9f9b31a74655be3e55848dbee9c1&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C128415-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C128415-to-ts.test.ts:20:29)
+(fail) should convert C128415 into typescript file [276.81ms]
+
+tests/convert-to-ts/C3178291-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C3178291.obj?uuid=f3ceff5efad3481c85905821fe6f8192&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C3178291-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C3178291-to-ts.test.ts:20:29)
+(fail) should convert C3178291 into typescript file [259.94ms]
+
+tests/convert-to-ts/C82650-to-ts.test.ts:
+38 |   ).toHaveLength(28)
+39 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+40 |     import.meta.path,
+41 |     "C82650-led-driver-chip",
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C82650.obj?uuid=91bf8115b451489cb58bb2ba532d9394&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C82650-to-ts.test.ts:43:29)
+38 |   ).toHaveLength(28)
+39 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+40 |     import.meta.path,
+41 |     "C82650-led-driver-chip",
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C82650-to-ts.test.ts:43:29)
+(fail) converts C82650 LED display driver into a chip [297.71ms]
+
+tests/convert-to-ts/C2055640-to-ts.test.ts:
+(pass) C2055640 should preserve courtyard outlines when round-tripping through TSX [203.37ms]
+(pass) repro: C2055640 should preserve circular EasyEDA BGA pads [6.57ms]
+
+tests/convert-to-ts/C157947-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C157947.obj?uuid=56658e1f2fb34d408c9e670ada201bdf&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157947-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157947-to-ts.test.ts:20:29)
+(fail) should convert C157947 into typescript file [238.18ms]
+
+tests/convert-to-ts/C22446580.test.ts:
+100 |   )
+101 | 
+102 |   const generatedCircuitJson = await runTscircuitCode(
+103 |     wrapTsxWithBoardFor3dSnapshot(result),
+104 |   )
+105 |   await expect(generatedCircuitJson).toMatch3dSnapshot(import.meta.path)
+                                           ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C22446580.obj?uuid=86016d4675144293b45eabfe7e8ef2ff&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580.test.ts:105:38)
+100 |   )
+101 | 
+102 |   const generatedCircuitJson = await runTscircuitCode(
+103 |     wrapTsxWithBoardFor3dSnapshot(result),
+104 |   )
+105 |   await expect(generatedCircuitJson).toMatch3dSnapshot(import.meta.path)
+                                           ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580.test.ts:105:38)
+(fail) should convert C22446580 into typescript file [257.78ms]
+
+tests/convert-to-ts/C388883-to-ts.test.ts:
+(pass) preserves distinct C388883 terminals with encoded prime labels [230.07ms]
+
+tests/convert-to-ts/C139797-to-ts.test.ts:
+86 |     wrapTsxWithBoardFor3dSnapshot(result),
+87 |   )
+88 |   expect(
+89 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+90 |   ).toMatchSvgSnapshot(import.meta.path)
+91 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C139797.obj?uuid=00d848a7e8384bbd9286566957e8bb9c&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C139797-to-ts.test.ts:91:29)
+86 |     wrapTsxWithBoardFor3dSnapshot(result),
+87 |   )
+88 |   expect(
+89 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+90 |   ).toMatchSvgSnapshot(import.meta.path)
+91 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C139797-to-ts.test.ts:91:29)
+(fail) should convert C139797 tactile switch into a pushbutton component [275.48ms]
+
+tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts:
+(pass) should include both obj and step cad model urls [221.08ms]
+
+tests/convert-to-ts/C8545-to-ts.test.ts:
+27 |   )
+28 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+29 |     import.meta.path,
+30 |     "C8545-pcb",
+31 |   )
+32 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C8545.obj?uuid=d777607a152f4f3aac9bb0d0c14ed6fd&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8545-to-ts.test.ts:32:29)
+27 |   )
+28 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+29 |     import.meta.path,
+30 |     "C8545-pcb",
+31 |   )
+32 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8545-to-ts.test.ts:32:29)
+(fail) repro: imports C8545 with its custom schematic symbol [298.28ms]
+
+tests/convert-to-ts/C2041570-to-ts.test.ts:
+(pass) converts C2041570 to an inductor [111.08ms]
+
+tests/convert-to-ts/C2961147-to-ts.test.ts:
+36 |   )
+37 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+38 |     import.meta.path,
+39 |     "C2961147-to-ts-schematic",
+40 |   )
+41 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2961147.obj?uuid=666ccfc7884a46cb8ce1cb7a9df39419&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2961147-to-ts.test.ts:41:29)
+36 |   )
+37 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+38 |     import.meta.path,
+39 |     "C2961147-to-ts-schematic",
+40 |   )
+41 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2961147-to-ts.test.ts:41:29)
+(fail) should convert C2961147 into typescript file [269.00ms]
+
+tests/convert-to-ts/C62857-to-ts.test.ts:
+(pass) converts C62857 capacitor array with its EasyEDA symbol [119.65ms]
+
+tests/convert-to-ts/C8465-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C8465.obj?uuid=d60ef5d423934d3393dc75fa0a07b6bd&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8465-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8465-to-ts.test.ts:20:29)
+(fail) should convert C8465 into typescript file [238.59ms]
+
+tests/convert-to-ts/C158012-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C158012.obj?uuid=417e395cbf3443fdb9642576696e80a3&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C158012-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C158012-to-ts.test.ts:20:29)
+(fail) should convert C158012 into typescript file [250.20ms]
+
+tests/convert-to-ts/C90683-to-ts.test.ts:
+(pass) renders all NN2-24S05C3N schematic pin labels [278.08ms]
+
+tests/convert-to-ts/C14877.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C14877.obj?uuid=4d9f6c3430024506b87ce44b53201fc5&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877.test.ts:21:29)
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877.test.ts:21:29)
+(fail) should convert atmega328p into typescript file [285.77ms]
+
+tests/convert-to-ts/C490691-active-low-labels.test.ts:
+(pass) preserves C490691 trailing-hash active-low pin names [292.44ms]
+
+tests/convert-to-ts/C490691-to-ts.test.ts:
+21 |     (element) => element.type === "source_port",
+22 |   )
+23 |   const noConnectPort = sourcePorts.find((element) => element.pin_number === 8)
+24 | 
+25 |   expect(noConnectPort?.do_not_connect).toBe(true)
+26 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C490691.obj?uuid=f6684975c608438e85ae4e120e588908&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C490691-to-ts.test.ts:26:29)
+21 |     (element) => element.type === "source_port",
+22 |   )
+23 |   const noConnectPort = sourcePorts.find((element) => element.pin_number === 8)
+24 | 
+25 |   expect(noConnectPort?.do_not_connect).toBe(true)
+26 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C490691-to-ts.test.ts:26:29)
+(fail) should convert C490691 into typescript file [266.54ms]
+
+tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts:
+(pass) preserves C472489 slash-separated pin 20 label [336.68ms]
+
+tests/convert-to-ts/C393941-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C393941.obj?uuid=cd5a60561ab44a95a0b64769461b3210&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C393941-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C393941-to-ts.test.ts:20:29)
+(fail) should convert C393941 into typescript file [252.86ms]
+
+tests/convert-to-ts/C57759-to-led.test.ts:
+(pass) should convert led category components to led elements [221.14ms]
+
+tests/convert-to-ts/C88224-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C88224.obj?uuid=47443b588a77418ba6b4ea51975c36c0&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C88224-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C88224-to-ts.test.ts:20:29)
+(fail) should convert C88224 into typescript file [293.35ms]
+
+tests/convert-to-ts/manufacturer-metadata.test.ts:
+(pass) SPDT import preserves all supplier symbol terminals and explicit topology [2.00ms]
+(pass) multi-terminal switch refuses an unverified default SPST topology [1.44ms]
+(pass) connector import carries verified mating direction in the footprint frame [1.19ms]
+(pass) invalid manufacturer metadata is rejected rather than dropped [0.91ms]
+(pass) connector classification preserves a supplier contact-switch symbol [2.20ms]
+
+tests/convert-to-ts/pushbutton-category.test.ts:
+(pass) should identify JLCPCB pushbutton metadata as pushbuttons [0.05ms]
+(pass) should identify JLCPCB switch metadata as switches [0.02ms]
+(pass) should convert JLCPCB pushbutton metadata to pushbutton elements [225.65ms]
+
+tests/convert-to-ts/C8598-to-ts.test.ts:
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+41 |     import.meta.path,
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C8598.obj?uuid=e9d505c99b6c436aaf827a29c5ba4f84&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8598-to-ts.test.ts:43:29)
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+41 |     import.meta.path,
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8598-to-ts.test.ts:43:29)
+(fail) should normalize decorated C8598 diode polarity labels [276.14ms]
+
+tests/convert-to-ts/custom-symbol-refdes.test.ts:
+(pass) a transistor symbol without supplier text receives a dynamic reference [1.55ms]
+
+tests/convert-to-ts/C19076967-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C19076967.obj?uuid=b6d9880015ca4fcf86b410816d650f7b&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19076967-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19076967-to-ts.test.ts:20:29)
+(fail) should convert C19076967 into typescript file [269.87ms]
+
+tests/convert-to-ts/c2943786-to-ts.test.ts:
+27 |   )
+28 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+29 |     import.meta.path,
+30 |     "c2943786-schematic",
+31 |   )
+32 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2943786.obj?uuid=64b0ecebc40e4578851f9afd7fce5701&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/c2943786-to-ts.test.ts:32:29)
+27 |   )
+28 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+29 |     import.meta.path,
+30 |     "c2943786-schematic",
+31 |   )
+32 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/c2943786-to-ts.test.ts:32:29)
+(fail) should import C2943786 into a snapshotted typescript component [1245.84ms]
+
+tests/convert-to-ts/C46749-to-ts.test.ts:
+26 |   const groundPort = sourcePorts.find((element) => element.pin_number === 1)
+27 |   const powerPort = sourcePorts.find((element) => element.pin_number === 8)
+28 | 
+29 |   expect(groundPort?.requires_ground).toBe(true)
+30 |   expect(powerPort?.requires_power).toBe(true)
+31 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C46749.obj?uuid=5e8e9a2e75ff40abab9e1f1cacdd2cbb&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46749-to-ts.test.ts:31:29)
+26 |   const groundPort = sourcePorts.find((element) => element.pin_number === 1)
+27 |   const powerPort = sourcePorts.find((element) => element.pin_number === 8)
+28 | 
+29 |   expect(groundPort?.requires_ground).toBe(true)
+30 |   expect(powerPort?.requires_power).toBe(true)
+31 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46749-to-ts.test.ts:31:29)
+(fail) should convert C46749 into typescript file [255.23ms]
+
+tests/convert-to-ts/additional-payload-variants.test.ts:
+(pass) renders a payload with issue #464 variants [256.83ms]
+
+tests/convert-to-ts/C12084-to-ts.test.ts:
+(pass) should convert C12084 into typescript file [228.56ms]
+
+tests/convert-to-ts/thermostat-category.test.ts:
+(pass) semiconductor thermostat switches are not mechanical switches
+
+tests/convert-to-ts/C1046-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C1046-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C1046.obj?uuid=c7acac53bcbc44d68fbab8f60a747688&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C1046-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C1046-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C1046-to-ts.test.ts:25:29)
+(fail) should convert C1046 into typescript file [248.90ms]
+
+tests/convert-to-ts/C23689428-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C23689428.obj?uuid=41dedda2470f44618e688797cde191ed&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C23689428-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C23689428-to-ts.test.ts:20:29)
+(fail) should convert C23689428 into typescript file [265.42ms]
+
+tests/convert-to-ts/C561765-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C561765.obj?uuid=b9df3af421404a02b675e13120fa0c0c&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C561765-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C561765-to-ts.test.ts:20:29)
+(fail) should convert C561765 into typescript file [259.39ms]
+
+tests/convert-to-ts/C2040-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2040.obj?uuid=76b360a9d4c54384a4e47d7e5af156df&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2040-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2040-to-ts.test.ts:20:29)
+(fail) should convert C2040 into typescript file [308.76ms]
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C18185602-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C18185602.obj?uuid=f90b68db56444592a325e6a33e48bfdb&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C18185602-to-ts.test.ts:25:29)
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C18185602-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C18185602-to-ts.test.ts:25:29)
+(fail) should convert C18185602 into typescript file [254.67ms]
+
+tests/convert-to-ts/C2838502-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2838502.obj?uuid=789e2235438340f8bef14c336f136f9e&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2838502-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2838502-to-ts.test.ts:20:29)
+(fail) should convert C2838502 into typescript file [304.88ms]
+
+tests/convert-to-ts/C2687116-to-ts.test.ts:
+(pass) infers VBUS power metadata for C2687116 [224.41ms]
+
+tests/convert-to-ts/C2848306-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2848306.obj?uuid=09d63d3bb21a495aa100cde68133c9fa&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2848306-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2848306-to-ts.test.ts:20:29)
+(fail) should convert C2848306 into typescript file [257.48ms]
+
+tests/convert-to-ts/C2979182-to-ts.test.ts:
+22 |   expect(result).not.toContain("NaNmm")
+23 | 
+24 |   const circuitJson = await runTscircuitCode(
+25 |     wrapTsxWithBoardFor3dSnapshot(result),
+26 |   )
+27 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2979182.obj?uuid=17bab5f954174916a1c2399c3b756d35&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2979182-to-ts.test.ts:27:29)
+22 |   expect(result).not.toContain("NaNmm")
+23 | 
+24 |   const circuitJson = await runTscircuitCode(
+25 |     wrapTsxWithBoardFor3dSnapshot(result),
+26 |   )
+27 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2979182-to-ts.test.ts:27:29)
+(fail) should convert C2979182 / MY-18650-02 into typescript file [240.98ms]
+
+tests/convert-to-ts/C55266-power-distribution-switch.test.ts:
+(pass) C55266 retains six source pins and their PCB pad mappings [228.84ms]
+(pass) renders the C55266 schematic and PCB [246.29ms]
+(pass) C55266 exposes all six IC pins in the schematic [230.93ms]
+(pass) connects C55266's IN signal [344.69ms]
+(pass) connects C55266's GND signal [332.70ms]
+(pass) connects C55266's EN signal [327.74ms]
+(pass) connects C55266's FAULT signal [340.55ms]
+(pass) connects C55266's ILIM signal [348.87ms]
+(pass) connects C55266's OUT signal [349.32ms]
+
+tests/convert-to-ts/C15464-to-ts.test.ts:
+(pass) normalizes C15464 active-low pin aliases [296.31ms]
+
+tests/convert-to-ts/standard-dip-switches-repro.test.ts:
+(pass) preserves the imported symbol for a Standard DIP switch [266.96ms]
+
+tests/convert-to-ts/C5248081-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C5248081.obj?uuid=9018832d564840e08b96db89bf75c8cc&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5248081-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5248081-to-ts.test.ts:20:29)
+(fail) should convert C5248081 into typescript file [293.49ms]
+
+tests/convert-to-ts/C2879827-to-ts.test.ts:
+(pass) C2879827 preserves the source notch geometry during parsing [0.11ms]
+(pass) C2879827 converts BoardOutline tracks into one cutout [1.00ms]
+(pass) C2879827 preserves the board cutout in generated component TSX [233.97ms]
+(pass) C2879827 must retain its board notch as cutout geometry [1.27ms]
+(pass) TSX generator must preserve an existing pcb_cutout [0.08ms]
+
+tests/convert-to-ts/C2886621-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2886621.obj?uuid=7b93dc7f04cd4441a3d58b2a0cf77652&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2886621-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2886621-to-ts.test.ts:20:29)
+(fail) should convert C2886621 into typescript file [275.62ms]
+
+tests/convert-to-ts/C3273487-to-ts.test.ts:
+(pass) converts C3273487 coupled inductor without losing terminals [507.20ms]
+
+tests/convert-to-ts/C113367-to-ts.test.ts:
+23 |   )
+24 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+25 |     import.meta.path,
+26 |     "C113367-to-ts-schematic",
+27 |   )
+28 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C113367.obj?uuid=c46b6304dec345328c3b99b7d4160b3a&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C113367-to-ts.test.ts:28:29)
+23 |   )
+24 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+25 |     import.meta.path,
+26 |     "C113367-to-ts-schematic",
+27 |   )
+28 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C113367-to-ts.test.ts:28:29)
+(fail) should convert C113367 into typescript file [282.43ms]
+(pass) C113367 generates one schematic port for each footprint pin [234.81ms]
+
+tests/convert-to-ts/C57759-to-ts.test.ts:
+(pass) should convert diode category components to diode elements [229.18ms]
+
+tests/convert-to-ts/C60708-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C60708.obj?uuid=5377177da492449fa1a3111d646cac17&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C60708-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C60708-to-ts.test.ts:20:29)
+(fail) should convert C60708 into typescript file [294.42ms]
+
+tests/convert-to-ts/C7203002-to-ts.test.ts:
+(pass) should convert C7203002 into typescript file [399.13ms]
+
+tests/convert-to-ts/C472489-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C472489.obj?uuid=7e9b9111dcfd48d3add0eab11d882721&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C472489-to-ts.test.ts:20:29)
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C472489-to-ts.test.ts:20:29)
+(fail) should convert C472489 into typescript file [307.66ms]
+
+tests/convert-to-ts/C404969-to-ts.test.ts:
+(pass) converts C404969 to a connector [118.88ms]
+
+tests/convert-to-ts/c609652-pin-label.test.ts:
+Error resolving EasyEDA CAD placement for C609652: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+(pass) preserves C609652's PA0/RESET#/UPDI label on pin 16 [258.94ms]
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+(pass) connects C609652 pin 16 using PA0 [341.15ms]
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+(pass) connects C609652 pin 16 using N_RESET [349.33ms]
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C609652.obj?uuid=f802a94fc95e42bebc73c20bec55bb23",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+(pass) connects C609652 pin 16 using UPDI [351.27ms]
+
+tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts:
+(pass) preserves C2848306 EasyEDA-hidden EP pin visibility [275.76ms]
+
+tests/convert-to-ts/C2652953-to-ts.test.ts:
+31 |   expect(result).not.toContain("NaNmm")
+32 | 
+33 |   // const circuitJson = await runTscircuitCode(
+34 |   //   wrapTsxWithBoardFor3dSnapshot(result),
+35 |   // )
+36 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2652953.obj?uuid=5377177da492449fa1a3111d646cac17&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2652953-to-ts.test.ts:36:29)
+31 |   expect(result).not.toContain("NaNmm")
+32 | 
+33 |   // const circuitJson = await runTscircuitCode(
+34 |   //   wrapTsxWithBoardFor3dSnapshot(result),
+35 |   // )
+36 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2652953-to-ts.test.ts:36:29)
+(fail) should convert C2652953 into typescript file [270.42ms]
+
+tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:
+(pass) reproduces C1046 L0805 inductor being generated as a generic chip [243.38ms]
+(pass) reproduces C281113 L0805 inductor being generated as a generic chip [249.04ms]
+
+tests/convert-to-soup-tests/C160354.test.ts:
+(pass) C160354 (JST B4B-PH-SM4-TB) should generate Circuit JSON without errors [2.74ms]
+
+tests/convert-to-soup-tests/convert-usb-c-to-soup.test.ts:
+(pass) should convert a usb-c footprint (C2765186) to tscircuit soup json [25.96ms]
+
+tests/convert-to-soup-tests/normalize-plus-minus.test.ts:
+(pass) normalizes plus and minus symbols in pin names during conversion [6.58ms]
+(pass) normalizes plus and minus symbols in package detail silkscreen text during conversion [2.09ms]
+
+tests/convert-to-soup-tests/declared-slot-length.test.ts:
+(pass) preserves declared 1.2 mm slot at 0 degrees [0.48ms]
+(pass) preserves declared 1.2 mm slot at 90 degrees [1.94ms]
+(pass) preserves declared 1.2 mm slot at 180 degrees [1.13ms]
+(pass) preserves declared 1.2 mm slot at 270 degrees [0.92ms]
+(pass) oval copper does not imply a slotted drill [0.83ms]
+
+tests/convert-to-soup-tests/esp32-to-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer (smd) and convert to tscircuit soup [4.73ms]
+
+tests/convert-to-soup-tests/c5184526.test.ts:
+(pass) C5184526 should have two holes [1.93ms]
+
+tests/convert-to-soup-tests/c2848306-to-soup.test.ts:
+(pass) C2848306 should parse successfully with 'none' visibility enum [0.33ms]
+
+tests/convert-to-soup-tests/bottom-layer-track.test.ts:
+(pass) preserves the side of bottom-layer tracks [4.66ms]
+
+tests/convert-to-soup-tests/c2055640-courtyard.test.ts:
+(pass) C2055640 should import courtyard outlines with non-zero height and render them [6.34ms]
+
+tests/convert-to-soup-tests/c19795120-cutout.test.ts:
+(pass) C19795120 should generate a pcb_cutout [2.37ms]
+
+tests/convert-to-soup-tests/convert-easyeda-to-tscircuit-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer and convert to tscircuit soup [2.45ms]
+
+tests/convert-to-soup-tests/c57759.test.ts:
+(pass) C57759 should generate Circuit Json without errors [1.50ms]
+(pass) C57759 should parse PT shape correctly [0.41ms]
+
+tests/convert-to-soup-tests/C265111.test.ts:
+(pass) C265111 (JST SM08B-GHS-TB) should generate Circuit JSON without errors [1.79ms]
+
+tests/convert-to-soup-tests/C8465.test.ts:
+(pass) C8465 (JST B2B-EH-A) should generate Circuit JSON without errors [1.19ms]
+
+tests/convert-to-soup-tests/bottom-layer-arc.test.ts:
+(pass) preserves the side of bottom-layer arcs [4.91ms]
+
+tests/convert-to-soup-tests/c46497.test.ts:
+(pass) C46497 should generate Circuit Json with vias [4.73ms]
+
+tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:
+30 |       num_layers: 2,
+31 |       material: "fr4",
+32 |     }),
+33 |   )
+34 | 
+35 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modules.easyeda.com/3dmodel/617b05f9bba7410b96c001093d8189e4",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:35:29)
+30 |       num_layers: 2,
+31 |       material: "fr4",
+32 |     }),
+33 |   )
+34 | 
+35 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:35:29)
+(fail) uses C165948 CAD model bounds instead of its PCB footprint size [28.00ms]
+
+tests/convert-to-soup-tests/C131337.test.ts:
+(pass) C131337 (JST B2B-PH-K-S) should generate Circuit JSON without errors [1.68ms]
+
+tests/convert-to-soup-tests/diode-polarity-port-hints.test.ts:
+(pass) preserves normalized diode polarity hints on PCB pads [1.37ms]
+
+tests/convert-to-soup-tests/plated-hole-layers.test.ts:
+(pass) through-hole pads span both outer copper layers [2.00ms]
+
+tests/convert-to-soup-tests/c4355039-to-soup.test.ts:
+(pass) should parse easyeda json for c4355039 and convert to tscircuit soup [1.75ms]
+
+tests/convert-to-soup-tests/fallback-courtyard-model-outline.test.ts:
+(pass) uses the FS3000 physical body for its fallback courtyard [1.53ms]
+(pass) excludes the VCNL4040 silkscreen marker from its fallback courtyard [0.79ms]
+
+tests/convert-to-soup-tests/C157929.test.ts:
+(pass) C157929 (JST B3B-XH-A) should generate Circuit JSON without errors [2.24ms]
+
+tests/convert-to-soup-tests/c88224.test.ts:
+(pass) should parse easyeda json for a c88224 and convert to tscircuit soup [3.79ms]
+
+tests/convert-to-soup-tests/c3178291-to-soup.test.ts:
+(pass) should convert c3178291 with polygon pads [1.98ms]
+
+tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:
+(pass) preserves rotated silkscreen text in the PCB snapshot [13.91ms]
+
+tests/convert-to-soup-tests/duplicate-pad-numbers.test.ts:
+(pass) keeps repeated EasyEDA pad numbers on one logical pin [4.40ms]
+
+tests/convert-to-soup-tests/C158012.test.ts:
+(pass) C158012 (JST B2B-XH-A) should generate Circuit JSON without errors [1.60ms]
+
+tests/fetch-tests/c41430893.test.ts:
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "ConnectionRefused"
+
+(fail) should fetch correct part for C41430893 [1.04ms]
+error: Was there a typo in the url or port?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+(fail) C41430893 should generate Circuit Json without errors [0.18ms]
+
+tests/fetch-tests/c1555-0402-repro.test.ts:
+(pass) rejects C1555 when EasyEDA only returns fuzzy value matches [0.43ms]
+(pass) snapshots the misleading C1555 search candidate [0.85ms]
+
+tests/fetch-tests/rate-limit-403.test.ts:
+(pass) surfaces a search-request HTTP 403 as rate limiting, not a component lookup failure [0.03ms]
+(pass) surfaces a component-details HTTP 403 as rate limiting [0.16ms]
+(pass) keeps 'Component not found' distinct from rate limiting [0.06ms]
+(pass) includes the HTTP status in non-403 search failures [0.02ms]
+
+tests/fetch-tests/missing-library-component.test.ts:
+(pass) reports when S4 has no EasyEDA library search result [0.30ms]
+(pass) reports when EasyEDA rejects the search request
+
+tests/fetch-tests/invalid-search-response.test.ts:
+(pass) rejects null response before fetching geometry [0.71ms]
+(pass) rejects missing success flag before fetching geometry
+(pass) rejects string success flag before fetching geometry [0.07ms]
+(pass) rejects missing results before fetching geometry
+(pass) rejects missing lists before fetching geometry
+(pass) rejects non-array component list before fetching geometry [0.05ms]
+(pass) rejects component without a UUID before fetching geometry [0.01ms]
+(pass) rejects API rejection even with a nonempty result list before fetching geometry
+
+tests/fetch-tests/exact-search-response.test.ts:
+(pass) preserves exact matching through supplier parameter
+(pass) preserves exact matching through lcsc number [0.51ms]
+(pass) preserves exact matching through szlcsc number [0.09ms]
+
+tests/fetch-tests/c2040.test.ts:
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "ConnectionRefused"
+
+(fail) should fetch correct part for C2040 [0.40ms]
+
+tests/cli-tests/download-error-exit.test.ts:
+(pass) download failure exits nonzero and writes no supplier footprint [52.17ms]
+
+tests/parse-tests/malformed-schema-variants.test.ts:
+(pass) coerces a numeric-string szlcsc id [0.65ms]
+(pass) accepts an absent dataStr.head.utime value (%s)
+(pass) accepts an absent dataStr.head.utime value (%s) [1.14ms]
+(pass) accepts an absent dataStr.head.utime value () [0.35ms]
+(pass) normalizes text alignment "P" to left alignment [0.62ms]
+(pass) normalizes additional payload variants from issue #464 [0.94ms]
+
+tests/parse-tests/rk3566-import-regression.test.ts:
+(pass) parses footprint-only parts with incomplete schematic metadata [0.21ms]
+(pass) preserves exponent-like BGA pad identifiers and generates unique ports [0.63ms]
+(pass) keeps ordinary decimal pad identifiers numeric [0.22ms]
+
+tests/parse-tests/single-letter-shape-schema.test.ts:
+(pass) parses examples for single letter shape schema [0.94ms]
+(pass) normalizes literal undefined optional text fields from EasyEDA text shapes
+(pass) normalizes whitespace-only text metadata from C60708
+(pass) still rejects unexpected fontStyle values [0.37ms]
+(pass) parses schematic drawing colors, paths, and pin stems
+
+tests/parse-tests/parse-c46497.test.ts:
+(pass) should parse easyeda json for C46497 with VIA [1.40ms]
+
+tests/parse-tests/parse-c4355039.test.ts:
+(pass) should parse easyeda json for a c4355039 [0.40ms]
+
+tests/parse-tests/parse-c124375.test.ts:
+(pass) should parse easyeda json for a c124375 [0.52ms]
+
+tests/parse-tests/pin-label-plus-minus.test.ts:
+(pass) converts trailing plus and minus in pin labels [0.11ms]
+(pass) normalizes voltage pin labels with leading plus
+
+tests/parse-tests/parse-usb-c.test.ts:
+(pass) should parse easyeda json for a mounted usb c plug [1.72ms]
+
+tests/parse-tests/parse-esp32.test.ts:
+(pass) should parse easyeda json for a 555 timer [2.19ms]
+
+tests/parse-tests/parse-c124352.test.ts:
+(pass) should parse easyeda json for a C124352 [0.83ms]
+
+tests/parse-tests/parse-555-timer-json.test.ts:
+(pass) should parse easyeda json for a 555 timer [0.81ms]
+
+tests/parse-tests/pin-label-hash.test.ts:
+(pass) converts trailing # in pin labels to active-low N_ prefix
+
+60 tests failed:
+(fail) should convert C5830143 into typescript file [685.65ms]
+(fail) should convert C75749 into typescript file [342.21ms]
+(fail) converts C96225 diode array into a six-pin chip [282.13ms]
+(fail) should convert C46497 into typescript file [291.81ms]
+(fail) should convert C14877 into typescript file [266.28ms]
+(fail) should convert C160354 into typescript file [252.48ms]
+(fail) should convert C6186 into typescript file [251.13ms]
+(fail) imports C5378731 supplier fabrication notes into its footprint string [283.93ms]
+(fail) should convert C165948 into typescript file [264.73ms]
+(fail) should convert C19795120 into typescript file [233.88ms]
+(fail) should convert C157929 into typescript file [244.26ms]
+(fail) should convert C265111 into typescript file [257.90ms]
+(fail) should convert C136720 slide switch into a switch component with pin labels [320.18ms]
+(fail) should convert C309274 into typescript file [259.29ms]
+(fail) should convert C410353 into typescript file [255.01ms]
+(fail) should convert C105419 into typescript file [260.67ms]
+(fail) should convert C9900017879 into typescript file [344.62ms]
+(fail) should convert C2828420 diode with metadata-derived pin labels [247.11ms]
+(fail) should convert C131337 into typescript file [247.93ms]
+(fail) should convert C2913206 into typescript file [330.17ms]
+(fail) should convert C2998002 into typescript file [275.66ms]
+(fail) should convert C22446580 into typescript file [264.82ms]
+(fail) should convert C51950748 into typescript file [312.72ms]
+(fail) should convert C281113 into typescript file [254.49ms]
+(fail) should convert C128415 into typescript file [276.81ms]
+(fail) should convert C3178291 into typescript file [259.94ms]
+(fail) converts C82650 LED display driver into a chip [297.71ms]
+(fail) should convert C157947 into typescript file [238.18ms]
+(fail) should convert C22446580 into typescript file [257.78ms]
+(fail) should convert C139797 tactile switch into a pushbutton component [275.48ms]
+(fail) repro: imports C8545 with its custom schematic symbol [298.28ms]
+(fail) should convert C2961147 into typescript file [269.00ms]
+(fail) should convert C8465 into typescript file [238.59ms]
+(fail) should convert C158012 into typescript file [250.20ms]
+(fail) should convert atmega328p into typescript file [285.77ms]
+(fail) should convert C490691 into typescript file [266.54ms]
+(fail) should convert C393941 into typescript file [252.86ms]
+(fail) should convert C88224 into typescript file [293.35ms]
+(fail) should normalize decorated C8598 diode polarity labels [276.14ms]
+(fail) should convert C19076967 into typescript file [269.87ms]
+(fail) should import C2943786 into a snapshotted typescript component [1245.84ms]
+(fail) should convert C46749 into typescript file [255.23ms]
+(fail) should convert C1046 into typescript file [248.90ms]
+(fail) should convert C23689428 into typescript file [265.42ms]
+(fail) should convert C561765 into typescript file [259.39ms]
+(fail) should convert C2040 into typescript file [308.76ms]
+(fail) should convert C18185602 into typescript file [254.67ms]
+(fail) should convert C2838502 into typescript file [304.88ms]
+(fail) should convert C2848306 into typescript file [257.48ms]
+(fail) should convert C2979182 / MY-18650-02 into typescript file [240.98ms]
+(fail) should convert C5248081 into typescript file [293.49ms]
+(fail) should convert C2886621 into typescript file [275.62ms]
+(fail) should convert C113367 into typescript file [282.43ms]
+(fail) should convert C60708 into typescript file [294.42ms]
+(fail) should convert C472489 into typescript file [307.66ms]
+(fail) should convert C2652953 into typescript file [270.42ms]
+(fail) uses C165948 CAD model bounds instead of its PCB footprint size [28.00ms]
+(fail) should fetch correct part for C41430893 [1.04ms]
+(fail) C41430893 should generate Circuit Json without errors [0.18ms]
+(fail) should fetch correct part for C2040 [0.40ms]
+
+ 249 pass
+ 60 fail
+ 27 snapshots, 1224 expect() calls
+Ran 309 tests across 165 files. [40.27s]

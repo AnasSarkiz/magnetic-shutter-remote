@@ -1,0 +1,28 @@
+{
+  "lcsc": "C22893",
+  "mpn": "0603WAF1872T5E",
+  "references": [
+    "R11"
+  ],
+  "url": "https://jlcpcb.com/partdetail/0603WAF1872T5E/C22893",
+  "listing_sha256": "3263ea43cf37152fba4aae90c50fa0a6bf964102915d30a531fe024ca7bc9679",
+  "checked_at_utc": "2026-10-04T21:21:33.177178+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 124533,
+    "overseasStockCount": 127883,
+    "preMinPurchaseNum": 5000
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

@@ -1,0 +1,28 @@
+{
+  "lcsc": "C3747031",
+  "mpn": "TPS7A0230PDBVR",
+  "references": [
+    "U3"
+  ],
+  "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS7A0230PDBVR/C3747031",
+  "listing_sha256": "a4b346bd2b7ee7e8ffa9b863761dbc6913a95b1cf881d34c2834a330d38f2250",
+  "checked_at_utc": "2026-10-04T21:21:33.643603+00:00",
+  "quantity_for_five_finished_boards": 5,
+  "stock_fields": {
+    "canPresaleNumber": 37392,
+    "overseasStockCount": 37468,
+    "preMinPurchaseNum": 26
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

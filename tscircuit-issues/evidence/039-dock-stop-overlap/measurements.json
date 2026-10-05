@@ -1,0 +1,11 @@
+{
+  "original_stop_center_y_mm": -12,
+  "stop_length_y_mm": 1.6,
+  "original_near_face_y_mm": -12.8,
+  "remote_end_y_mm": -12,
+  "original_overlap_mm": 0.8,
+  "final_stop_center_y_mm": -10.9,
+  "final_near_face_y_mm": -11.7,
+  "final_gap_mm": 0.3,
+  "provenance": "Original stop Y expression also retained in full R2-inputs/mechanical/remote-and-grip.scad; final actual STL independently measured."
+}

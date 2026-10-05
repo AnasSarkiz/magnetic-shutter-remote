@@ -1,0 +1,1549 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/generate-symbol-tsx.test.ts:
+(pass) keeps the rectangle primitive when its fill is none [17.01ms]
+(pass) keeps the rectangle primitive when its fill is #880000 [3.11ms]
+(pass) keeps the rectangle primitive when its fill is  [4.14ms]
+(pass) generates a centered symbol with positioned, aliased ports [3.56ms]
+(pass) transforms EasyEDA paths, arcs, and text into symbol-local coordinates [15.51ms]
+(pass) keeps imported crystal symbols on tscircuit's schematic grid [1.20ms]
+(pass) uses the symbol bounds when EasyEDA head coordinates are stale [2.51ms]
+(pass) maps duplicate EasyEDA symbol pin numbers to unused footprint ports [1.87ms]
+(pass) distinguishes custom symbols from chip box representations [11.02ms]
+
+tests/convert-package-rect.test.ts:
+(pass) emits package RECT shapes as silkscreen rectangles [1.16ms]
+(pass) renders package RECT shapes in the PCB snapshot [31.99ms]
+
+tests/normalize-symbol-name.test.ts:
+(pass) normalizeSymbolName > converts + to _POS
+(pass) normalizeSymbolName > converts - to _NEG
+(pass) normalizeSymbolName > handles whitespace around + and -
+(pass) normalizeSymbolName > preserves other names [0.03ms]
+(pass) normalizeSymbolName > handles names containing + or - but not exactly equal
+(pass) normalizeSymbolName > handles empty strings
+
+tests/get-easyeda-pin-aliases.test.ts:
+(pass) converts external pin name PA0/RESET#/UPDI to connection aliases [0.08ms]
+(pass) converts external pin name #RST/NMI/SBWTDIO to connection aliases [0.05ms]
+(pass) converts external pin name PA0/RESET# to connection aliases
+(pass) converts external pin name P1.3/TA1.2/A3/C3 to connection aliases
+(pass) converts external pin name D+/D- to connection aliases
+(pass) converts external pin name SINEIN– to connection aliases [0.02ms]
+(pass) converts external pin name SINEIN− to connection aliases [0.02ms]
+(pass) converts external pin name –IN/−OUT to connection aliases
+(pass) converts external pin name 3V3(OUT) to connection aliases
+(pass) converts external pin name (PA0) to connection aliases
+(pass) converts external pin name _READY_ to connection aliases
+(pass) converts external pin name 1&#96; to connection aliases [0.02ms]
+(pass) converts external pin name 2&#x60; to connection aliases
+(pass) converts external pin name 1′ to connection aliases
+(pass) converts external pin name D&#43;/D&#8722; to connection aliases
+(pass) converts external pin name  / PA0 / / UPDI /  to connection aliases
+(pass) converts external pin name  to connection aliases
+(pass) converts external pin name +/- to connection aliases
+(pass) deduplicates aliases before distinguishing shared pin functions [0.06ms]
+
+tests/get-polarized-pin-metadata.test.ts:
+(pass) getPolarizedPinMetadata > normalizes anode pin 1
+(pass) getPolarizedPinMetadata > normalizes decorated cathode pin 1
+
+tests/arc-utils.test.ts:
+(pass) generateArcFromSweep > uses the near circle center for a small arc [0.01ms]
+(pass) generateArcFromSweep > uses the opposite circle center for a large arc [0.08ms]
+
+tests/explicit-paste-regions.test.ts:
+(pass) preserves explicit supplier paste polygons and per-pad expansion [7.83ms]
+
+tests/get-board-outline-polygons.test.ts:
+(pass) joins unordered reversed tracks and removes notch edge tabs [1.26ms]
+(pass) keeps disconnected closed outlines separate [0.06ms]
+(pass) does not invent a cutout from a line or an ambiguous open path
+(pass) ignores branched outlines without losing a separate closed loop
+
+tests/normalize-pin-labels.test.ts:
+(pass) normalizePinLabels > handles the documentation example correctly [0.07ms]
+(pass) normalizePinLabels > handles empty input array
+(pass) normalizePinLabels > handles pins with no labels
+(pass) normalizePinLabels > preserves unique non-numeric labels [0.04ms]
+(pass) normalizePinLabels > normalizes leading hash active-low labels [0.02ms]
+(pass) normalizePinLabels > normalizes trailing hash active-low labels without double-prefixing [0.02ms]
+(pass) normalizePinLabels > deduplicates normalized active-low labels
+(pass) normalizePinLabels > handles multiple labels per pin
+(pass) normalizePinLabels > handles duplicate numeric labels
+
+tests/browser-bundle-websafe-guard.test.ts:
+(pass) browser bundle websafe guard > browser build does not include known non-websafe runtime baggage [7915.41ms]
+
+tests/get-easyeda-cad-model-placement.test.ts:
+(pass) getCadModelOffsetMmFromBounds > derives XY placement from explicit bounds even when _objMetadata is missing [7.17ms]
+(pass) getCadModelOffsetMmFromBounds > rebases XY against recentered footprint bounds [1.89ms]
+
+tests/generate-footprint-tsx.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C5830143-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c82173-to-ts.test.ts:
+(pass) generates the C82173 LED driver IC as a chip [8.50ms]
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C9972-to-ts.test.ts:
+(pass) preserves the exact C9972 manufacturer part number [3.26ms]
+(pass) reports missing manufacturer part number metadata [1.78ms]
+
+tests/convert-to-ts/C335982-polarized-capacitor-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C7434162-pin-labels-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C96225-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C284163-to-ts.test.ts:
+(pass) converts C284163 to a four-pin crystal [2.55ms]
+
+tests/convert-to-ts/C46497-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C14877-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C20526-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C113367-overlapping-pin-labels.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C160354-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C6186-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C5378731-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C165948-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C19795120-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C157929-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C1525-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C265111-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2941005-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C136720-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C49234237-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/infer-pin-attributes.test.ts:
+(pass) infers only unambiguous IC power, ground, and no-connect attributes
+
+tests/convert-to-ts/C410353-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C105419-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2765186-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C9900017879-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2828420-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C501008-mosfet-symbol-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/switch-category.test.ts:
+(pass) does not treat Power Distribution Switches as a mechanical switch [0.15ms]
+(pass) does not treat Power-Distribution Switch as a mechanical switch [0.04ms]
+(pass) does not treat PMIC - Power Distribution Switches, Load Drivers as a mechanical switch
+(pass) does not treat Load Switches as a mechanical switch
+(pass) does not treat LOAD-SWITCH as a mechanical switch [0.04ms]
+(pass) does not treat Analog Switches / Multiplexers as a mechanical switch
+(pass) does not treat Analog-Switch as a mechanical switch [0.04ms]
+(pass) does not treat Switching Diodes as a mechanical switch
+(pass) does not treat Switch ICs as a mechanical switch
+(pass) retains mechanical Slide Switches categories
+(pass) retains mechanical Toggle Switches categories [0.06ms]
+(pass) retains mechanical DIP Switches categories
+(pass) retains mechanical Key Switches categories
+(pass) retains mechanical Micro Switches categories
+(pass) retains mechanical Limit Switches categories
+(pass) retains mechanical Power Toggle Switches categories
+(pass) ignores absent and non-string categories
+(pass) semiconductor tags override a generic switch category [1.09ms]
+(pass) semiconductor category metadata overrides generic switch tags [1.71ms]
+(pass) semiconductor Category metadata overrides generic switch tags [0.12ms]
+(pass) semiconductor LCSC Category metadata overrides generic switch tags [1.17ms]
+(pass) semiconductor JLCPCB Category metadata overrides generic switch tags [0.92ms]
+(pass) a semiconductor top-level category overrides generic switch tags [1.68ms]
+
+tests/convert-to-ts/usb-type-c-category.test.ts:
+(pass) USB-C supplier prefix and package classify a connector without category tags [11.56ms]
+
+tests/convert-to-ts/special-character-pin-labels.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C131337-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2913206-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C7519-schematic-view-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2998002-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C22446580-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C51950748-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C281113-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C488251-pcb-view-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/smd-resistors-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C1985372-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C128415-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C3178291-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C82650-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2055640-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C157947-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C22446580.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C388883-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C139797-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C8545-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2041570-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2961147-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C62857-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C8465-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C158012-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C90683-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C14877.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C490691-active-low-labels.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C490691-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C393941-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C57759-to-led.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C88224-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/manufacturer-metadata.test.ts:
+(pass) SPDT import preserves all supplier symbol terminals and explicit topology [3.92ms]
+(pass) multi-terminal switch refuses an unverified default SPST topology [3.51ms]
+(pass) connector import carries verified mating direction in the footprint frame [1.67ms]
+(pass) invalid manufacturer metadata is rejected rather than dropped [1.82ms]
+(pass) connector classification preserves a supplier contact-switch symbol [9.97ms]
+
+tests/convert-to-ts/pushbutton-category.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C8598-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/custom-symbol-refdes.test.ts:
+(pass) a transistor symbol without supplier text receives a dynamic reference [3.40ms]
+
+tests/convert-to-ts/C19076967-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c2943786-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C46749-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/additional-payload-variants.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C12084-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/thermostat-category.test.ts:
+(pass) semiconductor thermostat switches are not mechanical switches [0.07ms]
+
+tests/convert-to-ts/C1046-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C23689428-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C561765-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2040-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2838502-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2687116-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2848306-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2979182-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C55266-power-distribution-switch.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C15464-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/standard-dip-switches-repro.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C5248081-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2879827-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2886621-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C3273487-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C113367-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C57759-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C60708-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C7203002-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C472489-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C404969-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c609652-pin-label.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/C2652953-to-ts.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'consolidatePcbOverlapErrors' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/fixture/node_modules/@tscircuit/checks/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+-------------------------------
+
+
+tests/convert-to-soup-tests/C160354.test.ts:
+(pass) C160354 (JST B4B-PH-SM4-TB) should generate Circuit JSON without errors [35.68ms]
+
+tests/convert-to-soup-tests/convert-usb-c-to-soup.test.ts:
+(pass) should convert a usb-c footprint (C2765186) to tscircuit soup json [48.57ms]
+
+tests/convert-to-soup-tests/normalize-plus-minus.test.ts:
+(pass) normalizes plus and minus symbols in pin names during conversion [11.32ms]
+(pass) normalizes plus and minus symbols in package detail silkscreen text during conversion [3.83ms]
+
+tests/convert-to-soup-tests/declared-slot-length.test.ts:
+(pass) preserves declared 1.2 mm slot at 0 degrees [3.39ms]
+(pass) preserves declared 1.2 mm slot at 90 degrees [3.06ms]
+(pass) preserves declared 1.2 mm slot at 180 degrees [2.24ms]
+(pass) preserves declared 1.2 mm slot at 270 degrees [2.31ms]
+(pass) oval copper does not imply a slotted drill [2.22ms]
+
+tests/convert-to-soup-tests/esp32-to-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer (smd) and convert to tscircuit soup [30.29ms]
+
+tests/convert-to-soup-tests/c5184526.test.ts:
+(pass) C5184526 should have two holes [23.72ms]
+
+tests/convert-to-soup-tests/c2848306-to-soup.test.ts:
+(pass) C2848306 should parse successfully with 'none' visibility enum [3.62ms]
+
+tests/convert-to-soup-tests/bottom-layer-track.test.ts:
+(pass) preserves the side of bottom-layer tracks [35.94ms]
+
+tests/convert-to-soup-tests/c2055640-courtyard.test.ts:
+(pass) C2055640 should import courtyard outlines with non-zero height and render them [44.73ms]
+
+tests/convert-to-soup-tests/c19795120-cutout.test.ts:
+(pass) C19795120 should generate a pcb_cutout [24.81ms]
+
+tests/convert-to-soup-tests/convert-easyeda-to-tscircuit-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer and convert to tscircuit soup [24.73ms]
+
+tests/convert-to-soup-tests/c57759.test.ts:
+(pass) C57759 should generate Circuit Json without errors [23.17ms]
+(pass) C57759 should parse PT shape correctly [1.40ms]
+
+tests/convert-to-soup-tests/C265111.test.ts:
+(pass) C265111 (JST SM08B-GHS-TB) should generate Circuit JSON without errors [23.54ms]
+
+tests/convert-to-soup-tests/C8465.test.ts:
+(pass) C8465 (JST B2B-EH-A) should generate Circuit JSON without errors [24.72ms]
+
+tests/convert-to-soup-tests/bottom-layer-arc.test.ts:
+(pass) preserves the side of bottom-layer arcs [27.06ms]
+
+tests/convert-to-soup-tests/c46497.test.ts:
+(pass) C46497 should generate Circuit Json with vias [30.85ms]
+
+tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:
+30 |       num_layers: 2,
+31 |       material: "fr4",
+32 |     }),
+33 |   )
+34 | 
+35 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modules.easyeda.com/3dmodel/617b05f9bba7410b96c001093d8189e4",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:35:29)
+30 |       num_layers: 2,
+31 |       material: "fr4",
+32 |     }),
+33 |   )
+34 | 
+35 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: Matcher `toMatch3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:35:29)
+(fail) uses C165948 CAD model bounds instead of its PCB footprint size [402.32ms]
+
+tests/convert-to-soup-tests/C131337.test.ts:
+(pass) C131337 (JST B2B-PH-K-S) should generate Circuit JSON without errors [34.71ms]
+
+tests/convert-to-soup-tests/diode-polarity-port-hints.test.ts:
+(pass) preserves normalized diode polarity hints on PCB pads [4.33ms]
+
+tests/convert-to-soup-tests/plated-hole-layers.test.ts:
+(pass) through-hole pads span both outer copper layers [5.50ms]
+
+tests/convert-to-soup-tests/c4355039-to-soup.test.ts:
+(pass) should parse easyeda json for c4355039 and convert to tscircuit soup [28.62ms]
+
+tests/convert-to-soup-tests/fallback-courtyard-model-outline.test.ts:
+(pass) uses the FS3000 physical body for its fallback courtyard [3.50ms]
+(pass) excludes the VCNL4040 silkscreen marker from its fallback courtyard [1.76ms]
+
+tests/convert-to-soup-tests/C157929.test.ts:
+(pass) C157929 (JST B3B-XH-A) should generate Circuit JSON without errors [31.28ms]
+
+tests/convert-to-soup-tests/c88224.test.ts:
+(pass) should parse easyeda json for a c88224 and convert to tscircuit soup [32.83ms]
+
+tests/convert-to-soup-tests/c3178291-to-soup.test.ts:
+(pass) should convert c3178291 with polygon pads [27.69ms]
+
+tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:
+19 |   const silkscreenText = circuitJson.find(
+20 |     (element) => element.type === "pcb_silkscreen_text",
+21 |   )
+22 | 
+23 |   expect(silkscreenText).toMatchObject({ ccw_rotation: 90 })
+24 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tests/convert-to-soup-tests/__snapshots__/silkscreen-text-rotation.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-converter/tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:24:51)
+(fail) preserves rotated silkscreen text in the PCB snapshot [136.93ms]
+
+tests/convert-to-soup-tests/duplicate-pad-numbers.test.ts:
+(pass) keeps repeated EasyEDA pad numbers on one logical pin [10.32ms]
+
+tests/convert-to-soup-tests/C158012.test.ts:
+(pass) C158012 (JST B2B-XH-A) should generate Circuit JSON without errors [22.26ms]
+
+tests/fetch-tests/c41430893.test.ts:
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "ConnectionRefused"
+
+(fail) should fetch correct part for C41430893 [1.25ms]
+error: Was there a typo in the url or port?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+(fail) C41430893 should generate Circuit Json without errors [0.24ms]
+
+tests/fetch-tests/c1555-0402-repro.test.ts:
+(pass) rejects C1555 when EasyEDA only returns fuzzy value matches [1.17ms]
+(pass) snapshots the misleading C1555 search candidate [20.59ms]
+
+tests/fetch-tests/rate-limit-403.test.ts:
+(pass) surfaces a search-request HTTP 403 as rate limiting, not a component lookup failure [0.14ms]
+(pass) surfaces a component-details HTTP 403 as rate limiting [0.27ms]
+(pass) keeps 'Component not found' distinct from rate limiting [0.06ms]
+(pass) includes the HTTP status in non-403 search failures
+
+tests/fetch-tests/missing-library-component.test.ts:
+(pass) reports when S4 has no EasyEDA library search result [0.56ms]
+(pass) reports when EasyEDA rejects the search request
+
+tests/fetch-tests/invalid-search-response.test.ts:
+(pass) rejects null response before fetching geometry [0.48ms]
+(pass) rejects missing success flag before fetching geometry [0.01ms]
+(pass) rejects string success flag before fetching geometry
+(pass) rejects missing results before fetching geometry [0.05ms]
+(pass) rejects missing lists before fetching geometry [0.01ms]
+(pass) rejects non-array component list before fetching geometry [0.03ms]
+(pass) rejects component without a UUID before fetching geometry [0.07ms]
+(pass) rejects API rejection even with a nonempty result list before fetching geometry [0.04ms]
+
+tests/fetch-tests/exact-search-response.test.ts:
+(pass) preserves exact matching through supplier parameter [0.45ms]
+(pass) preserves exact matching through lcsc number [0.15ms]
+(pass) preserves exact matching through szlcsc number [0.10ms]
+
+tests/fetch-tests/c2040.test.ts:
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://easyeda.com/api/components/search",
+ errno: 0,
+  code: "ConnectionRefused"
+
+(fail) should fetch correct part for C2040 [1.11ms]
+
+tests/cli-tests/download-error-exit.test.ts:
+(pass) download failure exits nonzero and writes no supplier footprint [109.10ms]
+
+tests/parse-tests/malformed-schema-variants.test.ts:
+(pass) coerces a numeric-string szlcsc id [2.03ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [1.55ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [1.34ms]
+(pass) accepts an absent dataStr.head.utime value () [0.96ms]
+(pass) normalizes text alignment "P" to left alignment [1.72ms]
+(pass) normalizes additional payload variants from issue #464 [1.22ms]
+
+tests/parse-tests/rk3566-import-regression.test.ts:
+(pass) parses footprint-only parts with incomplete schematic metadata [1.11ms]
+(pass) preserves exponent-like BGA pad identifiers and generates unique ports [0.77ms]
+(pass) keeps ordinary decimal pad identifiers numeric [0.06ms]
+
+tests/parse-tests/single-letter-shape-schema.test.ts:
+(pass) parses examples for single letter shape schema [0.81ms]
+(pass) normalizes literal undefined optional text fields from EasyEDA text shapes [0.33ms]
+(pass) normalizes whitespace-only text metadata from C60708 [0.17ms]
+(pass) still rejects unexpected fontStyle values [0.18ms]
+(pass) parses schematic drawing colors, paths, and pin stems [0.53ms]
+
+tests/parse-tests/parse-c46497.test.ts:
+(pass) should parse easyeda json for C46497 with VIA [8.11ms]
+
+tests/parse-tests/parse-c4355039.test.ts:
+(pass) should parse easyeda json for a c4355039 [1.77ms]
+
+tests/parse-tests/parse-c124375.test.ts:
+(pass) should parse easyeda json for a c124375 [0.96ms]
+
+tests/parse-tests/pin-label-plus-minus.test.ts:
+(pass) converts trailing plus and minus in pin labels [0.68ms]
+(pass) normalizes voltage pin labels with leading plus [0.07ms]
+
+tests/parse-tests/parse-usb-c.test.ts:
+(pass) should parse easyeda json for a mounted usb c plug [5.13ms]
+
+tests/parse-tests/parse-esp32.test.ts:
+(pass) should parse easyeda json for a 555 timer [4.50ms]
+
+tests/parse-tests/parse-c124352.test.ts:
+(pass) should parse easyeda json for a C124352 [2.95ms]
+
+tests/parse-tests/parse-555-timer-json.test.ts:
+(pass) should parse easyeda json for a 555 timer [1.71ms]
+
+tests/parse-tests/pin-label-hash.test.ts:
+(pass) converts trailing # in pin labels to active-low N_ prefix [1.18ms]
+
+103 tests failed:
+(fail) uses C165948 CAD model bounds instead of its PCB footprint size [402.32ms]
+(fail) preserves rotated silkscreen text in the PCB snapshot [136.93ms]
+(fail) should fetch correct part for C41430893 [1.25ms]
+(fail) C41430893 should generate Circuit Json without errors [0.24ms]
+(fail) should fetch correct part for C2040 [1.11ms]
+
+ 170 pass
+ 103 fail
+ 98 errors
+ 10 snapshots, 1652 expect() calls
+Ran 273 tests across 166 files. [10.44s]

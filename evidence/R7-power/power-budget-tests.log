@@ -1,0 +1,11 @@
+test_600ma_pack_cannot_supply_two_watts_under_design_assumptions (test_r7_power_budget.PowerBudgetTests.test_600ma_pack_cannot_supply_two_watts_under_design_assumptions) ... ok
+test_850ma_candidate_has_current_and_energy_margin_at_1_7w (test_r7_power_budget.PowerBudgetTests.test_850ma_candidate_has_current_and_energy_margin_at_1_7w) ... ok
+test_current_limiter_fault_max_plus_radio_below_pack_limit (test_r7_power_budget.PowerBudgetTests.test_current_limiter_fault_max_plus_radio_below_pack_limit) ... ok
+test_no_free_energy_or_efficiency_inputs (test_r7_power_budget.PowerBudgetTests.test_no_free_energy_or_efficiency_inputs) ... ok
+test_ti_published_table_2_not_project_generated_expectations (test_r7_power_budget.PowerBudgetTests.test_ti_published_table_2_not_project_generated_expectations) ... ok
+test_two_watts_near_empty_exceeds_minimum_limiter_threshold (test_r7_power_budget.PowerBudgetTests.test_two_watts_near_empty_exceeds_minimum_limiter_threshold) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

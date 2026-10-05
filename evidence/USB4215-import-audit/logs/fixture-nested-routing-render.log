@@ -1,0 +1,5 @@
+$ bun render.tsx
+{
+  "paste_count": 16,
+  "errors": []
+}

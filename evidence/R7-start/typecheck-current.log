@@ -1,0 +1,5 @@
+$ tsc --noEmit
+src/fill-light-ring.tsx(51,10): error TS2322: Type '{ key: string; name: string; }' is not assignable to type 'NetProps'.
+  Property 'key' does not exist on type 'NetProps'.
+src/fill-light-ring.tsx(54,10): error TS2322: Type '{ key: string; name: string; }' is not assignable to type 'NetProps'.
+  Property 'key' does not exist on type 'NetProps'.

@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solderpaste-routing-neutrality.test.tsx:
+(pass) paste is retained in Circuit JSON without changing the copper routing problem [74.56ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [997.00ms]

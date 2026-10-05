@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solderpaste-polygon-transform.test.tsx:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/core/tests/__snapshots__/solderpaste-polygon-transform-pcb.snap.svg
+(pass) explicit paste follows footprint translation, rotation and layer reflection [926.24ms]
+
+ 1 pass
+ 0 fail
+ 90 expect() calls
+Ran 1 test across 1 file. [1.69s]

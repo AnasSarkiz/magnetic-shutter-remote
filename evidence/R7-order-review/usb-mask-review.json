@@ -1,0 +1,737 @@
+{
+  "minimum_mask_web_mm": 0.0982470000000002,
+  "pairs": [
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin27"
+        ]
+      ],
+      "mask_web_mm": 0.0982470000000002
+    },
+    {
+      "pins": [
+        [
+          "pin21"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 0.09827299999999983
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 0.098273
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin24"
+        ]
+      ],
+      "mask_web_mm": 0.09827300000000005
+    },
+    {
+      "pins": [
+        [
+          "pin19"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 0.09838700000000022
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin26"
+        ]
+      ],
+      "mask_web_mm": 0.09838700000000022
+    },
+    {
+      "pins": [
+        [
+          "pin18"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 0.09850100000000017
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin25"
+        ]
+      ],
+      "mask_web_mm": 0.09852699999999981
+    },
+    {
+      "pins": [
+        [
+          "pin20"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 0.09852700000000003
+    },
+    {
+      "pins": [
+        [
+          "pin22"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 0.09852700000000003
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin23"
+        ]
+      ],
+      "mask_web_mm": 0.09852700000000003
+    },
+    {
+      "pins": [
+        [
+          "pin21"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 0.5983989999999999
+    },
+    {
+      "pins": [
+        [
+          "pin22"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 0.5983989999999999
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin24"
+        ]
+      ],
+      "mask_web_mm": 0.5983989999999999
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 0.598399
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 0.598399
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin23"
+        ]
+      ],
+      "mask_web_mm": 0.5983990000000001
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin25"
+        ]
+      ],
+      "mask_web_mm": 0.5985130000000001
+    },
+    {
+      "pins": [
+        [
+          "pin20"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 0.5985130000000003
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin26"
+        ]
+      ],
+      "mask_web_mm": 0.8982330000000003
+    },
+    {
+      "pins": [
+        [
+          "pin19"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 0.8984870000000003
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 1.0982709999999998
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 1.098271
+    },
+    {
+      "pins": [
+        [
+          "pin21"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 1.0983850000000002
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin24"
+        ]
+      ],
+      "mask_web_mm": 1.0983850000000002
+    },
+    {
+      "pins": [
+        [
+          "pin22"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 1.098525
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 1.098525
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin23"
+        ]
+      ],
+      "mask_web_mm": 1.098525
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin25"
+        ]
+      ],
+      "mask_web_mm": 1.3983590000000001
+    },
+    {
+      "pins": [
+        [
+          "pin20"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 1.3986130000000003
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 1.5983969999999998
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 1.5983969999999998
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 1.5983969999999998
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 1.598397
+    },
+    {
+      "pins": [
+        [
+          "pin22"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 1.5985110000000002
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin23"
+        ]
+      ],
+      "mask_web_mm": 1.5985110000000002
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin24"
+        ]
+      ],
+      "mask_web_mm": 1.8982310000000002
+    },
+    {
+      "pins": [
+        [
+          "pin21"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 1.8984850000000002
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 2.098269
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 2.098383
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 2.098383
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 2.098523
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 2.098523
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin23"
+        ]
+      ],
+      "mask_web_mm": 2.3983570000000003
+    },
+    {
+      "pins": [
+        [
+          "pin22"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 2.3986110000000003
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 2.598395
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 2.598395
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 2.598509
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 2.598509
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin22"
+        ]
+      ],
+      "mask_web_mm": 2.898229
+    },
+    {
+      "pins": [
+        [
+          "pin23"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 2.898483
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 3.098381
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 3.0983810000000003
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 3.098521
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin21"
+        ]
+      ],
+      "mask_web_mm": 3.3983550000000005
+    },
+    {
+      "pins": [
+        [
+          "pin24"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 3.3986090000000004
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 3.598507
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 3.598507
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin20"
+        ]
+      ],
+      "mask_web_mm": 3.8982270000000003
+    },
+    {
+      "pins": [
+        [
+          "pin25"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 3.8984810000000003
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 4.098493
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin19"
+        ]
+      ],
+      "mask_web_mm": 4.398353
+    },
+    {
+      "pins": [
+        [
+          "pin26"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 4.398607
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin18"
+        ]
+      ],
+      "mask_web_mm": 4.898339
+    },
+    {
+      "pins": [
+        [
+          "pin27"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 4.898593
+    },
+    {
+      "pins": [
+        [
+          "pin28"
+        ],
+        [
+          "pin17"
+        ]
+      ],
+      "mask_web_mm": 5.6984390000000005
+    }
+  ],
+  "supplier_mask_expansion_mm": 0.0508,
+  "published_bridge_capability_mm": 0.1,
+  "rule_source": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "rule_checked_date": "2026-10-04",
+  "rule_context": "Soldermask bridge row specifies 0.10 mm and describes minimum pad spacing for 1 oz standard-color inks. Do not substitute pad spacing for actual mask-web measurement.",
+  "status": "JLCPCB PROCESSED-PREVIEW REVIEW REQUIRED: measured web is below nominal 0.10 mm bridge capability. No automatic fabrication acceptance or removal of dams approved."
+}

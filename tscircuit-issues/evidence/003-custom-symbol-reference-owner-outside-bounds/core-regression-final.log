@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autoroutingphase-emitted-paths-unavailable.test.tsx:
+(pass) unrepresentable output reports a reason without partial paths or input mutation [140.47ms]
+
+tests/repros/repro-symbol-port-selector.test.tsx:
+(pass) custom-symbol physical port selectors round-trip and routes can be saved [51.34ms]
+
+tests/repros/repro-symbol-reference-owner.test.tsx:
+(pass) reference text outside a custom symbol body retains its component association [6.11ms]
+
+tests/repros/repro-custom-symbol-repeated-pads.test.tsx:
+(pass) custom symbols retain every internally connected physical pad [10.76ms]
+
+tests/repros/repro-pcb-schema-export.test.tsx:
+(pass) board holes, explicit positions and rotated pill paste satisfy export schema [24.26ms]
+
+ 5 pass
+ 0 fail
+ 31 expect() calls
+Ran 5 tests across 5 files. [1091.00ms]

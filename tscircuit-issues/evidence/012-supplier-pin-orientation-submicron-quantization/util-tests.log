@@ -1,0 +1,227 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/subtree1.test.ts:
+(pass) subtree by subcircuit [1.61ms]
+
+tests/select.test.ts:
+(pass) select [0.14ms]
+
+tests/get-board-bounds.test.ts:
+(pass) getBoardBounds computes bounds from width/height/center
+(pass) getBoardBounds computes bounds from outline
+
+tests/subcircuit.test.ts:
+(pass) subcircuit command - subtree for each board in two-boards.json [1.42ms]
+
+tests/getCircuitJsonTreeBoardRoot.test.ts:
+(pass) getCircuitJsonTree - board only includes root source_group [144.85ms]
+
+tests/get-minimum-flex-container.test.ts:
+(pass) getMinimumFlexContainer computes correct size for row direction
+(pass) getMinimumFlexContainer computes correct size for column direction
+
+tests/cju-indexed.test.ts:
+(pass) suIndexed produces same output as su [2.50ms]
+
+tests/reposition-schematic-component.test.ts:
+(pass) repositionSchematicComponentTo moves component and related elements
+
+tests/analyze-pcb-pin1-location.test.ts:
+(pass) analyzes all semantic pin 1 locations [0.58ms]
+(pass) returns null for ambiguous multi-pad footprints and missing pin 1 [0.11ms]
+(pass) matches the routed JST PH J1 and C131334 supplier pin order [0.47ms]
+(pass) refuses incomplete or nonmonotonic multi-pad rows
+(pass) infers a consistent two-pad LED frame at each right-angle rotation
+(pass) recovers supplier-to-local LED rotation for every pair of frames [0.45ms]
+(pass) two-pad frames do not depend on pad order, origin or small rounding errors [0.02ms]
+(pass) does not guess a two-pad frame without distinct axis-aligned pins 1 and 2
+(pass) orientation inference tolerates sub-micron supplier row quantization without changing geometry [0.16ms]
+(pass) orientation quantization allowance does not classify a genuinely staggered row
+
+tests/copper-geometry.test.ts:
+(pass) placePolygon rotates local points before translating to board coordinates [0.41ms]
+(pass) circlePolygon retains analytic circular area [0.76ms]
+(pass) roundedRectangle preserves rounded corners and rotation [0.50ms]
+(pass) getPourPolygon applies a rectangular pour's rotation
+(pass) getPourPolygon normalizes clockwise polygon vertices
+(pass) getPourPolygon excludes straight BRep antipads without mutating input [0.37ms]
+(pass) getPourPolygon preserves curved BRep antipads [0.11ms]
+(pass) getPourPolygon preserves clockwise bulge arcs [0.15ms]
+(pass) getSmtPadPolygon preserves a rotated pill outline [0.23ms]
+(pass) getPlatedHolePolygon excludes the circular drill [0.09ms]
+(pass) getPlatedHolePolygon places local polygon pads using component rotation
+(pass) getViaPolygon creates an annulus at its board position
+(pass) getTraceSegmentPolygon includes round constant-width end caps
+(pass) getTraceSegmentPolygon supports different endpoint widths
+(pass) getTraceSegmentPolygon handles coincident endpoints
+(pass) copperPolygonsTouch detects tangent copper edges
+(pass) copperPolygonsTouch rejects a real gap [2.06ms]
+(pass) copperPolygonsTouch rejects copper inside an antipad [0.60ms]
+(pass) copperPolygonsTouch detects contained copper [0.16ms]
+
+tests/get-readable-name-for-element.test.ts:
+(pass) getReadableNameForElement for pcb_port, pcb_smtpad, and pcb_trace [0.31ms]
+
+tests/get-bounds-of-pcb-elements-visual.test.ts:
+(pass) getBoundsOfPcbElements visual: bounds vs a rotated pcb_component [17.56ms]
+
+tests/compute-clearance-between-elements.test.ts:
+(pass) computeClearanceBetweenElements includes pcb_hole geometry [0.82ms]
+(pass) computeClearanceBetweenElements includes pcb_keepout geometry [0.23ms]
+(pass) computeClearanceBetweenElements still works for copper trace decomposition
+
+tests/subtree2.test.ts:
+(pass) subtree by source group [0.75ms]
+
+tests/insert-anyelement.test.ts:
+(pass) insert any element via cju(elms).insert [0.06ms]
+
+tests/insert.test.ts:
+(pass) insert [0.67ms]
+
+tests/insert-all.test.ts:
+(pass) insertAll inserts multiple elements with generated ids [0.03ms]
+
+tests/insert-with-validation.test.ts:
+(pass) insert with validation
+
+tests/compute-gap-between-copper.test.ts:
+(pass) computeGapBetweenCopper for two circles
+(pass) computeGapBetweenCopper for circle to rect
+(pass) computeGapBetweenCopper for polygon to polygon [0.31ms]
+(pass) computeGapBetweenCopper handles traces by decomposing into circles and rects
+(pass) computeGapBetweenCopper returns 0 for overlapping shapes [0.08ms]
+
+tests/get-bounds-of-pcb-elements.test.ts:
+(pass) getBoundsOfPcbElements
+(pass) getBoundsOfPcbElements with polygon-shaped SMT pad
+(pass) getBoundsOfPcbElements with pcb_hole uses hole_diameter
+(pass) getBoundsOfPcbElements with pcb_courtyard_rect
+(pass) getBoundsOfPcbElements with pcb_courtyard_circle
+(pass) getBoundsOfPcbElements with pcb_courtyard_outline
+(pass) getBoundsOfPcbElements with pcb_courtyard_polygon
+(pass) getBoundsOfPcbElements with rectangular plated hole pad includes pad extents
+(pass) getBoundsOfPcbElements with rotated pill plated hole
+(pass) getBoundsOfPcbElements uses tight bounds for a pill rotated 45 degrees
+(pass) getBoundsOfPcbElements accounts for rotated SMT pad ccw_rotation
+(pass) getBoundsOfPcbElements with rotated oval plated hole
+(pass) getBoundsOfPcbElements accounts for pcb_component rotation
+(pass) getPcbElementBounds returns one element's rotated bounds
+(pass) getPcbElementBounds returns null for non-PCB elements
+(pass) getPcbElementsWithinBounds selects intersecting PCB geometry [0.48ms]
+
+tests/edit-count.test.ts:
+(pass) cju editCount increments correctly
+(pass) cjuIndexed editCount increments correctly [0.38ms]
+
+tests/reposition-schematic-group.test.ts:
+(pass) repositionSchematicGroupTo moves group elements and deep children [0.88ms]
+(pass) repositionSchematicGroupTo handles empty group [0.02ms]
+(pass) repositionSchematicGroupTo handles nonexistent group
+
+tests/transform-pcb-elements.test.ts:
+(pass) transformPCBElements moves pcb_silkscreen_path route
+(pass) transformPCBElements moves pcb_note_text anchor_position
+(pass) transformPCBElements moves pcb_note_rect center
+(pass) transformPCBElements moves pcb_note_path route
+(pass) transformPCBElements moves pcb_courtyard_rect center
+(pass) transformPCBElements rotates pcb_courtyard_rect ccw_rotation [0.45ms]
+(pass) transformPCBElements swaps pill smtpad dimensions for 90 degree transforms
+(pass) transformPCBElements moves pcb_courtyard_circle center
+(pass) transformPCBElements moves pcb_courtyard_outline points
+(pass) transformPCBElements moves pcb_courtyard_polygon points
+(pass) transformPCBElements moves pcb_note_line x1,y1,x2,y2
+(pass) transformPCBElements rotates pcb_component insertion_direction for 90/180/270 degree transforms
+(pass) transformPCBElements mirrors pcb_component insertion_direction for flipped transforms [0.27ms]
+(pass) transformPCBElements applies rotation before Y-mirror for pcb_component insertion_direction
+(pass) transformPCBElements keeps pcb_component insertion_direction "from_above" unchanged under rotation
+(pass) transformPCBElements flips Z insertion_direction for mirrored transforms
+(pass) transformPCBElements moves pcb_component cable_insertion_center
+(pass) transformPCBElements moves pcb_solder_paste with its pad [0.10ms]
+(pass) transformPCBElements swaps rect pcb_solder_paste dimensions for 90 degree transforms [0.04ms]
+(pass) transformPCBElements moves pcb_copper_text anchor_position
+(pass) transformPCBElements moves pcb_trace_hint route [0.03ms]
+(pass) transformPCBElements moves pcb_silkscreen_pill and pcb_silkscreen_oval centers
+
+tests/get-layout-debug-object.test.ts:
+(pass) should handle regular elements with x, y, width, height
+(pass) should handle polygon elements with points array
+(pass) should handle polygon with irregular shape
+(pass) should return null for elements without coordinates or points
+(pass) should handle empty points array
+
+tests/update.test.ts:
+(pass) update
+
+tests/get-using.test.ts:
+(pass) getUsing [0.36ms]
+
+tests/get-schematic-element-bounds.test.ts:
+(pass) getSchematicElementBounds computes component bounds
+(pass) computes left-anchored net label bounds
+(pass) computes right-anchored net label bounds
+(pass) computes top-anchored net label bounds
+(pass) computes bottom-anchored net label bounds
+(pass) uses a net label's center when anchor_position is absent
+(pass) computes trace bounds from edges and junctions with trace width
+(pass) returns null for an empty trace
+
+tests/reposition-pcb-group.test.ts:
+(pass) repositionPcbGroupTo moves group elements and deep children [1.38ms]
+(pass) repositionPcbGroupTo handles empty group
+(pass) repositionPcbGroupTo handles nonexistent group
+
+tests/cju-indexed-api-parity.test.ts:
+(pass) indexed root insert and bulk insert preserve IDs, validation and edit counts ({}) [4.52ms]
+(pass) indexed root insert and bulk insert preserve IDs, validation and edit counts ({"byId":true,"byType":true}) [2.39ms]
+(pass) indexed subtree retains connectivity, index options and an independent collection [1.37ms]
+(pass) list results cannot corrupt type indexes but contained elements remain live
+
+tests/getCircuitJsonTreeForInnerGroup.test.ts:
+(pass) getCircuitJsonTreeForInnerGroup [120.64ms]
+
+tests/reposition-pcb-component.test.ts:
+(pass) repositionPcbComponentTo moves component and children
+(pass) repositionPcbComponentTo moves solder paste with its pads (tscircuit/core#2897)
+
+tests/get-element-render-layers.test.ts:
+(pass) getElementRenderLayers returns correct layers for different element types [1.80ms]
+(pass) pcb_note elements return user_note layer based on element layer
+
+tests/insert-discriminated-circuit-element.test.ts:
+(pass) table insert accepts every variant of a discriminated Circuit JSON type [0.03ms]
+
+tests/getCircuitJsonTree1.test.ts:
+(pass) getCircuitJsonTree1 [118.36ms]
+
+tests/get.test.ts:
+(pass) get
+
+tests/categorize-error-or-warning.test.ts:
+(pass) categorizeErrorOrWarning categorizes known DRC error/warning types [0.57ms]
+(pass) categorizeErrorOrWarning reads error_type/warning_type/type from objects [0.81ms]
+(pass) categorizeErrorOrWarning returns unknown when no mapping exists
+
+tests/delete.test.ts:
+(pass) delete
+
+tests/find-bounds-and-center.test.ts:
+(pass) should return default values for empty input
+(pass) should calculate bounds and center for a single element [0.05ms]
+(pass) should calculate bounds and center for multiple elements [0.07ms]
+(pass) should handle pcb_trace elements correctly
+(pass) should handle circular_hole_with_rect_pad plated hole correctly
+(pass) should handle circular_hole_with_rect_pad where hole is larger than pad
+(pass) should handle polygon SMT pad elements correctly
+(pass) should calculate bounds for silkscreen circles using their radius [0.18ms]
+
+tests/create-board-owner-map.test.ts:
+(pass) resolves board ownership from IDs across panels and nested groups [0.81ms]
+
+tests/repro-source-trace-not-connected-category.test.tsx:
+(pass) a missing pin error is included in the netlist category [136.54ms]
+
+ 141 pass
+ 0 fail
+ 4 snapshots, 605 expect() calls
+Ran 141 tests across 40 files. [1001.00ms]

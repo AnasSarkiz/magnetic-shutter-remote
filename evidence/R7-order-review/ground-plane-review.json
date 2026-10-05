@@ -1,0 +1,286 @@
+{
+  "datasheet": "TI SLUSF65B, revised August 2026, section 7.4.1 / Figure 7-9",
+  "solid_ground_under_entire_exposed_pad_bottom": false,
+  "continuous_top_plane_connects_ground_pin_and_covers_entire_exposed_pad": true,
+  "qualified_top_plane_areas_mm2": [
+    1171.0087781940622
+  ],
+  "all_ground_smt_lands_connected_to_exposed_pad": true,
+  "disconnected_ground_pads": [],
+  "return_pads": [
+    {
+      "ref": "J1",
+      "pad": "pcb_smtpad_0",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J1",
+      "pad": "pcb_smtpad_11",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R1",
+      "pad": "pcb_smtpad_12",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R2",
+      "pad": "pcb_smtpad_14",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U2",
+      "pad": "pcb_smtpad_20",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U2",
+      "pad": "pcb_smtpad_26",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R3",
+      "pad": "pcb_smtpad_27",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C1",
+      "pad": "pcb_smtpad_29",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C2",
+      "pad": "pcb_smtpad_31",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J2",
+      "pad": "pcb_smtpad_38",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J2",
+      "pad": "pcb_smtpad_39",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J2",
+      "pad": "pcb_smtpad_40",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R8",
+      "pad": "pcb_smtpad_41",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R9",
+      "pad": "pcb_smtpad_43",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C8",
+      "pad": "pcb_smtpad_45",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C9",
+      "pad": "pcb_smtpad_47",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U1",
+      "pad": "pcb_smtpad_68",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U1",
+      "pad": "pcb_smtpad_71",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U1",
+      "pad": "pcb_smtpad_87",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C5",
+      "pad": "pcb_smtpad_92",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW2",
+      "pad": "pcb_smtpad_95",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW3",
+      "pad": "pcb_smtpad_97",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "LED2",
+      "pad": "pcb_smtpad_100",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J3",
+      "pad": "pcb_smtpad_102",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J3",
+      "pad": "pcb_smtpad_103",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J3",
+      "pad": "pcb_smtpad_104",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "J3",
+      "pad": "pcb_smtpad_107",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW1",
+      "pad": "pcb_smtpad_110",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW1",
+      "pad": "pcb_smtpad_111",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW1",
+      "pad": "pcb_smtpad_112",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW1",
+      "pad": "pcb_smtpad_113",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "SW1",
+      "pad": "pcb_smtpad_114",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "Q1",
+      "pad": "pcb_smtpad_120",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R6",
+      "pad": "pcb_smtpad_122",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U3",
+      "pad": "pcb_smtpad_124",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C3",
+      "pad": "pcb_smtpad_129",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C4",
+      "pad": "pcb_smtpad_131",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U4",
+      "pad": "pcb_smtpad_133",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C6",
+      "pad": "pcb_smtpad_136",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "U5",
+      "pad": "pcb_smtpad_140",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R10",
+      "pad": "pcb_smtpad_144",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "R11",
+      "pad": "pcb_smtpad_146",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "C7",
+      "pad": "pcb_smtpad_148",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    },
+    {
+      "ref": "Q2",
+      "pad": "pcb_smtpad_155",
+      "connected_to_charger_ep": true,
+      "direct_plane_contact": true
+    }
+  ],
+  "nearby_ground_vias": [
+    "pcb_via_10",
+    "pcb_via_15"
+  ],
+  "top_ground_area_mm2": 1182.5474839806689,
+  "bottom_ground_area_mm2": 1327.2765959084693,
+  "bottom_pour_area_mm2": 1325.0516790268475,
+  "rf_keepout_copper_intrusions": [],
+  "minimum_pour_to_rf_boundary_mm": 0.5999999999999979,
+  "thermal_process": "No via-in-pad. EP is soldered; lateral copper feeds plated GND vias to the bottom plane. Thermal performance is POST-PROTOTYPE PHYSICAL VALIDATION."
+}

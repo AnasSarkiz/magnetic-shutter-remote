@@ -1,0 +1,46 @@
+[
+  {
+    "file": "tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C12084-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C1525-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C15464-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C20526-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C3273487-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C57759-to-led.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C57759-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/C7203002-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  },
+  {
+    "file": "tests/convert-to-ts/smd-resistors-to-ts.test.ts",
+    "strip_only_new_margin_props_and_paste_lines_equals_original": true
+  }
+]

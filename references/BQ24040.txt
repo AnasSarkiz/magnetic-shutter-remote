@@ -1,0 +1,2497 @@
+                                                                                                                            BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                       BQ24040,
+                                                                                                SLUS941H – SEPTEMBER         BQ24041,
+                                                                                                                     2009 – REVISED     BQ24045
+                                                                                                                                    FEBRUARY 2021
+                                                                                                SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+    BQ2404x 1A, Single-Input, Single Cell Li-Ion and Li-Pol Battery Charger With Auto
+                                          Start
+
+1 Features                                                                   3 Description
+•    Charging                                                                The BQ2404x series of devices are highly integrated
+     – 1% Charge voltage accuracy                                            Li-Ion and Li-Pol linear chargers devices targeted at
+     – 10% Charge current accuracy                                           space-limited portable applications. The devices
+     – Pin selectable USB 100 mA and 500 mA                                  operate from either a USB port or AC adapter. The
+        maximum input current limit                                          high input voltage range with input overvoltage
+                                                                             protection supports low-cost unregulated adapters.
+     – Programmable termination and precharge
+        threshold, BQ24040 and BQ24045                                       The BQ2404x has a single power output that charges
+     – High voltage (4.35 V) chemistry support with                          the battery. A system load can be placed in parallel
+        BQ24045                                                              with the battery as long as the average system load
+•    Protection                                                              does not keep the battery from charging fully during
+     – 30V Input rating; with 6.6 V or 7.1 V input                           the 10 hour safety timer.
+        overvoltage protection                                               The battery is charged in three phases: conditioning,
+     – Input voltage dynamic power management                                constant current and constant voltage. In all charge
+     – 125°C thermal regulation; 150°C thermal                               phases, an internal control loop monitors the IC
+        shutdown protection                                                  junction temperature and reduces the charge current
+     – OUT Short-circuit protection and ISET short                           if an internal temperature threshold is exceeded.
+        detection                                                            The charger power stage and charge current sense
+     – Operation over JEITA range via battery NTC –                          functions are fully integrated. The charger function
+        1/2 fast-charge-current at Cold, 4.06V at Hot,                       has high accuracy current and voltage regulation
+        BQ24040 and BQ24045                                                  loops, charge status display, and charge termination.
+     – Fixed 10 hour safety timer, BQ24040 and                               The pre-charge current and termination current
+        BQ24045                                                              threshold are programmed through an external
+•    System                                                                  resistor on the BQ24040 and BQ24045. The fast
+     – Automatic termination and timer disable mode                          charge current value is also programmable through an
+        (TTDM) for absent battery pack with thermistor,                      external resistor.
+        BQ24040 and BQ24045                                                                                  Device Information
+     – Status indication – charging and done                                   PART NUMBER(1)                         PACKAGE                          BODY SIZE (NOM)
+     – Available in small 2 × 2 mm2 DFN-10 package                            BQ24040
+     – Integrated auto start function for production line                     BQ24041                         WSON (10)                              2.00 mm x 2.00 mm
+        testing, BQ24041                                                      BQ24045
+•    Functional Safety-Capable (BQ24040)
+     – Documentation available to aid functional safety                      (1)          For all available packages, see the orderable addendum at
+                                                                                          the end of the data sheet.
+        system design
+•    Safety-Related Certifications:                                                                                       1.5kW
+
+
+     – IEC 62368-1 CB Certification (BQ24040,                                                                          BQ24040
+
+        BQ24045)
+                                                                               Adaptor
+
+                                                                                   DC+                         1 IN              OUT 10                                 System Load
+                                                                                                                                         1.5kW   Battery Pack
+                                                                                   GND
+
+2 Applications
+                                                                                                               2 ISET             TS 9
+                                                                                                                                                            ++
+                                                                                                               3 VSS             CHG 8
+                                                                                                      1kW                                                        1mF
+
+•    TWS Headsets and headphones
+                                                                                                1mF
+                                                                                                               4 PRETERM ISET2 7
+                                                                                OR
+
+•    Smartwatches and wristbands                                                                      2kW
+                                                                                                               5 PG               NC 6
+                                                                                                                                                                           VDD
+
+
+•    Wireless speakers                                                         USB Port                                                                           TTDM/BAT_EN
+
+                                                                                VBUS                                                                               ISET/100/500mA
+                                                                                 GND                                                                              GND
+•    Mobile POS                                                                     D+                                                                             D+
+                                                                                    D-                                                                             D-             Host
+
+•    Portable medical devices
+                                                                                                            Simplified Schematic
+
+
+
+       An© 2021
+Copyright IMPORTANT      NOTICE at the
+                Texas Instruments         end of this data sheet addresses availability, warranty, changes, use in
+                                  Incorporated                                                                     safety-critical
+                                                                                                                Submit  Document   applications,
+                                                                                                                                     Feedback                                            1
+       intellectual property matters and other important disclaimers. PRODUCTION DATA.
+                                              Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                                www.ti.com
+
+
+                                                                        Table of Contents
+1 Features............................................................................1     8.4 Device Functional Modes..........................................17
+2 Applications..................................................................... 1     9 Application and Implementation.................................. 22
+3 Description.......................................................................1       9.1 Application Information............................................. 22
+4 Revision History.............................................................. 2          9.2 Typical Applications.................................................. 22
+5 Device Comparison......................................................... 4            10 Power Supply Recommendations..............................29
+6 Pin Configuration and Functions...................................4                     11 Layout........................................................................... 30
+7 Specifications.................................................................. 6        11.1 Layout Guidelines................................................... 30
+  7.1 Absolute Maximum Ratings........................................ 6                    11.2 Layout Example...................................................... 30
+  7.2 ESD Ratings............................................................... 6          11.3 Thermal Considerations.......................................... 31
+  7.3 Recommended Operating Conditions.........................6                          12 Device and Documentation Support..........................32
+  7.4 Thermal Information....................................................7              12.1 Device Support....................................................... 32
+  7.5 Electrical Characteristics.............................................7              12.2 Documentation Support.......................................... 32
+  7.6 Timing Requirements................................................ 10                12.3 Receiving Notification of Documentation Updates..32
+  7.7 Typical Operational Characteristics (Protection                                       12.4 Support Resources................................................. 32
+    Circuits Waveforms).................................................... 11              12.5 Trademarks............................................................. 32
+8 Detailed Description......................................................12              12.6 Electrostatic Discharge Caution..............................32
+  8.1 Overview................................................................... 12        12.7 Glossary..................................................................32
+  8.2 Functional Block Diagram......................................... 13                13 Mechanical, Packaging, and Orderable
+  8.3 Feature Description...................................................14              Information.................................................................... 32
+
+
+
+4 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision G (June 2020) to Revision H (February 2021)                                                                          Page
+• Added BQ24040, BQ24045 to IEC 62368-1 CB Certification Feature............................................................... 1
+• Changed IBD-SINK minimum from 7 mA to 6 mA..................................................................................................7
+• Changed IIH maximum from 8 μA to 9.5 μA........................................................................................................7
+
+Changes from Revision F (March 2015) to Revision G (June 2020)                                                                                            Page
+• Added Functional Safety-Capable Feature ........................................................................................................1
+• Added IEC 62368-1 Feature...............................................................................................................................1
+• Changed Applications.........................................................................................................................................1
+• Deleted Disconnect after Detection from Simplified Schematic..........................................................................1
+• Changed thermal pad description ......................................................................................................................4
+• Added IOUT(SC) test condition ............................................................................................................................. 7
+• Changed Figure 7-5 ......................................................................................................................................... 11
+• Changed the Section 8.3.4 section ..................................................................................................................14
+• Added (BQ24040) to Figure 8-4 and Figure 8-5 .............................................................................................. 18
+• Deleted Disconnect after Detection from Figure 9-1 ........................................................................................22
+• Added link to BQ24040 Application Report...................................................................................................... 23
+• Deleted Disconnect after Detection from Figure 9-20 ......................................................................................27
+• Moved Section 11.3 to Layout section ............................................................................................................. 31
+
+
+Changes from Revision E (February 2014) to Revision F (March 2015)                                                                                           Page
+• Changed the Device Information table header information, and removed the package designation from the
+  device number ................................................................................................................................................... 1
+• Changed the Terminal Configuration and Functions To: Section 6 ....................................................................4
+• The storage temperature range has been moved to the Section 7.1 ................................................................ 6
+• Changed the Handling Ratings table To: Section 7.2 and updated the guidelines............................................. 6
+
+2       Submit Document Feedback                                                                                            Copyright © 2021 Texas Instruments Incorporated
+
+                                                         Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                   BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                               SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+•    Added the package family to the column heading in the Section 7.4................................................................. 7
+•    Added the NOTE to the Section 9 ................................................................................................................... 22
+
+Changes from Revision D (March 2013) to Revision E (February 2014)                                                                                     Page
+• Added Handling Ratings table , Feature Description section, Device Functional Modes section, Application
+  and Implementation section, Power Supply Recommendations section, Layout section, Device and
+  Documentation Support section, and Mechanical, Packaging, and Orderable Information section................... 1
+• Changed the Dissipation Rating table to the Section 7.4................................................................................... 7
+• Changed VO_HT(REG) in the Electrical Characteristics table to include new values BQ24045............................ 7
+• Added the Timing Requirements table..............................................................................................................10
+• Deleted the last sentence in the first paragraph of the TS (BQ24040/5) section .............................................19
+• Added the Section 9.2.1.3 ............................................................................................................................... 24
+
+Changes from Revision C (February 2013) to Revision D (March 2013)                                                                                                      Page
+• Changed Feature From: Fixed 10 Hour Safety Timer To: Fixed 10 Hour Safety Timer, BQ24040 and BQ24045
+  ............................................................................................................................................................................1
+• Changed the OUT terminal DESCRIPTION ...................................................................................................... 4
+• Changed RISET NOM value in the ROC table From: 49.9 kΩ To: 10.8 kΩ..........................................................6
+• Changed RISET_SHORT test conditions From: RISET : 600Ω → 250Ω To: RISET : 540Ω → 250Ω......................... 7
+• Changed IOUT_CL test conditions From: RISET : 600Ω → 250Ω To: RISET : 540Ω → 250Ω................................. 7
+• Deleted: Internally Set: BQ24041 from the TERMINATION section................................................................... 7
+• Added BQ24040 and BQ24045 only to the BATTERY CHARGING TIMERS AND FAULT TIMERS section...10
+• Changed text in the ISET section From: "maximum current between 1.1A and 1.35A" To: "maximum current
+  between 1.05A and 1.4A"................................................................................................................................. 18
+• Changed the Timers section............................................................................................................................. 20
+• Deleted: IOUT_TERM = 54mA from the Typical Application Circuit: BQ24041, with ASI and ASO conditions.....27
+
+Changes from Revision B (June 2012) to Revision C (February 2013)                                                                                     Page
+• Added device BQ24045......................................................................................................................................1
+• Added additional KISET information to the Electrical Characteristics table..........................................................7
+• Added graph - Load Regulation........................................................................................................................ 11
+• Added graph - Line Regulation......................................................................................................................... 11
+
+Changes from Revision A (September 2009) to Revision B (June 2012)                                                                      Page
+• Changed all occurrences of Li-Ion To: Li-Ion and Li-Pol..................................................................................... 1
+
+Changes from Revision * (August 2009) to Revision A (September 2009)                                                  Page
+• Changed the status of the devices From: Product Preview To: Production Data............................................... 1
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                      Submit Document Feedback                     3
+                                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                            www.ti.com
+
+
+5 Device Comparison
+         PART NO.     VO(REG)      VOVP      PreTerm                ASI/ASO                   TS/BAT_EN                          PG              PACKAGE
+         BQ24040       4.20 V      6.6 V           Yes                 No                      TS (JEITA)                        Yes        10-pin 2 × 2mm2 DFN
+                                                                                                BAT_EN
+         BQ24041       4.20 V      7.1 V           No                  Yes                                                       Yes        10-pin 2 × 2mm2 DFN
+                                                                                           Terminaton Disabled
+         BQ24045       4.35V       6.6V            Yes                 No                      TS (JEITA)                        Yes        10-pin 2 × 2mm2 DFN
+
+
+
+6 Pin Configuration and Functions
+
+                                                          IN    1                                             10    OUT
+
+
+
+                                                     ISET       2                                              9    TS
+
+
+                                                                                 Th ermal
+                                                         VSS    3                                              8    CHG
+                                                                                     Pad
+
+
+                                             PRE-TE RM          4                                              7    ISET2
+
+
+
+                                                         PG     5                                              6    NC
+
+
+                                                                                                   No t to scale
+
+
+                         Figure 6-1. BQ24040 and BQ24045 DSQ Package 10-Pin WSON Top View
+
+                                                    IN     1                                          10       OUT
+
+
+
+                                                  ISET     2                                           9       BAT_EN
+
+
+                                                                             Th ermal
+                                                  VSS      3                                           8       CHG
+                                                                               Pad
+
+
+                                                   ASI     4                                           7       ISET2
+
+
+
+                                                   PG      5                                           6       ASO
+
+
+                                                                                              No t to scale
+
+
+                                 Figure 6-2. BQ24041 DSQ Package 10-Pin WSON Top View
+
+                                                               Table 6-1. Pin Functions
+                       PIN
+                      BQ24040               I/O                                                                    DESCRIPTION
+           NAME                   BQ24041
+                      BQ24045
+                                                     Input power, connected to external DC supply (AC adapter or USB port). Expected range of bypass capacitors 1μF to
+    IN                   1             1     I
+                                                     10μF, connect from IN to VSS.
+    OUT                 10             10   O        Battery Connection. System Load may be connected. Expected range of bypass capacitors 1μF to 10μF.
+                                                     Programs the Current Termination Threshold (5 to 50% of Iout which is set by ISET) and Sets the Pre-Charge Current to
+    PRE-TERM             4             –     I       twice the Termination Current Level.
+                                                     Expected range of programming resistor is 1k to 10kΩ (2k: Ipgm/10 for term; Ipgm/5 for precharge)
+                                                     Programs the Fast-charge current setting. External resistor from ISET to VSS defines fast charge current value. Range
+    ISET                 2             2     I
+                                                     is 10.8k (50mA) to 540Ω (1000mA).
+                                                     Programming the Input/Output Current Limit for the USB or Adaptor source:
+    ISET2                7             7     I       BQ24040/5 => High = 500mAmax, Low = ISET, FLOAT = 100mAmax.
+                                                     BQ24041 => High = 410mAmax, Low = ISET, FLOAT = 100mAmax.
+                                                     Temperature sense terminal connected to BQ24040/5 -10k at 25°C NTC thermistor, in the battery pack. Floating T
+                                                     terminal or pulling High puts part in TTDM “Charger” Mode and disable TS monitoring, Timers and Termination. Pulling
+    TS                  9(1)           –     I
+                                                     terminal Low disables the IC. If NTC sensing is not needed, connect this terminal to VSS through an external 10 kΩ
+                                                     resistor. A 250kΩ from TS to ground will prevent IC entering TTDM mode when battery with thermistor is removed.
+    BAT_EN               –             9     I       Charge Enable Input (active low)
+    VSS                  3             3    –        Ground terminal
+    CHG                  8             8    O        Low (FET on) indicates charging and Open Drain (FET off) indicates no Charging or Charge complete.
+    PG                   5             5    O        Low (FET on) indicates the input voltage is above UVLO and the OUT (battery) voltage.
+
+
+
+4           Submit Document Feedback                                                                                        Copyright © 2021 Texas Instruments Incorporated
+
+                                            Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                     BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                               SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+                                                       Table 6-1. Pin Functions (continued)
+                      PIN
+                     BQ24040                      I/O                                                           DESCRIPTION
+       NAME                        BQ24041
+                     BQ24045
+ ASI                    –              4           I     Auto start External input. Internal 200kΩ pull-down.
+ ASO                    –              6          O      Auto Start Logic Output
+ NC                     6              –          NA     Do not make a connection to this terminal (for internal use) – Do not route through this terminal
+                                                         Connect exposed thermal pad to VSS terminal of the device and main ground plane. The thermal pad must be
+ Thermal Pad and       Pad            Pad
+                                                  –      connected to the same potential as the VSS terminal on the printed circuit board. Do not use the thermal pad as the
+ Package             2x2mm2         2x2mm2
+                                                         primary ground input for the device. VSS terminal must be connected to ground at all times.
+
+
+(1)    Spins have different terminal definitions
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                        Submit Document Feedback                5
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                             www.ti.com
+
+
+7 Specifications
+
+7.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1)
+                                                                                                                         MIN        MAX          UNIT
+                                               IN (with respect to VSS)                                                 –0.3         30           V
+                                               OUT (with respect to VSS)                                                –0.3         7            V
+               Input voltage
+                                               PRE-TERM, ISET, ISET2, TS, CHG, PG, ASI, ASO
+                                                                                                                        –0.3         7            V
+                                               (with respect to VSS)
+               Input current                   IN                                                                                   1.25          A
+               Output current (continuous)     OUT                                                                                  1.25          A
+               Output sink current             CHG                                                                                   15          mA
+    TJ         Junction temperature                                                                                      –40        150           °C
+    Tstg       Storage temperature                                                                                       –65        150           °C
+
+(1)        Stresses beyond those listed under absolute maximum ratings may cause permanent damage to the device. These are stress ratings
+           only, and functional operation of the device at these or any other conditions beyond those indicated under recommended operating
+           conditions is not implied. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability. All voltage
+           values are with respect to the network ground terminal unless otherwise noted.
+
+
+7.2 ESD Ratings
+                                                                                                                               VALUE            UNIT
+                                            Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1)                                ±3000
+    V(ESD)     Electrostatic discharge(3)   Charged-device model (CDM), per JEDEC specification JESD22-C101 or                                   V
+                                                                                                                                 ±1500
+                                            ANSI/ESDA/JEDEC JS-002(2)
+
+(1)        JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)        JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+(3)        The test was performed on IC terminals that may potentially be exposed to the customer at the product level. The BQ2404x IC requires
+           a minimum of the listed capacitance, external to the IC, to pass the ESD test. The D+ D- lines require clamp diodes such as
+           CM1213A-02SR from CMD to protect the IC for this testing.
+
+
+7.3 Recommended Operating Conditions
+see (1)
+                                                                                                                          MIN       NOM         UNIT
+                     IN voltage range                                                                                      3.5           28       V
+    VIN
+                     IN operating voltage range, Restricted by VDPM and VOVP                                             4.45       6.45          V
+    IIN              Input current, IN terminal                                                                                           1       A
+    IOUT             Current, OUT terminal                                                                                                1       A
+    TJ               Junction temperature                                                                                    0       125         °C
+    RPRE-TERM        Programs precharge and termination current thresholds                                                   1           10      kΩ
+    RISET            Fast-charge current programming resistor                                                           0.540       10.8         kΩ
+    RTS              10k NTC thermistor range without entering BAT_EN or TTDM                                            1.66        258         kΩ
+
+(1)        Operation with VIN less than 4.5V or in drop-out may result in reduced performance.
+
+
+
+
+6           Submit Document Feedback                                                                      Copyright © 2021 Texas Instruments Incorporated
+
+                                                    Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                   BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                    SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+
+7.4 Thermal Information
+                                                                                                                             BQ2404x
+                                                THERMAL METRIC(1)                                                           DSQ (WSON)                UNIT
+                                                                                                                              10 PINS
+ RθJA              Junction-to-ambient thermal resistance                                                                          63.5               °C/W
+ RθJC(top)         Junction-to-case (top) thermal resistance                                                                       79.5               °C/W
+ RθJB              Junction-to-board thermal resistance                                                                            33.9               °C/W
+ ψJT               Junction-to-top characterization parameter                                                                      7.8                °C/W
+ ψJB               Junction-to-board characterization parameter                                                                    34.3               °C/W
+ RθJC(bot)         Junction-to-case (bottom) thermal resistance                                                                    7.5                °C/W
+
+(1)       For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+          report.
+
+
+7.5 Electrical Characteristics
+Over junction temperature range 0°C ≤ TJ ≤ 125°C and recommended supply voltage (unless otherwise noted)
+                       PARAMETER                                                    TEST CONDITIONS                          MIN           TYP      MAX     UNIT
+ INPUT
+ UVLO            Undervoltage lock-out Exit                     VIN: 0V → 4V Update based on sim/char                       3.15            3.3      3.45    V
+                                                                VIN: 4V→0V,
+ VHYS_UVLO       Hysteresis on VUVLO_RISE falling                                                                            175           227       280     mV
+                                                                VUVLO_FALL = VUVLO_RISE –VHYS-UVLO
+                 Input power good detection threshold is VOUT (Input power good if VIN > VOUT + VIN-DT); VOUT = 3.6V,
+ VIN-DT                                                                                                                       30            80       145     mV
+                 + VIN-DT                                     VIN: 3.5V → 4V
+ VHYS-INDT       Hysteresis on VIN-DT falling                   VOUT = 3.6V, VIN: 4V → 3.5V                                                 31               mV
+                                                                VIN: 5V → 12V (BQ24040, BQ24045)                             6.5           6.65       6.8
+ VOVP            Input over-voltage protection threshold                                                                                                     V
+                                                                VIN: 5V → 12V (BQ24041)                                      6.9            7.1       7.3
+ VHYS-OVP        Hysteresis on OVP                              VIN: 11V → 5V                                                               95               mV
+                                                                Feature active in USB mode; Limit Input Source Current to
+                                                                                                                            4.34            4.4      4.46
+                 USB/Adaptor low input voltage protection.      50mA; VOUT= 3.5V; RISET = 825Ω
+ VIN-DPM                                                                                                                                                     V
+                 Restricts lout at VIN-DPM                      Feature active in Adaptor mode; Limit Input Source
+                                                                                                                            4.24            4.3      4.46
+                                                                Current to 50mA; VOUT = 3.5V; RISET = 825
+                 USB input I-Limit 100mA                        ISET2 = Float; RISET = 825Ω                                   85            92       100
+                 USB input I-Limit 500mA, BQ24040,
+ IIN-USB-CL                                                     ISET2 = High; RISET = 825Ω                                   430           462       500     mA
+                 BQ24045
+                 USB input I-Limit 380mA, BQ24041               ISET2 = High; RISET = 825Ω                                   350           386       420
+ ISET SHORT CIRCUIT TEST
+                 Highest Resistor value considered a fault      RISET: 540Ω → 250Ω, Iout latches off. Cycle power to
+ RISET_SHORT                                                                                                                 280                     500     Ω
+                 (short). Monitored for Iout>90mA               Reset.
+                 Maximum OUT current limit Regulation           VIN = 5V, VOUT = 3.6V, VISET2 = Low, RISET: 540Ω →
+ IOUT_CL                                                                                                                    1.05                      1.4    A
+                 (Clamp)                                        250Ω, IOUT latches off after tDGL-SHORT
+ BATTERY SHORT PROTECTION
+                 OUT terminal short-circuit detection
+ VOUT(SC)                                                       VOUT: 3V → 0.5V, no deglitch                                0.75            0.8      0.85    V
+                 threshold/ precharge threshold
+                                                                Recovery ≥ VOUT(SC) + VOUT(SC-HYS);
+ VOUT(SC-HYS)    OUT terminal Short hysteresis                                                                                              77               mV
+                                                                Rising, no Deglitch
+                 Source current to OUT terminal during short-
+ IOUT(SC)                                                       VOUT < 0.8 V                                                  10            15        20     mA
+                 circuit detection
+ QUIESCENT CURRENT
+ IOUT(PDWN)      Battery current into OUT terminal              VIN = 0V                                                                               1
+                                                                                                                                                             μA
+ IOUT(DONE)      OUT terminal current, charging terminated      VIN = 6V, VOUT > VOUT(REG)                                                             6
+ IIN(STDBY)      Standby current into IN terminal               TS = LO, VIN ≤ 6V                                                                    125     μA
+                                                                TS = open, VIN = 6V, TTDM – no load on OUT terminal,
+ ICC             Active supply current, IN terminal                                                                                         0.8        1     mA
+                                                                VOUT > VOUT(REG), IC enabled
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                     Submit Document Feedback       7
+                                                           Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                                               www.ti.com
+
+7.5 Electrical Characteristics (continued)
+Over junction temperature range 0°C ≤ TJ ≤ 125°C and recommended supply voltage (unless otherwise noted)
+                            PARAMETER                                                       TEST CONDITIONS                                   MIN                TYP          MAX     UNIT
+    BATTERY CHARGER FAST-CHARGE
+                                                                          VIN = 5.5V, IOUT = 25mA,
+                                                                                                                                             4.16                 4.2          4.23
+                                                                          (VTS-45°C ≤ VTS ≤ VTS-0°C, BQ24040)
+    VOUT(REG)        Battery regulation voltage                                                                                                                                        V
+                                                                          VIN = 5.5V, IOUT = 25mA,
+                                                                                                                                             4.30               4.35           4.40
+                                                                          (VTS-45°C ≤ VTS ≤ VTS-0°C, BQ24045)
+                                                                          VIN = 5.5V, IOUT = 25mA,
+                                                                                                                                             4.02               4.06            4.1
+                                                                          (VTS-45°C≤ VTS ≤ VTS-0°C, BQ24040)
+    VO_HT(REG)       Battery hot regulation voltage                                                                                                                                    V
+                                                                          VIN = 5.5V, IOUT = 25mA,
+                                                                                                                                             4.16                 4.2          4.23
+                                                                          (VTS-45°C ≤ VTS ≤ VTS-0°C, BQ24045)
+                     Programmed Output “fast charge” current              VOUT(REG) > VOUT > VLOWV; VIN = 5V, ISET2 = LO, RISET =
+    IOUT(RANGE)                                                                                                                                10                             1000    mA
+                     range                                                540 to 10.8kΩ
+                                                                          Adjust VIN down until IOUT = 0.5A, VOUT = 4.15V, RISET =
+    VDO(IN-OUT)      Drop-Out, VIN – VOUT                                                                                                                        325           500    mV
+                                                                          540 , ISET2 = Lo (adaptor mode); TJ ≤ 100°C
+    IOUT             Output “fast charge” formula                         VOUT(REG) > VOUT > VLOWV; VIN = 5V, ISET2 = Lo                                  KISET/RISET                  A
+                                                                          RISET = KISET /IOUT; 50 < IOUT < 1000 mA                            510                540           570
+    KISET            Fast charge current factor                           RISET = KISET /IOUT; 25 < IOUT < 50 mA                              480                527           600    AΩ
+                                                                          RISET = KISET /IOUT; 10 < IOUT < 25 mA                              350                520           680
+                                                                          RISET = KISET /IOUT; 50 < IOUT < 1000 mA                            510                560           585
+    KISET            Fast charge current factor (BQ24045)                 RISET = KISET /IOUT; 25 < IOUT < 50 mA                              480                557           596    AΩ
+                                                                          RISET = KISET /IOUT; 10 < IOUT < 25 mA                              350                555           680
+    PRECHARGE – SET BY PRETERM terminal: BQ24040 / BQ24045; Internally Set: BQ24041
+    VLOWV            Pre-charge to fast-charge transition threshold                                                                            2.4                2.5           2.6    V
+    IPRE-TERM        See the Termination Section
+                                                                          VOUT < VLOWV; RISET = 1080Ω; BQ24040: RPRE-TERM=
+                     Pre-charge current, default setting                                                                                       18                 20            22 %IOUT-CC
+    %PRECHG                                                               High Z; BQ24041: Internally Fixed
+                     Pre-charge current formula                           RPRE-TERM = KPRE-CHG (Ω/%) × %PRE-CHG (%)                              RPRE-TERM/KPRE-CHG%
+                                                                          VOUT < VLOWV, VIN = 5V, RPRE-TERM = 2k to 10kΩ; RISET =
+                                                                          1080Ω , RPRE-TERM = KPRE-CHG × %IFAST-CHG, where                     90                100           110    Ω/%
+                                                                          %IFAST-CHG is 20 to 100%
+    KPRE-CHG         % Pre-charge Factor
+                                                                          VOUT < VLOWV, VIN = 5V, RPRE-TERM = 1k to 2kΩ; RISET =
+                                                                          1080Ω, RPRE-TERM = KPRE-CHG × %IFAST-CHG, where                      84                100           117    Ω/%
+                                                                          %IFAST-CHG is 10% to 20%
+    TERMINATION – SET BY PRE-TERM terminal: BQ24040 / BQ24045
+                     Termination Threshold Current, default               VOUT > VRCH; RISET = 1k; BQ24040 / BQ24045:
+                                                                                                                                                9                 10            11 %IOUT-CC
+                     setting                                              RPRE-TERM= High Z
+    %TERM
+                     Termination Current Threshold Formula,
+                                                                          RPRE-TERM = KTERM (Ω/%) × %TERM (%)                                        RPRE-TERM/ KTERM
+                     BQ24040 / BQ24045
+                                                                          VOUT > VRCH, VIN = 5V, RPRE-TERM = 2k to 10kΩ ; RISET =
+                                                                                                                                              182                200           216
+                                                                          750Ω KTERM × %IFAST-CHG, where %IFAST-CHG is 10 to 50%
+    KTERM            % Term Factor                                                                                                                                                    Ω/%
+                                                                          VOUT > VRCH, VIN = 5V, RPRE-TERM = 1k to 2kΩ ; RISET =
+                                                                                                                                              174                199           224
+                                                                          750Ω KTERM × %Iset, where %Iset is 5 to 10%
+                     Current for programming the term. and pre-
+    IPRE-TERM        chg with resistor. ITerm-Start is the initial PRE-   RPRE-TERM = 2k, VOUT = 4.15V                                         71                 75            81    μA
+                     TERM curent.
+    %TERM            Termination current formula                                                                                                     RTERM/ KTERM %
+                     Elevated PRE-TERM current for, tTerm-Start,
+    ITerm-Start      during start of charge to prevent recharge of                                                                             80                 85            92    μA
+                     full battery,
+    RECHARGE OR REFRESH – BQ24040 / BQ24045
+                                                                                                                                          VO(REG)                         VO(REG)–
+                     Recharge detection threshold – Normal Temp VIN = 5V, VTS = 0.5V, VOUT: 4.25V → VRCH                                               VO(REG)–0.095                   V
+                                                                                                                                          –0.120                             0.070
+    VRCH
+                                                                                                                                       VO_HT(REG)          VO_HT(REG)    VO_HT(REG)
+                     Recharge detection threshold – Hot Temp              VIN = 5V, VTS = 0.2V, VOUT: 4.15V → VRCH                                                                     V
+                                                                                                                                          –0.130              –0.105        –0.080
+    BATTERY DETECT ROUTINE – BQ24040 / BQ24045 (NOTE: In Hot mode VO(REG) becomes VO_HT(REG))
+                     VOUT Reduced regulation during battery
+    VREG-BD                                                                                                                          VO(REG)-0.450      VO(REG)-0.400   VO(REG)-350    V
+                     detect                                               VIN = 5V, VTS = 0.5V, Battery Absent
+    IBD-SINK         Sink current during VREG-BD                                                                                                6                               10    mA
+                                                                                                                                          VO(REG)
+    VBD-HI           High battery detection threshold                     VIN = 5V, VTS = 0.5V, Battery Absent                                          VO(REG)-0.100 VO(REG)-0.050    V
+                                                                                                                                           -0.150
+                                                                                                                                          VREG-BD                          VREG-BD
+    VBD-LO           Low battery detection threshold                      VIN = 5V, VTS = 0.5V, Battery Absent                                           VREG-BD +0.1                  V
+                                                                                                                                            +0.50                            +0.15
+
+
+
+
+8              Submit Document Feedback                                                                                                   Copyright © 2021 Texas Instruments Incorporated
+
+                                                                   Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                    BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                   SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+7.5 Electrical Characteristics (continued)
+Over junction temperature range 0°C ≤ TJ ≤ 125°C and recommended supply voltage (unless otherwise noted)
+                         PARAMETER                                                   TEST CONDITIONS                        MIN             TYP      MAX    UNIT
+ BATTERY-PACK NTC MONITOR; TS Terminal: BQ24040 / BQ24045: 10k NTC
+ INTC-10k          NTC bias current                             VTS = 0.3V                                                    48             50        52   μA
+                   10k NTC bias current when Charging is
+ INTC-DIS-10k                                                   VTS = 0V                                                      27             30        34   μA
+                   disabled.
+                   INTC is reduced prior to entering TTDM to
+ INTC-FLDBK-10k                                                 VTS: Set to 1.525V                                             4              5       6.5   μA
+                   keep cold thermistor from entering TTDM
+                   Termination and timer disable mode
+ VTTDM(TS)                                                      VTS: 0.5V → 1.7V; Timer Held in Reset                       1550           1600      1650   mV
+                   Threshold – Enter
+ VHYS-TTDM(TS)     Hysteresis exiting TTDM                      VTS: 1.7V → 0.5V; Timer Enabled                                             100             mV
+ VCLAMP(TS)        TS maximum voltage clamp                     VTS = Open (Float)                                          1800           1950      2000   mV
+                                                                INTC adjustment (90 to 10%; 45 to 6.6uS) takes place
+                   TS voltage where INTC is reduce to keep
+ VTS_I-FLDBK                                                    near this spec threshold.                                                  1475             mV
+                   thermistor from entering TTDM
+                                                                VTS: 1.425V → 1.525V
+ CTS               Optional Capacitance – ESD                                                                                               0.22            μF
+                                                                Low Temp Charging to Pending;
+ VTS-0°C           Low temperature CHG Pending                                                                              1205           1230      1255   mV
+                                                                VTS: 1V → 1.5V
+                                                                Charge pending to low temp charging;
+ VHYS-0°C          Hysteresis at 0°C                                                                                                         86             mV
+                                                                VTS: 1.5V → 1V
+                                                                Normal charging to low temp charging;
+ VTS-10°C          Low temperature, half charge                                                                              765            790       815   mV
+                                                                VTS: 0.5V → 1V
+                                                                Low temp charging to normal CHG;
+ VHYS-10°C         Hysteresis at 10°C                                                                                                        35             mV
+                                                                VTS: 1V → 0.5V
+                                                                Normal charging to high temp CHG;
+ VTS-45°C          High temperature at 4.1V                                                                                  263            278       293   mV
+                                                                VTS: 0.5V → 0.2V
+                                                                High temp charging to normal CHG;
+ VHYS-45°C         Hysteresis at 45°C                                                                                                       10.7            mV
+                                                                VTS: 0.2V → 0.5V
+                                                                High temp charge to pending;
+ VTS-60°C          High temperature Disable                                                                                  170            178       186   mV
+                                                                VTS: 0.2V → 0.1V
+                                                                Charge pending to high temp CHG;
+ VHYS-60°C         Hysteresis at 60°C                                                                                                       11.5            mV
+                                                                VTS: 0.1V → 0.2V
+ VTS-EN-10k        Charge Enable Threshold, (10k NTC)           VTS: 0V → 0.175V                                              80             88        96   mV
+ VTS-DIS_HYS-10k   HYS below VTS-EN-10k to Disable, (10k NTC)   VTS: 0.125V → 0V                                                             12             mV
+ THERMAL REGULATION
+ TJ(REG)           Temperature regulation limit                                                                                             125              °C
+ TJ(OFF)           Thermal shutdown temperature                                                                                             155              °C
+ TJ(OFF-HYS)       Thermal shutdown hysteresis                                                                                               20              °C
+ BAT_EN , BQ24041
+ IBAT_EN           Current Sourced out of terminal              VBAT_EN < 1.4 V                                              2.3              5         9   μA
+ VIL               Logic LOW enables charger                                                                                   0                      0.4    V
+ VIH               Logic HIGH disables charger                                                                               1.1                        6    V
+ VCLAMP            Floating Clamp Voltage                       Floating BAT_EN terminal                                     1.4             1.6      1.8    V
+ LOGIC LIVELS ON ISET2
+ VIL               Logic LOW input voltage                      Sink 8 μA                                                                             0.4    V
+ VIH               Logic HIGH input voltage                     Source 8 μA                                                  1.4                             V
+ IIL               Sink current required for LO                 VISET2 = 0.4V                                                  2                        9   μA
+ IIH               Source current required for HI               VISET2 = 1.4V                                                1.1                      9.5   μA
+ VFLT              ISET2 Float Voltage                                                                                       575            900      1225   mV
+ AUTO START, ASI AND ASO TERMINALS, BQ24041
+ VASIL             Has 200k Internal Pull-down                                                                                                        0.4    V
+ VASIH                                                                                                                       1.3                             V
+ VASOL             Auto Start Output Sinks 1mA                                                                                                        0.4    V
+ VASOH             Auto Start Input Sources 1mA                                                                        VOUT - 0.4                            V
+ LOGIC LEVELS ON CHG AND PG
+ VOL               Output LOW voltage                           ISINK = 5 mA                                                                          0.4    V
+ ILEAK             Leakage current into IC                      V CHG = 5V, V PG = 5V                                                                   1   µA
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                      Submit Document Feedback      9
+                                                           Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                   www.ti.com
+
+
+7.6 Timing Requirements
+                                                                                                                             MIN      NOM        MAX     UNIT
+ INPUT
+ tDGL(PG_PWR)    Deglitch time on exiting sleep.               Time measured from VIN: 0V → 5V 1μs rise-time to                          45               μs
+                                                               PG = low, VOUT = 3.6V
+ tDGL(PG_NO-     Deglitch time on VHYS-INDT power down.        Time measured from VIN: 5V → 3.2V 1μs fall-time to                        29               ms
+ PWR)            Same as entering sleep.                       PG = OC, VOUT = 3.6V
+ tDGL(OVP-SET)   Input over-voltage blanking time              VIN: 5V → 12V                                                            113               μs
+ tDGL(OVP-REC)   Deglitch time exiting OVP                     Time measured from VIN: 12V → 5V 1μs fall-time to                         30               μs
+                                                               PG = LO
+ ISET SHORT CIRCUIT TEST
+ tDGL_SHORT      Deglitch time transition from ISET short to   Clear fault by disconnecting IN or cycling (high / low)                    1               ms
+                 IOUT disable                                  TS/ BAT_EN
+ PRECHARGE – SET BY PRETERM PIN: BQ24040 / BQ24045; Internally Set: BQ24041
+ tDGL1(LOWV)     Deglitch time on pre-charge to fast-charge                                                                              70               μs
+                 transition
+ tDGL2(LOWV)     Deglitch time on fast-charge to pre-charge                                                                              32               ms
+                 transition
+ TERMINATION – SET BY PRE-TERM PIN: BQ24040 / BQ24045
+ tDGL(TERM)      Deglitch time, termination detected                                                                                     29               ms
+ tTerm-Start     Elevated termination threshold initially                                                                              1.25               min
+                 active for tTerm-Start
+ RECHARGE OR REFRESH – BQ24040 / BQ24045
+ tDGL1(RCH)      Deglitch time, recharge threshold detected VIN = 5V, VTS = 0.5V, VOUT: 4.25V → 3.5V in 1μs;                             29               ms
+                                                            tDGL(RCH) is time to ISET ramp
+ tDGL2(RCH)      Deglitch time, recharge threshold detected VIN = 5V, VTS = 0.5V, VOUT = 3.5V inserted; tDGL(RCH)                       3.6               ms
+                 in OUT-Detect Mode                         is time to ISET ramp
+ BATTERY DETECT ROUTINE – BQ24040 / BQ24045 (NOTE: In Hot mode VO(REG) becomes VO_HT(REG))
+ tDGL(HI/LOW     Regulation time at VREG or VREG-BD                                                                                      25               ms
+ REG)
+
+ BATTERY CHARGING TIMERS AND FAULT TIMERS: BQ24040 and BQ24045 only
+ tPRECHG         Pre-charge safety timer value                 Restarts when entering Pre-charge; Always enabled            1700       1940      2250      s
+                                                               when in pre-charge.
+ tMAXCH          Charge safety timer value                     Clears fault or resets at UVLO, TS/ BAT_EN disable,         34000     38800      45000      s
+                                                               OUT Short, exiting LOWV and Refresh
+ BATTERY-PACK NTC MONITOR; TS Terminal: BQ24040 / BQ24045: 10k NTC
+ tDGL(TTDM)      Deglitch exit TTDM between states                                                                                       57               ms
+                 Deglitch enter TTDM between states                                                                                       8               μs
+ tDGL(TS_10C)    Deglitch for TS thresholds: 10C.              Normal to Cold Operation; VTS: 0.6V → 1V                                  50               ms
+                                                               Cold to Normal Operation; VTS: 1V → 0.6V                                  12               ms
+ tDGL(TS)        Deglitch for TS thresholds: 0/45/60C.         Battery charging                                                          30               ms
+
+
+
+
+10       Submit Document Feedback                                                                                    Copyright © 2021 Texas Instruments Incorporated
+
+                                                    Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                                                                                        BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                                                                                  SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+7.7 Typical Operational Characteristics (Protection Circuits Waveforms)
+SETUP: BQ24040 typical applications schematic; VIN = 5V, VBAT = 3.6V (unless otherwise indicated)
+
+                                      546                                                                                                                       4.212
+                                                                                                                                                                             VO at 0°C                                         ROUT = 100 Ω
+                                                                                       Kiset
+                                      544                                                                                                                        4.21
+
+
+
+
+                                                                                                                                 VOUT - Output Voltage DC - V
+                                      542                                                                                                                       4.208
+
+                                      540                         Low to High Currents
+                                                                  (may occur in recharge to fast charge transion)                                               4.206       VO at 25°C
+
+           Kiset - W                  538
+                                                                                                                                                                4.204
+                                                                    High to Low Currents
+                                      536
+                                                                    (may occur in Voltage Regulation - Taper Current)                                                       VO at 85°C
+                                                                                                                                                                4.202
+                                      534
+                                                                                                                                                                  4.2
+                                      532
+
+                                                                                                                                                                4.198
+                                      530
+
+                                      528                                                                                                                       4.196
+                                            0       .15       0.2                0.4                0.6                 0.8                                         4.5                  5                 5.5                   6            6.5
+                                                                        IO - Output Current - A                                                                                                 VI - Input Voltage DC - V
+
+                                                Figure 7-1. Kiset for Low and High Currents                                                                                        Figure 7-2. Line Regulation
+
+                                       4.2                                                                                                                      4.352
+                                                                                                                                                                                                VREG at 0°C
+                                     4.199
+                                                                           Vreg at 25°C                                                                         4.35
+
+                                     4.198
+
+
+
+
+         VOUT - Output Voltage - V
+                                                                                                                                                                                                                  VREG at 25°C
+
+
+
+                                                                                                                              VREG - Voltage - V
+                                                                                          Vreg at 85°C                                                          4.348
+                                     4.197
+                                                                                                                                                                                    VREG at 85°C
+
+                                     4.196                                                                                                                      4.346
+                                                                                                                                                                                                 VREG at 125°C
+                                     4.195                Vreg at 0°C
+                                                                                                                                                                4.344
+
+                                     4.194
+                                                                                                                                                                4.342
+                                     4.193
+
+                                     4.192                                                                                                                      4.34
+                                                                                                                                                                        0    100    200        300    400      500       600     700    800   900
+                                             0              0.2             0.4           0.6             0.8             1
+                                                                          IO - Output current - A                                                                                              ILOAD - Current - mA
+
+                                            Figure 7-3. Load Regulation Over Temperature                                                                                           Figure 7-4. Load Regulation
+                                     4.3450                                                                                                                     363.4
+
+                                                                                                                                                                363.2
+                                     4.3445
+                                                                                                                                                                                                            IO at 25°C
+                                                                                     VREG at 0°C                                                                 363
+
+
+
+
+                                                                                                                                IO - Output Current - mA
+    VOUT - Output Voltage - V
+                                     4.3440
+                                                                                                                                                                362.8
+                                     4.3435
+                                                                               VREG at 25°C                                                                     362.6                                       IO at 85°C
+
+                                     4.3430
+                                                                                                                                                                362.4
+
+                                     4.3425
+                                                                                                                                                                362.2              IO at 0°C
+                                                                  VREG at 85°C
+                                     4.3420                                                                                                                      362
+
+
+                                     4.3415                                                                                                                     361.8
+                                          4.5                5              5.5              6            6.5             7                                          2.5                 3               3.5                     4            4.5
+                                                                        VIN - Input Voltage - V                                                                                                 VO - Output Voltage - V
+
+                                                           Figure 7-5. Line Regulation                                                                             Figure 7-6. Current Regulation Over Temperature
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                                                                                             Submit Document Feedback                11
+                                                                                             Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                     www.ti.com
+
+
+8 Detailed Description
+8.1 Overview
+The BQ2404x is a highly integrated family of 2×2 single cell Li-Ion and Li-Pol chargers. The charger can be used
+to charge a battery, power a system or both. The charger has three phases of charging: Pre-charge to recover a
+fully discharged battery, fast-charge constant current to supply the buck charge safely and voltage regulation to
+safely reach full capacity. The charger is very flexible, allowing programming of the fast-charge current and Pre-
+charge/Termination Current (BQ24040/5 only). This charger is designed to work with a USB connection or
+Adaptor (DC out). The charger also checks to see if a battery is present.
+The charger also comes with a full set of safety features: JEITA Temperature Standard (BQ24040/5 only), Over-
+Voltage Protection, DPM-IN, Safety Timers, and ISET short protection. All of these features and more are
+described in detail below.
+The charger is designed for a single power path from the input to the output to charge a single cell Li-Ion or
+Li-Pol battery pack. Upon application of a 5VDC power source the ISET and OUT short checks are performed to
+assure a proper charge cycle.
+If the battery voltage is below the LOWV threshold, the battery is considered discharged and a preconditioning
+cycle begins. The amount of precharge current can be programmed using the PRE-TERM terminal which
+programs a percent of fast charge current (10 to 100%) as the precharge current. This feature is useful when the
+system load is connected across the battery “stealing” the battery current. The precharge current can be set
+higher to account for the system loading while allowing the battery to be properly conditioned. The PRE-TERM
+terminal is a dual function terminal which sets the precharge current level and the termination threshold level.
+The termination "current threshold" is always half of the precharge programmed current level.
+Once the battery voltage has charged to the VLOWV threshold, fast charge is initiated and the fast charge
+current is applied. The fast charge constant current is programmed using the ISET terminal. The constant
+current provides the bulk of the charge. Power dissipation in the IC is greatest in fast charge with a lower battery
+voltage. If the IC reaches 125°C the IC enters thermal requlation, slows the timer clock by half and reduce the
+charge current as needed to keep the temperature from rising any further. Figure 8-1 shows the charging profile
+with thermal regulation. Typically under normal operating conditions, the IC’s junction temperature is less than
+125°C and thermal regulation is not entered.
+Once the cell has charged to the regulation voltage the voltage loop takes control and holds the battery at the
+regulation voltage until the current tapers to the termination threshold. The termination can be disabled if
+desired. The CHG terminal is low (LED on) during the first charge cycle only and turns off once the termination
+threshold is reached, regardless if termination, for charge current, is enabled or disabled.
+Further details are mentioned in the Operating Modes section.
+
+
+
+
+12    Submit Document Feedback                                                         Copyright © 2021 Texas Instruments Incorporated
+
+                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                                            BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                                                SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+8.2 Functional Block Diagram
+                                            Internal Charge
+                                             Current Sense
+                                          w/ Multiple Outputs
+             IN                                                                                                                                                                          OUT
+                                                     +   80 mV    Input
+                                                     -
+                                                                  Power
+                                                           +      Detect                                                                 IN                                       OUT
+                                              OUT          _                                                                                      +                       +
+                                                                                                                                                  _                       _
+                                                                                                                                      IN-DPMREF                                  OUTREGREF
+
+           IOUT x 1.5 V                                                                     Charge
+            540 AW                                                                          Pump
+                                                                                                                                                                                  TJ°C
+                                                                                                                                                                          +
+                                                                                                                                                                          _
+                                                                                                                                                                                  125°CREF
+                                                                                                         FAST CHARGE
+
+                                                                                                        PRE-CHARGE
+           ISET                                                                                                                          IN
+                                                                                                                                                  +
+                                                                                                                           1.5V                   _
+                                                                                                 Pre-CHG Reference
+
+
+
+                                                                                                                                                  +
+                                                                                                                            USB100/500REF         _
+                                          USB Sense
+                                           Resistor
+                                                                                                                       TJoC
+                                                               Term Reference
+                                                                                        +                                         +
+                                                                                        _                              o
+                                                                                                                                  _
+                                                                                                                   150 CREF
+                                                                                                                   Thermal Shutdown
+                                      +                                                                                                                       Charge
+                               75mA                                                                                                                           Pump
+                                                                                                      X2 Gain (1: 2)
+        PRE-TERM                                                                                      Term:Pre-CHGX2
+                                               +
+                                                   Increased from 75mA to 85mA for                                IN
+          BQ24040 and                                   1st minute of charge.                                              +
+          BQ24045 Only                                                                                                     _
+                                                           +
+                                                                                                              OVPREF                                                                     CHG
+                                                           _
+
+
+                                           OUT                                                                                                                               On During
+                                                           +                                                                                                              1st Charge Only
+                                          VTERM_EN                                                                                                         ON:
+                                                           _
+                                                                                                                                                           OFF:
+
+
+            ISET2 (LO = ISET, HI = USB500,                                 0.9V Float
+                                                                                                                               CHARGE
+                                                                                                                               CONTROL
+                    FLOAT = USB100)
+                                                                                                                                                                                         PG
+
+                   VCOLD-10 C  o
+
+
+                                          +
+                                          _                    HI = Half CHG (JEITA)
+
+
+                  VHOT-45 Co              +
+                                          _                    HI = 4.06Vreg (JEITA)                                                                                       OUT
+
+                   VCOLD-FLT                                                                                                                                                             ASO
+                                          +
+                                          _
+                                                                                                                                                                                  BQ24041
+                                                                                                                                                                                   Only
+                   VHOT-FLT
+                                          +                                                                                                                                              ASI
+                                          _                LO = TTDM MODE
+                                                                                                 HI = Suspend CHG                                                      200kW
+          TS/BAT_EN
+                      VTTDM
+                                          +
+         TS - BQ24040 and                 _
+              BQ24045
+         BAT_EN - bq24041
+
+                      VCE                 +              BQ24041 This Comparator Only – No TS Features
+                                          _
+                                                                                    HI=CHIP DISABLE
+                                          +
+                     VDISABLE             _
+                                                   Cold Temperature                              Disable
+                                                     Sink Current                              Sink Current
+                                                        = 45mA      VCLAMP = 1.4V                 = 20mA
+                                                                +                                             +
+                                                                _                                             _
+
+                          5 mA            45mA
+                                                            BQ24040 and BQ24045 are as shown
+                                               BQ24041 has no Current Sinks and only 5mA Current Source
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                                              Submit Document Feedback          13
+                                                                     Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                www.ti.com
+
+8.3 Feature Description
+                                            Pre-         Thermal      Current     Voltage Regulation and
+                                         Conditioning   Regulation   Regulation    Charge Termination           DONE
+                                           Phase          Phase        Phase              Phase
+                             VO(REG)
+
+                              IO(OUT)
+
+                                                                                  Battery Current,
+                    FAST-CHARGE
+                                                                                       I(OUT)
+                      CURRENT
+                                          Battery
+                                          Voltage,
+                                          V(OUT)                                                 Charge
+            PRE-CHARGE                                                                          Complete
+            CURRENT AND     VO(LOWV)                                                             Status,
+            TERMINATION                                                                         Charger
+             THRESHOLD                                                                             Off
+
+                                                                                                                  I(TERM)
+                          IO(PRECHG)
+
+
+                            T(THREG)
+                                                                                                                            0A
+                                                                                     Temperature, Tj
+
+
+
+
+                                                                            T(CHG)                             DONE
+                                        T(PRECHG)
+
+
+                               Figure 8-1. Charging Profile With Thermal Regulation
+
+8.3.1 Power-Down or Undervoltage Lockout (UVLO)
+The BQ2404x family is in power down mode if the IN terminal voltage is less than UVLO. The part is considered
+“dead” and all the terminals are high impedance. Once the IN voltage rises above the UVLO threshold the IC will
+enter Sleep Mode or Active mode depending on the OUT terminal (battery) voltage.
+8.3.2 Power-up
+The IC is alive after the IN voltage ramps above UVLO (see sleep mode), resets all logic and timers, and starts
+to perform many of the continuous monitoring routines. Typically the input voltage quickly rises through the
+UVLO and sleep states where the IC declares power good, starts the qualification charge at 100mA, sets the
+input current limit threshold base on the ISET2 terminal, starts the safety timer and enables the CHG terminal.
+See Figure 8-2.
+8.3.3 Sleep Mode
+If the IN terminal voltage is between than VOUT+VDT and UVLO, the charge current is disabled, the safety timer
+counting stops (not reset) and the PG and CHG terminals are high impedance. As the input voltage rises and the
+charger exits sleep mode, the PG terminal goes low, the safety timer continues to count, charge is enabled and
+the CHG terminal returns to its previous state. See Figure 8-3.
+8.3.4 New Charge Cycle
+A new charge cycle is started when any of these events occur:
+• A valid power source is applied;
+• The chip is enabled/disabled using TS pin or BAT_EN;
+• Exit of termination/Timer Disable Mode (TTDM);
+• Detection of batter insertion;
+• OUT voltage drops below the VRCH threshold.
+The CHG signal is active only during the first charge cycle. Exiting TTDM or the OUT voltage falling below VRCH
+will not activate the CHG signal if it is already in the open-drain (off) state.
+
+
+
+14    Submit Document Feedback                                                                  Copyright © 2021 Texas Instruments Incorporated
+
+                                         Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                                     BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                                                 SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+           VSS
+                              4.06 V                  4.06 V
+    1.8V                       HOT                     HOT                                                Cold                                                      Normal
+                             Operation               Operation                                          Operation                 LDO                              Operation                 Normal
+                 Disabled                 Normal                   HOT                       Normal                  Cold                    Cold          Cold                LDO
+                                                                               Disabled                                           Mode                                                       Operation
+                                         Operation                 Fault                    Operation                Fault                   Fault       Operation             Mode
+                                                                                                              tDGL(TTDM)                                                        tDGL(TTDM)
+                                                                                                                   Enter                                 t < tDGL(IS)           Enter
+                                                                                                                                              tDGL(TTDM)
+                                                                                                                                              Exit
+   LDO
+
+LDOHYS                                                                                                                                                                                 t < tDGL(TTDM)
+                                                                                                                                                                                       Exit
+
+                                                                                                   tDGL(TS)                                                tDGL(TS)                      tDGL(TS1_IOC)
+                                                                                                                                                                                         Cold to Normal
+   0°C
+ 0°CHYS
+                                                                                    tDGL(TS_IOC)
+                                                                                          Rising
+
+
+                                                                                                                                         tDGL(TS_IOC)
+                                                                                                                                               Falling
+   10°C
+ 10°CHYS
+                                         tDGL(TS)
+
+                                                        tDGL(TS)               tDGL(TS)
+
+
+ 45°CHYS
+
+    45°C
+                 tDGL(TS)
+
+
+                                                                    tDGL(TS)
+
+ 60°CHYS
+                                                                                                                    Dots Show Threshold Trip Points
+    60°C                                                                                                            fllowed by a deglitch time before
+                                                                                                                    transitioning into a new mode.
+
+
+
+
+     EN
+  DISHYS
+
+
+
+     0V
+                                                                                                        Drawing Not to Scale                                                                 t
+
+
+                            Figure 8-2. TS Battery Temperature Bias Threshold and Deglitch Timers
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                                          Submit Document Feedback                        15
+                                                        Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                     www.ti.com
+
+
+
+                                                        Apply Input
+                                                          Power
+
+
+
+
+                                                   Is power good?
+                                                                                 No
+                                                VBAT +VDT < VIN < VOVP
+                                                     & VUVLO < VIN
+
+
+
+
+                                                      Turn on PG FET
+                                                        PG pin LOW
+
+                                                              Yes
+
+
+
+
+                                                    Is chip enabled?             No
+                                                        VTS > VEN
+
+
+
+                                                              Yes
+
+
+                                             Set Input Current Limit to 100 mA
+                                                     and Start Charge
+                                             Perform ISET & OUT short tests
+                                                  Remember ISET2 State
+
+
+
+
+                                                     Set charge current
+                                                    based on ISET2 truth
+                                                           table.
+
+
+
+
+                                                         Return to
+                                                          Charge
+
+
+
+
+                                   Figure 8-3. BQ2404x Power-Up Flow Diagram
+
+8.3.5 Overvoltage-Protection (OVP) – Continuously Monitored
+If the input source applies an overvoltage, the pass FET, if previously on, turns off after a deglitch, tBLK(OVP). The
+timer ends and the CHG and PG terminal goes to a high impedance state. Once the overvoltage returns to a
+normal voltage, the PG terminal goes low, timer continues, charge continues and the CHG terminal goes low
+after a 25ms deglitch. PG terminal is optional on some packages
+8.3.6 Power Good Indication ( PG)
+After application of a 5V source, the input voltage rises above the UVLO and sleep thresholds (VIN>VBAT+VDT),
+but is less than OVP (VIN<VOVP,), then the PG FET turns on and provides a low impedance path to ground. See
+Figure 9-6, Figure 9-7, and Figure 9-19.
+
+16    Submit Document Feedback                                                         Copyright © 2021 Texas Instruments Incorporated
+
+                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                          BQ24040, BQ24041, BQ24045
+www.ti.com                                                                              SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+8.3.7 CHG Terminal Indication
+The charge terminal has an internal open drain FET which is on (pulls down to VSS) during the first charge only
+(independent of TTDM) and is turned off once the battery reaches voltage regulation and the charge current
+tapers to the termination threshold set by the PRE-TERM resistor. The BQ24041 does not terminate charge,
+however, the CHG terminal will turn off once the battery current reaches 10% of the programmed charge current.
+The charge terminal is high impedance in sleep mode and OVP (if PG is high impedance) and return to its
+previous state once the condition is removed.
+Cycling input power, pulling the TS terminal low and releasing or entering pre-charge mode causes the CHG
+terminal to go reset (go low if power is good and a discharged battery is attached) and is considered the start of
+a first charge.
+8.4 Device Functional Modes
+8.4.1 CHG and PG LED Pull-up Source
+For host monitoring, a pullup resistor is used between the STATUS terminal and the VCC of the host and for a
+visual indication a resistor in series with an LED is connected between the STATUS terminal and a power
+source. If the CHG or PG source is capable of exceeding 7V, a 6.2V Zener should be used to clamp the voltage.
+If the source is the OUT terminal, note that as the battery changes voltage, and the brightness of the LEDs vary.
+                                                                   Table 8-1.
+                                              CHARGING STATE                       CHG FET/LED
+                                         First charge after VIN applied                  ON
+                                                  Refresh charge
+                                                       OVP                              OFF
+                                                      SLEEP
+                                                   TEMP FAULT                    ON for 1st Charge
+
+                                                                   Table 8-2.
+                                          VIN POWER GOOD STATE                      PG FET/LED
+                                                      UVLO
+                                                   SLEEP mode                           OFF
+                                                    OVP mode
+                                       Normal input (VOUT + VDT < VIN <
+                                                                                         ON
+                                                    VOUP)
+                                                         PG is independent of chip disable
+
+
+8.4.2 Auto Start-up (BQ24041)
+The auto start-up feature is an OR gate with two inputs; an internal power good signal (logic 1 when VIN>VBAT +
+VIN-DT) and an external input from ASI terminal (internal 100kΩ pull-down). The ASO terminal outputs a signal
+that can be used as a system boot signal. The OR gate is powered by the OUT terminal and the OUT terminal
+must be powered by an external source (battery or P/S) or via the IN terminal for the ASO terminal to deliver a
+logic High. The ASI and/or the internal power good signal have to be logic high for the ASO to be logic high. The
+ASI/ASO, OUT and PG signals are used in production testing to test the system without a battery.
+8.4.3 IN-DPM (VIN-DPM or IN-DPM)
+The IN-DPM feature is used to detect an input source voltage that is folding back (voltage dropping), reaching its
+current limit due to excessive load. When the input voltage drops to the VIN-DPM threshold the internal pass FET
+starts to reduce the current until there is no further drop in voltage at the input. This would prevent a source with
+voltage less than VIN-DPM to power the out terminal. This works well with current limited adaptors and USB ports
+as long as the nominal voltage is above 4.3V and 4.4V respectively. This is an added safety feature that helps
+protect the source from excessive loads.
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                            Submit Document Feedback     17
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                                                                                                                                                                         www.ti.com
+
+8.4.4 OUT
+The Charger’s OUT terminal provides current to the battery and to the system, if present. This IC can be used to
+charge the battery plus power the system, charge just the battery or just power the system (TTDM) assuming the
+loads do not exceed the available current. The OUT terminal is a current limited source and is inherently
+protected against shorts. If the system load ever exceeds the output programmed current threshold, the output
+will be discharged unless there is sufficient capacitance or a charged battery present to supplement the
+excessive load.
+8.4.5 ISET
+An external resistor is used to Program the Output Current (50 to 1000mA) and can be used as a current
+monitor.
+
+                                                  RISET = KISET / IOUT                                                                                                                                                                                                                                           (1)
+
+where
+•             IOUT is the desired fast charge current;
+•             KISET is a gain factor found in the electrical specification
+For greater accuracy at lower currents, part of the sense FET is disabled to give better resolution. Figure 7-1
+shows the transition from low current to higher current. Going from higher currents to low currents, there is
+hysteresis and the transition occurs around 0.15A.
+The ISET resistor is short protected and will detect a resistance lower than ≉340Ω. The detection requires at
+least 80mA of output current. If a “short” is detected, then the IC will latch off and can only be reset by cycling the
+power. The OUT current is internally clamped to a maximum current between 1.05A and 1.4A and is
+independent of the ISET short detection circuitry, as shown in Figure 8-5. Also, see Figure 9-14 and Figure 9-15.
+
+                                            4.5
+
+
+
+                                                                                                                                                                                                                 IOUT Fault min - max
+                                                                                              o
+                                                                                   For < 45 C, 4.2V Regulation                                                                                       1.8
+
+
+
+
+                                                                                                                                                                                                                                              IOUT Clamp min - max
+                                             4                                                                                    No Operation
+                                                                                                                                  During Cold                                                        1.6
+                                                                                                                                     Fault
+
+
+
+
+     Normalized OUT Current and VREG - V
+                                            3.5                  o       o
+                                                           60 C to 45 C                                                                                                                              1.4
+                                                           HOT TEMP                                       VOUT
+
+
+
+
+                                                                                                                                                                           IO - Output Current - A
+                                             3                4.06V                                                                                                                                                                                                                  IOUT Internal Clamp Range
+                                                            Regulation                                                                                                                               1.2
+
+                                            2.5
+                                                                                                                                                                                                      1
+                                                                                                                                             < 48oC
+                                             2                                                                                                                                                       0.8
+                                                                                                                                                       Termination                                                                      max                                         IOUT Programmed
+                                            1.5                  o                                   o                        o
+                                                                                                                                                                                                     0.6
+                                                                                                                                                         Disable
+                                                           60 C                                    10 C                  0C
+                                                                       100% of Programmed                                                                                                                                ISET Short
+                                             1                               Current                                                                                                                                        Fault
+                                                                                                                                                                                                     0.4
+                                                  } IC Disable
+                                                                                                                                                                                                                           Range
+                                                                                                                 50%                                                                                                        min                                         Non Restricted
+                                            0.5                                                                                                                                                      0.2                                                                Operating Area
+                                                  } Hot Fault                       IOUT
+                                                                                                                                     Cold
+                                                                                                                                     Fault
+                                             0                                                                                                                                                        0
+                                              0                  0.2         0.4        0.6         0.8          1      1.2           1.4        1.6                 1.8                                                                                                     1000
+                                                                                                                                                                                                           100                                                                                                   10000
+                                                                                                  VTS - Voltage - V                                                                                                                                                          ISET - W
+
+                                           Figure 8-4. Operation Over TS Bias Voltage                                                                                              Figure 8-5. Programmed/Clamped Out Current
+                                                           (BQ24040)                                                                                                                                 (BQ24040)
+
+8.4.6 PRE_TERM – Pre-Charge and Termination Programmable Threshold, BQ24040/5
+Pre-Term is used to program both the pre-charge current and the termination current threshold. The pre-charge
+current level is a factor of two higher than the termination current level. The termination can be set between 5
+and 50% of the programmed output current level set by ISET. If left floating the termination and pre-charge are
+set internally at 10/20% respectively. The pre-charge-to-fast-charge, Vlowv threshold is set to 2.5V.
+
+                                                  RPRE-TERM = %Term × KTERM = %Pre-CHG × KPRE-CHG                                                                                                                                                                                                                (2)
+
+where
+
+
+18                                         Submit Document Feedback                                                                                                                                                                                                  Copyright © 2021 Texas Instruments Incorporated
+
+                                                                                                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                           BQ24040, BQ24041, BQ24045
+www.ti.com                                                                               SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+•    %Term is the percent of fast charge current where termination occurs;
+•    %Pre-CHG is the percent of fast charge current that is desired during precharge;
+•    KTERM and KPRE-CHG are gain factors found in the electrical specifications.
+8.4.7 ISET2
+ISET2 is a 3-state input and programs the Input Current Limit/Regulation Threshold. A low will program a
+regulated fast charge current via the ISET resistor and is the maximum allowed input/output current for any
+ISET2 setting, Float will program a 100mA Current limit and High will program a 500mA Current limit.
+Below are two configurations for driving the 3-state ISET2 terminal:
+                                                                                   VCC
+                      VCC
+                                                                               R1
+                                                                                                                      R1 Divider
+              To                                                                                       Drive          set to 0.9 V
+                                                                        To ISET2                                      Which is the
+           ISET2                                                                                       Logic
+                                         Drive                 OR                         Q1                          Float Voltage
+                                         Logic
+                                                                               R2
+
+
+                                                                                          Q2
+
+
+
+
+                                              Figure 8-6. 3-State ISET2 Terminal Circuits
+
+8.4.8 TS (BQ24040/5)
+The TS function for the BQ24040/5 is designed to follow the new JEITA temperature standard for Li-Ion and Li-
+Pol batteries. There are now four thresholds, 60°C, 45°C, 10°C, and 0°C. Normal operation occurs between
+10°C and 45°C. If between 0°C and 10°C the charge current level is cut in half and if between 45°C and 60°C
+the regulation voltage is reduced to 4.1Vmax, see Figure 8-4.
+The TS feature is implemented using an internal 50μA current source to bias the thermistor (designed for use
+with a 10k NTC β = 3370 (SEMITEC 103AT-2 or Mitsubishi TH05-3H103F) connected from the TS terminal to
+VSS. If this feature is not needed, a fixed 10kΩ can be placed between TS and VSS to allow normal operation.
+This may be done if the host is monitoring the thermistor and then the host would determine when to pull the TS
+terminal low to disable charge.
+The TS terminal has two additional features, when the TS terminal is pulled low or floated/driven high. A low
+disables charge (similar to a high on the BAT_EN feature) and a high puts the charger in TTDM.
+Above 60°C or below 0°C the charge is disabled. Once the thermistor reaches ≉–10°C the TS current folds back
+to keep a cold thermistor (between –10°C and –50°C) from placing the IC in the TTDM mode. If the TS terminal
+is pulled low into disable mode, the current is reduce to ≉30μA, see Figure 8-2. Since the ITS curent is fixed
+along with the temperature thresholds, it is not possible to use thermistor values other than the 10k NTC (at
+25°C).
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                Submit Document Feedback   19
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                     www.ti.com
+
+8.4.9 Termination and Timer Disable Mode (TTDM) - TS Terminal High
+The battery charger is in TTDM when the TS terminal goes high from removing the thermistor (removing battery
+pack/floating the TS terminal) or by pulling the TS terminal up to the TTDM threshold.
+When entering TTDM, the 10 hour safety timer is held in reset and termination is disabled. A battery detect
+routine is run to see if the battery was removed or not. If the battery was removed then the CHG terminal will go
+to its high impedance state if not already there. If a battery is detected the CHG terminal does not change states
+until the current tapers to the termination threshold, where the CHG terminal goes to its high impedance state if
+not already there (the regulated output will remain on).
+The charging profile does not change (still has pre-charge, fast-charge constant current and constant voltage
+modes). This implies the battery is still charged safely and the current is allowed to taper to zero.
+When coming out of TTDM, the battery detect routine is run and if a battery is detected, then a new charge cycle
+begins and the CHG LED turns on.
+If TTDM is not desired upon removing the battery with the thermistor, one can add a 237k resistor between TS
+and VSS to disable TTDM. This keeps the current source from driving the TS terminal into TTDM. This creates
+≉0.1°C error at hot and a ≉3°C error at cold.
+8.4.10 Timers, BQ24040 and BQ24045 only
+The pre-charge timer is set to 30 minutes. The pre-charge current, can be programmed to off-set any system
+load, making sure that the 30 minutes is adequate. The BQ24041 does not have a safety timer.
+The fast charge timer is fixed at 10 hours and can be increased real time by going into thermal regulation, IN-
+DPM or if in USB current limit. The timer clock slows by a factor of 2, resulting in a clock than counts half as fast
+when in these modes. If either the 30 minute or ten hour timer times out, the charging is terminated and the CHG
+terminal goes high impedance if not already in that state. The timer is reset by disabling the IC, cycling power or
+going into and out of TTDM.
+8.4.11 Termination
+Once the OUT terminal goes above VRCH, (reaches voltage regulation) and the current tapers down to the
+termination threshold, the CHG terminal goes high impedance and a battery detect route is run to determine if
+the battery was removed or the battery is full. If the battery is present, the charge current will terminate. If the
+battery was removed along with the thermistor, then the TS terminal is driven high and the charge enters TTDM.
+If the battery was removed and the TS terminal is held in the active region, then the battery detect routine will
+continue until a battery is inserted.
+8.4.12 Battery Detect Routine
+The battery detect routine should check for a missing battery while keeping the OUT terminal at a useable
+voltage. Whenever the battery is missing the CHG terminal should be high impedance.
+The battery detect routine is run when entering and exiting TTDM to verify if battery is present, or run all the time
+if battery is missing and not in TTDM. On power-up, if battery voltage is greater than VRCH threshold, a battery
+detect routine is run to determine if a battery is present.
+The battery detect routine is disabled while the IC is in TTDM, or has a TS fault. See Figure 8-7 for the Battery
+Detect Flow Diagram.
+8.4.13 Refresh Threshold
+After termination, if the OUT terminal voltage drops to VRCH (100mV below regulation) then a new charge is
+initiated, but the CHG terminal remains at a high impedance (off).
+8.4.14 Starting a Charge on a Full Battery
+The termination threshold is raised by ≉14%, for the first minute of a charge cycle so if a full battery is removed
+and reinserted or a new charge cycle is initiated, that the new charge terminates (less than 1 minute). Batteries
+that have relaxed many hours may take several minutes to taper to the termination threshold and terminate
+charge.
+
+20    Submit Document Feedback                                                         Copyright © 2021 Texas Instruments Incorporated
+
+                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                     BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                         SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+
+
+                                                              Start
+                                                          BATT_DETECT
+
+
+
+
+                                                          Start 25ms timer
+
+
+
+
+                                                                                 No
+                                                          Timer Expired?
+
+
+
+
+                                                                     Yes
+
+
+
+
+                                                                                 Yes      Battery Present
+                                                      Is VOUT<VREG-100mV?               Turn off Sink Current
+                                                                                           Return to flow
+
+
+
+
+                                                                   No
+
+                                                           Set OUT REG
+                                                         to VREG-400mV
+                                                        Enable sink current
+                                                      Reset & Start 25ms timer
+
+
+
+
+                                                                                 No
+                                                          Timer Expired?
+
+
+
+
+                                                                     Yes
+
+
+
+
+                                                                                  Yes     Battery Present
+                                                      Is VOUT>VREG-300mV?               Turn off Sink Current
+                                                                                           Return to flow
+
+
+
+                                                                   No
+
+                                                          Battery Absent
+                                                       Don’t Signal Charge
+                                                       Turn off Sink Current
+                                                          Return to Flow
+
+
+                                            Figure 8-7. Battery Detect Routine (BQ24040)
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                       Submit Document Feedback     21
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                    www.ti.com
+
+
+9 Application and Implementation
+                                                            Note
+      Information in the following applications sections is not part of the TI component specification, and TI
+      does not warrant its accuracy or completeness. TI’s customers are responsible for determining
+      suitability of components for their purposes. Customers should validate and test their design
+      implementation to confirm system functionality.
+
+9.1 Application Information
+The BQ2404x series of devices are highly integrated Li-Ion and Li-Pol linear chargers devices targeted at space-
+limited portable applications. The devices operate from either a USB port or AC adapter. The high input voltage
+range with input overvoltage protection supports low-cost unregulated adapters. These devices have a single
+power output that charges the battery. A system load can be placed in parallel with the battery as long as the
+average system load does not keep the battery from charging fully during the 10 hour safety timer.
+9.2 Typical Applications
+9.2.1 Typical Application: BQ24040 and BQ24045
+IOUT_FAST_CHG = 540mA; IOUT_PRE_CHG = 108mA; IOUT_TERM = 54mA
+                                                           1.5kW
+
+
+
+                                                BQ24040 and BQ24045
+           Adaptor
+
+             DC+                                1 IN           OUT 10                                               System Load
+                                                                          1.5kW   Battery Pack
+             GND
+                                                2 ISET             TS 9
+                                                                                             ++
+                                                3 VSS          CHG 8
+                                  1kW                                                                        1mF
+                           1mF
+                                                4 PRETERM ISET2 7
+            OR
+                                                5 PG               NC 6
+                                                                                                                       VDD
+                                   2kW
+                                                                                                               TTDM/BAT_EN
+           USB Port
+            VBUS                                                                                               ISET/100/500 mA
+             GND                                                                                               GND
+               D+                                                                                              D+
+               D-                                                                                              D-             Host
+
+
+                         Figure 9-1. Typical Application Circuit: BQ24040 and BQ24045
+
+9.2.1.1 Design Requirements
+•    Supply voltage = 5 V
+•    Fast charge current: IOUT-FC = 540 mA; ISET-terminal 2
+•    Termination Current Threshold: %IOUT-FC = 10% of Fast Charge or about 54mA
+•    Pre-Charge Current by default is twice the termination Current or about 108mA
+•    TS – Battery Temperature Sense = 10k NTC (103AT)
+
+
+
+
+22    Submit Document Feedback                                                                    Copyright © 2021 Texas Instruments Incorporated
+
+                                         Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                       BQ24040, BQ24041, BQ24045
+www.ti.com                                                                           SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+9.2.1.2 Detailed Design Procedure
+9.2.1.2.1 Calculations
+For additional information on calculations, refer to BQ24040 Application Report.
+9.2.1.2.1.1 Program the Fast Charge Current, ISET:
+
+           RISET = [K(ISET) / I(OUT)]                                                                                         (3)
+
+From Section 7.5:
+• K(SET) = 540AΩ
+• RISET = [540AΩ/0.54A] = 1.0 kΩ
+Selecting the closest standard value, use a 1.0 kΩ resistor between ISET (terminal 16) and VSS.
+9.2.1.2.1.2 Program the Termination Current Threshold, ITERM:
+
+           RPRE-TERM = K(TERM) × %IOUT-FC                                                                                     (4)
+
+           RPRE-TERM = 200Ω/% × 10% = 2kΩ                                                                                     (5)
+
+Selecting the closest standard value, use a 2 kΩ resistor between ITERM (terminal 15) and VSS.
+One can arrive at the same value by using 20% for a pre-charge value (factor of 2 difference).
+
+           RPRE-TERM = K(PRE-CHG) × %IOUT-FC                                                                                  (6)
+
+           RPRE-TERM = 100Ω/% × 20%= 2kΩ                                                                                      (7)
+
+9.2.1.2.1.3 TS Function (BQ24040)
+Use a 10k NTC thermistor in the battery pack (103AT).
+To Disable the temp sense function, use a fixed 10k resistor between the TS (terminal 1) and VSS.
+9.2.1.2.1.4 CHG and PG
+LED Status: connect a 1.5k resistor in series with a LED between the OUT terminal and the CHG terminal.
+Connect a 1.5k resistor in series with a LED between the OUT terminal and the and PG terminal.
+Processor Monitoring: Connect a pull-up resistor between the processor’s power rail and the CHG terminal.
+Connect a pull-up resistor between the processor’s power rail and the PG terminal.
+9.2.1.2.2 Selecting In and Out Terminal Capacitors
+In most applications, all that is needed is a high-frequency decoupling capacitor (ceramic) on the power terminal,
+input and output terminals. Using the values shown on the application diagram, is recommended. After
+evaluation of these voltage signals with real system operational conditions, one can determine if capacitance
+values can be adjusted toward the minimum recommended values (DC load application) or higher values for fast
+high amplitude pulsed load applications. Note if designed for high input voltage sources (bad adaptors or wrong
+adaptors), the capacitor needs to be rated appropriately. Ceramic capacitors are tested to 2x their rated values
+so a 16V capacitor may be adequate for a 30V transient (verify tested rating with capacitor manufacturer).
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                         Submit Document Feedback     23
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                      www.ti.com
+
+9.2.1.3 Application Curves
+SETUP: BQ24040 typical applications schematic; VIN = 5V, VBAT = 3.6V (unless otherwise indicated)
+
+             Vin                                                                              Vin
+                                 5V/div                                                                   5V/div
+
+
+                            Vout
+                        5V/div                                                                                Vout
+
+                                     Vpg                                                                  5V/div
+                                                   5V/div                                                               Vpg
+                                                                                                                            5V/div
+                                 Vaso
+
+                                          5V/div                                                                   Vaso
+                                                                                                                            5V/div
+
+                                   t - time - 10ms/div                                                               t - time - 10ms/div
+
+                   Figure 9-2. Power-up Timing                                      Figure 9-3. Power-up Timing – No Battery or Load
+
+
+               Vasi                                                                          Vasi
+                        5V/div                                                                            5V/div
+
+
+
+                           Vout           5V/div
+                                                                                                                    Vout
+                                  Vpg                                                                                                Vpg
+                                                                                                          5V/div
+                                          5V/div                                                                                           5V/div
+
+             Vaso
+                        5V/div                                                                                       Vas
+                                                                                                                   5V/div
+
+                                   t - time - 20ms/div                                                               t - time - 50ms/div
+
+     Figure 9-4. – ASI and OUT Power-up Timing – No                                Figure 9-5. ASI and delayed OUT Power-up Timing
+                          Input                                                                       – No Input
+                  Vin
+                                 5V/div                                                             Vin
+                                                                                                          5V/div
+
+            Vchg                 2V/div
+
+                                                                                                           Vchg             2V/div
+
+            Vpg
+                                 2V/div
+
+                                                                                                Vpg       2V/div
+            Viset                                                                                                           Viset 2V/div
+                                 2V/div
+
+
+
+                                    t - time - 20ms/div                                                             t - time - 100ms/div
+        Figure 9-6. OVP 8V Adaptor - Hot Plug                                       Figure 9-7. OVP from Normal Power-up Operation
+                                                                                                – VIN 0V → 5V → 8V →5V
+
+
+
+
+24     Submit Document Feedback                                                                                         Copyright © 2021 Texas Instruments Incorporated
+
+                                                            Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                        BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                          SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+                                                                                                                               Vpg      5V/div
+                   Vpg           2V/div                                                                                Vchg
+                       Vchg
+                                                                                                                      2V/div
+                                 2V/div
+                                                                                                                                Vout
+
+                                                                                                                               2V/div
+
+                        Vts                         500mV/div
+                                                                                                                                                 Battery Detect Mode
+
+                               Viset
+                                                                                                       Vin
+                                 2V/div
+                                                                                                             5V/div
+
+                                       t - time - 50ms/div                                                                t - time - 20ms/div
+     10kΩ resistor from TS to GND. 10kΩ is                                             Figure 9-9. Hot Plug Source w/No Battery – Battery
+                    shorted to disable the IC
+                                                                                                          Detection
+      .
+            Figure 9-8. TS Enable and Disable
+                 Vin                                                                                 Vout        1 Battery Detect Cycle
+                                  2V/div
+                                                                                                                      1V/div
+                                                                                                     Vchg
+                                  Vout                                                             Viset
+                                                    500mV/div                                                         5V/div
+
+
+                                                                                                                               1V/div
+                               Viset       1V/div
+                                                                                                       Vts
+                                                                                                                               1V/div
+                 Vts
+                                  2V/div
+                                                                                                                Entered TTDM
+
+
+                                        t - time - 5ms/div
+                                                                                                                         t - time - 10ms/div
+  Figure 9-10. Battery Removal – GND Removed 1st,
+                     42 Ω Load                                                            Figure 9-11. Battery Removal with OUT and TS
+                                                                                               Disconnect 1st, With 100 Ω Load
+                  Vout            1V/div
+                                                                                                                Vout           1V/div
+                        Vchg
+                                                                                                                      Vchg
+                                  5V/div                 Battery Declared Absent                                               5V/div                Battery
+                                                                                                                                                   Threshold
+                                                                                                                                                    Reached
+                                                                                                       Viset                   1V/div
+
+                       Viset               1V/div
+                                                                                                           V_0.1 W_OUT
+                V_0.1 W_OUT                                                                                           100mV/div
+                                   100mV/div
+
+                                        t - time - 20ms/div                                                              t - time - 500ms/div
+
+  Continuous battery detection when not in TTDM                                          CH4: IOUT (1A/Div)
+                                                                                       Battery voltage swept from 0V to 4.25V to 3.9V.
+
+   Figure 9-12. Battery Removal with fixed TS = 0.5V
+                                                                                               Figure 9-13. Battery Charge Profile
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                                          Submit Document Feedback      25
+                                                                Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                                                   www.ti.com
+
+                                                                                                          Vchg
+                                                                                                                           2V/div
+                            Vout         1V/div
+
+                                                                                                            Vin            2V/div
+                                         Vchg 2V/div
+
+             500mV/div
+                                                                                                                                          Short Detected in 100mA
+                     Viset                                         IOUT Clamped Current
+                                                                                                                                            mode and Latched Off
+                                    V_0.1 W_OUT
+                                                                                                          Viset            500mV/div
+
+             100mV/div                                                                                                     20mV/div                V_0.1 W_OUT
+                               ISET Short Detected
+                                   and Latched Off
+
+                                           t - time - 200ms/div                                                               t - time - 5ms/div
+
+     CH4: IOUT (1A/Div)                                                                          CH4: IOUT (0.2A/Div)
+
+
+           Figure 9-14. ISET Shorted During Normal                                           Figure 9-15. ISET Shorted Prior to USB Power-up
+                          Operation
+                                   Vin                                                                   Vin      2V/div
+
+                                                  2V/div                                                          Vchg
+                            Vchg                                                                                           2V/div
+                             2V/div
+
+             500mV/div
+                                Viset
+                                         V_0.1W_OUT
+             20mV/div
+                                                                                                    500mV/div       Viset
+                                                                                                     20mV/div            V_0.1W_OUT
+
+
+                                             t - time - 1ms/div                                                               t - time - 500ms/div
+          CH4: IOUT (0.2A/Div)                                                                  Figure 9-17. DPM – USB Current Limits – Vin
+                                                                                                            Regulated to 4.4V
+     Figure 9-16. DPM – Adaptor Current Limits – Vin
+                      Regulated
+                                                           Vin   2V/div
+             Vout
+
+                                         1V/div
+                              Enters                                      Exits
+                              Thermal                                  Thermal                                    Vin            1V/div
+                              Regulation                             Regulation
+
+
+                    Viset
+                                         1V/div
+                                                                                                                   Viset         1V/div
+              V_0.1W_OUT
+                                                                                                  Vchg
+              50mV/div                                                                                          Vpg              5V/div
+
+                                                                                                                        5V/div
+                                             t - time - 1s/div
+
+ The IC temperature rises to 125°C and enters thermal                                                                       t - time - 20ms/div
+ regulation. Charge current is reduced to regulate the IC at
+ 125°C. VIN is reduced, the IC temperature drops, the charge                                VIN swept from 5V to 3.9V to 5V                                      VBAT = 4V
+ current returns to the programmed value
+
+      .
+                                                                                               Figure 9-19. Entering and Exiting Sleep mode
+     Figure 9-18. Thermal Reg. – Vin increases PWR/
+                      Iout Reduced
+
+
+
+
+26        Submit Document Feedback                                                                                               Copyright © 2021 Texas Instruments Incorporated
+
+                                                                     Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                 BQ24040, BQ24041, BQ24045
+www.ti.com                                                                                     SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+9.2.2 Typical Application Circuit: BQ24041, with ASI and ASO
+IOUT_FAST_CHG = 540mA; IOUT_PRE_CHG = 108mA
+                                                                     1.5kW
+
+                                                                   BQ24041
+             Adaptor
+                DC+                                      1 IN                 OUT 10                                       System Load
+                                                                                       1.5kW    Battery Pack
+                GND
+                                                         2 ISET        BAT_EN 9
+                                           1kW                                                             ++
+                                                         3 VSS               CHG 8
+                                   1mF                                                                               1mF
+
+                                                         4   ASI             ISET2 7
+              OR                 Auto-Booting
+
+                                                         5 PG                 ASO 6
+
+             USB Port                                                                                                 TTDM/BAT_EN
+
+               VBUS                                                                                                   ISET/100/500 mA
+                GND                                                                                                   GND
+                  D+                                                                                                  D+
+                  D-                                                                                                  D-      VDD    Host
+
+
+                                                                                                                      EN
+                                                                                                                           Power Supply
+
+
+                           Figure 9-20. Typical Application Circuit: BQ24041, with ASI and ASO
+
+9.2.2.1 Design Requirements
+See Section 9.2.1 for design requirements.
+9.2.2.2 Detailed Design Procedure
+See Section 9.2.1 for detailed design procedures.
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                                   Submit Document Feedback     27
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                                              www.ti.com
+
+9.2.2.3 Application Curves
+SETUP: BQ24041 typical applications schematic; VIN = 5V, VBAT = 3.6V (unless otherwise indicated)
+
+              Vin                                                                           Vin
+                               5V/div                                                             5V/div
+
+
+                          Vout
+                      5V/div                                                                          Vout
+
+                                   Vpg                                                            5V/div
+                                                 5V/div                                                         Vpg
+                                                                                                                    5V/div
+                               Vaso
+
+                                        5V/div                                                             Vaso
+                                                                                                                    5V/div
+
+                                 t - time - 10ms/div                                                         t - time - 10ms/div
+
+         Figure 9-21. Power-up Timing, BQ24041                                      Figure 9-22. Power-up Timing – No Battery or
+                                                                                                   Load, BQ24041
+
+               Vasi                                                                        Vasi
+                      5V/div                                                                      5V/div
+
+
+
+                         Vout           5V/div
+                                                                                                            Vout
+                                Vpg                                                                                          Vpg
+                                                                                                  5V/div
+                                        5V/div                                                                                     5V/div
+
+              Vaso
+                      5V/div                                                                                 Vas
+                                                                                                           5V/div
+
+                                 t - time - 20ms/div                                                         t - time - 50ms/div
+
+     Figure 9-23. – ASI and OUT Power-up Timing – No                                 Figure 9-24. ASI and Delayed OUT Power-up
+                      Input, BQ24041                                                         Timing – No Input, BQ24041
+
+
+
+
+28      Submit Document Feedback                                                                                Copyright © 2021 Texas Instruments Incorporated
+
+                                                          Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                       BQ24040, BQ24041, BQ24045
+www.ti.com                                                                           SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+10 Power Supply Recommendations
+The devices are designed to operate from an input voltage supply range between 3.5 V and 28 V and current
+capability of at least the maximum designed charge current. This input supply should be well regulated. If located
+more than a few inches from the BQ24040x IN and GND terminals, a larger capacitor is recommended.
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                         Submit Document Feedback     29
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                     www.ti.com
+
+
+11 Layout
+11.1 Layout Guidelines
+To obtain optimal performance, the decoupling capacitor from IN to GND (thermal pad) and the output filter
+capacitors from OUT to GND (thermal pad) should be placed as close as possible to the BQ2405x, with short
+trace runs to both IN, OUT, and GND (thermal pad).
+•    All low-current GND connections should be kept separate from the high-current charge or discharge paths
+     from the battery. Use a single-point ground technique incorporating both the small signal ground path and the
+     power ground path.
+•    The high current charge paths into IN terminal and from the OUT terminal must be sized appropriately for the
+     maximum charge current in order to avoid voltage drops in these traces
+•    The BQ2404x family is packaged in a thermally enhanced MLP package. The package includes a thermal
+     pad to provide an effective thermal contact between the IC and the printed circuit board (PCB); this thermal
+     pad is also the main ground connection for the device. Connect the thermal pad to the PCB ground
+     connection. It is best to use multiple 10mil vias in the power pad of the IC and close enough to conduct the
+     heat to the bottom ground plane. The bottom ground plane should avoid traces that “cut off” the thermal path.
+     The thinner the PCB the less temperature rise. The EVM PCB has a thickness of 0.031 inches and uses 2 oz.
+     (2.8mil thick) copper on top and bottom, and is a good example of optimal thermal performance.
+11.2 Layout Example
+
+
+
+
+                                              Figure 11-1. Board Layout
+
+
+
+
+30    Submit Document Feedback                                                         Copyright © 2021 Texas Instruments Incorporated
+
+                                       Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                       BQ24040, BQ24041, BQ24045
+www.ti.com                                                                           SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021
+
+
+11.3 Thermal Considerations
+The BQ2404x family is packaged in a thermally enhanced MLP package. The package includes a thermal pad to
+provide an effective thermal contact between the IC and the printed circuit board (PCB). The power pad should
+be directly connected to the VSS terminal. Full PCB design guidelines for this package are provided in the
+application note entitled: QFN/SON PCB Attachment Application Report. The most common measure of
+package thermal performance is thermal impedance (RθJA ) measured (or modeled) from the chip junction to the
+air surrounding the package surface (ambient). The mathematical expression for RθJA is:
+
+           RθJA = (TJ – T) / P                                                                                                (8)
+
+where
+•    TJ = Chip junction temperature
+•    T = Ambient temperature
+•    P = Device power dissipation
+Factors that can influence the measurement and calculation of RθJA include:
+1. Whether or not the device is board mounted
+2. Trace size, composition, thickness, and geometry
+3. Orientation of the device (horizontal or vertical)
+4. Volume of the ambient air surrounding the device under test and airflow
+5. Whether other surfaces are in close proximity to the device being tested
+Due to the charge profile of Li-Ion and Li-Pol batteries the maximum power dissipation is typically seen at the
+beginning of the charge cycle when the battery voltage is at its lowest. Typically after fast charge begins the pack
+voltage increases to ≉3.4V within the first 2 minutes. The thermal time constant of the assembly typically takes a
+few minutes to heat up so when doing maximum power dissipation calculations, 3.4V is a good minimum voltage
+to use. This is verified, with the system and a fully discharged battery, by plotting temperature on the bottom of
+the PCB under the IC (pad should have multiple vias), the charge current and the battery voltage as a function of
+time. The fast charge current will start to taper off if the part goes into thermal regulation.
+The device power dissipation, P, is a function of the charge rate and the voltage drop across the internal
+PowerFET. It can be calculated from the following equation when a battery pack is being charged:
+
+           P = [V(IN) – V(OUT)] × I(OUT) + [V(OUT) – V(BAT)] × I(BAT)                                                         (9)
+
+The thermal loop feature reduces the charge current to limit excessive IC junction temperature. It is
+recommended that the design not run in thermal regulation for typical operating conditions (nominal input voltage
+and nominal ambient temperatures) and use the feature for non typical situations such as hot environments or
+higher than normal input source voltage. With that said, the IC will still perform as described, if the thermal loop
+is always active.
+11.3.1 Leakage Current Effects on Battery Capacity
+To determine how fast a leakage current on the battery will discharge the battery is an easy calculation. The time
+from full to discharge can be calculated by dividing the Amp-Hour Capacity of the battery by the leakage current.
+For a 0.75AHr battery and a 10μA leakage current (750 mAHr / 0.010 mA = 75000 hours), it would take 75k
+hours or 8.8 years to discharge. In reality the self discharge of the cell would be much faster so the 10μA
+leakage would be considered negligible.
+
+
+
+
+Copyright © 2021 Texas Instruments Incorporated                                                         Submit Document Feedback     31
+                                                  Product Folder Links: BQ24040 BQ24041 BQ24045
+BQ24040, BQ24041, BQ24045
+SLUS941H – SEPTEMBER 2009 – REVISED FEBRUARY 2021                                                                             www.ti.com
+
+
+12 Device and Documentation Support
+12.1 Device Support
+
+12.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+12.2 Documentation Support
+12.2.1 Related Documentation
+For related documentation see the following:
+• BQ24040 Pin FMA Application Report
+• BQ2404x FIT Rate Application Report
+• BQ24040 Application Report
+• QFN/SON PCB Attachment Application Report
+12.3 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Subscribe to updates to register and receive a weekly digest of any product information that has changed. For
+change details, review the revision history included in any revised document.
+12.4 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+12.5 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+12.6 Electrostatic Discharge Caution
+                This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+                ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+                be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                specifications.
+
+
+12.7 Glossary
+ TI Glossary         This glossary lists and explains terms, acronyms, and definitions.
+
+13 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical packaging and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+32    Submit Document Feedback                                                                 Copyright © 2021 Texas Instruments Incorporated
+
+                                         Product Folder Links: BQ24040 BQ24041 BQ24045
+                                                                                                                                                                    PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   10-Aug-2026
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins     Package qty | Carrier       RoHS             Lead finish/             MSL rating/             Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)           Ball material            Peak reflow                                              (6)
+                                                                                                                                          (4)                      (5)
+
+           BQ24040DSQR                Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes        NIPDAU | NIPDAUAG Level-2-260C-1 YEAR                   0 to 125                     NXE
+          BQ24040DSQR.A               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+          BQ24040DSQR.B               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+         BQ24040DSQRG4                Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+        BQ24040DSQRG4.A               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+        BQ24040DSQRG4.B               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+           BQ24040DSQT                Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes        NIPDAU | NIPDAUAG Level-2-260C-1 YEAR                   0 to 125                     NXE
+          BQ24040DSQT.A               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+          BQ24040DSQT.B               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                     NXE
+           BQ24041DSQR                Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+          BQ24041DSQR.A               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+          BQ24041DSQR.B               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+           BQ24041DSQT                Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+          BQ24041DSQT.A               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+          BQ24041DSQT.B               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes             NIPDAUAG           Level-2-260C-1 YEAR             0 to 125                     NXF
+           BQ24045DSQR                Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+          BQ24045DSQR.A               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+          BQ24045DSQR.B               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+         BQ24045DSQRG4                Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+        BQ24045DSQRG4.A               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+        BQ24045DSQRG4.B               Active      Production       WSON (DSQ) | 10      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+           BQ24045DSQT                Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes        NIPDAU | NIPDAUAG Level-2-260C-1 YEAR                   0 to 125                      SII
+          BQ24045DSQT.A               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+          BQ24045DSQT.B               Active      Production       WSON (DSQ) | 10       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR             0 to 125                      SII
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+
+                                                                                                         Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                 10-Aug-2026
+
+
+
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 2
+                                                                              PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                        3-Sep-2026
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                     TAPE DIMENSIONS
+                                                                                      K0         P1
+
+
+
+                                                                                                                       B0 W
+                                       Reel
+                                     Diameter
+                                                                                   Cavity             A0
+                                                               A0   Dimension designed to accommodate the component width
+                                                               B0   Dimension designed to accommodate the component length
+                                                               K0   Dimension designed to accommodate the component thickness
+                                                               W    Overall width of the carrier tape
+                                                               P1   Pitch between successive cavity centers
+
+
+                                      Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                      Sprocket Holes
+
+
+                                                Q1        Q2          Q1    Q2
+
+                                                Q3        Q4          Q3    Q4                    User Direction of Feed
+
+
+
+                                                           Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins             SPQ        Reel   Reel   A0                   B0         K0     P1     W     Pin1
+                               Type Drawing                             Diameter Width (mm)                 (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                          (mm) W1 (mm)
+     BQ24040DSQR              WSON     DSQ           10        3000        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+    BQ24040DSQRG4             WSON     DSQ           10        3000        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+      BQ24040DSQT             WSON     DSQ           10         250        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+     BQ24041DSQR              WSON     DSQ           10        3000        179.0           8.4        2.2    2.2       1.2    4.0    8.0     Q2
+      BQ24041DSQT             WSON     DSQ           10         250        179.0           8.4        2.2    2.2       1.2    4.0    8.0     Q2
+     BQ24045DSQR              WSON     DSQ           10        3000        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+    BQ24045DSQRG4             WSON     DSQ           10        3000        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+      BQ24045DSQT             WSON     DSQ           10         250        180.0           8.4        2.3    2.3       1.15   4.0    8.0     Q2
+
+
+
+
+                                                                      Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              3-Sep-2026
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+      BQ24040DSQR                WSON             DSQ           10          3000      210.0        185.0         35.0
+    BQ24040DSQRG4                WSON             DSQ           10          3000      210.0        185.0         35.0
+      BQ24040DSQT                WSON             DSQ           10          250       210.0        185.0         35.0
+      BQ24041DSQR                WSON             DSQ           10          3000      213.0        191.0         35.0
+      BQ24041DSQT                WSON             DSQ           10          250       213.0        191.0         35.0
+      BQ24045DSQR                WSON             DSQ           10          3000      210.0        185.0         35.0
+    BQ24045DSQRG4                WSON             DSQ           10          3000      210.0        185.0         35.0
+      BQ24045DSQT                WSON             DSQ           10          250       210.0        185.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                                                                   PACKAGE OUTLINE
+ DSQ0010A                                                      SCALE 5.000
+                                                                                                           WSON - 0.8 mm max height
+                                                                                                                   PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                                              2.1
+                                          B                                                    A
+                                                              1.9
+
+
+
+                       PIN 1 INDEX AREA
+
+
+                                                                                               2.1
+                                                                                               1.9
+
+
+
+
+                                 0.8                                                                  C
+                                 0.7
+
+                                                                                                             SEATING PLANE
+                                0.05
+                                0.00                                                                        0.08 C
+
+
+
+
+                                                           0.9 0.1
+                             EXPOSED                        SYMM
+                          THERMAL PAD                                                                                             (0.2) TYP
+
+                                              5                                       6
+
+
+
+
+                                                                       11                 SYMM
+                          2X 1.6
+                                                                                                   1.5 0.1
+
+
+                                   8X 0.4
+
+                                              1
+                                                                                          10
+                                                                                                           0.25
+                                       PIN 1 ID                                                      10X
+                                                                                                           0.15
+                                                                  0.4
+                                                              10X                                           0.1     C A B
+                                                                  0.2
+                                                                                                            0.05
+
+
+
+                                                                                                                                  4218906/A 04/2019
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+
+
+
+
+                                                                             www.ti.com
+                                                                                        EXAMPLE BOARD LAYOUT
+ DSQ0010A                                                                                         WSON - 0.8 mm max height
+                                                                                                          PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                                                     (0.9)                  SEE SOLDER MASK
+                                     10X (0.5)                                              DETAIL
+                                                                    SYMM
+
+                                      10X (0.2) 1                                            10
+
+
+                                                                                                      (1.5)
+                                   8X (0.4)                              11                  SYMM
+
+                                                                                                  (0.5)
+                               (R0.05) TYP
+
+                                                  5                                          6
+
+
+                                    ( 0.2) TYP
+                                            VIA                      (1.9)
+
+                                                      LAND PATTERN EXAMPLE
+                                                         EXPOSED METAL SHOWN
+                                                              SCALE: 20X
+
+
+
+
+                                                                                          0.07 MIN
+                         0.07 MAX                                                     ALL AROUND
+                     ALL AROUND
+                                                                                                                     METAL UNDER
+                                                         METAL EDGE                                                  SOLDER MASK
+
+
+                EXPOSED METAL
+                                                          SOLDER MASK             EXPOSED                            SOLDER MASK
+                                                          OPENING                   METAL                            OPENING
+
+
+                                  NON SOLDER MASK
+                                      DEFINED                                             SOLDER MASK DEFINED
+                                    (PREFERRED)
+
+                                                          SOLDER MASK DETAILS
+                                                                                                                             4218906/A 04/2019
+NOTES: (continued)
+
+4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+   number SLUA271 (www.ti.com/lit/slua271).
+5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+   on this view. It is recommended that vias under paste be filled, plugged or tented.
+
+
+
+
+                                                                        www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+ DSQ0010A                                                                                 WSON - 0.8 mm max height
+                                                                                                PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                   10X (0.5)
+                                                               (0.85)
+
+
+                                 10X (0.2)     1                                     10
+
+
+
+                             8X (0.4)                               11                SYMM
+                                                                                               (1.38)
+
+                             (R0.05) TYP
+
+
+                                               5                                     6
+
+                                                               SYMM
+
+
+                                                                (1.9)
+
+
+
+
+                                                    SOLDER PASTE EXAMPLE
+                                                   BASED ON 0.125 MM THICK STENCIL
+                                                             SCALE: 20X
+
+                                                    EXPOSED PAD 11
+                                  87% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE
+
+
+
+
+                                                                                                                   4218906/A 04/2019
+
+NOTES: (continued)
+
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+  design recommendations.
+
+
+
+
+                                                                  www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2026, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

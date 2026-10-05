@@ -1,0 +1,16 @@
+test_source_mask_expansion (__main__.PasteGeometry.test_source_mask_expansion) ... FAIL
+test_source_to_export_geometry (__main__.PasteGeometry.test_source_to_export_geometry) ... ok
+
+======================================================================
+FAIL: test_source_mask_expansion (__main__.PasteGeometry.test_source_mask_expansion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/test_cam_geometry.py", line 66, in test_source_mask_expansion
+    self.assertEqual(len(mask.objects),16)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 24 != 16
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.049s
+
+FAILED (failures=1)

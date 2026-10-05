@@ -1,0 +1,211 @@
+{
+  "part": "ESP32-C3-WROOM-02-N4",
+  "jlcpcb": "C2934560",
+  "supplier_package_uuid": "ab901810668e4ba2b431728512d738d6",
+  "supplier_pad_count": 27,
+  "imported_pad_count": 27,
+  "conversion_fidelity": "PASS",
+  "maximum_conversion_difference_mm": 5.084821452783217e-14,
+  "manufacturer_reference": "Espressif datasheet v1.7, Figure 11-1, p38",
+  "recommended_contact_width_mm": 1.5,
+  "recommended_contact_height_mm": 0.9,
+  "actual_contact_width_mm": [
+    1.999996
+  ],
+  "actual_contact_height_mm": [
+    0.999998
+  ],
+  "manufacturer_land_pattern_qualification": "BLOCKED \u2014 UNQUALIFIED SUPPLIER VARIATION",
+  "recommendation_is_not_a_published_tolerance": true,
+  "pads": [
+    {
+      "pin": 1,
+      "x_mm": -8.750046,
+      "y_mm": 5.999988,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 2,
+      "x_mm": -8.750046,
+      "y_mm": 4.500118,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 3,
+      "x_mm": -8.750046,
+      "y_mm": 2.999994,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 4,
+      "x_mm": -8.750046,
+      "y_mm": 1.500124,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 5,
+      "x_mm": -8.750046,
+      "y_mm": 0.0,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 6,
+      "x_mm": -8.750046,
+      "y_mm": -1.49987,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 7,
+      "x_mm": -8.750046,
+      "y_mm": -2.999994,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 8,
+      "x_mm": -8.750046,
+      "y_mm": -4.499864,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 9,
+      "x_mm": -8.750046,
+      "y_mm": -5.999988,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 10,
+      "x_mm": 8.750046,
+      "y_mm": -5.999988,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 11,
+      "x_mm": 8.750046,
+      "y_mm": -4.499864,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 12,
+      "x_mm": 8.750046,
+      "y_mm": -2.999994,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 13,
+      "x_mm": 8.750046,
+      "y_mm": -1.49987,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 14,
+      "x_mm": 8.750046,
+      "y_mm": 0.0,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 15,
+      "x_mm": 8.750046,
+      "y_mm": 1.500124,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 16,
+      "x_mm": 8.750046,
+      "y_mm": 2.999994,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 17,
+      "x_mm": 8.750046,
+      "y_mm": 4.500118,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 18,
+      "x_mm": 8.750046,
+      "y_mm": 5.999988,
+      "width_mm": 1.999996,
+      "height_mm": 0.999998
+    },
+    {
+      "pin": 19,
+      "x_mm": -0.139954,
+      "y_mm": 0.900176,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": -0.139954,
+      "y_mm": -0.199898,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": -0.139954,
+      "y_mm": -1.299972,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 0.959866,
+      "y_mm": 0.900176,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 0.959866,
+      "y_mm": -0.199898,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 0.959866,
+      "y_mm": -1.299972,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 2.05994,
+      "y_mm": -1.299972,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 2.05994,
+      "y_mm": -0.199898,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    },
+    {
+      "pin": 19,
+      "x_mm": 2.05994,
+      "y_mm": 0.900176,
+      "width_mm": 0.6999986,
+      "height_mm": 0.6999986
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "usb4215-paste-qualification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "bun render.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "circuit-json": "file:../vendor/circuit-json-qualified-source.tgz",
+    "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
+    "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
+    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
+    "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
+    "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
+    "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
+    "react": "19.2.1",
+    "zod": "3.25.76",
+    "typescript": "5.9.3",
+    "@types/bun": "1.3.9",
+    "@resvg/resvg-js": "2.6.2",
+    "tscircuit": "0.0.2702",
+    "@tscircuit/capacity-autorouter": "0.0.951"
+  },
+  "overrides": {
+    "circuit-json": "file:../vendor/circuit-json-qualified-source.tgz",
+    "@tscircuit/props": "file:../vendor/props-qualified-source.tgz",
+    "@tscircuit/circuit-json-util": "file:../vendor/circuit-json-util-qualified-source.tgz",
+    "@tscircuit/core": "file:../vendor/core-qualified-source.tgz",
+    "easyeda": "file:../vendor/easyeda-converter-qualified-source.tgz",
+    "circuit-json-to-gerber": "file:../vendor/circuit-json-to-gerber-qualified-source.tgz",
+    "circuit-to-svg": "file:../vendor/circuit-to-svg-qualified-source.tgz",
+    "@tscircuit/eval": "0.0.1506",
+    "@tscircuit/checks": "0.0.232",
+    "@tscircuit/footprinter": "0.0.426"
+  }
+}

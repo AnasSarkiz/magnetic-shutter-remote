@@ -1,0 +1,15 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [6]
+Saved lockfile
+
++ @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.6.tgz
++ @tscircuit/circuit-json-util@../vendor/circuit-json-util-qualified-source.tgz
++ @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
++ @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.5.tgz
++ @tscircuit/props@../vendor/props-qualified-source.tgz
++ @tscircuit/schematic-trace-solver@../vendor/schematic-trace-solver-0.0.217.tgz
++ circuit-json@../vendor/circuit-json-qualified-source.tgz
++ circuit-to-svg@../vendor/circuit-to-svg-qualified-source.tgz
+
+26 packages installed [1391.00ms]

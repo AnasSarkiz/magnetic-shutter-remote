@@ -1,0 +1,17 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tests/repros/r7/__snapshots__/mixed-pad-bounds-convention-pcb.snap.svg
+(pass) SMT pad bounds use maximum Y for top in board space at every rotation and layer [235.06ms]
+
+tests/repros/r7/separated-mixed-ground-pads.test.tsx:
+(pass) Separated mixed-shape pads retain two internally connected ports rather than being merged [9.42ms]
+
+tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tests/repros/r7/__snapshots__/pt4115-overlapping-ground-pads-pcb.snap.svg
+(pass) C347356 overlapping rectangular and pill ground pads share one PCB port [30.65ms]
+
+ 3 pass
+ 0 fail
+ 204 expect() calls
+Ran 3 tests across 3 files. [876.00ms]

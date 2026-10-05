@@ -1,0 +1,27 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro109-non-overlapping-composite-pin-ambiguous.test.tsx:
+(pass) repro109: repeated portHints on non-overlapping pads create internally connected ports [323.10ms]
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+(pass) SMT pad bounds use maximum Y for top in board space at every rotation and layer [213.63ms]
+
+tests/repros/r7/separated-mixed-ground-pads.test.tsx:
+(pass) Separated mixed-shape pads retain two internally connected ports rather than being merged [6.73ms]
+
+tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:
+(pass) C347356 overlapping rectangular and pill ground pads share one PCB port [29.31ms]
+
+tests/components/primitive-components/pill-shape-smtpad.test.tsx:
+(pass) Pill-shaped smtpad [208.27ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-circle.test.tsx:
+(pass) circle pads apply solderPasteMargin to the radius once per side [2.19ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-rotated-rect.test.tsx:
+(pass) rotated_rect pads honor solderPasteMargin [1.63ms]
+
+ 7 pass
+ 0 fail
+ 219 expect() calls
+Ran 7 tests across 7 files. [1.68s]

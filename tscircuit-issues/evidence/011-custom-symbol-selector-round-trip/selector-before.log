@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-symbol-port-selector.test.tsx:
+14 |     <resistor name="R1" resistance="1k" footprint="0603" pcbX={4}/>
+15 |     <trace from="Q1.G" to="R1.1"/>
+16 |   </board>)
+17 |   await circuit.renderUntilSettled()
+18 |   const ports = circuit.selectAll<Port>("port").filter(port => port.pcb_port_id)
+19 |   for (const port of ports) expect(circuit.selectOne(port.getPortSelector(), {type:"port"})).toBe(port)
+                                                                                                  ^
+error: expect(received).toBe(expected)
+
+Expected: <port#18 name=".pin1" />
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-symbol-port-selector.test.tsx:19:94)
+(fail) custom-symbol physical port selectors round-trip and routes can be saved [129.14ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [912.00ms]

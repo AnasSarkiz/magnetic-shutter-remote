@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-fanout-later-custom-symbol.test.tsx:
+(pass) fanout resolves a later custom-symbol switch after symbol ports initialize [94.79ms]
+
+tests/repros/repro-fanout-in-schematic-sheet.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/__snapshots__/repro-fanout-in-schematic-sheet-schematic.snap.svg
+(pass) schematic sheets preserve PCB fanout routing scope and custom-symbol ports [32.00ms]
+
+ 2 pass
+ 0 fail
+ 8 expect() calls
+Ran 2 tests across 2 files. [941.00ms]

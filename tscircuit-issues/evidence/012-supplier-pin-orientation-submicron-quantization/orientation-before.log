@@ -1,0 +1,31 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/analyze-pcb-pin1-location.test.ts:
+(pass) analyzes all semantic pin 1 locations [2.42ms]
+(pass) returns null for ambiguous multi-pad footprints and missing pin 1 [0.15ms]
+(pass) matches the routed JST PH J1 and C131334 supplier pin order [0.54ms]
+(pass) refuses incomplete or nonmonotonic multi-pad rows [0.03ms]
+(pass) infers a consistent two-pad LED frame at each right-angle rotation
+(pass) recovers supplier-to-local LED rotation for every pair of frames
+(pass) two-pad frames do not depend on pad order, origin or small rounding errors
+(pass) does not guess a two-pad frame without distinct axis-aligned pins 1 and 2 [0.47ms]
+239 |     createPad(11, -0.000127, 0),
+240 |   ]
+241 |   const original = structuredClone(pads)
+242 |   const expected = ["bottomside_left", "rightside_bottom", "topside_right", "leftside_top"]
+243 |   for (const [index, rotation] of rightAngles.entries()) {
+244 |     expect(analyzePcbPin1Location(rotatePads(pads, rotation))).toBe(expected[index])
+                                                                     ^
+error: expect(received).toBe(expected)
+
+Expected: "bottomside_left"
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/circuit-json-util/tests/analyze-pcb-pin1-location.test.ts:244:64)
+(fail) orientation inference tolerates sub-micron supplier row quantization without changing geometry [0.17ms]
+(pass) orientation quantization allowance does not classify a genuinely staggered row
+
+ 9 pass
+ 1 fail
+ 124 expect() calls
+Ran 10 tests across 1 file. [513.00ms]

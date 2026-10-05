@@ -1,0 +1,14 @@
+Collecting svgpathtools==1.7.2
+  Downloading svgpathtools-1.7.2-py2.py3-none-any.whl.metadata (22 kB)
+Requirement already satisfied: numpy in ./tooling/gerber-review-venv/lib/python3.14/site-packages (from svgpathtools==1.7.2) (2.5.3)
+Collecting svgwrite (from svgpathtools==1.7.2)
+  Downloading svgwrite-1.4.3-py3-none-any.whl.metadata (8.8 kB)
+Collecting scipy (from svgpathtools==1.7.2)
+  Downloading scipy-1.18.1-cp314-cp314-macosx_14_0_arm64.whl.metadata (62 kB)
+Downloading svgpathtools-1.7.2-py2.py3-none-any.whl (68 kB)
+Downloading scipy-1.18.1-cp314-cp314-macosx_14_0_arm64.whl (20.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 38.5 MB/s  0:00:00
+Downloading svgwrite-1.4.3-py3-none-any.whl (67 kB)
+Installing collected packages: svgwrite, scipy, svgpathtools
+
+Successfully installed scipy-1.18.1 svgpathtools-1.7.2 svgwrite-1.4.3

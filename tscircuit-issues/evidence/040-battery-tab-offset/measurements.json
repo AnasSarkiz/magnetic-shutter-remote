@@ -1,0 +1,20 @@
+{
+  "original_tab_inner_faces_mm": [
+    -7.8,
+    8.8
+  ],
+  "original_pack_side_gaps_mm": [
+    0.05,
+    1.05
+  ],
+  "final_tab_inner_faces_mm": [
+    -8.3,
+    8.3
+  ],
+  "final_side_gaps_mm": [
+    0.55,
+    0.55
+  ],
+  "final_nest_width_mm": 16.6,
+  "provenance": "Preserved minimal old expression; final regenerated STL measured independently. Full pre-fix R3 carrier file was not retained byte-for-byte."
+}

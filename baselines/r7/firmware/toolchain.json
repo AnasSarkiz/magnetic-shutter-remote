@@ -1,0 +1,17 @@
+{
+  "zephyr_tag": "v4.2.0",
+  "revisions": {
+    "zephyr": "413b789deb391d3a37d06b463288a5fe765ee57e",
+    "cmsis": "512cc7e895e8491696b61f7ba8066b4a182569b8",
+    "cmsis_6": "06d952b6713a2ca41c9224a62075e4059402a151",
+    "hal_nordic": "9587b1dcb83d24ab74e89837843a5f7d573f7059",
+    "mbedtls": "85440ef5fffa95d0e9971e9163719189cf34d979"
+  },
+  "python": "3.14.7",
+  "west": "1.5.0",
+  "cmake": "3.31.10",
+  "ninja": "1.13.0",
+  "arm_gcc": "16.1.0",
+  "target": "grip_shutter",
+  "hardware_tested": false
+}

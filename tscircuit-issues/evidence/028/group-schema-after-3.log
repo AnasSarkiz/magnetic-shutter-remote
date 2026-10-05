@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-fanout-schematic-group-schema.test.tsx:
+26 |     .list()
+27 |     .find((group) => group.name === "ESCAPE")!
+28 |   expect(escape.subcircuit_id).toBe(boardGroup.subcircuit_id!)
+29 |   expect(
+30 |     any_circuit_element.array().safeParse(circuit.getCircuitJson()).success,
+31 |   ).toBe(true)
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-fanout-schematic-group-schema.test.tsx:31:5)
+(fail) transparent fanout groups inherit the board subcircuit in schema-valid schematic output [164.63ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [719.00ms]

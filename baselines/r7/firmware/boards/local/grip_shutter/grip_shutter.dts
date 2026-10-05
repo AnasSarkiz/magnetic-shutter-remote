@@ -1,0 +1,38 @@
+/dts-v1/;
+#include <nordic/nrf52840_qiaa.dtsi>
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+	model = "Grip Shutter R1 E73-2G4M08S1C";
+	compatible = "local,grip-shutter";
+	chosen {
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &application;
+	};
+	leds {
+		compatible = "gpio-leds";
+		status_led: status_led { gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>; };
+	};
+	buttons {
+		compatible = "gpio-keys";
+		shutter_button: shutter_button { gpios = <&gpio0 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; };
+		pair_button: pair_button { gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; };
+	};
+	aliases { led0 = &status_led; sw0 = &shutter_button; sw1 = &pair_button; };
+};
+
+&gpio0 { status = "okay"; };
+&gpiote { status = "okay"; };
+&uicr { gpio-as-nreset; };
+/* Normal voltage mode. Use the internal LDO; no dependence on external DCCH. */
+&reg1 { regulator-initial-mode = <NRF5X_REG_MODE_LDO>; };
+&flash0 {
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		application: partition@0 { label = "application"; reg = <0x0 0xf8000>; };
+		storage_partition: partition@f8000 { label = "storage"; reg = <0xf8000 0x8000>; };
+	};
+};

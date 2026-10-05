@@ -1,0 +1,2 @@
+$ bun scripts/render-sheets.ts
+Full circuit schema: 0 rejected records; preserved in evidence/circuit-schema-issues.json

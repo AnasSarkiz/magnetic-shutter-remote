@@ -1,0 +1,24 @@
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/core/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+ESM dist/index.js 4.04 MB
+ESM ⚡️ Build success in 161ms
+DTS Build start
+lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts(220,43): error TS2345: Argument of type '({ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 246 more ... | { ...; })[]' is not assignable to parameter of type '({ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 245 more ... | { ...; })[]'.
+  Type '{ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 246 more ... | { ...; }' is not assignable to type '{ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 245 more ... | { ...; }'.
+    Type '{ type: "pcb_solder_paste"; x: number; y: number; layer: "top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"; shape: "polygon"; points: { ...; }[]; ... 4 more ...; pcb_smtpad_id?: string | undefined; }' is not assignable to type '{ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 245 more ... | { ...; }'.
+      Type '{ type: "pcb_solder_paste"; x: number; y: number; layer: "top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"; shape: "polygon"; points: { ...; }[]; ... 4 more ...; pcb_smtpad_id?: string | undefined; }' is not assignable to type '{ type: "pcb_solder_paste"; x: number; y: number; layer: "top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"; shape: "circle"; radius: number; ... 4 more ...; pcb_smtpad_id?: string | undefined; } | ... 4 more ... | { ...; }'.
+        Type '{ type: "pcb_solder_paste"; x: number; y: number; layer: "top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"; shape: "polygon"; points: { ...; }[]; ... 4 more ...; pcb_smtpad_id?: string | undefined; }' is missing the following properties from type '{ type: "pcb_solder_paste"; x: number; y: number; width: number; height: number; layer: "top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"; ... 5 more ...; pcb_smtpad_id?: string | undefined; }': width, height
+
+Error: error occurred in dts build
+    at Worker.<anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tooling/core/node_modules/tsup/dist/index.js:1545:26)
+    at Worker.emit (node:events:508:20)
+    at MessagePort.<anonymous> (node:internal/worker:333:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:843:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+DTS Build error
+error: script "build" exited with code 1

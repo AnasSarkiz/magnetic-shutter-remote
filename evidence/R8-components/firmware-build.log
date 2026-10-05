@@ -1,0 +1,53 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base (cached)).
+-- Application: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware
+-- CMake version: 3.31.10
+-- Cache files will be written to: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/.cache
+-- Zephyr version: 4.2.0 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: esp32c3_devkitc, qualifiers: esp32c3
+-- Found host-tools: zephyr 0.17.2 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2)
+-- Found toolchain: zephyr 0.17.2 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2)
+-- Could NOT find Dtc (missing: DTC) (Required is at least version "1.4.6")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found BOARD.dts: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts
+-- Found devicetree overlay: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/boards/esp32c3_devkitc.overlay
+-- Generated zephyr.dts: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/zephyr.dts
+-- Generated pickled edt: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/Kconfig
+Loaded configuration '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/.config'
+No change to configuration in '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/.config'
+No change to Kconfig header in '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Espressif HAL path: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif
+-- Use the esptool.py: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif/tools/esptool_py/esptool.py
+-- Image partition address: 0x0
+-- Found gen_kobject_list: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (7.1s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build
+-- west build: building application
+[1/192] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[2/7] Generating linker_zephyr_pre0.cmd
+[3/7] Linking C executable zephyr/zephyr_pre0.elf
+[4/7] Generating linker.cmd
+[5/7] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+[6/7] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+[7/7] Linking C executable zephyr/zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:      411568 B    4194048 B      9.81%
+     iram0_0_seg:       64016 B     306688 B     20.87%
+     dram0_0_seg:      129776 B     306688 B     42.32%
+     irom0_0_seg:      200326 B         4 MB      4.78%
+     drom0_0_seg:      280496 B         4 MB      6.69%
+    rtc_iram_seg:          0 GB         8 KB      0.00%
+        IDT_LIST:          0 GB         8 KB      0.00%
+Generating files from /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/zephyr.elf for board: esp32c3_devkitc
+/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif/tools/esptool_py/esptool/cmds.py:158: SyntaxWarning: 'return' in a 'finally' block
+  return inst
+esptool.py v4.8.1
+Creating esp32c3 image...
+Image has only RAM segments visible. ROM segments are hidden and SHA256 digest is not appended.
+Info: inserting 4 bytes padding between .dram0.data and .loader.data
+Merged 21 ELF sections
+Successfully created esp32c3 image.

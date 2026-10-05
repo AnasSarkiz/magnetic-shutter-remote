@@ -1,0 +1,41 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware
+-- CMake version: 3.31.10
+-- Found Python3: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/.venv/bin/python (found suitable version "3.14.7", minimum required is "3.10") found components: Interpreter
+-- Cache files will be written to: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/.cache
+-- Zephyr version: 4.2.0 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: esp32c3_devkitc, qualifiers: esp32c3
+-- Found host-tools: zephyr 0.17.2 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2)
+-- Found toolchain: zephyr 0.17.2 (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2)
+-- Could NOT find Dtc (missing: DTC) (Required is at least version "1.4.6")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found BOARD.dts: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts
+-- Found devicetree overlay: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/boards/esp32c3_devkitc.overlay
+-- Generated zephyr.dts: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/zephyr.dts
+-- Generated pickled edt: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/Kconfig
+Loaded configuration '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc_defconfig'
+Merged configuration '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/prj.conf'
+Configuration saved to '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/.config'
+Kconfig header saved to '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2/riscv64-zephyr-elf/riscv64-zephyr-elf/bin/ld.bfd (found version "2.38")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/zephyr-sdk-0.17.2/riscv64-zephyr-elf/bin/riscv64-zephyr-elf-gcc
+-- Espressif HAL path: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif
+-- Use the esptool.py: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif/tools/esptool_py/esptool.py
+-- Image partition address: 0x0
+CMake Error at deps/zephyr/cmake/modules/extensions.cmake:1871 (message):
+  Blob for path
+  "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/deps/modules/hal/espressif/zephyr/blobs/lib/esp32/libespnow.a"
+  missing.  Update with: west blobs fetch hal_espressif
+Call Stack (most recent call first):
+  deps/zephyr/drivers/bluetooth/hci/CMakeLists.txt:13 (zephyr_blobs_verify)
+
+
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: command exited with status 1: /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/.venv/bin/cmake -DWEST_PYTHON=/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/.venv/bin/python -B/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware/build -GNinja -DBOARD=esp32c3_devkitc/esp32c3 -S/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/firmware

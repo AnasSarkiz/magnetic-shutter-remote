@@ -1,0 +1,13 @@
+cmake==3.31.10
+colorama==0.4.6
+docopt==0.6.2
+intelhex==2.3.0
+ninja==1.13.0
+packaging==26.3
+pyelftools==0.33
+pykwalify==1.8.0
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+ruamel.yaml==0.19.1
+six==1.17.0
+west==1.5.0

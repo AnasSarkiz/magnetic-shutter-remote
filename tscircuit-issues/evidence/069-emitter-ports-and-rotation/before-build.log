@@ -1,0 +1,83 @@
+Building 1 file(s)...
+Building fill-light-ring.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Circuit JSON written to dist/fill-light-ring/circuit.json
+Port pin1 on J1 is missing a trace
+Port pin2 on J1 is missing a trace
+Port pin3 on J1 is missing a trace
+Port pin4 on J1 is missing a trace
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on D3 are underspecified (no pinAttributes set)
+All pins on D4 are underspecified (no pinAttributes set)
+All pins on D5 are underspecified (no pinAttributes set)
+All pins on D6 are underspecified (no pinAttributes set)
+All pins on D7 are underspecified (no pinAttributes set)
+All pins on D8 are underspecified (no pinAttributes set)
+All pins on D9 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on D12 are underspecified (no pinAttributes set)
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+D3 has no pin with requires_power=true
+D4 has no pin with requires_power=true
+D5 has no pin with requires_power=true
+D6 has no pin with requires_power=true
+D7 has no pin with requires_power=true
+D8 has no pin with requires_power=true
+D9 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+D12 has no pin with requires_power=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+D3 has no pin with requires_ground=true
+D4 has no pin with requires_ground=true
+D5 has no pin with requires_ground=true
+D6 has no pin with requires_ground=true
+D7 has no pin with requires_ground=true
+D8 has no pin with requires_ground=true
+D9 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+D12 has no pin with requires_ground=true
+<chip#13(.Emitter>.D3) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34478671 (copper IoU 0.5357).
+<chip#12(.Emitter>.D2) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34478671 (copper IoU 0.5357).
+<chip#22(.Emitter>.D12) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34312856 (copper IoU 0.5154).
+<chip#17(.Emitter>.D7) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34312856 (copper IoU 0.5661).
+<chip#20(.Emitter>.D10) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34312856 (copper IoU 0.5661).
+<chip#19(.Emitter>.D9) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34312856 (copper IoU 0.5154).
+<chip#15(.Emitter>.D5) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34478671 (copper IoU 0.5357).
+<chip#16(.Emitter>.D6) /> footprint the provided footprint does not match supplier footprint jlcpcb:C34478671 (copper IoU 0.5357).
+Could not find port for selector ".J1.pin1". Component "J1" found, but does not have pin "pin1". It has 8 pins and no pinLabels (consider adding pinLabels)
+Could not find port for selector ".D6.pin1". Component "D6" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".J1.pin3". Component "J1" found, but does not have pin "pin3". It has 8 pins and no pinLabels (consider adding pinLabels)
+Could not find port for selector ".D12.pin1". Component "D12" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D1.pin1". Component "D1" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D2.pin1". Component "D2" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D3.pin1". Component "D3" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D4.pin1". Component "D4" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D5.pin1". Component "D5" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D7.pin1". Component "D7" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D8.pin1". Component "D8" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D9.pin1". Component "D9" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D10.pin1". Component "D10" found, but does not have pin "pin1". It has no ports
+Could not find port for selector ".D11.pin1". Component "D11" found, but does not have pin "pin1". It has no ports
+J1 overlaps D11: 2 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+Generating preview images...
+[fill-light-ring] Generating PCB SVG...
+[fill-light-ring] Written pcb.svg
+[fill-light-ring] Generating PCB PNG...
+[fill-light-ring] Written pcb.png
+[fill-light-ring] Generating schematic SVG...
+[fill-light-ring] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

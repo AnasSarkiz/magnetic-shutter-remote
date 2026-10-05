@@ -1,0 +1,14 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [33]
+Saved lockfile
+
++ @tscircuit/circuit-json-util@../vendor/circuit-json-util-qualified-source.tgz
++ @tscircuit/core@../vendor/core-qualified-source.tgz
++ @tscircuit/props@../vendor/props-qualified-source.tgz
++ circuit-json@../vendor/circuit-json-qualified-source.tgz
++ circuit-json-to-gerber@../vendor/circuit-json-to-gerber-qualified-source.tgz
++ circuit-to-svg@../vendor/circuit-to-svg-qualified-source.tgz
++ easyeda@../vendor/easyeda-converter-qualified-source.tgz
+
+13 packages installed [996.00ms]

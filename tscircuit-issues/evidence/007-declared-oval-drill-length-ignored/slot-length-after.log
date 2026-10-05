@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-to-soup-tests/declared-slot-length.test.ts:
+(pass) preserves declared 1.2 mm slot at 0 degrees [10.76ms]
+(pass) preserves declared 1.2 mm slot at 90 degrees [3.72ms]
+(pass) preserves declared 1.2 mm slot at 180 degrees [3.26ms]
+(pass) preserves declared 1.2 mm slot at 270 degrees [2.21ms]
+(pass) oval copper does not imply a slotted drill [1.90ms]
+
+ 5 pass
+ 0 fail
+ 26 expect() calls
+Ran 5 tests across 1 file. [141.00ms]

@@ -1,0 +1,8 @@
+patching file 'lib/components/index.ts'
+patching file 'lib/components/primitive-components/SolderPaste.ts'
+patching file 'lib/fiber/intrinsic-jsx.ts'
+patching file 'lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts'
+patching file 'tests/__snapshots__/solderpaste-polygon-transform-pcb.snap.svg'
+patching file 'tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx'
+patching file 'tests/solderpaste-polygon-transform.test.tsx'
+patching file 'tests/solderpaste-routing-neutrality.test.tsx'

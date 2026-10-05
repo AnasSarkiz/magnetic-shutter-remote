@@ -1,0 +1,2499 @@
+{
+  "circuit_sha256": "68b46821c2155c58745ac16b71f3bb7ae120b80cce0a51de811fe6677944b07d",
+  "usb_contacts": [
+    {
+      "pin": [
+        "pin17"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_4",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.5999988,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin17"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 3.2000189999999997,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 3.200019,
+        "y_mm": 21.960229,
+        "width_mm": 0.599999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.6,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin18"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_5",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.5999988,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin18"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 2.3999189999999997,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 2.399919,
+        "y_mm": 21.960229,
+        "width_mm": 0.599999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.6,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin19"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_2",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_6",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin19"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 1.7499329999999997,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 1.749933,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin20"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_3",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_7",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin20"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 1.2498069999999997,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 1.249807,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin21"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_4",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_8",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin21"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 0.7499349999999998,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 0.749935,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin22"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_5",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_9",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin22"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": 0.24980899999999975,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": 0.249809,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin23"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_6",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_10",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin23"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -0.2500630000000002,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -0.250063,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin24"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_7",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_11",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin24"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -0.7501890000000002,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -0.750189,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin25"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_8",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_12",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin25"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -1.2500610000000003,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -1.250061,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin26"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_9",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_13",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.2999994,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin26"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -1.7501870000000002,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -1.750187,
+        "y_mm": 21.960229,
+        "width_mm": 0.299999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.3,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin27"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_10",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_14",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.5999988,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin27"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -2.4001730000000006,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -2.400173,
+        "y_mm": 21.960229,
+        "width_mm": 0.599999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.6,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    },
+    {
+      "pin": [
+        "pin28"
+      ],
+      "source": {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_11",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_15",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.5999988,
+        "height": 1.1999976,
+        "port_hints": [
+          "pin28"
+        ],
+        "is_covered_with_solder_mask": false,
+        "soldermask_margin": 0.0508,
+        "x": -3.2000190000000006,
+        "y": 21.9602294,
+        "subcircuit_id": "subcircuit_source_group_8",
+        "pcb_group_id": "pcb_group_0"
+      },
+      "export": {
+        "x_mm": -3.200019,
+        "y_mm": 21.960229,
+        "width_mm": 0.599999,
+        "length_mm": 1.199998
+      },
+      "manufacturer_nominal_width_mm": 0.6,
+      "manufacturer_length_mm": 1.15,
+      "manufacturer_length_tolerance_mm": 0.05
+    }
+  ],
+  "usb_paste": [
+    {
+      "source_id": "pcb_solder_paste_0",
+      "source_bounds_mm": [
+        -1.4000733999998831,
+        21.360230600000058,
+        -1.1000740000000635,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -1.400073,
+        21.360231,
+        -1.100074,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853004571742e-07,
+      "area_mm2": 0.3600056999770004,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_1",
+      "source_bounds_mm": [
+        -1.900199399999906,
+        21.360230600000058,
+        -1.6001999999999728,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -1.900199,
+        21.360231,
+        -1.6002,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853166291255e-07,
+      "area_mm2": 0.3600056999770004,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_2",
+      "source_bounds_mm": [
+        2.9000196000000638,
+        21.360230600000058,
+        3.500018399999931,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        2.90002,
+        21.360231,
+        3.500018,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853379823825e-07,
+      "area_mm2": 0.7200113999540008,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_3",
+      "source_bounds_mm": [
+        -0.9002014000000148,
+        21.360230600000058,
+        -0.600201999999854,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -0.900201,
+        21.360231,
+        -0.600202,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853934851534e-07,
+      "area_mm2": 0.3600056999770005,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_4",
+      "source_bounds_mm": [
+        -2.700172399999929,
+        21.360230600000058,
+        -2.100173600000062,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -2.700172,
+        21.360231,
+        -2.100174,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853389244379e-07,
+      "area_mm2": 0.7200113999540008,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_5",
+      "source_bounds_mm": [
+        -0.40007539999999187,
+        21.360230600000058,
+        -0.10007599999994472,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -0.400075,
+        21.360231,
+        -0.100076,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853772739474e-07,
+      "area_mm2": 0.3600056999770005,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_6",
+      "source_bounds_mm": [
+        0.09979659999999026,
+        21.360230600000058,
+        0.3997960000000374,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        0.099797,
+        21.360231,
+        0.399796,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853899230057e-07,
+      "area_mm2": 0.3600056999770005,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_7",
+      "source_bounds_mm": [
+        2.0999196000000206,
+        21.360230600000058,
+        2.699918400000115,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        2.09992,
+        21.360231,
+        2.699918,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656854642178295e-07,
+      "area_mm2": 0.7200113999540008,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_8",
+      "source_bounds_mm": [
+        0.5999225999998995,
+        21.360230600000058,
+        0.8999220000000603,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        0.599923,
+        21.360231,
+        0.899922,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656854540907311e-07,
+      "area_mm2": 0.3600056999770005,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_9",
+      "source_bounds_mm": [
+        1.099794600000109,
+        21.360230600000058,
+        1.3997940000000424,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        1.099795,
+        21.360231,
+        1.399794,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656853059524974e-07,
+      "area_mm2": 0.3600056999770004,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_10",
+      "source_bounds_mm": [
+        1.599920600000132,
+        21.360230600000058,
+        1.8999199999999516,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        1.599921,
+        21.360231,
+        1.89992,
+        22.560254
+      ],
+      "contour_difference_mm": 5.656852896235371e-07,
+      "area_mm2": 0.36000569997700066,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_11",
+      "source_bounds_mm": [
+        -3.500018400000045,
+        21.3602560000002,
+        -2.9000195999999505,
+        22.560253600000046
+      ],
+      "gerber_bounds_mm": [
+        -3.500018,
+        21.360256,
+        -2.90002,
+        22.560254
+      ],
+      "contour_difference_mm": 4.0000004952744916e-07,
+      "area_mm2": 0.7199964000040002,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_12",
+      "source_bounds_mm": [
+        3.819905999999946,
+        21.6603316000001,
+        4.819904000000065,
+        23.46002320000006
+      ],
+      "gerber_bounds_mm": [
+        3.819906,
+        21.660332,
+        4.819904,
+        23.460023
+      ],
+      "contour_difference_mm": 5.426029817290573e-07,
+      "area_mm2": 1.5850632441154997,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_13",
+      "source_bounds_mm": [
+        -4.819903999999951,
+        21.6603316000001,
+        -3.8199059999999463,
+        23.46002320000006
+      ],
+      "gerber_bounds_mm": [
+        -4.819904,
+        21.660332,
+        -3.819906,
+        23.460023
+      ],
+      "contour_difference_mm": 5.426029742146764e-07,
+      "area_mm2": 1.5850632441154995,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_14",
+      "source_bounds_mm": [
+        3.8199059999999467,
+        25.46032400000005,
+        4.819904000000065,
+        27.66001480000015
+      ],
+      "gerber_bounds_mm": [
+        3.819906,
+        25.460324,
+        4.819904,
+        27.660015
+      ],
+      "contour_difference_mm": 5.6041521718671e-07,
+      "area_mm2": 1.9850618263979993,
+      "inside_mask": true
+    },
+    {
+      "source_id": "pcb_solder_paste_15",
+      "source_bounds_mm": [
+        -4.819903999999951,
+        25.46032400000005,
+        -3.819905999999946,
+        27.66001480000015
+      ],
+      "gerber_bounds_mm": [
+        -4.819904,
+        25.460324,
+        -3.819906,
+        27.660015
+      ],
+      "contour_difference_mm": 5.60415146670086e-07,
+      "area_mm2": 1.9850618263979998,
+      "inside_mask": true
+    }
+  ],
+  "usb_shells": [
+    {
+      "source_id": "pcb_plated_hole_0",
+      "kind": "slot",
+      "position_mm": [
+        -4.3199,
+        22.560200000000002
+      ],
+      "diameter_mm": 0.599999,
+      "length_mm": 1.3999990000000007,
+      "position_error_mm": 2.392822601034412e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_id": "pcb_plated_hole_1",
+      "kind": "slot",
+      "position_mm": [
+        4.3199,
+        22.560200000000002
+      ],
+      "diameter_mm": 0.599999,
+      "length_mm": 1.3999990000000007,
+      "position_error_mm": 2.3928226013818404e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_id": "pcb_plated_hole_2",
+      "kind": "slot",
+      "position_mm": [
+        4.3199,
+        26.560200000000002
+      ],
+      "diameter_mm": 0.599999,
+      "length_mm": 1.7999989999999992,
+      "position_error_mm": 3.2190681880271894e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_id": "pcb_plated_hole_3",
+      "kind": "slot",
+      "position_mm": [
+        -4.3199,
+        26.560200000000002
+      ],
+      "diameter_mm": 0.599999,
+      "length_mm": 1.7999989999999992,
+      "position_error_mm": 3.2190681880271894e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    }
+  ],
+  "assembly": [
+    {
+      "ref": "J1",
+      "mpn": "USB4215-03-A",
+      "lcsc": "C37616412",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 180,
+      "source_rotation_degrees": 180,
+      "centroid_mm": {
+        "x": 0,
+        "y": 24.5101989
+      },
+      "pin1_location": null,
+      "supplier_pin1_location": null,
+      "actual_terminals": [
+        {
+          "pin": 13,
+          "name": "EH2",
+          "x_mm": 4.319905,
+          "y_mm": 22.560177399999997
+        },
+        {
+          "pin": 14,
+          "name": "EH1",
+          "x_mm": -4.319905,
+          "y_mm": 22.5601774
+        },
+        {
+          "pin": 15,
+          "name": "EH3",
+          "x_mm": 4.319905,
+          "y_mm": 26.5601694
+        },
+        {
+          "pin": 16,
+          "name": "EH4",
+          "x_mm": -4.319905,
+          "y_mm": 26.5601694
+        },
+        {
+          "pin": 17,
+          "name": "GND1",
+          "x_mm": 3.2000189999999997,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 18,
+          "name": "VBUS1",
+          "x_mm": 2.3999189999999997,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 19,
+          "name": "SBU2",
+          "x_mm": 1.7499329999999997,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 20,
+          "name": "CC1",
+          "x_mm": 1.2498069999999997,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 21,
+          "name": "Dn2",
+          "x_mm": 0.7499349999999998,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 22,
+          "name": "Dp1",
+          "x_mm": 0.24980899999999975,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 23,
+          "name": "Dn1",
+          "x_mm": -0.2500630000000002,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 24,
+          "name": "Dp2",
+          "x_mm": -0.7501890000000002,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 25,
+          "name": "SBU1",
+          "x_mm": -1.2500610000000003,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 26,
+          "name": "CC2",
+          "x_mm": -1.7501870000000002,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 27,
+          "name": "VBUS2",
+          "x_mm": -2.4001730000000006,
+          "y_mm": 21.9602294
+        },
+        {
+          "pin": 28,
+          "name": "GND2",
+          "x_mm": -3.2000190000000006,
+          "y_mm": 21.9602294
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT; prototype inspect all four shell joints, manual rework may be required. Production method pending.",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R1",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -4,
+        "y": 19
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -4.753364,
+          "y_mm": 19
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -3.246636,
+          "y_mm": 19
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R2",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 0,
+        "y": 19
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -0.753364,
+          "y_mm": 19
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 0.753364,
+          "y_mm": 19
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "U2",
+      "mpn": "BQ25185DLHR",
+      "lcsc": "C19725033",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 0,
+        "y": 13
+      },
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location": "bottomside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "SYS",
+          "x_mm": -0.799973,
+          "y_mm": 11.949964
+        },
+        {
+          "pin": 2,
+          "name": "BAT",
+          "x_mm": -0.399923,
+          "y_mm": 11.950218
+        },
+        {
+          "pin": 3,
+          "name": "STAT2",
+          "x_mm": -0.000127,
+          "y_mm": 11.950218
+        },
+        {
+          "pin": 4,
+          "name": "N_CE",
+          "x_mm": 0.399923,
+          "y_mm": 11.950218
+        },
+        {
+          "pin": 5,
+          "name": "GND",
+          "x_mm": 0.799973,
+          "y_mm": 11.950218
+        },
+        {
+          "pin": 6,
+          "name": "TS",
+          "x_mm": 0.799973,
+          "y_mm": 14.050036
+        },
+        {
+          "pin": 7,
+          "name": "ILIM",
+          "x_mm": 0.399923,
+          "y_mm": 14.050036
+        },
+        {
+          "pin": 8,
+          "name": "ISET",
+          "x_mm": -0.000127,
+          "y_mm": 14.050036
+        },
+        {
+          "pin": 9,
+          "name": "STAT1",
+          "x_mm": -0.399923,
+          "y_mm": 14.050036
+        },
+        {
+          "pin": 10,
+          "name": "IN",
+          "x_mm": -0.799973,
+          "y_mm": 14.050036
+        },
+        {
+          "pin": 11,
+          "name": "EP",
+          "x_mm": -0.000127,
+          "y_mm": 13
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R3",
+      "mpn": "0603WAF1502T5E",
+      "lcsc": "C22809",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 5.5,
+        "y": 9
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 4.746636,
+          "y_mm": 9
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 6.253364,
+          "y_mm": 9
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C1",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": "C19666",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 8,
+        "y": 20
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 7.299976,
+          "y_mm": 20
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 8.700023999999999,
+          "y_mm": 20
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C2",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": "C19666",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 4.5,
+        "y": 11.5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 3.799976,
+          "y_mm": 11.5
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 5.200024,
+          "y_mm": 11.5
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R4",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 8,
+        "y": 23
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 7.246636,
+          "y_mm": 23
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 8.753364,
+          "y_mm": 23
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "LED1",
+      "mpn": "KT-0603R",
+      "lcsc": "C2286",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 8,
+        "y": 26
+      },
+      "pin1_location": "bottomside_right",
+      "supplier_pin1_location": "bottomside_right",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "anode",
+          "x_mm": 8.750062,
+          "y_mm": 26
+        },
+        {
+          "pin": 2,
+          "name": "cathode",
+          "x_mm": 7.249938,
+          "y_mm": 26
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "J2",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C295747",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -13.5,
+        "y": 12
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -14.499998,
+          "y_mm": 14.8250642
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -12.500002,
+          "y_mm": 14.8250642
+        },
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": -10.149994,
+          "y_mm": 8.9749362
+        },
+        {
+          "pin": 4,
+          "name": "pin4",
+          "x_mm": -16.850006,
+          "y_mm": 8.9749362
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R8",
+      "mpn": "0603WAF1303T5E",
+      "lcsc": "C22795",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 180,
+      "source_rotation_degrees": 180,
+      "centroid_mm": {
+        "x": -5,
+        "y": 16
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -4.246636,
+          "y_mm": 16
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -5.753364,
+          "y_mm": 16
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R9",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 1,
+        "y": 17
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 0.24663599999999997,
+          "y_mm": 17
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 1.753364,
+          "y_mm": 17
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C8",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 5,
+        "y": 17.5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 4.000002,
+          "y_mm": 17.5
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 5.999998,
+          "y_mm": 17.5
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C9",
+      "mpn": "TCC0603COG470J500CT",
+      "lcsc": "C282505",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 180,
+      "source_rotation_degrees": 180,
+      "centroid_mm": {
+        "x": -5,
+        "y": 11
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -4.299976,
+          "y_mm": 11
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -5.700024,
+          "y_mm": 11
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "U1",
+      "mpn": "E73-2G4M08S1C",
+      "lcsc": "C356849",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 0,
+        "y": -14.91448655
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 6.50494,
+          "y_mm": -22.204458
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 6.50494,
+          "y_mm": -20.934458
+        },
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": 6.500114,
+          "y_mm": -19.68935
+        },
+        {
+          "pin": 4,
+          "name": "AI4",
+          "x_mm": 6.50494,
+          "y_mm": -18.394458
+        },
+        {
+          "pin": 5,
+          "name": "GND3",
+          "x_mm": 6.50494,
+          "y_mm": -17.124458
+        },
+        {
+          "pin": 6,
+          "name": "pin6",
+          "x_mm": 6.50494,
+          "y_mm": -15.854458
+        },
+        {
+          "pin": 7,
+          "name": "AI0",
+          "x_mm": 6.50494,
+          "y_mm": -14.584458
+        },
+        {
+          "pin": 8,
+          "name": "AI5",
+          "x_mm": 6.50494,
+          "y_mm": -13.314458
+        },
+        {
+          "pin": 9,
+          "name": "AI7",
+          "x_mm": 6.50494,
+          "y_mm": -12.044458
+        },
+        {
+          "pin": 10,
+          "name": "AI6",
+          "x_mm": 6.50494,
+          "y_mm": -10.774458
+        },
+        {
+          "pin": 11,
+          "name": "XL1",
+          "x_mm": 4.445,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 12,
+          "name": "pin12",
+          "x_mm": 3.81,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 13,
+          "name": "XL2",
+          "x_mm": 3.175,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 14,
+          "name": "pin14",
+          "x_mm": 2.54,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 15,
+          "name": "AI3",
+          "x_mm": 1.905,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 16,
+          "name": "pin16",
+          "x_mm": 1.27,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 17,
+          "name": "pin17",
+          "x_mm": 0.635,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 18,
+          "name": "AI2",
+          "x_mm": 0,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 19,
+          "name": "VCC",
+          "x_mm": -0.635,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 20,
+          "name": "P12",
+          "x_mm": -1.27,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 21,
+          "name": "GND2",
+          "x_mm": -1.905,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 22,
+          "name": "pin22",
+          "x_mm": -2.54,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 23,
+          "name": "VDH",
+          "x_mm": -3.175,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 24,
+          "name": "GND1",
+          "x_mm": -3.81,
+          "y_mm": -10.274586
+        },
+        {
+          "pin": 25,
+          "name": "DCH",
+          "x_mm": -4.445,
+          "y_mm": -8.174514
+        },
+        {
+          "pin": 26,
+          "name": "RST",
+          "x_mm": -6.50494,
+          "y_mm": -10.774458
+        },
+        {
+          "pin": 27,
+          "name": "VBS",
+          "x_mm": -6.50494,
+          "y_mm": -12.044458
+        },
+        {
+          "pin": 28,
+          "name": "P15",
+          "x_mm": -4.405122,
+          "y_mm": -12.679458
+        },
+        {
+          "pin": 29,
+          "name": "D_NEG",
+          "x_mm": -6.50494,
+          "y_mm": -13.314458
+        },
+        {
+          "pin": 30,
+          "name": "P17",
+          "x_mm": -4.405122,
+          "y_mm": -13.949458
+        },
+        {
+          "pin": 31,
+          "name": "D_POS",
+          "x_mm": -6.50494,
+          "y_mm": -14.584458
+        },
+        {
+          "pin": 32,
+          "name": "pin32",
+          "x_mm": -4.405122,
+          "y_mm": -15.219458
+        },
+        {
+          "pin": 33,
+          "name": "pin33",
+          "x_mm": -6.50494,
+          "y_mm": -15.854458
+        },
+        {
+          "pin": 34,
+          "name": "pin34",
+          "x_mm": -4.405122,
+          "y_mm": -16.489458
+        },
+        {
+          "pin": 35,
+          "name": "pin35",
+          "x_mm": -6.50494,
+          "y_mm": -17.124458
+        },
+        {
+          "pin": 36,
+          "name": "pin36",
+          "x_mm": -4.405122,
+          "y_mm": -17.759458
+        },
+        {
+          "pin": 37,
+          "name": "SWD",
+          "x_mm": -6.50494,
+          "y_mm": -18.394458
+        },
+        {
+          "pin": 38,
+          "name": "pin38",
+          "x_mm": -4.405122,
+          "y_mm": -19.029457999999998
+        },
+        {
+          "pin": 39,
+          "name": "SWC",
+          "x_mm": -6.50494,
+          "y_mm": -19.664458
+        },
+        {
+          "pin": 40,
+          "name": "pin40",
+          "x_mm": -4.405122,
+          "y_mm": -20.299458
+        },
+        {
+          "pin": 41,
+          "name": "NF1",
+          "x_mm": -6.50494,
+          "y_mm": -20.934458
+        },
+        {
+          "pin": 42,
+          "name": "pin42",
+          "x_mm": -4.404868,
+          "y_mm": -21.569458
+        },
+        {
+          "pin": 43,
+          "name": "NF2",
+          "x_mm": -6.50494,
+          "y_mm": -22.204458
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C5",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 0,
+        "y": -4.5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -0.700024,
+          "y_mm": -4.5
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 0.700024,
+          "y_mm": -4.5
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "SW2",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": "C720477",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -13.5,
+        "y": -7
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -15.684908,
+          "y_mm": -7
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -11.315092,
+          "y_mm": -7
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "SW3",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": "C720477",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 13.5,
+        "y": -4
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 11.315092,
+          "y_mm": -4
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 15.684908,
+          "y_mm": -4
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R7",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 7,
+        "y": -3
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 6.246636,
+          "y_mm": -3
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 7.753364,
+          "y_mm": -3
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "LED2",
+      "mpn": "KT-0603R",
+      "lcsc": "C2286",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 10,
+        "y": 0
+      },
+      "pin1_location": "bottomside_right",
+      "supplier_pin1_location": "bottomside_right",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "anode",
+          "x_mm": 10.750062,
+          "y_mm": 0
+        },
+        {
+          "pin": 2,
+          "name": "cathode",
+          "x_mm": 9.249938,
+          "y_mm": 0
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "J3",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "lcsc": "C160392",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 13.200000000000001,
+        "y": 16
+      },
+      "pin1_location": "topside_right",
+      "supplier_pin1_location": "topside_right",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 15.699613999999999,
+          "y_mm": 17.3252577
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 14.699615999999999,
+          "y_mm": 17.3252577
+        },
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": 13.699618,
+          "y_mm": 17.3252577
+        },
+        {
+          "pin": 4,
+          "name": "pin4",
+          "x_mm": 12.69962,
+          "y_mm": 17.3252577
+        },
+        {
+          "pin": 5,
+          "name": "pin5",
+          "x_mm": 11.699622,
+          "y_mm": 17.3252577
+        },
+        {
+          "pin": 6,
+          "name": "pin6",
+          "x_mm": 10.700132,
+          "y_mm": 17.324749699999998
+        },
+        {
+          "pin": 7,
+          "name": "pin7",
+          "x_mm": 9.399906,
+          "y_mm": 14.7997357
+        },
+        {
+          "pin": 8,
+          "name": "pin8",
+          "x_mm": 17.000094,
+          "y_mm": 14.7997357
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "SW1",
+      "mpn": "MSK12C02",
+      "lcsc": "C431540",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 90,
+      "source_rotation_degrees": 90,
+      "centroid_mm": {
+        "x": 15,
+        "y": 5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 4,
+          "name": "pin4",
+          "x_mm": 14.60605235,
+          "y_mm": 8.599942
+        },
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": 13.50597835,
+          "y_mm": 7.249931999999999
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 13.50597835,
+          "y_mm": 5.750062
+        },
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 13.50597835,
+          "y_mm": 2.750068
+        },
+        {
+          "pin": null,
+          "name": "pin4_internal_1",
+          "x_mm": 16.90602235,
+          "y_mm": 8.599942
+        },
+        {
+          "pin": null,
+          "name": "pin4_internal_2",
+          "x_mm": 16.90602235,
+          "y_mm": 1.400058
+        },
+        {
+          "pin": null,
+          "name": "pin4_internal_3",
+          "x_mm": 14.60605235,
+          "y_mm": 1.400058
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R5",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 180,
+      "source_rotation_degrees": 180,
+      "centroid_mm": {
+        "x": 4,
+        "y": 3
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 4.753364,
+          "y_mm": 3
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 3.246636,
+          "y_mm": 3
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "Q1",
+      "mpn": "2N7002",
+      "lcsc": "C8545",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -6,
+        "y": 3.5
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": -6.999998,
+          "y_mm": 3.5
+        },
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -5.000002,
+          "y_mm": 2.55004
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -5.000002,
+          "y_mm": 4.44996
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R6",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -6,
+        "y": 8
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -6.753364,
+          "y_mm": 8
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -5.246636,
+          "y_mm": 8
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "U3",
+      "mpn": "TPS7A0230PDBVR",
+      "lcsc": "C3747031",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -5,
+        "y": 0
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "IN",
+          "x_mm": -3.899926,
+          "y_mm": -0.949833
+        },
+        {
+          "pin": 2,
+          "name": "GND",
+          "x_mm": -3.899926,
+          "y_mm": -0.000127
+        },
+        {
+          "pin": 3,
+          "name": "EN",
+          "x_mm": -3.899926,
+          "y_mm": 0.949833
+        },
+        {
+          "pin": 4,
+          "name": "NC",
+          "x_mm": -6.100074,
+          "y_mm": 0.950087
+        },
+        {
+          "pin": 5,
+          "name": "OUT",
+          "x_mm": -6.100074,
+          "y_mm": -0.950087
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C3",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": "C19666",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -0.49999999999999994,
+        "y": 2
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -1.200024,
+          "y_mm": 2
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 0.20002399999999998,
+          "y_mm": 2
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C4",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": "C19666",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -5,
+        "y": -4
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -5.700024,
+          "y_mm": -4
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -4.299976,
+          "y_mm": -4
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "U4",
+      "mpn": "TPS3839G33DBZR",
+      "lcsc": "C485802",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -9.5,
+        "y": -1
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "GND",
+          "x_mm": -8.500002,
+          "y_mm": -1.94996
+        },
+        {
+          "pin": 2,
+          "name": "N_RESET",
+          "x_mm": -8.500002,
+          "y_mm": -0.05003999999999997
+        },
+        {
+          "pin": 3,
+          "name": "VDD",
+          "x_mm": -10.499998,
+          "y_mm": -1
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C6",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -13,
+        "y": 2
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -13.700023999999999,
+          "y_mm": 2
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -12.299976000000001,
+          "y_mm": 2
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "U5",
+      "mpn": "TMP390A2DRLR",
+      "lcsc": "C5219772",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 0,
+        "y": 6
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "SETA",
+          "x_mm": 0.7499858,
+          "y_mm": 5.500001
+        },
+        {
+          "pin": 2,
+          "name": "SETB",
+          "x_mm": 0.7499858,
+          "y_mm": 5.999873
+        },
+        {
+          "pin": 3,
+          "name": "GND",
+          "x_mm": 0.7499858,
+          "y_mm": 6.499999
+        },
+        {
+          "pin": 4,
+          "name": "N_OUTB",
+          "x_mm": -0.7499858,
+          "y_mm": 6.499999
+        },
+        {
+          "pin": 5,
+          "name": "VDD",
+          "x_mm": -0.7499858,
+          "y_mm": 5.999873
+        },
+        {
+          "pin": 6,
+          "name": "N_OUTA",
+          "x_mm": -0.7499858,
+          "y_mm": 5.500001
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R10",
+      "mpn": "0603WAF1621T5E",
+      "lcsc": "C22844",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": -5.5,
+        "y": 6
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": -6.253364,
+          "y_mm": 6
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": -4.746636,
+          "y_mm": 6
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R11",
+      "mpn": "0603WAF1872T5E",
+      "lcsc": "C22893",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 4.5,
+        "y": 5.5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 3.746636,
+          "y_mm": 5.5
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 5.253364,
+          "y_mm": 5.5
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "C7",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 1.5,
+        "y": 8.5
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 0.799976,
+          "y_mm": 8.5
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 2.200024,
+          "y_mm": 8.5
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R12",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 9.5,
+        "y": 10
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 8.746636,
+          "y_mm": 10
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 10.253364,
+          "y_mm": 10
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "R13",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 180,
+      "source_rotation_degrees": 180,
+      "centroid_mm": {
+        "x": 8,
+        "y": 12
+      },
+      "pin1_location": "topside_left",
+      "supplier_pin1_location": "topside_left",
+      "actual_terminals": [
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 8.753364,
+          "y_mm": 12
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 7.246636,
+          "y_mm": 12
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    },
+    {
+      "ref": "Q2",
+      "mpn": "2N7002",
+      "lcsc": "C8545",
+      "side": "TOP",
+      "bom": true,
+      "cpl": true,
+      "rotation_degrees": 0,
+      "source_rotation_degrees": 0,
+      "centroid_mm": {
+        "x": 8,
+        "y": 6
+      },
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location": "rightside_bottom",
+      "actual_terminals": [
+        {
+          "pin": 3,
+          "name": "pin3",
+          "x_mm": 7.000002,
+          "y_mm": 6
+        },
+        {
+          "pin": 1,
+          "name": "pin1",
+          "x_mm": 8.999998,
+          "y_mm": 5.05004
+        },
+        {
+          "pin": 2,
+          "name": "pin2",
+          "x_mm": 8.999998,
+          "y_mm": 6.94996
+        }
+      ],
+      "file_consistency": "PASS",
+      "assembly_method": "TOP SMT reflow",
+      "assembly_excluded": false
+    }
+  ],
+  "paste": {
+    "top_aperture_count": 161,
+    "usb_aperture_count": 16,
+    "maximum_usb_contour_difference_mm": 5.656854642178295e-07,
+    "problems": [],
+    "merged_pairs": [],
+    "minimum_aperture_web_mm": 0.19979599999999992
+  },
+  "legend": {
+    "outside_board_area_mm2": 0.0,
+    "over_mask_opening_area_mm2": 0.0
+  },
+  "qualification": "ENGINEERING PROTOTYPE \u2014 NOT PRODUCTION QUALIFIED; shell inspection/manual rework may be required"
+}

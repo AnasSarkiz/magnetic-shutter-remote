@@ -1,0 +1,1 @@
+R5-to-R6-comparison.json is copied historical evidence from frozen R6, not a newly run migration check. Current source and Circuit JSON baseline comparisons independently establish that the same PCB geometry and connectivity are retained.

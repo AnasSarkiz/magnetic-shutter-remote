@@ -1,0 +1,738 @@
+[
+  {
+    "source_id": "pcb_silkscreen_text_0",
+    "text": "SHUTTER",
+    "layer": "top",
+    "bounds_mm": [
+      -9.67906198193773,
+      -16.84071089485261,
+      -8.513005096520132,
+      -7.6557442823798665
+    ],
+    "printed_glyph_height_mm": 1.166056885417598,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.008067096520132,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_1",
+    "text": "1",
+    "layer": "top",
+    "bounds_mm": [
+      15.226544008123394,
+      18.781448,
+      15.632223999999999,
+      19.910606
+    ],
+    "printed_glyph_height_mm": 1.1291580000000003,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6811849999999992,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_2",
+    "text": "POWER",
+    "layer": "top",
+    "bounds_mm": [
+      10.97093802876583,
+      1.04852,
+      12.135699999925512,
+      7.460151717620134
+    ],
+    "printed_glyph_height_mm": 1.1647619711596828,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6082780000744882,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_3",
+    "text": "BAT",
+    "layer": "top",
+    "bounds_mm": [
+      -15.576605,
+      19.281442,
+      -11.907204,
+      20.410606
+    ],
+    "printed_glyph_height_mm": 1.129164000000003,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 2.4962174358576967,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_4",
+    "text": "PAIR",
+    "layer": "top",
+    "bounds_mm": [
+      9.240572,
+      -8.718558,
+      14.268099717620133,
+      -7.589394
+    ],
+    "printed_glyph_height_mm": 1.1291639999999994,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 2.401790461449523,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_5",
+    "text": "SWD 1:3V",
+    "layer": "bottom",
+    "bounds_mm": [
+      5.953780341216454,
+      25.7643000246857,
+      16.53276289485261,
+      26.92906199035302
+    ],
+    "printed_glyph_height_mm": 1.1647619656673207,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.7397042614410032,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_6",
+    "text": "2:IO 3:GND",
+    "layer": "bottom",
+    "bounds_mm": [
+      3.620945140850217,
+      0.7643000000744882,
+      16.899094,
+      1.929061990353021
+    ],
+    "printed_glyph_height_mm": 1.1647619902785329,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.2485215008776298,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_7",
+    "text": "4:CLK 5:RST",
+    "layer": "bottom",
+    "bounds_mm": [
+      -2.129212,
+      -3.2369949977863546,
+      12.634212999999999,
+      -2.0709380180622694
+    ],
+    "printed_glyph_height_mm": 1.1660569797240852,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 6.254548770487756,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_8",
+    "text": "6:GND",
+    "layer": "bottom",
+    "bounds_mm": [
+      9.081205140850217,
+      16.26430000950704,
+      15.459340864642733,
+      17.429061880322834
+    ],
+    "printed_glyph_height_mm": 1.164761870815795,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 5.517661901570764,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_9",
+    "text": "LED1",
+    "layer": "top",
+    "bounds_mm": [
+      9.747408,
+      25.781442,
+      14.50838,
+      26.910606
+    ],
+    "printed_glyph_height_mm": 1.129164000000003,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.597347000000001,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_10",
+    "text": "LED2",
+    "layer": "top",
+    "bounds_mm": [
+      2.747408,
+      -0.7185579999999999,
+      7.705551,
+      0.42906198492138126
+    ],
+    "printed_glyph_height_mm": 1.147619984921381,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.1651347138452341,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_11",
+    "text": "SW2",
+    "layer": "top",
+    "bounds_mm": [
+      -15.57250289485261,
+      -10.235699691399475,
+      -11.986501,
+      -9.07093801507862
+    ],
+    "printed_glyph_height_mm": 1.1647616763208557,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.1409425180622692,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_12",
+    "text": "SW3",
+    "layer": "top",
+    "bounds_mm": [
+      11.42749710514739,
+      -10.735699975314297,
+      15.025461998309988,
+      -9.570938009646978
+    ],
+    "printed_glyph_height_mm": 1.164761965667319,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 3.9225591051473905,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_13",
+    "text": "SW1",
+    "layer": "top",
+    "bounds_mm": [
+      12.92749710514739,
+      9.764300308600525,
+      16.316328,
+      10.92906198193773
+    ],
+    "printed_glyph_height_mm": 1.164761673337205,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.5841102232026172,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_14",
+    "text": "R10",
+    "layer": "top",
+    "bounds_mm": [
+      -13.117279,
+      3.7643,
+      -9.465993056419713,
+      4.929061983572696
+    ],
+    "printed_glyph_height_mm": 1.1647619835726961,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.331443282379867,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_15",
+    "text": "R11",
+    "layer": "top",
+    "bounds_mm": [
+      0.882721,
+      -2.718557717620133,
+      4.3163279999999995,
+      -1.589394
+    ],
+    "printed_glyph_height_mm": 1.1291637176201332,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.338244,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_16",
+    "text": "R12",
+    "layer": "top",
+    "bounds_mm": [
+      9.882721,
+      11.781442282379867,
+      13.513499,
+      12.92906198492138
+    ],
+    "printed_glyph_height_mm": 1.1476197025415136,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.7261195000000011,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_17",
+    "text": "R13",
+    "layer": "top",
+    "bounds_mm": [
+      9.882721,
+      19.7643000246857,
+      13.525461998309988,
+      20.92906199035302
+    ],
+    "printed_glyph_height_mm": 1.1647619656673207,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.7826979999999999,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_18",
+    "text": "J1",
+    "layer": "top",
+    "bounds_mm": [
+      -7.842168996073932,
+      22.763005267475954,
+      -5.875724,
+      23.910606
+    ],
+    "printed_glyph_height_mm": 1.1476007325240474,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.0050199999999998,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_19",
+    "text": "R1",
+    "layer": "top",
+    "bounds_mm": [
+      -8.425227,
+      18.281442282379864,
+      -6.375724,
+      19.410606
+    ],
+    "printed_glyph_height_mm": 1.1291637176201377,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.2191224999999992,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_20",
+    "text": "R2",
+    "layer": "top",
+    "bounds_mm": [
+      1.574773,
+      13.281442282379867,
+      3.821447,
+      14.42906198492138
+    ],
+    "printed_glyph_height_mm": 1.1476197025415136,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6747999999999998,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_21",
+    "text": "U2",
+    "layer": "top",
+    "bounds_mm": [
+      -7.873272647338675,
+      13.263005096520132,
+      -5.678553,
+      14.42906198492138
+    ],
+    "printed_glyph_height_mm": 1.1660568884012488,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.1389350150786193,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_22",
+    "text": "R3",
+    "layer": "top",
+    "bounds_mm": [
+      5.574773,
+      13.764300024685703,
+      7.833409998309988,
+      14.929061990353022
+    ],
+    "printed_glyph_height_mm": 1.164761965667319,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.9664970016900112,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_23",
+    "text": "C1",
+    "layer": "top",
+    "bounds_mm": [
+      14.628093096384104,
+      20.764300338081224,
+      16.624276,
+      21.929061968637725
+    ],
+    "printed_glyph_height_mm": 1.1647616305565016,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.7224295233384743,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_24",
+    "text": "C2",
+    "layer": "top",
+    "bounds_mm": [
+      6.628093096384105,
+      1.2643003380812248,
+      8.821447,
+      2.4290619849213813
+    ],
+    "printed_glyph_height_mm": 1.1647616468401565,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.8899284616881333,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_25",
+    "text": "R4",
+    "layer": "top",
+    "bounds_mm": [
+      14.574773,
+      22.781442,
+      16.864514,
+      23.91060598678359
+    ],
+    "printed_glyph_height_mm": 1.1291639867835919,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.4872240651407576,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_26",
+    "text": "J2",
+    "layer": "top",
+    "bounds_mm": [
+      -16.34216899607393,
+      5.263005267475955,
+      -14.178553,
+      6.429061984921382
+    ],
+    "printed_glyph_height_mm": 1.1660567174454268,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.9548848687761687,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_27",
+    "text": "R8",
+    "layer": "top",
+    "bounds_mm": [
+      -8.425227,
+      20.2643000486815,
+      -6.156678000000811,
+      21.429061885599964
+    ],
+    "printed_glyph_height_mm": 1.1647618369184656,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.4494359784590742,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_28",
+    "text": "R9",
+    "layer": "top",
+    "bounds_mm": [
+      -8.425227,
+      24.76906337666529,
+      -6.194564222635394,
+      25.929061880770792
+    ],
+    "printed_glyph_height_mm": 1.159998504105502,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.3589769474689413,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_29",
+    "text": "C8",
+    "layer": "top",
+    "bounds_mm": [
+      14.628093096384104,
+      11.7643000486815,
+      16.84332199999919,
+      12.929061968637727
+    ],
+    "printed_glyph_height_mm": 1.1647619199562271,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.9706761144000352,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_30",
+    "text": "C9",
+    "layer": "top",
+    "bounds_mm": [
+      -10.871906903615896,
+      1.7643003380812248,
+      -8.694564222635394,
+      2.929061968637727
+    ],
+    "printed_glyph_height_mm": 1.164761630556502,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.0280700963841038,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_31",
+    "text": "U1",
+    "layer": "top",
+    "bounds_mm": [
+      8.126727352661327,
+      -15.736994903479868,
+      10.124276,
+      -14.589394
+    ],
+    "printed_glyph_height_mm": 1.1476009034798675,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6217893526613265,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_32",
+    "text": "C5",
+    "layer": "top",
+    "bounds_mm": [
+      -2.371906903615895,
+      -3.2369949977863546,
+      -0.172059,
+      -2.070938031362273
+    ],
+    "printed_glyph_height_mm": 1.1660569664240814,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.8130060022136454,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_33",
+    "text": "R7",
+    "layer": "top",
+    "bounds_mm": [
+      2.574773,
+      -4.718557717620134,
+      4.832727,
+      -3.589394
+    ],
+    "printed_glyph_height_mm": 1.1291637176201337,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.0381312255425632,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_34",
+    "text": "J3",
+    "layer": "top",
+    "bounds_mm": [
+      10.157831003926068,
+      -2.2369947325240447,
+      12.333409998309989,
+      -1.070938009646979
+    ],
+    "printed_glyph_height_mm": 1.1660567228770657,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6893951636981325,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_35",
+    "text": "R5",
+    "layer": "top",
+    "bounds_mm": [
+      -6.925227,
+      -6.736994997786355,
+      -4.672059,
+      -5.589394
+    ],
+    "printed_glyph_height_mm": 1.1476009977863546,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.46376595869847187,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_36",
+    "text": "Q1",
+    "layer": "top",
+    "bounds_mm": [
+      -14.394122910861222,
+      -1.8889139443148657,
+      -12.375724,
+      -0.5709382532108328
+    ],
+    "printed_glyph_height_mm": 1.3179756911040328,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.3757269999999995,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_37",
+    "text": "R6",
+    "layer": "top",
+    "bounds_mm": [
+      -16.425227,
+      3.2643000215964317,
+      -14.158045060398312,
+      4.42906174227522
+    ],
+    "printed_glyph_height_mm": 1.1647617206787881,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.8904352593059341,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_38",
+    "text": "U3",
+    "layer": "top",
+    "bounds_mm": [
+      -12.873272647338673,
+      -4.236994903479869,
+      -10.666590001690011,
+      -3.0709380096469787
+    ],
+    "printed_glyph_height_mm": 1.1660568938328901,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.7510323143154136,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_39",
+    "text": "C3",
+    "layer": "top",
+    "bounds_mm": [
+      -16.371906903615894,
+      -3.735699975314298,
+      -14.166590001690011,
+      -2.5709380096469787
+    ],
+    "printed_glyph_height_mm": 1.1647619656673194,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 2.334304838081224,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_40",
+    "text": "C4",
+    "layer": "top",
+    "bounds_mm": [
+      -13.371906903615896,
+      -12.235699661918774,
+      -11.135486,
+      -11.070938031362273
+    ],
+    "printed_glyph_height_mm": 1.1647616305565016,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 3.1593989044220354,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_41",
+    "text": "U4",
+    "layer": "top",
+    "bounds_mm": [
+      -17.373272647338677,
+      0.26300509652013165,
+      -15.135486,
+      1.4106056473386746
+    ],
+    "printed_glyph_height_mm": 1.147600550818543,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.243957254707203,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_42",
+    "text": "C6",
+    "layer": "top",
+    "bounds_mm": [
+      -16.871906903615894,
+      -12.235699978403568,
+      -14.658045060398312,
+      -11.070938031362273
+    ],
+    "printed_glyph_height_mm": 1.1647619470412955,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 3.142954599528681,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_43",
+    "text": "U5",
+    "layer": "top",
+    "bounds_mm": [
+      8.126727352661327,
+      -10.736994997786354,
+      10.327941,
+      -9.589394
+    ],
+    "printed_glyph_height_mm": 1.1476009977863537,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6296927185486283,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_44",
+    "text": "C7",
+    "layer": "top",
+    "bounds_mm": [
+      -11.871906903615896,
+      21.264300338081224,
+      -9.667273,
+      22.429061968637725
+    ],
+    "printed_glyph_height_mm": 1.1647616305565016,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 1.018624271961354,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_text_45",
+    "text": "Q2",
+    "layer": "top",
+    "bounds_mm": [
+      8.105877089138778,
+      -12.888913944314865,
+      10.321447,
+      -11.57093801507862
+    ],
+    "printed_glyph_height_mm": 1.3179759292362458,
+    "minimum_stroke_mm": 0.18,
+    "mask_overlap_mm2": 0.0,
+    "mask_gap_mm": 0.6009390891387776,
+    "outside_outline_mm2": 0.0
+  }
+]

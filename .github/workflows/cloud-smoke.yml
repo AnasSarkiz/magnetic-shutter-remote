@@ -1,0 +1,36 @@
+name: Cloud Linux setup smoke
+
+on:
+  push:
+    branches: [cloud/r8-cloud-setup]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cloud-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '25.6.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Install pinned Cloud dependencies
+        run: bash cloud/setup.sh
+      - name: Run lightweight context and tooling checks
+        run: bash cloud/smoke.sh
+      - name: Generate the isolated unrouted module fixture
+        run: |
+          export PATH="$PWD/.codex/runtime/node_modules/.bin:$PATH"
+          ./node_modules/.bin/tsci build tests/fixtures/esp32-import.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+      - name: Store module fixture for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-unrouted-module-fixture
+          path: dist/tests/fixtures/esp32-import/
+          if-no-files-found: error

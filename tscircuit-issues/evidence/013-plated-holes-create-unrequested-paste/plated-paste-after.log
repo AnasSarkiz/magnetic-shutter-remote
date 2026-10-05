@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-plated-hole-unrequested-paste.test.tsx:
+(pass) plated drills do not manufacture stencil apertures on either side [31.91ms]
+
+tests/repros/repro-pcb-schema-export.test.tsx:
+(pass) board holes, explicit positions and rotated plated slots satisfy export schema [36.78ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad.test.tsx:
+(pass) create solderpaste from smtpad [3.10ms]
+
+ 3 pass
+ 0 fail
+ 13 expect() calls
+Ran 3 tests across 3 files. [776.00ms]

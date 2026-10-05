@@ -1,0 +1,45 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_8-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting phase 9/9 has been running for 14.6s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#257 /> phase 9/9 long-running start: connections=26, obstacles=717, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, cache=miss, cache_id=1f301641/9a3c715c
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.CC2, net.CC1, net.CHARGER_SYS, net.CHARGE_STAT, net.CHARGE_DISABLE, net.TS_BIAS, net.VSET, net.PROG, net.CHARGE_LED_A, net.SHUTTER, net.PAIR, net.STATUS_LED, net.RESET_N, net.SWDIO, net.SWCLK, net.STATUS_LED_A, net.BATTERY_OK, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_HOT, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 9/9 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=30 progress=88% iterations_per_second=2 elapsed=14.6s
+  phase 9/9 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=none steps=31 progress=100% iterations_per_second=219 elapsed=14.7s
+  phase 9/9 done: routed_traces=92, jumpers=0, errors=0, elapsed=14.7s
+Could not save autorouting paths for subcircuit_source_group_8: Routes contain a junction or endpoint that cannot select a unique PCB port
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is facing y- but should face x- so the connector is accessible from the board edge
+jlcpcb_standard_20260912: 59 via(s) have a hole diameter below 0.3 mm and incur an extra fabrication charge. Use a hole diameter of at least 0.3 mm to avoid this charge.
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating 3D PNG...
+[index] Written 3d.png
+Generating GLB models for all builds...
+[index] Converting circuit to GLB...
+[index] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs, 3d-png, glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

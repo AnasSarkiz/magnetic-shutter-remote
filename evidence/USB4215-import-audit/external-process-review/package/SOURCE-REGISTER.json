@@ -1,0 +1,58 @@
+{
+  "scope": "ENGINEERING QUALIFICATION ONLY - NOT FOR FABRICATION",
+  "identity": {
+    "manufacturer": "GCT / Global Connector Technology",
+    "manufacturer_part_number": "USB4215-03-A",
+    "lcsc_jlcpcb_number": "C37616412",
+    "drawing_revision": "A",
+    "drawing_date": "2024-04-26",
+    "specification_revision": "A",
+    "specification_date": "2024-04-26",
+    "supplier_component_uuid": "907b9bea7a60481d8a3d3aef3cba8ef1",
+    "package_uuid": "3104977db58742e399663286e4a66eac",
+    "package_title": "USB-C-SMD_GT-USB-7010B",
+    "footprint_metadata": {
+      "package": "USB-C-SMD_GT-USB-7010B",
+      "pre": "U?",
+      "Contributor": "lcsc",
+      "link": "https://atta.szlcsc.com/upload/public/pdf/source/20210607/C2837092_4B7D50FE42E911C84B6EC978FAA417B2.pdf",
+      "3DModel": "USB-C-SMD_GT-USB-7010B"
+    },
+    "stock_evidence": "stock-2026-10-03.json",
+    "raw_file": "inputs/C37616412.raweasy.json",
+    "original_import": "inputs/original-import.tsx",
+    "corrected_import": "final/USB4215_03_A.tsx",
+    "raw_sha256": "63d81d039f7d6041035b6c2361e88db3785859e3d79792ad0cb9513d315df746",
+    "official_drawing_sha256": "1659ba00769b9b774a033fac72cb2f3bfc481a3272c53f34e87520f33635a9e1",
+    "official_specification_sha256": "df4c8de86a682a3262d1006fe4b60d8930b133a4ee6402263922507474bfe178"
+  },
+  "stock_observation": {
+    "verified_local": "2026-10-03",
+    "url": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412",
+    "manufacturer": "Global Connector Technology",
+    "part": "USB4215-03-A",
+    "c_number": "C37616412",
+    "stock": 145,
+    "available_order_qty": 63,
+    "minimum": 1,
+    "category": "Extended",
+    "assembly_type": "SMT Assembly",
+    "pcba_type": "Economic and Standard",
+    "msl": "MSL 1",
+    "library": "PCB Footprint or Symbol and rendered EasyEDA footprint available",
+    "xray": "No requirement displayed; absence is not approval",
+    "shell_process": "Not specified; four-slot solder coverage unconfirmed",
+    "channel": "Official JLCPCB product page read through browser, no contact or upload"
+  },
+  "original_raw_cad_sha256": "63d81d039f7d6041035b6c2361e88db3785859e3d79792ad0cb9513d315df746",
+  "corrected_component_sha256": "4acb1cf6bed10acaa982c0546567c4699bc0315195e5f4e3afc3ec60cdfa3ec9",
+  "rendered_circuit_sha256": "af653729b5584e3bf3c8e7ac72b0b86ae62139a948bfd3abd49e634534999bbf",
+  "top_paste_gerber_sha256": "826b5e5cfceb0dcf54acb7edfd7973f161ebcc5e08938f21eeb952c92e32815d",
+  "official_sources": {
+    "product": "https://gct.co/connector/usb4215",
+    "drawing": "https://gct.co/files/drawings/usb4215.pdf",
+    "specification": "https://gct.co/files/specs/usb4215-spec.pdf",
+    "assembler": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412"
+  },
+  "boundary": "Raw/import/JSON/CAM hashes identify preserved local evidence. Actual board/manufacturing inputs are intentionally absent from this package."
+}

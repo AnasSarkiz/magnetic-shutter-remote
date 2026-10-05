@@ -1,0 +1,23 @@
+error: bun is unable to write files to tempdir: PermissionDenied
+403 | 
+404 | // Write back to README
+405 | fs.writeFileSync(readmePath, readmeContent)
+406 | 
+407 | // Format the README using prettier
+408 | execSync("bunx prettier --write README.md", { stdio: "inherit" })
+      ^
+error: Command failed: bunx prettier --write README.md
+ signal: null,
+ status: 1,
+ output: [ null, null, null ],
+    pid: 29703,
+ stdout: null,
+ stderr: null,
+
+      at genericNodeError (node:child_process:998:13)
+      at checkExecSyncError (node:child_process:458:27)
+      at execSync (node:child_process:278:31)
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/props/scripts/generate-readme-docs.ts:408:1
+      at loadAndEvaluateModule (2:1)
+
+Bun v1.3.9 (macOS arm64)

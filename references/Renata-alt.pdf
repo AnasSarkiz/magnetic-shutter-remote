@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.3/src/glowCookies.min.js"></script>
+        <meta charset="UTF-8"/>
+    <meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="keywords" content=""/>
+<meta name="author" content="olai interactive GmbH"/>
+<meta property="og:image" content="https://www.renata.com/assets/images/home/share-image-renata.jpg"/>
+<meta property="og:title" content="Renata SA" />
+<meta property="og:description" content="" />
+<title>Renata SA</title>
+<meta name="description" content=""/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#a98e53">
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#3e3a3a">
+    <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#3e3a3a">
+    
+        <link class="battery-img-link" rel="preload" href="/assets/images/home/animation/battery-4ms.png" as="image">
+        <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap-4.custom.css">
+    <!-- inject:css -->
+<link rel="stylesheet" href="/assets/css/dist/main_0ab6241d1e.css" integrity="sha512-l33VtxJeoq2Uvz4xVnrA40NelBouaYbl7qBX1d9Li+6FsDCp4OYwHMckMIlzMqLFI0TqezhAPK1i5sIiy9KQJg==" crossorigin="anonymous"></link>
+<!-- endinject -->
+
+    <script>
+    // ("serviceWorker"in navigator&&(window.location.protocol==="https:"||window.location.hostname==='localhost'))&&navigator.serviceWorker.register("/sw.js",{scope:"/"}).then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case"installed":navigator.serviceWorker.controller?console.log("New or updated content is available."):console.log("Content is now available offline!");break;case"redundant":console.error("The installing service worker became redundant.")}}}}).catch(function(a){console.error("Error during service worker registration:",a)});
+    var isEdge=navigator.userAgent.match(/Edge/g);
+    var isIE=window.navigator.msPointerEnabled && !isEdge;
+    if(isIE)document.documentElement.classList.add('ie');
+    if(isEdge)document.documentElement.classList.add('edge');
+    if(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream)document.documentElement.classList.add('ios');
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))document.documentElement.classList.add('is-mobile');
+    var testWepP=function(e){var n=new Image;n.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA",n.onload=n.onerror=function(){e(2===n.height)}},addWebPClass=function(e){e?document.documentElement.classList.add("webp"):document.documentElement.classList.add("no-webp")};
+    testWepP(addWebPClass);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.6.1/dist/gsap.min.js" defer integrity="sha256-3OA/MzYlS9k65SPaANw13nqYUesz+2++INlNTTJhKio=" crossorigin="anonymous"></script>
+    <!-- inject:runtime -->
+    <script integrity="sha512-OrxCIZFiYF8epHEJOM+PzaEEq6I0nMTUz5ePlstCTcIwZS4Q/534iWDvr/4GTAYovCCfDdzVomOFqF5LPXx5fQ==" crossorigin="anonymous">(()=>{"use strict";var e,r,t,o,n,a={},i={};function c(e){var r=i[e];if(void 0!==r)return r.exports;var t=i[e]={exports:{}};return a[e].call(t.exports,t,t.exports,c),t.exports}c.m=a,e=[],c.O=(r,t,o,n)=>{if(!t){var a=1/0;for(d=0;d<e.length;d++){for(var[t,o,n]=e[d],i=!0,f=0;f<t.length;f++)(!1&n||a>=n)&&Object.keys(c.O).every((e=>c.O[e](t[f])))?t.splice(f--,1):(i=!1,n<a&&(a=n));if(i){e.splice(d--,1);var u=o();void 0!==u&&(r=u)}}return r}n=n||0;for(var d=e.length;d>0&&e[d-1][2]>n;d--)e[d]=e[d-1];e[d]=[t,o,n]},c.n=e=>{var r=e&&e.__esModule?()=>e.default:()=>e;return c.d(r,{a:r}),r},t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,c.t=function(e,o){if(1&o&&(e=this(e)),8&o)return e;if("object"==typeof e&&e){if(4&o&&e.__esModule)return e;if(16&o&&"function"==typeof e.then)return e}var n=Object.create(null);c.r(n);var a={};r=r||[null,t({}),t([]),t(t)];for(var i=2&o&&e;"object"==typeof i&&!~r.indexOf(i);i=t(i))Object.getOwnPropertyNames(i).forEach((r=>a[r]=()=>e[r]));return a.default=()=>e,c.d(n,a),n},c.d=(e,r)=>{for(var t in r)c.o(r,t)&&!c.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:r[t]})},c.f={},c.e=e=>Promise.all(Object.keys(c.f).reduce(((r,t)=>(c.f[t](e,r),r)),[])),c.u=e=>e+"."+{312:"2487916781682db68728",390:"57a66cf11f11c510a5c4",401:"f82a7850aa49fc334ff1",404:"125da6b406261a74baae",625:"58ba1d1216eb0bfc4225",716:"3c9169085431d5fe4cff",753:"3ac526b5edc8dcae7858",767:"5dd66dd00853099e55d9",783:"7e3451a48d0bcbe1f5db",827:"f5775367d20696f8709b",946:"3ced63c731da0fee3ef1"}[e]+".js",c.miniCssF=e=>{},c.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),c.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),o={},n="renata_com:",c.l=(e,r,t,a)=>{if(o[e])o[e].push(r);else{var i,f;if(void 0!==t)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==e||l.getAttribute("data-webpack")==n+t){i=l;break}}i||(f=!0,(i=document.createElement("script")).charset="utf-8",i.timeout=120,c.nc&&i.setAttribute("nonce",c.nc),i.setAttribute("data-webpack",n+t),i.src=e,0!==i.src.indexOf(window.location.origin+"/")&&(i.crossOrigin="anonymous")),o[e]=[r];var s=(r,t)=>{i.onerror=i.onload=null,clearTimeout(b);var n=o[e];if(delete o[e],i.parentNode&&i.parentNode.removeChild(i),n&&n.forEach((e=>e(t))),r)return r(t)},b=setTimeout(s.bind(null,void 0,{type:"timeout",target:i}),12e4);i.onerror=s.bind(null,i.onerror),i.onload=s.bind(null,i.onload),f&&document.head.appendChild(i)}},c.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.p="/assets/js/dist/",(()=>{var e={303:0};c.f.j=(r,t)=>{var o=c.o(e,r)?e[r]:void 0;if(0!==o)if(o)t.push(o[2]);else if(303!=r){var n=new Promise(((t,n)=>o=e[r]=[t,n]));t.push(o[2]=n);var a=c.p+c.u(r),i=new Error;c.l(a,(t=>{if(c.o(e,r)&&(0!==(o=e[r])&&(e[r]=void 0),o)){var n=t&&("load"===t.type?"missing":t.type),a=t&&t.target&&t.target.src;i.message="Loading chunk "+r+" failed.\n("+n+": "+a+")",i.name="ChunkLoadError",i.type=n,i.request=a,o[1](i)}}),"chunk-"+r,r)}else e[r]=0},c.O.j=r=>0===e[r];var r=(r,t)=>{var o,n,[a,i,f]=t,u=0;if(a.some((r=>0!==e[r]))){for(o in i)c.o(i,o)&&(c.m[o]=i[o]);if(f)var d=f(c)}for(r&&r(t);u<a.length;u++)n=a[u],c.o(e,n)&&e[n]&&e[n][0](),e[n]=0;return c.O(d)},t=self.webpackChunkrenata_com=self.webpackChunkrenata_com||[];t.forEach(r.bind(null,0)),t.push=r.bind(null,t.push.bind(t))})()})();</script>
+    <!-- endinject -->
+            <!-- inject:vendorjs -->
+        <!-- endinject -->
+        <!-- inject:mainjs -->
+        <script src="/assets/js/dist/main.135b21176e4e9dfa7bbf.js" defer integrity="sha512-ejOKmNfbC+AjPX6LiyTD2l7Kdk5SBxsmTVj+5AqmRt3spQeAIh6WNWdfy/A8A5/h8LB/tNZSVdMwvTBfL+aw/g==" crossorigin="anonymous"></script>
+        <!-- endinject -->
+        <!-- tracking codes -->
+
+        <link rel="alternate" href="https://www.renata.com/de/" hreflang="de" /><link rel="alternate" href="https://www.renata.com/en/" hreflang="en" /><link rel="alternate" href="https://www.renata.com/en/" hreflang="x-default" /><link rel="alternate" href="https://www.renata.com/fr/" hreflang="fr" /><link rel="alternate" href="https://www.renata.com/es/" hreflang="es" /><link rel="alternate" href="https://www.renata.com/de-ch/" hreflang="de-CH" /><link rel="alternate" href="https://www.renata.com/en-ch/" hreflang="en-CH" /><link rel="alternate" href="https://www.renata.com/fr-ch/" hreflang="fr-CH" /><link rel="alternate" href="https://www.renata.com/en-us/" hreflang="en-US" /><link rel="alternate" href="https://www.renata.com/es-us/" hreflang="es-US" /><link rel="alternate" href="https://www.renata.com/en-cn/" hreflang="en-CN" /><link rel="alternate" href="https://www.renata.com/cn-cn/" hreflang="cn-CN" />
+    <script>
+      window.translations = {
+        'scroll-down': 'Scroll down',
+      };
+    </script>
+</head>
+<body   data-pageid="1" data-langid="en"class="home dev-info-overflow">
+        <script>
+      glowCookies.start('en', {
+        style: 3,
+        analytics: 'GTM-5FD6TQX',
+        policyLink: '/en/cookies/',
+        bannerBackground: '#000000',
+        bannerColor: '#FFF',
+        acceptBtnBackground: '#000000',
+        acceptBtnColor: '#FFF',
+        acceptBtnText: 'Ok',
+        rejectBtnBackground: '#000000',
+        rejectBtnColor: '#FFF',
+        rejectBtnText: 'Decline',
+      });
+    </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FD6TQX"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+            
+        <div class="search-wrapper" aria-hidden="true">
+            <div class="container">
+                <div class="row no-gutters">
+                    <button class="close-menu ml-a" aria-controls="mainnmenu"
+                            aria-label="Close search">
+                        <span class="menu-bar"></span> <span class="menu-bar"></span>
+                    </button>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-8">
+                        <form action="/en/search/" method="GET">
+                            <div class="form-group">
+                                <input type="search" id="search" class="form-control" name="searchtext" required>
+                                <div class="form-line"></div>
+                                <label for="search">Search</label> <i class="icon-chevron-right"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="language-wrapper" aria-hidden="true">
+            <div class="container">
+            <div class="row no-gutters">
+                <button class="close-menu ml-a" aria-controls="mainnmenu"
+                        aria-label="Close language change">
+                    <span class="menu-bar"></span> <span class="menu-bar"></span>
+                </button>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row justify-content-between">
+                                                    <div class="language-country-list col-12 col-md-6 col-lg-auto">
+                                                                    <h5>Switzerland</h5>
+                                                                            <a href="https://www.renata.com/de-ch/"
+                                           class="lang-link">Deutsch</a>
+                                                                            <a href="https://www.renata.com/en-ch/"
+                                           class="lang-link">English</a>
+                                                                            <a href="https://www.renata.com/fr-ch/"
+                                           class="lang-link">Français</a>
+                                                                                                </div>
+                                                    <div class="language-country-list col-12 col-md-6 col-lg-auto">
+                                                                    <h5>Americas</h5>
+                                                                            <a href="https://www.renata.com/en-us/"
+                                           class="lang-link">English</a>
+                                                                            <a href="https://www.renata.com/es-us/"
+                                           class="lang-link">Español</a>
+                                                                                                </div>
+                                                    <div class="language-country-list col-12 col-md-6 col-lg-auto">
+                                                                    <h5>China</h5>
+                                                                            <a href="https://www.renata.com/en-cn/"
+                                           class="lang-link">English</a>
+                                                                            <a href="https://www.renata.com/cn-cn/"
+                                           class="lang-link">汉语</a>
+                                                                                                </div>
+                                                    <div class="language-country-list col-12 col-md-6 col-lg-auto">
+                                                                    <h5>International</h5>
+                                                                            <a href="https://www.renata.com/de/"
+                                           class="lang-link">Deutsch</a>
+                                                                            <a href="https://www.renata.com/en/"
+                                           class="lang-link active">English</a>
+                                                                            <a href="https://www.renata.com/fr/"
+                                           class="lang-link">Français</a>
+                                                                            <a href="https://www.renata.com/es/"
+                                           class="lang-link">Español</a>
+                                                                                                </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <header id="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-10 col-md-7 logo-col">
+                    <a href="/en/" class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.9 37.2" height="37">
+                            <style>
+                                .st0{fill:#647972}.st1{fill:#e74e00}
+                            </style>
+                            <path class="st0" d="M0 3.6h5.3v2.9h.1c.6-2.4 2.9-3.1 5.5-3.1 4.1 0 5.7 1.8 5.7 5.9 0 .4 0 .8-.1 1.3h-4.9c0-1.9-.4-2.8-2.7-2.8-1.9 0-3.3.7-3.3 2.5v8.3H0v-15z"/>
+                            <path class="st0" d="M0 3.6h5.3v2.9h.1c.6-2.4 2.9-3.1 5.5-3.1 4.1 0 5.7 1.8 5.7 5.9 0 .4 0 .8-.1 1.3h-4.9c0-1.9-.4-2.8-2.7-2.8-1.9 0-3.3.7-3.3 2.5v8.3H0v-15zm19 8.1c0 6.4 3.9 7.1 7.7 7.1h4.2c4.1 0 7.5-.8 7.5-4.6v-.6H33c0 .9-.1 1.7-3.2 1.7h-1.7c-2.4 0-3.5-.4-3.5-2v-.9h13.7V9.9c0-5.2-2.5-6.5-8.5-6.5h-3.9c-4.1 0-7 1.2-7 6.9l.1 1.4zM24.6 9c0-1.8.4-2.1 4.1-2.1 3.3 0 4.1.3 4.1 2.1h-8.2z"/>
+                            <path class="st0" d="M19 11.7c0 6.4 3.9 7.1 7.7 7.1h4.2c4.1 0 7.5-.8 7.5-4.6v-.6H33c0 .9-.1 1.7-3.2 1.7h-1.7c-2.4 0-3.5-.4-3.5-2v-.9h13.7V9.9c0-5.2-2.5-6.5-8.5-6.5h-3.9c-4.1 0-7 1.2-7 6.9l.1 1.4zM24.6 9c0-1.8.4-2.1 4.1-2.1 3.3 0 4.1.3 4.1 2.1h-8.2zm16.9-5.4h5.7V6h.1c1-2.1 3-2.7 6-2.7 3.5 0 8.4.1 8.4 6.6v8.6H56V10c0-1.5-1.2-2.2-3.7-2.2H51c-2.4 0-3.9 1.1-3.9 3.3v7.6h-5.7l.1-15.1z"/>
+                            <path class="st0" d="M41.5 3.6h5.7V6h.1c1-2.1 3-2.7 6-2.7 3.5 0 8.4.1 8.4 6.6v8.6H56V10c0-1.5-1.2-2.2-3.7-2.2H51c-2.4 0-3.9 1.1-3.9 3.3v7.6h-5.7l.1-15.1zm23.1 11c0 3.5 2.2 4.3 5.7 4.3h3.9c2.8 0 3.4-.3 5-1.9v1.7h5.4V8.8c0-3.5-2.1-5.4-6-5.4H72c-4.8 0-6.8.7-6.8 4.7h5.5c.1-1.1.5-1.2 2.2-1.2h3.3c2.2 0 2.7.5 2.7 2v1.3C77.7 9.1 76 9 72.9 9c-5.5 0-8.3.2-8.3 4.3v1.3zm8.5.7c-2.2 0-3-.4-3-1.4 0-1.2.5-1.8 2.9-1.8h2.5c3.1 0 3.4.4 3.4 1.5 0 1-.4 1.6-4.2 1.6h-1.6z"/>
+                            <path class="st0" d="M64.6 14.6c0 3.5 2.2 4.3 5.7 4.3h3.9c2.8 0 3.4-.3 5-1.9v1.7h5.4V8.8c0-3.5-2.1-5.4-6-5.4H72c-4.8 0-6.8.7-6.8 4.7h5.5c.1-1.1.5-1.2 2.2-1.2h3.3c2.2 0 2.7.5 2.7 2v1.3C77.7 9.1 76 9 72.9 9c-5.5 0-8.3.2-8.3 4.3v1.3zm8.5.7c-2.2 0-3-.4-3-1.4 0-1.2.5-1.8 2.9-1.8h2.5c3.1 0 3.4.4 3.4 1.5 0 1-.4 1.6-4.2 1.6h-1.6zm16.4-7.6h-2.8V3.6h2.8V.1h5.7v3.5h8.8v4.1h-8.8v5.8c0 1.1.8 1.4 2.2 1.4 1.8 0 2.3-.4 2.3-1.8v-1h5v1.8c0 2.9-1.9 5-6.4 5h-2.2c-3.5 0-6.5-1.1-6.5-5.2l-.1-6z"/>
+                            <path class="st0" d="M89.5 7.7h-2.8V3.6h2.8V.1h5.7v3.5h8.8v4.1h-8.8v5.8c0 1.1.8 1.4 2.2 1.4 1.8 0 2.3-.4 2.3-1.8v-1h5v1.8c0 2.9-1.9 5-6.4 5h-2.2c-3.5 0-6.5-1.1-6.5-5.2l-.1-6zm17.3 6.9c0 3.5 2.2 4.3 5.7 4.3h3.9c2.8 0 3.4-.3 5-1.9v1.7h5.4V8.8c0-3.5-2.1-5.4-6-5.4h-6.6c-4.8 0-6.8.7-6.8 4.7h5.5c.1-1.1.5-1.2 2.2-1.2h3.3c2.2 0 2.7.5 2.7 2v1.3C120 9.1 118.3 9 115.2 9c-5.5 0-8.3.2-8.3 4.3l-.1 1.3zm8.5.7c-2.2 0-3-.4-3-1.4 0-1.2.5-1.8 2.9-1.8h2.5c3.1 0 3.4.4 3.4 1.5 0 1-.4 1.6-4.2 1.6h-1.6z"/>
+                            <path class="st0" d="M106.8 14.6c0 3.5 2.2 4.3 5.7 4.3h3.9c2.8 0 3.4-.3 5-1.9v1.7h5.4V8.8c0-3.5-2.1-5.4-6-5.4h-6.6c-4.8 0-6.8.7-6.8 4.7h5.5c.1-1.1.5-1.2 2.2-1.2h3.3c2.2 0 2.7.5 2.7 2v1.3C120 9.1 118.3 9 115.2 9c-5.5 0-8.3.2-8.3 4.3l-.1 1.3zm8.5.7c-2.2 0-3-.4-3-1.4 0-1.2.5-1.8 2.9-1.8h2.5c3.1 0 3.4.4 3.4 1.5 0 1-.4 1.6-4.2 1.6h-1.6z"/>
+                            <path class="st1" d="M131.3 1.7c9.4 0 16.9 7.6 17 17h1.7C150 8.4 141.7.1 131.4.1v1.6z"/>
+                            <path class="st1" d="M131.3 1.7c9.4 0 16.9 7.6 17 17h1.7C150 8.4 141.7.1 131.4.1v1.6z"/>
+                            <path class="st1" d="M131.3 4.9c7.6 0 13.7 6.2 13.7 13.7h1.7c0-8.5-6.9-15.4-15.4-15.4v1.7z"/>
+                            <path class="st1" d="M131.3 4.9c7.6 0 13.7 6.2 13.7 13.7h1.7c0-8.5-6.9-15.4-15.4-15.4v1.7z"/>
+                            <path class="st1" d="M131.3 8.1c5.8 0 10.5 4.7 10.5 10.5h1.7c0-6.7-5.4-12.1-12.1-12.1v1.6z"/>
+                            <path class="st1" d="M131.3 8.1c5.8 0 10.5 4.7 10.5 10.5h1.7c0-6.7-5.4-12.1-12.1-12.1v1.6z"/>
+                            <path class="st1" d="M131.3 11.4c4 0 7.2 3.3 7.2 7.3h1.7c0-4.9-4-8.9-8.9-8.9v1.6z"/>
+                            <path class="st1" d="M131.3 11.4c4 0 7.2 3.3 7.2 7.3h1.7c0-4.9-4-8.9-8.9-8.9v1.6z"/>
+                            <path class="st1" d="M131.3 14.6c2.2 0 4 1.8 4 4h1.7c0-3.1-2.5-5.7-5.7-5.7v1.7z"/>
+                            <path class="st1" d="M131.3 14.6c2.2 0 4 1.8 4 4h1.7c0-3.1-2.5-5.7-5.7-5.7v1.7zm0 4h2.1c0-1.2-.9-2.1-2.1-2.1v2.1z"/>
+                            <path class="st1" d="M131.3 18.6h2.1c0-1.2-.9-2.1-2.1-2.1v2.1z"/>
+                            <path class="st0" d="M41.5 37.1h1.7v-1.7c.5 1.3 2.1 1.9 4 1.9h2.6c3.4 0 5.7-.8 5.7-4.6v-1.9c0-3.5-1.4-4.8-5.8-4.8h-2.8c-2.1 0-3.1.5-3.5 1.6v-6.1h-1.9v15.6zm12.2-4.5c0 2.1-.7 3.2-3.7 3.2h-3c-2.8 0-3.6-1.2-3.6-3.2v-2.1c0-2.6 1.5-3.1 4-3.1h2.5c2.5 0 3.8.5 3.8 3v2.2z"/>
+                            <path class="st0" d="M41.5 37.1h1.7v-1.7c.5 1.3 2.1 1.9 4 1.9h2.6c3.4 0 5.7-.8 5.7-4.6v-1.9c0-3.5-1.4-4.8-5.8-4.8h-2.8c-2.1 0-3.1.5-3.5 1.6v-6.1h-1.9v15.6zm12.2-4.5c0 2.1-.7 3.2-3.7 3.2h-3c-2.8 0-3.6-1.2-3.6-3.2v-2.1c0-2.6 1.5-3.1 4-3.1h2.5c2.5 0 3.8.5 3.8 3v2.2zM70 37.1h1.9v-7.4c0-3.3-2.3-3.8-5.8-3.8h-2.9c-3.3 0-4.6.8-4.6 2.8v.5h1.9v-.4c0-.9.5-1.5 2.8-1.5H66c2.8 0 4.1.3 4.1 2.2v2.1c-.6-1.1-1.5-1.3-3.9-1.3h-3c-3.2 0-5 .3-5 2.8v.7c0 2.1.7 3.3 3.5 3.3H66c2.8 0 3.4-.3 3.9-1.3l.1 1.3zm0-3c0 1.4-1.3 1.6-4.7 1.6h-2.5c-2.5 0-3-.5-3-1.8v-.3c0-1.4.7-1.7 3.1-1.7h2.8c2.8 0 4.2.2 4.2 1.7l.1.5z"/>
+                            <path class="st0" d="M70 37.1h1.9v-7.4c0-3.3-2.3-3.8-5.8-3.8h-2.9c-3.3 0-4.6.8-4.6 2.8v.5h1.9v-.4c0-.9.5-1.5 2.8-1.5H66c2.8 0 4.1.3 4.1 2.2v2.1c-.6-1.1-1.5-1.3-3.9-1.3h-3c-3.2 0-5 .3-5 2.8v.7c0 2.1.7 3.3 3.5 3.3H66c2.8 0 3.4-.3 3.9-1.3l.1 1.3zm0-3c0 1.4-1.3 1.6-4.7 1.6h-2.5c-2.5 0-3-.5-3-1.8v-.3c0-1.4.7-1.7 3.1-1.7h2.8c2.8 0 4.2.2 4.2 1.7l.1.5zm6.1-6.5h-2.4v-1.5h2.4v-2.6H78v2.6h7.4v1.5H78v5.5c0 2.1.7 2.7 2.7 2.7h.6c2.5 0 2.9-.5 2.9-2.8v-.8h1.5v1.2c0 2.2-.2 3.9-4.2 3.9h-1c-3.5 0-4.3-1.7-4.3-3.5v-6.2z"/>
+                            <path class="st0" d="M76.1 27.6h-2.4v-1.5h2.4v-2.6H78v2.6h7.4v1.5H78v5.5c0 2.1.7 2.7 2.7 2.7h.6c2.5 0 2.9-.5 2.9-2.8v-.8h1.5v1.2c0 2.2-.2 3.9-4.2 3.9h-1c-3.5 0-4.3-1.7-4.3-3.5v-6.2zm12.8 0h-2.4v-1.5h2.4v-2.6h1.9v2.6h7.4v1.5h-7.4v5.5c0 2.1.7 2.7 2.7 2.7h.6c2.5 0 2.8-.5 2.8-2.8v-.8h1.5v1.2c0 2.2-.2 3.9-4.2 3.9h-1c-3.5 0-4.3-1.7-4.3-3.5v-6.2z"/>
+                            <path class="st0" d="M88.9 27.6h-2.4v-1.5h2.4v-2.6h1.9v2.6h7.4v1.5h-7.4v5.5c0 2.1.7 2.7 2.7 2.7h.6c2.5 0 2.8-.5 2.8-2.8v-.8h1.5v1.2c0 2.2-.2 3.9-4.2 3.9h-1c-3.5 0-4.3-1.7-4.3-3.5v-6.2zm11.3 5.1c0 4.1 2.8 4.5 5.2 4.5h3.4c3.5 0 5.5-.8 5.5-3.3v-.2h-1.9c-.1 1.7-1.1 2-3.4 2h-2.5c-3.2 0-4.4-.6-4.4-3.2v-.7h12.2v-1.2c0-3.9-2.4-4.8-5.7-4.8h-3c-2.6 0-5.4.5-5.4 4.4v2.5zm12.2-2.3H102c.2-2.5.9-3 3.8-3h2.7c3 0 3.9 1.1 3.9 2.2v.8z"/>
+                            <path class="st0" d="M100.2 32.7c0 4.1 2.8 4.5 5.2 4.5h3.4c3.5 0 5.5-.8 5.5-3.3v-.2h-1.9c-.1 1.7-1.1 2-3.4 2h-2.5c-3.2 0-4.4-.6-4.4-3.2v-.7h12.2v-1.2c0-3.9-2.4-4.8-5.7-4.8h-3c-2.6 0-5.4.5-5.4 4.4v2.5zm12.2-2.3H102c.2-2.5.9-3 3.8-3h2.7c3 0 3.9 1.1 3.9 2.2v.8zm4.9-4.3h1.7v1.6c.7-1.2 2-1.9 3.4-1.8h1.7c3.5 0 4.6 1.1 4.6 3.8V31H127v-.5c0-2.7-.6-3.2-3.9-3.2H122c-1.4-.2-2.7.9-2.9 2.3v7.3h-1.9l.1-10.8z"/>
+                            <path class="st0" d="M117.3 26.1h1.7v1.6c.7-1.2 2-1.9 3.4-1.8h1.7c3.5 0 4.6 1.1 4.6 3.8V31H127v-.5c0-2.7-.6-3.2-3.9-3.2H122c-1.4-.2-2.7.9-2.9 2.3v7.3h-1.9l.1-10.8zm14 0h1.9v11h-1.9z"/>
+                            <path class="st0" d="M131.3 26.1h1.9v11h-1.9zm5.1 6.6c0 4.1 2.8 4.5 5.2 4.5h3.4c3.5 0 5.5-.8 5.5-3.3v-.2h-1.9c-.1 1.7-1.1 2-3.4 2h-2.5c-3.2 0-4.4-.6-4.4-3.2v-.7h12.2v-1.2c0-3.9-2.4-4.8-5.7-4.8h-3c-2.6 0-5.4.5-5.4 4.4v2.5zm12.3-2.3h-10.4c.2-2.5.9-3 3.8-3h2.7c3 0 3.9 1.1 3.9 2.2v.8z"/>
+                            <path class="st0" d="M136.4 32.7c0 4.1 2.8 4.5 5.2 4.5h3.4c3.5 0 5.5-.8 5.5-3.3v-.2h-1.9c-.1 1.7-1.1 2-3.4 2h-2.5c-3.2 0-4.4-.6-4.4-3.2v-.7h12.2v-1.2c0-3.9-2.4-4.8-5.7-4.8h-3c-2.6 0-5.4.5-5.4 4.4v2.5zm12.3-2.3h-10.4c.2-2.5.9-3 3.8-3h2.7c3 0 3.9 1.1 3.9 2.2v.8zm4.3 2.9h1.7v.5c0 1.4.7 1.9 2.6 1.9h4c2.8 0 3.7-.1 3.7-1.8v-.1c0-1.1-.3-1.6-2.5-1.6h-5.7c-2.6 0-3.6-.8-3.6-2.9v-.6c0-1.8 1-2.8 5.6-2.8h2.8c4.2 0 4.8 1.2 4.8 2.8v.6h-1.7v-.1c0-1.7-1.1-1.7-3.2-1.7h-3.2c-2.7 0-3.2.3-3.2 1.5v.4c0 .9.3 1.4 2.2 1.4h4.9c2.8 0 4.7.3 4.7 3.3 0 3.1-2.9 3.2-5.1 3.2h-3.4c-2.7 0-5.3 0-5.3-3.3v-.7z"/>
+                            <path class="st0" d="M153 33.3h1.7v.5c0 1.4.7 1.9 2.6 1.9h4c2.8 0 3.7-.1 3.7-1.8v-.1c0-1.1-.3-1.6-2.5-1.6h-5.7c-2.6 0-3.6-.8-3.6-2.9v-.6c0-1.8 1-2.8 5.6-2.8h2.8c4.2 0 4.8 1.2 4.8 2.8v.6h-1.7v-.1c0-1.7-1.1-1.7-3.2-1.7h-3.2c-2.7 0-3.2.3-3.2 1.5v.4c0 .9.3 1.4 2.2 1.4h4.9c2.8 0 4.7.3 4.7 3.3 0 3.1-2.9 3.2-5.1 3.2h-3.4c-2.7 0-5.3 0-5.3-3.3v-.7z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.swatchgroup.com/en" class="swatchgroup-logo hidden-sm-down" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.29 7.86" width="255">
+                                <g fill="#fff">
+                                    <path d="M85.18 2.09a2 2 0 1 1 2 2 2 2 0 0 1-2-2Zm-27.9.02a1.23 1.23 0 0 1-2.45 0A1.23 1.23 0 0 1 56 .9a1.21 1.21 0 0 1 1.28 1.21Zm8.4-.02a1.48 1.48 0 0 1-1.52 1.47 1.46 1.46 0 0 1-1.48-1.47 1.5 1.5 0 0 1 3 0Z"/>
+                                    <path fill-rule="evenodd" d="M76.09 2.1a1.73 1.73 0 0 1-1.81 1.76 1.73 1.73 0 0 1-1.73-1.76A1.75 1.75 0 0 1 74.28.34a1.8 1.8 0 0 1 1.43.66 1.8 1.8 0 0 1 .38 1.1Z"/>
+                                </g>
+                                <g fill="#ed1c2e">
+                                    <path fill-rule="evenodd" d="M75.23 2.5h-.76v-.76h.76V1h.47a1.81 1.81 0 1 0-1.42 2.92 1.77 1.77 0 0 0 1.39-.66h-.44Zm-10.17-.7h.59a1.53 1.53 0 1 0-1.5 1.82 1.54 1.54 0 0 0 1.5-1.22h-.59Zm-8.17.02h.35a1.24 1.24 0 1 0 0 .6h-.35Z"/>
+                                    <path d="M85.12 2.09a2.09 2.09 0 1 1 2.08 2.09 2.09 2.09 0 0 1-2.08-2.09Zm2.56-.47V.67h-1v1h-.94v.94h.94v.89h1v-.94h.94v-.94Z"/>
+                                </g>
+                                <path fill="#004990" fill-rule="evenodd" d="M0 7.79h.4l.32-.87h1.22l.32.87h.43L1.56 4.9h-.43Zm1.33-2.54.49 1.35h-1Zm5.18.52a1.1 1.1 0 0 0-1.19-.94A1.37 1.37 0 0 0 4 6.35a1.33 1.33 0 0 0 1.29 1.51A1.18 1.18 0 0 0 6.54 6.7h-.38a.83.83 0 0 1-.84.84c-.69 0-1-.56-1-1.22s.29-1.17 1-1.17a.76.76 0 0 1 .81.62Zm.35.57a1.39 1.39 0 1 0 2.77 0 1.39 1.39 0 1 0-2.77 0Zm.38 0a1.06 1.06 0 0 1 1-1.19c.71 0 1 .61 1 1.19s-.29 1.2-1 1.2-1-.61-1-1.2Zm2.87 1.45h.36V5.38h.01l.9 2.41h.33l.9-2.41h.01v2.41h.36V4.9h-.52l-.92 2.43-.91-2.43h-.52v2.89zm3.51 0H14V6.61h.88a.79.79 0 0 0 .89-.86.79.79 0 0 0-.89-.85h-1.26ZM14 5.22h.75c.44 0 .63.19.63.53s-.19.54-.63.53H14Zm1.61 2.57H16l.33-.87h1.22l.32.87h.42L17.16 4.9h-.42Zm1.33-2.54.48 1.35h-1Zm1.63 2.54h.37V5.47l1.51 2.32h.43V4.9h-.37v2.34h-.01L18.98 4.9h-.41v2.89zM23.8 4.9h-.44l-.84 1.38-.87-1.38h-.46l1.12 1.71v1.18h.38V6.61L23.8 4.9zm1.29 1.44a1.39 1.39 0 1 0 2.77 0 1.39 1.39 0 1 0-2.77 0Zm.38 0a1.06 1.06 0 0 1 1-1.19c.71 0 1 .61 1 1.19s-.29 1.2-1 1.2-1-.61-1-1.2Zm2.86 1.45h.38V6.46h1.33v-.32h-1.33v-.92h1.52V4.9h-1.9v2.89zm4.11 0h.38V5.22h.96V4.9h-2.31v.32h.97v2.57zm1.66 0h.39V6.46h1.52v1.33h.39V4.9h-.39v1.24h-1.52V4.9h-.39v2.89zm2.93 0h2.01v-.32h-1.63V6.46h1.5v-.32h-1.5v-.92h1.61V4.9h-1.99v2.89z"/>
+                                <path fill="#004990" d="M41.78 6.81h.91c0 .31.13.34.39.34h1.12c.19 0 .38 0 .38-.25s-.1-.28-1.27-.28c-1.37 0-1.52-.16-1.52-.89 0-.53.05-1 1.19-1h1.27c1 0 1.15.36 1.15.88v.09h-.91c0-.22 0-.31-.45-.31H43c-.21 0-.34.07-.34.23s.11.27 1.08.27c1.41 0 1.74.08 1.74.94s-.27.93-1.48.93h-1.1c-.83 0-1.16-.16-1.16-.8Zm3.86-2h.89L47.16 7l.75-2.18h.84L49.52 7l.64-2.18H51l-1 3h-1l-.69-2-.69 2h-1Zm6.47 0h1.18l1.63 3h-1l-.28-.53h-1.85l-.27.53h-1Zm0 1.8h1.17L52.7 5.5Zm2.18-1.8h3.46v.74h-1.27v2.23h-.91V5.55h-1.28ZM58 5.85c0-.86.49-1.07 1.31-1.07h1.06c1.3 0 1.46.28 1.45 1.12h-.9v-.08c0-.22-.16-.28-.43-.28h-1c-.48 0-.57.23-.57.6v.31c0 .43.09.6.52.6h1c.41 0 .53 0 .53-.41h.91v.28c0 .5-.18.89-1.09.89h-1.5c-.82 0-1.29-.21-1.29-1.07Zm4.29-1.04h.9v1.06h1.92V4.81H66v3h-.91V6.66h-1.9v1.12h-.9Zm6.09 1.04c0-.86.49-1.07 1.31-1.07h1.36c1 0 1.18.37 1.18 1v.09h-.9c0-.29-.16-.33-.45-.33h-1c-.46 0-.58.11-.58.62v.37c0 .51.12.62.58.62h1c.24 0 .47 0 .47-.33v-.13h-1.14v-.62h2v.85c0 .85-.44.89-1.46.89h-1.06c-.82 0-1.31-.21-1.31-1.07Zm4.31-1.04h2.74c.7 0 .89.35.89.88v.19c0 .4-.09.63-.51.73.27 0 .49.17.49.65v.51h-.9v-.35c0-.31-.09-.41-.38-.41H73.6v.77h-.91Zm.91 1.46h1.5c.24 0 .33-.1.33-.31v-.1c0-.26-.13-.31-.42-.31H73.6Zm3.16-.42c0-.86.49-1.07 1.31-1.07h1.45c.82 0 1.31.21 1.31 1.07v.89c0 .86-.49 1.07-1.31 1.07h-1.45c-.82 0-1.31-.21-1.31-1.07Zm.94.6c0 .43.09.6.51.6h1.17c.43 0 .52-.17.52-.6v-.31c0-.37-.09-.6-.57-.6h-1.07c-.47 0-.56.23-.56.6Zm3.57-1.64h.91v1.71c0 .38.14.53.51.53h.9c.37 0 .51-.15.51-.53V4.81h.9v1.91c0 .74-.38 1.09-1.21 1.09h-1.3c-.84 0-1.22-.35-1.22-1.09Zm4.25 0H88c.86 0 1.07.44 1.07 1v.25c0 .44-.19 1-.83 1h-1.82v.75h-.9Zm.9 1.49h1.41c.22 0 .3-.14.3-.32v-.11c0-.2-.1-.32-.37-.32h-1.34Z"/>
+                            </svg>
+                                            </a>
+                </div>
+                <div class="col-2 col-md-5 header-actions d-flex align-items-center justify-content-end">
+                    <button type="button" class="show-search hidden-sm-down">Search</button>
+                    <a href="/en/login/" type="button" class="hidden-sm-down login-button">Login</a>
+                    <button type="button" class="lang-switch hidden-sm-down">EN</button>
+                    <button class="show-menu" aria-haspopup="true" aria-controls="mainnmenu" aria-label="Menu">
+                        <span class="menu-bar bar1"></span>
+                        <span class="menu-bar bar2"></span>
+                        <span class="menu-bar bar3"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+                <div class="container-fluid banner">
+            <div class="row no-gutters">
+                <div class="col-12 full-size">
+                    <div class="banner-slide">
+                        <div class="container banner-content">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-6 col-xl-5 text-lg-right">
+                                    <h1>Future<br>Performance.<br>Today.</h1>
+                                </div>
+                                <div class="col-lg-6 banner-battery-col">
+                                    <div class="banner-battery-wrapper">
+                                        <img class="banner-battery-anim" src="/assets/images/home/animation/images/CR-2430-Ani-V5_0000.png" alt="">
+                                        <img class="banner-battery-shadow" src="/assets/images/home/animation/Renata_Web2021_Batterie_Schatten.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-image">
+                            <picture>
+                                <source srcset="/assets/images/background/blue_background.jpg, /assets/images/background/blue_background@2x.jpg 2x">
+                                <img src="/assets/images/background/blue_background.jpg" alt="Banner Blau" width="1232" height="689">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                                                                                                                                                                <div class="container" >
+                                                                    <div class="row justify-content-between inset-row" >
+                                                                                                        <div class="col-md-7" >
+                                                                                                                        <h2 id="isPasted"><strong></strong>Our Products<strong></strong></h2><p>Discover our extensive product portfolio! &nbsp;We are pleased to offer the following products: &nbsp;Silver Oxide batteries for consumers and special Silver Oxide batteries for industry, high - pulse Silver Oxide batteries, 3 V-Lithium batteries, rechargeable Lithium - Polymer batteries, Thin - Film batteries, hearing aid batteries, battery holders and on- demand solutions. &nbsp;We also can supply all of our coin cell batteries with tabs, be it custom or standard tabbing.</p><p><a class="more" href=https://www.renata.com/en/overview/>Discover range</a></p><p><a class="more" href="https://www.renata.com/en/products/packaging/warning-environmental-information/"><strong>Warning &amp; environmental information</strong></a></p>
+                        
+                        
+    
+
+            
+            </div>
+            
+    
+                                <div class="col-md-5 col-lg-4" >
+                                                                    <div class="imagebox">
+                                    
+                                                                                                                                                <picture>
+                                                                                        <source srcset="https://www.renata.com/userfiles/modules_pages_Imagebox/9ecb66a7eb20bb7591ef9adf20/renata_lithium-batterien_big_default.png?t=0_0_780_600, https://www.renata.com/userfiles/modules_pages_Imagebox/9ecb66a7eb20bb7591ef9adf20/renata_lithium-batterien_big_2x.png?t=0_0_780_600 2x" media="(min-width: 1199px)">    
+                <img src="https://www.renata.com/userfiles/modules_pages_Imagebox/9ecb66a7eb20bb7591ef9adf20/renata_lithium-batterien_big_default.png?t=0_0_780_600" alt="" title="" width="470">
+            </picture>
+            
+                                                                        
+                        
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row" >
+                                                                                                        <div class="col-md-6" >
+                                                                                                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/gBsYfyCSetU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><br></p>
+                        
+                        
+    
+
+            
+            </div>
+            
+    
+                                <div class="col-md-6" >
+                                                                                                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_tX_rgCAs-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><br></p>
+                        
+                        
+    
+
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row justify-content-center" >
+                                                                                                        <div class="col-12" >
+                                                        <div class="row">
+    <div class="col-md-10 col-lg-8">
+                                                                                            <h3 id="isPasted"><strong></strong>Our sectors<strong></strong></h3><p>We are involved in the areas of IOT, watches, smart metering, wearables, portables, industrial, medical and consumer devices.</p>
+                        
+                        
+    
+
+    </div>
+</div>
+<div class="row card-wrapper">
+            <div class="col-md-6 col-lg-4">
+            <a href="https://www.renata.com/en/branches/consumer-goods/" class="card">
+                <div class="card-image">
+                                                                        <picture>
+                                <source srcset="https://www.renata.com/userfiles/modulesext_products_Sector/555dbb6810b5c5d87bde373ce2/renata_consumer_teaser_big_big_default.jpg?t=0_0_706_616, https://www.renata.com/userfiles/modulesext_products_Sector/555dbb6810b5c5d87bde373ce2/renata_consumer_teaser_big_big_2x.jpg?t=0_0_706_616 2x">
+                                <img src="https://www.renata.com/userfiles/modulesext_products_Sector/555dbb6810b5c5d87bde373ce2/renata_consumer_teaser_big_big_default.jpg?t=0_0_706_616" alt=""
+                                     width="353" height="302">
+                            </picture>
+                                                            </div>
+                <div class="card-text">
+                    <h5>Consumer Goods</h5>
+                </div>
+            </a>
+        </div>
+            <div class="col-md-6 col-lg-4">
+            <a href="https://www.renata.com/en/branches/industry/" class="card">
+                <div class="card-image">
+                                                                        <picture>
+                                <source srcset="https://www.renata.com/userfiles/modulesext_products_Sector/036b4baa69d499e9cc87bc240f/renata_industrie_teaser_big_big_default.jpg?t=0_0_706_616, https://www.renata.com/userfiles/modulesext_products_Sector/036b4baa69d499e9cc87bc240f/renata_industrie_teaser_big_big_2x.jpg?t=0_0_706_616 2x">
+                                <img src="https://www.renata.com/userfiles/modulesext_products_Sector/036b4baa69d499e9cc87bc240f/renata_industrie_teaser_big_big_default.jpg?t=0_0_706_616" alt=""
+                                     width="353" height="302">
+                            </picture>
+                                                            </div>
+                <div class="card-text">
+                    <h5>Industry</h5>
+                </div>
+            </a>
+        </div>
+            <div class="col-md-6 col-lg-4">
+            <a href="https://www.renata.com/en/branches/medical/" class="card">
+                <div class="card-image">
+                                                                        <picture>
+                                <source srcset="https://www.renata.com/userfiles/modulesext_products_Sector/cc2423d5d42186ced97951907b/renata_medical_teaser_big_big_default.jpg?t=0_0_706_616, https://www.renata.com/userfiles/modulesext_products_Sector/cc2423d5d42186ced97951907b/renata_medical_teaser_big_big_2x.jpg?t=0_0_706_616 2x">
+                                <img src="https://www.renata.com/userfiles/modulesext_products_Sector/cc2423d5d42186ced97951907b/renata_medical_teaser_big_big_default.jpg?t=0_0_706_616" alt=""
+                                     width="353" height="302">
+                            </picture>
+                                                            </div>
+                <div class="card-text">
+                    <h5>Medical</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+
+                
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row" >
+                                                                                                        <div class="col-md-6" >
+                                                                    <div class="card" >
+                                                                                                                                                                                <a href="https://www.renata.com/en/company/compliance/" class="card-image">
+                        <picture>
+                            <source srcset="https://www.renata.com/userfiles/modules_pages_Imagebox/bb1f146a86b5800d1fd167168d/renata_nachhaltigkeit_teaser_gross_big_default.jpg?t=0_0_1098_720,  2x">
+                            <img src="https://www.renata.com/userfiles/modules_pages_Imagebox/bb1f146a86b5800d1fd167168d/renata_nachhaltigkeit_teaser_gross_big_default.jpg?t=0_0_1098_720" alt="" width="353"
+                                 height="302">
+                        </picture>
+                    </a>
+                                        
+            
+                        
+    
+                                <div class="card-text" >
+                                                    <h3 id="isPasted"><strong></strong>Responsibility<strong></strong></h3><p>As a battery manufacturer we are aware of our responsibility to the environment and to society. &nbsp;We are consistently optimizing our activities so that we can act in a sustainable and environmentally friendly manner. &nbsp;The safety of our customers and of our own employees is also equally important to us.</p>
+                        
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+                                <div class="col-md-6" >
+                                                                    <div class="card" >
+                                                                                                                                                                                <a href="https://www.renata.com/en/employment-at-renata/" class="card-image">
+                        <picture>
+                            <source srcset="https://www.renata.com/userfiles/modules_pages_Imagebox/d2df6538fb6e2f4a915db51684/renata_karriere_teaser_gross_big_default.jpg?t=0_0_1098_720,  2x">
+                            <img src="https://www.renata.com/userfiles/modules_pages_Imagebox/d2df6538fb6e2f4a915db51684/renata_karriere_teaser_gross_big_default.jpg?t=0_0_1098_720" alt="" width="353"
+                                 height="302">
+                        </picture>
+                    </a>
+                                        
+            
+                        
+    
+                                <div class="card-text" >
+                                                    <h3 id="isPasted"><strong></strong>Career &nbsp;<strong></strong></h3><p>You can always find exciting careers in our various departments: &nbsp;Research &amp; development, Sales, Marketing, Production, Logistics and many other exciting challenges.<br>Are you still looking for an apprenticeship? Come by and take a look at us!</p>
+                        
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row justify-content-center" >
+                                                                                                        <div class="col-12" >
+                                                        	<div class="green-box news-teaser siema">
+					<div class="slide">
+				<div class="row justify-content-around">
+					<div class="col-md-6 col-lg-5">
+																					06. -
+								26.11.2026
+							
+												<h5>IVM Childsafe Certificate US 1700.20 for 10-count MPS Blister</h5>
+						<p>We at RENATA are proud to inform you that we are certified within the IVM Certification System PRO 4.0 according to US 16 CFR &sect; 1700.20&nbsp;</p>
+						<a href="/en/news1/ivm-childsafe-certificate-us-1700.20-for-10-count-mps-blister/" class="more">learn more</a>
+					</div>
+																		<div class="col-md-6 col-lg-4">
+								<picture>
+									<source srcset="https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_default.png?t=0_0_3060_1360, https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_2x.png?t=0_0_3060_1360 2x">
+									<img src="https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_default.png?t=0_0_3060_1360" alt="" width="392" height="280">
+								</picture>
+							</div>
+															</div>
+			</div>
+					<div class="slide">
+				<div class="row justify-content-around">
+					<div class="col-md-6 col-lg-5">
+																					03.08.2023
+																			<h5>Your Reliable Swiss Battery Expert</h5>
+						<p>It IS TIME TO CHOOSE THE RIGHT POWER SOURCE!</p>
+						<a href="/en/news1/your-reliable-swiss-battery-expert/" class="more">learn more</a>
+					</div>
+																		<div class="col-md-6 col-lg-4">
+								<picture>
+									<source srcset="https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_default.png?t=0_0_2564_3456, https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_2x.png?t=0_0_2564_3456 2x">
+									<img src="https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_default.png?t=0_0_2564_3456" alt="" width="392" height="280">
+								</picture>
+							</div>
+															</div>
+			</div>
+			</div>
+
+                
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row justify-content-between inset-row" >
+                                                                                                        <div class="col-md-5 col-lg-4" >
+                                                                    <div class="imagebox">
+                                    
+                                                                                                                                    <a href="https://www.renata.com/en/products/batteries/on-demand/" >
+                                <picture>
+                                                                                        <source srcset="https://www.renata.com/userfiles/modules_pages_Imagebox/809f2f1f3b56e1b7cce55752e4/renata-kundenzufriedenheit-nach-mass_big_default.jpg?t=0_0_782_560, https://www.renata.com/userfiles/modules_pages_Imagebox/809f2f1f3b56e1b7cce55752e4/renata-kundenzufriedenheit-nach-mass_big_2x.jpg?t=0_0_782_560 2x" media="(min-width: 1199px)">    
+                <img src="https://www.renata.com/userfiles/modules_pages_Imagebox/809f2f1f3b56e1b7cce55752e4/renata-kundenzufriedenheit-nach-mass_big_default.jpg?t=0_0_782_560" alt="" title="" width="470">
+            </picture>
+            
+        </a>
+    
+                                                                        
+                        
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+                                <div class="col-md-7" >
+                                                                                                                        <h3 id="isPasted"><strong></strong>Customer Satisfaction and Tailor &ndash; Made Solutions</h3><p>We have demonstrated expertise and many years of experience in the field of electronics and battery development. &nbsp;Together with our partners in the medical, industrial, informatics and logistics fields we have designed and created more than 900 customer-specific products and tailored battery solutions for the most different kinds of applications.</p><p><a class="more" href=https://www.renata.com/en/products/batteries/on-demand/>learn m<span class="fr-marker" data-id="0" data-type="false" style="display: none; line-height: 0;">​</span><span class="fr-marker" data-id="0" data-type="true" style="display: none; line-height: 0;">​</span>ore</a></p>
+                        
+                        
+    
+
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row justify-content-between inset-row" >
+                                                                                                        <div class="col-md-7" >
+                                                                                                                        <h3 id="isPasted"><strong></strong>Logistics</h3><p>Whether by sea, land or air cargo, our batteries move by the fastest mode of transportation, to the destination you specify. &nbsp;Our customer service team in our Miami office, will be happy to assist you in finding the ideal transportation solution for your needs.</p><p><a class="more" href=https://www.renata.com/en/products/logistics/>learn m<span class="fr-marker" data-id="0" data-type="false" style="display: none; line-height: 0;">​</span><span class="fr-marker" data-id="0" data-type="true" style="display: none; line-height: 0;">​</span>ore</a></p>
+                        
+                        
+    
+
+            
+            </div>
+            
+    
+                                <div class="col-md-5 col-lg-4" >
+                                                                    <div class="imagebox">
+                                    
+                                                                                                                                    <a href="https://www.renata.com/en/products/logistics/" >
+                                <picture>
+                                                                                        <source srcset="https://www.renata.com/userfiles/modules_pages_Imagebox/b9d5aa62dc180e0f69ed4597a6/renata_logistik_teaser_big_default.jpg?t=0_0_780_560, https://www.renata.com/userfiles/modules_pages_Imagebox/b9d5aa62dc180e0f69ed4597a6/renata_logistik_teaser_big_2x.jpg?t=0_0_780_560 2x" media="(min-width: 1199px)">    
+                <img src="https://www.renata.com/userfiles/modules_pages_Imagebox/b9d5aa62dc180e0f69ed4597a6/renata_logistik_teaser_big_default.jpg?t=0_0_780_560" alt="" title="" width="470">
+            </picture>
+            
+        </a>
+    
+                                                                        
+                        
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+                                <div class="row justify-content-center" >
+                                                                                                        <div class="col-12" >
+                                                        <div class="next-cases">
+    <h6 class="next-cases-title">Next cases</h6>
+    <div class="row card-wrapper">
+                                    <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="https://www.renata.com/en/branches/medical/" class="card-image">
+                                                                                            <picture>
+                                    <source srcset="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/2334b0edd916026f46895f03f1/renata_medical_nextcases_big_default.jpg?t=0_0_510_384, https://www.renata.com/userfiles/modulesext_nextcases_NextCases/2334b0edd916026f46895f03f1/renata_medical_nextcases_big_2x.jpg?t=0_0_510_384 2x">
+                                    <img src="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/2334b0edd916026f46895f03f1/renata_medical_nextcases_big_default.jpg?t=0_0_510_384" alt="" width="255" height="192">
+                                </picture>
+                                                                                        <div class="card-image-text">
+                                <h5>Medical</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="https://www.renata.com/en/branches/industry/" class="card-image">
+                                                                                            <picture>
+                                    <source srcset="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/8d4986d88db166a187f1876001/renata_industrie_nextcases_big_default.jpg?t=0_0_510_384, https://www.renata.com/userfiles/modulesext_nextcases_NextCases/8d4986d88db166a187f1876001/renata_industrie_nextcases_big_2x.jpg?t=0_0_510_384 2x">
+                                    <img src="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/8d4986d88db166a187f1876001/renata_industrie_nextcases_big_default.jpg?t=0_0_510_384" alt="" width="255" height="192">
+                                </picture>
+                                                                                        <div class="card-image-text">
+                                <h5>Industry</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="https://www.renata.com/en/branches/consumer-goods/" class="card-image">
+                                                                                            <picture>
+                                    <source srcset="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/e8069b593bf5141356b2a14642/renata_consumer_nextcases_big_default.jpg?t=0_0_510_384, https://www.renata.com/userfiles/modulesext_nextcases_NextCases/e8069b593bf5141356b2a14642/renata_consumer_nextcases_big_2x.jpg?t=0_0_510_384 2x">
+                                    <img src="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/e8069b593bf5141356b2a14642/renata_consumer_nextcases_big_default.jpg?t=0_0_510_384" alt="" width="255" height="192">
+                                </picture>
+                                                                                        <div class="card-image-text">
+                                <h5>Consumer Goods</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="https://www.renata.com/en/company/resource-management/" class="card-image">
+                                                                                            <picture>
+                                    <source srcset="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/210bf87e876e37b304531652a6/renata_ressourcen_nextcases_big_default.jpg?t=0_0_510_384, https://www.renata.com/userfiles/modulesext_nextcases_NextCases/210bf87e876e37b304531652a6/renata_ressourcen_nextcases_big_2x.jpg?t=0_0_510_384 2x">
+                                    <img src="https://www.renata.com/userfiles/modulesext_nextcases_NextCases/210bf87e876e37b304531652a6/renata_ressourcen_nextcases_big_default.jpg?t=0_0_510_384" alt="" width="255" height="192">
+                                </picture>
+                                                                                        <div class="card-image-text">
+                                <h5>Resources</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        </div>
+</div>
+
+                
+            
+            </div>
+            
+    
+
+                        
+            
+            </div>
+            
+    
+
+            
+            </div>
+            
+    
+
+            
+                        
+    
+
+            
+                        
+    
+
+    </main>
+    <footer id="footer">
+        <div class="footer-top container">
+            <div class="row"><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="#"><h6>Info</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/info/eubr13za/" class="footer-nav-link">EUBR13ZA</a><a href="https://www.renata.com/en/info/eubr13li/" class="footer-nav-link">EUBR13LI</a><a href="https://www.renata.com/en/info/eubr13ag/" class="footer-nav-link">EUBR13AG</a></div></nav></div><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="https://www.renata.com/en/overview/"><h6>Products</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/overview/" class="footer-nav-link">Batteries</a><a href="https://www.renata.com/en/products/battery-holders/" class="footer-nav-link">Battery Holders</a><a href="https://www.renata.com/en/products/battery-finder/" class="footer-nav-link">Battery Finder</a><a href="https://www.renata.com/en/products/logistics/" class="footer-nav-link">Logistics</a><a href="https://www.renata.com/en/products/packaging/" class="footer-nav-link">Packaging</a></div></nav></div><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="https://www.renata.com/en/branches/"><h6>Branches</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/branches/industry/" class="footer-nav-link">Industry</a><a href="https://www.renata.com/en/branches/medical/" class="footer-nav-link">Medical</a><a href="https://www.renata.com/en/branches/consumer-goods/" class="footer-nav-link">Consumer Goods</a></div></nav></div><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="#"><h6>Company</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/company/about-renata/" class="footer-nav-link">About renata</a><a href="https://www.renata.com/en/company/management/" class="footer-nav-link">Management</a><a href="https://www.renata.com/en/company/swatch-group/" class="footer-nav-link">Swatch Group</a><a href="https://www.renata.com/en/company/history/" class="footer-nav-link">History</a><a href="https://www.renata.com/en/company/resource-management/" class="footer-nav-link">Resource management</a><a href="https://www.renata.com/en/company/compliance/" class="footer-nav-link">Compliance</a><a href="https://www.renata.com/en/company/locations/" class="footer-nav-link">Locations</a><a href="https://www.renata.com/en/company/sponsoring-and-support/" class="footer-nav-link">Sponsorship and support</a></div></nav></div><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="https://www.renata.com/en/innovation/"><h6>Innovation</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/innovation/high-performance-line/" class="footer-nav-link">High Performance Line</a><a href="https://www.renata.com/en/innovation/silver-oxide-battery-recycling/" class="footer-nav-link">Silver oxide battery recycling</a><a href="https://www.renata.com/en/innovation/cooperation-with-tissot/" class="footer-nav-link">Cooperation with Tissot</a></div></nav></div><div class="col-6 col-md-4 col-lg-2"><nav class="footer-nav"><a href="https://www.renata.com/en/employment-at-renata/"><h6>Career</h6></a><div class="footer-sub-nav hidden-sm-down"><a href="https://www.renata.com/en/career/apprenticeship/" class="footer-nav-link">Apprenticeship campaign</a><a href="https://www.renata.com/en/career/open-positions/" class="footer-nav-link">Open positions</a></div></nav><nav class="footer-nav"><a href="https://www.renata.com/en/contact/"><h6>Contact</h6></a></nav><nav class="footer-nav"><a href="https://www.renata.com/en/news1/"><h6>News</h6></a></nav><nav class="footer-nav"><a href="https://www.renata.com/en/downloads/"><h6>Download</h6></a></nav><nav class="footer-nav"><a href="https://www.renata.com/en/distribution-partners/"><h6>Distribution</h6></a></nav></div></div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                                        <div class="col-md-4 col-lg-3 text-md-left mt-a">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <a class="medtech" href="https://www.swiss-medtech.ch" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.4 49.9" width="200">
+                                        <path fill="#244f5e" d="M160.6 7.8h-6.8V2.3h-2.4v13.2h2.4V9.8h6.8v5.7h2.4V2.3h-2.4v5.5zm-16.5 7.9c.9 0 1.7-.1 2.5-.4.7-.2 1.4-.6 2-1.2l-.8-1.8c-.5.4-1.1.8-1.8 1-.6.2-1.2.3-1.9.3-1.1.1-2.2-.4-2.9-1.2-.8-1-1.1-2.3-1.1-3.6-.1-1.3.3-2.5 1.1-3.6.7-.8 1.8-1.3 2.9-1.2.6 0 1.3.1 1.9.3.6.2 1.2.6 1.8 1l.8-1.8c-.6-.5-1.3-.9-2-1.2-.8-.3-1.7-.4-2.5-.4-1.2 0-2.4.3-3.4.8-1 .6-1.7 1.4-2.2 2.4-.5 1.1-.8 2.3-.8 3.6 0 1.2.2 2.5.8 3.6.5 1 1.3 1.8 2.2 2.4 1.1.7 2.2 1 3.4 1m-8.7-.2v-1.8h-6.5V9.8h6.1V7.9h-6.1V4.2h6.5V2.3h-8.9v13.2h8.9zm-15.4 0V4.3h4.3v-2h-11v2h4.3v11.2h2.4zm-17-2V4.3h2.3c3 0 4.6 1.5 4.6 4.6s-1.5 4.6-4.6 4.6H103zm-2.4 2h4.9c1.8.1 3.6-.5 5-1.7 1.3-1.3 1.9-3.1 1.8-4.9.1-1.8-.5-3.6-1.8-4.9-1.4-1.2-3.2-1.8-5-1.7h-4.9v13.2zm-2.8 0v-1.8h-6.5V9.8h6.1V7.9h-6.2V4.2h6.5V2.3H89v13.2h8.8zM79.1 11l-4.5-8.7h-1.9v13.2h2.1V6.9l3.5 6.5h1.6l3.5-6.6v8.7h2.1V2.3h-1.9L79.1 11zm-20.2 4.7c1 0 1.9-.1 2.8-.5.7-.3 1.4-.7 1.8-1.4.4-.6.6-1.3.6-2.1 0-.6-.2-1.3-.6-1.8-.4-.5-1-.9-1.6-1.2-.9-.4-1.8-.6-2.7-.8-.8-.1-1.5-.4-2.2-.8-.4-.1-.6-.6-.6-1.1 0-.6.3-1.1.7-1.4.6-.4 1.3-.6 2-.5 1.4 0 2.8.5 3.9 1.4l.8-1.8c-.6-.5-1.3-.9-2.1-1.2-.9-.3-1.7-.4-2.7-.4-.9 0-1.8.2-2.7.5-.7.3-1.3.8-1.8 1.4-.2.7-.5 1.4-.5 2.1 0 .7.2 1.3.5 1.9.4.5.9.9 1.5 1.2.9.4 1.8.6 2.7.8.8.1 1.6.4 2.3.8.5.2.7.7.7 1.2s-.3 1-.8 1.3c-.6.4-1.4.5-2.1.5-.8 0-1.6-.1-2.3-.3-.7-.2-1.4-.6-2-1.1l-.8 1.8c.7.5 1.4.9 2.2 1.2 1.1.2 2 .3 3 .3m-12.6 0c1 0 1.9-.1 2.8-.5.7-.3 1.4-.7 1.9-1.4.4-.6.6-1.3.6-2.1 0-.6-.2-1.3-.5-1.8-.4-.5-1-.9-1.6-1.2-.9-.4-1.8-.6-2.7-.8-.8-.1-1.5-.4-2.2-.8-.5-.1-.8-.6-.7-1.1 0-.6.3-1.1.7-1.4.6-.4 1.3-.6 2-.5 1.4 0 2.8.5 3.9 1.4l.8-1.8c-.6-.5-1.3-.9-2.1-1.2-.9-.3-1.7-.4-2.7-.4-.9 0-1.8.2-2.6.5-.7.3-1.3.8-1.8 1.4-.4.6-.7 1.3-.6 2.1 0 .6.1 1.3.4 1.8.4.5.9.9 1.6 1.2.9.4 1.8.6 2.7.8.8.1 1.6.4 2.3.8.5.2.8.7.7 1.2 0 .5-.3 1.1-.7 1.3-.6.4-1.4.5-2.1.5-.8 0-1.6-.1-2.3-.3-.7-.2-1.4-.6-2-1.1l-.8 1.8c.7.5 1.4.9 2.2 1.2 1 .3 1.9.5 2.8.4M38.5 2.4h-2.4v13.2h2.4V2.4zm-10.6 9.8-3.4-9.9h-1.7l-3.5 9.9L16 2.3h-2.4l4.7 13.2h2L23.7 6l3.3 9.5h2l4.6-13.2h-2.3l-3.4 9.9zm-21 3.5c1 0 1.9-.1 2.8-.5.7-.3 1.4-.7 1.8-1.4.4-.6.6-1.3.6-2.1 0-.6-.2-1.3-.6-1.8-.4-.5-.9-.9-1.6-1.2-.8-.2-1.7-.5-2.6-.7-.8-.1-1.6-.4-2.3-.8-.4-.2-.7-.7-.6-1.2 0-.6.3-1.1.7-1.4.6-.4 1.3-.6 2-.5 1.4 0 2.8.5 3.9 1.4l.8-1.8c-.6-.5-1.3-.9-2-1.1-.9-.3-1.8-.5-2.7-.5-.9 0-1.8.2-2.7.5-.7.4-1.3.9-1.8 1.5-.4.6-.6 1.3-.6 2.1 0 .6.2 1.3.5 1.8.4.5.9.9 1.6 1.2.9.4 1.7.6 2.7.8.8.1 1.6.4 2.3.8.4.2.7.7.6 1.2 0 .5-.3 1-.7 1.3-.6.4-1.4.5-2.1.5-.8 0-1.6-.1-2.3-.3-.7-.2-1.4-.6-2-1.1l-.8 1.8c.7.5 1.4.9 2.2 1.2.9.2 1.9.3 2.9.3"/>
+                                        <path fill="#e3032e" d="M1.8 22.9h167.3v5.4H1.8zm175.1 0h20.9v5.4h-20.9zm-7.3-7.3h6.7v6.7h-6.7z"/>
+                                        <path fill="#244f5e" d="M2.1 48.6v-13h2l4.6 8.5 4.6-8.5h1.9v13h-2.1v-8.8l-3.7 6.8H7.9l-3.7-6.8v8.8H2.1zm20.5.2c-1 0-1.9-.2-2.6-.6-.7-.4-1.3-.9-1.7-1.6s-.6-1.5-.6-2.5c0-.9.2-1.8.6-2.5.4-.7.9-1.3 1.6-1.7.7-.4 1.5-.6 2.3-.6 1.3 0 2.3.4 3 1.2.7.8 1.1 1.9 1.1 3.3v.7h-6.5C20 46.2 21 47 22.6 47c.5 0 1-.1 1.5-.2s1-.4 1.4-.7l.6 1.6c-.4.4-1 .6-1.6.9-.6.1-1.3.2-1.9.2zm-.3-7.9c-.7 0-1.2.2-1.6.6-.4.4-.7 1-.8 1.7h4.6c0-.8-.3-1.3-.6-1.7-.5-.4-1-.6-1.6-.6zm6.6 7.7v-9h2.3V41c.3-.5.6-.9 1.1-1.2s1-.4 1.7-.4c1.4 0 2.2.6 2.7 1.8.3-.6.7-1 1.2-1.3s1.1-.5 1.8-.5c2 0 3.1 1.2 3.1 3.7v5.5h-2.3v-5.4c0-.7-.1-1.2-.3-1.5-.2-.3-.6-.5-1.2-.5s-1.1.2-1.4.6c-.3.4-.5 1-.5 1.8v5h-2.3v-5.4c0-.7-.1-1.2-.3-1.5-.2-.3-.6-.5-1.1-.5-.6 0-1.1.2-1.4.6s-.5 1-.5 1.8v5h-2.6zm21.8.2c-.7 0-1.3-.1-1.8-.4-.5-.3-.9-.7-1.2-1.2v1.5h-2.3v-13h2.3V41c.3-.5.7-.8 1.2-1.1.5-.3 1.1-.4 1.7-.4.8 0 1.5.2 2.1.6.6.4 1.1.9 1.4 1.6.3.7.5 1.5.5 2.5s-.2 1.8-.5 2.5-.8 1.3-1.4 1.6c-.5.3-1.2.5-2 .5zm-.6-1.8c.7 0 1.2-.2 1.7-.7.4-.5.6-1.2.6-2.2 0-1-.2-1.7-.6-2.2-.4-.5-1-.7-1.7-.7s-1.2.2-1.7.7-.6 1.2-.6 2.2c0 1 .2 1.7.6 2.2.5.5 1 .7 1.7.7zm11.5 1.8c-1 0-1.9-.2-2.6-.6-.7-.4-1.3-.9-1.7-1.6s-.6-1.5-.6-2.5c0-.9.2-1.8.6-2.5.4-.7.9-1.3 1.6-1.7.7-.4 1.5-.6 2.3-.6 1.3 0 2.3.4 3 1.2.7.8 1.1 1.9 1.1 3.3v.7h-6.5C59 46.2 60 47 61.6 47c.5 0 1-.1 1.5-.2s1-.4 1.4-.7l.6 1.6c-.4.4-1 .6-1.6.9-.6.1-1.2.2-1.9.2zm-.3-7.9c-.7 0-1.2.2-1.6.6-.4.4-.7 1-.8 1.7h4.6c0-.8-.3-1.3-.6-1.7-.5-.4-1-.6-1.6-.6zm6.4 7.7v-9H70v1.6c.4-1.1 1.4-1.7 2.8-1.8l.7-.1.1 2-1.3.1c-1.5.1-2.3.9-2.3 2.3v4.9h-2.3z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/company/renata-sa" class="footer-social-link">
+                            <i class="icon-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC97IFZz2XIhdkA71BPamtdw/" class="footer-social-link">
+                            <i class="icon-youtube"></i> YouTube
+                        </a>
+                    </div>
+                    <div class="col-md-8 d-flex flex-column ml-a text-md-right">
+                        <nav class="footer-info-nav">
+            <a href="https://www.renata.com/en/privacy-notice/">Privacy Notice</a>
+            <a href="https://www.renata.com/en/cookies/">Cookies</a>
+            <a href="https://www.renata.com/en/terms-of-use-/">Terms of Use</a>
+            <a href="https://www.renata.com/en/imprint/">Imprint</a>
+    </nav>
+
+                                                    <a href="https://www.swatchgroup.com/en" class="footer-logo mt-a" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.29 7.86" width="228">
+                                    <g fill="#fff">
+                                        <path d="M85.18 2.09a2 2 0 1 1 2 2 2 2 0 0 1-2-2Zm-27.9.02a1.23 1.23 0 0 1-2.45 0A1.23 1.23 0 0 1 56 .9a1.21 1.21 0 0 1 1.28 1.21Zm8.4-.02a1.48 1.48 0 0 1-1.52 1.47 1.46 1.46 0 0 1-1.48-1.47 1.5 1.5 0 0 1 3 0Z"/>
+                                        <path fill-rule="evenodd" d="M76.09 2.1a1.73 1.73 0 0 1-1.81 1.76 1.73 1.73 0 0 1-1.73-1.76A1.75 1.75 0 0 1 74.28.34a1.8 1.8 0 0 1 1.43.66 1.8 1.8 0 0 1 .38 1.1Z"/>
+                                    </g>
+                                    <g fill="#ed1c2e">
+                                        <path fill-rule="evenodd" d="M75.23 2.5h-.76v-.76h.76V1h.47a1.81 1.81 0 1 0-1.42 2.92 1.77 1.77 0 0 0 1.39-.66h-.44Zm-10.17-.7h.59a1.53 1.53 0 1 0-1.5 1.82 1.54 1.54 0 0 0 1.5-1.22h-.59Zm-8.17.02h.35a1.24 1.24 0 1 0 0 .6h-.35Z"/>
+                                        <path d="M85.12 2.09a2.09 2.09 0 1 1 2.08 2.09 2.09 2.09 0 0 1-2.08-2.09Zm2.56-.47V.67h-1v1h-.94v.94h.94v.89h1v-.94h.94v-.94Z"/>
+                                    </g>
+                                    <path fill="#004990" fill-rule="evenodd" d="M0 7.79h.4l.32-.87h1.22l.32.87h.43L1.56 4.9h-.43Zm1.33-2.54.49 1.35h-1Zm5.18.52a1.1 1.1 0 0 0-1.19-.94A1.37 1.37 0 0 0 4 6.35a1.33 1.33 0 0 0 1.29 1.51A1.18 1.18 0 0 0 6.54 6.7h-.38a.83.83 0 0 1-.84.84c-.69 0-1-.56-1-1.22s.29-1.17 1-1.17a.76.76 0 0 1 .81.62Zm.35.57a1.39 1.39 0 1 0 2.77 0 1.39 1.39 0 1 0-2.77 0Zm.38 0a1.06 1.06 0 0 1 1-1.19c.71 0 1 .61 1 1.19s-.29 1.2-1 1.2-1-.61-1-1.2Zm2.87 1.45h.36V5.38h.01l.9 2.41h.33l.9-2.41h.01v2.41h.36V4.9h-.52l-.92 2.43-.91-2.43h-.52v2.89zm3.51 0H14V6.61h.88a.79.79 0 0 0 .89-.86.79.79 0 0 0-.89-.85h-1.26ZM14 5.22h.75c.44 0 .63.19.63.53s-.19.54-.63.53H14Zm1.61 2.57H16l.33-.87h1.22l.32.87h.42L17.16 4.9h-.42Zm1.33-2.54.48 1.35h-1Zm1.63 2.54h.37V5.47l1.51 2.32h.43V4.9h-.37v2.34h-.01L18.98 4.9h-.41v2.89zM23.8 4.9h-.44l-.84 1.38-.87-1.38h-.46l1.12 1.71v1.18h.38V6.61L23.8 4.9zm1.29 1.44a1.39 1.39 0 1 0 2.77 0 1.39 1.39 0 1 0-2.77 0Zm.38 0a1.06 1.06 0 0 1 1-1.19c.71 0 1 .61 1 1.19s-.29 1.2-1 1.2-1-.61-1-1.2Zm2.86 1.45h.38V6.46h1.33v-.32h-1.33v-.92h1.52V4.9h-1.9v2.89zm4.11 0h.38V5.22h.96V4.9h-2.31v.32h.97v2.57zm1.66 0h.39V6.46h1.52v1.33h.39V4.9h-.39v1.24h-1.52V4.9h-.39v2.89zm2.93 0h2.01v-.32h-1.63V6.46h1.5v-.32h-1.5v-.92h1.61V4.9h-1.99v2.89z"/>
+                                    <path fill="#004990" d="M41.78 6.81h.91c0 .31.13.34.39.34h1.12c.19 0 .38 0 .38-.25s-.1-.28-1.27-.28c-1.37 0-1.52-.16-1.52-.89 0-.53.05-1 1.19-1h1.27c1 0 1.15.36 1.15.88v.09h-.91c0-.22 0-.31-.45-.31H43c-.21 0-.34.07-.34.23s.11.27 1.08.27c1.41 0 1.74.08 1.74.94s-.27.93-1.48.93h-1.1c-.83 0-1.16-.16-1.16-.8Zm3.86-2h.89L47.16 7l.75-2.18h.84L49.52 7l.64-2.18H51l-1 3h-1l-.69-2-.69 2h-1Zm6.47 0h1.18l1.63 3h-1l-.28-.53h-1.85l-.27.53h-1Zm0 1.8h1.17L52.7 5.5Zm2.18-1.8h3.46v.74h-1.27v2.23h-.91V5.55h-1.28ZM58 5.85c0-.86.49-1.07 1.31-1.07h1.06c1.3 0 1.46.28 1.45 1.12h-.9v-.08c0-.22-.16-.28-.43-.28h-1c-.48 0-.57.23-.57.6v.31c0 .43.09.6.52.6h1c.41 0 .53 0 .53-.41h.91v.28c0 .5-.18.89-1.09.89h-1.5c-.82 0-1.29-.21-1.29-1.07Zm4.29-1.04h.9v1.06h1.92V4.81H66v3h-.91V6.66h-1.9v1.12h-.9Zm6.09 1.04c0-.86.49-1.07 1.31-1.07h1.36c1 0 1.18.37 1.18 1v.09h-.9c0-.29-.16-.33-.45-.33h-1c-.46 0-.58.11-.58.62v.37c0 .51.12.62.58.62h1c.24 0 .47 0 .47-.33v-.13h-1.14v-.62h2v.85c0 .85-.44.89-1.46.89h-1.06c-.82 0-1.31-.21-1.31-1.07Zm4.31-1.04h2.74c.7 0 .89.35.89.88v.19c0 .4-.09.63-.51.73.27 0 .49.17.49.65v.51h-.9v-.35c0-.31-.09-.41-.38-.41H73.6v.77h-.91Zm.91 1.46h1.5c.24 0 .33-.1.33-.31v-.1c0-.26-.13-.31-.42-.31H73.6Zm3.16-.42c0-.86.49-1.07 1.31-1.07h1.45c.82 0 1.31.21 1.31 1.07v.89c0 .86-.49 1.07-1.31 1.07h-1.45c-.82 0-1.31-.21-1.31-1.07Zm.94.6c0 .43.09.6.51.6h1.17c.43 0 .52-.17.52-.6v-.31c0-.37-.09-.6-.57-.6h-1.07c-.47 0-.56.23-.56.6Zm3.57-1.64h.91v1.71c0 .38.14.53.51.53h.9c.37 0 .51-.15.51-.53V4.81h.9v1.91c0 .74-.38 1.09-1.21 1.09h-1.3c-.84 0-1.22-.35-1.22-1.09Zm4.25 0H88c.86 0 1.07.44 1.07 1v.25c0 .44-.19 1-.83 1h-1.82v.75h-.9Zm.9 1.49h1.41c.22 0 .3-.14.3-.32v-.11c0-.2-.1-.32-.37-.32h-1.34Z"/>
+                                </svg>
+                            </a>
+                                                <p class="copyinfo mb-0">
+                            A company of the Swatch Group
+                            <br>Copyright © 2026. All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="backdrop"></div>
+    <aside id="mainnmenu" class="overlay desktop-nav" aria-hidden="true">
+        <header class="overlay-header nav-header container">
+            <div class="row align-items-center">
+                <div class="col-lg-11 offset-lg-1 d-flex align-items-center justify-content-between">
+                    <button type="button" class="nav-back">
+                        <i class="icon-chevron-left"></i> back
+                    </button>
+                    <button class="show-menu" aria-haspopup="true" aria-controls="mainnmenu" aria-label="Menu">
+                        <span class="menu-bar bar1"></span>
+                        <span class="menu-bar bar2"></span>
+                        <span class="menu-bar bar3"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="overlay-content nav-wrapper">
+            <div class="container">
+                <nav class="main-nav"><a href="#"
+                   class="nav-link has-sub"
+                   data-subnav="bThlM083LzZadFF5V2gvK3JCWk84dz09">Info</a><a href="https://www.renata.com/en/overview/"
+                   class="nav-link has-sub"
+                   data-subnav="aHhjVFJJZGlPZTNTd3dYOEdQeXhqZz09">Products</a><a href="https://www.renata.com/en/branches/"
+                   class="nav-link has-sub"
+                   data-subnav="UE5FWTVyeTZBcjNndkYzQThwM1lXZz09">Branches</a><a href="#"
+                   class="nav-link has-sub"
+                   data-subnav="RzRHeDh0RzRraWJ2Tll5aFNicmVXQT09">Company</a><a href="https://www.renata.com/en/innovation/"
+                   class="nav-link has-sub"
+                   data-subnav="VmxlMTVxc1EwM2lhcUxabHJpMVpmQT09">Innovation</a><a href="https://www.renata.com/en/employment-at-renata/"
+                   class="nav-link has-sub"
+                   data-subnav="V3MyTWpFRnczMVpXcTVJS2paWXpLdz09">Career</a><a href="https://www.renata.com/en/contact/"
+                   class="nav-link"
+                   >Contact</a><a href="https://www.renata.com/en/downloads/"
+                   class="nav-link"
+                   >Download</a><a href="https://www.renata.com/en/distribution-partners/"
+                   class="nav-link"
+                   >Distribution</a></nav><div class="subnav-bg"></div><div class="sub-nav-wrapper"><div id="bThlM083LzZadFF5V2gvK3JCWk84dz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Info</div><nav class="subnav-left"><a href="https://www.renata.com/en/info/eubr13za/"
+           class="nav-link"
+           >EUBR13ZA</a><a href="https://www.renata.com/en/info/eubr13li/"
+           class="nav-link"
+           >EUBR13LI</a><a href="https://www.renata.com/en/info/eubr13ag/"
+           class="nav-link"
+           >EUBR13AG</a></nav><div class="subnav-right"></div></div><div id="aHhjVFJJZGlPZTNTd3dYOEdQeXhqZz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Products</div><nav class="subnav-left"><a href="https://www.renata.com/en/overview/"
+           class="nav-link"
+           >Overview</a><a href="https://www.renata.com/en/overview/"
+           class="nav-link has-sub"
+           data-subnav="OU9TbERFYlVVVHBwS0oxUnJtSW1pQT09">Batteries</a><a href="https://www.renata.com/en/products/battery-holders/" class="nav-link">Battery Holders</a><a href="https://www.renata.com/en/products/battery-finder/"
+           class="nav-link"
+           >Battery Finder</a><a href="https://www.renata.com/en/products/logistics/"
+           class="nav-link"
+           >Logistics</a><a href="https://www.renata.com/en/products/packaging/"
+           class="nav-link has-sub"
+           data-subnav="ZUsweVovVFVnNThLVkZocExZNFZ4Zz09">Packaging</a></nav><div class="subnav-right"><nav id="OU9TbERFYlVVVHBwS0oxUnJtSW1pQT09" class="sub-subnav" aria-hidden="true"><a href="https://www.renata.com/en/products/lithium-batteries/" class="nav-link">Lithium batteries</a><a href="https://www.renata.com/en/products/rechargeable-lithium-coin-cells/" class="nav-link">Rechargeable lithium coin cells</a><a href="https://www.renata.com/en/products/tabbed-lithium-coin-cells/" class="nav-link">Tabbed Lithium Coin Cells</a><a href="https://www.renata.com/en/products/lithium-polymer-batteries/" class="nav-link">Lithium Polymer batteries</a><a href="https://www.renata.com/en/products/silver-oxide-batteries/" class="nav-link">Silver Oxide batteries</a><a href="https://www.renata.com/en/products/high---pulse-silver-oxide-batteries/" class="nav-link">High - Pulse Silver Oxide batteries</a><a href="https://www.renata.com/en/products/zinc---air-batteries/" class="nav-link">Zinc - Air Batteries</a><a href="https://www.renata.com/en/products/batteries/on-demand/" class="nav-link">On Demand</a></nav><nav id="ZUsweVovVFVnNThLVkZocExZNFZ4Zz09" class="sub-subnav" aria-hidden="true"><a href="https://www.renata.com/en/products/packaging/packaging/" class="nav-link">Packaging</a><a href="https://www.renata.com/en/products/packaging/child-proof-packaging/" class="nav-link">Child-proof Packaging</a><a href="https://www.renata.com/en/products/packaging/warning-environmental-information/" class="nav-link">Warning &amp; environmental information</a></nav></div></div><div id="UE5FWTVyeTZBcjNndkYzQThwM1lXZz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Branches</div><nav class="subnav-left"><a href="https://www.renata.com/en/branches/branches/"
+           class="nav-link"
+           >Overview</a><a href="https://www.renata.com/en/branches/industry/"
+           class="nav-link"
+           >Industry</a><a href="https://www.renata.com/en/branches/medical/"
+           class="nav-link"
+           >Medical</a><a href="https://www.renata.com/en/branches/consumer-goods/"
+           class="nav-link"
+           >Consumer Goods</a></nav><div class="subnav-right"></div></div><div id="RzRHeDh0RzRraWJ2Tll5aFNicmVXQT09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Company</div><nav class="subnav-left"><a href="https://www.renata.com/en/company/about-renata/"
+           class="nav-link"
+           >About renata</a><a href="https://www.renata.com/en/company/management/"
+           class="nav-link"
+           >Management</a><a href="https://www.renata.com/en/company/swatch-group/"
+           class="nav-link"
+           >Swatch Group</a><a href="https://www.renata.com/en/company/history/"
+           class="nav-link"
+           >History</a><a href="https://www.renata.com/en/company/resource-management/"
+           class="nav-link"
+           >Resource management</a><a href="https://www.renata.com/en/company/compliance/"
+           class="nav-link"
+           >Compliance</a><a href="https://www.renata.com/en/company/locations/"
+           class="nav-link"
+           >Locations</a><a href="https://www.renata.com/en/company/sponsoring-and-support/"
+           class="nav-link"
+           >Sponsorship and support</a></nav><div class="subnav-right"></div></div><div id="VmxlMTVxc1EwM2lhcUxabHJpMVpmQT09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Innovation</div><nav class="subnav-left"><a href="https://www.renata.com/en/innovation/innovation/"
+           class="nav-link"
+           >Overview</a><a href="https://www.renata.com/en/innovation/high-performance-line/"
+           class="nav-link"
+           >High Performance Line</a><a href="https://www.renata.com/en/innovation/silver-oxide-battery-recycling/"
+           class="nav-link"
+           >Silver oxide battery recycling</a><a href="https://www.renata.com/en/innovation/cooperation-with-tissot/"
+           class="nav-link"
+           >Cooperation with Tissot</a></nav><div class="subnav-right"></div></div><div id="V3MyTWpFRnczMVpXcTVJS2paWXpLdz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Career</div><nav class="subnav-left"><a href="https://www.renata.com/en/career/employment-at-renata/"
+           class="nav-link"
+           >career overview</a><a href="https://www.renata.com/en/career/apprenticeship/"
+           class="nav-link"
+           >Apprenticeship campaign</a><a href="https://www.renata.com/en/career/open-positions/"
+           class="nav-link"
+           >Open positions</a></nav><div class="subnav-right"></div></div><div id="UlJTenBWRHRqdlN4cVNtNm1FZVBqQT09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Contact</div></div><div id="M3BaMURCK3FwQlVQRkRSTFpkN1BqZz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">News</div></div><div id="QTUrdytMNmF2eGM0bG5Fa283ZDBXZz09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Download</div></div><div id="ZitGazNiM1dWeWNpcnZQamRqQUQ5UT09" class="subnav" hidden aria-hidden="true"><div class="active-subnav">Distribution</div></div></div>
+                <aside class="overlay-sidebar nav-sidebar">
+                    <div class="overlay-sidebar-mobile-metanav hidden-xl-up">
+                        <button type="button" class="show-search">Search</button>
+                        <a href="/en/login/" class="login-button">Login</a>
+                        <button type="button" class="lang-switch">EN</button>
+                    </div>
+                                            <div class="inner-wrapper">
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner"></div>
+                </div>
+            </div>
+            <div class="siema" data-loop="true" data-duration="3000" data-draggable="false">
+                                <a href="/en/news1/ivm-childsafe-certificate-us-1700.20-for-10-count-mps-blister/" class="overlay-sidebar-news slide">
+                    <div class="slider-title">
+                        IVM Childsafe Certificate US 1700.20 for 10-count MPS Blister
+                    </div>
+                                                                        <picture>
+                                <source srcset="https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_default.png?t=0_0_3060_1360, https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_2x.png?t=0_0_3060_1360 2x">
+                                <img src="https://www.renata.com/userfiles/modulesext_news_News/dd724eeab683b6436d28531c16/ivm_aufkleber_50x20mm_rz_2mm-001-3060x1360_big_default.png?t=0_0_3060_1360" alt="" loading="lazy" decoding="async"
+                                    width="1200" height="533">
+                            </picture>
+                                                </a>
+                                                    <a href="/en/news1/your-reliable-swiss-battery-expert/" class="overlay-sidebar-news slide">
+                    <div class="slider-title">
+                        Your Reliable Swiss Battery Expert
+                    </div>
+                                                                        <picture>
+                                <source srcset="https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_default.png?t=0_0_2564_3456, https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_2x.png?t=0_0_2564_3456 2x">
+                                <img src="https://www.renata.com/userfiles/modulesext_news_News/bf0c448def2c425399f414cb84/renata-usp-1_en_big_default.png?t=0_0_2564_3456" alt="" loading="lazy" decoding="async"
+                                    width="594" height="800">
+                            </picture>
+                                                </a>
+                                                </div>
+        </div>
+    
+                                        <div class="overlay-socials">
+                                                    <a href="https://www.linkedin.com/company/renata-sa" class="overlay-social-link">
+                                <i class="icon-linkedin"></i> LinkedIn
+                            </a>
+                                                                            <a href="https://www.youtube.com/channel/UC97IFZz2XIhdkA71BPamtdw/" class="overlay-social-link">
+                                <i class="icon-youtube"></i> YouTube
+                            </a>
+                                            </div>
+                </aside>
+            </div>
+        </div>
+    </aside>
+    <aside id="loginoverlay" class="overlay login-overlay" aria-hidden="true">
+        <header class="overlay-header container">
+            <div class="row align-items-center">
+                <div class="col-lg-11 offset-lg-1 d-flex align-items-center justify-content-end">
+                    <button class="close-menu" aria-haspopup="true" aria-controls="mainnmenu" aria-label="Menu">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </aside>
+    <script>
+      var $buoop = {
+        required:{e:12,f:57,o:50,s:11,c:64},
+        reminder: 0,
+        reminderClosed: 4,
+        onshow: function(infos){
+          document.querySelector('body').style.overflow = 'hidden';
+        },
+        onclose: function(infos){
+          document.querySelector('body').style.overflow = '';
+        },
+        text: "<h3>Internet Explorer</h3><p>For the full functionality of our website, please view our site with a browser other than Internet Explorer, e.g. Google Chrome, Safari, Edge or Firefox. The Internet Explorer is no longer updated by the manufacturer and no longer meets current browser requirements.</p><a{ignore_but}>OK</a>",
+        no_permanent_hide: true,
+        insecure:false,
+        unsupported:false,
+        api:2018.09
+      };
+      function $buo_f(){
+        var e = document.createElement("script");
+        e.async = true
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+      }
+      try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+      catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
+    <style>
+        html.ie {
+            margin-top: 0 !important;
+        }
+        body .buorg {
+            color: #00203f;
+            background: rgba(0, 0, 0, .6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+        body .buorg-pad {
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            text-align: left;
+        }
+        body .buorg-icon {
+            display: none;
+        }
+        body #buorgig {
+            cursor: pointer;
+            background: none;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 700;
+            padding: 7px 35px;
+            text-align: center;
+            transition: background 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+            text-decoration: none;
+            border: 2px solid #00203f;
+            border-radius: 50px;
+            color: #00203f;
+        }
+        body #buorgig.filled,
+        body #buorgig:hover {
+            color: #fff;
+            text-decoration: none;
+            border-color: #00203f;
+            background: #00203f;
+        }
+    </style>
+<!-- backend -->
+<script>
+    function UnCryptMailto(a){for(var b=0,c="",d=0;d<a.length;d++)b=a.charCodeAt(d),b>=8364&&(b=128),c+=String.fromCharCode(b-1);return c}function linkTo_UnCryptMailto(a){location.href=UnCryptMailto(a)}
+</script>
+
+</body>
+</html>

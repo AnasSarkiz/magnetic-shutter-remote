@@ -1,0 +1,68 @@
+{
+  "reader": "pcb-tools 0.1.6",
+  "slots": [
+    {
+      "source_hole_id": "pcb_plated_hole_0",
+      "start_mm": [
+        4.3199,
+        1.025
+      ],
+      "end_mm": [
+        4.3199,
+        1.825
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.399999,
+      "endpoint_error_mm": 2.392822601034412e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_1",
+      "start_mm": [
+        -4.3199,
+        1.025
+      ],
+      "end_mm": [
+        -4.3199,
+        1.825
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.399999,
+      "endpoint_error_mm": 2.392822601034412e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_2",
+      "start_mm": [
+        -4.3199,
+        -3.175
+      ],
+      "end_mm": [
+        -4.3199,
+        -1.975
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.7999989999999997,
+      "endpoint_error_mm": 3.219068188158799e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    },
+    {
+      "source_hole_id": "pcb_plated_hole_3",
+      "start_mm": [
+        4.3199,
+        -3.175
+      ],
+      "end_mm": [
+        4.3199,
+        -1.975
+      ],
+      "cutter_diameter_mm": 0.599999,
+      "total_length_mm": 1.7999989999999997,
+      "endpoint_error_mm": 3.219068188158799e-05,
+      "diameter_error_mm": 1.9999999989472883e-07
+    }
+  ],
+  "round_drills": 0,
+  "plating_file_function": "Plated,1,2,PTH",
+  "scope": "Four fixture slots; not full R5 CAM/DFM revalidation"
+}

@@ -1,0 +1,93 @@
+{
+  "query": "U262-061N",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 2074650,
+      "mfr": "MMA02040C3001FB300",
+      "package": "MELF-0204",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+155℃ 200V 3kΩ 400mW Thin Film Resistor ±1% ±50ppm/℃ MELF-0204 Chip Resistor - Surface Mount ROHS",
+      "stock": 5432,
+      "price": 0.0526
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 500048,
+      "mfr": "SK-3245D-02-L3",
+      "package": "插件,9x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40℃~+85℃ 10000 times 12V 3.5mm 3.5mm 50mA 9mm Black DPDT PC Pin Rectangular Columnar Through Hole 插件,9x3.5mm Slide Switches ROHS",
+      "stock": 807,
+      "price": 0.1081
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 2074648,
+      "mfr": "ERA-2AEB4122X",
+      "package": "0402",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+155℃ 41.2kΩ 50V 63mW Thin Film Resistor ±0.1% ±25ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+      "stock": 203,
+      "price": 0.1695
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 605216,
+      "mfr": "AC0603JRX7R9BB223",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "22nF 50V X7R ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "stock": 185,
+      "price": 0.0161
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 1346425,
+      "mfr": "LF444ACN/NOPB",
+      "package": "PDIP-14",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20V~20V 0℃~+70℃ 10pA 10uV/℃ 1MHz 1V/us 200uA 2mV 35nV/√Hz@1kHz 40V 5pA 80dB Four channels PDIP-14 FET Input Amplifiers ROHS",
+      "stock": 98,
+      "price": 2.9902
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5333296,
+      "mfr": "HT-LFCN-800+",
+      "package": "SMD-4P,3.2x1.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "0.8dB 1GHz 50Ω 55℃~+100℃ Low Pass SMD-4P,3.2x1.6mm RF Filters ROHS",
+      "stock": 93,
+      "price": 6.6897
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 22374934,
+      "mfr": "MSD40P45",
+      "package": "TO-252",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 1 P-Channel 137pF 15mΩ@10V 2.5V 2.757nF 22.2nC@4.5V 240pF 40V 45A 73.5W P-Channel TO-252 MOSFETs ROHS",
+      "stock": 90,
+      "price": 0.2003
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 2991555,
+      "mfr": "CT7-Y8Y5U0E222MSE",
+      "package": "插件,P=10mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "10mm 2.2nF 400V Y5U ±20% 插件,P=10mm Through Hole Ceramic Capacitors ROHS",
+      "stock": 4,
+      "price": 0.0785
+    }
+  ]
+}

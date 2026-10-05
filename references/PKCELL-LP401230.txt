@@ -1,0 +1,229 @@
+              SHENZHEN PKCELL BATTERY CO., LTD
+
+
+
+
+             Li-Polymer Battery Technology Specification
+
+
+    Model： Li-Polymer 401230 105mAh 3.7V with PCM
+
+
+                                             Corporate name
+
+
+                                                  Checked
+                   Customer
+                  confirmation
+                                                 Approved
+
+
+                                              Corporate seal
+
+
+
+
+                                        Signed：
+
+
+                                        Drafted by：
+
+
+                                        Approved by：
+
+
+                              Document No.：              QA.S.0228            Edit：A
+
+SHENZHEN PKCELL BATTERY CO., LTD
+Company address: E2 Building,Guangming Technology Park,No.24 Zhonghua Road,Longhua New
+                 Area,Shenzhen Guangdong, China.
+（Tel）：+86-755-86670672                         （Fax）：+86-755-86670609
+E-mail：pkcell@pkcell.net                        Website：http://www.pkcell.net
+       (If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+                                                                     SHENZHEN PKCELL BATTERY CO., LTD
+                                         Technical Specification                Edition                              A
+ PKCELL                  Document          Li-Polymer 401230                   Valid Date                        2014-09-09
+ BATTERY                                105mAh 3.7V with PCM                  Drafted by                           Xiao li
+                         Number                   QA.S.0228                   Signed by                          Zhijiang li
+
+
+1        Scope
+
+    This document describes the performance characteristics and testing methods for Li-polymer battery
+produced by SHENZHEN PKCELL BATTERY CO., LTD.
+
+2        Product type and model number
+
+2.1 Product type
+    Lithium-polymer battery
+2.2 Model number
+    LP-401230 3.7V 105mAh with PCM
+
+3        Rated performance
+
+                                                Form 1:Battery rated performance
+
+    No                 Item                    Rated performance                                  Remark
+                                        Nominal 105mAh
+    1     Capacity                                                    Standard discharge after standard charge
+                                        Minimum 95mAh
+                                                                      Mean operation voltage during standard
+    2     Nominal voltage               3.7V
+                                                                      discharge after standard charge
+    3     Voltage at end of discharge   3.0V                          Discharge cut-off voltage
+    4     Charging voltage              4.2V
+                                        Constant current 0.2C5A
+    5     Standard charge               Constant voltage 4.2V
+                                        Cut-off current 0.01C5A
+                                        Constant current 1C5A
+    6     Quick charge                  Constant voltage 4.2V
+                                        Cut-off current 0.01C5A
+                                        Constant current 0.2 C5A
+    7     Standard discharge
+                                        End voltage 3.0V
+          Maximum          continuous
+    8                                   1 C5A
+          discharge current
+
+          Operation                     Charge: 0~45℃
+    9                                                                 60±25%R.H
+          temperature range             Discharge:-20~60℃
+                                                                      Charging/discharging in the below condition:
+                                                                      Charge: standard charge
+    10    Cycle life                    >500cycles                    Discharge:0.2C5A to 3.0V
+                                                                      Rest time between charge/discharge:30min
+                                                                      Until the discharge capacity <60% of NC
+
+          Storage                       During 1 month: -5 ~ 35℃
+    11                                                                60±25%R.H
+          temperature                   During 6 months: -20 ~ 45℃
+
+
+4        Electrical performances
+
+
+
+ Page 2 of 5
+                                                                  SHENZHEN PKCELL BATTERY CO., LTD
+                                     Technical Specification                  Edition                           A
+ PKCELL                  Document      Li-Polymer 401230                     Valid Date                     2014-09-09
+ BATTERY                            105mAh 3.7V with PCM                    Drafted by                        Xiao li
+                           Number           QA.S.0228                       Signed by                       Zhijiang li
+
+
+                                      Form 2: Battery electrical performances
+
+    No                  Items                             Test procedure                                 Requirements
+                                    The average value of the working voltage during the whole
+    1      Nominal voltage                                                                        3.7V
+                                    discharge process.
+                                    The discharge capacity of the battery, measured with 0.2C5A   Discharge    ≥Minimum
+    2      Discharge performance
+                                    down to 3.0V within 1 hour after a standard charge            capacity
+
+                                    After 28 days storage at 25±5℃, after having been standard
+    3      Capacity retention       charged and discharged at 0.2C5A to 3.0V (the residual        Discharge time≥4h
+                                    capacity is above 80% of nominal capacity)
+                                    Charging/discharging in the below condition:
+                                    Charge: standard charge
+    4      Cycle life               Discharge:0.2C5A to 3.0V                                      >500cycles
+                                    Rest time between charge/discharge:30min
+                                    Until the discharge capacity <60% of NC
+
+5        Standard test conditions
+
+     Test should be conducted with new batteries within one week after shipment from our factory and the
+batteries shall not be cycled more than five times before the test. Unless otherwise defined, test and measurement
+shall be done under temperature of 20±5℃ and relative humidity of 45~85%. If it is judged that the test results are
+not affected by such conditions, the tests may be conducted at temperature 15~30℃ and humidity 25~85%RH.
+
+6       Cautions in use
+
+    To ensure proper use of the battery please read the manual carefully before using it.
+6.1 Handling
+    Do not expose to, dispose of the battery in fire.
+    Do not put the battery in a charger or equipment with wrong terminals connected.
+    Avoid shorting the battery.
+    Avoid excessive physical shock or vibration.
+    Do not disassemble or deform the battery.
+    Do not immerse in water.
+    Do not use the battery mixed with other different make, type, or model batteries.
+    Keep out of the reach of children.
+6.2 charge and discharge
+    Battery must be charged in appropriate charger only.
+    Never use a modified or damaged charger.
+    Do not leave battery in charge over 24 hours.
+6.3 storage
+    Store the battery in a cool, dry and well-ventilated area.
+6.4 disposal
+    Regulations vary for different countries, Dispose of in accordance with local regulations.
+
+7        Battery operation instruction
+
+ Page 3 of 5
+                                                             SHENZHEN PKCELL BATTERY CO., LTD
+                                   Technical Specification              Edition                       A
+ PKCELL           Document           Li-Polymer 401230                 Valid Date                 2014-09-09
+ BATTERY                          105mAh 3.7V with PCM                Drafted by                    Xiao li
+                    Number                QA.S.0228                   Signed by                   Zhijiang li
+
+
+7.1   Charging
+      Charging current：
+                      Cannot surpass the biggest charging current which in this specification book stipulated.
+Charging voltage :Does not have to surpass the highest amount which in this specification book stipulated to
+decide the voltage.
+     Charge temperature：The battery must carry on the charge in the ambient temperature scope which this
+specification book stipulated.Uses the constant electric current and the constant voltage way charge, the prohibition
+reverse charges. If the battery positive electrode and the cathode meet instead, can damage the battery.
+7.2   Discharging current
+      The discharging current does not have to surpass this specification book stipulation the biggest discharging
+current, the oversized electric current electric discharge can cause the battery capacity play to reduce and to cause
+the battery heat.
+7.3 Electric discharge temperature
+      The battery discharge must carry on in the ambient temperature scope which this specification book stipulated.
+7.4 Over-discharges
+      After the short time excessively discharges charges immediately cannot affect the use, but the long time
+excessively disharges can cause the battery the performance, battery function losing. The battery long-term has not
+used, has the possibility to be able to be at because of its automatic flashover characteristic certain excessively
+discharges the condition, or prevented excessively discharges the occurrence, the battery should maintain the certain
+electric quantity.
+7.5 Storing the batteries
+      The battery should store in the product specification book stipulation temperature range. If has surpasses above
+for six months the long time storage, suggested you should carry on additional charge to the battery.
+8 Period of warranty
+      The period of warranty is half year from the date of shipment. Pkcell guarantees to give a replacement in
+caseof batteries with defects proven due to manufacturing process instead of the customers abuse and misuse.
+9 Other the chemical reaction
+      Because batteries utilize a chemical reaction, battery performance will deteriorate over time even if stored for a
+long period of time without being used. In addition, if the various usage conditions such as charge, discharge, ambient
+temperature, etc. are not maintained within the specified ranges the life expectancy of the battery may be shortened or
+the device in which the battery is used may be damaged by electrolyte leakage. If the batteries cannot maintain a
+charge for long periods of time, even when they are charged correctly, this may indicate it is time to change the
+battery.
+10 Note
+      Any other items which are not covered in this specification shall be agreed by both parties.
+
+
+
+
+ Page 4 of 5
+                                                        SHENZHEN PKCELL BATTERY CO., LTD
+                              Technical Specification          Edition            A
+PKCELL        Document          Li-Polymer 401230             Valid Date      2014-09-09
+BATTERY                      105mAh 3.7V with PCM            Drafted by         Xiao li
+               Number              QA.S.0228                 Signed by        Zhijiang li
+
+
+11   Battery pack drawings
+
+
+
+
+                                          ……..END……..
+
+
+
+
+Page 5 of 5
+

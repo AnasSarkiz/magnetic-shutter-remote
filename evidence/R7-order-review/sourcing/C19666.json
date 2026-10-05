@@ -1,0 +1,31 @@
+{
+  "lcsc": "C19666",
+  "mpn": "CL10A475KO8NNNC",
+  "references": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "url": "https://jlcpcb.com/partdetail/Samsung-CL10A475KO8NNNC/C19666",
+  "listing_sha256": "b436287bc4331ce425d65abf286b21f58238476601843515553b8a8f24df00eb",
+  "checked_at_utc": "2026-10-04T21:21:35.730389+00:00",
+  "quantity_for_five_finished_boards": 20,
+  "stock_fields": {
+    "canPresaleNumber": 1919691,
+    "overseasStockCount": 2519891,
+    "preMinPurchaseNum": 519
+  },
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "orderInstructionEnglish": ""
+  },
+  "status": "PASS",
+  "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+}

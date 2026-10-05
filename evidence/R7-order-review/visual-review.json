@@ -1,0 +1,18 @@
+{
+  "review_date": "2026-10-04",
+  "pcb_top_bottom": "INSPECTED",
+  "three_A4_schematic_sheets": "INSPECTED",
+  "native_3d": "INSPECTED; USB mouth faces +Y edge; battery connector internal and SWD top-entry",
+  "CAM_top_bottom_with_all_drills": "INSPECTED",
+  "assembly_and_dimensions_pdf": "INSPECTED",
+  "J1_actual_CAM_overlay": "Copper/mask/paste crop generated; not supplier-processed CAM",
+  "physical_fit": "NOT TESTED",
+  "side_shoulder_actuator": "NOT COMPLETE",
+  "viewer_browser": "Bundle PASS; interactive browser not reviewed this run",
+  "accepted_native_warnings": [
+    "Internal battery J2 direction",
+    "Q1/Q2 requires_power metadata",
+    "small via surcharge",
+    "optional routing-cache unique-port serialization warning"
+  ]
+}

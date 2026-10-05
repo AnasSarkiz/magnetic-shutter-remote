@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-custom-symbol-repeated-pads.test.tsx:
+45 |   })
+46 |   const pcbPorts = circuit.db.pcb_port.list()
+47 |   const internalConnections =
+48 |     circuit.db.source_component_internal_connection.list()
+49 | 
+50 |   expect(sourcePorts).toHaveLength(2)
+                           ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 2
+Received length: 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-custom-symbol-repeated-pads.test.tsx:50:23)
+(fail) custom symbols retain every internally connected physical pad [50.61ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [1033.00ms]

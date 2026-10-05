@@ -1,0 +1,75 @@
+[
+  {
+    "package": "circuit-json",
+    "files": [
+      "src/pcb/pcb_solder_paste.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "props",
+    "files": [
+      "lib/components/solderpaste.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "circuit-json-util",
+    "files": [
+      "lib/transform-soup-elements.ts",
+      "tests/transform-paste-polygon.test.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "core",
+    "files": [
+      "lib/components/index.ts",
+      "lib/fiber/intrinsic-jsx.ts",
+      "lib/components/primitive-components/SolderPaste.ts",
+      "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts",
+      "tests/solderpaste-polygon-transform.test.tsx",
+      "tests/solderpaste-routing-neutrality.test.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "easyeda-converter",
+    "files": [
+      "lib/convert-easyeda-json-to-tscircuit-soup-json.ts",
+      "lib/schemas/package-detail-shape-schema.ts",
+      "lib/websafe/generate-footprint-tsx.ts",
+      "tests/source-paste-mask-field-fidelity.test.ts",
+      "tests/explicit-paste-regions.test.ts",
+      "tests/convert-to-ts/C20526-to-ts.test.ts",
+      "tests/convert-to-ts/C1525-to-ts.test.ts",
+      "tests/convert-to-ts/smd-resistors-to-ts.test.ts",
+      "tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts",
+      "tests/convert-to-ts/C57759-to-led.test.ts",
+      "tests/convert-to-ts/C12084-to-ts.test.ts",
+      "tests/convert-to-ts/C15464-to-ts.test.ts",
+      "tests/convert-to-ts/C3273487-to-ts.test.ts",
+      "tests/convert-to-ts/C57759-to-ts.test.ts",
+      "tests/convert-to-ts/C7203002-to-ts.test.ts",
+      "tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "circuit-json-to-gerber",
+    "files": [
+      "src/gerber/convert-soup-to-gerber-commands/index.ts",
+      "src/gerber/convert-soup-to-gerber-commands/defineAperturesForLayer.ts",
+      "tests/gerber/polygon-solder-paste.test.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "package": "circuit-to-svg",
+    "files": [
+      "lib/pcb/svg-object-fns/convert-circuit-json-to-solder-paste-mask.ts",
+      "tests/pcb/solder-paste-polygon.test.ts"
+    ],
+    "exit_code": 0
+  }
+]

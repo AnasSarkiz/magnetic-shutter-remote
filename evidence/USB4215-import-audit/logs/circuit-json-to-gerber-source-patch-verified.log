@@ -1,0 +1,3 @@
+patching file 'src/gerber/convert-soup-to-gerber-commands/defineAperturesForLayer.ts'
+patching file 'src/gerber/convert-soup-to-gerber-commands/index.ts'
+patching file 'tests/gerber/polygon-solder-paste.test.ts'

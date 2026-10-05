@@ -1,0 +1,41 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+30 |   expect(pads).toHaveLength(30)
+31 |   const emittedShapes = new Set(circuit.db.pcb_smtpad.list().map((pad) => pad.shape))
+32 |   for (const shape of ["rect", "rotated_rect", "circle", "pill", "rotated_pill"]) expect(emittedShapes.has(shape)).toBe(true)
+33 |   for (const pad of pads) {
+34 |     const { center, bounds, width, height } = pad._getPcbCircuitJsonBounds()
+35 |     expect(bounds.top).toBeGreaterThan(bounds.bottom)
+                            ^
+error: expect(received).toBeGreaterThan(expected)
+
+Expected: > -7
+Received: -8.2
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tests/repros/r7/mixed-pad-bounds-convention.test.tsx:35:24)
+(fail) SMT pad bounds use maximum Y for top in board space at every rotation and layer [214.59ms]
+
+tests/repros/r7/separated-mixed-ground-pads.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tests/repros/r7/__snapshots__/separated-mixed-ground-pads-pcb.snap.svg
+(pass) Separated mixed-shape pads retain two internally connected ports rather than being merged [12.98ms]
+
+tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:
+14 |   await circuit.renderUntilSettled()
+15 |   const pads = circuit.db.pcb_smtpad.list()
+16 |   const groundPads = pads.filter((pad) => pad.port_hints?.includes("pin2"))
+17 |   expect(pads).toHaveLength(6)
+18 |   expect(groundPads).toHaveLength(2)
+19 |   expect(groundPads[0].pcb_port_id).toBeTruthy()
+                                         ^
+error: expect(received).toBeTruthy()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r7--01a0f81f/tooling/r7-core-source/tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:19:37)
+(fail) C347356 overlapping rectangular and pill ground pads share one PCB port [28.96ms]
+
+ 1 pass
+ 2 fail
+ 24 expect() calls
+Ran 3 tests across 3 files. [779.00ms]

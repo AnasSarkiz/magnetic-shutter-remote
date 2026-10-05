@@ -1,0 +1,1513 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/generate-symbol-tsx.test.ts:
+(pass) keeps the rectangle primitive when its fill is none [25.37ms]
+(pass) keeps the rectangle primitive when its fill is #880000 [6.94ms]
+(pass) keeps the rectangle primitive when its fill is  [2.86ms]
+(pass) generates a centered symbol with positioned, aliased ports [3.37ms]
+(pass) transforms EasyEDA paths, arcs, and text into symbol-local coordinates [25.33ms]
+(pass) keeps imported crystal symbols on tscircuit's schematic grid [1.83ms]
+(pass) uses the symbol bounds when EasyEDA head coordinates are stale [1.66ms]
+(pass) maps duplicate EasyEDA symbol pin numbers to unused footprint ports [7.81ms]
+(pass) distinguishes custom symbols from chip box representations [27.47ms]
+
+tests/convert-package-rect.test.ts:
+(pass) emits package RECT shapes as silkscreen rectangles [1.21ms]
+(pass) renders package RECT shapes in the PCB snapshot [50.14ms]
+
+tests/normalize-symbol-name.test.ts:
+(pass) normalizeSymbolName > converts + to _POS
+(pass) normalizeSymbolName > converts - to _NEG
+(pass) normalizeSymbolName > handles whitespace around + and -
+(pass) normalizeSymbolName > preserves other names
+(pass) normalizeSymbolName > handles names containing + or - but not exactly equal
+(pass) normalizeSymbolName > handles empty strings
+
+tests/get-easyeda-pin-aliases.test.ts:
+(pass) converts external pin name PA0/RESET#/UPDI to connection aliases [0.38ms]
+(pass) converts external pin name #RST/NMI/SBWTDIO to connection aliases [0.02ms]
+(pass) converts external pin name PA0/RESET# to connection aliases
+(pass) converts external pin name P1.3/TA1.2/A3/C3 to connection aliases
+(pass) converts external pin name D+/D- to connection aliases
+(pass) converts external pin name SINEIN– to connection aliases [0.06ms]
+(pass) converts external pin name SINEIN− to connection aliases
+(pass) converts external pin name –IN/−OUT to connection aliases
+(pass) converts external pin name 3V3(OUT) to connection aliases
+(pass) converts external pin name (PA0) to connection aliases
+(pass) converts external pin name _READY_ to connection aliases
+(pass) converts external pin name 1&#96; to connection aliases [0.07ms]
+(pass) converts external pin name 2&#x60; to connection aliases [0.05ms]
+(pass) converts external pin name 1′ to connection aliases
+(pass) converts external pin name D&#43;/D&#8722; to connection aliases
+(pass) converts external pin name  / PA0 / / UPDI /  to connection aliases
+(pass) converts external pin name  to connection aliases
+(pass) converts external pin name +/- to connection aliases
+(pass) deduplicates aliases before distinguishing shared pin functions [0.05ms]
+
+tests/get-polarized-pin-metadata.test.ts:
+(pass) getPolarizedPinMetadata > normalizes anode pin 1
+(pass) getPolarizedPinMetadata > normalizes decorated cathode pin 1
+
+tests/arc-utils.test.ts:
+(pass) generateArcFromSweep > uses the near circle center for a small arc [0.44ms]
+(pass) generateArcFromSweep > uses the opposite circle center for a large arc
+
+tests/get-board-outline-polygons.test.ts:
+(pass) joins unordered reversed tracks and removes notch edge tabs [0.33ms]
+(pass) keeps disconnected closed outlines separate [0.11ms]
+(pass) does not invent a cutout from a line or an ambiguous open path [0.05ms]
+(pass) ignores branched outlines without losing a separate closed loop [0.04ms]
+
+tests/normalize-pin-labels.test.ts:
+(pass) normalizePinLabels > handles the documentation example correctly [0.17ms]
+(pass) normalizePinLabels > handles empty input array
+(pass) normalizePinLabels > handles pins with no labels
+(pass) normalizePinLabels > preserves unique non-numeric labels
+(pass) normalizePinLabels > normalizes leading hash active-low labels
+(pass) normalizePinLabels > normalizes trailing hash active-low labels without double-prefixing
+(pass) normalizePinLabels > deduplicates normalized active-low labels
+(pass) normalizePinLabels > handles multiple labels per pin [0.19ms]
+(pass) normalizePinLabels > handles duplicate numeric labels
+
+tests/browser-bundle-websafe-guard.test.ts:
+(pass) browser bundle websafe guard > browser build does not include known non-websafe runtime baggage [3984.28ms]
+
+tests/get-easyeda-cad-model-placement.test.ts:
+(pass) getCadModelOffsetMmFromBounds > derives XY placement from explicit bounds even when _objMetadata is missing [2.17ms]
+(pass) getCadModelOffsetMmFromBounds > rebases XY against recentered footprint bounds [0.58ms]
+
+tests/generate-footprint-tsx.test.ts:
+(pass) generates standalone oval holes [70.61ms]
+(pass) preserves fabrication and user notes in generated footprints [7.10ms]
+
+tests/convert-to-ts/C5830143-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C5830143-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 22.24% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C5830143-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5830143-to-ts.test.ts:25:29)
+(fail) should convert C5830143 into typescript file [1793.30ms]
+
+tests/convert-to-ts/c82173-to-ts.test.ts:
+(pass) generates the C82173 LED driver IC as a chip [3.38ms]
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C75749-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 45.73% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C75749-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C75749-to-ts.test.ts:25:29)
+(fail) should convert C75749 into typescript file [1417.34ms]
+
+tests/convert-to-ts/C9972-to-ts.test.ts:
+(pass) preserves the exact C9972 manufacturer part number [2.32ms]
+(pass) reports missing manufacturer part number metadata [1.38ms]
+
+tests/convert-to-ts/C335982-polarized-capacitor-repro.test.ts:
+(pass) preserves C335982's curved polarized capacitor plate [985.92ms]
+
+tests/convert-to-ts/C7434162-pin-labels-repro.test.ts:
+(pass) renders C7434162 pin 35 and 36 labels [950.80ms]
+
+tests/convert-to-ts/C96225-to-ts.test.ts:
+37 |   ).toHaveLength(6)
+38 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+39 |     import.meta.path,
+40 |     "C96225-diode-array-chip",
+41 |   )
+42 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 4.17% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C96225-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C96225-to-ts.test.ts:42:29)
+(fail) converts C96225 diode array into a six-pin chip [1110.65ms]
+
+tests/convert-to-ts/C284163-to-ts.test.ts:
+(pass) converts C284163 to a four-pin crystal [1.82ms]
+
+tests/convert-to-ts/C46497-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 16.09% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C46497-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46497-to-ts.test.ts:20:29)
+(fail) should convert C46497 into typescript file [1330.84ms]
+
+tests/convert-to-ts/C14877-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 10.55% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C14877-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877-to-ts.test.ts:20:29)
+(fail) should convert C14877 into typescript file [1244.63ms]
+
+tests/convert-to-ts/C20526-to-ts.test.ts:
+(pass) repro: converts C20526 with a schematic snapshot [1095.74ms]
+
+tests/convert-to-ts/C113367-overlapping-pin-labels.test.ts:
+(pass) reproduces overlapping pin labels in the C113367 custom symbol [1120.21ms]
+
+tests/convert-to-ts/C160354-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 33.98% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C160354-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C160354-to-ts.test.ts:20:29)
+(fail) should convert C160354 into typescript file [1128.62ms]
+
+tests/convert-to-ts/C6186-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 10.04% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C6186-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C6186-to-ts.test.ts:20:29)
+(fail) should convert C6186 into typescript file [1244.44ms]
+
+tests/convert-to-ts/C5378731-to-ts.test.ts:
+35 |   const circuitJson = await runTscircuitCode(
+36 |     wrapTsxWithBoardFor3dSnapshot(result),
+37 |   )
+38 |   expect(
+39 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+40 |   ).toMatchSvgSnapshot(import.meta.path)
+         ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C5378731-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5378731-to-ts.test.ts:40:5)
+(fail) imports C5378731 supplier fabrication notes into its footprint string [950.47ms]
+
+tests/convert-to-ts/C165948-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 22.32% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C165948-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C165948-to-ts.test.ts:20:29)
+(fail) should convert C165948 into typescript file [1168.32ms]
+
+tests/convert-to-ts/C19795120-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 6.77% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C19795120-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19795120-to-ts.test.ts:20:29)
+(fail) should convert C19795120 into typescript file [1047.07ms]
+
+tests/convert-to-ts/C157929-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 11.27% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C157929-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157929-to-ts.test.ts:20:29)
+(fail) should convert C157929 into typescript file [1394.61ms]
+
+tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts:
+119 |   expect(result).toContain('strokeWidth="0.0999998mm"')
+120 | 
+121 |   const generatedCircuitJson = await runTscircuitCode(
+122 |     wrapTsxWithBoardFor3dSnapshot(result),
+123 |   )
+124 |   expect(convertCircuitJsonToPcbSvg(generatedCircuitJson)).toMatchSvgSnapshot(
+                                                                 ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/c3178291-package-rect-round-trip-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts:124:60)
+(fail) preserves package RECT layer and line-width fields with correct stroke units [1019.40ms]
+
+tests/convert-to-ts/C1525-to-ts.test.ts:
+(pass) normalizes the U+00B5 micro symbol [1035.86ms]
+(pass) normalizes the U+03BC micro symbol [1093.16ms]
+(pass) converts C1525 to a capacitor with its exact footprint [1057.31ms]
+(pass) uses the native schematic symbol for an imported C1525 capacitor [1134.96ms]
+(pass) preserves imported capacitor polarity with the native symbol [957.89ms]
+
+tests/convert-to-ts/C265111-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 25.01% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C265111-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C265111-to-ts.test.ts:20:29)
+(fail) should convert C265111 into typescript file [1249.17ms]
+
+tests/convert-to-ts/C2941005-to-ts.test.ts:
+37 | 
+38 |   const circuitJson = await renderImportedSwitch()
+39 |   await expect(
+40 |     convertCircuitJsonToSchematicSvg(circuitJson),
+41 |   ).toMatchSvgSnapshot(import.meta.path, "C2941005-schematic")
+42 |   await expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2941005-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2941005-to-ts.test.ts:42:57)
+(fail) renders the C2941005 schematic and PCB [886.74ms]
+(pass) preserves all six C2941005 schematic terminals and their PCB pad mappings [957.85ms]
+
+tests/convert-to-ts/C136720-to-ts.test.ts:
+(pass) converts C136720 document-layer tracks to fabrication notes [16.51ms]
+113 |   const circuitJson = await runTscircuitCode(
+114 |     wrapTsxWithBoardFor3dSnapshot(result),
+115 |   )
+116 |   expect(
+117 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+118 |   ).toMatchSvgSnapshot(import.meta.path)
+          ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C136720-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C136720-to-ts.test.ts:118:5)
+(fail) should convert C136720 slide switch into a switch component with pin labels [1069.38ms]
+
+tests/convert-to-ts/C49234237-to-ts.test.ts:
+17 |   expect(result).not.toContain("<chip")
+18 | 
+19 |   const circuitJson = await runTscircuitCode(
+20 |     wrapTsxWithBoardFor3dSnapshot(result),
+21 |   )
+22 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C49234237-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C49234237-to-ts.test.ts:22:57)
+(fail) converts C49234237 into a pushbutton component [947.23ms]
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C309274-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 6.09% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C309274-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C309274-to-ts.test.ts:25:29)
+(fail) should convert C309274 into typescript file [1292.19ms]
+
+tests/convert-to-ts/infer-pin-attributes.test.ts:
+(pass) infers only unambiguous IC power, ground, and no-connect attributes [0.18ms]
+
+tests/convert-to-ts/C410353-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 33.99% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C410353-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C410353-to-ts.test.ts:20:29)
+(fail) should convert C410353 into typescript file [1145.52ms]
+
+tests/convert-to-ts/C105419-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 22.42% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C105419-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C105419-to-ts.test.ts:20:29)
+(fail) should convert C105419 into typescript file [1128.82ms]
+
+tests/convert-to-ts/C2765186-to-ts.test.ts:
+(pass) prefers schematic pin names over footprint pad identifiers [1096.20ms]
+
+tests/convert-to-ts/C9900017879-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C9900017879-to-ts-rotation.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C9900017879-to-ts.test.ts:21:51)
+(fail) should convert C9900017879 into typescript file [1349.80ms]
+
+tests/convert-to-ts/C2828420-to-ts.test.ts:
+35 |   expect(result).not.toContain("NaNmm")
+36 | 
+37 |   const circuitJson = await runTscircuitCode(
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2828420-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2828420-to-ts.test.ts:40:51)
+(fail) should convert C2828420 diode with metadata-derived pin labels [881.60ms]
+
+tests/convert-to-ts/C501008-mosfet-symbol-repro.test.ts:
+(pass) repro: C501008 STL130N6F7 MOSFET renders as an eight-pin chip [906.58ms]
+
+tests/convert-to-ts/switch-category.test.ts:
+(pass) does not treat Power Distribution Switches as a mechanical switch [0.37ms]
+(pass) does not treat Power-Distribution Switch as a mechanical switch [0.01ms]
+(pass) does not treat PMIC - Power Distribution Switches, Load Drivers as a mechanical switch
+(pass) does not treat Load Switches as a mechanical switch
+(pass) does not treat LOAD-SWITCH as a mechanical switch
+(pass) does not treat Analog Switches / Multiplexers as a mechanical switch
+(pass) does not treat Analog-Switch as a mechanical switch
+(pass) does not treat Switching Diodes as a mechanical switch
+(pass) does not treat Switch ICs as a mechanical switch
+(pass) retains mechanical Slide Switches categories [0.01ms]
+(pass) retains mechanical Toggle Switches categories
+(pass) retains mechanical DIP Switches categories [0.03ms]
+(pass) retains mechanical Key Switches categories
+(pass) retains mechanical Micro Switches categories
+(pass) retains mechanical Limit Switches categories [0.02ms]
+(pass) retains mechanical Power Toggle Switches categories
+(pass) ignores absent and non-string categories
+(pass) semiconductor tags override a generic switch category [1.39ms]
+(pass) semiconductor category metadata overrides generic switch tags [0.79ms]
+(pass) semiconductor Category metadata overrides generic switch tags [0.96ms]
+(pass) semiconductor LCSC Category metadata overrides generic switch tags [0.42ms]
+(pass) semiconductor JLCPCB Category metadata overrides generic switch tags [0.32ms]
+(pass) a semiconductor top-level category overrides generic switch tags [1.00ms]
+
+tests/convert-to-ts/usb-type-c-category.test.ts:
+(pass) USB-C supplier prefix and package classify a connector without category tags [5.35ms]
+
+tests/convert-to-ts/special-character-pin-labels.test.ts:
+(pass) preserves C472489 special-character pin labels [1068.81ms]
+(pass) preserves C14877 special-character pin labels [1026.06ms]
+(pass) preserves C2886621 special-character pin labels [1025.61ms]
+
+tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts:
+13 |   const result = await convertBetterEasyToTsx({ betterEasy })
+14 |   const circuitJson = await runTscircuitCode(
+15 |     wrapTsxWithBoardFor3dSnapshot(result),
+16 |   )
+17 | 
+18 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C19943592-pin1-footprint-repro.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts:18:51)
+(fail) renders the C19943592 pin 1 rectangular footprint pad [1107.41ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":60,"rotation":0} [5.16ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":72,"rotation":45} [3.64ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":72,"height":60,"rotation":90} [2.68ms]
+
+tests/convert-to-ts/C131337-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 40.80% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C131337-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C131337-to-ts.test.ts:20:29)
+(fail) should convert C131337 into typescript file [1279.26ms]
+
+tests/convert-to-ts/C2913206-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 29.76% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2913206-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2913206-to-ts.test.ts:20:29)
+(fail) should convert C2913206 into typescript file [1339.16ms]
+
+tests/convert-to-ts/C7519-schematic-view-repro.test.ts:
+(pass) renders C7519 with a white body and visible protection diodes [1216.40ms]
+
+tests/convert-to-ts/C2998002-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2998002-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2998002-to-ts.test.ts:21:57)
+(fail) should convert C2998002 into typescript file [1031.93ms]
+
+tests/convert-to-ts/C22446580-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 6.56% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C22446580-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580-to-ts.test.ts:20:29)
+(fail) should convert C22446580 into typescript file [1171.71ms]
+
+tests/convert-to-ts/C51950748-to-ts.test.ts:
+19 |   expect(result).not.toContain("NaNmm")
+20 | 
+21 |   const circuitJson = await runTscircuitCode(
+22 |     wrapTsxWithBoardFor3dSnapshot(result),
+23 |   )
+24 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C51950748-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C51950748-to-ts.test.ts:24:57)
+(fail) should convert C51950748 into typescript file [920.94ms]
+
+tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts:
+37 | 
+38 |   const generatedCircuitJson = await runTscircuitCode(
+39 |     wrapTsxWithBoardFor3dSnapshot(result),
+40 |   )
+41 | 
+42 |   expect(convertCircuitJsonToPcbSvg(generatedCircuitJson)).toMatchSvgSnapshot(
+                                                                ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/c165948-multiple-pin-aliases-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts:42:60)
+(fail) preserves all C165948 pin aliases in generated TSX [1079.21ms]
+
+tests/convert-to-ts/C281113-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C281113-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 3.18% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C281113-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C281113-to-ts.test.ts:25:29)
+(fail) should convert C281113 into typescript file [991.77ms]
+
+tests/convert-to-ts/C488251-pcb-view-repro.test.ts:
+ 9 | it("renders the C488251 PCB view", async () => {
+10 |   const betterEasy = EasyEdaJsonSchema.parse(chipRawEasy)
+11 |   const tsx = await convertBetterEasyToTsx({ betterEasy })
+12 |   const circuitJson = await runTscircuitCode(wrapTsxWithBoardFor3dSnapshot(tsx))
+13 | 
+14 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C488251-pcb-view.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C488251-pcb-view-repro.test.ts:14:51)
+(fail) renders the C488251 PCB view [1051.37ms]
+
+tests/convert-to-ts/smd-resistors-to-ts.test.ts:
+(pass) converts C17168 R0402 to a resistor [1023.44ms]
+(pass) converts C11702 R0402 to a resistor [1132.98ms]
+(pass) converts C25744 R0402 to a resistor [855.29ms]
+(pass) converts C2929994 R0402 to a resistor [1201.37ms]
+(pass) converts C107701 R0603 to a resistor [947.49ms]
+(pass) uses the native schematic symbol for an imported C107701 resistor [905.43ms]
+
+tests/convert-to-ts/C1985372-to-ts.test.ts:
+(pass) keeps C1985372 on tscircuit's schematic grid [1028.11ms]
+
+tests/convert-to-ts/C128415-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 10.34% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C128415-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C128415-to-ts.test.ts:20:29)
+(fail) should convert C128415 into typescript file [1204.37ms]
+
+tests/convert-to-ts/C3178291-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 10.98% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C3178291-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C3178291-to-ts.test.ts:20:29)
+(fail) should convert C3178291 into typescript file [1255.53ms]
+
+tests/convert-to-ts/C82650-to-ts.test.ts:
+38 |   ).toHaveLength(28)
+39 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+40 |     import.meta.path,
+41 |     "C82650-led-driver-chip",
+42 |   )
+43 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 21.15% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C82650-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C82650-to-ts.test.ts:43:29)
+(fail) converts C82650 LED display driver into a chip [1071.54ms]
+
+tests/convert-to-ts/C2055640-to-ts.test.ts:
+42 |     showCourtyards: true,
+43 |   })
+44 | 
+45 |   expect(pcbSvg).toContain("pcb-courtyard-outline")
+46 |   expect(pcbSvg).toContain('data-type="pcb_courtyard_outline"')
+47 |   expect(pcbSvg).toMatchSvgSnapshot(import.meta.path)
+                      ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2055640-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2055640-to-ts.test.ts:47:18)
+(fail) C2055640 should preserve courtyard outlines when round-tripping through TSX [1077.56ms]
+(pass) repro: C2055640 should preserve circular EasyEDA BGA pads [27.20ms]
+
+tests/convert-to-ts/C157947-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 61.63% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C157947-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C157947-to-ts.test.ts:20:29)
+(fail) should convert C157947 into typescript file [1061.78ms]
+
+tests/convert-to-ts/C22446580.test.ts:
+100 |   )
+101 | 
+102 |   const generatedCircuitJson = await runTscircuitCode(
+103 |     wrapTsxWithBoardFor3dSnapshot(result),
+104 |   )
+105 |   await expect(generatedCircuitJson).toMatch3dSnapshot(import.meta.path)
+                                           ^
+error: 
+
+Snapshot differs by 6.56% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C22446580-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C22446580.test.ts:105:38)
+(fail) should convert C22446580 into typescript file [1246.66ms]
+
+tests/convert-to-ts/C388883-to-ts.test.ts:
+(pass) preserves distinct C388883 terminals with encoded prime labels [994.38ms]
+
+tests/convert-to-ts/C139797-to-ts.test.ts:
+85 |   const circuitJson = await runTscircuitCode(
+86 |     wrapTsxWithBoardFor3dSnapshot(result),
+87 |   )
+88 |   expect(
+89 |     convertCircuitJsonToPcbSvg(circuitJson, { showCourtyards: true }),
+90 |   ).toMatchSvgSnapshot(import.meta.path)
+         ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C139797-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C139797-to-ts.test.ts:90:5)
+(fail) should convert C139797 tactile switch into a pushbutton component [1074.74ms]
+
+tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts:
+(pass) should include both obj and step cad model urls [1166.57ms]
+
+tests/convert-to-ts/C8545-to-ts.test.ts:
+23 |   )
+24 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+25 |     import.meta.path,
+26 |     "C8545-oversized-symbol-repro",
+27 |   )
+28 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C8545-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8545-to-ts.test.ts:28:51)
+(fail) repro: imports C8545 with its custom schematic symbol [1070.67ms]
+
+tests/convert-to-ts/C2041570-to-ts.test.ts:
+(pass) converts C2041570 to an inductor [911.40ms]
+
+tests/convert-to-ts/C2961147-to-ts.test.ts:
+36 |   )
+37 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+38 |     import.meta.path,
+39 |     "C2961147-to-ts-schematic",
+40 |   )
+41 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 54.17% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2961147-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2961147-to-ts.test.ts:41:29)
+(fail) should convert C2961147 into typescript file [1322.47ms]
+
+tests/convert-to-ts/C62857-to-ts.test.ts:
+(pass) converts C62857 capacitor array with its EasyEDA symbol [1147.47ms]
+
+tests/convert-to-ts/C8465-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 23.75% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C8465-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8465-to-ts.test.ts:20:29)
+(fail) should convert C8465 into typescript file [1367.82ms]
+
+tests/convert-to-ts/C158012-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 8.76% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C158012-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C158012-to-ts.test.ts:20:29)
+(fail) should convert C158012 into typescript file [1298.80ms]
+
+tests/convert-to-ts/C90683-to-ts.test.ts:
+(pass) renders all NN2-24S05C3N schematic pin labels [1389.53ms]
+
+tests/convert-to-ts/C14877.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 10.55% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C14877-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C14877.test.ts:21:29)
+(fail) should convert atmega328p into typescript file [1514.39ms]
+
+tests/convert-to-ts/C490691-active-low-labels.test.ts:
+22 | 
+23 |   const circuitJson = await runTscircuitCode(
+24 |     wrapTsxWithBoardFor3dSnapshot(result),
+25 |   )
+26 | 
+27 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C490691-active-low-labels-preserved.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C490691-active-low-labels.test.ts:27:57)
+(fail) preserves C490691 trailing-hash active-low pin names [980.67ms]
+
+tests/convert-to-ts/C490691-to-ts.test.ts:
+21 |     (element) => element.type === "source_port",
+22 |   )
+23 |   const noConnectPort = sourcePorts.find((element) => element.pin_number === 8)
+24 | 
+25 |   expect(noConnectPort?.do_not_connect).toBe(true)
+26 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 16.14% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C490691-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C490691-to-ts.test.ts:26:29)
+(fail) should convert C490691 into typescript file [1141.45ms]
+
+tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts:
+23 | 
+24 |   const circuitJson = await runTscircuitCode(
+25 |     wrapTsxWithBoardFor3dSnapshot(result),
+26 |   )
+27 | 
+28 |   await expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C472489-pin20-label-missing-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts:28:57)
+(fail) preserves C472489 slash-separated pin 20 label [1127.39ms]
+
+tests/convert-to-ts/C393941-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 23.38% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C393941-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C393941-to-ts.test.ts:20:29)
+(fail) should convert C393941 into typescript file [1378.46ms]
+
+tests/convert-to-ts/C57759-to-led.test.ts:
+(pass) should convert led category components to led elements [898.44ms]
+
+tests/convert-to-ts/C88224-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 14.70% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C88224-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C88224-to-ts.test.ts:20:29)
+(fail) should convert C88224 into typescript file [1204.71ms]
+
+tests/convert-to-ts/manufacturer-metadata.test.ts:
+(pass) SPDT import preserves all supplier symbol terminals and explicit topology [1.99ms]
+(pass) multi-terminal switch refuses an unverified default SPST topology [1.50ms]
+(pass) connector import carries verified mating direction in the footprint frame [1.14ms]
+(pass) invalid manufacturer metadata is rejected rather than dropped [0.54ms]
+(pass) connector classification preserves a supplier contact-switch symbol [2.57ms]
+
+tests/convert-to-ts/pushbutton-category.test.ts:
+(pass) should identify JLCPCB pushbutton metadata as pushbuttons [0.02ms]
+(pass) should identify JLCPCB switch metadata as switches
+(pass) should convert JLCPCB pushbutton metadata to pushbutton elements [949.77ms]
+
+tests/convert-to-ts/C8598-to-ts.test.ts:
+35 |   expect(result).not.toContain("NaNmm")
+36 | 
+37 |   const circuitJson = await runTscircuitCode(
+38 |     wrapTsxWithBoardFor3dSnapshot(result),
+39 |   )
+40 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C8598-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C8598-to-ts.test.ts:40:51)
+(fail) should normalize decorated C8598 diode polarity labels [1036.51ms]
+
+tests/convert-to-ts/custom-symbol-refdes.test.ts:
+(pass) a transistor symbol without supplier text receives a dynamic reference [1.81ms]
+
+tests/convert-to-ts/C19076967-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 37.01% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C19076967-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C19076967-to-ts.test.ts:20:29)
+(fail) should convert C19076967 into typescript file [1098.97ms]
+
+tests/convert-to-ts/c2943786-to-ts.test.ts:
+19 |   expect(result).not.toContain("NaNmm")
+20 | 
+21 |   const circuitJson = await runTscircuitCode(
+22 |     wrapTsxWithBoardFor3dSnapshot(result),
+23 |   )
+24 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/c2943786-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/c2943786-to-ts.test.ts:24:51)
+(fail) should import C2943786 into a snapshotted typescript component [1467.70ms]
+
+tests/convert-to-ts/C46749-to-ts.test.ts:
+26 |   const groundPort = sourcePorts.find((element) => element.pin_number === 1)
+27 |   const powerPort = sourcePorts.find((element) => element.pin_number === 8)
+28 | 
+29 |   expect(groundPort?.requires_ground).toBe(true)
+30 |   expect(powerPort?.requires_power).toBe(true)
+31 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 20.27% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C46749-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C46749-to-ts.test.ts:31:29)
+(fail) should convert C46749 into typescript file [1280.87ms]
+
+tests/convert-to-ts/additional-payload-variants.test.ts:
+33 | 
+34 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+35 |     import.meta.path,
+36 |     "additional-payload-variants-schematic",
+37 |   )
+38 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/additional-payload-variants-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/additional-payload-variants.test.ts:38:51)
+(fail) renders a payload with issue #464 variants [1009.33ms]
+
+tests/convert-to-ts/C12084-to-ts.test.ts:
+(pass) should convert C12084 into typescript file [1085.39ms]
+
+tests/convert-to-ts/thermostat-category.test.ts:
+(pass) semiconductor thermostat switches are not mechanical switches [0.04ms]
+
+tests/convert-to-ts/C1046-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C1046-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 3.18% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C1046-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C1046-to-ts.test.ts:25:29)
+(fail) should convert C1046 into typescript file [1108.86ms]
+
+tests/convert-to-ts/C23689428-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 20.96% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C23689428-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C23689428-to-ts.test.ts:20:29)
+(fail) should convert C23689428 into typescript file [1390.13ms]
+
+tests/convert-to-ts/C561765-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 31.73% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C561765-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C561765-to-ts.test.ts:20:29)
+(fail) should convert C561765 into typescript file [1168.75ms]
+
+tests/convert-to-ts/C2040-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 13.51% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2040-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2040-to-ts.test.ts:20:29)
+(fail) should convert C2040 into typescript file [1524.82ms]
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+22 |     import.meta.path,
+23 |     "C18185602-to-ts-schematic",
+24 |   )
+25 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 1.39% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C18185602-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C18185602-to-ts.test.ts:25:29)
+(fail) should convert C18185602 into typescript file [1093.33ms]
+
+tests/convert-to-ts/C2838502-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 32.47% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2838502-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2838502-to-ts.test.ts:20:29)
+(fail) should convert C2838502 into typescript file [1403.91ms]
+
+tests/convert-to-ts/C2687116-to-ts.test.ts:
+(pass) infers VBUS power metadata for C2687116 [1017.85ms]
+
+tests/convert-to-ts/C2848306-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 3.26% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2848306-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2848306-to-ts.test.ts:20:29)
+(fail) should convert C2848306 into typescript file [1238.44ms]
+
+tests/convert-to-ts/C2979182-to-ts.test.ts:
+22 |   expect(result).not.toContain("NaNmm")
+23 | 
+24 |   const circuitJson = await runTscircuitCode(
+25 |     wrapTsxWithBoardFor3dSnapshot(result),
+26 |   )
+27 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 42.67% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2979182-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2979182-to-ts.test.ts:27:29)
+(fail) should convert C2979182 / MY-18650-02 into typescript file [1005.09ms]
+
+tests/convert-to-ts/C55266-power-distribution-switch.test.ts:
+(pass) C55266 retains six source pins and their PCB pad mappings [910.26ms]
+59 | test("renders the C55266 schematic and PCB", async () => {
+60 |   const circuitJson = await renderTps2553()
+61 |   await expect(
+62 |     convertCircuitJsonToSchematicSvg(circuitJson),
+63 |   ).toMatchSvgSnapshot(import.meta.path, "C55266-schematic")
+64 |   await expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C55266-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C55266-power-distribution-switch.test.ts:64:57)
+(fail) renders the C55266 schematic and PCB [953.35ms]
+(pass) C55266 exposes all six IC pins in the schematic [976.84ms]
+(pass) connects C55266's IN signal [1034.45ms]
+(pass) connects C55266's GND signal [1039.58ms]
+(pass) connects C55266's EN signal [1045.16ms]
+(pass) connects C55266's FAULT signal [1051.46ms]
+(pass) connects C55266's ILIM signal [1041.02ms]
+(pass) connects C55266's OUT signal [1056.39ms]
+
+tests/convert-to-ts/C15464-to-ts.test.ts:
+(pass) normalizes C15464 active-low pin aliases [1080.44ms]
+
+tests/convert-to-ts/standard-dip-switches-repro.test.ts:
+(pass) preserves the imported symbol for a Standard DIP switch [1044.22ms]
+
+tests/convert-to-ts/C5248081-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path, {
+                                 ^
+error: 
+
+Snapshot differs by 21.91% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C5248081-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C5248081-to-ts.test.ts:20:29)
+(fail) should convert C5248081 into typescript file [1311.34ms]
+
+tests/convert-to-ts/C2879827-to-ts.test.ts:
+(pass) C2879827 preserves the source notch geometry during parsing [0.06ms]
+(pass) C2879827 converts BoardOutline tracks into one cutout [1.17ms]
+54 |   expect(tsx).toContain("<silkscreenpath")
+55 |   expect(tsx).toContain("<cutout")
+56 |   const rendered = await runTscircuitCode(wrapTsxWithBoardFor3dSnapshot(tsx))
+57 |   expect(
+58 |     convertCircuitJsonToPcbSvg(rendered, { showCourtyards: true }),
+59 |   ).toMatchSvgSnapshot(import.meta.path)
+         ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2879827-to-ts.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2879827-to-ts.test.ts:59:5)
+(fail) C2879827 preserves the board cutout in generated component TSX [1003.17ms]
+(pass) C2879827 must retain its board notch as cutout geometry [0.92ms]
+(pass) TSX generator must preserve an existing pcb_cutout [0.07ms]
+
+tests/convert-to-ts/C2886621-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 8.53% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2886621-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2886621-to-ts.test.ts:20:29)
+(fail) should convert C2886621 into typescript file [1262.97ms]
+
+tests/convert-to-ts/C3273487-to-ts.test.ts:
+(pass) converts C3273487 coupled inductor without losing terminals [1052.14ms]
+
+tests/convert-to-ts/C113367-to-ts.test.ts:
+23 |   )
+24 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+25 |     import.meta.path,
+26 |     "C113367-to-ts-schematic",
+27 |   )
+28 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 7.02% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C113367-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C113367-to-ts.test.ts:28:29)
+(fail) should convert C113367 into typescript file [1202.82ms]
+(pass) C113367 generates one schematic port for each footprint pin [1095.89ms]
+
+tests/convert-to-ts/C57759-to-ts.test.ts:
+(pass) should convert diode category components to diode elements [993.59ms]
+
+tests/convert-to-ts/C60708-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 9.67% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C60708-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C60708-to-ts.test.ts:20:29)
+(fail) should convert C60708 into typescript file [1188.49ms]
+
+tests/convert-to-ts/C7203002-to-ts.test.ts:
+(pass) should convert C7203002 into typescript file [994.40ms]
+
+tests/convert-to-ts/C472489-to-ts.test.ts:
+15 |   expect(result).not.toContain("NaNmm")
+16 | 
+17 |   const circuitJson = await runTscircuitCode(
+18 |     wrapTsxWithBoardFor3dSnapshot(result),
+19 |   )
+20 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 13.18% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C472489-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C472489-to-ts.test.ts:20:29)
+(fail) should convert C472489 into typescript file [1277.22ms]
+
+tests/convert-to-ts/C404969-to-ts.test.ts:
+(pass) converts C404969 to a connector [1147.07ms]
+
+tests/convert-to-ts/c609652-pin-label.test.ts:
+(pass) preserves C609652's PA0/RESET#/UPDI label on pin 16 [1087.88ms]
+(pass) connects C609652 pin 16 using PA0 [1127.15ms]
+(pass) connects C609652 pin 16 using N_RESET [1042.12ms]
+(pass) connects C609652 pin 16 using UPDI [1051.51ms]
+
+tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts:
+(pass) preserves C2848306 EasyEDA-hidden EP pin visibility [949.61ms]
+
+tests/convert-to-ts/C2652953-to-ts.test.ts:
+31 |   expect(result).not.toContain("NaNmm")
+32 | 
+33 |   // const circuitJson = await runTscircuitCode(
+34 |   //   wrapTsxWithBoardFor3dSnapshot(result),
+35 |   // )
+36 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 9.58% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/C2652953-to-ts-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/C2652953-to-ts.test.ts:36:29)
+(fail) should convert C2652953 into typescript file [1117.48ms]
+
+tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:
+29 |   )
+30 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+31 |     import.meta.path,
+32 |     `${partNumber.toLowerCase()}-l0805-inductor-as-chip-schematic`,
+33 |   )
+34 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/c1046-l0805-inductor-as-chip-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:34:51)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:52:24)
+(fail) reproduces C1046 L0805 inductor being generated as a generic chip [1204.85ms]
+29 |   )
+30 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+31 |     import.meta.path,
+32 |     `${partNumber.toLowerCase()}-l0805-inductor-as-chip-schematic`,
+33 |   )
+34 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/__snapshots__/c281113-l0805-inductor-as-chip-pcb.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:34:51)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:114:24)
+(fail) reproduces C281113 L0805 inductor being generated as a generic chip [875.30ms]
+
+tests/convert-to-soup-tests/C160354.test.ts:
+(pass) C160354 (JST B4B-PH-SM4-TB) should generate Circuit JSON without errors [12.46ms]
+
+tests/convert-to-soup-tests/convert-usb-c-to-soup.test.ts:
+(pass) should convert a usb-c footprint (C2765186) to tscircuit soup json [17.34ms]
+
+tests/convert-to-soup-tests/normalize-plus-minus.test.ts:
+(pass) normalizes plus and minus symbols in pin names during conversion [5.59ms]
+(pass) normalizes plus and minus symbols in package detail silkscreen text during conversion [2.12ms]
+
+tests/convert-to-soup-tests/declared-slot-length.test.ts:
+(pass) preserves declared 1.2 mm slot at 0 degrees [1.46ms]
+(pass) preserves declared 1.2 mm slot at 90 degrees [0.50ms]
+(pass) preserves declared 1.2 mm slot at 180 degrees [0.90ms]
+(pass) preserves declared 1.2 mm slot at 270 degrees [0.36ms]
+(pass) oval copper does not imply a slotted drill [1.19ms]
+
+tests/convert-to-soup-tests/esp32-to-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer (smd) and convert to tscircuit soup [15.90ms]
+
+tests/convert-to-soup-tests/c5184526.test.ts:
+(pass) C5184526 should have two holes [15.72ms]
+
+tests/convert-to-soup-tests/c2848306-to-soup.test.ts:
+(pass) C2848306 should parse successfully with 'none' visibility enum [1.34ms]
+
+tests/convert-to-soup-tests/bottom-layer-track.test.ts:
+(pass) preserves the side of bottom-layer tracks [15.86ms]
+
+tests/convert-to-soup-tests/c2055640-courtyard.test.ts:
+(pass) C2055640 should import courtyard outlines with non-zero height and render them [17.63ms]
+
+tests/convert-to-soup-tests/c19795120-cutout.test.ts:
+(pass) C19795120 should generate a pcb_cutout [14.02ms]
+
+tests/convert-to-soup-tests/convert-easyeda-to-tscircuit-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer and convert to tscircuit soup [15.35ms]
+
+tests/convert-to-soup-tests/c57759.test.ts:
+(pass) C57759 should generate Circuit Json without errors [11.68ms]
+(pass) C57759 should parse PT shape correctly [0.72ms]
+
+tests/convert-to-soup-tests/C265111.test.ts:
+(pass) C265111 (JST SM08B-GHS-TB) should generate Circuit JSON without errors [13.41ms]
+
+tests/convert-to-soup-tests/C8465.test.ts:
+(pass) C8465 (JST B2B-EH-A) should generate Circuit JSON without errors [14.05ms]
+
+tests/convert-to-soup-tests/bottom-layer-arc.test.ts:
+(pass) preserves the side of bottom-layer arcs [17.53ms]
+
+tests/convert-to-soup-tests/c46497.test.ts:
+(pass) C46497 should generate Circuit Json with vias [16.45ms]
+
+tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:
+(pass) uses C165948 CAD model bounds instead of its PCB footprint size [707.96ms]
+
+tests/convert-to-soup-tests/C131337.test.ts:
+(pass) C131337 (JST B2B-PH-K-S) should generate Circuit JSON without errors [34.02ms]
+
+tests/convert-to-soup-tests/diode-polarity-port-hints.test.ts:
+(pass) preserves normalized diode polarity hints on PCB pads [1.35ms]
+
+tests/convert-to-soup-tests/plated-hole-layers.test.ts:
+(pass) through-hole pads span both outer copper layers [2.31ms]
+
+tests/convert-to-soup-tests/c4355039-to-soup.test.ts:
+(pass) should parse easyeda json for c4355039 and convert to tscircuit soup [13.30ms]
+
+tests/convert-to-soup-tests/fallback-courtyard-model-outline.test.ts:
+(pass) uses the FS3000 physical body for its fallback courtyard [1.90ms]
+(pass) excludes the VCNL4040 silkscreen marker from its fallback courtyard [0.96ms]
+
+tests/convert-to-soup-tests/C157929.test.ts:
+(pass) C157929 (JST B3B-XH-A) should generate Circuit JSON without errors [12.90ms]
+
+tests/convert-to-soup-tests/c88224.test.ts:
+(pass) should parse easyeda json for a c88224 and convert to tscircuit soup [16.91ms]
+
+tests/convert-to-soup-tests/c3178291-to-soup.test.ts:
+(pass) should convert c3178291 with polygon pads [14.79ms]
+
+tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:
+19 |   const silkscreenText = circuitJson.find(
+20 |     (element) => element.type === "pcb_silkscreen_text",
+21 |   )
+22 | 
+23 |   expect(silkscreenText).toMatchObject({ ccw_rotation: 90 })
+24 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+                                                       ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-soup-tests/__snapshots__/silkscreen-text-rotation.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:24:51)
+(fail) preserves rotated silkscreen text in the PCB snapshot [36.71ms]
+
+tests/convert-to-soup-tests/duplicate-pad-numbers.test.ts:
+(pass) keeps repeated EasyEDA pad numbers on one logical pin [6.36ms]
+
+tests/convert-to-soup-tests/C158012.test.ts:
+(pass) C158012 (JST B2B-XH-A) should generate Circuit JSON without errors [13.81ms]
+
+tests/fetch-tests/c41430893.test.ts:
+(pass) should fetch correct part for C41430893 [362.44ms]
+18 | 
+19 |   expect(convertCircuitJsonToPcbSvg(circuitJson)).toMatchSvgSnapshot(
+20 |     import.meta.path,
+21 |   )
+22 | 
+23 |   await expect(circuitJson).toMatch3dSnapshot(import.meta.path)
+                                 ^
+error: 
+
+Snapshot differs by 3.52% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/fetch-tests/__snapshots__/c41430893-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/easyeda-baseline/tests/fetch-tests/c41430893.test.ts:23:29)
+(fail) C41430893 should generate Circuit Json without errors [590.41ms]
+
+tests/fetch-tests/c1555-0402-repro.test.ts:
+(pass) rejects C1555 when EasyEDA only returns fuzzy value matches [0.70ms]
+(pass) snapshots the misleading C1555 search candidate [16.72ms]
+
+tests/fetch-tests/rate-limit-403.test.ts:
+(pass) surfaces a search-request HTTP 403 as rate limiting, not a component lookup failure [0.12ms]
+(pass) surfaces a component-details HTTP 403 as rate limiting [0.15ms]
+(pass) keeps 'Component not found' distinct from rate limiting [0.03ms]
+(pass) includes the HTTP status in non-403 search failures [0.08ms]
+
+tests/fetch-tests/missing-library-component.test.ts:
+(pass) reports when S4 has no EasyEDA library search result [0.60ms]
+(pass) reports when EasyEDA rejects the search request [0.04ms]
+
+tests/fetch-tests/invalid-search-response.test.ts:
+(pass) rejects null response before fetching geometry [0.46ms]
+(pass) rejects missing success flag before fetching geometry [0.07ms]
+(pass) rejects string success flag before fetching geometry [0.02ms]
+(pass) rejects missing results before fetching geometry
+(pass) rejects missing lists before fetching geometry [0.06ms]
+(pass) rejects non-array component list before fetching geometry [0.02ms]
+(pass) rejects component without a UUID before fetching geometry [0.05ms]
+(pass) rejects API rejection even with a nonempty result list before fetching geometry [0.03ms]
+
+tests/fetch-tests/exact-search-response.test.ts:
+(pass) preserves exact matching through supplier parameter [0.45ms]
+(pass) preserves exact matching through lcsc number
+(pass) preserves exact matching through szlcsc number
+
+tests/fetch-tests/c2040.test.ts:
+(pass) should fetch correct part for C2040 [535.79ms]
+
+tests/cli-tests/download-error-exit.test.ts:
+(pass) download failure exits nonzero and writes no supplier footprint [97.32ms]
+
+tests/parse-tests/malformed-schema-variants.test.ts:
+(pass) coerces a numeric-string szlcsc id [1.04ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [0.54ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [0.74ms]
+(pass) accepts an absent dataStr.head.utime value () [0.37ms]
+(pass) normalizes text alignment "P" to left alignment [1.11ms]
+(pass) normalizes additional payload variants from issue #464 [0.68ms]
+
+tests/parse-tests/rk3566-import-regression.test.ts:
+(pass) parses footprint-only parts with incomplete schematic metadata [0.46ms]
+(pass) preserves exponent-like BGA pad identifiers and generates unique ports [0.46ms]
+(pass) keeps ordinary decimal pad identifiers numeric
+
+tests/parse-tests/single-letter-shape-schema.test.ts:
+(pass) parses examples for single letter shape schema [0.37ms]
+(pass) normalizes literal undefined optional text fields from EasyEDA text shapes
+(pass) normalizes whitespace-only text metadata from C60708
+(pass) still rejects unexpected fontStyle values
+(pass) parses schematic drawing colors, paths, and pin stems [0.58ms]
+
+tests/parse-tests/parse-c46497.test.ts:
+(pass) should parse easyeda json for C46497 with VIA [2.59ms]
+
+tests/parse-tests/parse-c4355039.test.ts:
+(pass) should parse easyeda json for a c4355039 [0.52ms]
+
+tests/parse-tests/parse-c124375.test.ts:
+(pass) should parse easyeda json for a c124375 [0.33ms]
+
+tests/parse-tests/pin-label-plus-minus.test.ts:
+(pass) converts trailing plus and minus in pin labels
+(pass) normalizes voltage pin labels with leading plus
+
+tests/parse-tests/parse-usb-c.test.ts:
+(pass) should parse easyeda json for a mounted usb c plug [1.45ms]
+
+tests/parse-tests/parse-esp32.test.ts:
+(pass) should parse easyeda json for a 555 timer [2.21ms]
+
+tests/parse-tests/parse-c124352.test.ts:
+(pass) should parse easyeda json for a C124352 [1.26ms]
+
+tests/parse-tests/parse-555-timer-json.test.ts:
+(pass) should parse easyeda json for a 555 timer [0.85ms]
+
+tests/parse-tests/pin-label-hash.test.ts:
+(pass) converts trailing # in pin labels to active-low N_ prefix [0.10ms]
+
+72 tests failed:
+(fail) should convert C5830143 into typescript file [1793.30ms]
+(fail) should convert C75749 into typescript file [1417.34ms]
+(fail) converts C96225 diode array into a six-pin chip [1110.65ms]
+(fail) should convert C46497 into typescript file [1330.84ms]
+(fail) should convert C14877 into typescript file [1244.63ms]
+(fail) should convert C160354 into typescript file [1128.62ms]
+(fail) should convert C6186 into typescript file [1244.44ms]
+(fail) imports C5378731 supplier fabrication notes into its footprint string [950.47ms]
+(fail) should convert C165948 into typescript file [1168.32ms]
+(fail) should convert C19795120 into typescript file [1047.07ms]
+(fail) should convert C157929 into typescript file [1394.61ms]
+(fail) preserves package RECT layer and line-width fields with correct stroke units [1019.40ms]
+(fail) should convert C265111 into typescript file [1249.17ms]
+(fail) renders the C2941005 schematic and PCB [886.74ms]
+(fail) should convert C136720 slide switch into a switch component with pin labels [1069.38ms]
+(fail) converts C49234237 into a pushbutton component [947.23ms]
+(fail) should convert C309274 into typescript file [1292.19ms]
+(fail) should convert C410353 into typescript file [1145.52ms]
+(fail) should convert C105419 into typescript file [1128.82ms]
+(fail) should convert C9900017879 into typescript file [1349.80ms]
+(fail) should convert C2828420 diode with metadata-derived pin labels [881.60ms]
+(fail) renders the C19943592 pin 1 rectangular footprint pad [1107.41ms]
+(fail) should convert C131337 into typescript file [1279.26ms]
+(fail) should convert C2913206 into typescript file [1339.16ms]
+(fail) should convert C2998002 into typescript file [1031.93ms]
+(fail) should convert C22446580 into typescript file [1171.71ms]
+(fail) should convert C51950748 into typescript file [920.94ms]
+(fail) preserves all C165948 pin aliases in generated TSX [1079.21ms]
+(fail) should convert C281113 into typescript file [991.77ms]
+(fail) renders the C488251 PCB view [1051.37ms]
+(fail) should convert C128415 into typescript file [1204.37ms]
+(fail) should convert C3178291 into typescript file [1255.53ms]
+(fail) converts C82650 LED display driver into a chip [1071.54ms]
+(fail) C2055640 should preserve courtyard outlines when round-tripping through TSX [1077.56ms]
+(fail) should convert C157947 into typescript file [1061.78ms]
+(fail) should convert C22446580 into typescript file [1246.66ms]
+(fail) should convert C139797 tactile switch into a pushbutton component [1074.74ms]
+(fail) repro: imports C8545 with its custom schematic symbol [1070.67ms]
+(fail) should convert C2961147 into typescript file [1322.47ms]
+(fail) should convert C8465 into typescript file [1367.82ms]
+(fail) should convert C158012 into typescript file [1298.80ms]
+(fail) should convert atmega328p into typescript file [1514.39ms]
+(fail) preserves C490691 trailing-hash active-low pin names [980.67ms]
+(fail) should convert C490691 into typescript file [1141.45ms]
+(fail) preserves C472489 slash-separated pin 20 label [1127.39ms]
+(fail) should convert C393941 into typescript file [1378.46ms]
+(fail) should convert C88224 into typescript file [1204.71ms]
+(fail) should normalize decorated C8598 diode polarity labels [1036.51ms]
+(fail) should convert C19076967 into typescript file [1098.97ms]
+(fail) should import C2943786 into a snapshotted typescript component [1467.70ms]
+(fail) should convert C46749 into typescript file [1280.87ms]
+(fail) renders a payload with issue #464 variants [1009.33ms]
+(fail) should convert C1046 into typescript file [1108.86ms]
+(fail) should convert C23689428 into typescript file [1390.13ms]
+(fail) should convert C561765 into typescript file [1168.75ms]
+(fail) should convert C2040 into typescript file [1524.82ms]
+(fail) should convert C18185602 into typescript file [1093.33ms]
+(fail) should convert C2838502 into typescript file [1403.91ms]
+(fail) should convert C2848306 into typescript file [1238.44ms]
+(fail) should convert C2979182 / MY-18650-02 into typescript file [1005.09ms]
+(fail) renders the C55266 schematic and PCB [953.35ms]
+(fail) should convert C5248081 into typescript file [1311.34ms]
+(fail) C2879827 preserves the board cutout in generated component TSX [1003.17ms]
+(fail) should convert C2886621 into typescript file [1262.97ms]
+(fail) should convert C113367 into typescript file [1202.82ms]
+(fail) should convert C60708 into typescript file [1188.49ms]
+(fail) should convert C472489 into typescript file [1277.22ms]
+(fail) should convert C2652953 into typescript file [1117.48ms]
+(fail) reproduces C1046 L0805 inductor being generated as a generic chip [1204.85ms]
+(fail) reproduces C281113 L0805 inductor being generated as a generic chip [875.30ms]
+(fail) preserves rotated silkscreen text in the PCB snapshot [36.71ms]
+(fail) C41430893 should generate Circuit Json without errors [590.41ms]
+
+ 237 pass
+ 72 fail
+ 24 snapshots, 1207 expect() calls
+Ran 309 tests across 165 files. [144.58s]

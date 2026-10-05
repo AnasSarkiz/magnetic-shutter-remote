@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-symbol-reference-owner.test.tsx:
+12 |     </symbol>} />
+13 |   </board>)
+14 |   circuit.render()
+15 |   const component = circuit.db.schematic_component.list()[0]!
+16 |   const referenceText = circuit.db.schematic_text.list().find((text) => text.text === "Q1")!
+17 |   expect(referenceText.schematic_component_id).toBe(component.schematic_component_id)
+                                                    ^
+error: expect(received).toBe(expected)
+
+Expected: "schematic_component_0"
+Received: undefined
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/core/tests/repros/repro-symbol-reference-owner.test.tsx:17:48)
+(fail) reference text outside a custom symbol body retains its component association [20.02ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [870.00ms]

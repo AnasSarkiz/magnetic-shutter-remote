@@ -1,0 +1,17 @@
+$ tsup-node src/index.ts src/cli.ts --format esm --dts --sourcemap
+CLI Building entry: src/cli.ts, src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js              932.00 B
+ESM dist/cli.js                1.22 KB
+ESM dist/chunk-FJWGTRPI.js     145.82 KB
+ESM dist/index.js.map          71.00 B
+ESM dist/cli.js.map            2.14 KB
+ESM dist/chunk-FJWGTRPI.js.map 293.24 KB
+ESM ⚡️ Build success in 511ms
+DTS ⚡️ Build success in 4117ms
+DTS dist/cli.d.ts   20.00 B
+DTS dist/index.d.ts 24.92 KB

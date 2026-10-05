@@ -1,0 +1,6 @@
+Classified manufacturing failures: 5
+{'rule': 'npth_all_copper', 'a': 'pcb_hole_0', 'b': 'pcb_smtpad_0:top', 'gap_mm': 0.17528762259937922, 'minimum_mm': 0.2}
+{'rule': 'npth_all_copper', 'a': 'pcb_hole_1', 'b': 'pcb_smtpad_2:top', 'gap_mm': 0.1752821681829891, 'minimum_mm': 0.2}
+{'rule': 'outer_drill_track', 'a': 'pcb_via_60', 'b': 'source_net_0_mst29_0:top', 'gap_mm': 0.16499678536605242, 'minimum_mm': 0.2}
+{'rule': 'hole_hole', 'a': 'pcb_hole_3', 'b': 'pcb_via_5', 'gap_mm': 0.39957509204201597, 'minimum_mm': 0.45}
+{'rule': 'same_net_separate_tracks', 'a': 'source_net_0_mst15_0', 'b': 'source_net_0_mst19_0', 'gap_mm': 0.00936815312540229, 'minimum_mm': 0.25}

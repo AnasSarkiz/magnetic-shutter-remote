@@ -1,0 +1,53 @@
+[
+  {
+    "source_id": "pcb_silkscreen_path_0",
+    "route": [
+      {
+        "x": -15.1,
+        "y": 17.9
+      },
+      {
+        "x": -13.9,
+        "y": 17.9
+      }
+    ],
+    "layer": "top",
+    "minimum_stroke_mm": 0.18,
+    "mask_gap_mm": 1.0849399999999993,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_path_1",
+    "route": [
+      {
+        "x": -14.5,
+        "y": 17.3
+      },
+      {
+        "x": -14.5,
+        "y": 18.5
+      }
+    ],
+    "layer": "top",
+    "minimum_stroke_mm": 0.18,
+    "mask_gap_mm": 0.4849400000000017,
+    "outside_outline_mm2": 0.0
+  },
+  {
+    "source_id": "pcb_silkscreen_path_2",
+    "route": [
+      {
+        "x": -13.1,
+        "y": 17.9
+      },
+      {
+        "x": -11.9,
+        "y": 17.9
+      }
+    ],
+    "layer": "top",
+    "minimum_stroke_mm": 0.18,
+    "mask_gap_mm": 1.0849399999999993,
+    "outside_outline_mm2": 0.0
+  }
+]

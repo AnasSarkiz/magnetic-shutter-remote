@@ -1,0 +1,6 @@
+board:
+  name: grip_shutter
+  full_name: Magnetic shutter remote R1 E73-2G4M08S1C
+  vendor: others
+  socs:
+    - name: nrf52840

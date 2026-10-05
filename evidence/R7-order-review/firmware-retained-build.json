@@ -1,0 +1,26 @@
+{
+  "artifacts": [
+    {
+      "file": "firmware/artifacts/zephyr.hex",
+      "expected_sha256": "f204524720f7483e1d58cc4ede7781d8aab01f3f5bbab5fa4f1d57bd22802651",
+      "actual_sha256": "f204524720f7483e1d58cc4ede7781d8aab01f3f5bbab5fa4f1d57bd22802651",
+      "pass": true
+    },
+    {
+      "file": "firmware/artifacts/zephyr.bin",
+      "expected_sha256": "406b0058215e1644fb607f21a93fae51d5ae54320f1ecf6c3a14951bc3cd2871",
+      "actual_sha256": "406b0058215e1644fb607f21a93fae51d5ae54320f1ecf6c3a14951bc3cd2871",
+      "pass": true
+    },
+    {
+      "file": "firmware/artifacts/zephyr.elf",
+      "expected_sha256": "d7e7a6141d21b21e637c9ffc30ef01630b91392f7b763f2a71a40bb9de715fbd",
+      "actual_sha256": "d7e7a6141d21b21e637c9ffc30ef01630b91392f7b763f2a71a40bb9de715fbd",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "build": "Retained successful R6 build; firmware and final GPIO unchanged. No new firmware build claimed.",
+  "flash_bytes": 164660,
+  "ram_bytes": 26796
+}

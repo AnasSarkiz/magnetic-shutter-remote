@@ -1,0 +1,12 @@
+$ tsup-node ./src/index.ts --format esm --dts --sourcemap
+CLI Building entry: src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.0
+CLI Target: es2022
+ESM Build start
+ESM dist/index.mjs     186.58 KB
+ESM dist/index.mjs.map 527.49 KB
+ESM ⚡️ Build success in 371ms
+DTS Build start
+DTS ⚡️ Build success in 22945ms
+DTS dist/index.d.mts 3.35 MB

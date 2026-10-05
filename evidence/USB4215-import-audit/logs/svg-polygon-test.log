@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/pcb/solder-paste-polygon.test.ts:
+Writing snapshot to /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/evidence/USB4215-import-audit/toolchain/circuit-to-svg/tests/pcb/__snapshots__/solder-paste-polygon.snap.svg
+(pass) renders polygon paste in the PCB and stencil views without replacing its outline [6.26ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [170.00ms]

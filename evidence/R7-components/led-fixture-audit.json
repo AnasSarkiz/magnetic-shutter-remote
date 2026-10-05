@@ -1,0 +1,83 @@
+{
+  "status": "PASS — ISOLATED LED GEOMETRY FIXTURE ONLY",
+  "manufacturerReference": "OSRAM GW VJLPL1.CM v1.4, 2025-01-16, p16 and p23 note9",
+  "quantizationMm": 0.00005,
+  "rows": [
+    {
+      "name": "D1",
+      "pin": 2,
+      "copper": {
+        "width": 0.499999,
+        "height": 1.35001
+      },
+      "paste": {
+        "width": 0.44999900000000004,
+        "height": 1.3000099999999999
+      },
+      "areaRatio80um": 2.0892863979199534
+    },
+    {
+      "name": "D1",
+      "pin": 1,
+      "copper": {
+        "width": 0.499999,
+        "height": 1.35001
+      },
+      "paste": {
+        "width": 0.44999900000000004,
+        "height": 1.3000099999999999
+      },
+      "areaRatio80um": 2.0892863979199534
+    },
+    {
+      "name": "D2",
+      "pin": 2,
+      "copper": {
+        "width": 0.499999,
+        "height": 1.35001
+      },
+      "paste": {
+        "width": 0.44999900000000004,
+        "height": 1.3000099999999999
+      },
+      "areaRatio80um": 2.0892863979199534
+    },
+    {
+      "name": "D2",
+      "pin": 1,
+      "copper": {
+        "width": 0.499999,
+        "height": 1.35001
+      },
+      "paste": {
+        "width": 0.44999900000000004,
+        "height": 1.3000099999999999
+      },
+      "areaRatio80um": 2.0892863979199534
+    }
+  ],
+  "defaultPaste": [
+    {
+      "width": 0.3499993,
+      "height": 0.9450069999999999
+    },
+    {
+      "width": 0.3499993,
+      "height": 0.9450069999999999
+    },
+    {
+      "width": 0.3499993,
+      "height": 0.9450069999999999
+    },
+    {
+      "width": 0.3499993,
+      "height": 0.9450069999999999
+    }
+  ],
+  "limitations": [
+    "No loaded circuit or product layout audited",
+    "No supplier LED 3D model available",
+    "Driver selection, thermal design and low-brightness current remain unresolved",
+    "Stencil thickness is an 80 um candidate, not an assembler approval"
+  ]
+}

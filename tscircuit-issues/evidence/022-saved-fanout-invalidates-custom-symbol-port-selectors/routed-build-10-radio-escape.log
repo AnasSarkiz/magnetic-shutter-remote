@@ -1,0 +1,126 @@
+$ tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs --3d-png
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_1-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting phase 2/2 has been running for 10.3s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#187 /> phase 2/2 long-running start: connections=26, obstacles=226, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, cache=miss, cache_id=1f301641/4ebfaed5
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.CC1, net.CC2, net.CHARGER_SYS, net.CHARGE_STAT, net.CHARGE_DISABLE, net.TS_BIAS, net.VSET, net.PROG, net.CHARGE_LED_A, net.SHUTTER, net.PAIR, net.STATUS_LED, net.RESET_N, net.SWDIO, net.SWCLK, net.STATUS_LED_A, net.BATTERY_OK, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_HOT, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=35 progress=55% iterations_per_second=20 elapsed=10.3s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=36 progress=55% iterations_per_second=9612 elapsed=10.6s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=71 progress=56% iterations_per_second=9 elapsed=20.7s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=88 progress=80% iterations_per_second=1401 elapsed=31.2s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=91 progress=80% iterations_per_second=0 elapsed=44.5s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=94 progress=80% iterations_per_second=0 elapsed=58.6s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=97 progress=80% iterations_per_second=0 elapsed=72.5s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=103 progress=84% iterations_per_second=0 elapsed=86.7s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=113 progress=88% iterations_per_second=2 elapsed=97.9s
+  phase 2/2 done: routed_traces=89, jumpers=0, errors=0, elapsed=98.0s
+Could not save autorouting paths for subcircuit_source_group_1: Routes contain a junction or endpoint that cannot select a unique PCB port
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is facing y- but should face x- so the connector is accessible from the board edge
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+PCB trace trace[.U1 > port.16] is too close to trace[.C5 > port.2] (gap: 0.086mm)
+PCB trace trace[.U1 > port.pin19] overlaps with trace[.C5 > port.2] (accidental contact)
+PCB trace trace[.U5 > port.pin4, .U5 > port.pin6] is too close to trace[.U2 > port.pin2, .C3 > port.1] (gap: 0.109mm)
+PCB trace trace[.U5 > port.pin1, .R10 > port.anode] is too close to trace[.U2 > port.pin2, .C3 > port.1] (gap: 0.133mm)
+PCB trace trace[.U5 > port.pin1, .R10 > port.anode] overlaps with trace[.U5 > port.pin5, .C7 > port.1] (accidental contact)
+PCB trace trace[.Q1 > port.D, .U3 > port.pin3] is too close to trace[.Q1 > port.G, .R6 > port.anode] (gap: 0.115mm)
+PCB trace trace[.R5 > port.cathode, .U3 > port.pin3] overlaps with trace[.U3 > port.pin2, .C3 > port.2] (accidental contact)
+PCB trace trace[.SW1 > port.1, .U4 > port.pin2] is too close to trace[.U3 > port.pin2, .C4 > port.2] (gap: 0.061mm)
+PCB trace trace[.J3 > port.4] is too close to trace[.J3 > port.5] (gap: 0.141mm)
+PCB trace trace[.J3 > port.4] is too close to trace[.C4 > port.1] (gap: 0.114mm)
+PCB trace trace[.J3 > port.4] overlaps with pcb_smtpad "pcb_port[.U1 > .DCH]" (accidental contact)
+PCB trace trace[.J3 > port.5] overlaps with trace[.R3 > port.cathode, .Q2 > port.S] (accidental contact)
+PCB trace trace[.J3 > port.5] is too close to trace[.C5 > port.1, .J3 > port.1] (gap: 0.120mm)
+PCB trace trace[.R7 > port.anode] is too close to trace[.SW2 > port.1] (gap: 0.115mm)
+PCB trace trace[.SW3 > port.1] overlaps with pcb_smtpad "pcb_port[.U1 > .AI3]" (accidental contact)
+PCB trace trace[.SW2 > port.1] is too close to trace[.C5 > port.2] (gap: 0.118mm)
+PCB trace trace[.U2 > port.VSET, .R8 > port.anode] is too close to trace[.U2 > port.pin11, .R9 > port.cathode] (gap: 0.046mm)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] is too close to trace[.U2 > port.pin3, .LED1 > port.neg] (gap: 0.123mm)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] overlaps with pcb_smtpad "pcb_port[.U2 > .EP]" (accidental contact)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] overlaps with trace[.U2 > port.pin5, .U2 > port.pin11] (accidental contact)
+PCB trace trace[.U2 > port.pin3, .LED1 > port.neg] overlaps with trace[.U2 > port.pin5, .U2 > port.pin11] (accidental contact)
+PCB trace trace[.C5 > port.1, .J3 > port.1] overlaps with pcb_via "pcb_via[#pcb_via_24]" (accidental contact)
+PCB trace trace[.C5 > port.2] overlaps with pcb_via "pcb_via[#pcb_via_1]" (accidental contact)
+PCB trace trace[.C5 > port.2] overlaps with pcb_via "pcb_via[#pcb_via_38]" (accidental contact)
+PCB trace trace[.C5 > port.2] overlaps with pcb_smtpad "pcb_port[.U1 > .VCC]" (accidental contact)
+PCB trace trace[.C5 > port.2] overlaps with pcb_smtpad "pcb_port[.U1 > .pin17]" (accidental contact)
+PCB trace trace[.U2 > port.pin11, .R9 > port.cathode] overlaps with pcb_smtpad "pcb_port[.U2 > .ILIM]" (accidental contact)
+Pad pcb_port[.U1 > .AI3] and trace trace[.U1 > port.14] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .XL2] and trace trace[.U1 > port.14] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .pin17] and trace trace[.U1 > port.16] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .AI3] and trace trace[.U1 > port.16] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .GND2] and trace trace[.U1 > port.pin20] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .VCC] and trace trace[.U1 > port.pin20] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .DCH] and trace trace[.U1 > port.pin24] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .VDH] and trace trace[.U1 > port.pin24] are too close (clearance: 0.11mm, minimum: 0.15mm)
+Pad pcb_port[.U5 > .VDD] and trace trace[.U5 > port.pin4, .U5 > port.pin6] are too close (clearance: 0.007mm, minimum: 0.15mm)
+Pad pcb_port[.U2 > .EP] and trace trace[.U2 > port.pin3, .LED1 > port.neg] are too close (clearance: 0.054mm, minimum: 0.15mm)
+Pad pcb_port[.U2 > .N_CE] and trace trace[.U2 > port.pin3, .LED1 > port.neg] are too close (clearance: 0.081mm, minimum: 0.15mm)
+Pad pcb_port[.U2 > .GND] and trace trace[.U2 > port.pin3, .LED1 > port.neg] are too close (clearance: 0.109mm, minimum: 0.15mm)
+Pad pcb_port[.U2 > .TS] and trace trace[.U2 > port.pin11, .R9 > port.cathode] are too close (clearance: 0.124mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .AI2] and trace trace[.C5 > port.2] are too close (clearance: 0.101mm, minimum: 0.15mm)
+Pad pcb_port[.U1 > .pin16] and trace trace[.C5 > port.2] are too close (clearance: 0.109mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_13] and trace trace[.U2 > port.pin2, .C3 > port.1] are too close (clearance: 0.083mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_15] and trace trace[.U2 > port.pin2, .C3 > port.1] are too close (clearance: 0.026mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_26] and trace trace[.C4 > port.1] are too close (clearance: 0.036mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_34] and trace trace[.SW2 > port.1] are too close (clearance: 0.057mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_36] and trace trace[.U1 > port.14] are too close (clearance: 0.053mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_36] and trace trace[.SW2 > port.1] are too close (clearance: 0.144mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_36] and trace trace[.C5 > port.2] are too close (clearance: 0.063mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_38] and trace trace[.SW3 > port.1] are too close (clearance: 0.129mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_39] and trace trace[.U2 > port.VSET, .R8 > port.anode] are too close (clearance: 0.127mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_50] and trace trace[.U2 > port.pin10, .C7 > port.1] are too close (clearance: 0.115mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_51] and trace trace[.U2 > port.pin10, .C7 > port.1] are too close (clearance: 0.115mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_80] and trace trace[.U1 > port.pin19] are too close (clearance: 0.055mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_80] and trace trace[.SW2 > port.1] are too close (clearance: 0.083mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_81] and trace trace[.U2 > port.pin4, .R13 > port.cathode] are too close (clearance: 0.115mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_86] and trace trace[.U3 > port.pin5, .C4 > port.1] are too close (clearance: 0.115mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_91] and trace trace[.U3 > port.pin5, .C4 > port.1] are too close (clearance: 0.115mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_96] and trace trace[.SW2 > port.1] are too close (clearance: 0.049mm, minimum: 0.15mm)
+Via pcb_via[#pcb_via_14] and pad pcb_port[.R11 > .pin1] are too close (clearance: 0.084mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_15] and pad pcb_port[.U5 > .GND] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_18] and pad pcb_port[.C3 > .pin2] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_19] and pad pcb_port[.C3 > .pin1] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_26] and pad pcb_port[.U1 > .DCH] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_27] and pad pcb_port[.U1 > .DCH] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_36] and pad pcb_port[.U1 > .AI3] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_66] and pad pcb_port[.U5 > .N_OUTA] are too close (clearance: 0.028mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_79] and pad pcb_port[.U1 > .VCC] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_79] and pad pcb_port[.U1 > .pin17] are too close (clearance: 0.023mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_80] and pad pcb_port[.U1 > .VCC] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_80] and pad pcb_port[.U1 > .pin17] are too close (clearance: 0.09mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_96] and pad pcb_port[.U1 > .pin17] are too close (clearance: 0mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_97] and pad pcb_port[.U1 > .pin17] are too close (clearance: 0mm, minimum: 0.1mm)
+Vias pcb_via[#pcb_via_1] and pcb_via[#pcb_via_38] are too close together (gap: 0.127mm)
+Vias pcb_via[#pcb_via_2] and pcb_via[#pcb_via_34] from different nets are too close together (gap: 0.077mm)
+Via hole at (-0.43mm, 5.45mm) overlaps SMD pad U5.N_OUTA at (-0.75mm, 5.50mm)
+Via hole at (-4.58mm, -7.20mm) overlaps SMD pad U1.DCH at (-4.45mm, -8.17mm)
+Via hole at (2.11mm, -7.30mm) overlaps SMD pad U1.AI3 at (1.91mm, -8.17mm)
+Via hole at (-3.17mm, -7.40mm) overlaps SMD pad U1.VDH at (-3.17mm, -8.17mm)
+Via hole at (1.29mm, 17.39mm) overlaps SMD pad R9.pin2 at (1.75mm, 17.00mm)
+Via hole at (-0.14mm, -8.98mm) overlaps SMD pad U1.VCC at (-0.64mm, -8.17mm)
+Via hole at (-0.21mm, -7.97mm) overlaps SMD pad U1.VCC at (-0.64mm, -8.17mm)
+Via hole at (6.74mm, 9.25mm) overlaps SMD pad R3.pin2 at (6.25mm, 9.00mm)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating 3D PNG...
+[index] Written 3d.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs, 3d-png
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+error: script "build" exited with code 1

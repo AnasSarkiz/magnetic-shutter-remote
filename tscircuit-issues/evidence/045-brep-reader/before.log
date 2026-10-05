@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tscircuit-issues/evidence/045-brep-reader/manufacturing-audit.py", line 207, in <module>
+    result=audit(*make_features(json.loads(Path(a.input).read_text())))
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r5--01a0f81f/tscircuit-issues/evidence/045-brep-reader/manufacturing-audit.py", line 120, in make_features
+    if e.get('shape')!='polygon':raise ValueError('Unsupported pour shape')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unsupported pour shape

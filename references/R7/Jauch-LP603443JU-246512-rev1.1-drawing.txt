@@ -1,0 +1,165 @@
+                                                Jauch Battery Solutions
+                                                                                                                                                 RoHS compliant               Pb free
+                                                •       Reliable energy for your application
+                                                •       Standard cells and customized packs
+                                                •       ESD protection
+                                                                                                                                                      REACH                  Conflict
+                                                •       Battery Certification Experts                                                                compliant             Mineral free
+
+
+
+
+SPECIFICATIONS                                                                  CHARGING CHARACTERISTICS PER BATTERY PACK
+
+Modul                          ▪       LP603443JU                               Charge Voltage                                         ▪        4.2 V
+
+Jauch No.                      ▪       246512                                   Standard Current                                       ▪        0.5 C (450 mA)
+
+UL1642/UL2054                  ▪       YES/NO                                   Max. Charging Current                                  ▪        1.0 C (900 mA)
+
+UN 38.3                        ▪       YES                                      Operating Temperature                                  ▪        0°C to +15°C
+                                                                                                                                                (0.2C Max, 4.2V charge)
+
+
+IEC62133                       ▪       NO                                                                                              ▪        +15°C to +45°C
+                                                                                                                                                (1.0C Max, 4.2V charge)
+
+
+Nominal Voltage                ▪       3.7 V                                                                                           ▪        +45°C to +50°C
+                                                                                                                                                (0.5C Max, 4.1V charge)
+
+
+Typ. Capacity                  ▪       900 mAh
+                                       (0.2C, 3.0V discharge)
+
+
+Min. Capacity                  ▪       850 mAh
+                                       (0.2C, 3.0V discharge)
+
+
+Weight                         ▪       Approx. 20 gr.
+
+
+PCM PARAMETER PER BATTERY PACK                                                  DISCHARGING CHARACTERISTICS PER BATTERY PACK
+
+
+Overcharge Det. Voltage        ▪       4.28 V ± 0.02 V                          Cut-off Voltage                                        ▪        3.0 V
+
+Overcharge Rel. Voltage        ▪       4.18 V ± 0.05 V                          Standard Current                                       ▪        0.2 C (180 mA)
+
+Overdischarge Det. Voltage     ▪       3.00 V ± 0.05 V                          Max. Discharging Current                               ▪        1.0 C (900 mA)
+
+Overdischarge Rel. Voltage     ▪       3.00 V ± 0.1 V                           Operating Temperature                                  ▪        -20°C to +60°C
+
+Over Current Range             ▪       3.0 A – 6.0 A                            Storage Temperature                                    ▪        -20°C to +25°C
+                                                                                                                                                (max. 3 months)
+
+                                                                                Delivery State of Charge                               ▪        Max. 30%
+
+                                                                                Life Expectancy 0.5C/0.5C                              ▪        300 cycles ~ 80% of
+                                                                                @21 ±2°C                                                        capacity
+
+
+
+
+                             Jauch Quartz GmbH • email: batterytechnology@jauch.com            This information is generally descriptive only and is not intended to make or imply any
+                                                                                               representation, guarantee or warranty with respect to any cells and batteries. Cell and battery
+                             www.jauch.com                                                     designs/specifications are subject to modification without notice. Contact JAUCH for the latest
+                                                                                               information.
+                             10/2022                            TFN               Rev. 1.1
+                                  Jauch Battery Solutions
+                                                                                                                                 RoHS compliant               Pb free
+                                  •     Reliable energy for your application
+                                  •     Standard cells and customized packs
+                                  •     ESD protection
+                                                                                                                                      REACH                  Conflict
+                                  •     Battery Certification Experts                                                                compliant             Mineral free
+
+
+
+
+HANDLING AND STORAGE
+
+
+When used correctly, Lithium-ion Polymer Battery              Storage
+Pack (Rechargeable Single cell Battery) provides a
+                                                              ▪     Store unused batteries in their original packaging
+safe and dependable source of power. However, if they
+                                                                    and keep them away from metal objects which
+are misused or abused, leakage, venting, or in extreme
+                                                                    may short circuit them.
+cases explosion and/or fire may result. Make sure to
+                                                              ▪     Storing unpackaged cells together could result in
+observe amongst others, following warnings.
+                                                                    cell shorting and heat build-up
+                                                              ▪     Store and display batteries in their original
+Handling                                                            packaging in well ventilated, dry and cool
+                                                                    conditions
+▪   Do not insert batteries in reverse. Observe the
+                                                              ▪     Avoid storing or display batteries in direct sun or in
+    polarity markings on battery and equipment
+                                                                    places where they get exposed to rain
+▪   Do not short-circuit batteries
+                                                              ▪     The normal storage of Lithium-ion Polymer Battery
+▪   Do not overcharge batteries
+                                                                    Pack is made at temperature between +10°C and
+▪   Do not force discharge batteries
+                                                                    +25°C, never exceeding +30°C In this way the
+▪   Do not mix batteries
+                                                                    maximum shelf-life (i.e. max. retention of cell
+▪   Do not overheat batteries by exposure to high
+                                                                    performances after storage periods) of Lithium-ion
+    temperatures and direct sunlight.
+                                                                    Polymer Battery Pack is achieved
+▪   Do not weld or solder directly to batteries
+                                                              ▪     Storage temperatures above room temperature
+▪   Do not dismantle batteries
+                                                                    will increase the rate of self-discharge, reducing
+▪   Do not deform batteries
+                                                                    the available capacity of the cell. Humidity above
+▪   Do not dispose of batteries in fire
+                                                                    95% R.H. and below 40% R.H. should also be
+▪   A battery with a damaged pouch should not be
+                                                                    avoided for sustained periods, as these extremes
+    exposed to water
+                                                                    are detrimental to batteries
+▪   Do not allow children to replace batteries without
+                                                              ▪     Storing the cells at low temperature is also
+    adult supervision
+                                                                    suggested, but attention must be paid when
+▪   Keep batteries out of the reach of children. In case
+                                                                    transferring the cells to warmer environments,
+    of ingestion of a cell or battery, the person involved
+                                                                    because of the possibility of having water
+    should seek medical assistance promptly
+                                                                    condensing on to the cells (risk of short circuits)
+▪   Equipment intended for use by children should
+                                                              ▪     Do not stack battery cartons on top of each other
+    have battery compartments which are tamper-
+                                                                    exceeding a specified height. The height is clearly
+    proof
+                                                                    dependent on the strength of the packaging. As for
+▪   Do not encapsulate and/or modify batteries
+                                                                    general rule this height should not exceed 1.5 m
+▪   Exhausted batteries should be immediately
+                                                                    for cardboard packages or 3 m for wooden cases.
+    removed from equipment and disposed of (see
+                                                                    The above recommendations are equally valid for
+    section XIII)
+                                                                    storage conditions during prolonged transit. Thus,
+▪   When discarding batteries with solder tags,
+                                                                    batteries should be stored away from ship engines
+    insulate the tags by wrapping them with tape, foil,
+                                                                    and not left for long periods in unventilated metal
+    etc.
+                                                                    box cars (containers) during summer.
+
+
+
+
+                     Jauch Quartz GmbH • email: batterytechnology@jauch.com    This information is generally descriptive only and is not intended to make or imply any
+                                                                               representation, guarantee or warranty with respect to any cells and batteries. Cell and battery
+                     www.jauch.com                                             designs/specifications are subject to modification without notice. Contact JAUCH for the latest
+                                                                               information.
+                     10/2022                 TFN                    Rev. 1.1
+

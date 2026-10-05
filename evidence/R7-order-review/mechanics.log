@@ -1,0 +1,34 @@
+{
+  "manufacturer_drawing": "references/GCT-USB4215-drawing-Rev-A.pdf; Rev A 2024-04-26",
+  "nominal_mating_face_y_mm": 28.6601694,
+  "pcb_edge_y_mm": 28,
+  "mating_face_overhang_mm": 0.6601694000000009,
+  "authored_anchor_mm": [
+    0,
+    23.9852
+  ],
+  "actual_centroid_mm": {
+    "x": 0,
+    "y": 24.5101989
+  },
+  "rotation_degrees": 180,
+  "opening_mm": [
+    12,
+    9.5
+  ],
+  "opening_centre_yz_mm": [
+    29,
+    8
+  ],
+  "nominal_mouth_axis_z_mm": 7.48,
+  "axis_tolerance_budget_mm": 0.8,
+  "minimum_plug_vertical_gap_mm": 0.08000000000000074,
+  "minimum_body_horizontal_gap_mm": 1.1050000000000006,
+  "plug_shoulder_outside_enclosure_mm": 0.36016940000000164,
+  "plug_body_maximum_height_mm": 6.5,
+  "plug_shoulder_minimum_length_mm": 2.05,
+  "scope": "Manufacturer-derived nominal/tolerance stack. Printing +/-0.2 and PCB Z +/-0.3 are engineering allocations, not measured performance. Both plug orientations have the same envelope. Verify actual selected cable and enclosure during bring-up.",
+  "body_to_battery_topview_gap_mm": 0.6101694000000002,
+  "body_to_battery_worst_case_mm": 0.21016940000000017,
+  "production_process": "PENDING; manual prototype shell rework may be required"
+}

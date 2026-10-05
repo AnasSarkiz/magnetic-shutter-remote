@@ -1,0 +1,692 @@
+{
+  "parts": [
+    {
+      "lcsc": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "references": [
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "url": "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663",
+      "listing_sha256": "8242f50b543e8214f66526ee44e642638de5a105a649f2f538e0b91f880812c3",
+      "checked_at_utc": "2026-10-04T21:21:36.144695+00:00",
+      "quantity_for_five_finished_boards": 15,
+      "stock_fields": {
+        "canPresaleNumber": 43868955,
+        "overseasStockCount": 57968048,
+        "preMinPurchaseNum": 1026
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C15850",
+      "mpn": "CL21A106KAYNNNE",
+      "references": [
+        "C8"
+      ],
+      "url": "https://jlcpcb.com/partdetail/CL21A106KAYNNNE/C15850",
+      "listing_sha256": "e2ead44fe5e2b27abbe243cd44765326bdad161a5736b4cc52d374efd1b31005",
+      "checked_at_utc": "2026-10-04T21:21:33.490916+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 3563475,
+        "overseasStockCount": 4919468,
+        "preMinPurchaseNum": 139
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C160392",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "references": [
+        "J3"
+      ],
+      "url": "https://jlcpcb.com/partdetail/JST-BM06B_SRSS_TB_LF_SN/C160392",
+      "listing_sha256": "29fe058e4c0665076b459a5b27792cc4bc313d1102ed31261cfb0cba72751ba1",
+      "checked_at_utc": "2026-10-04T21:21:34.280481+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 27229,
+        "overseasStockCount": 33926,
+        "preMinPurchaseNum": 27
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "references": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "url": "https://jlcpcb.com/partdetail/Samsung-CL10A475KO8NNNC/C19666",
+      "listing_sha256": "b436287bc4331ce425d65abf286b21f58238476601843515553b8a8f24df00eb",
+      "checked_at_utc": "2026-10-04T21:21:35.730389+00:00",
+      "quantity_for_five_finished_boards": 20,
+      "stock_fields": {
+        "canPresaleNumber": 1919691,
+        "overseasStockCount": 2519891,
+        "preMinPurchaseNum": 519
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C19725033",
+      "mpn": "BQ25185DLHR",
+      "references": [
+        "U2"
+      ],
+      "url": "https://jlcpcb.com/partdetail/BQ25185DLHR/C19725033",
+      "listing_sha256": "d7836077cc616188af9f9a77a873db34e4c143495e924572463f1de8cb56e785",
+      "checked_at_utc": "2026-10-04T21:21:32.112498+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 3604,
+        "overseasStockCount": 3702,
+        "preMinPurchaseNum": 6
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "references": [
+        "R4",
+        "R7"
+      ],
+      "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1001T5E/C21190",
+      "listing_sha256": "12525b9b3b1ff3751d0c3c546c6150058c2178208d6053ba177d9a47b4fc5add",
+      "checked_at_utc": "2026-10-04T21:21:35.367639+00:00",
+      "quantity_for_five_finished_boards": 10,
+      "stock_fields": {
+        "canPresaleNumber": 16137487,
+        "overseasStockCount": 21515597,
+        "preMinPurchaseNum": 4512
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C22795",
+      "mpn": "0603WAF1303T5E",
+      "references": [
+        "R8"
+      ],
+      "url": "https://jlcpcb.com/partdetail/0603WAF1303T5E/C22795",
+      "listing_sha256": "61eceab4bf8194adc0d287ce9ab840841105e08e78f8830d0e86051aa930ee1e",
+      "checked_at_utc": "2026-10-04T21:21:32.670642+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 538478,
+        "overseasStockCount": 587417,
+        "preMinPurchaseNum": 5000
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C22809",
+      "mpn": "0603WAF1502T5E",
+      "references": [
+        "R3"
+      ],
+      "url": "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809",
+      "listing_sha256": "70908bf9d49468bea96ffe776d767b140dd3ba1e1f0e1806ca64af909b9b7a42",
+      "checked_at_utc": "2026-10-04T21:21:32.457406+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 4236701,
+        "overseasStockCount": 4586462,
+        "preMinPurchaseNum": 4102
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C22844",
+      "mpn": "0603WAF1621T5E",
+      "references": [
+        "R10"
+      ],
+      "url": "https://jlcpcb.com/partdetail/0603WAF1621T5E/C22844",
+      "listing_sha256": "752fba8a87827d4576543b0f2b25204be4812c20bee61dc46b5f82c89ace26aa",
+      "checked_at_utc": "2026-10-04T21:21:32.951546+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 27591,
+        "overseasStockCount": 27688,
+        "preMinPurchaseNum": 5000
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C2286",
+      "mpn": "KT-0603R",
+      "references": [
+        "LED1",
+        "LED2"
+      ],
+      "url": "https://jlcpcb.com/partdetail/HubeiKENTOElec-KT_0603R/C2286",
+      "listing_sha256": "853a70fe11efdf54388ea8f04d00f685daa2afe534a000c980a3ce635f949053",
+      "checked_at_utc": "2026-10-04T21:21:36.503405+00:00",
+      "quantity_for_five_finished_boards": 10,
+      "stock_fields": {
+        "canPresaleNumber": 4247086,
+        "overseasStockCount": 4791906,
+        "preMinPurchaseNum": 1556
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C22893",
+      "mpn": "0603WAF1872T5E",
+      "references": [
+        "R11"
+      ],
+      "url": "https://jlcpcb.com/partdetail/0603WAF1872T5E/C22893",
+      "listing_sha256": "3263ea43cf37152fba4aae90c50fa0a6bf964102915d30a531fe024ca7bc9679",
+      "checked_at_utc": "2026-10-04T21:21:33.177178+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 124533,
+        "overseasStockCount": 127883,
+        "preMinPurchaseNum": 5000
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF5101T5E/C23186",
+      "listing_sha256": "9061b6a75ed5c57ed94cde09748bc14e7b025c875ba8b5279e61c207247c3b83",
+      "checked_at_utc": "2026-10-04T21:21:35.102250+00:00",
+      "quantity_for_five_finished_boards": 10,
+      "stock_fields": {
+        "canPresaleNumber": 24176515,
+        "overseasStockCount": 25240645,
+        "preMinPurchaseNum": 5000
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "references": [
+        "R5",
+        "R6",
+        "R12",
+        "R13"
+      ],
+      "url": "https://jlcpcb.com/partdetail/UNIROYAL-0603WAF1003T5E/C25803",
+      "listing_sha256": "1f068c3cc1444ed10f5a78f27d62e4f2b5f276743491733f49a63c5ab59137de",
+      "checked_at_utc": "2026-10-04T21:21:35.607653+00:00",
+      "quantity_for_five_finished_boards": 20,
+      "stock_fields": {
+        "canPresaleNumber": 20164716,
+        "overseasStockCount": 22078786,
+        "preMinPurchaseNum": 3760
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "references": [
+        "R9"
+      ],
+      "url": "https://jlcpcb.com/partdetail/0603WAF1002T5E/C25804",
+      "listing_sha256": "56d00b29bb830d0cc7ffa497a4cb2c2596681f43ebe9b77811161f15bf58e51c",
+      "checked_at_utc": "2026-10-04T21:21:32.886003+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 22080534,
+        "overseasStockCount": 29895631,
+        "preMinPurchaseNum": 5000
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C282505",
+      "mpn": "TCC0603COG470J500CT",
+      "references": [
+        "C9"
+      ],
+      "url": "https://jlcpcb.com/partdetail/TCC0603COG470J500CT/C282505",
+      "listing_sha256": "cfc54af4553a8adfa2b2ed5de02c7a8d831cfeadab97a5accd869bdf77ac7526",
+      "checked_at_utc": "2026-10-04T21:21:33.529643+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 7989,
+        "overseasStockCount": 8003,
+        "preMinPurchaseNum": 3610
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C295747",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "references": [
+        "J2"
+      ],
+      "url": "https://jlcpcb.com/partdetail/JST-S2B_PH_SM4_TB_LF_SN/C295747",
+      "listing_sha256": "0a602124fa34ea2925a271ffdc8be6f3f7fa590eadb51ece8f58cd3dffed3bbd",
+      "checked_at_utc": "2026-10-04T21:21:34.206323+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 17456,
+        "overseasStockCount": 18159,
+        "preMinPurchaseNum": 39
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C356849",
+      "mpn": "E73-2G4M08S1C",
+      "references": [
+        "U1"
+      ],
+      "url": "https://jlcpcb.com/partdetail/Chengdu_Ebyte_ElecTech-E732G4M08S1C/C356849",
+      "listing_sha256": "80e805e02db30326e95749747538001fc112637248f9237c7af24a18af8d3c17",
+      "checked_at_utc": "2026-10-04T21:21:31.980887+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 1192,
+        "overseasStockCount": 1669,
+        "preMinPurchaseNum": 2
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": true,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C3747031",
+      "mpn": "TPS7A0230PDBVR",
+      "references": [
+        "U3"
+      ],
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS7A0230PDBVR/C3747031",
+      "listing_sha256": "a4b346bd2b7ee7e8ffa9b863761dbc6913a95b1cf881d34c2834a330d38f2250",
+      "checked_at_utc": "2026-10-04T21:21:33.643603+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 37392,
+        "overseasStockCount": 37468,
+        "preMinPurchaseNum": 26
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C37616412",
+      "mpn": "USB4215-03-A",
+      "references": [
+        "J1"
+      ],
+      "url": "https://jlcpcb.com/partdetail/39339856-USB4215_03A/C37616412",
+      "listing_sha256": "e6e7be0b3c84061e9f347baf570575f53f736f69a831a0c86f66bbbb3c98f46b",
+      "checked_at_utc": "2026-10-04T21:21:34.059973+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 35,
+        "overseasStockCount": 123,
+        "preMinPurchaseNum": 13
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C431540",
+      "mpn": "MSK12C02",
+      "references": [
+        "SW1"
+      ],
+      "url": "https://jlcpcb.com/partdetail/MSK12C02/C431540",
+      "listing_sha256": "daaf91c42b848b614166876f1ca7ce6388d4a0615511930e2327afa6bf18837c",
+      "checked_at_utc": "2026-10-04T21:21:34.574258+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 186735,
+        "overseasStockCount": 192876,
+        "preMinPurchaseNum": 196
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C485802",
+      "mpn": "TPS3839G33DBZR",
+      "references": [
+        "U4"
+      ],
+      "url": "https://jlcpcb.com/partdetail/TPS3839G33DBZR/C485802",
+      "listing_sha256": "497af01fcb583b85e9e588976181cbd7a8d67261328c5b7ab79e6f0ca42142b8",
+      "checked_at_utc": "2026-10-04T21:27:08.502294+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 3366,
+        "overseasStockCount": 3400,
+        "preMinPurchaseNum": 27
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C5219772",
+      "mpn": "TMP390A2DRLR",
+      "references": [
+        "U5"
+      ],
+      "url": "https://jlcpcb.com/partdetail/TMP390A2DRLR/C5219772",
+      "listing_sha256": "43b11d08dc7a7641a848080cd21bea352d8e981a98f5a99d94cfe893f7cce495",
+      "checked_at_utc": "2026-10-04T21:21:32.027813+00:00",
+      "quantity_for_five_finished_boards": 5,
+      "stock_fields": {
+        "canPresaleNumber": 37545,
+        "overseasStockCount": 37585,
+        "preMinPurchaseNum": 26
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C720477",
+      "mpn": "TS-1088-AR02016",
+      "references": [
+        "SW2",
+        "SW3"
+      ],
+      "url": "https://jlcpcb.com/partdetail/SHOUHAN-TS_1088_AR02016/C720477",
+      "listing_sha256": "bc17a1aa7b0aa97f7e1ef1ad982de3d4da956474fe8a130506abf91e7559c8ab",
+      "checked_at_utc": "2026-10-04T21:21:34.733406+00:00",
+      "quantity_for_five_finished_boards": 10,
+      "stock_fields": {
+        "canPresaleNumber": 728676,
+        "overseasStockCount": 780187,
+        "preMinPurchaseNum": 214
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    },
+    {
+      "lcsc": "C8545",
+      "mpn": "2N7002",
+      "references": [
+        "Q1",
+        "Q2"
+      ],
+      "url": "https://jlcpcb.com/partdetail/JiangsuChangjingElectronicsTechnologyCoLtd-2N7002/C8545",
+      "listing_sha256": "64de5f7d64ea8621e3d299f148d44ee5456c012563b403e51787a35d23c7d213",
+      "checked_at_utc": "2026-10-04T21:21:35.829324+00:00",
+      "quantity_for_five_finished_boards": 10,
+      "stock_fields": {
+        "canPresaleNumber": 1473403,
+        "overseasStockCount": 1611868,
+        "preMinPurchaseNum": 640
+      },
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "orderInstructionEnglish": ""
+      },
+      "status": "PASS",
+      "scope": "Public inventory/listing only; attrition, stock reservation and supplier-processed PCBA mapping still require order-preview review."
+    }
+  ],
+  "failures": [],
+  "expected_exact_identities": 24,
+  "all_pass": true
+}

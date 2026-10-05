@@ -1,0 +1,37 @@
+[
+  {
+    "package": "circuit-json",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "props",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "circuit-json-util",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "core",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "easyeda-converter",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "circuit-json-to-gerber",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  },
+  {
+    "package": "circuit-to-svg",
+    "build_exit_code": 0,
+    "pack_exit_code": 0
+  }
+]

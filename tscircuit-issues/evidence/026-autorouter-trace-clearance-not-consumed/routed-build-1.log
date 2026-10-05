@@ -1,0 +1,86 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Autorouting phase 1/1 has been running for 10.2s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#186 /> phase 1/1 long-running start: connections=26, obstacles=160, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, cache=miss, cache_id=12cad7cd/ba8e7690
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.CC1, net.CC2, net.CHARGER_SYS, net.CHARGE_STAT, net.CHARGE_DISABLE, net.TS_BIAS, net.VSET, net.PROG, net.CHARGE_LED_A, net.SHUTTER, net.PAIR, net.STATUS_LED, net.RESET_N, net.SWDIO, net.SWCLK, net.STATUS_LED_A, net.BATTERY_OK, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_HOT, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=35 progress=57% iterations_per_second=9112 elapsed=10.2s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=36 progress=57% iterations_per_second=7509 elapsed=10.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=70 progress=58% iterations_per_second=48920 elapsed=20.5s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=105 progress=58% iterations_per_second=45480 elapsed=30.5s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityForceImproveSolver steps=138 progress=58% iterations_per_second=100 elapsed=41.9s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=157 progress=83% iterations_per_second=742 elapsed=62.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=159 progress=83% iterations_per_second=0 elapsed=80.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=161 progress=83% iterations_per_second=1 elapsed=96.7s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=163 progress=83% iterations_per_second=0 elapsed=112.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=165 progress=83% iterations_per_second=0 elapsed=129.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=170 progress=88% iterations_per_second=1 elapsed=146.7s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=180 progress=92% iterations_per_second=1 elapsed=156.9s
+  phase 1/1 done: routed_traces=89, jumpers=0, errors=0, elapsed=157.0s
+Could not save autorouting paths for subcircuit_source_group_0: Saved phase path ".U5 > port.N_OUTA" must end at another connection endpoint; use autorouter="fanout" for saved escapes
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is facing y- but should face x- so the connector is accessible from the board edge
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+PCB trace trace[.U5 > port.pin4, .U5 > port.pin6] is too close to trace[.U2 > port.pin2, .C3 > port.1] (gap: 0.094mm)
+PCB trace trace[.U5 > port.pin4, .U5 > port.pin6] overlaps with pcb_smtpad "pcb_port[.U5 > .VDD]" (accidental contact)
+PCB trace trace[.U5 > port.pin2, .R11 > port.anode] is too close to trace[.C3 > port.2, .U5 > port.pin3] (gap: 0.053mm)
+PCB trace trace[.SW1 > port.2, .R5 > port.anode] overlaps with trace[.LED2 > port.neg, .Q2 > port.S] (accidental contact)
+PCB trace trace[.U1 > port.pin39, .J3 > port.4] overlaps with trace[.U1 > port.pin37, .J3 > port.2] (accidental contact)
+PCB trace trace[.U1 > port.pin39, .J3 > port.4] overlaps with trace[.U1 > port.pin23, .C4 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.pin39, .J3 > port.4] overlaps with trace[.U1 > port.pin21, .C4 > port.2] (accidental contact)
+PCB trace trace[.U1 > port.pin39, .J3 > port.4] overlaps with trace[.U1 > port.pin19, .C5 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.pin39, .J3 > port.4] overlaps with trace[.U1 > port.pin20, .R7 > port.anode] (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with pcb_smtpad "pcb_port[.U1 > .D_NEG]" (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with pcb_smtpad "pcb_port[.U1 > .GND1]" (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with trace[.U1 > port.pin21, .C4 > port.2] (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with trace[.U1 > port.pin19, .C5 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with trace[.U1 > port.pin20, .R7 > port.anode] (accidental contact)
+PCB trace trace[.U1 > port.pin37, .J3 > port.2] overlaps with trace[.C5 > port.1, .J3 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.16, .SW3 > port.1] overlaps with trace[.U1 > port.14, .SW2 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.14, .SW2 > port.1] overlaps with trace[.U1 > port.pin5, .U1 > port.pin21] (accidental contact)
+PCB trace trace[.U1 > port.14, .SW2 > port.1] overlaps with trace[.U1 > port.pin21, .U1 > port.pin24] (accidental contact)
+PCB trace trace[.U2 > port.pin8, .R3 > port.anode] overlaps with trace[.U2 > port.pin4, .R13 > port.cathode] (accidental contact)
+PCB trace trace[.U2 > port.VSET, .R8 > port.anode] is too close to trace[.U2 > port.pin11, .R9 > port.cathode] (gap: 0.063mm)
+PCB trace trace[.U2 > port.MR, .R9 > port.anode] is too close to trace[.U2 > port.pin11, .R9 > port.cathode] (gap: 0.037mm)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] overlaps with pcb_smtpad "pcb_port[.U2 > .GND]" (accidental contact)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] overlaps with trace[.U2 > port.pin5, .U2 > port.pin11] (accidental contact)
+PCB trace trace[.U2 > port.pin4, .R13 > port.cathode] overlaps with trace[.C2 > port.1, .R4 > port.anode] (accidental contact)
+PCB trace trace[.U2 > port.pin3, .LED1 > port.neg] overlaps with pcb_smtpad "pcb_port[.U2 > .EP]" (accidental contact)
+PCB trace trace[.U2 > port.pin3, .LED1 > port.neg] is too close to trace[.U2 > port.pin5, .U2 > port.pin11] (gap: 0.094mm)
+PCB trace trace[.U2 > port.pin1, .C8 > port.1] overlaps with trace[.U2 > port.pin2, .C2 > port.1] (accidental contact)
+PCB trace trace[.U2 > port.pin1, .C8 > port.1] overlaps with trace[.U2 > port.pin2, .C3 > port.1] (accidental contact)
+PCB trace trace[.U1 > port.pin19, .U1 > port.pin23] overlaps with pcb_smtpad "pcb_port[.U1 > .GND2]" (accidental contact)
+PCB trace trace[.U2 > port.pin2, .C3 > port.1] overlaps with pcb_via "pcb_via[#pcb_via_4]" (accidental contact)
+PCB trace trace[.C3 > port.2, .U5 > port.pin3] overlaps with pcb_smtpad "pcb_port[.U5 > .SETB]" (accidental contact)
+Pad pcb_port[.U2 > .BAT] and trace trace[.U2 > port.pin3, .LED1 > port.neg] are too close (clearance: 0.091mm, minimum: 0.1mm)
+Pad pcb_port[.U5 > .N_OUTA] and trace trace[.U2 > port.pin2, .C3 > port.1] are too close (clearance: 0.092mm, minimum: 0.1mm)
+Pad pcb_port[.U2 > .TS] and trace trace[.U2 > port.pin11, .R9 > port.cathode] are too close (clearance: 0.011mm, minimum: 0.1mm)
+Pad pcb_port[.U2 > .ILIM] and trace trace[.U2 > port.pin11, .R9 > port.cathode] are too close (clearance: 0.037mm, minimum: 0.1mm)
+Pad pcb_port[.U5 > .SETA] and trace trace[.C3 > port.2, .U5 > port.pin3] are too close (clearance: 0.05mm, minimum: 0.1mm)
+Via pcb_via[#pcb_via_55] and pad pcb_port[.R10 > .pin2] are too close (clearance: 0.074mm, minimum: 0.1mm)
+Via hole at (-0.88mm, -8.98mm) overlaps SMD pad U1.VCC at (-0.64mm, -8.17mm)
+Via hole at (-3.36mm, -8.93mm) overlaps SMD pad U1.VDH at (-3.17mm, -8.17mm)
+Via hole at (0.62mm, 6.67mm) overlaps SMD pad U5.GND at (0.75mm, 6.50mm)
+Via hole at (6.70mm, 9.37mm) overlaps SMD pad R3.pin2 at (6.25mm, 9.00mm)
+Via hole at (0.96mm, 11.79mm) overlaps SMD pad U2.GND at (0.80mm, 11.95mm)
+Via hole at (-1.85mm, -9.01mm) overlaps SMD pad U1.GND2 at (-1.91mm, -8.17mm)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating 3D PNG...
+[index] Written 3d.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs, 3d-png
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

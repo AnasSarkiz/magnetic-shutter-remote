@@ -1,0 +1,48 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C75749-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C75749-to-ts.test.ts:21:57)
+(fail) should convert C75749 into typescript file [1196.54ms]
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C309274-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C309274-to-ts.test.ts:21:57)
+(fail) should convert C309274 into typescript file [774.40ms]
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+16 |   expect(result).not.toContain("NaNmm")
+17 | 
+18 |   const circuitJson = await runTscircuitCode(
+19 |     wrapTsxWithBoardFor3dSnapshot(result),
+20 |   )
+21 |   expect(convertCircuitJsonToSchematicSvg(circuitJson)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/__snapshots__/C18185602-to-ts-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote--01a0f81f/tooling/easyeda-converter/tests/convert-to-ts/C18185602-to-ts.test.ts:21:57)
+(fail) should convert C18185602 into typescript file [649.24ms]
+
+ 0 pass
+ 3 fail
+ 9 expect() calls
+Ran 3 tests across 3 files. [3.02s]
