@@ -110,5 +110,13 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 
 |Issue|Affected package / scope|Status|
 |---|---|---|
-|[075 — ESP32-C3 outer lands differ from recommendation](075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md)|Supplier CAD C2934560; easyeda 0.0.364 faithfully preserves it|confirmed discrepancy; qualification blocked; not a confirmed tscircuit bug|
-|[076 — Numeric supply label lacks power metadata](076-numeric-supply-pin-not-inferred-as-power.md)|easyeda 0.0.364 power-label inference; CLI 0.1.2237 local integration|confirmed metadata omission; not fixed|
+|[075 — ESP32-C3 outer lands differ from recommendation](075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md)|Supplier CAD C2934560; easyeda 0.0.364 faithfully preserves it|confirmed discrepancy on abandoned WROOM candidate; does not block qualified DOIT C3 alternative; not a confirmed tscircuit bug|
+|[076 — Numeric supply label lacks power metadata](076-numeric-supply-pin-not-inferred-as-power.md)|easyeda 0.0.364 power-label inference; CLI 0.1.2237 local integration|project fixture corrected using verified pinAttributes; upstream omission remains open|
+|[077 — Import download saves HTTP error bodies as CAD assets](077-import-download-saves-http-error-bodies.md)|CLI 0.1.2237 download-cad-model-assets.ts|confirmed download-validation defect; blocked assets preserved, not usable|
+|[078 — TPS63031 supplier lands differ from TI example](078-tps63031-supplier-lands-differ-from-ti-example.md)|Supplier CAD C15516; faithful supported conversion|confirmed example-land variation; engineering prototype accepted with geometry/paste evidence|
+|[079 — SWPA3015 supplier lands differ from Sunlord recommendation](079-swpa3015-supplier-lands-differ-from-sunlord-recommendation.md)|Supplier CAD C56594; faithful supported conversion|confirmed example-land variation; fitted for engineering prototype after geometry/electrical qualification|
+|[080 — Live supplier search returns unrelated parts](080-live-supplier-search-returns-unrelated-parts.md)|Live jlcsearch search service,2026-10-05|confirmed response mismatch; backend cause unverified|
+|[081 — Routed output can violate requested clearances](081-routed-output-violates-clearances.md)|capacity-autorouter0.0.951 / native core integration|confirmed on retained R8 routes; final C3 native/independent checks0 via safe source-level routing|
+|[082 — Pinned Zephyr C2 board support does not include BLE](082-zephyr-c2-board-support-lacks-ble.md)|Zephyr4.2.0 / pinned hal_espressif|confirmed hosted build failure; qualified compatible DOIT C3 alternative selected|
+|[083 — Mask margin cannot be selected through pcbSx](083-mask-margin-cannot-be-selected-through-pcb-sx.md)|props0.0.672/core0.0.2035 styling API|locally fixed and tested in separately hashed R8 runtime archives; supplier copper preserved|
+| [084](084-discrete-mosfet-import-triggers-ic-warnings.md) | Discrete MOSFET import triggers generic IC warnings | Model/checker classification; nonblocking for reviewed C8545 connections |

@@ -11,8 +11,8 @@ RAW = ROOT / "evidence/R8-components/C2934560-supplier-raw.json"
 IMPORT = ROOT / "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx"
 
 
-def supplier_pads():
-    supplier = json.loads(RAW.read_text())
+def supplier_pads(supplier_path=RAW):
+    supplier = json.loads(supplier_path.read_text())
     package = supplier["packageDetail"]["dataStr"]
     if isinstance(package, str):
         package = json.loads(package)
@@ -22,23 +22,30 @@ def supplier_pads():
         if not shape.startswith("PAD~"):
             continue
         fields = shape.split("~")
+        rotation_degrees = float(fields[11]) % 360
+        width_mm = float(fields[4]) * 0.254
+        height_mm = float(fields[5]) * 0.254
+        if rotation_degrees in (90, 270):
+            width_mm, height_mm = height_mm, width_mm
+        elif rotation_degrees not in (0, 180):
+            raise ValueError("Pad audit supports only axis-aligned supplier rectangles")
         pads.append({
             "pin": int(fields[8]),
             "x_mm": (float(fields[2]) - origin["x"]) * 0.254,
             "y_mm": (origin["y"] - float(fields[3])) * 0.254,
-            "width_mm": float(fields[4]) * 0.254,
-            "height_mm": float(fields[5]) * 0.254,
+            "width_mm": width_mm,
+            "height_mm": height_mm,
         })
     return pads
 
 
-def imported_pads():
+def imported_pads(import_path=IMPORT):
     pads = []
     pattern = re.compile(
         r'<smtpad portHints=\{\["pin(\d+)"\]\} pcbX="([\d.\-]+)mm" '
         r'pcbY="([\d.\-]+)mm" width="([\d.]+)mm" height="([\d.]+)mm"'
     )
-    for pin, x, y, width, height in pattern.findall(IMPORT.read_text()):
+    for pin, x, y, width, height in pattern.findall(import_path.read_text()):
         pads.append({"pin": int(pin), "x_mm": float(x), "y_mm": float(y),
                      "width_mm": float(width), "height_mm": float(height)})
     return pads

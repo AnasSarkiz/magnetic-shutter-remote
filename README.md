@@ -1,36 +1,18 @@
-# Magnetic shutter remote R8 — ESP32-C3 migration qualification
+# Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
-**Codex Cloud continuation:** use branch `cloud/r8-cloud-setup`; read [cloud setup](cloud/SETUP.md) and the complete [project handoff](cloud/HANDOFF.md). Source, imported models, relevant manufacturer evidence, exact qualified archives and frozen generated Nordic JSON are included. Heavy builds are Linux-only and never started by setup.
+The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 48 × 56 × 1 mm, 44 fitted TOP references. No torch.
 
-**COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION.**
+**Routed prototype:0 native DRC errors,0 shorts and0 independent manufacturing failures.** Physical connectivity, local fabrication readback and process checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-prototype-2026-10-05/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-prototype-2026-10-05/QUALIFICATION.md).
 
-User-selected module: Espressif ESP32-C3-WROOM-02-N4 / JLCPCB C2934560. This isolated revision starts from `../magnetic-shutter-remote-r7--01a0f81f`, branch `r7-shutter-only-order-review`, commit `636d2b24eb4db775fceeb81206541f249db3b9a5`. Frozen R6 commit is `77965a8012d5544e962d987ce958c5c5614dbe3a`. Neither previous directory was modified.
+The original issue075 applies to the abandoned C3 module. Its separate missing `3V3` power metadata is issue076; the selected DOIT C3 import already has correct VCC/GND attributes. Issues078/079 describe example-land variations accepted for engineering prototype use after measured geometry and paste review. They are not demonstrated electrical blockers. Original investigations and all frozen Nordic references remain preserved under `baselines/`.
 
-The root `index.circuit.tsx`, `src/remote-circuit.tsx`, BOM and mechanical files remain the starting Nordic design. **They are not an implemented ESP32-C3 board.** Building that entry point does not validate R8. No R8 placement, routing, fabrication export or ordering approval exists. No torch is included.
-
-Completed independent work:
-
-- Supported, unchanged JLCPCB imports of the selected module and proposed TPS63031DSKR / C15516 regulator.
-- All 19 module pin identities checked against Espressif; all 27 imported pad features match original supplier geometry.
-- Isolated native A4 schematic, PCB and 3D import fixture rendered with routing disabled.
-- ESP32-C3 Zephyr BLE HID firmware port compiled; valid image checksum verified. GPIO assignment remains proposed until a qualified board exists.
-- Five focused qualification tests and TypeScript/format checks; these are not whole-board DFM tests.
-- Documented power/battery feasibility and original-revision preservation manifest.
-
-The blocking discrepancy is documented in [issue 075](tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md): supplier outer lands are approximately 2.0 × 1.0 mm, versus Espressif's recommended 1.5 × 0.9 mm. The importer faithfully preserves them. This is an unqualified supplier variation, not a proven importer scaling bug or a proven assembly failure. Workspace instructions prohibit silently altering the import and require dependent work to stop. [Issue 076](tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md) records missing inferred supply metadata separately.
-
-Reproduce independent checks from this directory:
+Use branch `cloud/r8-cloud-setup` and read [AGENTS.md](AGENTS.md), [handoff](cloud/HANDOFF.md) and [setup](cloud/SETUP.md). Setup/smoke remain lightweight:
 
 ```sh
-bun install --frozen-lockfile
-python3 scripts/audit-r8-module.py
-python3 -m unittest discover -s tests -v
-./node_modules/.bin/tsc --noEmit
-bun run format:check
-./node_modules/.bin/biome format tests/fixtures/esp32-import.circuit.tsx
-./node_modules/.bin/tsci build tests/fixtures/esp32-import.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs --3d-png
+bash cloud/setup.sh
+bash cloud/smoke.sh
 ```
 
-Fixture output: `dist/tests/fixtures/esp32-import/`; this is not a remote-board build. See [VALIDATION.md](VALIDATION.md), [power feasibility](evidence/R8-components/POWER-FEASIBILITY.md) and [firmware instructions](firmware/README.md). Versioned SHA256 manifests identify the independent source/tooling/firmware evidence. Frozen original generated circuit JSON is under `baselines/r7/dist/index/circuit.json` and `baselines/published-main/dist/index/circuit.json`. No validated ESP32 R8 root circuit JSON exists; public board publication remains blocked rather than presenting copied Nordic output as ESP32-C3.
+After qualification and placement pass, run heavy jobs sequentially through `python3 cloud/run-heavy.py -- <command>`. Use the locked toolchain. The observed hosted limit is 32 GiB, not a guaranteed allocation. [Firmware](firmware/README.md) targets ESP32-C3 at40 MHz. Actual C2 BLE build failure and original outputs remain preserved.
 
-Next gate: independently qualified supported import of the exact selected module, or authoritative qualification of the larger supplier lands. Then complete regulator/passives/harness qualification, power/boot/programming circuitry, enclosure fit, pre-routing checks, routing and manufacturing exports. Physical battery, RF, thermal, runtime, enclosure fit and phone testing remain **POST-PROTOTYPE PHYSICAL VALIDATION**.
+Battery/RF/thermal/runtime, phone operation and enclosure/shoulder-control fit require POST-PROTOTYPE PHYSICAL VALIDATION. No order, payment, supplier contact or assembler upload is authorized by this task.

@@ -1,0 +1,119 @@
+[
+  {
+    "part": "C19949080",
+    "tiers": [
+      {
+        "startNumber": 1,
+        "endNumber": 9,
+        "productPrice": 2.0386
+      },
+      {
+        "startNumber": 30,
+        "endNumber": 99,
+        "productPrice": 1.5217
+      },
+      {
+        "startNumber": 100,
+        "endNumber": 499,
+        "productPrice": 1.3493
+      },
+      {
+        "startNumber": 500,
+        "endNumber": 799,
+        "productPrice": 1.2567
+      },
+      {
+        "startNumber": 800,
+        "endNumber": -1,
+        "productPrice": 1.216
+      },
+      {
+        "startNumber": 10,
+        "endNumber": 29,
+        "productPrice": 1.72
+      }
+    ],
+    "componentModelEn": "ESPC2-12-N4",
+    "componentBrandEn": "DOIT",
+    "overseasStockCount": 560,
+    "initialPrice": 2.0386
+  },
+  {
+    "part": "C19949072",
+    "tiers": [
+      {
+        "startNumber": 1,
+        "endNumber": 9,
+        "productPrice": 2.2662
+      },
+      {
+        "startNumber": 10,
+        "endNumber": 29,
+        "productPrice": 1.8988
+      },
+      {
+        "startNumber": 30,
+        "endNumber": 99,
+        "productPrice": 1.6696
+      },
+      {
+        "startNumber": 100,
+        "endNumber": 649,
+        "productPrice": 1.5477
+      },
+      {
+        "startNumber": 650,
+        "endNumber": 1299,
+        "productPrice": 1.4404
+      },
+      {
+        "startNumber": 1300,
+        "endNumber": -1,
+        "productPrice": 1.3949
+      }
+    ],
+    "componentModelEn": "ESPC3-12-N4",
+    "componentBrandEn": "DOIT",
+    "overseasStockCount": 736,
+    "initialPrice": 2.2662
+  },
+  {
+    "part": "C41349510",
+    "tiers": [
+      {
+        "startNumber": 1,
+        "endNumber": 9,
+        "productPrice": 2.9474
+      },
+      {
+        "startNumber": 10,
+        "endNumber": 29,
+        "productPrice": 2.6206
+      },
+      {
+        "startNumber": 100,
+        "endNumber": 649,
+        "productPrice": 2.2662
+      },
+      {
+        "startNumber": 650,
+        "endNumber": 1299,
+        "productPrice": 2.1573
+      },
+      {
+        "startNumber": 1300,
+        "endNumber": -1,
+        "productPrice": 2.1069
+      },
+      {
+        "startNumber": 30,
+        "endNumber": 99,
+        "productPrice": 2.4271
+      }
+    ],
+    "componentModelEn": "ESP32-C3-MINI-1-H4X",
+    "componentBrandEn": "Espressif Systems",
+    "overseasStockCount": 1197,
+    "initialPrice": 2.9474
+  }
+]

@@ -1,0 +1,28 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/smtpad-parent-paste-style.test.tsx:
+(pass) parent paste margins change apertures without changing copper [93.68ms]
+
+tests/repros/r8/smtpad-mask-default.test.tsx:
+(pass) unmatched mask selector preserves explicit supplier margin [14.01ms]
+
+tests/repros/r8/smtpad-mask-specificity.test.tsx:
+(pass) specific mask selector overrides inherited general style [11.37ms]
+
+tests/repros/r8/smtpad-mask-style.test.tsx:
+(pass) mask process override preserves supplier primitive and copper [10.13ms]
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+(pass) SMT pad bounds use maximum Y for top in board space at every rotation and layer [548.14ms]
+
+tests/repros/r7/separated-mixed-ground-pads.test.tsx:
+(pass) Separated mixed-shape pads retain two internally connected ports rather than being merged [18.98ms]
+
+tests/repros/r7/pt4115-overlapping-ground-pads.test.tsx:
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r7/__snapshots__/pt4115-overlapping-ground-pads-pcb.snap.svg
+(pass) C347356 overlapping rectangular and pill ground pads share one PCB port [72.50ms]
+
+ 7 pass
+ 0 fail
+ 222 expect() calls
+Ran 7 tests across 7 files. [2.37s]

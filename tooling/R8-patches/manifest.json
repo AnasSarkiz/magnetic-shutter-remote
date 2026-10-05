@@ -1,0 +1,23 @@
+{
+  "base_core": "evidence/USB4215-import-audit/source-bases/core-fixed.tar.gz",
+  "apply_first": "tooling/R7-patches/core.patch",
+  "base_props": "tooling/vendor/props-qualified-source.tgz",
+  "developer_dependencies": "core patched package.json/bun.lock; props node_modules symlinks to core/node_modules",
+  "source_changes": [
+    "tooling/source-archives/core-R8-mask-style-changes.tar.gz",
+    "tooling/source-archives/props-R8-mask-style-changes.tar.gz"
+  ],
+  "runtime": [
+    "tooling/vendor/core-r8-mask-style.tgz",
+    "tooling/vendor/props-r8-mask-style.tgz"
+  ],
+  "sha256": {
+    "evidence/USB4215-import-audit/source-bases/core-fixed.tar.gz": "6acf7bc8a373d271a6ce04c0819c3be3884b630708abe2875c5e58bc102cbcfc",
+    "tooling/R7-patches/core.patch": "6d8242147f927511029e6e10d482db4880f3516e8f4a2ef393f47c278700e2fd",
+    "tooling/vendor/props-qualified-source.tgz": "609b7c16df7a1e681b557581440416cd770256d1281ce647569e611af7fd06c8",
+    "tooling/source-archives/core-R8-mask-style-changes.tar.gz": "7b74d6c6eb486e705bbf9e08de5f149e89c5b76bc74d3bec1f1ac0c7d280d336",
+    "tooling/source-archives/props-R8-mask-style-changes.tar.gz": "14854edb1813128fd3fb5187de777a9f57c4955b6de636a0b3dc7778fec7a5cf",
+    "tooling/vendor/core-r8-mask-style.tgz": "7b1d1cb50ea56e68ee15799f6143305eace14ad6e9b37f42069d308d19495fb1",
+    "tooling/vendor/props-r8-mask-style.tgz": "a9ed5b67fd680c2192ea065fe4f3f3125c4a0a96d83da040626bb29827afbd16"
+  }
+}

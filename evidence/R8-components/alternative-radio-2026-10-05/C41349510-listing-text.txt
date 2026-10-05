@@ -1,0 +1,318 @@
+ESP32-C3-MINI-1-H4X | Espressif Systems | JLCPCB
+Coupons
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+Search
+0
+Parts Cart
+Sign In
+Sign In
+Upload BOM
+Search
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+CONNECT WITH US
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+CONNECT WITH US
+©
+2026
+JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+JLCPCB
+Parts Library
+All Components
+IoT/Communication Modules
+WiFi Modules
+ESP32-C3-MINI-1-H4X
+Extended
+1
+/
+3
+* Images are for reference only
+ESP32-C3-MINI-1-H4X
+Attributes
+Value
+Manufacturer
+Espressif Systems
+MFR.Part #
+ESP32-C3-MINI-1-H4X
+JLCPCB Part #
+C41349510
+Package
+SMD,16.6x13.2mm
+Description
+-104dBm -40℃~+105℃ 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA ESP32-C3FH4 Integrated Bluetooth function On-board PCB Antenna UART、SPI、I2C、GPIO、I2S、USB SMD,16.6x13.2mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Standard Only
+MSL Level
+MSL 1
+X-ray Inspection
+Required
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+Specifications
+Attributes
+Value
+Category
+IoT/Communication Modules/WiFi Modules
+Manufacturer
+Espressif Systems
+Package
+SMD,16.6x13.2mm
+Antenna Type
+On-board PCB Antenna
+Operating Temperature
+-40℃~+105℃
+Sensitivity
+-104dBm
+Output Power
+20.5dBm
+Voltage - Supply
+3V~3.6V
+Frequency
+2.4GHz
+Features
+Integrated Bluetooth function
+Utilized IC / Part
+ESP32-C3FH4
+Interface Type
+UART、SPI、I2C、GPIO、I2S、USB
+Receive  Current
+82mA
+Send  Current
+350mA
+Results remaining
+:
+0
+View Similar
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+Related Products
+JLCPCB
+Parts Library
+All Components
+IoT/Communication Modules
+WiFi Modules
+ESP32-C3-MINI-1-H4X
+* Images are for reference only
+ESP32-C3-MINI-1-H4X
+Extended
+Manufacturer
+Espressif Systems
+MFR.Part #
+ESP32-C3-MINI-1-H4X
+JLCPCB Part #
+C41349510
+Package
+SMD,16.6x13.2mm
+Description
+-104dBm -40℃~+105℃ 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA ESP32-C3FH4 Integrated Bluetooth function On-board PCB Antenna UART、SPI、I2C、GPIO、I2S、USB SMD,16.6x13.2mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Standard Only
+MSL Level
+MSL 1
+X-ray Inspection
+Required
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+* Images are for reference only
+ESP32-C3-MINI-1-H4X
+Extended
+Manufacturer
+Espressif Systems
+MFR.Part #
+ESP32-C3-MINI-1-H4X
+JLCPCB Part #
+C41349510
+Package
+SMD,16.6x13.2mm
+Description
+-104dBm -40℃~+105℃ 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA ESP32-C3FH4 Integrated Bluetooth function On-board PCB Antenna UART、SPI、I2C、GPIO、I2S、USB SMD,16.6x13.2mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Standard Only
+MSL Level
+MSL 1
+X-ray Inspection
+Required
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+ESP32-C3-MINI-1-H4X
+Specifications
+ESP32-C3-MINI-1-H4X
+technical specifications, attributes, and parameters.
+Report an Error?
+Attributes
+Value
+Category
+IoT/Communication Modules/WiFi Modules
+Manufacturer
+Espressif Systems
+Package
+SMD,16.6x13.2mm
+Antenna Type
+On-board PCB Antenna
+Operating Temperature
+-40℃~+105℃
+Sensitivity
+-104dBm
+Output Power
+20.5dBm
+Voltage - Supply
+3V~3.6V
+Frequency
+2.4GHz
+Features
+Integrated Bluetooth function
+Utilized IC / Part
+ESP32-C3FH4
+Interface Type
+UART、SPI、I2C、GPIO、I2S、USB
+Receive  Current
+82mA
+Send  Current
+350mA
+Results remaining
+:
+0
+View Similar
+PCB Assembly Tips
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the
+ESP32-C3-MINI-1-H4X
+. Sign up to receive and
+start your assembly today
+→
+1
+Step
+1
+-
+Pre-order the parts you need from JLCPCB.
+2
+Step
+2
+-
+Place a PCBA order to have those parts assembled onto your boards.
+3
+Step
+3
+-
+JLCPCB manufactures and assembles your boards in as fast as 3 days.
+Learn more about JLCPCB Assembly
+ESP32-C3-MINI-1-H4X
+Documents
+ESP32-C3-MINI-1-H4X
+datasheets or manufacturer documentation.
+Datasheet:
+ESP32-C3-MINI-1-H4X
+Datasheet (PDF)
+ESP32-C3-MINI-1-H4X
+Schematic Symbol & PCB Footprint
+The
+ESP32-C3-MINI-1-H4X
+schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.

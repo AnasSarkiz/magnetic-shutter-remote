@@ -1,0 +1,373 @@
+{
+  "checked_date": "2026-10-05",
+  "parts": [
+    {
+      "lcsc": "C37616412",
+      "mfr": "USB4215-03-A",
+      "package": "SMD",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+85\u2103 1 48V 5A Black Female Type-C USB 2.0 SMD USB Connectors ROHS",
+      "stock": 1285,
+      "price": 0.893,
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C37616412"
+    },
+    {
+      "lcsc": "C23186",
+      "mfr": "0603WAF5101T5E",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "-55\u2103~+155\u2103 100mW 5.1k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 3775920,
+      "price": 0.0019,
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "quantity": 2,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C23186"
+    },
+    {
+      "lcsc": "C19725033",
+      "mfr": "BQ25185DLHR",
+      "package": "WSON-10-EP(2.2x2)",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40\u2103~+125\u2103 1 1A 2.2V 3V~18V 4.4V 4uA Charging IC Lithium Battery\u3001LiFePO4 Battery Support WSON-10-EP(2.2x2) Battery Management ROHS",
+      "stock": 4895,
+      "price": 1.6149,
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C19725033"
+    },
+    {
+      "lcsc": "C21190",
+      "mfr": "0603WAF1001T5E",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "-55\u2103~+155\u2103 100mW 1k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 8013731,
+      "price": 0.0039,
+      "references": [
+        "R3",
+        "R4",
+        "R7"
+      ],
+      "quantity": 3,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C21190"
+    },
+    {
+      "lcsc": "C19666",
+      "mfr": "CL10A475KO8NNNC",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "16V 4.7uF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "stock": 1373603,
+      "price": 0.0236,
+      "references": [
+        "C1",
+        "C2"
+      ],
+      "quantity": 2,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C19666"
+    },
+    {
+      "lcsc": "C2286",
+      "mfr": "KT-0603R",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "-40\u2103~+85\u2103 1.8V~2.4V 120\u00b0 20mA 300mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0603 LED Indication - Discrete ROHS",
+      "stock": 8154450,
+      "price": 0.0073,
+      "references": [
+        "LED1",
+        "LED2"
+      ],
+      "quantity": 2,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C2286"
+    },
+    {
+      "lcsc": "C160402",
+      "mfr": "SM02B-SRSS-TB(LF)(SN)",
+      "package": "SMD,P=1mm,\u5367\u8d34",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+85\u2103 1 1A 1mm 1x2P 2 2.9mm 2P 4.32mm 4mm 50V Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,\u5367\u8d34 Wire To Board Connector ROHS",
+      "stock": 83375,
+      "price": 0.133,
+      "references": [
+        "J2"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C160402",
+      "manufacturer": "JST"
+    },
+    {
+      "lcsc": "C22795",
+      "mfr": "0603WAF1303T5E",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": true,
+      "description": "-55\u2103~+155\u2103 100mW 130k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 43940,
+      "price": 0.0013,
+      "references": [
+        "R8"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C22795"
+    },
+    {
+      "lcsc": "C25804",
+      "mfr": "0603WAF1002T5E",
+      "package": "0603",
+      "stock": 21784371,
+      "source_url": "https://jlcpcb.com/partdetail/C25804/C25804",
+      "listing_sha256": "87bf29f8707fd7fc59ab8504d93b302677bdb82ff95df493f866fd8681225a5a",
+      "is_basic": false
+    },
+    {
+      "lcsc": "C15850",
+      "mfr": "CL21A106KAYNNNE",
+      "package": "0805",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "10uF 25V X5R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "stock": 3505306,
+      "price": 0.0773,
+      "references": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C3",
+        "C4"
+      ],
+      "quantity": 6,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C15850"
+    },
+    {
+      "lcsc": "C282505",
+      "mfr": "TCC0603COG470J500CT",
+      "package": "0603",
+      "stock": 7987,
+      "source_url": "https://jlcpcb.com/partdetail/C282505/C282505",
+      "listing_sha256": "caf58bb822d9bcaa606344febf5fbea3adaa1e94953f248707826d756c28d267",
+      "is_basic": false
+    },
+    {
+      "lcsc": "C19949072",
+      "mfr": "ESPC3-12-N4",
+      "package": "SMD,24x16mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40\u2103~+85\u2103 20.5dBm 350mA 3V~3.6V 82mA ESP32-C3 UART\u3001SPI\u3001I2C\u3001PWM\u3001ADC SMD,24x16mm WiFi Modules ROHS",
+      "stock": 445,
+      "price": 2.2511,
+      "manufacturer": "DOIT",
+      "source_url": "https://jlcpcb.com/partdetail/ESPC3-12-N4/C19949072"
+    },
+    {
+      "lcsc": "C14663",
+      "mfr": "CC0603KRX7R9BB104",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "100nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "stock": 12618106,
+      "price": 0.0106,
+      "references": [
+        "C5",
+        "C13",
+        "C6",
+        "C7"
+      ],
+      "quantity": 4,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C14663"
+    },
+    {
+      "lcsc": "C720477",
+      "mfr": "TS-1088-AR02016",
+      "package": "SMD,4x3mm",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "-30\u2103~+80\u2103 1.6N 100,000 cycles 12V 2mm 3.9mm 3mm 50mA Black Round Button SMD(SMT) Tab SPST Surface Mount,Vertical Without Bracket SMD,4x3mm Tactile Switches ROHS",
+      "stock": 877449,
+      "price": 0.0557,
+      "references": [
+        "SW2",
+        "SW3",
+        "SW4",
+        "SW5"
+      ],
+      "quantity": 4,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C720477"
+    },
+    {
+      "lcsc": "C160392",
+      "mfr": "BM06B-SRSS-TB(LF)(SN)",
+      "package": "SMD,P=1mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+85\u2103 1 1A 1mm 1x6P 3.6mm 4.25mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount,Vertical Tin UL94V-0 White SMD,P=1mm Wire To Board Connector ROHS",
+      "stock": 8653,
+      "price": 0.35,
+      "references": [
+        "J3"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C160392"
+    },
+    {
+      "lcsc": "C431540",
+      "mfr": "MSK12C02",
+      "package": "SMD,8x2.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20\u2103~+70\u2103 1.4mm 10000 times 12V 2.8mm 50mA 8mm SMD(SMT) Tab SPDT Surface Mount, Right Angle SMD,8x2.8mm Slide Switches ROHS",
+      "stock": 147825,
+      "price": 0.0567,
+      "references": [
+        "SW1"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C431540"
+    },
+    {
+      "lcsc": "C25803",
+      "mfr": "0603WAF1003T5E",
+      "package": "0603",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "-55\u2103~+155\u2103 100k\u03a9 100mW 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 7990119,
+      "price": 0.0016,
+      "references": [
+        "R5",
+        "R6",
+        "R12",
+        "R13"
+      ],
+      "quantity": 4,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C25803"
+    },
+    {
+      "lcsc": "C8545",
+      "mfr": "2N7002",
+      "package": "SOT-23",
+      "is_basic": true,
+      "is_preferred": false,
+      "description": "1 N-channel 115mA 2.5V 225mW 50pF 5pF 5\u03a9@10V 60V SOT-23 MOSFETs ROHS",
+      "stock": 432340,
+      "price": 0.0155,
+      "references": [
+        "Q1",
+        "Q2"
+      ],
+      "quantity": 2,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C8545"
+    },
+    {
+      "lcsc": "C15516",
+      "mfr": "TPS63031DSKR",
+      "package": "SON-10-EP(2.5x2.5)",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40\u2103~+125\u2103@(TJ) 1 1.8V~5.5V 2.4MHz 25uA 3.3V 900mA Buck-Boost Buck-Boost Built-in Fixed Yes SON-10-EP(2.5x2.5) DC-DC Converters ROHS",
+      "stock": 3638,
+      "price": 1.0705,
+      "references": [
+        "U3"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C15516",
+      "manufacturer": "Texas Instruments"
+    },
+    {
+      "lcsc": "C56594",
+      "mfr": "SWPA3015S1R5NT",
+      "package": "SMD,3x3mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.5uH 1.7A 2.3A 50m\u03a9 \u00b130% SMD,3x3mm Power Inductors ROHS",
+      "stock": 4820,
+      "price": 0.057,
+      "references": [
+        "L1"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C56594",
+      "manufacturer": "Sunlord"
+    },
+    {
+      "lcsc": "C485802",
+      "mfr": "TPS3839G33DBZR",
+      "package": "SOT-23-3",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40\u2103~+85\u2103@(TA) 1 150nA 200ms 3.08V 900mV~6.5V Active Low No No Push-pull Voltage Monitor SOT-23-3 Supervisor and Reset ICs ROHS",
+      "stock": 3520,
+      "price": 0.4019,
+      "references": [
+        "U4"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C485802"
+    },
+    {
+      "lcsc": "C5219772",
+      "mfr": "TMP390A2DRLR",
+      "package": "SOT-563",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-50\u2103~+124\u2103 1.62V~5.5V 2 500nA 500nA 5\u2103\u300110\u2103\u300120\u2103 Adjustable temperature threshold\u3001Adjustable hysteresis temperature Semiconductor Support \u00b13\u2103 SOT-563 Thermostat Switches ROHS",
+      "stock": 39315,
+      "price": 0.5532,
+      "references": [
+        "U5"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C5219772"
+    },
+    {
+      "lcsc": "C22844",
+      "mfr": "0603WAF1621T5E",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55\u2103~+155\u2103 1.62k\u03a9 100mW 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 29502,
+      "price": 0.0013,
+      "references": [
+        "R10"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C22844"
+    },
+    {
+      "lcsc": "C22893",
+      "mfr": "0603WAF1872T5E",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55\u2103~+155\u2103 100mW 18.7k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 836,
+      "price": 0.0022,
+      "references": [
+        "R11"
+      ],
+      "quantity": 1,
+      "source_url": "https://jlcsearch.tscircuit.com/api/search?q=C22893"
+    }
+  ]
+}

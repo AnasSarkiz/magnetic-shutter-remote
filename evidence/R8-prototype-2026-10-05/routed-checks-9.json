@@ -1,0 +1,63 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_102",
+        "source_port_103",
+        "source_port_104"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_151",
+        "source_port_152",
+        "source_port_153"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_79_source_net_0_mst34_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via pcb_via[#pcb_via_79] and trace trace[.R3 > port.cathode] are too close (clearance: 0.005mm, minimum: 0.15mm)",
+      "pcb_via_id": "pcb_via_79",
+      "pcb_trace_id": "source_net_0_mst34_0",
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.0048629779113232435,
+      "center": {
+        "x": 4.2881639113837675,
+        "y": 12.273534848580505
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_57_pcb_via_66",
+      "message": "Vias pcb_via[#pcb_via_57] and pcb_via[#pcb_via_66] from different nets are too close together (gap: 0.475mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_57",
+        "pcb_via_66"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.474710715455232,
+      "pcb_center": {
+        "x": -1.9881035614843554,
+        "y": 8.94064146829886
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

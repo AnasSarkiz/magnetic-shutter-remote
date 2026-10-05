@@ -1,0 +1,238 @@
+{
+  "part": "ESPC2-12E-N4",
+  "jlcpcb": "C19949081",
+  "pcb_pads": 16,
+  "pcb_traces": 0,
+  "circuit_error_records": [],
+  "source_ports": [
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_0",
+      "name": "EN",
+      "pin_number": 1,
+      "port_hints": [
+        "EN",
+        "pin1",
+        "1"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_1",
+      "name": "IO0",
+      "pin_number": 2,
+      "port_hints": [
+        "IO0",
+        "pin2",
+        "2"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_2",
+      "name": "IO1",
+      "pin_number": 3,
+      "port_hints": [
+        "IO1",
+        "pin3",
+        "3"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_3",
+      "name": "IO2",
+      "pin_number": 4,
+      "port_hints": [
+        "IO2",
+        "pin4",
+        "4"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_4",
+      "name": "IO3",
+      "pin_number": 5,
+      "port_hints": [
+        "IO3",
+        "pin5",
+        "5"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_5",
+      "name": "IO4",
+      "pin_number": 6,
+      "port_hints": [
+        "IO4",
+        "pin6",
+        "6"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_6",
+      "name": "IO5",
+      "pin_number": 7,
+      "port_hints": [
+        "IO5",
+        "pin7",
+        "7"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_7",
+      "name": "VCC",
+      "pin_number": 8,
+      "port_hints": [
+        "VCC",
+        "pin8",
+        "8"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "requires_power": true
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_8",
+      "name": "GND",
+      "pin_number": 9,
+      "port_hints": [
+        "GND",
+        "pin9",
+        "9"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "requires_ground": true,
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_9",
+      "name": "IO6",
+      "pin_number": 10,
+      "port_hints": [
+        "IO6",
+        "pin10",
+        "10"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_10",
+      "name": "IO7",
+      "pin_number": 11,
+      "port_hints": [
+        "IO7",
+        "pin11",
+        "11"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_11",
+      "name": "IO9",
+      "pin_number": 12,
+      "port_hints": [
+        "IO9",
+        "pin12",
+        "12"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_12",
+      "name": "IO10",
+      "pin_number": 13,
+      "port_hints": [
+        "IO10",
+        "pin13",
+        "13"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_13",
+      "name": "IO18",
+      "pin_number": 14,
+      "port_hints": [
+        "IO18",
+        "pin14",
+        "14"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_14",
+      "name": "RXD0",
+      "pin_number": 15,
+      "port_hints": [
+        "RXD0",
+        "pin15",
+        "15"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_port",
+      "source_port_id": "source_port_15",
+      "name": "TXD0",
+      "pin_number": 16,
+      "port_hints": [
+        "TXD0",
+        "pin16",
+        "16"
+      ],
+      "source_component_id": "source_component_0",
+      "subcircuit_id": "subcircuit_source_group_0"
+    }
+  ],
+  "schematic_sheets": [
+    {
+      "type": "schematic_sheet",
+      "schematic_sheet_id": "schematic_sheet_0",
+      "name": "C2_IMPORT_AUDIT",
+      "display_name": "DOIT ESPC2-12E-N4 \u2014 component qualification",
+      "sheet_index": 0,
+      "sheet_size": "a4",
+      "sheet_width": 297,
+      "sheet_height": 210,
+      "center": {
+        "x": -0.050000000000000044,
+        "y": 0
+      }
+    }
+  ],
+  "warning": "Port VCC on U1 is missing a trace",
+  "warning_disposition": "unpowered import-inspection fixture; functional supply not validated"
+}

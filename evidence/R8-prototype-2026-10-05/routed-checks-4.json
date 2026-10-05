@@ -1,0 +1,132 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_102",
+        "source_port_103",
+        "source_port_104"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_151",
+        "source_port_152",
+        "source_port_153"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U1 > port.pin8, .C4 > port.1] is too close to trace[.R6 > port.anode] (gap: 0.143mm)",
+      "pcb_trace_id": "source_net_3_mst3_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst3_0_source_net_1_mst4_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -5.832956413225141,
+        "y": 7.101435753649897
+      },
+      "pcb_port_ids": [
+        "pcb_port_60",
+        "pcb_port_128",
+        "pcb_port_105"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_source_net_0_mst49_0_pcb_hole_0",
+      "pcb_trace_id": "source_net_0_mst49_0",
+      "source_trace_id": "source_trace_60",
+      "pcb_component_ids": [
+        "pcb_component_24"
+      ],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 21.063943810915465,
+        "y": 3.496700917860971
+      },
+      "message": "Trace source_net_0_mst49_0 is too close to non-plated hole pcb_hole_0 (gap: 0.167217mm, required: 0.3mm)"
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_pcb_via_18_pcb_smtpad_14",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via pcb_via[#pcb_via_18] and pad pcb_port[.R2 > .pin2] are too close (clearance: 0.082mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_via_18",
+        "pcb_smtpad_14"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.08227200656643718,
+      "center": {
+        "x": 0.33898978660782364,
+        "y": 18.528396940965113
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_31_pcb_via_76",
+      "message": "Vias pcb_via[#pcb_via_31] and pcb_via[#pcb_via_76] from different nets are too close together (gap: 0.481mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_31",
+        "pcb_via_76"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.4814249804043895,
+      "pcb_center": {
+        "x": 3.1500000000000004,
+        "y": 8.8875
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_57_pcb_via_97",
+      "message": "Vias pcb_via[#pcb_via_57] and pcb_via[#pcb_via_97] from different nets are too close together (gap: 0.450mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_57",
+        "pcb_via_97"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.4498080284910343,
+      "pcb_center": {
+        "x": -7.205740854948026,
+        "y": 21.824604132212386
+      }
+    }
+  ],
+  "holeTrace": [
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_source_net_0_mst49_0_pcb_hole_0",
+      "pcb_trace_id": "source_net_0_mst49_0",
+      "source_trace_id": "source_trace_60",
+      "pcb_component_ids": [
+        "pcb_component_24"
+      ],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 21.063943810915465,
+        "y": 3.496700917860971
+      },
+      "message": "Trace source_net_0_mst49_0 is too close to non-plated hole pcb_hole_0 (gap: 0.167217mm, required: 0.3mm)"
+    }
+  ],
+  "dangling": [],
+  "selfShorts": []
+}

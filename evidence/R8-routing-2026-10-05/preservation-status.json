@@ -1,0 +1,46 @@
+{
+  "unchanged_tracked_path_scopes": [
+    "index.circuit.tsx",
+    "src",
+    "firmware",
+    "baselines",
+    "bun.lock",
+    "package.json",
+    "cloud/run-heavy.py",
+    "tooling"
+  ],
+  "changed_protected_tracked_paths": [],
+  "frozen_context_check": "129/129 hashes and recorded runtime/source archive hashes PASS",
+  "head": "b25353c0a1d7adceeab9a966aaf68a6cb3594cc9",
+  "local_origin_main_ref": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "source_hashes": [
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "27b57f99a5782ed5c962678d04993512cdbc5f21de9233693965d1ef958c4ce6"
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "fc89beab1fe6d741832068ff0e42527d64c742b87416bfa5ed887c6961a46ff8"
+    },
+    {
+      "path": "cloud/run-heavy.py",
+      "sha256": "6b4dbd7b8837b269e54bb28bc231bfe52bf41096598ff7557600d561bc7e27bc"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11"
+    },
+    {
+      "path": "package.json",
+      "sha256": "03ccaf1f5eadb521e226388ac0e3c31907fbceba038d8b62f1a9fa98e3f005bf"
+    },
+    {
+      "path": "evidence/R8-components/R8-INTEGRITY-MANIFEST.json",
+      "sha256": "8b7598446e7fbcc603dc9fc7c416e19f1880ef44f0c225873c6e72f93ea68104"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/R8-RADIO-QUALIFICATION-MANIFEST-2026-10-05.json",
+      "sha256": "d65b63c83d65b6b07f5de91fef81879b004e91e092d11fbfb5846a2b15ce1849"
+    }
+  ]
+}

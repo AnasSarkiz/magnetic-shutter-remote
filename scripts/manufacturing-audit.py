@@ -53,7 +53,9 @@ def pad(e):
     if shape=='polygon':return Polygon([(p['x'],p['y']) for p in e['points']])
     raise ValueError(f'Unsupported SMT shape {shape}')
 
-def make_features(circuit):
+def make_features(circuit, trace_geometry="conservative"):
+    if trace_geometry not in ("conservative","gerber"):
+        raise ValueError("Unknown trace geometry mode")
     byid={}
     for e in circuit:
         if (i:=e.get(e['type']+'_id')):byid[i]=e
@@ -111,13 +113,47 @@ def make_features(circuit):
             for l in layers:copper.append(Copper(e[t+'_id'],'annulus',l,n,o,e.get('pcb_component_id')))
         elif t=='pcb_trace':
             parts={}
+            for item in e['route']:
+                if trace_geometry=='gerber' and item.get('width_interpolation_mode') is not None:
+                    raise ValueError('Gerber exporter does not support interpolated trace widths')
+                if item['route_type']=='through_pad':
+                    # This transition adds copper on its declared endpoint layers;
+                    # only real plated geometry joins layers in connectivity review.
+                    widths.append((e[t+'_id'],item['width']))
+                    if trace_geometry=='conservative':
+                        geometry=LineString([(item['start']['x'],item['start']['y']),(item['end']['x'],item['end']['y'])]).buffer(item['width']/2,quad_segs=256)
+                        for layer in {item['start_layer'],item['end_layer']}:
+                            parts.setdefault(layer,[]).append(geometry)
+                elif item['route_type'] not in ('wire','via'):
+                    raise ValueError('Unsupported route element')
             for a,b in zip(e['route'],e['route'][1:]):
-                if a['route_type']=='wire' and b['route_type']=='wire' and a['layer']==b['layer']:
-                    # Conservative segment envelope includes the wider endpoint; final
-                    # copper distances are checked independently in exported CAM.
-                    widths.extend([(e[t+'_id'],a['width']),(e[t+'_id'],b['width'])])
-                    parts.setdefault(a['layer'],[]).append(LineString([(a['x'],a['y']),(b['x'],b['y'])]).buffer(max(a['width'],b['width'])/2,quad_segs=256))
-                elif a['route_type'] not in ('wire','via') or b['route_type'] not in ('wire','via'):raise ValueError('Unsupported route element')
+                if trace_geometry=='gerber':
+                    # Match the qualified exporter: the start wire sets aperture
+                    # width; via/through-pad starts use the following wire.
+                    if a['route_type']=='wire':
+                        layer=a['layer'];start=a;segment_width=a['width']
+                        if b['route_type'] in ('wire','via'):end=b
+                        elif b['start_layer']==layer:end=b['start']
+                        elif b['end_layer']==layer:end=b['end']
+                        else:continue
+                    elif b['route_type']=='wire':
+                        layer=b['layer'];end=b;segment_width=b['width']
+                        if a['route_type']=='via':start=a
+                        elif a['end_layer']==layer:start=a['end']
+                        elif a['start_layer']==layer:start=a['start']
+                        else:continue
+                    else:continue
+                    widths.append((e[t+'_id'],segment_width))
+                    if (start['x'],start['y'])!=(end['x'],end['y']):
+                        parts.setdefault(layer,[]).append(LineString([(start['x'],start['y']),(end['x'],end['y'])]).buffer(segment_width/2,quad_segs=256))
+                else:
+                    start=a['end'] if a['route_type']=='through_pad' else a
+                    end=b['start'] if b['route_type']=='through_pad' else b
+                    start_layer=a['end_layer'] if a['route_type']=='through_pad' else a.get('layer')
+                    end_layer=b['start_layer'] if b['route_type']=='through_pad' else b.get('layer')
+                    if a['route_type'] in ('wire','through_pad') and b['route_type'] in ('wire','through_pad') and start_layer==end_layer:
+                        widths.extend([(e[t+'_id'],a['width']),(e[t+'_id'],b['width'])])
+                        parts.setdefault(start_layer,[]).append(LineString([(start['x'],start['y']),(end['x'],end['y'])]).buffer(max(a['width'],b['width'])/2,quad_segs=256))
             for l,segments in parts.items():copper.append(Copper(e[t+'_id'],'track',l,n,unary_union(segments)))
         elif t=='pcb_copper_pour':
             if e.get('shape')=='brep':g=brep_polygon(e['brep_shape'])
@@ -167,6 +203,18 @@ def audit(copper,drills,widths):
             record('via_annulus' if d.kind=='via' else 'pth_annulus',d.id,d.id,gap,.05 if d.kind=='via' else .18)
         for c in copper:
             minimum,rule=drill_copper_rule(d,c)
+            if (minimum is not None and d.outer is not None and
+                    c.kind=='track' and d.net is not None and d.net==c.net):
+                # A trace and via wholly joined by real local plane copper
+                # have no separate etched gap. Require the entire local hull;
+                # matching names or a remote conductive path are insufficient.
+                local_track=c.geometry.intersection(d.outer.buffer(minimum))
+                if not local_track.is_empty:
+                    local_hull=d.outer.union(local_track).convex_hull
+                    if any(plane.kind=='pour' and plane.layer==c.layer and
+                           plane.net==c.net and plane.geometry.covers(local_hull)
+                           for plane in copper):
+                        minimum,rule=None,'physical_shared_plane_barrel_feed'
             if minimum is None:joins.append({'drill':d.id,'copper':c.id,'layer':c.layer,'classification':rule});continue
             if lower_bound_distance(d.geometry,c.geometry)<=minimum+.25:
                 record(rule,d.id,c.id+':'+c.layer,d.geometry.distance(c.geometry),minimum)
@@ -180,10 +228,10 @@ def audit(copper,drills,widths):
             if same and a.geometry.intersects(b.geometry):continue # copper union/intentional join
             if same:
                 if a.kind==b.kind=='track':
-                    # Audit spacing outside actual common conductive pads.
-                    # A shared pad is a local conductive junction, not a
-                    # footprint exemption or an arbitrary clearance envelope.
-                    shared=[c for c in copper if c.kind in ('annulus','smt') and
+                    # Audit etched gaps outside actual common conductive copper.
+                    # Pads and pours merge covered track sections into a single
+                    # conductive shape; uncovered close parallel tails still fail.
+                    shared=[c for c in copper if c.kind in ('annulus','smt','pour') and
                             c.layer==a.layer and c.net==a.net and
                             c.geometry.intersects(a.geometry) and
                             c.geometry.intersects(b.geometry)]
@@ -194,7 +242,7 @@ def audit(copper,drills,widths):
                         outside_b=b.geometry.difference(junction)
                         joins.append({'copper_a':a.id,'copper_b':b.id,
                                       'layer':a.layer,'pads':[c.id for c in shared],
-                                      'classification':'physical_shared_pad_junction'})
+                                      'classification':'physical_shared_copper_junction'})
                     if not outside_a.is_empty and not outside_b.is_empty:
                         record('same_net_separate_tracks',a.id,b.id,outside_a.distance(outside_b),.25)
                 continue
@@ -208,8 +256,8 @@ def audit(copper,drills,widths):
     return {'failures':failures,'measurements':sorted(measurements,key=lambda m:m['gap_mm']-m['minimum_mm']),'classified_joins':joins,'curve_error_bound_mm':EPS,'sources':[RULE_SOURCE,NPTH_SOURCE],'limitations':['No fabrication tolerance stack is subtracted from nominal capability minima.','Minimum drill sizes/slot aspect ratios, solder mask and silk require separate export review.','PTH/NPTH mixed drill spacing uses conservative project 0.45mm; JLC row labels do not explicitly classify mixed pairs.','Outer drill-to-SMT/pour .2mm is a retained project constraint; JLC has specific track rows.','Unsupported geometry raises an error; no ignored copper features.']}
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--input',default='dist/index/circuit.json');p.add_argument('--output',default='evidence/R3/manufacturing-audit.json');a=p.parse_args()
-    result=audit(*make_features(json.loads(Path(a.input).read_text())))
+    p=argparse.ArgumentParser();p.add_argument('--input',default='dist/index/circuit.json');p.add_argument('--trace-geometry',choices=['conservative','gerber'],default='conservative');p.add_argument('--output',default='evidence/R3/manufacturing-audit.json');a=p.parse_args()
+    result=audit(*make_features(json.loads(Path(a.input).read_text()),a.trace_geometry));result['trace_geometry']=a.trace_geometry
     Path(a.output).write_text(json.dumps(result,indent=2)+'\n')
     print('Classified manufacturing failures:',len(result['failures']))
     for f in result['failures'][:25]:print(f)

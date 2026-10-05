@@ -1,0 +1,90 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": [],
+  "generatedErrors": [],
+  "generatedWarnings": [
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_26",
+      "refdes": "Q1",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_1",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_43",
+      "refdes": "Q2",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_1",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_12"
+    }
+  ]
+}

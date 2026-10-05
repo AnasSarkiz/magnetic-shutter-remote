@@ -1,0 +1,11 @@
+ AGENTS.md                                          |  8 ++++++--
+ README.md                                          | 24 ++++++++++------------
+ VALIDATION.md                                      | 18 ++++++++++++++++
+ cloud/HANDOFF.md                                   | 10 +++++++++
+ cloud/smoke.sh                                     |  1 +
+ scripts/audit-r8-module.py                         | 19 +++++++++++------
+ tests/fixtures/esp32-import.circuit.tsx            |  9 ++++++++
+ ...r-lands-differ-from-espressif-recommendation.md |  4 ++++
+ ...076-numeric-supply-pin-not-inferred-as-power.md |  6 ++++++
+ tscircuit-issues/README.md                         |  6 +++++-
+ 10 files changed, 83 insertions(+), 22 deletions(-)

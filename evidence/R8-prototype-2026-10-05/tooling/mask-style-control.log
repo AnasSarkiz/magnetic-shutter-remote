@@ -1,0 +1,50 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/smtpad-mask-default.test.tsx:
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/smtpad-mask-default-pcb.snap.svg
+(pass) unmatched mask selector preserves explicit supplier margin [79.97ms]
+
+tests/repros/r8/smtpad-mask-specificity.test.tsx:
+ 7 |     <chip name="U1" pcbSx={{"& footprint smtpad[portHints='pin1']": {solderMaskMargin: 0.02}}}
+ 8 |       footprint={<footprint><smtpad portHints={["pin1"]} shape="rect" width={0.3} height={1.2} solderMaskMargin="0.0508mm"/></footprint>}/>
+ 9 |     <pcbnotetext text="Specific 0.02 mm beats inherited 0.06 mm" pcbY={2}/>
+10 |   </board>)
+11 |   circuit.render()
+12 |   expect(circuit.db.pcb_smtpad.list()[0].soldermask_margin).toBeCloseTo(0.02)
+                                                                 ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 0.02
+Received: 0.0508
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 0.030799999999999998
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/smtpad-mask-specificity.test.tsx:12:61)
+(fail) specific mask selector overrides inherited general style [18.24ms]
+
+tests/repros/r8/smtpad-mask-style.test.tsx:
+ 9 |         solderMaskMargin="0.0508mm"/></footprint>}/>
+10 |     <pcbnotetext text="Mask override 0.04 mm; supplier copper preserved" pcbY={2}/>
+11 |   </board>)
+12 |   circuit.render()
+13 |   const pad = circuit.db.pcb_smtpad.list()[0]
+14 |   expect(pad.soldermask_margin).toBeCloseTo(0.04)
+                                     ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 0.04
+Received: 0.0508
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 0.010799999999999997
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/smtpad-mask-style.test.tsx:14:33)
+(fail) mask process override preserves supplier primitive and copper [11.03ms]
+
+ 1 pass
+ 2 fail
+ 4 expect() calls
+Ran 3 tests across 3 files. [1.71s]

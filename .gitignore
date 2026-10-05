@@ -40,6 +40,8 @@ yarn-error.log*
 firmware/deps/
 firmware/.venv/
 firmware/build/
+firmware/build-c2/
+firmware/build-c3/
 firmware/zephyr-sdk-0.17.2/
 firmware/sdk-download/
 tooling/gerber-review-venv/

@@ -1,0 +1,7 @@
+{
+  "index.circuit.tsx": "12aba02a9c937a2d019fff646ac272f0a5826077a254204dfc3000b5dcbbff7d",
+  "src/remote-circuit.tsx": "65213c68b6dbb8b2f7231f18642251dfd380952a5cf4ad21e53cba91adb78309",
+  "src/functional-markings.tsx": "5c7b9f80cc7643d61ac092b91f96ff562ba58aab95db685e08fd8e7c5be199c1",
+  "bom.json": "f5b97fd86800453a060a64bf539fc6a3944afce80942c4791bf975441f840ec5",
+  "bun.lock": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11"
+}

@@ -1,0 +1,123 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_pcb_via_54_pcb_smtpad_79",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via pcb_via[#pcb_via_54] and pad pcb_port[.R7 > .pin2] are too close (clearance: 0.068mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_via_54",
+        "pcb_smtpad_79"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.06799680000000041,
+      "center": {
+        "x": -16,
+        "y": -4.5339984
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": [],
+  "generatedErrors": [
+    {
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via pcb_via[#pcb_via_54] and pad pcb_port[.R7 > .pin2] are too close (clearance: 0.068mm, minimum: 0.15mm)",
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pcb_pad_pad_clearance_error_0",
+      "pcb_pad_ids": [
+        "pcb_via_54",
+        "pcb_smtpad_79"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.06799680000000041,
+      "center": {
+        "x": -16,
+        "y": -4.5339984
+      }
+    }
+  ],
+  "generatedWarnings": [
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_26",
+      "refdes": "Q1",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "source_refdes_convention_warning",
+      "source_refdes_convention_warning_id": "source_refdes_convention_warning_1",
+      "warning_type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "source_component_id": "source_component_43",
+      "refdes": "Q2",
+      "source_component_ftype": "simple_chip",
+      "expected_prefixes": [
+        "U",
+        "IC"
+      ],
+      "actual_prefix": "Q"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_1",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    }
+  ]
+}

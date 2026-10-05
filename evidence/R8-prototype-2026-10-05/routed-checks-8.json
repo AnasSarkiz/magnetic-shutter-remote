@@ -1,0 +1,142 @@
+{
+  "all": [
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "via_in_pad_pcb_via_15_pcb_smtpad_46",
+      "error_type": "pcb_placement_error",
+      "message": "Via hole at (-2.50mm, 13.00mm) overlaps SMD pad C8.pin1 at (-2.50mm, 13.00mm)",
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_102",
+        "source_port_103",
+        "source_port_104"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_151",
+        "source_port_152",
+        "source_port_153"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U2 > port.pin11] overlaps with pcb_smtpad \"pcb_port[.C8 > .pin1]\" (accidental contact)",
+      "pcb_trace_id": "saved_fanout_pcb_group_1_9",
+      "center": {
+        "x": -1.7949995999999997,
+        "y": 13
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_fanout_pcb_group_1_9_pcb_smtpad_46",
+      "pcb_component_ids": [
+        "pcb_component_12"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_30",
+        "pcb_port_49"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U2 > port.pin11] overlaps with trace[.C8 > port.1] (accidental contact)",
+      "pcb_trace_id": "saved_fanout_pcb_group_1_9",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_fanout_pcb_group_1_9_saved_phase_null_0_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -2.500001,
+        "y": 13
+      },
+      "pcb_port_ids": [
+        "pcb_port_30",
+        "pcb_port_49"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.C8 > port.1] overlaps with pcb_via \"pcb_via[#pcb_via_15]\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_0",
+      "center": {
+        "x": -2.500002,
+        "y": 13
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_phase_null_0_0_pcb_via_15",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_49"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.C8 > port.1] overlaps with trace[.C8 > port.2] (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_phase_null_0_0_source_net_0_mst6_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -2.4178210744456274,
+        "y": 13.009784565288694
+      },
+      "pcb_port_ids": [
+        "pcb_port_49",
+        "pcb_port_50"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.C8 > port.1] overlaps with trace[.C9 > port.2] (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_phase_null_0_0_source_net_0_mst26_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -2.4178210744456274,
+        "y": 13.009784565288694
+      },
+      "pcb_port_ids": [
+        "pcb_port_49",
+        "pcb_port_52"
+      ]
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_pcb_via_15_pcb_smtpad_46",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via pcb_via[#pcb_via_15] and pad pcb_port[.C8 > .pin1] are too close (clearance: 0mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_via_15",
+        "pcb_smtpad_46"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0,
+      "center": {
+        "x": -2.5,
+        "y": 13
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

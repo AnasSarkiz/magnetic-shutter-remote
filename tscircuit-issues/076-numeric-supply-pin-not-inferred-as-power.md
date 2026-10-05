@@ -13,3 +13,9 @@ Confirmed root cause: `POWER_PIN_LABEL = /^(?:VCC|VDD|VIN|VDDA|VBUS)\d*$/` exclu
 Impact: automated power-pin checks cannot establish the module supply connection from the imported metadata alone. The unpowered inspection fixture is intentionally not a functional circuit. A successful render must not be called a complete electrical validation.
 
 No generated import was edited, no warning was suppressed, and no generic regex broadening was made without proving that numeric labels distinguish supply inputs from outputs. Future resolution must use the supported manufacturer-metadata pipeline or documented board-level attributes grounded in the exact datasheet, with regression coverage for ambiguous labels and exposed-pad semantics. Supplier land qualification in issue 075 remains separately blocking.
+
+## Project correction — 2026-10-05
+
+At the user's explicit request, `tests/fixtures/esp32-import.circuit.tsx` now supplies the supported `pinAttributes` prop: pin 1 `requiresPower: true`, retaining pin 9 `requiresGround: true`. The generated supplier import remains byte-for-byte unchanged. This is manufacturer-specific board-level metadata, not a change to generic label inference.
+
+`bun test tests/r8-power-metadata.test.ts` exercises the actual fixture through the native evaluator: pin 1 emits `requires_power=true`, pin 9 retains `requires_ground=true`, no other port is marked as requiring power, all 27 pads remain and there are no routed traces. Pin 19 is not automatically marked as requiring ground: Espressif v1.7 section 9 states that soldering EPAD to base-board ground is optional for thermal performance. The original warning log remains historical evidence. The raw importer omission remains open upstream; the project fixture now supplies the missing power metadata. This unpowered inspection fixture does not establish a working supply circuit.

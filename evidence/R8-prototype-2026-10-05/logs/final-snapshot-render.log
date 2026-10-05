@@ -1,0 +1,48 @@
+{
+  "started_utc": "20261005T163406287254Z",
+  "command": [
+    "bun",
+    "-e",
+    "import {Resvg} from \"@resvg/resvg-js\"; for (const name of [\"pcb\", \"schematic\"]) { const svg = await Bun.file(`evidence/R8-prototype-2026-10-05/snapshots/index.circuit-${name}.snap.svg`).text(); await Bun.write(`evidence/R8-prototype-2026-10-05/visual-review/snapshot-${name}.png`, new Resvg(svg,{fitTo:{mode:\"width\",value:1800}}).render().asPng()); } const svg=await Bun.file(\".codex/runtime/r8-tooling/core/tests/repros/r7/__snapshots__/pt4115-overlapping-ground-pads-pcb.snap.svg\").text(); await Bun.write(\"evidence/R8-prototype-2026-10-05/tooling/pt4115-regression.png\",new Resvg(svg,{fitTo:{mode:\"width\",value:1000}}).render().asPng());"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "started_utc": "20261005T163406287254Z",
+  "command": [
+    "bun",
+    "-e",
+    "import {Resvg} from \"@resvg/resvg-js\"; for (const name of [\"pcb\", \"schematic\"]) { const svg = await Bun.file(`evidence/R8-prototype-2026-10-05/snapshots/index.circuit-${name}.snap.svg`).text(); await Bun.write(`evidence/R8-prototype-2026-10-05/visual-review/snapshot-${name}.png`, new Resvg(svg,{fitTo:{mode:\"width\",value:1800}}).render().asPng()); } const svg=await Bun.file(\".codex/runtime/r8-tooling/core/tests/repros/r7/__snapshots__/pt4115-overlapping-ground-pads-pcb.snap.svg\").text(); await Bun.write(\"evidence/R8-prototype-2026-10-05/tooling/pt4115-regression.png\",new Resvg(svg,{fitTo:{mode:\"width\",value:1000}}).render().asPng());"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T16:34:09.831059+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 134896,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T163406287254Z.log"
+}

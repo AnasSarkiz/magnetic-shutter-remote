@@ -1,0 +1,290 @@
+{
+  "scope": "radio replacement qualification and manufacturer power metadata; root board migration pending",
+  "base_head": "b25353c0a1d7adceeab9a966aaf68a6cb3594cc9",
+  "branch": "cloud/r8-cloud-setup",
+  "supersedes_radio_selection": "ESP32-C3-WROOM-02-N4 / C2934560",
+  "selected_radio": "DOIT ESPC2-12E-N4 / C19949081",
+  "preserves_original_manifests": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "baea924915447dbfbf59d311fc8cd60bebb1b26d692132568410cff405b849e7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "50e129c29c3f361d862a83e3f7c2452accd75e1ec8fc0c425cd694f5dc7c7e8e"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "69aa45470225bfe64346170632580abb8dcb31108706a6962d050ace3a1dc84c"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11"
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "sha256": "1b480237ad1c0e8371919f827c5bc624c5dafe13e2de1601ca2c233bdfc48161"
+    },
+    {
+      "path": "cloud/R7-PORTABLE-MANIFEST.json",
+      "sha256": "cc53f2f54330808083a5776a2df4f45243e18ad335d5c04fd0f832001a1ef512"
+    },
+    {
+      "path": "cloud/run-heavy.py",
+      "sha256": "6b4dbd7b8837b269e54bb28bc231bfe52bf41096598ff7557600d561bc7e27bc"
+    },
+    {
+      "path": "cloud/smoke.sh",
+      "sha256": "1a3036d167b6804692221f016acafc5e5aa8727309ce185a874643190008ada9"
+    },
+    {
+      "path": "evidence/R8-components/CLOUD-QUALIFICATION-FOLLOWUP-2026-10-05.md",
+      "sha256": "9bb03d39f0104de665ea47e79ca8567f34d15a46d9779854b6ccf3ef37893232"
+    },
+    {
+      "path": "evidence/R8-components/R8-INTEGRITY-MANIFEST.json",
+      "sha256": "8b7598446e7fbcc603dc9fc7c416e19f1880ef44f0c225873c6e72f93ea68104"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949072-listing-text.txt",
+      "sha256": "bd960199cd5aabbff9ee9bd5b39ddbd59705ef986d545a6cf47af28e7a4c29a7"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949080-datasheet.pdf",
+      "sha256": "a562a618c9497306d7fb3e60fde00f90aa41d17033355c6e040bd9445216938c"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949080-datasheet.txt",
+      "sha256": "993bcb55c290dc411e7ce508003c019c3571fdb34bab1b7dc0347a7ddd1e86c7"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949080-listing-text.txt",
+      "sha256": "858515eb758efacf0794fb665df818b5c94e7968367114e2e96666eb857122e6"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949080-supplier-raw.json",
+      "sha256": "9598eaceac7d6a15c0b03f8b08006e83a921655dbfcff8b28a21245291ad06d6"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949081-datasheet.pdf",
+      "sha256": "6ebec1bbc1d68b97049996ec9b9f907cf38d070d7a078fd4244a931c00fafee4"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949081-datasheet.txt",
+      "sha256": "cc684f3a11a33a78cc17308e9d834defc60c0365f848538c3bc39553b14eed0c"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949081-listing-audit.json",
+      "sha256": "aef3ddf026a3f7be48967d6718041de109805a537aac06e53bb5a64241c90cbc"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949081-listing-text.txt",
+      "sha256": "353e0cab7cb75f758e1ab150b3b5194244ab9120e134a15ef62d5a3bcf434180"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C19949081-supplier-raw.json",
+      "sha256": "04e0dffe66973799b7992b742aac029ee69053ed12c553805a8d55c08836b65e"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/C41349510-listing-text.txt",
+      "sha256": "bd021948e880557f64a343b4cf31174536d25fc57076bd76a8e025ac15451a47"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md",
+      "sha256": "6a344b90eba7d1267c8bcc127a334293fb8ffa078eaaef203e2b22118858e3a0"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/alternatives-listing-audit.json",
+      "sha256": "e130e5615695e7bb847118eac50d40d759d21ea7857aaf88a552aafad59519c7"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/c19949080-import-with-model-access.log",
+      "sha256": "1637b893ef9683d899dcfc98d885ffcc25656cc8fb690fe390f30f8936b879b9"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/c19949081-import.log",
+      "sha256": "49a72d2404baceaa239e8935af90560428284645a93ed7092b51065ee1f677f9"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/c2-land-pattern.png",
+      "sha256": "c01ae1ed9400ec6ed1a84242b0131906ec0eeb1fc7adc94556b114ae16cfe00b"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/c2e-land-pattern.png",
+      "sha256": "94dbd6aa71c52b751e5eedbd5d9e2c6c6c92a797f10fc3098bb637a23d0f1871"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/esp32-full-search.json",
+      "sha256": "f280d49174c180d99f84a36ec5114121c2c5074a83c4f95b827362bd0b2da0c4"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/espc2-12-n4-unrouted-fixture/circuit.json",
+      "sha256": "a3d0bc404e9b642642eb0fe5a52a0639385a66d29fc8b0699eff2533d459e918"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/espc2-12-n4-unrouted-fixture/pcb.svg",
+      "sha256": "600eecbebc1df96bf08ed7d5e501537d163d10529c06584324b96f9e84396574"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/espc2-12-n4-unrouted-fixture/schematic.svg",
+      "sha256": "32429b255ada328d556067730275c4cfa76c7b01f420aa58bd9540a9ccfe2a0b"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/final-smoke.log",
+      "sha256": "0f74d5f3bdceedb1442b7624cf38c4d2914b45eb55db90f0c9227f4aa8c4d31c"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/first-import-with-denied-models/ESPC2_12_N4.obj",
+      "sha256": "301ab39b129a9f65a8f8d7bfee350718cd0268497182e59c7ce9c036adf0a213"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/first-import-with-denied-models/ESPC2_12_N4.step",
+      "sha256": "301ab39b129a9f65a8f8d7bfee350718cd0268497182e59c7ce9c036adf0a213"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/first-import-with-denied-models/ESPC2_12_N4.tsx",
+      "sha256": "031853bd8dd84e5bc2d30b5408652cd18b374266c68e86e6faf1a9662ed62303"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/heavy-20261005T121359629166Z.json",
+      "sha256": "97e4a6b9746db80c75c3f31af6bbd16f84e761ab98c438c65550b51d813397b9"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/heavy-20261005T121359629166Z.log",
+      "sha256": "7422216c602ac8543afb87ef56653e0f13b5f0f5943cacd4c3a24a3f14f38c55"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/heavy-20261005T121921006507Z.json",
+      "sha256": "61628794ea89264da2f76716edf6ee9220d2cd2655267e3367d47c6e9fd6899a"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/heavy-20261005T121921006507Z.log",
+      "sha256": "7422216c602ac8543afb87ef56653e0f13b5f0f5943cacd4c3a24a3f14f38c55"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/power-metadata-regression.log",
+      "sha256": "b3abff9f69d47b37f613227913c4ada86ad1fee22f238fcb4484300b3606678b"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/qualification-tests-with-models.log",
+      "sha256": "e13f297797efdeb0e2deb88c52200d64b087e0624d815b3437fd24003df14774"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-fixture-inspection.json",
+      "sha256": "3c3cd4df46efe67d864fd0f142a30e5614b37a9fee78adfa1b9978afc9b3bfea"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-module-audit.json",
+      "sha256": "3215e3767bc68a995c4649fd2e32a85da19a685c562c7f26999f4c213c51461a"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-pcb.png",
+      "sha256": "7c936869d477d1e153f1cd66b1702767f312067ef444c8499ee9697862e645f7"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-schematic.png",
+      "sha256": "a02f560f1fb6d5f13517b18f743f89e8a93312d140d62a5ba8487fdef87f5174"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-unrouted-fixture/circuit.json",
+      "sha256": "697d594b557b72672696be02f9e8a457707a94bac6d8f5e94b67a2ad19e82d1c"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-unrouted-fixture/pcb.svg",
+      "sha256": "600eecbebc1df96bf08ed7d5e501537d163d10529c06584324b96f9e84396574"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/selected-unrouted-fixture/schematic.svg",
+      "sha256": "c2c0b8b72e56fbfaf1db9258430870b3776d09131abca1937e42e463acbd3c09"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/smoke-after-metadata.log",
+      "sha256": "8b84dd542d5862f35505e7b2904ce09f8be2777e082240a27ac2b3fac18f754e"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/supplier-cache-provenance.json",
+      "sha256": "3f9ef6ff97b96b412743de0f00951493ae037fb00b655bcff53f79cf6efa52a4"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/zephyr-c2-Kconfig",
+      "sha256": "6fad3717473dbf83a1114ca328a8fbd16e3dc33b805752cb9a7444d1f0e47580"
+    },
+    {
+      "path": "evidence/R8-components/alternative-radio-2026-10-05/zephyr-c2-board.rst",
+      "sha256": "b9ecbf8cff838f1641d5f5dd02c34e26397c558c80ac85d104a00f7f078f819f"
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.obj",
+      "sha256": "6223faf9404c575f350a96b427d8da0da13a2439ab7b0f9b9145452ed78484be"
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.step",
+      "sha256": "4eea7f810c4609c7ca56f62558c85a64e5bb19194118cd60fcd2ad6eeeeac8db"
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx",
+      "sha256": "c3a8b0ac2676cc02fd1c219233c0e1554be613c85c38698468d4e961aadcca77"
+    },
+    {
+      "path": "imports/ESPC2_12_N4/ESPC2_12_N4.obj",
+      "sha256": "6223faf9404c575f350a96b427d8da0da13a2439ab7b0f9b9145452ed78484be"
+    },
+    {
+      "path": "imports/ESPC2_12_N4/ESPC2_12_N4.step",
+      "sha256": "4eea7f810c4609c7ca56f62558c85a64e5bb19194118cd60fcd2ad6eeeeac8db"
+    },
+    {
+      "path": "imports/ESPC2_12_N4/ESPC2_12_N4.tsx",
+      "sha256": "2420e405528a8eb7ada564aeb62c3bba07c7ad946c60bef4f022eb2c8f4a161a"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "27b57f99a5782ed5c962678d04993512cdbc5f21de9233693965d1ef958c4ce6"
+    },
+    {
+      "path": "package.json",
+      "sha256": "03ccaf1f5eadb521e226388ac0e3c31907fbceba038d8b62f1a9fa98e3f005bf"
+    },
+    {
+      "path": "scripts/audit-r8-module.py",
+      "sha256": "770312a45600c8bcf1dbbf4661dcd204c5ac1f5fd8b119ed30c2a0f98d807eb7"
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "fc89beab1fe6d741832068ff0e42527d64c742b87416bfa5ed887c6961a46ff8"
+    },
+    {
+      "path": "tests/fixtures/esp32-import.circuit.tsx",
+      "sha256": "5d35e269911b959f871a369fb37a1cd1c0f2d18ca477a7afa38790fe11c277e4"
+    },
+    {
+      "path": "tests/fixtures/espc2-import.circuit.tsx",
+      "sha256": "b4349ff8262c98970f070933bc9d56cd47f2187930eeadc4d9b85315f5413b99"
+    },
+    {
+      "path": "tests/r8-power-metadata.test.ts",
+      "sha256": "55c57f95a814e00f66c3c0496f7fb3dad8947dbb08c017d017861e5db572ee76"
+    },
+    {
+      "path": "tests/test_r8_alternative_radio.py",
+      "sha256": "b38ec05df998b9688eedd50c72c31d4891428577a4a030a523176f04947fc6e5"
+    },
+    {
+      "path": "tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md",
+      "sha256": "5f224d86a5f3b7943d6abdfa9d10c904ec687d2d00b1db36c459dbb5c9a53f29"
+    },
+    {
+      "path": "tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md",
+      "sha256": "66dbfe0d05ec6100ab51bcaec8a3ebd2358a7250a1622a9103ee8f66890952ea"
+    },
+    {
+      "path": "tscircuit-issues/077-import-download-saves-http-error-bodies.md",
+      "sha256": "9f63f06bd3834387385d0f2491042c8c5eb11ea9c42bcdc1b84269dff08b1498"
+    },
+    {
+      "path": "tscircuit-issues/README.md",
+      "sha256": "e6c4e8d3b55ae8d817b747aa6f7a3496778ddb482f1d36e0b904ae95b9fbf974"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "part": "ESPC2-12E-N4",
+  "manufacturer": "DOIT",
+  "jlcpcb": "C19949081",
+  "manufacturer_reference": "ESPC2-12E user manual v1.0, Figure3.3 p6, Table2.2 p3-4",
+  "pad_count": 16,
+  "maximum_supplier_conversion_difference_mm": 8.881784197001252e-15,
+  "actual_width_mm": [
+    1.499997
+  ],
+  "actual_height_mm": [
+    0.999998
+  ],
+  "manufacturer_nominal_pad_mm": [
+    1.5,
+    1.0
+  ],
+  "maximum_row_centre_nominal_difference_mm": 0.000460000000000349,
+  "model_asset_formats_verified": true,
+  "routed_board_qualification": "NOT RUN"
+}

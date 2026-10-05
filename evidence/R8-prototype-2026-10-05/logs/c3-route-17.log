@@ -1,0 +1,103 @@
+{
+  "started_utc": "20261005T160711494949Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_11: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-8.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-9.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-10.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-0-order-11.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-1-order-12.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-2-order-13.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting phase 15/15 has been running for 10.2s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#245 /> phase 15/15 long-running start: connections=25, obstacles=1086, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=5x, cache=miss, cache_id=8efdbc2c/e3a42e51
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.INDUCTOR_L1, net.INDUCTOR_L2, net.CC2, net.CC1, net.CHARGE_DISABLE, net.TS_BIAS, net.VSET, net.PROG, net.CHARGE_LED_A, net.EN, net.SHUTTER, net.PAIR, net.STATUS_LED, net.BOOT, net.UART_TX, net.STATUS_LED_A, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_HOT, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=23 progress=54% iterations_per_second=1376 elapsed=10.3s
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=24 progress=54% iterations_per_second=2188 elapsed=10.5s
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=50 progress=80% iterations_per_second=2 elapsed=21.3s
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=64 progress=84% iterations_per_second=9 elapsed=31.5s
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=82 progress=88% iterations_per_second=0 elapsed=48.0s
+  phase 15/15 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=108 progress=88% iterations_per_second=1728 elapsed=58.1s
+  phase 15/15 done: routed_traces=91, jumpers=0, errors=0, elapsed=63.3s
+Could not save autorouting paths for subcircuit_source_group_11: Only port-anchored wire/via routes can be saved
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Via hole at (-4.69mm, 15.56mm) overlaps SMD pad R8.pin1 at (-4.25mm, 16.00mm)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+{
+  "started_utc": "20261005T160711494949Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T16:08:51.329375+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 5012328,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T160711494949Z.log"
+}

@@ -1,4 +1,34 @@
+# Current continuation result —2026-10-05
+
+R8 DOIT ESP32-C3 now routes with0 native errors/0 shorts/0 independent manufacturing failures. Full terminal connectivity, RF exclusion, exposed-pad ground, strict44-ref BOM/CPL and all12 local fabrication files pass;160-aperture stencil/mask/silkscreen checks pass. Read [the final review](../evidence/R8-prototype-2026-10-05/REVIEW.md) and current VALIDATION before engineering work. Firmware C3 BLE compile/image pass; physical prototype and supplier processed-preview remain pending. No order/contact/upload authorization is implied.
+
+Saved environment setup/start remains lightweight and preserves task branches/context. Onboarding restrictions do not prohibit later authorized engineering changes or qualified prototype publication; frozen baselines and separate ordering/payment/contact rules remain immutable. Historical sections below must not be treated as current blockers or current root identities.
+
 # Cloud handoff — magnetic shutter remote, 2026-10-05
+
+## Current radio and firmware disposition — 2026-10-05
+
+The fitted module is now **DOIT ESPC3-12-N4 / C19949072**, the cheapest checked candidate compatible with the pinned BLE firmware. Its observed direct small-prototype price is $2.2662 versus the abandoned WROOM module's $3.2887 (about31% lower); stock/price are observations, not reservations or assembly quotes. The cheaper C2 candidate was electrically qualified but the actual hosted firmware build proved pinned Zephyr4.2/hal_espressif lacks its Bluetooth adapter/controller libraries. Board support alone was insufficient. Both investigations remain preserved.
+
+The supported exact import has22 contacts matching the DOIT nominal1.0×1.5 mm drawing and all22 datasheet labels. Original supplier data and a measured conversion audit are in `evidence/R8-components/alternative-radio-2026-10-05/c3-supported-ble/`. This replacement has correct VCC/GND metadata; original WROOM issues075 and076 remain distinct and open upstream. Root pin contract: EN3,GPIO4/shutter6,GPIO5/pair7,VCC8,GND15,GPIO6/LED12,GPIO9/BOOT18,GPIO20/RX21,GPIO21/TX22. Firmware targets `esp32c3_devkitc/esp32c3`, with40 MHz per silicon requirement, not the26 MHz C2 overlay. Its main application remains unchanged. C3 root electrical identity, unrouted placement, routed native/independent clearance, shorts, physical continuity and local fabrication readback pass. Supplier-processed preview and physical validation remain pending.
+
+
+## Earlier C2 engineering continuation — superseded by C3 firmware verification
+
+The active root now implements ESP32-C2 / DOIT ESPC2-12E-N4, 44 fitted references, a TPS63031 buck-boost supply, the exact SH battery mate and 300 mA nominal charging. The new schematic/BOM and unrouted placement passed their gates. Routing is in progress; no final zero-DRC/zero-short or fabrication-release pass is claimed yet. The older sections below describe earlier investigation states and frozen baselines, not the current root.
+
+Issues075/076 concern the abandoned C3 selection and its separate power-metadata omission; they do not block the fitted C2 module. Issues078/079 are supplier example-land variations accepted for engineering prototype use with explicit geometry/process calculations in [qualification](../evidence/R8-prototype-2026-10-05/QUALIFICATION.md). Actual copper, drilling, continuity and export checks remain required. Frozen baselines stay immutable; ordering, payment and supplier contact remain unauthorized. Hardware tests remain POST-PROTOTYPE PHYSICAL VALIDATION.
+
+
+## Earlier routing investigation — retained history
+
+The later user request authorizes engineering continuation and requires a routed C2 board with0 DRC errors and0 shorts after qualification gates pass. It is **blocked before routing**, not a successful routed build: TPS63031 supplier contact lands remain unqualified (issue078), and a Sunlord inductor candidate differs from its recommendation (issue079). Supported alternatives and the exact SH battery mate have been imported separately; none is fitted in the Nordic root. The battery's SH mapping is pin2 positive/pin1 ground. Charge-current selection must also account for BQ25185's360-minute safety timer. See `evidence/R8-routing-2026-10-05/ROUTING-STATUS.md`, retained inputs/logs and successor manifest. DRC/short counts remain unrun/unknown. Frozen baselines and sequential heavy-job memory guards remain immutable.
+
+## Earlier C2 radio decision — superseded
+
+The user subsequently authorized a cheaper alternative to bypass the unqualified C2934560 land pattern. The selected R8 radio is now **DOIT ESPC2-12E-N4 / C19949081**, an ESP32-C2/ESP8684-based BLE 5 module with onboard PCB antenna and 4 MB flash. Supported exact-footprint import and native unrouted qualification fixture are retained. See `evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md` for dated direct prices, manufacturer land/pin comparison, remaining migration work and validation evidence.
+
+The original C3 module/import, issue 075 and C3 firmware artifacts remain historical evidence; they are not altered or silently requalified. Issue 076 has a tested manufacturer-specific pinAttributes correction in the original C3 fixture; its upstream omission remains open. The root board is still Nordic and must not be presented as an ESP32-C2 implementation. C2 firmware adaptation, complete power/BOM qualification, placement, routing and physical testing remain pending. No change to the one-battery/one-USB/no-torch decisions or supplier/order restrictions.
 
 ## Read this first
 

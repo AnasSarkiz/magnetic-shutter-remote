@@ -1,0 +1,98 @@
+{
+  "started_utc": "20261005T145604969976Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_11: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-8.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-9.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-default-order-10.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-0-order-11.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_11-phase-1-order-12.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting phase 14/14 has been running for 10.2s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#242 /> phase 14/14 long-running start: connections=27, obstacles=815, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=5x, cache=miss, cache_id=8efdbc2c/6d740bae
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.INDUCTOR_L1, net.INDUCTOR_L2, net.CC2, net.CC1, net.CHARGE_DISABLE, net.TS_BIAS, net.VSET, net.PROG, net.CHARGE_LED_A, net.EN, net.SHUTTER, net.PAIR, net.STATUS_LED, net.BOOT, net.UART_RX, net.UART_TX, net.STATUS_LED_A, net.BATTERY_OK, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_HOT, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=24 progress=56% iterations_per_second=1508 elapsed=10.2s
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=25 progress=56% iterations_per_second=1060 elapsed=10.4s
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=49 progress=80% iterations_per_second=1627 elapsed=20.7s
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=57 progress=84% iterations_per_second=9 elapsed=30.7s
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=64 progress=88% iterations_per_second=1 elapsed=47.3s
+  phase 14/14 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=91 progress=88% iterations_per_second=1101 elapsed=57.4s
+  phase 14/14 done: routed_traces=98, jumpers=0, errors=0, elapsed=62.8s
+Could not save autorouting paths for subcircuit_source_group_11: Only port-anchored wire/via routes can be saved
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Fanout boundaries "CHARGER_ESCAPE" and "C2_ESCAPE" overlap. Fanout boundaries may not overlap.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+{
+  "started_utc": "20261005T145604969976Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T14:57:39.473250+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 5018520,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T145604969976Z.log"
+}

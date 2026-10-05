@@ -1,0 +1,13 @@
+# Reproduce the R8 solder-mask style correction
+
+This adds typed `pcbSx.solderMaskMargin` through the existing selector resolver. Matching board process styling overrides a supplier primitive’s mask margin without altering supplier source, copper, paste, default behavior or unmatched selectors. The root selects 0.04 mm on USB pads; other imports retain their original margins. Runtime archives are project-local, not published tooling packages.
+
+`manifest.json` identifies and hashes every input/output. Use the pinned Bun1.3.9/Node25.6.0 installation. Reconstruct inside an ignored task-local directory, preserving these files:
+
+1. Extract `evidence/USB4215-import-audit/source-bases/core-fixed.tar.gz` into `core/`, apply `tooling/R7-patches/core.patch` there with `patch -p1`, then extract `tooling/source-archives/core-R8-mask-style-changes.tar.gz` into that same directory. The overlay contains the actual core source, regression tests, snapshots, package.json and frozen developer lock.
+2. Extract `tooling/vendor/props-qualified-source.tgz` into `props/` with `--strip-components=1`, then overlay `tooling/source-archives/props-R8-mask-style-changes.tar.gz`. Its original published source and package scripts are retained; the overlay adds the typed style field and source tsconfig.
+3. Make sibling `vendor` point to root `tooling/vendor`. Run `bun install --frozen-lockfile` inside core. Link props/node_modules to core/node_modules; run the canonical `bun run build` in props, then core. Run each heavy build through root `python3 cloud/run-heavy.py -- bun run --cwd <directory> build`, sequentially. Do not edit node_modules.
+4. The historical R7 PT4115 regression resolves imports relative to the reconstructed layout. Provide its expected sibling imports link to root imports. Run the three `tests/repros/r8/smtpad-mask-*.test.tsx` tests plus the preserved parent-paste, mixed-pad-bounds, separated-mixed-ground and PT4115-overlapping-ground tests. Inspect generated visual snapshots before acceptance.
+5. Pack via `bun pm pack` in the two reconstructed source trees; retain new output filenames. The root locked archives already reproduce the tested runtime; normal board setup needs no tooling rebuild.
+
+Control: old emitter, 1 pass / 2 failures, reported supplier 0.0508 mm instead of selected 0.04/0.02 mm. Fixed: 7 tests pass, 222 assertions; props and core ESM/declaration builds pass. Three new mask snapshots were rendered and inspected. Logs and images are in `evidence/R8-prototype-2026-10-05/tooling/`. This is focused validation, not a claim that all upstream suites pass. Original archives and failed evidence remain unchanged.

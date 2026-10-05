@@ -1,0 +1,9 @@
+{
+  "index.circuit.tsx": "12aba02a9c937a2d019fff646ac272f0a5826077a254204dfc3000b5dcbbff7d",
+  "src/remote-circuit.tsx": "6ccedf6faa9de547d24470439d9aee7b56bc4df3d3b5a2bbeb41255772ccaa71",
+  "src/r8-power-paths.ts": "9b71005b00a94d4a48d74fea91cca087f82f38912ac2ac3f4cfe26211ebf56a0",
+  "src/temperature-escape-paths.ts": "4f61797ccec4862fcf029514e1c0bb6b1e3477e56cd1e49eabd6f1605cd85f71",
+  "src/functional-markings.tsx": "5c7b9f80cc7643d61ac092b91f96ff562ba58aab95db685e08fd8e7c5be199c1",
+  "bom.json": "05cc48d1fdccff05b427ca66779866248d21642ee92defd2ab85bf3c240048ca",
+  "bun.lock": "e8776e051b5129b9a1dc8e934f19396455fc13b22f95c336072f237d3ba39d11"
+}

@@ -1,3 +1,21 @@
+# Current R8 DOIT ESP32-C3 firmware — hosted rebuild in progress
+
+The fitted DOIT ESPC3-12-N4 / C19949072 uses UART GPIO20/21 and user GPIO4/5/6. Build target is pinned Zephyr4.2.0 `esp32c3_devkitc/esp32c3`, the original C3 overlay, and the same locked Python/SDK/HAL dependencies. Explicit40 MHz silicon/board clock applies; the earlier26 MHz C2 overlay remains an unused investigation artifact. Application source is unchanged. Hosted rebuild results will be recorded separately from the historical macOS build below.
+
+The actual C2 build failed because pinned hal_espressif lacks `zephyr/esp32c2/src/bt/esp_bt_adapter.c` and C2 controller blobs. CPU/board support did not establish BLE support. No fabricated stub, SDK downgrade or Wi-Fi-only success replaces BLE validation.
+
+Programming: battery and POWER enabled, USB-C disconnected (USB charging disables the regulator). J3 pin1 VREF only,2 RX,3 GND,4 TX,5 EN,6 BOOT. 3.3V UART logic; do not inject supply. Use the module's internal reset/strap networks and manual boot procedure. Physical BLE/HID/phone, clock and low-power behavior remain POST-PROTOTYPE PHYSICAL VALIDATION.
+
+# R8 ESP32-C2 firmware migration — build pending
+
+The active build target is Zephyr v4.2.0 `esp8684_devkitm/esp32c2`, using `boards/esp8684_devkitm.overlay`. The selected DOIT ESPC2-12E-N4 has 26 MHz crystal and 4 MB flash. Official target/devicetree sources are preserved under `../evidence/R8-prototype-2026-10-05/zephyr-esp8684/`; the new overlay explicitly sets 26 MHz. Main application retains GPIO4 shutter, GPIO5 pair and GPIO6 LED, internal button pull-ups, bonded BLE HID Volume Increment press/release, debounce and bounded advertising.
+
+J3 pin1 VREF only,2 module RX(GPIO19),3 GND,4 module TX(GPIO20),5 EN,6 BOOT(GPIO9). Use 3.3 V UART logic and autobaud; never inject power. Hold BOOT low, pulse RESET/EN low for at least50 µs, release RESET, hold strap at least3 ms then release BOOT. The module internally pulls GPIO8 and GPIO9 high and includes EN 10 kΩ/1 µF. USB-C is charging only and disables the radio regulator: UART programming requires the battery and POWER enabled, USB-C disconnected.
+
+**Do not flash the old C3 or frozen Nordic images onto this board.** The retained C3 candidate record below is historical. A C2 image/build manifest will be created only after an actual successful guarded build. Physical phone, bonding/reconnect, sleep, runtime, RF and power measurements remain pending.
+
+## Retained C3 build record (superseded platform)
+
 # R8 ESP32-C3 firmware preparation — compiled, hardware untested
 
 This is a platform adaptation of the R6/R7 Zephyr shutter application for the exact ESP32-C3-WROOM-02-N4. It is **not** an image for the frozen Nordic board. The generated image and ELF are preserved in `artifacts/R8-candidate/`. Hardware footprint qualification is blocked; the pin contract below is proposed, not final routed-board registration. A compiled image is not permission to order or a verified image for an assembled R8 PCB.

@@ -1,0 +1,27 @@
+[
+  {
+    "stage": "netlist",
+    "exit_code": 0,
+    "log": ".codex/logs/r8-prototype/check-netlist.log"
+  },
+  {
+    "stage": "pin_specification",
+    "exit_code": 0,
+    "log": ".codex/logs/r8-prototype/check-pin_specification.log"
+  },
+  {
+    "stage": "source",
+    "exit_code": 0,
+    "log": ".codex/logs/r8-prototype/check-source.log"
+  },
+  {
+    "stage": "schematic-placement",
+    "exit_code": 0,
+    "log": ".codex/logs/r8-prototype/check-schematic-placement.log"
+  },
+  {
+    "stage": "placement",
+    "exit_code": 0,
+    "log": ".codex/logs/r8-prototype/check-placement-2.log"
+  }
+]

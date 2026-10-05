@@ -1,0 +1,41 @@
+{
+  "target": "esp32c3_devkitc/esp32c3",
+  "fitted_module": "DOIT ESPC3-12-N4 / C19949072",
+  "clock_hz": 40000000,
+  "flash_bytes": 4194304,
+  "image_bytes": 411576,
+  "linked_flash_used_bytes": 411576,
+  "dram_used_bytes": 129776,
+  "iram_used_bytes": 64016,
+  "python": "3.14.0",
+  "sdk": "0.17.2 Linux x86_64",
+  "SDK_downloads": "evidence/R8-prototype-2026-10-05/linux-sdk-downloads.json",
+  "source_head": "b25353c0a1d7adceeab9a966aaf68a6cb3594cc9",
+  "source_dirty": true,
+  "inputs_sha256": {
+    "firmware/build.sh": "a61dd5e031889f7e297fa88e13ee23c205f17fd7d767852c772485871f7cf0cc",
+    "firmware/src/main.c": "9c150e76279cd57a42e61181c572bd131697641948b64d39851a9ce6d4c711d8",
+    "firmware/prj.conf": "2ff44054ade0c753f4693391709bede8f745ab0f3ec46b6289fdfd3a97768ada",
+    "firmware/boards/esp32c3_devkitc.overlay": "edae4ae151a4cbbc2a50f9564f53d065c830b23f515bb8f34228d52d39217e6f",
+    "firmware/requirements-lock.txt": "a85e0de5dceb6ba3c1c31c950ab531d81fac066dcd536c1125971b938a1bf360",
+    ".codex/logs/r8-prototype/firmware-downloads/zephyr-v4.2.0.tar.gz": "f04537bb71c83323f7a7b6a7f7bd97ed4e4679f76e64433e1cd12de0205d6a19"
+  },
+  "artifacts_sha256": {
+    "build.log": "61ba31af9d84dcfce44232f8ef9885dda9cb5e6c6a7f81796939f8397f3f1965",
+    "zephyr.bin": "bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132",
+    "zephyr.dts": "c1873bccd9d19fc98e50783b7a8a1f27f5d071844d0afe1391a41f232969a3b8",
+    "zephyr.config": "18bd516ab6cb7ec1107e12c61593cb15866889a5b54cbe7919e2c973e48467a3",
+    "zephyr.elf": "8b01d238a68475e8db2eb6384e51dab13be30806476f412f072f12f2dad32b5f",
+    "image-info.log": "24ef5e1de67f58eea68a0944f085c9f9f034dd0c7075b212635f8a16308660ea"
+  },
+  "status": "Hosted build PASS and ESP32-C3 image checksum valid; not hardware-tested",
+  "limitations": [
+    "POST-PROTOTYPE PHYSICAL VALIDATION: clock/BLE/phone/battery/RF/thermal/enclosure/runtime",
+    "CPU PM/controller sleep not established; no measured low-power-current claim"
+  ],
+  "warnings": [
+    "Zephyr archive lacks Git metadata; CMake requested explicit BUILD_VERSION. Official v4.2.0 archive hash and pinned commits retained.",
+    "esptool Python3.14 SyntaxWarning return in finally retained",
+    "Python3.14 relative venv prefix warning retained"
+  ]
+}

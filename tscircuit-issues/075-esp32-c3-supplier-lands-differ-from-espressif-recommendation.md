@@ -52,3 +52,7 @@ Confirmed: the larger lands originate in the supplier library and are faithfully
 Impact: schematic pin identity is audited, but placement, paste/process qualification, final routing, fabrication exports and a completed module migration cannot be approved yet. R6/R7 remain unchanged. The R8 board source remains the starting copy; it is not a completed ESP32-C3 board.
 
 Remaining blocker: obtain a supported JLCPCB import of this exact stocked component with a independently qualified land pattern, or authoritative evidence that the existing larger lands are acceptable. No handwritten substitute footprint or generated-import edits were made. Tests validate conversion fidelity and ensure the discrepancy remains visible; they do not declare manufacturer qualification PASS.
+
+## Replacement selected — 2026-10-05
+
+The user subsequently authorized a cheaper alternative. DOIT ESPC2-12E-N4 / C19949081 was selected and imported through the supported exact-footprint pipeline. Its own manufacturer drawing specifies 1.5×1.0 mm lands, matching its import within conversion precision. See the [dated comparison and qualification evidence](../evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md). This avoids the original module's issue for future R8 work; it does not qualify, alter or close the discrepancy in C2934560. Complete supply/firmware/board migration remains pending.

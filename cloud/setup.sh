@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
+# Node >=24.5 can honor the provider proxy in package postinstall requests.
+export NODE_USE_ENV_PROXY=1
 project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_root"
 if [[ "$(uname -s)" != Linux ]]; then
@@ -14,6 +16,7 @@ command -v npm >/dev/null
 command -v python3 >/dev/null
 python3 -c 'import sys; assert sys.version_info >= (3, 11), "Python >=3.11 required"'
 mkdir -p .codex/runtime .codex/logs
+export npm_config_cache="$project_root/.codex/runtime/npm-cache"
 npm install --prefix "$project_root/.codex/runtime" --no-save --package-lock=false node@25.6.0 bun@1.3.9
 export PATH="$project_root/.codex/runtime/node_modules/.bin:$PATH"
 test "$(node --version)" = v25.6.0

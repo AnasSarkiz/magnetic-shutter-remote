@@ -1,0 +1,348 @@
+{
+  "purpose": "component qualification investigation, not routed board DRC",
+  "numerical_comparison_tolerance_mm": 1e-09,
+  "comparison_tolerance_is_not_manufacturer_or_fabrication_tolerance": true,
+  "parts": [
+    {
+      "jlcpcb": "C15516",
+      "import_path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+      "supplier_pad_count": 11,
+      "imported_pad_count": 11,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -5.3512749786932545e-14,
+        "y_mm": 2.5868196473766147e-14
+      },
+      "maximum_relative_conversion_difference_mm": 1.0702549957386509e-13,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 69520,
+          "sha256": "d2a529438f9e879641c132027628e0bd1c10437513947f367e19dc91268a5633",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1951783,
+          "sha256": "796d0eb1f197584d2111f35840402f83d583c9497630171950e7c1164fc1fe9d",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 1,
+          "x_mm": -1.157478,
+          "y_mm": 0.999998,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 2,
+          "x_mm": -1.157478,
+          "y_mm": 0.499872,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 3,
+          "x_mm": -1.157478,
+          "y_mm": 0.0,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 4,
+          "x_mm": -1.157478,
+          "y_mm": -0.500126,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 5,
+          "x_mm": -1.157478,
+          "y_mm": -0.999998,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 10,
+          "x_mm": 1.157478,
+          "y_mm": 0.999998,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 9,
+          "x_mm": 1.157478,
+          "y_mm": 0.499872,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 8,
+          "x_mm": 1.157478,
+          "y_mm": 0.0,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 7,
+          "x_mm": 1.157478,
+          "y_mm": -0.500126,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 6,
+          "x_mm": 1.157478,
+          "y_mm": -0.999998,
+          "width_mm": 0.6649974,
+          "height_mm": 0.2800096
+        },
+        {
+          "pin": 11,
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 1.1999976,
+          "height_mm": 1.999996
+        }
+      ],
+      "manufacturer_qualification": "BLOCKED: unqualified supplier contact-land variation",
+      "manufacturer_reference": "TI DSK0010A 4218903/C 09/2025 in SLVS696D",
+      "manufacturer_contact_length_mm": 0.6,
+      "manufacturer_contact_width_mm": 0.25,
+      "actual_contact_length_mm": 0.6649974,
+      "actual_contact_width_mm": 0.2800096,
+      "manufacturer_ep_mm": [
+        1.2,
+        2.0
+      ],
+      "minimum_adjacent_contact_gap_mm": 0.21986239999999996
+    },
+    {
+      "jlcpcb": "C160402",
+      "import_path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx",
+      "supplier_pad_count": 4,
+      "imported_pad_count": 4,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -1.2934098236883074e-14,
+        "y_mm": 0.06249670000007579
+      },
+      "maximum_relative_conversion_difference_mm": 4.157785227221211e-14,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 34588,
+          "sha256": "637e5c864f41bed4c239f8959fb494d1220a2977af89e236ac03fb0c9158fa3a",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1645245,
+          "sha256": "949e2e5a0e11691a024f4dc3d1c939c7d85347c4646a36630e045e8cf768bbe0",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 4,
+          "x_mm": -1.799971,
+          "y_mm": -1.8750153,
+          "width_mm": 1.1999976,
+          "height_mm": 1.7999964
+        },
+        {
+          "pin": 3,
+          "x_mm": 1.799971,
+          "y_mm": -1.8750153,
+          "width_mm": 1.1999976,
+          "height_mm": 1.7999964
+        },
+        {
+          "pin": 2,
+          "x_mm": 0.499999,
+          "y_mm": 2.0000087,
+          "width_mm": 0.5999988,
+          "height_mm": 1.5500096
+        },
+        {
+          "pin": 1,
+          "x_mm": -0.499999,
+          "y_mm": 2.0000087,
+          "width_mm": 0.5999988,
+          "height_mm": 1.5500096
+        }
+      ],
+      "manufacturer_qualification": "NOT ESTABLISHED",
+      "manufacturer_geometry_review": "Nominal pads/pitch match JST side-entry drawing to supplier quantization; final body/CAD placement remains pending",
+      "battery_polarity_reference": "ASR00012 revision1 p9 Figure5: SM02B pin2 positive, pin1 ground; not implemented in root"
+    },
+    {
+      "jlcpcb": "C56594",
+      "import_path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx",
+      "supplier_pad_count": 2,
+      "imported_pad_count": 2,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -1.3988810110276972e-14,
+        "y_mm": 0.0
+      },
+      "maximum_relative_conversion_difference_mm": 2.7977620220553945e-14,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 150938,
+          "sha256": "74b1a00362fb8946ca60deeb4f9ef94198ef9fce93e084a91cdff1af13fd88d2",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1398223,
+          "sha256": "2de925c4e48a8c9ffbf5df75e8b2e9e6b9e375cbc35b36c6a4920adc85f9fe49",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 1,
+          "x_mm": 1.35001,
+          "y_mm": 0.0,
+          "width_mm": 1.2999974,
+          "height_mm": 2.7200098
+        },
+        {
+          "pin": 2,
+          "x_mm": -1.35001,
+          "y_mm": 0.0,
+          "width_mm": 1.2999974,
+          "height_mm": 2.7200098
+        }
+      ],
+      "manufacturer_qualification": "BLOCKED: unqualified supplier contact-land variation",
+      "manufacturer_reference": "Sunlord SWPA catalog revised 2025/5/8 page2, SWPA3015S",
+      "manufacturer_pad_width_mm": 0.8,
+      "manufacturer_pad_height_mm": 2.7,
+      "manufacturer_inner_gap_mm": 1.5,
+      "actual_inner_gap_mm": 1.4000226,
+      "body_tolerances_do_not_qualify_recommended_lands": true
+    },
+    {
+      "jlcpcb": "C17382749",
+      "import_path": "imports/LPS3015_152MRC/LPS3015_152MRC.tsx",
+      "supplier_pad_count": 2,
+      "imported_pad_count": 2,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -1.7763568394002505e-15,
+        "y_mm": 0.0
+      },
+      "maximum_relative_conversion_difference_mm": 3.552713678800501e-15,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 37264,
+          "sha256": "1639d06e380fae754eeb68b0a5d7ebc6063d31028f30fc6f26f1948305566173",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1380087,
+          "sha256": "f1f1536292ba9124162aea8d67d014e81fe7b4799e6ddf8854369b3a0d5535e3",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 1,
+          "x_mm": -1.19253,
+          "y_mm": 0.0,
+          "width_mm": 1.499997,
+          "height_mm": 3.2399986
+        },
+        {
+          "pin": 2,
+          "x_mm": 1.19253,
+          "y_mm": 0.0,
+          "width_mm": 1.499997,
+          "height_mm": 3.2399986
+        }
+      ],
+      "manufacturer_qualification": "NOT ESTABLISHED"
+    },
+    {
+      "jlcpcb": "C15849",
+      "import_path": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "supplier_pad_count": 2,
+      "imported_pad_count": 2,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -3.597122599785507e-14,
+        "y_mm": 0.0
+      },
+      "maximum_relative_conversion_difference_mm": 7.194245199571014e-14,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 57506,
+          "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1468156,
+          "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 2,
+          "x_mm": 0.700024,
+          "y_mm": 0.0,
+          "width_mm": 0.7999984,
+          "height_mm": 0.8999982
+        },
+        {
+          "pin": 1,
+          "x_mm": -0.700024,
+          "y_mm": 0.0,
+          "width_mm": 0.7999984,
+          "height_mm": 0.8999982
+        }
+      ],
+      "manufacturer_qualification": "NOT ESTABLISHED"
+    },
+    {
+      "jlcpcb": "C22978",
+      "import_path": "imports/A_0603WAF3301T5E/A_0603WAF3301T5E.tsx",
+      "supplier_pad_count": 2,
+      "imported_pad_count": 2,
+      "raw_to_import_origin_translation_mm": {
+        "x_mm": -2.6867397195928788e-14,
+        "y_mm": 0.0
+      },
+      "maximum_relative_conversion_difference_mm": 5.3734794391857577e-14,
+      "relative_pad_conversion_fidelity": "PASS",
+      "assets": {
+        "obj": {
+          "bytes": 78929,
+          "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+          "format_signature_valid": true
+        },
+        "step": {
+          "bytes": 1046696,
+          "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+          "format_signature_valid": true
+        }
+      },
+      "pads": [
+        {
+          "pin": 2,
+          "x_mm": 0.753364,
+          "y_mm": 0.0,
+          "width_mm": 0.8064754,
+          "height_mm": 0.8640064
+        },
+        {
+          "pin": 1,
+          "x_mm": -0.753364,
+          "y_mm": 0.0,
+          "width_mm": 0.8064754,
+          "height_mm": 0.8640064
+        }
+      ],
+      "manufacturer_qualification": "NOT ESTABLISHED"
+    }
+  ]
+}

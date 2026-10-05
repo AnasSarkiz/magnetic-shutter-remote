@@ -1,0 +1,49 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_11"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_11"
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "same_net_vias_close_pcb_via_30_pcb_via_36",
+      "message": "Vias pcb_via[#pcb_via_30] and pcb_via[#pcb_via_36] are too close together (gap: 0.200mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_30",
+        "pcb_via_36"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.19999999999999998,
+      "pcb_center": {
+        "x": -12.75,
+        "y": 3
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

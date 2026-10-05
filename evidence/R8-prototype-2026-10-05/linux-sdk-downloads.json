@@ -1,0 +1,12 @@
+[
+  {
+    "filename": "zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz",
+    "sha256": "a95082150d5df6255f682f05eab00228b858444b581db90ec47e5ded090ca74d",
+    "official_release": "https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.2"
+  },
+  {
+    "filename": "toolchain_linux-x86_64_riscv64-zephyr-elf.tar.xz",
+    "sha256": "34b7f9b0c21599d0aa8cefcbefac91ad3c665a97e660463d0f31e8b5b66da688",
+    "official_release": "https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.2"
+  }
+]

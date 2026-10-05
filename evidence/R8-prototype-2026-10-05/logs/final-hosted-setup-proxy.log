@@ -1,0 +1,21 @@
+
+removed 2 packages, and changed 2 packages in 7s
+bun install v1.3.9 (cf6cdbbb)
+
++ @tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz
++ @tscircuit/cli@tooling/vendor/tscircuit-cli-r7-importer-integration.tgz
++ @tscircuit/core@tooling/vendor/core-r8-mask-style.tgz
++ @tscircuit/eval@tooling/vendor/tscircuit-eval-0.0.1506.tgz
++ @tscircuit/props@tooling/vendor/props-r8-mask-style.tgz
++ circuit-json@tooling/vendor/circuit-json-qualified-source.tgz
++ circuit-json-to-gerber@tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
++ circuit-json-to-pnp-csv@tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
++ circuit-to-svg@tooling/vendor/circuit-to-svg-qualified-source.tgz
++ easyeda@tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+
+13 packages installed [19.00ms]
+Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+v25.6.0
+1.3.9
+Python 3.12.14
+Dependency setup complete. No routing, root board build, publishing or ordering was performed.

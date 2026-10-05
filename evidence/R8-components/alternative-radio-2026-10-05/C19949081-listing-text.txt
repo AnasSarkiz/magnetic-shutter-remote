@@ -1,0 +1,310 @@
+ESPC2-12E-N4 | DOIT | JLCPCB
+Coupons
+Assembly Parts Lib
+For PCBA Only
+Upload BOM
+Search
+0
+Parts Cart
+Sign In
+Sign In
+Upload BOM
+Search
+Products
+In Stock Parts
+Bom Tool
+Request a Quote
+Support
+Online Chat >
+Chat with our live agent for fast reply.
+Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8
+Email Us >
+Contact us at support@jlcpcb.com
+Typically reply within hours.
+Help Center >
+Get instant answers.
+24/7 Available.
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+CONNECT WITH US
+Services & Tools
+Electronic Parts
+BOM Tool
+Request a Quote
+Manufacturers
+PCB Assembly
+Support
+Contact Us
+How to Order
+User Guides
+Sourcing Tips
+Payment Methods
+Company
+About Us
+Quality Assurance
+How We Work
+Certifications
+Security
+JLCAPI
+News
+Cooperation
+Careers
+Electronics
+EasyEDA
+JLCPCB
+JLCDFM
+LCSC
+OSHWLAB
+Mechanical
+JLC3DP
+JLCCNC
+JLCMC
+Download JLCONE Desktop—Get $524 Exclusive Coupons
+CONNECT WITH US
+©
+2026
+JLCPCB.COM All Rights Reserved.
+Privacy Policy
+Terms & Conditions
+Cookies Policy
+Do Not Sell or Share My Personal Information
+JLCPCB
+Parts Library
+All Components
+IoT/Communication Modules
+WiFi Modules
+ESPC2-12E-N4
+Extended
+1
+/
+4
+* Images are for reference only
+ESPC2-12E-N4
+Attributes
+Value
+Manufacturer
+DOIT
+MFR.Part #
+ESPC2-12E-N4
+JLCPCB Part #
+C19949081
+Package
+SMD,24x16mm
+Description
+-40℃~+105℃ -90dBm 20.5dBm 370mA 3V~3.6V 65mA ESP32-C2 UART、SPI、I2C、GPIO、PWM、ADC SMD,24x16mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+-
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+Specifications
+Attributes
+Value
+Category
+IoT/Communication Modules/WiFi Modules
+Manufacturer
+DOIT
+Package
+SMD,24x16mm
+Operating Temperature
+-40℃~+105℃
+Sensitivity
+-90dBm
+Output Power
+20.5dBm
+Voltage - Supply
+3V~3.6V
+Features
+Integrated Bluetooth function、Mesh networking
+Utilized IC / Part
+ESP32-C2
+Interface Type
+UART、SPI、I2C、GPIO、PWM、ADC
+Send  Current
+370mA
+Receive  Current
+65mA
+Results remaining
+:
+0
+View Similar
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+Related Products
+JLCPCB
+Parts Library
+All Components
+IoT/Communication Modules
+WiFi Modules
+ESPC2-12E-N4
+* Images are for reference only
+ESPC2-12E-N4
+Extended
+Manufacturer
+DOIT
+MFR.Part #
+ESPC2-12E-N4
+JLCPCB Part #
+C19949081
+Package
+SMD,24x16mm
+Description
+-40℃~+105℃ -90dBm 20.5dBm 370mA 3V~3.6V 65mA ESP32-C2 UART、SPI、I2C、GPIO、PWM、ADC SMD,24x16mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+-
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+* Images are for reference only
+ESPC2-12E-N4
+Extended
+Manufacturer
+DOIT
+MFR.Part #
+ESPC2-12E-N4
+JLCPCB Part #
+C19949081
+Package
+SMD,24x16mm
+Description
+-40℃~+105℃ -90dBm 20.5dBm 370mA 3V~3.6V 65mA ESP32-C2 UART、SPI、I2C、GPIO、PWM、ADC SMD,24x16mm WiFi Modules ROHS
+EasyEDA Libraries
+PCB Footprint or Symbol
+ECCN
+-
+Datasheet
+Download
+Source
+JLCPCB
+Assembly Type
+SMT Assembly
+PCBA Type
+Economic and Standard
+MSL Level
+MSL 1
+Note: The purchased components are stored in your JLCPCB parts library for future PCBA orders only, and cannot be shipped separately.
+Specifications
+PCB Assembly Tips
+Documents
+PCB Footprint/Symbol
+ESPC2-12E-N4
+Specifications
+ESPC2-12E-N4
+technical specifications, attributes, and parameters.
+Report an Error?
+Attributes
+Value
+Category
+IoT/Communication Modules/WiFi Modules
+Manufacturer
+DOIT
+Package
+SMD,24x16mm
+Operating Temperature
+-40℃~+105℃
+Sensitivity
+-90dBm
+Output Power
+20.5dBm
+Voltage - Supply
+3V~3.6V
+Features
+Integrated Bluetooth function、Mesh networking
+Utilized IC / Part
+ESP32-C2
+Interface Type
+UART、SPI、I2C、GPIO、PWM、ADC
+Send  Current
+370mA
+Receive  Current
+65mA
+Results remaining
+:
+0
+View Similar
+PCB Assembly Tips
+From components to fully assembled PCBs. JLCPCB supports PCB assembly for the
+ESPC2-12E-N4
+. Sign up to receive and
+start your assembly today
+→
+1
+Step
+1
+-
+Pre-order the parts you need from JLCPCB.
+2
+Step
+2
+-
+Place a PCBA order to have those parts assembled onto your boards.
+3
+Step
+3
+-
+JLCPCB manufactures and assembles your boards in as fast as 3 days.
+Learn more about JLCPCB Assembly
+ESPC2-12E-N4
+Documents
+ESPC2-12E-N4
+datasheets or manufacturer documentation.
+Datasheet:
+ESPC2-12E-N4
+Datasheet (PDF)
+ESPC2-12E-N4
+Schematic Symbol & PCB Footprint
+The
+ESPC2-12E-N4
+schematic symbol and PCB footprint are available in the EasyEDA PCB design tool.

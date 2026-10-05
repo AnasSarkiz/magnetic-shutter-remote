@@ -1,3 +1,13 @@
+# Actual hosted continuation — 2026-10-05
+
+Canonical `bash cloud/setup.sh` and `bash cloud/smoke.sh` passed in this hosted instance after enabling Node’s supported `NODE_USE_ENV_PROXY=1` and keeping npm cache inside the workspace. Managed proxy/auth and existing network scope are retained. Node25.6.0, Bun1.3.9, Python3.12.14; observed cgroup memory34359738368 bytes (32GiB), CPU quota4 equivalents. This is an observation, not a guaranteed allocation. Setup verifies129 frozen hashes/archive integrity; smoke passes20 Python tests,2 Bun tests/13 assertions, format and typecheck. Original module075 qualification and its separate076 importer omission remain explicit. Logs: `evidence/R8-prototype-2026-10-05/environment/` after final evidence collection.
+
+Reusable draft Install/Start instructions are saved with explicit-ref fetch, refusal to discard tracked changes, R8 context guard and preservation of later task branches. Saving draft does not restart or publish an environment. No server, user secret, broadened repository access or network permission was added.
+
+The user subsequently authorized board engineering. Root source now implements the qualified DOIT ESPC3-12-N4; firmware compile/image pass, native/independent routing and shorts now pass0, physical connectivity and all12 local fabrication exports pass; supplier-processed preview and physical validation remain pending. Onboarding restrictions do not permanently prohibit later authorized source edits. Frozen baselines and ordering/contact restrictions remain unchanged.
+
+## Earlier pre-hosted record — preserved history
+
 # Cloud setup status — 2026-10-05
 
 Board: **R8 COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION**.

@@ -1,0 +1,22 @@
+{
+  "mpn": "ESPC3-12-N4",
+  "lcsc": "C19949072",
+  "manufacturer_manual": "DOIT-ESPC3-12-manual.pdf",
+  "supplier_import_land_features": 22,
+  "max_conversion_difference_mm": 6.938893903907228e-14,
+  "import_origin_translation_mm": [
+    4.3520742565306136e-14,
+    0.12499975000007257
+  ],
+  "manufacturer_reference": "Fig3.3 printed p6 / PDF9: 1.0x1.5mm lands, 2mm pitch",
+  "all_22_pin_labels_reviewed_against_table_2_2": true,
+  "power_pin": 8,
+  "ground_pin": 15,
+  "firmware_clock_requirement": "40MHz per ESP32-C3 silicon requirement; module schematic does not print a crystal frequency",
+  "module_internal_networks": "EN10k/1uF and boot pullups per actual schematic PDF18",
+  "assembly": "Economic/Standard, Extended; observed direct 1-9 unit USD2.2662, stock736 on2026-10-05; search indexstock445 price2.2511 quantity-dependent",
+  "limitations": [
+    "Not an assembly quote",
+    "Actual oscillator and BLE operation need physical prototype verification"
+  ]
+}

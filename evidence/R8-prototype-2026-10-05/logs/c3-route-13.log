@@ -1,0 +1,195 @@
+{
+  "started_utc": "20261005T154456179639Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_10: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-8.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-default-order-9.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-0-order-10.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_10-phase-1-order-11.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#243 /> phase 13/14 failed start: connections=1, obstacles=844, previous_traces=0, router=precomputed, version=beta_pipeline9, effort=5x, cache=disabled(precomputed)
+  connections: net.BATTERY_OK
+  phase 13/14 error after 3ms: Saved phase path ".U4 > port.pin3" must select exactly one connection in this phase
+Async effect error in PcbTraceRender "autorouting":
+Error: Saved phase path ".U4 > port.pin3" must select exactly one connection in this phase
+    at getSavedAutoroutingPhaseTracesFromPaths (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:19355:17)
+    at _runLocalAutorouting (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:88073:26)
+    at <anonymous> (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:88328:26)
+    at _queueAsyncEffect (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:896:16)
+    at _startAsyncAutorouting (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:88326:12)
+    at doInitialPcbTraceRender (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:88366:10)
+    at runRenderPhase (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:1063:24)
+    at runRenderCycle (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:1012:12)
+    at render (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/core/dist/index.js:90353:16)
+    at generateCircuitJson (/workspace/magnetic-shutter-remote/node_modules/@tscircuit/cli/dist/cli/main.js:167781:12)
+    at unknown
+    at unknown
+    at unknown
+    at processTicksAndRejections (native:7:39)
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Saved phase path ".U4 > port.pin3" must select exactly one connection in this phase
+Port [J1.VBUS1] is not connected to net [USB5V] by a PCB trace.
+Port [J1.CC1] is not connected to net [CC1] by a PCB trace.
+Port [J1.CC2] is not connected to net [CC2] by a PCB trace.
+Port [J1.VBUS2] is not connected to net [USB5V] by a PCB trace.
+Port [R2.pin1] is not connected to net [CC2] by a PCB trace.
+Port [R1.pin1] is not connected to net [CC1] by a PCB trace.
+Port [U2.SYS] is not connected to net [CHARGER_SYS] by a PCB trace.
+Port [U2.BAT] is not connected to net [VBAT] by a PCB trace.
+Port [U2.STAT2] is not connected to net [CHARGE_STAT] by a PCB trace.
+Port [U2.N_CE] is not connected to net [CHARGE_DISABLE] by a PCB trace.
+Port [U2.TS] is not connected to net [TS_BIAS] by a PCB trace.
+Port [U2.ILIM] is not connected to net [VSET] by a PCB trace.
+Port [U2.ISET] is not connected to net [PROG] by a PCB trace.
+Port [U2.IN] is not connected to net [USB5V] by a PCB trace.
+Port [R3.pin1] is not connected to net [PROG] by a PCB trace.
+Port [C2.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C1.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [R4.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [R4.pin2] is not connected to net [CHARGE_LED_A] by a PCB trace.
+Port [LED1.anode] is not connected to net [CHARGE_LED_A] by a PCB trace.
+Port [LED1.cathode] is not connected to net [CHARGE_STAT] by a PCB trace.
+Port [J2.pin2] is not connected to net [VBAT] by a PCB trace.
+Port [R8.pin1] is not connected to net [VSET] by a PCB trace.
+Port [R9.pin1] is not connected to net [TS_BIAS] by a PCB trace.
+Port [C8.pin1] is not connected to net [CHARGER_SYS] by a PCB trace.
+Port [C9.pin1] is not connected to net [PROG] by a PCB trace.
+Port [U1.EN] is not connected to net [EN] by a PCB trace.
+Port [U1.IO4] is not connected to net [SHUTTER] by a PCB trace.
+Port [U1.IO5] is not connected to net [PAIR] by a PCB trace.
+Port [U1.VCC] is not connected to net [V3] by a PCB trace.
+Port [U1.IO6] is not connected to net [STATUS_LED] by a PCB trace.
+Port [U1.IO9] is not connected to net [BOOT] by a PCB trace.
+Port [U1.RX0] is not connected to net [UART_RX] by a PCB trace.
+Port [U1.TX0] is not connected to net [UART_TX] by a PCB trace.
+Port [C5.pin1] is not connected to net [V3] by a PCB trace.
+Port [C10.pin1] is not connected to net [V3] by a PCB trace.
+Port [SW2.pin1] is not connected to net [SHUTTER] by a PCB trace.
+Port [SW3.pin1] is not connected to net [PAIR] by a PCB trace.
+Port [R7.pin1] is not connected to net [STATUS_LED] by a PCB trace.
+Port [R7.pin2] is not connected to net [STATUS_LED_A] by a PCB trace.
+Port [LED2.anode] is not connected to net [STATUS_LED_A] by a PCB trace.
+Port [J3.pin1] is not connected to net [V3] by a PCB trace.
+Port [J3.pin2] is not connected to net [UART_RX] by a PCB trace.
+Port [J3.pin4] is not connected to net [UART_TX] by a PCB trace.
+Port [J3.pin5] is not connected to net [EN] by a PCB trace.
+Port [J3.pin6] is not connected to net [BOOT] by a PCB trace.
+Port [SW4.pin1] is not connected to net [BOOT] by a PCB trace.
+Port [SW5.pin1] is not connected to net [EN] by a PCB trace.
+Port [SW1.pin1] is not connected to net [BATTERY_OK] by a PCB trace.
+Port [SW1.pin2] is not connected to net [POWER_SWITCH] by a PCB trace.
+Port [R5.pin1] is not connected to net [POWER_SWITCH] by a PCB trace.
+Port [R5.pin2] is not connected to net [REG_EN] by a PCB trace.
+Port [Q1.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [Q1.pin3] is not connected to net [REG_EN] by a PCB trace.
+Port [R6.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [U3.VOUT] is not connected to net [V3] by a PCB trace.
+Port [U3.L2] is not connected to net [INDUCTOR_L2] by a PCB trace.
+Port [U3.L1] is not connected to net [INDUCTOR_L1] by a PCB trace.
+Port [U3.VIN] is not connected to net [VBAT] by a PCB trace.
+Port [U3.EN] is not connected to net [REG_EN] by a PCB trace.
+Port [U3.VINA] is not connected to net [VBAT] by a PCB trace.
+Port [U3.FB] is not connected to net [V3] by a PCB trace.
+Port [L1.pin1] is not connected to net [INDUCTOR_L2] by a PCB trace.
+Port [L1.pin2] is not connected to net [INDUCTOR_L1] by a PCB trace.
+Port [C11.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C12.pin1] is not connected to net [V3] by a PCB trace.
+Port [C13.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C3.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C4.pin1] is not connected to net [V3] by a PCB trace.
+Port [U4.N_RESET] is not connected to net [BATTERY_OK] by a PCB trace.
+Port [U4.VDD] is not connected to net [VBAT] by a PCB trace.
+Port [C6.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [U5.SETA] is not connected to net [TEMP_SET_HOT] by a PCB trace.
+Port [U5.SETB] is not connected to net [TEMP_SET_COLD] by a PCB trace.
+Port [U5.N_OUTB] is not connected to net [TEMP_OK] by a PCB trace.
+Port [U5.VDD] is not connected to net [USB5V] by a PCB trace.
+Port [U5.N_OUTA] is not connected to net [TEMP_OK] by a PCB trace.
+Port [R10.pin1] is not connected to net [TEMP_SET_HOT] by a PCB trace.
+Port [R11.pin1] is not connected to net [TEMP_SET_COLD] by a PCB trace.
+Port [C7.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [R12.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [R12.pin2] is not connected to net [TEMP_OK] by a PCB trace.
+Port [R13.pin1] is not connected to net [USB5V] by a PCB trace.
+Port [R13.pin2] is not connected to net [CHARGE_DISABLE] by a PCB trace.
+Port [Q2.pin1] is not connected to net [TEMP_OK] by a PCB trace.
+Port [Q2.pin3] is not connected to net [CHARGE_DISABLE] by a PCB trace.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+{
+  "started_utc": "20261005T154456179639Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T15:45:35.850242+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 7067780,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T154456179639Z.log"
+}

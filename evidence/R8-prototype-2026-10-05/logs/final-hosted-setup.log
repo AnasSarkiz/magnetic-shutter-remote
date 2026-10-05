@@ -1,0 +1,68 @@
+npm error code 1
+npm error path /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun
+npm error command failed
+npm error command sh -c node install.js
+npm error Failed to find package "@oven/bun-linux-x64". You may have used the "--no-optional" flag when running "npm install".
+npm error Failed to install package "@oven/bun-linux-x64" using "npm install". Error: ENOENT: no such file or directory, rename '/tmp/bun-WuHryO/node_modules/@oven/bun-linux-x64' -> 'node_modules/@oven/bun-linux-x64'
+npm error     at Object.renameSync (node:fs:1007:11)
+npm error     at rename (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:189:21)
+npm error     at installBun (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:457:23)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:429:7
+npm error     at Generator.next (<anonymous>)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:41:59
+npm error     at new Promise (<anonymous>)
+npm error     at __async (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:27:51)
+npm error     at requireBun (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:410:10)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:401:22 {
+npm error   errno: -2,
+npm error   code: 'ENOENT',
+npm error   syscall: 'rename',
+npm error   path: '/tmp/bun-WuHryO/node_modules/@oven/bun-linux-x64',
+npm error   dest: 'node_modules/@oven/bun-linux-x64'
+npm error }
+npm error Failed to download package "@oven/bun-linux-x64" from "registry.npmjs.org". TypeError: fetch failed
+npm error     at node:internal/deps/undici/undici:16480:13
+npm error     at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+npm error   [cause]: Error: getaddrinfo EAI_AGAIN registry.npmjs.org
+npm error       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26) {
+npm error     errno: -3001,
+npm error     code: 'EAI_AGAIN',
+npm error     syscall: 'getaddrinfo',
+npm error     hostname: 'registry.npmjs.org'
+npm error   }
+npm error }
+npm error Failed to find package "@oven/bun-linux-x64-baseline". You may have used the "--no-optional" flag when running "npm install".
+npm error Failed to install package "@oven/bun-linux-x64-baseline" using "npm install". Error: ENOENT: no such file or directory, rename '/tmp/bun-8ivgQ8/node_modules/@oven/bun-linux-x64-baseline' -> 'node_modules/@oven/bun-linux-x64-baseline'
+npm error     at Object.renameSync (node:fs:1007:11)
+npm error     at rename (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:189:21)
+npm error     at installBun (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:457:23)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:429:7
+npm error     at Generator.next (<anonymous>)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:41:59
+npm error     at new Promise (<anonymous>)
+npm error     at __async (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:27:51)
+npm error     at requireBun (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:410:10)
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:401:22 {
+npm error   errno: -2,
+npm error   code: 'ENOENT',
+npm error   syscall: 'rename',
+npm error   path: '/tmp/bun-8ivgQ8/node_modules/@oven/bun-linux-x64-baseline',
+npm error   dest: 'node_modules/@oven/bun-linux-x64-baseline'
+npm error }
+npm error Failed to download package "@oven/bun-linux-x64-baseline" from "registry.npmjs.org". TypeError: fetch failed
+npm error     at node:internal/deps/undici/undici:16480:13
+npm error     at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+npm error   [cause]: Error: getaddrinfo EAI_AGAIN registry.npmjs.org
+npm error       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26) {
+npm error     errno: -3001,
+npm error     code: 'EAI_AGAIN',
+npm error     syscall: 'getaddrinfo',
+npm error     hostname: 'registry.npmjs.org'
+npm error   }
+npm error }
+npm error Error: Failed to install package "bun"
+npm error     at /workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:405:11
+npm error     at Generator.throw (<anonymous>)
+npm error     at rejected (/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/bun/install.js:36:27)
+npm error     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+npm error A complete log of this run can be found in: /workspace/magnetic-shutter-remote/.codex/runtime/npm-cache/_logs/2026-10-05T15_34_25_299Z-debug-0.log

@@ -1,0 +1,232 @@
+                                                                                                                                                                                                                                                        Emboss Tape
+
+
+
+
+                                             SH CONNECTOR
+                                             1.0mm pitch/Disconnectable Crimp style connectors
+
+
+
+                                                                                                                                               Specifications –––––––––––––––––––
+                                                                                                                                               • Current rating: 1.0 A AC, DC (AWG #28)
+                                     2
+                                         3
+                                                                                                                                               • Voltage rating: 50 V AC, DC
+                                             4
+                                                 5
+                                                     6
+                                                         7
+                                                                                                                                               • Temperature range: -25˚C to +85˚C
+                                                             8
+                                                                 9
+                                                                      10
+                                                                                11
+                                                                                                                                                                       (including temperature rise in applying
+                                                                                     12
+                                                                                           13
+                                                                                                14
+                                                                                                     15
+                                                                                                                                                                        electrical current)
+                                                                                                                                               • Contact resistance: Initial value/ 20 mΩ max.
+                                                                                                                                                                      After environmental tests/ 40 mΩ max.
+                                                                                                                                               • Insulation resistance: 100 MΩ min.
+                                                                                                                                               • Withstanding voltage: 500 VAC/minute
+                                                                                                                                               • Applicable wire: Conductor size/ AWG #32 to #28
+                                                                                                                                                                   Insulation O.D./ 0.4 to 0.8 mm
+
+                                                                                                                                               * Refer to "General Instruction and Notice when using
+                                                                                                                                                 Terminals and Connectors" at the end of this catalog.
+                                                                                                                                               * Contact JST for details.
+The world's first 1.0mm pitch crimp style                                                                                                      * Compliant with RoHS.
+connector.
+• Compact, low profile design                                                                                                                  Standards ––––––––––––––––––––––
+• Compatible with the SR insulation
+  displacement connectors                                                                                                                      0 Recognized E60389
+• Housing lances                                                                                                                               1 Certified LR20812
+     PC board layout and Assembly layout
+
+       Top entry type                                                                                                                              Side entry type
+                                                                                                                                   2.9
+                                                                     0.2 ±0.1
+
+
+
+
+          Header outline                                                                                                                                                0.7 ±0.1         1.2 ±0.1
+                                                                                                                                                    0.6 ±0.05       1
+                                                                                                                                                                    ±0.05
+                                                                                     1.8 ±0.1
+                                                                                                2.65±0.1
+
+
+
+
+                                                                                                                                                                                                                                                 6.25
+                                                                                                           4.2 ±0.1
+
+
+
+
+                                                                                                                                         6.3
+
+
+
+
+                                                                                                                                                                                                                     5.55 ±0.1
+
+
+
+
+                                                                                                                                                                                                                                                                      2.95
+                                                                                                                                                                                                            4 ±0.1
+
+
+
+
+             0.6 ±0.05         1±0.05
+                                                                                                                                                                                                   ±0.1
+                                                                                                                                                                                                      1.8
+
+
+
+
+                                   0.7 ±0.1                          1.2 ±0.1
+                                                                                                                                                                                        0.2 ±0.1
+
+
+
+
+                                                                                                                                                   Header outline
+    Note: 1. The above figure is the figure viewed from the connector mounting side.
+          2. Tolerances are non-cumulative: ±0.05 mm for all centers.
+          3. The dimensions above should serve as a guideline. Contact JST for details.
+
+     Contact
+                                                                                                                                                                                                               Applicable wire                                   Q'ty/
+                                                                                                                                                        Model No.
+                                                                                                                                                                                     mm2                        AWG#        Insulation O.D. (mm)                 reel
+                                                                                                                                                  SSH-003T-P0.2-H                  0.032〜0.08                        32〜28                  0.4〜0.8             23,000
+
+                                                                                                                                                                                       Material and Finish
+                                             3.9
+                                                                                                                                                                          Phosphor bronze, tin-plated (reflow treatment)
+                               2                                 1.6
+                         0.5          0.8                    1.55                                                     0.8                       RoHS compliance
+                                                                                                                                                Note: Contact JST for gold-plated products.
+                                                                                                  1.35
+
+
+
+
+                                                                                                                                                                        Crimping                                                    Applicator
+                                                                                                                            0.45                     Contact
+                                                                                                                                                                        machine Crimp applicator                                      Dies        Crimp applicator with dies
+                                                                                                                                                                                       MKS-L-10-3                                MK/SSH/L-003-02 APLMK SSH/L003-02
+                                                                                                                                                SSH-003T-P0.2-H AP-K2N
+                                                                                                                                                                                         *MKS-SC                                 SC/SSH/L-003-02 APLSC SSH/L003-02
+                                                                                                                                                Note: *Strip-crimp applicator
+                                                                                                                                                      Contact JST for applicable wires in case that it is not usable due to wire size.
+
+
+
+1
+                                                                                                                                                  SH CONNECTOR
+
+ Housing
+                                                                                                                                                                      Dimensions (mm)
+   With protrusions                                                                                     Circuits
+                                                                                                                              Model No.
+                                                                                                                                                                                         B
+                                                                                                                                                                                                              Q'ty/
+                                                                                                                                                               A                                              box
+                                          B                                                                         With protrusions Without protrusions                 With protrusions Without protrusions
+                                          A                                                                    2     SHR-02V-S-B SHR-02V-S                      1.0             5.0              3.0           2,000
+       Circuit No.1           1                                              2.8                               3     SHR-03V-S-B SHR-03V-S                      2.0             6.0              4.0           2,000
+                                                                                                               4     SHR-04V-S-B SHR-04V-S                      3.0             7.0              5.0           2,000
+                                  3 2             N                                                            5     SHR-05V-S-B SHR-05V-S                      4.0             8.0              6.0           2,000
+                                                                                                               6     SHR-06V-S-B SHR-06V-S                      5.0             9.0              7.0           2,000
+                                                                                                               7     SHR-07V-S-B SHR-07V-S                      6.0            10.0              8.0           2,000
+
+
+
+
+                                                                                           5
+                                                                                                               8     SHR-08V-S-B SHR-08V-S                      7.0            11.0              9.0           2,000
+                                                                                                               9     SHR-09V-S-B SHR-09V-S                      8.0            12.0            10.0            2,000
+                                                                                                            10       SHR-10V-S-B SHR-10V-S                      9.0            13.0            11.0            2,000
+                                                                             2.1                            11       SHR-11V-S-B SHR-11V-S                     10.0            14.0            12.0            2,000
+                                                                                                            12       SHR-12V-S-B SHR-12V-S                     11.0            15.0            13.0            2,000
+   Without protrusions                                                                                      13       SHR-13V-S-B SHR-13V-S                     12.0            16.0            14.0            2,000
+                                                                                                            14       SHR-14V-S-B SHR-14V-S                     13.0            17.0            15.0            2,000
+                                              B
+                                                                                                            15       SHR-15V-S-B SHR-15V-S                     14.0            18.0            16.0            2,000
+                                              A
+          Circuit No.1            1                                          2.8
+                                                                                                            20       SHR-20V-S-B             ―                 19.0            23.0            21.0            1,000
+
+                                                                                                                                                           Material
+                                      3 2             N
+                                                                                                                                            PBT, UL94V-0, natural (white)
+
+                                                                                                        RoHS compliance
+                                                                                            5
+
+
+
+
+                                                                             2.1
+
+
+
+
+ Shrouded header
+The shrouded headers are interchangeable with those of the SR insulation displacement connectors.
+                                                                                                                                Model No.                             Dimensions (mm)               Q’ty/reel
+   Top entry type                                                                                       Circuits
+                                                                                                                    Top entry type    Side entry type                   A         B         Top entry type Side entry type
+                                                                                                           2       BM02B-SRSS-TB          SM02B-SRSS-TB                1.0         4.0        1,500           3,000
+    Circuit No.1
+                                                                                                           3       BM03B-SRSS-TB          SM03B-SRSS-TB                2.0         5.0        1,500           3,000
+                                                                                                           4       BM04B-SRSS-TB          SM04B-SRSS-TB                3.0         6.0        1,500           3,000
+                                                                                                           5       BM05B-SRSS-TB          SM05B-SRSS-TB                4.0         7.0        1,500           3,000
+                                                                4.25
+
+
+
+
+                                                                                                           6       BM06B-SRSS-TB          SM06B-SRSS-TB                5.0         8.0        1,500           3,000
+                                                                                                           7       BM07B-SRSS-TB          SM07B-SRSS-TB                6.0         9.0        1,500           3,000
+                                                                                                           8       BM08B-SRSS-TB          SM08B-SRSS-TB                7.0        10.0        1,500           3,000
+                          1                                                                 1.5
+                                      A                                0.7                2.9
+                                                                                                           9       BM09B-SRSS-TB          SM09B-SRSS-TB                8.0        11.0        1,500           3,000
+
+                                      B                                                                  10        BM10B-SRSS-TB          SM10B-SRSS-TB                9.0        12.0        1,500           3,000
+                                                                                                         11        BM11B-SRSS-TB          SM11B-SRSS-TB               10.0        13.0        1,500           3,000
+                                                                                                         12        BM12B-SRSS-TB          SM12B-SRSS-TB               11.0        14.0        1,500           3,000
+   Side entry type                                                                                       13        BM13B-SRSS-TB          SM13B-SRSS-TB               12.0        15.0        1,500           3,000
+                                                                                                         14        BM14B-SRSS-TB          SM14B-SRSS-TB               13.0        16.0        1,500           3,000
+                                                                                                         15        BM15B-SRSS-TB          SM15B-SRSS-TB               14.0        17.0        1,500           3,000
+   Circuit No.1                                                                                          20               ―               SM20B-SRSS-TB               19.0        22.0           ―            3,000
+
+                                                                                                                                                  Material and Finish
+                                                          2.9
+
+
+
+
+                                                                                                                    Contact: Copper alloy, copper-undercoated, tin-plated (reflow treatment)
+                                                                                                                    Housing: PA, UL94V-0, natural (ivory)
+                                                                                                                    Solder tab: Brass, copper-undercoated, tin-plated (reflow treatment)
+                      1                                                  1.5
+                                  A                                                4.25           0.7   RoHS compliance This product displays (LF)(SN) on a label.
+                                  B                                                                     Note: 1. The products listed above are supplied on embossed-tape.
+                                                                                                              2. Contact JST for the headers with gold-plated pins.
+                                                                                                              3. Contact JST for the top entry type headers with suction cap.
+
+
+
+
+                                                                                                                                                                                                                     2
+

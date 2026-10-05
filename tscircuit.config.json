@@ -16,5 +16,6 @@
 		"tests/**",
 		".agents/**",
 		".codex/**"
-	]
+	],
+	"snapshotsDir": "evidence/R8-prototype-2026-10-05/snapshots"
 }

@@ -1,0 +1,4037 @@
+{
+  "nominal_copper_thickness_mm": 0.035,
+  "segments": [
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_0_5",
+      "length_mm": 1.5602293999999972,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00512349616304761
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_0_5",
+      "length_mm": 0.721206232591623,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.002368303895215158
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_0_8",
+      "length_mm": 1.5602293999999972,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00512349616304761
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_0_8",
+      "length_mm": 0.7210653275265717,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0023678411898205897
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_1",
+      "length_mm": 0.7502180000000003,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.002463573013333334
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_1",
+      "length_mm": 1.1661309589150997,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0038293519488945367
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_1_8",
+      "length_mm": 0.7499639999999985,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0024627389257142807
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_1_8",
+      "length_mm": 1.562018822434688,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.005129372285480766
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_12",
+      "length_mm": 1.700000000169411,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.005582476191032504
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_12",
+      "length_mm": 1.8999999999999986,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00623923809523809
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_12",
+      "length_mm": 4.7998075,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.01576165358095238
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_1_12",
+      "length_mm": 2.299999999999997,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0075527619047618955
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_4_0",
+      "length_mm": 1.099975999999998,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.003612111664761898
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_4_2",
+      "length_mm": 1.5,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.004925714285714285
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_5_0",
+      "length_mm": 1.6747422999999984,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.005499534714666661
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_1",
+      "length_mm": 0.5000019999999998,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0012314334971428565
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_1",
+      "length_mm": 1.508243995645267,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0037145894978463426
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_2",
+      "length_mm": 0.5000020000000003,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0012314334971428578
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_2",
+      "length_mm": 1.508243995645267,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0037145894978463426
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_2",
+      "length_mm": 2.5,
+      "width_mm": 0.6,
+      "resistance_20c_ohm": 0.0020523809523809527
+    },
+    {
+      "net": "INDUCTOR_L2",
+      "trace": "saved_fanout_pcb_group_7_3",
+      "length_mm": 0.8425220000000024,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0020750113257142913
+    },
+    {
+      "net": "INDUCTOR_L2",
+      "trace": "saved_fanout_pcb_group_7_3",
+      "length_mm": 1.1673622484233426,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0028750464518312036
+    },
+    {
+      "net": "INDUCTOR_L2",
+      "trace": "saved_fanout_pcb_group_7_3",
+      "length_mm": 1.1999999999999993,
+      "width_mm": 0.4,
+      "resistance_20c_ohm": 0.0014777142857142847
+    },
+    {
+      "net": "INDUCTOR_L1",
+      "trace": "saved_fanout_pcb_group_7_4",
+      "length_mm": 0.8425220000000024,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0020750113257142913
+    },
+    {
+      "net": "INDUCTOR_L1",
+      "trace": "saved_fanout_pcb_group_7_4",
+      "length_mm": 1.167177284501374,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.002874590912114812
+    },
+    {
+      "net": "INDUCTOR_L1",
+      "trace": "saved_fanout_pcb_group_7_4",
+      "length_mm": 1.1999999999999993,
+      "width_mm": 0.4,
+      "resistance_20c_ohm": 0.0014777142857142847
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_5",
+      "length_mm": 0.8425220000000024,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0020750113257142913
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_5",
+      "length_mm": 1.2206693248279814,
+      "width_mm": 0.2,
+      "resistance_20c_ohm": 0.0030063341657192
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_5",
+      "length_mm": 3.799976,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.006239198689523809
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_5",
+      "length_mm": 3.9999980000000015,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.006567615763809526
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_5",
+      "length_mm": 1.5,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0024628571428571425
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_6",
+      "length_mm": 1.000002000000002,
+      "width_mm": 0.5,
+      "resistance_20c_ohm": 0.0009851448274285734
+    },
+    {
+      "net": "VBAT",
+      "trace": "saved_fanout_pcb_group_7_6",
+      "length_mm": 1.4142149765873635,
+      "width_mm": 0.5,
+      "resistance_20c_ohm": 0.001393203782649494
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_7",
+      "length_mm": 0.7000019999999996,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.002298673234285713
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_7",
+      "length_mm": 0.338820484156433,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0011126219327346487
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_7",
+      "length_mm": 1.9999980000000015,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0065676124800000055
+    },
+    {
+      "net": "V3",
+      "trace": "saved_fanout_pcb_group_7_7",
+      "length_mm": 1.0,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.003283809523809524
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_8_4",
+      "length_mm": 0.5500141999999997,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.001806141868190475
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_8_4",
+      "length_mm": 1.0000000080645,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.003283809550291805
+    },
+    {
+      "net": "USB5V",
+      "trace": "saved_fanout_pcb_group_10_0",
+      "length_mm": 0.9000000003200022,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0029554285724793976
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0003078571428571428
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.012500000000000178,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 4.1047619047619625e-05
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.08124999999999982,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0002668095238095232
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.19642857142857145,
+      "resistance_20c_ohm": 0.00023509090909090902
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 1.7499979999999997,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0034479960594285706
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst0_0",
+      "length_mm": 2.828427125141542e-06,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 5.572809558564593e-09
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000076,
+      "width_mm": 0.21213203435596423,
+      "resistance_20c_ohm": 0.00021768787335100322
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.012316017177980995,
+      "width_mm": 0.21213203435596423,
+      "resistance_20c_ohm": 2.859784093471024e-05
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.08143398282201787,
+      "width_mm": 0.2169209402780384,
+      "resistance_20c_ohm": 0.00018491554204720341
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000012,
+      "width_mm": 0.22243411689836534,
+      "resistance_20c_ohm": 0.00020760561406895785
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000076,
+      "width_mm": 0.22794729351869228,
+      "resistance_20c_ohm": 0.00020258442517890671
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000012,
+      "width_mm": 0.23346047013901922,
+      "resistance_20c_ohm": 0.00019780038736782047
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09374999999999888,
+      "width_mm": 0.23897364675934613,
+      "resistance_20c_ohm": 0.00019323708724700565
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000076,
+      "width_mm": 0.24448682337967306,
+      "resistance_20c_ohm": 0.0001888795919151001
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375000000000012,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00018471428571428596
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 1.0884776310850242,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.002144611926846379
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.45000199999999957,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.000886632511999999
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.2361111111111111,
+      "resistance_20c_ohm": 0.00019557983193277308
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.2222222222222222,
+      "resistance_20c_ohm": 0.0002078035714285714
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.20833333333333331,
+      "resistance_20c_ohm": 0.00022165714285714286
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.19444444444444445,
+      "resistance_20c_ohm": 0.00023748979591836734
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.18055555555555555,
+      "resistance_20c_ohm": 0.0002557582417582417
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.16666666666666666,
+      "resistance_20c_ohm": 0.00027707142857142855
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15277777777777776,
+      "resistance_20c_ohm": 0.00030225974025974026
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.018749999999999822,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 6.157142857142799e-05
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst1_0",
+      "length_mm": 0.07500000000000018,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0002462857142857149
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 1.760676265115783,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.003469035292639554
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 1.0626778309771259,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00209377894926236
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.273629831359352,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005391289477297403
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.06264229236485619,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00012342321375658521
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 1.5275630383184282,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0030097356320696804
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 2.013355707635144,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00396688598852913
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.2361111111111111,
+      "resistance_20c_ohm": 0.00019557983193277308
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.2222222222222222,
+      "resistance_20c_ohm": 0.0002078035714285714
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.20833333333333331,
+      "resistance_20c_ohm": 0.00022165714285714286
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.19444444444444445,
+      "resistance_20c_ohm": 0.00023748979591836734
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.18055555555555555,
+      "resistance_20c_ohm": 0.0002557582417582417
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.16666666666666666,
+      "resistance_20c_ohm": 0.00027707142857142855
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.15277777777777776,
+      "resistance_20c_ohm": 0.00030225974025974026
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.01875000000000071,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 6.15714285714309e-05
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst2_0",
+      "length_mm": 0.07499999999999929,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00024628571428571196
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.6413609499897076,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.002106107195775726
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 7.5513529037989295,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.024797204583141625
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 2.7710955447026975,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.009099749941080858
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 2.4763170789226114,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00813175360773825
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.1486359139999672,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00048809202997322564
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.029943468471691936,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 9.832864694323218e-05
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 10.764850146833208,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.035349717434553236
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 3.7515092254022937,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.012319241723035343
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.06139716999546794,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.00020161661156606998
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.5656854249492386,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.001857603185928547
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst3_0",
+      "length_mm": 0.9341572497896777,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.003067594473595056
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 1.6332969463683173,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.005363436067693294
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 12.298348379926805,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.040385433537131074
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 6.577253970755907,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.021598449229682255
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 0.07674311351533625,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.0002520097670484566
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 0.14434266496957204,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.000473993817919128
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 5.472999999999997,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.017972289523809512
+    },
+    {
+      "net": "V3",
+      "trace": "source_net_3_mst4_0",
+      "length_mm": 3.5751318856791876,
+      "width_mm": 0.15,
+      "resistance_20c_ohm": 0.011740052135068417
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst0_0",
+      "length_mm": 2.700001999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.004433146140952377
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst0_0",
+      "length_mm": 0.42424427006148563,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000696568687224763
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.2655222048852104,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043596217259247875
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.2655222048852104,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043596217259247875
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.26552220488521033,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043596217259247864
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.26552220488521044,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004359621725924789
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.5255196448469958,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0008628532073487816
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 1.6781511869465138,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0027553644250436094
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.02852387197092748,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 4.6833481217027594e-05
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.2761745204610876,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004534522602618238
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.2514382077822306,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004128375906824433
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.6496188627848545,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0010666123042296085
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.1743841689453277,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00028632219739213805
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.25143820778223064,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004128375906824435
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.26679129112242705,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286326
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.2667912911224268,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043804589132863213
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst1_0",
+      "length_mm": 0.266791291122427,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004380458913286325
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003937,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003937,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003937,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2838715788003955,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004660900970017922
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 1.3017173652817386,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0021372959407102068
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.28537815532251987,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004685637521676421
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2853781553225208,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004685637521676437
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.16960382939795324,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.00031825524014375117
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.16960382939795432,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00033416800215094086
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.22499999999999998,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0004433142857142856
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.16742747137324565,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0003298799550256863
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.16742747137324565,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0003298799550256863
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2853781553225209,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0005355014310487358
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.26351666226669096,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004326692626169288
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 1.2779130357666877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.002098211498725495
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.6363961030678924,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0010449017920848062
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.06609262115044823,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00010851778939368832
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2676573398867009,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004394678609187355
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.26765733988670337,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043946786091873964
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.26765733988670337,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043946786091873964
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.2676573398867008,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043946786091873547
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.0916056437617827,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015040774270982227
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.20418399796866146,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00033525067856949746
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst2_0",
+      "length_mm": 0.20418399796865894,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00033525067856949334
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.24121292800837696,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003960486551299446
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.24121292800837696,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003960486551299446
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.24121292800837696,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003960486551299446
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.24121292800837696,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003960486551299446
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.24121292800837696,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003960486551299446
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.9382595843204429,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0015405328793985174
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.06847434559826816,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00011242835410610886
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.2917579180949579,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047903871504353083
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.2917579180949579,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047903871504353083
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 1.1542685335746052,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0018951990017929707
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.3771476980167272,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0006192406013150835
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.2917579180949579,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047903871504353083
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.2917579180949579,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047903871504353083
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.29175791809495877,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435323
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.291757918094957,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004790387150435294
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.033397104200357575,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 5.483486442039663e-05
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst3_0",
+      "length_mm": 0.21608587282638192,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003547924235739832
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.16537552161143043,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0002715308564362915
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.16537552161142866,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00027153085643628856
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2641824948694381,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004337624963380108
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2641824948694395,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043376249633801303
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.26418249486943807,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004337624963380107
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.26418249486943807,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004337624963380107
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2641824948694395,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043376249633801303
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.26418249486943807,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004337624963380107
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29242257889691287,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793122
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2924225788969131,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793125
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2924225788969124,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00048013002477931147
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29242257889691287,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793122
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29242257889691287,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793122
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29242257889691287,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793122
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2924225788969131,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793125
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29242257889691287,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004801300247793122
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000082,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573467
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000063,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573437
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2726487148000076,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004476632231573458
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350671,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074671007
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350659,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074670986
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350659,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074670986
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350671,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074671007
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350671,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074671007
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350659,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074670986
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350659,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074670986
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350671,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074671007
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.13465360517408975,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00022108839554298165
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.8251385030089248,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0013547988373213203
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2984423450350678,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004900139074671018
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.29210047038217013,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000479601153275106
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.292100470382171,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510747
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.292100470382171,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510747
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.292100470382171,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510747
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.2921004703821719,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047960115327510893
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.14096014796068065,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0002314431381754414
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.7922241493842483,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0013007566033699468
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.28373566238916387,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046586693519896997
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 1.4522719948588052,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0023844923039396003
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 1.551292427223449,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.002547074423364977
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.014471110015231936,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 2.3760184444057005e-05
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.18728938741216988,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00030751133704626753
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.15632684912424555,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000256673797990666
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst4_0",
+      "length_mm": 0.15632684912424555,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000256673797990666
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.24784577443012346,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00040693915725479316
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991034,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788386116
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991015,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788385813
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991047,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838633
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.07479474415102676,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00012280584658701916
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.6024558528714395,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0009891751336670112
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991028,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838602
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991022,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788385927
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991034,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788386116
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.289601722899102,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788385894
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910324,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788386095
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2896017228991022,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047549844788385927
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28960172289910313,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004754984478838608
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.17934672556987863,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00029447024274521024
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.21317736912726357,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00035001693750038324
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.1885930150240364,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00030965176942994167
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26973463689003296,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044287858476039696
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26973463689003196,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044287858476039534
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26973463689003296,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044287858476039696
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26973463689003296,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044287858476039696
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.23932580105067505,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00039295017239177505
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28559365448187224,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635693
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28559365448187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046891758126356566
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818707,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635667
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818732,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635708
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.28559365448187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046891758126356566
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818707,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635667
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818738,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046891758126357184
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818707,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635667
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818707,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635667
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818707,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635667
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635677
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2855936544818732,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004689175812635708
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.04117136784678822,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 6.759946492177419e-05
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.4451123453691224,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0007308320794441592
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 1.1999999999999993,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.001970285714285713
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.6262475492638239,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0010282388332674593
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2527162743150913,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00041493605420877844
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2527162743150876,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004149360542087724
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2527162743150913,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00041493605420877844
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2527162743150913,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00041493605420877844
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.262941023827317,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043172411912218524
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26294102382731765,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004317241191221864
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.2629410238273153,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043172411912218247
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.262941023827317,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043172411912218524
+    },
+    {
+      "net": "VBAT",
+      "trace": "source_net_2_mst5_0",
+      "length_mm": 0.26294102382731765,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004317241191221864
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst0_0",
+      "length_mm": 1.9936360000000004,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0032733604419047627
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst0_0",
+      "length_mm": 0.009261019382334796,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 1.5205711823947799e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 1.0965856099730653,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.001800489134851014
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.1499999999999999,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00024628571428571413
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 1.2578558027017834,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.002065279432245595
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.14015206232342403,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00023011633851960286
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.9000000000000001,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0014777142857142858
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.41007755592020717,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0006733082918156544
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.229154966563681,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037625063081503433
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.229154966563681,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037625063081503433
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst1_0",
+      "length_mm": 0.229154966563681,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037625063081503433
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.23915807770523936,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003926747866322216
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.23915807770523895,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00039267478663222087
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.23915807770523936,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003926747866322216
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2736319243484118,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968209
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.27363192434840933,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968168
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2736319243484118,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968209
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2736319243484118,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968209
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.27363192434840933,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968168
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2736319243484118,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968209
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.27363192434840933,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968168
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2736319243484118,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004492775595968209
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.7876649229244782,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.001293270787735048
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.15562000637238052,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00025551322951046095
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.26032555298415583,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00042742976509017584
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.26032555298415583,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00042742976509017584
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.26032555298415583,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00042742976509017584
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.6857140354664275,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.001125877140137258
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.20264323370119114,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003327208903817653
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2678362661335946,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004397616407755401
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.28540601029102663,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730761
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.28540601029102663,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730761
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.2854060102910267,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730762
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.28540601029102663,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730761
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.28540601029102663,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730761
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.28540601029102663,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004686094873730761
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.27995376706242053,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004596574232529647
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst2_0",
+      "length_mm": 0.27995376706242053,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004596574232529647
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst3_0",
+      "length_mm": 2.303406,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0037819732799999994
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst3_0",
+      "length_mm": 2.0505530968984926,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0033668128943361913
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09374999999999982,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857114
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.012316017177982565,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 2.022172725223042e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.08143398282201787,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00013370684417634171
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09374999999999982,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857114
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09374999999999982,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857114
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.026147767596188254,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 4.293214412936052e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.06760223240381169,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00011099642729921082
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0001539285714285714
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0001539285714285714
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0001539285714285714
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.264221068823729,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004958009498254244
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.264221068823729,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004958009498254244
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.264221068823729,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004958009498254244
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2642210688237281,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004958009498254228
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.264221068823729,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004958009498254244
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.264221068823729,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004338258310972464
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495506,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863098
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495502,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863091
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495506,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863098
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495506,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863098
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495506,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863098
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495504,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863094
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495504,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863094
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.2751859073495504,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518290516863094
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.23045916804283476,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037839200543414014
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.23045916804283476,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037839200543414014
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.230459168042836,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037839200543414214
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.23045916804283476,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037839200543414014
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000044,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857217
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000029,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0001539285714285719
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09374999999999918,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857008
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000036,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857203
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000044,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857217
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000021,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857176
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.08143398282201804,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00013370684417634199
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.012316017177981151,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 2.02217272522281e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst4_0",
+      "length_mm": 0.09375000000000044,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00015392857142857217
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2453794213557281,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000402889640397405
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.24537942135572804,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00040288964039740494
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2453794213557281,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000402889640397405
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.24537942135572804,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00040288964039740494
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.22296688359516248,
+      "width_mm": 0.21250000000000002,
+      "resistance_20c_ohm": 0.0005168334888310052
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.31830252424391847,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0005226224302823957
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2946428571428601,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040865
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.29464285714285654,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040807
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.29464285714285654,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040807
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.29464285714285654,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040807
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2946428571428601,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040865
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.29464285714285654,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004837755102040807
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824846,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287656
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082491,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287753
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824846,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287656
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824846,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287656
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824863,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287677
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824846,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287656
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824846,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287656
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824863,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287677
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082491,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287753
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28992636820824713,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004760314845628744
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082491,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287753
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2899263682082489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047603148456287726
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.28124999999999895,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00046178571428571254
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.32870707885753464,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0005397057180479902
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.48580909193429284,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0007976522614235437
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2733744937658854,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044885488309751086
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst5_0",
+      "length_mm": 0.2733744937658831,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044885488309750706
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.26968039892414525,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004427895311859299
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2696803989241452,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004427895311859298
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.26968039892414486,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004427895311859293
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2696803989241452,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004427895311859298
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2696803989241452,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004427895311859298
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.29669781344346907,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00048714955273956254
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004871495527395618
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004871495527395618
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.29669781344346907,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00048714955273956254
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.29669781344346907,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00048714955273956254
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004871495527395618
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004871495527395618
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004871495527395618
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005845794632874741
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434695,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005845794632874759
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2966978134434686,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005845794632874741
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.26896374424372277,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005299354229442035
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.5046997174135247,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000828668869353254
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.29994443962822503,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000492480203732438
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2999444396282246,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004924802037324374
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2999444396282248,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004924802037324376
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2999444396282248,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004924802037324376
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst6_0",
+      "length_mm": 0.2999444396282246,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004924802037324374
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2715218092466838,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312655
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.27152180924668423,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312725
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.27152180924668423,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312725
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2715218092466838,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312655
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2715218092466838,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312655
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.27152180924668423,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312725
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.27152180924668423,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312725
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2715218092466838,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00044581295156312655
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.26443232674410544,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043417269648270265
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2644323267441061,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043417269648270373
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.26443232674410494,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043417269648270184
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.19358177328262277,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00031784283537070635
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.5408326913195982,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0008879957712714165
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.9135721764156637,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0014999985068005752
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.28923719911807216,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004748999345519585
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527501,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004522454833989916
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527501,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004522454833989916
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527495,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045224548339899064
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527489,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004522454833989896
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527495,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045224548339899064
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527501,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004522454833989916
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527501,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0005168519810274189
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2754395345527498,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0005426945800787893
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.229666366886625,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0004525083617286188
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.22966636688662545,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.00045250836172861967
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.229666366886625,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0004525083617286188
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.229666366886625,
+      "width_mm": 0.25,
+      "resistance_20c_ohm": 0.0004525083617286188
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.22629411685695586,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003715533880584685
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.22629411685695644,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003715533880584694
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.15814432602584103,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00025965792197004756
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.03500000000000103,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 5.746666666666836e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.30000000000000004,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714287
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714283
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.3000000000000007,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714298
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714283
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714283
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714283
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.30000000000000027,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000492571428571429
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714283
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.30000000000000004,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714287
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst7_0",
+      "length_mm": 0.30000000000000004,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004925714285714287
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.28001428534987316,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045975678851731554
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045092596535564874
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229364,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045092596535565167
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045092596535564874
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045092596535564874
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229275,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004509259653556502
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229187,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045092596535564874
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27463588377229275,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004509259653556502
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.14741925528484282,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00024204837724863717
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2418687048935042,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003971253783203821
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2550437013475046,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004187574677362837
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2550437013475037,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00041875746773628223
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.26114167178426156,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004287697544343495
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.26114167178426223,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004287697544343505
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.26114167178426156,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004287697544343495
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.26114167178426156,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004287697544343495
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.10225481053332927,
+      "width_mm": 0.275,
+      "resistance_20c_ohm": 0.00018315562946437364
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2121320343559638,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.000398057825556116
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.21213203435596462,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0003980578255561175
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.15000000000000013,
+      "width_mm": 0.28750000000000003,
+      "resistance_20c_ohm": 0.00025699378881987597
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.1499999999999999,
+      "width_mm": 0.28750000000000003,
+      "resistance_20c_ohm": 0.0002569937888198756
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2999999999999998,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0005629387755102037
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.15155730939617035,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.00028439162057033757
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.15155730939617068,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0002843916205703382
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2885783892931542,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047381823156323607
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2885783892931542,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047381823156323607
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2885783892931542,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00047381823156323607
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875186,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875186,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875186,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875186,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875125,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919687
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.29225081802875186,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004798480097919697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.26492414227680267,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.000497120240854648
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.19008632907181988,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.00035668988442973327
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.21319043068606042,
+      "width_mm": 0.2625,
+      "resistance_20c_ohm": 0.0004000438666696796
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.21319043068606042,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003500383833359697
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2619893672334994,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043016158962909813
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2619893672335003,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043016158962909954
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2619893672334985,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043016158962909666
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2619893672335003,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00043016158962909954
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27383165510188606,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004496054984720491
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27383165510188545,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004496054984720481
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27383165510188484,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004496054984720471
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27383165510188545,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004496054984720481
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27383165510188606,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004496054984720491
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2761754162289831,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004534537310273971
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.27617541622898223,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004534537310273956
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2761754162289831,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004534537310273971
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.15701848649539354,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0002578094006838652
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.05528067111958013,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 9.076559715252966e-05
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2751844101570705,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518265934388472
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2751844101570711,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00045182659343884815
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2751844101570705,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0004518265934388472
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.231088832220105,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.000379425854045201
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2310888322201059,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003794258540452024
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.23108883222010412,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.00037942585404519954
+    },
+    {
+      "net": "USB5V",
+      "trace": "source_net_1_mst8_0",
+      "length_mm": 0.2310888322201059,
+      "width_mm": 0.3,
+      "resistance_20c_ohm": 0.0003794258540452024
+    }
+  ],
+  "nets": {
+    "USB5V": {
+      "minimum_width_mm": 0.15,
+      "summed_branch_length_mm": 80.18657311324695,
+      "all_segments_series_resistance_20c_ohm": 0.14870137994990837,
+      "ipc2221_external_estimate_10c_amps": 0.6044325489591941
+    },
+    "VBAT": {
+      "minimum_width_mm": 0.15,
+      "summed_branch_length_mm": 97.04385588876416,
+      "all_segments_series_resistance_20c_ohm": 0.18215444683677504,
+      "ipc2221_external_estimate_10c_amps": 0.6044325489591941
+    },
+    "V3": {
+      "minimum_width_mm": 0.15,
+      "summed_branch_length_mm": 85.28523224315515,
+      "all_segments_series_resistance_20c_ohm": 0.2572894567381805,
+      "ipc2221_external_estimate_10c_amps": 0.6044325489591941
+    },
+    "INDUCTOR_L1": {
+      "minimum_width_mm": 0.2,
+      "summed_branch_length_mm": 3.209699284501376,
+      "all_segments_series_resistance_20c_ohm": 0.006427316523543388,
+      "ipc2221_external_estimate_10c_amps": 0.7446092505049391
+    },
+    "INDUCTOR_L2": {
+      "minimum_width_mm": 0.2,
+      "summed_branch_length_mm": 3.2098842484233443,
+      "all_segments_series_resistance_20c_ohm": 0.006427772063259779,
+      "ipc2221_external_estimate_10c_amps": 0.7446092505049391
+    }
+  },
+  "physical_load_paths": {
+    "V3": {
+      "terminals": [
+        [
+          "U3",
+          "pin1"
+        ],
+        [
+          "U1",
+          "pin8"
+        ]
+      ],
+      "features": [
+        {
+          "id": "pcb_smtpad_109",
+          "layer": "top"
+        },
+        {
+          "id": "saved_fanout_pcb_group_7_2",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_131",
+          "layer": "top"
+        },
+        {
+          "id": "source_net_3_mst3_0",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_56",
+          "layer": "top"
+        }
+      ],
+      "trace_only_resistance_upper_bound_20c_ohm": 0.10451541338070132,
+      "minimum_trace_width_mm": 0.15,
+      "ipc2221_external_estimate_10c_amps": 0.6044325489591941
+    },
+    "VBAT": {
+      "terminals": [
+        [
+          "J2",
+          "pin2"
+        ],
+        [
+          "U3",
+          "pin5"
+        ]
+      ],
+      "features": [
+        {
+          "id": "pcb_smtpad_39",
+          "layer": "top"
+        },
+        {
+          "id": "source_net_2_mst3_0",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_136",
+          "layer": "top"
+        },
+        {
+          "id": "source_net_2_mst0_0",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_134",
+          "layer": "top"
+        },
+        {
+          "id": "source_net_2_mst2_0",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_129",
+          "layer": "top"
+        },
+        {
+          "id": "saved_fanout_pcb_group_7_1",
+          "layer": "top"
+        },
+        {
+          "id": "pcb_smtpad_113",
+          "layer": "top"
+        }
+      ],
+      "trace_only_resistance_upper_bound_20c_ohm": 0.04298222640985444,
+      "minimum_trace_width_mm": 0.2,
+      "ipc2221_external_estimate_10c_amps": 0.7446092505049391
+    }
+  },
+  "module_design_supply_amps": 0.5,
+  "module_voltage_floor_budget_v": 3.1425811096908567,
+  "battery_input_design_amps_at_assumed_85pct_efficiency": 0.6464124111182934,
+  "regulator_input_voltage_floor_budget_v": 2.971939992951793,
+  "references": [
+    "DOIT ESPC3-12 manual page7: startup exceeds400mA; supply>=500mA",
+    "TI SLVS696D: up to500mA boost at VIN>2.4V",
+    "IPC-2221 external empirical estimate"
+  ],
+  "limitations": [
+    "Nominal trace-only resistance; excludes connector, via, battery and regulator transient drops.",
+    "All-branches-in-series bound is conservative for copper, but does not establish actual loaded voltage.",
+    "35um copper, 50C copper, -3% output and85% efficiency are design assumptions.",
+    "Inductor switch pulses and thermal spreading are not modeled; saturation2.3A/RMS1.7A exceed normal load but require hardware verification.",
+    "No current, temperature, transient, battery runtime or RF measurement is claimed."
+  ]
+}

@@ -1,0 +1,37 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+/* R8 DOIT ESPC2-12E-N4: GPIO4 shutter, GPIO5 pair, GPIO6 LED; 26 MHz / 4 MB. */
+/ {
+	chosen {
+		/delete-property/ zephyr,console;
+		/delete-property/ zephyr,shell-uart;
+	};
+	aliases {
+		sw1 = &pair_button;
+		led0 = &status_led;
+	};
+	gpio_keys {
+		pair_button: pair_button {
+			label = "PAIR";
+			gpios = <&gpio0 5 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			zephyr,code = <INPUT_KEY_1>;
+		};
+	};
+	leds {
+		compatible = "gpio-leds";
+		status_led: status_led {
+			label = "STATUS";
+			gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+		};
+	};
+};
+
+&user_button1 {
+	label = "SHUTTER";
+	gpios = <&gpio0 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+};
+
+&wifi { status = "disabled"; };
+&i2c0 { status = "disabled"; };
+&spi2 { status = "disabled"; };
+&uart0 { status = "disabled"; };
+&cpu0 { xtal-freq = <DT_FREQ_M(26)>; };

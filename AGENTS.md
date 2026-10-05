@@ -4,12 +4,20 @@ Read `cloud/HANDOFF.md`, `VALIDATION.md`, `cloud/WORKSPACE-INSTRUCTIONS.md`, and
 
 ## Scope and preservation
 
-- This repository root is the isolated R8 workspace on `cloud/r8-cloud-setup`. Continue here for this task; do not rebuild the tscircuit store application.
+- This repository root is the isolated R8 workspace originally checked out on `cloud/r8-cloud-setup`. Engineering continuation uses `board/r8-doit-c3-prototype-20261005`; preserve active task branches. Continue here for this task; do not rebuild the tscircuit store application.
 - `baselines/` is immutable reference material. It contains the 129-file R7 snapshot and the published Nordic source/enclosure/build. Verify `cloud/R7-PORTABLE-MANIFEST.json` before and after work. Do not edit or regenerate archived files.
 - R6 remains frozen at `77965a8012d5544e962d987ce958c5c5614dbe3a`. Original R7 starts at `636d2b24eb4db775fceeb81206541f249db3b9a5`. No history rewriting, force push, default-branch change or automatic merge.
-- Active root PCB source is still the Nordic starting copy. **ESP32-C3-WROOM-02-N4 / C2934560 is NOT fitted yet.** The frozen JSON in `baselines/` is not an R8 ESP32 build.
-- The current request is Cloud setup, not authorization to waive component qualification. Issues 075 and 076 remain unresolved. Do not route R8 until BOM, supply/boot/programming circuitry, connectivity and placement are qualified.
+- Active root is the routed R8 ESP32-C3 engineering prototype with0 native/independent errors and0 shorts; local exports pass, physical validation and supplier processed-preview remain pending. DOIT ESPC3-12-N4 / C19949072 is now fitted after the hosted build proved pinned C2 Bluetooth support incomplete. Frozen JSON in `baselines/` remains Nordic and is never R8 validation evidence.
+- After onboarding the user authorized engineering continuation and requested routing with zero DRC errors and zero shorts. This does not waive qualification. Original issue075 remains open for the abandoned C3 module; issue076 has a tested fixture override but its upstream omission remains open. Issues078/079 record supplier example-land variations, reassessed for engineering prototype use in `evidence/R8-prototype-2026-10-05/QUALIFICATION.md`; nominal differences alone are not demonstrated electrical blockers. Do not route until new R8 BOM, supply/boot/programming circuitry, connectivity and placement checks pass. Original investigation evidence remains preserved.
 - No torch/fill light. One battery and one USB-C charging port; existing red LEDs are status indicators. Preserve verified USB4215-03-A / C37616412 functionality unless the migration requires a justified local change.
+
+### Current radio decision after hosted firmware verification
+
+Use **DOIT ESPC3-12-N4 / C19949072**: exact22-pin import and nominal lands qualified; UART GPIO20/21, LED GPIO6/pin12 and BOOT GPIO9/pin18. It is the cheapest checked module compatible with pinned Zephyr4.2 BLE. The earlier C2 selection below is preserved history, superseded by actual missing Bluetooth sources/libraries. See `evidence/R8-components/alternative-radio-2026-10-05/c3-supported-ble/`. No frozen inputs or failed evidence may be discarded.
+
+### Earlier radio decision after onboarding (superseded)
+
+The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection: use the cheaper **DOIT ESPC2-12E-N4 / C19949081** (ESP32-C2/ESP8684, 4 MB flash, onboard antenna). See the dated selection evidence in `evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md`. Original C3 supplier/import/firmware evidence stays unchanged; do not reuse its GPIO20/21 UART contract for C2 (module UART is GPIO19/20). At that earlier stage the root implemented C2; this historical decision is superseded by the fitted C3 above. Qualification gates, frozen-baseline protection, sequential heavy-job guard and separate ordering/supplier authorization still apply.
 
 ## Electronic parts and validation
 

@@ -1,0 +1,163 @@
+{
+  "all": [
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_102",
+        "source_port_103",
+        "source_port_104"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_151",
+        "source_port_152",
+        "source_port_153"
+      ],
+      "subcircuit_id": "subcircuit_source_group_8"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.LED1 > port.neg] overlaps with trace[source_net_0_mst7_0] (accidental contact)",
+      "pcb_trace_id": "source_net_9_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_9_0_source_net_0_mst7_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 2.574047516388017,
+        "y": 8.942602515508986
+      },
+      "pcb_port_ids": [
+        "pcb_port_40"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U1 > port.pin8, .C4 > port.1] is too close to trace[.R6 > port.anode] (gap: 0.129mm)",
+      "pcb_trace_id": "source_net_3_mst3_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst3_0_source_net_1_mst6_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -2.645246393045743,
+        "y": 4.208931209648098
+      },
+      "pcb_port_ids": [
+        "pcb_port_60",
+        "pcb_port_128",
+        "pcb_port_105"
+      ]
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_30_pcb_via_9",
+      "message": "Vias pcb_via[#pcb_via_9] and pcb_via[#pcb_via_30] from different nets are too close together (gap: 0.525mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_9",
+        "pcb_via_30"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.524574458163875,
+      "pcb_center": {
+        "x": 0.89990375,
+        "y": 9.8
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_10_pcb_via_51",
+      "message": "Vias pcb_via[#pcb_via_10] and pcb_via[#pcb_via_51] from different nets are too close together (gap: 0.533mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_10",
+        "pcb_via_51"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.5333756720332891,
+      "pcb_center": {
+        "x": 1.8023357337816797,
+        "y": 9.833142710765756
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_30_pcb_via_51",
+      "message": "Vias pcb_via[#pcb_via_30] and pcb_via[#pcb_via_51] from different nets are too close together (gap: 0.507mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_30",
+        "pcb_via_51"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.5074642797192654,
+      "pcb_center": {
+        "x": 1.2023694837816796,
+        "y": 9.433142710765757
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_54_pcb_via_56",
+      "message": "Vias pcb_via[#pcb_via_54] and pcb_via[#pcb_via_56] from different nets are too close together (gap: 0.512mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_54",
+        "pcb_via_56"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.5119251324009387,
+      "pcb_center": {
+        "x": 9.897306159309949,
+        "y": 21.86841642876202
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_56_pcb_via_80",
+      "message": "Vias pcb_via[#pcb_via_56] and pcb_via[#pcb_via_80] from different nets are too close together (gap: 0.400mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_56",
+        "pcb_via_80"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.3999999999999978,
+      "pcb_center": {
+        "x": 9.543539077008845,
+        "y": 21.290825435090554
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_57_pcb_via_87",
+      "message": "Vias pcb_via[#pcb_via_57] and pcb_via[#pcb_via_87] from different nets are too close together (gap: 0.400mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_57",
+        "pcb_via_87"
+      ],
+      "minimum_clearance": 0.6,
+      "actual_clearance": 0.40045631959956474,
+      "pcb_center": {
+        "x": 5.150085028034745,
+        "y": 15.462247008865102
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

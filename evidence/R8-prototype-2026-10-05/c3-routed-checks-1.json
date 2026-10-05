@@ -1,0 +1,115 @@
+{
+  "all": [
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "via_in_pad_pcb_via_62_pcb_smtpad_28",
+      "error_type": "pcb_placement_error",
+      "message": "Via hole at (4.64mm, 9.57mm) overlaps SMD pad R3.pin1 at (4.75mm, 9.00mm)",
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.J1 > port.pin13] is too close to trace[.LED1 > port.neg] (gap: 0.050mm)",
+      "pcb_trace_id": "saved_fanout_pcb_group_0_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_fanout_pcb_group_0_1_saved_phase_null_1_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 6.1,
+        "y": 21.902701399999998
+      },
+      "pcb_port_ids": [
+        "pcb_port_0",
+        "pcb_port_40"
+      ]
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_41_saved_phase_null_1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via pcb_via[#pcb_via_41] and trace trace[.LED1 > port.neg] are too close (clearance: 0.025mm, minimum: 0.15mm)",
+      "pcb_via_id": "pcb_via_41",
+      "pcb_trace_id": "saved_phase_null_1_0",
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.02500000000000037,
+      "center": {
+        "x": 0.8,
+        "y": 9.087499999999999
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_42_saved_phase_null_1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via pcb_via[#pcb_via_42] and trace trace[.LED1 > port.neg] are too close (clearance: 0.125mm, minimum: 0.15mm)",
+      "pcb_via_id": "pcb_via_42",
+      "pcb_trace_id": "saved_phase_null_1_0",
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.125,
+      "center": {
+        "x": 3.2,
+        "y": 8.8625
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_59_source_net_2_mst6_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via pcb_via[#pcb_via_59] and trace trace[.R4 > port.anode] are too close (clearance: 0.083mm, minimum: 0.15mm)",
+      "pcb_via_id": "pcb_via_59",
+      "pcb_trace_id": "source_net_2_mst6_0",
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.08273891734400414,
+      "center": {
+        "x": 6.957874092448165,
+        "y": 11.193489985966227
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_62_pcb_via_82",
+      "message": "Vias pcb_via[#pcb_via_62] and pcb_via[#pcb_via_82] from different nets are too close together (gap: 0.413mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_62",
+        "pcb_via_82"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.41300277550454156,
+      "pcb_center": {
+        "x": 4.728645785800593,
+        "y": 9.918369934372038
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

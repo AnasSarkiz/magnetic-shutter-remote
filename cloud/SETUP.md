@@ -7,15 +7,23 @@ Current official guide: https://learn.chatgpt.com/docs/environments/cloud-enviro
 Name: `magnetic-shutter-remote-r8`. Repository/branch as above. Start from the published environment after its setup report passes. If initial checkout is `main`, use this explicit public-branch checkout during environment setup:
 
 ```sh
-git fetch origin cloud/r8-cloud-setup
-git switch --track origin/cloud/r8-cloud-setup
+if ! git diff --quiet || ! git diff --cached --quiet; then
+  echo "Refusing setup: preserve tracked changes" >&2
+  exit 2
+fi
+git fetch origin refs/heads/cloud/r8-cloud-setup:refs/remotes/origin/cloud/r8-cloud-setup
+if git show-ref --verify --quiet refs/heads/cloud/r8-cloud-setup; then
+  git switch cloud/r8-cloud-setup
+else
+  git switch -c cloud/r8-cloud-setup refs/remotes/origin/cloud/r8-cloud-setup
+fi
 bash cloud/setup.sh
 bash cloud/smoke.sh
 ```
 
 If already on the branch, only the last two commands are needed. Never use a reset/force-checkout on a task with work in progress.
 
-Install script: `bash cloud/setup.sh`. It installs exact Node25.6.0/Bun1.3.9 in ignored task-local `.codex/runtime/`, then locked board dependencies. Requires Linux, npm and Python≥3.11. No board build, routing, viewer service, supplier upload or publishing is launched. Scripts add the task-local runtime to PATH themselves, so they do not rely on an `export` from an earlier setup shell.
+Install script: `bash cloud/setup.sh`. It installs exact Node25.6.0/Bun1.3.9 in ignored task-local `.codex/runtime/`, then locked board dependencies. Requires Linux, npm and Python≥3.11. No board build, routing, viewer service, supplier upload or publishing is launched by installation. Engineering tasks are separately authorized by the user. Scripts add the task-local runtime to PATH themselves, so they do not rely on an `export` from an earlier setup shell.
 
 Start instructions: read AGENTS.md/cloud/HANDOFF.md, run `bash cloud/smoke.sh`, retain the report, continue component qualification. No server is needed. Existing-task state is not automatically replaced by a republished environment; start a new Cloud task after setup changes.
 
@@ -25,7 +33,7 @@ Firmware source and compiled evidence are included. See `firmware/README.md` for
 
 Network: dependency setup needs npm/Bun registries (`registry.npmjs.org`, `registry.npmjs.com`, `npm.tscircuit.com`, `jscdn.tscircuit.com`, GitHub release/assets). Package-manager domain preset may cover some, but exact tscircuit hosts need allowance. Live manufacturer/sourcing work needs explicit official domains, e.g. `espressif.com`, `www.espressif.com`, `docs.espressif.com`, `jlcpcb.com`, `www.jlcpcb.com`, `lcsc.com`, `www.lcsc.com`, `ti.com`, `www.ti.com`, `gct.co`, `raw.githubusercontent.com`, `github.com`, `pypi.org`, `files.pythonhosted.org`. Do not assume hosted search access proves terminal download permission. No project secrets are needed for the frozen imports or public branch. Use provider-managed authentication for GitHub; never put personal tokens in the repository.
 
-Memory: official default VMs currently list8 GiB forPlus/EduPlus and16 GiB forPro/Business/Enterprise/Edu/EduPro. Availability belongs to the user's account; this repository cannot upgrade the plan or VM. Cloud still has finite RAM. Record actual limits, run only one heavy process, and preserve an OOM as failure rather than weakening routing/DRC.
+Memory: this hosted instance observed 32 GiB (`memory.max=34359738368`) and four CPUs. This is an observation, not a guaranteed plan allocation. Cloud still has finite RAM. Record actual limits, run only one heavy process, and preserve an OOM as failure rather than weakening routing/DRC.
 
 After gates pass, example heavy command:
 

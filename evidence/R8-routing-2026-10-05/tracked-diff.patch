@@ -1,0 +1,247 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 7e98106..0f8a791 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -7,10 +7,14 @@ Read `cloud/HANDOFF.md`, `VALIDATION.md`, `cloud/WORKSPACE-INSTRUCTIONS.md`, and
+ - This repository root is the isolated R8 workspace on `cloud/r8-cloud-setup`. Continue here for this task; do not rebuild the tscircuit store application.
+ - `baselines/` is immutable reference material. It contains the 129-file R7 snapshot and the published Nordic source/enclosure/build. Verify `cloud/R7-PORTABLE-MANIFEST.json` before and after work. Do not edit or regenerate archived files.
+ - R6 remains frozen at `77965a8012d5544e962d987ce958c5c5614dbe3a`. Original R7 starts at `636d2b24eb4db775fceeb81206541f249db3b9a5`. No history rewriting, force push, default-branch change or automatic merge.
+-- Active root PCB source is still the Nordic starting copy. **ESP32-C3-WROOM-02-N4 / C2934560 is NOT fitted yet.** The frozen JSON in `baselines/` is not an R8 ESP32 build.
+-- The current request is Cloud setup, not authorization to waive component qualification. Issues 075 and 076 remain unresolved. Do not route R8 until BOM, supply/boot/programming circuitry, connectivity and placement are qualified.
++- Active root PCB source is still the Nordic starting copy. **The selected ESPC2-12E-N4 / C19949081 is NOT fitted yet.** The frozen JSON in `baselines/` is not an R8 ESP32 build.
++- After onboarding the user authorized engineering continuation and requested routing with zero DRC errors and zero shorts. This does not waive qualification. Original issue075 remains open for the abandoned C3 module; issue076 has a tested fixture override but its upstream omission remains open. Current power-stage land qualification is blocked by issues078/079. Do not route R8 until BOM, supply/boot/programming circuitry, connectivity and placement are qualified. See `evidence/R8-routing-2026-10-05/ROUTING-STATUS.md`.
+ - No torch/fill light. One battery and one USB-C charging port; existing red LEDs are status indicators. Preserve verified USB4215-03-A / C37616412 functionality unless the migration requires a justified local change.
+ 
++### Radio decision after onboarding
++
++The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection: use the cheaper **DOIT ESPC2-12E-N4 / C19949081** (ESP32-C2/ESP8684, 4 MB flash, onboard antenna). See the dated selection evidence in `evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md`. Original C3 supplier/import/firmware evidence stays unchanged; do not reuse its GPIO20/21 UART contract for C2 (module UART is GPIO19/20). The active root remains Nordic pending power/BOM and board migration. Qualification gates, frozen-baseline protection, sequential heavy-job guard and separate ordering/supplier authorization still apply.
++
+ ## Electronic parts and validation
+ 
+ Every fitted part requires exact manufacturer MPN and eligible stocked JLCPCB/LCSC C-number. Use supported JLCPCB imports. No custom substitute footprints, generated-import edits, guessed pins, fabricated numbers, generic placeholder parts or manually edited circuit JSON. Preserve original failing inputs and report discrepancies. Focused generic tooling fixes with meaningful tests are authorized; do not suppress warnings or weaken tests/checkers.
+diff --git a/README.md b/README.md
+index c6ae2ef..50935ad 100644
+--- a/README.md
++++ b/README.md
+@@ -1,14 +1,14 @@
+-# Magnetic shutter remote R8 — ESP32-C3 migration qualification
++# Magnetic shutter remote R8 — ESP32-C2 migration qualification
+ 
+ **Codex Cloud continuation:** use branch `cloud/r8-cloud-setup`; read [cloud setup](cloud/SETUP.md) and the complete [project handoff](cloud/HANDOFF.md). Source, imported models, relevant manufacturer evidence, exact qualified archives and frozen generated Nordic JSON are included. Heavy builds are Linux-only and never started by setup.
+ 
+ **COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION.**
+ 
+-User-selected module: Espressif ESP32-C3-WROOM-02-N4 / JLCPCB C2934560. This isolated revision starts from `../magnetic-shutter-remote-r7--01a0f81f`, branch `r7-shutter-only-order-review`, commit `636d2b24eb4db775fceeb81206541f249db3b9a5`. Frozen R6 commit is `77965a8012d5544e962d987ce958c5c5614dbe3a`. Neither previous directory was modified.
++Current selected replacement: **DOIT ESPC2-12E-N4 / JLCPCB C19949081**, replacing the unqualified C2934560 module at the user's request. Dated direct price is $1.5721 for 1–9 units; manufacturer lands, all 16 pins, supported import and model formats were checked. See the [selection and evidence](evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md). C2 firmware/power/board migration remains pending. This isolated revision starts from `../magnetic-shutter-remote-r7--01a0f81f`, branch `r7-shutter-only-order-review`, commit `636d2b24eb4db775fceeb81206541f249db3b9a5`. Frozen R6 commit is `77965a8012d5544e962d987ce958c5c5614dbe3a`. Neither previous directory was modified.
+ 
+-The root `index.circuit.tsx`, `src/remote-circuit.tsx`, BOM and mechanical files remain the starting Nordic design. **They are not an implemented ESP32-C3 board.** Building that entry point does not validate R8. No R8 placement, routing, fabrication export or ordering approval exists. No torch is included.
++The root `index.circuit.tsx`, `src/remote-circuit.tsx`, BOM and mechanical files remain the starting Nordic design. **They are not an implemented ESP32 board.** Building that entry point does not validate R8. No R8 placement, routing, fabrication export or ordering approval exists. No torch is included.
+ 
+-Completed independent work:
++Earlier C3 independent work (historical evidence, not a C2 firmware pass):
+ 
+ - Supported, unchanged JLCPCB imports of the selected module and proposed TPS63031DSKR / C15516 regulator.
+ - All 19 module pin identities checked against Espressif; all 27 imported pad features match original supplier geometry.
+@@ -17,20 +17,18 @@ Completed independent work:
+ - Five focused qualification tests and TypeScript/format checks; these are not whole-board DFM tests.
+ - Documented power/battery feasibility and original-revision preservation manifest.
+ 
+-The blocking discrepancy is documented in [issue 075](tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md): supplier outer lands are approximately 2.0 × 1.0 mm, versus Espressif's recommended 1.5 × 0.9 mm. The importer faithfully preserves them. This is an unqualified supplier variation, not a proven importer scaling bug or a proven assembly failure. Workspace instructions prohibit silently altering the import and require dependent work to stop. [Issue 076](tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md) records missing inferred supply metadata separately.
++The original module discrepancy remains documented in [issue 075](tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md): its supplier lands were accurately imported but remain unqualified. The selected DOIT replacement has lands matching its own manufacturer recommendation; no old import was hand-edited or requalified. [Issue 076](tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md) now records the tested C3 board-level power-attribute correction; the raw importer omission remains open upstream.
+ 
+ Reproduce independent checks from this directory:
+ 
+ ```sh
+-bun install --frozen-lockfile
+-python3 scripts/audit-r8-module.py
+-python3 -m unittest discover -s tests -v
+-./node_modules/.bin/tsc --noEmit
+-bun run format:check
+-./node_modules/.bin/biome format tests/fixtures/esp32-import.circuit.tsx
+-./node_modules/.bin/tsci build tests/fixtures/esp32-import.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs --3d-png
++export npm_config_cache="$PWD/.codex/runtime/npm-cache"
++export XDG_CONFIG_HOME="$PWD/.codex/runtime/config"
++bash cloud/setup.sh
++bash cloud/smoke.sh
++python3 cloud/run-heavy.py -- ./node_modules/.bin/tsci build tests/fixtures/espc2-import.circuit.tsx --pcb-svgs --schematic-svgs
+ ```
+ 
+-Fixture output: `dist/tests/fixtures/esp32-import/`; this is not a remote-board build. See [VALIDATION.md](VALIDATION.md), [power feasibility](evidence/R8-components/POWER-FEASIBILITY.md) and [firmware instructions](firmware/README.md). Versioned SHA256 manifests identify the independent source/tooling/firmware evidence. Frozen original generated circuit JSON is under `baselines/r7/dist/index/circuit.json` and `baselines/published-main/dist/index/circuit.json`. No validated ESP32 R8 root circuit JSON exists; public board publication remains blocked rather than presenting copied Nordic output as ESP32-C3.
++Current fixture output: `dist/tests/fixtures/espc2-import/`; original C3 evidence uses `dist/tests/fixtures/esp32-import/`. Neither is a remote-board build. See [VALIDATION.md](VALIDATION.md), [power feasibility](evidence/R8-components/POWER-FEASIBILITY.md) and [firmware instructions](firmware/README.md). Versioned SHA256 manifests identify the independent source/tooling/firmware evidence. Frozen original generated circuit JSON is under `baselines/r7/dist/index/circuit.json` and `baselines/published-main/dist/index/circuit.json`. No validated ESP32 R8 root circuit JSON exists; public board publication remains blocked rather than presenting copied Nordic output as an ESP32 board.
+ 
+ Next gate: independently qualified supported import of the exact selected module, or authoritative qualification of the larger supplier lands. Then complete regulator/passives/harness qualification, power/boot/programming circuitry, enclosure fit, pre-routing checks, routing and manufacturing exports. Physical battery, RF, thermal, runtime, enclosure fit and phone testing remain **POST-PROTOTYPE PHYSICAL VALIDATION**.
+diff --git a/VALIDATION.md b/VALIDATION.md
+index cc4914c..fd21148 100644
+--- a/VALIDATION.md
++++ b/VALIDATION.md
+@@ -2,6 +2,24 @@
+ 
+ **R8 — COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION.**
+ 
++## Routing request — hosted investigation, 2026-10-05
++
++The user requested a routed C2 board with0 DRC errors and0 shorts. **Not achieved: routing remains blocked before the root migration.** The TPS63031 supply candidate has an unqualified supplier contact-land variation (issue078); the imported Sunlord inductor candidate also differs from its manufacturer recommendation (issue079). The converter faithfully preserves both suppliers' geometry. A TI-recommended-series Coilcraft alternative imported but is not yet manufacturer/process qualified. The correct JST SH battery mate imported; its documented polarity is pin2 positive/pin1 ground, different from the old PH connector. Slow-charge proposals also require review against BQ25185's360-minute safety timer. Exact measurements, inputs, import successes/failure and remaining gates: [routing status](evidence/R8-routing-2026-10-05/ROUTING-STATUS.md).
++
++No root source/BOM/firmware/baseline change, root build, routing, routed DRC, shorts, snapshot acceptance, CAM, commit, push or publication occurred in this investigation. **DRC/short counts are unknown, not zero.** The installed mandatory check commands are available. Actual observed limit remains32GiB,4 CPU equivalents, Python3.12.14; the memory guard remains unchanged. Component audits and lightweight smoke must not be presented as whole-board validation.
++
++## Latest radio selection and hosted checks — 2026-10-05
++
++The user authorized a cheaper replacement for C2934560: selected **DOIT ESPC2-12E-N4 / C19949081**, dated direct JLCPCB price $1.5721 at 1–9 units. Supported exact import, all16 pin identities, 1.5×1.0 mm manufacturer lands, supplier conversion fidelity and valid OBJ/STEP formats pass their focused checks. Full evidence and limitations: [selection report](evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md). This supersedes the original C3 module selection recorded below; it does not erase its failed qualification evidence.
++
++The original C3 fixture now uses manufacturer-confirmed board-level pinAttributes for pin1 power and pin9 ground; the generated import is unchanged. Its native regression passes. The importer still lacks generic 3V3 inference upstream. Original issue075 remains unqualified for C2934560, but the replacement's matching recommended lands avoid that specific discrepancy. Issue077 records an importer HTTP-error-body download defect; failed artifacts were preserved and the selected module was regenerated with valid assets after host access became usable.
++
++Final hosted smoke: formatting, TypeScript,18 Python tests,2 native evaluator tests and129/129 frozen context hashes PASS. Selected isolated native A4 schematic/PCB SVG export passes,16 pads,0 PCB traces,0 circuit error records. `Port VCC on U1 is missing a trace` remains explicit: the fixture is deliberately unpowered, not a functional supply circuit. PCB and schematic images were visually reviewed for the isolated module. No C2 firmware/SDK/3D/CAM or root-board build was run.
++
++Selected fixture build ran sequentially through `python3 cloud/run-heavy.py`, with observed memory limit34359738368 bytes, V8 heap cap14336 MiB, peak child RSS1285128 KiB and no cgroup OOM events. These are measured results for this isolated build, not a routing-memory guarantee.
++
++The active root board/BOM remain Nordic. Complete 3.3 V supply, charger/battery/harness, reset/strap/programming, antenna/mechanical placement, C2 firmware adaptation and whole-board validation remain unfinished. Do not flash the C3 image onto C2 or publish stale Nordic JSON as an R8 result. No board publication, commit, push or supplier/order action occurred in this qualification step. Subsequent sections retain the prior C3/handoff record.
++
+ ## Revision and scope
+ 
+ Source directory: `../magnetic-shutter-remote-r7--01a0f81f`, branch `r7-shutter-only-order-review`, commit `636d2b24eb4db775fceeb81206541f249db3b9a5`. R6 frozen commit: `77965a8012d5544e962d987ce958c5c5614dbe3a`. R8 source/dependency checksums are in `evidence/R8-components/R8-INTEGRITY-MANIFEST.json`; firmware has its own `firmware/artifacts/R8-candidate/BUILD-MANIFEST.json`. No completed board implementation step or public R8 revision is claimed.
+diff --git a/cloud/HANDOFF.md b/cloud/HANDOFF.md
+index 2bdef58..118f636 100644
+--- a/cloud/HANDOFF.md
++++ b/cloud/HANDOFF.md
+@@ -1,5 +1,15 @@
+ # Cloud handoff — magnetic shutter remote, 2026-10-05
+ 
++## Latest routing investigation
++
++The later user request authorizes engineering continuation and requires a routed C2 board with0 DRC errors and0 shorts after qualification gates pass. It is **blocked before routing**, not a successful routed build: TPS63031 supplier contact lands remain unqualified (issue078), and a Sunlord inductor candidate differs from its recommendation (issue079). Supported alternatives and the exact SH battery mate have been imported separately; none is fitted in the Nordic root. The battery's SH mapping is pin2 positive/pin1 ground. Charge-current selection must also account for BQ25185's360-minute safety timer. See `evidence/R8-routing-2026-10-05/ROUTING-STATUS.md`, retained inputs/logs and successor manifest. DRC/short counts remain unrun/unknown. Frozen baselines and sequential heavy-job memory guards remain immutable.
++
++## Latest radio decision — supersedes the original C3 selection below
++
++The user subsequently authorized a cheaper alternative to bypass the unqualified C2934560 land pattern. The selected R8 radio is now **DOIT ESPC2-12E-N4 / C19949081**, an ESP32-C2/ESP8684-based BLE 5 module with onboard PCB antenna and 4 MB flash. Supported exact-footprint import and native unrouted qualification fixture are retained. See `evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md` for dated direct prices, manufacturer land/pin comparison, remaining migration work and validation evidence.
++
++The original C3 module/import, issue 075 and C3 firmware artifacts remain historical evidence; they are not altered or silently requalified. Issue 076 has a tested manufacturer-specific pinAttributes correction in the original C3 fixture; its upstream omission remains open. The root board is still Nordic and must not be presented as an ESP32-C2 implementation. C2 firmware adaptation, complete power/BOM qualification, placement, routing and physical testing remain pending. No change to the one-battery/one-USB/no-torch decisions or supplier/order restrictions.
++
+ ## Read this first
+ 
+ Repository: https://github.com/AnasSarkiz/magnetic-shutter-remote . Cloud branch: `cloud/r8-cloud-setup`. Local continuation directory was `boards/magnetic-shutter-remote-r8--01a0f81f`; on Cloud the checkout root is the task workspace. Do not rely on any `/Users/...` path in preserved historical logs.
+diff --git a/cloud/smoke.sh b/cloud/smoke.sh
+index ce8e233..8a269bc 100644
+--- a/cloud/smoke.sh
++++ b/cloud/smoke.sh
+@@ -7,5 +7,6 @@ python3 cloud/verify-context.py
+ bun run format:check
+ bun run typecheck
+ python3 -m unittest discover -s tests -v
++bun test tests/r8-power-metadata.test.ts
+ python3 scripts/audit-r8-module.py
+ echo "Lightweight smoke checks PASS. This is not R8 electrical, routing or fabrication validation."
+diff --git a/scripts/audit-r8-module.py b/scripts/audit-r8-module.py
+index 1a6ce06..9c19f2c 100644
+--- a/scripts/audit-r8-module.py
++++ b/scripts/audit-r8-module.py
+@@ -11,8 +11,8 @@ RAW = ROOT / "evidence/R8-components/C2934560-supplier-raw.json"
+ IMPORT = ROOT / "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx"
+ 
+ 
+-def supplier_pads():
+-    supplier = json.loads(RAW.read_text())
++def supplier_pads(supplier_path=RAW):
++    supplier = json.loads(supplier_path.read_text())
+     package = supplier["packageDetail"]["dataStr"]
+     if isinstance(package, str):
+         package = json.loads(package)
+@@ -22,23 +22,30 @@ def supplier_pads():
+         if not shape.startswith("PAD~"):
+             continue
+         fields = shape.split("~")
++        rotation_degrees = float(fields[11]) % 360
++        width_mm = float(fields[4]) * 0.254
++        height_mm = float(fields[5]) * 0.254
++        if rotation_degrees in (90, 270):
++            width_mm, height_mm = height_mm, width_mm
++        elif rotation_degrees not in (0, 180):
++            raise ValueError("Pad audit supports only axis-aligned supplier rectangles")
+         pads.append({
+             "pin": int(fields[8]),
+             "x_mm": (float(fields[2]) - origin["x"]) * 0.254,
+             "y_mm": (origin["y"] - float(fields[3])) * 0.254,
+-            "width_mm": float(fields[4]) * 0.254,
+-            "height_mm": float(fields[5]) * 0.254,
++            "width_mm": width_mm,
++            "height_mm": height_mm,
+         })
+     return pads
+ 
+ 
+-def imported_pads():
++def imported_pads(import_path=IMPORT):
+     pads = []
+     pattern = re.compile(
+         r'<smtpad portHints=\{\["pin(\d+)"\]\} pcbX="([\d.\-]+)mm" '
+         r'pcbY="([\d.\-]+)mm" width="([\d.]+)mm" height="([\d.]+)mm"'
+     )
+-    for pin, x, y, width, height in pattern.findall(IMPORT.read_text()):
++    for pin, x, y, width, height in pattern.findall(import_path.read_text()):
+         pads.append({"pin": int(pin), "x_mm": float(x), "y_mm": float(y),
+                      "width_mm": float(width), "height_mm": float(height)})
+     return pads
+diff --git a/tests/fixtures/esp32-import.circuit.tsx b/tests/fixtures/esp32-import.circuit.tsx
+index 8874204..7c3e950 100644
+--- a/tests/fixtures/esp32-import.circuit.tsx
++++ b/tests/fixtures/esp32-import.circuit.tsx
+@@ -1,4 +1,12 @@
+ import { ESP32_C3_WROOM_02_N4 } from "../../imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4";
++import type { PinAttributeMap } from "@tscircuit/props";
++
++// Espressif v1.7, Table 3-1: pin 1 is the 3.0–3.6 V input.
++// Retain the import's pin 9 ground attribute. EP soldering is optional (section 9).
++const manufacturerPinAttributes: Record<string, PinAttributeMap> = {
++	pin1: { requiresPower: true },
++	pin9: { requiresGround: true },
++};
+ 
+ // Isolated, unrouted supplier-import inspection fixture. This is not the remote PCB.
+ export default function Esp32ImportInspection() {
+@@ -12,6 +20,7 @@ export default function Esp32ImportInspection() {
+ 			>
+ 				<ESP32_C3_WROOM_02_N4
+ 					name="U1"
++					pinAttributes={manufacturerPinAttributes}
+ 					pcbX={0}
+ 					pcbY={0}
+ 					schX={0}
+diff --git a/tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md b/tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md
+index 07fedd3..fe3ff67 100644
+--- a/tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md
++++ b/tscircuit-issues/075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md
+@@ -52,3 +52,7 @@ Confirmed: the larger lands originate in the supplier library and are faithfully
+ Impact: schematic pin identity is audited, but placement, paste/process qualification, final routing, fabrication exports and a completed module migration cannot be approved yet. R6/R7 remain unchanged. The R8 board source remains the starting copy; it is not a completed ESP32-C3 board.
+ 
+ Remaining blocker: obtain a supported JLCPCB import of this exact stocked component with a independently qualified land pattern, or authoritative evidence that the existing larger lands are acceptable. No handwritten substitute footprint or generated-import edits were made. Tests validate conversion fidelity and ensure the discrepancy remains visible; they do not declare manufacturer qualification PASS.
++
++## Replacement selected — 2026-10-05
++
++The user subsequently authorized a cheaper alternative. DOIT ESPC2-12E-N4 / C19949081 was selected and imported through the supported exact-footprint pipeline. Its own manufacturer drawing specifies 1.5×1.0 mm lands, matching its import within conversion precision. See the [dated comparison and qualification evidence](../evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md). This avoids the original module's issue for future R8 work; it does not qualify, alter or close the discrepancy in C2934560. Complete supply/firmware/board migration remains pending.
+diff --git a/tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md b/tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md
+index 2415777..1f5e7db 100644
+--- a/tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md
++++ b/tscircuit-issues/076-numeric-supply-pin-not-inferred-as-power.md
+@@ -13,3 +13,9 @@ Confirmed root cause: `POWER_PIN_LABEL = /^(?:VCC|VDD|VIN|VDDA|VBUS)\d*$/` exclu
+ Impact: automated power-pin checks cannot establish the module supply connection from the imported metadata alone. The unpowered inspection fixture is intentionally not a functional circuit. A successful render must not be called a complete electrical validation.
+ 
+ No generated import was edited, no warning was suppressed, and no generic regex broadening was made without proving that numeric labels distinguish supply inputs from outputs. Future resolution must use the supported manufacturer-metadata pipeline or documented board-level attributes grounded in the exact datasheet, with regression coverage for ambiguous labels and exposed-pad semantics. Supplier land qualification in issue 075 remains separately blocking.
++
++## Project correction — 2026-10-05
++
++At the user's explicit request, `tests/fixtures/esp32-import.circuit.tsx` now supplies the supported `pinAttributes` prop: pin 1 `requiresPower: true`, retaining pin 9 `requiresGround: true`. The generated supplier import remains byte-for-byte unchanged. This is manufacturer-specific board-level metadata, not a change to generic label inference.
++
++`bun test tests/r8-power-metadata.test.ts` exercises the actual fixture through the native evaluator: pin 1 emits `requires_power=true`, pin 9 retains `requires_ground=true`, no other port is marked as requiring power, all 27 pads remain and there are no routed traces. Pin 19 is not automatically marked as requiring ground: Espressif v1.7 section 9 states that soldering EPAD to base-board ground is optional for thermal performance. The original warning log remains historical evidence. The raw importer omission remains open upstream; the project fixture now supplies the missing power metadata. This unpowered inspection fixture does not establish a working supply circuit.
+diff --git a/tscircuit-issues/README.md b/tscircuit-issues/README.md
+index e356d75..6ec41fe 100644
+--- a/tscircuit-issues/README.md
++++ b/tscircuit-issues/README.md
+@@ -111,4 +111,8 @@ Earlier reports are retained unchanged from the R7 source directory. Historical
+ |Issue|Affected package / scope|Status|
+ |---|---|---|
+ |[075 — ESP32-C3 outer lands differ from recommendation](075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md)|Supplier CAD C2934560; easyeda 0.0.364 faithfully preserves it|confirmed discrepancy; qualification blocked; not a confirmed tscircuit bug|
+-|[076 — Numeric supply label lacks power metadata](076-numeric-supply-pin-not-inferred-as-power.md)|easyeda 0.0.364 power-label inference; CLI 0.1.2237 local integration|confirmed metadata omission; not fixed|
++|[076 — Numeric supply label lacks power metadata](076-numeric-supply-pin-not-inferred-as-power.md)|easyeda 0.0.364 power-label inference; CLI 0.1.2237 local integration|project fixture corrected using verified pinAttributes; upstream omission remains open|
++|[077 — Import download saves HTTP error bodies as CAD assets](077-import-download-saves-http-error-bodies.md)|CLI 0.1.2237 download-cad-model-assets.ts|confirmed download-validation defect; blocked assets preserved, not usable|
++|[078 — TPS63031 supplier lands differ from TI example](078-tps63031-supplier-lands-differ-from-ti-example.md)|Supplier CAD C15516; faithful supported conversion|confirmed variation; power-stage qualification blocked|
++|[079 — SWPA3015 supplier lands differ from Sunlord recommendation](079-swpa3015-supplier-lands-differ-from-sunlord-recommendation.md)|Supplier CAD C56594; faithful supported conversion|confirmed variation; candidate not fitted|
++|[080 — Live supplier search returns unrelated parts](080-live-supplier-search-returns-unrelated-parts.md)|Live jlcsearch search service,2026-10-05|confirmed response mismatch; backend cause unverified|

@@ -1,0 +1,91 @@
+{
+  "all": [
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "via_in_pad_pcb_via_67_pcb_smtpad_72",
+      "error_type": "pcb_placement_error",
+      "message": "Via hole at (10.30mm, -8.00mm) overlaps SMD pad C5.pin1 at (10.30mm, -8.00mm)",
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_26",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "source_component_id": "source_component_26",
+      "source_port_ids": [
+        "source_port_108",
+        "source_port_109",
+        "source_port_110"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_43",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "source_component_id": "source_component_43",
+      "source_port_ids": [
+        "source_port_157",
+        "source_port_158",
+        "source_port_159"
+      ],
+      "subcircuit_id": "subcircuit_source_group_10"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U3 > port.pin5, .C3 > port.1] is too close to trace[.U3 > port.pin11] (gap: 0.144mm)",
+      "pcb_trace_id": "saved_fanout_pcb_group_6_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_fanout_pcb_group_6_0_source_net_0_mst17_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.89510899993815,
+        "y": 1.4872180848168695
+      },
+      "pcb_port_ids": [
+        "pcb_port_117",
+        "pcb_port_132",
+        "pcb_port_123"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace trace[.U3 > port.pin8, .C3 > port.1] overlaps with pcb_via \"pcb_via[#pcb_via_47]\" (accidental contact)",
+      "pcb_trace_id": "saved_fanout_pcb_group_6_4",
+      "center": {
+        "x": -7.131993014293847,
+        "y": 1.1909874294588116
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_saved_fanout_pcb_group_6_4_pcb_via_47",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_120",
+        "pcb_port_132"
+      ]
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_47_pcb_via_82",
+      "message": "Vias pcb_via[#pcb_via_47] and pcb_via[#pcb_via_82] from different nets are too close together (gap: 0.468mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_47",
+        "pcb_via_82"
+      ],
+      "minimum_clearance": 0.5,
+      "actual_clearance": 0.46841478769984746,
+      "pcb_center": {
+        "x": -7.797472385254406,
+        "y": 1.214514769713134
+      }
+    }
+  ],
+  "holeTrace": [],
+  "dangling": [],
+  "selfShorts": []
+}

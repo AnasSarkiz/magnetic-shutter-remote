@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="46.306176mm" height="44.810967000000005mm" viewBox="-23.1 -16.1 46.306176 44.810967000000005" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(-22.1 27.711) scale(1 -1) translate(22.1 15.1)">
+    <circle cx="-4.31991" cy="22.9602" r="0.550799" fill="black"/>
+    <path d="M -4.31991 22.9602 L -4.31991 22.1602" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1016"/>
+    <circle cx="-4.31991" cy="22.1602" r="0.550799" fill="black"/>
+    <circle cx="4.31991" cy="22.9602" r="0.550799" fill="black"/>
+    <path d="M 4.31991 22.9602 L 4.31991 22.1602" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1016"/>
+    <circle cx="4.31991" cy="22.1602" r="0.550799" fill="black"/>
+    <circle cx="4.31991" cy="27.1602" r="0.550799" fill="black"/>
+    <path d="M 4.31991 27.1602 L 4.31991 25.9602" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1016"/>
+    <circle cx="4.31991" cy="25.9602" r="0.550799" fill="black"/>
+    <circle cx="-4.31991" cy="27.1602" r="0.550799" fill="black"/>
+    <path d="M -4.31991 27.1602 L -4.31991 25.9602" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1016"/>
+    <circle cx="-4.31991" cy="25.9602" r="0.550799" fill="black"/>
+    <circle cx="21.7562" cy="3.50013" r="0.450012" fill="black"/>
+    <circle cx="21.7562" cy="6.50012" r="0.450012" fill="black"/>
+    <circle cx="-21.0" cy="25.0" r="1.1" fill="black"/>
+    <circle cx="21.0" cy="25.0" r="1.1" fill="black"/>
+    <circle cx="-21.0" cy="-14.0" r="1.1" fill="black"/>
+    <circle cx="21.0" cy="-14.0" r="1.1" fill="black"/>
+  </g>
+</svg>
