@@ -45,12 +45,12 @@ def pill(x,y,w,h,angle=0):
     if abs(w-h)<1e-12:g=Point(0,0).buffer(r,quad_segs=256)
     return translate(rotate(g,angle,origin=(0,0)),x,y)
 def pad(e):
+    if e['shape']=='polygon':return Polygon([(p['x'],p['y']) for p in e['points']])
     x,y=e['x'],e['y'];shape=e['shape']
     if shape=='circle':return circle(x,y,e.get('radius',0)*2 or e['diameter'])
     if shape in ('pill','rotated_pill'):return pill(x,y,e['width'],e['height'],e.get('ccw_rotation',0))
     if shape in ('rect','rotated_rect'):
         return translate(rotate(box(-e['width']/2,-e['height']/2,e['width']/2,e['height']/2),e.get('ccw_rotation',0),origin=(0,0)),x,y)
-    if shape=='polygon':return Polygon([(p['x'],p['y']) for p in e['points']])
     raise ValueError(f'Unsupported SMT shape {shape}')
 
 def make_features(circuit, trace_geometry="conservative"):

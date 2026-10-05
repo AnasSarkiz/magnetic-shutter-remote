@@ -1,0 +1,73 @@
+{
+  "started_utc": "20261005T201656665179Z",
+  "command": [
+    "tsci",
+    "build",
+    "tests/fixtures/side-shutter.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building tests/fixtures/side-shutter.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/fixtures/side-shutter/circuit.json
+Generating preview images...
+[tests/fixtures/side-shutter] Generating PCB SVG...
+[tests/fixtures/side-shutter] Written pcb.svg
+[tests/fixtures/side-shutter] Generating PCB PNG...
+[tests/fixtures/side-shutter] Written pcb.png
+[tests/fixtures/side-shutter] Generating schematic SVG...
+[tests/fixtures/side-shutter] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
+{
+  "started_utc": "20261005T201656665179Z",
+  "command": [
+    "tsci",
+    "build",
+    "tests/fixtures/side-shutter.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:17:06.360966+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 1059328,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T201656665179Z.log"
+}

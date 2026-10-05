@@ -65,10 +65,23 @@ const supplierFootprint = {
 	supplier: "jlcpcb",
 	circuitJson: supplierCircuit,
 } as const;
+const sideSwitchFootprint = {
+	supplier: "jlcpcb",
+	circuitJson: any_circuit_element
+		.array()
+		.parse(
+			await Bun.file(
+				"evidence/R8-side-shutter-2026-10-05/qualification/supplier-reference/circuit.json",
+			).json(),
+		),
+} as const;
 const options = {
 	supplier: "jlcpcb",
 	requireSupplierRotation: true,
-	supplierFootprints: { C37616412: supplierFootprint },
+	supplierFootprints: {
+		C37616412: supplierFootprint,
+		C393942: sideSwitchFootprint,
+	},
 } as const;
 const j1Source = circuit.find(
 	(element) => element.type === "source_component" && element.name === "J1",
@@ -89,6 +102,32 @@ const registration = registerSupplierTerminals({
 await Bun.write(
 	`${evidenceDirectory}/J1-supplier-terminal-registration.json`,
 	JSON.stringify(registration, null, 2),
+);
+const switchSource = circuit.find(
+	(element) => element.type === "source_component" && element.name === "SW2",
+);
+if (!switchSource || switchSource.type !== "source_component")
+	throw new Error("SW2 source absent");
+const switchPlacement = circuit.find(
+	(element) =>
+		element.type === "pcb_component" &&
+		element.source_component_id === switchSource.source_component_id,
+);
+if (!switchPlacement || switchPlacement.type !== "pcb_component")
+	throw new Error("SW2 placement absent");
+const switchRegistration = registerSupplierTerminals({
+	circuitJson: circuit,
+	pcbComponent: switchPlacement,
+	supplierFootprint: sideSwitchFootprint,
+});
+if (
+	switchRegistration.rotationDegrees !== 270 ||
+	switchRegistration.terminalCount !== 4
+)
+	throw new Error("Side-actuator supplier rotation/terminal coverage differs");
+await Bun.write(
+	`${evidenceDirectory}/SW2-supplier-terminal-registration.json`,
+	JSON.stringify(switchRegistration, null, 2),
 );
 const placement = convertCircuitJsonToPickAndPlaceRows(circuit, options);
 const expected = circuit

@@ -120,3 +120,10 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 |[082 — Pinned Zephyr C2 board support does not include BLE](082-zephyr-c2-board-support-lacks-ble.md)|Zephyr4.2.0 / pinned hal_espressif|confirmed hosted build failure; qualified compatible DOIT C3 alternative selected|
 |[083 — Mask margin cannot be selected through pcbSx](083-mask-margin-cannot-be-selected-through-pcb-sx.md)|props0.0.672/core0.0.2035 styling API|locally fixed and tested in separately hashed R8 runtime archives; supplier copper preserved|
 | [084](084-discrete-mosfet-import-triggers-ic-warnings.md) | Discrete MOSFET import triggers generic IC warnings | Model/checker classification; nonblocking for reviewed C8545 connections |
+
+- [085 — Offset polygon pad component/CAD/CPL bounds](085-offset-polygon-pad-component-bounds.md): confirmed generic core bug; project-local correction and4-rotation regression,11focused tests pass; no supplier import edits.
+
+- [086 — Missing polygon support-land paste](086-polygon-support-lands-missing-solder-paste.md): confirmed core emitter omission; locally corrected with19 focused regressions; retained original TS24CA failure, current export qualification tracked separately.
+- [087 — Independent polygon reader x/y failure](087-independent-polygon-reader-requires-xy.md): project checker defect fixed from original vertices, unchanged thresholds.
+
+- [088 — ALPS locating-hole/copper clearance](088-alps-side-switch-npth-copper-clearance.md): exact supplier/manufacturer lands fail unchanged NPTH minima; candidate rejected, not patched.

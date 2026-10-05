@@ -1,0 +1,64 @@
+{
+  "started_utc": "20261005T192635039890Z",
+  "command": [
+    "bun",
+    "run",
+    "--cwd",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core",
+    "build"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 4.04 MB
+ESM ⚡️ Build success in 543ms
+DTS ⚡️ Build success in 37549ms
+DTS dist/index.d.ts 9.46 MB
+{
+  "started_utc": "20261005T192635039890Z",
+  "command": [
+    "bun",
+    "run",
+    "--cwd",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core",
+    "build"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T19:27:13.491893+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 2958448,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T192635039890Z.log"
+}

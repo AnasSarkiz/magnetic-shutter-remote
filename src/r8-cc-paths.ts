@@ -1,5 +1,5 @@
 import type { FanoutTracePath } from "@tscircuit/core";
-// Native returns for the existing 5.1k USB-C CC2 pulldown; supplier copper stays unchanged.
+// Native USB-C pulldown returns; supplier copper stays unchanged.
 export const r8CcPaths: FanoutTracePath[] = [
 	{
 		connection: "R2.pin1",
@@ -15,6 +15,14 @@ export const r8CcPaths: FanoutTracePath[] = [
 			{ route_type: "wire", x: 0.753364, y: 19, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: 1.753364, y: 19, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: 1.753364, y: 18.2, width: 0.15, layer: "top" },
+		],
+	},
+	{
+		connection: "R1.pin2",
+		route: [
+			{ route_type: "wire", x: -3.246636, y: 19, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -3.246636, y: 19.9, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -3.6, y: 20.1, width: 0.15, layer: "top" },
 		],
 	},
 ];

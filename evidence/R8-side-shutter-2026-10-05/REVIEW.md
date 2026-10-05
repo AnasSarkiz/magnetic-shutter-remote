@@ -1,0 +1,42 @@
+# R8 side-actuated shutter prototype review — 2026-10-05
+
+**0 native DRC errors, 0 shorts, 0 independent manufacturing/process failures.** The shutter is now a right-edge side-actuated PCB switch, Shouhan TS24CA/C393942. It faces +X and presses inward toward -X; SW2 is at (22,-8.5) mm, rotation270°. GPIO4 and the qualified DOIT ESPC3-12-N4/C19949072 BLE firmware contract remain unchanged. This is an untested engineering prototype, version0.3.1; enclosure fit and supplier-processed preview remain pending.
+
+Validated native build: `route-10`, branch `board/r8-doit-c3-prototype-20261005`, predecessor HEAD `4e899b27e3639b091375757a7d188299f1d60dd9`. Generated Circuit JSON SHA256: `dc7327de34fa36e663db88cc7f7f7dc5ebae4cd75f720f298f078c5ac7fc9c91`. Source/runtime/output hashes are recorded in the separate successor manifest; old integrity manifests and failure evidence are preserved.
+
+| Check | Actual result |
+|---|---|
+| Native build, full Circuit JSON schema and native checks | PASS;0 errors,0 hole/trace errors,0 dangling traces,0 self-shorts |
+| Native `tsci check shorts` | PASS; no shorts |
+| Exact independent Gerber-semantics copper/drill audit | PASS;0 failures; all original minima retained |
+| Physical copper connectivity | All29 terminal nets connected; RF exclusion0 intrusions; U2/U3 EP continuous top GND plus local GND vias |
+| Unrouted source/netlist/pin/schematic/PCB placement gates | PASS,44 exact fitted references; source-controlled fanouts carry no copper with routing disabled |
+| Native snapshots | Two successive native snapshot checks PASS; both PCB and schematic snapshots match |
+| Native fabrication readback | All12 original Gerber/Excellon files parsed; copper/source agree within0.00002mm; outline, drills, slots, paste and mask match |
+| Assembly |44 TOP references,25 exact C numbers; SW2 all4 supplier terminals registered at270°, maximum position error0; strict J1 registration retained |
+| Process |162 paste apertures; assumed0.10mm stencil minimum area ratio0.6999986; minimum mask web0.118262mm;10 legends, minimum stroke0.162mm, no mask/outline collisions |
+| Lightweight smoke | Format and TypeScript PASS;29 Python tests PASS;2 Bun tests/13 assertions PASS;129/129 frozen hashes PASS |
+| Independent CAM regressions |18 tests PASS |
+| Generic core fixes |19 focused tests/278 assertions PASS; canonical ESM/declaration build PASS; installed archive bytes verified; not a full upstream-suite claim |
+
+Board:48×56×1mm,2-layer FR4,44 TOP references,163 native traces,98 vias,158 SMT pads,4 plated USB shell holes,8 NPTH,3 native A4 sheets. Exact switch signal lands and L-shaped insulated support lands remain supplier-generated. Contacts1/2 are normally open; only support terminals3/4 are internally connected. All4 have native paste. Plastic actuator/courtyard overhang is intentional; furthest copperX23.599959 gives0.400041mm clearance to edgeX24. The0.7mm locating holes accommodate nominal0.5mm pegs; actual tolerances, actuator travel/force, case access, durability and assembled fit need a physical prototype. No lever/top-button substitution or copper-edge exemption was used.
+
+The selected DOIT C3 is the cheapest checked pinned-Zephyr4.2 BLE-compatible module: observedUSD2.2662 versus originalWROOM USD3.2887. Cheaper C2 BLE SDK failure082 remains actual retained evidence. Switch search prices are quantity-dependent observations, not PCBA quotes; TS24CA stock444478/search priceUSD0.0253 was observed. Manufacturer recommendation and original supplier conversion pass; no exhaustive cheapest-switch claim is made.
+
+Routing corrections are authored native fanouts: complete PROG return; shared sensor/capacitor return; USB-shell and CC returns through an existing GND via; R6 transition off-pad; U3 ground return through an existing GND via. Autorouter requested clearance increased0.25→0.30mm. No checker threshold was reduced, generated copper was not edited and no jumpers were added.
+
+Visual inspection covers native top/bottom copper/courtyard, independent Gerber copper, all3 full A4 schematic sheets and readable detail views, battery/header polarity, USB access, side actuator, regulator/charger exposed-pad returns and empty RF band. Native paste regression SVGs at0/90/180/270° were inspected. Detail views omit page furniture only; fabrication inputs are original native exports. No3D/CAM SDK build was required; the independent Linux CAM readback/process commands above did run after qualification.
+
+Warnings remain explicit: Q1/Q2 discrete MOSFETs imported as generic chips generate2 no-IC-power-pin warnings and2 Q-prefix/chip-class warnings (084); manufacturer G/S/D contracts pass. Original WROOM075 remains unresolved for the abandoned module. **Missing `3V3` metadata remains a separate importer issue.** Its manufacturer-specific fixture override passes; fitted DOIT already has correct VCC/GND metadata. No warnings were suppressed.
+
+Generic fixes085/086 restore actual offset polygon bounds and native concave polygon paste; preserved source overlays, manifests, canonical builds and vendor archives permit reproduction. Nonzero polygon paste offsets remain explicitly unsupported; this exact import uses0mm. Project polygon reader087 now reads actual vertices instead of requiring nonexistent x/y. ALPS alternative088 was rejected on four actual NPTH/copper gaps0.0749808/0.1499997mm against unchanged0.20mm minimum. All original inputs and failing outputs remain separate.
+
+Failure history: route01 missing polygon paste; routes02/04/05/06 rejected ALPS/routing; route03 failed before build because XDG was absent; route07/09 native passes but independent USB/R6/EP drill clearances failed. Route08 was stopped before a new JSON after identifying an unsafe proposed via; it has no claimed generated result. Route10 resolves all current routed violations. Initial BOM export relative-path failure was corrected in its generator; initial smoke rejected an unsupported keepout name on the unused ALPS fixture, then passed after removing that unsupported prop while preserving the original fixture. These are failures retained in logs, not passing runs.
+
+Nominal power paths: main V3/VBAT minimum width0.20mm, trace-only conservative voltage budgets3.155611V/2.972216V for500mA module design supply. Assumptions35um copper,50C resistance,-3% regulator output and85% efficiency; connector/via/cell impedance, switching pulses and startup are not measured. Earlier C3 firmware compile/image remains applicable because hardware GPIO/module identity is unchanged; it was not rebuilt/flashed this revision. POST-PROTOTYPE PHYSICAL VALIDATION includes power/startup, UART/BLE phone operation, RF, battery/runtime, charge/thermal behavior and enclosure/side-button fit. Old36mm Nordic case does not fit this48mm board. No production readiness is claimed.
+
+Reproduce: `bash cloud/setup.sh`, `bash cloud/smoke.sh`; activate pinned PATH/XDG per cloud/SETUP.md. Run heavy work serially with `python3 cloud/run-heavy.py -- <command>`. Native route: `tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs`; then native contracts/checks/shorts, independent manufacturing/connectivity/power review, native Gerber/assembly export and independent export/process review on that same JSON. Individual full commands and actual exit/resource records are retained in logs/. Do not use the root npm build script with its optional3D flag for this workflow.
+
+Observed hosted limit34359738368bytes(32GiB),4 CPU equivalents; not a guaranteed plan allocation. Route10 peak RSS5483420KiB; OOM counters0. Node25.6.0/Bun1.3.9; default Python3.12.14, optional CAM Python3.14.0. Saved Install/Start remain lightweight, preserve explicit-ref checkout and task branches, refuse discard and require R8 HANDOFF context.
+
+Publication: qualified board-source GitHub and native tsci prototype upload are user-authorized. New target0.3.1-prototype; completion and public byte verification are recorded separately in PUBLICATION.md after actual upload. Historical0.3.0-prototype remains an incomplete upload with two HTTP413 archives and ready_to_build=false; it is not the side-switch publication. CLI/evaluator transport now uses byte-identical verified archives at immutable public GitHub commit URLs; registry staging retains required smaller file archives and source closure, excludes SDK/cache/auth and verifies input hashes. No tooling-package publication, ordering, payment, supplier contact, assembler upload, PR merge or main change occurred.

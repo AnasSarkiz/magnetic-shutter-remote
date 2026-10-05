@@ -95,15 +95,10 @@ export const sensorEscapePaths: FanoutTracePath[] = [
 				width: 0.15,
 				layer: "top",
 			},
-			{
-				route_type: "via",
-				x: 2,
-				y: 7.2,
-				from_layer: "top",
-				to_layer: "bottom",
-				via_diameter: 0.6,
-				via_hole_diameter: 0.3,
-			},
+			// Keep the sensor return on top to its decoupling-capacitor return.
+			{ route_type: "wire", x: 2, y: 7.2, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: 3.2, y: 8.4, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: 3.2, y: 8.5, width: 0.15, layer: "top" },
 		],
 	},
 	{

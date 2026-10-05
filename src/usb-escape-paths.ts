@@ -1,5 +1,5 @@
 import type { FanoutTracePath } from "@tscircuit/core";
-// R6 native local copper; all R5 escape exits and via sizes are preserved.
+// Native USB routing; supplier lands and qualified via sizes are unchanged.
 export const usbEscapePaths: FanoutTracePath[] = [
 	{
 		connection: "J1.pin14",
@@ -18,6 +18,9 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				width: 0.15,
 				layer: "bottom",
 			},
+			// Join the existing USB ground via, without adding a drill near shell slots.
+			{ route_type: "wire", x: -6, y: 20.1, width: 0.15, layer: "bottom" },
+			{ route_type: "wire", x: -3.6, y: 20.1, width: 0.15, layer: "bottom" },
 		],
 	},
 	{

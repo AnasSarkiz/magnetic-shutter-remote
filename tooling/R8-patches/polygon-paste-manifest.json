@@ -1,0 +1,18 @@
+{
+  "apply_after": "tooling/R8-patches/polygon-bounds-manifest.json",
+  "source_overlay": "tooling/source-archives/core-R8-polygon-paste-changes.tar.gz",
+  "runtime_archive": "tooling/vendor/core-r8-polygon-paste.tgz",
+  "sha256": {
+    "tooling/R8-patches/polygon-bounds-manifest.json": "a896fc55467cf82a2ad3c19269f01e9ac261cc0baa77eda4c1252d9e8bb3aa88",
+    "tooling/source-archives/core-R8-polygon-paste-changes.tar.gz": "e8de0c50f40dd86b2474771d02bdbbc485762a242e76584605fc084c475b4b4c",
+    "tooling/vendor/core-r8-polygon-paste.tgz": "6dcec51ef314a9c9298250561a3a917ce2af48b77685c10b6a3ff499e8d00ae1"
+  },
+  "validation": {
+    "control": "four polygon paste regressions failed before correction",
+    "fixed": "19 tests pass; canonical ESM/declaration build passes"
+  },
+  "limitations": [
+    "Nonzero polygon paste offsets fail explicitly; fitted supplier imports specify zero."
+  ],
+  "issue": "086"
+}

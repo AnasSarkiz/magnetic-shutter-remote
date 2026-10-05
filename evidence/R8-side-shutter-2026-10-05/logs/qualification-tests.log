@@ -1,0 +1,10 @@
+test_exact_supplier_identity_required (test_side_shutter.SideShutterQualification.test_exact_supplier_identity_required) ... ok
+test_frame_is_not_a_switch_contact (test_side_shutter.SideShutterQualification.test_frame_is_not_a_switch_contact) ... ok
+test_manufacturer_lands_and_frame_contract (test_side_shutter.SideShutterQualification.test_manufacturer_lands_and_frame_contract) ... ok
+test_modified_generated_contact_rejected (test_side_shutter.SideShutterQualification.test_modified_generated_contact_rejected) ... ok
+test_side_actuator_overhang_keeps_every_copper_land_on_board (test_side_shutter.SideShutterQualification.test_side_actuator_overhang_keeps_every_copper_land_on_board) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK

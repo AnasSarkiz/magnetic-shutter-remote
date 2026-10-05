@@ -1,0 +1,5 @@
+# Reproduce native polygon paste correction
+
+Apply the polygon-bounds source reconstruction first, then overlay `tooling/source-archives/core-R8-polygon-paste-changes.tar.gz` into core. Verify `polygon-paste-manifest.json` before execution. The source contains the emitter/layout correction,8 new focused paste regressions and4 native visual snapshots. Run those tests plus the11 preserved bounds/mask/ground tests serially through `python3 cloud/run-heavy.py`; the exact invocation and19pass/278assertion result are retained in the dated tooling build log. Run canonical `bun run build`, then `bun pm pack --filename <board>/tooling/vendor/core-r8-polygon-paste.tgz`. Normal cloud setup installs that archive through the root lockfile.
+
+Explicit zero-margin polygons retain their original global vertices, defaults use the existing0.7 scale, and covered polygons generate no paste. Unsupported nonzero polygon offsets fail explicitly; no bounding rectangle or silent substituted aperture is emitted. The fitted TS24CA supplier import declares zero margin. Original archives and failure fixtures remain immutable. No upstream package publication occurred.

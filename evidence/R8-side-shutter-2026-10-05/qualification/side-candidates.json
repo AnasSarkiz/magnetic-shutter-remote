@@ -1,0 +1,407 @@
+{
+  "query": "subcategory_name=Tactile Switches&limit=10000",
+  "observed_date": "2026-10-05",
+  "warning": "Price field is search quantity-dependent; not an assembly quote.",
+  "lowest_eligible_smd_candidates": [
+    {
+      "lcsc": 2888948,
+      "mfr": "TSB001A3512A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.2N 12V 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 532,
+      "price": 0.0161
+    },
+    {
+      "lcsc": 2888447,
+      "mfr": "TSB001A3826A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.8mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 1829,
+      "price": 0.0162
+    },
+    {
+      "lcsc": 2888449,
+      "mfr": "TSB001A3526A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 20,000 times 3.55mm 3.5mm 50mA 7.7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 4116,
+      "price": 0.0163
+    },
+    {
+      "lcsc": 2888446,
+      "mfr": "TSB001A3818A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.8mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 1324,
+      "price": 0.0163
+    },
+    {
+      "lcsc": 2888889,
+      "mfr": "TSB001A3526A02",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 796,
+      "price": 0.0166
+    },
+    {
+      "lcsc": 2888448,
+      "mfr": "TSB001A3518A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 7900,
+      "price": 0.0168
+    },
+    {
+      "lcsc": 22375370,
+      "mfr": "TS1101C26035",
+      "package": "SMD-4P,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "100,000 cycles 12V 2.6N 3.5mm 50mA 7mm No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD-4P,7x3.5mm Tactile Switches ROHS",
+      "stock": 2732,
+      "price": 0.0175
+    },
+    {
+      "lcsc": 22375369,
+      "mfr": "TS1101C16035",
+      "package": "SMD-4P,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.6N 100,000 cycles 12V 3.5mm 50mA 7mm No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD-4P,7x3.5mm Tactile Switches ROHS",
+      "stock": 2046,
+      "price": 0.0175
+    },
+    {
+      "lcsc": 49101620,
+      "mfr": "TC-S3601-3.5-260G-F0.6",
+      "package": "SMD",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.5mm 30,000 cycles 50mA 7mm No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD Tactile Switches ROHS",
+      "stock": 138183,
+      "price": 0.0178
+    },
+    {
+      "lcsc": 2888951,
+      "mfr": "TSB003A3518A07",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 6368,
+      "price": 0.0183
+    },
+    {
+      "lcsc": 2888450,
+      "mfr": "TSB003A3518A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 3575,
+      "price": 0.0183
+    },
+    {
+      "lcsc": 2888451,
+      "mfr": "TSB003A3526A",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 2236,
+      "price": 0.0183
+    },
+    {
+      "lcsc": 22375380,
+      "mfr": "TS101016035",
+      "package": "SMD-4P,4.5x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.6N 12V 3.55mm 3.5mm 4.8mm 50mA No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD-4P,4.5x1.8mm Tactile Switches ROHS",
+      "stock": 8600,
+      "price": 0.0188
+    },
+    {
+      "lcsc": 22375381,
+      "mfr": "TS101026035",
+      "package": "SMD-4P,4.5x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.5mm 4.8mm 50mA No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD-4P,4.5x1.8mm Tactile Switches ROHS",
+      "stock": 2713,
+      "price": 0.0188
+    },
+    {
+      "lcsc": 22390104,
+      "mfr": "TC-S3601-3.5-260G",
+      "package": "SMD-4P,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.5mm 50mA 7mm Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD-4P,7x3.5mm Tactile Switches ROHS",
+      "stock": 1210,
+      "price": 0.0189
+    },
+    {
+      "lcsc": 2888454,
+      "mfr": "TSB003A3518B02",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 59,
+      "price": 0.0212
+    },
+    {
+      "lcsc": 2910695,
+      "mfr": "YTS-B003-2A",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.5N 20,000 times 3.5mm 3.5mm 50mA 7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 905,
+      "price": 0.023
+    },
+    {
+      "lcsc": 967807,
+      "mfr": "YTSB001A0351201B",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.2N 12V 20,000 cycles 3.55mm 3.5mm 50mA 7.7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 100,
+      "price": 0.0233
+    },
+    {
+      "lcsc": 967808,
+      "mfr": "YTSB001A0351803B",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 20,000 cycles 3.55mm 3.5mm 50mA 7.7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 80,
+      "price": 0.0233
+    },
+    {
+      "lcsc": 2888932,
+      "mfr": "TSA002A3512A02",
+      "package": "SMD,4.8x2mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.2N 12V 2mm 3.5mm 4.8mm 50mA Black No Rectangular Button SPST Surface Mount, Right Angle Without Bracket SMD,4.8x2mm Tactile Switches ROHS",
+      "stock": 630,
+      "price": 0.024
+    },
+    {
+      "lcsc": 2846768,
+      "mfr": "TSB001A3526B",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 10544,
+      "price": 0.0241
+    },
+    {
+      "lcsc": 5143634,
+      "mfr": "HX TS36CA-0.6 250gf",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+70\u2103 12V 2.5N 3.5mm 3.5mm 30,000 cycles 50mA 7mm Black No SMD(SMT) Tab SPST Square Button Surface Mount, Right Angle Without Bracket SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 5115,
+      "price": 0.0241
+    },
+    {
+      "lcsc": 5143635,
+      "mfr": "HX TS36CA-0.7 250gf",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+70\u2103 12V 2.5N 3.5mm 3.5mm 30,000 cycles 50mA 7mm Black No SMD(SMT) Tab SPST Square Button Surface Mount, Right Angle Without Bracket SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 2149,
+      "price": 0.0241
+    },
+    {
+      "lcsc": 2888933,
+      "mfr": "TSA002A3216A",
+      "package": "SMD,4.8x2mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.6N 12V 2mm 3.2mm 4.8mm 50mA Black No Rectangular Button SPST Surface Mount, Right Angle Without Bracket SMD,4.8x2mm Tactile Switches ROHS",
+      "stock": 4912,
+      "price": 0.0245
+    },
+    {
+      "lcsc": 2985735,
+      "mfr": "YTS1C0033BBG11",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-30\u2103~+80\u2103 100,000 cycles 12V 2.6N 3.5mm 3.8mm 50mA 7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 493,
+      "price": 0.0246
+    },
+    {
+      "lcsc": 5143620,
+      "mfr": "HX TS24CA 160gf",
+      "package": "SMD,4.6x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+70\u2103 1.6N 1.8mm 12V 20,000 cycles 3.5mm 4.55mm 50mA Black No SMD(SMT) Tab SPST Square Button Surface Mount, Right Angle Without Bracket SMD,4.6x1.8mm Tactile Switches ROHS",
+      "stock": 27266,
+      "price": 0.0249
+    },
+    {
+      "lcsc": 22362983,
+      "mfr": "TSC02-TDW1FH3.5",
+      "package": "SMD,7.7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.5N 3.55mm 3.5mm 50mA 7.7mm No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.5mm Tactile Switches ROHS",
+      "stock": 2904,
+      "price": 0.0249
+    },
+    {
+      "lcsc": 393942,
+      "mfr": "TS24CA",
+      "package": "SMD,4.6x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20\u2103~+70\u2103 1.6N 1.9mm 12V 20,000 cycles 3.5mm 4.7mm 50mA Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD,4.6x1.8mm Tactile Switches ROHS",
+      "stock": 444478,
+      "price": 0.0253
+    },
+    {
+      "lcsc": 2910696,
+      "mfr": "YTS-B003-2B",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.5N 20,000 times 3.5mm 3.8mm 50mA 7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 489,
+      "price": 0.0258
+    },
+    {
+      "lcsc": 5373430,
+      "mfr": "TS24CA 250gf 013",
+      "package": "SMD",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25\u2103~+70\u2103 1.9mm 12V 2.5N 3.5mm 30,000 cycles 4.7mm 50mA Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD Tactile Switches ROHS",
+      "stock": 55032,
+      "price": 0.0262
+    },
+    {
+      "lcsc": 2985753,
+      "mfr": "YTS1C0032BBG11",
+      "package": "SMD,6x3mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-30\u2103~+80\u2103 1.8N 100,000 cycles 12V 3.8mm 3mm 50mA 6mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD,6x3mm Tactile Switches ROHS",
+      "stock": 1085,
+      "price": 0.0266
+    },
+    {
+      "lcsc": 2906288,
+      "mfr": "TS36CA-0.6 250gf 031",
+      "package": "SMD",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20\u2103~+70\u2103 12V 2.5N 20,000 cycles 3.55mm 3.5mm 50mA 7mm Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD Tactile Switches ROHS",
+      "stock": 96552,
+      "price": 0.0271
+    },
+    {
+      "lcsc": 530670,
+      "mfr": "KH-3635-CAJ",
+      "package": "SMD,6x3mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 3.5mm 3mm 50,000 cycles 50mA 6mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle SMD,6x3mm Tactile Switches ROHS",
+      "stock": 57173,
+      "price": 0.028
+    },
+    {
+      "lcsc": 2910694,
+      "mfr": "YTS-B003-1B",
+      "package": "SMD,7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.6N 12V 20,000 times 3.5mm 3.8mm 50mA 7mm Black Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle SMD,7x3.5mm Tactile Switches ROHS",
+      "stock": 1025,
+      "price": 0.028
+    },
+    {
+      "lcsc": 22375310,
+      "mfr": "TS1133A16034",
+      "package": "SMD-5P,4.5x3.3mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.6N 12V 3.3mm 4.45mm 50mA No Round Button SMD(SMT) Tab SPST Surface Mount, Right Angle White With Bracket SMD-5P,4.5x3.3mm Tactile Switches ROHS",
+      "stock": 2878,
+      "price": 0.0281
+    },
+    {
+      "lcsc": 22375311,
+      "mfr": "TS1133A26034",
+      "package": "SMD-5P,4.5x3.3mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.3mm 4.45mm 50mA No Round Button SMD(SMT) Tab SPST Surface Mount, Right Angle White With Bracket SMD-5P,4.5x3.3mm Tactile Switches ROHS",
+      "stock": 889,
+      "price": 0.0281
+    },
+    {
+      "lcsc": 22362984,
+      "mfr": "TSC02-TDW1EH3.5",
+      "package": "SMD,7.7x3.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.8N 12V 3.55mm 3.5mm 50mA 7.7mm No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.5mm Tactile Switches ROHS",
+      "stock": 2249,
+      "price": 0.0283
+    },
+    {
+      "lcsc": 2888953,
+      "mfr": "TSB003B3526A02",
+      "package": "SMD,7.7x3.6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12V 2.6N 3.55mm 3.5mm 50mA 7.7mm Black No Rectangular Button SPST Surface Mount, Right Angle With Bracket SMD,7.7x3.6mm Tactile Switches ROHS",
+      "stock": 5252,
+      "price": 0.0284
+    },
+    {
+      "lcsc": 2939221,
+      "mfr": "TS-1114A-E",
+      "package": "SMD,4.6x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.82mm 2.6N 4.6mm Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD,4.6x1.8mm Tactile Switches ROHS",
+      "stock": 12915,
+      "price": 0.0292
+    },
+    {
+      "lcsc": 22383476,
+      "mfr": "SH-1806SA-A3DW-04",
+      "package": "SMD-4P,4.6x1.8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20\u2103~+70\u2103 1.6N 1.9mm 12V 3.5mm 30,000 cycles 4.7mm 50mA Black No Rectangular Button SMD(SMT) Tab SPST Surface Mount, Right Angle Without Bracket SMD-4P,4.6x1.8mm Tactile Switches ROHS",
+      "stock": 21551,
+      "price": 0.0294
+    }
+  ]
+}

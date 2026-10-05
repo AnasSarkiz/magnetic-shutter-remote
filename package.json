@@ -1,6 +1,6 @@
 {
-	"name": "@tsci/anas-sarkiz.magnetic-shutter-remote-r8",
-	"version": "0.3.0",
+	"name": "@tsci/AnasSarkiz.magnetic-shutter-remote-r8",
+	"version": "0.3.1",
 	"description": "Routed ESP32-C3 shutter remote engineering prototype; hardware untested",
 	"main": "index.circuit.tsx",
 	"keywords": [
@@ -27,9 +27,9 @@
 		"@resvg/resvg-js": "2.6.2",
 		"@tscircuit/3d-viewer": "0.0.610",
 		"@tscircuit/circuit-json-util": "file:tooling/vendor/circuit-json-util-qualified-source.tgz",
-		"@tscircuit/cli": "file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
-		"@tscircuit/core": "file:tooling/vendor/core-r8-mask-style.tgz",
-		"@tscircuit/eval": "file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+		"@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+		"@tscircuit/core": "file:tooling/vendor/core-r8-polygon-paste.tgz",
+		"@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz",
 		"@tscircuit/pcb-viewer": "1.11.415",
 		"@tscircuit/props": "file:tooling/vendor/props-r8-mask-style.tgz",
 		"@tscircuit/schematic-viewer": "2.0.99",
@@ -52,7 +52,7 @@
 	"author": "AnasSarkiz",
 	"private": true,
 	"overrides": {
-		"@tscircuit/core": "file:tooling/vendor/core-r8-mask-style.tgz",
+		"@tscircuit/core": "file:tooling/vendor/core-r8-polygon-paste.tgz",
 		"circuit-json": "file:tooling/vendor/circuit-json-qualified-source.tgz",
 		"@tscircuit/circuit-json-util": "file:tooling/vendor/circuit-json-util-qualified-source.tgz",
 		"@tscircuit/capacity-autorouter": "0.0.951",
@@ -60,8 +60,8 @@
 		"circuit-to-svg": "file:tooling/vendor/circuit-to-svg-qualified-source.tgz",
 		"circuit-json-to-gerber": "file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
 		"easyeda": "file:tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
-		"@tscircuit/eval": "file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+		"@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz",
 		"circuit-json-to-pnp-csv": "file:tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
-		"@tscircuit/cli": "file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz"
+		"@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz"
 	}
 }

@@ -4,14 +4,16 @@ Does not infer sourcing success for missing or mismatched supplier identities.
 """
 import csv
 import json
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / 'evidence/R8-prototype-2026-10-05'
 
-def write_bom():
+def write_bom(evidence_directory=EVIDENCE):
+    evidence_directory=evidence_directory.resolve()
     circuit = json.loads((ROOT / 'dist/index/circuit.json').read_text())
-    sourcing = json.loads((EVIDENCE / 'sourcing-check.json').read_text())
+    sourcing = json.loads((evidence_directory / 'sourcing-check.json').read_text())
     verified = {p['lcsc']: p for p in sourcing['parts']}
     old = {p['lcsc']: p for p in json.loads((ROOT / 'baselines/r7/bom.json').read_text())['parts']}
     groups = {}
@@ -40,9 +42,9 @@ def write_bom():
                     availability_check_date=sourcing['checked_date'],
                     source_link=supplier['source_url'],
                     lcsc_link=f'https://www.lcsc.com/product-detail/{number}.html',
-                    qualification='Engineering prototype; see R8-prototype qualification and current validation; physical tests pending')
+                    qualification=f'Engineering prototype; see {evidence_directory.relative_to(ROOT)}/REVIEW.md and current validation; physical tests pending')
         parts.append(part)
-    bom = {'revision':'R8-ESP32-C3-2026-10-05',
+    bom = {'revision':'R8-ESP32-C3-side-shutter-'+json.loads((ROOT/'package.json').read_text())['version'],
            'status':f'{sum(p["quantity"] for p in parts)} fitted references / {len(parts)} exact supplier identities; engineering prototype; hardware unvalidated',
            'parts':parts}
     (ROOT / 'bom.json').write_text(json.dumps(bom, indent=2)+'\n')
@@ -56,4 +58,6 @@ def write_bom():
     print(bom['status'])
 
 if __name__ == '__main__':
-    write_bom()
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--evidence',type=Path,default=EVIDENCE)
+    write_bom(parser.parse_args().evidence)

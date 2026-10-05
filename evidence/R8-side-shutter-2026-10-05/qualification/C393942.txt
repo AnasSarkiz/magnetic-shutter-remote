@@ -1,0 +1,268 @@
+深
+圳
+    市
+     首
+             韩
+             科
+                 技
+                 有
+                     限
+                      公
+                      司
+                          TS24CA
+    20000次
+                   深圳市首韩科技有限公司
+                   SHENZHEN SHOUHAN TECHNOLOGYCO.,LTD
+                   Tel: 0755-27597601 Fax: 0755-27597491
+
+
+
+                   承         认          书
+    SPECIFICATION              FOR APPROVAL
+
+
+
+
+                                                           司
+                                                   公
+产 品 编 码
+
+
+
+
+                                            限
+Material code:
+
+
+产品名称 Project：                        有轻触开关
+                              技
+规格型号 Part No：
+                       科
+
+                                        TS24CA
+                 韩
+
+
+
+        贵公司承认印 Approval signatures
+      料 号/Part No.                  签     章/Signatures
+          首
+     市
+圳
+
+
+
+
+                                                   日期 Date:
+深
+
+
+
+
+      拟制/Drawn       李春风
+
+      审核/Check         钟华华
+
+
+     批准/Approved     罗孝金
+      -1-
+                         深圳市首韩科技有限公司
+
+
+SIRLES                                              系列:TACT SWITCHES(轻触开关)
+MODEL                                               型号: TS24CA
+1.RATING                                           额定值:50mA 12VDC
+2.CONSTRUTION DIMENSION 结构尺寸                       Apply to the appended drawing符:合附加图纸
+                                                   Have no remarkable damage,crack and rust etc无:
+
+
+
+
+                                                                             司
+3.APPEARANCE 外观
+                                                   明显损伤,裂纹,锈迹等.
+4.CONTACTLOOP 接触回路                                 Monople loop:单通单极回路
+
+
+
+
+                                                                    公
+ITEM 专案                                  TEST CONDITION 测试条件                 SPECIFICATION 规格
+5.CAPABILITY OF ELECTRIC电气性能
+                           Measurements shall be made following Application
+
+
+
+
+                                                           限
+    INSULATION RESISTANCE
+5A 绝缘电阻                    of DC500V potential across terminals and across 100MΩ
+                           terminals and fuame for 1minute在,端子之间和端             兆欧以上
+
+5B   WITHSTAND VILTAGE                            有
+                              子与壳之间加 DC500V 条件下,持续 1 分钟测量.
+                              AC250V、50HZ、1           （                            There shall be no
+                                                                                   briakdown  无 击穿
+                                          技
+     耐电压                               ≤500uA). AC250V、50HZ、1 分钟(漏
+                              电流 500uA)                                            现象出现。
+                              Addition 1.5-2 time force on the top of the keystrok    100mΩ
+                                 科
+
+                              and press the switch,DC50V100mA在按键顶端上
+5C   CONTACT CIRCUIT                                                                 100mΩ以下） .
+     接触电路                     等于作用力 1.5-2 倍的力按动开关,DC50V,10Ma.
+                              Addition DC5V on the two side of switch,at a speed The flash time
+                          韩
+
+
+
+5D   SWITCH    CONNECTION     of 3-5time a sec.to press the switch在.开关的两端 betwcen open not
+     FLASH 开关接触点抖动            加 DC5V 的电压, 以 3-5 次/秒的速度按动开关.                      more than 10ms.
+                   首
+
+
+
+
+                                                                                 开关在接通和断开
+                                                                                 时的接点抖动时间
+                                                                                 不大于 10 ms.
+            市
+
+
+
+
+6.MECHANICAL EFFICIENCY 机械性能
+                                                                                  Switch     electric
+      圳
+
+
+
+
+6A   CONTACT STRENGTH         The contact shall be capable of a rorce of 5N for 5 andmechanical
+     按键强度                     seconds in any directions沿.开关动作方向可承受 efficiency                   does
+                              静能压力 5N，保持 5 秒钟.                                     not break 无损开
+深
+
+
+
+
+                                                                                   关电气或者机械
+                                                                                  性能
+
+
+6B   CONTACT JOURNEY                                                             按键行程:
+                                                                                 0.15±0 .05mm
+6C   DRIVE FORCE              Being measure at across spring piece and across Contact switch’sd
+     驱动力                       keystoke forergometer用.测力计在按键与弹片之 drive dirive fouce
+                               间测量.                                           was160±50gf.
+                                                                                 按键的开关驱动力
+                                                                                 为160±50gf
+                                                                                                 1
+                              深圳市首韩科技有限公司
+
+      -2-
+
+
+
+6D   CONNECTION                     A force of 1N being appling in any directions of the Switch mechanical
+     STRENGTH                        switch connection partt.在.接线端的作用方向施 efficiency does not
+     接线端强度                           加 1N 的力.                                             break.无损开关机械
+                                                                                          性能.
+6E   MECHANICAL LIFE                Operatin at a rate of 30-50 cycles a minute. 以    Life:20000ycles
+     机械寿命                           30-50 次/分的驱动速度操作.                                 寿命:20000次
+
+
+
+
+                                                                                  司
+7.ENVIRONME      NT----RESISTANT EFFICIENCY 耐环境性能
+                                     The first temperature shall be 65℃               1. The appearance
+                                                                                       should not break.外观
+7A   CHANGE OF
+
+
+
+
+                                                                         公
+                                                  ℃
+                                                                                       应无损伤.
+     TEMPERATURE 温度变化                先 65℃       然后 ℃            如此重复        次       2. Contact
+                                     40±2℃                                           resistance ≤ 100 M Ω
+
+
+
+
+                                                                 限
+                                                                                     接触电阻≤100MΩ
+                                                                                     3.
+7B   HUMIDITY RESISTANT 耐 湿                                            经 40±2℃                    ≥      M
+     热
+
+
+8.IOINTING EFFICIENCY 焊接性能
+                                      相对湿度
+
+                                                        有
+                                              试验期间 开关不动作 不带
+                                      电负荷 试验后恢复到常温
+                                                                                      Ω
+                                                                                     绝缘电阻≥            MΩ
+                                                技
+                                                                                      Solderability part
+8A   SOLDERABILITY                  Temperature260±5℃                ±0.5 :温度在         should above 90%
+     可焊性                            260±5℃ 持续 ±0.5                                     可焊部分被焊料
+                                         科
+
+                                                                                       覆盖面应在 90%
+                                                                                       以上.
+                               韩
+
+
+                                                                                     Froth height of assist
+                                                                                     solder should under
+                                                                                     board    and      switch
+                       首
+
+
+
+
+                                                                                     electric             and
+8B   SOLDER—RESISTANT               Warm-up temperature:100℃,40 焊锡温度 260±5           mechanical efficien-
+                                    ℃ 浸焊时间 ±0.5                                      cy does not break.助焊
+     耐焊剂性
+                                                                                     剂发泡不应超过印制
+               市
+
+
+
+
+                                                                                     板,无损伤开关电气或
+                                                                                     机械动作性能.
+                                    Jointing temperature: 260± 5 ℃    efficiency does not
+       圳
+
+
+
+
+8C   JOINTING—RESISTANT                           ±1 焊锡温度 260±5℃ 浸焊时间 break 无损伤开关
+     耐焊接热                           ±1                                电气或机械动作性能
+深
+
+
+
+
+                                                                                      .
+8D NORMAL JOLNTING TIMES                                                              ≤2times 小于 2 次
+   正常焊接次数
+9.NOTES
+     The whole boxes of switch should keep in the temperature -30--80℃
+9A
+     整箱包装的开关 应在温度为-30--80℃ 相对湿度不大于                             周围的空气中没有酸性、 碱性或其他腐蚀
+     性气体的库房内保管。
+9B   Operating Temperature Range:-20to 70℃
+     操作温度的范围： -20 to 70℃
+9C   Switch should install in a correct method.
+                                                                                                        2
+     开关应按正确的安装方法进行正确安装使用。
+

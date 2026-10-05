@@ -1,0 +1,15 @@
+bun pack v1.3.9 (cf6cdbbb)
+
+packed 5.88KB package.json
+packed 1.1KB LICENSE
+packed 1.70KB README.md
+packed 9.92MB dist/index.d.ts
+packed 4.24MB dist/index.js
+
+/workspace/magnetic-shutter-remote/tooling/vendor/core-r8-polygon-paste.tgz
+
+Total files: 5
+Shasum: 70bff3e93be6e50451e4d9130105ec2c1d1346e9
+Integrity: sha512-wEe2SgJ+87WQk[...]8G4JWwjYUJWNg==
+Unpacked size: 14.17MB
+Packed size: 1.18MB

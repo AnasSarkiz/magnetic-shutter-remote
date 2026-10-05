@@ -1,19 +1,10 @@
-# Current qualified R8-C3 prototype — hosted2026-10-05
+# Current R8 side-actuated shutter prototype —2026-10-05
 
-**0 native errors,0 shorts,0 independent manufacturing/process failures.** Source-generated DOIT ESPC3-12-N4/C19949072 prototype,44 fitted TOP references,48×56×1mm2-layer FR4. Full results, assumptions, warnings and reproduction are in [routed review](evidence/R8-prototype-2026-10-05/REVIEW.md). Final build is `c3-route-20`; the successor integrity manifest identifies the actual changed source from base HEADb25353c. Previous failure records below are historical evidence.
+**0 native DRC errors,0 shorts,0 independent manufacturing/process failures.** Current source is version0.3.1, successful native route10. SW2 TS24CA/C393942 at(22,-8.5)mm/270° faces the right edge and presses horizontally inward. The DOIT C3, GPIO4 and firmware contract are unchanged. See [current review](evidence/R8-side-shutter-2026-10-05/REVIEW.md), [qualification](evidence/R8-side-shutter-2026-10-05/qualification/QUALIFICATION.md) and the dated successor integrity manifest.
 
-| Stage | Current status | Scope |
-|---|---|---|
-|1 Requirements|passed for engineering prototype|One protected battery, USB charge,3.3V/500mA design supply, native RF/mechanical exclusion and manufacturing rules; physical performance pending|
-|2 Schematic/BOM|passed|Exact44 refs/24 C numbers, manufacturer contracts and dated stock; DOIT C3 replaces WROOM/C2 choices|
-|3 Unrouted placement|passed|Native source/netlist/pin/schematic/PCB placement checks; all3 A4 sheets and geometry reviewed|
-|4 Copper routing|passed|Native and independent checks0; shorts0; full terminal continuity/RF/EP ground pass; measured nominal power paths|
-|5 Automated/visual|passed|Focused20 Python+2 Bun tests,17 CAM regressions,7 tooling tests; format/typecheck, native snapshots and visual review pass|
-|6 Prototype fabrication|in progress|All12 Gerber/drill readback,44-ref BOM/CPL,160-aperture stencil/mask/silk checks pass; supplier-processed assembly preview unperformed; no ordering/upload authorization|
-|7 Physical prototype|not started|POST-PROTOTYPE PHYSICAL VALIDATION:power/startup, programming/BLE phone, RF, charge/cell thermal, battery/runtime, enclosure/shoulder fit|
-|8 Publication/release|prototype prepared; registry blocked|Hardware untested; `tsci push index.circuit.tsx --include-dist --version-tag prototype` exited1 before upload because this hosted instance has no tscircuit login; GitHub disposition is recorded with the final report|
+Requirements,44-reference/25-C-number BOM, native unrouted placement, routing, automated/visual and local fabrication export/readback gates pass.29 Python+2 Bun tests,18 CAM tests,19 focused core tests/278 assertions, format/typecheck, full schema, two successive native snapshot checks and129 frozen hashes pass.163 traces/98vias,162 paste apertures,12 Gerber/drill files, strict44 TOP placements. Supplier-processed preview and physical power/BLE/RF/thermal/runtime/enclosure validation remain pending; no supplier upload/order is authorized.
 
-Accepted source warnings are exact discrete MOSFETs modeled as generic chips (issue084), not radio supply omissions. Original075/076 remain explicit and separate; fitted DOIT VCC/GND metadata are correct. Frozen Nordic baselines and original manifests remain unchanged. No ordering, payment, supplier contact or assembler upload occurred.
+Warnings084 remain explicit for discrete MOSFETs modeled as chips. Original075 concerns the abandoned WROOM; **Missing `3V3` metadata remains a separate importer issue.** Local generic polygon bounds/paste fixes085/086 and reader087 pass; ALPS088 was rejected on actual unchanged clearance minima. Original failures/baselines remain immutable. Hosted observed32GiB/4CPU and serial memory guards remain unchanged. New registry target0.3.1-prototype is recorded with actual verification in the dated publication report; old0.3.0 upload was incomplete.
 
 ## Earlier investigation records — retained history
 

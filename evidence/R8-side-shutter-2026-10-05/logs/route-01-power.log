@@ -1,0 +1,64 @@
+{
+  "started_utc": "20261005T193846580213Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-power.py",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/route-01-power.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/scripts/review-r8-power.py", line 123, in <module>
+    review(parser.parse_args().output)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/scripts/review-r8-power.py", line 56, in review
+    copper, _, _ = GEOMETRY.make_features(circuit, 'gerber')
+                   ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/scripts/manufacturing-audit.py", line 99, in make_features
+    if t=='pcb_smtpad':copper.append(Copper(e[t+'_id'],'smt',e['layer'],n,pad(e),e.get('pcb_component_id')))
+                                                                          ~~~^^^
+  File "/workspace/magnetic-shutter-remote/scripts/manufacturing-audit.py", line 48, in pad
+    x,y=e['x'],e['y'];shape=e['shape']
+        ~^^^^^
+KeyError: 'x'
+{
+  "started_utc": "20261005T193846580213Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-power.py",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/route-01-power.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T19:38:46.741990+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 45960,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T193846580213Z.log"
+}

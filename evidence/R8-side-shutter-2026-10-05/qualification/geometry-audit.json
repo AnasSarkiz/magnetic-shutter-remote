@@ -1,0 +1,53 @@
+{
+  "part": "C393942",
+  "manufacturer": "SHOUHAN",
+  "mpn": "TS24CA",
+  "supplier_asset_sha256": {
+    ".tsx": "25c69d750795d6a855e275b8b6e3ffd82e367ed892eee17b6e765ed4df2f06fe",
+    ".step": "819eb92e92a4876d088c549a8cf5c939caaf645b2315e09e046b4911f737dbd2",
+    ".obj": "5878da19a70fe00419a487d86114b89066a2290165b2ee4949eccf7451c0d0bc"
+  },
+  "supplier_import_conversion_max_difference_mm": 1.0813572259849025e-13,
+  "pads": {
+    "4": {
+      "polygon_vertex_count": 14
+    },
+    "3": {
+      "polygon_vertex_count": 14
+    },
+    "2": {
+      "x_mm": 1.6999712,
+      "y_mm": -0.9999599,
+      "width_mm": 0.5999988,
+      "height_mm": 1.1999976
+    },
+    "1": {
+      "x_mm": -1.7000728,
+      "y_mm": -0.9999599,
+      "width_mm": 0.5999988,
+      "height_mm": 1.1999976
+    }
+  },
+  "contact_land_recommendation_mm": {
+    "width": 0.6,
+    "height": 1.2,
+    "pitch": 3.4
+  },
+  "contact_contract": {
+    "pin1": "SHUTTER",
+    "pin2": "GND",
+    "pin3": "GND metal support",
+    "pin4": "GND metal support"
+  },
+  "normally_open": true,
+  "internal_support_connection": [
+    "pin3",
+    "pin4"
+  ],
+  "rating": "50mA at12VDC",
+  "contact_resistance_max_ohm": 0.1,
+  "insulation_contacts_to_frame_min_ohm": 100000000,
+  "mechanical_life_cycles": 20000,
+  "actuation": "supplier+Y rotated-90deg gives board+X; press inward toward-X",
+  "qualification": "Engineering prototype: exact contact lands, faithful supplier anchors and valid models; physical actuation/reflow/fit untested"
+}

@@ -1,0 +1,59 @@
+{
+  "started_utc": "20261005T202015711922Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Classified manufacturing failures: 4
+{'rule': 'project_unrelated_drill_copper', 'a': 'pcb_via_86', 'b': 'pcb_plated_hole_0:top', 'gap_mm': 0.15190600000000073, 'minimum_mm': 0.2}
+{'rule': 'project_unrelated_drill_copper', 'a': 'pcb_via_86', 'b': 'pcb_plated_hole_0:bottom', 'gap_mm': 0.15190600000000073, 'minimum_mm': 0.2}
+{'rule': 'project_unrelated_drill_copper', 'a': 'pcb_via_86', 'b': 'pcb_smtpad_11:top', 'gap_mm': 0.19024790187294166, 'minimum_mm': 0.2}
+{'rule': 'hole_hole', 'a': 'pcb_plated_hole_0', 'b': 'pcb_via_86', 'gap_mm': 0.3519056000000007, 'minimum_mm': 0.45}
+{
+  "started_utc": "20261005T202015711922Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:20:51.274052+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 69184,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T202015711922Z.log"
+}

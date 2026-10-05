@@ -1,0 +1,18 @@
+{
+  "apply_after": "tooling/R8-patches/manifest.json",
+  "base": "core-r8-mask-style source reconstruction",
+  "source_overlay": "tooling/source-archives/core-R8-polygon-bounds-changes.tar.gz",
+  "runtime_archive": "tooling/vendor/core-r8-polygon-bounds.tgz",
+  "sha256": {
+    "tooling/R8-patches/manifest.json": "fc98e57dc8fdb82c43ea62e1354a70a8731c1c393667dd3f9611c5464dcf18d6",
+    "tooling/source-archives/core-R8-polygon-bounds-changes.tar.gz": "87518dcbd5aacadfd285067e892776a480ecee7903170ce6f9434c0bdd00fd34",
+    "tooling/vendor/core-r8-polygon-bounds.tgz": "094198858e455f397a1fee10653a9969c5e857354acd4bbeaa8228e0c10ee651"
+  },
+  "validation": {
+    "control": "0pass/4fail",
+    "fixed": "4pass/0fail",
+    "regressions": "11pass/0fail/242assertions",
+    "esm_and_dts_build": "passed"
+  },
+  "issue": "085"
+}

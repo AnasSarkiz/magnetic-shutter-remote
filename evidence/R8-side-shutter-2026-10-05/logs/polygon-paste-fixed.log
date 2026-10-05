@@ -1,0 +1,78 @@
+{
+  "started_utc": "20261005T200829751570Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/polygon-pad-paste.test.tsx:
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-0-pcb.snap.svg
+(pass) polygon paste preserves concavity and registration at0deg [81.85ms]
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-90-pcb.snap.svg
+(pass) polygon paste preserves concavity and registration at90deg [13.13ms]
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-180-pcb.snap.svg
+(pass) polygon paste preserves concavity and registration at180deg [9.27ms]
+Creating snapshot at /workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-270-pcb.snap.svg
+(pass) polygon paste preserves concavity and registration at270deg [8.40ms]
+27 |   const { circuit } = getTestFixture()
+28 |   circuit.add(<board width={10} height={10} routingDisabled>
+29 |     <chip name="U1" footprint={<footprint><smtpad shape="polygon" points={points} isCoveredWithSolderMask/></footprint>}/>
+30 |   </board>)
+31 |   circuit.render()
+32 |   expect(circuit.db.pcb_solder_paste.list()).toHaveLength(0)
+                                                  ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:32:46)
+(fail) covered polygon creates no solder paste [7.06ms]
+
+ 4 pass
+ 1 fail
+ 29 expect() calls
+Ran 5 tests across 1 file. [1.62s]
+{
+  "started_utc": "20261005T200829751570Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:08:31.395816+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 632968,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T200829751570Z.log"
+}

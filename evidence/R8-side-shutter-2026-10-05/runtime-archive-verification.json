@@ -1,0 +1,23 @@
+[
+  {
+    "package": "@tscircuit/core",
+    "archive": "tooling/vendor/core-r8-polygon-bounds.tgz",
+    "archive_sha256": "094198858e455f397a1fee10653a9969c5e857354acd4bbeaa8228e0c10ee651",
+    "regular_files_verified": 5,
+    "mismatches": []
+  },
+  {
+    "package": "@tscircuit/cli",
+    "archive": "tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+    "archive_sha256": "b8bdbdc2a2aed5fb1fef173f3d7e57307255f4fca89de02caf822ee51e46842f",
+    "regular_files_verified": 12,
+    "mismatches": []
+  },
+  {
+    "package": "@tscircuit/eval",
+    "archive": "tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+    "archive_sha256": "541a04d695743b6349ae9f7cb145b3fb4bc60eb1e5f46c4b3b84aaacbbc2ed44",
+    "regular_files_verified": 15,
+    "mismatches": []
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "started_utc": "20261005T203011427983Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Classified manufacturing failures: 0
+{
+  "started_utc": "20261005T203011427983Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "evidence/R8-side-shutter-2026-10-05/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:30:51.026123+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 68012,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T203011427983Z.log"
+}

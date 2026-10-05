@@ -1,12 +1,12 @@
 # Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
-The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 48 × 56 × 1 mm, 44 fitted TOP references. No torch.
+The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 48 × 56 × 1 mm, 44 fitted TOP references. No torch. The shutter uses a side-actuated TS24CA/C393942 switch on the right edge, pressed horizontally inward; GPIO4 is unchanged. Current prototype version0.3.1.
 
-**Routed prototype:0 native DRC errors,0 shorts and0 independent manufacturing failures.** Physical connectivity, local fabrication readback and process checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-prototype-2026-10-05/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-prototype-2026-10-05/QUALIFICATION.md).
+**Routed prototype:0 native DRC errors,0 shorts and0 independent manufacturing failures.** Physical connectivity, local fabrication readback and process checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-side-shutter-2026-10-05/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-side-shutter-2026-10-05/qualification/QUALIFICATION.md).
 
 The original issue075 applies to the abandoned C3 module. Its separate missing `3V3` power metadata is issue076; the selected DOIT C3 import already has correct VCC/GND attributes. Issues078/079 describe example-land variations accepted for engineering prototype use after measured geometry and paste review. They are not demonstrated electrical blockers. Original investigations and all frozen Nordic references remain preserved under `baselines/`.
 
-Use branch `cloud/r8-cloud-setup` and read [AGENTS.md](AGENTS.md), [handoff](cloud/HANDOFF.md) and [setup](cloud/SETUP.md). Setup/smoke remain lightweight:
+Preserve the active engineering branch `board/r8-doit-c3-prototype-20261005`; initial environment installation starts from `cloud/r8-cloud-setup` and read [AGENTS.md](AGENTS.md), [handoff](cloud/HANDOFF.md) and [setup](cloud/SETUP.md). Setup/smoke remain lightweight:
 
 ```sh
 bash cloud/setup.sh

@@ -1,0 +1,102 @@
+{
+  "started_utc": "20261005T200922091362Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx ./tests/repros/r8/polygon-pad-local-bounds.test.tsx ./tests/repros/r8/smtpad-mask-default.test.tsx ./tests/repros/r8/smtpad-mask-specificity.test.tsx ./tests/repros/r8/smtpad-mask-style.test.tsx ./tests/components/primitive-components/smtpad-parent-paste-style.test.tsx ./tests/repros/r7/mixed-pad-bounds-convention.test.tsx ./tests/repros/r7/ground-pour-separated-mixed-net-segments.test.tsx ./tests/repros/r7/pt4115-ground-pour-overlapping-mixed-pads.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/polygon-pad-paste.test.tsx:
+(pass) polygon paste preserves concavity and registration at0deg [79.38ms]
+(pass) polygon paste preserves concavity and registration at90deg [14.60ms]
+(pass) polygon paste preserves concavity and registration at180deg [12.08ms]
+(pass) polygon paste preserves concavity and registration at270deg [8.91ms]
+(pass) covered polygon creates no solder paste [7.32ms]
+(pass) polygon paste follows a layout translation without losing its concavity [9.07ms]
+(pass) polygon paste default preserves the existing 0.7 scale [6.17ms]
+356 |       } as PcbSmtPadPolygon) as PcbSmtPadPolygon
+357 |       if (shouldCreateSolderPaste) {
+358 |         // Arbitrary polygon offsets can change topology. Fail explicitly rather
+359 |         // than pretending a bounding rectangle is its solder-paste aperture.
+360 |         if (solderPasteMargin !== undefined && solderPasteMargin !== 0) {
+361 |           throw new Error("Nonzero solderPasteMargin for polygon pads requires polygon offset support")
+                                                                                                            ^
+error: Nonzero solderPasteMargin for polygon pads requires polygon offset support
+      at doInitialPcbPrimitiveRender (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/primitive-components/SmtPad.ts:361:103)
+      at runRenderPhase (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/base-components/Renderable.ts:519:34)
+      at runRenderPhaseForChildren (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/base-components/Renderable.ts:540:13)
+      at runRenderPhaseForChildren (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/base-components/Renderable.ts:539:13)
+      at runRenderPhaseForChildren (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/base-components/Renderable.ts:539:13)
+      at runRenderPhaseForChildren (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/normal-components/Board/Board.ts:662:11)
+      at runRenderCycle (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/components/base-components/Renderable.ts:455:12)
+      at render (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/lib/IsolatedCircuit.ts:211:16)
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:70:11)
+(fail) unsupported polygon paste offsets fail explicitly [2.72ms]
+
+tests/repros/r8/polygon-pad-local-bounds.test.tsx:
+(pass) offset polygon contributes its actual bounds at0deg [12.83ms]
+(pass) offset polygon contributes its actual bounds at90deg [8.00ms]
+(pass) offset polygon contributes its actual bounds at180deg [8.11ms]
+(pass) offset polygon contributes its actual bounds at270deg [6.68ms]
+
+tests/repros/r8/smtpad-mask-default.test.tsx:
+(pass) unmatched mask selector preserves explicit supplier margin [10.79ms]
+
+tests/repros/r8/smtpad-mask-specificity.test.tsx:
+(pass) specific mask selector overrides inherited general style [11.81ms]
+
+tests/repros/r8/smtpad-mask-style.test.tsx:
+(pass) mask process override preserves supplier primitive and copper [10.06ms]
+
+tests/components/primitive-components/smtpad-parent-paste-style.test.tsx:
+(pass) parent paste margins change apertures without changing copper [12.49ms]
+
+tests/repros/r7/mixed-pad-bounds-convention.test.tsx:
+(pass) SMT pad bounds use maximum Y for top in board space at every rotation and layer [531.38ms]
+
+ 16 pass
+ 1 fail
+ 259 expect() calls
+Ran 17 tests across 7 files. [2.38s]
+{
+  "started_utc": "20261005T200922091362Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx ./tests/repros/r8/polygon-pad-local-bounds.test.tsx ./tests/repros/r8/smtpad-mask-default.test.tsx ./tests/repros/r8/smtpad-mask-specificity.test.tsx ./tests/repros/r8/smtpad-mask-style.test.tsx ./tests/components/primitive-components/smtpad-parent-paste-style.test.tsx ./tests/repros/r7/mixed-pad-bounds-convention.test.tsx ./tests/repros/r7/ground-pour-separated-mixed-net-segments.test.tsx ./tests/repros/r7/pt4115-ground-pour-overlapping-mixed-pads.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:09:24.509228+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 758148,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T200922091362Z.log"
+}

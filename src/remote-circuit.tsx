@@ -9,6 +9,7 @@ import { r8BatteryOkPaths } from "./r8-battery-ok-paths";
 import { r8CcPaths } from "./r8-cc-paths";
 import { r8BulkCapPaths } from "./r8-bulk-cap-paths";
 import { r8MosfetPaths } from "./r8-mosfet-paths";
+import { r8ProgRoutingPaths } from "./r8-prog-routing-paths";
 import { r8ProgPaths } from "./r8-prog-paths";
 import { r8SysPaths } from "./r8-sys-paths";
 import { r8TsBiasPaths } from "./r8-ts-bias-paths";
@@ -37,6 +38,7 @@ import { SM02B_SRSS_TB_LF__SN_ } from "../imports/SM02B_SRSS_TB_LF__SN_/SM02B_SR
 import { BM06B_SRSS_TB_LF__SN_ } from "../imports/BM06B_SRSS_TB_LF__SN_";
 import { MSK12C02 } from "../imports/MSK12C02";
 import { TS_1088_AR02016 } from "../imports/TS_1088_AR02016";
+import { TS24CA } from "../imports/TS24CA/TS24CA";
 import { A_2N7002 } from "../imports/A_2N7002";
 import { A_0603WAF5101T5E } from "../imports/A_0603WAF5101T5E";
 import { A_0603WAF1001T5E } from "../imports/A_0603WAF1001T5E";
@@ -58,7 +60,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			borderRadius="2mm"
 			autorouter={{
 				local: true,
-				traceClearance: "0.25mm",
+				traceClearance: "0.30mm",
 				allowViaInPad: false,
 			}}
 			routingDisabled={!routingEnabled}
@@ -241,16 +243,16 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						schY={2}
 						connections={{ pin1: "net.CC2", pin2: "net.GND" }}
 					/>
+					<A_0603WAF5101T5E
+						name="R1"
+						schRotation={-90}
+						pcbX="-4mm"
+						pcbY="19mm"
+						schX={-4}
+						schY={4}
+						connections={{ pin1: "net.CC1", pin2: "net.GND" }}
+					/>
 				</fanout>
-				<A_0603WAF5101T5E
-					name="R1"
-					schRotation={-90}
-					pcbX="-4mm"
-					pcbY="19mm"
-					schX={-4}
-					schY={4}
-					connections={{ pin1: "net.CC1", pin2: "net.GND" }}
-				/>
 				<fanout
 					name="CHARGER_ESCAPE"
 					pcbX={0}
@@ -260,6 +262,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 							? [
 									...chargerEscapePaths,
 									...r8ProgPaths,
+									...r8ProgRoutingPaths,
 									...r8BatteryCapEscapePaths,
 								]
 							: []
@@ -505,14 +508,25 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						connections={{ pin1: "net.V3", pin2: "net.GND" }}
 					/>
 				</fanout>
-				<TS_1088_AR02016
+				{/* Side-push shutter at the right edge(+X).
+				    Contacts1/2 switch;3/4 are the separate internally connected frame. */}
+				<TS24CA
 					name="SW2"
 					schRotation={-90}
-					pcbX="20mm"
+					pcbX="22mm"
 					pcbY="-8.5mm"
+					pcbRotation={270}
+					// Plastic actuator overhangs+X; every copper land stays on board.
+					allowOffBoard
 					schX={-7}
 					schY={1}
-					connections={{ pin1: "net.SHUTTER", pin2: "net.GND" }}
+					internallyConnectedPins={[[3, 4]]}
+					connections={{
+						pin1: "net.SHUTTER",
+						pin2: "net.GND",
+						pin3: "net.GND",
+						pin4: "net.GND",
+					}}
 				/>
 				<TS_1088_AR02016
 					name="SW3"
@@ -765,7 +779,11 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					name="SENSOR_ESCAPE"
 					pcbX={0}
 					pcbY={0}
-					pcbTracePaths={routingEnabled ? sensorEscapePaths : []}
+					pcbTracePaths={
+						routingEnabled
+							? [...sensorEscapePaths, ...sensorCapEscapePaths]
+							: []
+					}
 				>
 					<TMP390A2DRLR
 						name="U5"
@@ -782,6 +800,16 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 							pin5: "net.USB5V",
 							pin6: "net.TEMP_OK",
 						}}
+					/>
+					<CC0603KRX7R9BB104
+						name="C7"
+						schRotation={-90}
+						pcbX="1.5mm"
+						pcbY="8.5mm"
+						layer="top"
+						schX={0}
+						schY={6}
+						connections={{ pin1: "net.USB5V", pin2: "net.GND" }}
 					/>
 				</fanout>
 				<fanout
@@ -812,23 +840,6 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					schY={1}
 					connections={{ pin1: "net.TEMP_SET_COLD", pin2: "net.GND" }}
 				/>
-				<fanout
-					name="C7_ESCAPE"
-					pcbX={0}
-					pcbY={0}
-					pcbTracePaths={routingEnabled ? sensorCapEscapePaths : []}
-				>
-					<CC0603KRX7R9BB104
-						name="C7"
-						schRotation={-90}
-						pcbX="1.5mm"
-						pcbY="8.5mm"
-						layer="top"
-						schX={0}
-						schY={6}
-						connections={{ pin1: "net.USB5V", pin2: "net.GND" }}
-					/>
-				</fanout>
 				<A_0603WAF1003T5E
 					name="R12"
 					schRotation={-90}

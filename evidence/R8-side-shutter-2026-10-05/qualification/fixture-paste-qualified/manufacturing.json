@@ -1,0 +1,54 @@
+{
+  "failures": [],
+  "measurements": [
+    {
+      "rule": "npth_all_copper",
+      "a": "pcb_hole_1",
+      "b": "pcb_smtpad_3:top",
+      "gap_mm": 0.5401219626092134,
+      "minimum_mm": 0.2
+    },
+    {
+      "rule": "npth_all_copper",
+      "a": "pcb_hole_0",
+      "b": "pcb_smtpad_2:top",
+      "gap_mm": 0.5402788450254293,
+      "minimum_mm": 0.2
+    },
+    {
+      "rule": "npth_all_copper",
+      "a": "pcb_hole_1",
+      "b": "pcb_smtpad_0:top",
+      "gap_mm": 0.6422134808026095,
+      "minimum_mm": 0.2
+    },
+    {
+      "rule": "npth_all_copper",
+      "a": "pcb_hole_0",
+      "b": "pcb_smtpad_1:top",
+      "gap_mm": 0.6424820304122337,
+      "minimum_mm": 0.2
+    },
+    {
+      "rule": "hole_hole",
+      "a": "pcb_hole_0",
+      "b": "pcb_hole_1",
+      "gap_mm": 0.9999979999999999,
+      "minimum_mm": 0.45
+    }
+  ],
+  "classified_joins": [],
+  "curve_error_bound_mm": 2e-05,
+  "sources": [
+    "https://jlcpcb.com/capabilities/pcb-capabilities",
+    "https://jlcpcb.com/blog/npth-design-guide"
+  ],
+  "limitations": [
+    "No fabrication tolerance stack is subtracted from nominal capability minima.",
+    "Minimum drill sizes/slot aspect ratios, solder mask and silk require separate export review.",
+    "PTH/NPTH mixed drill spacing uses conservative project 0.45mm; JLC row labels do not explicitly classify mixed pairs.",
+    "Outer drill-to-SMT/pour .2mm is a retained project constraint; JLC has specific track rows.",
+    "Unsupported geometry raises an error; no ignored copper features."
+  ],
+  "trace_geometry": "gerber"
+}

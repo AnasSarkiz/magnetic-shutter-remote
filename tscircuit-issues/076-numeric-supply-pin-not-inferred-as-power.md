@@ -1,6 +1,8 @@
 # Numeric supply label 3V3 has no inferred power attribute
 
-**Status: confirmed metadata omission; not fixed.** The generator uses conservative label inference. This is a qualification limitation, not a demonstrated pin-map or copper error.
+**Status: manual project correction implemented and tested; upstream importer omission remains open.** The generator uses conservative label inference. This is not a demonstrated pin-map or copper error.
+
+Missing `3V3` metadata remains a separate importer issue. The project supplies it manually through supported board-level `pinAttributes`, independently of the supplier-land discrepancy in [issue075](075-esp32-c3-supplier-lands-differ-from-espressif-recommendation.md).
 
 Affected local source: easyeda `0.0.364` with the preserved R7 fixes, `lib/websafe/convert-to-typescript-component/infer-pin-attributes.ts`; CLI `0.1.2237` qualified integration. The current official upstream file inspected on 2026-10-05 uses the same power-label expression. [Preserved upstream source](../evidence/R8-components/upstream-infer-pin-attributes.ts).
 
@@ -17,5 +19,16 @@ No generated import was edited, no warning was suppressed, and no generic regex 
 ## Project correction — 2026-10-05
 
 At the user's explicit request, `tests/fixtures/esp32-import.circuit.tsx` now supplies the supported `pinAttributes` prop: pin 1 `requiresPower: true`, retaining pin 9 `requiresGround: true`. The generated supplier import remains byte-for-byte unchanged. This is manufacturer-specific board-level metadata, not a change to generic label inference.
+
+The manual override is:
+
+```tsx
+pinAttributes={{
+  pin1: { requiresPower: true },
+  pin9: { requiresGround: true },
+}}
+```
+
+The fitted DOIT ESPC3-12-N4 already imports its actual pin8/VCC with `requiresPower: true` and pin15/GND with `requiresGround: true`; it does not need the abandoned WROOM module's pin1 override. Do not copy pin numbers between modules.
 
 `bun test tests/r8-power-metadata.test.ts` exercises the actual fixture through the native evaluator: pin 1 emits `requires_power=true`, pin 9 retains `requires_ground=true`, no other port is marked as requiring power, all 27 pads remain and there are no routed traces. Pin 19 is not automatically marked as requiring ground: Espressif v1.7 section 9 states that soldering EPAD to base-board ground is optional for thermal performance. The original warning log remains historical evidence. The raw importer omission remains open upstream; the project fixture now supplies the missing power metadata. This unpowered inspection fixture does not establish a working supply circuit.

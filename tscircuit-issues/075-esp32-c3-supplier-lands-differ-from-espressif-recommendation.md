@@ -2,6 +2,8 @@
 
 **Status: confirmed discrepancy; supplier variation remains unqualified.** This is supplier-library data, not a confirmed tscircuit bug. It is not a claim that the larger lands necessarily fail assembly.
 
+Missing `3V3` metadata remains a separate importer issue. Its manual project correction is documented in [issue076](076-numeric-supply-pin-not-inferred-as-power.md); adding power metadata does not qualify or change the supplier lands discussed here.
+
 ## Scope and versions
 
 Espressif `ESP32-C3-WROOM-02-N4`, JLCPCB/LCSC `C2934560`, supplier package UUID `ab901810668e4ba2b431728512d738d6`. Supported importer: CLI `0.1.2237` with the preserved R7 integration archive, easyeda `0.0.364` plus preserved local paste fixes, core `0.0.2035` plus qualified local pad-bounds fix. Archive hashes are recorded in the R8 component integrity manifest. No new importer code was changed in this investigation.

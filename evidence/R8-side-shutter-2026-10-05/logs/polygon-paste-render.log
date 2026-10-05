@@ -1,0 +1,48 @@
+{
+  "started_utc": "20261005T201455713844Z",
+  "command": [
+    "bun",
+    "-e",
+    "import {Resvg} from \"@resvg/resvg-js\"; for(const r of [0,90,180,270]){const p=`.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-${r}-pcb.snap.svg`;const t=`evidence/R8-side-shutter-2026-10-05/tooling/polygon-pad-paste-${r}-pcb.snap`;const svg=await Bun.file(p).text();await Bun.write(`${t}.svg`,svg);await Bun.write(`${t}.png`,new Resvg(svg,{fitTo:{mode:\"width\",value:900}}).render().asPng());}"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "started_utc": "20261005T201455713844Z",
+  "command": [
+    "bun",
+    "-e",
+    "import {Resvg} from \"@resvg/resvg-js\"; for(const r of [0,90,180,270]){const p=`.codex/runtime/r8-tooling/core/tests/repros/r8/__snapshots__/polygon-pad-paste-${r}-pcb.snap.svg`;const t=`evidence/R8-side-shutter-2026-10-05/tooling/polygon-pad-paste-${r}-pcb.snap`;const svg=await Bun.file(p).text();await Bun.write(`${t}.svg`,svg);await Bun.write(`${t}.png`,new Resvg(svg,{fitTo:{mode:\"width\",value:900}}).render().asPng());}"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:14:55.870442+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 99804,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T201455713844Z.log"
+}

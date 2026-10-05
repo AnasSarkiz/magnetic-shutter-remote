@@ -11,6 +11,12 @@ SPEC.loader.exec_module(METRICS)
 
 
 class StencilReleaseTest(unittest.TestCase):
+    def test_native_polygon_pad_requires_vertices_without_xy_fields(self):
+        pad = {'shape':'polygon','points':[{'x':0,'y':0},{'x':2,'y':0},{'x':2,'y':1},{'x':1,'y':1},{'x':1,'y':2},{'x':0,'y':2}]}
+        geometry = METRICS.GEOMETRY.pad(pad)
+        self.assertAlmostEqual(geometry.area,3)
+        self.assertEqual(geometry.bounds,(0,0,2,2))
+
     def test_narrow_aperture_fails_release_despite_long_dimension(self):
         result = METRICS.release_metrics(box(0,0,.1,2),.1)
         self.assertLess(result['area_ratio'],.66)

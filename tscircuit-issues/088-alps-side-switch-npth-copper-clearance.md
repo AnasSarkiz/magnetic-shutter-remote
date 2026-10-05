@@ -1,0 +1,5 @@
+#088 — ALPS SKRTLAE010/C110293 fails the retained NPTH clearance gate
+
+**Supplier footprint/manufacturing incompatibility, not a converter scaling bug.** All five unchanged imported copper lands match the supplier and nominal manufacturer drawing. The independent native-fixture audit finds four locating-hole-to-copper gaps below the retained0.20mm minimum: two0.0749808mm gaps to contacts and two0.1499997mm gaps to frame lands. Native placement checks did not flag these. Exact nominal geometry does not establish fabrication capability.
+
+[Failed audit](../evidence/R8-side-shutter-2026-10-05/qualification/alps/manufacturing-rejection.json), [supplier/manufacturer evidence](../evidence/R8-side-shutter-2026-10-05/qualification/alps/QUALIFICATION.md). The ALPS candidate was rejected before fabrication export/publication. Holes, lands and minima remain unchanged. Fitted TS24CA/C393942 must pass its own complete native/independent copper and export checks. No supplier approval, prototype measurement or ordering occurred.

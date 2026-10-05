@@ -1,9 +1,15 @@
 import { any_circuit_element } from "circuit-json";
+import { z } from "zod";
 
 // Electrical safety contracts from the selected module, TI and battery data.
-const circuit = any_circuit_element
-	.array()
-	.parse(await Bun.file("dist/index/circuit.json").json());
+const circuit = any_circuit_element.array().parse(
+	await Bun.file(
+		z
+			.string()
+			.min(1)
+			.parse(Bun.argv[2] ?? "dist/index/circuit.json"),
+	).json(),
+);
 const components = circuit.filter((e) => e.type === "source_component");
 const ports = circuit.filter((e) => e.type === "source_port");
 const nets = circuit.filter((e) => e.type === "source_net");
@@ -39,6 +45,12 @@ while (changed) {
 	}
 }
 const contracts = [
+	{
+		ref: "SW2",
+		mpn: "TS24CA",
+		part: "C393942",
+		pins: { 1: "SHUTTER", 2: "GND", 3: "GND", 4: "GND" },
+	},
 	{
 		ref: "Q1",
 		mpn: "2N7002",

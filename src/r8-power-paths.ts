@@ -156,6 +156,10 @@ export const r8PowerPaths: FanoutTracePath[] = [
 				layer: "top",
 			},
 			{ route_type: "wire", x: -10, y: 2.499874, width: 0.15, layer: "top" },
+			// Join the existing off-pad ground barrel through the solid EP copper.
+			{ route_type: "wire", x: -10, y: 3, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -11.157478, y: 3, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -13, y: 3, width: 0.15, layer: "top" },
 		],
 	},
 	{

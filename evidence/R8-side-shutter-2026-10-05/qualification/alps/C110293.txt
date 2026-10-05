@@ -1,0 +1,176 @@
+2017/4/26                                                      SKRT Series - Basic information
+
+
+
+
+     4.5×3.55mm Side Push Type (Surface Mount) SKRT
+     Series
+
+
+      Part number                                           SKRTLAE010
+
+      Type                                                  Surface mount
+
+
+      Operating force                                       1.6N
+
+
+      Operating direction                                   Side push
+
+
+      Travel                                                0.2mm
+
+
+      Operating life                                        100,000 cycles
+      (5mA 5V DC)
+
+
+      Initial contact resistance                            500mΩ max.
+
+
+      Guide bosses                                          With
+
+
+      Series type                                           Sharp feeling type
+
+
+      Operating temperature range                           -30℃ to +85℃
+
+
+      Rating (max.)                                         50mA 12V DC
+
+
+      Rating (min.)                                         10µA 1V DC
+
+
+      Electrical                 Insulation resistance 100MΩ min. 100V DC for 1min.
+      performance
+                                 Voltage proof              250V AC for 1 min.
+
+
+      Durability                 Vibration                  10 to 55 to 10Hz/min., the amplitude is 1.5mm for all the
+                                                            frequencies, in the 3 direction of X, Y and Z for 2 hours
+                                                            respectively
+
+
+      Environmental              Cold                       -30±2℃ for 96h
+      performance
+                                 Dry heat                   80±2℃ for 96h
+
+
+                                 Damp heat                  60±2℃, 90 to 95%RH for 96h
+
+
+      Minimum order unit Japan                              3,000
+      (pcs.)
+
+
+http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRT/SKRTLAE010.html                                             1/5
+2017/4/26                                                      SKRT Series - Basic information
+
+                                 Export                     3,000
+
+
+
+     Photo
+
+
+
+
+     Dimensions
+
+
+
+
+     Land Dimensions
+
+
+
+
+http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRT/SKRTLAE010.html                      2/5
+2017/4/26                                                      SKRT Series - Basic information
+
+
+
+
+       Viewed from switch mounting face
+
+
+     Circuit Diagram
+
+
+
+
+     Packing Specifications
+
+     Taping
+
+
+
+
+      Number of packages 1 reel                             3,000
+      (pcs.)
+                                 1 case / Japan             30,000
+
+
+                                 1 case / export            30,000
+
+http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRT/SKRTLAE010.html                      3/5
+2017/4/26                                                      SKRT Series - Basic information
+
+                                 packing
+
+
+      Tape width (mm)                                       12
+
+
+      Export package measurements (mm)                      395×395×205
+
+
+
+     Soldering Conditions
+
+     Condition for Reflow
+     1. Heating method
+     Double heating method with infrared heater.
+     2. Temperature measurement
+     Thermocouple 0.1 to 0.2 Φ CA(K) or CC(T) at solder joints (copper foil surface). A heat resisting tape should
+     be used for fix measurement.
+     3. Temperature profile
+
+
+
+
+     (1) The above temperature shall be measured of the top of switch. There are cases where PC board's
+     temperature greatly differs from that of the switch, depending on the material, size, thickness of PC
+     board's and others. Care, should be taken to prevent the switch's surface temperature from exceeding
+     260℃.
+     (2) Soldering conditions differ depending on reflow soldering machines. Prior verification of soldering
+     condition is highly recommended.
+     Manual Soldering
+     For manual soldering there is concern over flux penetration into switch side. Please use reflow process to do
+     soldering this switch.
+
+     1. Consult with us for availability of TACT switch™ washing.
+     2. Prevent flux penetration from the top side of the TACT switch™.
+     3. Switch terminals and a PC board should not be coated with flux prior to soldering.
+     4. The second soldering should be done after the switch returns to normal temperature.
+
+
+     Notes are common to this series/models.
+
+     1. This site catalog shows only outline specifications. When using the products, please obtain formal
+            specifications for supply.
+     2. Please place purchase orders for taping products per minimum order unit (1 reel or a case).
+     3. For φ330mm diameter reel requirements, please contact us.
+
+http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRT/SKRTLAE010.html                                          4/5
+2017/4/26                                                      SKRT Series - Basic information
+
+     4. Please contact us for automotive use products.
+
+
+
+
+http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRT/SKRTLAE010.html                      5/5
+

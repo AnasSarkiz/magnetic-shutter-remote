@@ -1,0 +1,128 @@
+{
+  "started_utc": "20261005T192548127816Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-local-bounds.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/polygon-pad-local-bounds.test.tsx:
+26 |     })
+27 |     const minX = Math.min(...coordinates.map((point) => point.x))
+28 |     const maxX = Math.max(...coordinates.map((point) => point.x))
+29 |     const minY = Math.min(...coordinates.map((point) => point.y))
+30 |     const maxY = Math.max(...coordinates.map((point) => point.y))
+31 |     expect(component.center.x).toBeCloseTo((minX+maxX)/2,8)
+                                    ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 5.25
+Received: 2.75
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 2.5
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-local-bounds.test.tsx:31:32)
+(fail) offset polygon contributes its actual bounds at0deg [71.37ms]
+26 |     })
+27 |     const minX = Math.min(...coordinates.map((point) => point.x))
+28 |     const maxX = Math.max(...coordinates.map((point) => point.x))
+29 |     const minY = Math.min(...coordinates.map((point) => point.y))
+30 |     const maxY = Math.max(...coordinates.map((point) => point.y))
+31 |     expect(component.center.x).toBeCloseTo((minX+maxX)/2,8)
+                                    ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1.7500000000000002
+Received: 3
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 1.2499999999999998
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-local-bounds.test.tsx:31:32)
+(fail) offset polygon contributes its actual bounds at90deg [12.35ms]
+26 |     })
+27 |     const minX = Math.min(...coordinates.map((point) => point.x))
+28 |     const maxX = Math.max(...coordinates.map((point) => point.x))
+29 |     const minY = Math.min(...coordinates.map((point) => point.y))
+30 |     const maxY = Math.max(...coordinates.map((point) => point.y))
+31 |     expect(component.center.x).toBeCloseTo((minX+maxX)/2,8)
+                                    ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 0.75
+Received: 3.25
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 2.5
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-local-bounds.test.tsx:31:32)
+(fail) offset polygon contributes its actual bounds at180deg [9.28ms]
+26 |     })
+27 |     const minX = Math.min(...coordinates.map((point) => point.x))
+28 |     const maxX = Math.max(...coordinates.map((point) => point.x))
+29 |     const minY = Math.min(...coordinates.map((point) => point.y))
+30 |     const maxY = Math.max(...coordinates.map((point) => point.y))
+31 |     expect(component.center.x).toBeCloseTo((minX+maxX)/2,8)
+                                    ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 4.25
+Received: 3
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 1.25
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-local-bounds.test.tsx:31:32)
+(fail) offset polygon contributes its actual bounds at270deg [7.43ms]
+
+ 0 pass
+ 4 fail
+ 4 expect() calls
+Ran 4 tests across 1 file. [1.65s]
+{
+  "started_utc": "20261005T192548127816Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-local-bounds.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T19:25:49.805527+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 598460,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T192548127816Z.log"
+}

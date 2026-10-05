@@ -4,11 +4,16 @@ import {
 } from "circuit-to-svg";
 import { any_circuit_element } from "circuit-json";
 import { Resvg } from "@resvg/resvg-js";
+import { z } from "zod";
 
 const circuit = any_circuit_element
 	.array()
 	.parse(await Bun.file("dist/index/circuit.json").json());
-const directory = "evidence/R8-prototype-2026-10-05/visual-review";
+const evidenceDirectory = z
+	.string()
+	.min(1)
+	.parse(Bun.argv[2] ?? "evidence/R8-prototype-2026-10-05");
+const directory = `${evidenceDirectory}/visual-review`;
 for (const layer of ["top", "bottom"] as const) {
 	const svg = convertCircuitJsonToPcbSvg(circuit, {
 		layer,
@@ -23,7 +28,7 @@ for (const layer of ["top", "bottom"] as const) {
 		new Resvg(svg).render().asPng(),
 	);
 	const gerberSvg = await Bun.file(
-		`evidence/R8-prototype-2026-10-05/final-readback/${layer === "top" ? "F" : "B"}_Cu.svg`,
+		`${evidenceDirectory}/final-readback/${layer === "top" ? "F" : "B"}_Cu.svg`,
 	).text();
 	await Bun.write(
 		`${directory}/gerber-${layer}.png`,

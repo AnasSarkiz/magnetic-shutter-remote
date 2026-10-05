@@ -1,0 +1,78 @@
+{
+  "part": "C110293",
+  "mpn": "SKRTLAE010",
+  "manufacturer": "ALPSALPINE",
+  "pads": {
+    "1": {
+      "x_mm": -1.2250039,
+      "y_mm": 0.74999215,
+      "width_mm": 0.7500112,
+      "height_mm": 1.7999964
+    },
+    "2": {
+      "x_mm": 0.0147447,
+      "y_mm": 0.74999215,
+      "width_mm": 0.599948,
+      "height_mm": 1.7999964
+    },
+    "3": {
+      "x_mm": 1.2250039,
+      "y_mm": 0.74999215,
+      "width_mm": 0.7500112,
+      "height_mm": 1.7999964
+    },
+    "4": {
+      "x_mm": -1.8499963,
+      "y_mm": -1.19999125,
+      "width_mm": 1.2999974,
+      "height_mm": 0.8999982
+    },
+    "5": {
+      "x_mm": 1.8499963,
+      "y_mm": -1.19999125,
+      "width_mm": 1.2999974,
+      "height_mm": 0.8999982
+    }
+  },
+  "supplier_import_conversion_max_difference_mm": 1.3322676295501878e-14,
+  "internal_connections": [
+    [
+      "pin1",
+      "pin3"
+    ],
+    [
+      "pin4",
+      "pin5"
+    ]
+  ],
+  "normally_open_between": [
+    "pin1/3",
+    "pin2"
+  ],
+  "pin_contract": {
+    "1": "SHUTTER",
+    "2": "GND",
+    "3": "SHUTTER",
+    "4": "GND frame",
+    "5": "GND frame"
+  },
+  "copper_prohibited_local_mm": {
+    "x_min": -1,
+    "x_max": 1,
+    "y_min": -1.65,
+    "y_max": -0.45
+  },
+  "actuation": "original-Y rotated90deg gives board+X; press inward toward-X",
+  "manufacturer_actuation_force_n": 1.6,
+  "travel_mm": 0.2,
+  "rated_life_cycles": 100000,
+  "rating_max": "50mA/12VDC",
+  "rating_min": "10uA/1VDC",
+  "max_contact_resistance_ohm": 0.5,
+  "supplier_asset_sha256": {
+    ".tsx": "7638ccd88955f4ceebd337fa8d24691de05af97113a3d49ed426dd997d641e49",
+    ".step": "5320d7a2a54b3be031d3299b84bb107c8397b204852fb2c77e9aa5a217f8ca94",
+    ".obj": "bc68b3514b1c85b7f2a634ff866609d0e07189a3d5b940034a9c366e4499d062"
+  },
+  "qualification": "Nominal manufacturer lands/pitches and exact supplier conversion pass; physical actuation/reflow/fit pending"
+}

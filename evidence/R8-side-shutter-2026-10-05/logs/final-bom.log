@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/scripts/write-r8-bom.py", line 62, in <module>
+    write_bom(parser.parse_args().evidence)
+  File "/workspace/magnetic-shutter-remote/scripts/write-r8-bom.py", line 44, in write_bom
+    qualification=f'Engineering prototype; see {evidence_directory.relative_to(ROOT)}/REVIEW.md and current validation; physical tests pending')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'evidence/R8-side-shutter-2026-10-05' is not in the subpath of '/workspace/magnetic-shutter-remote'

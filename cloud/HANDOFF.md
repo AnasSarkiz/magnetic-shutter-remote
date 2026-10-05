@@ -1,6 +1,6 @@
 # Current continuation result —2026-10-05
 
-R8 DOIT ESP32-C3 now routes with0 native errors/0 shorts/0 independent manufacturing failures. Full terminal connectivity, RF exclusion, exposed-pad ground, strict44-ref BOM/CPL and all12 local fabrication files pass;160-aperture stencil/mask/silkscreen checks pass. Read [the final review](../evidence/R8-prototype-2026-10-05/REVIEW.md) and current VALIDATION before engineering work. Firmware C3 BLE compile/image pass; physical prototype and supplier processed-preview remain pending. No order/contact/upload authorization is implied.
+Current0.3.1 R8 DOIT ESP32-C3 with right-edge side-actuated TS24CA/C393942 now routes with0 native errors/0 shorts/0 independent manufacturing failures. Full terminal connectivity, RF exclusion, exposed-pad ground, strict44-ref BOM/CPL and all12 local fabrication files pass;162-aperture stencil/mask/silkscreen checks pass. Read [the final review](../evidence/R8-side-shutter-2026-10-05/REVIEW.md) and current VALIDATION before engineering work. Firmware C3 BLE compile/image pass; physical prototype and supplier processed-preview remain pending. No order/contact/upload authorization is implied.
 
 Saved environment setup/start remains lightweight and preserves task branches/context. Onboarding restrictions do not prohibit later authorized engineering changes or qualified prototype publication; frozen baselines and separate ordering/payment/contact rules remain immutable. Historical sections below must not be treated as current blockers or current root identities.
 

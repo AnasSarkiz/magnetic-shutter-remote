@@ -82,7 +82,8 @@ def review(args):
         flashes = [READER.copper_geometry(GerberFile(objects=[obj])) for obj in layers[filename].objects]
         contacts = []
         for pad in (p for p in pads.values() if p['layer']==side):
-            matches = [g for g in flashes if abs(g.centroid.x-pad['x'])<.000002 and abs(g.centroid.y-pad['y'])<.000002]
+            pad_centroid = GEOMETRY.pad(pad).centroid
+            matches = [g for g in flashes if g.centroid.distance(pad_centroid)<.000002]
             if len(matches) != 1:
                 raise ValueError(f'Mask opening not uniquely attributable: {pad["pcb_smtpad_id"]}')
             contacts.append((pad, matches[0]))

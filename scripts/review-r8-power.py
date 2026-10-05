@@ -1,6 +1,7 @@
 """Nominal routed power-path measurements, not a hardware current test."""
 import importlib.util
 import json
+import argparse
 import heapq
 import math
 import sys
@@ -48,7 +49,7 @@ def load_path(params):
     raise ValueError('No physically connected power path')
 
 
-def review():
+def review(output=ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements.json'):
     circuit = json.loads((ROOT/'dist/index/circuit.json').read_text())
     if any(e['type'].endswith('_error') for e in circuit):
         raise ValueError('Power review requires an error-free routed circuit')
@@ -107,7 +108,7 @@ def review():
               'regulator_input_voltage_floor_budget_v': regulator_input_floor,
               'references': ['DOIT ESPC3-12 manual page7: startup exceeds400mA; supply>=500mA', 'TI SLVS696D: up to500mA boost at VIN>2.4V', 'IPC-2221 external empirical estimate'],
               'limitations': ['Nominal trace-only resistance; excludes connector, via, battery and regulator transient drops.', 'All-branches-in-series bound is conservative for copper, but does not establish actual loaded voltage.', '35um copper, 50C copper, -3% output and85% efficiency are design assumptions.', 'Inductor switch pulses and thermal spreading are not modeled; saturation2.3A/RMS1.7A exceed normal load but require hardware verification.', 'No current, temperature, transient, battery runtime or RF measurement is claimed.']}
-    (ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements.json').write_text(json.dumps(report, indent=2)+'\n')
+    output.write_text(json.dumps(report, indent=2)+'\n')
     print('Nominal module voltage budget:', module_floor, 'regulator input budget:', regulator_input_floor)
     print('Measured power net minima:', {name: row['minimum_width_mm'] for name,row in summaries.items()})
     if module_floor <= 3.0 or regulator_input_floor <= 2.4:
@@ -117,4 +118,6 @@ def review():
 
 
 if __name__ == '__main__':
-    review()
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',type=Path,default=ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements.json')
+    review(parser.parse_args().output)

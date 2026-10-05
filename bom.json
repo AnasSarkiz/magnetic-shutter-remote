@@ -1,6 +1,6 @@
 {
-  "revision": "R8-ESP32-C3-2026-10-05",
-  "status": "44 fitted references / 24 exact supplier identities; engineering prototype; hardware unvalidated",
+  "revision": "R8-ESP32-C3-side-shutter-0.3.1",
+  "status": "44 fitted references / 25 exact supplier identities; engineering prototype; hardware unvalidated",
   "parts": [
     {
       "manufacturer": "GCT / Global Connector Technology",
@@ -17,7 +17,7 @@
       "quantity": 1,
       "lcsc": "C37616412",
       "manufacturer_part_number": "USB4215-03-A",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "USB4215-03-A",
       "datasheet_file": "references/GCT-USB4215-drawing-Rev-A.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C37616412.html",
@@ -40,7 +40,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C23186",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C23186.html"
     },
@@ -59,7 +59,7 @@
       "quantity": 1,
       "lcsc": "C19725033",
       "manufacturer_part_number": "BQ25185DLHR",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "BQ25185DLHR",
       "datasheet_file": "references/R4-qualification/BQ25185-current.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C19725033.html"
@@ -82,7 +82,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C21190",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C21190.html"
     },
@@ -103,7 +103,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL 1",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C19666",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "Samsung manufacturer product-family bias curves; see ELECTRICAL-QUALIFICATION.md",
       "lcsc_link": "https://www.lcsc.com/product-detail/C19666.html"
     },
@@ -124,7 +124,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL 3",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C2286",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C2286-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C2286.html"
     },
@@ -144,7 +144,7 @@
       "availability_check_date": "2026-10-05",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C160402",
       "lcsc_link": "https://www.lcsc.com/product-detail/C160402.html",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending"
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending"
     },
     {
       "manufacturer": "UNI-ROYAL",
@@ -161,7 +161,7 @@
       "quantity": 1,
       "lcsc": "C22795",
       "manufacturer_part_number": "0603WAF1303T5E",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "130k\u03a9",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C22795.html"
@@ -181,7 +181,7 @@
       "quantity": 1,
       "lcsc": "C25804",
       "manufacturer_part_number": "0603WAF1002T5E",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "10k\u03a9",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C25804.html"
@@ -206,7 +206,7 @@
       "quantity": 6,
       "lcsc": "C15850",
       "manufacturer_part_number": "CL21A106KAYNNNE",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "10uF",
       "datasheet_file": "Samsung manufacturer product-family bias curves; see ELECTRICAL-QUALIFICATION.md",
       "lcsc_link": "https://www.lcsc.com/product-detail/C15850.html"
@@ -226,7 +226,7 @@
       "quantity": 1,
       "lcsc": "C282505",
       "manufacturer_part_number": "TCC0603COG470J500CT",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "47pF",
       "datasheet_file": "references/C282505-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C282505.html"
@@ -247,7 +247,7 @@
       "availability_check_date": "2026-10-05",
       "source_link": "https://jlcpcb.com/partdetail/ESPC3-12-N4/C19949072",
       "lcsc_link": "https://www.lcsc.com/product-detail/C19949072.html",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending"
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending"
     },
     {
       "reference_designators": [
@@ -268,18 +268,35 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL 1",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C14663",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C14663-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C14663.html"
     },
     {
+      "manufacturer": "SHOUHAN",
       "reference_designators": [
-        "SW2",
+        "SW2"
+      ],
+      "quantity": 1,
+      "value": "TS24CA",
+      "manufacturer_part_number": "TS24CA",
+      "package": "SMD,4.6x1.8mm",
+      "lcsc": "C393942",
+      "assembly_category": "Extended",
+      "observed_stock": 444478,
+      "observed_available": 444478,
+      "availability_check_date": "2026-10-05",
+      "source_link": "https://jlcpcb.com/partdetail/TS24CA/C393942",
+      "lcsc_link": "https://www.lcsc.com/product-detail/C393942.html",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending"
+    },
+    {
+      "reference_designators": [
         "SW3",
         "SW4",
         "SW5"
       ],
-      "quantity": 4,
+      "quantity": 3,
       "value": "TS-1088-AR02016",
       "manufacturer": "XUNPU",
       "manufacturer_part_number": "TS-1088-AR02016",
@@ -291,7 +308,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL not stated",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C720477",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C720477-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C720477.html"
     },
@@ -311,7 +328,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL 1",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C160392",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/JST-SH.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C160392.html"
     },
@@ -330,7 +347,7 @@
       "quantity": 1,
       "lcsc": "C431540",
       "manufacturer_part_number": "MSK12C02",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "MSK12C02",
       "datasheet_file": "references/SHOUHAN-MSK12C02.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C431540.html"
@@ -354,7 +371,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C25803",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C25803.html"
     },
@@ -375,7 +392,7 @@
       "availability_check_date": "2026-10-05",
       "assembly_requirements": "Economic/Standard; MSL 1",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C8545",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "datasheet_file": "references/C8545-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C8545.html"
     },
@@ -395,7 +412,7 @@
       "availability_check_date": "2026-10-05",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C15516",
       "lcsc_link": "https://www.lcsc.com/product-detail/C15516.html",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending"
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending"
     },
     {
       "manufacturer": "Sunlord",
@@ -413,7 +430,7 @@
       "availability_check_date": "2026-10-05",
       "source_link": "https://jlcsearch.tscircuit.com/api/search?q=C56594",
       "lcsc_link": "https://www.lcsc.com/product-detail/C56594.html",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending"
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending"
     },
     {
       "manufacturer": "Texas Instruments",
@@ -430,7 +447,7 @@
       "quantity": 1,
       "lcsc": "C485802",
       "manufacturer_part_number": "TPS3839G33DBZR",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "TPS3839G33DBZR",
       "datasheet_file": "references/TPS3839.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C485802.html"
@@ -450,7 +467,7 @@
       "quantity": 1,
       "lcsc": "C5219772",
       "manufacturer_part_number": "TMP390A2DRLR",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "TMP390A2DRLR",
       "datasheet_file": "references/TMP390.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C5219772.html"
@@ -470,7 +487,7 @@
       "quantity": 1,
       "lcsc": "C22844",
       "manufacturer_part_number": "0603WAF1621T5E",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "1.62k\u03a9",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C22844.html"
@@ -490,7 +507,7 @@
       "quantity": 1,
       "lcsc": "C22893",
       "manufacturer_part_number": "0603WAF1872T5E",
-      "qualification": "Engineering prototype; see R8-prototype qualification and current validation; physical tests pending",
+      "qualification": "Engineering prototype; see evidence/R8-side-shutter-2026-10-05/REVIEW.md and current validation; physical tests pending",
       "value": "18.7k\u03a9",
       "datasheet_file": "references/C22844-manufacturer.pdf",
       "lcsc_link": "https://www.lcsc.com/product-detail/C22893.html"

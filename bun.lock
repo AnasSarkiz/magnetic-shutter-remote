@@ -9,9 +9,9 @@
         "@resvg/resvg-js": "2.6.2",
         "@tscircuit/3d-viewer": "0.0.610",
         "@tscircuit/circuit-json-util": "file:tooling/vendor/circuit-json-util-qualified-source.tgz",
-        "@tscircuit/cli": "file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
-        "@tscircuit/core": "file:tooling/vendor/core-r8-mask-style.tgz",
-        "@tscircuit/eval": "file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+        "@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+        "@tscircuit/core": "file:tooling/vendor/core-r8-polygon-paste.tgz",
+        "@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz",
         "@tscircuit/pcb-viewer": "1.11.415",
         "@tscircuit/props": "file:tooling/vendor/props-r8-mask-style.tgz",
         "@tscircuit/schematic-viewer": "2.0.99",
@@ -36,9 +36,9 @@
   "overrides": {
     "@tscircuit/capacity-autorouter": "0.0.951",
     "@tscircuit/circuit-json-util": "file:tooling/vendor/circuit-json-util-qualified-source.tgz",
-    "@tscircuit/cli": "file:tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
-    "@tscircuit/core": "file:tooling/vendor/core-r8-mask-style.tgz",
-    "@tscircuit/eval": "file:tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+    "@tscircuit/cli": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+    "@tscircuit/core": "file:tooling/vendor/core-r8-polygon-paste.tgz",
+    "@tscircuit/eval": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz",
     "@tscircuit/props": "file:tooling/vendor/props-r8-mask-style.tgz",
     "circuit-json": "file:tooling/vendor/circuit-json-qualified-source.tgz",
     "circuit-json-to-gerber": "file:tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
@@ -411,15 +411,15 @@
 
     "@tscircuit/circuit-json-util": ["@tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz", { "dependencies": { "@flatten-js/core": "^1.6.14", "parsel-js": "^1.1.2" }, "peerDependencies": { "circuit-json": "*", "transformation-matrix": "*", "zod": "3" } }],
 
-    "@tscircuit/cli": ["@tscircuit/cli@tooling/vendor/tscircuit-cli-r7-importer-integration.tgz", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "./cli/entrypoint.js" } }],
+    "@tscircuit/cli": ["@tscircuit/cli@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "./cli/entrypoint.js" } }],
 
     "@tscircuit/copper-pour-solver": ["@tscircuit/copper-pour-solver@0.0.62", "", { "dependencies": { "@tscircuit/manifold-2d": "^0.0.6" }, "peerDependencies": { "typescript": "^5" } }, "sha512-1bVypQqhpOBeRWAyoewv84PZLGLQMBFEuga3z4AOQ/S3XEvzbg1ewrGC8vc0Mqq27kWuFI80/JVO4qqrv+j+2A=="],
 
-    "@tscircuit/core": ["@tscircuit/core@tooling/vendor/core-r8-mask-style.tgz", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.24", "calculate-packing": "^0.0.90", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }],
+    "@tscircuit/core": ["@tscircuit/core@tooling/vendor/core-r8-polygon-paste.tgz", { "dependencies": { "@flatten-js/core": "^1.6.2", "@lume/kiwi": "^0.4.3", "calculate-cell-boundaries": "^0.0.24", "calculate-packing": "^0.0.90", "css-select": "5.1.0", "format-si-unit": "^0.0.12", "nanoid": "^5.0.7", "performance-now": "^2.1.0", "react-reconciler": "^0.32.0", "svg-path-commander": "^2.1.11", "transformation-matrix": "^2.16.1", "zod": "^3.25.67" }, "peerDependencies": { "@tscircuit/capacity-autorouter": "*", "@tscircuit/checks": "*", "@tscircuit/circuit-json-util": "*", "@tscircuit/create-fdm-enclosure": "*", "@tscircuit/footprinter": "*", "@tscircuit/infgrid-ijump-astar": "*", "@tscircuit/matchpack": "*", "@tscircuit/math-utils": "*", "@tscircuit/props": "*", "@tscircuit/schematic-match-adapt": "*", "bpc-graph": "*", "circuit-json": "*", "circuit-json-to-bpc": "*", "circuit-json-to-connectivity-map": "*", "circuit-json-to-spice": "*", "schematic-symbols": "*", "spicets": "*", "typescript": "^5.0.0" } }],
 
     "@tscircuit/create-fdm-enclosure": ["@tscircuit/create-fdm-enclosure@0.0.4", "", { "dependencies": { "@tscircuit/solver-utils": "^0.0.19", "graphics-debug": "^0.0.96", "jscad-planner": "^0.0.14" }, "peerDependencies": { "typescript": "^5" } }, "sha512-mJzfM2lG7QIJScb2WwzM91mXBMSC5l9hbAKYl5rjnYB+jjQGdjwRPA61SiUUUcixiZ5fcxgY8k/szpOiyAorqg=="],
 
-    "@tscircuit/eval": ["@tscircuit/eval@tooling/vendor/tscircuit-eval-0.0.1506.tgz", { "peerDependencies": { "@tscircuit/core": ">=0.0.1906", "circuit-json": "*", "typescript": "^5.0.0", "zod": "3" } }],
+    "@tscircuit/eval": ["@tscircuit/eval@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz", { "peerDependencies": { "@tscircuit/core": ">=0.0.1906", "circuit-json": "*", "typescript": "^5.0.0", "zod": "3" } }],
 
     "@tscircuit/fanout-solver": ["@tscircuit/fanout-solver@0.0.78", "", { "dependencies": { "@tscircuit/capacity-autorouter": "0.0.718", "@tscircuit/solver-utils": "0.0.19", "graphics-debug": "0.0.99" }, "peerDependencies": { "typescript": "^5" } }, "sha512-iYSKgbORYc5LgBjF8vRFdglP1AlCC7dSeU8fJaU81Pk4rBcWaRNAh0IHoCZ05h6JTX+eNvdDmZuBw7usl9iVnw=="],
 

@@ -18,7 +18,7 @@ export function FunctionalMarkings() {
 			/>
 			<silkscreentext
 				text="PAIR"
-				pcbX={21}
+				pcbX={17}
 				pcbY={-5.5}
 				layer="top"
 				fontSize={1.8}

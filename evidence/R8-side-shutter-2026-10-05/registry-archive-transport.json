@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "tscircuit-cli-r7-importer-integration.tgz",
+    "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz",
+    "bytes": 12238126,
+    "sha256": "b8bdbdc2a2aed5fb1fef173f3d7e57307255f4fca89de02caf822ee51e46842f",
+    "exact_local_archive_match": true
+  },
+  {
+    "filename": "tscircuit-eval-0.0.1506.tgz",
+    "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz",
+    "bytes": 10228704,
+    "sha256": "541a04d695743b6349ae9f7cb145b3fb4bc60eb1e5f46c4b3b84aaacbbc2ed44",
+    "exact_local_archive_match": true
+  }
+]

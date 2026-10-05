@@ -1,0 +1,109 @@
+{
+  "started_utc": "20261005T200759725510Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/r8/polygon-pad-paste.test.tsx:
+10 |         footprint={<footprint><smtpad shape="polygon" points={points} solderPasteMargin={0}/></footprint>}/>
+11 |     </board>)
+12 |     circuit.render()
+13 |     const pad = circuit.db.pcb_smtpad.list()[0]
+14 |     const paste = circuit.db.pcb_solder_paste.list()[0]
+15 |     expect(paste).toBeDefined()
+                       ^
+error: expect(received).toBeDefined()
+
+Received: undefined
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:15:19)
+(fail) polygon paste preserves concavity and registration at0deg [66.78ms]
+10 |         footprint={<footprint><smtpad shape="polygon" points={points} solderPasteMargin={0}/></footprint>}/>
+11 |     </board>)
+12 |     circuit.render()
+13 |     const pad = circuit.db.pcb_smtpad.list()[0]
+14 |     const paste = circuit.db.pcb_solder_paste.list()[0]
+15 |     expect(paste).toBeDefined()
+                       ^
+error: expect(received).toBeDefined()
+
+Received: undefined
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:15:19)
+(fail) polygon paste preserves concavity and registration at90deg [9.98ms]
+10 |         footprint={<footprint><smtpad shape="polygon" points={points} solderPasteMargin={0}/></footprint>}/>
+11 |     </board>)
+12 |     circuit.render()
+13 |     const pad = circuit.db.pcb_smtpad.list()[0]
+14 |     const paste = circuit.db.pcb_solder_paste.list()[0]
+15 |     expect(paste).toBeDefined()
+                       ^
+error: expect(received).toBeDefined()
+
+Received: undefined
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:15:19)
+(fail) polygon paste preserves concavity and registration at180deg [7.63ms]
+10 |         footprint={<footprint><smtpad shape="polygon" points={points} solderPasteMargin={0}/></footprint>}/>
+11 |     </board>)
+12 |     circuit.render()
+13 |     const pad = circuit.db.pcb_smtpad.list()[0]
+14 |     const paste = circuit.db.pcb_solder_paste.list()[0]
+15 |     expect(paste).toBeDefined()
+                       ^
+error: expect(received).toBeDefined()
+
+Received: undefined
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/.codex/runtime/r8-tooling/core/tests/repros/r8/polygon-pad-paste.test.tsx:15:19)
+(fail) polygon paste preserves concavity and registration at270deg [6.45ms]
+(pass) covered polygon creates no solder paste [6.36ms]
+
+ 1 pass
+ 4 fail
+ 5 expect() calls
+Ran 5 tests across 1 file. [1.56s]
+{
+  "started_utc": "20261005T200759725510Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/r8-tooling/core && exec bun test ./tests/repros/r8/polygon-pad-paste.test.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-05T20:08:01.319990+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 596684,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261005T200759725510Z.log"
+}
