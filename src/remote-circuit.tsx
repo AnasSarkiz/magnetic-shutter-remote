@@ -571,8 +571,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						pcbX="12mm"
 						pcbY="-4.5mm"
 						pcbRotation={90}
-						schX={-6}
-						schY={7}
+						schX={-4.2}
+						schY={5}
 						schRotation={-90}
 						connections={{ pin1: "net.V3", pin2: "net.GND" }}
 					/>
@@ -842,7 +842,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						schRotation={-90}
 						pcbX="-10mm"
 						pcbY="0mm"
-						schX={4}
+						schX={5.2}
 						schY={9}
 						connections={{ pin1: "net.VBAT", pin2: "net.GND" }}
 					/>
@@ -851,7 +851,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						schRotation={-90}
 						pcbX="-10mm"
 						pcbY="6mm"
-						schX={6}
+						schX={7.2}
 						schY={-8}
 						connections={{ pin1: "net.V3", pin2: "net.GND" }}
 					/>

@@ -1,0 +1,30 @@
+{
+  "circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+  "observed_utc": "2026-10-06T18:36:12.709711+00:00",
+  "actual_reviewed_files": {
+    "Power-a4.png": "a291839fdee8b2c9dffadc0b5326e80565487488168941df37568c835a02261f",
+    "Radio-a4.png": "dc2ffe9c498235cf86ce9eb4bd0da2f33e448eb9424551d3a97fc4ac8aaf93e8",
+    "Protection-a4.png": "1833ae2ba29d75fb6667da03cfb095c369302c7e5d8ad1531bb0949c15d485a7",
+    "PowerGuide-a4.png": "8a5834491c1f1d33ba5db56ef1e74741d0c9f8981dcbef741a9e91fc21b78a07",
+    "RadioGuide-a4.png": "90a96ff53c3f19f35d4062db81b848143b905936273bf53cecf10079a412fa2f",
+    "ProtectionGuide-a4.png": "c6efca0d790b710bc4bf16a052f344a50b8218eb8d807d7b28f87355782a3f05",
+    "Radio-detail.png": "deb8b80dd0a458481b3fb59e44396582e247be600cceda08f3be57c6da41e157",
+    "Protection-detail.png": "e233b5293285f274abc270aca776beb15bf44709e7cd39c2095374dffd97f56e",
+    "pcb-top.png": "f0b6ccc5c84623485b71debb115ec66b6f510a475b55ffd71859e6493aa79344",
+    "pcb-bottom.png": "079af187295305418c1e8437c67f1370a8512e09b67bf5ecb3902017b6820698",
+    "gerber-top.png": "4a11768697f4bdf718cf7515ed1ec723a3677f69d281b4005ef9896cc2d7e9d2",
+    "gerber-bottom.png": "53b26685e8b5e4b6d39b8fe12cbad702fd662bbf02984a815d02daf1fea90227"
+  },
+  "actual_browser_dialog_inspected": true,
+  "findings": [
+    "C5 and C10 drawn side by side with readable shared V3/GND buses.",
+    "C3/C11/C13 and C4/C12 are grouped with readable values and rails.",
+    "All six native A4 circuit/guide pages inspected, with explanations retained.",
+    "Top/bottom PCB and exported copper inspected; side shutter, antenna exclusion, UART and existing artwork are preserved."
+  ],
+  "remaining_gates": [
+    "supplier preview/assembly approval",
+    "physical hardware tests",
+    "complete MagSafe phone/case fit"
+  ]
+}

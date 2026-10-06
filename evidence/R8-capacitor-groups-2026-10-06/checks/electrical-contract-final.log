@@ -1,0 +1,51 @@
+{
+  "started_utc": "20261006T183119022724Z",
+  "command": [
+    "python3",
+    "scripts/review-r8-electrical-contract.py",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-capacitor-groups-2026-10-06/electrical-contract.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+44 exact identities/values and 159 pin contracts unchanged
+{
+  "started_utc": "20261006T183119022724Z",
+  "command": [
+    "python3",
+    "scripts/review-r8-electrical-contract.py",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-capacitor-groups-2026-10-06/electrical-contract.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T18:31:19.087935+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 19100,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T183119022724Z.log"
+}

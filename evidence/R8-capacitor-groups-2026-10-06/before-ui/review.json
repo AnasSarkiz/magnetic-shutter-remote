@@ -1,0 +1,46 @@
+{
+  "observed_utc": "2026-10-06T17:44:43.292349+00:00",
+  "browser_version": "151.0.7922.173",
+  "native_viewer_version": "2.0.99",
+  "circuit_path": "/workspace/magnetic-shutter-remote/dist/index/circuit.json",
+  "circuit_sha256": "eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b",
+  "actual_native_ui_menu_clicked": true,
+  "dialog": "Style Analysis\nClose\n\nPlacement and style issues across all schematic sheets. Each image highlights one issue with its description below.\n\n3 style issues found.\n\n1. Decoupling Capacitors Not Close Together\nSheet: schematic_sheet_1\n2. Decoupling Capacitors Not Close Together\nSheet: schematic_sheet_2\n3. Decoupling Capacitors Not Close Together\nSheet: schematic_sheet_2",
+  "issues": [
+    {
+      "heading": "1. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_1",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"V3\" ground=\"GND\" capacitorNames=\"C5, C10\" maxBodyGap=\"1.4\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3 and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-001.svg"
+    },
+    {
+      "heading": "2. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_2",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"VBAT\" ground=\"GND\" capacitorNames=\"C11, C13, C3\" maxBodyGap=\"2.1\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between VBAT and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-002.svg"
+    },
+    {
+      "heading": "3. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_2",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"V3\" ground=\"GND\" capacitorNames=\"C12, C4\" maxBodyGap=\"2.1\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3 and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-003.svg"
+    }
+  ],
+  "issue_count": 3,
+  "http_requests": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200
+    }
+  ],
+  "browser_modules": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200,
+      "path": "analyzer-response-0.js",
+      "sha256": "598a25590702cbce18554dcd23a7516411975d8e2e0de9c0e3a0918574fd2729",
+      "bytes": 725913
+    }
+  ],
+  "browser_errors": [
+    "console:error:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "tls_verification_disabled": false
+}

@@ -1,3 +1,24 @@
+# Current R8 0.3.11 — schematic capacitor groups, 2026-10-06
+
+C10/C3/C4 native schematic coordinates bring all three reported capacitor
+groups within the latest browser analyzer's recommended spacing. Actual
+browser and pinned CLI style analyses pass zero issues. All 1,451 physical/
+electrical elements are identical to 0.3.10; PCB placement, routing, values
+and 159 pin contracts are unchanged. Fresh native/independent clearance,
+29 physical nets, 174 track widths/current paths and export/process checks
+pass. Six native A4 pages and reviewed snapshots retain all 44 explanations.
+[Current review](../evidence/R8-capacitor-groups-2026-10-06/REVIEW.md). Circuit JSON SHA256: 7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf.
+
+All 91 through vias remain 0.30mm hole/0.45mm pad; power is top/bottom only.
+Exact BOM and dated JLCPCB listing evidence remain unchanged; allocation,
+supplier approval, physical operation and complete MagSafe fit are pending.
+Native 004/084 and original 075/076 stay explicit. Missing 3V3 metadata
+remains a separate importer issue. Setup/start and serial memory guards are
+unchanged; observed 32GiB is not guaranteed. Current publication receipt is
+recorded separately after actual public readback.
+
+## Prior review/publication records — preserved history
+
 # Current R8 0.3.10 — schematic style and through vias, 2026-10-06
 
 Native standard USB-C schematic and real browser/CLI Style Analysis pass0

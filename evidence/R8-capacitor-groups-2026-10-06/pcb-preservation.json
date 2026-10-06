@@ -1,0 +1,12 @@
+{
+  "circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+  "previous_circuit_sha256": "eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b",
+  "physical_and_electrical_elements_identical": true,
+  "unchanged_element_count": 1451,
+  "excluded_source_metadata_reason": "Source filesystem fingerprint changes with the authored schematic coordinates.",
+  "changed_schematic_references": [
+    "C10",
+    "C3",
+    "C4"
+  ]
+}

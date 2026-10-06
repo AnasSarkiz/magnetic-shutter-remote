@@ -1,0 +1,13 @@
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+3 style issues found.
+
+1. Decoupling Capacitors Not Close Together
+Sheet: schematic_sheet_1
+2. Decoupling Capacitors Not Close Together
+Sheet: schematic_sheet_2
+3. Decoupling Capacitors Not Close Together
+Sheet: schematic_sheet_2

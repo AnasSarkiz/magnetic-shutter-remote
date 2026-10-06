@@ -1,0 +1,5 @@
+{
+  "observed_utc": "2026-10-06T18:37:33.051587+00:00",
+  "status": "## board/r8-doit-c3-prototype-20261005\n M AGENTS.md\n M README.md\n M VALIDATION.md\n M cloud/HANDOFF.md\n M cloud/STATUS.md\n M dist/index/circuit.json\n M package.json\n M src/remote-circuit.tsx\n M tscircuit.config.json\n?? evidence/R8-capacitor-groups-2026-10-06/\n?? fabrication/R8-capacitor-groups-2026-10-06/\n",
+  "diff_stat": " AGENTS.md               |  12 +-\n README.md               |  21 +++\n VALIDATION.md           |  21 +++\n cloud/HANDOFF.md        |  21 +++\n cloud/STATUS.md         |  21 +++\n dist/index/circuit.json | 343 +++++++++++++++++++++---------------------------\n package.json            |   2 +-\n src/remote-circuit.tsx  |   8 +-\n tscircuit.config.json   |   2 +-\n 9 files changed, 252 insertions(+), 199 deletions(-)\n"
+}

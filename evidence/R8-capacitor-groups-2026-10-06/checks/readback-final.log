@@ -1,0 +1,55 @@
+{
+  "started_utc": "20261006T183155345936Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-exports.py",
+    "fabrication/R8-capacitor-groups-2026-10-06/R8-capacitor-groups-Gerbers.zip",
+    "dist/index/circuit.json",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-capacitor-groups-2026-10-06/final-readback"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+All 12 fabrication files independently parsed; exact copper, drills, mask, paste and outline PASS
+{
+  "started_utc": "20261006T183155345936Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-exports.py",
+    "fabrication/R8-capacitor-groups-2026-10-06/R8-capacitor-groups-Gerbers.zip",
+    "dist/index/circuit.json",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-capacitor-groups-2026-10-06/final-readback"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T18:32:32.452675+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 110232,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T183155345936Z.log"
+}

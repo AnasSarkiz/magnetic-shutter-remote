@@ -1,0 +1,29 @@
+{
+  "comparison_commit": "fb0d18f448d014f4a4886ee50491b9d0cd5c750d",
+  "prior_tracked_files": 3978,
+  "unchanged_prior_files": 3969,
+  "authorized_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/remote-circuit.tsx",
+    "tscircuit.config.json"
+  ],
+  "explicit_allowed_existing_paths": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/remote-circuit.tsx",
+    "tscircuit.config.json"
+  ],
+  "unexpected_prior_changes": [],
+  "imports_baselines_prior_evidence_fabrication_firmware_lock_toolchain_and_guards_unchanged": true
+}

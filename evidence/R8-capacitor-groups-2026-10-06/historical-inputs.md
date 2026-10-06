@@ -1,0 +1,1 @@
+The two legacy failed-route files required by the existing registry staging gate are verbatim copies of preserved R8-style-vias-2026-10-06 inputs. They reproduce historical failures and are not results of this capacitor-layout change. Their original paths and hashes remain unchanged.

@@ -1,0 +1,836 @@
+{
+  "circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+  "connectivity": [
+    {
+      "net": "GND",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_plated_hole_0",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_0",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_1",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_1",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_2",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_2",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_3",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_plated_hole_3",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_0",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_11",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_12",
+            "reference": "R2"
+          },
+          {
+            "pad": "pcb_smtpad_14",
+            "reference": "R1"
+          },
+          {
+            "pad": "pcb_smtpad_20",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_26",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_27",
+            "reference": "R3"
+          },
+          {
+            "pad": "pcb_smtpad_29",
+            "reference": "C2"
+          },
+          {
+            "pad": "pcb_smtpad_31",
+            "reference": "C1"
+          },
+          {
+            "pad": "pcb_smtpad_37",
+            "reference": "J2"
+          },
+          {
+            "pad": "pcb_smtpad_38",
+            "reference": "J2"
+          },
+          {
+            "pad": "pcb_smtpad_40",
+            "reference": "J2"
+          },
+          {
+            "pad": "pcb_smtpad_41",
+            "reference": "R8"
+          },
+          {
+            "pad": "pcb_smtpad_43",
+            "reference": "R9"
+          },
+          {
+            "pad": "pcb_smtpad_45",
+            "reference": "C8"
+          },
+          {
+            "pad": "pcb_smtpad_47",
+            "reference": "C9"
+          },
+          {
+            "pad": "pcb_smtpad_63",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_71",
+            "reference": "C5"
+          },
+          {
+            "pad": "pcb_smtpad_73",
+            "reference": "C10"
+          },
+          {
+            "pad": "pcb_smtpad_75",
+            "reference": "SW2"
+          },
+          {
+            "pad": "pcb_smtpad_76",
+            "reference": "SW2"
+          },
+          {
+            "pad": "pcb_smtpad_77",
+            "reference": "SW2"
+          },
+          {
+            "pad": "pcb_smtpad_80",
+            "reference": "SW3"
+          },
+          {
+            "pad": "pcb_smtpad_83",
+            "reference": "LED2"
+          },
+          {
+            "pad": "pcb_smtpad_85",
+            "reference": "J3"
+          },
+          {
+            "pad": "pcb_smtpad_86",
+            "reference": "J3"
+          },
+          {
+            "pad": "pcb_smtpad_88",
+            "reference": "J3"
+          },
+          {
+            "pad": "pcb_smtpad_91",
+            "reference": "SW4"
+          },
+          {
+            "pad": "pcb_smtpad_93",
+            "reference": "SW5"
+          },
+          {
+            "pad": "pcb_smtpad_94",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_95",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_96",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_97",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_98",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_104",
+            "reference": "Q1"
+          },
+          {
+            "pad": "pcb_smtpad_106",
+            "reference": "R6"
+          },
+          {
+            "pad": "pcb_smtpad_110",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_114",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_116",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_118",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_121",
+            "reference": "C11"
+          },
+          {
+            "pad": "pcb_smtpad_123",
+            "reference": "C12"
+          },
+          {
+            "pad": "pcb_smtpad_125",
+            "reference": "C13"
+          },
+          {
+            "pad": "pcb_smtpad_127",
+            "reference": "C3"
+          },
+          {
+            "pad": "pcb_smtpad_129",
+            "reference": "C4"
+          },
+          {
+            "pad": "pcb_smtpad_131",
+            "reference": "U4"
+          },
+          {
+            "pad": "pcb_smtpad_134",
+            "reference": "C6"
+          },
+          {
+            "pad": "pcb_smtpad_138",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_142",
+            "reference": "C7"
+          },
+          {
+            "pad": "pcb_smtpad_144",
+            "reference": "R10"
+          },
+          {
+            "pad": "pcb_smtpad_146",
+            "reference": "R11"
+          },
+          {
+            "pad": "pcb_smtpad_153",
+            "reference": "Q2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "USB5V",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_1",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_10",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_25",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_32",
+            "reference": "C1"
+          },
+          {
+            "pad": "pcb_smtpad_103",
+            "reference": "Q1"
+          },
+          {
+            "pad": "pcb_smtpad_107",
+            "reference": "R6"
+          },
+          {
+            "pad": "pcb_smtpad_136",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_143",
+            "reference": "C7"
+          },
+          {
+            "pad": "pcb_smtpad_149",
+            "reference": "R12"
+          },
+          {
+            "pad": "pcb_smtpad_151",
+            "reference": "R13"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "PROG",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_23",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_28",
+            "reference": "R3"
+          },
+          {
+            "pad": "pcb_smtpad_48",
+            "reference": "C9"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CHARGE_LED_A",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_33",
+            "reference": "R4"
+          },
+          {
+            "pad": "pcb_smtpad_36",
+            "reference": "LED1"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "EN",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_51",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_92",
+            "reference": "SW5"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "SHUTTER",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_54",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_78",
+            "reference": "SW2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "PAIR",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_55",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_79",
+            "reference": "SW3"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "V3",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_56",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_72",
+            "reference": "C5"
+          },
+          {
+            "pad": "pcb_smtpad_74",
+            "reference": "C10"
+          },
+          {
+            "pad": "pcb_smtpad_108",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_113",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_124",
+            "reference": "C12"
+          },
+          {
+            "pad": "pcb_smtpad_130",
+            "reference": "C4"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "STATUS_LED",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_60",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_82",
+            "reference": "R7"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "BOOT",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_66",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_90",
+            "reference": "SW4"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "UART_RX",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_69",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_87",
+            "reference": "J3"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "UART_TX",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_70",
+            "reference": "U1"
+          },
+          {
+            "pad": "pcb_smtpad_89",
+            "reference": "J3"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CC1",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_3",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_15",
+            "reference": "R1"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "STATUS_LED_A",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_81",
+            "reference": "R7"
+          },
+          {
+            "pad": "pcb_smtpad_84",
+            "reference": "LED2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "BATTERY_OK",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_100",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_132",
+            "reference": "U4"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "POWER_SWITCH",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_99",
+            "reference": "SW1"
+          },
+          {
+            "pad": "pcb_smtpad_102",
+            "reference": "R5"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "REG_EN",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_101",
+            "reference": "R5"
+          },
+          {
+            "pad": "pcb_smtpad_105",
+            "reference": "Q1"
+          },
+          {
+            "pad": "pcb_smtpad_117",
+            "reference": "U3"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "INDUCTOR_L2",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_109",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_119",
+            "reference": "L1"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "INDUCTOR_L1",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_111",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_120",
+            "reference": "L1"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "TEMP_SET_HOT",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_139",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_145",
+            "reference": "R10"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "TEMP_SET_COLD",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_137",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_147",
+            "reference": "R11"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "TEMP_OK",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_140",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_141",
+            "reference": "U5"
+          },
+          {
+            "pad": "pcb_smtpad_148",
+            "reference": "R12"
+          },
+          {
+            "pad": "pcb_smtpad_152",
+            "reference": "Q2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CC2",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_9",
+            "reference": "J1"
+          },
+          {
+            "pad": "pcb_smtpad_13",
+            "reference": "R2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CHARGER_SYS",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_16",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_46",
+            "reference": "C8"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "VBAT",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_17",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_30",
+            "reference": "C2"
+          },
+          {
+            "pad": "pcb_smtpad_34",
+            "reference": "R4"
+          },
+          {
+            "pad": "pcb_smtpad_39",
+            "reference": "J2"
+          },
+          {
+            "pad": "pcb_smtpad_112",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_115",
+            "reference": "U3"
+          },
+          {
+            "pad": "pcb_smtpad_122",
+            "reference": "C11"
+          },
+          {
+            "pad": "pcb_smtpad_126",
+            "reference": "C13"
+          },
+          {
+            "pad": "pcb_smtpad_128",
+            "reference": "C3"
+          },
+          {
+            "pad": "pcb_smtpad_133",
+            "reference": "U4"
+          },
+          {
+            "pad": "pcb_smtpad_135",
+            "reference": "C6"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CHARGE_STAT",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_18",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_35",
+            "reference": "LED1"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "CHARGE_DISABLE",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_19",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_150",
+            "reference": "R13"
+          },
+          {
+            "pad": "pcb_smtpad_154",
+            "reference": "Q2"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "TS_BIAS",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_21",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_44",
+            "reference": "R9"
+          }
+        ]
+      ],
+      "connected": true
+    },
+    {
+      "net": "VSET",
+      "terminal_copper_groups": [
+        [
+          {
+            "pad": "pcb_smtpad_22",
+            "reference": "U2"
+          },
+          {
+            "pad": "pcb_smtpad_42",
+            "reference": "R8"
+          }
+        ]
+      ],
+      "connected": true
+    }
+  ],
+  "rf_copper_intrusions": [],
+  "shutter_manufacturer_copper_intrusions": [],
+  "thermal": [
+    {
+      "reference": "U2",
+      "continuous_top_ground_plane_covers_ep_and_ground_pin": true,
+      "nearby_ground_vias": [
+        "pcb_via_13",
+        "pcb_via_18"
+      ]
+    },
+    {
+      "reference": "U3",
+      "continuous_top_ground_plane_covers_ep_and_ground_pin": true,
+      "nearby_ground_vias": [
+        "pcb_via_46",
+        "pcb_via_47",
+        "pcb_via_48",
+        "pcb_via_49"
+      ]
+    }
+  ],
+  "minimum_trace_width_mm": 0.15,
+  "source": "dist/index/circuit.json",
+  "limitations": [
+    "Thermal performance, RF, battery, enclosure and phone function require prototype measurements."
+  ]
+}

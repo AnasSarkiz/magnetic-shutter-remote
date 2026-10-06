@@ -1,0 +1,13 @@
+{
+  "observed_memory_limit_bytes": 34359738368,
+  "observed_cpu_max": "400000 100000",
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "observation_is_not_a_guaranteed_plan_allocation": true,
+  "heavy_jobs_serialized_through": "python3 cloud/run-heavy.py",
+  "node_heap_mib": 14336,
+  "network_policy_sha256": "b77b7a1f5493ef5e93cf894b32620c89fa954bb1e7433d3581280f90bd6abe92",
+  "network_policy_not_changed": true,
+  "browser_nss_write_permission": "Turn-scoped access to existing managed CA trust database",
+  "proxy_and_tls_verification_preserved": true,
+  "circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf"
+}

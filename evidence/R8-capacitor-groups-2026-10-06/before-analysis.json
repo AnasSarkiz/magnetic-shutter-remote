@@ -1,0 +1,50 @@
+{
+  "observed_utc": "2026-10-06T17:45:48.613204+00:00",
+  "repository_head": "fb0d18f448d014f4a4886ee50491b9d0cd5c750d",
+  "circuit_sha256": "eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b",
+  "cli_source_exit_code": 0,
+  "cli_json_exit_code": 0,
+  "actual_browser_issue_count": 3,
+  "actual_browser_issues": [
+    {
+      "heading": "1. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_1",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"V3\" ground=\"GND\" capacitorNames=\"C5, C10\" maxBodyGap=\"1.4\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3 and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-001.svg"
+    },
+    {
+      "heading": "2. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_2",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"VBAT\" ground=\"GND\" capacitorNames=\"C11, C13, C3\" maxBodyGap=\"2.1\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between VBAT and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-002.svg"
+    },
+    {
+      "heading": "3. Decoupling Capacitors Not Close TogetherSheet: schematic_sheet_2",
+      "description": "<DecouplingCapacitorsNotCloseTogether rail=\"V3\" ground=\"GND\" capacitorNames=\"C12, C4\" maxBodyGap=\"2.1\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3 and GND closer together in this schematic block. Preserve their net connections.\" />",
+      "svg": "issue-003.svg"
+    }
+  ],
+  "browser_analyzer": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200,
+      "path": "analyzer-response-0.js",
+      "sha256": "598a25590702cbce18554dcd23a7516411975d8e2e0de9c0e3a0918574fd2729",
+      "bytes": 725913
+    }
+  ],
+  "previous_browser_analyzer": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200,
+      "path": "analyzer-response-0.js",
+      "sha256": "62428d06ace175a8474161908505eb4e1a1e8ece649c93a3d423a643bcc242bc",
+      "bytes": 723024
+    }
+  ],
+  "previous_browser_issue_count": 0,
+  "analyzer_changed": true,
+  "tracked_files_changed": [],
+  "git_status": "## board/r8-doit-c3-prototype-20261005\n",
+  "tls_verification_enabled": true,
+  "inherited_proxy_preserved": true,
+  "trust_initialization": "Turn-scoped write permission to existing browser NSS database; managed CA was already trusted as OpenAI-nebula-dns. Certificate-import attempts returned existing duplicate certificate; did not add new CA. Successful actual browser run retained separately from failed trust initialization attempts."
+}
