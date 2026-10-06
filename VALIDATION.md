@@ -1,5 +1,10 @@
 # Current R8 0.3.9 schematic component guides — 2026-10-06
 
+Public **0.3.9-prototype** visibility/inventory/readback PASS:
+package public=true/latest 0.3.9-prototype; all 374 files and 29 critical
+text/binary reads match. [Actual receipt](evidence/R8-schematic-notes-2026-10-06/PUBLICATION.md).
+Hosted preview is `pending` at the recorded observation.
+
 Native schematic text explains all44 fitted components on three matching
 A4 guide pages, alongside the three original A4 circuit drawings. Each
 drawing points to its component guide. [Current review](evidence/R8-schematic-notes-2026-10-06/REVIEW.md).

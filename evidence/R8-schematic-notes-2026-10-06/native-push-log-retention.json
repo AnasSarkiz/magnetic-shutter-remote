@@ -1,0 +1,7 @@
+{
+  "raw_log_path": "/workspace/r8-schematic-notes-review/native-push039.log",
+  "raw_log_sha256": "28003b794aca8721130f18e033e496a4eb71af42f546bf4e03fbaa0bf2089df8",
+  "raw_log_bytes": 86919,
+  "only_omission": "Large public archive_base64 request payload; actual413 error/native fallback/upload results preserved.",
+  "review_log_sha256": "87ffc628d52885f2a0dd4e5b9b38a6252747d231e4ff285510812122a5366eb0"
+}
