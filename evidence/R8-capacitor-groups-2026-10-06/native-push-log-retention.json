@@ -1,0 +1,7 @@
+{
+  "original_raw_log": "/workspace/r8-capacitor-groups-review/native-push.log",
+  "raw_sha256": "85b0084c77e47fe17ca31c295e32ab5fa38cdc17d266b4a3df21eda395a6c8e6",
+  "raw_bytes": 28377,
+  "omitted_oversized_lines": [],
+  "actual_native_exit_code": 1
+}

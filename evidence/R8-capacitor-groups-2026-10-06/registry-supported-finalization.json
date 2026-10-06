@@ -1,0 +1,38 @@
+{
+  "observed_utc": "2026-10-06T18:55:44.134669+00:00",
+  "native_cli_exit_code": 1,
+  "package_name_with_version": "AnasSarkiz/magnetic-shutter-remote-r8@0.3.11-prototype",
+  "release_id": "7c27e666-2fce-483f-994a-be6c0eb8c827",
+  "native_failed_files": [
+    {
+      "path": "imports/TS24CA/TS24CA.step",
+      "sha256": "819eb92e92a4876d088c549a8cf5c939caaf645b2315e09e046b4911f737dbd2",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "tooling/vendor/props-r8-mask-style.tgz",
+      "sha256": "a9ed5b67fd680c2192ea065fe4f3f3125c4a0a96d83da040626bb29827afbd16",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "d0edc14f959881ef282091f5eaa945917da2e336f865bfe8dae6ed3e03e4ddcc",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    }
+  ],
+  "exact_inventory_count_before_ready": 456,
+  "anonymous_critical_preflight_passed_before_ready": true,
+  "official_ready_to_build_update_ok": true,
+  "no_file_upload_replacement_or_custom_upload_endpoint": true,
+  "no_secret_file_read_or_new_credentials": true,
+  "official_update_route_auth": "none",
+  "official_api_sources": [
+    {
+      "url": "https://github.com/tscircuit/api.tscircuit.com/blob/main/routes/package_releases/update.ts",
+      "sha256": "4ae89408eb9837ffbf2ac993e9f493cc5cadd299094e48def43eab456954f3b8"
+    }
+  ]
+}

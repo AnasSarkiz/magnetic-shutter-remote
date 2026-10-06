@@ -1,0 +1,39 @@
+{
+  "observed_utc": "2026-10-06T18:39:49.207702+00:00",
+  "public_repository": true,
+  "source_artifact_commit": "ab0f1af53ddd2307fbe269fca3903b5e20a16cd2",
+  "public_reads": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "be838b38271853f1e1f71e3020c0c3838db178491db9aa40cc12e185500e61eb",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "c4d3af999283ae53be8e73702daf3f220c8081b97e563dcf489c5f82a474bbd0",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "evidence/R8-capacitor-groups-2026-10-06/final-ui/review.json",
+      "sha256": "5fbff4b1bec36f79d4c26031081192e9006a3fc5ef26f96ea04ee3e2a4920071",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "evidence/R8-capacitor-groups-2026-10-06/pcb-preservation.json",
+      "sha256": "0a489ee36cee2badcfe43d53f408b8b4636b8a58128607faadcc10482df43cd9",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "evidence/R8-capacitor-groups-2026-10-06/REVIEW.md",
+      "sha256": "904b8030c7e506d8e3951231529667810ecf2a97e5b883fc3074110ce48b3090",
+      "anonymous_public_bytes_match": true
+    }
+  ],
+  "origin_head_matches": true,
+  "frozen_main_unchanged": true
+}

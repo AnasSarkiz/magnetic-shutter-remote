@@ -1,5 +1,10 @@
 # Current R8 0.3.11 — schematic capacitor groups, 2026-10-06
 
+Public **0.3.11-prototype** inventory/visibility/readback PASS: all
+456 files and 39 critical anonymous reads match.
+[Actual publication receipt](evidence/R8-capacitor-groups-2026-10-06/PUBLICATION.md).
+Hosted preview is `pending` at the recorded observation.
+
 C10/C3/C4 native schematic coordinates bring all three reported capacitor
 groups within the latest browser analyzer's recommended spacing. Actual
 browser and pinned CLI style analyses pass zero issues. All 1,451 physical/
