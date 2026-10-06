@@ -1,0 +1,32 @@
+{
+  "observed_utc": "2026-10-06T14:27:33.327059+00:00",
+  "commit": "74744f9f20d6ce7e992b1d019e2a0742d8d33ea0",
+  "repository_public": true,
+  "anonymous_readback": [
+    {
+      "path": "src/functional-markings.tsx",
+      "sha256": "9022b5dc23d74f872acfb8157b5da98fe32eb84d8552aeeed35236bd21f1028d",
+      "matches": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "860ed8cf8ce84815abe4265c0c505dfb8c63ec1646c48180da5bd0d9ac9263d3",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-uart-silkscreen-2026-10-06/REVIEW.md",
+      "sha256": "8ef6d684a051ca74b4a4b99c68ef7782b6aa75d39ba0f3d154467af7253a9493",
+      "matches": true
+    },
+    {
+      "path": "fabrication/R8-uart-silkscreen-2026-10-06/gerbers/B_SilkScreen.gbr",
+      "sha256": "2882b8e457bdd0338f926d9ff3f99db1d1e2ae78b7841ad99f16818a7670c85d",
+      "matches": true
+    }
+  ]
+}
