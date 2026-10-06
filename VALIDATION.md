@@ -1,5 +1,10 @@
 # Current R8 0.3.12 — bottom silkscreen cleanup, 2026-10-06
 
+Public **0.3.12-prototype** inventory/visibility/readback PASS:
+all 356 files and 42 critical anonymous byte reads match.
+[Actual publication receipt](evidence/R8-bottom-silk-2026-10-06/PUBLICATION.md).
+Hosted preview is `pending` at the recorded observation.
+
 The three requested bottom-side labels are removed from native source and
 the current B_SilkScreen Gerber has zero objects. All 2,072 non-artwork/
 non-metadata elements, PCB copper/placement/connections and all schematic

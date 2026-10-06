@@ -1,0 +1,8 @@
+{
+  "raw_log_sha256": "c338ff05a55128804cb8849021441906d867fea5f0ee0774b0f3c9e8e4e6cfcc",
+  "raw_log_bytes": 22280,
+  "raw_log_retained_outside_repository": "/workspace/r8-bottom-silk-review/native-push.log",
+  "public_log_sha256": "c338ff05a55128804cb8849021441906d867fea5f0ee0774b0f3c9e8e4e6cfcc",
+  "omitted_lines": [],
+  "native_exit_code": 1
+}

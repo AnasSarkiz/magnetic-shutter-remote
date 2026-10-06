@@ -1,0 +1,44 @@
+{
+  "observed_utc": "2026-10-06T20:00:48.478112+00:00",
+  "public_repository": true,
+  "source_artifact_commit": "6ccfece3f7c60031c6a773aec2181fcaf94433c4",
+  "public_reads": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "src/functional-markings.tsx",
+      "sha256": "ad047fff1965ba2981e60f5aeab89478d07bbee5fad892836eace4d2e26d33bf",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "scripts/review-r8-process.py",
+      "sha256": "e8ce17daac3d33ccb31abeb19a01781c7b0071f79db51dc85fdae9e1790e5fed",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "tests/cam/test_process_metrics.py",
+      "sha256": "d00ac2519053ce4c2b220f3d624886858893ae5ffcd6fe0c4eec5ee1a634f17a",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "3472979cde34eba216866feb3e971c36b083b45a1bdd40977005ecdcf07a8762",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "evidence/R8-bottom-silk-2026-10-06/REVIEW.md",
+      "sha256": "a4384aa3557fc9ddf4442073b22f73dc59e17c047d3001955eb65fb13dad3534",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "fabrication/R8-bottom-silk-2026-10-06/gerbers/B_SilkScreen.gbr",
+      "sha256": "4e6312e6e7c81bae4833924f0006cfbe490e24b9a6b2bae43c4aabe91ec23e99",
+      "anonymous_public_bytes_match": true
+    }
+  ],
+  "origin_head_matches": true,
+  "frozen_main_unchanged": true
+}
