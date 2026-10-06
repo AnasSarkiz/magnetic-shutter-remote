@@ -1,5 +1,10 @@
 # Current R8 0.3.7 silkscreen update — 2026-10-06
 
+Public **0.3.7-prototype** native publication and anonymous readback pass:
+package public=true, all329 files match,18 critical text/binary reads match.
+[Actual publication/visibility receipt](evidence/R8-uart-silkscreen-2026-10-06/PUBLICATION.md).
+Hosted worker preview remains pending at the recorded observation.
+
 The UART legend now reads **UART / 1:RX 2:GND 3:TX**; the requested
 3V3 wording is removed. Programming still uses the correct 3.3 V signal
 levels, direct three-pin JST and manual BOOT/RESET; no power pin is added.
