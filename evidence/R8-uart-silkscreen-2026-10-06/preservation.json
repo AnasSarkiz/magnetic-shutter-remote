@@ -1,0 +1,18 @@
+{
+  "comparison_commit": "62ce3a9b304e68141f8d0154354459ba367e38e6",
+  "tracked_prior_files": 3209,
+  "unchanged_prior_file_count": 3200,
+  "authorized_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/functional-markings.tsx",
+    "tscircuit.config.json"
+  ],
+  "unexpected_prior_changes": [],
+  "baseline_import_prior_evidence_prior_fabrication_firmware_lockfile_toolchain_memory_guard_unchanged": true
+}

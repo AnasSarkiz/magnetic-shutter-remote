@@ -52,7 +52,7 @@ export function FunctionalMarkings() {
 				fontSize={1.8}
 			/>
 			<silkscreentext
-				text="UART 3V3 / 1:RX 2:GND 3:TX"
+				text="UART / 1:RX 2:GND 3:TX"
 				pcbX={0}
 				pcbY={1}
 				layer="bottom"

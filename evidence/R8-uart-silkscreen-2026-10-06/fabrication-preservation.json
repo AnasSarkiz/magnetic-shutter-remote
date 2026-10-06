@@ -1,0 +1,77 @@
+{
+  "circuit_sha256": "8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd",
+  "changed_gerber_features": [
+    "B_SilkScreen.gbr"
+  ],
+  "all_other_eleven_native_files_equal_except_generated_creation_date_headers": true,
+  "ignored_header_regex_for_read_only_comparison": [
+    "^%TF\\.CreationDate,.*\\*%$",
+    "^G04 Created by tscircuit \\(builder\\) date .*\\*$",
+    "^; DRILL file \\{tscircuit\\} date .*$",
+    "^; #@! TF\\.CreationDate,.*$"
+  ],
+  "native_exports_not_modified": true,
+  "bom_and_cpl_exactly_equal": true,
+  "file_hashes": {
+    "B_Cu.gbr": {
+      "previous_sha256": "6bc1932ea9dfad15e03cbae95ff8f92a438a4d13a6c4683d276bbf256595f41d",
+      "current_sha256": "3ae76cf8a57706d248e99f5e6f1373f9c11439a83392b6a57404478a160b1123",
+      "equal_except_creation_date_header_lines": true
+    },
+    "B_Mask.gbr": {
+      "previous_sha256": "08b8442b5e45129a8202af465d50ca40f8e7650d7c454f366244023a4058904d",
+      "current_sha256": "273a7deb4d5d15c8511494821da4224664d4d98f78f5ae547a25d5ef6634538e",
+      "equal_except_creation_date_header_lines": true
+    },
+    "B_Paste.gbr": {
+      "previous_sha256": "2a667a3eb8aebda83ccc774d27002a25974893ad86b5f6814b9f733a05c2e067",
+      "current_sha256": "b4ec9e788706cf151cdee63386df5952688a90952ee2b9e3e01e52020e5132dc",
+      "equal_except_creation_date_header_lines": true
+    },
+    "B_SilkScreen.gbr": {
+      "previous_sha256": "77336fe8d14d8fb86333e2bb84294a44383c6fa4d61fe8873b886ad521751e36",
+      "current_sha256": "2882b8e457bdd0338f926d9ff3f99db1d1e2ae78b7841ad99f16818a7670c85d",
+      "equal_except_creation_date_header_lines": false
+    },
+    "Edge_Cuts.gbr": {
+      "previous_sha256": "be9916fc1d1529845424cde62ed9fdc8bc91b39566751627e49026567a8c80bd",
+      "current_sha256": "2e627a77d627e2be92b99098aaf9aabb0e4ec6f162730161291e60343277c95f",
+      "equal_except_creation_date_header_lines": true
+    },
+    "F_Cu.gbr": {
+      "previous_sha256": "720ae929ed8439d6eb4b457708cca2932e5603bc2b61911838ad44257163a480",
+      "current_sha256": "85be72635dbd5b3e4407e8494c593a194922a8e037a64e0e7a525ec4bb1ebc49",
+      "equal_except_creation_date_header_lines": true
+    },
+    "F_Fab.gbr": {
+      "previous_sha256": "53e03051a96cba3651f820a42d10d3878ed7204f4743a09fba697dac29f8540f",
+      "current_sha256": "807071f417a0c51d5b0b3b382c27cdaa178b69aece53f21598633fec2513e930",
+      "equal_except_creation_date_header_lines": true
+    },
+    "F_Mask.gbr": {
+      "previous_sha256": "118f9996597dfb21e1f5c6bb36819a9ea1446b71ce4ad9077a72399540bcd106",
+      "current_sha256": "672fb6f1c3c5b94009bbc70ff842ddabf751522bebf412f6107d178563b4315c",
+      "equal_except_creation_date_header_lines": true
+    },
+    "F_Paste.gbr": {
+      "previous_sha256": "582ea2eb18d5090bd20d2db9206939d3555acf916c3237b1cc825a5c461c1960",
+      "current_sha256": "be2dc52fc331aa78a4ef73016a7390ba7eb03c83a7baf114af70bf128465e551",
+      "equal_except_creation_date_header_lines": true
+    },
+    "F_SilkScreen.gbr": {
+      "previous_sha256": "5e3848b23b97218941deeeea61c39cb0cc9cbaa1f282fadd3a6e4b196b28d235",
+      "current_sha256": "eb0e3280d7952b7e536144a630cb6e1eb27695a3f2affdebaa1f9c03064bbe14",
+      "equal_except_creation_date_header_lines": true
+    },
+    "drill-L1-L2.drl": {
+      "previous_sha256": "db3dad16473fc3e5820abcba408fa09649c191b49db7c8ee688fabbdbcbc03ed",
+      "current_sha256": "f7e4f6660000fa82b4e10530a848f2470a82b61b01f8daa88211eb0993297cb0",
+      "equal_except_creation_date_header_lines": true
+    },
+    "drill_npth.drl": {
+      "previous_sha256": "86bff0572d9596565bc2163494fd41bf2bc759b7aaca70c621962df96c956f68",
+      "current_sha256": "ff081abe8e6af7651447efd3708153a5e1a9fdccfd9895a93fd00b185c466e74",
+      "equal_except_creation_date_header_lines": true
+    }
+  }
+}

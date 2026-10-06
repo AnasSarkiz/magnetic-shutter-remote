@@ -1,3 +1,20 @@
+# Current R8 0.3.7 silkscreen update — 2026-10-06
+
+The UART legend now reads **UART / 1:RX 2:GND 3:TX**; the requested
+3V3 wording is removed. Programming still uses the correct 3.3 V signal
+levels, direct three-pin JST and manual BOOT/RESET; no power pin is added.
+Electrical components, placements, nets and copper remain exactly unchanged.
+Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths/current budgets
+and native fabrication/silkscreen readback pass; light smoke38 Python+2 Bun
+tests/13 assertions passes. Only bottom silkscreen artwork changes.
+Current Circuit JSON SHA256: `8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd`.
+[Current review](../evidence/R8-uart-silkscreen-2026-10-06/REVIEW.md).
+Public publication receipt is recorded separately after remote verification.
+Supplier approval, physical operation and full MagSafe fit remain pending.
+Missing `3V3` metadata remains a separate importer issue.
+
+## Prior review/publication records — preserved history
+
 # Actual hosted continuation — 2026-10-05
 
 Published public **0.3.6-prototype**: native367-file upload and22 critical

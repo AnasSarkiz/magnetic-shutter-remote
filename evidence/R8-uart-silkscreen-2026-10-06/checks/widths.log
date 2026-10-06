@@ -1,0 +1,51 @@
+{
+  "started_utc": "20261006T142151805886Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-trace-widths.py",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-uart-silkscreen-2026-10-06/trace-width-review.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+164 physical tracks reviewed; 0 undersized tracks
+{
+  "started_utc": "20261006T142151805886Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-r8-trace-widths.py",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-uart-silkscreen-2026-10-06/trace-width-review.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T14:21:52.486769+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 61524,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T142151805886Z.log"
+}

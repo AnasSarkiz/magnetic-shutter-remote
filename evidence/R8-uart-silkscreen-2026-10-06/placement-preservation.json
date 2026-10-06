@@ -1,0 +1,362 @@
+{
+  "routed_sha256": "8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd",
+  "unrouted_sha256": "7095479acebc0384e21cb4a7c69a880a583b009e9446e154c08078d020b04d5a",
+  "fitted_component_poses_identical": true,
+  "fitted_references": 44,
+  "unrouted_trace_via_error_count": 0,
+  "poses": {
+    "J1": {
+      "center": {
+        "x": 0,
+        "y": 24.5101989
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "R2": {
+      "center": {
+        "x": 0,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R1": {
+      "center": {
+        "x": -4,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "U2": {
+      "center": {
+        "x": 0,
+        "y": 13
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R3": {
+      "center": {
+        "x": 5.5,
+        "y": 9
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C2": {
+      "center": {
+        "x": 4.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C1": {
+      "center": {
+        "x": 8,
+        "y": 20
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R4": {
+      "center": {
+        "x": 8,
+        "y": 23
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "LED1": {
+      "center": {
+        "x": 8,
+        "y": 26
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "J2": {
+      "center": {
+        "x": -18,
+        "y": 13
+      },
+      "rotation": 270,
+      "layer": "top"
+    },
+    "R8": {
+      "center": {
+        "x": -5,
+        "y": 16
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "R9": {
+      "center": {
+        "x": 1,
+        "y": 17
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C8": {
+      "center": {
+        "x": -5.5,
+        "y": 13.4
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "C9": {
+      "center": {
+        "x": -5,
+        "y": 11
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "U1": {
+      "center": {
+        "x": 0,
+        "y": -10.5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "C5": {
+      "center": {
+        "x": 11,
+        "y": -8
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C10": {
+      "center": {
+        "x": 12,
+        "y": -4.5
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "SW2": {
+      "center": {
+        "x": 20,
+        "y": -8.5
+      },
+      "rotation": 270,
+      "layer": "top"
+    },
+    "SW3": {
+      "center": {
+        "x": 18,
+        "y": -3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R7": {
+      "center": {
+        "x": -15,
+        "y": -5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "LED2": {
+      "center": {
+        "x": -19,
+        "y": -5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "J3": {
+      "center": {
+        "x": 13.2,
+        "y": 16
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "SW4": {
+      "center": {
+        "x": -19,
+        "y": -9
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "SW5": {
+      "center": {
+        "x": 14.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "SW1": {
+      "center": {
+        "x": 19,
+        "y": 5
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "R5": {
+      "center": {
+        "x": 4,
+        "y": 3
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "Q1": {
+      "center": {
+        "x": -4,
+        "y": 1
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R6": {
+      "center": {
+        "x": 0,
+        "y": 1.5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "U3": {
+      "center": {
+        "x": -10,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "L1": {
+      "center": {
+        "x": -14,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "C11": {
+      "center": {
+        "x": -14,
+        "y": -1
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "C12": {
+      "center": {
+        "x": -10,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C13": {
+      "center": {
+        "x": -7,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "C3": {
+      "center": {
+        "x": -10,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C4": {
+      "center": {
+        "x": -10,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "U4": {
+      "center": {
+        "x": -18,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C6": {
+      "center": {
+        "x": -18,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "U5": {
+      "center": {
+        "x": 0,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C7": {
+      "center": {
+        "x": 1.5,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R10": {
+      "center": {
+        "x": -4.5,
+        "y": 6
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "R11": {
+      "center": {
+        "x": 4.5,
+        "y": 5.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R12": {
+      "center": {
+        "x": 9.5,
+        "y": 10
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "R13": {
+      "center": {
+        "x": 8,
+        "y": 12
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "Q2": {
+      "center": {
+        "x": 8,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    }
+  },
+  "reference_review": "Qualified prior unrouted reference; all component poses remain byte-identical as proved by geometry-preservation.json."
+}

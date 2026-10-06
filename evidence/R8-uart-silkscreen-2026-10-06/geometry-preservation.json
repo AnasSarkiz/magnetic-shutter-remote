@@ -1,0 +1,98 @@
+{
+  "source_commit_before": "62ce3a9b304e68141f8d0154354459ba367e38e6",
+  "circuit_sha256": "8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd",
+  "previous_circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "changed_elements": [
+    {
+      "index": 941,
+      "before": {
+        "type": "pcb_silkscreen_text",
+        "pcb_silkscreen_text_id": "pcb_silkscreen_text_7",
+        "anchor_alignment": "center",
+        "anchor_position": {
+          "x": 0,
+          "y": 1
+        },
+        "font": "tscircuit2024",
+        "font_size": 1.8,
+        "layer": "bottom",
+        "text": "UART 3V3 / 1:RX 2:GND 3:TX",
+        "ccw_rotation": 0,
+        "pcb_board_id": "pcb_board_0",
+        "subcircuit_id": "subcircuit_source_group_16"
+      },
+      "after": {
+        "type": "pcb_silkscreen_text",
+        "pcb_silkscreen_text_id": "pcb_silkscreen_text_7",
+        "anchor_alignment": "center",
+        "anchor_position": {
+          "x": 0,
+          "y": 1
+        },
+        "font": "tscircuit2024",
+        "font_size": 1.8,
+        "layer": "bottom",
+        "text": "UART / 1:RX 2:GND 3:TX",
+        "ccw_rotation": 0,
+        "pcb_board_id": "pcb_board_0",
+        "subcircuit_id": "subcircuit_source_group_16"
+      }
+    },
+    {
+      "index": 1915,
+      "before": {
+        "type": "source_project_metadata",
+        "source_filesystem_md5_hash": "6b8cf700cb786b497afbf150e548a783"
+      },
+      "after": {
+        "type": "source_project_metadata",
+        "source_filesystem_md5_hash": "20893c97dc777e89b62e8f6c080cfeda"
+      }
+    }
+  ],
+  "all_electrical_placement_copper_and_other_silk_elements_exactly_equal": true,
+  "source_metadata_changes_expected_after_source_edit": true,
+  "element_counts": {
+    "source_group": 17,
+    "schematic_sheet": 3,
+    "source_net": 29,
+    "source_port": 159,
+    "source_component": 44,
+    "source_board": 1,
+    "source_refdes_convention_warning": 2,
+    "source_component_internal_connection": 2,
+    "source_trace": 136,
+    "schematic_component": 44,
+    "schematic_text": 65,
+    "schematic_group": 17,
+    "schematic_port": 154,
+    "schematic_line": 10,
+    "schematic_symbol": 3,
+    "schematic_path": 39,
+    "schematic_rect": 1,
+    "schematic_trace": 93,
+    "schematic_net_label": 54,
+    "pcb_component": 44,
+    "pcb_group": 16,
+    "pcb_board": 1,
+    "pcb_silkscreen_text": 10,
+    "pcb_plated_hole": 4,
+    "pcb_smtpad": 155,
+    "pcb_solder_paste": 159,
+    "pcb_fabrication_note_path": 19,
+    "pcb_courtyard_outline": 44,
+    "pcb_breakout_point": 78,
+    "pcb_hole": 8,
+    "pcb_keepout": 7,
+    "pcb_port": 159,
+    "pcb_fabrication_note_text": 1,
+    "cad_component": 44,
+    "pcb_connector_not_in_accessible_orientation_warning": 1,
+    "pcb_debug_object": 20,
+    "pcb_trace": 165,
+    "pcb_via": 97,
+    "pcb_copper_pour": 8,
+    "source_no_power_pin_defined_warning": 2,
+    "source_project_metadata": 1
+  }
+}

@@ -17475,7 +17475,7 @@
     "font": "tscircuit2024",
     "font_size": 1.8,
     "layer": "bottom",
-    "text": "UART 3V3 / 1:RX 2:GND 3:TX",
+    "text": "UART / 1:RX 2:GND 3:TX",
     "ccw_rotation": 0,
     "pcb_board_id": "pcb_board_0",
     "subcircuit_id": "subcircuit_source_group_16"
@@ -64696,6 +64696,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "6b8cf700cb786b497afbf150e548a783"
+    "source_filesystem_md5_hash": "20893c97dc777e89b62e8f6c080cfeda"
   }
 ]
