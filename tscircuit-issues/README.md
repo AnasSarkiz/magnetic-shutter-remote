@@ -140,4 +140,4 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 
 - [096 — Selected radio stock needs confirmation](096-selected-radio-stock-needs-confirmation.md): C19949072 raw fields remain3/66; client semantics/allocation are unconfirmed. This does not establish a shortage or PCB defect. All25 exact parts are listed for SMT; stock is not reserved.
 
-- [097 — Registry release predates corrected power review](097-registry-release-predates-corrected-power-review.md): project publication gap;0.3.5 contains the older±20% audit. Package0.3.6-prototype update prepared with corrected±30% audit/current evidence; actual upload/readback required for closure. PCB remains hardware0.3.5.
+- [097 — Registry release predates corrected power review](097-registry-release-predates-corrected-power-review.md): project publication gap;0.3.5 contains the older±20% audit. Public0.3.6-prototype native367-file upload/22 critical readbacks pass, with corrected±30% audit/current evidence; resolved. PCB remains hardware0.3.5.

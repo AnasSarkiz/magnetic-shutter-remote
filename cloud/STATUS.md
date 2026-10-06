@@ -1,5 +1,10 @@
 # Actual hosted continuation — 2026-10-05
 
+Published public **0.3.6-prototype**: native367-file upload and22 critical
+anonymous text/binary matches pass, including exact Circuit JSON and UART UF2.
+[Actual publication receipt](../evidence/R8-issue-resolution-2026-10-06/PUBLICATION.md).
+Hosted preview remains pending; supplier approval/physical/MagSafe fit stay open.
+
 Latest [issue resolution](../evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
 pinned standard JST programmer0.8.0 UF2/ELF build and USB/UF2 validation pass.
 Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths and corrected

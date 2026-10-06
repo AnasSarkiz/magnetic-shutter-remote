@@ -1,0 +1,44 @@
+{
+  "observed_utc": "2026-10-06T13:11:22.430717+00:00",
+  "commit": "aa9fab0a1f0dc94fe630c4015fd2ec33dc2d082a",
+  "repository_public": true,
+  "default_branch": "main",
+  "readback": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+      "local_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+      "matches": true
+    },
+    {
+      "path": "scripts/review-r8-power.py",
+      "sha256": "a2ded3b3893e53cbfe7816761fbd7c0914e9acff5d821c0abe59efe6929bab9d",
+      "local_sha256": "a2ded3b3893e53cbfe7816761fbd7c0914e9acff5d821c0abe59efe6929bab9d",
+      "matches": true
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "sha256": "67906d030a18b2f802958b6c4606f6b5b6db2aefa692337c23e45424a366b3b3",
+      "local_sha256": "67906d030a18b2f802958b6c4606f6b5b6db2aefa692337c23e45424a366b3b3",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "c2c931ebdbb0735de355c7f63c0e0b5f6c07982fc7277a3d722a122fe2fbaeb2",
+      "local_sha256": "c2c931ebdbb0735de355c7f63c0e0b5f6c07982fc7277a3d722a122fe2fbaeb2",
+      "matches": true
+    },
+    {
+      "path": "firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.uf2",
+      "sha256": "8d287101599647dbe25bf876d6c690373dfc1da843692b06eaf88d1436128ebd",
+      "local_sha256": "8d287101599647dbe25bf876d6c690373dfc1da843692b06eaf88d1436128ebd",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-issue-resolution-2026-10-06/REVIEW.md",
+      "sha256": "0526042008e5fbaacb46c1e1e83691bfc982296859c688d68a05d611fc7e3bdb",
+      "local_sha256": "0526042008e5fbaacb46c1e1e83691bfc982296859c688d68a05d611fc7e3bdb",
+      "matches": true
+    }
+  ]
+}
