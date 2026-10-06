@@ -1,0 +1,18 @@
+{
+  "comparison_commit": "bb29d8e3c12947e9cc870039281b1ce138427350",
+  "prior_tracked_files": 3326,
+  "unchanged_prior_files": 3317,
+  "authorized_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/remote-circuit.tsx",
+    "tscircuit.config.json"
+  ],
+  "unexpected_prior_changes": [],
+  "imports_baselines_prior_evidence_fabrication_firmware_lock_toolchain_and_guards_unchanged": true
+}

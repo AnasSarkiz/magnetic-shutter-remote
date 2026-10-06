@@ -1,0 +1,9 @@
+{
+  "circuit_sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
+  "previous_circuit_sha256": "8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd",
+  "source_commit_before": "bb29d8e3c12947e9cc870039281b1ce138427350",
+  "all_non_schematic_elements_exactly_equal": true,
+  "compared_non_schematic_elements": 1432,
+  "excluded_only_schematic_elements_and_source_hash_metadata": true,
+  "electrical_components_nets_traces_copper_pcb_silk_and_placement_unchanged": true
+}

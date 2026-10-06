@@ -1,0 +1,11 @@
+Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json
+Checked 57 files in 14ms. No fixes applied.
+$ tsc --noEmit
+tests/r8-schematic-notes.test.ts(19,50): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(expected: ("SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13")[]): void', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type '("SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13")[]'.
+      Type 'string' is not assignable to type '"SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13"'.
+  Overload 2 of 2, '(expected: NoInfer<("SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13")[]>): void', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type '("SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13")[]'.
+      Type 'string' is not assignable to type '"SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13"'.

@@ -1,0 +1,269 @@
+{
+  "build": [
+    "python3",
+    "cloud/run-heavy.py",
+    "--",
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "checks": [
+    {
+      "name": "smoke",
+      "command": [
+        "bash",
+        "cloud/smoke.sh"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/smoke.log"
+    },
+    {
+      "name": "notes-coverage",
+      "command": [
+        "bun",
+        "test",
+        "./tests/r8-schematic-notes.test.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/notes-coverage-explicit.log"
+    },
+    {
+      "name": "contracts",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "bun",
+        "scripts/audit-r8-circuit.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/contracts.log"
+    },
+    {
+      "name": "native",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "bun",
+        "scripts/check-r8-native.ts",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/final-native-checks.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/native.log"
+    },
+    {
+      "name": "shorts",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tsci",
+        "check",
+        "shorts",
+        "dist/index/circuit.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/shorts.log"
+    },
+    {
+      "name": "electrical-contract",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "python3",
+        "scripts/review-r8-electrical-contract.py",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/electrical-contract.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/electrical-contract.log"
+    },
+    {
+      "name": "manufacturing",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/manufacturing-audit.py",
+        "--trace-geometry",
+        "gerber",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/final-manufacturing.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/manufacturing.log"
+    },
+    {
+      "name": "connectivity",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-r8-connectivity.py",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/physical-connectivity.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/connectivity.log"
+    },
+    {
+      "name": "widths",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-r8-trace-widths.py",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/trace-width-review.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/widths.log"
+    },
+    {
+      "name": "power",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-r8-power.py",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/power-path-measurements.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/power.log"
+    },
+    {
+      "name": "gerbers",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "bun",
+        "scripts/export-gerbers.ts",
+        "dist/index/circuit.json",
+        "fabrication/R8-schematic-notes-2026-10-06/gerbers"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/gerbers.log"
+    },
+    {
+      "name": "assembly",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "bun",
+        "scripts/export-assembly.ts",
+        "fabrication/R8-schematic-notes-2026-10-06",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/assembly.log"
+    },
+    {
+      "name": "archive",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "python3",
+        "scripts/export-r8-gerber-zip.py",
+        "fabrication/R8-schematic-notes-2026-10-06/gerbers",
+        "fabrication/R8-schematic-notes-2026-10-06/R8-schematic-notes-Gerbers.zip"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/archive.log"
+    },
+    {
+      "name": "readback",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-r8-exports.py",
+        "fabrication/R8-schematic-notes-2026-10-06/R8-schematic-notes-Gerbers.zip",
+        "dist/index/circuit.json",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/final-readback"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/readback.log"
+    },
+    {
+      "name": "process",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-r8-process.py",
+        "fabrication/R8-schematic-notes-2026-10-06/R8-schematic-notes-Gerbers.zip",
+        "dist/index/circuit.json",
+        "--output",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06/final-process"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/process.log"
+    },
+    {
+      "name": "visual",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "bun",
+        "scripts/render-r8-review.ts",
+        "/workspace/magnetic-shutter-remote/evidence/R8-schematic-notes-2026-10-06"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/visual.log"
+    },
+    {
+      "name": "snapshot-update",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tsci",
+        "snapshot",
+        "index.circuit.tsx",
+        "--update"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/snapshot-update.log"
+    },
+    {
+      "name": "snapshot-check",
+      "command": [
+        "python3",
+        "cloud/run-heavy.py",
+        "--",
+        "tsci",
+        "snapshot",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/snapshot-check.log"
+    },
+    {
+      "name": "final-format",
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "log": "evidence/R8-schematic-notes-2026-10-06/checks/final-format.log"
+    }
+  ]
+}

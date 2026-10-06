@@ -1,0 +1,8 @@
+Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json
+Checked 57 files in 16ms. No fixes applied.
+$ tsc --noEmit
+tests/r8-schematic-notes.test.ts(19,29): error TS2550: Property 'toSorted' does not exist on type '("SW2" | "Q1" | "Q2" | "SW1" | "U4" | "U1" | "U3" | "J2" | "J3" | "L1" | "R3" | "J1" | "R1" | "R2" | "U2" | "C1" | "C2" | "R4" | "LED1" | "R8" | "R9" | "C8" | "C9" | "C5" | "C10" | "SW3" | ... 17 more ... | "R13")[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+tests/r8-schematic-notes.test.ts(19,66): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+tests/r8-schematic-notes.test.ts(38,49): error TS2339: Property 'text' does not exist on type '{ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; } | { type: "source_trace"; source_trace_id: string; ... 8 more ...; min_trace_thickness?: number | undefined; } | ... 246 more ... | { ...; }'.
+  Property 'text' does not exist on type '{ message: string; type: "source_runtime_error"; error_type: "source_runtime_error"; source_runtime_error_id: string; phase_name?: string | undefined; }'.

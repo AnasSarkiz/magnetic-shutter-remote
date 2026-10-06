@@ -1,0 +1,21 @@
+[
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-schematic-notes-2026-10-06/checks/smoke.log"
+  },
+  {
+    "name": "notes-coverage",
+    "command": [
+      "bun",
+      "test",
+      "tests/r8-schematic-notes.test.ts"
+    ],
+    "exit_code": 1,
+    "log": "evidence/R8-schematic-notes-2026-10-06/checks/notes-coverage.log"
+  }
+]

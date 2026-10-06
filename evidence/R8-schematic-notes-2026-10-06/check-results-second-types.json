@@ -1,0 +1,11 @@
+[
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 2,
+    "log": "evidence/R8-schematic-notes-2026-10-06/checks/smoke.log"
+  }
+]

@@ -1,3 +1,19 @@
+# Current R8 0.3.8 schematic component guides — 2026-10-06
+
+Native schematic text explains all44 fitted components on three matching
+A4 guide pages, alongside the three original A4 circuit drawings. Each
+drawing points to its component guide. [Current review](evidence/R8-schematic-notes-2026-10-06/REVIEW.md).
+Current Circuit JSON SHA256: `a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6`.
+All1432 non-schematic elements/PCB artwork are unchanged; fresh0 native
+DRC errors/shorts,29/29 physical nets,164 widths/current budgets and full
+fabrication/process readback pass. All six A4 pages visually inspected.
+Light smoke38 Python+2 Bun/13 assertions and new2 Bun/188 annotation
+assertions pass. Public publication receipt is recorded separately.
+Supplier approval, physical operation and full MagSafe fit remain pending.
+Missing `3V3` metadata remains a separate importer issue.
+
+## Prior review/publication records — preserved history
+
 # Current R8 0.3.7 silkscreen update — 2026-10-06
 
 The UART legend now reads **UART / 1:RX 2:GND 3:TX**; the requested
