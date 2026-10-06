@@ -25,7 +25,7 @@ export const r8RadioGroundPaths: FanoutTracePath[] = [
 				y: -4.375075749999999,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

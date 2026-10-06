@@ -1,5 +1,5 @@
 import type { FanoutTracePath } from "@tscircuit/core";
-// Native USB routing; supplier lands and qualified via sizes are unchanged.
+// Native USB routing retains supplier lands and uses 0.30/0.45 mm through vias.
 export const usbEscapePaths: FanoutTracePath[] = [
 	{
 		connection: "J1.pin14",
@@ -20,7 +20,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 			},
 			// Join the existing USB ground via, without adding a drill near shell slots.
 			{ route_type: "wire", x: -6, y: 20.1, width: 0.15, layer: "bottom" },
-			{ route_type: "wire", x: -3.6, y: 20.1, width: 0.15, layer: "bottom" },
+			{ route_type: "wire", x: -4.6, y: 20.1, width: 0.15, layer: "bottom" },
 		],
 	},
 	{
@@ -110,9 +110,11 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 20.1,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
+			{ route_type: "wire", x: -3.6, y: 20.1, width: 0.15, layer: "bottom" },
+			{ route_type: "wire", x: -4.6, y: 20.1, width: 0.15, layer: "bottom" },
 		],
 	},
 	{
@@ -145,7 +147,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 19.8,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			// Pair VBUS on bottom north of CC and TS-bias transitions.
@@ -153,6 +155,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 			{ route_type: "wire", x: -2, y: 20.8, width: 0.3, layer: "bottom" },
 			{ route_type: "wire", x: 2, y: 20.8, width: 0.3, layer: "bottom" },
 			{ route_type: "wire", x: 2, y: 19.8, width: 0.3, layer: "bottom" },
+			{ route_type: "wire", x: 2, y: 18.8, width: 0.3, layer: "bottom" },
 		],
 	},
 	{
@@ -185,7 +188,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 19.9,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],
@@ -220,7 +223,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 19.9,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],
@@ -255,9 +258,11 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 19.8,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
+			{ route_type: "wire", x: 2, y: 19.8, width: 0.3, layer: "bottom" },
+			{ route_type: "wire", x: 2, y: 18.8, width: 0.3, layer: "bottom" },
 		],
 	},
 	{
@@ -290,7 +295,7 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				y: 19.8,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

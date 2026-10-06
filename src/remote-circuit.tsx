@@ -1,3 +1,7 @@
+import { r8RadioVccPaths } from "./r8-radio-vcc-paths";
+import { r8TempOkPaths } from "./r8-temp-ok-paths";
+import { r8ShutterGroundPaths } from "./r8-shutter-ground-paths";
+import { r8ChargeLedSupplyPath } from "./r8-charge-led-supply-paths";
 import { r8ColdGroundPaths } from "./r8-cold-ground-paths";
 import { r8RadioGroundPaths } from "./r8-radio-ground-paths";
 import { r8SysReturnPaths } from "./r8-sys-return-paths";
@@ -84,8 +88,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			minViaHoleEdgeToViaHoleEdgeClearance="0.50mm"
 			minPlatedHoleDrillEdgeToDrillEdgeClearance="0.55mm"
 			minViaHoleDiameter="0.3mm"
-			minViaPadDiameter="0.6mm"
-			pcbStyle={{ viaHoleDiameter: "0.3mm", viaPadDiameter: "0.6mm" }}
+			minViaPadDiameter="0.45mm"
+			pcbStyle={{ viaHoleDiameter: "0.3mm", viaPadDiameter: "0.45mm" }}
 			schAutoLayoutEnabled={false}
 			schLayout={{ layoutMode: "relative" }}
 			fabricatorPreset="jlcpcb_standard_20260912"
@@ -150,6 +154,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					pcbTracePaths={r8ChargeStatPaths}
 				/>
 			)}
+
 			{/* Solid connections, not thermal spokes. All outlines stop north of
 			    the documented all-layer antenna exclusion at Y=-19.3 mm. */}
 			<copperpour
@@ -238,6 +243,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					}
 				>
 					<USB4215_03_A
+						standard="usb_c"
+						schWidth={1.575}
 						name="J1"
 						pcbSx={{ "& smtpad": { solderMaskMargin: "0.04mm" } }}
 						noConnect={["pin19", "pin21", "pin22", "pin23", "pin24", "pin25"]}
@@ -383,6 +390,12 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					schY={-1}
 					connections={{ pin1: "net.VBAT", pin2: "net.CHARGE_LED_A" }}
 				/>
+				<trace
+					from="R4.pin1"
+					to="net.VBAT"
+					thickness="0.15mm"
+					pcbPath={routingEnabled ? r8ChargeLedSupplyPath : undefined}
+				/>
 				<KT_0603R
 					name="LED1"
 					pcbX="8mm"
@@ -489,7 +502,9 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					name="RADIO_GROUND_ESCAPE"
 					pcbX={0}
 					pcbY={0}
-					pcbTracePaths={routingEnabled ? r8RadioGroundPaths : []}
+					pcbTracePaths={
+						routingEnabled ? [...r8RadioGroundPaths, ...r8RadioVccPaths] : []
+					}
 				>
 					<ESPC3_12_N4
 						name="U1"
@@ -526,6 +541,13 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						}}
 					/>
 				</fanout>
+				<netlabel
+					net="GND"
+					connection="U1.GND"
+					schX={2}
+					schY={-0.4}
+					anchorSide="top"
+				/>
 				<fanout
 					name="RADIO_CAP_ESCAPE"
 					pcbX={0}
@@ -557,23 +579,37 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				</fanout>
 				{/* Side-push shutter at the right edge(+X).
 				    Contacts1/2 switch;3/4 are the separate internally connected frame. */}
-				<TS24CA
-					name="SW2"
-					schRotation={-90}
-					pcbX="20mm"
-					pcbY="-8.5mm"
-					pcbRotation={270}
-					// Plastic actuator overhangs+X; every copper land stays on board.
-					allowOffBoard
+				<fanout
+					name="SHUTTER_FRAME_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8ShutterGroundPaths : []}
+				>
+					<TS24CA
+						name="SW2"
+						schRotation={-90}
+						pcbX="20mm"
+						pcbY="-8.5mm"
+						pcbRotation={270}
+						// Plastic actuator overhangs+X; every copper land stays on board.
+						allowOffBoard
+						schX={-7}
+						schY={1}
+						internallyConnectedPins={[[3, 4]]}
+						connections={{
+							pin1: "net.SHUTTER",
+							pin2: "net.GND",
+							pin3: "net.GND",
+							pin4: "net.GND",
+						}}
+					/>
+				</fanout>
+				<netlabel
+					net="GND"
+					connection="SW2.pin2"
 					schX={-7}
-					schY={1}
-					internallyConnectedPins={[[3, 4]]}
-					connections={{
-						pin1: "net.SHUTTER",
-						pin2: "net.GND",
-						pin3: "net.GND",
-						pin4: "net.GND",
-					}}
+					schY={0}
+					anchorSide="top"
 				/>
 				<TS_1088_AR02016
 					name="SW3"
@@ -756,6 +792,13 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 							pin11: "net.GND",
 						}}
 					/>
+					<netlabel
+						net="VBAT"
+						connection="U3.VIN"
+						schX={2}
+						schY={-3.5}
+						anchorSide="bottom"
+					/>
 					<SWPA3015S1R5NT
 						name="L1"
 						pcbX="-14mm"
@@ -826,6 +869,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				>
 					<TPS3839G33DBZR
 						name="U4"
+						schWidth={2.15}
 						pcbX="-18mm"
 						pcbY="0mm"
 						schX={-7}
@@ -835,6 +879,13 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 							pin2: "net.BATTERY_OK",
 							pin3: "net.VBAT",
 						}}
+					/>
+					<netlabel
+						net="VBAT"
+						connection="U4.VDD"
+						schX={-5}
+						schY={7.6}
+						anchorSide="bottom"
 					/>
 					<CC0603KRX7R9BB104
 						name="C6"
@@ -859,6 +910,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				>
 					<TMP390A2DRLR
 						name="U5"
+						schWidth={2.15}
 						pcbX="0mm"
 						pcbY="6mm"
 						layer="top"
@@ -919,16 +971,23 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						connections={{ pin1: "net.TEMP_SET_COLD", pin2: "net.GND" }}
 					/>
 				</fanout>
-				<A_0603WAF1003T5E
-					name="R12"
-					schRotation={-90}
-					layer="top"
-					pcbX="9.5mm"
-					pcbY="10mm"
-					schX={4}
-					schY={4}
-					connections={{ pin1: "net.USB5V", pin2: "net.TEMP_OK" }}
-				/>
+				<fanout
+					name="TEMP_OK_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8TempOkPaths : []}
+				>
+					<A_0603WAF1003T5E
+						name="R12"
+						schRotation={-90}
+						layer="top"
+						pcbX="9.5mm"
+						pcbY="10mm"
+						schX={4}
+						schY={4}
+						connections={{ pin1: "net.USB5V", pin2: "net.TEMP_OK" }}
+					/>
+				</fanout>
 				<A_0603WAF1003T5E
 					name="R13"
 					schRotation={-90}

@@ -1,0 +1,10 @@
+{
+  "error": "Locator.wait_for: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\"svg\").first to be visible\n",
+  "browser_errors": [
+    "TypeError: Cannot read properties of null (reading 'useRef')\n    at mp (http://127.0.0.1:36001/index.js:106:2255)\n    at u3 (http://127.0.0.1:36001/index.js:106:2334)\n    at $f (http://127.0.0.1:36001/index.js:114:5882)\n    at gs (http://127.0.0.1:36001/index.js:8:37579)\n    at m7 (http://127.0.0.1:36001/index.js:8:56381)\n    at _W (http://127.0.0.1:36001/index.js:8:67436)\n    at UW (http://127.0.0.1:36001/index.js:8:112690)\n    at jM (http://127.0.0.1:36001/index.js:8:111727)\n    at V8 (http://127.0.0.1:36001/index.js:8:111558)\n    at LW (http://127.0.0.1:36001/index.js:8:108204)",
+    "console:error:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "http_requests": [],
+  "browser_modules": [],
+  "body": ""
+}

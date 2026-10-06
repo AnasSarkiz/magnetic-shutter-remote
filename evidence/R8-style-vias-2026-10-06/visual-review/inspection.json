@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-10-06T17:12:14.329802+00:00",
+  "circuit_sha256": "eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b",
+  "actual_views_inspected": {
+    "Power-a4.png": "a291839fdee8b2c9dffadc0b5326e80565487488168941df37568c835a02261f",
+    "Radio-a4.png": "6a144e62f743a9e6e4c37a089b6e7b6cfa261391f8df7161a6d8fc4605eae834",
+    "Protection-a4.png": "0e409d6bbd132a030220a6ad3c98b66e34109e3bdbb06ea4441b1e533ee462e7",
+    "PowerGuide-a4.png": "8a5834491c1f1d33ba5db56ef1e74741d0c9f8981dcbef741a9e91fc21b78a07",
+    "RadioGuide-a4.png": "90a96ff53c3f19f35d4062db81b848143b905936273bf53cecf10079a412fa2f",
+    "ProtectionGuide-a4.png": "c6efca0d790b710bc4bf16a052f344a50b8218eb8d807d7b28f87355782a3f05",
+    "pcb-top.png": "f0b6ccc5c84623485b71debb115ec66b6f510a475b55ffd71859e6493aa79344",
+    "pcb-bottom.png": "079af187295305418c1e8437c67f1370a8512e09b67bf5ecb3902017b6820698",
+    "gerber-top.png": "4a11768697f4bdf718cf7515ed1ec723a3677f69d281b4005ef9896cc2d7e9d2",
+    "gerber-bottom.png": "53b26685e8b5e4b6d39b8fe12cbad702fd662bbf02984a815d02daf1fea90227",
+    "Power-detail.png": "b073e51bd0e71e407244e6dc780e1266796f13e90044db13038a0d0ede896dc7",
+    "Protection-detail.png": "9be0ff1bc2cfb32bbdee482e7c8063fc830acdb55064e488caf0b44f9676270c"
+  },
+  "findings": [
+    "All six native A4 circuit/guide pages readable inside their boundaries; USB standard symbol and short local rail labels inspected.",
+    "Top and bottom copper inspected; connector access, right-edge shutter, button/NPTH clearances and antenna exclusion retained.",
+    "USB/charger breakouts, C3/Q1/U4/R12 transitions, module supply escape and switching loop inspected with current native/independent clearances.",
+    "Gerber copper views agree with native board geometry; plots do not show physical hardware or qualify loaded power/RF/thermal operation."
+  ],
+  "limitations": [
+    "Supplier processed-preview/stackup/assembly allocation is pending.",
+    "Physical tests and complete MagSafe enclosure/phone/case fit remain pending."
+  ]
+}

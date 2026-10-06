@@ -12,7 +12,7 @@ export const temperatureEscapePaths: FanoutTracePath[] = [
 				y: 4.4,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

@@ -1,0 +1,2 @@
+$ biome format index.circuit.tsx src scripts package.json tsconfig.json tscircuit.config.json
+Checked 61 files in 19ms. No fixes applied.

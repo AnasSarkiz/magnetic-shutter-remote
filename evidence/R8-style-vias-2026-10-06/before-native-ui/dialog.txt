@@ -1,0 +1,6 @@
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+Style analysis failed: Failed to fetch dynamically imported module: https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js

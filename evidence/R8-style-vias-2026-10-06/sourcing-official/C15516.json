@@ -1,0 +1,33 @@
+{
+  "lcsc": "C15516",
+  "mpn": "TPS63031DSKR",
+  "references": [
+    "U3"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C15516",
+  "response_url": "https://jlcpcb.com/partdetail/C15516",
+  "observed_utc": "2026-10-06T15:44:35.740437+00:00",
+  "html_sha256": "09bf6d2de4b4f0909d5021ef0bf875ccb1d5d879bad51b7ff8be6ba71ce1ee08",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 13099,
+    "overseasStockCount": 13230,
+    "preMinPurchaseNum": 9,
+    "encapsulationNumber": 3000,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

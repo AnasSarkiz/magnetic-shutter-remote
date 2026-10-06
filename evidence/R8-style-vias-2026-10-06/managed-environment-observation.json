@@ -1,0 +1,6 @@
+{
+  "error": {
+    "message": "The environment configuration changed. Try again."
+  },
+  "error_code": "INVALID_ARGUMENT"
+}

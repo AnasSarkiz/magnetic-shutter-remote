@@ -1,0 +1,36 @@
+{
+  "lcsc": "C25803",
+  "mpn": "0603WAF1003T5E",
+  "references": [
+    "R5",
+    "R6",
+    "R12",
+    "R13"
+  ],
+  "quantity_per_board": 4,
+  "listing_url": "https://jlcpcb.com/partdetail/C25803",
+  "response_url": "https://jlcpcb.com/partdetail/C25803",
+  "observed_utc": "2026-10-06T15:44:35.603514+00:00",
+  "html_sha256": "2d9f28ee6cc0750e6f877b326f97cd07a0ae89982592da2e5812a4078c676559",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 20063291,
+    "overseasStockCount": 22005237,
+    "preMinPurchaseNum": 3760,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

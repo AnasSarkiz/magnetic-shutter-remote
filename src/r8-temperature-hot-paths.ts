@@ -14,7 +14,7 @@ export const r8TemperatureHotPaths: FanoutTracePath[] = [
 				y: 7.2,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{ route_type: "wire", x: -3.4, y: 7.2, width: 0.15, layer: "bottom" },

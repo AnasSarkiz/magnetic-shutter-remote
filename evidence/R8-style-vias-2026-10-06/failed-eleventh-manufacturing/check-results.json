@@ -1,0 +1,212 @@
+[
+  {
+    "name": "placement-build",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "tests/fixtures/r8-compact-placement.circuit.tsx",
+      "--schematic-svgs"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/placement-build.log"
+  },
+  {
+    "name": "pre-netlist",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/pre-netlist.log"
+  },
+  {
+    "name": "pre-pins",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/pre-pins.log"
+  },
+  {
+    "name": "pre-source",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "source",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/pre-source.log"
+  },
+  {
+    "name": "pre-style",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/pre-style.log"
+  },
+  {
+    "name": "pre-placement",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "placement",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/pre-placement.log"
+  },
+  {
+    "name": "cli-style-source",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/cli-style-source.log"
+  },
+  {
+    "name": "cli-style-json",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/cli-style-json.log"
+  },
+  {
+    "name": "via-regression",
+    "command": [
+      "bun",
+      "test",
+      "./tests/r8-style-vias.test.ts"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/via-regression.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/smoke.log"
+  },
+  {
+    "name": "notes-coverage",
+    "command": [
+      "bun",
+      "test",
+      "./tests/r8-schematic-notes.test.ts"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/notes-coverage.log"
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/contracts.log"
+  },
+  {
+    "name": "native",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-r8-native.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-style-vias-2026-10-06/final-native-checks.json"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/native.log"
+  },
+  {
+    "name": "shorts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/shorts.log"
+  },
+  {
+    "name": "electrical-contract",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "python3",
+      "scripts/review-r8-electrical-contract.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-style-vias-2026-10-06/electrical-contract.json"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/electrical-contract.log"
+  },
+  {
+    "name": "manufacturing",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/manufacturing-audit.py",
+      "--trace-geometry",
+      "gerber",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-style-vias-2026-10-06/final-manufacturing.json"
+    ],
+    "exit_code": 1,
+    "log": "evidence/R8-style-vias-2026-10-06/checks/manufacturing.log"
+  }
+]

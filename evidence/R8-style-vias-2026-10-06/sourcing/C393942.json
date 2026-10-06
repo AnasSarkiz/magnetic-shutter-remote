@@ -1,0 +1,33 @@
+{
+  "lcsc": "C393942",
+  "mpn": "TS24CA",
+  "references": [
+    "SW2"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/TS24CA/C393942",
+  "response_url": "https://jlcpcb.com/partdetail/TS24CA/C393942",
+  "observed_utc": "2026-10-06T15:43:02.063124+00:00",
+  "html_sha256": "c866f74daa18051cb48b6b04ff76c5ead673e9bf10012df1a1ad15f4b9719f9e",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 401395,
+    "overseasStockCount": 407311,
+    "preMinPurchaseNum": 461,
+    "encapsulationNumber": 3000,
+    "lossNumber": 1,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

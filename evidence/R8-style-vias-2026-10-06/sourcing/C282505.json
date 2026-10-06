@@ -1,0 +1,33 @@
+{
+  "lcsc": "C282505",
+  "mpn": "TCC0603COG470J500CT",
+  "references": [
+    "C9"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C282505/C282505",
+  "response_url": "https://jlcpcb.com/partdetail/C282505/C282505",
+  "observed_utc": "2026-10-06T15:43:01.671845+00:00",
+  "html_sha256": "74caf9da3cdf7974b1d4ad9b351c51d523b66936d18ef84d8ac17b0bf00fcb96",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 7987,
+    "overseasStockCount": 8003,
+    "preMinPurchaseNum": 3610,
+    "encapsulationNumber": 4000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

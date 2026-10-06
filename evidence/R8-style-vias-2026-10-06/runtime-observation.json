@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-06T16:59:26.900839+00:00",
+  "cgroup_memory_limit_bytes": 34359738368,
+  "cgroup_cpu_max": "400000 100000",
+  "oom_counters": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "node_heap_budget_mib": 14336,
+  "limit_is_observation_not_plan_guarantee": true,
+  "guard_sha256": "6b4dbd7b8837b269e54bb28bc231bfe52bf41096598ff7557600d561bc7e27bc",
+  "network_snapshot_sha256": "b77b7a1f5493ef5e93cf894b32620c89fa954bb1e7433d3581280f90bd6abe92",
+  "network_snapshot_type": "restricted",
+  "vpn_configured": false,
+  "network_policy_changed_by_this_task": false,
+  "host_snapshot_membership": {
+    "api.github.com": true,
+    "jscdn.tscircuit.com": true,
+    "jlcpcb.com": false,
+    "jlcsearch.tscircuit.com": false,
+    "registry-api.tscircuit.com": false
+  },
+  "actual_http_evidence": "See sourcing original failures, official public listings and native browser/publication receipts. Snapshot membership alone is not runtime HTTP success."
+}

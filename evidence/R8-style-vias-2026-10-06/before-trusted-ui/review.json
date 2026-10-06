@@ -1,0 +1,50 @@
+{
+  "observed_utc": "2026-10-06T15:52:16.870864+00:00",
+  "browser_version": "151.0.7922.173",
+  "native_viewer_version": "2.0.99",
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
+  "actual_native_ui_menu_clicked": true,
+  "dialog": "Style Analysis\nClose\n\nPlacement and style issues across all schematic sheets. Each image highlights one issue with its description below.\n\n4 style issues found.\n\n1. Schematic Box Inner Label Collision\nSheet: schematic_sheet_2\n2. Schematic Box Inner Label Collision\nSheet: schematic_sheet_2\n3. Rail Path Too Spread Out\nSheet: schematic_sheet_1\n4. Rail Path Too Spread Out\nSheet: schematic_sheet_2",
+  "issues": [
+    {
+      "heading": "1. Schematic Box Inner Label CollisionSheet: schematic_sheet_2",
+      "description": "<SchematicBoxInnerLabelCollision message=\"Inner labels are colliding. Increase the schWidth.\" componentName=\"U4\" currentSchWidth=\"1.2\" currentSchHeight=\"0.6\" overlappingSides=\"left,right\" />",
+      "svg": "issue-001.svg"
+    },
+    {
+      "heading": "2. Schematic Box Inner Label CollisionSheet: schematic_sheet_2",
+      "description": "<SchematicBoxInnerLabelCollision message=\"Inner labels are colliding. Increase the schWidth.\" componentName=\"U5\" currentSchWidth=\"1.2\" currentSchHeight=\"0.8\" overlappingSides=\"left,right\" />",
+      "svg": "issue-002.svg"
+    },
+    {
+      "heading": "3. Rail Path Too Spread OutSheet: schematic_sheet_1",
+      "description": "<RailPathTooSpreadOut hostName=\"SW2\" pinName=\"pin2\" railType=\"ground\" pathSpan=\"9.421\" pathLength=\"11.571\" message=\"Visible path from SW2.pin2 to ground spans 9.42 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />",
+      "svg": "issue-003.svg"
+    },
+    {
+      "heading": "4. Rail Path Too Spread OutSheet: schematic_sheet_2",
+      "description": "<RailPathTooSpreadOut hostName=\"U3\" pinName=\"VIN\" railType=\"power\" pathSpan=\"11.3\" pathLength=\"18.887\" message=\"Visible path from U3.VIN to power spans 11.30 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />",
+      "svg": "issue-004.svg"
+    }
+  ],
+  "issue_count": 4,
+  "http_requests": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200
+    }
+  ],
+  "browser_modules": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200,
+      "path": "analyzer-response-0.js",
+      "sha256": "62428d06ace175a8474161908505eb4e1a1e8ece649c93a3d423a643bcc242bc",
+      "bytes": 723024
+    }
+  ],
+  "browser_errors": [
+    "console:error:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "tls_verification_disabled": false
+}

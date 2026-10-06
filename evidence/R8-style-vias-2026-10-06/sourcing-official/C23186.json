@@ -1,0 +1,34 @@
+{
+  "lcsc": "C23186",
+  "mpn": "0603WAF5101T5E",
+  "references": [
+    "R2",
+    "R1"
+  ],
+  "quantity_per_board": 2,
+  "listing_url": "https://jlcpcb.com/partdetail/C23186",
+  "response_url": "https://jlcpcb.com/partdetail/C23186",
+  "observed_utc": "2026-10-06T15:44:28.680032+00:00",
+  "html_sha256": "2fa00b07f58050682663fc2be2467e45b3a9ddee8e5ee81792068db3564d3ced",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 24102810,
+    "overseasStockCount": 25180626,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

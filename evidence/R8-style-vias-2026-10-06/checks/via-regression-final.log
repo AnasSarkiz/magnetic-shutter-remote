@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-style-vias.test.ts:
+(pass) R8 has only outer copper and 0.30/0.45 mm through vias [4.89ms]
+(pass) native USB-C symbol preserves the qualified connector's physical ports [3.35ms]
+
+ 2 pass
+ 0 fail
+ 1947 expect() calls
+Ran 2 tests across 1 file. [2.92s]

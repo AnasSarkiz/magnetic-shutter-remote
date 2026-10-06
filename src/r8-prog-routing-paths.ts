@@ -25,7 +25,7 @@ export const r8ProgRoutingPaths: FanoutTracePath[] = [
 				y: 7.5,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{
@@ -76,7 +76,7 @@ export const r8ProgRoutingPaths: FanoutTracePath[] = [
 				y: 14.783,
 				from_layer: "bottom",
 				to_layer: "top",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{
@@ -120,7 +120,7 @@ export const r8ProgRoutingPaths: FanoutTracePath[] = [
 				y: 14.794151087918571,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{

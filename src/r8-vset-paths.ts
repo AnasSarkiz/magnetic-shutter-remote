@@ -12,7 +12,7 @@ export const r8VsetPaths: FanoutTracePath[] = [
 				y: 17.4,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{
@@ -58,7 +58,7 @@ export const r8VsetGroundPaths: FanoutTracePath[] = [
 				y: 16,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

@@ -1,0 +1,109 @@
+{
+  "started_utc": "20261006T165250376762Z",
+  "command": [
+    "tsci",
+    "check",
+    "placement",
+    "tests/fixtures/r8-compact-placement.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 38.675% (952.947mm^2 of 2464mm^2)
+- empty spaces over 5% of board area:
+  - 9.263% (228.244mm^2); bounds=(minX=-22mm, maxX=-8.75mm, minY=-28mm, maxY=-10.774mm)
+  - 8.927% (219.951mm^2); bounds=(minX=8.75mm, maxX=22mm, minY=-28mm, maxY=-11.4mm)
+  - 7.816% (192.579mm^2); bounds=(minX=-22mm, maxX=-6.407mm, minY=15.65mm, maxY=28mm)
+
+board-edge status:
+- J1: 0.34mm inside bottom edge
+- R2: 8.568mm inside bottom edge
+- R1: 8.568mm inside bottom edge
+- U2: 13.7mm inside bottom edge
+- R3: 15.343mm inside right edge
+- C2: 16.05mm inside bottom edge
+- C1: 7.55mm inside bottom edge
+- R4: 4.568mm inside bottom edge
+- LED1: 1.6mm inside bottom edge
+- J2: 1.225mm inside left edge
+- R8: 11.568mm inside bottom edge
+- R9: 10.568mm inside bottom edge
+- C8: 13.925mm inside bottom edge
+- C9: 15.9mm inside left edge
+- U1: 9.125mm inside top edge
+- C5: 9.9mm inside right edge
+- C10: 9.325mm inside right edge
+- SW2: 0.4mm inside right edge
+- SW3: 1.2mm inside right edge
+- R7: 5.843mm inside left edge
+- LED2: 1.85mm inside left edge
+- J3: 5.9mm inside right edge
+- SW4: 0.2mm inside left edge
+- SW5: 4.7mm inside right edge
+- SW1: 0.744mm inside right edge
+- R5: 16.843mm inside right edge
+- Q1: 16.5mm inside left edge
+- R6: 20.843mm inside left edge
+- U3: 10.51mm inside left edge
+- L1: 6.64mm inside left edge
+- C11: 6.295mm inside left edge
+- C12: 10.295mm inside left edge
+- C13: 14.55mm inside left edge
+- C3: 10.295mm inside left edge
+- C4: 10.295mm inside left edge
+- U4: 2.5mm inside left edge
+- C6: 2.9mm inside left edge
+- U5: 20.95mm inside left edge
+- C7: 19.05mm inside bottom edge
+- R10: 16.343mm inside left edge
+- R11: 16.343mm inside right edge
+- R12: 11.343mm inside right edge
+- R13: 12.843mm inside right edge
+- Q2: 12.5mm inside right edge
+
+placement drc:
+Errors: 0
+Warnings: 1
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+{
+  "started_utc": "20261006T165250376762Z",
+  "command": [
+    "tsci",
+    "check",
+    "placement",
+    "tests/fixtures/r8-compact-placement.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T16:53:03.949891+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 1874724,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T165250376762Z.log"
+}

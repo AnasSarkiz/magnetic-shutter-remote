@@ -1,0 +1,17 @@
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+5 style issues found.
+
+1. Generic Schematic Box Too Wide
+Sheet: schematic_sheet_0
+2. Generic Schematic Box Too Wide
+Sheet: schematic_sheet_2
+3. Generic Schematic Box Too Wide
+Sheet: schematic_sheet_2
+4. Rail Path Too Spread Out
+Sheet: schematic_sheet_1
+5. Rail Path Too Spread Out
+Sheet: schematic_sheet_2

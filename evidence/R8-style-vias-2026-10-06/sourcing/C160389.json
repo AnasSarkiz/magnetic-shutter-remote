@@ -1,0 +1,33 @@
+{
+  "lcsc": "C160389",
+  "mpn": "BM03B-SRSS-TB(LF)(SN)",
+  "references": [
+    "J3"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C160389",
+  "response_url": "https://jlcpcb.com/partdetail/C160389",
+  "observed_utc": "2026-10-06T15:43:03.703356+00:00",
+  "html_sha256": "513bc94687d466bd0218369c03c1623d644c4208cb4a2a1d7f7a6bfcc3d3e7bc",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 31699,
+    "overseasStockCount": 32152,
+    "preMinPurchaseNum": 33,
+    "encapsulationNumber": 1500,
+    "lossNumber": 0,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

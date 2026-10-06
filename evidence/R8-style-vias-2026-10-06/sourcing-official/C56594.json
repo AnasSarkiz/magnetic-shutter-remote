@@ -1,0 +1,33 @@
+{
+  "lcsc": "C56594",
+  "mpn": "SWPA3015S1R5NT",
+  "references": [
+    "L1"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C56594",
+  "response_url": "https://jlcpcb.com/partdetail/C56594",
+  "observed_utc": "2026-10-06T15:44:36.286677+00:00",
+  "html_sha256": "ff743fbd12bd5685413d45e467f9490d3907c26712cc606e42dd233f2a0e5c65",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 4041,
+    "overseasStockCount": 4197,
+    "preMinPurchaseNum": 229,
+    "encapsulationNumber": 2000,
+    "lossNumber": 4,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

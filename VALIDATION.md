@@ -1,3 +1,26 @@
+# Current R8 0.3.10 — schematic style and through vias, 2026-10-06
+
+Native standard USB-C schematic and real browser/CLI Style Analysis pass0
+issues. Current-source native0 errors/shorts/dangling and independent0
+manufacturing/process failures pass;29/29 physical nets, all174 physical
+track widths and seven current paths pass. The two-layer44×56×1mm PCB has
+91 through vias, each0.30mm hole/0.45mm pad, with all power/trace copper
+on top/bottom only. All44 fitted parts/poses and159 pin/value contracts remain
+unchanged. Six native A4 circuit/component-guide pages and both PCB/Gerber
+layers are inspected. [Current review](evidence/R8-style-vias-2026-10-06/REVIEW.md).
+Circuit JSON SHA256: `eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b`.
+
+All25 exact JLCPCB MPN/SMT listings verified with dated observations; actual
+stock allocation/supplier processed-preview/stackup/assembly approval remain
+pending. Physical programming/power/BLE/RF/thermal/runtime and full MagSafe
+grip/phone/case qualification remain pending. Native warnings004/084 and
+upstream075/076 stay explicit. Missing `3V3` metadata remains a separate
+importer issue. Setup/start and serial memory guards remain unchanged;
+observed32GiB/four CPU is not a guaranteed allocation. Publication receipt
+is recorded separately after actual remote verification.
+
+## Prior review/publication records — preserved history
+
 # Current R8 0.3.9 schematic component guides — 2026-10-06
 
 Public **0.3.9-prototype** visibility/inventory/readback PASS:

@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-schematic-notes.test.ts:
+(pass) component explanations cover every fitted BOM reference exactly once [1.15ms]
+(pass) every explanation is actually rendered on its matching native A4 guide [3.56ms]
+
+ 2 pass
+ 0 fail
+ 188 expect() calls
+Ran 2 tests across 1 file. [2.91s]

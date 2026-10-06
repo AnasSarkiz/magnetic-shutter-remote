@@ -7,7 +7,7 @@ Read `cloud/HANDOFF.md`, `VALIDATION.md`, `cloud/WORKSPACE-INSTRUCTIONS.md`, and
 - This repository root is the isolated R8 workspace originally checked out on `cloud/r8-cloud-setup`. Engineering continuation uses `board/r8-doit-c3-prototype-20261005`; preserve active task branches. Continue here for this task; do not rebuild the tscircuit store application.
 - `baselines/` is immutable reference material. It contains the 129-file R7 snapshot and the published Nordic source/enclosure/build. Verify `cloud/R7-PORTABLE-MANIFEST.json` before and after work. Do not edit or regenerate archived files.
 - R6 remains frozen at `77965a8012d5544e962d987ce958c5c5614dbe3a`. Original R7 starts at `636d2b24eb4db775fceeb81206541f249db3b9a5`. No history rewriting, force push, default-branch change or automatic merge.
-- Active root is the compact 44×56×1mm R8 ESP32-C3 engineering prototype (0.3.9 schematic-note/package update, unchanged route23 PCB artwork), with right-edge TS24CA/C393942 shutter and direct3-pin JST UART. Native/independent copper, 29/29 physical terminal nets, all164 track widths and current budgets, local fabrication/process/visual checks pass. Supplier processed-preview/order approval and physical programming/power/BLE/MagSafe tests remain pending. DOIT ESPC3-12-N4/C19949072 is fitted. Read evidence/R8-compact-pcb-2026-10-06/REVIEW.md; public0.3.6-prototype upload/readback passes (367 files,22 critical text/binary matches); hosted preview pending, older releases historical. Frozen Nordic JSON is never R8 evidence.
+- Active root is the compact 44×56×1mm R8 ESP32-C3 engineering prototype (0.3.10 native USB-C/style and0.30/0.45mm through-via update), with right-edge TS24CA/C393942 shutter and direct3-pin JST UART. Native/independent copper, 29/29 physical terminal nets, all174 physical track widths and current budgets, local fabrication/process/visual checks pass. Supplier processed-preview/order approval and physical programming/power/BLE/MagSafe tests remain pending. DOIT ESPC3-12-N4/C19949072 is fitted. Read evidence/R8-style-vias-2026-10-06/REVIEW.md; current publication receipt is recorded separately there after actual readback. Prior public 0.3.9-prototype is preserved history; hosted preview and hardware qualification are distinct gates. Frozen Nordic JSON is never R8 evidence.
 - After onboarding the user authorized engineering continuation and requested routing with zero DRC errors and zero shorts. This does not waive qualification. Original issue075 remains open for the abandoned C3 module; issue076 has a tested fixture override but its upstream omission remains open. Issues078/079 record supplier example-land variations, reassessed for engineering prototype use in `evidence/R8-prototype-2026-10-05/QUALIFICATION.md`; nominal differences alone are not demonstrated electrical blockers. Do not route until new R8 BOM, supply/boot/programming circuitry, connectivity and placement checks pass. Original investigation evidence remains preserved.
 - No torch/fill light. One battery and one USB-C charging port; existing red LEDs are status indicators. Preserve verified USB4215-03-A / C37616412 functionality unless the migration requires a justified local change.
 - User requires a MagSafe phone-facing grip supporting multiple iPhone sizes and compatible cases. Read `mechanical/R8-MAGSAFE-REQUIREMENTS.md` before compact placement or enclosure work. Preserve the detached right-edge side shutter and direct three-pin JST UART. Historical four-disc magnets/steel phone plate and generic phone box are not MagSafe fit evidence; official interface, model/camera/case envelopes and complete RF/metal clearance require qualification. Do not claim all iPhones/cases fit or reuse old Nordic enclosure passes.
@@ -19,6 +19,19 @@ Use **DOIT ESPC3-12-N4 / C19949072**: exact22-pin import and nominal lands quali
 ### Earlier radio decision after onboarding (superseded)
 
 The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection: use the cheaper **DOIT ESPC2-12E-N4 / C19949081** (ESP32-C2/ESP8684, 4 MB flash, onboard antenna). See the dated selection evidence in `evidence/R8-components/alternative-radio-2026-10-05/SELECTION.md`. Original C3 supplier/import/firmware evidence stays unchanged; do not reuse its GPIO20/21 UART contract for C2 (module UART is GPIO19/20). At that earlier stage the root implemented C2; this historical decision is superseded by the fitted C3 above. Qualification gates, frozen-baseline protection, sequential heavy-job guard and separate ordering/supplier authorization still apply.
+
+## Current USB-C schematic style / 0.30–0.45mm via follow-up
+
+Read `evidence/R8-style-vias-2026-10-06/REVIEW.md`. Current0.3.10 replaces
+0.60mm via pads with requested0.45mm pads, retaining0.30mm through holes and
+top/bottom-only copper. Native standard USB-C and actual UI/CLI style analyses
+pass0 issues. Fresh0 native errors/shorts,29 physical nets,174 measured
+track widths/current budgets and full independent manufacturing/process/CAM
+readback pass. All44 fitted identities/poses and159 pin contracts are unchanged.
+All six A4 pages/both copper layers inspected. Prior failed candidates and
+unperformed supplier/hardware/MagSafe gates stay explicit. Setup/start and
+serial memory guards are unchanged; observed32GiB is not guaranteed.
+Current public receipt is recorded separately; never reuse failed JSON.
 
 ## Current schematic component-guide follow-up
 

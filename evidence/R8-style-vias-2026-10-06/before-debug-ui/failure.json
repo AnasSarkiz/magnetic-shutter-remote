@@ -1,0 +1,9 @@
+{
+  "error": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"svg\").first to be visible\n",
+  "browser_errors": [
+    "jsx_dev_runtime.jsxDEV is not a function"
+  ],
+  "http_requests": [],
+  "browser_modules": [],
+  "body": ""
+}

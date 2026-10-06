@@ -1,0 +1,33 @@
+{
+  "lcsc": "C22795",
+  "mpn": "0603WAF1303T5E",
+  "references": [
+    "R8"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C22795",
+  "response_url": "https://jlcpcb.com/partdetail/C22795",
+  "observed_utc": "2026-10-06T15:44:32.109804+00:00",
+  "html_sha256": "63c787471f4f82c5ffd4c3a96ab072c625c2bc6eb3c1968ff583589a302e0ca5",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 534475,
+    "overseasStockCount": 584487,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

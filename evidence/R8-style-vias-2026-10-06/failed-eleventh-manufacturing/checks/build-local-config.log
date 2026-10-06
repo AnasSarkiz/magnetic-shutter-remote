@@ -1,0 +1,108 @@
+{
+  "started_utc": "20261006T155914646691Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_16: Routes contain a junction or endpoint that cannot select a unique PCB port
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-2.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-5.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-8.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-9.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-10.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-11.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-12.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-13.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-14.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-default-order-15.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-0-order-16.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-1-order-17.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_16-phase-2-order-18.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting phase 20/20 has been running for 10.2s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#400 /> phase 20/20 long-running start: connections=21, obstacles=1441, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=5x, cache=miss, cache_id=8efdbc2c/52dc13ca
+  connections: net.GND, net.USB5V, net.VBAT, net.V3, net.INDUCTOR_L1, net.INDUCTOR_L2, net.CC2, net.CC1, net.TS_BIAS, net.PROG, net.CHARGE_LED_A, net.EN, net.SHUTTER, net.PAIR, net.STATUS_LED, net.UART_TX, net.STATUS_LED_A, net.POWER_SWITCH, net.REG_EN, net.TEMP_SET_COLD, net.TEMP_OK
+  phase 20/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=19 progress=55% iterations_per_second=1692 elapsed=10.2s
+  phase 20/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=20 progress=55% iterations_per_second=1656 elapsed=10.5s
+  phase 20/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=40 progress=84% iterations_per_second=4 elapsed=20.9s
+  phase 20/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=59 progress=88% iterations_per_second=1 elapsed=32.5s
+  phase 20/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=powerTraceExpansionSolver steps=85 progress=96% iterations_per_second=110040 elapsed=42.8s
+  phase 20/20 done: routed_traces=78, jumpers=0, errors=0, elapsed=50.3s
+Could not save autorouting paths for subcircuit_source_group_16: Only port-anchored wire/via routes can be saved
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Via pcb_via[#pcb_via_21] and trace trace[.R12 > port.anode] are too close (clearance: 0.093mm, minimum: 0.15mm)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+{
+  "started_utc": "20261006T155914646691Z",
+  "command": [
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T16:00:46.979722+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 8630924,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T155914646691Z.log"
+}

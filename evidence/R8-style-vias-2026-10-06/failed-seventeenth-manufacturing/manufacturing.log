@@ -1,0 +1,57 @@
+{
+  "started_utc": "20261006T170208104422Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-style-vias-2026-10-06/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Classified manufacturing failures: 2
+{'rule': 'outer_drill_track', 'a': 'pcb_via_3', 'b': 'source_net_1_mst3_0:bottom', 'gap_mm': 0.13202633181139714, 'minimum_mm': 0.2}
+{'rule': 'project_unrelated_drill_copper', 'a': 'pcb_via_92', 'b': 'pcb_smtpad_131:top', 'gap_mm': 0.13203429999999997, 'minimum_mm': 0.2}
+{
+  "started_utc": "20261006T170208104422Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/manufacturing-audit.py",
+    "--trace-geometry",
+    "gerber",
+    "--output",
+    "/workspace/magnetic-shutter-remote/evidence/R8-style-vias-2026-10-06/final-manufacturing.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T17:02:44.191276+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 66672,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T170208104422Z.log"
+}

@@ -6,13 +6,14 @@ export const r8RegEnablePaths: FanoutTracePath[] = [
 		route: [
 			{ route_type: "wire", x: 3.246636, y: 3, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: 2, y: 3, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: 2, y: 3.6, width: 0.15, layer: "top" },
 			{
 				route_type: "via",
 				x: 2,
-				y: 3,
+				y: 3.6,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

@@ -1,0 +1,63 @@
+{
+  "started_utc": "20261006T160311273180Z",
+  "command": [
+    "python3",
+    "/tmp/r8-style-ui-review.py",
+    "--label",
+    "second-placement",
+    "--circuit",
+    "dist/tests/fixtures/r8-compact-placement/circuit.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+1 style issue found.
+
+1. Schematic Text Collision
+Sheet: schematic_sheet_1
+{
+  "started_utc": "20261006T160311273180Z",
+  "command": [
+    "python3",
+    "/tmp/r8-style-ui-review.py",
+    "--label",
+    "second-placement",
+    "--circuit",
+    "dist/tests/fixtures/r8-compact-placement/circuit.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T16:03:17.266849+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 146476,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T160311273180Z.log"
+}

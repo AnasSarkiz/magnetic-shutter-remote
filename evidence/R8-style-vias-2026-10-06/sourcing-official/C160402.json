@@ -1,0 +1,33 @@
+{
+  "lcsc": "C160402",
+  "mpn": "SM02B-SRSS-TB(LF)(SN)",
+  "references": [
+    "J2"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C160402",
+  "response_url": "https://jlcpcb.com/partdetail/C160402",
+  "observed_utc": "2026-10-06T15:44:30.358551+00:00",
+  "html_sha256": "045414a26cc5d3ad3d0a9eb729d836f27022316080b7436520a348f5071c02c8",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 31993,
+    "overseasStockCount": 33491,
+    "preMinPurchaseNum": 84,
+    "encapsulationNumber": 3000,
+    "lossNumber": 2,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

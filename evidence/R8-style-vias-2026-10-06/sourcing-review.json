@@ -1,0 +1,257 @@
+{
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
+  "bom_sha256": "ec103084408e0d2f3b5c176c4420536e36ededeb83156768fce66c253f2d9e0f",
+  "expected_exact_identities": 25,
+  "fitted_references": 44,
+  "parts": [
+    {
+      "lcsc": "C160389",
+      "mpn": "BM03B-SRSS-TB(LF)(SN)",
+      "references": [
+        "J3"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C160389",
+      "response_url": "https://jlcpcb.com/partdetail/C160389",
+      "observed_utc": "2026-10-06T15:43:03.703356+00:00",
+      "html_sha256": "513bc94687d466bd0218369c03c1623d644c4208cb4a2a1d7f7a6bfcc3d3e7bc",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 31699,
+        "overseasStockCount": 32152,
+        "preMinPurchaseNum": 33,
+        "encapsulationNumber": 1500,
+        "lossNumber": 0,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "exact_identity_verified": true,
+      "eligible_smt_listing": true,
+      "stock_allocation_confirmed": false,
+      "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+    },
+    {
+      "lcsc": "C19949072",
+      "mpn": "ESPC3-12-N4",
+      "references": [
+        "U1"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/ESPC3-12-N4/C19949072",
+      "response_url": "https://jlcpcb.com/partdetail/ESPC3-12-N4/C19949072",
+      "observed_utc": "2026-10-06T15:43:01.961779+00:00",
+      "html_sha256": "666943c28e559ea7a74536daf41d81f1172ae63ed5e9f8c36abfb469e67b2af6",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3,
+        "overseasStockCount": 66,
+        "preMinPurchaseNum": 4,
+        "encapsulationNumber": 650,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "exact_identity_verified": true,
+      "eligible_smt_listing": true,
+      "stock_allocation_confirmed": false,
+      "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "references": [
+        "R9"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C25804/C25804",
+      "response_url": "https://jlcpcb.com/partdetail/C25804/C25804",
+      "observed_utc": "2026-10-06T15:43:01.275844+00:00",
+      "html_sha256": "ed5aeeb283312b771b224ec37bdcb35019c011e0f4a778481cf0a29a38e51464",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 21622618,
+        "overseasStockCount": 29550675,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "exact_identity_verified": true,
+      "eligible_smt_listing": true,
+      "stock_allocation_confirmed": false,
+      "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+    },
+    {
+      "lcsc": "C282505",
+      "mpn": "TCC0603COG470J500CT",
+      "references": [
+        "C9"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C282505/C282505",
+      "response_url": "https://jlcpcb.com/partdetail/C282505/C282505",
+      "observed_utc": "2026-10-06T15:43:01.671845+00:00",
+      "html_sha256": "74caf9da3cdf7974b1d4ad9b351c51d523b66936d18ef84d8ac17b0bf00fcb96",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 7987,
+        "overseasStockCount": 8003,
+        "preMinPurchaseNum": 3610,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "exact_identity_verified": true,
+      "eligible_smt_listing": true,
+      "stock_allocation_confirmed": false,
+      "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+    },
+    {
+      "lcsc": "C393942",
+      "mpn": "TS24CA",
+      "references": [
+        "SW2"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/TS24CA/C393942",
+      "response_url": "https://jlcpcb.com/partdetail/TS24CA/C393942",
+      "observed_utc": "2026-10-06T15:43:02.063124+00:00",
+      "html_sha256": "c866f74daa18051cb48b6b04ff76c5ead673e9bf10012df1a1ad15f4b9719f9e",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 401395,
+        "overseasStockCount": 407311,
+        "preMinPurchaseNum": 461,
+        "encapsulationNumber": 3000,
+        "lossNumber": 1,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "exact_identity_verified": true,
+      "eligible_smt_listing": true,
+      "stock_allocation_confirmed": false,
+      "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+    }
+  ],
+  "failures": [
+    {
+      "lcsc": "C21190",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C37616412",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C19725033",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C23186",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C2286",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C160402",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C19666",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C15850",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C22795",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C14663",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C720477",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C431540",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C25803",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C8545",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C15516",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C56594",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C485802",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C5219772",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C22844",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lcsc": "C22893",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "all_exact_eligible_listings_verified": false,
+  "procurement_allocation_confirmed": false
+}

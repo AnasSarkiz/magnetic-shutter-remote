@@ -1,0 +1,11 @@
+{
+  "error": "Native UI style analyzer failed; retained actual browser errors",
+  "browser_errors": [
+    "console:error:Failed to load resource: the server responded with a status of 404 (File not found)",
+    "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js net::ERR_CERT_AUTHORITY_INVALID",
+    "console:error:Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+  ],
+  "http_requests": [],
+  "browser_modules": [],
+  "body": "Sheet:\nPower\n1\n1\n2\n2\n3\n3\n4\n4\n5\n5\n6\n6\nA\nA\nB\nB\nC\nC\nD\nD\nUSB4215-03-A\nJ1\n13\nEH2\n14\nEH1\n15\nEH3\n16\nEH4\n17\nGND1\n18\nVBUS1\n19\nSBU2\n20\nCC1\n21\nDn2\n22\nDp1\n23\nDn1\n24\nDp2\n25\nSBU1\n26\nCC2\n27\nVBUS2\n28\nGND2\nR2\n5.1k\u03a9\nR1\n5.1k\u03a9\nBQ25185DLHR\nU2\n1\nSYS\n2\nBAT\n3\nSTAT2\n4\nCE\n5\nGND\n6\nTS\n7\nILIM\n8\nISET\n9\nSTAT1\n10\nIN\n11\nEP\nR3\n1k\u03a9\nC2\n4.7uF\nC1\n4.7uF\nR4\n1k\u03a9\nLED1\nSM02B-SRSS-TB(LF)(SN)\nJ2\n1\n2\n3\n4\nR8\n130k\u03a9\nR9\n10k\u03a9\nC8\n10uF\nC9\n47pF\nGND\nGND\nGND\nGND\nGND\nGND\nGND\nGND\nGND\nGND\nGND\nUSB5V\nUSB5V\nUSB5V\nUSB5V\nCC2\nVBAT\nVBAT\nVBAT\nVSET\nVSET\nComponent explanations: PowerGuide (sheet 4).\nCC1\nCC1\nCC2\nCHARGER_SYS\nCHARGER_SYS\nCHARGE_STAT\nCHARGE_STAT\nCHARGE_DISABLE\nTS_BIAS\nTS_BIAS\nPROG\nPROG\nPROG\nCHARGE_LED_A\nCHARGE_LED_A\nStyle Analysis\nClose\n\nPlacement and style issues across all schematic sheets. Each image highlights one issue with its description below.\n\nStyle analysis failed: Failed to fetch dynamically imported module: https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js"
+}

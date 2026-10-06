@@ -1,0 +1,15 @@
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+4 style issues found.
+
+1. Schematic Box Inner Label Collision
+Sheet: schematic_sheet_2
+2. Schematic Box Inner Label Collision
+Sheet: schematic_sheet_2
+3. Rail Path Too Spread Out
+Sheet: schematic_sheet_1
+4. Rail Path Too Spread Out
+Sheet: schematic_sheet_2

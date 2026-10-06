@@ -2,6 +2,22 @@ import type { FanoutTracePath } from "@tscircuit/core";
 // Q1 and its gate pull-down share one off-pad ground via.
 export const r8UsbDisablePaths: FanoutTracePath[] = [
 	{
+		connection: "Q1.pin3",
+		route: [
+			{ route_type: "wire", x: -4.999998, y: 1, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -5, y: 0, width: 0.15, layer: "top" },
+			{
+				route_type: "via",
+				x: -5,
+				y: 0,
+				from_layer: "top",
+				to_layer: "bottom",
+				via_diameter: 0.45,
+				via_hole_diameter: 0.3,
+			},
+		],
+	},
+	{
 		connection: "Q1.pin2",
 		route: [
 			{
@@ -19,7 +35,7 @@ export const r8UsbDisablePaths: FanoutTracePath[] = [
 				y: 3.3,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],
@@ -43,7 +59,7 @@ export const r8UsbDisablePaths: FanoutTracePath[] = [
 				y: 1.5,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 		],

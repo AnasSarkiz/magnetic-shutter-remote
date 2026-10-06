@@ -1,0 +1,33 @@
+{
+  "lcsc": "C22844",
+  "mpn": "0603WAF1621T5E",
+  "references": [
+    "R10"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C22844",
+  "response_url": "https://jlcpcb.com/partdetail/C22844",
+  "observed_utc": "2026-10-06T15:44:37.086757+00:00",
+  "html_sha256": "4a46663bd3c5ac3f4eef385c9dfdd5be675d4ff57068b620c5a892c86ff4491d",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 26889,
+    "overseasStockCount": 26988,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "exact_identity_verified": true,
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Live public exact-part listing only; raw inventory fields do not reserve stock or confirm assembler allocation."
+}

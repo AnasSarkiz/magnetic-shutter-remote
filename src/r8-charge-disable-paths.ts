@@ -24,7 +24,7 @@ export const r8ChargeDisablePaths: FanoutTracePath[] = [
 				y: 10.5,
 				from_layer: "top",
 				to_layer: "bottom",
-				via_diameter: 0.6,
+				via_diameter: 0.45,
 				via_hole_diameter: 0.3,
 			},
 			{ route_type: "wire", x: 6.1, y: 10.5, width: 0.15, layer: "bottom" },

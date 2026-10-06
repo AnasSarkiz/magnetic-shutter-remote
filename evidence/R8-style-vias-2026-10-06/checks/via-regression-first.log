@@ -1,0 +1,1208 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-style-vias.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+34 |         return {
+35 |             success: false,
+36 |             get error() {
+37 |                 if (this._error)
+38 |                     return this._error;
+39 |                 const error = new ZodError(ctx.common.issues);
+                                   ^
+ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      6,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      7,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      8,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      9,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      10,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1126,
+      "route",
+      11,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1213,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1214,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1215,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      6,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      7,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1294,
+      "route",
+      8,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1336,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1337,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1338,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      6,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      7,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      8,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1383,
+      "route",
+      9,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      4,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      5,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      6,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      7,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1384,
+      "route",
+      8,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1718,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1718,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1719,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1719,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1719,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1719,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1720,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1720,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1721,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1721,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1722,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1722,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1724,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1724,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1725,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1725,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1725,
+      "route",
+      2,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1725,
+      "route",
+      3,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1726,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1726,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1727,
+      "route",
+      0,
+      "route_type"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      1727,
+      "route",
+      1,
+      "route_type"
+    ],
+    "message": "Required"
+  }
+]
+    issues: [
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...]
+],
+  addIssue: [Function],
+ addIssues: [Function],
+
+      at error (/workspace/magnetic-shutter-remote/node_modules/zod/v3/types.js:39:31)
+      at parse (/workspace/magnetic-shutter-remote/node_modules/zod/v3/types.js:114:15)
+      at /workspace/magnetic-shutter-remote/tests/r8-style-vias.test.ts:22:3
+-------------------------------
+
+
+ 0 pass
+ 1 fail
+ 1 error
+Ran 1 test across 1 file. [3.19s]

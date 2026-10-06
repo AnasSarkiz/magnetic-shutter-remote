@@ -1,0 +1,80 @@
+{
+  "started_utc": "20261006T154719217143Z",
+  "command": [
+    "python3",
+    "/tmp/r8-style-ui-review.py",
+    "--label",
+    "before-stack"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Traceback (most recent call last):
+  File "/tmp/r8-style-ui-review.py", line 43, in <module>
+    asyncio.run(main())
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/tmp/r8-style-ui-review.py", line 24, in main
+    await page.locator('svg').first.wait_for(timeout=10000);await page.screenshot(path=str(out/'schematic-ui.png'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 20507, in wait_for
+    await self._impl_obj.wait_for(timeout=to_milliseconds(timeout), state=state)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_locator.py", line 748, in wait_for
+    await self._frame.wait_for_selector(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 394, in wait_for_selector
+    await self._channel.send(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("svg").first to be visible
+
+{
+  "started_utc": "20261006T154719217143Z",
+  "command": [
+    "python3",
+    "/tmp/r8-style-ui-review.py",
+    "--label",
+    "before-stack"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T15:47:31.193860+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 137144,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T154719217143Z.log"
+}

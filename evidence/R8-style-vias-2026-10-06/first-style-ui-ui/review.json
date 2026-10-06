@@ -1,0 +1,55 @@
+{
+  "observed_utc": "2026-10-06T16:01:22.136217+00:00",
+  "browser_version": "151.0.7922.173",
+  "native_viewer_version": "2.0.99",
+  "circuit_sha256": "139da86c50f312232c659180c3de70027117c8af06601f249b839296421b6d3f",
+  "actual_native_ui_menu_clicked": true,
+  "dialog": "Style Analysis\nClose\n\nPlacement and style issues across all schematic sheets. Each image highlights one issue with its description below.\n\n5 style issues found.\n\n1. Generic Schematic Box Too Wide\nSheet: schematic_sheet_0\n2. Generic Schematic Box Too Wide\nSheet: schematic_sheet_2\n3. Generic Schematic Box Too Wide\nSheet: schematic_sheet_2\n4. Rail Path Too Spread Out\nSheet: schematic_sheet_1\n5. Rail Path Too Spread Out\nSheet: schematic_sheet_2",
+  "issues": [
+    {
+      "heading": "1. Generic Schematic Box Too WideSheet: schematic_sheet_0",
+      "description": "<GenericSchematicBoxTooWide message=\"Shrink schematic box width\" componentName=\"J1\" currentSchWidth=\"1.6\" measuredInnerLabelHorizontalEmptySpace=\"1.025\" maxAllowedInnerLabelHorizontalEmptySpace=\"1\" suggestedSchWidth=\"1.575\" />",
+      "svg": "issue-001.svg"
+    },
+    {
+      "heading": "2. Generic Schematic Box Too WideSheet: schematic_sheet_2",
+      "description": "<GenericSchematicBoxTooWide message=\"Shrink schematic box width\" componentName=\"U4\" currentSchWidth=\"2.8\" measuredInnerLabelHorizontalEmptySpace=\"1.65\" maxAllowedInnerLabelHorizontalEmptySpace=\"1\" suggestedSchWidth=\"2.15\" />",
+      "svg": "issue-002.svg"
+    },
+    {
+      "heading": "3. Generic Schematic Box Too WideSheet: schematic_sheet_2",
+      "description": "<GenericSchematicBoxTooWide message=\"Shrink schematic box width\" componentName=\"U5\" currentSchWidth=\"3.2\" measuredInnerLabelHorizontalEmptySpace=\"2.05\" maxAllowedInnerLabelHorizontalEmptySpace=\"1\" suggestedSchWidth=\"2.15\" />",
+      "svg": "issue-003.svg"
+    },
+    {
+      "heading": "4. Rail Path Too Spread OutSheet: schematic_sheet_1",
+      "description": "<RailPathTooSpreadOut hostName=\"U1\" pinName=\"GND\" railType=\"ground\" pathSpan=\"9.421\" pathLength=\"13.682\" message=\"Visible path from U1.GND to ground spans 9.42 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />",
+      "svg": "issue-004.svg"
+    },
+    {
+      "heading": "5. Rail Path Too Spread OutSheet: schematic_sheet_2",
+      "description": "<RailPathTooSpreadOut hostName=\"U4\" pinName=\"VDD\" railType=\"power\" pathSpan=\"11.3\" pathLength=\"20.25\" message=\"Visible path from U4.VDD to power spans 11.30 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />",
+      "svg": "issue-005.svg"
+    }
+  ],
+  "issue_count": 5,
+  "http_requests": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200
+    }
+  ],
+  "browser_modules": [
+    {
+      "url": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/latest/dist/browser.js",
+      "status": 200,
+      "path": "analyzer-response-0.js",
+      "sha256": "62428d06ace175a8474161908505eb4e1a1e8ece649c93a3d423a643bcc242bc",
+      "bytes": 723024
+    }
+  ],
+  "browser_errors": [
+    "console:error:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "tls_verification_disabled": false
+}
