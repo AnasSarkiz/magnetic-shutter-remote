@@ -26,7 +26,21 @@ class PowerWidthBudgetTest(unittest.TestCase):
 
     def test_ripple_uses_minimum_frequency_and_inductance(self):
         result = REVIEW.switching_current_budget({'input_floor_v':3,'input_amps':0.74})
-        ripple = 3*(1-3/3.533)/(2_200_000*1.2e-6)
+        # Exact manufacturer row is 1.5uH +/-30% (minimum1.05uH).
+        self.assertAlmostEqual(result['minimum_inductance_h'],1.05e-6,delta=1e-12)
+        ripple = 3*(1-3/3.533)/(2_200_000*1.05e-6)
         self.assertAlmostEqual(result['boost_ripple_peak_to_peak_amps'],ripple)
         self.assertAlmostEqual(result['rms_design_amps'],math.hypot(0.74,ripple/math.sqrt(12)))
         self.assertAlmostEqual(result['peak_design_amps'],0.74+ripple/2)
+
+    def test_saturation_rating_requires_recommended_headroom(self):
+        # A2.0A peak is below the2.3A rating but needs2.4A with TI margin.
+        failures = REVIEW.inductor_rating_failures({'rms_design_amps':1.0,'peak_design_amps':2.0})
+        self.assertEqual(len(failures),1)
+        self.assertIn('20%',failures[0])
+        self.assertEqual(REVIEW.inductor_rating_failures({'rms_design_amps':1.0,'peak_design_amps':1.8}),[])
+
+    def test_rms_rating_is_checked_independently_of_peak_headroom(self):
+        failures = REVIEW.inductor_rating_failures({'rms_design_amps':1.8,'peak_design_amps':1.8})
+        self.assertEqual(len(failures),1)
+        self.assertIn('RMS',failures[0])

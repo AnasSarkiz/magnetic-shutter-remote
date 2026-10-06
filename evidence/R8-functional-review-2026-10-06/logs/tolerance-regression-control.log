@@ -1,0 +1,3 @@
+Original +/-20% checker correctly FAILS exact manufacturer tolerance regression:
+1.2e-06 != 1.05e-06 within 7 places (1.5000000000000005e-07 difference)
+Corrected +/-30% checker PASSES the same manufacturer regression.

@@ -1,0 +1,2882 @@
+{
+  "reference": "evidence/R8-standard-programmer-2026-10-05/unrouted/circuit.json",
+  "reference_sha256": "2a558cbb29d6017818dfe45846b8fb2d31cf42b87c228a24e637cc6468777fc6",
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "fitted_references": 44,
+  "terminals": 159,
+  "identities_values_and_pin_nets_unchanged": true,
+  "contracts": {
+    "J1": {
+      "ftype": "simple_connector",
+      "manufacturer_part_number": "USB4215-03-A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C37616412"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 20,
+          "name": "CC1",
+          "port_hints": [
+            "CC1",
+            "A5",
+            "pin20",
+            "20"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CC1"
+        },
+        {
+          "pin_number": 26,
+          "name": "CC2",
+          "port_hints": [
+            "CC2",
+            "B5",
+            "pin26",
+            "26"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CC2"
+        },
+        {
+          "pin_number": 23,
+          "name": "Dn1",
+          "port_hints": [
+            "Dn1",
+            "A7",
+            "pin23",
+            "23"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 21,
+          "name": "Dn2",
+          "port_hints": [
+            "Dn2",
+            "B7",
+            "pin21",
+            "21"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 22,
+          "name": "Dp1",
+          "port_hints": [
+            "Dp1",
+            "A6",
+            "pin22",
+            "22"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 24,
+          "name": "Dp2",
+          "port_hints": [
+            "Dp2",
+            "B6",
+            "pin24",
+            "24"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 14,
+          "name": "EH1",
+          "port_hints": [
+            "EH1",
+            "pin14",
+            "14"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 13,
+          "name": "EH2",
+          "port_hints": [
+            "EH2",
+            "pin13",
+            "13"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 15,
+          "name": "EH3",
+          "port_hints": [
+            "EH3",
+            "pin15",
+            "15"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 16,
+          "name": "EH4",
+          "port_hints": [
+            "EH4",
+            "pin16",
+            "16"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 17,
+          "name": "GND1",
+          "port_hints": [
+            "GND1",
+            "A1B12",
+            "pin17",
+            "17"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 28,
+          "name": "GND2",
+          "port_hints": [
+            "GND2",
+            "B1A12",
+            "pin28",
+            "28"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 25,
+          "name": "SBU1",
+          "port_hints": [
+            "SBU1",
+            "A8",
+            "pin25",
+            "25"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 19,
+          "name": "SBU2",
+          "port_hints": [
+            "SBU2",
+            "B8",
+            "pin19",
+            "19"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 18,
+          "name": "VBUS1",
+          "port_hints": [
+            "VBUS1",
+            "A4B9",
+            "pin18",
+            "18"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 27,
+          "name": "VBUS2",
+          "port_hints": [
+            "VBUS2",
+            "B4A9",
+            "pin27",
+            "27"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        }
+      ]
+    },
+    "R2": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF5101T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C23186"
+        ]
+      },
+      "resistance": 5100,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CC2"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R1": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF5101T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C23186"
+        ]
+      },
+      "resistance": 5100,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CC1"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "U2": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "BQ25185DLHR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19725033"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 2,
+          "name": "BAT",
+          "port_hints": [
+            "BAT",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 11,
+          "name": "EP",
+          "port_hints": [
+            "EP",
+            "pin11",
+            "11"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 5,
+          "name": "GND",
+          "port_hints": [
+            "GND",
+            "pin5",
+            "5"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 7,
+          "name": "ILIM",
+          "port_hints": [
+            "ILIM",
+            "VSET",
+            "pin7",
+            "7"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VSET"
+        },
+        {
+          "pin_number": 10,
+          "name": "IN",
+          "port_hints": [
+            "IN",
+            "pin10",
+            "10"
+          ],
+          "requires_power": true,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 8,
+          "name": "ISET",
+          "port_hints": [
+            "ISET",
+            "pin8",
+            "8"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "PROG"
+        },
+        {
+          "pin_number": 4,
+          "name": "N_CE",
+          "port_hints": [
+            "N_CE",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_DISABLE"
+        },
+        {
+          "pin_number": 9,
+          "name": "STAT1",
+          "port_hints": [
+            "STAT1",
+            "pin9",
+            "9"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 3,
+          "name": "STAT2",
+          "port_hints": [
+            "STAT2",
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_STAT"
+        },
+        {
+          "pin_number": 1,
+          "name": "SYS",
+          "port_hints": [
+            "SYS",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGER_SYS"
+        },
+        {
+          "pin_number": 6,
+          "name": "TS",
+          "port_hints": [
+            "TS",
+            "MR",
+            "pin6",
+            "6"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TS_BIAS"
+        }
+      ]
+    },
+    "R3": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1001T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21190"
+        ]
+      },
+      "resistance": 1000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "PROG"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C2": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL10A475KO8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19666"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 4.7e-06,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C1": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL10A475KO8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19666"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 4.7e-06,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R4": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1001T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21190"
+        ]
+      },
+      "resistance": 1000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_LED_A"
+        }
+      ]
+    },
+    "LED1": {
+      "ftype": "simple_led",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2286"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "anode",
+          "port_hints": [
+            "anode",
+            "pos",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_LED_A"
+        },
+        {
+          "pin_number": 2,
+          "name": "cathode",
+          "port_hints": [
+            "cathode",
+            "neg",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_STAT"
+        }
+      ]
+    },
+    "J2": {
+      "ftype": "simple_connector",
+      "manufacturer_part_number": "SM02B-SRSS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C160402"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 4,
+          "name": "pin4",
+          "port_hints": [
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R8": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1303T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C22795"
+        ]
+      },
+      "resistance": 130000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VSET"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R9": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1002T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25804"
+        ]
+      },
+      "resistance": 10000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TS_BIAS"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C8": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGER_SYS"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C9": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "TCC0603COG470J500CT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C282505"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 4.7e-11,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "PROG"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "U1": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "ESPC3-12-N4",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19949072"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 3,
+          "name": "EN",
+          "port_hints": [
+            "EN",
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "EN"
+        },
+        {
+          "pin_number": 15,
+          "name": "GND",
+          "port_hints": [
+            "GND",
+            "pin15",
+            "15"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 1,
+          "name": "IO0",
+          "port_hints": [
+            "IO0",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 2,
+          "name": "IO1",
+          "port_hints": [
+            "IO1",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 17,
+          "name": "IO10",
+          "port_hints": [
+            "IO10",
+            "pin17",
+            "17"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 19,
+          "name": "IO18",
+          "port_hints": [
+            "IO18",
+            "pin19",
+            "19"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 20,
+          "name": "IO19",
+          "port_hints": [
+            "IO19",
+            "pin20",
+            "20"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 4,
+          "name": "IO2",
+          "port_hints": [
+            "IO2",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 5,
+          "name": "IO3",
+          "port_hints": [
+            "IO3",
+            "pin5",
+            "5"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 6,
+          "name": "IO4",
+          "port_hints": [
+            "IO4",
+            "pin6",
+            "6"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "SHUTTER"
+        },
+        {
+          "pin_number": 7,
+          "name": "IO5",
+          "port_hints": [
+            "IO5",
+            "pin7",
+            "7"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "PAIR"
+        },
+        {
+          "pin_number": 12,
+          "name": "IO6",
+          "port_hints": [
+            "IO6",
+            "pin12",
+            "12"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "STATUS_LED"
+        },
+        {
+          "pin_number": 13,
+          "name": "IO7",
+          "port_hints": [
+            "IO7",
+            "pin13",
+            "13"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 16,
+          "name": "IO8",
+          "port_hints": [
+            "IO8",
+            "pin16",
+            "16"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 18,
+          "name": "IO9",
+          "port_hints": [
+            "IO9",
+            "pin18",
+            "18"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "BOOT"
+        },
+        {
+          "pin_number": 9,
+          "name": "NC1",
+          "port_hints": [
+            "NC1",
+            "pin9",
+            "9"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 10,
+          "name": "NC2",
+          "port_hints": [
+            "NC2",
+            "pin10",
+            "10"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 11,
+          "name": "NC3",
+          "port_hints": [
+            "NC3",
+            "pin11",
+            "11"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 14,
+          "name": "NC4",
+          "port_hints": [
+            "NC4",
+            "pin14",
+            "14"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": 21,
+          "name": "RX0",
+          "port_hints": [
+            "RX0",
+            "pin21",
+            "21"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "UART_RX"
+        },
+        {
+          "pin_number": 22,
+          "name": "TX0",
+          "port_hints": [
+            "TX0",
+            "pin22",
+            "22"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "UART_TX"
+        },
+        {
+          "pin_number": 8,
+          "name": "VCC",
+          "port_hints": [
+            "VCC",
+            "pin8",
+            "8"
+          ],
+          "requires_power": true,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        }
+      ]
+    },
+    "C5": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-07,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C10": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "SW2": {
+      "ftype": "simple_push_button",
+      "manufacturer_part_number": "TS24CA",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C393942"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "SHUTTER"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 4,
+          "name": "pin4",
+          "port_hints": [
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "SW3": {
+      "ftype": "simple_push_button",
+      "manufacturer_part_number": "TS-1088-AR02016",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C720477"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "PAIR"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R7": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1001T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21190"
+        ]
+      },
+      "resistance": 1000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "STATUS_LED"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "STATUS_LED_A"
+        }
+      ]
+    },
+    "LED2": {
+      "ftype": "simple_led",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2286"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "anode",
+          "port_hints": [
+            "anode",
+            "pos",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "STATUS_LED_A"
+        },
+        {
+          "pin_number": 2,
+          "name": "cathode",
+          "port_hints": [
+            "cathode",
+            "neg",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "J3": {
+      "ftype": "simple_connector",
+      "manufacturer_part_number": "BM03B-SRSS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C160389"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "UART_RX"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "UART_TX"
+        },
+        {
+          "pin_number": 4,
+          "name": "pin4",
+          "port_hints": [
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 5,
+          "name": "pin5",
+          "port_hints": [
+            "pin5",
+            "5"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "SW4": {
+      "ftype": "simple_push_button",
+      "manufacturer_part_number": "TS-1088-AR02016",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C720477"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "BOOT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "SW5": {
+      "ftype": "simple_push_button",
+      "manufacturer_part_number": "TS-1088-AR02016",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C720477"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "EN"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "SW1": {
+      "ftype": "simple_switch",
+      "manufacturer_part_number": "MSK12C02",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C431540"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "BATTERY_OK"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "POWER_SWITCH"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 4,
+          "name": "pin4",
+          "port_hints": [
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": null,
+          "name": "pin4_internal_1",
+          "port_hints": [
+            "pin4_internal_1",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": null,
+          "name": "pin4_internal_2",
+          "port_hints": [
+            "pin4_internal_2",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        },
+        {
+          "pin_number": null,
+          "name": "pin4_internal_3",
+          "port_hints": [
+            "pin4_internal_3",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": null
+        }
+      ]
+    },
+    "R5": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25803"
+        ]
+      },
+      "resistance": 100000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "POWER_SWITCH"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "REG_EN"
+        }
+      ]
+    },
+    "Q1": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "2N7002",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8545"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "G",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "S",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "D",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "REG_EN"
+        }
+      ]
+    },
+    "R6": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25803"
+        ]
+      },
+      "resistance": 100000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "U3": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "TPS63031DSKR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15516"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 6,
+          "name": "EN",
+          "port_hints": [
+            "EN",
+            "pin6",
+            "6"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "REG_EN"
+        },
+        {
+          "pin_number": 11,
+          "name": "EP",
+          "port_hints": [
+            "EP",
+            "pin11",
+            "11"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 10,
+          "name": "FB",
+          "port_hints": [
+            "FB",
+            "pin10",
+            "10"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        },
+        {
+          "pin_number": 9,
+          "name": "GND",
+          "port_hints": [
+            "GND",
+            "pin9",
+            "9"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 4,
+          "name": "L1",
+          "port_hints": [
+            "L1",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "INDUCTOR_L1"
+        },
+        {
+          "pin_number": 2,
+          "name": "L2",
+          "port_hints": [
+            "L2",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "INDUCTOR_L2"
+        },
+        {
+          "pin_number": 3,
+          "name": "PGND",
+          "port_hints": [
+            "PGND",
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 7,
+          "name": "PS",
+          "port_hints": [
+            "PS",
+            "SYNC",
+            "pin7",
+            "7"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 5,
+          "name": "VIN",
+          "port_hints": [
+            "VIN",
+            "pin5",
+            "5"
+          ],
+          "requires_power": true,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 8,
+          "name": "VINA",
+          "port_hints": [
+            "VINA",
+            "pin8",
+            "8"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 1,
+          "name": "VOUT",
+          "port_hints": [
+            "VOUT",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        }
+      ]
+    },
+    "L1": {
+      "ftype": "simple_inductor",
+      "manufacturer_part_number": "SWPA3015S1R5NT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C56594"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": "1.5uH",
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "INDUCTOR_L2"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "INDUCTOR_L1"
+        }
+      ]
+    },
+    "C11": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C12": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C13": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-07,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C3": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "C4": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CL21A106KAYNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15850"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-05,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "V3"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "U4": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "TPS3839G33DBZR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C485802"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "GND",
+          "port_hints": [
+            "GND",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 2,
+          "name": "N_RESET",
+          "port_hints": [
+            "N_RESET",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "BATTERY_OK"
+        },
+        {
+          "pin_number": 3,
+          "name": "VDD",
+          "port_hints": [
+            "VDD",
+            "pin3",
+            "3"
+          ],
+          "requires_power": true,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        }
+      ]
+    },
+    "C6": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-07,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "VBAT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "U5": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "TMP390A2DRLR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5219772"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 3,
+          "name": "GND",
+          "port_hints": [
+            "GND",
+            "pin3",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 6,
+          "name": "N_OUTA",
+          "port_hints": [
+            "N_OUTA",
+            "pin6",
+            "6"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_OK"
+        },
+        {
+          "pin_number": 4,
+          "name": "N_OUTB",
+          "port_hints": [
+            "N_OUTB",
+            "pin4",
+            "4"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_OK"
+        },
+        {
+          "pin_number": 1,
+          "name": "SETA",
+          "port_hints": [
+            "SETA",
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_SET_HOT"
+        },
+        {
+          "pin_number": 2,
+          "name": "SETB",
+          "port_hints": [
+            "SETB",
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_SET_COLD"
+        },
+        {
+          "pin_number": 5,
+          "name": "VDD",
+          "port_hints": [
+            "VDD",
+            "pin5",
+            "5"
+          ],
+          "requires_power": true,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        }
+      ]
+    },
+    "C7": {
+      "ftype": "simple_capacitor",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "resistance": null,
+      "capacitance": 1e-07,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R10": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1621T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C22844"
+        ]
+      },
+      "resistance": 1620,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_SET_HOT"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R11": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1872T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C22893"
+        ]
+      },
+      "resistance": 18700,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_SET_COLD"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        }
+      ]
+    },
+    "R12": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25803"
+        ]
+      },
+      "resistance": 100000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_OK"
+        }
+      ]
+    },
+    "R13": {
+      "ftype": "simple_resistor",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25803"
+        ]
+      },
+      "resistance": 100000,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "anode",
+            "pos",
+            "left",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "USB5V"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "cathode",
+            "neg",
+            "right",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_DISABLE"
+        }
+      ]
+    },
+    "Q2": {
+      "ftype": "simple_chip",
+      "manufacturer_part_number": "2N7002",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8545"
+        ]
+      },
+      "resistance": null,
+      "capacitance": null,
+      "inductance": null,
+      "terminals": [
+        {
+          "pin_number": 1,
+          "name": "pin1",
+          "port_hints": [
+            "pin1",
+            "G",
+            "1"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "TEMP_OK"
+        },
+        {
+          "pin_number": 2,
+          "name": "pin2",
+          "port_hints": [
+            "pin2",
+            "S",
+            "2"
+          ],
+          "requires_power": null,
+          "requires_ground": true,
+          "is_input": null,
+          "is_output": null,
+          "net": "GND"
+        },
+        {
+          "pin_number": 3,
+          "name": "pin3",
+          "port_hints": [
+            "pin3",
+            "D",
+            "3"
+          ],
+          "requires_power": null,
+          "requires_ground": null,
+          "is_input": null,
+          "is_output": null,
+          "net": "CHARGE_DISABLE"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Retained manufacturer qualification is documented separately.",
+    "This schematic comparison does not prove physical copper continuity."
+  ]
+}

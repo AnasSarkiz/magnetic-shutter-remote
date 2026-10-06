@@ -1,0 +1,69 @@
+{
+  "started_utc": "20261006T115102403125Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/cam",
+    "-p",
+    "test_power_width_budgets.py",
+    "-v"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+test_old_neck_passes_dc_but_fails_switching_rms (test_power_width_budgets.PowerWidthBudgetTest.test_old_neck_passes_dc_but_fails_switching_rms) ... ok
+test_ripple_uses_minimum_frequency_and_inductance (test_power_width_budgets.PowerWidthBudgetTest.test_ripple_uses_minimum_frequency_and_inductance) ... ok
+test_rms_rating_is_checked_independently_of_peak_headroom (test_power_width_budgets.PowerWidthBudgetTest.test_rms_rating_is_checked_independently_of_peak_headroom) ... ok
+test_saturation_rating_requires_recommended_headroom (test_power_width_budgets.PowerWidthBudgetTest.test_saturation_rating_requires_recommended_headroom) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+{
+  "started_utc": "20261006T115102403125Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/cam",
+    "-p",
+    "test_power_width_budgets.py",
+    "-v"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T11:51:02.543480+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 36992,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T115102403125Z.log"
+}

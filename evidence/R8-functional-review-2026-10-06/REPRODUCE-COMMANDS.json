@@ -1,0 +1,78 @@
+{
+  "working_directory": "repository root; preserve active R8 task branch",
+  "runtime": "Pinned PATH from cloud/SETUP.md. Heavy commands serial; do not overwrite retained evidence when repeating.",
+  "commands_executed": [
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/cam",
+      "-v"
+    ],
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-power.py",
+      "--output",
+      "evidence/R8-functional-review-2026-10-06/power-path-measurements.json"
+    ],
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-r8-native.ts",
+      "evidence/R8-functional-review-2026-10-06/native-checks.json"
+    ],
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-connectivity.py",
+      "--output",
+      "evidence/R8-functional-review-2026-10-06/physical-connectivity.json"
+    ],
+    [
+      "python3",
+      "scripts/review-r8-electrical-contract.py",
+      "--output",
+      "evidence/R8-functional-review-2026-10-06/electrical-contract.json"
+    ],
+    [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/cam",
+      "-p",
+      "test_power_width_budgets.py",
+      "-v"
+    ]
+  ],
+  "read_only_image_command": "PYTHONPATH=\"$PWD/firmware/deps/modules/hal/espressif/tools/esptool_py\" firmware/.venv/bin/python scripts/flash-r8-standard-jst.py",
+  "firmware_manifest_hash_check": "All6 build inputs and6 artifact hashes from firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json",
+  "no_root_build_or_routing": true
+}

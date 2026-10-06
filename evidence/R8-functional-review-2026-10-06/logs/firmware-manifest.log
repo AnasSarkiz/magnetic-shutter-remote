@@ -1,0 +1,2 @@
+All6 recorded build inputs and6 firmware artifacts match retained manufacturer-qualified C3 build manifest.
+Compiled DTS reviewed: GPIO4/5 active-low pull-ups (0x11),GPIO6 active-high,40MHz crystal;4MB flash,ESP_SIMPLE_BOOT,Bluetooth enabled,WiFi disabled.

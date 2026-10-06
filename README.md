@@ -1,5 +1,11 @@
 # Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
+Latest [functional net review](evidence/R8-functional-review-2026-10-06/REVIEW.md)
+passes power/charge/switch/boot/UART/button design checks and fresh29/29 physical
+nets,0 DRC errors/shorts. Corrected the checker to the fitted inductor's±30%
+tolerance and TI20% saturation margin; existing copper still passes. PCB and
+firmware remain0.3.5 and physically untested; prototype bring-up is documented.
+
 The compact redesign must use a MagSafe phone-facing grip and support multiple
 iPhone sizes and compatible cases. [Mechanical requirements](mechanical/R8-MAGSAFE-REQUIREMENTS.md)
 define the model/camera/case and antenna-clearance gates. MagSafe attachment and

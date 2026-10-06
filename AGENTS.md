@@ -22,6 +22,11 @@ The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection:
 
 ## Electronic parts and validation
 
+Latest functional/power audit successor is `evidence/R8-functional-review-2026-10-06/REVIEW.md`.
+Exact fitted C56594 is1.5µH±30%, minimum1.05µH; older±20% ripple calculations
+are superseded, original evidence immutable. TI20% saturation headroom now
+explicitly checked; unchanged0.3.5 route23 passes. Physical operation is untested.
+
 Every fitted part requires exact manufacturer MPN and eligible stocked JLCPCB/LCSC C-number. Use supported JLCPCB imports. No custom substitute footprints, generated-import edits, guessed pins, fabricated numbers, generic placeholder parts or manually edited circuit JSON. Preserve original failing inputs and report discrepancies. Focused generic tooling fixes with meaningful tests are authorized; do not suppress warnings or weaken tests/checkers.
 
 Follow the workspace validation stages: requirements → schematic/BOM → unrouted placement → routing → automated/visual checks → fabrication exports/supplier preview. Use native A4 schematic sheets. Record actual measurements and inspection evidence; do not reuse R6/R7 pass counts as R8 results. Physical battery, RF, thermal, runtime, enclosure fit and phone tests remain **POST-PROTOTYPE PHYSICAL VALIDATION**.

@@ -135,3 +135,5 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [093 — Process audit omitted overlapping legends](093-process-audit-omits-overlapping-legends.md): real PAIR/POWER collision caught visually; source label moved, same-layer readability check and original-native regression added.
 
 - [094 — Named schematic pin arrangement produces invalid Circuit JSON](094-named-schematic-arrangement-produces-invalid-json.md): pinned core/schema mismatch; supported numeric board-level arrangement used, original failed input retained.
+
+- [095 — Power review uses wrong inductor tolerance](095-power-review-uses-wrong-inductor-tolerance.md): project audit defect corrected from exact manufacturer±30% row, TI20% saturation headroom enforced; old checker fails meaningful regression, unchanged route23 passes corrected budget. Not an importer defect.

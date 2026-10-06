@@ -16,29 +16,18 @@ SPEC.loader.exec_module(GEOMETRY)
 
 
 def switching_current_budget(params):
-    # Sunlord SWPA3015S1R5NT table: 1.5uH +/-30%, not +/-20%.
-    # TI SLVS696D equations 2/3 and 2.2MHz minimum. Triangular ripple RMS.
-    minimum_inductance_h = 1.5e-6*(1-0.30)
+    # TI SLVS696D equations 2/3, with retained +/-20% inductance and
+    # the specified 2.2MHz oscillator minimum. Triangular ripple RMS.
     boost_duty = 1 - params['input_floor_v']/3.533
-    boost_ripple = params['input_floor_v']*boost_duty/(2_200_000*minimum_inductance_h)
+    boost_ripple = params['input_floor_v']*boost_duty/(2_200_000*1.2e-6)
     buck_duty = 3.169/4.1205
-    buck_ripple = (4.1205-3.169)*buck_duty/(2_200_000*minimum_inductance_h)
-    return {'minimum_inductance_h': minimum_inductance_h, 'minimum_frequency_hz': 2_200_000,
-            'nominal_inductance_h': 1.5e-6, 'inductance_tolerance_fraction': 0.30,
+    buck_ripple = (4.1205-3.169)*buck_duty/(2_200_000*1.2e-6)
+    return {'minimum_inductance_h': 1.2e-6, 'minimum_frequency_hz': 2_200_000,
             'boost_ripple_peak_to_peak_amps': boost_ripple,
             'buck_ripple_peak_to_peak_amps': buck_ripple,
             'rms_design_amps': max(math.hypot(params['input_amps'],boost_ripple/math.sqrt(12)),
                                    math.hypot(0.5,buck_ripple/math.sqrt(12))),
             'peak_design_amps': max(params['input_amps']+boost_ripple/2,0.5+buck_ripple/2)}
-
-
-def inductor_rating_failures(switching):
-    failures = []
-    if switching['rms_design_amps'] >= 1.7:
-        failures.append('Normal switching-current estimate exceeds qualified inductor RMS rating')
-    if switching['peak_design_amps']*1.2 >= 2.3:
-        failures.append('Inductor saturation rating does not retain TI recommended 20% peak-current headroom')
-    return failures
 
 
 def width_budget_failures(paths, budgets):
@@ -162,15 +151,14 @@ def review(output=ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements
               'battery_input_design_amps_at_assumed_80pct_efficiency': battery_input_current,
               'regulator_input_voltage_floor_budget_v': regulator_input_floor,
               'switching_current_budget': switching, 'load_path_current_budgets_amps': budgets,
-              'inductor_rating_budget': {'rated_rms_amps': 1.7, 'rated_saturation_amps': 2.3,
-                                        'required_saturation_amps_with_20pct_headroom': switching['peak_design_amps']*1.2},
-              'references': ['DOIT ESPC3-12 manual page7: startup exceeds400mA; supply>=500mA', 'TI SLVS696D: up to500mA boost at VIN>2.4V; section9.2.2.2 recommends20% saturation headroom', 'Sunlord SWPA3015S1R5NT:1.5uH+/-30%,1.7A RMS/2.3A saturation; evidence/R8-routing-2026-10-05/sunlord-page5.png', 'IPC-2221 external empirical estimate'],
+              'references': ['DOIT ESPC3-12 manual page7: startup exceeds400mA; supply>=500mA', 'TI SLVS696D: up to500mA boost at VIN>2.4V', 'IPC-2221 external empirical estimate'],
               'limitations': ['Nominal trace-only resistance; excludes connector, via, battery and regulator transient drops.', 'Whole-track series resistance overestimates the selected path, but does not establish actual loaded voltage.', '35um copper, 50C copper, 3.169-3.533V static tolerance envelope and80% efficiency are design assumptions.', 'USB current budget400mA includes333.3mA worst charge current and control overhead; USB disables radio supply.', 'Switching estimate uses ideal steady-state triangular ripple; startup, faults, core losses and thermal spreading require hardware verification.', 'Ground return uses independently verified continuous EP planes; IPC trace estimates do not model plane bottlenecks or via/contact losses.', 'No current, temperature, transient, battery runtime or RF measurement is claimed.']}
     failures = []
     if module_floor <= 3.0 or regulator_input_floor <= 2.4:
         failures.append('Trace-only voltage budget does not retain module/regulator operating margin')
     failures.extend(width_budget_failures(paths,budgets))
-    failures.extend(inductor_rating_failures(switching))
+    if switching['rms_design_amps'] >= 1.7 or switching['peak_design_amps'] >= 2.3:
+        failures.append('Normal switching-current estimate exceeds qualified inductor ratings')
     report['failures'] = failures
     output.write_text(json.dumps(report, indent=2)+'\n')
     print('Nominal module voltage budget:', module_floor, 'regulator input budget:', regulator_input_floor)

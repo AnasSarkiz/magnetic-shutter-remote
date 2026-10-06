@@ -1,5 +1,14 @@
 # Current R8 compact PCB review — 2026-10-06
 
+Latest functional follow-up: [review](../evidence/R8-functional-review-2026-10-06/REVIEW.md).
+Fresh29/29 physical nets and0 native DRC errors/shorts pass, with manufacturer
+power/charge/switch/boot/UART and compiled firmware GPIO/HID review. Audit095
+corrects the inductor tolerance to±30% (min1.05µH) and enforces TI20% saturation
+margin; unchanged route23 still passes0.7450A RMS/0.8446A peak.29 CAM tests,
+36 Python+2 Bun smoke tests and actual pinned image parsing pass. Earlier±20%
+ripple figures are superseded without editing archived reports. Physical
+power/flashing/BLE/RF/thermal/product tests and supplier approval remain pending.
+
 Hardware/package **0.3.5**, native route23: **44 × 56 × 1 mm**, two-layer FR4,
 44 TOP references / 25 exact JLCPCB identities. Follow the JJC MSG-P1 grip and
 detachable side shutter arrangement; the PCB is smaller than the complete

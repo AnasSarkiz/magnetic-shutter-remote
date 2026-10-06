@@ -1,0 +1,2 @@
+50935d2277501f7b7ba78cd8d2dcae48f1040260	refs/heads/board/r8-doit-c3-prototype-20261005
+5951f419c8314b83648d89e1cfb7e29e87e32eb8	refs/heads/main

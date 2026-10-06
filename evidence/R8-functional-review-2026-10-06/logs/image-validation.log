@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/scripts/flash-r8-standard-jst.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/magnetic-shutter-remote/scripts/flash-r8-standard-jst.py", line 57, in main
+    import esptool
+ModuleNotFoundError: No module named 'esptool'
