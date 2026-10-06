@@ -1,0 +1,96 @@
+[
+  {
+    "check": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "execution": "canonical lightweight command, outside the heavy guard"
+  },
+  {
+    "check": "electrical-contract",
+    "command": [
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "native",
+    "command": [
+      "bun",
+      "scripts/check-r8-native.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-issue-resolution-2026-10-06/native-checks.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "shorts",
+    "command": [
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "connectivity",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-connectivity.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-issue-resolution-2026-10-06/physical-connectivity.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "widths",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-trace-widths.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-issue-resolution-2026-10-06/trace-widths.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "power",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-power.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-issue-resolution-2026-10-06/power-path-measurements.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "cam-regressions",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/cam",
+      "-v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "final-staging-regressions",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_registry_staging.py",
+      "-v"
+    ],
+    "exit_code": 0
+  }
+]

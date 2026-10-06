@@ -44,6 +44,8 @@ firmware/build-c2/
 firmware/build-c3/
 firmware/zephyr-sdk-0.17.2/
 firmware/sdk-download/
+firmware/programmers/*/work/
+firmware/programmers/*/dist/
 tooling/gerber-review-venv/
 __pycache__/
 

@@ -5,6 +5,7 @@ Registry staging includes only the board source closure, models, build JSON,
 review documentation and required file dependencies; never caches or SDKs.
 """
 import argparse
+from dataclasses import dataclass
 import hashlib
 import json
 import re
@@ -13,6 +14,31 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUALIFICATION = ROOT / 'evidence/R8-standard-programmer-2026-10-05'
+
+
+@dataclass(frozen=True)
+class StageOptions:
+    evidence: Path
+    supplemental_files: tuple[Path, ...] = ()
+
+
+def supplemental_files(options, circuit_sha256):
+    selected = set()
+    for requested in options.supplemental_files:
+        path = (ROOT / requested).resolve()
+        relative = path.relative_to(ROOT)
+        if relative.parts[0] not in {'evidence', 'firmware', 'mechanical', 'tscircuit-issues'}:
+            raise ValueError(f'Supplemental input must be board evidence: {relative}')
+        if any(part.startswith('.') for part in relative.parts) or not path.is_file():
+            raise ValueError(f'Supplemental input must be a visible regular file: {relative}')
+        if path.suffix == '.json':
+            report = json.loads(path.read_text())
+            if isinstance(report, dict):
+                for key in ('circuit_sha256', 'circuitSha256'):
+                    if key in report and report[key] != circuit_sha256:
+                        raise ValueError(f'Supplemental report belongs to another circuit: {relative}')
+        selected.add(path)
+    return selected
 
 
 def resolve_import(specifier, parent):
@@ -40,8 +66,8 @@ def source_closure(entry):
     return selected
 
 
-def stage(destination, evidence):
-    evidence = evidence.resolve()
+def stage(destination, options):
+    evidence = options.evidence.resolve()
     evidence.relative_to(ROOT / 'evidence')
     destination = destination.resolve()
     destination.relative_to(ROOT / '.codex/runtime')
@@ -114,6 +140,7 @@ def stage(destination, evidence):
     selected.add(evidence / 'failed-route10/circuit.json')
     selected.add(evidence / 'failed-route20-visual/process-review.json')
     selected.add(evidence / 'sourcing-check.json')
+    selected.update(supplemental_files(options, circuit_sha256))
     selected.update(evidence / name for name in ['REPRODUCE-COMMANDS.json',
                     'placement-preservation.json', 'preservation.json', 'visual-review/inspection.json'])
     fabrication = ROOT / 'fabrication' / evidence.name
@@ -142,5 +169,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--destination', type=Path, required=True)
     parser.add_argument('--evidence', type=Path, required=True)
+    parser.add_argument('--supplemental-file', type=Path, action='append', default=[],
+                        help='Current review or programmer artifact to publish with the unchanged PCB')
     args = parser.parse_args()
-    stage(args.destination, args.evidence)
+    stage(args.destination, StageOptions(args.evidence, tuple(args.supplemental_file)))

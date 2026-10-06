@@ -1,5 +1,15 @@
 # Current R8 compact PCB review — 2026-10-06
 
+Latest [issue resolution](../evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
+pinned standard JST programmer0.8.0 UF2/ELF build and USB/UF2 validation pass.
+Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths and corrected
+±30% current budgets pass; smoke38 Python+2 Bun/13 assertions and29 CAM pass.
+Package0.3.6-prototype updates audit/programmer evidence; PCB stays hardware0.3.5.
+Inventory096 is an unconfirmed allocation question, not a proven shortage.
+Official Apple R31 guidance is retained; exact magnet/enclosure/phone fit,
+supplier-processed preview and physical operation remain unqualified.
+See the dated review for evidence and the subsequent publication record.
+
 Latest [six-point review](../evidence/R8-six-point-review-2026-10-06/REVIEW.md)
 passes12 fresh placement/netlist/copper/current/fabrication checks on unchanged
 0.3.5 route23. Official25 exact JLCPCB MPN/SMT listings reviewed;24 direct fields

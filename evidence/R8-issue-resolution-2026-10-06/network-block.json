@@ -1,0 +1,8 @@
+{
+  "host": "assets.jlcpcb.com",
+  "url": "https://assets.jlcpcb.com/web-resources/component-platform-static/CanaryLane/latest/_next/static/chunks/app/%5Blocale%5D/partdetail/%5B...urlSuffix%5D/page-f108ee61f630cc2b.js",
+  "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+  "draft_saved": true,
+  "runtime_access_passed": false,
+  "proxy_bypassed": false
+}

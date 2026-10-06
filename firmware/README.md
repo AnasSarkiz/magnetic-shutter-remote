@@ -1,3 +1,15 @@
+# Verified standard JST programmer firmware —2026-10-06
+
+The exact public0.8.0 programmer firmware now builds in the guarded cloud.
+[Verified125440-byte UART UF2](artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.uf2),
+ELF/BIN/licenses and BUILD-MANIFEST are retained. Actual USB descriptor and
+UF2/bin readback checks pass. [Current usage/reproduction](programmers/standard-jst-programmer-0.8.0/R8-USAGE.md)
+identifies J5→J3, CDC0, battery power and manual BOOT/RESET. This programmer
+image is for RP2040, **never for the R8 ESP32-C3**. The reviewed C3 image/source
+are unchanged. No hardware is attached; install/enumeration/target flashing
+and BLE/iPhone Camera tests remain unrun. Older build/connector descriptions
+below are retained history; current3-pin contract and newest usage take priority.
+
 # Current R8 direct JST UART programming —2026-10-05
 
 R8 now uses **J3 BM03B-SRSS-TB(LF)(SN)/C160389**,3-pin JST SH1mm: **1RX(GPIO20),2GND,3TX(GPIO21)**. Connect directly to the standard-jst-programmer0.8.0 **J5 UART** with a straight-through cable; programmer contact1TX/3RX. R8 battery POWER on, R8 USB-C unplugged; programmer target-power/SWD cables disconnected. BOOT(SW4)/RESET(SW5) remain manual. Read [the programming procedure](../evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md) before using hardware. The host helper preserves DTR on Windows/Linux/macOS and requires an explicit write flag/CDC0 port. No physical flash test is claimed.

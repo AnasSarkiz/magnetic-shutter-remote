@@ -26,3 +26,16 @@ Resolve through later authorized stock/allocation and supplier-processed
 preview review, or separately qualify an exact compatible replacement before
 changing the BOM. No reservation, supplier contact, order, payment, assembler
 upload or unqualified substitution occurred. R8 wiring/clearance checks pass.
+
+## Follow-up —2026-10-06
+
+The same raw fields were reproduced in
+`evidence/R8-issue-resolution-2026-10-06/module-current.json`.
+The earlier "direct" label for `canPresaleNumber` is an interpretation;
+supporting client semantics could not be verified because `assets.jlcpcb.com`
+is still blocked by the running proxy. The exact host was added to the saved
+restricted draft, preserving all existing domains; saving did not apply it.
+This observation does **not establish a five-module shortage** or a PCB
+design blocker. Overseas stock66 likewise is not a reservation or an approved
+assembly allocation. Keep the question open for procurement review instead
+of making an unqualified radio substitution.

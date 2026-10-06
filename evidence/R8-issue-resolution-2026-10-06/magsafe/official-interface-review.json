@@ -1,0 +1,50 @@
+{
+  "source": "official-guide-source.json",
+  "release": "Apple R31 2026-09-21",
+  "reference_pages": [
+    275,
+    276,
+    277,
+    278,
+    279,
+    283,
+    284,
+    288
+  ],
+  "visually_inspected_pdf_pages": [
+    278,
+    279,
+    284
+  ],
+  "accessory_ring_nominal_outer_diameter_mm": 54.1,
+  "accessory_ring_nominal_inner_diameter_mm": 46.0,
+  "array_center_position_tolerance_mm": 0.3,
+  "magnet_material": "N48H NdFeB; accessory specification, not N45SH case specification",
+  "plating": "7\u201313um NiCuNi or similar",
+  "max_product_surface_flux_t": 0.215,
+  "max_radial_self_alignment_mm": 1.55,
+  "accessory_pull_force_gf_min": 650,
+  "accessory_pull_force_gf_max": 1510,
+  "array_magnet_thickness_mm_nominal": 1.1,
+  "dc_shield_thickness_mm_nominal": 0.7,
+  "adhesive_thickness_mm_nominal": 0.05,
+  "surface_to_magnet_top_mm_nominal": 0.65,
+  "surface_to_magnet_top_tolerance_mm": 0.05,
+  "dc_shield_material": "low carbon steel1010/DT4 or similar, per ASTM848;5\u201310um Ni finish or similar;Bsat>=2.0T",
+  "attach_surface_top_extent_from_ring_center_mm_max": 30,
+  "all_orientations_attach_surface_radius_mm_max": 30,
+  "clearance_for_parts_beyond_30mm_keep_in_mm_min": 6,
+  "detailed_enclosure_geometry": "must satisfy original page284 drawing including transition envelope;30mm/6mm alone does not replace drawing",
+  "current_pcb_width_mm": 44,
+  "current_pcb_height_mm": 56,
+  "current_pcb_corner_radius_from_center_mm": 35.608987629529715,
+  "exact_magnet_mpn_selected": false,
+  "complete_grip_transform_and_phone_case_clearances_qualified": false,
+  "physical_attachment_rf_and_phone_test": "NOT RUN",
+  "old_0_55mm_third_party_ring_model": "case-like simplified prior reference; not a qualified accessory assembly; do not reuse as current accessory construction specification",
+  "rendered_evidence_sha256": {
+    "Apple-R31-figure42-7.png": "75dec51e660e4d82a852a93311565249d17dbd58faa62b40e7d6b0ba8137217b",
+    "Apple-R31-enclosure-page284.png": "5e55d105df44fa6a815c6c1631e237d4cabac6199001ec065934b0248cbc2c2e",
+    "Apple-R31-figure42-8.png": "f4b20fbcf5397616df896610ccf2ddd9a29cb228b9b63187acd0baee2539c6bb"
+  }
+}

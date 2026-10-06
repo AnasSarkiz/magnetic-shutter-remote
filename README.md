@@ -1,5 +1,15 @@
 # Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
+Latest [issue resolution](evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
+pinned standard JST programmer0.8.0 UF2/ELF build and USB/UF2 validation pass.
+Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths and corrected
+±30% current budgets pass; smoke38 Python+2 Bun/13 assertions and29 CAM pass.
+Package0.3.6-prototype updates audit/programmer evidence; PCB stays hardware0.3.5.
+Inventory096 is an unconfirmed allocation question, not a proven shortage.
+Official Apple R31 guidance is retained; exact magnet/enclosure/phone fit,
+supplier-processed preview and physical operation remain unqualified.
+See the dated review for evidence and the subsequent publication record.
+
 Latest [six-point board review](evidence/R8-six-point-review-2026-10-06/REVIEW.md)
 passes fresh placement/netlist/DRC/shorts/29-net connectivity/164-width/current
 and12-file fabrication readback. All25 exact parts are listed for SMT on JLCPCB;
@@ -19,7 +29,7 @@ define the model/camera/case and antenna-clearance gates. MagSafe attachment and
 multi-model fit are pending; the historical disc-magnet/steel-plate enclosure is
 not a validated MagSafe mount.
 
-The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 44 × 56 × 1 mm, 44 fitted TOP references. No torch. The shutter uses a side-actuated TS24CA/C393942 switch on the right edge, pressed horizontally inward; GPIO4 is unchanged. Hardware/package revision0.3.5; compact direct3-pin JST UART prototype.
+The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 44 × 56 × 1 mm, 44 fitted TOP references. No torch. The shutter uses a side-actuated TS24CA/C393942 switch on the right edge, pressed horizontally inward; GPIO4 is unchanged. Hardware revision0.3.5; package0.3.6 evidence/programmer refresh; compact direct3-pin JST UART prototype.
 
 **Routed prototype: 0 native DRC errors, 0 shorts and 0 independent manufacturing failures.** All 29 required nets are physically connected; all 164 track widths and seven power-current paths pass. VIN/inductor necks are 0.30mm. Exact components, local fabrication readback and process/visual checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-compact-pcb-2026-10-06/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).
 

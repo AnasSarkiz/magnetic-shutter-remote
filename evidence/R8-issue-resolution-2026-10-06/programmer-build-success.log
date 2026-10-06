@@ -1,0 +1,143 @@
+{
+  "started_utc": "20261006T125326392872Z",
+  "command": [
+    "bash",
+    ".codex/runtime/standard-jst-programmer-0.8.0/firmware/build.sh"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+HEAD is now at 3fff5b2 Add USB reset interface (#178)
+M	CMakeLists.txt
+M	src/cdc_uart.c
+M	src/main.c
+M	src/probe.pio
+M	src/probe_config.h
+M	src/tusb_config.h
+M	src/tusb_edpt_handler.c
+M	src/usb_descriptors.c
+HEAD is now at 079c6f39 SDK 2.3.1 Release
+PICO_SDK_PATH is /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk
+Target board (PICO_BOARD) is 'standard_jst_programmer'.
+Using board configuration from /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/firmware/standard_jst_programmer.h
+Pico Platform (PICO_PLATFORM) is 'rp2040'.
+Build type is RelWithDebInfo
+TinyUSB available at /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/hw/bsp/rp2040; enabling build support for USB.
+BTstack available at /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/btstack
+cyw43-driver available at /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/cyw43-driver
+mbedtls available at /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/mbedtls
+lwIP available at /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/lwip
+C library type is newlib
+Using picotool from /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/build/_deps/picotool/picotool
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/build
+[  0%] Built target debugprobe_autobaud_pio_h
+[  1%] Built target debugprobe_probe_oen_pio_h
+[  2%] Generating probe.pio.h
+[  3%] Built target bs2_default
+[  3%] Built target debugprobe_probe_pio_h
+/usr/local/bin/git
+[  5%] Built target bs2_default_library
+[  6%] Generating status_rgb.pio.h
+[  6%] Built target version
+[  6%] Built target debugprobe_status_rgb_pio_h
+[  6%] Building C object CMakeFiles/debugprobe.dir/src/usb_descriptors.c.o
+[  7%] Building C object CMakeFiles/debugprobe.dir/src/probe_config.c.o
+[  8%] Building C object CMakeFiles/debugprobe.dir/src/main.c.o
+[  9%] Building C object CMakeFiles/debugprobe.dir/src/probe.c.o
+[ 10%] Building C object CMakeFiles/debugprobe.dir/src/cdc_uart.c.o
+[ 11%] Building C object CMakeFiles/debugprobe.dir/src/sw_dp_pio.c.o
+[ 11%] Building C object CMakeFiles/debugprobe.dir/src/tusb_edpt_handler.c.o
+[ 12%] Building C object CMakeFiles/debugprobe.dir/src/autobaud.c.o
+[ 13%] Building C object CMakeFiles/debugprobe.dir/CMSIS_DAP/CMSIS/DAP/Firmware/Source/DAP.c.o
+[ 14%] Building C object CMakeFiles/debugprobe.dir/CMSIS_DAP/CMSIS/DAP/Firmware/Source/JTAG_DP.c.o
+[ 14%] Building C object CMakeFiles/debugprobe.dir/CMSIS_DAP/CMSIS/DAP/Firmware/Source/DAP_vendor.c.o
+[ 15%] Building C object CMakeFiles/debugprobe.dir/CMSIS_DAP/CMSIS/DAP/Firmware/Source/SWO.c.o
+[ 16%] Building C object CMakeFiles/debugprobe.dir/src/status_monitor.c.o
+[ 16%] Building CXX object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+[ 17%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+[ 18%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+[ 19%] Building ASM object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+[ 19%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+[ 20%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.o
+[ 21%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+[ 22%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+[ 23%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+[ 23%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.o
+[ 24%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+[ 25%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+[ 26%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+[ 27%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+[ 27%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+[ 28%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+[ 29%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+[ 30%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+[ 31%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+[ 31%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+[ 32%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+[ 34%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+[ 35%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+[ 35%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+[ 36%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+[ 37%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+[ 38%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/tusb.c.o
+[ 39%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+[ 39%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+[ 40%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+[ 41%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+[ 42%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+[ 43%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+[ 43%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+[ 44%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+[ 45%] Building C object CMakeFiles/debugprobe.dir/freertos/portable/ThirdParty/GCC/RP2040/port.c.o
+[ 46%] Building C object CMakeFiles/debugprobe.dir/freertos/croutine.c.o
+[ 46%] Building C object CMakeFiles/debugprobe.dir/freertos/event_groups.c.o
+[ 47%] Building C object CMakeFiles/debugprobe.dir/freertos/list.c.o
+[ 48%] Building C object CMakeFiles/debugprobe.dir/freertos/queue.c.o
+[ 49%] Building C object CMakeFiles/debugprobe.dir/freertos/stream_buffer.c.o
+[ 50%] Building C object CMakeFiles/debugprobe.dir/freertos/tasks.c.o
+[ 50%] Building C object CMakeFiles/debugprobe.dir/freertos/timers.c.o
+[ 51%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+[ 52%] Building C object CMakeFiles/debugprobe.dir/freertos/portable/MemMang/heap_1.c.o
+[ 53%] Building C object CMakeFiles/debugprobe.dir/workspace/magnetic-shutter-remote/.codex/runtime/standard-jst-programmer-0.8.0/work/firmware/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+[ 54%] Linking CXX executable debugprobe.elf
+[100%] Built target debugprobe
+Built firmware USB descriptor: DAP, UART CDC0, telemetry CDC1, reset; no endpoint collisions
+{
+  "started_utc": "20261006T125326392872Z",
+  "command": [
+    "bash",
+    ".codex/runtime/standard-jst-programmer-0.8.0/firmware/build.sh"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T12:53:30.244123+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 51392,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T125326392872Z.log"
+}

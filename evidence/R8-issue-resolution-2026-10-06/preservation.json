@@ -1,0 +1,28 @@
+{
+  "predecessor_head": "a87ed50b86905bc087808e83b39f7a59990d71ae",
+  "prior_manifest": "evidence/R8-INTEGRITY-2026-10-06-six-point-review.json",
+  "previous_hashed_files": 3122,
+  "prior_hashes_verified_unchanged": 3109,
+  "authorized_modified_tracked_paths": [
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "firmware/README.md",
+    "mechanical/R8-MAGSAFE-REQUIREMENTS.md",
+    "mechanical/R8-MAGSAFE-RESEARCH.md",
+    "package.json",
+    "scripts/stage-registry.py",
+    "tscircuit-issues/096-selected-radio-stock-needs-confirmation.md",
+    "tscircuit-issues/README.md"
+  ],
+  "unexpected_previous_file_changes": [],
+  "pcb_source_import_bom_cpl_cam_c3_application_changes": [],
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "new_programmer_files_are_separate_from_retained_c3_firmware": true,
+  "memory_guard_unchanged": true,
+  "main_remote_head": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "no_order_contact_or_upload": true
+}

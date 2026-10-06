@@ -1,0 +1,8 @@
+{
+  "prior_version": "0.3.5-prototype",
+  "prior_release_id": "431f3654-7f35-4f30-b9c7-d20c4449cb59",
+  "old_power_checker_sha256": "ab25958eb713506a01d4b02916a0642257f5deb72fce54e36e05192270dcac5b",
+  "current_power_checker_sha256": "a2ded3b3893e53cbfe7816761fbd7c0914e9acff5d821c0abe59efe6929bab9d",
+  "same_checker": false,
+  "issue": "Registry predates corrected exact-MPN inductance tolerance and latest reviews; update package evidence, hardware unchanged."
+}

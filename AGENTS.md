@@ -7,7 +7,7 @@ Read `cloud/HANDOFF.md`, `VALIDATION.md`, `cloud/WORKSPACE-INSTRUCTIONS.md`, and
 - This repository root is the isolated R8 workspace originally checked out on `cloud/r8-cloud-setup`. Engineering continuation uses `board/r8-doit-c3-prototype-20261005`; preserve active task branches. Continue here for this task; do not rebuild the tscircuit store application.
 - `baselines/` is immutable reference material. It contains the 129-file R7 snapshot and the published Nordic source/enclosure/build. Verify `cloud/R7-PORTABLE-MANIFEST.json` before and after work. Do not edit or regenerate archived files.
 - R6 remains frozen at `77965a8012d5544e962d987ce958c5c5614dbe3a`. Original R7 starts at `636d2b24eb4db775fceeb81206541f249db3b9a5`. No history rewriting, force push, default-branch change or automatic merge.
-- Active root is the compact 44×56×1mm R8 ESP32-C3 engineering prototype (hardware/package0.3.5, route23), with right-edge TS24CA/C393942 shutter and direct3-pin JST UART. Native/independent copper, 29/29 physical terminal nets, all164 track widths and current budgets, local fabrication/process/visual checks pass. Supplier processed-preview/order approval and physical programming/power/BLE/MagSafe tests remain pending. DOIT ESPC3-12-N4/C19949072 is fitted. Read evidence/R8-compact-pcb-2026-10-06/REVIEW.md; public0.3.5-prototype upload/anonymous readback passes (270 files); hosted preview pending, old0.3.4 historical. Frozen Nordic JSON is never R8 evidence.
+- Active root is the compact 44×56×1mm R8 ESP32-C3 engineering prototype (hardware0.3.5/package0.3.6, route23), with right-edge TS24CA/C393942 shutter and direct3-pin JST UART. Native/independent copper, 29/29 physical terminal nets, all164 track widths and current budgets, local fabrication/process/visual checks pass. Supplier processed-preview/order approval and physical programming/power/BLE/MagSafe tests remain pending. DOIT ESPC3-12-N4/C19949072 is fitted. Read evidence/R8-compact-pcb-2026-10-06/REVIEW.md; public0.3.5-prototype upload/anonymous readback passes (270 files); hosted preview pending, old0.3.4 historical. Frozen Nordic JSON is never R8 evidence.
 - After onboarding the user authorized engineering continuation and requested routing with zero DRC errors and zero shorts. This does not waive qualification. Original issue075 remains open for the abandoned C3 module; issue076 has a tested fixture override but its upstream omission remains open. Issues078/079 record supplier example-land variations, reassessed for engineering prototype use in `evidence/R8-prototype-2026-10-05/QUALIFICATION.md`; nominal differences alone are not demonstrated electrical blockers. Do not route until new R8 BOM, supply/boot/programming circuitry, connectivity and placement checks pass. Original investigation evidence remains preserved.
 - No torch/fill light. One battery and one USB-C charging port; existing red LEDs are status indicators. Preserve verified USB4215-03-A / C37616412 functionality unless the migration requires a justified local change.
 - User requires a MagSafe phone-facing grip supporting multiple iPhone sizes and compatible cases. Read `mechanical/R8-MAGSAFE-REQUIREMENTS.md` before compact placement or enclosure work. Preserve the detached right-edge side shutter and direct three-pin JST UART. Historical four-disc magnets/steel phone plate and generic phone box are not MagSafe fit evidence; official interface, model/camera/case envelopes and complete RF/metal clearance require qualification. Do not claim all iPhones/cases fit or reuse old Nordic enclosure passes.
@@ -22,12 +22,19 @@ The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection:
 
 ## Electronic parts and validation
 
-Latest full board review: `evidence/R8-six-point-review-2026-10-06/REVIEW.md`.
-Fresh25 official JLCPCB listings match fitted MPNs/SMT assembly; fitted radio
-C19949072 reports3 direct/66 overseas, so five-board inventory requires
-confirmation (procurement096). Do not substitute without exact qualification
-or claim all stock reserved. Latest standard JST programmer0.8.0 UART contract
-passes; UART firmware build/install and physical programming remain pending.
+Latest resolution: `evidence/R8-issue-resolution-2026-10-06/REVIEW.md`.
+Package0.3.6-prototype refreshes current audits/programmer artifacts; unchanged
+PCB hardware0.3.5/route23 passes fresh native0 errors/shorts,29 physical nets,
+164 widths/current budgets. Smoke38 Python+2 Bun/13 assertions and29 CAM pass.
+Pinned standard JST programmer0.8.0 actual UF2/ELF build, USB descriptor and
+UF2/bin/corruption checks pass; see firmware/programmers/.../R8-USAGE.md.
+Install/enumeration/target programming and other physical tests remain unrun.
+Inventory096 raw3/66 fields do not prove shortage; client semantics/allocation
+are unconfirmed. No unqualified substitution. Official Apple R31 PDF/input
+is now retained; exact magnet assembly and complete MagSafe grip/phone/case/RF
+fit are unqualified. assets.jlcpcb.com is still blocked; exact host added to
+restricted saved draft only, without applying/publishing or proxy bypass.
+Original six-point review and failures remain immutable history.
 
 Latest functional/power audit successor is `evidence/R8-functional-review-2026-10-06/REVIEW.md`.
 Exact fitted C56594 is1.5µH±30%, minimum1.05µH; older±20% ripple calculations

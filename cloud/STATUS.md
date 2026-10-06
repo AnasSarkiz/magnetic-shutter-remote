@@ -1,5 +1,15 @@
 # Actual hosted continuation — 2026-10-05
 
+Latest [issue resolution](../evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
+pinned standard JST programmer0.8.0 UF2/ELF build and USB/UF2 validation pass.
+Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths and corrected
+±30% current budgets pass; smoke38 Python+2 Bun/13 assertions and29 CAM pass.
+Package0.3.6-prototype updates audit/programmer evidence; PCB stays hardware0.3.5.
+Inventory096 is an unconfirmed allocation question, not a proven shortage.
+Official Apple R31 guidance is retained; exact magnet/enclosure/phone fit,
+supplier-processed preview and physical operation remain unqualified.
+See the dated review for evidence and the subsequent publication record.
+
 Canonical `bash cloud/setup.sh` and `bash cloud/smoke.sh` passed in this hosted instance after enabling Node’s supported `NODE_USE_ENV_PROXY=1` and keeping npm cache inside the workspace. Managed proxy/auth and existing network scope are retained. Node25.6.0, Bun1.3.9, Python3.12.14; observed cgroup memory34359738368 bytes (32GiB), CPU quota4 equivalents. This is an observation, not a guaranteed allocation. Setup verifies129 frozen hashes/archive integrity; smoke passes20 Python tests,2 Bun tests/13 assertions, format and typecheck. Original module075 qualification and its separate076 importer omission remain explicit. Logs: `evidence/R8-prototype-2026-10-05/environment/` after final evidence collection.
 
 Reusable draft Install/Start instructions are saved with explicit-ref fetch, refusal to discard tracked changes, R8 context guard and preservation of later task branches. Saving draft does not restart or publish an environment. No server, user secret, broadened repository access or network permission was added.

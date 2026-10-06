@@ -1,0 +1,25 @@
+{
+  "url": "https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf",
+  "retrieved_utc": "2026-10-06T13:01:05.288398+00:00",
+  "http_access": "PASS through inherited managed proxy; no bypass",
+  "release": "R31",
+  "document_date": "2026-09-21",
+  "pdf_bytes": 32775473,
+  "pdf_sha256": "b631b8b25d6b4fba85f90dff494a7a7edc9996e357cbc97093aedc9d9bd6f2c9",
+  "retained_pdf_runtime_path": ".codex/runtime/R8-Apple-Accessory-Design-Guidelines.pdf",
+  "printed_to_pdf_page": {
+    "270": 270,
+    "275": 275,
+    "276": 276,
+    "277": 277,
+    "278": 278,
+    "279": 279,
+    "280": 280,
+    "281": 281,
+    "282": 282,
+    "283": 283,
+    "288": 288
+  },
+  "text_extract_sha256": "02906e6c8ed2f23523668435fcf8f17109b849eda9c1974ed977649c14d9d50f",
+  "retained_pdf_repository_path": "references/Apple-Accessory-Design-Guidelines-R31-2026-09-21.pdf"
+}

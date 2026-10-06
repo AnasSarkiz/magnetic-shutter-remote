@@ -1,3 +1,13 @@
+# Current compact PCB context —2026-10-06
+
+The current PCB is **44×56×1mm**, hardware0.3.5, native route23; package0.3.6
+updates review/programmer evidence only. Its planar diagonal is71.218mm.
+The older40×44mm target discussed below is retained research history.
+The PCB is the detachable remote, separate from the phone-facing magnet
+array. Neither rectangle dimensions nor zero DRC establish complete grip,
+camera/case, magnet retention or RF clearance. Those mechanical gates remain
+pending under [requirements](R8-MAGSAFE-REQUIREMENTS.md).
+
 # Public MagSafe references screened for R8
 
 Broader search found useful public reference geometry through the managed

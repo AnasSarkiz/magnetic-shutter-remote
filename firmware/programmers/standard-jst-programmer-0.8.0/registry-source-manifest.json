@@ -1,0 +1,27 @@
+{
+  "release_id": "3d6952c4-e6ee-4711-a7c7-dded0cdef4eb",
+  "source_url": "https://registry-api.tscircuit.com/",
+  "sha256": {
+    "LICENSE": "6220df8dfc095828d603c125f3c1d434b1df36a2744b44d4e381c7419b8a5301",
+    "README.md": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+    "THIRD_PARTY.md": "4c203ba61e1c77b267f0e721b9fddd0c2637f1f4a06ecad1dab710e654f4df77",
+    "firmware/board_standard_jst_config.h": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+    "firmware/build.sh": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+    "firmware/patch_upstream.py": "bd03b03cce75ef10210dfa76a7a12b1f55c6b73e70576d8a9b48f093c1a6ae2d",
+    "firmware/standard_jst_programmer.h": "4fd001c2007aa06b3743decb9a5c257128144bd132e5ad18ad3e76000170fcbc",
+    "firmware/status_math.h": "09940eef812a4b33b5b329c0dd5d3f4b5fcd16989818af63675f1d5d629160fe",
+    "firmware/status_monitor.c": "d82d4e7b9d2ac6efc08cbca6c74872bc03132f6424e8efcb6a88e9c730b72e63",
+    "firmware/status_monitor.h": "06fd0afdc19e9ecdd24d13992eca1215dc3fd149a595d313b0cabc380acc532e",
+    "scripts/check-firmware-math.c": "4cf783717c8bf9cb8cfe08d83229a72874f677370e28cf29241b406a220343d7",
+    "scripts/check-firmware-usb.py": "f94a20bf3bdb4e3c2b2e6d0da67ca40aedc000a0990f5fe9794da3e374632c56",
+    "firmware/openocd-reset.cfg": "3b697a1995530d7c73313bedee561670485f6f02786efc1bc1cc778d436aa3c8",
+    "firmware/openocd.cfg": "831c8543663956fe4f0a6ae6c0dbb3583e6f426595663282149590fa1c167ecf",
+    "firmware/status_rgb.pio": "29f67bd2f5a060a97a5a194a5737c700cf4216d09af009713770834dc9d47b7a"
+  },
+  "unavailable_text": [
+    "firmware/openocd-reset.cfg",
+    "firmware/openocd.cfg",
+    "firmware/status_rgb.pio"
+  ],
+  "binary_download_method": "package_files/download?package_file_id=<id>, supported native clone behavior"
+}

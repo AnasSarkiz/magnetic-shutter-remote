@@ -1,0 +1,90 @@
+{
+  "started_utc": "20261006T125437474583Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/cam",
+    "-v"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+test_dimension_change_cannot_reuse_stale_native_outline (test_board_boundaries.BoardBoundariesTest.test_dimension_change_cannot_reuse_stale_native_outline) ... ok
+test_full_outline_rejects_removed_corner_rounding_with_identical_bounds (test_board_boundaries.BoardBoundariesTest.test_full_outline_rejects_removed_corner_rounding_with_identical_bounds) ... ok
+test_original_tangent_cutout_ring_must_not_be_silently_repaired (test_board_boundaries.BoardBoundariesTest.test_original_tangent_cutout_ring_must_not_be_silently_repaired) ... ok
+test_reduced_or_single_layer_antenna_band_is_rejected (test_board_boundaries.BoardBoundariesTest.test_reduced_or_single_layer_antenna_band_is_rejected) ... ok
+test_changed_width_uses_start_aperture (test_exported_trace_geometry.ExportedTraceGeometryTest.test_changed_width_uses_start_aperture) ... ok
+test_nonzero_via_adjacent_segments (test_exported_trace_geometry.ExportedTraceGeometryTest.test_nonzero_via_adjacent_segments) ... ok
+test_through_pad_draws_only_adjacent_segments (test_exported_trace_geometry.ExportedTraceGeometryTest.test_through_pad_draws_only_adjacent_segments) ... ok
+test_unsupported_taper_fails_closed (test_exported_trace_geometry.ExportedTraceGeometryTest.test_unsupported_taper_fails_closed) ... ok
+test_old_neck_passes_dc_but_fails_switching_rms (test_power_width_budgets.PowerWidthBudgetTest.test_old_neck_passes_dc_but_fails_switching_rms) ... ok
+test_ripple_uses_minimum_frequency_and_inductance (test_power_width_budgets.PowerWidthBudgetTest.test_ripple_uses_minimum_frequency_and_inductance) ... ok
+test_rms_rating_is_checked_independently_of_peak_headroom (test_power_width_budgets.PowerWidthBudgetTest.test_rms_rating_is_checked_independently_of_peak_headroom) ... ok
+test_saturation_rating_requires_recommended_headroom (test_power_width_budgets.PowerWidthBudgetTest.test_saturation_rating_requires_recommended_headroom) ... ok
+test_supplier_circles_are_measured_beyond_text_only_attribution (test_process_metrics.CompleteSilkscreenTest.test_supplier_circles_are_measured_beyond_text_only_attribution) ... ok
+test_original_native_pair_power_collision_is_rejected (test_process_metrics.FunctionalLegendOverlapTest.test_original_native_pair_power_collision_is_rejected) ... ok
+test_separate_positions_and_opposite_layers_are_controls (test_process_metrics.FunctionalLegendOverlapTest.test_separate_positions_and_opposite_layers_are_controls) ... ok
+test_invalid_thickness_is_rejected (test_process_metrics.StencilReleaseTest.test_invalid_thickness_is_rejected) ... ok
+test_narrow_aperture_fails_release_despite_long_dimension (test_process_metrics.StencilReleaseTest.test_narrow_aperture_fails_release_despite_long_dimension) ... ok
+test_native_polygon_pad_requires_vertices_without_xy_fields (test_process_metrics.StencilReleaseTest.test_native_polygon_pad_requires_vertices_without_xy_fields) ... ok
+test_polygon_uses_true_area_not_bounding_box (test_process_metrics.StencilReleaseTest.test_polygon_uses_true_area_not_bounding_box) ... ok
+test_gap_in_plane_still_fails (test_through_pad_geometry.SharedPlaneDrillSpacingTest.test_gap_in_plane_still_fails) ... ok
+test_local_plane_covers_actual_gap_and_barrel (test_through_pad_geometry.SharedPlaneDrillSpacingTest.test_local_plane_covers_actual_gap_and_barrel) ... ok
+test_other_net_trace_stays_protected (test_through_pad_geometry.SharedPlaneDrillSpacingTest.test_other_net_trace_stays_protected) ... ok
+test_separate_same_net_trace_still_fails (test_through_pad_geometry.SharedPlaneDrillSpacingTest.test_separate_same_net_trace_still_fails) ... ok
+test_smt_land_stays_protected_even_with_plane (test_through_pad_geometry.SharedPlaneDrillSpacingTest.test_smt_land_stays_protected_even_with_plane) ... ok
+test_plane_covered_tracks_are_one_etched_shape (test_through_pad_geometry.SharedPourSpacingTest.test_plane_covered_tracks_are_one_etched_shape) ... ok
+test_separate_parallel_tracks_still_fail (test_through_pad_geometry.SharedPourSpacingTest.test_separate_parallel_tracks_still_fail) ... ok
+test_uncovered_parallel_tails_still_fail (test_through_pad_geometry.SharedPourSpacingTest.test_uncovered_parallel_tails_still_fail) ... ok
+test_layer_transition_retains_both_adjacent_segments (test_through_pad_geometry.ThroughPadGeometryTest.test_layer_transition_retains_both_adjacent_segments) ... ok
+test_unknown_route_element_fails_closed (test_through_pad_geometry.ThroughPadGeometryTest.test_unknown_route_element_fails_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 3.542s
+
+OK
+{
+  "started_utc": "20261006T125437474583Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/cam",
+    "-v"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T12:54:41.223315+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 83092,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T125437474583Z.log"
+}

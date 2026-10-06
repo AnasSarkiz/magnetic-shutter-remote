@@ -1,0 +1,685 @@
+42. MagSafe Attach
+
+
+Devices supporting MagSafe Attach:
+ ●
+   iPhone 18 Pro Max
+ ●
+   iPhone 18 Pro
+ ●
+   iPhone 17e
+ ●
+   iPhone 17 Pro Max
+ ●
+   iPhone 17 Pro
+ ●
+   iPhone 17
+ ●
+   iPhone Air
+ ●
+   iPhone 16 Pro Max
+ ●
+   iPhone 16 Pro
+ ●
+   iPhone 16 Plus
+ ●
+   iPhone 16
+ ●
+   iPhone 15 Pro Max
+ ●
+   iPhone 15 Pro
+ ●
+   iPhone 15 Plus
+ ●
+   iPhone 15
+ ●
+   iPhone 14 Pro Max
+ ●
+   iPhone 14 Pro
+ ●
+   iPhone 14 Plus
+ ●
+   iPhone 14
+ ●
+   iPhone 13 Pro Max
+ ●
+   iPhone 13 Pro
+ ●
+   iPhone 13
+ ●
+   iPhone 13 mini
+ ●
+   iPhone 12 Pro Max
+ ●
+   iPhone 12 Pro
+ ●
+   iPhone 12
+ ●
+   iPhone 12 mini
+
+MagSafe Cases (page 32) shall:
+●
+  Claim compatibility with a MagSafe-capable device.
+●
+  Integrate a MagSafe Case Magnet Array (page 271).
+
+Other MagSafe accessories shall:
+ ●
+   Claim compatibility with a MagSafe-capable device.
+
+
+                         2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                    270
+42. MagSafe Attach
+42.1 MagSafe Case Magnet Array
+
+
+
+●
+    Integrate a MagSafe Accessory Magnet Array (page 275).
+
+Apple recommends the following magnet array vendors:
+ ●
+   Baotou INST Magnetic New Materials Co., Ltd. (https://www.instmagnets.com)
+ ●
+   Ningbo Sanhuan Magsound Industry & Trade Co., Ltd. (https://www.magsound.com)
+ ●
+   Quadrant Solutions, Inc. (https://www.quadrant.us)
+
+
+
+
+42.1 MagSafe Case Magnet Array
+Figure       MagSafe case magnet array
+42-1
+
+
+
+
+42.1.1 Product Design
+Cases integrating a MagSafe case magnet array shall:
+ ●
+   Enclose the device.
+ ●
+   Have a uniform thickness no greater than 2.1 mm; Apple recommends 2.0 mm.
+ ●
+   Firmly attach to the device without relying on the magnets.
+ ●
+   Not integrate magnets on the back of the case other than the MagSafe magnets.
+ ●
+   Comply with requirements for Cases (page 32).
+ ●
+   Work with:
+    ●
+       Apple MagSafe Charger.
+    ●
+       iPhone FineWoven Wallet with MagSafe.
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                        271
+42. MagSafe Attach
+42.1 MagSafe Case Magnet Array
+
+
+
+
+42.1.2 Mechanical
+Magnets in the MagSafe case magnet array shall be positioned in the same plane.
+
+The case and MagSafe case magnet array shall enable MagSafe accessories to magnetically self align
+within a 1.55 mm radial maximum.
+
+
+42.1.2.1 Magnets
+MagSafe case magnets shall be N45SH NdFeB with a 8 µm - 16 µm epoxy coating (or similar
+non-metallic coating) and shall meet the requirements in Table 42-1 (page 272). A reference design is
+provided for how to achieve the desired retention force for MagSafe accessories, see Figure 42-3
+(page 274).
+
+Table        Magnet properties
+42-1
+
+Property Minimum         Maximum
+Br          13.2 kGs     13.6 kGs
+Hcb         12.75 kOe
+Hcj         20.50 kOe
+BHmax       43 MGOe      46 MGOe
+
+Cases shall not exceed a surface gauss of 0.215 T on either the interior (contacting the device) or
+exterior (contacting MagSafe accessories) surface of the case.
+
+
+42.1.2.2 Magnet Array
+The magnets shall be positioned in the case following the dimensions and polarity shown in Figure
+42-2 (page 273), Figure 42-3 (page 274) and Figure 42-4 (page 274).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       272
+42. MagSafe Attach
+42.1 MagSafe Case Magnet Array
+
+
+
+
+Figure       MagSafe magnet array dimensions
+42-2
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       273
+42. MagSafe Attach
+42.1 MagSafe Case Magnet Array
+
+
+
+
+Figure       MagSafe magnet ring dimensions and polarity
+42-3
+
+
+
+
+Figure       MagSafe orientation magnet dimensions and polarity
+42-4
+
+
+
+
+42.1.2.3 Magnetic Force
+The force normal to the back of the case needed to dislodge a MagSafe accessory, such as the Apple
+MagSafe Charger, shall have a nominal target between 1000 gf and 1300 gf when the case is attached
+to the device.
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       274
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+42.1.3 Magnetic Interference
+Cases with an integrated MagSafe magnet array shall not interfere with:
+ ●
+   Inductive charging.
+ ●
+   Magnetic stripe cards in an attached iPhone FineWoven Wallet with MagSafe.
+
+
+
+
+42.2 MagSafe Accessory Magnet Array
+Figure       MagSafe accessory magnet array options
+42-5
+
+
+
+
+The MagSafe accessory magnet array shall implement one of the following magnet array configurations:
+ ●
+   Magnet Ring (page 277): This configuration allows the accessory to attach in any rotational orientation.
+ ●
+   Extended Magnet Ring (page 279): This alternative configuration provides a higher attachment force,
+   especially when used with iPhone Air.
+
+An Orientation Magnet (page 281) may be included in either of the above array configurations to enforce
+a specific attachment orientation.
+
+
+42.2.1 Product Design
+Accessories integrating the MagSafe accessory magnet array shall not enclose the device.
+
+
+42.2.2 Mechanical
+Accessories shall:
+ ●
+   Not interfere with or cause Scratches and Damage (page 24) to the device.
+ ●
+   Maintain sufficient Clearance (page 276).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       275
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Magnets in the MagSafe accessory magnet array shall be positioned in the same plane.
+
+The MagSafe accessory's Magnet Ring (page 277) or Extended Magnet Ring (page 279) shall magnetically
+self align to the device's magnet ring within a 1.55 mm radial maximum.
+
+
+42.2.2.1 Clearance
+To avoid interference with devices, the accessory's magnetic attach surface shall:
+ ●
+   Not exceed 30 mm from the center of the magnet ring towards the top edge of the device for all
+   supported device orientations. If the device can be attached in any orientation, the accessory shall
+   not exceed 30 mm radius around the center of the magnet ring.
+ ●
+   Maintain a clearance of 6 mm for any part of the accessory past the 30 mm keep-in constraint.
+ ●
+   Stay within the MagSafe Accessory Enclosure Geometry (page 284).
+
+
+Figure       MagSafe accessory clearance
+42-6
+
+
+                     Non axisymmetric                                       Axisymmetric
+
+
+
+
+42.2.2.2 Magnets
+MagSafe accessory magnets shall be N48H NdFeB with a 7 µm - 13 µm NiCuNi plating finish (or similar)
+and shall meet the requirements in Table 42-2 (page 277).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       276
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Table        Magnet properties
+42-2
+
+Property Minimum Maximum
+Br          13.7 kGs    14.1 kGs
+Hcb         13.25 kOe
+Hcj         17 kOe
+BHmax       45 MGOe     48 MGOe
+
+Flux density of the MagSafe accessory shall not exceed 0.215 T at the product surface.
+
+
+42.2.2.3 Magnet Ring
+The magnet ring shall be positioned in the accessory in compliance with the dimensions and polarity
+requirements in Figure 42-7 (page 278) and Figure 42-8 (page 279).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                        277
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Figure       MagSafe magnet ring dimensions
+42-7
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       278
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Figure       MagSafe magnet ring dimensions and polarity
+42-8
+
+
+
+
+See DC Shield (page 283) for additional requirements of the DC shield specified in Figure 42-8 (page
+279).
+
+
+42.2.2.4 Extended Magnet Ring
+The magnet ring shall be positioned in the accessory in compliance with the dimensions and polarity
+requirements in Figure 42-9 (page 280) and Figure 42-10 (page 280).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       279
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Figure       MagSafe extended magnet ring dimensions
+42-9
+
+
+
+
+Figure       MagSafe extended magnet ring dimensions and polarity
+42-10
+
+
+
+
+See DC Shield (page 283) for additional requirements of the DC shield specified in Figure 42-12 (page
+283).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       280
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+42.2.2.5 Orientation Magnet
+If orientation magnets are included, the magnets shall be positioned according to Figure 42-11 (page
+282) and Figure 42-12 (page 283).
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                        281
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Figure       MagSafe orientation magnet dimensions
+42-11
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       282
+42. MagSafe Attach
+42.2 MagSafe Accessory Magnet Array
+
+
+
+
+Figure       MagSafe orientation magnet dimensions and polarity
+42-12
+
+
+
+
+See DC Shield (page 283) for additional requirements of the DC shield specified in Figure 42-12 (page
+283).
+
+
+42.2.2.6 Magnetic Force
+The force normal to the back of the device needed to dislodge the MagSafe accessory shall meet the
+requirements in Table 42-3 (page 283).
+
+Table        Magnetic force
+42-3
+
+Scenario                        Minimum Maximum
+Accessory attached to device 650 gf           1510 gf
+
+
+42.2.2.7 DC Shield
+The DC shield shall be low carbon steel (1010, DT4 or similar), per ASTM848, with a 5 µm - 10 µm Ni
+plating finish or similar.
+
+The DC shield shall have a saturation flux density (Bsat) of at least 2.0 T.
+
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                        283
+42.4 Verification
+
+
+
+
+42.4 Verification
+
+42.4.1 MagSafe Case Magnet Array
+
+42.4.1.1 Case Thickness
+
+42.4.1.1.1 Equipment
+The following equipment is necessary:
+ ●
+   Digital thickness gauge, such as the Mitutoyo 547-520S.
+
+
+42.4.1.1.2 Procedure
+1. Using the digital thickness gauge, verify the thickness is less than or equal to 2.1 mm at:
+     ●
+         Four points along the magnet ring.
+     ●
+         Two points along the orientation magnet.
+
+
+42.4.1.2 Accessory Clearance
+
+42.4.1.2.1 Equipment
+The following equipment is necessary:
+ ●
+   MagSafe-capable device.
+ ●
+   Apple MagSafe Battery Pack.
+
+
+42.4.1.2.2 Procedure
+1. Attach the case to the device.
+2. Attach the Apple MagSafe Battery Pack to the back of the case.
+3. Verify the case does not interfere with the Apple MagSafe Battery Pack and only the mating surface
+    is in contact.
+
+
+42.4.1.3 Magnetic Force
+
+42.4.1.3.1 Equipment
+The following equipment is necessary:
+ ●
+   MagSafe-capable device.
+ ●
+   Apple MagSafe Charger.
+ ●
+   Non-magnetic eyelet screw.
+
+
+
+                           2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                      285
+42.4 Verification
+
+
+
+
+ ●
+     Digital force gauge capable of capturing peak values, such as the Chatillon DFX II.
+ ●
+     Hook attachment for digital force gauge.
+ ●
+     Clamps to securely hold the device on a flat level surface.
+
+
+42.4.1.3.2 Setup
+
+Figure         Magnetic force test setup
+42-13
+
+
+
+
+1. Attach the case to the device.
+2. Place the device on a flat level surface with the display facing down and clamp it firmly in place.
+3. Glue the non-magnetic eyelet to the center of the back of the Apple MagSafe Charger so pulling
+     on the eyelet exerts a force on the center of the charger.
+
+
+42.4.1.3.3 Procedure
+1. Repeat the following steps 5 times:
+     a. Attach the Apple MagSafe Charger and eyelet assembly to the back of the case, allowing them
+        to magnetically align.
+     b. Connect the force gauge hook to the eyelet.
+
+
+
+                            2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                       286
+42.4 Verification
+
+
+
+
+    c. Reset the force gauge's peak force value.
+    d. Pull the force gauge vertically until the Apple MagSafe Charger and eyelet assembly dislodge
+      from the case.
+   e. Note the peak value from the force gauge.
+2. Calculate the average of the 5 peak force measurements.
+3. Verify the average force is within the range of 800 gf to 1100 gf when removing the mass of the
+   Apple MagSafe Charger and eyelet assembly.
+
+
+42.4.1.4 iPhone FineWoven Wallet with MagSafe Detection
+
+42.4.1.4.1 Equipment
+The following equipment is necessary:
+ ●
+   MagSafe-capable device.
+ ●
+   iPhone FineWoven Wallet with MagSafe.
+
+
+42.4.1.4.2 Procedure
+1. Attach the case to the device.
+2. Attach the wallet to the back of the case.
+3. Verify the device displays the wallet animation.
+
+
+42.4.1.5 Magnetic Stripe Cards in iPhone FineWoven Wallet with MagSafe
+
+42.4.1.5.1 Equipment
+The following equipment is necessary:
+ ●
+   MagSafe-capable device.
+ ●
+   iPhone FineWoven Wallet with MagSafe.
+ ●
+   Low Coercivity Magnetic stripe (LoCo) cards, such as cards from the following vendors:
+    ●
+        American Card Service.
+    ●
+        Allsafe.
+    ●
+        Cl Solutions.
+    ●
+        PSA.
+ ●
+   LoCo card reader/writer, such as:
+    ●
+        Q-card Mag3x.
+    ●
+        Magtek InSpec 9000.
+    ●
+        Misiri X6BT.
+    ●
+        Deftun MSR605X.
+
+
+
+
+                          2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                     287
+42.4 Verification
+
+
+
+
+42.4.1.5.2 Procedure
+1. Attach the accessory to the device.
+2. Repeat this procedure for three different brands of LoCo cards:
+    a. Write to the LoCo card.
+    b. Read from the LoCo card and verify it was written successfully.
+    c. Insert the LoCo card into the wallet with the magnetic stripe facing the magnets.
+    d. Place additional cards into the wallet to ensure a LoCo card is in contact with the magnetic side
+         of the wallet.
+    e.   Attach the wallet to the accessory (attached to the device).
+    f.   Wait 10 seconds.
+    g.   Remove the wallet from the accessory.
+    h.   Remove the LoCo card from the wallet.
+    i.   Verify the LoCo card is readable and its contents have not changed.
+
+
+42.4.2 MagSafe Accessory Magnet Array
+
+42.4.2.1 Orientation Magnet
+If the accessory includes an orientation magnet:
+1. Use a straight edge to verify the device contact surfaces of the magnet ring and orientation magnet
+     are coplanar (aligned in the same plane).
+2. Attach a MagSafe-capable device to the accessory and align it with the orientation magnet. Verify
+     there are no gaps between the:
+      ●
+         MagSafe magnet ring and device.
+      ●
+         MagSafe orientation magnet and device.
+
+
+42.4.2.2 Magnetic Force
+
+42.4.2.2.1 Equipment
+The following equipment is necessary:
+ ●
+   MagSafe-capable device.
+ ●
+   Non-magnetic eyelet to attach to the device.
+ ●
+   Digital force gauge capable of capturing peak values, such as the Chatillon DFX II.
+ ●
+   Hook attachment for digital force gauge.
+ ●
+   Clamps, or a vice, to securely hold the accessory on a flat level surface.
+
+
+
+
+                           2026-09-21 | Copyright © 2026 Apple Inc. All Rights Reserved.
+
+                                                      288

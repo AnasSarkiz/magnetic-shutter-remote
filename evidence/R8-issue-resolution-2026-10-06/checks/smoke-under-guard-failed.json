@@ -1,0 +1,10 @@
+[
+  {
+    "check": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 1
+  }
+]

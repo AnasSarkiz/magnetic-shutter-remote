@@ -9,6 +9,23 @@ references. See [research and screening](R8-MAGSAFE-RESEARCH.md); these permit
 design investigation while official access is pending, but do not complete
 exact-part qualification or the iPhone/case compatibility matrix.
 
+## Primary guidance verified —2026-10-06
+
+Official Apple **R31,2026-09-21** now downloads through the inherited proxy.
+Exact PDF is retained in `references/Apple-Accessory-Design-Guidelines-R31-2026-09-21.pdf`;
+source hash, extracted chapter and inspected drawings are in
+[evidence](../evidence/R8-issue-resolution-2026-10-06/magsafe/official-interface-review.json).
+The previous official-guidance network blocker is resolved. Accessory magnets
+are N48H/1.10mm with the specified DC shield; the earlier0.55mm third-party
+model is not a qualified accessory construction. Ring ID46mm/OD54.1mm,
+1.55mm self-alignment,650–1510gf pull force and the detailed page284 enclosure
+geometry apply. Attach surface stays within30mm towards the phone top;
+parts beyond the30mm keep-in require6mm clearance. A44×56 PCB has35.609mm
+corner radius and belongs in the detachable remote with a qualified transform,
+not directly in the magnetic contact plane. Exact magnet MPN, complete grip,
+phone/case/camera/RF clearances and physical retention are still unqualified.
+The blocked-access record below is retained earlier history.
+
 ## Product contract
 
 - Follow the JJC MSG-P1 reference's magnetic camera-grip and detachable shutter

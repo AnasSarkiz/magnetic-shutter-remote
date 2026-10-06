@@ -1,0 +1,44 @@
+{
+  "blocks": 245,
+  "payload_bytes": 62472,
+  "flash_base_hex": "0x10000000",
+  "family_hex": "0xe48bff56",
+  "all_blocks_sequence_addresses_and_magic_pass": true,
+  "payload_matches_built_bin": true,
+  "negative_checks": [
+    {
+      "case": "wrong_family",
+      "rejected": true,
+      "reason": "Not an RP2040 family UF2"
+    },
+    {
+      "case": "wrong_address",
+      "rejected": true,
+      "reason": "UF2 block sequence/address/length mismatch"
+    },
+    {
+      "case": "corrupt_payload",
+      "rejected": true,
+      "reason": "UF2 does not reproduce built binary"
+    },
+    {
+      "case": "bad_trailer",
+      "rejected": true,
+      "reason": "UF2 magic mismatch"
+    }
+  ],
+  "artifacts": {
+    "standard-jst-programmer.uf2": {
+      "bytes": 125440,
+      "sha256": "8d287101599647dbe25bf876d6c690373dfc1da843692b06eaf88d1436128ebd"
+    },
+    "standard-jst-programmer.bin": {
+      "bytes": 62472,
+      "sha256": "772f2968ed33bf24b17dc8895cc56b1e344051e48a8c9f2657429e5e1609adb5"
+    },
+    "standard-jst-programmer.elf": {
+      "bytes": 1202748,
+      "sha256": "fc3c71ad22aa89d2e77e6bb375af78b8bd2522adb7e7890ee83e6c8bb4125440"
+    }
+  }
+}

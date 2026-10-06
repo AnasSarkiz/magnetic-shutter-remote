@@ -1,0 +1,111 @@
+{
+  "github_commit": "7eb11c2ed16fe67f8835908b683bdd0a41e9cc05",
+  "all_match": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/LICENSE",
+      "github_sha256": "6220df8dfc095828d603c125f3c1d434b1df36a2744b44d4e381c7419b8a5301",
+      "registry_sha256": "6220df8dfc095828d603c125f3c1d434b1df36a2744b44d4e381c7419b8a5301",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/README.md",
+      "github_sha256": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+      "registry_sha256": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+      "matches": true
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/THIRD_PARTY.md",
+      "github_sha256": "4c203ba61e1c77b267f0e721b9fddd0c2637f1f4a06ecad1dab710e654f4df77",
+      "registry_sha256": "4c203ba61e1c77b267f0e721b9fddd0c2637f1f4a06ecad1dab710e654f4df77",
+      "matches": true
+    },
+    {
+      "path": "firmware/board_standard_jst_config.h",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/board_standard_jst_config.h",
+      "github_sha256": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+      "registry_sha256": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+      "matches": true
+    },
+    {
+      "path": "firmware/build.sh",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/build.sh",
+      "github_sha256": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+      "registry_sha256": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+      "matches": true
+    },
+    {
+      "path": "firmware/patch_upstream.py",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/patch_upstream.py",
+      "github_sha256": "bd03b03cce75ef10210dfa76a7a12b1f55c6b73e70576d8a9b48f093c1a6ae2d",
+      "registry_sha256": "bd03b03cce75ef10210dfa76a7a12b1f55c6b73e70576d8a9b48f093c1a6ae2d",
+      "matches": true
+    },
+    {
+      "path": "firmware/standard_jst_programmer.h",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/standard_jst_programmer.h",
+      "github_sha256": "4fd001c2007aa06b3743decb9a5c257128144bd132e5ad18ad3e76000170fcbc",
+      "registry_sha256": "4fd001c2007aa06b3743decb9a5c257128144bd132e5ad18ad3e76000170fcbc",
+      "matches": true
+    },
+    {
+      "path": "firmware/status_math.h",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/status_math.h",
+      "github_sha256": "09940eef812a4b33b5b329c0dd5d3f4b5fcd16989818af63675f1d5d629160fe",
+      "registry_sha256": "09940eef812a4b33b5b329c0dd5d3f4b5fcd16989818af63675f1d5d629160fe",
+      "matches": true
+    },
+    {
+      "path": "firmware/status_monitor.c",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/status_monitor.c",
+      "github_sha256": "d82d4e7b9d2ac6efc08cbca6c74872bc03132f6424e8efcb6a88e9c730b72e63",
+      "registry_sha256": "d82d4e7b9d2ac6efc08cbca6c74872bc03132f6424e8efcb6a88e9c730b72e63",
+      "matches": true
+    },
+    {
+      "path": "firmware/status_monitor.h",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/status_monitor.h",
+      "github_sha256": "06fd0afdc19e9ecdd24d13992eca1215dc3fd149a595d313b0cabc380acc532e",
+      "registry_sha256": "06fd0afdc19e9ecdd24d13992eca1215dc3fd149a595d313b0cabc380acc532e",
+      "matches": true
+    },
+    {
+      "path": "scripts/check-firmware-math.c",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/scripts/check-firmware-math.c",
+      "github_sha256": "4cf783717c8bf9cb8cfe08d83229a72874f677370e28cf29241b406a220343d7",
+      "registry_sha256": "4cf783717c8bf9cb8cfe08d83229a72874f677370e28cf29241b406a220343d7",
+      "matches": true
+    },
+    {
+      "path": "scripts/check-firmware-usb.py",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/scripts/check-firmware-usb.py",
+      "github_sha256": "f94a20bf3bdb4e3c2b2e6d0da67ca40aedc000a0990f5fe9794da3e374632c56",
+      "registry_sha256": "f94a20bf3bdb4e3c2b2e6d0da67ca40aedc000a0990f5fe9794da3e374632c56",
+      "matches": true
+    },
+    {
+      "path": "firmware/openocd-reset.cfg",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/openocd-reset.cfg",
+      "github_sha256": "3b697a1995530d7c73313bedee561670485f6f02786efc1bc1cc778d436aa3c8",
+      "registry_sha256": "3b697a1995530d7c73313bedee561670485f6f02786efc1bc1cc778d436aa3c8",
+      "matches": true
+    },
+    {
+      "path": "firmware/openocd.cfg",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/openocd.cfg",
+      "github_sha256": "831c8543663956fe4f0a6ae6c0dbb3583e6f426595663282149590fa1c167ecf",
+      "registry_sha256": "831c8543663956fe4f0a6ae6c0dbb3583e6f426595663282149590fa1c167ecf",
+      "matches": true
+    },
+    {
+      "path": "firmware/status_rgb.pio",
+      "url": "https://raw.githubusercontent.com/tscircuit/standard-jst-programmer/7eb11c2ed16fe67f8835908b683bdd0a41e9cc05/firmware/status_rgb.pio",
+      "github_sha256": "29f67bd2f5a060a97a5a194a5737c700cf4216d09af009713770834dc9d47b7a",
+      "registry_sha256": "29f67bd2f5a060a97a5a194a5737c700cf4216d09af009713770834dc9d47b7a",
+      "matches": true
+    }
+  ]
+}

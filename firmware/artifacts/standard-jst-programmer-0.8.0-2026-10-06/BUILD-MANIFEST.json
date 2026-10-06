@@ -1,0 +1,140 @@
+{
+  "observed_utc": "2026-10-06T12:56:15.761497+00:00",
+  "published_source_manifest": {
+    "release_id": "3d6952c4-e6ee-4711-a7c7-dded0cdef4eb",
+    "source_url": "https://registry-api.tscircuit.com/",
+    "sha256": {
+      "LICENSE": "6220df8dfc095828d603c125f3c1d434b1df36a2744b44d4e381c7419b8a5301",
+      "README.md": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+      "THIRD_PARTY.md": "4c203ba61e1c77b267f0e721b9fddd0c2637f1f4a06ecad1dab710e654f4df77",
+      "firmware/board_standard_jst_config.h": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+      "firmware/build.sh": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+      "firmware/patch_upstream.py": "bd03b03cce75ef10210dfa76a7a12b1f55c6b73e70576d8a9b48f093c1a6ae2d",
+      "firmware/standard_jst_programmer.h": "4fd001c2007aa06b3743decb9a5c257128144bd132e5ad18ad3e76000170fcbc",
+      "firmware/status_math.h": "09940eef812a4b33b5b329c0dd5d3f4b5fcd16989818af63675f1d5d629160fe",
+      "firmware/status_monitor.c": "d82d4e7b9d2ac6efc08cbca6c74872bc03132f6424e8efcb6a88e9c730b72e63",
+      "firmware/status_monitor.h": "06fd0afdc19e9ecdd24d13992eca1215dc3fd149a595d313b0cabc380acc532e",
+      "scripts/check-firmware-math.c": "4cf783717c8bf9cb8cfe08d83229a72874f677370e28cf29241b406a220343d7",
+      "scripts/check-firmware-usb.py": "f94a20bf3bdb4e3c2b2e6d0da67ca40aedc000a0990f5fe9794da3e374632c56",
+      "firmware/openocd-reset.cfg": "3b697a1995530d7c73313bedee561670485f6f02786efc1bc1cc778d436aa3c8",
+      "firmware/openocd.cfg": "831c8543663956fe4f0a6ae6c0dbb3583e6f426595663282149590fa1c167ecf",
+      "firmware/status_rgb.pio": "29f67bd2f5a060a97a5a194a5737c700cf4216d09af009713770834dc9d47b7a"
+    },
+    "unavailable_text": [
+      "firmware/openocd-reset.cfg",
+      "firmware/openocd.cfg",
+      "firmware/status_rgb.pio"
+    ],
+    "binary_download_method": "package_files/download?package_file_id=<id>, supported native clone behavior"
+  },
+  "upstream_dependencies": {
+    "debugprobe": {
+      "head": "3fff5b240ca8200c7ad538cb61c02dfc39bda831",
+      "submodules": [
+        " 682f0515c984da0ef283b12e99791e5ab7b41034 freertos (V10.4.0-kernel-only-712-g682f0515c)",
+        " 8b2955f6d97bf4cd582db9f5b62d9eb1587b76d7 freertos/portable/ThirdParty/Community-Supported-Ports (8b2955f)",
+        " abc22103e1e6634b33457d4127bff1ab62f27f90 freertos/portable/ThirdParty/Partner-Supported-Ports (abc2210)"
+      ],
+      "local_diff_after_published_integration": [
+        " CMakeLists.txt          |  4 ++++",
+        " src/cdc_uart.c          |  3 +++",
+        " src/main.c              |  8 +++++++-",
+        " src/probe.pio           |  2 +-",
+        " src/probe_config.h      |  2 +-",
+        " src/tusb_config.h       |  2 +-",
+        " src/tusb_edpt_handler.c |  2 ++",
+        " src/usb_descriptors.c   | 11 ++++++++---",
+        " 8 files changed, 27 insertions(+), 7 deletions(-)"
+      ]
+    },
+    "pico-sdk": {
+      "head": "079c6f39023649b154152db30f1d781e884879bc",
+      "submodules": [
+        " eb0bb8b5ea6d234ccb940313b47f7a5c3b4e20ec lib/btstack (v1.7-rc1-1219-geb0bb8b5e)",
+        " 055d64274b014dd7b1c2fc94d26e8a18face7124 lib/cyw43-driver (v1.1.1)",
+        " 77dcd25a72509eb83f72b033d219b1d40cd8eb95 lib/lwip (STABLE-2_2_1_RELEASE)",
+        " 0bebf8b8c7f07abe3571ded48a11aa907a1ffb20 lib/mbedtls (v3.6.6)",
+        " dff9da04438d712f7647fd995bc90fadd0c0e2ce lib/mbedtls/framework (mbedtls-4.1.0_tf-psa-crypto-1.1.0)",
+        " 86ad6e56c1700e85f1c5678607a762cfe3aa2f47 lib/tinyusb (0.18.0)"
+      ],
+      "local_diff_after_published_integration": []
+    }
+  },
+  "compiler": "Arm GNU GCC14.2.1 20241119 (Debian15:14.2.rel1-1)",
+  "cmake": "3.31.10",
+  "host_python": "3.14.0",
+  "toolchain_packages": {
+    "binutils-arm-none-eabi_2.44-3+23+b1_amd64.deb": {
+      "package": "binutils-arm-none-eabi",
+      "version": "2.44-3+23+b1",
+      "sha256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/b/binutils-arm-none-eabi/binutils-arm-none-eabi_2.44-3+23+b1_amd64.deb"
+    },
+    "gcc-arm-none-eabi_15%3a14.2.rel1-1_amd64.deb": {
+      "package": "gcc-arm-none-eabi",
+      "version": "15:14.2.rel1-1",
+      "sha256": "99252fdda02ad134e8c3c344d3c843f7aa5c0d006e92a5b3d53daf4bd935b5d3",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/g/gcc-arm-none-eabi/gcc-arm-none-eabi_14.2.rel1-1_amd64.deb"
+    },
+    "libnewlib-arm-none-eabi_4.5.0.20241231-1_all.deb": {
+      "package": "libnewlib-arm-none-eabi",
+      "version": "4.5.0.20241231-1",
+      "sha256": "b444760d62896f03db89d6db94936929f300b72445763557fa94da32b7732f51",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/n/newlib/libnewlib-arm-none-eabi_4.5.0.20241231-1_all.deb"
+    },
+    "libnewlib-dev_4.5.0.20241231-1_all.deb": {
+      "package": "libnewlib-dev",
+      "version": "4.5.0.20241231-1",
+      "sha256": "feb2ed49a464b0346e42c3506088a41025273bff5f8e6bc5777afeac3704b3c1",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/n/newlib/libnewlib-dev_4.5.0.20241231-1_all.deb"
+    },
+    "libstdc++-arm-none-eabi-dev_15%3a14.2.rel1-1+29_all.deb": {
+      "package": "libstdc++-arm-none-eabi-dev",
+      "version": "15:14.2.rel1-1+29",
+      "sha256": "2523955f5f08466fad8166e78b78bc0d3ee4a19f0d52d97f7960a1fcbf261e81",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/libs/libstdc++-arm-none-eabi/libstdc++-arm-none-eabi-dev_14.2.rel1-1+29_all.deb"
+    },
+    "libstdc++-arm-none-eabi-newlib_15%3a14.2.rel1-1+29_all.deb": {
+      "package": "libstdc++-arm-none-eabi-newlib",
+      "version": "15:14.2.rel1-1+29",
+      "sha256": "bf7024f3829ee9581f5b5492f16b58eeee0394f72f78c673a5afa7e3122c05b9",
+      "origin": "https://deb.debian.org/debian",
+      "signed_metadata_verified_by": "apt-get update with Debian archive keyring; TLS and signature checks enabled",
+      "download_url": "https://deb.debian.org/debian/pool/main/libs/libstdc++-arm-none-eabi/libstdc++-arm-none-eabi-newlib_14.2.rel1-1+29_all.deb"
+    }
+  },
+  "build_command": "python3 cloud/run-heavy.py -- bash .codex/runtime/standard-jst-programmer-0.8.0/firmware/build.sh",
+  "memory_limit_bytes_observed": 34359738368,
+  "guaranteed_allocation": false,
+  "cpu_quota_equivalents_observed": 4,
+  "initial_build_exit": 2,
+  "initial_failure": "Missing Arm C++ headers cassert; resolved with matching signed C++ compiler headers/library packages. Official source unchanged.",
+  "final_build_exit": 0,
+  "official_usb_descriptor_check": "PASS: six interfaces; independent UART CDC0/telemetry CDC1, no endpoint collisions",
+  "artifact_validation": "evidence/R8-issue-resolution-2026-10-06/programmer-artifact-validation.json",
+  "physical_usb_uart_flash_test": "NOT RUN: no attached programmer/board",
+  "files_sha256": {
+    "licenses/CMSIS-LICENSE.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "licenses/FreeRTOS-LICENSE.md": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+    "licenses/FreeRTOS-RP2040-LICENSE.md": "baad16af4f5ed7d249ed81abf48d21e6c5827b8cad9da1b8e1e48a639e9eb982",
+    "licenses/THIRD_PARTY.md": "4c203ba61e1c77b267f0e721b9fddd0c2637f1f4a06ecad1dab710e654f4df77",
+    "licenses/debugprobe-LICENSE": "091f3d2541eb7b65513cab7a2db53daefd388c29850e08c8e60f1a26af8dd54a",
+    "licenses/pico-printf-LICENSE": "3fd3a80a06465d0b4affa1d1a16e18a8d2ef42a52eb52060109ae12f1f878f72",
+    "licenses/pico-sdk-LICENSE.TXT": "483f865953435b66c443dee7558debe3cc3cf8fcbb6a112fd9fc6a795d53f1f6",
+    "licenses/standard-jst-programmer-LICENSE": "6220df8dfc095828d603c125f3c1d434b1df36a2744b44d4e381c7419b8a5301",
+    "licenses/tinyusb-LICENSE": "b171720e8a442e7a3957d83c62cd3299dbb29da3db534cc626f9dded0de2ca44",
+    "standard-jst-programmer.bin": "772f2968ed33bf24b17dc8895cc56b1e344051e48a8c9f2657429e5e1609adb5",
+    "standard-jst-programmer.elf": "fc3c71ad22aa89d2e77e6bb375af78b8bd2522adb7e7890ee83e6c8bb4125440",
+    "standard-jst-programmer.uf2": "8d287101599647dbe25bf876d6c690373dfc1da843692b06eaf88d1436128ebd"
+  }
+}
