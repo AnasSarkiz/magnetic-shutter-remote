@@ -160,3 +160,11 @@ remain in this evidence directory. Existing issue075 output is the abandoned
 WROOM audit, not the fitted DOIT qualification. The heavy memory guard is unchanged.
 1752 protected archived files plus129 portable R7 baseline hashes pass; all
 tracked baselines/imports/firmware/toolchain files remain unchanged.
+
+## Actual public prototype publication
+
+Native **0.3.5-prototype** upload and anonymous readback PASS:270 files,20
+critical text matches, public=true/ready_to_build=true; GitHub Circuit JSON
+bytes match. [Publication evidence](PUBLICATION.md) records release/statuses.
+Hosted worker preview remains pending; order approval and physical tests stay
+pending. Source/artifact commit: `5c66d72178f5fdffe0c96f69877c78a9b41dd8d9`.

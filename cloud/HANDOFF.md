@@ -40,8 +40,11 @@ Frozen main/baselines/imports/prior evidence/toolchain and firmware are unchange
 allocation. Setup/start stay lightweight; all heavy work uses the unchanged
 serial memory guard. Preserve `board/r8-doit-c3-prototype-20261005`.
 
-Public 0.3.5-prototype publication is pending actual native upload and anonymous
-readback. The prior 0.3.4-prototype remains historical qualified output.
+Public **0.3.5-prototype** native publication/readback PASSED: all270 files,
+public=true, ready_to_build=true,20 critical text matches and matching anonymous
+GitHub Circuit JSON. Hosted worker preview remains pending at observation.
+[Actual publication](../evidence/R8-compact-pcb-2026-10-06/PUBLICATION.md). The prior
+0.3.4-prototype remains historical output.
 
 # Prior continuation result —2026-10-05
 

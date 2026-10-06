@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-06T05:45:31.720Z",
+  "anonymous_access": true,
+  "full_name": "AnasSarkiz/magnetic-shutter-remote",
+  "is_public": true,
+  "default_branch": "main",
+  "heads": [
+    {
+      "branch": "main",
+      "sha": "5951f419c8314b83648d89e1cfb7e29e87e32eb8"
+    },
+    {
+      "branch": "board/r8-doit-c3-prototype-20261005",
+      "sha": "5c66d72178f5fdffe0c96f69877c78a9b41dd8d9"
+    }
+  ],
+  "frozen_main_unchanged": true
+}
