@@ -1,0 +1,24 @@
+{
+  "previous_sha256": "a9dbcf582a68487f3428362a796a85fbd88e2f6d8dab98b8ddd0d301c96afa7b",
+  "current_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "electrical_copper_drill_paste_outline_elements_identical": true,
+  "verified_element_types": [
+    "source_component",
+    "source_port",
+    "source_net",
+    "source_trace",
+    "source_component_internal_connection",
+    "pcb_board",
+    "pcb_component",
+    "pcb_port",
+    "pcb_smtpad",
+    "pcb_trace",
+    "pcb_via",
+    "pcb_plated_hole",
+    "pcb_hole",
+    "pcb_copper_pour",
+    "pcb_solder_paste",
+    "pcb_keepout"
+  ],
+  "change": "Supported numeric schematic J2 arrangement separates VBAT left from GND terminals right; exact physical footprint and pins unchanged."
+}

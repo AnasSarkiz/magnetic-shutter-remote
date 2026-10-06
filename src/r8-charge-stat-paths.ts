@@ -17,11 +17,11 @@ export const r8ChargeStatPaths: FanoutTracePath[] = [
 			},
 			{ route_type: "wire", x: 7.249938, y: 24, width: 0.15, layer: "bottom" },
 			{ route_type: "wire", x: 7, y: 22, width: 0.15, layer: "bottom" },
-			{ route_type: "wire", x: 7, y: 10.9, width: 0.15, layer: "bottom" },
+			{ route_type: "wire", x: 7, y: 11.8, width: 0.15, layer: "bottom" },
 			{
 				route_type: "wire",
 				x: -0.0003175,
-				y: 10.9,
+				y: 11.8,
 				width: 0.15,
 				layer: "bottom",
 			},

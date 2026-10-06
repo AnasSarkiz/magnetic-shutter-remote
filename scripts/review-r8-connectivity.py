@@ -6,10 +6,12 @@ alone. Unsupported features fail closed in the shared geometry reader.
 import importlib.util
 import json
 import argparse
+import hashlib
 import sys
 from pathlib import Path
 from shapely.geometry import box
 from shapely.ops import unary_union
+from r8_board_geometry import rf_exclusion
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location('manufacturing_geometry', ROOT/'scripts/manufacturing-audit.py')
@@ -44,7 +46,7 @@ def review(output=ROOT/'evidence/R8-prototype-2026-10-05/physical-connectivity.j
         for i, terminal in terminals:
             groups.setdefault(find(i),[]).append({'pad':terminal.id,'reference':owners[terminal.owner]})
         connectivity.append({'net':net_names.get(net,net),'terminal_copper_groups':list(groups.values()),'connected':len(groups)<=1})
-    keepout = box(-24,-28,24,-19.3)
+    keepout = rf_exclusion(circuit)
     rf = [e.id+':'+e.layer for e in copper if e.geometry.intersection(keepout).area > GEOMETRY.EPS**2]
     # Fitted TS24CA has no manufacturer copper-exclusion region. Its holes,
     # lands and all copper still receive the independent manufacturing audit.
@@ -58,7 +60,7 @@ def review(output=ROOT/'evidence/R8-prototype-2026-10-05/physical-connectivity.j
         planes = [e for e in copper if e.kind=='pour' and e.layer=='top' and e.net==gnd and e.geometry.covers(ep_geometry) and e.geometry.intersects(GEOMETRY.pad(pin))]
         vias = [d.id for d in drills if d.net==gnd and d.geometry.distance(ep_geometry)<3]
         thermal.append({'reference':ref,'continuous_top_ground_plane_covers_ep_and_ground_pin':bool(planes),'nearby_ground_vias':vias})
-    result = {'connectivity':connectivity,'rf_copper_intrusions':rf,'shutter_manufacturer_copper_intrusions':shutter_intrusions,'thermal':thermal,'minimum_trace_width_mm':min(w for _,w in widths),'source':'dist/index/circuit.json','limitations':['Thermal performance, RF, battery, enclosure and phone function require prototype measurements.']}
+    result = {'circuit_sha256':hashlib.sha256((ROOT/'dist/index/circuit.json').read_bytes()).hexdigest(),'connectivity':connectivity,'rf_copper_intrusions':rf,'shutter_manufacturer_copper_intrusions':shutter_intrusions,'thermal':thermal,'minimum_trace_width_mm':min(w for _,w in widths),'source':'dist/index/circuit.json','limitations':['Thermal performance, RF, battery, enclosure and phone function require prototype measurements.']}
     output.write_text(json.dumps(result,indent=2)+'\n')
     failed = [n['net'] for n in connectivity if not n['connected']]
     print('Disconnected terminal nets:',failed,'RF intrusions:',rf,'Shutter copper intrusions:',shutter_intrusions,'Thermal:',thermal)

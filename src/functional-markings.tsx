@@ -11,7 +11,7 @@ export function FunctionalMarkings() {
 			/>
 			<silkscreentext
 				text="SHUTTER"
-				pcbX={17}
+				pcbX={15}
 				pcbY={-11.5}
 				layer="top"
 				fontSize={1.8}
@@ -19,34 +19,34 @@ export function FunctionalMarkings() {
 			<silkscreentext
 				text="PAIR"
 				pcbX={17}
-				pcbY={-5.5}
+				pcbY={-5}
 				layer="top"
 				fontSize={1.8}
 			/>
 			<silkscreentext
 				text="BOOT"
-				pcbX={-19}
+				pcbX={-18}
 				pcbY={-11.5}
 				layer="top"
 				fontSize={1.8}
 			/>
 			<silkscreentext
 				text="RESET"
-				pcbX={15}
-				pcbY={10}
+				pcbX={14.5}
+				pcbY={8.9}
 				layer="top"
 				fontSize={1.8}
 			/>
 			<silkscreentext
 				text="POWER"
-				pcbX={20}
+				pcbX={18}
 				pcbY={0}
 				layer="top"
 				fontSize={1.8}
 			/>
 			<silkscreentext
 				text="BAT 1:- 2:+"
-				pcbX={-16}
+				pcbX={-14}
 				pcbY={17}
 				layer="top"
 				fontSize={1.8}

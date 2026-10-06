@@ -1,3 +1,10 @@
+import { r8ColdGroundPaths } from "./r8-cold-ground-paths";
+import { r8RadioGroundPaths } from "./r8-radio-ground-paths";
+import { r8SysReturnPaths } from "./r8-sys-return-paths";
+import { r8SupervisorGroundPaths } from "./r8-supervisor-ground-paths";
+import { r8ResetPaths } from "./r8-reset-paths";
+import { r8RegEnablePaths } from "./r8-reg-enable-paths";
+import { r8ChargeDisablePaths } from "./r8-charge-disable-paths";
 import { r8TemperatureHotPaths } from "./r8-temperature-hot-paths";
 import { r8SupervisorVbatPaths } from "./r8-supervisor-vbat-paths";
 import { r8RadioCapPaths } from "./r8-radio-cap-paths";
@@ -54,7 +61,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 	return (
 		<board
 			title="Magnetic shutter remote R8 ESP32-C3 — engineering prototype"
-			width="48mm"
+			width="44mm"
 			height="56mm"
 			thickness="1mm"
 			layers={2}
@@ -104,6 +111,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			<net name="VSET" routingPhaseIndex={2} />
 			<net name="BOOT" routingPhaseIndex={2} />
 			<net name="TEMP_SET_HOT" routingPhaseIndex={2} />
+			<net name="CHARGE_DISABLE" routingPhaseIndex={2} />
 			{routingEnabled && (
 				<autoroutingphase
 					phaseIndex={2}
@@ -114,6 +122,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						".SW4 > port.pin1",
 						".U1 > port.pin18",
 						".R10 > port.pin1",
+						".R13 > port.pin2",
+						".Q2 port.pin3",
 					]}
 					pcbTracePaths={[
 						...r8BatteryOkPaths,
@@ -121,6 +131,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						...r8VsetPaths,
 						...r8BootPaths,
 						...r8TemperatureHotPaths,
+						...r8ChargeDisablePaths,
 					]}
 				/>
 			)}
@@ -147,10 +158,10 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				clearance="0.3mm"
 				boardEdgeMargin="0.3mm"
 				outline={[
-					{ x: -23, y: -19.0 },
-					{ x: 23, y: -19.0 },
-					{ x: 23, y: 27 },
-					{ x: -23, y: 27 },
+					{ x: -21, y: -19.0 },
+					{ x: 21, y: -19.0 },
+					{ x: 21, y: 27 },
+					{ x: -21, y: 27 },
 				]}
 			/>
 			<copperpour
@@ -160,10 +171,10 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				clearance="0.3mm"
 				boardEdgeMargin="0.3mm"
 				outline={[
-					{ x: -23, y: -19.0 },
-					{ x: 23, y: -19.0 },
-					{ x: 23, y: 27 },
-					{ x: -23, y: 27 },
+					{ x: -21, y: -19.0 },
+					{ x: 21, y: -19.0 },
+					{ x: 21, y: 27 },
+					{ x: -21, y: 27 },
 				]}
 			/>
 			{/* Intentional same-net overlap reserves solid TOP copper at the exposed
@@ -377,8 +388,9 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				/>
 				<SM02B_SRSS_TB_LF__SN_
 					name="J2"
+					schPinArrangement={{ leftSide: [2], rightSide: [1, 4, 3] }}
 					pcbRotation={270}
-					pcbX="-20mm"
+					pcbX="-18mm"
 					pcbY="13mm"
 					schX={8}
 					schY={4}
@@ -423,17 +435,24 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						connections={{ pin1: "net.TS_BIAS", pin2: "net.GND" }}
 					/>
 				</fanout>
-				<CL21A106KAYNNNE
-					name="C8"
-					pcbRotation={180}
-					schRotation={-90}
-					layer="top"
-					pcbX="-5.5mm"
-					pcbY="13.4mm"
-					schX={-3}
-					schY={-4}
-					connections={{ pin1: "net.CHARGER_SYS", pin2: "net.GND" }}
-				/>
+				<fanout
+					name="SYS_RETURN_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8SysReturnPaths : []}
+				>
+					<CL21A106KAYNNNE
+						name="C8"
+						pcbRotation={180}
+						schRotation={-90}
+						layer="top"
+						pcbX="-5.5mm"
+						pcbY="13.4mm"
+						schX={-3}
+						schY={-4}
+						connections={{ pin1: "net.CHARGER_SYS", pin2: "net.GND" }}
+					/>
+				</fanout>
 				<TCC0603COG470J500CT
 					name="C9"
 					schRotation={-90}
@@ -451,40 +470,47 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				sheetIndex={1}
 				sheetSize="A4"
 			>
-				<ESPC3_12_N4
-					name="U1"
-					pcbX="0mm"
-					pcbY="-10.5mm"
-					pcbRotation={180}
-					schX={0}
-					schY={0}
-					noConnect={[
-						"pin1",
-						"pin2",
-						"pin4",
-						"pin5",
-						"pin9",
-						"pin10",
-						"pin11",
-						"pin13",
-						"pin14",
-						"pin16",
-						"pin17",
-						"pin19",
-						"pin20",
-					]}
-					connections={{
-						pin3: "net.EN",
-						pin6: "net.SHUTTER",
-						pin7: "net.PAIR",
-						pin8: "net.V3",
-						pin15: "net.GND",
-						pin12: "net.STATUS_LED",
-						pin18: "net.BOOT",
-						pin21: "net.UART_RX",
-						pin22: "net.UART_TX",
-					}}
-				/>
+				<fanout
+					name="RADIO_GROUND_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8RadioGroundPaths : []}
+				>
+					<ESPC3_12_N4
+						name="U1"
+						pcbX="0mm"
+						pcbY="-10.5mm"
+						pcbRotation={180}
+						schX={0}
+						schY={0}
+						noConnect={[
+							"pin1",
+							"pin2",
+							"pin4",
+							"pin5",
+							"pin9",
+							"pin10",
+							"pin11",
+							"pin13",
+							"pin14",
+							"pin16",
+							"pin17",
+							"pin19",
+							"pin20",
+						]}
+						connections={{
+							pin3: "net.EN",
+							pin6: "net.SHUTTER",
+							pin7: "net.PAIR",
+							pin8: "net.V3",
+							pin15: "net.GND",
+							pin12: "net.STATUS_LED",
+							pin18: "net.BOOT",
+							pin21: "net.UART_RX",
+							pin22: "net.UART_TX",
+						}}
+					/>
+				</fanout>
 				<fanout
 					name="RADIO_CAP_ESCAPE"
 					pcbX={0}
@@ -519,7 +545,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				<TS24CA
 					name="SW2"
 					schRotation={-90}
-					pcbX="22mm"
+					pcbX="20mm"
 					pcbY="-8.5mm"
 					pcbRotation={270}
 					// Plastic actuator overhangs+X; every copper land stays on board.
@@ -537,7 +563,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				<TS_1088_AR02016
 					name="SW3"
 					schRotation={-90}
-					pcbX="20mm"
+					pcbX="18mm"
 					pcbY="-3mm"
 					schX={-7}
 					schY={-2}
@@ -591,15 +617,22 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					schRotation={-90}
 					connections={{ pin1: "net.BOOT", pin2: "net.GND" }}
 				/>
-				<TS_1088_AR02016
-					name="SW5"
-					pcbX="15mm"
-					pcbY="8mm"
-					schX={-7}
-					schY={-8}
-					schRotation={-90}
-					connections={{ pin1: "net.EN", pin2: "net.GND" }}
-				/>
+				<fanout
+					name="RESET_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8ResetPaths : []}
+				>
+					<TS_1088_AR02016
+						name="SW5"
+						pcbX="14.5mm"
+						pcbY="11.5mm"
+						schX={-7}
+						schY={-8}
+						schRotation={-90}
+						connections={{ pin1: "net.EN", pin2: "net.GND" }}
+					/>
+				</fanout>
 			</schematicsheet>
 
 			<schematicsheet
@@ -610,7 +643,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			>
 				<MSK12C02
 					name="SW1"
-					pcbX="21mm"
+					pcbX="19mm"
 					pcbY="5mm"
 					pcbRotation={90}
 					schX={-7}
@@ -622,21 +655,23 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						pin4: "net.GND",
 					}}
 				/>
-				<A_0603WAF1003T5E
-					name="R5"
-					pcbX="4mm"
-					pcbY="3mm"
-					pcbRotation={180}
-					schX={-4}
-					schY={-5}
-					connections={{ pin1: "net.POWER_SWITCH", pin2: "net.REG_EN" }}
-				/>
 				<fanout
 					name="USB_DISABLE_ESCAPE"
 					pcbX={0}
 					pcbY={0}
-					pcbTracePaths={routingEnabled ? r8UsbDisablePaths : []}
+					pcbTracePaths={
+						routingEnabled ? [...r8UsbDisablePaths, ...r8RegEnablePaths] : []
+					}
 				>
+					<A_0603WAF1003T5E
+						name="R5"
+						pcbX="4mm"
+						pcbY="3mm"
+						pcbRotation={180}
+						schX={-4}
+						schY={-5}
+						connections={{ pin1: "net.POWER_SWITCH", pin2: "net.REG_EN" }}
+					/>
 					<A_2N7002
 						name="Q1"
 						pinAttributes={{
@@ -761,7 +796,11 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					name="SUPERVISOR_VBAT_ESCAPE"
 					pcbX={0}
 					pcbY={0}
-					pcbTracePaths={routingEnabled ? r8SupervisorVbatPaths : []}
+					pcbTracePaths={
+						routingEnabled
+							? [...r8SupervisorVbatPaths, ...r8SupervisorGroundPaths]
+							: []
+					}
 				>
 					<TPS3839G33DBZR
 						name="U4"
@@ -775,16 +814,17 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 							pin3: "net.VBAT",
 						}}
 					/>
+					<CC0603KRX7R9BB104
+						name="C6"
+						schRotation={-90}
+						pcbX="-18mm"
+						pcbY="3mm"
+						schX={2}
+						schY={9}
+						connections={{ pin1: "net.VBAT", pin2: "net.GND" }}
+					/>
 				</fanout>
-				<CC0603KRX7R9BB104
-					name="C6"
-					schRotation={-90}
-					pcbX="-18mm"
-					pcbY="3mm"
-					schX={2}
-					schY={9}
-					connections={{ pin1: "net.VBAT", pin2: "net.GND" }}
-				/>
+
 				<fanout
 					name="SENSOR_ESCAPE"
 					pcbX={0}
@@ -840,16 +880,23 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						connections={{ pin1: "net.TEMP_SET_HOT", pin2: "net.GND" }}
 					/>
 				</fanout>
-				<A_0603WAF1872T5E
-					name="R11"
-					schRotation={-90}
-					pcbX="4.5mm"
-					pcbY="5.5mm"
-					layer="top"
-					schX={-4}
-					schY={1}
-					connections={{ pin1: "net.TEMP_SET_COLD", pin2: "net.GND" }}
-				/>
+				<fanout
+					name="COLD_GROUND_ESCAPE"
+					pcbX={0}
+					pcbY={0}
+					pcbTracePaths={routingEnabled ? r8ColdGroundPaths : []}
+				>
+					<A_0603WAF1872T5E
+						name="R11"
+						schRotation={-90}
+						pcbX="4.5mm"
+						pcbY="5.5mm"
+						layer="top"
+						schX={-4}
+						schY={1}
+						connections={{ pin1: "net.TEMP_SET_COLD", pin2: "net.GND" }}
+					/>
+				</fanout>
 				<A_0603WAF1003T5E
 					name="R12"
 					schRotation={-90}
@@ -900,13 +947,13 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 					/>
 				</fanout>
 			</schematicsheet>
-			<hole name="H1" pcbX="-21mm" pcbY="25mm" diameter="2.2mm" />
-			<hole name="H2" pcbX="21mm" pcbY="25mm" diameter="2.2mm" />
-			<hole name="H3" pcbX="-21mm" pcbY="-14mm" diameter="2.2mm" />
-			<hole name="H4" pcbX="21mm" pcbY="-14mm" diameter="2.2mm" />
+			<hole name="H1" pcbX="-19mm" pcbY="25mm" diameter="2.2mm" />
+			<hole name="H2" pcbX="19mm" pcbY="25mm" diameter="2.2mm" />
+			<hole name="H3" pcbX="-19mm" pcbY="-14mm" diameter="2.2mm" />
+			<hole name="H4" pcbX="19mm" pcbY="-14mm" diameter="2.2mm" />
 			<keepout
 				shape="rect"
-				pcbX="21.75616435mm"
+				pcbX="19.75616435mm"
 				pcbY="3.50013mm"
 				width="2mm"
 				height="2mm"
@@ -915,7 +962,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			/>
 			<keepout
 				shape="rect"
-				pcbX="21.75616435mm"
+				pcbX="19.75616435mm"
 				pcbY="6.500124mm"
 				width="2mm"
 				height="2mm"
@@ -925,7 +972,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			{/* Conservative mounting copper exclusions supplement the NPTH clearance rule. */}
 			<keepout
 				shape="rect"
-				pcbX="-21mm"
+				pcbX="-19mm"
 				pcbY="25mm"
 				width="3.6mm"
 				height="3.6mm"
@@ -933,7 +980,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			/>
 			<keepout
 				shape="rect"
-				pcbX="21mm"
+				pcbX="19mm"
 				pcbY="25mm"
 				width="3.6mm"
 				height="3.6mm"
@@ -941,7 +988,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			/>
 			<keepout
 				shape="rect"
-				pcbX="-21mm"
+				pcbX="-19mm"
 				pcbY="-14mm"
 				width="3.6mm"
 				height="3.6mm"
@@ -949,7 +996,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 			/>
 			<keepout
 				shape="rect"
-				pcbX="21mm"
+				pcbX="19mm"
 				pcbY="-14mm"
 				width="3.6mm"
 				height="3.6mm"
@@ -961,7 +1008,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				shape="rect"
 				pcbX="0mm"
 				pcbY="-23.65mm"
-				width="48mm"
+				width="44mm"
 				height="8.7mm"
 				layers={["top", "bottom"]}
 				excludeRefs={[".U1"]}

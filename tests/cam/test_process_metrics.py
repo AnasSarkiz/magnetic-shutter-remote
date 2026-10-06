@@ -52,5 +52,23 @@ class CompleteSilkscreenTest(unittest.TestCase):
         self.assertEqual(result['outside_outline_mm2'],0)
 
 
+class FunctionalLegendOverlapTest(unittest.TestCase):
+    def test_original_native_pair_power_collision_is_rejected(self):
+        import json
+        root=Path(__file__).resolve().parents[2]
+        review=json.loads((root/'evidence/R8-compact-pcb-2026-10-06/failed-route20-visual/process-review.json').read_text())
+        self.assertFalse(review['failures'])  # Original mask/stroke-only audit missed it.
+        overlaps=METRICS.label_overlap_failures(review['labels'])
+        self.assertEqual(len(overlaps),1)
+        self.assertEqual(set(overlaps[0]['texts']),{'PAIR','POWER'})
+
+    def test_separate_positions_and_opposite_layers_are_controls(self):
+        first={'text':'PAIR','layer':'top','bounds_mm':[0,0,4,1]}
+        other={'text':'POWER','layer':'bottom','bounds_mm':[0,0,4,1]}
+        self.assertEqual(METRICS.label_overlap_failures([first,other]),[])
+        other.update(layer='top',bounds_mm=[0,2,4,3])
+        self.assertEqual(METRICS.label_overlap_failures([first,other]),[])
+
+
 if __name__=='__main__':
     unittest.main()

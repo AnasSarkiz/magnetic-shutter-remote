@@ -1,0 +1,14 @@
+{
+  "reference_manifests": [
+    "evidence/R8-INTEGRITY-2026-10-05-standard-jst-route06.json",
+    "evidence/R8-INTEGRITY-2026-10-05-standard-jst-publication034.json"
+  ],
+  "reference_selection": "Publication034 publication_files_sha256 supersedes hashes for already-committed publication evidence such as prior REVIEW.md; other original route06 inputs retained.",
+  "protected_reference_files_checked": 1752,
+  "mismatches": [],
+  "firmware_image_sha256": "bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132",
+  "scope": "1752 prior evidence/fabrication/import/firmware/toolchain files verified using prior manifests; 129 portable R7 baseline hashes separately pass fresh setup/smoke; tracked baselines/imports/firmware/tooling/heap guard/bun.lock unchanged vs predecessor. Compact PCB source changes authorized separately.",
+  "verified_after_final_setup_and_builds": true,
+  "portable_r7_hashes_verified": 129,
+  "protected_tracked_paths_changed_vs_predecessor": []
+}

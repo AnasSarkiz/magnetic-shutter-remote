@@ -3,16 +3,31 @@ import argparse
 import importlib.util
 import json
 import math
+import hashlib
 import subprocess
 import sys
 from pathlib import Path
 from zipfile import ZipFile
 
 from gerbonara import GerberFile
-from shapely.geometry import LineString
+from shapely.geometry import LineString, box
 from shapely.ops import polygonize, unary_union
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def label_overlap_failures(labels):
+    failures = []
+    for i, first in enumerate(labels):
+        for second in labels[:i]:
+            if first['layer'] != second['layer']:
+                continue
+            overlap = box(*first['bounds_mm']).intersection(box(*second['bounds_mm'])).area
+            if overlap > 1e-8:
+                failures.append({'rule':'functional_legend_overlap',
+                                 'texts':[first['text'],second['text']],
+                                 'layer':first['layer'], 'bounding_overlap_mm2':overlap})
+    return failures
 
 
 def load(name, filename):
@@ -134,12 +149,13 @@ def review(args):
         labels.append(row)
         if row['minimum_stroke_mm'] < .15 or row['mask_gap_mm'] < .15 + GEOMETRY.EPS or row['outside_outline_mm2'] > GEOMETRY.EPS**2:
             failures.append({'rule':'silkscreen', **row})
+    failures.extend(label_overlap_failures(labels))
     for hole in (e for e in circuit if e['type'] in ('pcb_via','pcb_plated_hole','pcb_hole')):
         size = hole.get('hole_diameter',min(hole.get('hole_width',math.inf),hole.get('hole_height',math.inf)))
         minimum = .3 if hole['type']=='pcb_via' else .5
         if size < minimum:
             failures.append({'rule':'drill_size','feature':hole,'minimum_mm':minimum})
-    report = {'failures':failures,'stencil_thickness_mm':.1,'stencil':stencil,'mask_webs':sorted(webs,key=lambda r:r['gap_mm']),
+    report = {'circuit_sha256':hashlib.sha256(args.circuit.read_bytes()).hexdigest(),'archive_sha256':hashlib.sha256(args.archive.read_bytes()).hexdigest(),'failures':failures,'stencil_thickness_mm':.1,'stencil':stencil,'mask_webs':sorted(webs,key=lambda r:r['gap_mm']),
               'labels':labels,'complete_silkscreen':complete_silk,'references':['https://jlcpcb.com/capabilities/pcb-capabilities','TI SLUA271C sections 4.2–4.4'],
               'limitations':['Nominal process geometry only; no assembly approval, measured paste transfer or supplier processed-preview is claimed.']}
     (args.output/'process-review.json').write_text(json.dumps(report,indent=2)+'\n')

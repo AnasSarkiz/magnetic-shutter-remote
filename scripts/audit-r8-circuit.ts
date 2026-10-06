@@ -173,7 +173,7 @@ if (
 	throw new Error("C3 supply metadata is missing");
 }
 const board = circuit.find((e) => e.type === "pcb_board");
-if (board?.width !== 48 || board.height !== 56 || board.num_layers !== 2) {
+if (board?.width !== 44 || board.height !== 56 || board.num_layers !== 2) {
 	throw new Error("Board envelope differs from battery/antenna qualification");
 }
 console.log(

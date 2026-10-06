@@ -2,12 +2,14 @@
 import argparse
 import importlib.util
 import json
+import hashlib
 import sys
 from pathlib import Path
 from zipfile import ZipFile
-from shapely.geometry import LineString, box
+from shapely.geometry import LineString
 from shapely.ops import unary_union, polygonize
 from gerbonara import GerberFile, graphic_primitives as gp
+from r8_board_geometry import board_outline, rf_exclusion
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -31,7 +33,7 @@ def review(args):
     args.output.mkdir(parents=True,exist_ok=True)
     (args.output/'exact-source-manufacturing.json').write_text(json.dumps(audit,indent=2)+'\n')
     if audit['failures']:raise ValueError(f'{len(audit["failures"])} actual exported-geometry manufacturing failures')
-    report={'layers':{},'drills':{},'source':str(args.circuit)}
+    report={'layers':{},'drills':{},'source':str(args.circuit),'circuit_sha256':hashlib.sha256(args.circuit.read_bytes()).hexdigest(),'archive_sha256':hashlib.sha256(args.archive.read_bytes()).hexdigest()}
     layers={}
     with ZipFile(args.archive) as archive:
         if set(archive.namelist()) != READER.EXPECTED_FILES:raise ValueError('Gerber/Excellon file coverage differs')
@@ -47,14 +49,16 @@ def review(args):
     for side,filename in [('top','F_Cu.gbr'),('bottom','B_Cu.gbr')]:
         expected=unary_union([e.geometry for e in copper if e.layer==side]);actual=READER.copper_geometry(layers[filename])
         report['layers'][filename]['copper_match']=READER.compare_geometry(READER.GeometryComparison(expected,actual,side))
-        if actual.intersection(box(-24,-28,24,-19.3)).area>GEOMETRY.EPS**2:raise ValueError('Exported copper enters RF exclusion')
+        if actual.intersection(rf_exclusion(circuit)).area>GEOMETRY.EPS**2:raise ValueError('Exported copper enters RF exclusion')
     lines=[]
     for obj in layers['Edge_Cuts.gbr'].objects:
         for primitive in obj.to_primitives():
             if not isinstance(primitive,gp.Line):raise ValueError('Unsupported outline primitive')
             lines.append(LineString([(primitive.x1,primitive.y1),(primitive.x2,primitive.y2)]))
     outlines=list(polygonize(unary_union(lines)))
-    if len(outlines)!=1 or any(abs(a-b)>READER.QUANTIZATION_MM for a,b in zip(outlines[0].bounds,[-24,-28,24,28])):raise ValueError('Board outline mismatch')
+    if len(outlines)!=1:raise ValueError('Board outline mismatch')
+    report['layers']['Edge_Cuts.gbr']['outline_match']=READER.compare_geometry(
+        READER.GeometryComparison(board_outline(circuit),outlines[0],'board outline'))
     for side,filename in [('top','F_Paste.gbr'),('bottom','B_Paste.gbr')]:
         expected=unary_union([GEOMETRY.pad(e) for e in circuit if e['type']=='pcb_solder_paste' and e['layer']==side]);actual=READER.copper_geometry(layers[filename])
         report['layers'][filename]['paste_match']=READER.compare_geometry(READER.GeometryComparison(expected,actual,filename))

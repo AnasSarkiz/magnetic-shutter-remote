@@ -5,7 +5,7 @@ Input is schema-validated Circuit JSON, not edited converter output. Curves use
 No component or same-footprint exemption. Own plated annulus and electrical
 trace-to-barrel joins are classified features, rather than clearance violations.
 """
-import argparse,json,math
+import argparse,json,math,hashlib
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -258,6 +258,7 @@ def audit(copper,drills,widths):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--input',default='dist/index/circuit.json');p.add_argument('--trace-geometry',choices=['conservative','gerber'],default='conservative');p.add_argument('--output',default='evidence/R3/manufacturing-audit.json');a=p.parse_args()
     result=audit(*make_features(json.loads(Path(a.input).read_text()),a.trace_geometry));result['trace_geometry']=a.trace_geometry
+    result['circuit_sha256']=hashlib.sha256(Path(a.input).read_bytes()).hexdigest()
     Path(a.output).write_text(json.dumps(result,indent=2)+'\n')
     print('Classified manufacturing failures:',len(result['failures']))
     for f in result['failures'][:25]:print(f)

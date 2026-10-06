@@ -1,0 +1,46 @@
+{
+  "observed_utc": "2026-10-06T05:36:14.188949+00:00",
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "status": "PASS visual inspection of all 10 current PNG views; associated native SVG hashes retained",
+  "reviewed_again": [
+    "pcb-top.png",
+    "Power-a4.png",
+    "Power-detail.png"
+  ],
+  "unchanged_previously_inspected_views": [
+    "Radio-a4.png",
+    "Radio-detail.png",
+    "Protection-a4.png",
+    "Protection-detail.png",
+    "gerber-top.png",
+    "gerber-bottom.png",
+    "pcb-bottom.png"
+  ],
+  "files_sha256": {
+    "Power-a4.png": "5d062dd4e5002dbd889c856c06c9569bc40e7709abb782e866186c2ff2140c88",
+    "Power-a4.svg": "bf3ffc79de72e2feee725e1eeb8100e8b2a374488125c583de1d0a16601176a9",
+    "Power-detail.png": "e7aec9c789f8f03bfee066e5a9d282cd99678b9fac608e42e1da629500b3188b",
+    "Power-detail.svg": "8e7f0dbd62710933888824198899bd4e520ecb64f6866e24b0b2ea3c81f1977f",
+    "Protection-a4.png": "3509868caa5bed754f11939c000f9ffe9e9a6d213d3139e9f5e3f4a48834eed4",
+    "Protection-a4.svg": "031362a85e2e186f9242bc51518543129fd2f2dfb7df9ade6881c750f1590784",
+    "Protection-detail.png": "c0af15602f9969ba57758a357fbfb003d4ef3209285c06ee733833e05fe00d97",
+    "Protection-detail.svg": "b4ad51a2c35528a4a66cf725a4bfcd4f7e2837df91152e2a90890477371d6c6b",
+    "Radio-a4.png": "f0e4683a86b7a959cfddead218b73934d90f21a477a6d99ce6f2c29579be43e8",
+    "Radio-a4.svg": "5fb698324bd2443eadec2e477bd9ec4e919ffbf02b113e284bf32b282d2daa89",
+    "Radio-detail.png": "38c6a10950b2a28f0e4e3dcec92268f9c8a83c650f3b4dd68a5ecb5327566260",
+    "Radio-detail.svg": "b346702d544f871a84ce53c402ed4e9659018109a653ebdff39c73c953ff7192",
+    "gerber-bottom.png": "d9074dcbb94bd7e9734070765129b7d5163c421ea4b985b7c5a82cdb6f7daf69",
+    "gerber-top.png": "9cd028387d333bcd89cc31ca810fe9c05619b1eb9eb127c0d02daeb56933c871",
+    "pcb-bottom.png": "dc64b4736de427e685ab70ee04ce6b82e8edd8b3af5dc1ca37a258c5f1166edc",
+    "pcb-bottom.svg": "e20548540f4718fa4b002cb0648dbee7fee6588475897b343b90bf73396ff675",
+    "pcb-top.png": "e878b0cbd3ff25101b694dba36af3c031ea919f475c30173b11a8a04be59dff7",
+    "pcb-top.svg": "67b0634ab4cb9e7406ce6a399433c375174e535453c6233fd8339c1cf1520585"
+  },
+  "notes": [
+    "All three native A4 sheets and details inspected. Power sheet now clearly separates J2 pin2 VBAT left and pin1/3/4 GND right.",
+    "Top PCB: PAIR and POWER separate/readable, right-edge shutter and reset/boot/battery/UART legends retained.",
+    "Both PCB layers and independent TOP/BOTTOM Gerber views inspected, unchanged geometry hash retained. RF edge band clear, thermal planes/returns and mounting/drilling reviewed.",
+    "Automated zero DRC/shorts/continuity and exact manufacturer-terminal reports are required in addition to visual review.",
+    "Physical body/enclosure/phone/MagSafe and hardware electrical behavior not measured."
+  ]
+}

@@ -1,0 +1,304 @@
+diff --git a/src/functional-markings.tsx b/src/functional-markings.tsx
+index 07125a0..e0f9f81 100644
+--- a/src/functional-markings.tsx
++++ b/src/functional-markings.tsx
+@@ -11,42 +11,42 @@ export function FunctionalMarkings() {
+ 			/>
+ 			<silkscreentext
+ 				text="SHUTTER"
+-				pcbX={17}
++				pcbX={15}
+ 				pcbY={-11.5}
+ 				layer="top"
+ 				fontSize={1.8}
+ 			/>
+ 			<silkscreentext
+ 				text="PAIR"
+-				pcbX={17}
++				pcbX={15}
+ 				pcbY={-5.5}
+ 				layer="top"
+ 				fontSize={1.8}
+ 			/>
+ 			<silkscreentext
+ 				text="BOOT"
+-				pcbX={-19}
++				pcbX={-18}
+ 				pcbY={-11.5}
+ 				layer="top"
+ 				fontSize={1.8}
+ 			/>
+ 			<silkscreentext
+ 				text="RESET"
+-				pcbX={15}
+-				pcbY={10}
++				pcbX={14.5}
++				pcbY={8.9}
+ 				layer="top"
+ 				fontSize={1.8}
+ 			/>
+ 			<silkscreentext
+ 				text="POWER"
+-				pcbX={20}
++				pcbX={18}
+ 				pcbY={0}
+ 				layer="top"
+ 				fontSize={1.8}
+ 			/>
+ 			<silkscreentext
+ 				text="BAT 1:- 2:+"
+-				pcbX={-16}
++				pcbX={-14}
+ 				pcbY={17}
+ 				layer="top"
+ 				fontSize={1.8}
+diff --git a/src/r8-battery-ok-paths.ts b/src/r8-battery-ok-paths.ts
+index 72314dc..5446c11 100644
+--- a/src/r8-battery-ok-paths.ts
++++ b/src/r8-battery-ok-paths.ts
+@@ -24,27 +24,27 @@ export const r8BatteryOkPaths: FanoutTracePath[] = [
+ 			},
+ 			{ route_type: "wire", x: -16, y: -3.4, width: 0.15, layer: "bottom" },
+ 			{ route_type: "wire", x: -16, y: -16, width: 0.15, layer: "bottom" },
+-			{ route_type: "wire", x: 17.8, y: -16, width: 0.15, layer: "bottom" },
++			{ route_type: "wire", x: 16.5, y: -16, width: 0.15, layer: "bottom" },
+ 			{
+ 				route_type: "wire",
+-				x: 17.8,
++				x: 16.5,
+ 				y: 2.750068,
+ 				width: 0.15,
+ 				layer: "bottom",
+ 			},
+ 			{
+ 				route_type: "via",
+-				x: 17.8,
++				x: 16.5,
+ 				y: 2.750068,
+ 				from_layer: "bottom",
+ 				to_layer: "top",
+ 				via_diameter: 0.6,
+ 				via_hole_diameter: 0.3,
+ 			},
+-			{ route_type: "wire", x: 17.8, y: 2.750068, width: 0.15, layer: "top" },
++			{ route_type: "wire", x: 16.5, y: 2.750068, width: 0.15, layer: "top" },
+ 			{
+ 				route_type: "wire",
+-				x: 19.50597835,
++				x: 17.50597835,
+ 				y: 2.750068,
+ 				width: 0.15,
+ 				layer: "top",
+diff --git a/src/r8-cc-paths.ts b/src/r8-cc-paths.ts
+index ea6a4a7..41e8545 100644
+--- a/src/r8-cc-paths.ts
++++ b/src/r8-cc-paths.ts
+@@ -23,6 +23,15 @@ export const r8CcPaths: FanoutTracePath[] = [
+ 			{ route_type: "wire", x: -3.246636, y: 19, width: 0.15, layer: "top" },
+ 			{ route_type: "wire", x: -3.246636, y: 19.9, width: 0.15, layer: "top" },
+ 			{ route_type: "wire", x: -3.6, y: 20.1, width: 0.15, layer: "top" },
++			{
++				route_type: "via",
++				x: -3.6,
++				y: 20.1,
++				from_layer: "top",
++				to_layer: "bottom",
++				via_diameter: 0.6,
++				via_hole_diameter: 0.3,
++			},
+ 		],
+ 	},
+ ];
+diff --git a/src/remote-circuit.tsx b/src/remote-circuit.tsx
+index 6cbc056..2839000 100644
+--- a/src/remote-circuit.tsx
++++ b/src/remote-circuit.tsx
+@@ -1,3 +1,4 @@
++import { r8ChargeDisablePaths } from "./r8-charge-disable-paths";
+ import { r8TemperatureHotPaths } from "./r8-temperature-hot-paths";
+ import { r8SupervisorVbatPaths } from "./r8-supervisor-vbat-paths";
+ import { r8RadioCapPaths } from "./r8-radio-cap-paths";
+@@ -54,7 +55,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 	return (
+ 		<board
+ 			title="Magnetic shutter remote R8 ESP32-C3 — engineering prototype"
+-			width="48mm"
++			width="44mm"
+ 			height="56mm"
+ 			thickness="1mm"
+ 			layers={2}
+@@ -104,6 +105,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			<net name="VSET" routingPhaseIndex={2} />
+ 			<net name="BOOT" routingPhaseIndex={2} />
+ 			<net name="TEMP_SET_HOT" routingPhaseIndex={2} />
++			<net name="CHARGE_DISABLE" routingPhaseIndex={2} />
+ 			{routingEnabled && (
+ 				<autoroutingphase
+ 					phaseIndex={2}
+@@ -114,6 +116,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 						".SW4 > port.pin1",
+ 						".U1 > port.pin18",
+ 						".R10 > port.pin1",
++						".R13 > port.pin2",
++						".Q2 > port.pin3",
+ 					]}
+ 					pcbTracePaths={[
+ 						...r8BatteryOkPaths,
+@@ -121,6 +125,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 						...r8VsetPaths,
+ 						...r8BootPaths,
+ 						...r8TemperatureHotPaths,
++						...r8ChargeDisablePaths,
+ 					]}
+ 				/>
+ 			)}
+@@ -147,10 +152,10 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				clearance="0.3mm"
+ 				boardEdgeMargin="0.3mm"
+ 				outline={[
+-					{ x: -23, y: -19.0 },
+-					{ x: 23, y: -19.0 },
+-					{ x: 23, y: 27 },
+-					{ x: -23, y: 27 },
++					{ x: -21, y: -19.0 },
++					{ x: 21, y: -19.0 },
++					{ x: 21, y: 27 },
++					{ x: -21, y: 27 },
+ 				]}
+ 			/>
+ 			<copperpour
+@@ -160,10 +165,10 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				clearance="0.3mm"
+ 				boardEdgeMargin="0.3mm"
+ 				outline={[
+-					{ x: -23, y: -19.0 },
+-					{ x: 23, y: -19.0 },
+-					{ x: 23, y: 27 },
+-					{ x: -23, y: 27 },
++					{ x: -21, y: -19.0 },
++					{ x: 21, y: -19.0 },
++					{ x: 21, y: 27 },
++					{ x: -21, y: 27 },
+ 				]}
+ 			/>
+ 			{/* Intentional same-net overlap reserves solid TOP copper at the exposed
+@@ -378,7 +383,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				<SM02B_SRSS_TB_LF__SN_
+ 					name="J2"
+ 					pcbRotation={270}
+-					pcbX="-20mm"
++					pcbX="-18mm"
+ 					pcbY="13mm"
+ 					schX={8}
+ 					schY={4}
+@@ -519,7 +524,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				<TS24CA
+ 					name="SW2"
+ 					schRotation={-90}
+-					pcbX="22mm"
++					pcbX="20mm"
+ 					pcbY="-8.5mm"
+ 					pcbRotation={270}
+ 					// Plastic actuator overhangs+X; every copper land stays on board.
+@@ -537,7 +542,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				<TS_1088_AR02016
+ 					name="SW3"
+ 					schRotation={-90}
+-					pcbX="20mm"
++					pcbX="18mm"
+ 					pcbY="-3mm"
+ 					schX={-7}
+ 					schY={-2}
+@@ -593,8 +598,8 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				/>
+ 				<TS_1088_AR02016
+ 					name="SW5"
+-					pcbX="15mm"
+-					pcbY="8mm"
++					pcbX="14.5mm"
++					pcbY="11.5mm"
+ 					schX={-7}
+ 					schY={-8}
+ 					schRotation={-90}
+@@ -610,7 +615,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			>
+ 				<MSK12C02
+ 					name="SW1"
+-					pcbX="21mm"
++					pcbX="19mm"
+ 					pcbY="5mm"
+ 					pcbRotation={90}
+ 					schX={-7}
+@@ -900,13 +905,13 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 					/>
+ 				</fanout>
+ 			</schematicsheet>
+-			<hole name="H1" pcbX="-21mm" pcbY="25mm" diameter="2.2mm" />
+-			<hole name="H2" pcbX="21mm" pcbY="25mm" diameter="2.2mm" />
+-			<hole name="H3" pcbX="-21mm" pcbY="-14mm" diameter="2.2mm" />
+-			<hole name="H4" pcbX="21mm" pcbY="-14mm" diameter="2.2mm" />
++			<hole name="H1" pcbX="-19mm" pcbY="25mm" diameter="2.2mm" />
++			<hole name="H2" pcbX="19mm" pcbY="25mm" diameter="2.2mm" />
++			<hole name="H3" pcbX="-19mm" pcbY="-14mm" diameter="2.2mm" />
++			<hole name="H4" pcbX="19mm" pcbY="-14mm" diameter="2.2mm" />
+ 			<keepout
+ 				shape="rect"
+-				pcbX="21.75616435mm"
++				pcbX="19.75616435mm"
+ 				pcbY="3.50013mm"
+ 				width="2mm"
+ 				height="2mm"
+@@ -915,7 +920,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			/>
+ 			<keepout
+ 				shape="rect"
+-				pcbX="21.75616435mm"
++				pcbX="19.75616435mm"
+ 				pcbY="6.500124mm"
+ 				width="2mm"
+ 				height="2mm"
+@@ -925,7 +930,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			{/* Conservative mounting copper exclusions supplement the NPTH clearance rule. */}
+ 			<keepout
+ 				shape="rect"
+-				pcbX="-21mm"
++				pcbX="-19mm"
+ 				pcbY="25mm"
+ 				width="3.6mm"
+ 				height="3.6mm"
+@@ -933,7 +938,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			/>
+ 			<keepout
+ 				shape="rect"
+-				pcbX="21mm"
++				pcbX="19mm"
+ 				pcbY="25mm"
+ 				width="3.6mm"
+ 				height="3.6mm"
+@@ -941,7 +946,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			/>
+ 			<keepout
+ 				shape="rect"
+-				pcbX="-21mm"
++				pcbX="-19mm"
+ 				pcbY="-14mm"
+ 				width="3.6mm"
+ 				height="3.6mm"
+@@ -949,7 +954,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 			/>
+ 			<keepout
+ 				shape="rect"
+-				pcbX="21mm"
++				pcbX="19mm"
+ 				pcbY="-14mm"
+ 				width="3.6mm"
+ 				height="3.6mm"
+@@ -961,7 +966,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
+ 				shape="rect"
+ 				pcbX="0mm"
+ 				pcbY="-23.65mm"
+-				width="48mm"
++				width="44mm"
+ 				height="8.7mm"
+ 				layers={["top", "bottom"]}
+ 				excludeRefs={[".U1"]}

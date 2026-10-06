@@ -10,6 +10,16 @@ export const r8PowerPaths: FanoutTracePath[] = [
 			{ route_type: "wire", x: -7, y: 5, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: -7.5, y: 5, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: -7.5, y: 6, width: 0.15, layer: "top" },
+			// Same physical GND barrel as the EP/decoupler path; core merges holes.
+			{
+				route_type: "via",
+				x: -7.5,
+				y: 6,
+				from_layer: "top",
+				to_layer: "bottom",
+				via_diameter: 0.6,
+				via_hole_diameter: 0.3,
+			},
 		],
 	},
 	{
@@ -19,10 +29,10 @@ export const r8PowerPaths: FanoutTracePath[] = [
 				route_type: "wire",
 				x: -11.157478,
 				y: 2.000002,
-				width: 0.2,
+				width: 0.3,
 				layer: "top",
 			},
-			{ route_type: "wire", x: -11.157478, y: 1.5, width: 0.2, layer: "top" },
+			{ route_type: "wire", x: -11.157478, y: 1.5, width: 0.3, layer: "top" },
 			{ route_type: "wire", x: -10.999998, y: 0, width: 0.6, layer: "top" },
 		],
 	},
@@ -48,10 +58,10 @@ export const r8PowerPaths: FanoutTracePath[] = [
 				route_type: "wire",
 				x: -11.157478,
 				y: 3.499872,
-				width: 0.2,
+				width: 0.3,
 				layer: "top",
 			},
-			{ route_type: "wire", x: -12, y: 3.499872, width: 0.2, layer: "top" },
+			{ route_type: "wire", x: -12, y: 3.499872, width: 0.3, layer: "top" },
 			{ route_type: "wire", x: -12.8, y: 4.35001, width: 0.4, layer: "top" },
 			{ route_type: "wire", x: -14, y: 4.35001, width: 0.6, layer: "top" },
 		],
@@ -63,10 +73,10 @@ export const r8PowerPaths: FanoutTracePath[] = [
 				route_type: "wire",
 				x: -11.157478,
 				y: 2.499874,
-				width: 0.2,
+				width: 0.3,
 				layer: "top",
 			},
-			{ route_type: "wire", x: -12, y: 2.499874, width: 0.2, layer: "top" },
+			{ route_type: "wire", x: -12, y: 2.499874, width: 0.3, layer: "top" },
 			{ route_type: "wire", x: -12.8, y: 1.64999, width: 0.4, layer: "top" },
 			{ route_type: "wire", x: -14, y: 1.64999, width: 0.6, layer: "top" },
 		],
@@ -111,6 +121,7 @@ export const r8PowerPaths: FanoutTracePath[] = [
 		route: [
 			{ route_type: "wire", x: -11.157478, y: 3, width: 0.2, layer: "top" },
 			{ route_type: "wire", x: -13, y: 3, width: 0.2, layer: "top" },
+			// Same physical GND barrel as the EP/decoupler path; core merges holes.
 			{
 				route_type: "via",
 				x: -13,
@@ -160,6 +171,16 @@ export const r8PowerPaths: FanoutTracePath[] = [
 			{ route_type: "wire", x: -10, y: 3, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: -11.157478, y: 3, width: 0.15, layer: "top" },
 			{ route_type: "wire", x: -13, y: 3, width: 0.15, layer: "top" },
+			// Same physical GND barrel as the EP/decoupler path; core merges holes.
+			{
+				route_type: "via",
+				x: -13,
+				y: 3,
+				from_layer: "top",
+				to_layer: "bottom",
+				via_diameter: 0.6,
+				via_hole_diameter: 0.3,
+			},
 		],
 	},
 	{
@@ -229,8 +250,18 @@ export const r8PowerPaths: FanoutTracePath[] = [
 	{
 		connection: "U3.pin11",
 		route: [
-			{ route_type: "wire", x: -10, y: 3, width: 0.15, layer: "top" },
-			{ route_type: "wire", x: -11.157478, y: 3, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -10, y: 3, width: 0.3, layer: "top" },
+			{ route_type: "wire", x: -11.157478, y: 3, width: 0.3, layer: "top" },
+			{ route_type: "wire", x: -13, y: 3, width: 0.3, layer: "top" },
+			{
+				route_type: "via",
+				x: -13,
+				y: 3,
+				from_layer: "top",
+				to_layer: "bottom",
+				via_diameter: 0.6,
+				via_hole_diameter: 0.3,
+			},
 		],
 	},
 	{

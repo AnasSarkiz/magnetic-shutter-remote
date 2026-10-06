@@ -6,18 +6,18 @@ export const r8TemperatureHotPaths: FanoutTracePath[] = [
 		connection: ".R10 > port.pin1",
 		route: [
 			{ route_type: "wire", x: -3.746636, y: 6, width: 0.15, layer: "top" },
-			{ route_type: "wire", x: -3.2, y: 6.546636, width: 0.15, layer: "top" },
-			{ route_type: "wire", x: -3.2, y: 7.2, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -3.4, y: 6.546636, width: 0.15, layer: "top" },
+			{ route_type: "wire", x: -3.4, y: 7.2, width: 0.15, layer: "top" },
 			{
 				route_type: "via",
-				x: -3.2,
+				x: -3.4,
 				y: 7.2,
 				from_layer: "top",
 				to_layer: "bottom",
 				via_diameter: 0.6,
 				via_hole_diameter: 0.3,
 			},
-			{ route_type: "wire", x: -3.2, y: 7.2, width: 0.15, layer: "bottom" },
+			{ route_type: "wire", x: -3.4, y: 7.2, width: 0.15, layer: "bottom" },
 			{
 				route_type: "wire",
 				x: -2.613404773034895,

@@ -1,0 +1,1983 @@
+{
+  "circuit_sha256": "13e1b0e5a46e46a9a64b84a61b9088e4b7cf122d891c67b4449fe0f1957ba2d1",
+  "archive_sha256": "dd50734026a2e46d8b9a47d6f0a508ed6a13f2d39dc89927e3fd8bdf7e67e2c0",
+  "failures": [
+    {
+      "rule": "complete_silkscreen",
+      "layer": "top",
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.0,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "rule": "silkscreen",
+      "text": "PAIR",
+      "layer": "top",
+      "bounds_mm": [
+        12.516515,
+        -6.146702,
+        17.04128974609467,
+        -5.1304549999999995
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.0,
+      "outside_outline_mm2": 0.0
+    }
+  ],
+  "stencil_thickness_mm": 0.1,
+  "stencil": [
+    {
+      "id": "pcb_solder_paste_0",
+      "ref": "J1",
+      "area_ratio": 1.2000026799134,
+      "aspect_ratio": 2.999993999998196,
+      "land": "pcb_smtpad_8",
+      "coverage_percent": 100.0021166708386
+    },
+    {
+      "id": "pcb_solder_paste_1",
+      "ref": "J1",
+      "area_ratio": 1.200002679913764,
+      "aspect_ratio": 2.9999939999993352,
+      "land": "pcb_smtpad_9",
+      "coverage_percent": 100.00211667087648
+    },
+    {
+      "id": "pcb_solder_paste_2",
+      "ref": "J1",
+      "area_ratio": 2.0000101109116866,
+      "aspect_ratio": 5.999987999998666,
+      "land": "pcb_smtpad_0",
+      "coverage_percent": 100.00211667087648
+    },
+    {
+      "id": "pcb_solder_paste_3",
+      "ref": "J1",
+      "area_ratio": 1.2000026799144916,
+      "aspect_ratio": 2.9999940000016068,
+      "land": "pcb_smtpad_7",
+      "coverage_percent": 100.00211667095229
+    },
+    {
+      "id": "pcb_solder_paste_4",
+      "ref": "J1",
+      "area_ratio": 2.0000101109116866,
+      "aspect_ratio": 5.9999879999986705,
+      "land": "pcb_smtpad_10",
+      "coverage_percent": 100.00211667087648
+    },
+    {
+      "id": "pcb_solder_paste_5",
+      "ref": "J1",
+      "area_ratio": 1.2000026799141277,
+      "aspect_ratio": 2.99999400000047,
+      "land": "pcb_smtpad_6",
+      "coverage_percent": 100.00211667091435
+    },
+    {
+      "id": "pcb_solder_paste_6",
+      "ref": "J1",
+      "area_ratio": 1.2000026799141277,
+      "aspect_ratio": 2.99999400000047,
+      "land": "pcb_smtpad_5",
+      "coverage_percent": 100.00211667091435
+    },
+    {
+      "id": "pcb_solder_paste_7",
+      "ref": "J1",
+      "area_ratio": 2.000010110912192,
+      "aspect_ratio": 5.999988000000944,
+      "land": "pcb_smtpad_1",
+      "coverage_percent": 100.00211667091438
+    },
+    {
+      "id": "pcb_solder_paste_8",
+      "ref": "J1",
+      "area_ratio": 1.2000026799144916,
+      "aspect_ratio": 2.9999940000016068,
+      "land": "pcb_smtpad_4",
+      "coverage_percent": 100.00211667095229
+    },
+    {
+      "id": "pcb_solder_paste_9",
+      "ref": "J1",
+      "area_ratio": 1.200002679913764,
+      "aspect_ratio": 2.999993999999333,
+      "land": "pcb_smtpad_3",
+      "coverage_percent": 100.00211667087648
+    },
+    {
+      "id": "pcb_solder_paste_10",
+      "ref": "J1",
+      "area_ratio": 1.2000026799134,
+      "aspect_ratio": 2.9999939999981984,
+      "land": "pcb_smtpad_2",
+      "coverage_percent": 100.0021166708386
+    },
+    {
+      "id": "pcb_solder_paste_11",
+      "ref": "J1",
+      "area_ratio": 1.9999960000001238,
+      "aspect_ratio": 5.99998800000094,
+      "land": "pcb_smtpad_11",
+      "coverage_percent": 100.00000000000266
+    },
+    {
+      "id": "pcb_solder_paste_12",
+      "ref": "J1",
+      "area_ratio": 3.3431325893923947,
+      "aspect_ratio": 9.999980000001191,
+      "land": "pcb_plated_hole_1",
+      "coverage_percent": 99.97960039331974
+    },
+    {
+      "id": "pcb_solder_paste_13",
+      "ref": "J1",
+      "area_ratio": 3.3431325893922064,
+      "aspect_ratio": 9.99998000000005,
+      "land": "pcb_plated_hole_0",
+      "coverage_percent": 99.97960039331434
+    },
+    {
+      "id": "pcb_solder_paste_14",
+      "ref": "J1",
+      "area_ratio": 3.582335500182192,
+      "aspect_ratio": 9.999980000001182,
+      "land": "pcb_plated_hole_2",
+      "coverage_percent": 99.98371033110628
+    },
+    {
+      "id": "pcb_solder_paste_15",
+      "ref": "J1",
+      "area_ratio": 3.582335500181949,
+      "aspect_ratio": 9.999980000000054,
+      "land": "pcb_plated_hole_3",
+      "coverage_percent": 99.98371033109973
+    },
+    {
+      "id": "pcb_solder_paste_16",
+      "ref": "R2",
+      "area_ratio": 1.4599378901637585,
+      "aspect_ratio": 5.6453278,
+      "land": "pcb_smtpad_12",
+      "coverage_percent": 48.99999999999984
+    },
+    {
+      "id": "pcb_solder_paste_17",
+      "ref": "R2",
+      "area_ratio": 1.4599378901637585,
+      "aspect_ratio": 5.6453278,
+      "land": "pcb_smtpad_13",
+      "coverage_percent": 48.99999999999984
+    },
+    {
+      "id": "pcb_solder_paste_18",
+      "ref": "R1",
+      "area_ratio": 1.4599378901637576,
+      "aspect_ratio": 5.6453278,
+      "land": "pcb_smtpad_14",
+      "coverage_percent": 48.99999999999978
+    },
+    {
+      "id": "pcb_solder_paste_19",
+      "ref": "R1",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_15",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_20",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "land": "pcb_smtpad_16",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_21",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "land": "pcb_smtpad_17",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_22",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142853,
+      "aspect_ratio": 1.9999959999999999,
+      "land": "pcb_smtpad_18",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_23",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "land": "pcb_smtpad_19",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_24",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "land": "pcb_smtpad_20",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_25",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "land": "pcb_smtpad_21",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_26",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "land": "pcb_smtpad_22",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_27",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142853,
+      "aspect_ratio": 1.9999959999999999,
+      "land": "pcb_smtpad_23",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_28",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142855,
+      "aspect_ratio": 1.9999960000000006,
+      "land": "pcb_smtpad_24",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_29",
+      "ref": "U2",
+      "area_ratio": 0.7142842857142851,
+      "aspect_ratio": 1.9999959999999994,
+      "land": "pcb_smtpad_25",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_30",
+      "ref": "U2",
+      "area_ratio": 2.2749943599999627,
+      "aspect_ratio": 6.999981999999996,
+      "land": "pcb_smtpad_26",
+      "coverage_percent": 67.40734814804152
+    },
+    {
+      "id": "pcb_solder_paste_31",
+      "ref": "R3",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_27",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_32",
+      "ref": "R3",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_28",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_33",
+      "ref": "C2",
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_29",
+      "coverage_percent": 49.0000000000002
+    },
+    {
+      "id": "pcb_solder_paste_34",
+      "ref": "C2",
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.5999887999999975,
+      "land": "pcb_smtpad_30",
+      "coverage_percent": 49.0000000000002
+    },
+    {
+      "id": "pcb_solder_paste_35",
+      "ref": "C1",
+      "area_ratio": 1.4823499764705836,
+      "aspect_ratio": 5.599988799999984,
+      "land": "pcb_smtpad_31",
+      "coverage_percent": 48.99999999999977
+    },
+    {
+      "id": "pcb_solder_paste_36",
+      "ref": "C1",
+      "area_ratio": 1.482349976470586,
+      "aspect_ratio": 5.599988800000011,
+      "land": "pcb_smtpad_32",
+      "coverage_percent": 48.99999999999992
+    },
+    {
+      "id": "pcb_solder_paste_37",
+      "ref": "R4",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_33",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_38",
+      "ref": "R4",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_34",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_39",
+      "ref": "LED1",
+      "area_ratio": 1.3999972000000027,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_35",
+      "coverage_percent": 49.00000000000022
+    },
+    {
+      "id": "pcb_solder_paste_40",
+      "ref": "LED1",
+      "area_ratio": 1.3999972000000003,
+      "aspect_ratio": 5.599988799999984,
+      "land": "pcb_smtpad_36",
+      "coverage_percent": 49.000000000000064
+    },
+    {
+      "id": "pcb_solder_paste_41",
+      "ref": "J2",
+      "area_ratio": 3.599992799999997,
+      "aspect_ratio": 11.999975999999997,
+      "land": "pcb_smtpad_37",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_42",
+      "ref": "J2",
+      "area_ratio": 3.599992799999997,
+      "aspect_ratio": 11.999975999999997,
+      "land": "pcb_smtpad_38",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_43",
+      "ref": "J2",
+      "area_ratio": 2.162791317439694,
+      "aspect_ratio": 5.999988000000016,
+      "land": "pcb_smtpad_39",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_44",
+      "ref": "J2",
+      "area_ratio": 2.162791317439694,
+      "aspect_ratio": 5.999988000000034,
+      "land": "pcb_smtpad_40",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_45",
+      "ref": "R8",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_41",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_46",
+      "ref": "R8",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_42",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_47",
+      "ref": "R9",
+      "area_ratio": 1.4599378901637576,
+      "aspect_ratio": 5.645327799999997,
+      "land": "pcb_smtpad_43",
+      "coverage_percent": 48.9999999999998
+    },
+    {
+      "id": "pcb_solder_paste_48",
+      "ref": "R9",
+      "area_ratio": 1.4599378901637583,
+      "aspect_ratio": 5.6453278,
+      "land": "pcb_smtpad_44",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_49",
+      "ref": "C8",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_45",
+      "coverage_percent": 48.999999999999964
+    },
+    {
+      "id": "pcb_solder_paste_50",
+      "ref": "C8",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_46",
+      "coverage_percent": 48.99999999999994
+    },
+    {
+      "id": "pcb_solder_paste_51",
+      "ref": "C9",
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_47",
+      "coverage_percent": 49.0000000000002
+    },
+    {
+      "id": "pcb_solder_paste_52",
+      "ref": "C9",
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_48",
+      "coverage_percent": 49.0000000000002
+    },
+    {
+      "id": "pcb_solder_paste_53",
+      "ref": "U1",
+      "area_ratio": 2.999993999999996,
+      "aspect_ratio": 9.99997999999998,
+      "land": "pcb_smtpad_49",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_54",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_50",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_55",
+      "ref": "U1",
+      "area_ratio": 2.9999940000000023,
+      "aspect_ratio": 9.99998000000005,
+      "land": "pcb_smtpad_51",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_56",
+      "ref": "U1",
+      "area_ratio": 2.999994000000003,
+      "aspect_ratio": 9.999980000000015,
+      "land": "pcb_smtpad_52",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_57",
+      "ref": "U1",
+      "area_ratio": 2.999994000000003,
+      "aspect_ratio": 9.999980000000015,
+      "land": "pcb_smtpad_53",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_58",
+      "ref": "U1",
+      "area_ratio": 2.9999940000000014,
+      "aspect_ratio": 9.999980000000006,
+      "land": "pcb_smtpad_54",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_59",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.999979999999988,
+      "land": "pcb_smtpad_55",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_60",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_56",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_61",
+      "ref": "U1",
+      "area_ratio": 2.9999939999999996,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_57",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_62",
+      "ref": "U1",
+      "area_ratio": 2.9999939999999996,
+      "aspect_ratio": 9.999979999999992,
+      "land": "pcb_smtpad_58",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_63",
+      "ref": "U1",
+      "area_ratio": 2.999994,
+      "aspect_ratio": 9.999979999999999,
+      "land": "pcb_smtpad_59",
+      "coverage_percent": 100.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_64",
+      "ref": "U1",
+      "area_ratio": 2.999994,
+      "aspect_ratio": 9.999979999999999,
+      "land": "pcb_smtpad_60",
+      "coverage_percent": 100.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_65",
+      "ref": "U1",
+      "area_ratio": 2.9999939999999996,
+      "aspect_ratio": 9.999979999999992,
+      "land": "pcb_smtpad_61",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_66",
+      "ref": "U1",
+      "area_ratio": 2.9999939999999996,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_62",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_67",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_63",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_68",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.999979999999997,
+      "land": "pcb_smtpad_64",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_69",
+      "ref": "U1",
+      "area_ratio": 2.9999940000000014,
+      "aspect_ratio": 9.999980000000006,
+      "land": "pcb_smtpad_65",
+      "coverage_percent": 99.99999999999999
+    },
+    {
+      "id": "pcb_solder_paste_70",
+      "ref": "U1",
+      "area_ratio": 2.999994000000003,
+      "aspect_ratio": 9.999980000000015,
+      "land": "pcb_smtpad_66",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_71",
+      "ref": "U1",
+      "area_ratio": 2.999994000000003,
+      "aspect_ratio": 9.999980000000033,
+      "land": "pcb_smtpad_67",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_72",
+      "ref": "U1",
+      "area_ratio": 2.9999940000000023,
+      "aspect_ratio": 9.999980000000015,
+      "land": "pcb_smtpad_68",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_73",
+      "ref": "U1",
+      "area_ratio": 2.999993999999999,
+      "aspect_ratio": 9.99997999999998,
+      "land": "pcb_smtpad_69",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_74",
+      "ref": "U1",
+      "area_ratio": 2.999993999999996,
+      "aspect_ratio": 9.99997999999998,
+      "land": "pcb_smtpad_70",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_75",
+      "ref": "C5",
+      "area_ratio": 1.4823499764705863,
+      "aspect_ratio": 5.599988799999984,
+      "land": "pcb_smtpad_71",
+      "coverage_percent": 48.99999999999993
+    },
+    {
+      "id": "pcb_solder_paste_76",
+      "ref": "C5",
+      "area_ratio": 1.4823499764705863,
+      "aspect_ratio": 5.599988799999984,
+      "land": "pcb_smtpad_72",
+      "coverage_percent": 48.99999999999993
+    },
+    {
+      "id": "pcb_solder_paste_77",
+      "ref": "C10",
+      "area_ratio": 2.4138718495886335,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_73",
+      "coverage_percent": 48.99999999999997
+    },
+    {
+      "id": "pcb_solder_paste_78",
+      "ref": "C10",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_74",
+      "coverage_percent": 48.999999999999964
+    },
+    {
+      "id": "pcb_solder_paste_79",
+      "ref": "SW2",
+      "area_ratio": 2.351029543624195,
+      "aspect_ratio": 10.499852,
+      "land": "pcb_smtpad_75",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_80",
+      "ref": "SW2",
+      "area_ratio": 2.3510295436241955,
+      "aspect_ratio": 10.499852,
+      "land": "pcb_smtpad_76",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_81",
+      "ref": "SW2",
+      "area_ratio": 1.9999960000000052,
+      "aspect_ratio": 5.999988000000016,
+      "land": "pcb_smtpad_77",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_82",
+      "ref": "SW2",
+      "area_ratio": 1.9999960000000012,
+      "aspect_ratio": 5.999988000000007,
+      "land": "pcb_smtpad_78",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_83",
+      "ref": "SW3",
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.60996499999997,
+      "land": "pcb_smtpad_79",
+      "coverage_percent": 48.999999999999915
+    },
+    {
+      "id": "pcb_solder_paste_84",
+      "ref": "SW3",
+      "area_ratio": 2.5913480021865443,
+      "aspect_ratio": 8.609964999999988,
+      "land": "pcb_smtpad_80",
+      "coverage_percent": 48.99999999999984
+    },
+    {
+      "id": "pcb_solder_paste_85",
+      "ref": "R7",
+      "area_ratio": 1.4599378901637583,
+      "aspect_ratio": 5.645327799999986,
+      "land": "pcb_smtpad_81",
+      "coverage_percent": 48.99999999999995
+    },
+    {
+      "id": "pcb_solder_paste_86",
+      "ref": "R7",
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_82",
+      "coverage_percent": 49.00000000000011
+    },
+    {
+      "id": "pcb_solder_paste_87",
+      "ref": "LED2",
+      "area_ratio": 1.3999972000000027,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_83",
+      "coverage_percent": 49.00000000000022
+    },
+    {
+      "id": "pcb_solder_paste_88",
+      "ref": "LED2",
+      "area_ratio": 1.3999972000000027,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_84",
+      "coverage_percent": 49.00000000000022
+    },
+    {
+      "id": "pcb_solder_paste_89",
+      "ref": "J3",
+      "area_ratio": 3.5999928000000003,
+      "aspect_ratio": 11.999976000000014,
+      "land": "pcb_smtpad_85",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_90",
+      "ref": "J3",
+      "area_ratio": 3.599992800000003,
+      "aspect_ratio": 11.999976000000014,
+      "land": "pcb_smtpad_86",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_91",
+      "ref": "J3",
+      "area_ratio": 2.1627913174396953,
+      "aspect_ratio": 5.999988000000034,
+      "land": "pcb_smtpad_87",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_92",
+      "ref": "J3",
+      "area_ratio": 2.1627913174396953,
+      "aspect_ratio": 5.999988000000034,
+      "land": "pcb_smtpad_88",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_93",
+      "ref": "J3",
+      "area_ratio": 2.1627913174396953,
+      "aspect_ratio": 5.999988000000016,
+      "land": "pcb_smtpad_89",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_94",
+      "ref": "SW4",
+      "area_ratio": 2.5913480021865456,
+      "aspect_ratio": 8.609964999999988,
+      "land": "pcb_smtpad_90",
+      "coverage_percent": 48.99999999999991
+    },
+    {
+      "id": "pcb_solder_paste_95",
+      "ref": "SW4",
+      "area_ratio": 2.5913480021865456,
+      "aspect_ratio": 8.609964999999988,
+      "land": "pcb_smtpad_91",
+      "coverage_percent": 48.99999999999991
+    },
+    {
+      "id": "pcb_solder_paste_96",
+      "ref": "SW5",
+      "area_ratio": 2.5913480021865456,
+      "aspect_ratio": 8.609965000000006,
+      "land": "pcb_smtpad_92",
+      "coverage_percent": 49.00000000000005
+    },
+    {
+      "id": "pcb_solder_paste_97",
+      "ref": "SW5",
+      "area_ratio": 2.5913480021865456,
+      "aspect_ratio": 8.609964999999988,
+      "land": "pcb_smtpad_93",
+      "coverage_percent": 48.99999999999991
+    },
+    {
+      "id": "pcb_solder_paste_98",
+      "ref": "SW1",
+      "area_ratio": 1.5473653263157872,
+      "aspect_ratio": 4.899990199999991,
+      "land": "pcb_smtpad_94",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_99",
+      "ref": "SW1",
+      "area_ratio": 1.5473653263157872,
+      "aspect_ratio": 4.899990199999991,
+      "land": "pcb_smtpad_95",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_100",
+      "ref": "SW1",
+      "area_ratio": 1.5473653263157874,
+      "aspect_ratio": 4.899990199999991,
+      "land": "pcb_smtpad_96",
+      "coverage_percent": 48.99999999999986
+    },
+    {
+      "id": "pcb_solder_paste_101",
+      "ref": "SW1",
+      "area_ratio": 1.5473653263157874,
+      "aspect_ratio": 4.899990199999991,
+      "land": "pcb_smtpad_97",
+      "coverage_percent": 48.99999999999986
+    },
+    {
+      "id": "pcb_solder_paste_102",
+      "ref": "SW1",
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "land": "pcb_smtpad_98",
+      "coverage_percent": 48.99999999999998
+    },
+    {
+      "id": "pcb_solder_paste_103",
+      "ref": "SW1",
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "land": "pcb_smtpad_99",
+      "coverage_percent": 48.99999999999998
+    },
+    {
+      "id": "pcb_solder_paste_104",
+      "ref": "SW1",
+      "area_ratio": 1.506777498744349,
+      "aspect_ratio": 4.199991599999997,
+      "land": "pcb_smtpad_100",
+      "coverage_percent": 48.99999999999998
+    },
+    {
+      "id": "pcb_solder_paste_105",
+      "ref": "R5",
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.6453278,
+      "land": "pcb_smtpad_101",
+      "coverage_percent": 48.99999999999997
+    },
+    {
+      "id": "pcb_solder_paste_106",
+      "ref": "R5",
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_102",
+      "coverage_percent": 49.00000000000005
+    },
+    {
+      "id": "pcb_solder_paste_107",
+      "ref": "Q1",
+      "area_ratio": 1.378801447991872,
+      "aspect_ratio": 4.5500798,
+      "land": "pcb_smtpad_103",
+      "coverage_percent": 49.0
+    },
+    {
+      "id": "pcb_solder_paste_108",
+      "ref": "Q1",
+      "area_ratio": 1.3788014479918713,
+      "aspect_ratio": 4.5500798,
+      "land": "pcb_smtpad_104",
+      "coverage_percent": 48.999999999999964
+    },
+    {
+      "id": "pcb_solder_paste_109",
+      "ref": "Q1",
+      "area_ratio": 1.3788014479918724,
+      "aspect_ratio": 4.5500798,
+      "land": "pcb_smtpad_105",
+      "coverage_percent": 49.000000000000064
+    },
+    {
+      "id": "pcb_solder_paste_110",
+      "ref": "R6",
+      "area_ratio": 1.45993789016376,
+      "aspect_ratio": 5.6453278000000005,
+      "land": "pcb_smtpad_106",
+      "coverage_percent": 49.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_111",
+      "ref": "R6",
+      "area_ratio": 1.45993789016376,
+      "aspect_ratio": 5.6453278000000005,
+      "land": "pcb_smtpad_107",
+      "coverage_percent": 49.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_112",
+      "ref": "U3",
+      "area_ratio": 0.9852078131433952,
+      "aspect_ratio": 2.800096000000001,
+      "land": "pcb_smtpad_108",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_113",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_109",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_114",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_110",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_115",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_111",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_116",
+      "ref": "U3",
+      "area_ratio": 0.9852078131433946,
+      "aspect_ratio": 2.8000959999999986,
+      "land": "pcb_smtpad_112",
+      "coverage_percent": 100.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_117",
+      "ref": "U3",
+      "area_ratio": 0.9852078131433952,
+      "aspect_ratio": 2.800096000000001,
+      "land": "pcb_smtpad_113",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_118",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_114",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_119",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_115",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_120",
+      "ref": "U3",
+      "area_ratio": 0.985207813143394,
+      "aspect_ratio": 2.8000959999999964,
+      "land": "pcb_smtpad_116",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_121",
+      "ref": "U3",
+      "area_ratio": 0.9852078131433946,
+      "aspect_ratio": 2.8000959999999986,
+      "land": "pcb_smtpad_117",
+      "coverage_percent": 100.00000000000001
+    },
+    {
+      "id": "pcb_solder_paste_122",
+      "ref": "U3",
+      "area_ratio": 3.749992499999999,
+      "aspect_ratio": 11.999975999999997,
+      "land": "pcb_smtpad_118",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_123",
+      "ref": "L1",
+      "area_ratio": 4.398009122937045,
+      "aspect_ratio": 12.999974000000005,
+      "land": "pcb_smtpad_119",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_124",
+      "ref": "L1",
+      "area_ratio": 4.398009122937043,
+      "aspect_ratio": 12.999974,
+      "land": "pcb_smtpad_120",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "pcb_solder_paste_125",
+      "ref": "C11",
+      "area_ratio": 2.413871849588631,
+      "aspect_ratio": 9.450069999999998,
+      "land": "pcb_smtpad_121",
+      "coverage_percent": 48.99999999999997
+    },
+    {
+      "id": "pcb_solder_paste_126",
+      "ref": "C11",
+      "area_ratio": 2.4138718495886313,
+      "aspect_ratio": 9.450069999999998,
+      "land": "pcb_smtpad_122",
+      "coverage_percent": 48.999999999999986
+    },
+    {
+      "id": "pcb_solder_paste_127",
+      "ref": "C12",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_123",
+      "coverage_percent": 49.0
+    },
+    {
+      "id": "pcb_solder_paste_128",
+      "ref": "C12",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_124",
+      "coverage_percent": 49.0
+    },
+    {
+      "id": "pcb_solder_paste_129",
+      "ref": "C13",
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988799999993,
+      "land": "pcb_smtpad_125",
+      "coverage_percent": 48.99999999999996
+    },
+    {
+      "id": "pcb_solder_paste_130",
+      "ref": "C13",
+      "area_ratio": 1.4823499764705879,
+      "aspect_ratio": 5.599988800000002,
+      "land": "pcb_smtpad_126",
+      "coverage_percent": 48.99999999999996
+    },
+    {
+      "id": "pcb_solder_paste_131",
+      "ref": "C3",
+      "area_ratio": 2.4138718495886313,
+      "aspect_ratio": 9.450069999999998,
+      "land": "pcb_smtpad_127",
+      "coverage_percent": 48.99999999999998
+    },
+    {
+      "id": "pcb_solder_paste_132",
+      "ref": "C3",
+      "area_ratio": 2.4138718495886313,
+      "aspect_ratio": 9.450069999999998,
+      "land": "pcb_smtpad_128",
+      "coverage_percent": 48.99999999999998
+    },
+    {
+      "id": "pcb_solder_paste_133",
+      "ref": "C4",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_129",
+      "coverage_percent": 49.00000000000003
+    },
+    {
+      "id": "pcb_solder_paste_134",
+      "ref": "C4",
+      "area_ratio": 2.413871849588632,
+      "aspect_ratio": 9.450070000000004,
+      "land": "pcb_smtpad_130",
+      "coverage_percent": 49.00000000000003
+    },
+    {
+      "id": "pcb_solder_paste_135",
+      "ref": "U4",
+      "area_ratio": 1.3788014479918727,
+      "aspect_ratio": 4.550079800000002,
+      "land": "pcb_smtpad_131",
+      "coverage_percent": 49.00000000000014
+    },
+    {
+      "id": "pcb_solder_paste_136",
+      "ref": "U4",
+      "area_ratio": 1.3788014479918727,
+      "aspect_ratio": 4.550079800000002,
+      "land": "pcb_smtpad_132",
+      "coverage_percent": 49.00000000000014
+    },
+    {
+      "id": "pcb_solder_paste_137",
+      "ref": "U4",
+      "area_ratio": 1.3788014479918724,
+      "aspect_ratio": 4.5500798,
+      "land": "pcb_smtpad_133",
+      "coverage_percent": 49.00000000000014
+    },
+    {
+      "id": "pcb_solder_paste_138",
+      "ref": "C6",
+      "area_ratio": 1.4823499764705903,
+      "aspect_ratio": 5.59998880000002,
+      "land": "pcb_smtpad_134",
+      "coverage_percent": 49.00000000000016
+    },
+    {
+      "id": "pcb_solder_paste_139",
+      "ref": "C6",
+      "area_ratio": 1.4823499764705903,
+      "aspect_ratio": 5.59998880000002,
+      "land": "pcb_smtpad_135",
+      "coverage_percent": 49.00000000000016
+    },
+    {
+      "id": "pcb_solder_paste_140",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999957999999896,
+      "land": "pcb_smtpad_136",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_141",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999957999999896,
+      "land": "pcb_smtpad_137",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_142",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "land": "pcb_smtpad_138",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_143",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "land": "pcb_smtpad_139",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_144",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "land": "pcb_smtpad_140",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_145",
+      "ref": "U5",
+      "area_ratio": 0.6999985999999996,
+      "aspect_ratio": 2.0999958000000074,
+      "land": "pcb_smtpad_141",
+      "coverage_percent": 48.99999999999983
+    },
+    {
+      "id": "pcb_solder_paste_146",
+      "ref": "C7",
+      "area_ratio": 1.4823499764705899,
+      "aspect_ratio": 5.599988800000004,
+      "land": "pcb_smtpad_142",
+      "coverage_percent": 49.0000000000002
+    },
+    {
+      "id": "pcb_solder_paste_147",
+      "ref": "C7",
+      "area_ratio": 1.4823499764705896,
+      "aspect_ratio": 5.5999888,
+      "land": "pcb_smtpad_143",
+      "coverage_percent": 49.00000000000019
+    },
+    {
+      "id": "pcb_solder_paste_148",
+      "ref": "R10",
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_144",
+      "coverage_percent": 49.00000000000011
+    },
+    {
+      "id": "pcb_solder_paste_149",
+      "ref": "R10",
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.645327799999995,
+      "land": "pcb_smtpad_145",
+      "coverage_percent": 49.00000000000005
+    },
+    {
+      "id": "pcb_solder_paste_150",
+      "ref": "R11",
+      "area_ratio": 1.459937890163761,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_146",
+      "coverage_percent": 49.00000000000011
+    },
+    {
+      "id": "pcb_solder_paste_151",
+      "ref": "R11",
+      "area_ratio": 1.4599378901637596,
+      "aspect_ratio": 5.645327799999995,
+      "land": "pcb_smtpad_147",
+      "coverage_percent": 49.00000000000005
+    },
+    {
+      "id": "pcb_solder_paste_152",
+      "ref": "R12",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_148",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_153",
+      "ref": "R12",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_149",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_154",
+      "ref": "R13",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_150",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_155",
+      "ref": "R13",
+      "area_ratio": 1.4599378901637587,
+      "aspect_ratio": 5.645327800000004,
+      "land": "pcb_smtpad_151",
+      "coverage_percent": 48.999999999999865
+    },
+    {
+      "id": "pcb_solder_paste_156",
+      "ref": "Q2",
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "land": "pcb_smtpad_152",
+      "coverage_percent": 48.9999999999999
+    },
+    {
+      "id": "pcb_solder_paste_157",
+      "ref": "Q2",
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.5500797999999865,
+      "land": "pcb_smtpad_153",
+      "coverage_percent": 48.9999999999999
+    },
+    {
+      "id": "pcb_solder_paste_158",
+      "ref": "Q2",
+      "area_ratio": 1.3788014479918715,
+      "aspect_ratio": 4.550079799999995,
+      "land": "pcb_smtpad_154",
+      "coverage_percent": 48.999999999999986
+    }
+  ],
+  "mask_webs": [
+    {
+      "pads": [
+        "pcb_smtpad_110",
+        "pcb_smtpad_109"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11826199999999965
+    },
+    {
+      "pads": [
+        "pcb_smtpad_115",
+        "pcb_smtpad_114"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11826199999999965
+    },
+    {
+      "pads": [
+        "pcb_smtpad_112",
+        "pcb_smtpad_111"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11826200000000009
+    },
+    {
+      "pads": [
+        "pcb_smtpad_117",
+        "pcb_smtpad_116"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11826200000000009
+    },
+    {
+      "pads": [
+        "pcb_smtpad_111",
+        "pcb_smtpad_110"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11851599999999962
+    },
+    {
+      "pads": [
+        "pcb_smtpad_116",
+        "pcb_smtpad_115"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11851599999999962
+    },
+    {
+      "pads": [
+        "pcb_smtpad_109",
+        "pcb_smtpad_108"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11851600000000007
+    },
+    {
+      "pads": [
+        "pcb_smtpad_114",
+        "pcb_smtpad_113"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11851600000000007
+    },
+    {
+      "pads": [
+        "pcb_smtpad_11",
+        "pcb_smtpad_10"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11984700000000004
+    },
+    {
+      "pads": [
+        "pcb_smtpad_4",
+        "pcb_smtpad_3"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11987299999999979
+    },
+    {
+      "pads": [
+        "pcb_smtpad_6",
+        "pcb_smtpad_5"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11987300000000001
+    },
+    {
+      "pads": [
+        "pcb_smtpad_8",
+        "pcb_smtpad_7"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11987300000000023
+    },
+    {
+      "pads": [
+        "pcb_smtpad_2",
+        "pcb_smtpad_1"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11998700000000051
+    },
+    {
+      "pads": [
+        "pcb_smtpad_10",
+        "pcb_smtpad_9"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.11998700000000051
+    },
+    {
+      "pads": [
+        "pcb_smtpad_1",
+        "pcb_smtpad_0"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12010100000000001
+    },
+    {
+      "pads": [
+        "pcb_smtpad_5",
+        "pcb_smtpad_4"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12012700000000004
+    },
+    {
+      "pads": [
+        "pcb_smtpad_7",
+        "pcb_smtpad_6"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12012700000000004
+    },
+    {
+      "pads": [
+        "pcb_smtpad_3",
+        "pcb_smtpad_2"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.1201270000000001
+    },
+    {
+      "pads": [
+        "pcb_smtpad_9",
+        "pcb_smtpad_8"
+      ],
+      "refs": [
+        "J1",
+        "J1"
+      ],
+      "layer": "top",
+      "gap_mm": 0.1201270000000001
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_108"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999966
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_113"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999966
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_109"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_110"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_111"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_112"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_114"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_115"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_116"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_118",
+        "pcb_smtpad_117"
+      ],
+      "refs": [
+        "U3",
+        "U3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.12338049999999967
+    },
+    {
+      "pads": [
+        "pcb_smtpad_18",
+        "pcb_smtpad_17"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.19979599999999992
+    },
+    {
+      "pads": [
+        "pcb_smtpad_24",
+        "pcb_smtpad_23"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.19979599999999992
+    },
+    {
+      "pads": [
+        "pcb_smtpad_139",
+        "pcb_smtpad_137"
+      ],
+      "refs": [
+        "U5",
+        "U5"
+      ],
+      "layer": "top",
+      "gap_mm": 0.1998730000000002
+    },
+    {
+      "pads": [
+        "pcb_smtpad_141",
+        "pcb_smtpad_136"
+      ],
+      "refs": [
+        "U5",
+        "U5"
+      ],
+      "layer": "top",
+      "gap_mm": 0.1998730000000002
+    },
+    {
+      "pads": [
+        "pcb_smtpad_19",
+        "pcb_smtpad_18"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20004999999999995
+    },
+    {
+      "pads": [
+        "pcb_smtpad_23",
+        "pcb_smtpad_22"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20004999999999995
+    },
+    {
+      "pads": [
+        "pcb_smtpad_17",
+        "pcb_smtpad_16"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20005000000000006
+    },
+    {
+      "pads": [
+        "pcb_smtpad_20",
+        "pcb_smtpad_19"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20005000000000006
+    },
+    {
+      "pads": [
+        "pcb_smtpad_22",
+        "pcb_smtpad_21"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20005000000000006
+    },
+    {
+      "pads": [
+        "pcb_smtpad_25",
+        "pcb_smtpad_24"
+      ],
+      "refs": [
+        "U2",
+        "U2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20005000000000006
+    },
+    {
+      "pads": [
+        "pcb_smtpad_138",
+        "pcb_smtpad_137"
+      ],
+      "refs": [
+        "U5",
+        "U5"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20012700000000017
+    },
+    {
+      "pads": [
+        "pcb_smtpad_140",
+        "pcb_smtpad_136"
+      ],
+      "refs": [
+        "U5",
+        "U5"
+      ],
+      "layer": "top",
+      "gap_mm": 0.20012700000000017
+    },
+    {
+      "pads": [
+        "pcb_smtpad_88",
+        "pcb_smtpad_87"
+      ],
+      "refs": [
+        "J3",
+        "J3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.2983989999999981
+    },
+    {
+      "pads": [
+        "pcb_smtpad_89",
+        "pcb_smtpad_88"
+      ],
+      "refs": [
+        "J3",
+        "J3"
+      ],
+      "layer": "top",
+      "gap_mm": 0.2983989999999981
+    },
+    {
+      "pads": [
+        "pcb_smtpad_40",
+        "pcb_smtpad_39"
+      ],
+      "refs": [
+        "J2",
+        "J2"
+      ],
+      "layer": "top",
+      "gap_mm": 0.29839899999999986
+    }
+  ],
+  "labels": [
+    {
+      "text": "R8 ESP32-C3 PROTOTYPE",
+      "layer": "bottom",
+      "bounds_mm": [
+        -12.572776,
+        -15.662129999937921,
+        13.116793999999999,
+        -14.61384400903583
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 4.828150962529228,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "SHUTTER",
+      "layer": "top",
+      "bounds_mm": [
+        10.643360094642215,
+        -12.16329491395425,
+        18.90982974609467,
+        -11.113844016338282
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.5796845116328715,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "PAIR",
+      "layer": "top",
+      "bounds_mm": [
+        12.516515,
+        -6.146702,
+        17.04128974609467,
+        -5.1304549999999995
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.0,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "BOOT",
+      "layer": "top",
+      "bounds_mm": [
+        -20.491791,
+        -12.162129999937921,
+        -15.943636999999999,
+        -11.11384402595632
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.7413919563501881,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "RESET",
+      "layer": "top",
+      "bounds_mm": [
+        11.348755,
+        8.23787027824459,
+        17.17921,
+        9.286155983661718
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.7033665000000003,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "POWER",
+      "layer": "top",
+      "bounds_mm": [
+        14.893668,
+        -0.6621299999340378,
+        20.66413674639159,
+        0.38615597404367963
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.43051400000000006,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "BAT 1:- 2:+",
+      "layer": "top",
+      "bounds_mm": [
+        -20.851719,
+        16.353298,
+        -7.608934,
+        17.38615598650089
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.9025280000000003,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "UART 3V3 / 1:RX 2:GND 3:TX",
+      "layer": "bottom",
+      "bounds_mm": [
+        -15.776526999184266,
+        0.24458600474246858,
+        16.18426868255598,
+        1.3861559909641694
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 3.7392053872535276,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "BATTERY POWER / MANUAL BOOT + RESET",
+      "layer": "bottom",
+      "bounds_mm": [
+        -21.364614,
+        -2.7554139952575314,
+        21.800042,
+        -1.6138440163382815
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 4.658351108237105,
+      "outside_outline_mm2": 0.0
+    },
+    {
+      "text": "1",
+      "layer": "top",
+      "bounds_mm": [
+        15.573890007271865,
+        18.853303,
+        15.939002,
+        19.869545
+      ],
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 1.44291418367324,
+      "outside_outline_mm2": 0.0
+    }
+  ],
+  "complete_silkscreen": {
+    "top": {
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 0.0,
+      "outside_outline_mm2": 0.0
+    },
+    "bottom": {
+      "minimum_stroke_mm": 0.162,
+      "mask_gap_mm": 3.7392053872535276,
+      "outside_outline_mm2": 0.0
+    }
+  },
+  "references": [
+    "https://jlcpcb.com/capabilities/pcb-capabilities",
+    "TI SLUA271C sections 4.2\u20134.4"
+  ],
+  "limitations": [
+    "Nominal process geometry only; no assembly approval, measured paste transfer or supplier processed-preview is claimed."
+  ]
+}

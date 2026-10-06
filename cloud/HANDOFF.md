@@ -1,4 +1,49 @@
-# Current continuation result —2026-10-05
+# Current R8 compact PCB review — 2026-10-06
+
+Hardware/package **0.3.5**, native route23: **44 × 56 × 1 mm**, two-layer FR4,
+44 TOP references / 25 exact JLCPCB identities. Follow the JJC MSG-P1 grip and
+detachable side shutter arrangement; the PCB is smaller than the complete
+housing/MagSafe array. Protected 1000mAh pack, right-edge TS24CA switch and
+straight-through three-pin JST UART connection are retained.
+
+**Electrical/copper and local fabrication checks pass:** 0 native DRC errors,
+0 shorts, 0 dangling traces, 0 independent manufacturing/process failures;
+29/29 required terminal nets physically connected. All 164 physical track
+widths reviewed, minimum 0.15mm; VIN and inductor necks widened to 0.30mm and
+switching RMS/peak current budgets pass. All 44 exact fitted identities/values
+and 159 pin contracts match the qualified electrical reference. Native
+unrouted placement and all five required checks pass, with identical final
+component poses. Current Circuit JSON SHA256: `e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c`.
+
+Twelve native fabrication files, rounded outline, copper/paste/mask/drill
+readback, four plated USB slots, exact USB/shutter/JST terminal registration,
+159 paste apertures, full silk and button-label separation pass. All three
+native A4 schematic sheets and both PCB/Gerber layers are inspected; reviewed
+explicit-root native snapshot passes. Lightweight setup/smoke, formatting and
+types pass: 36 Python tests, 2 Bun tests / 13 assertions. CAM: 27 regressions
+pass. Full measurements, logs and assumptions: [compact review](../evidence/R8-compact-pcb-2026-10-06/REVIEW.md).
+
+**Prototype order approval is pending** supplier-processed Gerber/drill/BOM/CPL
+preview, stackup, current stock/substitution and assembly review. No assembler
+upload, supplier contact, payment or order occurred. Physical programming,
+power/BLE/RF, thermal/runtime and phone/enclosure/MagSafe tests remain
+POST-PROTOTYPE PHYSICAL VALIDATION. Multi-model fit and the complete magnet/
+metal/antenna envelope are unfinished; this is an untested engineering
+prototype, not a production-ready grip.
+
+Known warnings004 and084 remain explicit. Local issues091–094 retain real
+failed inputs and their precise dispositions; no checker limits were lowered,
+no generated copper or imports patched. Abandoned WROOM075 does not apply to
+fitted DOIT. **Missing `3V3` metadata remains a separate importer issue.**
+Frozen main/baselines/imports/prior evidence/toolchain and firmware are unchanged;
+1752 protected archived files verified; 129 portable baseline hashes pass. Observed32GiB/4CPU is not a guaranteed
+allocation. Setup/start stay lightweight; all heavy work uses the unchanged
+serial memory guard. Preserve `board/r8-doit-c3-prototype-20261005`.
+
+Public 0.3.5-prototype publication is pending actual native upload and anonymous
+readback. The prior 0.3.4-prototype remains historical qualified output.
+
+# Prior continuation result —2026-10-05
 
 Current R8 hardware0.3.3/package0.3.4 has direct3-pin JST SH programming: J3 C160389 1RX(GPIO20)/2GND/3TX(GPIO21), supports4/5GND. Match standard-jst-programmer0.8.0 J5 with a straight-through SH cable; battery on, R8 USB-C unplugged, programmer target-power/SWD unplugged, manual BOOT/RESET, CDC0/DTR true using the supported host helper. Read [programming](../evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md). No physical flash is claimed; programmer UF2 build remains a separate later operation.
 

@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-power-metadata.test.ts:
+(pass) manufacturer power override reaches source ports without changing the supplier footprint [9082.84ms]
+(pass) cheaper C2 import exposes its real power pins and stays unrouted [7293.02ms]
+
+ 2 pass
+ 0 fail
+ 13 expect() calls
+Ran 2 tests across 1 file. [17.66s]

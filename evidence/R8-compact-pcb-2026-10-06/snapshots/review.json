@@ -1,0 +1,8 @@
+{
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "native_gold_review": "Inspected current composite PCB gold and native three-sheet A4 schematic gold after update, before comparison. Separate top/bottom and detailed A4 views are retained under visual-review.",
+  "files_sha256": {
+    "index.circuit-pcb.snap.svg": "bb749d08a6315f2c7468a9b9f34913aa8728987069c0ea6110d8335ab3144dc0",
+    "index.circuit-schematic.snap.svg": "9af9f41e145b5b091291a35ffddbbee64b2eb61104ad0841432aad8535b3fc19"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "observed_utc": "2026-10-06T05:36:14.195465+00:00",
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "cpu_max": "400000 100000",
+  "cpu_quota_equivalents": 4.0,
+  "oom_counters": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "allocation_guarantee": false,
+  "runtime_versions": {
+    "node": "25.6.0",
+    "bun": "1.3.9",
+    "python": "3.12.14",
+    "cam_python": "3.14.0"
+  },
+  "active_branch": "board/r8-doit-c3-prototype-20261005",
+  "predecessor_head": "c15d88cda14f86c7d6c26f40a12f2783c72a663e",
+  "heavy_jobs": "Serially python3 cloud/run-heavy.py --; guard unchanged",
+  "setup_start": "Lightweight directly; no server"
+}

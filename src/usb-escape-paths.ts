@@ -148,6 +148,11 @@ export const usbEscapePaths: FanoutTracePath[] = [
 				via_diameter: 0.6,
 				via_hole_diameter: 0.3,
 			},
+			// Pair VBUS on bottom north of CC and TS-bias transitions.
+			{ route_type: "wire", x: -2, y: 19.8, width: 0.3, layer: "bottom" },
+			{ route_type: "wire", x: -2, y: 20.8, width: 0.3, layer: "bottom" },
+			{ route_type: "wire", x: 2, y: 20.8, width: 0.3, layer: "bottom" },
+			{ route_type: "wire", x: 2, y: 19.8, width: 0.3, layer: "bottom" },
 		],
 	},
 	{

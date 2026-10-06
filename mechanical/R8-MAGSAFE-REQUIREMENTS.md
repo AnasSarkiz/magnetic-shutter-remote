@@ -11,6 +11,11 @@ exact-part qualification or the iPhone/case compatibility matrix.
 
 ## Product contract
 
+- Follow the JJC MSG-P1 reference's magnetic camera-grip and detachable shutter
+  arrangement. PCB dimensions are independent of the grip, case and MagSafe
+  array; the user explicitly accepts a smaller PCB. The compact electrical
+  target is 44 × 56 mm, retaining the qualified electronics and protected pack.
+  This is not a claim that the PCB drops into a measured JJC enclosure.
 - The phone-facing grip attaches to the native MagSafe interface on supported
   iPhones and compatible MagSafe cases. Do not require the separate steel phone
   plate used by the historical design.
@@ -56,7 +61,8 @@ exact-part qualification or the iPhone/case compatibility matrix.
    Use the fitted DOIT guidance, not the old Nordic module's clearance figures.
    Record three-dimensional metal separation and the manufacturer basis; do not
    invent a guaranteed RF distance.
-6. Qualify the smaller protected battery for the retained 1 A design requirement,
+6. Retain the qualified protected pack, or qualify a smaller protected battery
+   for the retained 1 A design requirement,
    charging current/voltage/temperature limits, protection and connector polarity
    before relying on a compact enclosure. Preserve insulation, swelling and
    harness/thermal-sensor provisions. PCB placement/routing changes remain gated
@@ -82,12 +88,14 @@ compatibility must not be described as Apple certification without evidence.
 The historical `remote-and-grip.scad` has four K&J D42 phone magnets centred at
 (±14, ±14) mm and a separate 45 × 45 × 0.5 mm steel phone plate. Its generic
 84 × 180 × 10 mm phone/case box is not model-specific MagSafe or camera-clearance
-evidence. The old 40 mm remote body also does not accommodate the current 48 mm
+evidence. The old 40 mm remote body also does not accommodate the current 44 mm
 R8 PCB. Preserve all historical CAD, meshes and frozen baselines unchanged.
 
-The existing R8 board is the published hardware 0.3.3/package 0.3.4 prototype;
-its electrical review remains applicable to that unchanged board. No compact
-PCB, R8 MagSafe enclosure or multi-model fit pass is claimed here.
+The compact hardware/package 0.3.5 PCB is 44×56×1mm and passes its electrical,
+local fabrication and visual review; see `evidence/R8-compact-pcb-2026-10-06/REVIEW.md`.
+This follows the JJC MSG-P1 product arrangement without treating PCB dimensions
+as the full enclosure or magnetic-array size. No R8 MagSafe enclosure, selected
+magnet assembly, complete RF/metal envelope or multi-model fit pass is claimed.
 
 Official guidance attempted:
 <https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf>.

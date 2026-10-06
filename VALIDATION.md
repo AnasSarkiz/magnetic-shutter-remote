@@ -1,38 +1,58 @@
-# Current R8 direct3-pin standard-programmer prototype —2026-10-05
+# Current R8 compact PCB review — 2026-10-06
 
-## Compact redesign and MagSafe iPhone fit — requirements update
+Hardware/package **0.3.5**, native route23: **44 × 56 × 1 mm**, two-layer FR4,
+44 TOP references / 25 exact JLCPCB identities. Follow the JJC MSG-P1 grip and
+detachable side shutter arrangement; the PCB is smaller than the complete
+housing/MagSafe array. Protected 1000mAh pack, right-edge TS24CA switch and
+straight-through three-pin JST UART connection are retained.
 
-The user requires a MagSafe phone-facing grip for multiple iPhone models and
-compatible cases, retaining the detachable side-actuated shutter and direct
-three-pin JST programming connection. Requirements are recorded in
-[`mechanical/R8-MAGSAFE-REQUIREMENTS.md`](mechanical/R8-MAGSAFE-REQUIREMENTS.md).
-Official magnetic-interface and phone/camera/case dimensions, exact magnet
-assembly, complete antenna/metal clearance and smaller protected battery
-qualification remain pending. Official Apple guidance returned proxy CONNECT
-HTTP 403 at `developer.apple.com`; the exact host is saved in the restricted
-environment draft, requiring Save/Publish and an actual access retry. The
-existing four-disc/steel-plate design is historical and not MagSafe-qualified.
-No compact layout, new enclosure, routing, fit test or MagSafe publication has
-been completed. The earlier electrical pass and published Circuit JSON below
-belong to the unchanged 48 × 56 mm prototype. Physical compatibility requires
-tests for each configuration claimed, not a universal iPhone/case promise.
+**Electrical/copper and local fabrication checks pass:** 0 native DRC errors,
+0 shorts, 0 dangling traces, 0 independent manufacturing/process failures;
+29/29 required terminal nets physically connected. All 164 physical track
+widths reviewed, minimum 0.15mm; VIN and inductor necks widened to 0.30mm and
+switching RMS/peak current budgets pass. All 44 exact fitted identities/values
+and 159 pin contracts match the qualified electrical reference. Native
+unrouted placement and all five required checks pass, with identical final
+component poses. Current Circuit JSON SHA256: `e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c`.
 
-Broader public research is complete: pinned magnetic-array models and printable
-mounts provide nominal reference geometry, including a cited 54.1 mm array OD.
-A third-party iPhone dimension dataset was screened but lacks MagSafe datums,
-mini/Max models and exact cases. [Research and source screening](mechanical/R8-MAGSAFE-RESEARCH.md)
-records sources and limits. This advances the design investigation without
-claiming current Apple/selected-magnet qualification or measured multi-model fit.
-No PCB/import/baseline/firmware/dependency/Circuit JSON or routed artifact was
-changed for that research.
+Twelve native fabrication files, rounded outline, copper/paste/mask/drill
+readback, four plated USB slots, exact USB/shutter/JST terminal registration,
+159 paste apertures, full silk and button-label separation pass. All three
+native A4 schematic sheets and both PCB/Gerber layers are inspected; reviewed
+explicit-root native snapshot passes. Lightweight setup/smoke, formatting and
+types pass: 36 Python tests, 2 Bun tests / 13 assertions. CAM: 27 regressions
+pass. Full measurements, logs and assumptions: [compact review](evidence/R8-compact-pcb-2026-10-06/REVIEW.md).
 
-## Existing published electrical prototype
+**Prototype order approval is pending** supplier-processed Gerber/drill/BOM/CPL
+preview, stackup, current stock/substitution and assembly review. No assembler
+upload, supplier contact, payment or order occurred. Physical programming,
+power/BLE/RF, thermal/runtime and phone/enclosure/MagSafe tests remain
+POST-PROTOTYPE PHYSICAL VALIDATION. Multi-model fit and the complete magnet/
+metal/antenna envelope are unfinished; this is an untested engineering
+prototype, not a production-ready grip.
 
-Hardware0.3.3/package0.3.4, native route06: **0 native DRC errors,0 shorts,0 independent manufacturing/process failures**. Exact C160389/JST3 import qualified; J3 1RX/2GND/3TX matches standard-jst-programmer0.8.0 J5 over straight-through SH cable. Right-edge side-actuated TS24CA/C393942, DOIT C3 and original BLE image retained. [Current review](evidence/R8-standard-programmer-2026-10-05/REVIEW.md), [programming](evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md), [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).
+Known warnings004 and084 remain explicit. Local issues091–094 retain real
+failed inputs and their precise dispositions; no checker limits were lowered,
+no generated copper or imports patched. Abandoned WROOM075 does not apply to
+fitted DOIT. **Missing `3V3` metadata remains a separate importer issue.**
+Frozen main/baselines/imports/prior evidence/toolchain and firmware are unchanged;
+1752 protected archived files verified; 129 portable baseline hashes pass. Observed32GiB/4CPU is not a guaranteed
+allocation. Setup/start stay lightweight; all heavy work uses the unchanged
+serial memory guard. Preserve `board/r8-doit-c3-prototype-20261005`.
 
-Requirements,44-reference/25-C-number BOM, unrouted placement, routed/native/independent copper and local export/readback/process stages pass.157traces/88vias/159paste features,29 connected nets,12native Gerber/drill files,44 TOP placements.19CAM regressions and22focused core tests/286assertions pass. 33Python+2Bun/13assertions, format/type/native shorts, full-schema visual review and two successive explicit-root snapshots pass; exact results are retained in the current review. Supplier processed-preview/fabrication approval and physical programming/power/BLE/RF/runtime/thermal/enclosure are pending. No supplier upload/order is authorized.
+Public 0.3.5-prototype publication is pending actual native upload and anonymous
+readback. The prior 0.3.4-prototype remains historical qualified output.
 
-Known004 top-entry connector-metadata warning and084 discrete-MOSFET warnings remain explicit. New089 complete-silk checker coverage and090 native circle visibility are corrected with real failing controls and retained reproduction inputs. Original075 applies to abandoned WROOM; **Missing `3V3` metadata remains a separate importer issue.** Frozen baselines/main and firmware application/artifacts remain unchanged. Observed32GiB/4CPU is not guaranteed; lightweight setup/start and heavy memory guard remain unchanged. Native **0.3.4-prototype** publication PASSED: all218 files, public/ready_to_build=true, exact anonymous critical text/GitHub Circuit JSON readback. Hosted preview remains pending at observation; [actual publication](evidence/R8-standard-programmer-2026-10-05/PUBLICATION.md) records statuses.
+| Stage | Current status |
+|---|---|
+| Electrical requirements and compact PCB envelope | passed for this PCB; complete MagSafe enclosure requirements in progress |
+| Schematic / exact BOM | passed; sourcing observations dated2026-10-05, current assembler stock pending |
+| Unrouted placement | passed |
+| Routing / physical connectivity / current widths | passed |
+| Automated / visual / snapshot review | passed |
+| Prototype fabrication approval | in progress; local exports pass, supplier processed-preview/assembly review pending |
+| Physical prototype tests | not started |
+| Public prototype publication | in progress; actual upload/readback pending |
 
 ## Earlier investigation records — retained history
 

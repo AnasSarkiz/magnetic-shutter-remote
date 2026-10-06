@@ -130,3 +130,8 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 
 - [089 — Full native silk omitted by text-only process audit](089-project-process-audit-omits-nontext-silk.md): project audit coverage fixed; full exported layers now checked, original supplier-circle print failure retained.
 - [090 — Silkscreen circle ignores inherited visibility](090-silkscreen-circle-ignores-pcb-sx-visibility.md): generic core primitive fix;2 failing controls,22 focused tests/286 assertions pass; separate source overlay/runtime archive.
+- [091 — Tangent pour cutouts produce invalid ring](091-tangent-pour-cutouts-produce-invalid-ring.md): confirmed native-pour/independent-reader topology incompatibility; original input retained, meaningful source clearance separation under revalidation; no upstream engine fix claimed.
+- [092 — Power-width review omitted switching ripple](092-power-width-review-omits-switching-ripple.md): project audit coverage defect; old DC-only neck retained, physical switching paths and RMS budgets added, authored VIN/L1/L2 necks widened for revalidation.
+- [093 — Process audit omitted overlapping legends](093-process-audit-omits-overlapping-legends.md): real PAIR/POWER collision caught visually; source label moved, same-layer readability check and original-native regression added.
+
+- [094 — Named schematic pin arrangement produces invalid Circuit JSON](094-named-schematic-arrangement-produces-invalid-json.md): pinned core/schema mismatch; supported numeric board-level arrangement used, original failed input retained.

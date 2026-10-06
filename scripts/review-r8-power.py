@@ -4,6 +4,7 @@ import json
 import argparse
 import heapq
 import math
+import hashlib
 import sys
 from pathlib import Path
 
@@ -12,6 +13,27 @@ SPEC = importlib.util.spec_from_file_location('power_geometry', ROOT/'scripts/ma
 GEOMETRY = importlib.util.module_from_spec(SPEC)
 sys.modules[SPEC.name] = GEOMETRY
 SPEC.loader.exec_module(GEOMETRY)
+
+
+def switching_current_budget(params):
+    # TI SLVS696D equations 2/3, with retained +/-20% inductance and
+    # the specified 2.2MHz oscillator minimum. Triangular ripple RMS.
+    boost_duty = 1 - params['input_floor_v']/3.533
+    boost_ripple = params['input_floor_v']*boost_duty/(2_200_000*1.2e-6)
+    buck_duty = 3.169/4.1205
+    buck_ripple = (4.1205-3.169)*buck_duty/(2_200_000*1.2e-6)
+    return {'minimum_inductance_h': 1.2e-6, 'minimum_frequency_hz': 2_200_000,
+            'boost_ripple_peak_to_peak_amps': boost_ripple,
+            'buck_ripple_peak_to_peak_amps': buck_ripple,
+            'rms_design_amps': max(math.hypot(params['input_amps'],boost_ripple/math.sqrt(12)),
+                                   math.hypot(0.5,buck_ripple/math.sqrt(12))),
+            'peak_design_amps': max(params['input_amps']+boost_ripple/2,0.5+buck_ripple/2)}
+
+
+def width_budget_failures(paths, budgets):
+    return [f'{name}: nominal power neck is insufficient for its current budget'
+            for name,current in budgets.items()
+            if paths[name]['ipc2221_external_estimate_10c_amps'] < current]
 
 
 def load_path(params):
@@ -50,7 +72,8 @@ def load_path(params):
 
 
 def review(output=ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements.json'):
-    circuit = json.loads((ROOT/'dist/index/circuit.json').read_text())
+    source = ROOT/'dist/index/circuit.json'
+    circuit = json.loads(source.read_text())
     if any(e['type'].endswith('_error') for e in circuit):
         raise ValueError('Power review requires an error-free routed circuit')
     copper, _, _ = GEOMETRY.make_features(circuit, 'gerber')
@@ -96,25 +119,52 @@ def review(output=ROOT/'evidence/R8-prototype-2026-10-05/power-path-measurements
     track_resistances = {s['trace']: sum(row['resistance_20c_ohm'] for row in segments if row['trace'] == s['trace']) for s in segments}
     track_widths = {s['trace']: min(row['width_mm'] for row in segments if row['trace'] == s['trace']) for s in segments}
     paths = {}
-    for name, terminals in [('V3', [('U3','pin1'),('U1','pin8')]), ('VBAT', [('J2','pin2'),('U3','pin5')])]:
+    for path_name, name, terminals in [
+            ('V3', 'V3', [('U3','pin1'),('U1','pin8')]),
+            ('VBAT', 'VBAT', [('J2','pin2'),('U3','pin5')]),
+            ('USB_VBUS1', 'USB5V', [('J1','pin18'),('U2','pin10')]),
+            ('USB_VBUS2', 'USB5V', [('J1','pin27'),('U2','pin10')]),
+            ('BATTERY_CHARGE', 'VBAT', [('U2','pin2'),('J2','pin2')]),
+            ('INDUCTOR_L1', 'INDUCTOR_L1', [('U3','pin4'),('L1','pin2')]),
+            ('INDUCTOR_L2', 'INDUCTOR_L2', [('U3','pin2'),('L1','pin1')])]:
         net = next(key for key,n in names.items() if n == name)
-        paths[name] = load_path({'copper':copper,'circuit':circuit,'net':net,'terminals':terminals,'track_resistances':track_resistances,'track_widths':track_widths})
-    module_floor = 3.3*0.97 - 0.5*resistance_factor*paths['V3']['trace_only_resistance_upper_bound_20c_ohm']
-    battery_input_current = 3.3*0.5/(3.003*0.85)
+        paths[path_name] = load_path({'copper':copper,'circuit':circuit,'net':net,'terminals':terminals,'track_resistances':track_resistances,'track_widths':track_widths})
+    module_floor = 3.169 - 0.5*resistance_factor*paths['V3']['trace_only_resistance_upper_bound_20c_ohm']
+    # Retain the earlier static tolerance envelope and use 80% efficiency.
+    # Solve I*(Vbattery-I*R)=P/efficiency, including the actual copper drop.
+    input_resistance = resistance_factor*paths['VBAT']['trace_only_resistance_upper_bound_20c_ohm']
+    input_power = 3.533*0.5/0.8
+    discriminant = 3.003**2-4*input_resistance*input_power
+    if discriminant <= 0:
+        raise ValueError('No valid trace-only battery operating point')
+    battery_input_current = 2*input_power/(3.003+math.sqrt(discriminant))
     regulator_input_floor = 3.003 - battery_input_current*resistance_factor*paths['VBAT']['trace_only_resistance_upper_bound_20c_ohm']
-    report = {'nominal_copper_thickness_mm': 0.035, 'segments': segments, 'nets': summaries, 'physical_load_paths': paths,
+    switching = switching_current_budget({'input_floor_v':regulator_input_floor,
+                                          'input_amps':battery_input_current})
+    budgets = {'V3':0.5, 'VBAT':battery_input_current, 'USB_VBUS1':0.4,
+               'USB_VBUS2':0.4, 'BATTERY_CHARGE':0.3333,
+               'INDUCTOR_L1':switching['rms_design_amps'],
+               'INDUCTOR_L2':switching['rms_design_amps']}
+    report = {'circuit_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+              'nominal_copper_thickness_mm': 0.035, 'segments': segments, 'nets': summaries, 'physical_load_paths': paths,
               'module_design_supply_amps': 0.5, 'module_voltage_floor_budget_v': module_floor,
-              'battery_input_design_amps_at_assumed_85pct_efficiency': battery_input_current,
+              'battery_input_design_amps_at_assumed_80pct_efficiency': battery_input_current,
               'regulator_input_voltage_floor_budget_v': regulator_input_floor,
+              'switching_current_budget': switching, 'load_path_current_budgets_amps': budgets,
               'references': ['DOIT ESPC3-12 manual page7: startup exceeds400mA; supply>=500mA', 'TI SLVS696D: up to500mA boost at VIN>2.4V', 'IPC-2221 external empirical estimate'],
-              'limitations': ['Nominal trace-only resistance; excludes connector, via, battery and regulator transient drops.', 'All-branches-in-series bound is conservative for copper, but does not establish actual loaded voltage.', '35um copper, 50C copper, -3% output and85% efficiency are design assumptions.', 'Inductor switch pulses and thermal spreading are not modeled; saturation2.3A/RMS1.7A exceed normal load but require hardware verification.', 'No current, temperature, transient, battery runtime or RF measurement is claimed.']}
+              'limitations': ['Nominal trace-only resistance; excludes connector, via, battery and regulator transient drops.', 'Whole-track series resistance overestimates the selected path, but does not establish actual loaded voltage.', '35um copper, 50C copper, 3.169-3.533V static tolerance envelope and80% efficiency are design assumptions.', 'USB current budget400mA includes333.3mA worst charge current and control overhead; USB disables radio supply.', 'Switching estimate uses ideal steady-state triangular ripple; startup, faults, core losses and thermal spreading require hardware verification.', 'Ground return uses independently verified continuous EP planes; IPC trace estimates do not model plane bottlenecks or via/contact losses.', 'No current, temperature, transient, battery runtime or RF measurement is claimed.']}
+    failures = []
+    if module_floor <= 3.0 or regulator_input_floor <= 2.4:
+        failures.append('Trace-only voltage budget does not retain module/regulator operating margin')
+    failures.extend(width_budget_failures(paths,budgets))
+    if switching['rms_design_amps'] >= 1.7 or switching['peak_design_amps'] >= 2.3:
+        failures.append('Normal switching-current estimate exceeds qualified inductor ratings')
+    report['failures'] = failures
     output.write_text(json.dumps(report, indent=2)+'\n')
     print('Nominal module voltage budget:', module_floor, 'regulator input budget:', regulator_input_floor)
     print('Measured power net minima:', {name: row['minimum_width_mm'] for name,row in summaries.items()})
-    if module_floor <= 3.0 or regulator_input_floor <= 2.4:
-        raise ValueError('Trace-only voltage budget does not retain module/regulator operating margin')
-    if paths['V3']['ipc2221_external_estimate_10c_amps'] < 0.5 or paths['VBAT']['ipc2221_external_estimate_10c_amps'] < battery_input_current:
-        raise ValueError('Nominal power neck is insufficient for the stated design current estimate')
+    if failures:
+        raise ValueError('; '.join(failures))
 
 
 if __name__ == '__main__':

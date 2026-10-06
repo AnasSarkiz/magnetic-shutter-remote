@@ -1,0 +1,49 @@
+{
+  "started_utc": "20261006T041954080109Z",
+  "command": [
+    "bun",
+    "scripts/audit-r8-circuit.ts",
+    "dist/tests/fixtures/r8-compact-placement/circuit.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+R8 electrical contracts PASS; 44 fitted references
+{
+  "started_utc": "20261006T041954080109Z",
+  "command": [
+    "bun",
+    "scripts/audit-r8-circuit.ts",
+    "dist/tests/fixtures/r8-compact-placement/circuit.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T04:19:56.130172+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 174024,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T041954080109Z.log"
+}
