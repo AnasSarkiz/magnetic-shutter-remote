@@ -1,0 +1,41 @@
+{
+  "lcsc": "C19949072",
+  "mpn": "ESPC3-12-N4",
+  "references": [
+    "U1"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:18.659283+00:00",
+  "url": "https://jlcpcb.com/partdetail/C19949072",
+  "response_url": "https://jlcpcb.com/partdetail/C19949072",
+  "html_sha256": "5f2000e0e7b4ab637b7f83c95b1a5efe9d148b8b186fc29656bbd54ee5024add",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3,
+    "overseasStockCount": 66,
+    "preMinPurchaseNum": 4,
+    "encapsulationNumber": 650,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": false,
+  "listing_has_smt_assembly_mode": true,
+  "status": "NEEDS_SUPPLY_CONFIRMATION",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

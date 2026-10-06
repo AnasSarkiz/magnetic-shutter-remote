@@ -1,0 +1,46 @@
+{
+  "lcsc": "C15850",
+  "mpn": "CL21A106KAYNNNE",
+  "references": [
+    "C8",
+    "C10",
+    "C11",
+    "C12",
+    "C3",
+    "C4"
+  ],
+  "quantity_per_board": 6,
+  "quantity_for_five_finished_boards_without_attrition": 30,
+  "checked_at_utc": "2026-10-06T11:57:17.369075+00:00",
+  "url": "https://jlcpcb.com/partdetail/C15850",
+  "response_url": "https://jlcpcb.com/partdetail/C15850",
+  "html_sha256": "f7f87eb02b966718a30f6d7bf9cdcdf0a58cf286d9ab8bd6c89b51eb9f5c85dd",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3454309,
+    "overseasStockCount": 4831018,
+    "preMinPurchaseNum": 139,
+    "encapsulationNumber": 2000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

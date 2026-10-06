@@ -1,0 +1,1056 @@
+{
+  "observed_utc": "2026-10-06T11:57:23.498834+00:00",
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "bom_sha256": "ec103084408e0d2f3b5c176c4420536e36ededeb83156768fce66c253f2d9e0f",
+  "fitted_references": 44,
+  "exact_parts_expected": 25,
+  "parts": [
+    {
+      "lcsc": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "references": [
+        "C5",
+        "C13",
+        "C6",
+        "C7"
+      ],
+      "quantity_per_board": 4,
+      "quantity_for_five_finished_boards_without_attrition": 20,
+      "checked_at_utc": "2026-10-06T11:57:18.690237+00:00",
+      "url": "https://jlcpcb.com/partdetail/C14663",
+      "response_url": "https://jlcpcb.com/partdetail/C14663",
+      "html_sha256": "bf5996a2ccaea95f1dbe53f6cb5e8fe4c5093287ae96b1c68281919924b3d35e",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 42915866,
+        "overseasStockCount": 57220244,
+        "preMinPurchaseNum": 1026,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C15516",
+      "mpn": "TPS63031DSKR",
+      "references": [
+        "U3"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:21.121472+00:00",
+      "url": "https://jlcpcb.com/partdetail/C15516",
+      "response_url": "https://jlcpcb.com/partdetail/C15516",
+      "html_sha256": "882ef2839fb956800ea5b4d6bfa1c38fb7c6876e065625c51d1d3f1f274b8145",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 13099,
+        "overseasStockCount": 13230,
+        "preMinPurchaseNum": 9,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C15850",
+      "mpn": "CL21A106KAYNNNE",
+      "references": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C3",
+        "C4"
+      ],
+      "quantity_per_board": 6,
+      "quantity_for_five_finished_boards_without_attrition": 30,
+      "checked_at_utc": "2026-10-06T11:57:17.369075+00:00",
+      "url": "https://jlcpcb.com/partdetail/C15850",
+      "response_url": "https://jlcpcb.com/partdetail/C15850",
+      "html_sha256": "f7f87eb02b966718a30f6d7bf9cdcdf0a58cf286d9ab8bd6c89b51eb9f5c85dd",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3454309,
+        "overseasStockCount": 4831018,
+        "preMinPurchaseNum": 139,
+        "encapsulationNumber": 2000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C160389",
+      "mpn": "BM03B-SRSS-TB(LF)(SN)",
+      "references": [
+        "J3"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:19.802129+00:00",
+      "url": "https://jlcpcb.com/partdetail/C160389",
+      "response_url": "https://jlcpcb.com/partdetail/C160389",
+      "html_sha256": "63ff96357be526d20d204c2cc0fe664ba63751169a6c105eac4363547d2267d1",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 31699,
+        "overseasStockCount": 32152,
+        "preMinPurchaseNum": 33,
+        "encapsulationNumber": 1500,
+        "lossNumber": 0,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C160402",
+      "mpn": "SM02B-SRSS-TB(LF)(SN)",
+      "references": [
+        "J2"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:15.806526+00:00",
+      "url": "https://jlcpcb.com/partdetail/C160402",
+      "response_url": "https://jlcpcb.com/partdetail/C160402",
+      "html_sha256": "1e03acc393b6e24dfef2f99a4fbfce81ade93f38a4bbed1924165047109bad11",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 32131,
+        "overseasStockCount": 33629,
+        "preMinPurchaseNum": 84,
+        "encapsulationNumber": 3000,
+        "lossNumber": 2,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "references": [
+        "C2",
+        "C1"
+      ],
+      "quantity_per_board": 2,
+      "quantity_for_five_finished_boards_without_attrition": 10,
+      "checked_at_utc": "2026-10-06T11:57:15.481563+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19666",
+      "response_url": "https://jlcpcb.com/partdetail/C19666",
+      "html_sha256": "443f63243ee1de1d0f6d948c5be9ef9ac78e630df41255cbe2d25e0b8adc1859",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 1850931,
+        "overseasStockCount": 2461457,
+        "preMinPurchaseNum": 519,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C19725033",
+      "mpn": "BQ25185DLHR",
+      "references": [
+        "U2"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:14.282176+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19725033",
+      "response_url": "https://jlcpcb.com/partdetail/C19725033",
+      "html_sha256": "30c1350672a4568ff423a3d5211732693933afb9da86a4b6b6b1daba74f59d48",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3533,
+        "overseasStockCount": 3636,
+        "preMinPurchaseNum": 6,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C19949072",
+      "mpn": "ESPC3-12-N4",
+      "references": [
+        "U1"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:18.659283+00:00",
+      "url": "https://jlcpcb.com/partdetail/C19949072",
+      "response_url": "https://jlcpcb.com/partdetail/C19949072",
+      "html_sha256": "5f2000e0e7b4ab637b7f83c95b1a5efe9d148b8b186fc29656bbd54ee5024add",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3,
+        "overseasStockCount": 66,
+        "preMinPurchaseNum": 4,
+        "encapsulationNumber": 650,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": false,
+      "listing_has_smt_assembly_mode": true,
+      "status": "NEEDS_SUPPLY_CONFIRMATION",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "references": [
+        "R3",
+        "R4",
+        "R7"
+      ],
+      "quantity_per_board": 3,
+      "quantity_for_five_finished_boards_without_attrition": 15,
+      "checked_at_utc": "2026-10-06T11:57:13.688254+00:00",
+      "url": "https://jlcpcb.com/partdetail/C21190",
+      "response_url": "https://jlcpcb.com/partdetail/C21190",
+      "html_sha256": "d9d2eeb9e14ec1700dc4615ddbb83673c860f47d4339f82af86631455c9f7eac",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 15816547,
+        "overseasStockCount": 21274410,
+        "preMinPurchaseNum": 4512,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C22795",
+      "mpn": "0603WAF1303T5E",
+      "references": [
+        "R8"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:16.154454+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22795",
+      "response_url": "https://jlcpcb.com/partdetail/C22795",
+      "html_sha256": "ab0d68e9408868d3b37d48459e7b4353bdbc6d06e7fc5ef026a5315e0a90d04f",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 534545,
+        "overseasStockCount": 584557,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C22844",
+      "mpn": "0603WAF1621T5E",
+      "references": [
+        "R10"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:22.312657+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22844",
+      "response_url": "https://jlcpcb.com/partdetail/C22844",
+      "html_sha256": "0bb706ae8d53b0bce5cccfa5a9654c015681bfd1699709cd98e640e7a2e23ac8",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 27589,
+        "overseasStockCount": 27688,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C2286",
+      "mpn": "KT-0603R",
+      "references": [
+        "LED1",
+        "LED2"
+      ],
+      "quantity_per_board": 2,
+      "quantity_for_five_finished_boards_without_attrition": 10,
+      "checked_at_utc": "2026-10-06T11:57:17.294083+00:00",
+      "url": "https://jlcpcb.com/partdetail/C2286",
+      "response_url": "https://jlcpcb.com/partdetail/C2286",
+      "html_sha256": "59eaa6addf7958172040c4c25e4ae6a5907696a6c52fbea3b7b8b949858dd2be",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 4180371,
+        "overseasStockCount": 4732306,
+        "preMinPurchaseNum": 1556,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C22893",
+      "mpn": "0603WAF1872T5E",
+      "references": [
+        "R11"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:22.728360+00:00",
+      "url": "https://jlcpcb.com/partdetail/C22893",
+      "response_url": "https://jlcpcb.com/partdetail/C22893",
+      "html_sha256": "49a0326d836025fcad284a5032451da6c9b4142afe18fc6d91fdf259c28b79aa",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 121574,
+        "overseasStockCount": 127543,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "references": [
+        "R2",
+        "R1"
+      ],
+      "quantity_per_board": 2,
+      "quantity_for_five_finished_boards_without_attrition": 10,
+      "checked_at_utc": "2026-10-06T11:57:14.626896+00:00",
+      "url": "https://jlcpcb.com/partdetail/C23186",
+      "response_url": "https://jlcpcb.com/partdetail/C23186",
+      "html_sha256": "f201952e6d6f7870d2a31fb39a87aa3bd5b3230de99850a35c91b83cb302c6ca",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 24108474,
+        "overseasStockCount": 25186290,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "references": [
+        "R5",
+        "R6",
+        "R12",
+        "R13"
+      ],
+      "quantity_per_board": 4,
+      "quantity_for_five_finished_boards_without_attrition": 20,
+      "checked_at_utc": "2026-10-06T11:57:20.447200+00:00",
+      "url": "https://jlcpcb.com/partdetail/C25803",
+      "response_url": "https://jlcpcb.com/partdetail/C25803",
+      "html_sha256": "b741df559ed32eaa5fcb6cdb4cfc9d0f10bd601a787cc15d87c9b8fc744747fa",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 20070593,
+        "overseasStockCount": 22010609,
+        "preMinPurchaseNum": 3760,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "references": [
+        "R9"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:18.274720+00:00",
+      "url": "https://jlcpcb.com/partdetail/C25804",
+      "response_url": "https://jlcpcb.com/partdetail/C25804",
+      "html_sha256": "48ec6baa25ff4cdac08ab8919cbb4f7e83327f128eb3c1ba9d20a76185d4b955",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 21640825,
+        "overseasStockCount": 29568930,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C282505",
+      "mpn": "TCC0603COG470J500CT",
+      "references": [
+        "C9"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:17.737538+00:00",
+      "url": "https://jlcpcb.com/partdetail/C282505",
+      "response_url": "https://jlcpcb.com/partdetail/C282505",
+      "html_sha256": "32cce1a63d2293629ee2506a6512bbef6a52595f803101a51191f5f9203e9697",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 7987,
+        "overseasStockCount": 8003,
+        "preMinPurchaseNum": 3610,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C37616412",
+      "mpn": "USB4215-03-A",
+      "references": [
+        "J1"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:14.371885+00:00",
+      "url": "https://jlcpcb.com/partdetail/C37616412",
+      "response_url": "https://jlcpcb.com/partdetail/C37616412",
+      "html_sha256": "bd340491bedcb797cf61068c9f1019374b6d4db2c168e269a13cb50ab7997170",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 22,
+        "overseasStockCount": 114,
+        "preMinPurchaseNum": 13,
+        "encapsulationNumber": 1200,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C393942",
+      "mpn": "TS24CA",
+      "references": [
+        "SW2"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:18.976610+00:00",
+      "url": "https://jlcpcb.com/partdetail/C393942",
+      "response_url": "https://jlcpcb.com/partdetail/C393942",
+      "html_sha256": "33d3ce9a5d7c879478a77564aef20a186c55342b5c863440741f765cd06cb828",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 400566,
+        "overseasStockCount": 406482,
+        "preMinPurchaseNum": 461,
+        "encapsulationNumber": 3000,
+        "lossNumber": 1,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C431540",
+      "mpn": "MSK12C02",
+      "references": [
+        "SW1"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:20.042241+00:00",
+      "url": "https://jlcpcb.com/partdetail/C431540",
+      "response_url": "https://jlcpcb.com/partdetail/C431540",
+      "html_sha256": "9ab15cbb7d252b4958168208d6c26a36ab71e34334ed35cb7f2ac74213555f96",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": null,
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 186001,
+        "overseasStockCount": 192348,
+        "preMinPurchaseNum": 196,
+        "encapsulationNumber": 3000,
+        "lossNumber": 4,
+        "leastPatchNumber": 2,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C485802",
+      "mpn": "TPS3839G33DBZR",
+      "references": [
+        "U4"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:21.503613+00:00",
+      "url": "https://jlcpcb.com/partdetail/C485802",
+      "response_url": "https://jlcpcb.com/partdetail/C485802",
+      "html_sha256": "74a6c0509ed41f694d7e5285a05269d2005b411243963078899bd881430a74c8",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3355,
+        "overseasStockCount": 3390,
+        "preMinPurchaseNum": 27,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C5219772",
+      "mpn": "TMP390A2DRLR",
+      "references": [
+        "U5"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:23.497917+00:00",
+      "url": "https://jlcpcb.com/partdetail/C5219772",
+      "response_url": "https://jlcpcb.com/partdetail/C5219772",
+      "html_sha256": "4178b0007aa73f1db15487a83a02e1b51cd228e466d46cf98bd238bea40a86e5",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 37523,
+        "overseasStockCount": 37575,
+        "preMinPurchaseNum": 26,
+        "encapsulationNumber": 4000,
+        "lossNumber": 0,
+        "leastPatchNumber": 2,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C56594",
+      "mpn": "SWPA3015S1R5NT",
+      "references": [
+        "L1"
+      ],
+      "quantity_per_board": 1,
+      "quantity_for_five_finished_boards_without_attrition": 5,
+      "checked_at_utc": "2026-10-06T11:57:22.425475+00:00",
+      "url": "https://jlcpcb.com/partdetail/C56594",
+      "response_url": "https://jlcpcb.com/partdetail/C56594",
+      "html_sha256": "a502b7372985f0269e7ba07e2c0f8a9a70833f547386cba7c2443a0b1bdaddd5",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 4041,
+        "overseasStockCount": 4197,
+        "preMinPurchaseNum": 229,
+        "encapsulationNumber": 2000,
+        "lossNumber": 4,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C720477",
+      "mpn": "TS-1088-AR02016",
+      "references": [
+        "SW3",
+        "SW4",
+        "SW5"
+      ],
+      "quantity_per_board": 3,
+      "quantity_for_five_finished_boards_without_attrition": 15,
+      "checked_at_utc": "2026-10-06T11:57:19.509579+00:00",
+      "url": "https://jlcpcb.com/partdetail/C720477",
+      "response_url": "https://jlcpcb.com/partdetail/C720477",
+      "html_sha256": "5427f8f0e60ca97ea1db0d065c10286d1ede1b6016a64f83bc30f9b7d929981e",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 716001,
+        "overseasStockCount": 766539,
+        "preMinPurchaseNum": 214,
+        "encapsulationNumber": 4000,
+        "lossNumber": 4,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    },
+    {
+      "lcsc": "C8545",
+      "mpn": "2N7002",
+      "references": [
+        "Q1",
+        "Q2"
+      ],
+      "quantity_per_board": 2,
+      "quantity_for_five_finished_boards_without_attrition": 10,
+      "checked_at_utc": "2026-10-06T11:57:20.930010+00:00",
+      "url": "https://jlcpcb.com/partdetail/C8545",
+      "response_url": "https://jlcpcb.com/partdetail/C8545",
+      "html_sha256": "d145ab6c5f3336147f51549af11347d1120b21456ebe05f72d7e11ee24f857fc",
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "componentProductType": 0,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "xrayFlag": false,
+        "fixtureFlag": false,
+        "needAuditFlag": false,
+        "manufacturerBlackFlag": null,
+        "assemblyComponentFlag": false,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 1452920,
+        "overseasStockCount": 1593414,
+        "preMinPurchaseNum": 640,
+        "encapsulationNumber": 3000,
+        "lossNumber": 5,
+        "leastPatchNumber": 10,
+        "noBuyReason": null
+      },
+      "direct_inventory_covers_five_boards_without_attrition": true,
+      "listing_has_smt_assembly_mode": true,
+      "status": "PASS_PUBLIC_LISTING",
+      "limitations": [
+        "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+        "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+      ]
+    }
+  ],
+  "failures": [],
+  "public_listing_checks_completed": true,
+  "all_direct_inventory_covers_five_boards_without_attrition": false
+}

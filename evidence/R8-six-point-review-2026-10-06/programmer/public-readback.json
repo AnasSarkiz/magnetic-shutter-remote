@@ -1,0 +1,22 @@
+{
+  "dist/circuits/programmer/circuit.json": {
+    "sha256": "aae5f4176b4a0b7c3db3999e68fcc9d8d924a36484d8f28752d64c9dc7aa82dc",
+    "retained_sha256": "6bb14764192cf1a4941e70b6fe86bff7a0450be3b2bfa0b9ce13731f15fc3112",
+    "exact_match": false
+  },
+  "README.md": {
+    "sha256": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+    "retained_sha256": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728",
+    "exact_match": true
+  },
+  "firmware/build.sh": {
+    "sha256": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+    "retained_sha256": "ffdc85ac76965b295fd5bd16c50a4d8f100a67c26495dafa4b78b00abc0276fd",
+    "exact_match": true
+  },
+  "firmware/board_standard_jst_config.h": {
+    "sha256": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+    "retained_sha256": "c5918062da8af4a5f486d7e1d975084d8e843d54b14a10eaa63eeb5a82b4549e",
+    "exact_match": true
+  }
+}

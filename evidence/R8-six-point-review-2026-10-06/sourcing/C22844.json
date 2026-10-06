@@ -1,0 +1,41 @@
+{
+  "lcsc": "C22844",
+  "mpn": "0603WAF1621T5E",
+  "references": [
+    "R10"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:22.312657+00:00",
+  "url": "https://jlcpcb.com/partdetail/C22844",
+  "response_url": "https://jlcpcb.com/partdetail/C22844",
+  "html_sha256": "0bb706ae8d53b0bce5cccfa5a9654c015681bfd1699709cd98e640e7a2e23ac8",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 27589,
+    "overseasStockCount": 27688,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

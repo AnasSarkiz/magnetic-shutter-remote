@@ -1,0 +1,15 @@
+{
+  "starting_head": "621291c066b68187ee96ac0ee13bd51dcab884d1",
+  "branch": "board/r8-doit-c3-prototype-20261005",
+  "predecessor_manifest": "evidence/R8-INTEGRITY-2026-10-06-functional-review.json",
+  "predecessor_manifest_sha256": "6ca99851824f814a7c1cd8301bff915332106564a46109e2fb3601dbed836028",
+  "prior_files_verified": 3012,
+  "allowed_tracked_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "tscircuit-issues/README.md"
+  ],
+  "board_source_imports_firmware_baselines_fabrication_circuit_bom_cpl_lockfile_memory_guard_changed": false
+}

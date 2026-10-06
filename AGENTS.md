@@ -22,6 +22,13 @@ The user's later request supersedes the original ESP32-C3-WROOM-02-N4 selection:
 
 ## Electronic parts and validation
 
+Latest full board review: `evidence/R8-six-point-review-2026-10-06/REVIEW.md`.
+Fresh25 official JLCPCB listings match fitted MPNs/SMT assembly; fitted radio
+C19949072 reports3 direct/66 overseas, so five-board inventory requires
+confirmation (procurement096). Do not substitute without exact qualification
+or claim all stock reserved. Latest standard JST programmer0.8.0 UART contract
+passes; UART firmware build/install and physical programming remain pending.
+
 Latest functional/power audit successor is `evidence/R8-functional-review-2026-10-06/REVIEW.md`.
 Exact fitted C56594 is1.5µH±30%, minimum1.05µH; older±20% ripple calculations
 are superseded, original evidence immutable. TI20% saturation headroom now

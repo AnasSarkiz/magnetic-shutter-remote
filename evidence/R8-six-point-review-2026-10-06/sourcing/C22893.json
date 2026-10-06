@@ -1,0 +1,41 @@
+{
+  "lcsc": "C22893",
+  "mpn": "0603WAF1872T5E",
+  "references": [
+    "R11"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:22.728360+00:00",
+  "url": "https://jlcpcb.com/partdetail/C22893",
+  "response_url": "https://jlcpcb.com/partdetail/C22893",
+  "html_sha256": "49a0326d836025fcad284a5032451da6c9b4142afe18fc6d91fdf259c28b79aa",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 121574,
+    "overseasStockCount": 127543,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

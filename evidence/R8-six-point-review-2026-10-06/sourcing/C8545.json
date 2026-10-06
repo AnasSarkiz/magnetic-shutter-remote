@@ -1,0 +1,42 @@
+{
+  "lcsc": "C8545",
+  "mpn": "2N7002",
+  "references": [
+    "Q1",
+    "Q2"
+  ],
+  "quantity_per_board": 2,
+  "quantity_for_five_finished_boards_without_attrition": 10,
+  "checked_at_utc": "2026-10-06T11:57:20.930010+00:00",
+  "url": "https://jlcpcb.com/partdetail/C8545",
+  "response_url": "https://jlcpcb.com/partdetail/C8545",
+  "html_sha256": "d145ab6c5f3336147f51549af11347d1120b21456ebe05f72d7e11ee24f857fc",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 1452920,
+    "overseasStockCount": 1593414,
+    "preMinPurchaseNum": 640,
+    "encapsulationNumber": 3000,
+    "lossNumber": 5,
+    "leastPatchNumber": 10,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

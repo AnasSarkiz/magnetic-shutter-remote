@@ -1,0 +1,41 @@
+{
+  "lcsc": "C19725033",
+  "mpn": "BQ25185DLHR",
+  "references": [
+    "U2"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:14.282176+00:00",
+  "url": "https://jlcpcb.com/partdetail/C19725033",
+  "response_url": "https://jlcpcb.com/partdetail/C19725033",
+  "html_sha256": "30c1350672a4568ff423a3d5211732693933afb9da86a4b6b6b1daba74f59d48",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 3",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3533,
+    "overseasStockCount": 3636,
+    "preMinPurchaseNum": 6,
+    "encapsulationNumber": 3000,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

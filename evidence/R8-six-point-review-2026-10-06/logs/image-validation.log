@@ -1,0 +1,2 @@
+Image validation PASS: {'bytes': 411576, 'sha256': 'bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132', 'chip_id': 5}
+No serial device opened. Use --write --port after following PROGRAMMING.md.

@@ -1,0 +1,41 @@
+{
+  "lcsc": "C37616412",
+  "mpn": "USB4215-03-A",
+  "references": [
+    "J1"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:14.371885+00:00",
+  "url": "https://jlcpcb.com/partdetail/C37616412",
+  "response_url": "https://jlcpcb.com/partdetail/C37616412",
+  "html_sha256": "bd340491bedcb797cf61068c9f1019374b6d4db2c168e269a13cb50ab7997170",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 22,
+    "overseasStockCount": 114,
+    "preMinPurchaseNum": 13,
+    "encapsulationNumber": 1200,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

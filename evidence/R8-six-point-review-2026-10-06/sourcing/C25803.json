@@ -1,0 +1,44 @@
+{
+  "lcsc": "C25803",
+  "mpn": "0603WAF1003T5E",
+  "references": [
+    "R5",
+    "R6",
+    "R12",
+    "R13"
+  ],
+  "quantity_per_board": 4,
+  "quantity_for_five_finished_boards_without_attrition": 20,
+  "checked_at_utc": "2026-10-06T11:57:20.447200+00:00",
+  "url": "https://jlcpcb.com/partdetail/C25803",
+  "response_url": "https://jlcpcb.com/partdetail/C25803",
+  "html_sha256": "b741df559ed32eaa5fcb6cdb4cfc9d0f10bd601a787cc15d87c9b8fc744747fa",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 20070593,
+    "overseasStockCount": 22010609,
+    "preMinPurchaseNum": 3760,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

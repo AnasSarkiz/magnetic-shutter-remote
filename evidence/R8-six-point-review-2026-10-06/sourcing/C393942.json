@@ -1,0 +1,41 @@
+{
+  "lcsc": "C393942",
+  "mpn": "TS24CA",
+  "references": [
+    "SW2"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:18.976610+00:00",
+  "url": "https://jlcpcb.com/partdetail/C393942",
+  "response_url": "https://jlcpcb.com/partdetail/C393942",
+  "html_sha256": "33d3ce9a5d7c879478a77564aef20a186c55342b5c863440741f765cd06cb828",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 400566,
+    "overseasStockCount": 406482,
+    "preMinPurchaseNum": 461,
+    "encapsulationNumber": 3000,
+    "lossNumber": 1,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

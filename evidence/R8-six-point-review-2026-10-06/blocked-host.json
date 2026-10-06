@@ -1,0 +1,9 @@
+{
+  "host": "assets.jlcpcb.com",
+  "operation": "Read official JLCPCB part-detail client script referenced by its public listing page, to corroborate inventory UI field labels.",
+  "result": "Session proxy HTTPS tunnel returned403 Forbidden",
+  "public_listing_pages": "All25 exact jlcpcb.com HTML listings retrieved successfully; raw inventory fields retained.",
+  "network_policy_changed": false,
+  "proxy_bypassed": false,
+  "limitations": "Browser presentation of direct/overseas stock and final PCBA allocation not corroborated; supplier processed-preview/order approval remains pending."
+}

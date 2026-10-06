@@ -1,0 +1,43 @@
+{
+  "lcsc": "C21190",
+  "mpn": "0603WAF1001T5E",
+  "references": [
+    "R3",
+    "R4",
+    "R7"
+  ],
+  "quantity_per_board": 3,
+  "quantity_for_five_finished_boards_without_attrition": 15,
+  "checked_at_utc": "2026-10-06T11:57:13.688254+00:00",
+  "url": "https://jlcpcb.com/partdetail/C21190",
+  "response_url": "https://jlcpcb.com/partdetail/C21190",
+  "html_sha256": "d9d2eeb9e14ec1700dc4615ddbb83673c860f47d4339f82af86631455c9f7eac",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 15816547,
+    "overseasStockCount": 21274410,
+    "preMinPurchaseNum": 4512,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

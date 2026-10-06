@@ -1,0 +1,43 @@
+{
+  "lcsc": "C720477",
+  "mpn": "TS-1088-AR02016",
+  "references": [
+    "SW3",
+    "SW4",
+    "SW5"
+  ],
+  "quantity_per_board": 3,
+  "quantity_for_five_finished_boards_without_attrition": 15,
+  "checked_at_utc": "2026-10-06T11:57:19.509579+00:00",
+  "url": "https://jlcpcb.com/partdetail/C720477",
+  "response_url": "https://jlcpcb.com/partdetail/C720477",
+  "html_sha256": "5427f8f0e60ca97ea1db0d065c10286d1ede1b6016a64f83bc30f9b7d929981e",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 716001,
+    "overseasStockCount": 766539,
+    "preMinPurchaseNum": 214,
+    "encapsulationNumber": 4000,
+    "lossNumber": 4,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

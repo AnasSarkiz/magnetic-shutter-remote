@@ -1,0 +1,42 @@
+{
+  "lcsc": "C23186",
+  "mpn": "0603WAF5101T5E",
+  "references": [
+    "R2",
+    "R1"
+  ],
+  "quantity_per_board": 2,
+  "quantity_for_five_finished_boards_without_attrition": 10,
+  "checked_at_utc": "2026-10-06T11:57:14.626896+00:00",
+  "url": "https://jlcpcb.com/partdetail/C23186",
+  "response_url": "https://jlcpcb.com/partdetail/C23186",
+  "html_sha256": "f201952e6d6f7870d2a31fb39a87aa3bd5b3230de99850a35c91b83cb302c6ca",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": null,
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 24108474,
+    "overseasStockCount": 25186290,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

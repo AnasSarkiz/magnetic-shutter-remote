@@ -137,3 +137,5 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [094 — Named schematic pin arrangement produces invalid Circuit JSON](094-named-schematic-arrangement-produces-invalid-json.md): pinned core/schema mismatch; supported numeric board-level arrangement used, original failed input retained.
 
 - [095 — Power review uses wrong inductor tolerance](095-power-review-uses-wrong-inductor-tolerance.md): project audit defect corrected from exact manufacturer±30% row, TI20% saturation headroom enforced; old checker fails meaningful regression, unchanged route23 passes corrected budget. Not an importer defect.
+
+- [096 — Selected radio stock needs confirmation](096-selected-radio-stock-needs-confirmation.md): fresh official C19949072 listing reports3 direct/66 overseas; direct field alone does not cover planned five boards. Procurement constraint, not an R8 electrical/importer defect. All25 exact parts listed for SMT;24 direct inventory fields cover the planning quantity before attrition.

@@ -1,5 +1,14 @@
 # Current R8 compact PCB review — 2026-10-06
 
+Latest [six-point review](../evidence/R8-six-point-review-2026-10-06/REVIEW.md)
+passes12 fresh placement/netlist/copper/current/fabrication checks on unchanged
+0.3.5 route23. Official25 exact JLCPCB MPN/SMT listings reviewed;24 direct fields
+cover five boards, but fitted radioC19949072 returns3 direct/66 overseas and
+needs allocation confirmation (procurement096). Supporting UI host
+assets.jlcpcb.com was proxy-blocked403; no policy change/bypass. Programmer
+latest0.8.0 UART is compatible with J3, but UART UF2 build/install, physical
+flash/readback and other hardware/MagSafe tests remain pending. No substitution/order.
+
 Latest functional follow-up: [review](../evidence/R8-functional-review-2026-10-06/REVIEW.md).
 Fresh29/29 physical nets and0 native DRC errors/shorts pass, with manufacturer
 power/charge/switch/boot/UART and compiled firmware GPIO/HID review. Audit095

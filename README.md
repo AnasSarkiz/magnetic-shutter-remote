@@ -1,5 +1,12 @@
 # Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
+Latest [six-point board review](evidence/R8-six-point-review-2026-10-06/REVIEW.md)
+passes fresh placement/netlist/DRC/shorts/29-net connectivity/164-width/current
+and12-file fabrication readback. All25 exact parts are listed for SMT on JLCPCB;
+ESP32C19949072 reports3 direct/66 overseas, so stock for five boards needs
+confirmation. Standard JST programmer0.8.0 UART matches J3, with UART firmware,
+battery power and manual BOOT/RESET required. Physical operation/fit remains untested.
+
 Latest [functional net review](evidence/R8-functional-review-2026-10-06/REVIEW.md)
 passes power/charge/switch/boot/UART/button design checks and fresh29/29 physical
 nets,0 DRC errors/shorts. Corrected the checker to the fitted inductor's±30%

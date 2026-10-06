@@ -1,5 +1,15 @@
 # Current R8 compact PCB review — 2026-10-06
 
+Latest [six-point review](evidence/R8-six-point-review-2026-10-06/REVIEW.md):12 fresh
+guarded checks pass, including all five native placement/netlist gates, native
+shorts/DRC,29 physical nets,164 widths, corrected power and12 fabrication files.
+All44 poses/159 electrical terminals remain qualified/unchanged. Fresh official
+JLCPCB exact25-MPN/SMT listings pass identity;24 direct inventory fields cover
+five boards before attrition. C19949072 direct3/overseas66 needs allocation
+confirmation (procurement096). Latest programmer0.8.0 source/UART contract
+review passes; UART firmware build/install and actual flashing remain pending.
+No board revision; supplier preview, hardware and complete MagSafe fit untested.
+
 Functional follow-up: [manufacturer/net/firmware review](evidence/R8-functional-review-2026-10-06/REVIEW.md).
 Fresh native0 errors/shorts,29/29 physical nets and44 identities/159 terminals
 pass. Project audit095 corrected fitted1.5µH±30% (min1.05µH) and enforced TI20%

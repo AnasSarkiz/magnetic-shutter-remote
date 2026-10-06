@@ -1,0 +1,121 @@
+[
+  {
+    "check": "unrouted-netlist",
+    "command": [
+      "tsci",
+      "check",
+      "netlist",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "unrouted-pin_specification",
+    "command": [
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "unrouted-source",
+    "command": [
+      "tsci",
+      "check",
+      "source",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "unrouted-schematic-placement",
+    "command": [
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "unrouted-placement",
+    "command": [
+      "tsci",
+      "check",
+      "placement",
+      "tests/fixtures/r8-compact-placement.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "current-contracts",
+    "command": [
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "current-native",
+    "command": [
+      "bun",
+      "scripts/check-r8-native.ts",
+      "evidence/R8-six-point-review-2026-10-06/native-checks.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "current-shorts",
+    "command": [
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "physical-connectivity",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-connectivity.py",
+      "--output",
+      "evidence/R8-six-point-review-2026-10-06/physical-connectivity.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "trace-widths",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-trace-widths.py",
+      "--output",
+      "evidence/R8-six-point-review-2026-10-06/trace-widths.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "power-budgets",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-power.py",
+      "--output",
+      "evidence/R8-six-point-review-2026-10-06/power-path-measurements.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "fabrication-readback",
+    "command": [
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-exports.py",
+      "fabrication/R8-compact-pcb-2026-10-06/R8-compact-route23-Gerbers.zip",
+      "dist/index/circuit.json",
+      "--output",
+      "evidence/R8-six-point-review-2026-10-06/readback"
+    ],
+    "exit_code": 0
+  }
+]

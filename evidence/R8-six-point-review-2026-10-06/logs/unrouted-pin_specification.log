@@ -1,0 +1,54 @@
+{
+  "started_utc": "20261006T115821042635Z",
+  "command": [
+    "tsci",
+    "check",
+    "pin_specification",
+    "tests/fixtures/r8-compact-placement.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Errors: 0
+Warnings: 2
+- source_no_power_pin_defined_warning: Q1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q2 has no pin with requires_power=true
+{
+  "started_utc": "20261006T115821042635Z",
+  "command": [
+    "tsci",
+    "check",
+    "pin_specification",
+    "tests/fixtures/r8-compact-placement.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T11:58:27.320866+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 1649524,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T115821042635Z.log"
+}

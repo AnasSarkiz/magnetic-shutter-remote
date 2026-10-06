@@ -1,0 +1,41 @@
+{
+  "lcsc": "C160389",
+  "mpn": "BM03B-SRSS-TB(LF)(SN)",
+  "references": [
+    "J3"
+  ],
+  "quantity_per_board": 1,
+  "quantity_for_five_finished_boards_without_attrition": 5,
+  "checked_at_utc": "2026-10-06T11:57:19.802129+00:00",
+  "url": "https://jlcpcb.com/partdetail/C160389",
+  "response_url": "https://jlcpcb.com/partdetail/C160389",
+  "html_sha256": "63ff96357be526d20d204c2cc0fe664ba63751169a6c105eac4363547d2267d1",
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "componentProductType": 0,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "xrayFlag": false,
+    "fixtureFlag": false,
+    "needAuditFlag": false,
+    "manufacturerBlackFlag": null,
+    "assemblyComponentFlag": false,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 31699,
+    "overseasStockCount": 32152,
+    "preMinPurchaseNum": 33,
+    "encapsulationNumber": 1500,
+    "lossNumber": 0,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "direct_inventory_covers_five_boards_without_attrition": true,
+  "listing_has_smt_assembly_mode": true,
+  "status": "PASS_PUBLIC_LISTING",
+  "limitations": [
+    "Public listing fields only; no stock reservation, attrition allowance, quote or supplier-processed assembly preview.",
+    "Overseas inventory is recorded separately and not treated as locally orderable PCBA inventory."
+  ]
+}

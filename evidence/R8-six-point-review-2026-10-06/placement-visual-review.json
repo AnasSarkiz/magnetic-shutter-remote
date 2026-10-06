@@ -1,0 +1,555 @@
+{
+  "observed_utc": "2026-10-06T12:05:05.983774+00:00",
+  "circuit_sha256": "e750ee12dd488465e17805e454f4176144a3afb322ebe66c77003d254dd82b3c",
+  "fitted_poses_identical_to_qualified_unrouted": true,
+  "fitted_references": 44,
+  "poses": {
+    "J1": {
+      "center": {
+        "x": 0,
+        "y": 24.5101989
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "USB4215-03-A",
+      "lcsc": [
+        "C37616412"
+      ]
+    },
+    "R2": {
+      "center": {
+        "x": 0,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": [
+        "C23186"
+      ]
+    },
+    "R1": {
+      "center": {
+        "x": -4,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": [
+        "C23186"
+      ]
+    },
+    "U2": {
+      "center": {
+        "x": 0,
+        "y": 13
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "BQ25185DLHR",
+      "lcsc": [
+        "C19725033"
+      ]
+    },
+    "R3": {
+      "center": {
+        "x": 5.5,
+        "y": 9
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": [
+        "C21190"
+      ]
+    },
+    "C2": {
+      "center": {
+        "x": 4.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": [
+        "C19666"
+      ]
+    },
+    "C1": {
+      "center": {
+        "x": 8,
+        "y": 20
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CL10A475KO8NNNC",
+      "lcsc": [
+        "C19666"
+      ]
+    },
+    "R4": {
+      "center": {
+        "x": 8,
+        "y": 23
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": [
+        "C21190"
+      ]
+    },
+    "LED1": {
+      "center": {
+        "x": 8,
+        "y": 26
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "KT-0603R",
+      "lcsc": [
+        "C2286"
+      ]
+    },
+    "J2": {
+      "center": {
+        "x": -18,
+        "y": 13
+      },
+      "rotation": 270,
+      "layer": "top",
+      "mpn": "SM02B-SRSS-TB(LF)(SN)",
+      "lcsc": [
+        "C160402"
+      ]
+    },
+    "R8": {
+      "center": {
+        "x": -5,
+        "y": 16
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1303T5E",
+      "lcsc": [
+        "C22795"
+      ]
+    },
+    "R9": {
+      "center": {
+        "x": 1,
+        "y": 17
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": [
+        "C25804"
+      ]
+    },
+    "C8": {
+      "center": {
+        "x": -5.5,
+        "y": 13.4
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "C9": {
+      "center": {
+        "x": -5,
+        "y": 11
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "TCC0603COG470J500CT",
+      "lcsc": [
+        "C282505"
+      ]
+    },
+    "U1": {
+      "center": {
+        "x": 0,
+        "y": -10.5
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "ESPC3-12-N4",
+      "lcsc": [
+        "C19949072"
+      ]
+    },
+    "C5": {
+      "center": {
+        "x": 11,
+        "y": -8
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": [
+        "C14663"
+      ]
+    },
+    "C10": {
+      "center": {
+        "x": 12,
+        "y": -4.5
+      },
+      "rotation": 90,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "SW2": {
+      "center": {
+        "x": 20,
+        "y": -8.5
+      },
+      "rotation": 270,
+      "layer": "top",
+      "mpn": "TS24CA",
+      "lcsc": [
+        "C393942"
+      ]
+    },
+    "SW3": {
+      "center": {
+        "x": 18,
+        "y": -3
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": [
+        "C720477"
+      ]
+    },
+    "R7": {
+      "center": {
+        "x": -15,
+        "y": -5
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": [
+        "C21190"
+      ]
+    },
+    "LED2": {
+      "center": {
+        "x": -19,
+        "y": -5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "KT-0603R",
+      "lcsc": [
+        "C2286"
+      ]
+    },
+    "J3": {
+      "center": {
+        "x": 13.2,
+        "y": 16
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "BM03B-SRSS-TB(LF)(SN)",
+      "lcsc": [
+        "C160389"
+      ]
+    },
+    "SW4": {
+      "center": {
+        "x": -19,
+        "y": -9
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": [
+        "C720477"
+      ]
+    },
+    "SW5": {
+      "center": {
+        "x": 14.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": [
+        "C720477"
+      ]
+    },
+    "SW1": {
+      "center": {
+        "x": 19,
+        "y": 5
+      },
+      "rotation": 90,
+      "layer": "top",
+      "mpn": "MSK12C02",
+      "lcsc": [
+        "C431540"
+      ]
+    },
+    "R5": {
+      "center": {
+        "x": 4,
+        "y": 3
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": [
+        "C25803"
+      ]
+    },
+    "Q1": {
+      "center": {
+        "x": -4,
+        "y": 1
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "2N7002",
+      "lcsc": [
+        "C8545"
+      ]
+    },
+    "R6": {
+      "center": {
+        "x": 0,
+        "y": 1.5
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": [
+        "C25803"
+      ]
+    },
+    "U3": {
+      "center": {
+        "x": -10,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TPS63031DSKR",
+      "lcsc": [
+        "C15516"
+      ]
+    },
+    "L1": {
+      "center": {
+        "x": -14,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top",
+      "mpn": "SWPA3015S1R5NT",
+      "lcsc": [
+        "C56594"
+      ]
+    },
+    "C11": {
+      "center": {
+        "x": -14,
+        "y": -1
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "C12": {
+      "center": {
+        "x": -10,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "C13": {
+      "center": {
+        "x": -7,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": [
+        "C14663"
+      ]
+    },
+    "C3": {
+      "center": {
+        "x": -10,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "C4": {
+      "center": {
+        "x": -10,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": [
+        "C15850"
+      ]
+    },
+    "U4": {
+      "center": {
+        "x": -18,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TPS3839G33DBZR",
+      "lcsc": [
+        "C485802"
+      ]
+    },
+    "C6": {
+      "center": {
+        "x": -18,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": [
+        "C14663"
+      ]
+    },
+    "U5": {
+      "center": {
+        "x": 0,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "TMP390A2DRLR",
+      "lcsc": [
+        "C5219772"
+      ]
+    },
+    "C7": {
+      "center": {
+        "x": 1.5,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": [
+        "C14663"
+      ]
+    },
+    "R10": {
+      "center": {
+        "x": -4.5,
+        "y": 6
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1621T5E",
+      "lcsc": [
+        "C22844"
+      ]
+    },
+    "R11": {
+      "center": {
+        "x": 4.5,
+        "y": 5.5
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF1872T5E",
+      "lcsc": [
+        "C22893"
+      ]
+    },
+    "R12": {
+      "center": {
+        "x": 9.5,
+        "y": 10
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": [
+        "C25803"
+      ]
+    },
+    "R13": {
+      "center": {
+        "x": 8,
+        "y": 12
+      },
+      "rotation": 180,
+      "layer": "top",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": [
+        "C25803"
+      ]
+    },
+    "Q2": {
+      "center": {
+        "x": 8,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top",
+      "mpn": "2N7002",
+      "lcsc": [
+        "C8545"
+      ]
+    }
+  },
+  "critical_orientation_review": {
+    "J1": "180degrees;USB mouth +Y",
+    "J2": "270degrees;side battery SH approach",
+    "J3": "0degrees;+Z top-entry SH;pin1RX/pin2GND/pin3TX",
+    "SW2": "270degrees;right-edge horizontal actuation toward -X",
+    "U1": "180degrees;antenna toward -Y"
+  },
+  "visual_views_inspected": {
+    "evidence/R8-compact-pcb-2026-10-06/visual-review/pcb-top.png": "e878b0cbd3ff25101b694dba36af3c031ea919f475c30173b11a8a04be59dff7",
+    "evidence/R8-compact-pcb-2026-10-06/visual-review/pcb-bottom.png": "dc64b4736de427e685ab70ee04ce6b82e8edd8b3af5dc1ca37a258c5f1166edc",
+    "evidence/R8-compact-pcb-2026-10-06/visual-review/Power-detail.png": "e7aec9c789f8f03bfee066e5a9d282cd99678b9fac608e42e1da629500b3188b",
+    "evidence/R8-compact-pcb-2026-10-06/visual-review/Protection-detail.png": "c0af15602f9969ba57758a357fbfb003d4ef3209285c06ee733833e05fe00d97",
+    "evidence/R8-compact-pcb-2026-10-06/visual-review/Radio-detail.png": "38c6a10950b2a28f0e4e3dcec92268f9c8a83c650f3b4dd68a5ecb5327566260"
+  },
+  "limitations": [
+    "Courtyards/geometric PCB placement and nominal manufacturer registration are checked; physical cable/body/enclosure clearance is not tested.",
+    "PCB copper RF exclusion does not prove magnet/phone/battery/harness RF performance.",
+    "Capacitor transient response, cell thermal coupling, charge heating and loaded rail margins require physical tests."
+  ]
+}
