@@ -1,6 +1,6 @@
 {
   "observed_utc": "2026-10-06T14:57:57.925266+00:00",
-  "circuit_sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
   "status": "PASS: all six native A4 schematic pages viewed; individual component roles readable with clear two-column spacing on each guide; navigation captions do not overlap wires/symbols. All 44 fitted reference explanations render and match the original electrical sheet via two regression tests/188 assertions.",
   "reviewed_views": [
     "Power-a4.png",
@@ -49,5 +49,7 @@
     "Radio-detail.png": "7543d91129d6e912b88f5b6dac68afe7e69643b1c53edb36cb1224fde8bb3e7b"
   },
   "layout": "Three original circuit drawings plus three native A4 explanatory pages. Each fitted reference has a title and two explanatory lines. Radio guide adds the actual JST/programmer operating context. Native schematic SVG defaults to first sheet; explicit supported schematicSheetId rendering exports/reviews each of all six pages.",
-  "remaining_limits": "Physical operation, supplier processed-preview and full MagSafe fit remain pending."
+  "remaining_limits": "Physical operation, supplier processed-preview and full MagSafe fit remain pending.",
+  "version039_rebuild_views_all_exact_bytes_unchanged": true,
+  "version039_observed_utc": "2026-10-06T15:20:05.234423+00:00"
 }

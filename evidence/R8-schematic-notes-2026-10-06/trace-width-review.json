@@ -1,5 +1,5 @@
 {
-  "circuit_sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
   "tracks": [
     {
       "trace_id": "saved_fanout_pcb_group_0_0",

@@ -1,0 +1,7 @@
+{
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
+  "previous_circuit_sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
+  "previous_source_artifact_commit": "7c2ec93dcadb0c2672ce7f73d7105cd5858a085e",
+  "all_schematic_electronics_and_pcb_elements_exactly_equal": true,
+  "only_source_filesystem_hash_metadata_changed": true
+}

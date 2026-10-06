@@ -1,0 +1,51 @@
+{
+  "started_utc": "20261006T151738069965Z",
+  "command": [
+    "bun",
+    "scripts/export-gerbers.ts",
+    "dist/index/circuit.json",
+    "fabrication/R8-schematic-notes-2026-10-06/gerbers"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+12 original Gerber/Excellon outputs from dist/index/circuit.json
+{
+  "started_utc": "20261006T151738069965Z",
+  "command": [
+    "bun",
+    "scripts/export-gerbers.ts",
+    "dist/index/circuit.json",
+    "fabrication/R8-schematic-notes-2026-10-06/gerbers"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T15:17:41.037487+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 213368,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T151738069965Z.log"
+}

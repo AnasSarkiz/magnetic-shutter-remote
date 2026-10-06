@@ -1,6 +1,6 @@
 {
-  "circuit_sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
-  "archive_sha256": "e4a54c79eef3be8d92525aaddb2aba88bff0488973bc8b6cbb2ab7c8ff583ee5",
+  "circuit_sha256": "235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac",
+  "archive_sha256": "b3747fb9a77ff79935e0c8a58d0f5c357631376cf870b4b0857b363c056a7eae",
   "failures": [],
   "stencil_thickness_mm": 0.1,
   "stencil": [

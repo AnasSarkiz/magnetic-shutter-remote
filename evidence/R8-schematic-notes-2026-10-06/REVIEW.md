@@ -1,4 +1,4 @@
-# R8 0.3.8 — native schematic component explanations
+# R8 0.3.9 — native schematic component explanations
 
 Every fitted component now has a role/title and two short explanatory lines
 in the native schematic. Three A4 component guides accompany the original
@@ -10,7 +10,7 @@ regulation, battery cutoff and temperature gating. Statements describe
 reviewed design intent; actual prototype operation remains unverified.
 
 Current-source native build passes. Circuit JSON SHA256:
-`a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6`. All1432 non-schematic elements match prior commit
+`235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac`. All1432 non-schematic elements match prior commit
 `bb29d8e3c12947e9cc870039281b1ce138427350` exactly: electrical components, nets,
 source connections, PCB placement, traces, vias, pours, keepouts and silk.
 No purchase/import definition, part value, routing, firmware or PCB changes.
@@ -51,5 +51,11 @@ DOIT defect. Missing `3V3` metadata remains a separate importer issue.
 Procurement096 allocation, supplier processed-preview/stackup/assembly
 approval, physical programming/BLE/power/thermal/runtime and complete MagSafe
 grip/phone/case/RF qualification stay pending as in the earlier review.
-Public0.3.8-prototype is prepared under standing board-publication authority;
+Public0.3.9-prototype is prepared under standing board-publication authority;
 actual public inventory/byte/visibility verification is recorded separately.
+
+Native0.3.8 upload failed after348 successes/3 request timeouts; retained
+`native-push038-failed.log`. The native CLI cannot resume releases and
+increments to0.3.9 on retry. Supported `--compress` publication is used
+for the same unchanged schematic/PCB artifacts. The incomplete0.3.8
+release is not a successful publication.

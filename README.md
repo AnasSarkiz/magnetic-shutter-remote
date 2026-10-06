@@ -1,9 +1,9 @@
-# Current R8 0.3.8 schematic component guides — 2026-10-06
+# Current R8 0.3.9 schematic component guides — 2026-10-06
 
 Native schematic text explains all44 fitted components on three matching
 A4 guide pages, alongside the three original A4 circuit drawings. Each
 drawing points to its component guide. [Current review](evidence/R8-schematic-notes-2026-10-06/REVIEW.md).
-Current Circuit JSON SHA256: `a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6`.
+Current Circuit JSON SHA256: `235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac`.
 All1432 non-schematic elements/PCB artwork are unchanged; fresh0 native
 DRC errors/shorts,29/29 physical nets,164 widths/current budgets and full
 fabrication/process readback pass. All six A4 pages visually inspected.

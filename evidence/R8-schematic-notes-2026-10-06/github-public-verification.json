@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-10-06T15:03:09.191477+00:00",
+  "commit": "7c2ec93dcadb0c2672ce7f73d7105cd5858a085e",
+  "repository_public": true,
+  "anonymous_readbacks": [
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "sha256": "4adacd774840c62cd7a76b0f922c6b793d2e2405608c0c1edee78db12e1a729b",
+      "anonymous_matches": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "9082e631f49b48069f7db3e6c187fdbe7e13cc8f488489d7878b413272c19758",
+      "anonymous_matches": true
+    },
+    {
+      "path": "tests/r8-schematic-notes.test.ts",
+      "sha256": "2704d90b3441ae9a6faf67a857e147e40b48f8ddd9cd5d987f64bda3f0e87356",
+      "anonymous_matches": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "a832847cf74311f56e4c2ab3c4256f34cdda2a66a7d2f4b8b49617762fc411c6",
+      "anonymous_matches": true
+    },
+    {
+      "path": "evidence/R8-schematic-notes-2026-10-06/visual-review/PowerGuide-a4.svg",
+      "sha256": "4060ec61a4a04c5f430710e635610dc5b417792c2e08d98077f4feb2b5392081",
+      "anonymous_matches": true
+    },
+    {
+      "path": "evidence/R8-schematic-notes-2026-10-06/visual-review/RadioGuide-a4.svg",
+      "sha256": "33572d1d3df49b6a83c9da67ad508006b44014cdde408efe5c285f9bfed1bc90",
+      "anonymous_matches": true
+    },
+    {
+      "path": "evidence/R8-schematic-notes-2026-10-06/visual-review/ProtectionGuide-a4.svg",
+      "sha256": "f20a02a1ff003d3eeb7a102889120f8e976ec1db7b83a9cc1855d915125efc7b",
+      "anonymous_matches": true
+    }
+  ]
+}
