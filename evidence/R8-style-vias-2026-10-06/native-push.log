@@ -1,0 +1,491 @@
+{
+  "started_utc": "20261006T171642183330Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/registry-package-r8-style-vias-0310-20261006 && tsci push index.circuit.tsx --include-dist --version-tag prototype"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+⬆︎ BOM.csv
+⬆︎ BOM.md
+⬆︎ README.md
+⬆︎ VALIDATION.md
+⬆︎ bom.json
+⬆︎ bun.lock
+⬆︎ dist/index/circuit.json
+⬆︎ evidence/R8-INTEGRITY-2026-10-06-style-vias0310.json
+⬆︎ evidence/R8-side-shutter-2026-10-05/qualification/supplier-reference/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md
+📦 evidence/R8-standard-programmer-2026-10-05/qualification/C160389-supplier.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/land-audit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-release.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/unrouted/circuit.json
+⬆︎ evidence/R8-style-vias-2026-10-06/J3-supplier-terminal-registration.json
+⬆︎ evidence/R8-style-vias-2026-10-06/REPRODUCE-COMMANDS.json
+⬆︎ evidence/R8-style-vias-2026-10-06/REVIEW.md
+⬆︎ evidence/R8-style-vias-2026-10-06/SW2-supplier-terminal-registration.json
+⬆︎ evidence/R8-style-vias-2026-10-06/before-trusted-ui/dialog.txt
+📦 evidence/R8-style-vias-2026-10-06/before-trusted-ui/style-dialog.png
+⬆︎ evidence/R8-style-vias-2026-10-06/check-results.json
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/archive-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/assembly-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/build-route-eighteenth.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/cam-regressions-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/cli-style-json-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/cli-style-source-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/connectivity-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/contracts-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/electrical-contract-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/format-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/gerbers-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/manufacturing-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/native-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/notes-coverage-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/placement-build-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/power-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/pre-netlist-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/pre-pins-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/pre-placement-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/pre-source-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/pre-style-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/process-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/readback-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/shorts-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/smoke-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/snapshot-check-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/snapshot-update-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/test-format-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/typecheck-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/ui-analysis-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/ui-bundle-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/via-regression-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/visual-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/checks/widths-final.log
+⬆︎ evidence/R8-style-vias-2026-10-06/electrical-contract.json
+⬆︎ evidence/R8-style-vias-2026-10-06/failed-route10/circuit.json
+⬆︎ evidence/R8-style-vias-2026-10-06/failed-route20-visual/process-review.json
+⬆︎ evidence/R8-style-vias-2026-10-06/final-manufacturing.json
+⬆︎ evidence/R8-style-vias-2026-10-06/final-native-checks.json
+⬆︎ evidence/R8-style-vias-2026-10-06/final-process/process-review.json
+⬆︎ evidence/R8-style-vias-2026-10-06/final-readback/readback.json
+⬆︎ evidence/R8-style-vias-2026-10-06/final-ui/analyzer-response-0.js
+⬆︎ evidence/R8-style-vias-2026-10-06/final-ui/dialog.txt
+⬆︎ evidence/R8-style-vias-2026-10-06/final-ui/review.json
+📦 evidence/R8-style-vias-2026-10-06/final-ui/style-dialog.png
+⬆︎ evidence/R8-style-vias-2026-10-06/final-unrouted/circuit.json
+⬆︎ evidence/R8-style-vias-2026-10-06/historical-inputs.json
+⬆︎ evidence/R8-style-vias-2026-10-06/managed-environment-observation.json
+⬆︎ evidence/R8-style-vias-2026-10-06/outer-layer-vias.json
+⬆︎ evidence/R8-style-vias-2026-10-06/physical-connectivity.json
+⬆︎ evidence/R8-style-vias-2026-10-06/placement-preservation.json
+⬆︎ evidence/R8-style-vias-2026-10-06/power-path-measurements.json
+⬆︎ evidence/R8-style-vias-2026-10-06/preservation.json
+⬆︎ evidence/R8-style-vias-2026-10-06/runtime-observation.json
+⬆︎ evidence/R8-style-vias-2026-10-06/snapshots/index.circuit-pcb.snap.svg
+⬆︎ evidence/R8-style-vias-2026-10-06/snapshots/index.circuit-schematic.snap.svg
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-check.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C14663.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C15516.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C15850.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C160389.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C160402.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C19666.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C19725033.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C19949072.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C21190.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C22795.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C22844.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C2286.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C22893.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C23186.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C25803.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C25804.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C282505.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C37616412.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C393942.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C431540.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C485802.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C5219772.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C56594.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C720477.json
+⬆︎ evidence/R8-style-vias-2026-10-06/sourcing-official/C8545.json
+⬆︎ evidence/R8-style-vias-2026-10-06/trace-width-review.json
+⬆︎ evidence/R8-style-vias-2026-10-06/ui-harness/README.md
+⬆︎ evidence/R8-style-vias-2026-10-06/ui-harness/build-ui.ts
+⬆︎ evidence/R8-style-vias-2026-10-06/ui-harness/index.html
+⬆︎ evidence/R8-style-vias-2026-10-06/ui-harness/index.tsx
+⬆︎ evidence/R8-style-vias-2026-10-06/ui-harness/review-ui.py
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Power-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Power-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Power-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Power-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/PowerGuide-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/PowerGuide-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/PowerGuide-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/PowerGuide-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Protection-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Protection-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Protection-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Protection-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/ProtectionGuide-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/ProtectionGuide-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/ProtectionGuide-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/ProtectionGuide-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Radio-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Radio-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/Radio-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/Radio-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/RadioGuide-a4.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/RadioGuide-a4.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/RadioGuide-detail.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/RadioGuide-detail.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/gerber-bottom.png
+📦 evidence/R8-style-vias-2026-10-06/visual-review/gerber-top.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/inspection.json
+📦 evidence/R8-style-vias-2026-10-06/visual-review/pcb-bottom.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/pcb-bottom.svg
+📦 evidence/R8-style-vias-2026-10-06/visual-review/pcb-top.png
+⬆︎ evidence/R8-style-vias-2026-10-06/visual-review/pcb-top.svg
+⬆︎ evidence/USB4215-import-audit/final/circuit.json
+📦 fabrication/R8-standard-programmer-2026-10-05/R8-standard-programmer-route04-Gerbers.zip
+⬆︎ fabrication/R8-style-vias-2026-10-06/JLCPCB-BOM.csv
+⬆︎ fabrication/R8-style-vias-2026-10-06/JLCPCB-CPL.csv
+📦 fabrication/R8-style-vias-2026-10-06/R8-style-vias-Gerbers.zip
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/B_Cu.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/B_Mask.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/B_Paste.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/B_SilkScreen.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/Edge_Cuts.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/F_Cu.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/F_Fab.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/F_Mask.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/F_Paste.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/F_SilkScreen.gbr
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/drill-L1-L2.drl
+⬆︎ fabrication/R8-style-vias-2026-10-06/gerbers/drill_npth.drl
+⬆︎ firmware/README.md
+⬆︎ firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json
+📦 firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/BUILD-MANIFEST.json
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/CMSIS-LICENSE.txt
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/FreeRTOS-LICENSE.md
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/FreeRTOS-RP2040-LICENSE.md
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/THIRD_PARTY.md
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/debugprobe-LICENSE
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/pico-printf-LICENSE
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/pico-sdk-LICENSE.TXT
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/standard-jst-programmer-LICENSE
+⬆︎ firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/licenses/tinyusb-LICENSE
+📦 firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.bin
+📦 firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.elf
+📦 firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.uf2
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/LICENSE
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/R8-USAGE.md
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/README.md
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/THIRD_PARTY.md
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/board_standard_jst_config.h
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/build.sh
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/openocd-reset.cfg
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/openocd.cfg
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/patch_upstream.py
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/standard_jst_programmer.h
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/status_math.h
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/status_monitor.c
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/status_monitor.h
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/firmware/status_rgb.pio
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/registry-source-manifest.json
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/scripts/check-firmware-math.c
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/scripts/check-firmware-usb.py
+⬆︎ firmware/programmers/standard-jst-programmer-0.8.0/verify-uf2.py
+⬆︎ imports/A_0603WAF1001T5E.tsx
+⬆︎ imports/A_0603WAF1002T5E.tsx
+⬆︎ imports/A_0603WAF1003T5E.tsx
+⬆︎ imports/A_0603WAF1303T5E.tsx
+⬆︎ imports/A_0603WAF1621T5E.tsx
+⬆︎ imports/A_0603WAF1872T5E.tsx
+⬆︎ imports/A_0603WAF5101T5E.tsx
+⬆︎ imports/A_2N7002.tsx
+📦 imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx
+⬆︎ imports/BQ25185DLHR.tsx
+⬆︎ imports/CC0603KRX7R9BB104.tsx
+⬆︎ imports/CL10A475KO8NNNC.tsx
+⬆︎ imports/CL21A106KAYNNNE.tsx
+📦 imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj
+  imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step - failed
+⬆︎ imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx
+📦 imports/ESPC2_12E_N4/ESPC2_12E_N4.obj
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.step
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx
+📦 imports/ESPC3_12_N4/ESPC3_12_N4.obj
+  imports/ESPC3_12_N4/ESPC3_12_N4.step - failed
+⬆︎ imports/ESPC3_12_N4/ESPC3_12_N4.tsx
+  imports/KT_0603R.tsx - failed
+⬆︎ imports/MSK12C02.tsx
+📦 imports/SKRTLAE010/SKRTLAE010.obj
+  imports/SKRTLAE010/SKRTLAE010.step - failed
+⬆︎ imports/SKRTLAE010/SKRTLAE010.tsx
+📦 imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj
+  imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step - failed
+⬆︎ imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx
+📦 imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj
+  imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step - failed
+⬆︎ imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx
+⬆︎ imports/TCC0603COG470J500CT.tsx
+⬆︎ imports/TMP390A2DRLR.tsx
+⬆︎ imports/TPS3839G33DBZR.tsx
+📦 imports/TPS63031DSKR/TPS63031DSKR.obj
+  imports/TPS63031DSKR/TPS63031DSKR.step - failed
+  imports/TPS63031DSKR/TPS63031DSKR.tsx - failed
+📦 imports/TS24CA/TS24CA.obj
+  imports/TS24CA/TS24CA.step - failed
+⬆︎ imports/TS24CA/TS24CA.tsx
+⬆︎ imports/TS_1088_AR02016.tsx
+⬆︎ imports/USB4215_03_A.tsx
+⬆︎ index.circuit.tsx
+⬆︎ mechanical/R8-MAGSAFE-REFERENCE-REVIEW.json
+⬆︎ mechanical/R8-MAGSAFE-REQUIREMENTS.md
+⬆︎ mechanical/R8-MAGSAFE-RESEARCH.md
+⬆︎ package.json
+⬆︎ registry-source-manifest.json
+⬆︎ scripts/audit-authored-placements.ts
+⬆︎ scripts/audit-drills.ts
+⬆︎ scripts/audit-r4-qualification.py
+⬆︎ scripts/audit-r6-registration.py
+⬆︎ scripts/audit-r7-led-fixtures.ts
+⬆︎ scripts/audit-r8-circuit.ts
+⬆︎ scripts/audit-r8-jst3.py
+⬆︎ scripts/audit-r8-module.py
+⬆︎ scripts/audit-radio.py
+⬆︎ scripts/audit-side-shutter.py
+⬆︎ scripts/audit_r7_jst7.py
+⬆︎ scripts/audit_r7_paste_fixture.py
+⬆︎ scripts/check-mechanical-meshes.py
+⬆︎ scripts/check-r6-mechanical-meshes.py
+⬆︎ scripts/check-r6-preservation.py
+⬆︎ scripts/check-r8-native.ts
+⬆︎ scripts/check-r8-output.ts
+⬆︎ scripts/check-routed.ts
+⬆︎ scripts/compare-r5-r6.py
+⬆︎ scripts/curved_geometry.py
+⬆︎ scripts/draw-assembly-review.py
+⬆︎ scripts/draw-r4-assembly.py
+⬆︎ scripts/draw-r5-dimensions.py
+⬆︎ scripts/draw-r5-review.py
+⬆︎ scripts/draw-r6-dimensions.py
+⬆︎ scripts/draw-r6-review.py
+⬆︎ scripts/draw-usb-qualification.py
+⬆︎ scripts/export-assembly.ts
+⬆︎ scripts/export-gerbers.ts
+⬆︎ scripts/export-r8-gerber-zip.py
+⬆︎ scripts/fetch-qualified-datasheets.py
+⬆︎ scripts/finalize-r2-bom.py
+⬆︎ scripts/flash-r8-standard-jst.py
+⬆︎ scripts/inspect-exported-slots.py
+⬆︎ scripts/lib/qualification-source-placements.ts
+⬆︎ scripts/manufacturing-audit.py
+⬆︎ scripts/measure-j1-export.py
+⬆︎ scripts/package_draft.py
+⬆︎ scripts/package_r2.py
+⬆︎ scripts/package_r3.py
+⬆︎ scripts/package_r4_dfm.py
+⬆︎ scripts/package_r5_dfm.py
+⬆︎ scripts/package_r6_prototype.py
+⬆︎ scripts/place-r5-markings.py
+⬆︎ scripts/qualification_paths.py
+⬆︎ scripts/r7_power_budget.py
+⬆︎ scripts/r8_board_geometry.py
+⬆︎ scripts/recheck_board_sourcing.py
+⬆︎ scripts/record-r3-tooling.py
+⬆︎ scripts/record-r5-tooling.py
+⬆︎ scripts/record-r6-tooling.py
+⬆︎ scripts/render-final-cam.py
+⬆︎ scripts/render-legend-review.py
+⬆︎ scripts/render-r6-pcb.ts
+⬆︎ scripts/render-r6-review.ts
+⬆︎ scripts/render-r8-land-comparison.py
+⬆︎ scripts/render-r8-review.ts
+⬆︎ scripts/render-regression.ts
+⬆︎ scripts/render-sheets.ts
+⬆︎ scripts/review-gerbers.py
+⬆︎ scripts/review-order-usb-mask.py
+⬆︎ scripts/review-r3-exports.py
+⬆︎ scripts/review-r4-manufacturing.py
+⬆︎ scripts/review-r5-ground.py
+⬆︎ scripts/review-r5-legend.py
+⬆︎ scripts/review-r5-manufacturing.py
+⬆︎ scripts/review-r5-stencil.py
+⬆︎ scripts/review-r5-usb-pins.py
+⬆︎ scripts/review-r6-3d.py
+⬆︎ scripts/review-r6-ground.py
+⬆︎ scripts/review-r6-legend.py
+⬆︎ scripts/review-r6-manufacturing.py
+⬆︎ scripts/review-r6-mechanics.py
+⬆︎ scripts/review-r6-stencil.py
+⬆︎ scripts/review-r8-connectivity.py
+⬆︎ scripts/review-r8-electrical-contract.py
+⬆︎ scripts/review-r8-exports.py
+⬆︎ scripts/review-r8-power.py
+⬆︎ scripts/review-r8-process.py
+⬆︎ scripts/review-r8-trace-widths.py
+⬆︎ scripts/stage-registry.py
+⬆︎ scripts/update-r2-bom.py
+⬆︎ scripts/validate-r2.py
+⬆︎ scripts/validate-r5.py
+⬆︎ scripts/validate-r6-outputs.py
+⬆︎ scripts/validate-r6.py
+⬆︎ scripts/write-r3-bom.py
+⬆︎ scripts/write-r4-reviews.py
+⬆︎ scripts/write-r5-issues.py
+⬆︎ scripts/write-r6-documents.py
+⬆︎ scripts/write-r6-issues.py
+⬆︎ scripts/write-r8-bom.py
+⬆︎ src/c7-escape-paths.ts
+⬆︎ src/charger-escape-paths.ts
+⬆︎ src/functional-markings.tsx
+⬆︎ src/r8-battery-cap-paths.ts
+⬆︎ src/r8-battery-ok-paths.ts
+⬆︎ src/r8-boot-paths.ts
+⬆︎ src/r8-bulk-cap-paths.ts
+⬆︎ src/r8-cc-paths.ts
+⬆︎ src/r8-charge-disable-paths.ts
+⬆︎ src/r8-charge-led-supply-paths.ts
+⬆︎ src/r8-charge-stat-paths.ts
+⬆︎ src/r8-cold-ground-paths.ts
+⬆︎ src/r8-connector-paths.ts
+⬆︎ src/r8-mosfet-paths.ts
+⬆︎ src/r8-power-paths.ts
+⬆︎ src/r8-prog-paths.ts
+⬆︎ src/r8-prog-routing-paths.ts
+⬆︎ src/r8-radio-cap-paths.ts
+⬆︎ src/r8-radio-ground-paths.ts
+⬆︎ src/r8-radio-vcc-paths.ts
+⬆︎ src/r8-reg-enable-paths.ts
+⬆︎ src/r8-reset-paths.ts
+⬆︎ src/r8-shutter-ground-paths.ts
+⬆︎ src/r8-supervisor-ground-paths.ts
+⬆︎ src/r8-supervisor-vbat-paths.ts
+⬆︎ src/r8-sys-paths.ts
+⬆︎ src/r8-sys-return-paths.ts
+⬆︎ src/r8-temp-ok-paths.ts
+⬆︎ src/r8-temperature-hot-paths.ts
+⬆︎ src/r8-ts-bias-paths.ts
+⬆︎ src/r8-uart-rx-paths.ts
+⬆︎ src/r8-usb-disable-paths.ts
+⬆︎ src/r8-vset-paths.ts
+⬆︎ src/remote-circuit.tsx
+⬆︎ src/schematic-component-notes.tsx
+⬆︎ src/sensor-escape-paths.ts
+⬆︎ src/temperature-escape-paths.ts
+⬆︎ src/usb-escape-paths.ts
+⬆︎ tests/cam/test_board_boundaries.py
+⬆︎ tests/cam/test_exported_trace_geometry.py
+⬆︎ tests/cam/test_power_width_budgets.py
+⬆︎ tests/cam/test_process_metrics.py
+⬆︎ tests/cam/test_through_pad_geometry.py
+⬆︎ tests/fixtures/alps-side-shutter.circuit.tsx
+⬆︎ tests/fixtures/alps-supplier.circuit.tsx
+⬆︎ tests/fixtures/esp32-import.circuit.tsx
+⬆︎ tests/fixtures/espc2-import.circuit.tsx
+⬆︎ tests/fixtures/espc3-import.circuit.tsx
+⬆︎ tests/fixtures/r8-compact-placement.circuit.tsx
+⬆︎ tests/fixtures/r8-jst3-supplier.circuit.tsx
+⬆︎ tests/fixtures/r8-side-placement.circuit.tsx
+⬆︎ tests/fixtures/r8-standard-placement.circuit.tsx
+⬆︎ tests/fixtures/side-shutter-supplier.circuit.tsx
+⬆︎ tests/fixtures/side-shutter.circuit.tsx
+⬆︎ tests/r8-power-metadata.test.ts
+⬆︎ tests/r8-schematic-notes.test.ts
+⬆︎ tests/r8-style-vias.test.ts
+⬆︎ tests/test_cloud_runner.py
+⬆︎ tests/test_r8_alternative_radio.py
+⬆︎ tests/test_r8_c3_radio.py
+⬆︎ tests/test_r8_electrical_contract.py
+⬆︎ tests/test_r8_qualification.py
+⬆︎ tests/test_registry_staging.py
+⬆︎ tests/test_side_shutter.py
+⬆︎ tests/test_standard_jst_programmer.py
+📦 tooling/vendor/circuit-json-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
+📦 tooling/vendor/circuit-json-util-qualified-source.tgz
+📦 tooling/vendor/circuit-to-svg-qualified-source.tgz
+📦 tooling/vendor/core-r8-silk-visibility.tgz
+📦 tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+📦 tooling/vendor/props-r8-mask-style.tgz
+⬆︎ tscircuit-issues/081-routed-output-violates-clearances.md
+⬆︎ tscircuit-issues/091-tangent-pour-cutouts-produce-invalid-ring.md
+⬆︎ tscircuit-issues/092-power-width-review-omits-switching-ripple.md
+⬆︎ tscircuit-issues/093-process-audit-omits-overlapping-legends.md
+⬆︎ tscircuit-issues/094-named-schematic-arrangement-produces-invalid-json.md
+⬆︎ tscircuit.config.json
+⬆︎ tsconfig.json
+
+
+Upload Summary
+  Succeeded: 409 files
+  Failed: 9 files
+    - imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/ESPC3_12_N4/ESPC3_12_N4.step
+      Error: FAIL [502]: POST /package_files/create
+    - imports/KT_0603R.tsx
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/SKRTLAE010/SKRTLAE010.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/TPS63031DSKR/TPS63031DSKR.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/TPS63031DSKR/TPS63031DSKR.tsx
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - imports/TS24CA/TS24CA.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+
+Publish completed with 409 files uploaded and 9 failed upload(s)
+{
+  "started_utc": "20261006T171642183330Z",
+  "command": [
+    "bash",
+    "-c",
+    "cd .codex/runtime/registry-package-r8-style-vias-0310-20261006 && tsci push index.circuit.tsx --include-dist --version-tag prototype"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-06T17:31:54.355181+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 896400,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261006T171642183330Z.log"
+}

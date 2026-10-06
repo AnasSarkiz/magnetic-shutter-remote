@@ -1,0 +1,45 @@
+{
+  "observed_utc": "2026-10-06T17:17:14.631504+00:00",
+  "head": "5509a41218a15ba45ddcbdaf6a58f86848de693c",
+  "branch": "board/r8-doit-c3-prototype-20261005",
+  "remote_branch_matches": true,
+  "frozen_main_unchanged": true,
+  "anonymous_public_github_reads": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b",
+      "matches": true,
+      "anonymous": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "70775d9825e48e56a90e7a47b4ad2e2da15d5f2bd1571c0220d46e479a622237",
+      "matches": true,
+      "anonymous": true
+    },
+    {
+      "path": "src/r8-radio-vcc-paths.ts",
+      "sha256": "b229f92de2b6ce778e439e0b006246d948b3e6e3dba3d9fc13254de332f09474",
+      "matches": true,
+      "anonymous": true
+    },
+    {
+      "path": "src/r8-temp-ok-paths.ts",
+      "sha256": "ea7eab448dc8ab49ca6396917e32225d6c195fa043a7f56096dbefb59772249c",
+      "matches": true,
+      "anonymous": true
+    },
+    {
+      "path": "evidence/R8-style-vias-2026-10-06/final-ui/review.json",
+      "sha256": "2667e0b12274579cc022e134c75747cab3996bf6e4be6f8f7f0853e895713a16",
+      "matches": true,
+      "anonymous": true
+    },
+    {
+      "path": "evidence/R8-style-vias-2026-10-06/REVIEW.md",
+      "sha256": "16f5cda184b0d9c03487b72f6207c5b3ec1a39dd6dfaa48be44613c84c3a5c42",
+      "matches": true,
+      "anonymous": true
+    }
+  ]
+}

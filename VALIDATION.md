@@ -1,5 +1,10 @@
 # Current R8 0.3.10 — schematic style and through vias, 2026-10-06
 
+Public **0.3.10-prototype** inventory/visibility/readback PASS: all
+418 files and 36 critical anonymous reads match.
+[Actual publication receipt](evidence/R8-style-vias-2026-10-06/PUBLICATION.md).
+Hosted preview is `pending` at the recorded observation.
+
 Native standard USB-C schematic and real browser/CLI Style Analysis pass0
 issues. Current-source native0 errors/shorts/dangling and independent0
 manufacturing/process failures pass;29/29 physical nets, all174 physical

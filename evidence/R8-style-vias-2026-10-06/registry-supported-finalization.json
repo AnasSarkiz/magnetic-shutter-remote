@@ -1,0 +1,74 @@
+{
+  "observed_utc": "2026-10-06T17:32:30.288771+00:00",
+  "native_cli_exit_code": 1,
+  "package_name_with_version": "AnasSarkiz/magnetic-shutter-remote-r8@0.3.10-prototype",
+  "release_id": "e8754268-2794-4f0d-94fc-f471cf987136",
+  "native_failed_files": [
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step",
+      "sha256": "bba95db596c0dad394f36dc2246eed661700e66cecca5bbcc5b17efa93279467",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/ESPC3_12_N4/ESPC3_12_N4.step",
+      "sha256": "d16846c481cd1ad6f2780f5177d49dd9f1316ec5d09465b13bdcb9968b899304",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/KT_0603R.tsx",
+      "sha256": "e1bab4c8e862c0801a35cfd7e14d73ca942feae8b65548f725ce162931592e96",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.step",
+      "sha256": "5320d7a2a54b3be031d3299b84bb107c8397b204852fb2c77e9aa5a217f8ca94",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step",
+      "sha256": "949e2e5a0e11691a024f4dc3d1c939c7d85347c4646a36630e045e8cf768bbe0",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step",
+      "sha256": "2de925c4e48a8c9ffbf5df75e8b2e9e6b9e375cbc35b36c6a4920adc85f9fe49",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.step",
+      "sha256": "796d0eb1f197584d2111f35840402f83d583c9497630171950e7c1164fc1fe9d",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+      "sha256": "313da677fe688ca866f49e57ba0aff17e1775470cf47860a440693745d8709cb",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    },
+    {
+      "path": "imports/TS24CA/TS24CA.step",
+      "sha256": "819eb92e92a4876d088c549a8cf5c939caaf645b2315e09e046b4911f737dbd2",
+      "timed_out_native_post_committed_exact_bytes": true,
+      "file_replaced": false
+    }
+  ],
+  "exact_inventory_count_before_ready": 418,
+  "anonymous_critical_preflight_passed_before_ready": true,
+  "official_ready_to_build_update_ok": true,
+  "no_file_upload_replacement_or_custom_upload_endpoint": true,
+  "no_secret_file_read_or_new_credentials": true,
+  "official_update_route_auth": "none",
+  "official_api_sources": [
+    {
+      "url": "https://github.com/tscircuit/api.tscircuit.com/blob/main/routes/package_releases/update.ts",
+      "sha256": "4ae89408eb9837ffbf2ac993e9f493cc5cadd299094e48def43eab456954f3b8"
+    }
+  ]
+}
