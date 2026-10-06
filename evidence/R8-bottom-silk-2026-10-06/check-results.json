@@ -1,0 +1,282 @@
+[
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:25.859212+00:00",
+    "finished_utc": "2026-10-06T19:50:25.971639+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/format.log"
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:25.972041+00:00",
+    "finished_utc": "2026-10-06T19:50:33.045682+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/typecheck.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:33.046133+00:00",
+    "finished_utc": "2026-10-06T19:50:51.714830+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/smoke.log"
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:51.715241+00:00",
+    "finished_utc": "2026-10-06T19:50:54.655137+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/contracts.log"
+  },
+  {
+    "name": "native",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-r8-native.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/final-native-checks.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:54.655557+00:00",
+    "finished_utc": "2026-10-06T19:50:59.957635+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/native.log"
+  },
+  {
+    "name": "shorts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:50:59.958065+00:00",
+    "finished_utc": "2026-10-06T19:51:06.088317+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/shorts.log"
+  },
+  {
+    "name": "cli-style-json",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:06.088706+00:00",
+    "finished_utc": "2026-10-06T19:51:09.968214+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/cli-style-json.log"
+  },
+  {
+    "name": "electrical-contract",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "python3",
+      "scripts/review-r8-electrical-contract.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/electrical-contract.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:09.968681+00:00",
+    "finished_utc": "2026-10-06T19:51:10.061714+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/electrical-contract.log"
+  },
+  {
+    "name": "manufacturing",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/manufacturing-audit.py",
+      "--trace-geometry",
+      "gerber",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/final-manufacturing.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:10.062132+00:00",
+    "finished_utc": "2026-10-06T19:51:38.134569+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/manufacturing.log"
+  },
+  {
+    "name": "connectivity",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-connectivity.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/physical-connectivity.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:38.135034+00:00",
+    "finished_utc": "2026-10-06T19:51:38.834857+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/connectivity.log"
+  },
+  {
+    "name": "widths",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-trace-widths.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/trace-width-review.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:38.835374+00:00",
+    "finished_utc": "2026-10-06T19:51:39.455570+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/widths.log"
+  },
+  {
+    "name": "power",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-power.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/power-path-measurements.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:39.456039+00:00",
+    "finished_utc": "2026-10-06T19:51:40.112189+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/power.log"
+  },
+  {
+    "name": "gerbers",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/export-gerbers.ts",
+      "dist/index/circuit.json",
+      "fabrication/R8-bottom-silk-2026-10-06/gerbers"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:40.112885+00:00",
+    "finished_utc": "2026-10-06T19:51:43.057557+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/gerbers.log"
+  },
+  {
+    "name": "assembly",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/export-assembly.ts",
+      "fabrication/R8-bottom-silk-2026-10-06",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:43.058093+00:00",
+    "finished_utc": "2026-10-06T19:51:46.172352+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/assembly.log"
+  },
+  {
+    "name": "archive",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "python3",
+      "scripts/export-r8-gerber-zip.py",
+      "fabrication/R8-bottom-silk-2026-10-06/gerbers",
+      "fabrication/R8-bottom-silk-2026-10-06/R8-bottom-silk-Gerbers.zip"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:46.172869+00:00",
+    "finished_utc": "2026-10-06T19:51:46.251630+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/archive.log"
+  },
+  {
+    "name": "readback",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-exports.py",
+      "fabrication/R8-bottom-silk-2026-10-06/R8-bottom-silk-Gerbers.zip",
+      "dist/index/circuit.json",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/final-readback"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:51:46.252318+00:00",
+    "finished_utc": "2026-10-06T19:52:23.179438+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/readback.log"
+  },
+  {
+    "name": "process",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-process.py",
+      "fabrication/R8-bottom-silk-2026-10-06/R8-bottom-silk-Gerbers.zip",
+      "dist/index/circuit.json",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06/final-process"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:52:23.179934+00:00",
+    "finished_utc": "2026-10-06T19:52:27.531665+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/process.log"
+  },
+  {
+    "name": "visual",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-r8-review.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-bottom-silk-2026-10-06"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-06T19:52:27.532260+00:00",
+    "finished_utc": "2026-10-06T19:52:47.926463+00:00",
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/visual.log"
+  }
+]

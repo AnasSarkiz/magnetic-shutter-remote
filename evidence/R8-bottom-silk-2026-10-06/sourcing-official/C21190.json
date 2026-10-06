@@ -1,0 +1,37 @@
+{
+  "lcsc": "C21190",
+  "mpn": "0603WAF1001T5E",
+  "references": [
+    "R3",
+    "R4",
+    "R7"
+  ],
+  "quantity_per_board": 3,
+  "listing_url": "https://jlcpcb.com/partdetail/C21190",
+  "response_url": "https://jlcpcb.com/partdetail/C21190",
+  "observed_utc": "2026-10-06T19:26:12.001132+00:00",
+  "html_sha256": "1332b5a6e4ee21127eced1de5afab5427b774f05b7ce47e0f57b19daa0e80659",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 15799362,
+    "overseasStockCount": 21257255,
+    "preMinPurchaseNum": 4512,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

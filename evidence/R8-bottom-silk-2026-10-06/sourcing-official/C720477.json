@@ -1,0 +1,37 @@
+{
+  "lcsc": "C720477",
+  "mpn": "TS-1088-AR02016",
+  "references": [
+    "SW3",
+    "SW4",
+    "SW5"
+  ],
+  "quantity_per_board": 3,
+  "listing_url": "https://jlcpcb.com/partdetail/C720477",
+  "response_url": "https://jlcpcb.com/partdetail/C720477",
+  "observed_utc": "2026-10-06T19:26:18.145683+00:00",
+  "html_sha256": "67febdfa9587c0b7c7f59c1ca7aea440aaba8c84b0a13c5002ba5ba04a77ec63",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 716987,
+    "overseasStockCount": 767525,
+    "preMinPurchaseNum": 214,
+    "encapsulationNumber": 4000,
+    "lossNumber": 4,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

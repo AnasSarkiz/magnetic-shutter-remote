@@ -1,5 +1,7 @@
 # Local issue register — magnetic shutter remote R5
 
+Latest R8 follow-up: [098 — Empty silkscreen process report writes NaN](098-empty-silkscreen-process-report-nan.md). Fixed locally with nullable empty-layer metrics, strict JSON output and all 30 CAM regressions passing. The dated 0.3.12 stock review also verifies official client field semantics for 096: radio headline In Stock 66, Available Order Qty 3, pre-order above 3; actual assembly allocation remains unconfirmed.
+
 All **52** issue reports are retained. [R4 disposition](STATUS-R4.md) remains historical. R5 resolves project grounding (044), printable legend (041), and numeric stencil strategy (037); new local tooling fixes and open investigations are 045-052. Exact USB land qualification (042) and shell process remain open. See [R5 qualification](../R5-QUALIFICATION.md).
 
 These are local reports only. Nothing was submitted to GitHub, suppliers, or an assembler. Confirmed supplier-data discrepancies, manufacturing limits and project audit errors are explicitly distinct from tscircuit defects. “Fixed locally” does not mean fixed upstream.

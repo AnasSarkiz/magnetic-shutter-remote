@@ -1,0 +1,361 @@
+{
+  "circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "previous_circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+  "fitted_component_poses_identical": true,
+  "fitted_references": 44,
+  "poses": {
+    "source_component_0": {
+      "center": {
+        "x": 0,
+        "y": 24.5101989
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_1": {
+      "center": {
+        "x": 0,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_2": {
+      "center": {
+        "x": -4,
+        "y": 19
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_3": {
+      "center": {
+        "x": 0,
+        "y": 13
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_4": {
+      "center": {
+        "x": 5.5,
+        "y": 9
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_5": {
+      "center": {
+        "x": 4.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_6": {
+      "center": {
+        "x": 8,
+        "y": 20
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_7": {
+      "center": {
+        "x": 8,
+        "y": 23
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_8": {
+      "center": {
+        "x": 8,
+        "y": 26
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_9": {
+      "center": {
+        "x": -18,
+        "y": 13
+      },
+      "rotation": 270,
+      "layer": "top"
+    },
+    "source_component_10": {
+      "center": {
+        "x": -5,
+        "y": 16
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_11": {
+      "center": {
+        "x": 1,
+        "y": 17
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_12": {
+      "center": {
+        "x": -5.5,
+        "y": 13.4
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_13": {
+      "center": {
+        "x": -5,
+        "y": 11
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_14": {
+      "center": {
+        "x": 0,
+        "y": -10.5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_15": {
+      "center": {
+        "x": 11,
+        "y": -8
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_16": {
+      "center": {
+        "x": 12,
+        "y": -4.5
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "source_component_17": {
+      "center": {
+        "x": 20,
+        "y": -8.5
+      },
+      "rotation": 270,
+      "layer": "top"
+    },
+    "source_component_18": {
+      "center": {
+        "x": 18,
+        "y": -3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_19": {
+      "center": {
+        "x": -15,
+        "y": -5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_20": {
+      "center": {
+        "x": -19,
+        "y": -5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_21": {
+      "center": {
+        "x": 13.2,
+        "y": 16
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_22": {
+      "center": {
+        "x": -19,
+        "y": -9
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_23": {
+      "center": {
+        "x": 14.5,
+        "y": 11.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_24": {
+      "center": {
+        "x": 19,
+        "y": 5
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "source_component_25": {
+      "center": {
+        "x": 4,
+        "y": 3
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_26": {
+      "center": {
+        "x": -4,
+        "y": 1
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_27": {
+      "center": {
+        "x": 0,
+        "y": 1.5
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_28": {
+      "center": {
+        "x": -10,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_29": {
+      "center": {
+        "x": -14,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "source_component_30": {
+      "center": {
+        "x": -14,
+        "y": -1
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_31": {
+      "center": {
+        "x": -10,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_32": {
+      "center": {
+        "x": -7,
+        "y": 3
+      },
+      "rotation": 90,
+      "layer": "top"
+    },
+    "source_component_33": {
+      "center": {
+        "x": -10,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_34": {
+      "center": {
+        "x": -10,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_35": {
+      "center": {
+        "x": -18,
+        "y": 0
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_36": {
+      "center": {
+        "x": -18,
+        "y": 3
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_37": {
+      "center": {
+        "x": 0,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_38": {
+      "center": {
+        "x": 1.5,
+        "y": 8.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_39": {
+      "center": {
+        "x": -4.5,
+        "y": 6
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_40": {
+      "center": {
+        "x": 4.5,
+        "y": 5.5
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_41": {
+      "center": {
+        "x": 9.5,
+        "y": 10
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "source_component_42": {
+      "center": {
+        "x": 8,
+        "y": 12
+      },
+      "rotation": 180,
+      "layer": "top"
+    },
+    "source_component_43": {
+      "center": {
+        "x": 8,
+        "y": 6
+      },
+      "rotation": 0,
+      "layer": "top"
+    }
+  },
+  "placement_gate": "No component, board-outline or wiring source change; previous unrouted placement gate retained. Current routed source rebuilt and exact poses compared."
+}

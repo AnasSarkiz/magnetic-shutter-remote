@@ -1,0 +1,38 @@
+{
+  "lcsc": "C14663",
+  "mpn": "CC0603KRX7R9BB104",
+  "references": [
+    "C5",
+    "C13",
+    "C6",
+    "C7"
+  ],
+  "quantity_per_board": 4,
+  "listing_url": "https://jlcpcb.com/partdetail/C14663",
+  "response_url": "https://jlcpcb.com/partdetail/C14663",
+  "observed_utc": "2026-10-06T19:26:16.610816+00:00",
+  "html_sha256": "20060f752470f70fc102fb97723de0c2335c2659a3ca4bac3302353c36277776",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 48420668,
+    "overseasStockCount": 62722439,
+    "preMinPurchaseNum": 1026,
+    "encapsulationNumber": 4000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

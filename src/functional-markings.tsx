@@ -3,13 +3,6 @@ export function FunctionalMarkings() {
 	return (
 		<>
 			<silkscreentext
-				text="R8 ESP32-C3 PROTOTYPE"
-				pcbX={0}
-				pcbY={-15}
-				layer="bottom"
-				fontSize={1.8}
-			/>
-			<silkscreentext
 				text="SHUTTER"
 				pcbX={15}
 				pcbY={-11.5}
@@ -49,20 +42,6 @@ export function FunctionalMarkings() {
 				pcbX={-14}
 				pcbY={17}
 				layer="top"
-				fontSize={1.8}
-			/>
-			<silkscreentext
-				text="UART / 1:RX 2:GND 3:TX"
-				pcbX={0}
-				pcbY={1}
-				layer="bottom"
-				fontSize={1.8}
-			/>
-			<silkscreentext
-				text="BATTERY POWER / MANUAL BOOT + RESET"
-				pcbX={0}
-				pcbY={-2}
-				layer="bottom"
 				fontSize={1.8}
 			/>
 			<silkscreentext

@@ -1,0 +1,35 @@
+{
+  "lcsc": "C19949072",
+  "mpn": "ESPC3-12-N4",
+  "references": [
+    "U1"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C19949072",
+  "response_url": "https://jlcpcb.com/partdetail/C19949072",
+  "observed_utc": "2026-10-06T19:26:17.487847+00:00",
+  "html_sha256": "0ad3d9c14d7404971f362c93601af3652693f01d810143c8acbbd615a6e82ece",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3,
+    "overseasStockCount": 66,
+    "preMinPurchaseNum": 4,
+    "encapsulationNumber": 650,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

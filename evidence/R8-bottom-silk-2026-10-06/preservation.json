@@ -1,0 +1,36 @@
+{
+  "comparison_commit": "914c12e0068e540b235d12c1e2d407a9242346b6",
+  "circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "prior_tracked_files": 4145,
+  "unchanged_prior_files": 4133,
+  "authorized_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "scripts/review-r8-process.py",
+    "src/functional-markings.tsx",
+    "tests/cam/test_process_metrics.py",
+    "tscircuit-issues/README.md",
+    "tscircuit.config.json"
+  ],
+  "explicit_allowed_existing_paths": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "scripts/review-r8-process.py",
+    "src/functional-markings.tsx",
+    "tests/cam/test_process_metrics.py",
+    "tscircuit-issues/README.md",
+    "tscircuit.config.json"
+  ],
+  "unexpected_prior_changes": [],
+  "imports_baselines_prior_evidence_fabrication_firmware_lock_toolchain_and_guards_unchanged": true
+}

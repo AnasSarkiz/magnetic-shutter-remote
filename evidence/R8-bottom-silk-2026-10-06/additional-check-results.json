@@ -1,0 +1,52 @@
+[
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/format-final.log"
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/typecheck-final.log"
+  },
+  {
+    "name": "snapshot-update",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "snapshot",
+      "index.circuit.tsx",
+      "--update"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/snapshot-update-final.log"
+  },
+  {
+    "name": "snapshot-check",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "snapshot",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/R8-bottom-silk-2026-10-06/checks/snapshot-check-final.log"
+  }
+]

@@ -19604,22 +19604,6 @@
     "pcb_silkscreen_text_id": "pcb_silkscreen_text_0",
     "anchor_alignment": "center",
     "anchor_position": {
-      "x": 0,
-      "y": -15
-    },
-    "font": "tscircuit2024",
-    "font_size": 1.8,
-    "layer": "bottom",
-    "text": "R8 ESP32-C3 PROTOTYPE",
-    "ccw_rotation": 0,
-    "pcb_board_id": "pcb_board_0",
-    "subcircuit_id": "subcircuit_source_group_18"
-  },
-  {
-    "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_1",
-    "anchor_alignment": "center",
-    "anchor_position": {
       "x": 15,
       "y": -11.5
     },
@@ -19633,7 +19617,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_2",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_1",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 17,
@@ -19649,7 +19633,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_3",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_2",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": -18,
@@ -19665,7 +19649,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_4",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_3",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 14.5,
@@ -19681,7 +19665,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_5",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_4",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 18,
@@ -19697,7 +19681,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_6",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_5",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": -14,
@@ -19713,39 +19697,7 @@
   },
   {
     "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_7",
-    "anchor_alignment": "center",
-    "anchor_position": {
-      "x": 0,
-      "y": 1
-    },
-    "font": "tscircuit2024",
-    "font_size": 1.8,
-    "layer": "bottom",
-    "text": "UART / 1:RX 2:GND 3:TX",
-    "ccw_rotation": 0,
-    "pcb_board_id": "pcb_board_0",
-    "subcircuit_id": "subcircuit_source_group_18"
-  },
-  {
-    "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_8",
-    "anchor_alignment": "center",
-    "anchor_position": {
-      "x": 0,
-      "y": -2
-    },
-    "font": "tscircuit2024",
-    "font_size": 1.8,
-    "layer": "bottom",
-    "text": "BATTERY POWER / MANUAL BOOT + RESET",
-    "ccw_rotation": 0,
-    "pcb_board_id": "pcb_board_0",
-    "subcircuit_id": "subcircuit_source_group_18"
-  },
-  {
-    "type": "pcb_silkscreen_text",
-    "pcb_silkscreen_text_id": "pcb_silkscreen_text_9",
+    "pcb_silkscreen_text_id": "pcb_silkscreen_text_6",
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 16,
@@ -64624,6 +64576,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "6bbe91bca72d9f4aa7a5c86366f56d0a"
+    "source_filesystem_md5_hash": "f4f3c6d4901985b36fd3a8abd719ae71"
   }
 ]

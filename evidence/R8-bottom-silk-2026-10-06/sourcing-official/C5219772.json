@@ -1,0 +1,35 @@
+{
+  "lcsc": "C5219772",
+  "mpn": "TMP390A2DRLR",
+  "references": [
+    "U5"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C5219772",
+  "response_url": "https://jlcpcb.com/partdetail/C5219772",
+  "observed_utc": "2026-10-06T19:26:20.826672+00:00",
+  "html_sha256": "c30a82ac78f868612f3d4d085a325e79125a29939349c8d9885356ce5a460414",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 37523,
+    "overseasStockCount": 37575,
+    "preMinPurchaseNum": 26,
+    "encapsulationNumber": 4000,
+    "lossNumber": 0,
+    "leastPatchNumber": 2,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

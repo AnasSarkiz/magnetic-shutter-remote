@@ -64,7 +64,7 @@ def silkscreen_metrics(layer, geometry, mask, outline):
     if not geometry.is_empty and not strokes:
         raise ValueError('Nonempty silkscreen has no supported measurable strokes')
     return {'minimum_stroke_mm':min(strokes) if strokes else None,
-            'mask_gap_mm':geometry.distance(mask),
+            'mask_gap_mm':None if geometry.is_empty or mask.is_empty else geometry.distance(mask),
             'outside_outline_mm2':geometry.difference(outline).area}
 
 
@@ -92,7 +92,7 @@ def review(args):
     for side, filename in [('top','F_SilkScreen.gbr'),('bottom','B_SilkScreen.gbr')]:
         row = silkscreen_metrics(layers[filename],silks[side],masks[side],outline)
         complete_silk[side] = row
-        if (row['minimum_stroke_mm'] is not None and row['minimum_stroke_mm'] < .15) or row['mask_gap_mm'] < .15 + GEOMETRY.EPS or row['outside_outline_mm2'] > GEOMETRY.EPS**2:
+        if (row['minimum_stroke_mm'] is not None and row['minimum_stroke_mm'] < .15) or (row['mask_gap_mm'] is not None and row['mask_gap_mm'] < .15 + GEOMETRY.EPS) or row['outside_outline_mm2'] > GEOMETRY.EPS**2:
             failures.append({'rule':'complete_silkscreen','layer':side,**row})
     for paste in (e for e in circuit if e['type']=='pcb_solder_paste'):
         geometry = GEOMETRY.pad(paste)
@@ -158,7 +158,7 @@ def review(args):
     report = {'circuit_sha256':hashlib.sha256(args.circuit.read_bytes()).hexdigest(),'archive_sha256':hashlib.sha256(args.archive.read_bytes()).hexdigest(),'failures':failures,'stencil_thickness_mm':.1,'stencil':stencil,'mask_webs':sorted(webs,key=lambda r:r['gap_mm']),
               'labels':labels,'complete_silkscreen':complete_silk,'references':['https://jlcpcb.com/capabilities/pcb-capabilities','TI SLUA271C sections 4.2–4.4'],
               'limitations':['Nominal process geometry only; no assembly approval, measured paste transfer or supplier processed-preview is claimed.']}
-    (args.output/'process-review.json').write_text(json.dumps(report,indent=2)+'\n')
+    (args.output/'process-review.json').write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
     print('Stencil apertures:',len(stencil),'minimum area ratio:',min(r['area_ratio'] for r in stencil),'mask web minimum:',min(r['gap_mm'] for r in webs),'process failures:',len(failures))
     for failure in failures:print(failure)
     return bool(failures)

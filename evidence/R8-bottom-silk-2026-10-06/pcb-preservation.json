@@ -1,0 +1,14 @@
+{
+  "circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "previous_circuit_sha256": "7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf",
+  "unchanged_non_silkscreen_non_metadata_elements": 2072,
+  "pcb_copper_electrical_placement_and_all_schematic_elements_identical": true,
+  "removed_exact_labels": [
+    "R8 ESP32-C3 PROTOTYPE",
+    "UART / 1:RX 2:GND 3:TX",
+    "BATTERY POWER / MANUAL BOOT + RESET"
+  ],
+  "remaining_bottom_text_count": 0,
+  "remaining_top_labels_identical_except_generated_id_numbering": true,
+  "native_source_only_no_generated_json_patch": true
+}

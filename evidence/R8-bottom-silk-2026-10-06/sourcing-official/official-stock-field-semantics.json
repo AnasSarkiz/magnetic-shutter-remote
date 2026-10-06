@@ -1,0 +1,49 @@
+{
+  "observed_utc": "2026-10-06T19:28:12.947113+00:00",
+  "official_client_url": "https://assets.jlcpcb.com/web-resources/component-platform-static/CanaryLane/latest/_next/static/chunks/app/%5Blocale%5D/partdetail/%5B...urlSuffix%5D/page-f108ee61f630cc2b.js",
+  "official_client_sha256": "460bbac769d57e9ddc078251564dec0228daece030e7c2b2182aac44099542d6",
+  "method": "Read the current official JavaScript source; no browser UI rendering or private API/cart/order action.",
+  "conclusions": {
+    "headline_in_stock_field": "overseasStockCount",
+    "available_order_quantity_field": "canPresaleNumber",
+    "preorder_mode": "For a buyable part, requested quantity > canPresaleNumber.",
+    "preorder_minimum": "When quantity exceeds available order quantity, max(minPurchaseNum || 0, preMinPurchaseNum || 0)."
+  },
+  "source_excerpts": [
+    {
+      "token": "canPresaleNumber:P,overseasStockCount:I",
+      "offset": 85552,
+      "context": ",allowPostFlag:C,componentAlternativesCode:k,replaceUrlSuffix:L,shopShowForeignPriceFlag:S,minPurchaseNum:E,preMinPurchaseNum:M,encapsulationNumber:_,canPresaleNumber:P,overseasStockCount:I,fullReelPrice:A,initialPrice:B,priceList:R,prices:F,buyPrices:T}=e,z=_||1,D=I||0,U=P||0,O=\"0\"!==w,q=!O&&!!k,J=!O&&!k&&!!C,W=!1!==S,V=D>0,H=(0,r.useCallback)(()=>{if(J)return 1;let e=E||1;return U<=0||U<e?e>(M||0)?e:M||1:e},[J,U,E,M]),[Z,Q]=(0,r.useState)(H),Y"
+    },
+    {
+      "token": "ee=(0,r.useMemo)(()=>!O&&C?Z>D:Z>U",
+      "offset": 86071,
+      "context": "[X,G]=(0,r.useState)(null),$=(0,r.useMemo)(()=>u((null==R?void 0:R.length)?R:(null==F?void 0:F.length)?F:[]),[R,F]),K=(0,r.useMemo)(()=>u(T||[]),[T]),ee=(0,r.useMemo)(()=>!O&&C?Z>D:Z>U,[O,C,Z,D,U]),et=!!(Z>U&&U>0),en=ee?K:$,ea=(0,r.useMemo)(()=>{var e,t;if(0===en.length)return B||0;let n=null!==(t=null===(e=en[0])||void 0===e?void 0:e.productPrice)&&void 0!==t?t:0;for(let e of en)Z>=e.startNumber&&(n=e.productPrice);return n},[Z,en,B]),er=("
+    },
+    {
+      "token": "stockCount:D,maxInStock:U",
+      "offset": 89670,
+      "context": "showPrice:W,needQuote:!W,isInStock:V,isPreOrder:ee,isPreOrderToStock:et,hasAlternative:q,canConsign:J,hasFullReelDiscount:el,minOrder:Y,fullReelNum:z,stockCount:D,maxInStock:U,spotPriceList:$,preOrderPriceList:K,activePriceList:en,currentPrice:ea,totalPrice:er,fullReelDiscountAmount:es,unitPrice:ei,quantity:Z,setQuantity:Q,handleQuantityChange:eo,handleIncrease:ed,handleDecrease:em,handlePriceRowClick:ex,loading:null!==X,addToCartL"
+    },
+    {
+      "token": "stockCount:F,maxInStock:T",
+      "offset": 21342,
+      "context": "&&(y(!0),C(e))},[k,w,C]);let{canBuy:S,needQuote:E,isInStock:M,isPreOrder:_,isPreOrderToStock:P,hasAlternative:I,canConsign:A,minOrder:B,fullReelNum:R,stockCount:F,maxInStock:T,activePriceList:z,currentPrice:D,totalPrice:U,fullReelDiscountAmount:O,quantity:q,handleQuantityChange:J,handleIncrease:W,handleDecrease:V,handlePriceRowClick:H,addToCartLoading:Z,requestQuoteLoading:Q,consignLoading:Y,handleAddToCart:X,handleRequestQuote:G,h"
+    },
+    {
+      "token": "children:F.toLocaleString()",
+      "offset": 22036,
+      "context": "sxs)(\"div\",{className:\"mb-5\",children:[(0,a.jsxs)(\"p\",{className:\"text-base font-bold text-jlc-text-primary\",children:[\"In Stock: \",(0,a.jsx)(\"span\",{children:F.toLocaleString()})]}),(0,a.jsxs)(\"div\",{className:\"mt-3 flex items-center gap-3 text-sm text-jlc-text-tertiary\",children:[(0,a.jsxs)(\"span\",{children:[\"Minimum: \",B]}),(0,a.jsx)(\"div\",{className:\"h-4 w-px bg-jlc-border-divider\"}),(0,a.jsxs)(\"span\",{children:[\"Full Reel: \",R]}"
+    },
+    {
+      "token": "Available Order Qty:",
+      "offset": 24265,
+      "context": "[#444]\",style:{backgroundColor:\"#eee\"},children:\"Request a Quote\"}),T>0&&(0,a.jsxs)(\"p\",{className:\"mb-2.5 text-sm text-jlc-text-tertiary\",children:[\"Available Order Qty: \",T.toLocaleString()]}),_&&D>0&&(0,a.jsxs)(\"div\",{className:\"mb-2.5 text-sm\",children:[(0,a.jsx)(\"p\",{className:\"text-jlc-text-primary\",children:\"Pre-order Items Pricing\"}),(0,a.jsxs)(\"p\",{className:\"mt-1 text-jlc-text-tertiary\",children:[\"Estimated unit pric"
+    },
+    {
+      "token": "Insufficient stock, pre-order mode turns on",
+      "offset": 24679,
+      "context": "imated unit price: \",(0,p.l)(D,4)]})]}),P&&(0,a.jsxs)(\"div\",{className:\"mb-2.5 flex items-center whitespace-nowrap text-sm text-[#FB9709]\",children:[\"Insufficient stock, pre-order mode turns on\",(0,a.jsx)(m.pn,{delayDuration:200,children:(0,a.jsxs)(m.u,{children:[(0,a.jsx)(m.aJ,{asChild:!0,children:(0,a.jsx)(\"i\",{className:\"iconfont icon-question_mark ml-1 cursor-pointer text-sm text-[#C6C9CD] hover:text-jlc-primary\"})}),(0,a.jsx)(m.OF,{side:\"top\",c"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "lcsc": "C2286",
+  "mpn": "KT-0603R",
+  "references": [
+    "LED1",
+    "LED2"
+  ],
+  "quantity_per_board": 2,
+  "listing_url": "https://jlcpcb.com/partdetail/C2286",
+  "response_url": "https://jlcpcb.com/partdetail/C2286",
+  "observed_utc": "2026-10-06T19:26:14.010268+00:00",
+  "html_sha256": "8b4b77634fe27102c743bb0333a8bbfa411da1e3b956a3d5ad74958071e9af65",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 3",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 4173823,
+    "overseasStockCount": 4725758,
+    "preMinPurchaseNum": 1556,
+    "encapsulationNumber": 4000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

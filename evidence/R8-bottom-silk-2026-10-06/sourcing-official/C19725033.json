@@ -1,0 +1,35 @@
+{
+  "lcsc": "C19725033",
+  "mpn": "BQ25185DLHR",
+  "references": [
+    "U2"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C19725033",
+  "response_url": "https://jlcpcb.com/partdetail/C19725033",
+  "observed_utc": "2026-10-06T19:26:11.596607+00:00",
+  "html_sha256": "938683ab50505cad1ee62f19728e8cae61cc3301dc91efee7cfbf98fe6baea94",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 3",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3518,
+    "overseasStockCount": 3621,
+    "preMinPurchaseNum": 6,
+    "encapsulationNumber": 3000,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}

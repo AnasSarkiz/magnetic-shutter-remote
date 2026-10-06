@@ -1,3 +1,25 @@
+# Current R8 0.3.12 — bottom silkscreen cleanup, 2026-10-06
+
+The three requested bottom-side labels are removed from native source and
+the current B_SilkScreen Gerber has zero objects. All 2,072 non-artwork/
+non-metadata elements, PCB copper/placement/connections and all schematic
+elements match 0.3.11 exactly. Fresh native zero DRC errors/shorts/dangling,
+29 physical nets, 174 measured widths/current paths and complete independent
+manufacturing/process/readback checks pass. All other 11 Gerber/drill files
+match except listed timestamps; BOM/CPL are byte-identical.
+[Current review](../evidence/R8-bottom-silk-2026-10-06/REVIEW.md). Circuit JSON SHA256: cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331.
+
+Programming still uses JST RX/GND/TX, battery power, USB-C disconnected and
+manual BOOT/RESET; instructions remain in the programmer R8-USAGE.md.
+25 exact parts have public SMT listings; radio 66 headline In Stock/3
+Available Order Qty requires pre-order above 3. Five-board stock allocation,
+supplier approval, USB-C shell soldering, physical operation and complete
+MagSafe fit remain pending. Prototype status and native 004/084/original
+075/076 warnings remain explicit. Missing 3V3 metadata is a separate importer
+issue. Actual publication is recorded separately after public readback.
+
+## Prior review/publication records — preserved history
+
 # Current R8 0.3.11 — schematic capacitor groups, 2026-10-06
 
 C10/C3/C4 native schematic coordinates bring all three reported capacitor

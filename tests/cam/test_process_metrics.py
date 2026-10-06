@@ -34,6 +34,23 @@ class StencilReleaseTest(unittest.TestCase):
 
 
 class CompleteSilkscreenTest(unittest.TestCase):
+    def test_empty_export_has_no_mask_clearance_and_serializes_as_strict_json(self):
+        import json
+        from zipfile import ZipFile
+        from gerbonara import GerberFile
+        root=Path(__file__).resolve().parents[2]
+        archive=root/'fabrication/R8-standard-programmer-2026-10-05/R8-standard-programmer-route04-Gerbers.zip'
+        with ZipFile(archive) as z:
+            empty=GerberFile.from_string(z.read('B_Paste.gbr').decode())
+            mask=GerberFile.from_string(z.read('B_Mask.gbr').decode())
+        self.assertEqual(empty.objects,[])
+        result=METRICS.silkscreen_metrics(empty,METRICS.READER.copper_geometry(empty),
+                                        METRICS.READER.copper_geometry(mask),box(-22,-28,22,28))
+        self.assertIsNone(result['minimum_stroke_mm'])
+        self.assertIsNone(result['mask_gap_mm'])
+        self.assertEqual(result['outside_outline_mm2'],0)
+        self.assertEqual(json.loads(json.dumps(result,allow_nan=False)),result)
+
     def test_supplier_circles_are_measured_beyond_text_only_attribution(self):
         # Original failing native export is retained; no synthetic text mirror.
         from zipfile import ZipFile

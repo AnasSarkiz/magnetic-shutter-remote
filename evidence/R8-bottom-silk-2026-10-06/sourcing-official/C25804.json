@@ -1,0 +1,35 @@
+{
+  "lcsc": "C25804",
+  "mpn": "0603WAF1002T5E",
+  "references": [
+    "R9"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C25804",
+  "response_url": "https://jlcpcb.com/partdetail/C25804",
+  "observed_utc": "2026-10-06T19:26:14.451452+00:00",
+  "html_sha256": "55c86e20a4ce179f33bada84e2d61051f3dc5f6b4c1beef8c3af842827ea0533",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 21573549,
+    "overseasStockCount": 29501378,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "stock_allocation_confirmed": false,
+  "limitations": "Public listing and raw fields only; no reservation, supplier processed preview or order allocation."
+}
