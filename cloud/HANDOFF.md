@@ -16,7 +16,11 @@ Electronics, firmware, routing, imports, locks and frozen baselines are unchange
 No root board/routing/SDK/CAM build. Prior075/076/004/084, separate3V3metadata,
 physical/supplier/MagSafe/RF/service/thermal/harness gates remain explicit.
 Current publication status is the dated PUBLICATION.md; earlier incomplete18
-is preserved. Setup/start, branch preservation, serial memory guards and
+is preserved.
+GitHub 107aba5 has all112 changed files verified. Native19 is incomplete296/302:
+HTTP413/502/timeouts; both product assembly JSONs are missing and hosted preview
+is pending/unready. Actual receipt is evidence/R8-sculpted19-2026-10-07/PUBLICATION.md.
+ Setup/start, branch preservation, serial memory guards and
 ordering/payment/contact restrictions remain unchanged.
 
 ## Earlier records — preserved history

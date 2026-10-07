@@ -1,0 +1,792 @@
+{
+  "source_artifact_commit": "107aba54bd410dc503f2cdabbacba6322b2a1e6e",
+  "observed_utc": "2026-10-07T19:23:05.326348+00:00",
+  "all_changed_source_files_verified": true,
+  "changed_files_checked": 112,
+  "readback": [
+    {
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/AGENTS.md",
+      "remote_sha256": "0a491ea50b9e9c9e3da750ef327f47f015dc19b6115c30402773e70d036cafad",
+      "bytes": 19178,
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/README.md",
+      "remote_sha256": "4cd64b6a9b7a1ab8111f4b0390cec52ce3e27fa9ac1b281f38a16b34301a797d",
+      "bytes": 6714,
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/VALIDATION.md",
+      "remote_sha256": "cedb0343edcb14bd2b0fed1b91f5b40f5dcc936f09edbc2eebfe47879effe4cf",
+      "bytes": 39342,
+      "matches": true
+    },
+    {
+      "path": "archives/r8-sculpted19-rejected-candidates-20261007.tar.gz",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/archives/r8-sculpted19-rejected-candidates-20261007.tar.gz",
+      "remote_sha256": "196f53f9c2fa6b5a6b5093cda59be6e8fcbdd1ba7920dbfb5582e8894a9f476d",
+      "bytes": 12277658,
+      "matches": true
+    },
+    {
+      "path": "archives/r8-sculpted19-slot-controls-20261007.tar.gz",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/archives/r8-sculpted19-slot-controls-20261007.tar.gz",
+      "remote_sha256": "03579fab9d966fd9ab5f0dea00a15a740c83a9ae9373fec19c2e093a4d386c64",
+      "bytes": 208447,
+      "matches": true
+    },
+    {
+      "path": "archives/r8-sculpted19-visual-controls-20261007.tar.gz",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/archives/r8-sculpted19-visual-controls-20261007.tar.gz",
+      "remote_sha256": "eba41164815693586a125a80fd1138332355a77efd5b4635b3db858f425f5d02",
+      "bytes": 5535412,
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/cloud/HANDOFF.md",
+      "remote_sha256": "3015137d141dc59d99586f8eb10e58ea879510dda21cb2cf8e6cefd4e6186106",
+      "bytes": 36560,
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/dist/product.assembly/circuit.json",
+      "remote_sha256": "bebff11ff7c206a74a0ca543af9a7acdf2c4e7c3a0dbfe837c9c118cb24b8da7",
+      "bytes": 4870478,
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/dist/product.exploded/circuit.json",
+      "remote_sha256": "3938521387af44ebff393359544f7c44ab3fafee272469c7e6892e9973b88a7a",
+      "bytes": 4870475,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/PUBLICATION.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/PUBLICATION.md",
+      "remote_sha256": "f02b6ad23126b4b53162e830c8a3d38211fc73e016e1e4eb78cde79d8c76b588",
+      "bytes": 260,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/REPRODUCE-COMMANDS.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/REPRODUCE-COMMANDS.json",
+      "remote_sha256": "79bb370d1a9c80dbcc99970c15920517f5b10260554f754b6e337942dd5074ac",
+      "bytes": 8146,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/REVIEW.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/REVIEW.md",
+      "remote_sha256": "02152967a243eca40f39bb43a12981249ce24bd1473c0697aec1064f70837842",
+      "bytes": 5214,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-closed.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-closed.log",
+      "remote_sha256": "12dff742e4bbf11ad0ac592266bd47b8ad97532ac8e261f3d14ad994205da57f",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-exploded.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-exploded.log",
+      "remote_sha256": "39bc96b18286102af60133825af0dab4259bc3b8a88fd0ac79ca632cfdb687c0",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-format-write.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-format-write.log",
+      "remote_sha256": "4db783958ac115cfdbf0e2a77448386f7bf7d142f69a8bc9a866b44327a98d88",
+      "bytes": 278,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-format.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-format.log",
+      "remote_sha256": "5dc82a14162914904ddf176bcdf07c2c13107c33fc02707f8afd147ac9e582bd",
+      "bytes": 268,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-geometry.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-geometry.log",
+      "remote_sha256": "56c4e1060b6e38d826b0c19e65b28b3370ae403983390b15386bcc0cbd7d463e",
+      "bytes": 8852,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-native-readback.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-native-readback.log",
+      "remote_sha256": "8f6d0f8d57544498659929e58d5aeb604cad26f53c243202ae0c71a70e616706",
+      "bytes": 1218,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-print-export.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-print-export.log",
+      "remote_sha256": "bf1c8bbf05ed378914a26a96b97d4a90463c857cb7790dde9c8495266856f690",
+      "bytes": 6076,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-product-tests.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-product-tests.log",
+      "remote_sha256": "e7a844c04f921330f855bf384b86645e37fb2f232bd3d721db2ea08b26147483",
+      "bytes": 418,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-render-exploded.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-render-exploded.log",
+      "remote_sha256": "b1d42d8367211ddc9e865715e700019af9c0f6e3af78f07326b01e164e3fb4d1",
+      "bytes": 1014,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-render-phone-facing.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-render-phone-facing.log",
+      "remote_sha256": "27c9a458d4905996d24599363ab6d9cff5d14f6333ab2e1484d4c232ef76a3de",
+      "bytes": 1054,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-smoke.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-smoke.log",
+      "remote_sha256": "72e65327d7a9e9d47174c8887b75c0921ab03b56d22e674406f6650baf22a95c",
+      "bytes": 6681,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-stl-readback.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-stl-readback.log",
+      "remote_sha256": "4888d47c9de5e61bf0f73c2e6d94a6723085518ba756cd7f4a2a2e5b9848065f",
+      "bytes": 63,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-back.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-studio-back.log",
+      "remote_sha256": "f8185ff2b717bdebf8fec111d2707a7695d0145979e970334b104d2d51579221",
+      "bytes": 9470,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-front.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-studio-front.log",
+      "remote_sha256": "5cdfbef84130a1aab31dd5aae82d578bb39073bb12d185b73769cd6a2a510fcc",
+      "bytes": 9467,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-side.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-studio-side.log",
+      "remote_sha256": "97f0f444a10198ce4294ab20d386d75feed2ba62ad366cfc24a89af99a62b711",
+      "bytes": 9470,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-straight.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-studio-straight.log",
+      "remote_sha256": "25a5512ce58db9b7695e0753d5e5990c17db1c92f4cdf66d53c81ece8a4d28c2",
+      "bytes": 9482,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/final-types.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/final-types.log",
+      "remote_sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format-contact-prism.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format-contact-prism.log",
+      "remote_sha256": "acb23515872cdb9ffef8bac94523d065d95795788b7a18b9929481e11bb76ac7",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format12.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format12.log",
+      "remote_sha256": "78a7aa6d44a7992a877f057a5e62f8486e78bfa7e243824221f2df3085a1260b",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format13.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format13.log",
+      "remote_sha256": "1170c641c81ca23069ab86021d2ad0c05a267a1b9bf8b661ea1e4302a4072af3",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format14.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format14.log",
+      "remote_sha256": "78a7aa6d44a7992a877f057a5e62f8486e78bfa7e243824221f2df3085a1260b",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format15.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format15.log",
+      "remote_sha256": "2b50f29512d9ff9463697fc7f71171083e5e02f29631fcd6cf07aa7edcc0aadb",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format16.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format16.log",
+      "remote_sha256": "2b50f29512d9ff9463697fc7f71171083e5e02f29631fcd6cf07aa7edcc0aadb",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format17.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format17.log",
+      "remote_sha256": "1c73febcfecf2986b85548c8850362db2128f8000d8ca7f4cb191f130af1edf1",
+      "bytes": 275,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format18.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format18.log",
+      "remote_sha256": "e7c81e93b78229f73e7b14d8abf656a50df37492325c37828a92bdac40806879",
+      "bytes": 275,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format19.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format19.log",
+      "remote_sha256": "acb23515872cdb9ffef8bac94523d065d95795788b7a18b9929481e11bb76ac7",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format20.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format20.log",
+      "remote_sha256": "e7c81e93b78229f73e7b14d8abf656a50df37492325c37828a92bdac40806879",
+      "bytes": 275,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format21.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format21.log",
+      "remote_sha256": "9225da1e2a51738a9604da5083d3e05b13ff23af84c9c7563fd6cb3b074d3bdd",
+      "bytes": 278,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format22.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format22.log",
+      "remote_sha256": "30d71f813bbf368e85e9f1b903f211f13250db4863f09b212c387ca662014721",
+      "bytes": 278,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/format23.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/format23.log",
+      "remote_sha256": "1170c641c81ca23069ab86021d2ad0c05a267a1b9bf8b661ea1e4302a4072af3",
+      "bytes": 274,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-06.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-06.log",
+      "remote_sha256": "18fe299991bf8bd2921bd923fca80765db0c418b108a6a11c2255c5d38a44762",
+      "bytes": 7991,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-07.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-07.log",
+      "remote_sha256": "f9b4a4310d669081c924b05dd1cf35ca714f5a24c40bfa3ce756c0a8f7ad2b20",
+      "bytes": 1800,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-08.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-08.log",
+      "remote_sha256": "b60953c4524049dbd8ec2b6112f4ecd634af4f9aad63e396b5edc887a8122c9d",
+      "bytes": 8130,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-09.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-09.log",
+      "remote_sha256": "2c9b9c1cfe8dff819d1131ab62abff1bdb4bda1a7fd29164b4f7e6fe284f4547",
+      "bytes": 8016,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-10.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-10.log",
+      "remote_sha256": "3d8c0e4048dd7bac9241e3679b452b8b8e2afd392f6c19cdb6bc9bebc0936974",
+      "bytes": 8105,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-11.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-11.log",
+      "remote_sha256": "464b3d436014d6aeb7fb579c2e2b85507626a2b0c722a46b0e1384d7f421a65e",
+      "bytes": 8045,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-12.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-12.log",
+      "remote_sha256": "d3cf7d233504c984061ef1edbd94030ccb780349395c8793c3cfb18ac1f67547",
+      "bytes": 8043,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-13.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-13.log",
+      "remote_sha256": "a9f99a97c08d2040ae29729aa8760917c4051bcf299210ed5f6b00e9e9ab4057",
+      "bytes": 8016,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-14.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-14.log",
+      "remote_sha256": "4b3cae486f38860a7283963ad0ecc29bbe2f793b543db21d49fcda4f4f2c8ee2",
+      "bytes": 8191,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-15.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-15.log",
+      "remote_sha256": "364f0d54dd6799e10a5cad593f0c136b181d25673575c2fe5b83fe5d112835be",
+      "bytes": 1831,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-16.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-16.log",
+      "remote_sha256": "d65fda37b3cea0dfc2e1e2738e250afa54fda45a86796aeef9432aa81ec11622",
+      "bytes": 8269,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-17.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-17.log",
+      "remote_sha256": "80b30963fb5691c352c2919115fbffe42192a39e634c49172f5e940439443219",
+      "bytes": 8836,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-18.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-18.log",
+      "remote_sha256": "4990a60f5136fc7c55b5aee9a56d28a46b09c5734c8d23e82374ec5c5f6a830c",
+      "bytes": 9351,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-19.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-19.log",
+      "remote_sha256": "1ff5e5ad2636e404e9552a00020b065daad40896bdc3b8b068c08bbb7dc220e2",
+      "bytes": 8830,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-20.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-20.log",
+      "remote_sha256": "7fc19d6d3d1c88859c195802236a4cea0e1c6403c7f4435ed0ec6c2276e7c8bb",
+      "bytes": 8880,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-21-final.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-21-final.log",
+      "remote_sha256": "cbd4042cabbd97c0919792dd88a9244c0ced67f88903da233c8b93b0f7050648",
+      "bytes": 8879,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-21.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-21.log",
+      "remote_sha256": "f6fe59f489206f7753a9dfb939d87ad7225f6153b574520defef4b9aff76da8a",
+      "bytes": 777,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-22.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-22.log",
+      "remote_sha256": "bfe2f8a100abed8180bdcf1211ced6c2a69b47794761c645bd3ada073b2d3d10",
+      "bytes": 8878,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/geometry-23.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/geometry-23.log",
+      "remote_sha256": "2889077736ce06c992d65568295ad84ae6615c65ef2ec6abaa4f572edd54633e",
+      "bytes": 8852,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/independent-stl.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/independent-stl.log",
+      "remote_sha256": "3bae6437c7ffea0ac8dad0aca6db6de6b74c2214a853e71a0ef2d5d69190cf8a",
+      "bytes": 2277,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/preflight-product-tests.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/preflight-product-tests.log",
+      "remote_sha256": "5c90b8c44a221b7620291bd9fcfd2f5662f31ac084010ca6264a8a95a04d46c3",
+      "bytes": 419,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/preflight-types.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/preflight-types.log",
+      "remote_sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/preview-closed.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/preview-closed.log",
+      "remote_sha256": "d6b434120b4666db4c4b62dd67431ad61aefc9c716cf3ed48b9c903dce66adf3",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/preview-print-export.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/preview-print-export.log",
+      "remote_sha256": "a73ff9af5ab516968e583e715f4ef2d0a929e21ab92e271c1fc03022a3098ce6",
+      "bytes": 6076,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/preview-studio-preview.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/preview-studio-preview.log",
+      "remote_sha256": "15df7f47a07c8f9ebdbd92b66927f45c80f5acaf0e640192dee13b9746063c8a",
+      "bytes": 9546,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/print21.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/print21.log",
+      "remote_sha256": "c78957bba966f55d3e19936fba18ba4bf00cadd1b059acaba59b6861a9d1102b",
+      "bytes": 6076,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/studio-first-view.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/studio-first-view.log",
+      "remote_sha256": "8c5fd71e8c1a5a30a762d66fa6e7663682b6b31ba84b486e87a291cc22067724",
+      "bytes": 6429,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/studio10.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/studio10.log",
+      "remote_sha256": "17c613bc063a83e5ce40bd0e0ab19692464dd587f9548b325a693278649b18cc",
+      "bytes": 9718,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/checks/visual-closed10.log",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/checks/visual-closed10.log",
+      "remote_sha256": "0c37194065bf83521f0799e3c1f0f3f5b1193911c6d2af086683e2097bad80a4",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/electrical-preservation.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/electrical-preservation.json",
+      "remote_sha256": "3fc59ad89d2b393bf8e481c029d795385e23ddc6676fbff85096ffab29f1d07b",
+      "bytes": 58775,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/final-product-checks.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/final-product-checks.json",
+      "remote_sha256": "284561aee603f22d72c1bb893d23cab118aae99d6cfa461192318687d12a48f1",
+      "bytes": 7025,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/independent-print-mesh-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/independent-print-mesh-review.json",
+      "remote_sha256": "7cc9863c9d60bd26cc2be8b0837d2dbbc837efdebd39df59b5ae9beb4b9539c6",
+      "bytes": 4066,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/native-view-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/native-view-review.json",
+      "remote_sha256": "926f2ad6b89f3c2e724df27df9b09e5170effeea74e629a5aa9144ca2140c14d",
+      "bytes": 5707,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/preservation.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/preservation.json",
+      "remote_sha256": "83e0128189aaaaf360befafbe4ee4fbe825240bc5318a79135ca815e43b66879",
+      "bytes": 62537,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/preview-checks.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/preview-checks.json",
+      "remote_sha256": "296ca72690cad75cfc10d9516713be7dbf2daa29ce6baeff072b84175e972c1f",
+      "bytes": 1228,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/rejected-candidate-archive.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/rejected-candidate-archive.json",
+      "remote_sha256": "255eb002445c8b840d0233bfd863c59d0d6475f72ddf4a02cfe5cbf25da812e9",
+      "bytes": 6879,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/slot-control-archive.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/slot-control-archive.json",
+      "remote_sha256": "9b7524f28b58b4b19c746125b1aa3d6c70795794e9acee5df1051eae235f8033",
+      "bytes": 1045,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/triangle-area-readback.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/triangle-area-readback.json",
+      "remote_sha256": "d71772b56f1f898eefbc684e8a09c2e64fb0483186a3872cf761c8b0a5e2e7fb",
+      "bytes": 1344,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/unchanged-board.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/unchanged-board.json",
+      "remote_sha256": "e7e826886fd9d138fea7461a0fa5db138f4e4dd53728cd893264f2d783d9c996",
+      "bytes": 598,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/visual-control-archive.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/visual-control-archive.json",
+      "remote_sha256": "15f8c83c50c15a5ae54fd115d54eae771bd22e091bc81fbab4b51622709ce5d1",
+      "bytes": 1235,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-sculpted19-2026-10-07/visual-review/inspection.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/evidence/R8-sculpted19-2026-10-07/visual-review/inspection.json",
+      "remote_sha256": "4a8af4fbea974a6237a45b187bfda2dcf9c9a80edb8aba0d41c34cd30342b18c",
+      "bytes": 1299,
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/package.json",
+      "remote_sha256": "a38d8d72f7210aaa71e462251e2b772ecca2d8c09a7e2db5300d9ca6a05c3b39",
+      "bytes": 4319,
+      "matches": true
+    },
+    {
+      "path": "product/README.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/README.md",
+      "remote_sha256": "1ee7a0f6c0dc973ef824fe4380ef5bab734af4c9b87f32f41ab906691b013802",
+      "bytes": 8183,
+      "matches": true
+    },
+    {
+      "path": "product/closed.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/closed.png",
+      "remote_sha256": "af6ac5825846c6fabedfd86e3c60fbdcad2c99961b34c31df52e0c258c144040",
+      "bytes": 2307160,
+      "matches": true
+    },
+    {
+      "path": "product/exploded.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/exploded.png",
+      "remote_sha256": "5a428cfdca3cec6124c0dd9a22c7d0741d296370a6afce089393b05cc3325f81",
+      "bytes": 46299,
+      "matches": true
+    },
+    {
+      "path": "product/geometry-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/geometry-review.json",
+      "remote_sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
+      "bytes": 7598,
+      "matches": true
+    },
+    {
+      "path": "product/geometry.ts",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/geometry.ts",
+      "remote_sha256": "b08c0e62714f99ff0f5832b66294201026dffa9fdcca6e429f28161546a391ae",
+      "bytes": 15597,
+      "matches": true
+    },
+    {
+      "path": "product/phone-facing.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/phone-facing.png",
+      "remote_sha256": "07f85eaa67727efd8e64e5ef6fad849bb3b0e3005dac232a2671d305287bcf26",
+      "bytes": 17128,
+      "matches": true
+    },
+    {
+      "path": "product/print-mesh-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/print-mesh-review.json",
+      "remote_sha256": "2aee79e96ffea442ced288e2d560c8a066c4b600bedfa5f72ef2bf380b665532",
+      "bytes": 5093,
+      "matches": true
+    },
+    {
+      "path": "product/print-plans.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/print-plans.json",
+      "remote_sha256": "7a495e1c878b8066cfdec6043980f2c627d5e617846d3d2e376a0d5557f7c72a",
+      "bytes": 4667954,
+      "matches": true
+    },
+    {
+      "path": "product/prints/FingerGripInsert.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/FingerGripInsert.stl",
+      "remote_sha256": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+      "bytes": 21084,
+      "matches": true
+    },
+    {
+      "path": "product/prints/MagSafeFaceCover.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/MagSafeFaceCover.stl",
+      "remote_sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "bytes": 12684,
+      "matches": true
+    },
+    {
+      "path": "product/prints/MagSafeGrip.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/MagSafeGrip.stl",
+      "remote_sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "bytes": 151784,
+      "matches": true
+    },
+    {
+      "path": "product/prints/MagSafeRearCover.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/MagSafeRearCover.stl",
+      "remote_sha256": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+      "bytes": 11484,
+      "matches": true
+    },
+    {
+      "path": "product/prints/RemoteBase.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/RemoteBase.stl",
+      "remote_sha256": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+      "bytes": 228284,
+      "matches": true
+    },
+    {
+      "path": "product/prints/RemoteLid.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/RemoteLid.stl",
+      "remote_sha256": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+      "bytes": 174984,
+      "matches": true
+    },
+    {
+      "path": "product/prints/SideShutterPlunger.stl",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/prints/SideShutterPlunger.stl",
+      "remote_sha256": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+      "bytes": 31784,
+      "matches": true
+    },
+    {
+      "path": "product/studio-back-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-back-review.json",
+      "remote_sha256": "a72de1a2ec55860bfa341cd71ba82dece50d024be89b8b46baf7dee33a9ef5ea",
+      "bytes": 2647,
+      "matches": true
+    },
+    {
+      "path": "product/studio-back.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-back.png",
+      "remote_sha256": "5147c0559e5f4078260018846fde9979d322ad5aa4fd8838297027420b44c1ab",
+      "bytes": 2265814,
+      "matches": true
+    },
+    {
+      "path": "product/studio-front-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-front-review.json",
+      "remote_sha256": "0ee6339b5077a9c99e3a6b086afb878a77ab8f106dd06a1b0ea4b0773c13c49f",
+      "bytes": 2642,
+      "matches": true
+    },
+    {
+      "path": "product/studio-side-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-side-review.json",
+      "remote_sha256": "c4f5e63049989347260faddf83a62b30cdb4527d0c6e57c74e80bf907175e889",
+      "bytes": 2647,
+      "matches": true
+    },
+    {
+      "path": "product/studio-side.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-side.png",
+      "remote_sha256": "fc567530a6c10e47f81558fef36142b6611f5f4b71b5afa6037341a3cfbc974c",
+      "bytes": 2057933,
+      "matches": true
+    },
+    {
+      "path": "product/studio-straight-review.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-straight-review.json",
+      "remote_sha256": "f0ff1cc59993e28461513ac0dc3f7984163feb8763ad694917113266b8669634",
+      "bytes": 2651,
+      "matches": true
+    },
+    {
+      "path": "product/studio-straight.png",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/product/studio-straight.png",
+      "remote_sha256": "884f28dc56b3989668468207fcfaada3efe3881aa873b00cd5350ba9a396b68e",
+      "bytes": 2171730,
+      "matches": true
+    },
+    {
+      "path": "scripts/check-product-geometry.ts",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/scripts/check-product-geometry.ts",
+      "remote_sha256": "e2af5a9bbfdf43e1aabf3a186d210836895ad18549d1f475f067cb283697fc73",
+      "bytes": 12835,
+      "matches": true
+    },
+    {
+      "path": "scripts/export-product-prints.py",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/scripts/export-product-prints.py",
+      "remote_sha256": "ba05ebca3808753c0bcb0c165d596014b7d701ddc99f8032586eca3015329f48",
+      "bytes": 4721,
+      "matches": true
+    },
+    {
+      "path": "scripts/render-product-studio.py",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/scripts/render-product-studio.py",
+      "remote_sha256": "41456fcf6f26148a7ce274766f8aba728939d05fd6c898fb869eea251f121358",
+      "bytes": 8649,
+      "matches": true
+    },
+    {
+      "path": "scripts/review-product-stls.py",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/scripts/review-product-stls.py",
+      "remote_sha256": "3402e2bf210859c7d544a36e5eda19c9285d4c156bd20d5b99130e0e7d80a5b1",
+      "bytes": 3304,
+      "matches": true
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/scripts/stage-registry.py",
+      "remote_sha256": "948b05d4bc9c5f533de50be56db7686f6a73fdb9a10179fb74d6d85f4518d074",
+      "bytes": 11957,
+      "matches": true
+    },
+    {
+      "path": "tests/r8-product.test.ts",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/107aba54bd410dc503f2cdabbacba6322b2a1e6e/tests/r8-product.test.ts",
+      "remote_sha256": "242e87f706ffec715e2720b8e0bc505a17b2b0a089b04941852cd214ed98305b",
+      "bytes": 6242,
+      "matches": true
+    }
+  ]
+}

@@ -163,3 +163,5 @@ oversized payload cause. New native success still requires actual inventory/
 byte readback; previous incomplete drafts are never finalized with missing files.
 
 - [102 — Assembly GLB coordinates/shared instances](102-glb-assembly-coordinate-and-instance-loss.md): display scale/orientation and lost instances caught in actual built GLBs; lossless flat scene records with independent native triangle/bounds readback. Electronics and pinned dependencies unchanged.
+
+- [103 — Bounded product text upload HTTP413](103-registry-bounded-text-payload-413.md): native19 assembly JSON/print-plan uploads rejected despite the local5MB source-file cap. Server threshold unconfirmed; six files missing overall, local CAD passes, actual native296/302 readback retained.

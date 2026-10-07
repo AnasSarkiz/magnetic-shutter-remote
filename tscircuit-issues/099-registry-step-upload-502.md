@@ -56,3 +56,14 @@ ready_to_build=false/pending. No OOM increase; peak childRSS850916KiB. This
 reproduces the same registry failure for a boundedGLB, rather than establishing
 an enclosure, importer or copper defect. CLI still has no existing-release
 resume flag. [Actual receipt](../evidence/R8-reference18-2026-10-07/PUBLICATION.md).
+
+## Sculpted enclosure 0.3.19 reproduction — 2026-10-07
+
+Normal guarded publisher returns HTTP502 for the manufacturing report, JST
+STEP, one bounded PCB GLB and side PNG; two other STEP requests time out.
+CLI exits1 with nine reported failures including three HTTP413 text payloads
+tracked separately in issue103. Actual public inventory is296/302; all296
+stored files independently match staged bytes. Only six files are missing,
+including both assembly JSONs. Release remains unready/pending. Peak child RSS
+911948KiB, no OOM increase; no evidence this is a memory allocation failure.
+[Exact paths, responses and readback](../evidence/R8-sculpted19-2026-10-07/PUBLICATION.md).

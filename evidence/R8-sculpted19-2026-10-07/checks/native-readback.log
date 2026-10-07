@@ -1,0 +1,3 @@
+Public native inventory: 296 files; exact critical text/binary readbacks: 296
+Inventory missing/extra: ['dist/product.assembly/circuit.json', 'dist/product.exploded/circuit.json', 'evidence/R8-reference18-2026-10-07/final-manufacturing.json', 'imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step', 'product/print-plans.json', 'product/studio-side.png'] [] ready_to_build: False
+Hosted worker: pending None
