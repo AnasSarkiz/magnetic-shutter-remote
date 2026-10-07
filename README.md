@@ -25,8 +25,8 @@ still needs testing with assembled hardware.
 
 The native [3D product assembly](product/README.md) contains the actual PCB,
 protected battery envelope, service enclosure, horizontal shutter and detachable
-MagSafe grip. The printed remote shell is **64×72×23mm**; the docked CAD
-assembly is **113.5×76×33mm**, excluding unqualified fastener heads/leads.
+MagSafe grip. The docked CAD matches the latest reference's **90×78×34mm** target,
+excluding unqualified fastener heads/leads.
 These are editable prototype dimensions. The PCB remains44×56×1mm.
 
 ![Product assembly](product/closed.png)
@@ -81,11 +81,11 @@ Protection. The separate component-guide pages have been removed.
 - [Top PCB view](evidence/R8-inline-notes15-2026-10-07/visual-review/pcb-top.png)
 - [JLCPCB BOM](fabrication/R8-inline-notes15-2026-10-07/JLCPCB-BOM.csv) and [placement file](fabrication/R8-inline-notes15-2026-10-07/JLCPCB-CPL.csv)
 - [Gerber/drill archive](fabrication/R8-inline-notes15-2026-10-07/R8-inline-notes15-Gerbers.zip)
-- [Current review](evidence/R8-enclosure17-2026-10-07/REVIEW.md) and [publication status](evidence/R8-enclosure17-2026-10-07/PUBLICATION.md)
+- [Current review](evidence/R8-reference18-2026-10-07/REVIEW.md) and [publication status](evidence/R8-reference18-2026-10-07/PUBLICATION.md)
 
 ## Prototype status
 
-**R8 0.3.17 is a CAD-validated engineering prototype, with hardware untested.**
+**R8 0.3.18 is a CAD-validated engineering prototype, with hardware untested.**
 UI and CLI schematic style analysis report zero issues. Native and independent
 checks pass zero DRC errors, shorts, dangling connections and manufacturing/
 process failures. Moving the schematic explanations changed no PCB geometry,
@@ -99,8 +99,8 @@ charging, temperature, Bluetooth, RF, runtime and MagSafe tests remain pending.
 This is not production or ordering approval.
 
 Current GitHub/native publication status is recorded in the
-[dated receipt](evidence/R8-enclosure17-2026-10-07/PUBLICATION.md). The previous
-0.3.16 native upload remains incomplete because of HTTP413/502 model uploads;
+[dated receipt](evidence/R8-reference18-2026-10-07/PUBLICATION.md). The previous
+0.3.16/17 native uploads remain incomplete because of HTTP413/502 uploads;
 new publication is accepted only after actual inventory/readback.
 Original issues 075/076 and native warnings 004/084 remain documented.
 Missing `3V3` power metadata remains a separate importer issue.

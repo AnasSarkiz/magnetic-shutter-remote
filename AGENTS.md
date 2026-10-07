@@ -1,3 +1,27 @@
+# Current R8 reference enclosure0.3.18 — 90×78×34mm,2026-10-07
+
+Read product/README.md and evidence/R8-reference18-2026-10-07/REVIEW.md (from
+cloud, use ../ paths). The latest user multi-view image sets the90×78×34mm
+target. The broad0.3.17 and unpublished tall18 candidates are superseded.
+The unchanged44×56×1mm PCB is rigidly rotated90° across the shoulder/circular
+body; the protected32×43×8.5mm pack is in the lower palm. Native enclosure
+checks verify the target envelope,44component envelopes, four original mounts,
+board/pack containment and the horizontal−Y side-switch contact. Eight prints
+and actual native GLB readback are checked separately. No physical operation,
+photograph-identical texture, universal phone fit or finished-product order
+approval is claimed. Side USB-C cable fit, lid-off power/service access, shutter
+stroke/guides/return, harness/thermal, exact MagSafe array/DCshield/bonding,
+retention/RF/phone/case/hardware tests remain pending. Electronics/copper/BOM/
+firmware and frozen baselines are unchanged; electrical checks are explicitly
+carried forward byte-identically. No root board/routing/SDK/CAM build, no RGB
+ring. Original075/076/native004/084 and separate missing3V3metadata stay explicit.
+Publication status is the actual dated receipt. Setup/start, branch preservation,
+serial memory guards and ordering/payment/contact restrictions remain unchanged.
+
+## Earlier records — preserved history
+
+
+
 # Current R8 enclosure0.3.17 — camera grip,2026-10-07
 
 Read product/README.md and evidence/R8-enclosure17-2026-10-07/REVIEW.md (from cloud,

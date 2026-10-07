@@ -1,0 +1,29 @@
+{
+  "reviewed": [
+    "product/closed.png",
+    "product/exploded.png",
+    "product/phone-facing.png"
+  ],
+  "reference": "User-provided multi-view image,90\u00d778\u00d734mm",
+  "measured_envelope_mm": [
+    90,
+    78,
+    34
+  ],
+  "features": [
+    "integrated circular upper body",
+    "narrow rounded lower palm",
+    "concave waist",
+    "bronze shoulder cap with hidden L-slider",
+    "side USB-C access",
+    "blind underside lid fasteners"
+  ],
+  "native_geometry_only": true,
+  "photograph_identical_texture_or_finish_claimed": false,
+  "physical_fit_claimed": false,
+  "sha256": {
+    "product/closed.png": "426e4bb46771a6bd0ab8ac65fe21c34751042843999522f5d0630e1dd2adc3eb",
+    "product/exploded.png": "ab0ba1f6764ab24489b0ad77d1bb3db87564f17ab5287dae3a8000362b1f22c1",
+    "product/phone-facing.png": "aead3871061a5158a5defa3192e0b2089ddaebc83986b93ce96700ac5cddb9b6"
+  }
+}

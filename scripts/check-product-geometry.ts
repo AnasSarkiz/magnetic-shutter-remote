@@ -3,9 +3,17 @@ import { loadJscadPlan } from "circuit-json-to-gltf";
 import type { JscadOperation } from "jscad-planner";
 import type Geom3 from "@jscad/modeling/src/geometries/geom3/type";
 import modeling from "@jscad/modeling";
-import { createProductParts, partInProduct } from "../product/geometry";
+import {
+	createProductParts,
+	partInProduct,
+	createRemoteOuterPlan,
+} from "../product/geometry";
 import { z } from "zod";
-import { dimensions as d, mountingHolesMm } from "../product/dimensions";
+import {
+	dimensions as d,
+	mountingHolesMm,
+	pcbPointInProduct,
+} from "../product/dimensions";
 import { any_circuit_element } from "circuit-json";
 // Native plan loader evaluates the identical plans used by the assembly.
 function solidFromPlan(plan: JscadOperation): Geom3 {
@@ -50,14 +58,20 @@ const meshReview = z
 const electronicEnvelopeClashes = [];
 for (const component of meshReview.meshes) {
 	const [min, max] = component.boundsMm;
-	const envelope = modeling.primitives.cuboid({
-		size: [max[0] - min[0], max[1] - min[1], max[2] - min[2]],
-		center: [
-			(min[0] + max[0]) / 2 + d.remote.centerXMm,
-			(min[1] + max[1]) / 2 + d.remote.centerYMm,
-			(min[2] + max[2]) / 2 + d.pcb.centerZMm,
-		],
-	});
+	const envelope = modeling.transforms.translate(
+		[d.remote.centerXMm, d.remote.centerYMm, d.pcb.centerZMm],
+		modeling.transforms.rotateZ(
+			(d.remote.ccwRotationDegrees * Math.PI) / 180,
+			modeling.primitives.cuboid({
+				size: [max[0] - min[0], max[1] - min[1], max[2] - min[2]],
+				center: [
+					(min[0] + max[0]) / 2,
+					(min[1] + max[1]) / 2,
+					(min[2] + max[2]) / 2,
+				],
+			}),
+		),
+	);
 	for (let index = 0; index < parts.length; index++) {
 		if (parts[index].referenceOnly) continue;
 		const volumeMm3 = Math.abs(
@@ -79,7 +93,13 @@ for (let index = 0; index < parts.length; index++) {
 	for (const triangle of mesh.triangles)
 		for (const vertex of triangle.vertices) {
 			// Native loader frame is X, Z, Y; convert back to PCB XYZ.
-			if (Math.hypot(vertex.x, vertex.z) > 30.00001 && vertex.y < 5.99999)
+			if (
+				Math.hypot(
+					vertex.x - d.magsafe.centerXMm,
+					vertex.z - d.magsafe.centerYMm,
+				) > 30.00001 &&
+				vertex.y < 5.99999
+			)
 				phoneClearanceViolations.push(parts[index].name);
 		}
 }
@@ -98,6 +118,42 @@ if (
 	board.thickness !== d.pcb.thicknessMm
 )
 	throw new Error("Enclosure PCB envelope differs from actual board");
+const outerShell = solidFromPlan(
+	partInProduct({
+		name: "RemoteOuterEnvelope",
+		description: "Actual case boundary before hollowing",
+		plan: createRemoteOuterPlan(),
+		explodeZMm: 0,
+	}),
+);
+const boardCenter = pcbPointInProduct({ x: 0, y: 0 });
+const boardEnvelope = modeling.transforms.translate(
+	[boardCenter.x, boardCenter.y, d.pcb.centerZMm],
+	modeling.transforms.rotateZ(
+		(d.remote.ccwRotationDegrees * Math.PI) / 180,
+		modeling.primitives.cuboid({
+			size: [board.width, board.height, board.thickness],
+		}),
+	),
+);
+const batteryIndex = parts.findIndex(
+	(part) => part.name === "ASR00012_MaximumEnvelope",
+);
+const containmentReview = {
+	boardOutsideVolumeMm3: modeling.measurements.measureVolume(
+		modeling.booleans.subtract(boardEnvelope, outerShell),
+	),
+	batteryOutsideVolumeMm3: modeling.measurements.measureVolume(
+		modeling.booleans.subtract(shapes[batteryIndex], outerShell),
+	),
+};
+if (
+	Math.abs(containmentReview.boardOutsideVolumeMm3) > 0.001 ||
+	Math.abs(containmentReview.batteryOutsideVolumeMm3) > 0.001
+)
+	throw new Error(
+		`Board or battery escapes case: ${JSON.stringify(containmentReview)}`,
+	);
 const actualMounts = source.filter(
 	(element) => element.type === "pcb_hole" && !element.pcb_component_id,
 );
@@ -114,13 +170,14 @@ const mountingReview = mountingHolesMm.map(([x, y]) => {
 	);
 	if (!hole) throw new Error("Enclosure mount does not match actual PCB hole");
 	for (const [name, zMm] of [
-		["RemoteBase", 12.5],
-		["RemoteLid", 14.5],
+		["RemoteBase", d.pcb.centerZMm - 1],
+		["RemoteLid", d.pcb.centerZMm + 1],
 	] as const) {
 		const index = parts.findIndex((part) => part.name === name);
+		const mountCenter = pcbPointInProduct({ x: x + 1.5, y });
 		const witness = modeling.primitives.cuboid({
 			size: [0.2, 0.2, 0.2],
-			center: [x + d.remote.centerXMm + 1.5, y + d.remote.centerYMm, zMm],
+			center: [mountCenter.x, mountCenter.y, zMm],
 		});
 		const volumeMm3 = modeling.measurements.measureVolume(
 			modeling.booleans.intersect(witness, shapes[index]),
@@ -141,25 +198,60 @@ const plungerBounds = rows.find(
 if (!plungerBounds) throw new Error("Missing side actuator");
 const actualSwitch = meshReview.meshes.find((mesh) => mesh.name === "SW2");
 if (!actualSwitch) throw new Error("Missing actual switch model");
-const shutterFreeGapMm =
-	plungerBounds[0][0] - (actualSwitch.boundsMm[1][0] + d.remote.centerXMm);
-const shutterCenterYMm = (plungerBounds[0][1] + plungerBounds[1][1]) / 2;
-const shutterCenterZMm = (plungerBounds[0][2] + plungerBounds[1][2]) / 2;
+const actualTip = pcbPointInProduct({
+	x: actualSwitch.boundsMm[1][0],
+	y: d.shutter.centerYMm,
+});
+const expectedShutterCenter = pcbPointInProduct({
+	x: d.shutter.actuatorXMm,
+	y: d.shutter.centerYMm,
+});
+const shutterFreeGapMm = plungerBounds[0][1] - actualTip.y;
+const plungerIndex = parts.findIndex(
+	(part) => part.name === "SideShutterPlunger",
+);
+const contactSlice = modeling.booleans.intersect(
+	shapes[plungerIndex],
+	modeling.primitives.cuboid({
+		size: [10, 0.1, 5],
+		center: [actualTip.x, plungerBounds[0][1] + 0.1, d.shutter.centerZMm],
+	}),
+);
+const contactBounds = modeling.measurements.measureBoundingBox(contactSlice);
+const shutterCenterXMm = (contactBounds[0][0] + contactBounds[1][0]) / 2;
+const shutterCenterZMm = (contactBounds[0][2] + contactBounds[1][2]) / 2;
 if (
 	Math.abs(shutterFreeGapMm - d.shutter.freeGapMm) > 0.0001 ||
-	Math.abs(shutterCenterYMm - d.shutter.centerYMm - d.remote.centerYMm) >
-		0.0001 ||
-	Math.abs(shutterCenterZMm - d.shutter.centerZMm) > 0.0001
+	Math.abs(shutterCenterXMm - expectedShutterCenter.x) > 0.0001 ||
+	Math.abs(shutterCenterZMm - d.shutter.centerZMm) > 0.0001 ||
+	Math.abs(contactBounds[1][0] - contactBounds[0][0] - 3) > 0.0001 ||
+	Math.abs(contactBounds[1][2] - contactBounds[0][2] - 1.8) > 0.0001
 )
-	throw new Error("Shutter plunger lost actual side-switch alignment");
+	throw new Error("Shutter linkage lost actual side-switch contact alignment");
 const shutterAlignment = {
-	axis: "horizontal +X",
+	axis: "horizontal -Y",
 	freeGapMm: shutterFreeGapMm,
-	centerYMm: shutterCenterYMm,
+	centerXMm: shutterCenterXMm,
+	centerYMm: actualTip.y,
 	centerZMm: shutterCenterZMm,
+	contactBoundsMm: contactBounds,
 	boardRelativeActuatorZMm: d.shutter.centerZMm - d.pcb.centerZMm,
 	physicalStrokeAndOvertravelQualified: false,
 };
+const productBounds = modeling.measurements.measureBoundingBox(
+	modeling.booleans.union(...shapes),
+);
+const targetSize = [d.product.widthMm, d.product.heightMm, d.product.depthMm];
+if (
+	productBounds[1].some(
+		(coordinate, index) =>
+			Math.abs(coordinate - productBounds[0][index] - targetSize[index]) >
+			0.00001,
+	)
+)
+	throw new Error(
+		`Product differs from 90×78×34 reference: ${JSON.stringify(productBounds)}`,
+	);
 await Bun.write(
 	"product/print-plans.json",
 	JSON.stringify(
@@ -181,14 +273,13 @@ const report = {
 		(mesh) => mesh.name !== "Box0",
 	).length,
 	boardEnvelopeChecked: true,
+	containmentReview,
 	mountingReview,
 	shutterAlignment,
 	clashes,
 	phoneDatumZMm: 0,
-	remoteBottomZMm: 10,
-	fullProductBoundingBoxMm: modeling.measurements.measureBoundingBox(
-		modeling.booleans.union(...shapes),
-	),
+	remoteBottomZMm: d.remote.bottomZMm,
+	fullProductBoundingBoxMm: productBounds,
 };
 await Bun.write(
 	"product/geometry-review.json",

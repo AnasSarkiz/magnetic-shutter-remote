@@ -43,9 +43,10 @@ export function R8ProductAssembly({
 					displayName={`Actual unchanged PCB geometry fragment${index + 1} of7`}
 					cadModel={{
 						glbUrl,
-						modelBoardNormalDirection: "z+",
+						modelBoardNormalDirection: "y+",
 						modelUnitToMmScale: 1,
 						size: pcbReview.nativeAssets[index].sizeMm,
+						rotationOffset: { x: 0, y: 0, z: 0 },
 						modelOriginPosition: { x: 0, y: 0, z: 0 },
 						positionOffset: {
 							x: d.remote.centerXMm,
@@ -66,7 +67,7 @@ export function R8ProductAssembly({
 					y: (min[1] + max[1]) / 2,
 					z: (min[2] + max[2]) / 2,
 				};
-				const isGrip = part.name.startsWith("MagSafe");
+				const productCenter = center;
 				return (
 					<assembly.subassembly
 						key={part.name}
@@ -85,12 +86,14 @@ export function R8ProductAssembly({
 							},
 							modelOriginPosition: { x: 0, y: 0, z: 0 },
 							positionOffset: {
-								x: center.x + (isGrip ? 0 : d.remote.centerXMm),
-								y: center.y + (isGrip ? 0 : d.remote.centerYMm),
-								z:
-									center.z +
-									(isGrip ? 0 : 4) +
-									(exploded ? part.explodeZMm : 0),
+								x: productCenter.x,
+								y: productCenter.y,
+								z: center.z + (exploded ? part.explodeZMm : 0),
+							},
+							rotationOffset: {
+								x: 0,
+								y: 0,
+								z: 0,
 							},
 							showAsTranslucentModel: part.referenceOnly ?? false,
 						}}

@@ -1,3 +1,4 @@
+import { dimensions } from "../product/dimensions";
 import { mat4, vec3 } from "gl-matrix";
 import { any_circuit_element } from "circuit-json";
 import { z } from "zod";
@@ -119,7 +120,17 @@ for (const filename of [
 	);
 	const start = meshRows.length;
 	for (const root of doc.scenes[doc.scene ?? 0].nodes)
-		visit(root, { parent: mat4.create(), doc });
+		visit(root, {
+			parent: mat4.multiply(
+				mat4.create(),
+				mat4.fromZRotation(
+					mat4.create(),
+					(-dimensions.remote.ccwRotationDegrees * Math.PI) / 180,
+				),
+				mat4.fromValues(1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1),
+			),
+			doc,
+		});
 	const fragment = meshRows.slice(start);
 	const min = [0, 1, 2].map((axis) =>
 		Math.min(...fragment.map((row) => row.boundsMm[0][axis])),
@@ -130,7 +141,7 @@ for (const filename of [
 	nativeAssets.push({
 		filename,
 		sha256: new Bun.CryptoHasher("sha256").update(bytes).digest("hex"),
-		sizeMm: { x: max[0] - min[0], y: max[1] - min[1], z: max[2] - min[2] },
+		sizeMm: { x: max[1] - min[1], y: max[0] - min[0], z: max[2] - min[2] },
 	});
 }
 const source = any_circuit_element
@@ -165,6 +176,7 @@ const report = {
 		.update(await Bun.file("dist/index/circuit.json").arrayBuffer())
 		.digest("hex"),
 	nativeAssets,
+	assetRotationDegrees: dimensions.remote.ccwRotationDegrees,
 	fittedModels: 44,
 	emptyModels: 0,
 	all44CadAnchorsMatch: true,

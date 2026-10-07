@@ -1,0 +1,167 @@
+[
+  {
+    "name": "format-write",
+    "command": [
+      "bun",
+      "run",
+      "format"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:04.437449+00:00",
+    "finished_utc": "2026-10-07T16:17:04.517054+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-format-write.log"
+  },
+  {
+    "name": "geometry",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-product-geometry.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:04.517455+00:00",
+    "finished_utc": "2026-10-07T16:17:10.199254+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-geometry.log"
+  },
+  {
+    "name": "print-export",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/export-product-prints.py"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:10.199607+00:00",
+    "finished_utc": "2026-10-07T16:17:10.525320+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-print-export.log"
+  },
+  {
+    "name": "closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.assembly.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:10.525641+00:00",
+    "finished_utc": "2026-10-07T16:17:32.575149+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-closed.log"
+  },
+  {
+    "name": "exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.exploded.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:32.575489+00:00",
+    "finished_utc": "2026-10-07T16:17:54.646629+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-exploded.log"
+  },
+  {
+    "name": "render-closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.assembly"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:54.647008+00:00",
+    "finished_utc": "2026-10-07T16:17:56.005953+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-render-closed.log"
+  },
+  {
+    "name": "render-exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.exploded"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:56.006423+00:00",
+    "finished_utc": "2026-10-07T16:17:57.023657+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-render-exploded.log"
+  },
+  {
+    "name": "render-phone-facing",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.assembly",
+      "phone-facing"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:57.024081+00:00",
+    "finished_utc": "2026-10-07T16:17:58.121953+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-render-phone-facing.log"
+  },
+  {
+    "name": "types",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:17:58.122385+00:00",
+    "finished_utc": "2026-10-07T16:18:04.270652+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-types.log"
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:18:04.271120+00:00",
+    "finished_utc": "2026-10-07T16:18:04.342443+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-format.log"
+  },
+  {
+    "name": "product-tests",
+    "command": [
+      "bun",
+      "test",
+      "./tests/r8-product.test.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:18:04.342976+00:00",
+    "finished_utc": "2026-10-07T16:18:04.512593+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-product-tests.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T16:18:04.513007+00:00",
+    "finished_utc": "2026-10-07T16:18:21.023312+00:00",
+    "log": "evidence/R8-reference18-2026-10-07/checks/final-smoke.log"
+  }
+]

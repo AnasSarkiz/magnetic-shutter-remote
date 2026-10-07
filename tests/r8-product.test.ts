@@ -1,7 +1,7 @@
 import { expect, test } from "bun:test";
 import { any_circuit_element } from "circuit-json";
 import { z } from "zod";
-import { dimensions } from "../product/dimensions";
+import { dimensions, pcbPointInProduct } from "../product/dimensions";
 
 test("native product views preserve the board transform and create no second PCB", async () => {
 	for (const name of ["product.assembly", "product.exploded"]) {
@@ -36,8 +36,10 @@ test("native product views preserve the board transform and create no second PCB
 			y: dimensions.remote.centerYMm,
 			z: dimensions.pcb.centerZMm + (name === "product.exploded" ? 26 : 0),
 		});
+		expect(cad.rotation).toEqual({ x: 0, y: 0, z: 0 });
 		expect(cad.model_glb_url).toContain("r8-pcb.glb");
 		expect(cad.model_unit_to_mm_scale_factor).toBe(1);
+		expect(cad.model_board_normal_direction).toBe("y+");
 	}
 });
 
@@ -49,6 +51,10 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 			phoneClearanceViolations: z.array(z.unknown()),
 			fittedComponentEnvelopesChecked: z.number(),
 			boardEnvelopeChecked: z.boolean(),
+			containmentReview: z.object({
+				boardOutsideVolumeMm3: z.number(),
+				batteryOutsideVolumeMm3: z.number(),
+			}),
 			mountingReview: z.array(
 				z.object({ lowerSeatAndUpperPillarVerified: z.boolean() }),
 			),
@@ -67,6 +73,8 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 	expect(review.phoneClearanceViolations).toEqual([]);
 	expect(review.fittedComponentEnvelopesChecked).toBe(44);
 	expect(review.boardEnvelopeChecked).toBe(true);
+	expect(review.containmentReview.boardOutsideVolumeMm3).toBe(0);
+	expect(review.containmentReview.batteryOutsideVolumeMm3).toBe(0);
 	expect(review.mountingReview).toHaveLength(4);
 	expect(
 		review.mountingReview.every(
@@ -74,8 +82,11 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 		),
 	).toBe(true);
 	expect(review.shutterAlignment.freeGapMm).toBeCloseTo(0.15, 3);
-	expect(review.shutterAlignment.centerYMm).toBe(
-		dimensions.shutter.centerYMm + dimensions.remote.centerYMm,
+	expect(review.shutterAlignment.centerYMm).toBeCloseTo(
+		pcbPointInProduct({
+			x: dimensions.shutter.actuatorXMm,
+			y: dimensions.shutter.centerYMm,
+		}).y,
 	);
 	expect(review.shutterAlignment.centerZMm).toBe(dimensions.shutter.centerZMm);
 	const cell = review.parts.find(
@@ -86,7 +97,7 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 		cell.boundsMm[1].map(
 			(coordinate, index) => coordinate - cell.boundsMm[0][index],
 		),
-	).toEqual([43, 32, 8.5]);
+	).toEqual([32, 43, 8.5]);
 	const pcb = z
 		.object({
 			fittedModels: z.number(),
@@ -99,7 +110,7 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 	expect(pcb.all44CadAnchorsMatch).toBe(true);
 });
 
-test("six manufacturing STL files match the checked plans and pass actual readback", async () => {
+test("eight manufacturing STL files match the checked plans and pass actual readback", async () => {
 	const receipt = z
 		.object({
 			source_plans_sha256: z.string(),
@@ -125,7 +136,7 @@ test("six manufacturing STL files match the checked plans and pass actual readba
 	expect(receipt.native_geometry_sha256).toBe(
 		await hash("product/geometry-review.json"),
 	);
-	expect(receipt.printed_parts).toHaveLength(6);
+	expect(receipt.printed_parts).toHaveLength(8);
 	for (const part of receipt.printed_parts) {
 		expect(part.watertight).toBe(true);
 		expect(part.winding_consistent).toBe(true);

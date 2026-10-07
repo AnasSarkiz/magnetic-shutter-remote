@@ -19,13 +19,15 @@ def solid_from_plan(plan):
         # Pinned JSCAD's cylinder default is32 segments; match actual native CAD.
         return Manifold.cylinder(plan['height'], plan['radius'],
                                  circular_segments=32, center=True).translate(plan['center'])
+    if kind == 'rotate':
+        return solid_from_plan(plan['shape']).rotate(tuple(np.rad2deg(plan['angles'])))
     if kind == 'translate':
         return solid_from_plan(plan['shape']).translate(plan['vector'])
-    if kind in {'union', 'subtract', 'hull'}:
+    if kind in {'union', 'subtract', 'intersect', 'hull'}:
         shapes = [solid_from_plan(shape) for shape in plan['shapes']]
         if kind == 'hull':
             return Manifold.batch_hull(shapes)
-        return Manifold.batch_boolean(shapes, OpType.Add if kind == 'union' else OpType.Subtract)
+        return Manifold.batch_boolean(shapes, {'union': OpType.Add, 'subtract': OpType.Subtract, 'intersect': OpType.Intersect}[kind])
     if kind == 'extrudeLinear' and plan['shape']['type'] == 'polygon':
         return CrossSection([plan['shape']['points']]).extrude(plan['options']['height'])
     raise ValueError(f'Unsupported manufacturing operation: {kind}')

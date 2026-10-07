@@ -1,4 +1,5 @@
-import { pcbModelInBoardCoordinates } from "./normalize-pcb-model";
+import { dimensions } from "../product/dimensions";
+import { pcbModelInAssemblyCoordinates } from "./normalize-pcb-model";
 import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 import { any_circuit_element } from "circuit-json";
@@ -39,7 +40,9 @@ for (const [index, filename] of [
 	});
 	if (!(glb instanceof ArrayBuffer))
 		throw new Error("Expected native binary GLB");
-	const normalized = pcbModelInBoardCoordinates(glb);
+	const normalized = pcbModelInAssemblyCoordinates(glb, {
+		rotationDegrees: dimensions.remote.ccwRotationDegrees,
+	});
 	if (normalized.length > 2_400_000)
 		throw new Error(`Native asset exceeds upload bound: ${filename}`);
 	await Bun.write(`product/models/${filename}`, normalized);

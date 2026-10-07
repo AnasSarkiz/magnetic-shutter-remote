@@ -1,0 +1,251 @@
+{
+  "observed_utc": "2026-10-07T16:19:35.776269+00:00",
+  "memory_limit_bytes_observed": 34359738368,
+  "not_guaranteed_plan_allocation": true,
+  "cpu_quota": "400000 100000",
+  "heavy_jobs_serial": true,
+  "jobs": [
+    {
+      "started_utc": "20261007T161710547711Z",
+      "command": [
+        "tsci",
+        "build",
+        "product.assembly.tsx",
+        "--glbs"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:32.568768+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 6114384,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161710547711Z.log"
+    },
+    {
+      "started_utc": "20261007T161710224511Z",
+      "command": [
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/export-product-prints.py"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:10.518962+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 50504,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161710224511Z.log"
+    },
+    {
+      "started_utc": "20261007T161732601633Z",
+      "command": [
+        "tsci",
+        "build",
+        "product.exploded.tsx",
+        "--glbs"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:54.639334+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 6256996,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161732601633Z.log"
+    },
+    {
+      "started_utc": "20261007T161757058167Z",
+      "command": [
+        "bun",
+        "scripts/render-product.ts",
+        "product.assembly",
+        "phone-facing"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:58.115431+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 329124,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161757058167Z.log"
+    },
+    {
+      "started_utc": "20261007T161754669488Z",
+      "command": [
+        "bun",
+        "scripts/render-product.ts",
+        "product.assembly"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:56.000012+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 284176,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161754669488Z.log"
+    },
+    {
+      "started_utc": "20261007T161704542171Z",
+      "command": [
+        "bun",
+        "scripts/check-product-geometry.ts"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:10.192330+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 351780,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161704542171Z.log"
+    },
+    {
+      "started_utc": "20261007T161756028476Z",
+      "command": [
+        "bun",
+        "scripts/render-product.ts",
+        "product.exploded"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:17:57.016618+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 328832,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161756028476Z.log"
+    },
+    {
+      "started_utc": "20261007T161839182891Z",
+      "command": [
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-native-product.py",
+        "--output",
+        "evidence/R8-reference18-2026-10-07/native-view-review.json"
+      ],
+      "memory_limit_bytes": 34359738368,
+      "node_heap_mib": 14336,
+      "oom_counters_before": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "finished_utc": "2026-10-07T16:18:39.803831+00:00",
+      "return_code": 0,
+      "peak_child_rss_kib": 182848,
+      "oom_counters_after": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "log": ".codex/logs/heavy-20261007T161839182891Z.log"
+    }
+  ]
+}

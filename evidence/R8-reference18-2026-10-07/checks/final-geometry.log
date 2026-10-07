@@ -1,0 +1,410 @@
+{
+  "started_utc": "20261007T161704542171Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -59.00000000000002,
+          -52,
+          5.999999999999996
+        ],
+        [
+          31,
+          26,
+          30
+        ]
+      ],
+      "boundsMm": [
+        [
+          -59.00000000000002,
+          -52,
+          5.999999999999996
+        ],
+        [
+          31,
+          26,
+          30
+        ]
+      ],
+      "volumeMm3": 18683.79388257224,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "volumeMm3": 175.2000000000006,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "volumeMm3": 11696.000000000007,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          18.3,
+          23.5
+        ]
+      ],
+      "boundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          18.3,
+          23.5
+        ]
+      ],
+      "volumeMm3": 321.83546033294283,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -58,
+          -51,
+          10
+        ],
+        [
+          31,
+          26,
+          33.5
+        ]
+      ],
+      "boundsMm": [
+        [
+          -58,
+          -51,
+          10
+        ],
+        [
+          31,
+          26,
+          33.5
+        ]
+      ],
+      "volumeMm3": 12569.588721886983,
+      "referenceOnly": false
+    },
+    {
+      "name": "FingerGripInsert",
+      "localBoundsMm": [
+        [
+          -54,
+          -46,
+          32.599999999999994
+        ],
+        [
+          -22,
+          6,
+          34
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54,
+          -46,
+          32.599999999999994
+        ],
+        [
+          -22,
+          6,
+          34
+        ]
+      ],
+      "volumeMm3": 2088.5245497796277,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeRearCover",
+      "localBoundsMm": [
+        [
+          -24.359047846985288,
+          -34.2,
+          32.099999999999994
+        ],
+        [
+          29.2,
+          24.2,
+          33.5
+        ]
+      ],
+      "boundsMm": [
+        [
+          -24.359047846985288,
+          -34.2,
+          32.099999999999994
+        ],
+        [
+          29.2,
+          24.2,
+          33.5
+        ]
+      ],
+      "volumeMm3": 3284.165346434969,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -29.50000000000001,
+          -34.50000000000001,
+          0.6
+        ],
+        [
+          29.500000000000007,
+          24.50000000000001,
+          8.3
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.50000000000001,
+          -34.50000000000001,
+          0.6
+        ],
+        [
+          29.500000000000007,
+          24.50000000000001,
+          8.3
+        ]
+      ],
+      "volumeMm3": 10480.957545310806,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1629.8625862515423,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.05,
+          -32.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.05,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.05,
+          -32.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.05,
+          1.7
+        ]
+      ],
+      "volumeMm3": 695.9972095731466,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "boardEnvelopeChecked": true,
+  "containmentReview": {
+    "boardOutsideVolumeMm3": 0,
+    "batteryOutsideVolumeMm3": 0
+  },
+  "mountingReview": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "shutterAlignment": {
+    "axis": "horizontal -Y",
+    "freeGapMm": 0.14997236633301014,
+    "centerXMm": -6.6999999999999975,
+    "centerYMm": 13.474027633666992,
+    "centerZMm": 10.86,
+    "contactBoundsMm": [
+      [
+        -8.199999999999998,
+        13.674000000000001,
+        9.959999999999999
+      ],
+      [
+        -5.1999999999999975,
+        13.774000000000003,
+        11.76
+      ]
+    ],
+    "boardRelativeActuatorZMm": 1.3599999999999994,
+    "physicalStrokeAndOvertravelQualified": false
+  },
+  "clashes": [],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 6,
+  "fullProductBoundingBoxMm": [
+    [
+      -59.00000000000002,
+      -52,
+      0
+    ],
+    [
+      31.000000000000007,
+      26,
+      34
+    ]
+  ]
+}
+{
+  "started_utc": "20261007T161704542171Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T16:17:10.192330+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 351780,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T161704542171Z.log"
+}

@@ -1,0 +1,121 @@
+{
+  "observed_utc": "2026-10-07T16:11:09.829293+00:00",
+  "board_circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "not_new_electrical_runs": true,
+  "files": [
+    {
+      "path": "final-native-checks.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/final-native-checks.json",
+      "sha256": "46c646abd09a273e6d9c686f9f81a8dabdb5d5d622cd98ab1c1f5fe786aefec2",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "final-manufacturing.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/final-manufacturing.json",
+      "sha256": "b0c3009893de988b5c3dc8da82d1100c05ed4100074cedfccf2d484451b1ebc7",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "physical-connectivity.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/physical-connectivity.json",
+      "sha256": "96d01654c0fbcc0ac652a123c9b5dcdded44423d427ea94855e4c8370f8ccfbd",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "power-path-measurements.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/power-path-measurements.json",
+      "sha256": "365a5c9add55c4cf55b522053918b9f8a2302ab5c2b20fa695e0cbc854e8a0c5",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "trace-width-review.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/trace-width-review.json",
+      "sha256": "c9b431341449ef5cb8bb8a755e8e9a0abf860a7942a9ecba6fb8bcb253e02aac",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "electrical-contract.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/electrical-contract.json",
+      "sha256": "099fbfa1ebcdcf8c7df88ab038303614bc3c1c43aface36a51a991ffe4dff7be",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "SW2-supplier-terminal-registration.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/SW2-supplier-terminal-registration.json",
+      "sha256": "3a09c62fbfe0eddb20bfd43a032d93141d03bc5accc3b1bcc77f12b3892ff23e",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "J3-supplier-terminal-registration.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/J3-supplier-terminal-registration.json",
+      "sha256": "d0571f0c6b0474efae31cb61086cc6ca06906ef5d69d5d86a89f3ef66fa616b6",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "placement-preservation.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/placement-preservation.json",
+      "sha256": "2b47e8c3f6112dc685fe428f0b7d0561fbc8d360c1b1a75888393d1ee58ac59b",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "sourcing-check.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/sourcing-check.json",
+      "sha256": "e11e418d0c60c6c3bf4d935419605c59f512da32e28ef7c72ad97f71627d68c1",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "pcb-preservation.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/pcb-preservation.json",
+      "sha256": "2b47e8c3f6112dc685fe428f0b7d0561fbc8d360c1b1a75888393d1ee58ac59b",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "electrical-preservation.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/electrical-preservation.json",
+      "sha256": "1c6db5cd70dd9af116daee6e4fff13cefd2d31f2f60d8c9d785aab33416621cf",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "final-process/process-review.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/final-process/process-review.json",
+      "sha256": "cdf7a4efdb4a7801aea86e7a6b1f3b9d249e413c45b7e9e4eb84fcc681c69700",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "final-readback/readback.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/final-readback/readback.json",
+      "sha256": "96b1dfab0717392007f0e04658981f57cf4ba120af39432f342a91eaf8ec6a9f",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "visual-review/inspection.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/visual-review/inspection.json",
+      "sha256": "d4f6de8063e6544998247cc027196adf6130fc8c6db41dafb6d58aa77b20ba38",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "preservation.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/preservation.json",
+      "sha256": "074c4b38c391ed5d90efe1b5714c1ef7d35f7e41cd2145438460085ef4ec3ce7",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "failed-route10/circuit.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/failed-route10/circuit.json",
+      "sha256": "9a350c031af814c77cbc3a52d803bb3f48c47fb31a362a987a120564bae241b3",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "failed-route20-visual/process-review.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/failed-route20-visual/process-review.json",
+      "sha256": "0eed43695b1191c119b6f09c520a8dd7ff18f7f474e2780f93586fe7338e1e2d",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "visual-review/inspection.json",
+      "origin": "evidence/R8-enclosure17-2026-10-07/visual-review/inspection.json",
+      "sha256": "d4f6de8063e6544998247cc027196adf6130fc8c6db41dafb6d58aa77b20ba38",
+      "unchanged_bytes": true
+    }
+  ]
+}

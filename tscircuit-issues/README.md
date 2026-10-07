@@ -161,3 +161,5 @@ large PCB GLB request bodies from transient STEP502/timeouts. Seven native
 fragments below2.4MB preserve all44 model vertices/bounds/poses, avoiding the
 oversized payload cause. New native success still requires actual inventory/
 byte readback; previous incomplete drafts are never finalized with missing files.
+
+- [102 — Assembly GLB coordinates/shared instances](102-glb-assembly-coordinate-and-instance-loss.md): display scale/orientation and lost instances caught in actual built GLBs; lossless flat scene records with independent native triangle/bounds readback. Electronics and pinned dependencies unchanged.

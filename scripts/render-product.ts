@@ -70,12 +70,12 @@ const result = renderSceneFromGLTF(scene, {
 	ambient: 0.5,
 	camPos:
 		view === "phone-facing"
-			? [130, -110, 100]
+			? [-70, -210, 95]
 			: name === "product.exploded"
-				? [-175, 200, 160]
-				: [-150, 140, 120],
-	lookAt: [-24, name === "product.exploded" ? 50 : 17, 0],
-	up: "y+",
+				? [175, 210, 145]
+				: [135, 210, 80],
+	lookAt: [14, name === "product.exploded" ? 50 : 17, -13],
+	up: name === "product.exploded" ? "y+" : "z+",
 	fov: name === "product.exploded" ? 40 : 34,
 });
 const png = await encodePNG(result.bitmap);
