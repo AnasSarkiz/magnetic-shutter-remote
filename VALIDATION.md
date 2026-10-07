@@ -1,3 +1,26 @@
+# Current R8 sculpted enclosure0.3.19 — reference camera grip,2026-10-07
+
+Read product/README.md and evidence/R8-sculpted19-2026-10-07/REVIEW.md (from
+cloud, use ../ paths). The user's multi-view image remains the90×78×34mm
+reference. New curved palm crown,17.05mm circular back, domed bronze pill,
+rounded USB-C tunnel and continuous shoulder supersede the thicker18 shape.
+The unchanged44×56×1mm PCB and32×43×8.5mm protected pack retain their18 poses.
+All44 component envelopes, original four mounts, containment and side-contact
+checks pass. Four shutter positions through the nominal0.35mm stop are checked
+against the case and other43 components; actual travel/friction/return/stop
+strength remains unqualified. Eight single-solid print meshes and native GLB
+readback are checked independently. Studio views use the actual native GLB;
+lighting, shading normals and fine-grain material do not change vertices/faces.
+Photograph-identical surfaces/finish or physical operation are not verified.
+Electronics, firmware, routing, imports, locks and frozen baselines are unchanged.
+No root board/routing/SDK/CAM build. Prior075/076/004/084, separate3V3metadata,
+physical/supplier/MagSafe/RF/service/thermal/harness gates remain explicit.
+Current publication status is the dated PUBLICATION.md; earlier incomplete18
+is preserved. Setup/start, branch preservation, serial memory guards and
+ordering/payment/contact restrictions remain unchanged.
+
+## Earlier records — preserved history
+
 # Current R8 reference enclosure0.3.18 — 90×78×34mm,2026-10-07
 
 Read product/README.md and evidence/R8-reference18-2026-10-07/REVIEW.md (from

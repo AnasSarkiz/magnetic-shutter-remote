@@ -1,0 +1,444 @@
+{
+  "started_utc": "20261007T190959631062Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Evaluated RemoteBase: 1.37s
+Evaluated BatterySupport: 0.00s
+Evaluated ASR00012_MaximumEnvelope: 0.00s
+Evaluated SideShutterPlunger: 0.02s
+Evaluated RemoteLid: 1.70s
+Evaluated FingerGripInsert: 0.04s
+Evaluated MagSafeRearCover: 0.00s
+Evaluated MagSafeGrip: 0.16s
+Evaluated MagSafeFaceCover: 0.00s
+Evaluated MagSafeArrayReference: 0.01s
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -59.000000000000014,
+          -52,
+          4.800000000000001
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          30.5
+        ]
+      ],
+      "boundsMm": [
+        [
+          -59.000000000000014,
+          -52,
+          4.800000000000001
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          30.5
+        ]
+      ],
+      "volumeMm3": 17902.91629156176,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "volumeMm3": 175.2000000000006,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "volumeMm3": 11696.000000000007,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          19.81782032302755,
+          33.21458256229943
+        ]
+      ],
+      "boundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          19.81782032302755,
+          33.21458256229943
+        ]
+      ],
+      "volumeMm3": 375.1653810375604,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -58.49612076848954,
+          -50.81022773590775,
+          10
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          33.91051177665154
+        ]
+      ],
+      "boundsMm": [
+        [
+          -58.49612076848954,
+          -50.81022773590775,
+          10
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          33.91051177665154
+        ]
+      ],
+      "volumeMm3": 7911.481557260978,
+      "referenceOnly": false
+    },
+    {
+      "name": "FingerGripInsert",
+      "localBoundsMm": [
+        [
+          -56.000000000000014,
+          -48.000000000000014,
+          23.089253754100096
+        ],
+        [
+          -20,
+          8.000000000000002,
+          34.00000000000001
+        ]
+      ],
+      "boundsMm": [
+        [
+          -56.000000000000014,
+          -48.000000000000014,
+          23.089253754100096
+        ],
+        [
+          -20,
+          8.000000000000002,
+          34.00000000000001
+        ]
+      ],
+      "volumeMm3": 2512.9389790116993,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeRearCover",
+      "localBoundsMm": [
+        [
+          -28.697765788623837,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "boundsMm": [
+        [
+          -28.697765788623837,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "volumeMm3": 1521.3409334288508,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "volumeMm3": 10531.670416966857,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1637.7487943385634,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "volumeMm3": 699.3648424453771,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "boardEnvelopeChecked": true,
+  "containmentReview": {
+    "boardOutsideVolumeMm3": 0,
+    "batteryOutsideVolumeMm3": 0
+  },
+  "mountingReview": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "shutterAlignment": {
+    "axis": "horizontal -Y",
+    "freeGapMm": 0.14997236633301014,
+    "centerXMm": -6.6999999999999975,
+    "centerYMm": 13.474027633666992,
+    "centerZMm": 10.86,
+    "contactBoundsMm": [
+      [
+        -8.199999999999998,
+        13.674000000000001,
+        9.959999999999999
+      ],
+      [
+        -5.1999999999999975,
+        13.774000000000003,
+        11.76
+      ]
+    ],
+    "boardRelativeActuatorZMm": 1.3599999999999994,
+    "physicalStrokeAndOvertravelQualified": false
+  },
+  "shutterTravelReview": [
+    {
+      "travelMm": 0,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.15,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.25,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.35,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    }
+  ],
+  "shoulderWallVolumeMm3": 0.007999999999770552,
+  "clashes": [],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 4.800000000000001,
+  "designHandleBottomZMm": 6,
+  "fullProductBoundingBoxMm": [
+    [
+      -59.000000000000014,
+      -52,
+      0
+    ],
+    [
+      31.000000000000007,
+      26.000000000000004,
+      34.00000000000001
+    ]
+  ]
+}
+{
+  "started_utc": "20261007T190959631062Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T19:10:09.053895+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 343768,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T190959631062Z.log"
+}

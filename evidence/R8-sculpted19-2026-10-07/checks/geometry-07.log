@@ -1,0 +1,67 @@
+{
+  "started_utc": "20261007T180106502873Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Evaluated RemoteBase: 1.69s
+Evaluated BatterySupport: 0.00s
+Evaluated ASR00012_MaximumEnvelope: 0.00s
+Evaluated SideShutterPlunger: 0.01s
+Evaluated RemoteLid: 2.33s
+Evaluated FingerGripInsert: 6.29s
+Evaluated MagSafeRearCover: 0.01s
+Evaluated MagSafeGrip: 0.13s
+Evaluated MagSafeFaceCover: 0.00s
+Evaluated MagSafeArrayReference: 0.02s
+117 | 			)
+118 | 				phoneClearanceViolations.push(parts[index].name);
+119 | 		}
+120 | }
+121 | if (electronicEnvelopeClashes.length || phoneClearanceViolations.length)
+122 | 	throw new Error(
+                 ^
+error: {"electronicEnvelopeClashes":[{"component":"SW2","part":"SideShutterPlunger","volumeMm3":2.0871168287112916},{"component":"SW1","part":"SideShutterPlunger","volumeMm3":5.4785262521426805}],"phoneClearanceViolations":[]}
+      at /workspace/magnetic-shutter-remote/scripts/check-product-geometry.ts:122:12
+
+Bun v1.3.9 (Linux x64)
+{
+  "started_utc": "20261007T180106502873Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T18:01:21.698001+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 940088,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T180106502873Z.log"
+}

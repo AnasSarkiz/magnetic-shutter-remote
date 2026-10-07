@@ -1,0 +1,54 @@
+[
+  {
+    "name": "print-export",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/export-product-prints.py"
+    ],
+    "exit_code": 0,
+    "finished_utc": "2026-10-07T19:05:50.297614+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/preview-print-export.log"
+  },
+  {
+    "name": "closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.assembly.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "finished_utc": "2026-10-07T19:06:14.689182+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/preview-closed.log"
+  },
+  {
+    "name": "studio-preview",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "blender",
+      "--python-exit-code",
+      "1",
+      "--background",
+      "--python",
+      "scripts/render-product-studio.py",
+      "--",
+      "--view",
+      "side",
+      "--samples",
+      "32",
+      "--resolution-percent",
+      "70"
+    ],
+    "exit_code": 0,
+    "finished_utc": "2026-10-07T19:06:26.009252+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/preview-studio-preview.log"
+  }
+]

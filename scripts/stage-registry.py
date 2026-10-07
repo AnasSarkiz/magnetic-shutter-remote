@@ -158,6 +158,8 @@ def stage(destination, options):
         selected.update(source_closure(ROOT/'product.exploded.tsx'))
         selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png','phone-facing.png',
                         'print-requirements.txt','print-plans.json','print-mesh-review.json'])
+        selected.update((ROOT/'product').glob('studio-*.png'))
+        selected.update((ROOT/'product').glob('studio-*-review.json'))
         selected.update(ROOT/part['file'] for part in mesh_review['printed_parts'])
         selected.update(ROOT/'dist'/name/'circuit.json' for name in ['product.assembly','product.exploded'])
         selected.add(ROOT/'cloud/run-heavy.py')

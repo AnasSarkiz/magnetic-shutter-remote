@@ -1,5 +1,4 @@
 import { executeJscadOperations } from "jscad-planner";
-import { loadJscadPlan } from "circuit-json-to-gltf";
 import type { JscadOperation } from "jscad-planner";
 import type Geom3 from "@jscad/modeling/src/geometries/geom3/type";
 import modeling from "@jscad/modeling";
@@ -23,19 +22,30 @@ function solidFromPlan(plan: JscadOperation): Geom3 {
 	return geometry;
 }
 const parts = createProductParts();
-const shapes = parts.map((part) => solidFromPlan(partInProduct(part)));
+const shapes = parts.map((part) => {
+	const started = performance.now();
+	const solid = solidFromPlan(partInProduct(part));
+	console.error(
+		`Evaluated ${part.name}: ${((performance.now() - started) / 1000).toFixed(2)}s`,
+	);
+	return solid;
+});
 const rows = parts.map((part, index) => ({
 	name: part.name,
-	localBoundsMm: modeling.measurements.measureBoundingBox(
-		solidFromPlan(part.plan),
-	),
+	localBoundsMm: modeling.measurements.measureBoundingBox(shapes[index]),
 	boundsMm: modeling.measurements.measureBoundingBox(shapes[index]),
 	volumeMm3: modeling.measurements.measureVolume(shapes[index]),
 	referenceOnly: part.referenceOnly ?? false,
 }));
+function disjointBounds(a: number[][], b: number[][]): boolean {
+	return a[0].some(
+		(minimum, axis) => minimum >= b[1][axis] || a[1][axis] <= b[0][axis],
+	);
+}
 const clashes = [];
 for (let a = 0; a < parts.length; a++)
 	for (let b = a + 1; b < parts.length; b++) {
+		if (disjointBounds(rows[a].boundsMm, rows[b].boundsMm)) continue;
 		const volumeMm3 = modeling.measurements.measureVolume(
 			modeling.booleans.intersect(shapes[a], shapes[b]),
 		);
@@ -73,7 +83,14 @@ for (const component of meshReview.meshes) {
 		),
 	);
 	for (let index = 0; index < parts.length; index++) {
-		if (parts[index].referenceOnly) continue;
+		if (
+			parts[index].referenceOnly ||
+			disjointBounds(
+				modeling.measurements.measureBoundingBox(envelope),
+				rows[index].boundsMm,
+			)
+		)
+			continue;
 		const volumeMm3 = Math.abs(
 			modeling.measurements.measureVolume(
 				modeling.booleans.intersect(envelope, shapes[index]),
@@ -89,16 +106,14 @@ for (const component of meshReview.meshes) {
 }
 const phoneClearanceViolations = [];
 for (let index = 0; index < parts.length; index++) {
-	const mesh = loadJscadPlan(partInProduct(parts[index]));
-	for (const triangle of mesh.triangles)
-		for (const vertex of triangle.vertices) {
-			// Native loader frame is X, Z, Y; convert back to PCB XYZ.
+	for (const polygon of modeling.geometries.geom3.toPolygons(shapes[index]))
+		for (const vertex of polygon.vertices) {
 			if (
 				Math.hypot(
-					vertex.x - d.magsafe.centerXMm,
-					vertex.z - d.magsafe.centerYMm,
+					vertex[0] - d.magsafe.centerXMm,
+					vertex[1] - d.magsafe.centerYMm,
 				) > 30.00001 &&
-				vertex.y < 5.99999
+				vertex[2] < 5.99999
 			)
 				phoneClearanceViolations.push(parts[index].name);
 		}
@@ -238,6 +253,100 @@ const shutterAlignment = {
 	boardRelativeActuatorZMm: d.shutter.centerZMm - d.pcb.centerZMm,
 	physicalStrokeAndOvertravelQualified: false,
 };
+// The manufacturer gives 0.15±0.05mm contact travel. Add the checked 0.15mm
+// free gap: the lower bar's channel wall is the nominal 0.35mm travel stop.
+const shutterTravelReview = [];
+for (const travelMm of [0, 0.15, 0.25, 0.35]) {
+	const movingPlunger = modeling.transforms.translate(
+		[0, -travelMm, 0],
+		shapes[plungerIndex],
+	);
+	const movingBounds = modeling.measurements.measureBoundingBox(movingPlunger);
+	for (let index = 0; index < parts.length; index++) {
+		if (
+			index === plungerIndex ||
+			parts[index].referenceOnly ||
+			disjointBounds(movingBounds, rows[index].boundsMm)
+		)
+			continue;
+		const overlapMm3 = Math.abs(
+			modeling.measurements.measureVolume(
+				modeling.booleans.intersect(movingPlunger, shapes[index]),
+			),
+		);
+		if (overlapMm3 > 0.001)
+			throw new Error(
+				`Shutter travel hits ${parts[index].name} at ${travelMm}mm: ${overlapMm3}`,
+			);
+	}
+	for (const component of meshReview.meshes) {
+		const [min, max] = component.boundsMm;
+		const envelope = modeling.transforms.translate(
+			[d.remote.centerXMm, d.remote.centerYMm, d.pcb.centerZMm],
+			modeling.transforms.rotateZ(
+				(d.remote.ccwRotationDegrees * Math.PI) / 180,
+				modeling.primitives.cuboid({
+					size: [max[0] - min[0], max[1] - min[1], max[2] - min[2]],
+					center: [
+						(min[0] + max[0]) / 2,
+						(min[1] + max[1]) / 2,
+						(min[2] + max[2]) / 2,
+					],
+				}),
+			),
+		);
+		if (
+			disjointBounds(
+				movingBounds,
+				modeling.measurements.measureBoundingBox(envelope),
+			)
+		)
+			continue;
+		if (component.name === "SW2") {
+			const allowedContact = modeling.primitives.cuboid({
+				size: [3, 0.2, 1.8],
+				center: [actualTip.x, actualTip.y - 0.1, d.shutter.centerZMm],
+			});
+			const outsideContactMm3 = Math.abs(
+				modeling.measurements.measureVolume(
+					modeling.booleans.subtract(
+						modeling.booleans.intersect(movingPlunger, envelope),
+						allowedContact,
+					),
+				),
+			);
+			if (outsideContactMm3 > 0.001)
+				throw new Error(
+					`Shutter travel reaches beyond the SW2 actuator's 0.20mm travel region: ${outsideContactMm3}`,
+				);
+			continue;
+		}
+		const overlapMm3 = Math.abs(
+			modeling.measurements.measureVolume(
+				modeling.booleans.intersect(movingPlunger, envelope),
+			),
+		);
+		if (overlapMm3 > 0.001)
+			throw new Error(
+				`Shutter travel hits ${component.name} at ${travelMm}mm: ${overlapMm3}`,
+			);
+	}
+	shutterTravelReview.push({
+		travelMm,
+		caseAndOther43ComponentEnvelopesClear: true,
+		intendedSw2ActuatorContactOnly: true,
+	});
+}
+const shoulderWallWitness = modeling.primitives.cuboid({
+	size: [0.2, 0.2, 0.2],
+	center: [-49.4, 14.8, 11],
+});
+const baseIndex = parts.findIndex((part) => part.name === "RemoteBase");
+const shoulderWallVolumeMm3 = modeling.measurements.measureVolume(
+	modeling.booleans.intersect(shapes[baseIndex], shoulderWallWitness),
+);
+if (Math.abs(shoulderWallVolumeMm3 - 0.008) > 0.00001)
+	throw new Error("Shutter linkage clearance opens the exterior shoulder wall");
 const productBounds = modeling.measurements.measureBoundingBox(
 	modeling.booleans.union(...shapes),
 );
@@ -276,9 +385,12 @@ const report = {
 	containmentReview,
 	mountingReview,
 	shutterAlignment,
+	shutterTravelReview,
+	shoulderWallVolumeMm3,
 	clashes,
 	phoneDatumZMm: 0,
-	remoteBottomZMm: d.remote.bottomZMm,
+	remoteBottomZMm: rows[baseIndex].boundsMm[0][2],
+	designHandleBottomZMm: d.remote.bottomZMm,
 	fullProductBoundingBoxMm: productBounds,
 };
 await Bun.write(

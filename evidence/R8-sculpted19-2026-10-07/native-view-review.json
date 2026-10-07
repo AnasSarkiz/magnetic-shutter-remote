@@ -1,0 +1,212 @@
+{
+  "native_views_checked": [
+    "product.assembly",
+    "product.exploded"
+  ],
+  "actual_glb_geometry_review": [
+    {
+      "view": "product.assembly",
+      "fragment": "r8-pcb.glb",
+      "bounds_delta_mm": 4.76837158203125e-07,
+      "triangles": 17440,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-2.glb",
+      "bounds_delta_mm": 9.5367431640625e-07,
+      "triangles": 12520,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-3.glb",
+      "bounds_delta_mm": 7.152557373046875e-07,
+      "triangles": 18596,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-4.glb",
+      "bounds_delta_mm": 5.960464477539062e-07,
+      "triangles": 22776,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-5.glb",
+      "bounds_delta_mm": 2.980232238769531e-07,
+      "triangles": 15002,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-6.glb",
+      "bounds_delta_mm": 5.364418029785156e-07,
+      "triangles": 23513,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "fragment": "r8-parts-7.glb",
+      "bounds_delta_mm": 2.682209014892578e-07,
+      "triangles": 12252,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.assembly",
+      "part": "RemoteBase",
+      "bounds_delta_mm": 3.8146972691777137e-07
+    },
+    {
+      "view": "product.assembly",
+      "part": "BatterySupport",
+      "bounds_delta_mm": 1.192092824453539e-08
+    },
+    {
+      "view": "product.assembly",
+      "part": "ASR00012_MaximumEnvelope",
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "view": "product.assembly",
+      "part": "SideShutterPlunger",
+      "bounds_delta_mm": 3.98232614884364e-07
+    },
+    {
+      "view": "product.assembly",
+      "part": "RemoteLid",
+      "bounds_delta_mm": 1.749544288998095e-06
+    },
+    {
+      "view": "product.assembly",
+      "part": "FingerGripInsert",
+      "bounds_delta_mm": 1.6425097015826395e-07
+    },
+    {
+      "view": "product.assembly",
+      "part": "MagSafeRearCover",
+      "bounds_delta_mm": 7.629394502828291e-07
+    },
+    {
+      "view": "product.assembly",
+      "part": "MagSafeGrip",
+      "bounds_delta_mm": 9.536743306171047e-08
+    },
+    {
+      "view": "product.assembly",
+      "part": "MagSafeFaceCover",
+      "bounds_delta_mm": 1.1920929021691506e-08
+    },
+    {
+      "view": "product.assembly",
+      "part": "MagSafeArrayReference",
+      "bounds_delta_mm": 7.629394573882564e-07
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-pcb.glb",
+      "bounds_delta_mm": 4.76837158203125e-07,
+      "triangles": 17440,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-2.glb",
+      "bounds_delta_mm": 9.5367431640625e-07,
+      "triangles": 12520,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-3.glb",
+      "bounds_delta_mm": 7.152557373046875e-07,
+      "triangles": 18596,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-4.glb",
+      "bounds_delta_mm": 5.960464477539062e-07,
+      "triangles": 22776,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-5.glb",
+      "bounds_delta_mm": 2.980232238769531e-07,
+      "triangles": 15002,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-6.glb",
+      "bounds_delta_mm": 5.364418029785156e-07,
+      "triangles": 23513,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "fragment": "r8-parts-7.glb",
+      "bounds_delta_mm": 2.682209014892578e-07,
+      "triangles": 12252,
+      "all_source_triangles_present": true
+    },
+    {
+      "view": "product.exploded",
+      "part": "RemoteBase",
+      "bounds_delta_mm": 3.8146972691777137e-07
+    },
+    {
+      "view": "product.exploded",
+      "part": "BatterySupport",
+      "bounds_delta_mm": 1.192092469182171e-08
+    },
+    {
+      "view": "product.exploded",
+      "part": "ASR00012_MaximumEnvelope",
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "view": "product.exploded",
+      "part": "SideShutterPlunger",
+      "bounds_delta_mm": 3.98232614884364e-07
+    },
+    {
+      "view": "product.exploded",
+      "part": "RemoteLid",
+      "bounds_delta_mm": 1.749544288998095e-06
+    },
+    {
+      "view": "product.exploded",
+      "part": "FingerGripInsert",
+      "bounds_delta_mm": 1.642509772636913e-07
+    },
+    {
+      "view": "product.exploded",
+      "part": "MagSafeRearCover",
+      "bounds_delta_mm": 7.629394502828291e-07
+    },
+    {
+      "view": "product.exploded",
+      "part": "MagSafeGrip",
+      "bounds_delta_mm": 9.536743306171047e-08
+    },
+    {
+      "view": "product.exploded",
+      "part": "MagSafeFaceCover",
+      "bounds_delta_mm": 1.192092824453539e-08
+    },
+    {
+      "view": "product.exploded",
+      "part": "MagSafeArrayReference",
+      "bounds_delta_mm": 7.629394573882564e-07
+    }
+  ],
+  "passes": true,
+  "physical_fit_or_material_testing_claimed": false,
+  "native_glb_sha256": {
+    "product.assembly": "1e50c7d573f17df1ce83dec0a07f773385df480dfb4aa721e318c947e286570d",
+    "product.exploded": "b62cd9cc9087a86998bb55dbd747b96ac88ba1b004f2aacae071be63fbbcf465"
+  }
+}

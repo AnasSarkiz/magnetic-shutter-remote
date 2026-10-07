@@ -16,9 +16,9 @@ def solid_from_plan(plan):
     if kind == 'cuboid':
         return Manifold.cube(plan['size'], center=True)
     if kind == 'cylinder':
-        # Pinned JSCAD's cylinder default is32 segments; match actual native CAD.
+        # Match each source plan's cylinder resolution exactly.
         return Manifold.cylinder(plan['height'], plan['radius'],
-                                 circular_segments=32, center=True).translate(plan['center'])
+                                 circular_segments=plan.get('resolution',32), center=True).translate(plan['center'])
     if kind == 'rotate':
         return solid_from_plan(plan['shape']).rotate(tuple(np.rad2deg(plan['angles'])))
     if kind == 'translate':
@@ -47,11 +47,14 @@ def export_prints():
                                  faces=np.asarray(mesh.tri_verts), process=False)
         source = native_parts[part['name']]
         volume_delta = abs(solid.volume()-source['volumeMm3'])
-        # Kernel must reproduce the actual native32-facet geometry, not substitute a shape.
-        if volume_delta > max(1e-5, source['volumeMm3']*1e-7):
+        # Kernel must reproduce the actual native facet geometry, not substitute a shape.
+        if volume_delta >= 1e-5 or volume_delta > source['volumeMm3']*1e-7:
             raise ValueError(f'Native/manufacturing volume mismatch: {part["name"]} {volume_delta}')
         if not np.allclose(result.bounds, source['localBoundsMm'], atol=1e-5, rtol=0):
             raise ValueError(f'Native/manufacturing bounds mismatch: {part["name"]}')
+        connected_solids = len(solid.decompose())
+        if connected_solids != 1:
+            raise ValueError(f'Disconnected print part: {part["name"]}: {connected_solids}')
         if not result.is_watertight or not result.is_winding_consistent:
             raise ValueError(f'Nonmanifold manufacturing mesh: {part["name"]}')
         output = ROOT/'product/prints'/f'{part["name"]}.stl'
@@ -61,10 +64,12 @@ def export_prints():
         readback = trimesh.load_mesh(output, process=True)
         if not readback.is_watertight or not readback.is_winding_consistent:
             raise ValueError(f'STL readback failed: {part["name"]}')
+        if np.any(readback.area_faces == 0):
+            raise ValueError(f'Zero-area triangle in actual STL: {part["name"]}')
         reports.append({'file':str(output.relative_to(ROOT)),
                         'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
-                        'triangles':len(result.faces), 'watertight':True,
-                        'winding_consistent':True, 'native_volume_delta_mm3':volume_delta,
+                        'triangles':len(result.faces), 'connected_solids':connected_solids, 'watertight':True,
+                        'winding_consistent':True, 'zero_area_triangles':0, 'native_volume_delta_mm3':volume_delta,
                         'bounds_mm':result.bounds.tolist(), 'manufacturing_status':str(solid.status())})
     report = {'tool_versions': {name:importlib.metadata.version(name) for name in ['manifold3d','trimesh','numpy']},
               'source_plans_sha256':hashlib.sha256((ROOT/'product/print-plans.json').read_bytes()).hexdigest(),

@@ -1,0 +1,420 @@
+{
+  "started_utc": "20261007T181725687689Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Evaluated RemoteBase: 1.18s
+Evaluated BatterySupport: 0.00s
+Evaluated ASR00012_MaximumEnvelope: 0.00s
+Evaluated SideShutterPlunger: 0.03s
+Evaluated RemoteLid: 1.62s
+Evaluated FingerGripInsert: 0.95s
+Evaluated MagSafeRearCover: 0.01s
+Evaluated MagSafeGrip: 0.15s
+Evaluated MagSafeFaceCover: 0.00s
+Evaluated MagSafeArrayReference: 0.02s
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -59.00000000000001,
+          -52,
+          5.9999999999999964
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          30.5
+        ]
+      ],
+      "boundsMm": [
+        [
+          -59.00000000000001,
+          -52,
+          5.9999999999999964
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          30.5
+        ]
+      ],
+      "volumeMm3": 14805.826788643544,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "volumeMm3": 175.2000000000006,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "volumeMm3": 11696.000000000007,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          17.400000000000002,
+          29.049999999999997
+        ]
+      ],
+      "boundsMm": [
+        [
+          -52,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          17.400000000000002,
+          29.049999999999997
+        ]
+      ],
+      "volumeMm3": 350.03651053010475,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -58.49612076848954,
+          -50.81022773590775,
+          10
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          33.60000000000002
+        ]
+      ],
+      "boundsMm": [
+        [
+          -58.49612076848954,
+          -50.81022773590775,
+          10
+        ],
+        [
+          31.000000000000007,
+          26.000000000000004,
+          33.60000000000002
+        ]
+      ],
+      "volumeMm3": 7938.108948505457,
+      "referenceOnly": false
+    },
+    {
+      "name": "FingerGripInsert",
+      "localBoundsMm": [
+        [
+          -56.000000000000014,
+          -48.000000000000014,
+          23.089253754100096
+        ],
+        [
+          -20,
+          8.000000000000002,
+          34.00000132482399
+        ]
+      ],
+      "boundsMm": [
+        [
+          -56.000000000000014,
+          -48.000000000000014,
+          23.089253754100096
+        ],
+        [
+          -20,
+          8.000000000000002,
+          34.00000132482399
+        ]
+      ],
+      "volumeMm3": 2510.972001472638,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeRearCover",
+      "localBoundsMm": [
+        [
+          -24.34659206481231,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "boundsMm": [
+        [
+          -24.34659206481231,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "volumeMm3": 1412.978568697196,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "volumeMm3": 10531.670416966857,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1637.7487943385634,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "volumeMm3": 699.3648424453771,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "boardEnvelopeChecked": true,
+  "containmentReview": {
+    "boardOutsideVolumeMm3": 0,
+    "batteryOutsideVolumeMm3": 0
+  },
+  "mountingReview": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "shutterAlignment": {
+    "axis": "horizontal -Y",
+    "freeGapMm": 0.14997236633301014,
+    "centerXMm": -6.6999999999999975,
+    "centerYMm": 13.474027633666992,
+    "centerZMm": 10.86,
+    "contactBoundsMm": [
+      [
+        -8.199999999999998,
+        13.674000000000001,
+        9.959999999999999
+      ],
+      [
+        -5.1999999999999975,
+        13.774000000000003,
+        11.76
+      ]
+    ],
+    "boardRelativeActuatorZMm": 1.3599999999999994,
+    "physicalStrokeAndOvertravelQualified": false
+  },
+  "clashes": [],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 6,
+  "fullProductBoundingBoxMm": [
+    [
+      -59.000000000000014,
+      -52,
+      0
+    ],
+    [
+      31.000000000000007,
+      26.000000000000004,
+      34.00000132482399
+    ]
+  ]
+}
+{
+  "started_utc": "20261007T181725687689Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T18:17:37.227862+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 417936,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T181725687689Z.log"
+}

@@ -1,0 +1,273 @@
+[
+  {
+    "name": "format-write",
+    "command": [
+      "bun",
+      "run",
+      "format"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:09:59.474382+00:00",
+    "finished_utc": "2026-10-07T19:09:59.602724+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-format-write.log"
+  },
+  {
+    "name": "geometry",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-product-geometry.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:09:59.603106+00:00",
+    "finished_utc": "2026-10-07T19:10:09.059157+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-geometry.log"
+  },
+  {
+    "name": "print-export",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/export-product-prints.py"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:10:09.059460+00:00",
+    "finished_utc": "2026-10-07T19:10:09.543059+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-print-export.log"
+  },
+  {
+    "name": "stl-readback",
+    "command": [
+      "python3",
+      "scripts/review-product-stls.py",
+      "--output",
+      "evidence/R8-sculpted19-2026-10-07/independent-print-mesh-review.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:10:09.543352+00:00",
+    "finished_utc": "2026-10-07T19:10:09.685305+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-stl-readback.log"
+  },
+  {
+    "name": "closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.assembly.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:10:09.685686+00:00",
+    "finished_utc": "2026-10-07T19:10:35.217325+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-closed.log"
+  },
+  {
+    "name": "exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.exploded.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:10:35.217752+00:00",
+    "finished_utc": "2026-10-07T19:10:59.157579+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-exploded.log"
+  },
+  {
+    "name": "render-exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.exploded"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:10:59.158305+00:00",
+    "finished_utc": "2026-10-07T19:11:00.192360+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-render-exploded.log"
+  },
+  {
+    "name": "render-phone-facing",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.assembly",
+      "phone-facing"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:11:00.192775+00:00",
+    "finished_utc": "2026-10-07T19:11:01.199373+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-render-phone-facing.log"
+  },
+  {
+    "name": "native-readback",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-native-product.py",
+      "--output",
+      "evidence/R8-sculpted19-2026-10-07/native-view-review.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:11:01.199739+00:00",
+    "finished_utc": "2026-10-07T19:11:01.852296+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-native-readback.log"
+  },
+  {
+    "name": "studio-front",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "blender",
+      "--python-exit-code",
+      "1",
+      "--background",
+      "--python",
+      "scripts/render-product-studio.py",
+      "--",
+      "--view",
+      "front",
+      "--samples",
+      "32"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:11:01.852660+00:00",
+    "finished_utc": "2026-10-07T19:11:38.995164+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-front.log"
+  },
+  {
+    "name": "studio-straight",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "blender",
+      "--python-exit-code",
+      "1",
+      "--background",
+      "--python",
+      "scripts/render-product-studio.py",
+      "--",
+      "--view",
+      "straight",
+      "--samples",
+      "32"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:11:38.995850+00:00",
+    "finished_utc": "2026-10-07T19:12:11.373291+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-straight.log"
+  },
+  {
+    "name": "studio-side",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "blender",
+      "--python-exit-code",
+      "1",
+      "--background",
+      "--python",
+      "scripts/render-product-studio.py",
+      "--",
+      "--view",
+      "side",
+      "--samples",
+      "32"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:12:11.373701+00:00",
+    "finished_utc": "2026-10-07T19:12:31.588622+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-side.log"
+  },
+  {
+    "name": "studio-back",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "blender",
+      "--python-exit-code",
+      "1",
+      "--background",
+      "--python",
+      "scripts/render-product-studio.py",
+      "--",
+      "--view",
+      "back",
+      "--samples",
+      "32"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:12:31.589214+00:00",
+    "finished_utc": "2026-10-07T19:13:04.897348+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-studio-back.log"
+  },
+  {
+    "name": "types",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:13:04.897753+00:00",
+    "finished_utc": "2026-10-07T19:13:11.534682+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-types.log"
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:13:11.535330+00:00",
+    "finished_utc": "2026-10-07T19:13:11.611788+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-format.log"
+  },
+  {
+    "name": "product-tests",
+    "command": [
+      "bun",
+      "test",
+      "./tests/r8-product.test.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:13:11.612501+00:00",
+    "finished_utc": "2026-10-07T19:13:11.832340+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-product-tests.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T19:13:11.833148+00:00",
+    "finished_utc": "2026-10-07T19:13:27.123643+00:00",
+    "log": "evidence/R8-sculpted19-2026-10-07/checks/final-smoke.log"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "before_commit": "6bce9c566b79f5ef9b3b27b354e76b8bc2ecc2d5",
+  "unchanged_path_groups": [
+    "index.circuit.tsx",
+    "src",
+    "imports",
+    "bun.lock",
+    "tscircuit.config.json",
+    "firmware",
+    "dist/index/circuit.json",
+    "fabrication",
+    "BOM.csv",
+    "BOM.md",
+    "bom.json",
+    "product/models",
+    "product/dimensions.ts"
+  ],
+  "git_diff_empty": true,
+  "circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "electrical_validation_reused_from": "evidence/R8-reference18-2026-10-07",
+  "new_root_board_routing_sdk_cam_builds": false
+}

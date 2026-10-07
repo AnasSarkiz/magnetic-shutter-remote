@@ -1,0 +1,125 @@
+{
+  "started_utc": "20261007T175227657663Z",
+  "command": [
+    "blender",
+    "--background",
+    "--python",
+    "scripts/render-product-studio.py",
+    "--",
+    "--view",
+    "front",
+    "--samples",
+    "32",
+    "--resolution-percent",
+    "70"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+17:52:29 | INFO: Data are loaded, start creating Blender stuff
+17:52:29 | INFO: Blender create Mesh node R8QualifiedPCBAndFittedParts1
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts2
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts3
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts4
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts5
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts6
+17:52:29 | INFO: Blender create Mesh node R8QualifiedFittedParts7
+17:52:29 | INFO: Blender create Mesh node RemoteBase
+17:52:29 | INFO: Blender create Mesh node BatterySupport
+17:52:29 | INFO: Blender create Mesh node ASR00012_MaximumEnvelope
+17:52:29 | INFO: Blender create Mesh node SideShutterPlunger
+17:52:29 | INFO: Blender create Mesh node RemoteLid
+17:52:29 | INFO: Blender create Mesh node FingerGripInsert
+17:52:29 | INFO: Blender create Mesh node MagSafeRearCover
+17:52:29 | INFO: Blender create Mesh node MagSafeGrip
+17:52:29 | INFO: Blender create Mesh node MagSafeFaceCover
+17:52:29 | INFO: Blender create Mesh node MagSafeArrayReference
+17:52:29 | INFO: glTF import finished in 0.40s
+Blender 4.3.2
+Fra:1 Mem:52.89M (Peak 52.89M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedPCBAndFittedParts1
+Fra:1 Mem:52.90M (Peak 52.90M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedFittedParts3
+Fra:1 Mem:52.99M (Peak 52.99M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Plane
+Fra:1 Mem:55.05M (Peak 55.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | MagSafeArrayReference
+Fra:1 Mem:59.11M (Peak 59.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | MagSafeFaceCover
+Fra:1 Mem:60.49M (Peak 60.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | MagSafeGrip
+Fra:1 Mem:71.88M (Peak 73.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | MagSafeRearCover
+Fra:1 Mem:70.70M (Peak 73.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | FingerGripInsert
+Fra:1 Mem:72.01M (Peak 74.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedFittedParts4
+Fra:1 Mem:69.28M (Peak 74.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedFittedParts5
+Fra:1 Mem:98.06M (Peak 98.06M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedFittedParts6
+Fra:1 Mem:108.53M (Peak 110.39M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | R8QualifiedFittedParts7
+Fra:1 Mem:115.73M (Peak 116.92M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBase
+Fra:1 Mem:112.70M (Peak 116.92M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | BatterySupport
+Fra:1 Mem:117.03M (Peak 117.03M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ASR00012_MaximumEnvelope
+Fra:1 Mem:117.04M (Peak 117.04M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | SideShutterPlunger
+Fra:1 Mem:113.66M (Peak 117.04M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteLid
+Fra:1 Mem:88.82M (Peak 117.04M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:86.60M (Peak 117.04M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Failed to denoise, build has no OpenImageDenoise support
+Fra:1 Mem:86.60M (Peak 117.04M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:86.60M (Peak 117.04M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:86.60M (Peak 117.04M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:86.71M (Peak 117.04M) | Time:00:00.05 | Mem:0.03M, Peak:0.03M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:86.71M (Peak 117.04M) | Time:00:00.05 | Mem:0.03M, Peak:0.03M | Scene, ViewLayer | Failed to denoise, build has no OpenImageDenoise support
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/scripts/render-product-studio.py", line 137, in <module>
+    render(parser.parse_args(args))
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/scripts/render-product-studio.py", line 122, in render
+    bpy.ops.render.render(write_still=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+RuntimeError: Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Blender quit
+{
+  "started_utc": "20261007T175227657663Z",
+  "command": [
+    "blender",
+    "--background",
+    "--python",
+    "scripts/render-product-studio.py",
+    "--",
+    "--view",
+    "front",
+    "--samples",
+    "32",
+    "--resolution-percent",
+    "70"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T17:52:29.911538+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 383384,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T175227657663Z.log"
+}

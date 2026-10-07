@@ -24,17 +24,33 @@ function cylinder({
 	radiusMm,
 	heightMm,
 	center,
+	segments = 64,
 }: {
 	radiusMm: number;
 	heightMm: number;
 	center: [number, number, number];
+	segments?: number;
 }): JscadOperation {
+	const radius = Number(radiusMm.toFixed(6)),
+		height = Number(heightMm.toFixed(6));
 	return {
-		type: "cylinder",
-		radius: radiusMm,
-		height: heightMm,
-		center,
-		resolution: 32,
+		type: "translate",
+		vector: center.map((coordinate) => Number(coordinate.toFixed(6))),
+		shape: {
+			type: "translate",
+			vector: [0, 0, -height / 2],
+			shape: {
+				type: "extrudeLinear",
+				options: { height },
+				shape: {
+					type: "polygon",
+					points: Array.from({ length: segments }, (_, index) => [
+						radius * Math.cos((index * 2 * Math.PI) / segments),
+						radius * Math.sin((index * 2 * Math.PI) / segments),
+					]),
+				},
+			},
+		},
 	};
 }
 function subtract(shapes: JscadOperation[]): JscadOperation {
@@ -128,49 +144,150 @@ function outline({
 		waistCut({ zMm, heightMm: heightMm + 2 }),
 	]);
 }
-export function createRemoteOuterPlan(): JscadOperation {
-	return subtract([
-		{
-			type: "hull",
-			shapes: [
-				outline({
-					zMm: 6.5,
-					heightMm: 1,
-					handleWidthMm: 40,
-					handleLengthMm: 65,
-				}),
-				outline({ zMm: 18, heightMm: 1 }),
-				outline({
-					zMm: 29.5,
-					heightMm: 1,
-					handleWidthMm: 40,
-					handleLengthMm: 65,
-				}),
-			],
+// Product X/Z crown sampled from tangent-continuous cubic curves, in micrometres.
+function bezierCoordinate({
+	points,
+	t,
+	axis,
+}: {
+	points: [number, number][];
+	t: number;
+	axis: number;
+}): number {
+	const u = 1 - t;
+	return Number(
+		(
+			u * u * u * points[0][axis] +
+			3 * u * u * t * points[1][axis] +
+			3 * u * t * t * points[2][axis] +
+			t * t * t * points[3][axis]
+		).toFixed(6),
+	);
+}
+function bezierRoof({
+	points,
+	steps,
+}: {
+	points: [number, number][];
+	steps: number;
+}): [number, number][] {
+	return Array.from({ length: steps + 1 }, (_, index) => [
+		bezierCoordinate({ points, t: index / steps, axis: 0 }),
+		bezierCoordinate({ points, t: index / steps, axis: 1 }),
+	]);
+}
+const crownRoofMm: [number, number][] = [
+	...bezierRoof({
+		points: [
+			[-65, 18],
+			[-58, 34],
+			[-47, 34],
+			[-38, 34],
+		],
+		steps: 12,
+	}),
+	...bezierRoof({
+		points: [
+			[-38, 34],
+			[-28, 34],
+			[-23, 33],
+			[-19, 22],
+		],
+		steps: 12,
+	}).slice(1),
+	...bezierRoof({
+		points: [
+			[-19, 22],
+			[-17.2, 17.05],
+			[-16, 17],
+			[-14, 17],
+		],
+		steps: 6,
+	}).slice(1),
+	[35, 17],
+];
+const crownProfileMm: [number, number][] = [[-65, 6], ...crownRoofMm, [35, 6]];
+function crownMask({
+	zOffsetMm = 0,
+}: {
+	zOffsetMm?: number;
+} = {}): JscadOperation {
+	return {
+		type: "translate",
+		vector: [0, 40, zOffsetMm],
+		shape: {
+			type: "rotate",
+			angles: [Math.PI / 2, 0, 0],
+			shape: {
+				type: "extrudeLinear",
+				options: { height: 110 },
+				shape: { type: "polygon", points: [...crownProfileMm].reverse() },
+			},
 		},
-		waistCut({ zMm: 18, heightMm: 30 }),
+	};
+}
+function intersect(shapes: JscadOperation[]): JscadOperation {
+	return { type: "intersect", shapes };
+}
+export function createRemoteOuterPlan(): JscadOperation {
+	return union([
+		cylinder({ radiusMm: 29.4, heightMm: 1.2, center: [0, -5, 5.4] }),
+		intersect([
+			subtract([
+				{
+					type: "hull",
+					shapes: [
+						outline({
+							zMm: 6.5,
+							heightMm: 1,
+							handleWidthMm: 40,
+							handleLengthMm: 65,
+						}),
+						outline({ zMm: 18, heightMm: 1 }),
+						outline({
+							zMm: 29.5,
+							heightMm: 1,
+							handleWidthMm: 40,
+							handleLengthMm: 65,
+						}),
+						outline({
+							zMm: 33.5,
+							heightMm: 0.2,
+							handleWidthMm: 37,
+							handleLengthMm: 62,
+							circleRadiusMm: 29.2,
+						}),
+					],
+				},
+				waistCut({ zMm: 20, heightMm: 40 }),
+			]),
+			crownMask({ zOffsetMm: -0.4 }),
+		]),
 	]);
 }
 export function createProductParts(): ProductPart[] {
 	const mountPoints = mountingHolesMm.map(([x, y]) =>
 		pcbPointInProduct({ x, y }),
 	);
-	const cavity: JscadOperation = subtract([
-		{
-			type: "hull",
-			shapes: [
-				cylinder({ radiusMm: 29.4, heightMm: 23, center: [0, -5, 19.5] }),
-				cylinder({ radiusMm: 10.4, heightMm: 23, center: [-43, 5, 19.5] }),
-				roundBox({
-					widthMm: 38.8,
-					lengthMm: 63.8,
-					heightMm: 23,
-					center: [-38, -18.5, 19.5],
-					radiusMm: 15.4,
-				}),
-			],
-		},
-		waistCut({ zMm: 19.5, heightMm: 25, insetMm: 1.6 }),
+	const cavity: JscadOperation = intersect([
+		subtract([
+			{
+				type: "hull",
+				shapes: [
+					cylinder({ radiusMm: 29.4, heightMm: 23, center: [0, -5, 19.5] }),
+					cylinder({ radiusMm: 10.4, heightMm: 23, center: [-43, 5, 19.5] }),
+					roundBox({
+						widthMm: 38.8,
+						lengthMm: 63.8,
+						heightMm: 23,
+						center: [-38, -18.5, 19.5],
+						radiusMm: 15.4,
+					}),
+				],
+			},
+			waistCut({ zMm: 19.5, heightMm: 25, insetMm: 1.6 }),
+		]),
+		crownMask({ zOffsetMm: -2 }),
 	]);
 	const lowerSeats = mountPoints.map(({ x, y }) =>
 		box({ size: [4.2, 4.2, 1.2], center: [x, y, 8.4] }),
@@ -191,58 +308,107 @@ export function createProductParts(): ProductPart[] {
 	const contactY = tip.y + d.shutter.freeGapMm;
 	const barY = 15,
 		capX = -45.5,
-		capY = 17.5;
+		riserX = -43,
+		capY = 17.5,
+		capZ = 30;
 	const plunger = union([
 		box({
 			size: [3, barY - contactY + 0.8, 1.8],
 			center: [tip.x, (contactY + barY + 0.8) / 2, d.shutter.centerZMm],
 		}),
 		box({
-			size: [Math.abs(capX - tip.x) + 1.5, 1.8, 1.8],
-			center: [(capX + tip.x) / 2, barY, d.shutter.centerZMm],
+			size: [Math.abs(riserX - tip.x) + 1.5, 1.8, 1.8],
+			center: [(riserX + tip.x) / 2, barY, d.shutter.centerZMm],
 		}),
-		box({ size: [3, 1.8, 10.94], center: [capX, barY, 15.43] }),
+		box({
+			size: [3, 1.8, capZ - d.shutter.centerZMm + 1.8],
+			center: [riserX, barY, (capZ + d.shutter.centerZMm) / 2],
+		}),
+		box({
+			size: [Math.abs(capX - riserX) + 3, 1.8, 1.8],
+			center: [(capX + riserX) / 2, barY - 0.05, capZ],
+		}),
 		box({
 			size: [3, Math.abs(capY - barY) + 0.8, 1.8],
-			center: [capX, (barY + capY) / 2, 20],
+			center: [capX, (barY + capY) / 2, capZ],
 		}),
 		{
 			type: "translate",
-			vector: [capX, capY, 20],
+			vector: [capX, capY, capZ],
 			shape: {
 				type: "rotate",
-				angles: [Math.PI / 2, 0, 0],
-				shape: roundBox({
-					widthMm: 13,
-					lengthMm: 7,
-					heightMm: 1.6,
-					center: [0, 0, 0],
-					radiusMm: 3.3,
-				}),
+				angles: [(2 * Math.PI) / 3, 0, 0],
+				shape: {
+					type: "hull",
+					shapes: [
+						roundBox({
+							widthMm: 13,
+							lengthMm: 7.3,
+							heightMm: 0.2,
+							center: [0, 0, 0.7],
+							radiusMm: 3.3,
+						}),
+						roundBox({
+							widthMm: 12.8,
+							lengthMm: 7.1,
+							heightMm: 0.3,
+							center: [0, 0, 0],
+							radiusMm: 3.2,
+						}),
+						roundBox({
+							widthMm: 12.2,
+							lengthMm: 6.5,
+							heightMm: 0.2,
+							center: [0, 0, -0.7],
+							radiusMm: 3,
+						}),
+					],
+				},
 			},
 		},
 	]);
 	const apertures = [
-		box({ size: [3.5, 5, 2.3], center: [capX, 16.5, 20] }),
+		box({ size: [3.5, 4.3, 2.3], center: [capX, 16.25, capZ] }),
 		{
 			type: "translate",
-			vector: [capX, capY, 20],
+			vector: [capX, capY, capZ],
 			shape: {
 				type: "rotate",
-				angles: [Math.PI / 2, 0, 0],
+				angles: [(2 * Math.PI) / 3, 0, 0],
 				shape: roundBox({
-					widthMm: 13.6,
-					lengthMm: 7.6,
-					heightMm: 3,
+					widthMm: 13.7,
+					lengthMm: 8,
+					heightMm: 8,
 					center: [0, 0, 0],
-					radiusMm: 3.5,
+					radiusMm: 3.6,
 				}),
 			},
 		} satisfies JscadOperation,
-		box({ size: [22, 10.2, 5.2], center: [-52, -9, 11.48] }),
-		box({ size: [3.5, 2.3, 13], center: [capX, barY, 15.4] }),
+		{
+			type: "translate",
+			vector: [-52, -9, 11.48],
+			shape: {
+				type: "rotate",
+				angles: [Math.PI / 2, 0, Math.PI / 2],
+				shape: roundBox({
+					widthMm: 10.2,
+					lengthMm: 5.2,
+					heightMm: 22,
+					center: [0, 0, 0],
+					radiusMm: 2.4,
+				}),
+			},
+		} satisfies JscadOperation,
+		box({ size: [3.5, 2.4, 24], center: [riserX, barY - 0.05, 20] }),
+		box({
+			size: [Math.abs(capX - riserX) + 3.5, 2.4, 2.3],
+			center: [(capX + riserX) / 2, barY - 0.05, capZ],
+		}),
 		box({ size: [8, 2.3, 2.3], center: [tip.x, 14.8, d.shutter.centerZMm] }),
-		box({ size: [49, 2.3, 2.3], center: [-29.2, barY, d.shutter.centerZMm] }),
+		box({
+			size: [Math.abs(riserX - tip.x) + 2, 2.4, 2.3],
+			center: [(riserX + tip.x) / 2, barY - 0.05, d.shutter.centerZMm],
+		}),
 	];
 	const dockPoints = [
 		[-20, -5],
@@ -251,31 +417,14 @@ export function createProductParts(): ProductPart[] {
 		[0, 15],
 	];
 	const dockingSlots = dockPoints.flatMap(([x, y]) => [
-		cylinder({ radiusMm: 2.9, heightMm: 4, center: [x + 4, y, 7.2] }),
+		cylinder({ radiusMm: 2.9, heightMm: 5.2, center: [x + 4, y, 7.2] }),
 		{
 			type: "hull",
 			shapes: [0, 4].map((dx) =>
-				cylinder({ radiusMm: 2.3, heightMm: 4, center: [x + dx, y, 7.2] }),
+				cylinder({ radiusMm: 2.3, heightMm: 5.2, center: [x + dx, y, 7.2] }),
 			),
 		} satisfies JscadOperation,
-		box({ size: [9.8, 5.8, 1.4], center: [x + 2, y, 7.7] }),
-	]);
-	const base = subtract([
-		union([
-			subtract([
-				createRemoteOuterPlan(),
-				cavity,
-				...apertures,
-				...dockingSlots,
-			]),
-			...lowerSeats,
-			{
-				type: "intersect",
-				shapes: [union(batterySeats), createRemoteOuterPlan()],
-			},
-		]),
-		box({ size: [3.2, 4.6, 25], center: [-56.3, -28, 20] }),
-		...baseShafts,
+		box({ size: [10, 6, 1.4], center: [x + 2, y, 7.7] }),
 	]);
 	const upperPillars = mountPoints.flatMap(({ x, y }) =>
 		x < -30 && y < 0
@@ -293,68 +442,113 @@ export function createProductParts(): ProductPart[] {
 			center: [x, y, x < -30 && y < 0 ? 11.8 : 20.5],
 		}),
 	);
-	const pad = roundBox({
-		widthMm: 32,
-		lengthMm: 52,
-		heightMm: 1.4,
-		center: [-38, -20, 33.3],
-		radiusMm: 14,
+	const padFootprint = roundBox({
+		widthMm: 36,
+		lengthMm: 56,
+		heightMm: 20,
+		center: [-38, -20, 26],
+		radiusMm: 16,
 	});
-	const padPocket = roundBox({
-		widthMm: 32.6,
-		lengthMm: 52.6,
-		heightMm: 2.1,
-		center: [-38, -20, 33.55],
-		radiusMm: 14.3,
-	});
+	const padSkin = intersect([
+		padFootprint,
+		subtract([crownMask(), crownMask({ zOffsetMm: -1.4 })]),
+	]);
+	const pad = padSkin;
+	const padPocket = intersect([
+		roundBox({
+			widthMm: 36.6,
+			lengthMm: 56.6,
+			heightMm: 22,
+			center: [-38, -20, 26],
+			radiusMm: 16.3,
+		}),
+		subtract([crownMask({ zOffsetMm: 1 }), crownMask({ zOffsetMm: -1.5 })]),
+	]);
 	const gripFaceKeepout = roundBox({
 		widthMm: 40.6,
 		lengthMm: 65.6,
-		heightMm: 7,
-		center: [-38, -18.5, 33],
+		heightMm: 40,
+		center: [-38, -18.5, 25],
 		radiusMm: 16.3,
 	});
 	const rearCover = subtract([
-		cylinder({ radiusMm: 29.2, heightMm: 1.4, center: [0, -5, 32.8] }),
-		gripFaceKeepout,
+		cylinder({ radiusMm: 29.2, heightMm: 0.6, center: [0, -5, 16.75] }),
+		box({
+			size: [
+				d.battery.widthMm + 0.6,
+				d.battery.lengthMm + 0.6,
+				d.battery.heightMm + 0.6,
+			],
+			center: [
+				d.battery.centerXMm,
+				d.battery.centerYMm,
+				d.battery.bottomZMm + d.battery.heightMm / 2,
+			],
+		}),
 	]);
-	const rearPocket = subtract([
-		cylinder({ radiusMm: 29.4, heightMm: 4, center: [0, -5, 33.3] }),
-		gripFaceKeepout,
+	const rearPocket = union([
+		subtract([
+			cylinder({ radiusMm: 29.4, heightMm: 16, center: [0, -5, 24.3] }),
+			gripFaceKeepout,
+		]),
+		cylinder({ radiusMm: 29.4, heightMm: 1.2, center: [0, -5, 16.9] }),
 	]);
-	const lid = subtract([
+	const bezel: JscadOperation = {
+		type: "translate",
+		vector: [capX, capY - 0.2 * Math.sin(Math.PI / 3), capZ - 0.1],
+		shape: {
+			type: "rotate",
+			angles: [(2 * Math.PI) / 3, 0, 0],
+			shape: roundBox({
+				widthMm: 15.2,
+				lengthMm: 8.8,
+				heightMm: 6,
+				center: [0, 0, 2.6],
+				radiusMm: 3.9,
+			}),
+		},
+	};
+	const jointMask = crownMask({ zOffsetMm: -3.5 });
+	const shell = subtract([
 		union([
+			createRemoteOuterPlan(),
 			{
 				type: "hull",
 				shapes: [
-					outline({
-						zMm: 30.5,
-						heightMm: 1,
-						handleWidthMm: 40,
-						handleLengthMm: 65,
-					}),
-					outline({
-						zMm: 32,
-						heightMm: 1,
-						handleWidthMm: 39,
-						handleLengthMm: 64,
-						circleRadiusMm: 30.2,
-					}),
-					outline({
-						zMm: 33.2,
-						heightMm: 0.6,
-						handleWidthMm: 37,
-						handleLengthMm: 62,
-						circleRadiusMm: 29.2,
+					bezel,
+					cylinder({
+						radiusMm: 10,
+						heightMm: 8,
+						center: [-44, 6, 27.5],
+						segments: 32,
 					}),
 				],
 			},
-			...upperPillars,
 		]),
-		waistCut({ zMm: 20, heightMm: 32 }),
+		cavity,
+		...apertures,
+		...dockingSlots,
+		padPocket,
+		rearPocket,
+	]);
+	const base = subtract([
+		union([
+			intersect([shell, jointMask]),
+			...lowerSeats,
+			intersect([union(batterySeats), createRemoteOuterPlan()]),
+		]),
+		box({ size: [3.2, 4.6, 25], center: [-56.3, -28, 20] }),
+		...baseShafts,
+	]);
+	const lid = subtract([
+		union([
+			subtract([shell, jointMask]),
+			intersect([union(upperPillars), createRemoteOuterPlan()]),
+		]),
 		...lidPilots,
 		padPocket,
 		rearPocket,
+		...apertures,
 	]);
 	const tray = subtract([
 		box({
@@ -428,7 +622,7 @@ export function createProductParts(): ProductPart[] {
 		{
 			name: "FingerGripInsert",
 			description:
-				"Recessed candidateTPU finger insert; adhesive/material qualification pending",
+				"Curved palm insert; fine leather-like surface finish and bonding qualification pending",
 			plan: color(pad, [0.025, 0.028, 0.03]),
 			explodeZMm: 82,
 		},

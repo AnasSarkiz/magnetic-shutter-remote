@@ -1,0 +1,82 @@
+{
+  "input_native_glb_sha256": "1e50c7d573f17df1ce83dec0a07f773385df480dfb4aa721e318c947e286570d",
+  "actual_native_geometry_verified": [
+    {
+      "part": "RemoteBase",
+      "geometry_bounds_delta_mm": 1.9073486328125e-06,
+      "unchanged_mesh_sha256": [
+        "345a5a369c58574d6891181ccc193e4533286b7e7c96c3c88f118e96ab6de09f"
+      ]
+    },
+    {
+      "part": "BatterySupport",
+      "geometry_bounds_delta_mm": 1.716613768465436e-06,
+      "unchanged_mesh_sha256": [
+        "958b6983efac1f61d832c27489da347eee6f6cfd16acf684ef106a564cf209e5"
+      ]
+    },
+    {
+      "part": "ASR00012_MaximumEnvelope",
+      "geometry_bounds_delta_mm": 1.3351440415476645e-06,
+      "unchanged_mesh_sha256": [
+        "af90c9a5c5f2d7e930a76c2c8d23cfb362639d89557827d9866cf1a6728de9cf"
+      ]
+    },
+    {
+      "part": "SideShutterPlunger",
+      "geometry_bounds_delta_mm": 2.6350392658969213e-06,
+      "unchanged_mesh_sha256": [
+        "c41511aecdd8d79625efec6b5415b286b8b71c0f6a6df0c4e5711056b31ea187"
+      ]
+    },
+    {
+      "part": "RemoteLid",
+      "geometry_bounds_delta_mm": 3.4990885851016174e-06,
+      "unchanged_mesh_sha256": [
+        "91aa01ec292c36c0865f61a5bf381a87f6ed0e7d08acbfc94fca5136f057e6dd"
+      ]
+    },
+    {
+      "part": "FingerGripInsert",
+      "geometry_bounds_delta_mm": 1.282176267380919e-06,
+      "unchanged_mesh_sha256": [
+        "20951d34845e6d71fcc15d46b98f970429d02f458c8dd95b6332946557ecf0c7"
+      ]
+    },
+    {
+      "part": "MagSafeRearCover",
+      "geometry_bounds_delta_mm": 4.577636715907829e-06,
+      "unchanged_mesh_sha256": [
+        "9e25a1c553179ab61e2ca85f3a7799881e1c7d67dbfcb999f2e1bec01c5e66d5"
+      ]
+    },
+    {
+      "part": "MagSafeGrip",
+      "geometry_bounds_delta_mm": 1.4066696164549697e-06,
+      "unchanged_mesh_sha256": [
+        "bb78e98dc79173f6aeeb9dce66163f11d48a6d6e26b61a1ad54b7601ac68ae7c"
+      ]
+    },
+    {
+      "part": "MagSafeFaceCover",
+      "geometry_bounds_delta_mm": 1.4981021649873583e-06,
+      "unchanged_mesh_sha256": [
+        "6e838ea027fbec4f2422c557088f77b43dc3155487ee0271ec8082f2f43168b7"
+      ]
+    },
+    {
+      "part": "MagSafeArrayReference",
+      "geometry_bounds_delta_mm": 3.0517578011313162e-06,
+      "unchanged_mesh_sha256": [
+        "bac173ca44373eaa7b17df6860d4958cb5bda6bf0f1ed70ed44fe1d0588dcbdc"
+      ]
+    }
+  ],
+  "output": "product/studio-back.png",
+  "output_sha256": "5147c0559e5f4078260018846fde9979d322ad5aa4fd8838297027420b44c1ab",
+  "blender_version": "4.3.2",
+  "material_and_lighting_presentation_only": true,
+  "smooth_shading_angle_degrees": 35,
+  "physical_finish_or_fit_claimed": false,
+  "samples": 32
+}

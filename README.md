@@ -25,7 +25,8 @@ still needs testing with assembled hardware.
 
 The native [3D product assembly](product/README.md) contains the actual PCB,
 protected battery envelope, service enclosure, horizontal shutter and detachable
-MagSafe grip. The docked CAD matches the latest reference's **90×78×34mm** target,
+MagSafe grip. The sculpted camera palm and thin circular back follow the latest reference's
+**90×78×34mm** target,
 excluding unqualified fastener heads/leads.
 These are editable prototype dimensions. The PCB remains44×56×1mm.
 

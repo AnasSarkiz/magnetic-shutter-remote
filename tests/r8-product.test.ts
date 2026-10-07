@@ -58,6 +58,15 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 			mountingReview: z.array(
 				z.object({ lowerSeatAndUpperPillarVerified: z.boolean() }),
 			),
+			shoulderWallVolumeMm3: z.number(),
+			shutterTravelReview: z.array(
+				z.object({
+					travelMm: z.number(),
+					caseAndOther43ComponentEnvelopesClear: z.boolean(),
+					intendedSw2ActuatorContactOnly: z.boolean(),
+				}),
+			),
+			fullProductBoundingBoxMm: z.array(z.array(z.number())),
 			shutterAlignment: z.object({
 				freeGapMm: z.number(),
 				centerYMm: z.number(),
@@ -81,6 +90,28 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 			(mount) => mount.lowerSeatAndUpperPillarVerified,
 		),
 	).toBe(true);
+	expect(review.shoulderWallVolumeMm3).toBeCloseTo(0.008, 5);
+	expect(review.shutterTravelReview.map((step) => step.travelMm)).toEqual([
+		0, 0.15, 0.25, 0.35,
+	]);
+	expect(
+		review.shutterTravelReview.every(
+			(step) =>
+				step.caseAndOther43ComponentEnvelopesClear &&
+				step.intendedSw2ActuatorContactOnly,
+		),
+	).toBe(true);
+	review.fullProductBoundingBoxMm[1].forEach((maximum, axis) =>
+		expect(maximum - review.fullProductBoundingBoxMm[0][axis]).toBeCloseTo(
+			[90, 78, 34][axis],
+			5,
+		),
+	);
+	const circularFace = review.parts.find(
+		(part) => part.name === "MagSafeRearCover",
+	);
+	if (!circularFace) throw new Error("Missing reference circular back");
+	expect(circularFace.boundsMm[1][2]).toBeCloseTo(17.05, 4);
 	expect(review.shutterAlignment.freeGapMm).toBeCloseTo(0.15, 3);
 	expect(review.shutterAlignment.centerYMm).toBeCloseTo(
 		pcbPointInProduct({
@@ -119,6 +150,8 @@ test("eight manufacturing STL files match the checked plans and pass actual read
 				z.object({
 					file: z.string(),
 					sha256: z.string(),
+					connected_solids: z.number(),
+					zero_area_triangles: z.number(),
 					watertight: z.boolean(),
 					winding_consistent: z.boolean(),
 					native_volume_delta_mm3: z.number(),
@@ -138,6 +171,8 @@ test("eight manufacturing STL files match the checked plans and pass actual read
 	);
 	expect(receipt.printed_parts).toHaveLength(8);
 	for (const part of receipt.printed_parts) {
+		expect(part.connected_solids).toBe(1);
+		expect(part.zero_area_triangles).toBe(0);
 		expect(part.watertight).toBe(true);
 		expect(part.winding_consistent).toBe(true);
 		expect(part.native_volume_delta_mm3).toBeLessThan(0.00001);

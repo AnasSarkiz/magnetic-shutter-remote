@@ -4,26 +4,28 @@
     "trimesh": "4.8.3",
     "numpy": "2.5.3"
   },
-  "source_plans_sha256": "2927c4bd6c3d83a75d4ade9a8df10f75aaede5525a775ecb9baec61402216b94",
-  "native_geometry_sha256": "a7d3908903947fbc5ece1580160fa5446cec165a2d18a0515ad073986bef6b5f",
+  "source_plans_sha256": "7a495e1c878b8066cfdec6043980f2c627d5e617846d3d2e376a0d5557f7c72a",
+  "native_geometry_sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
   "printed_parts": [
     {
       "file": "product/prints/RemoteBase.stl",
-      "sha256": "aea0b1978ee6bb6fa9ba9f928386a938aa7a22e51898f7e716dc7568deeaba54",
-      "triangles": 2122,
+      "sha256": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+      "triangles": 4564,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 6.548361852765083e-11,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 7.066446414683014e-07,
       "bounds_mm": [
         [
           -59.0,
           -52.0,
-          6.0
+          4.800000190734863
         ],
         [
           31.0,
           26.0,
-          30.0
+          30.5
         ]
       ],
       "manufacturing_status": "Error.NoError"
@@ -32,8 +34,10 @@
       "file": "product/prints/BatterySupport.stl",
       "sha256": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
       "triangles": 32,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
+      "zero_area_triangles": 0,
       "native_volume_delta_mm3": 2.2737367544323206e-13,
       "bounds_mm": [
         [
@@ -51,11 +55,13 @@
     },
     {
       "file": "product/prints/SideShutterPlunger.stl",
-      "sha256": "58aedd6dfae6fc368df41d0961f02ce6b172758b6c79a4361be57d8626c14434",
-      "triangles": 208,
+      "sha256": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+      "triangles": 634,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 1.7053025658242404e-12,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 2.807706778185093e-08,
       "bounds_mm": [
         [
           -52.0,
@@ -64,49 +70,53 @@
         ],
         [
           -5.199999809265137,
-          18.299999237060547,
-          23.5
+          19.817819595336914,
+          33.21458435058594
         ]
       ],
       "manufacturing_status": "Error.NoError"
     },
     {
       "file": "product/prints/RemoteLid.stl",
-      "sha256": "86ebd9a188f0726eaa31b7c1f6c7db77ad31f1f4adc678ce551d269650135af9",
-      "triangles": 1172,
+      "sha256": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+      "triangles": 3498,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 2.9103830456733704e-11,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 8.263687050202861e-07,
       "bounds_mm": [
         [
-          -58.0,
-          -51.0,
+          -58.49612045288086,
+          -50.81022644042969,
           10.0
         ],
         [
           31.0,
           26.0,
-          33.5
+          33.9105110168457
         ]
       ],
       "manufacturing_status": "Error.NoError"
     },
     {
       "file": "product/prints/FingerGripInsert.stl",
-      "sha256": "2d8fc8df1dd1633216ca144ab83b30c840462e8068790dbf48f72e940b6e13f5",
-      "triangles": 140,
+      "sha256": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+      "triangles": 420,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 9.094947017729282e-12,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 7.518838174291886e-08,
       "bounds_mm": [
         [
-          -54.0,
-          -46.0,
-          32.599998474121094
+          -56.0,
+          -48.0,
+          23.08925437927246
         ],
         [
-          -22.0,
-          6.0,
+          -20.0,
+          8.0,
           34.0
         ]
       ],
@@ -114,32 +124,36 @@
     },
     {
       "file": "product/prints/MagSafeRearCover.stl",
-      "sha256": "95cd03179292d40cb22bf758ef11137cee82dff1bf567659974a5235bebdf59f",
-      "triangles": 124,
+      "sha256": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+      "triangles": 228,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 9.094947017729282e-13,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 9.141308510152157e-08,
       "bounds_mm": [
         [
-          -24.359046936035156,
+          -28.697765350341797,
           -34.20000076293945,
-          32.099998474121094
+          16.450000762939453
         ],
         [
           29.200000762939453,
           24.200000762939453,
-          33.5
+          17.049999237060547
         ]
       ],
       "manufacturing_status": "Error.NoError"
     },
     {
       "file": "product/prints/MagSafeGrip.stl",
-      "sha256": "70191e9aacff8b4d1acc180780fa8fbdc73cfee840a308f31875c5d702722311",
-      "triangles": 1514,
+      "sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "triangles": 3034,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 1.2732925824820995e-11,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 5.343390512280166e-07,
       "bounds_mm": [
         [
           -29.5,
@@ -156,11 +170,13 @@
     },
     {
       "file": "product/prints/MagSafeFaceCover.stl",
-      "sha256": "898e6b1c764a9bd2374be350b58fc5806c2a40e68c207e1402a9e522b10b168a",
-      "triangles": 124,
+      "sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "triangles": 252,
+      "connected_solids": 1,
       "watertight": true,
       "winding_consistent": true,
-      "native_volume_delta_mm3": 4.547473508864641e-13,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 4.163825906289276e-08,
       "bounds_mm": [
         [
           -29.5,

@@ -1,0 +1,25 @@
+{
+  "reference": "User supplied multiview concept image,90\u00d778\u00d734mm",
+  "final_views": [
+    "product/closed.png",
+    "product/studio-straight.png",
+    "product/studio-side.png",
+    "product/studio-back.png",
+    "product/exploded.png",
+    "product/phone-facing.png"
+  ],
+  "status": "actual current-source front/straight/side/back/exploded/phone-facing views inspected",
+  "exact_photographic_identity_verified": false,
+  "pcb_and_pack_poses_unchanged": true,
+  "known_visible_difference": "USB opening follows actual unchanged PCB connector at higher position than concept",
+  "material_finish_presentation_only": true,
+  "observed_utc": "2026-10-07T19:16:01.307849+00:00",
+  "sha256": {
+    "product/closed.png": "af6ac5825846c6fabedfd86e3c60fbdcad2c99961b34c31df52e0c258c144040",
+    "product/studio-straight.png": "884f28dc56b3989668468207fcfaada3efe3881aa873b00cd5350ba9a396b68e",
+    "product/studio-side.png": "fc567530a6c10e47f81558fef36142b6611f5f4b71b5afa6037341a3cfbc974c",
+    "product/studio-back.png": "5147c0559e5f4078260018846fde9979d322ad5aa4fd8838297027420b44c1ab",
+    "product/exploded.png": "5a428cfdca3cec6124c0dd9a22c7d0741d296370a6afce089393b05cc3325f81",
+    "product/phone-facing.png": "07f85eaa67727efd8e64e5ef6fad849bb3b0e3005dac232a2671d305287bcf26"
+  }
+}

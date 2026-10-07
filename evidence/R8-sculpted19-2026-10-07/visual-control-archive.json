@@ -1,0 +1,16 @@
+{
+  "archive": "archives/r8-sculpted19-visual-controls-20261007.tar.gz",
+  "sha256": "eba41164815693586a125a80fd1138332355a77efd5b4635b3db858f425f5d02",
+  "members": {
+    "rejected-open-button21/geometry.ts": "05743b06e4b64dd702ad8d45cd9600c0ad944481aa418a7c83a1bfa35ba07be5",
+    "rejected-open-button21/studio-side.png": "ef1677bebe741b04b6898f33ea571a9ad7379e70db36de9aed685270cb2fce16",
+    "rejected-open-button21/geometry-review.json": "ecfb0928bab2fdd011c6b9d2e8dd68b8c2acc24481e20f7928feaf04927248a1",
+    "rejected-open-button21/print-mesh-review.json": "a0473fe91e839fe634810b19049728955bd66c770cb9141de96d89d82d5f5b02",
+    "rejected-open-button21/closed.png": "a0aec4126439a2248b97fae99497c4078f81715a5aad12775d6dccc87a80205e",
+    "rejected-raised-sleeve22/studio-side.png": "894d9547aba7173a2de6ca0da74cc14a23f5c208b733649ce03d100daf26bed2",
+    "rejected-raised-sleeve22/circuit.json": "ee591f6102e00a8336c7cf323de55a1b32979f46a1596b3b5d5114af73c747c9"
+  },
+  "all_member_bytes_verified": true,
+  "accepted_geometry": false,
+  "reason": "Earlier side views exposed the linkage or showed a raised sleeve. The final native hull blends the sleeve into the shoulder; no viewing angle conceals a failed mechanical check."
+}

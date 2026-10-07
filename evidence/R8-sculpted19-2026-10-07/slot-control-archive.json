@@ -1,0 +1,14 @@
+{
+  "archive": "archives/r8-sculpted19-slot-controls-20261007.tar.gz",
+  "sha256": "03579fab9d966fd9ab5f0dea00a15a740c83a9ae9373fec19c2e093a4d386c64",
+  "all_member_bytes_verified": true,
+  "members": {
+    "RemoteBase.stl": "684e82b03430a10ce89a9c8cf77bced3ef8da2818d4f98391a39d071059fe2d9",
+    "final-product-checks.json": "c520fd9f507c8be5ad74eff985a03ddb0e8ddf459bf2417178b56ea496aca10c",
+    "geometry.ts": "ff052b768835b6af32a04c750c08d8ab96b9b5176f236b1e9bf977a962ab8b9c",
+    "print-plans.json": "36cc741eb3142c31a6fcdb4f5289d4e3a721a7e29be177921a5849315f734897",
+    "triangle-area-readback.json": "d71772b56f1f898eefbc684e8a09c2e64fb0483186a3872cf761c8b0a5e2e7fb"
+  },
+  "root_cause": "The 9.8\u00d75.8mm head chamber was tangent to the 2.9mm-radius entrance at cardinal points; actual binary STL contained 12 collinear zero-area triangles. A 10\u00d76mm chamber preserves fit clearance and removes the tangency. Strict zero-area, edge/winding and single-solid checks remain required. No mesh repair.",
+  "accepted_geometry": false
+}
