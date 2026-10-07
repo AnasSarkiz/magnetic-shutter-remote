@@ -1,3 +1,19 @@
+# Current R8 enclosure0.3.17 — camera grip,2026-10-07
+
+Read product/README.md and evidence/R8-enclosure17-2026-10-07/REVIEW.md (from cloud,
+use ../ paths). New rounded palm shell, domed service lid and broad MagSafe
+shoulders follow the approved concept around unchanged actual PCB/battery.
+Shell64×72×23mm; docked113.5×76×33mm. Native fit/mount/horizontal-shutter/print
+checks pass; actual mechanical tests are pending. All electronic source,
+board artifact, routing, BOM, firmware and immutable inputs are unchanged.
+Seven bounded GLBs preserve all44 actual meshes; previous0.3.16 HTTP413 failure
+remains explicit. Actual publication receipt follows upload/readback, not a
+hosted preview assumption. Exact magnets/DC shield/bonding, hardware/harness/
+thermal/phone/case/RF/retention remain unqualified. No ring. Lightweight setup/
+start/guards, branch preservation and ordering/contact restrictions remain.
+
+## Earlier records — preserved history
+
 # Current R8 0.3.16 — compact source and native product assembly
 
 Read `evidence/R8-product16-2026-10-07/REVIEW.md` and `product/README.md`.

@@ -1,7 +1,12 @@
 import { assembly } from "@tscircuit/core";
 import { z } from "zod";
 import pcbGlb from "./models/r8-pcb.glb";
-import controlsGlb from "./models/r8-controls.glb";
+import parts2Glb from "./models/r8-parts-2.glb";
+import parts3Glb from "./models/r8-parts-3.glb";
+import parts4Glb from "./models/r8-parts-4.glb";
+import parts5Glb from "./models/r8-parts-5.glb";
+import parts6Glb from "./models/r8-parts-6.glb";
+import parts7Glb from "./models/r8-parts-7.glb";
 import { dimensions as d } from "./dimensions";
 import { createProductParts } from "./geometry";
 import review from "./geometry-review.json";
@@ -19,38 +24,37 @@ export function R8ProductAssembly({
 }) {
 	return (
 		<assembly.device name="R8MagneticShutterProductPrototype">
-			<assembly.subassembly
-				name="R8QualifiedPCBAnd22FittedParts"
-				displayName="Actual routed R8 PCB and22 supplier models"
-				cadModel={{
-					glbUrl: pcbGlb,
-					modelBoardNormalDirection: "z+",
-					modelUnitToMmScale: 1,
-					size: pcbReview.nativeAssets[0].sizeMm,
-					modelOriginPosition: { x: 0, y: 0, z: 0 },
-					positionOffset: {
-						x: 0,
-						y: d.remote.centerYMm,
-						z: d.pcb.centerZMm + (exploded ? 26 : 0),
-					},
-				}}
-			/>
-			<assembly.subassembly
-				name="R8QualifiedControlsAndProtection"
-				displayName="Remaining22 actual fitted models; same PCB transform"
-				cadModel={{
-					glbUrl: controlsGlb,
-					modelBoardNormalDirection: "z+",
-					modelUnitToMmScale: 1,
-					size: pcbReview.nativeAssets[1].sizeMm,
-					modelOriginPosition: { x: 0, y: 0, z: 0 },
-					positionOffset: {
-						x: 0,
-						y: d.remote.centerYMm,
-						z: d.pcb.centerZMm + (exploded ? 26 : 0),
-					},
-				}}
-			/>
+			{[
+				pcbGlb,
+				parts2Glb,
+				parts3Glb,
+				parts4Glb,
+				parts5Glb,
+				parts6Glb,
+				parts7Glb,
+			].map((glbUrl, index) => (
+				<assembly.subassembly
+					key={pcbReview.nativeAssets[index].filename}
+					name={
+						index === 0
+							? "R8QualifiedPCBAndFittedParts1"
+							: `R8QualifiedFittedParts${index + 1}`
+					}
+					displayName={`Actual unchanged PCB geometry fragment${index + 1} of7`}
+					cadModel={{
+						glbUrl,
+						modelBoardNormalDirection: "z+",
+						modelUnitToMmScale: 1,
+						size: pcbReview.nativeAssets[index].sizeMm,
+						modelOriginPosition: { x: 0, y: 0, z: 0 },
+						positionOffset: {
+							x: d.remote.centerXMm,
+							y: d.remote.centerYMm,
+							z: d.pcb.centerZMm + (exploded ? 26 : 0),
+						},
+					}}
+				/>
+			))}
 
 			{createProductParts().map((part) => {
 				const measured = measuredParts.find((row) => row.name === part.name);
@@ -81,7 +85,7 @@ export function R8ProductAssembly({
 							},
 							modelOriginPosition: { x: 0, y: 0, z: 0 },
 							positionOffset: {
-								x: center.x,
+								x: center.x + (isGrip ? 0 : d.remote.centerXMm),
 								y: center.y + (isGrip ? 0 : d.remote.centerYMm),
 								z:
 									center.z +

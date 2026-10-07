@@ -1,0 +1,11 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-product.test.ts:
+(pass) native product views preserve the board transform and create no second PCB [128.63ms]
+(pass) all real electronic envelopes fit, magnetic datum clearance and solid separation pass [3.89ms]
+(pass) six manufacturing STL files match the checked plans and pass actual readback [1.54ms]
+
+ 3 pass
+ 0 fail
+ 53 expect() calls
+Ran 3 tests across 1 file. [188.00ms]

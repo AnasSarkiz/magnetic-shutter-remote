@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-10-07T14:45:33.355598+00:00",
+  "actually_inspected": true,
+  "closed_exploded_phone_facing_views_complete_no_clipping": true,
+  "actual_native_geometry_not_ai_concept": true,
+  "limitation": "These are first-fit CAD renders; no physical phone/case/MagSafe or hardware qualification. PCB envelope makes grip broader than styling illustration.",
+  "sha256": {
+    "product/closed.png": "c5d7c8d61685fcb7e8b2eb266ea08a3843f4691d7a8a0ee4ef9307e9667375a8",
+    "product/exploded.png": "b67854fa3e4d994e6ea1ab6023c9524b8fa508423fd11ec3f8c5134d0367e114",
+    "product/phone-facing.png": "bee69898045b8b93a3d8a0e09be45d8063e67fb117a10e6750c59eaea9416d8e",
+    "dist/product.assembly/circuit.json": "be01f0921f8a0f09c9fe533256515ed5c26274f8d647567f10a6cd4b20600697",
+    "dist/product.exploded/circuit.json": "04ae1980647892e90d5b498f4775b84e58676377b6e1530efa8365389b04b91a"
+  }
+}

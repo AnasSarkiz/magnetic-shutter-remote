@@ -76,12 +76,33 @@ function roundBox({
 	};
 }
 export function createProductParts(): ProductPart[] {
-	const caseBody = roundBox({
-		widthMm: 54,
-		lengthMm: 62,
-		heightMm: 20,
-		center: [-2, 0, 16],
-	});
+	// Three rounded sections form a palm bulge while keeping the qualified cavity.
+	const caseBody: JscadOperation = {
+		type: "hull",
+		shapes: [
+			roundBox({
+				widthMm: 60,
+				lengthMm: 68,
+				heightMm: 1,
+				center: [-2, 0, 6.5],
+				radiusMm: 12,
+			}),
+			roundBox({
+				widthMm: 64,
+				lengthMm: 72,
+				heightMm: 1,
+				center: [-2, 0, 14.5],
+				radiusMm: 15,
+			}),
+			roundBox({
+				widthMm: 62,
+				lengthMm: 70,
+				heightMm: 1,
+				center: [-2, 0, 25.5],
+				radiusMm: 12,
+			}),
+		],
+	};
 	const cavity = roundBox({
 		widthMm: 50.8,
 		lengthMm: 58.8,
@@ -100,14 +121,17 @@ export function createProductParts(): ProductPart[] {
 		box({ size: [2, 26, 0.8], center: [22.7, 6, 14.4] }),
 	];
 	const apertures = [
-		box({ size: [12, 6, 9.5], center: [0, 30, 11.48] }), // USB-C + strain-relief approach
-		box({ size: [6, 3.4, 2.2], center: [24, -8.5, 10.86] }), // horizontal shutter
-		box({ size: [6, 8, 4], center: [24, 5, 10.8] }), // side power slider access
-		box({ size: [6, 2.5, 2], center: [-28, -5, 10.2] }), // battery/status LED view
-		box({ size: [2.5, 6, 2], center: [8, 30, 10.2] }), // charge LED view
+		box({ size: [12, 12, 9.5], center: [0, 33.8, 11.48] }), // USB-C + strain-relief approach
+		box({
+			size: [10, 3.4, 2.2],
+			center: [26, d.shutter.centerYMm, d.shutter.centerZMm - 4],
+		}), // horizontal shutter
+		box({ size: [10, 8, 4], center: [26, 5, 10.8] }), // side power slider access
+		box({ size: [14, 2.5, 2], center: [-29, -5, 10.2] }), // battery/status LED view
+		box({ size: [2.5, 12, 2], center: [8, 34, 10.2] }), // charge LED view
 	];
 	const railGrooves = [-1, 1].map((side) =>
-		box({ size: [3.8, 37, 1.6], center: [side === 1 ? 25.5 : -29.5, 9, 8.8] }),
+		box({ size: [5.2, 37, 4], center: [side === 1 ? 27 : -31, 0, 7.8] }),
 	);
 	const base = subtract([
 		union([
@@ -119,12 +143,39 @@ export function createProductParts(): ProductPart[] {
 	]);
 	const lid = subtract([
 		union([
-			roundBox({
-				widthMm: 54,
-				lengthMm: 62,
-				heightMm: 1.6,
-				center: [-2, 0, 26.8],
-			}),
+			{
+				type: "hull",
+				shapes: [
+					roundBox({
+						widthMm: 62,
+						lengthMm: 70,
+						heightMm: 0.4,
+						center: [-2, 0, 26.2],
+						radiusMm: 12,
+					}),
+					roundBox({
+						widthMm: 62,
+						lengthMm: 70,
+						heightMm: 0.4,
+						center: [-2, 0, 27],
+						radiusMm: 12,
+					}),
+					roundBox({
+						widthMm: 58,
+						lengthMm: 66,
+						heightMm: 0.4,
+						center: [-2, 0, 28],
+						radiusMm: 14,
+					}),
+					roundBox({
+						widthMm: 54,
+						lengthMm: 62,
+						heightMm: 0.4,
+						center: [-2, 0, 28.8],
+						radiusMm: 16,
+					}),
+				],
+			},
 			...mountingHolesMm.map(([x, y]) =>
 				box({ size: [4.2, 4.2, 16.4], center: [x, y, 18.2] }),
 			),
@@ -140,9 +191,28 @@ export function createProductParts(): ProductPart[] {
 	// Retained protected pack's manufacturer maximum envelope, not an invented CAD model.
 	const cell = box({ size: [43, 32, 8.5], center: [0, 6, 19.65] });
 	// Captive flange retains the horizontal plunger; no top-operated shutter lever.
+	const stemStartXMm = d.shutter.actuatorXMm + d.shutter.freeGapMm;
+	const stemEndXMm = 30.2;
 	const plunger = union([
-		box({ size: [3.375, 3, 1.8], center: [24.3115, -8.5, 10.86] }),
-		box({ size: [0.6, 4.4, 3.2], center: [23.05, -8.5, 10.86] }),
+		box({
+			size: [stemEndXMm - stemStartXMm, 3, 1.8],
+			center: [
+				(stemStartXMm + stemEndXMm) / 2,
+				d.shutter.centerYMm,
+				d.shutter.centerZMm - 4,
+			],
+		}),
+		box({
+			size: [0.6, 4.4, 3.2],
+			center: [23.05, d.shutter.centerYMm, d.shutter.centerZMm - 4],
+		}),
+		roundBox({
+			widthMm: 1.6,
+			lengthMm: 7,
+			heightMm: 3,
+			center: [30.6, d.shutter.centerYMm, d.shutter.centerZMm - 4],
+			radiusMm: 0.7,
+		}),
 	]);
 	// Positive, overlapping features keep the array pocket open for assembly.
 	const contact = union([
@@ -157,26 +227,50 @@ export function createProductParts(): ProductPart[] {
 		cylinder({ radiusMm: 27.05, heightMm: 1.1, center: [0, 0, 1.15] }),
 		cylinder({ radiusMm: 23, heightMm: 2, center: [0, 0, 1.15] }),
 	]);
-	const riser = box({ size: [20, 6, 7], center: [0, -24, 6.3] });
-	const arm = roundBox({
-		widthMm: 30,
-		lengthMm: 72,
-		heightMm: 2.4,
-		center: [0, -58, 8.8],
-	});
-	// Side-open sliding cradle supports the remote's floor; exposed antenna end stays plastic.
+	// Wide curved shoulders blend the phone contact and camera palm grip.
+	// Outside the30mm contact radius every shoulder is at least6mm above the phone.
+	const riser = cylinder({ radiusMm: 27.5, heightMm: 4, center: [0, 0, 6.8] });
+	const arm: JscadOperation = {
+		type: "hull",
+		shapes: [
+			cylinder({ radiusMm: 27.5, heightMm: 2.4, center: [0, 0, 7.6] }),
+			roundBox({
+				widthMm: 68,
+				lengthMm: 76,
+				heightMm: 2.4,
+				center: [d.remote.centerXMm - 2, d.remote.centerYMm, 8.8],
+				radiusMm: 16,
+			}),
+		],
+	};
 	const dock = union([
-		box({ size: [54, 36, 1.6], center: [-2, -65, 9.2] }),
 		...[-1, 1].map((side) =>
-			box({ size: [2, 36, 4], center: [side === 1 ? 26 : -30, -65, 10.8] }),
+			box({
+				size: [2, 36, 4],
+				center: [
+					d.remote.centerXMm + (side === 1 ? 28 : -32),
+					d.remote.centerYMm,
+					10.8,
+				],
+			}),
 		),
 		...[-1, 1].map((side) =>
 			box({
 				size: [3, 36, 1.2],
-				center: [side === 1 ? 25.5 : -29.5, -65, 12.8],
+				center: [
+					d.remote.centerXMm + (side === 1 ? 26.5 : -30.5),
+					d.remote.centerYMm,
+					12.8,
+				],
 			}),
 		),
-		box({ size: [56, 2, 4], center: [-2, -41.8, 10.8] }),
+		roundBox({
+			widthMm: 56,
+			lengthMm: 2,
+			heightMm: 1.2,
+			center: [d.remote.centerXMm - 2, d.remote.centerYMm + 36.4, 10.6],
+			radiusMm: 0.8,
+		}),
 	]);
 	return [
 		{
@@ -204,7 +298,7 @@ export function createProductParts(): ProductPart[] {
 			name: "SideShutterPlunger",
 			description:
 				"Horizontal actuator with 0.15 mm nominal free gap; switch stroke/printing tolerances require measurement",
-			plan: color(plunger, [0.9, 0.35, 0.05]),
+			plan: color(plunger, [0.48, 0.29, 0.14]),
 			explodeZMm: 4,
 		},
 		{
@@ -217,7 +311,7 @@ export function createProductParts(): ProductPart[] {
 		{
 			name: "MagSafeGrip",
 			description:
-				"Printed 59 mm contact disk, raised handle and detachable sliding cradle; no phone-size clamp",
+				"Integrated curved MagSafe shoulders and concealed sliding cradle; camera palm grip; no phone-size clamp",
 			plan: color(union([contact, riser, arm, dock]), [0.17, 0.19, 0.22]),
 			explodeZMm: 0,
 		},
@@ -246,7 +340,7 @@ export function partInProduct(part: ProductPart): JscadOperation {
 	return {
 		type: "translate",
 		vector: [
-			0,
+			part.name.startsWith("MagSafe") ? 0 : d.remote.centerXMm,
 			part.name.startsWith("MagSafe") ? 0 : d.remote.centerYMm,
 			part.name.startsWith("MagSafe") ? 0 : 4,
 		],

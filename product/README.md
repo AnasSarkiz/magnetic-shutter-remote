@@ -1,10 +1,11 @@
-# R8 3D product assembly — engineering prototype
+# R8 camera-grip enclosure —0.3.17 engineering prototype
 
 ![Closed product](closed.png)
 ![Exploded product](exploded.png)
+![Phone-facing view](phone-facing.png)
 
 The actual44×56×1mm routed R8 PCB and all44 real supplier models sit inside
-an original serviceable enclosure. The protected ASR00012 battery uses its
+a rounded camera-palm enclosure with a domed service lid and broad curved MagSafe shoulders. The protected ASR00012 battery uses its
 manufacturer maximum envelope, rather than an invented supplier model.
 The right-side plunger presses the existing TS24CA horizontally. The remote
 slides out of a separate MagSafe grip; no phone-width clamp or RGB light is added.
@@ -12,9 +13,9 @@ slides out of a separate MagSafe grip; no phone-width clamp or RGB light is adde
 | Envelope | CAD dimensions, mm |
 | --- | --- |
 | PCB |44×56×1 |
-| Detached printed shell |54×62×21.6 |
-| Grip and cradle |60.5×123.5×13.4 |
-| Docked assembly |60.5×134.5×31.6 |
+| Detached printed shell |64×72×23 |
+| Grip and cradle |113.5×76×13.4 |
+| Docked assembly |113.5×76×33 |
 | Battery maximum envelope |43×32×8.5 |
 | MagSafe contact disk |Ø59 |
 
@@ -31,7 +32,7 @@ proof of compatibility with every iPhone/case/camera arrangement.
 - `../product.exploded.tsx`: native exploded assembly.
 - `assembly.tsx`, `geometry.ts`, `dimensions.ts`: supported
   `assembly.device/subassembly` APIs and editable JSCAD plans.
-- `models/r8-pcb.glb` and `models/r8-controls.glb`: one actual native board and44 supplier models, partitioned into two bounded upload assets and normalized into
+- `models/r8-pcb.glb` and `models/r8-parts-2.glb` through `r8-parts-7.glb`: one actual native board and44 supplier models, partitioned into seven bounded upload assets below2.4MB each and normalized into
   PCB coordinates by a standard glTF scene rotation. Binary meshes/textures
   are preserved. All44 CAD anchors and nonempty geometries are checked.
 - `geometry-review.json` and `pcb-model-review.json`: measured bounds/volumes,
@@ -51,6 +52,7 @@ python3 cloud/run-heavy.py -- tsci build product.assembly.tsx --glbs
 python3 cloud/run-heavy.py -- tsci build product.exploded.tsx --glbs
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.assembly
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.exploded
+python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.assembly phone-facing
 ```
 
 The assembly creates no second PCB, routing or circuit. `bun run dev` exposes
@@ -67,7 +69,7 @@ The removable battery support rests on enclosure ledges. The pack has2.1mm
 nominal clearance below the roof and the support clears the tallest fitted
 connector by0.54mm. These are nominal CAD gaps, not measured process capability.
 The wider left bay reserves space for the side-entry SH battery plug/leads.
-USB-C has a12×9.5mm opening around its manufacturer mating datum.
+USB-C has a12×9.5mm opening extended through the curved wall around its manufacturer mating datum. The power slider is recessed in this first-fit shell; use an insulated plastic tool during prototype testing. An external power-slider cap/lever is not yet qualified.
 
 Remove the lid and lift the pack/support while keeping the correctly polarized
 battery connected to reach PAIR, BOOT, RESET and J3. Use the standard JST
@@ -97,11 +99,11 @@ The old Nordic enclosure/STLs are archived and never used as R8 fit evidence.
 
 ## Camera-grip styling follow-up
 
-The user requested a realistic, visually balanced camera-handgrip concept before
-changing this CAD. The generated image is a styling illustration, not measured
-engineering geometry. Adopt smooth continuous contours around the MagSafe
-interface and a rounded palm/finger grip, preserving the detachable remote.
-Do not place or resize internal parts to imitate the illustration.
+The user approved the camera-handgrip concept and this first native CAD implements
+its broad continuous shoulders, rounded palm surfaces and domed lid while
+preserving the detachable remote. The actual PCB/battery require a broader grip
+than the slender image. The image is styling, not measured engineering geometry.
+Electronic components are not repositioned to imitate it.
 
 The outer enclosure must be developed around the actual44×56×1mm PCB outline,
 all44 fitted supplier models and the existing four2.2mm mounting holes at
@@ -115,3 +117,8 @@ gap before physical switch-stroke/overtravel qualification. The button in the
 illustration is not a placement authority; do not move the routed switch simply
 for appearance. Re-run solid/envelope/mount/alignment/print-readback checks after
 sculpting, then inspect the real closed/exploded native views.
+
+[Current enclosure review](../evidence/R8-enclosure17-2026-10-07/REVIEW.md).
+PNG part colours are presentation materials on exact native geometry; no real
+material/phone fit approval is implied. Full clasp/texture/production finishing
+is not inferred from the generated illustration.

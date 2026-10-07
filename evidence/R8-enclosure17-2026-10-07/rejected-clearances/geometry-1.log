@@ -1,0 +1,317 @@
+{
+  "started_utc": "20261007T142818810994Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -31.000000000000014,
+          -33,
+          5.999999999999995
+        ],
+        [
+          27.000000000000007,
+          33,
+          26.00000000000001
+        ]
+      ],
+      "boundsMm": [
+        [
+          20.999999999999986,
+          -33,
+          9.999999999999995
+        ],
+        [
+          79,
+          33,
+          30.00000000000001
+        ]
+      ],
+      "volumeMm3": 15242.789527592042,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -22,
+          -10.5,
+          14.799999999999999
+        ],
+        [
+          22,
+          22.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          30,
+          -10.5,
+          18.799999999999997
+        ],
+        [
+          74,
+          22.5,
+          19.4
+        ]
+      ],
+      "volumeMm3": 175.19999999999743,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -21.5,
+          -10,
+          15.399999999999999
+        ],
+        [
+          21.5,
+          22,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          30.5,
+          -10,
+          19.4
+        ],
+        [
+          73.5,
+          22,
+          27.9
+        ]
+      ],
+      "volumeMm3": 11696.000000000007,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          22.624,
+          -12,
+          9.26
+        ],
+        [
+          29.8,
+          -5,
+          12.459999999999999
+        ]
+      ],
+      "boundsMm": [
+        [
+          74.624,
+          -12,
+          13.26
+        ],
+        [
+          81.8,
+          -5,
+          16.46
+        ]
+      ],
+      "volumeMm3": 67.62692437382057,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -29,
+          -31,
+          10
+        ],
+        [
+          25,
+          31,
+          27.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          23,
+          -31,
+          14
+        ],
+        [
+          77,
+          31,
+          31.6
+        ]
+      ],
+      "volumeMm3": 6150.984116087051,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -29.500000000000004,
+          -34,
+          0.6
+        ],
+        [
+          80,
+          34,
+          13.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.500000000000004,
+          -34,
+          0.6
+        ],
+        [
+          80,
+          34,
+          13.4
+        ]
+      ],
+      "volumeMm3": 34120.91152688606,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -29.5,
+          0
+        ],
+        [
+          29.5,
+          29.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -29.5,
+          0
+        ],
+        [
+          29.5,
+          29.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1629.8625862515432,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.05,
+          -27.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          27.05,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.05,
+          -27.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          27.05,
+          1.7
+        ]
+      ],
+      "volumeMm3": 695.9972095731468,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "clashes": [
+    {
+      "a": "RemoteBase",
+      "b": "MagSafeGrip",
+      "volumeMm3": 87.50289569853688
+    }
+  ],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 10,
+  "fullProductBoundingBoxMm": [
+    [
+      -29.500000000000004,
+      -34,
+      0
+    ],
+    [
+      81.8,
+      34,
+      31.6
+    ]
+  ]
+}
+116 | await Bun.write(
+117 | 	"product/geometry-review.json",
+118 | 	JSON.stringify(report, null, 2),
+119 | );
+120 | console.log(JSON.stringify(report, null, 2));
+121 | if (clashes.length) throw new Error("Product geometry has solid intersections");
+                                    ^
+error: Product geometry has solid intersections
+      at /workspace/magnetic-shutter-remote/scripts/check-product-geometry.ts:121:31
+
+Bun v1.3.9 (Linux x64)
+{
+  "started_utc": "20261007T142818810994Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T14:28:20.199913+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 229292,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T142818810994Z.log"
+}

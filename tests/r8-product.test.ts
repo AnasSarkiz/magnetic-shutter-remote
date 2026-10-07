@@ -20,7 +20,7 @@ test("native product views preserve the board transform and create no second PCB
 		const board = circuit.find(
 			(element) =>
 				element.type === "source_component" &&
-				element.name === "R8QualifiedPCBAnd22FittedParts",
+				element.name === "R8QualifiedPCBAndFittedParts1",
 		);
 		if (board?.type !== "source_component")
 			throw new Error("Missing actual PCB assembly");
@@ -32,8 +32,8 @@ test("native product views preserve the board transform and create no second PCB
 		if (cad?.type !== "cad_component")
 			throw new Error("Missing real PCB model");
 		expect(cad.position).toEqual({
-			x: 0,
-			y: -74,
+			x: dimensions.remote.centerXMm,
+			y: dimensions.remote.centerYMm,
 			z: dimensions.pcb.centerZMm + (name === "product.exploded" ? 26 : 0),
 		});
 		expect(cad.model_glb_url).toContain("r8-pcb.glb");
@@ -48,6 +48,15 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 			electronicEnvelopeClashes: z.array(z.unknown()),
 			phoneClearanceViolations: z.array(z.unknown()),
 			fittedComponentEnvelopesChecked: z.number(),
+			boardEnvelopeChecked: z.boolean(),
+			mountingReview: z.array(
+				z.object({ lowerSeatAndUpperPillarVerified: z.boolean() }),
+			),
+			shutterAlignment: z.object({
+				freeGapMm: z.number(),
+				centerYMm: z.number(),
+				centerZMm: z.number(),
+			}),
 			parts: z.array(
 				z.object({ name: z.string(), boundsMm: z.array(z.array(z.number())) }),
 			),
@@ -57,6 +66,18 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 	expect(review.electronicEnvelopeClashes).toEqual([]);
 	expect(review.phoneClearanceViolations).toEqual([]);
 	expect(review.fittedComponentEnvelopesChecked).toBe(44);
+	expect(review.boardEnvelopeChecked).toBe(true);
+	expect(review.mountingReview).toHaveLength(4);
+	expect(
+		review.mountingReview.every(
+			(mount) => mount.lowerSeatAndUpperPillarVerified,
+		),
+	).toBe(true);
+	expect(review.shutterAlignment.freeGapMm).toBeCloseTo(0.15, 3);
+	expect(review.shutterAlignment.centerYMm).toBe(
+		dimensions.shutter.centerYMm + dimensions.remote.centerYMm,
+	);
+	expect(review.shutterAlignment.centerZMm).toBe(dimensions.shutter.centerZMm);
 	const cell = review.parts.find(
 		(part) => part.name === "ASR00012_MaximumEnvelope",
 	);

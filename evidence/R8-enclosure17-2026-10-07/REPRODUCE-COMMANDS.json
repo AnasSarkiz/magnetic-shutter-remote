@@ -1,0 +1,7 @@
+{
+  "electrical_checks_origin": "../R8-product16-2026-10-07/REPRODUCE-COMMANDS.json",
+  "electrical_inputs_unchanged": true,
+  "current_mechanical_checks": "final-product-checks.json",
+  "guard": "python3 cloud/run-heavy.py --",
+  "light_setup_smoke_unchanged": true
+}

@@ -156,7 +156,7 @@ def stage(destination, options):
                 raise ValueError('Product print mesh did not pass readback')
         selected.update(source_closure(ROOT/'product.assembly.tsx'))
         selected.update(source_closure(ROOT/'product.exploded.tsx'))
-        selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png',
+        selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png','phone-facing.png',
                         'print-requirements.txt','print-plans.json','print-mesh-review.json'])
         selected.update(ROOT/part['file'] for part in mesh_review['printed_parts'])
         selected.update(ROOT/'dist'/name/'circuit.json' for name in ['product.assembly','product.exploded'])

@@ -153,3 +153,11 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [100 — CLI GLB local model base](100-cli-glb-export-local-model-base.md): four local OBJ models exported empty; supported converter project base resolves all44 actual meshes without supplier import edits.
 - [101 — JSCAD STL triangulation](101-jscad-stl-boolean-triangulation.md): native display geometry serializes open STL edges; direct same-plan pinned Manifold manufacturing export passes closed/winding/bounds/volume/readback, rejected inputs retained.
 - Issue099 successor:0.3.16 native upload exits1;272/275 public files stored, two actual PCB GLBs and one STEP absent. Draft remains unready; never finalize missing models.
+
+## R8 camera-grip enclosure —2026-10-07
+
+Issue099 follow-up: retained0.3.16 raw native log distinguishes HTTP413 for both
+large PCB GLB request bodies from transient STEP502/timeouts. Seven native
+fragments below2.4MB preserve all44 model vertices/bounds/poses, avoiding the
+oversized payload cause. New native success still requires actual inventory/
+byte readback; previous incomplete drafts are never finalized with missing files.

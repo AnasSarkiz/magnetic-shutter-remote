@@ -5,7 +5,8 @@ import type Geom3 from "@jscad/modeling/src/geometries/geom3/type";
 import modeling from "@jscad/modeling";
 import { createProductParts, partInProduct } from "../product/geometry";
 import { z } from "zod";
-import { dimensions as d } from "../product/dimensions";
+import { dimensions as d, mountingHolesMm } from "../product/dimensions";
+import { any_circuit_element } from "circuit-json";
 // Native plan loader evaluates the identical plans used by the assembly.
 function solidFromPlan(plan: JscadOperation): Geom3 {
 	const geometry = executeJscadOperations(modeling, plan);
@@ -47,14 +48,12 @@ const meshReview = z
 	})
 	.parse(await Bun.file("product/pcb-model-review.json").json());
 const electronicEnvelopeClashes = [];
-for (const component of meshReview.meshes.filter(
-	(mesh) => mesh.name !== "Box0",
-)) {
+for (const component of meshReview.meshes) {
 	const [min, max] = component.boundsMm;
 	const envelope = modeling.primitives.cuboid({
 		size: [max[0] - min[0], max[1] - min[1], max[2] - min[2]],
 		center: [
-			(min[0] + max[0]) / 2,
+			(min[0] + max[0]) / 2 + d.remote.centerXMm,
 			(min[1] + max[1]) / 2 + d.remote.centerYMm,
 			(min[2] + max[2]) / 2 + d.pcb.centerZMm,
 		],
@@ -88,6 +87,79 @@ if (electronicEnvelopeClashes.length || phoneClearanceViolations.length)
 	throw new Error(
 		JSON.stringify({ electronicEnvelopeClashes, phoneClearanceViolations }),
 	);
+const source = any_circuit_element
+	.array()
+	.parse(await Bun.file("dist/index/circuit.json").json());
+const board = source.find((element) => element.type === "pcb_board");
+if (
+	board?.type !== "pcb_board" ||
+	board.width !== d.pcb.widthMm ||
+	board.height !== d.pcb.lengthMm ||
+	board.thickness !== d.pcb.thicknessMm
+)
+	throw new Error("Enclosure PCB envelope differs from actual board");
+const actualMounts = source.filter(
+	(element) => element.type === "pcb_hole" && !element.pcb_component_id,
+);
+if (actualMounts.length !== mountingHolesMm.length)
+	throw new Error("PCB mount count changed");
+const mountingReview = mountingHolesMm.map(([x, y]) => {
+	const hole = actualMounts.find(
+		(element) =>
+			element.type === "pcb_hole" &&
+			element.x === x &&
+			element.y === y &&
+			element.hole_shape === "circle" &&
+			element.hole_diameter === 2.2,
+	);
+	if (!hole) throw new Error("Enclosure mount does not match actual PCB hole");
+	for (const [name, zMm] of [
+		["RemoteBase", 12.5],
+		["RemoteLid", 14.5],
+	] as const) {
+		const index = parts.findIndex((part) => part.name === name);
+		const witness = modeling.primitives.cuboid({
+			size: [0.2, 0.2, 0.2],
+			center: [x + d.remote.centerXMm + 1.5, y + d.remote.centerYMm, zMm],
+		});
+		const volumeMm3 = modeling.measurements.measureVolume(
+			modeling.booleans.intersect(witness, shapes[index]),
+		);
+		if (Math.abs(volumeMm3 - 0.008) > 0.00001)
+			throw new Error(`Missing physical mount support: ${name} ${x},${y}`);
+	}
+	return {
+		pcbXmm: x,
+		pcbYmm: y,
+		holeDiameterMm: 2.2,
+		lowerSeatAndUpperPillarVerified: true,
+	};
+});
+const plungerBounds = rows.find(
+	(row) => row.name === "SideShutterPlunger",
+)?.boundsMm;
+if (!plungerBounds) throw new Error("Missing side actuator");
+const actualSwitch = meshReview.meshes.find((mesh) => mesh.name === "SW2");
+if (!actualSwitch) throw new Error("Missing actual switch model");
+const shutterFreeGapMm =
+	plungerBounds[0][0] - (actualSwitch.boundsMm[1][0] + d.remote.centerXMm);
+const shutterCenterYMm = (plungerBounds[0][1] + plungerBounds[1][1]) / 2;
+const shutterCenterZMm = (plungerBounds[0][2] + plungerBounds[1][2]) / 2;
+if (
+	Math.abs(shutterFreeGapMm - d.shutter.freeGapMm) > 0.0001 ||
+	Math.abs(shutterCenterYMm - d.shutter.centerYMm - d.remote.centerYMm) >
+		0.0001 ||
+	Math.abs(shutterCenterZMm - d.shutter.centerZMm) > 0.0001
+)
+	throw new Error("Shutter plunger lost actual side-switch alignment");
+const shutterAlignment = {
+	axis: "horizontal +X",
+	freeGapMm: shutterFreeGapMm,
+	centerYMm: shutterCenterYMm,
+	centerZMm: shutterCenterZMm,
+	boardRelativeActuatorZMm: d.shutter.centerZMm - d.pcb.centerZMm,
+	physicalStrokeAndOvertravelQualified: false,
+};
 await Bun.write(
 	"product/print-plans.json",
 	JSON.stringify(
@@ -105,7 +177,12 @@ const report = {
 	parts: rows,
 	electronicEnvelopeClashes,
 	phoneClearanceViolations,
-	fittedComponentEnvelopesChecked: 44,
+	fittedComponentEnvelopesChecked: meshReview.meshes.filter(
+		(mesh) => mesh.name !== "Box0",
+	).length,
+	boardEnvelopeChecked: true,
+	mountingReview,
+	shutterAlignment,
 	clashes,
 	phoneDatumZMm: 0,
 	remoteBottomZMm: 10,

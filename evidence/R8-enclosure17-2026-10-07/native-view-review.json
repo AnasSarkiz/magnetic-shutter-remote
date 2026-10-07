@@ -1,0 +1,22 @@
+[
+  {
+    "view": "product.assembly",
+    "all_seven_native_fragments_share_actual_board_transform": true,
+    "board_position_mm": [
+      52,
+      0,
+      13.5
+    ],
+    "circuit_sha256": "be01f0921f8a0f09c9fe533256515ed5c26274f8d647567f10a6cd4b20600697"
+  },
+  {
+    "view": "product.exploded",
+    "all_seven_native_fragments_share_actual_board_transform": true,
+    "board_position_mm": [
+      52,
+      0,
+      39.5
+    ],
+    "circuit_sha256": "04ae1980647892e90d5b498f4775b84e58676377b6e1530efa8365389b04b91a"
+  }
+]

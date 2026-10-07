@@ -99,7 +99,15 @@ function visit(
 	}
 	for (const child of node.children ?? []) visit(child, { parent: world, doc });
 }
-for (const filename of ["r8-pcb.glb", "r8-controls.glb"]) {
+for (const filename of [
+	"r8-pcb.glb",
+	"r8-parts-2.glb",
+	"r8-parts-3.glb",
+	"r8-parts-4.glb",
+	"r8-parts-5.glb",
+	"r8-parts-6.glb",
+	"r8-parts-7.glb",
+]) {
 	const bytes = await Bun.file(`product/models/${filename}`).arrayBuffer(),
 		view = new DataView(bytes);
 	const doc = documentSchema.parse(

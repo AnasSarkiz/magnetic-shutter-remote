@@ -2,12 +2,13 @@
 export const dimensions = {
 	pcb: { widthMm: 44, lengthMm: 56, thicknessMm: 1, centerZMm: 13.5 },
 	remote: {
-		widthMm: 54,
-		lengthMm: 62,
-		heightMm: 21.6,
+		widthMm: 64,
+		lengthMm: 72,
+		heightMm: 23,
 		bottomZMm: 10,
 		wallMm: 1.6,
-		centerYMm: -74,
+		centerXMm: 52,
+		centerYMm: 0,
 	},
 	battery: {
 		widthMm: 43,

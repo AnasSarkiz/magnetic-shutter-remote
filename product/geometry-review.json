@@ -4,29 +4,29 @@
       "name": "RemoteBase",
       "localBoundsMm": [
         [
-          -29,
-          -31,
+          -34.00000000000001,
+          -36,
           6
         ],
         [
-          25,
-          31,
+          30.000000000000007,
+          36,
           26
         ]
       ],
       "boundsMm": [
         [
-          -29,
-          -105,
+          17.999999999999993,
+          -36,
           10
         ],
         [
-          25,
-          -43,
+          82,
+          36,
           30
         ]
       ],
-      "volumeMm3": 11679.437123739406,
+      "volumeMm3": 28534.76927150741,
       "referenceOnly": false
     },
     {
@@ -45,17 +45,17 @@
       ],
       "boundsMm": [
         [
-          -22,
-          -84.5,
+          30,
+          -10.5,
           18.799999999999997
         ],
         [
-          22,
-          -51.5,
+          74,
+          22.5,
           19.4
         ]
       ],
-      "volumeMm3": 175.20000000000465,
+      "volumeMm3": 175.19999999999743,
       "referenceOnly": false
     },
     {
@@ -74,17 +74,17 @@
       ],
       "boundsMm": [
         [
-          -21.5,
-          -84,
+          30.5,
+          -10,
           19.4
         ],
         [
-          21.5,
-          -52,
+          73.5,
+          22,
           27.9
         ]
       ],
-      "volumeMm3": 11696.00000000001,
+      "volumeMm3": 11696.000000000007,
       "referenceOnly": false
     },
     {
@@ -92,86 +92,86 @@
       "localBoundsMm": [
         [
           22.624,
-          -10.7,
+          -12,
           9.26
         ],
         [
-          25.999,
-          -6.3,
+          31.400000000000002,
+          -5,
           12.459999999999999
         ]
       ],
       "boundsMm": [
         [
-          22.624,
-          -84.7,
+          74.624,
+          -12,
           13.26
         ],
         [
-          25.999,
-          -80.3,
+          83.4,
+          -5,
           16.46
         ]
       ],
-      "volumeMm3": 23.433000000004974,
+      "volumeMm3": 76.26692437381996,
       "referenceOnly": false
     },
     {
       "name": "RemoteLid",
       "localBoundsMm": [
         [
-          -29,
-          -31,
+          -33,
+          -35,
           10
         ],
         [
-          25,
-          31,
-          27.6
+          29,
+          35,
+          29
         ]
       ],
       "boundsMm": [
         [
-          -29,
-          -105,
+          19,
+          -35,
           14
         ],
         [
-          25,
-          -43,
-          31.6
+          81,
+          35,
+          33
         ]
       ],
-      "volumeMm3": 6207.211626342559,
+      "volumeMm3": 12540.554851337934,
       "referenceOnly": false
     },
     {
       "name": "MagSafeGrip",
       "localBoundsMm": [
         [
-          -31,
-          -94,
+          -29.500000000000004,
+          -38,
           0.6
         ],
         [
-          29.500000000000007,
-          29.50000000000001,
+          84,
+          38,
           13.4
         ]
       ],
       "boundsMm": [
         [
-          -31,
-          -94,
+          -29.500000000000004,
+          -38,
           0.6
         ],
         [
-          29.500000000000007,
-          29.50000000000001,
+          84,
+          38,
           13.4
         ]
       ],
-      "volumeMm3": 18323.919077592218,
+      "volumeMm3": 36386.6298502519,
       "referenceOnly": false
     },
     {
@@ -236,19 +236,54 @@
   "electronicEnvelopeClashes": [],
   "phoneClearanceViolations": [],
   "fittedComponentEnvelopesChecked": 44,
+  "boardEnvelopeChecked": true,
+  "mountingReview": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "shutterAlignment": {
+    "axis": "horizontal +X",
+    "freeGapMm": 0.14997427368163585,
+    "centerYMm": -8.5,
+    "centerZMm": 14.86,
+    "boardRelativeActuatorZMm": 1.3599999999999994,
+    "physicalStrokeAndOvertravelQualified": false
+  },
   "clashes": [],
   "phoneDatumZMm": 0,
   "remoteBottomZMm": 10,
   "fullProductBoundingBoxMm": [
     [
-      -31,
-      -105.00000000000003,
+      -29.500000000000004,
+      -38,
       0
     ],
     [
-      29.500000000000007,
-      29.50000000000001,
-      31.6
+      84,
+      38,
+      33
     ]
   ]
 }
