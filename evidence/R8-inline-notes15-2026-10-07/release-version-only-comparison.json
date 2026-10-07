@@ -1,0 +1,9 @@
+{
+  "different_elements_only": [
+    "source_project_metadata"
+  ],
+  "source_filesystem_md5_changes_only": true,
+  "all_other_native_elements_identical": true,
+  "previous_release": "0.3.14",
+  "current_release": "0.3.15"
+}

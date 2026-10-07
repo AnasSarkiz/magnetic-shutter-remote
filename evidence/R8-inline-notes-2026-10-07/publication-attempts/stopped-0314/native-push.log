@@ -1,0 +1,316 @@
+{
+  "started_utc": "20261007T114255918330Z",
+  "command": [
+    "tsci",
+    "push",
+    "index.circuit.tsx",
+    "--include-dist",
+    "--version-tag",
+    "prototype",
+    "--compress"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Uploading package archive...
+Archive upload failed, falling back to file-by-file upload: RangeError: Out of memory
+⬆︎ AGENTS.md
+⬆︎ BOM.csv
+⬆︎ BOM.md
+⬆︎ EXTERNAL-PARTS.md
+⬆︎ PHONE-TEST-PROCEDURE.md
+⬆︎ README.md
+⬆︎ VALIDATION.md
+⬆︎ baselines/published-main/README.md
+⬆︎ baselines/published-main/VALIDATION.md
+⬆︎ baselines/published-main/bun.lock
+📦 baselines/published-main/dependencies/circuit-json-qualified-source.tgz
+📦 baselines/published-main/dependencies/circuit-json-util-qualified-source.tgz
+📦 baselines/published-main/dependencies/circuit-to-svg-qualified-source.tgz
+  baselines/published-main/dependencies/cli-qualified-source.tgz - failed
+📦 baselines/published-main/dependencies/core-qualified-source.tgz
+  baselines/published-main/dependencies/eval-qualified-source.tgz - failed
+📦 baselines/published-main/dependencies/props-qualified-source.tgz
+  baselines/published-main/dist/enclosure.assembly/circuit.json - failed
+  baselines/published-main/dist/enclosure.cutaway/circuit.json - failed
+  baselines/published-main/dist/enclosure.exploded/circuit.json - failed
+  baselines/published-main/dist/enclosure.remote/circuit.json - failed
+  baselines/published-main/dist/index/circuit.json - failed
+⬆︎ baselines/published-main/enclosure-design/board-assets.json
+⬆︎ baselines/published-main/enclosure-design/dimensions.ts
+⬆︎ baselines/published-main/enclosure-design/geometry.ts
+⬆︎ baselines/published-main/enclosure-design/model-metadata.json
+⬆︎ baselines/published-main/enclosure-design/model-urls.ts
+📦 baselines/published-main/enclosure-design/models/BatteryCarrier.glb
+📦 baselines/published-main/enclosure-design/models/BatteryDTP401525MaximumEnvelope.glb
+📦 baselines/published-main/enclosure-design/models/BatteryHarnessNegativeReservation.glb
+📦 baselines/published-main/enclosure-design/models/BatteryHarnessPositiveReservation.glb
+📦 baselines/published-main/enclosure-design/models/BatteryThermalPadCompressedEnvelope.glb
+📦 baselines/published-main/enclosure-design/models/ChargeWindowLightGuide.glb
+📦 baselines/published-main/enclosure-design/models/DockMagnetInsulatingCapLeft.glb
+📦 baselines/published-main/enclosure-design/models/DockMagnetInsulatingCapRight.glb
+📦 baselines/published-main/enclosure-design/models/DockMagnetLeft.glb
+📦 baselines/published-main/enclosure-design/models/DockMagnetRight.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-Box0.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C3.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C4.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C5.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C6.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C7.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C8.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-C9.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-J1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-J2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-J3.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-LED1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-LED2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-Q1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-Q2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R10.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R11.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R12.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R13.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R3.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R4.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R5.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R6.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R7.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R8.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-R9.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-SW1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-SW2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-SW3.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-U1.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-U2.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-U3.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-U4.glb
+📦 baselines/published-main/enclosure-design/models/FrozenR6-U5.glb
+📦 baselines/published-main/enclosure-design/models/LidScrewM2x14Left.glb
+📦 baselines/published-main/enclosure-design/models/LidScrewM2x14Right.glb
+📦 baselines/published-main/enclosure-design/models/M2InsertEnvelopeLeft.glb
+📦 baselines/published-main/enclosure-design/models/M2InsertEnvelopeRight.glb
+📦 baselines/published-main/enclosure-design/models/MagneticGripDock.glb
+📦 baselines/published-main/enclosure-design/models/PairPlunger.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetInsulatingCapLeft28.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetInsulatingCapLeft56.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetInsulatingCapRight28.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetInsulatingCapRight56.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetLeft28.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetLeft56.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetRight28.glb
+📦 baselines/published-main/enclosure-design/models/PhoneMagnetRight56.glb
+📦 baselines/published-main/enclosure-design/models/PhoneReceiverPlateEnvelope.glb
+📦 baselines/published-main/enclosure-design/models/PowerSlider.glb
+📦 baselines/published-main/enclosure-design/models/RemoteBase-cutaway.glb
+📦 baselines/published-main/enclosure-design/models/RemoteBase.glb
+📦 baselines/published-main/enclosure-design/models/RemoteLid-cutaway.glb
+📦 baselines/published-main/enclosure-design/models/RemoteLid.glb
+📦 baselines/published-main/enclosure-design/models/RemoteMagnetInsulatingCapLeft.glb
+📦 baselines/published-main/enclosure-design/models/RemoteMagnetInsulatingCapRight.glb
+📦 baselines/published-main/enclosure-design/models/RemoteMagnetLeft.glb
+📦 baselines/published-main/enclosure-design/models/RemoteMagnetRight.glb
+📦 baselines/published-main/enclosure-design/models/ShutterPlunger.glb
+📦 baselines/published-main/enclosure-design/models/ShutterSoftSkin.glb
+📦 baselines/published-main/enclosure-design/models/StatusRingLightGuide.glb
+⬆︎ baselines/published-main/enclosure-design/parts.ts
+⬆︎ baselines/published-main/enclosure-design/remote-enclosure-assembly.tsx
+⬆︎ baselines/published-main/enclosure.assembly.tsx
+⬆︎ baselines/published-main/enclosure.cutaway.tsx
+⬆︎ baselines/published-main/enclosure.exploded.tsx
+⬆︎ baselines/published-main/enclosure.remote.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1001T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1002T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1003T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1303T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1502T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1621T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF1872T5E.tsx
+⬆︎ baselines/published-main/imports/A_0603WAF5101T5E.tsx
+⬆︎ baselines/published-main/imports/A_2N7002.tsx
+⬆︎ baselines/published-main/imports/BM06B_SRSS_TB_LF__SN_.tsx
+⬆︎ baselines/published-main/imports/BQ25185DLHR.tsx
+⬆︎ baselines/published-main/imports/CC0603KRX7R9BB104.tsx
+⬆︎ baselines/published-main/imports/CL10A475KO8NNNC.tsx
+⬆︎ baselines/published-main/imports/CL21A106KAYNNNE.tsx
+⬆︎ baselines/published-main/imports/E73_2G4M08S1C.tsx
+⬆︎ baselines/published-main/imports/KT_0603R.tsx
+⬆︎ baselines/published-main/imports/MSK12C02.tsx
+⬆︎ baselines/published-main/imports/S2B_PH_SM4_TB_LF__SN_.tsx
+⬆︎ baselines/published-main/imports/TCC0603COG470J500CT.tsx
+⬆︎ baselines/published-main/imports/TMP390A2DRLR.tsx
+⬆︎ baselines/published-main/imports/TPS3839G33DBZR.tsx
+⬆︎ baselines/published-main/imports/TPS7A0230PDBVR.tsx
+⬆︎ baselines/published-main/imports/TS_1088_AR02016.tsx
+⬆︎ baselines/published-main/imports/USB4215_03_A.tsx
+⬆︎ baselines/published-main/index.circuit.tsx
+⬆︎ baselines/published-main/package.json
+⬆︎ baselines/published-main/src/c2-escape-paths.ts
+⬆︎ baselines/published-main/src/c7-escape-paths.ts
+⬆︎ baselines/published-main/src/charger-escape-paths.ts
+⬆︎ baselines/published-main/src/functional-markings.tsx
+⬆︎ baselines/published-main/src/radio-escape-paths.ts
+⬆︎ baselines/published-main/src/regulator-escape-paths.ts
+⬆︎ baselines/published-main/src/remote-circuit.tsx
+⬆︎ baselines/published-main/src/sensor-escape-paths.ts
+⬆︎ baselines/published-main/src/temperature-escape-paths.ts
+⬆︎ baselines/published-main/src/usb-escape-paths.ts
+⬆︎ baselines/published-main/tscircuit.config.json
+⬆︎ baselines/published-main/tsconfig.json
+⬆︎ baselines/r7/BOM.csv
+⬆︎ baselines/r7/BOM.md
+⬆︎ baselines/r7/EXTERNAL-PARTS.md
+⬆︎ baselines/r7/R6-CHANGES.md
+⬆︎ baselines/r7/R6-QUALIFICATION.md
+⬆︎ baselines/r7/README.md
+⬆︎ baselines/r7/REQUIREMENTS.md
+⬆︎ baselines/r7/SOURCING.md
+⬆︎ baselines/r7/VALIDATION.md
+⬆︎ baselines/r7/bom.json
+⬆︎ baselines/r7/bun.lock
+  baselines/r7/dist/index/circuit.json - failed
+⬆︎ baselines/r7/firmware/CMakeLists.txt
+⬆︎ baselines/r7/firmware/README.md
+⬆︎ baselines/r7/firmware/artifacts/R5/SHA256.json
+📦 baselines/r7/firmware/artifacts/R5/zephyr.bin
+⬆︎ baselines/r7/firmware/artifacts/R5/zephyr.config
+  baselines/r7/firmware/artifacts/R5/zephyr.elf - failed
+⬆︎ baselines/r7/firmware/artifacts/R5/zephyr.hex
+📦 baselines/r7/firmware/artifacts/zephyr.bin
+⬆︎ baselines/r7/firmware/artifacts/zephyr.config
+  baselines/r7/firmware/artifacts/zephyr.elf - failed
+⬆︎ baselines/r7/firmware/artifacts/zephyr.hex
+⬆︎ baselines/r7/firmware/boards/local/grip_shutter/Kconfig.grip_shutter
+⬆︎ baselines/r7/firmware/boards/local/grip_shutter/board.cmake
+⬆︎ baselines/r7/firmware/boards/local/grip_shutter/board.yml
+⬆︎ baselines/r7/firmware/boards/local/grip_shutter/grip_shutter.dts
+⬆︎ baselines/r7/firmware/boards/local/grip_shutter/grip_shutter_defconfig
+⬆︎ baselines/r7/firmware/build.sh
+⬆︎ baselines/r7/firmware/prj.conf
+⬆︎ baselines/r7/firmware/requirements-lock.txt
+⬆︎ baselines/r7/firmware/src/hid.c
+⬆︎ baselines/r7/firmware/src/hid.h
+⬆︎ baselines/r7/firmware/src/main.c
+⬆︎ baselines/r7/firmware/src/torch_control.c
+⬆︎ baselines/r7/firmware/src/torch_control.h
+⬆︎ baselines/r7/firmware/tests/torch_control_test.c
+⬆︎ baselines/r7/firmware/toolchain.json
+⬆︎ baselines/r7/imports/AL1792AFE_13.tsx
+📦 baselines/r7/imports/AL1793AFE_13/AL1793AFE_13.obj
+⬆︎ baselines/r7/imports/AL1793AFE_13/AL1793AFE_13.step
+⬆︎ baselines/r7/imports/AL1793AFE_13/AL1793AFE_13.tsx
+📦 baselines/r7/imports/AL8860WT_7/AL8860WT_7.obj
+  baselines/r7/imports/AL8860WT_7/AL8860WT_7.step - failed
+⬆︎ baselines/r7/imports/AL8860WT_7/AL8860WT_7.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1001T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1002T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1003T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1004T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1303T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1502T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1621T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF1872T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF4702T5E.tsx
+⬆︎ baselines/r7/imports/A_0603WAF5101T5E.tsx
+⬆︎ baselines/r7/imports/A_2N7002.tsx
+⬆︎ baselines/r7/imports/BM06B_SRSS_TB_LF__SN_.tsx
+⬆︎ baselines/r7/imports/BM07B_SRSS_TB_LF__SN_.tsx
+⬆︎ baselines/r7/imports/BM08B_SRSS_TB_LF__SN_.tsx
+⬆︎ baselines/r7/imports/BQ25185DLHR.tsx
+⬆︎ baselines/r7/imports/BSS138LT1G.tsx
+⬆︎ baselines/r7/imports/CC0603KRX7R9BB104.tsx
+⬆︎ baselines/r7/imports/CL10A475KO8NNNC.tsx
+⬆︎ baselines/r7/imports/CL21A106KAYNNNE.tsx
+⬆︎ baselines/r7/imports/E73_2G4M08S1C.tsx
+⬆︎ baselines/r7/imports/GW_VJLPL1_CM_K3LX_XX51_1_350_R18/GW_VJLPL1_CM_K3LX_XX51_1_350_R18.tsx
+⬆︎ baselines/r7/imports/GW_VJLPL1_CM_LTLV_XX58_1_350_R18/GW_VJLPL1_CM_LTLV_XX58_1_350_R18.tsx
+⬆︎ baselines/r7/imports/HC_TYPE_C_6P_01A.tsx
+⬆︎ baselines/r7/imports/JS102011SAQN.tsx
+⬆︎ baselines/r7/imports/KT_0603R.tsx
+⬆︎ baselines/r7/imports/MCP73831T_2ACI_OT.tsx
+⬆︎ baselines/r7/imports/MSK12C02.tsx
+⬆︎ baselines/r7/imports/PT4115.tsx
+⬆︎ baselines/r7/imports/S2B_PH_SM4_TB_LF__SN_.tsx
+⬆︎ baselines/r7/imports/TCC0603COG470J500CT.tsx
+⬆︎ baselines/r7/imports/TMP390A2DRLR.tsx
+📦 baselines/r7/imports/TPS2553DBVR_1/TPS2553DBVR_1.obj
+⬆︎ baselines/r7/imports/TPS2553DBVR_1/TPS2553DBVR_1.step
+⬆︎ baselines/r7/imports/TPS2553DBVR_1/TPS2553DBVR_1.tsx
+⬆︎ baselines/r7/imports/TPS3839G33DBZR.tsx
+📦 baselines/r7/imports/TPS61085DGKR/TPS61085DGKR.obj
+  baselines/r7/imports/TPS61085DGKR/TPS61085DGKR.step - failed
+⬆︎ baselines/r7/imports/TPS61085DGKR/TPS61085DGKR.tsx
+📦 baselines/r7/imports/TPS61165DBVR/TPS61165DBVR.obj
+  baselines/r7/imports/TPS61165DBVR/TPS61165DBVR.step - failed
+⬆︎ baselines/r7/imports/TPS61165DBVR/TPS61165DBVR.tsx
+📦 baselines/r7/imports/TPS61169DCKR/TPS61169DCKR.obj
+  baselines/r7/imports/TPS61169DCKR/TPS61169DCKR.step - failed
+⬆︎ baselines/r7/imports/TPS61169DCKR/TPS61169DCKR.tsx
+⬆︎ baselines/r7/imports/TPS7A0230PDBVR.tsx
+⬆︎ baselines/r7/imports/TS_1088_AR02016.tsx
+⬆︎ baselines/r7/imports/TYPEC_250Y_BRP6L68.tsx
+⬆︎ baselines/r7/imports/USB4105_GF_A.tsx
+⬆︎ baselines/r7/imports/USB4105_GF_A_120.tsx
+⬆︎ baselines/r7/imports/USB4215_03_A.tsx
+⬆︎ baselines/r7/index.circuit.tsx
+📦 baselines/r7/mechanical/R2-dimensioned-drawings.pdf
+📦 baselines/r7/mechanical/R3-dimensioned-drawings.pdf
+⬆︎ baselines/r7/mechanical/README.md
+⬆︎ baselines/r7/mechanical/dimensions.json
+📦 baselines/r7/mechanical/docked-fit-r2.png
+📦 baselines/r7/mechanical/docked-fit-r3.png
+📦 baselines/r7/mechanical/docked-fit-r6.png
+⬆︎ baselines/r7/mechanical/draw_r2.py
+⬆︎ baselines/r7/mechanical/draw_r3.py
+📦 baselines/r7/mechanical/drawing-r2-1.png
+📦 baselines/r7/mechanical/drawing-r2-2.png
+📦 baselines/r7/mechanical/drawing-r2-3.png
+📦 baselines/r7/mechanical/drawing-r2-4.png
+📦 baselines/r7/mechanical/drawing-r3-1.png
+📦 baselines/r7/mechanical/drawing-r3-2.png
+📦 baselines/r7/mechanical/drawing-r3-3.png
+{
+  "started_utc": "20261007T114255918330Z",
+  "command": [
+    "tsci",
+    "push",
+    "index.circuit.tsx",
+    "--include-dist",
+    "--version-tag",
+    "prototype",
+    "--compress"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T11:46:51.226929+00:00",
+  "return_code": -2,
+  "peak_child_rss_kib": 10412864,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T114255918330Z.log"
+}

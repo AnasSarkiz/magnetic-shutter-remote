@@ -1,0 +1,177 @@
+{
+  "circuit_sha256": "2c8c90108799e5f4dcce810db129c47bc26d87b1c2ee854664bc0ce8acc07e4f",
+  "all12_gerber_drill_geometry_unchanged": true,
+  "all_bom_cpl_bytes_identical": true,
+  "export_files_not_modified": true,
+  "gerbers": [
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/B_Cu.gbr",
+      "sha256": "a6edd04a49b776370f801877cab30a52be82d8f0c06555e993a3cd3120daefec",
+      "previous_sha256": "6541a924789e3a0a44532bd8203034596e65a29d5c3743725c6edd00b329d21e",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/B_Mask.gbr",
+      "sha256": "ab3f032edf706e2227a6847b33b99e8b37d1929632f3322640002a86e9ca6d29",
+      "previous_sha256": "7f455dfd05bee2e5c0b8f52ded13e10c52ad84114520562525851d65ae1e0775",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/B_Paste.gbr",
+      "sha256": "9d60b5adbe499b68709347654f3c6bbc33ed39f1922cb93ce688bdd6816e3db2",
+      "previous_sha256": "426e0ac6c84c53a6982b11ec208adf115b3a5b1926df600d32a2bfeca7a99758",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/B_SilkScreen.gbr",
+      "sha256": "27fd83be671b330710c6a81ac0a855bebe438077cba28aa3c41c620964d85089",
+      "previous_sha256": "d3e9b26e2948bdb0adc413d41533aa52234e86908be31633bcff83d8b8b58bad",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/Edge_Cuts.gbr",
+      "sha256": "ac05188d3a3ccbafc297d30fd3956499e20068f09042f9ae9b06e59ccc147d45",
+      "previous_sha256": "712867689a8147ae5d9ae6b8c453a024909032e40fc3aa948491f8a69de11d91",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/F_Cu.gbr",
+      "sha256": "71884fc8fa85ce26570b2dd0c943031804093bc3878c117c536f060a67072b3e",
+      "previous_sha256": "028fd7a1ec1c314bb38ceaaa87a0e2e3110527a43f5df0e9762c1a67abcac7e6",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/F_Fab.gbr",
+      "sha256": "29ba997982a5488c8c9cef3f9f16d9910d626dc2f4699fab4644d97a85f8eb98",
+      "previous_sha256": "3dd25de150d95f52148dbf021bc3776254356846ceba999679aaef5e0a6fb834",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/F_Mask.gbr",
+      "sha256": "904bde52a51dc97d7c77dd5f5e300697ea87ecfa1c1b07ad5ba35a17334aca54",
+      "previous_sha256": "fea3bb984b6d2a45da90dc8d64b115e08e9a29a3eb1c1e1bfc92b12c6da9db30",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/F_Paste.gbr",
+      "sha256": "edc8be010f9d53e171f4799f019321ab551a2b9abd04f22b4340f147121c65cb",
+      "previous_sha256": "8a89b4828cafb2d6fa7e3e6b98ea9ab326e8a0133c69c7594ba22af103ec0b07",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/F_SilkScreen.gbr",
+      "sha256": "249a47fbbbbb9ae54cb673d52e6c0db83e103840ddfded7aba6687299c19acd0",
+      "previous_sha256": "11226309873c20824010bc71f16bd4fd56bd4595d253ed05719c42ab5b3d606f",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:35:21.831Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:35:21.831Z*\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "%TF.CreationDate,2026-10-07T11:53:16.520Z*%\n",
+        "G04 Created by tscircuit (builder) date 2026-10-07T11:53:16.520Z*\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/drill-L1-L2.drl",
+      "sha256": "ee9033ee07c919e193919a80dc549e0395675d6c463d520585cabb8c10a9fb9a",
+      "previous_sha256": "32e9d6cf0678ffad89f985b6666330e4d7b7ae5fa158e41035f648926670a69f",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "; DRILL file {tscircuit} date 2026-10-07T11:35:21.893Z\n",
+        "; #@! TF.CreationDate,2026-10-07T11:35:21.893Z\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "; DRILL file {tscircuit} date 2026-10-07T11:53:16.580Z\n",
+        "; #@! TF.CreationDate,2026-10-07T11:53:16.580Z\n"
+      ]
+    },
+    {
+      "path": "fabrication/R8-inline-notes15-2026-10-07/gerbers/drill_npth.drl",
+      "sha256": "4797da8245f8ad995e8c6e8c8b6616b7d76e43ece2ad80ff96aea8f367e1d4f2",
+      "previous_sha256": "ab3e754b9e270f31ee932fc440b3bc2be12c77c2156c868299825761be948d43",
+      "non_timestamp_records_identical": true,
+      "exact_excluded_previous_timestamp_records": [
+        "; DRILL file {tscircuit} date 2026-10-07T11:35:21.897Z\n",
+        "; #@! TF.CreationDate,2026-10-07T11:35:21.897Z\n"
+      ],
+      "exact_excluded_current_timestamp_records": [
+        "; DRILL file {tscircuit} date 2026-10-07T11:53:16.586Z\n",
+        "; #@! TF.CreationDate,2026-10-07T11:53:16.586Z\n"
+      ]
+    }
+  ],
+  "compared_to": "fabrication/R8-inline-notes-2026-10-07"
+}

@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-07T11:38:32.986282+00:00",
+  "circuit_sha256": "2c8c90108799e5f4dcce810db129c47bc26d87b1c2ee854664bc0ce8acc07e4f",
+  "method": "Actual assistant view_image inspection of all three accepted 0.3.14 A4 pages, bound to current 0.3.15 renders by verified byte equality.",
+  "schematic_pages": 3,
+  "findings": "All44 reference-labelled explanations share the page with their component symbols. No guide pages, clipped notes or wire/text collisions seen. All1048 physicalPCB/CAD elements identical; previous PCB visual review retained via exact equality.",
+  "images": [
+    {
+      "path": "visual-review/Power-a4.png",
+      "sha256": "9e9b6f6f1cb4abaf5dc2547a9de18652978210df74e33447805df9c553861bc9"
+    },
+    {
+      "path": "visual-review/Radio-a4.png",
+      "sha256": "28ec301c21b7e194d90b92cd62485dd6923385ec90e213cfd15f60bc22b9df46"
+    },
+    {
+      "path": "visual-review/Protection-a4.png",
+      "sha256": "0d5475381a54a945dfd261c9b8ff5b6ad8d5fdfecd0f1ac2c3a39917aa57f256"
+    }
+  ],
+  "binding": "Actual inspected0.3.14nativeA4 PNGs are byte-identical to the current0.3.15renders, verified here; no new visual inspection invented."
+}

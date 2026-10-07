@@ -1,4 +1,4 @@
-# Current R8 0.3.14 — explanations on the component pages, 2026-10-07
+# Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
 All44 component explanations now share their Power/Radio/Protection schematic
 page with the actual components. The3separate guide pages and guide links are
@@ -8,7 +8,7 @@ Fresh19checks pass0DRC/shorts/dangling and independent manufacturing/process,
 pin/value contracts are identical to0.3.12; all12Gerber/drill geometry and BOM/CPL
 are unchanged. The ring stays deferred. Supplier/physical/MagSafe gates and
 original075/076/native004/084/separate missing3V3metadata records remain explicit.
-[Current review](../evidence/R8-inline-notes-2026-10-07/REVIEW.md). Actual publication receipt is recorded separately.
+[Current review](../evidence/R8-inline-notes15-2026-10-07/REVIEW.md). Actual publication receipt is recorded separately.
 
 ## Earlier records — preserved history
 

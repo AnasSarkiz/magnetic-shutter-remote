@@ -1,0 +1,1613 @@
+{
+  "circuit_sha256": "2c8c90108799e5f4dcce810db129c47bc26d87b1c2ee854664bc0ce8acc07e4f",
+  "tracks": [
+    {
+      "trace_id": "pcb_trace_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_2",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_3",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_4",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_5",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.15,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_6",
+      "net": "CC2",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_7",
+      "net": "CC1",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_8",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.15,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_9",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_10",
+      "net": "CC1",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_11",
+      "net": "CC2",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_12",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_0_13",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_0",
+      "net": "CHARGER_SYS",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_1",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_2",
+      "net": "CHARGE_STAT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_3",
+      "net": "CHARGE_DISABLE",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_4",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_5",
+      "net": "TS_BIAS",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_6",
+      "net": "VSET",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_7",
+      "net": "PROG",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_8",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_9",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_10",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_11",
+      "net": "PROG",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_12",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_1_13",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_2_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_3_0",
+      "net": "TS_BIAS",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_3_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_4_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_5_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.5
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_5_1",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_6_0",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_6_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_6_2",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_6_3",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_7_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_7_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_8_0",
+      "net": "UART_RX",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_8_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_8_2",
+      "net": "UART_TX",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_8_3",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_8_4",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_9_0",
+      "net": "EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_10_0",
+      "net": "REG_EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_10_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_10_2",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_10_3",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_10_4",
+      "net": "REG_EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.5
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_2",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_3",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.2,
+        0.6
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_4",
+      "net": "INDUCTOR_L2",
+      "actual_widths_mm": [
+        0.3,
+        0.4
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_5",
+      "net": "INDUCTOR_L1",
+      "actual_widths_mm": [
+        0.3,
+        0.4
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_6",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.2,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_7",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.5
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_8",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_9",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.2
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_10",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.2
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_11",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_12",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_13",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_14",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_15",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_16",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_11_17",
+      "net": "REG_EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_12_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_12_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_12_2",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_0",
+      "net": "TEMP_SET_HOT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_1",
+      "net": "TEMP_SET_COLD",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_2",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_3",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_4",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_5",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_6",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_13_7",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_14_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_15_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_16_0",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_17_0",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_fanout_pcb_group_17_1",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_0_0",
+      "net": "CHARGER_SYS",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_1_0",
+      "net": "CHARGE_STAT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_0",
+      "net": "BATTERY_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_1",
+      "net": "UART_RX",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_2",
+      "net": "VSET",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_3",
+      "net": "BOOT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_4",
+      "net": "TEMP_SET_HOT",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_5",
+      "net": "CHARGE_DISABLE",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "saved_phase_null_2_6",
+      "net": "CHARGE_DISABLE",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_28_mst0_0",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_28_mst1_0",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_28_mst2_0",
+      "net": "TEMP_OK",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_27_0",
+      "net": "TEMP_SET_COLD",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_26_mst0_0",
+      "net": "REG_EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_26_mst1_0",
+      "net": "REG_EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_25_0",
+      "net": "POWER_SWITCH",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_24_0",
+      "net": "STATUS_LED_A",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_23_0",
+      "net": "UART_TX",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_22_0",
+      "net": "STATUS_LED",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_21_0",
+      "net": "PAIR",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_20_0",
+      "net": "SHUTTER",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_19_0",
+      "net": "EN",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_18_0",
+      "net": "CHARGE_LED_A",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_17_mst0_0",
+      "net": "PROG",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_16_0",
+      "net": "TS_BIAS",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_7_0",
+      "net": "CC1",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_3_mst0_0",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15,
+        0.15277777777777776,
+        0.16666666666666666,
+        0.18055555555555555,
+        0.19444444444444445,
+        0.20833333333333331,
+        0.2222222222222222,
+        0.2361111111111111,
+        0.25
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_3_mst1_0",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.21213203435596426,
+        0.21692094027803843,
+        0.22243411689836534,
+        0.22794729351869228,
+        0.23346047013901922,
+        0.23897364675934615,
+        0.2391609727364761,
+        0.2444868233796731,
+        0.25
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_3_mst2_0",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15,
+        0.19642857142857145,
+        0.25
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_3_mst3_0",
+      "net": "V3",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst0_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst1_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst2_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst3_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.23750000000000002,
+        0.25,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst4_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst5_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_2_mst6_0",
+      "net": "VBAT",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst0_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst1_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst2_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst3_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst4_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst5_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst6_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.225,
+        0.23750000000000002,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_1_mst7_0",
+      "net": "USB5V",
+      "actual_widths_mm": [
+        0.225,
+        0.23750000000000002,
+        0.275,
+        0.28750000000000003,
+        0.3
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst0_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst1_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst2_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst3_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst4_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst5_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst6_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst7_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst8_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst9_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst10_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst11_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst12_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst13_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst14_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst15_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst16_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst17_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst18_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst19_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst20_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst21_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst22_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst23_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst24_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst25_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst26_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst27_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst28_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst29_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst30_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst31_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst32_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst33_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst34_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst35_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst36_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst37_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst38_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst39_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst40_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst41_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    },
+    {
+      "trace_id": "source_net_0_mst42_0",
+      "net": "GND",
+      "actual_widths_mm": [
+        0.15
+      ],
+      "project_minimum_mm": 0.15,
+      "passed": true
+    }
+  ],
+  "zero_length_joins": [
+    "source_net_6_0"
+  ],
+  "failures": [],
+  "power_review": "power-path-measurements.json",
+  "limitations": [
+    "All routed track widths measured using qualified Gerber aperture semantics.",
+    "Power necks need the separate physical-load-path current and voltage checks.",
+    "Nominal 35um copper and IPC-2221 estimates do not replace loaded hardware tests."
+  ]
+}

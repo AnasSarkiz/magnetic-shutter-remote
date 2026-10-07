@@ -1,0 +1,37 @@
+{
+  "compared_commit": "e2a8248a0505c70c66ead5ada6f5998af5c3a47a",
+  "circuit_sha256": "2c8c90108799e5f4dcce810db129c47bc26d87b1c2ee854664bc0ce8acc07e4f",
+  "existing_tracked_files": 4509,
+  "authorized_changed_existing_paths": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/remote-circuit.tsx",
+    "src/schematic-component-notes.tsx",
+    "tests/r8-schematic-notes.test.ts",
+    "tscircuit.config.json"
+  ],
+  "unexpected_prior_changes": [],
+  "all_other_prior_tracked_files_unchanged": true,
+  "frozen_r7_files_unchanged": 129,
+  "imports_baselines_prior_evidence_fabrication_firmware_lock_toolchain_and_guards_unchanged": true,
+  "current_version": "0.3.15",
+  "publication_correction": "Explicit staged working directory inside unchanged memory guard; unbuilt0.3.14draft retained.",
+  "actual_changed_prior_tracked_paths": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md",
+    "dist/index/circuit.json",
+    "package.json",
+    "src/remote-circuit.tsx",
+    "src/schematic-component-notes.tsx",
+    "tests/r8-schematic-notes.test.ts",
+    "tscircuit.config.json"
+  ]
+}
