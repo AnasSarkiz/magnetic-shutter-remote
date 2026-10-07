@@ -1,3 +1,28 @@
+# Current R8 0.3.16 — compact source and native product assembly, 2026-10-07
+
+Active electronics source is four files instead of42; original source and old
+mechanical assets are recoverable from verified archives. Native closed and
+exploded product assemblies use the actual44-model PCB, protected battery
+envelope, service enclosure, horizontal shutter and separate MagSafe grip.
+Six print-fit STLs pass watertight/winding/readback and native dimension/volume
+agreement. Both whole-product views were inspected without clipping.
+
+The current board builds from consolidated source. All1049 PCB/CAD and576
+schematic elements match0.3.15 exactly. Fresh native/independent checks pass
+zero DRC/shorts/dangling/process failures;29 physical nets and174 trace widths
+are checked. Same-page schematic explanations remain. No RGB ring is added.
+[Current review](evidence/R8-product16-2026-10-07/REVIEW.md).
+[Actual publication status](evidence/R8-product16-2026-10-07/PUBLICATION.md).
+
+Exact magnet/DC shield, bonding, fasteners/harness/thermal coupling, switch
+travel and phone/case/RF/retention require physical qualification. Supplier
+processed preview and physical programming/power/BLE/Camera tests remain
+pending. This is an engineering prototype, not approval to order. Original
+075/076/native004/084 and the separate missing3V3 importer issue remain explicit.
+Setup/start/guards, frozen baselines and ordering/contact restrictions remain.
+
+## Earlier records — preserved history
+
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
 GitHub source/build readback passes; native tscircuit **0.3.15-prototype is incomplete** (HTTP502, two STEP model files missing, ready_to_build=false). The same-page schematic implementation and local checks are complete. [Actual publication status](evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md). README now provides the product overview,44×56×1mm PCB dimensions, controls/power/programming and unqualified MagSafe/physical gates.

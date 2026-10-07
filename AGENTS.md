@@ -1,3 +1,19 @@
+# Current R8 0.3.16 — compact source and native product assembly
+
+Read `evidence/R8-product16-2026-10-07/REVIEW.md` and `product/README.md`.
+Active source is four electronics files;36 route exports and all1049 PCB/CAD
+and576 schematic elements are unchanged. Obsolete route modules/mechanics/views
+are byte-preserved in verified archives. Native closed/exploded product assemblies
+use the actual44-model R8 PCB, retained protected battery envelope, service lid,
+horizontal shutter and separate MagSafe grip/contact cover. Six current print
+meshes pass native-dimension/volume agreement and closed/winding/readback checks.
+Exact magnet/DC shield, bonding, hardware/harness/thermal and phone/RF/retention
+qualification remain pending. Do not claim universal fit or physical testing.
+Current publication receipt follows actual upload/readback; prior incomplete
+0.3.15 is preserved history. Ring remains deferred; immutable baselines, light
+setup/start, memory guards, active branches and ordering/contact restrictions
+remain unchanged. Later authorized engineering is permitted under existing gates.
+
 # Magnetic shutter remote — Cloud continuation instructions
 
 Read `cloud/HANDOFF.md`, `VALIDATION.md`, `cloud/WORKSPACE-INSTRUCTIONS.md`, and the repository-local tscircuit skill before changing code. These files carry the project context; the cloud task must not depend on this chat or a macOS directory existing.

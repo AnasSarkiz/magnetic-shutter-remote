@@ -15,7 +15,9 @@
 		"cloud/**",
 		"tests/**",
 		".agents/**",
-		".codex/**"
+		".codex/**",
+		"archive/**",
+		"product/**"
 	],
 	"snapshotsDir": "evidence/R8-inline-notes-2026-10-07/snapshots"
 }

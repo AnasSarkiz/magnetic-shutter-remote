@@ -1,0 +1,151 @@
+[
+  {
+    "name": "format-write",
+    "command": [
+      "bun",
+      "run",
+      "format"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:44:59.363096+00:00",
+    "finished_utc": "2026-10-07T13:44:59.476382+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-format-write.log"
+  },
+  {
+    "name": "geometry",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-product-geometry.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:44:59.477357+00:00",
+    "finished_utc": "2026-10-07T13:45:00.451784+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-geometry.log"
+  },
+  {
+    "name": "print-export",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/export-product-prints.py"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:00.452219+00:00",
+    "finished_utc": "2026-10-07T13:45:00.729749+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-print-export.log"
+  },
+  {
+    "name": "closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.assembly.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:00.730139+00:00",
+    "finished_utc": "2026-10-07T13:45:21.589160+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-closed.log"
+  },
+  {
+    "name": "exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "build",
+      "product.exploded.tsx",
+      "--glbs"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:21.589922+00:00",
+    "finished_utc": "2026-10-07T13:45:45.186769+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-exploded.log"
+  },
+  {
+    "name": "render-closed",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.assembly"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:45.187152+00:00",
+    "finished_utc": "2026-10-07T13:45:45.891839+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-render-closed.log"
+  },
+  {
+    "name": "render-exploded",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-product.ts",
+      "product.exploded"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:45.892395+00:00",
+    "finished_utc": "2026-10-07T13:45:46.398952+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-render-exploded.log"
+  },
+  {
+    "name": "types",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:46.399611+00:00",
+    "finished_utc": "2026-10-07T13:45:52.770812+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-types.log"
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:52.771588+00:00",
+    "finished_utc": "2026-10-07T13:45:52.855765+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-format.log"
+  },
+  {
+    "name": "product-tests",
+    "command": [
+      "bun",
+      "test",
+      "./tests/r8-product.test.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:52.856199+00:00",
+    "finished_utc": "2026-10-07T13:45:53.008325+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-product-tests.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T13:45:53.008912+00:00",
+    "finished_utc": "2026-10-07T13:46:07.886442+00:00",
+    "log": "evidence/R8-product16-2026-10-07/checks/final-smoke.log"
+  }
+]

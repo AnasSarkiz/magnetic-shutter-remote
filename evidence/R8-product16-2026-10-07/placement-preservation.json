@@ -1,0 +1,9 @@
+{
+  "before_source_commit": "b431f044056647704df7fe2a4c8d2caf5426985e",
+  "current_circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "all_physical_elements_identical": true,
+  "physical_elements": 1049,
+  "all_schematic_elements_identical": true,
+  "schematic_elements": 576,
+  "trace_path_runtime_exports_identical": true
+}

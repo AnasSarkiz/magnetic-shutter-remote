@@ -20,6 +20,7 @@ QUALIFICATION = ROOT / 'evidence/R8-standard-programmer-2026-10-05'
 class StageOptions:
     evidence: Path
     supplemental_files: tuple[Path, ...] = ()
+    include_product_assembly: bool = False
 
 
 def supplemental_files(options, circuit_sha256):
@@ -140,6 +141,26 @@ def stage(destination, options):
     selected.add(evidence / 'failed-route10/circuit.json')
     selected.add(evidence / 'failed-route20-visual/process-review.json')
     selected.add(evidence / 'sourcing-check.json')
+    if options.include_product_assembly:
+        model_review = json.loads((ROOT/'product/pcb-model-review.json').read_text())
+        if model_review['sourceCircuitSha256'] != circuit_sha256 or model_review['emptyModels']:
+            raise ValueError('Product PCB models are stale or incomplete')
+        for asset in model_review['nativeAssets']:
+            model = ROOT/'product/models'/asset['filename']
+            if hashlib.sha256(model.read_bytes()).hexdigest() != asset['sha256']:
+                raise ValueError('Product model differs from reviewed bytes')
+        mesh_review = json.loads((ROOT/'product/print-mesh-review.json').read_text())
+        for part in mesh_review['printed_parts']:
+            path = ROOT/part['file']
+            if not part['watertight'] or not part['winding_consistent'] or hashlib.sha256(path.read_bytes()).hexdigest() != part['sha256']:
+                raise ValueError('Product print mesh did not pass readback')
+        selected.update(source_closure(ROOT/'product.assembly.tsx'))
+        selected.update(source_closure(ROOT/'product.exploded.tsx'))
+        selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png',
+                        'print-requirements.txt','print-plans.json','print-mesh-review.json'])
+        selected.update(ROOT/part['file'] for part in mesh_review['printed_parts'])
+        selected.update(ROOT/'dist'/name/'circuit.json' for name in ['product.assembly','product.exploded'])
+        selected.add(ROOT/'cloud/run-heavy.py')
     selected.update(supplemental_files(options, circuit_sha256))
     selected.update(evidence / name for name in ['REPRODUCE-COMMANDS.json',
                     'placement-preservation.json', 'preservation.json', 'visual-review/inspection.json'])
@@ -171,5 +192,6 @@ if __name__ == '__main__':
     parser.add_argument('--evidence', type=Path, required=True)
     parser.add_argument('--supplemental-file', type=Path, action='append', default=[],
                         help='Current review or programmer artifact to publish with the unchanged PCB')
+    parser.add_argument("--include-product-assembly", action="store_true")
     args = parser.parse_args()
-    stage(args.destination, StageOptions(args.evidence, tuple(args.supplemental_file)))
+    stage(args.destination, StageOptions(args.evidence, tuple(args.supplemental_file), args.include_product_assembly))

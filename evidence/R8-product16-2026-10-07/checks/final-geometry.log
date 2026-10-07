@@ -1,0 +1,300 @@
+{
+  "started_utc": "20261007T134459502610Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -29,
+          -31,
+          6
+        ],
+        [
+          25,
+          31,
+          26
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29,
+          -105,
+          10
+        ],
+        [
+          25,
+          -43,
+          30
+        ]
+      ],
+      "volumeMm3": 11679.437123739406,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -22,
+          -10.5,
+          14.799999999999999
+        ],
+        [
+          22,
+          22.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -22,
+          -84.5,
+          18.799999999999997
+        ],
+        [
+          22,
+          -51.5,
+          19.4
+        ]
+      ],
+      "volumeMm3": 175.20000000000465,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -21.5,
+          -10,
+          15.399999999999999
+        ],
+        [
+          21.5,
+          22,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          -21.5,
+          -84,
+          19.4
+        ],
+        [
+          21.5,
+          -52,
+          27.9
+        ]
+      ],
+      "volumeMm3": 11696.00000000001,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          22.624,
+          -10.7,
+          9.26
+        ],
+        [
+          25.999,
+          -6.3,
+          12.459999999999999
+        ]
+      ],
+      "boundsMm": [
+        [
+          22.624,
+          -84.7,
+          13.26
+        ],
+        [
+          25.999,
+          -80.3,
+          16.46
+        ]
+      ],
+      "volumeMm3": 23.433000000004974,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -29,
+          -31,
+          10
+        ],
+        [
+          25,
+          31,
+          27.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29,
+          -105,
+          14
+        ],
+        [
+          25,
+          -43,
+          31.6
+        ]
+      ],
+      "volumeMm3": 6207.211626342559,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -31,
+          -94,
+          0.6
+        ],
+        [
+          29.500000000000007,
+          29.50000000000001,
+          13.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -31,
+          -94,
+          0.6
+        ],
+        [
+          29.500000000000007,
+          29.50000000000001,
+          13.4
+        ]
+      ],
+      "volumeMm3": 18323.919077592218,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -29.5,
+          0
+        ],
+        [
+          29.5,
+          29.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -29.5,
+          0
+        ],
+        [
+          29.5,
+          29.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1629.8625862515432,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.05,
+          -27.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          27.05,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.05,
+          -27.05,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          27.05,
+          1.7
+        ]
+      ],
+      "volumeMm3": 695.9972095731468,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "clashes": [],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 10,
+  "fullProductBoundingBoxMm": [
+    [
+      -31,
+      -105.00000000000003,
+      0
+    ],
+    [
+      29.500000000000007,
+      29.50000000000001,
+      31.6
+    ]
+  ]
+}
+{
+  "started_utc": "20261007T134459502610Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T13:45:00.445847+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 229872,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T134459502610Z.log"
+}

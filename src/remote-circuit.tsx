@@ -1,41 +1,44 @@
-import { r8RadioVccPaths } from "./r8-radio-vcc-paths";
-import { r8TempOkPaths } from "./r8-temp-ok-paths";
-import { r8ShutterGroundPaths } from "./r8-shutter-ground-paths";
-import { r8ChargeLedSupplyPath } from "./r8-charge-led-supply-paths";
-import { r8ColdGroundPaths } from "./r8-cold-ground-paths";
-import { r8RadioGroundPaths } from "./r8-radio-ground-paths";
-import { r8SysReturnPaths } from "./r8-sys-return-paths";
-import { r8SupervisorGroundPaths } from "./r8-supervisor-ground-paths";
-import { r8ResetPaths } from "./r8-reset-paths";
-import { r8RegEnablePaths } from "./r8-reg-enable-paths";
-import { r8ChargeDisablePaths } from "./r8-charge-disable-paths";
-import { r8TemperatureHotPaths } from "./r8-temperature-hot-paths";
-import { r8SupervisorVbatPaths } from "./r8-supervisor-vbat-paths";
-import { r8RadioCapPaths } from "./r8-radio-cap-paths";
-import { r8ChargeStatPaths } from "./r8-charge-stat-paths";
-import { r8ConnectorPaths } from "./r8-connector-paths";
-import { r8BootPaths } from "./r8-boot-paths";
-import { r8VsetPaths, r8VsetGroundPaths } from "./r8-vset-paths";
-import { r8UartRxPaths } from "./r8-uart-rx-paths";
-import { r8UsbDisablePaths } from "./r8-usb-disable-paths";
-import { r8BatteryOkPaths } from "./r8-battery-ok-paths";
-import { r8CcPaths } from "./r8-cc-paths";
-import { r8BulkCapPaths } from "./r8-bulk-cap-paths";
-import { r8MosfetPaths } from "./r8-mosfet-paths";
-import { r8ProgRoutingPaths } from "./r8-prog-routing-paths";
-import { r8ProgPaths } from "./r8-prog-paths";
-import { r8SysPaths } from "./r8-sys-paths";
-import { r8TsBiasPaths } from "./r8-ts-bias-paths";
-import { r8PowerPaths } from "./r8-power-paths";
+import {
+	r8RadioVccPaths,
+	r8TempOkPaths,
+	r8ShutterGroundPaths,
+	r8ChargeLedSupplyPath,
+	r8ColdGroundPaths,
+	r8RadioGroundPaths,
+	r8SysReturnPaths,
+	r8SupervisorGroundPaths,
+	r8ResetPaths,
+	r8RegEnablePaths,
+	r8ChargeDisablePaths,
+	r8TemperatureHotPaths,
+	r8SupervisorVbatPaths,
+	r8RadioCapPaths,
+	r8ChargeStatPaths,
+	r8ConnectorPaths,
+	r8BootPaths,
+	r8VsetPaths,
+	r8VsetGroundPaths,
+	r8UartRxPaths,
+	r8UsbDisablePaths,
+	r8BatteryOkPaths,
+	r8CcPaths,
+	r8BulkCapPaths,
+	r8MosfetPaths,
+	r8ProgRoutingPaths,
+	r8ProgPaths,
+	r8SysPaths,
+	r8TsBiasPaths,
+	r8PowerPaths,
+	sensorEscapePaths,
+	r8BatteryCapEscapePaths,
+	sensorCapEscapePaths,
+	usbEscapePaths,
+	temperatureEscapePaths,
+	chargerEscapePaths,
+} from "./trace-paths";
 import { SWPA3015S1R5NT } from "../imports/SWPA3015S1R5NT/SWPA3015S1R5NT";
 import { FunctionalMarkings } from "./functional-markings";
 import { SchematicComponentNotes } from "./schematic-component-notes";
-import { sensorEscapePaths } from "./sensor-escape-paths";
-import { r8BatteryCapEscapePaths } from "./r8-battery-cap-paths";
-import { sensorCapEscapePaths } from "./c7-escape-paths";
-import { usbEscapePaths } from "./usb-escape-paths";
-import { temperatureEscapePaths } from "./temperature-escape-paths";
-import { chargerEscapePaths } from "./charger-escape-paths";
 import { ESPC3_12_N4 } from "../imports/ESPC3_12_N4/ESPC3_12_N4";
 import { BQ25185DLHR } from "../imports/BQ25185DLHR";
 import { TMP390A2DRLR } from "../imports/TMP390A2DRLR";

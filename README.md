@@ -23,9 +23,13 @@ still needs testing with assembled hardware.
 | Charging | One USB-C port; nominal 300 mA, 4.1 V charge setpoint |
 | Programming | Three-pin JST SH, 1 mm pitch, using the standard JST programmer |
 
-These are **PCB dimensions**, not the finished grip/enclosure dimensions.
-The battery, component height, harness, switch travel and clearances add to
-the complete product envelope. Battery runtime has not been measured.
+The native [3D product assembly](product/README.md) contains the actual PCB,
+protected battery envelope, service enclosure, horizontal shutter and detachable
+MagSafe grip. The printed remote shell is **54×62×21.6mm**; the docked CAD
+assembly is **60.5×134.5×31.6mm**, excluding unqualified fastener heads/leads.
+These are editable prototype dimensions. The PCB remains44×56×1mm.
+
+![Product assembly](product/closed.png)
 
 The first prototype is **shutter-only**. The RGB photo/torch ring and its
 connector/power circuit are deferred.
@@ -34,8 +38,9 @@ connector/power circuit are deferred.
 
 The target is a common MagSafe grip for multiple supported iPhone sizes and
 compatible cases, with a detachable shutter remote. The PCB does not itself
-provide a qualified MagSafe mount. The magnet assembly, enclosure, docking
-interface, camera/case clearance and antenna clearance still need qualification.
+provide a qualified MagSafe mount. The native enclosure/docking geometry is implemented and checked. Exact magnets,
+DC shield, cover bonding, camera/case fit, harness/thermal coupling and physical
+antenna/retention tests still need qualification.
 A smaller PCB does not establish universal iPhone compatibility or a fit inside
 the JJC enclosure. See the [mechanical requirements](mechanical/R8-MAGSAFE-REQUIREMENTS.md)
 and [reference-product review](mechanical/R8-MAGSAFE-REFERENCE-REVIEW.json).
@@ -76,11 +81,11 @@ Protection. The separate component-guide pages have been removed.
 - [Top PCB view](evidence/R8-inline-notes15-2026-10-07/visual-review/pcb-top.png)
 - [JLCPCB BOM](fabrication/R8-inline-notes15-2026-10-07/JLCPCB-BOM.csv) and [placement file](fabrication/R8-inline-notes15-2026-10-07/JLCPCB-CPL.csv)
 - [Gerber/drill archive](fabrication/R8-inline-notes15-2026-10-07/R8-inline-notes15-Gerbers.zip)
-- [Current review](evidence/R8-inline-notes15-2026-10-07/REVIEW.md) and [publication status](evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md)
+- [Current review](evidence/R8-product16-2026-10-07/REVIEW.md) and [publication status](evidence/R8-product16-2026-10-07/PUBLICATION.md)
 
 ## Prototype status
 
-**R8 0.3.15 is a CAD-validated engineering prototype, with hardware untested.**
+**R8 0.3.16 is a CAD-validated engineering prototype, with hardware untested.**
 UI and CLI schematic style analysis report zero issues. Native and independent
 checks pass zero DRC errors, shorts, dangling connections and manufacturing/
 process failures. Moving the schematic explanations changed no PCB geometry,
@@ -93,9 +98,10 @@ Supplier-processed fabrication/assembly approval and physical programming,
 charging, temperature, Bluetooth, RF, runtime and MagSafe tests remain pending.
 This is not production or ordering approval.
 
-GitHub contains the verified source and build. The current tscircuit upload
-is **incomplete**: the server returned HTTP 502 for STEP files and two are
-missing; 0.3.15-prototype remains unbuilt. [Local publication issue](tscircuit-issues/099-registry-step-upload-502.md).
+Current GitHub/native publication status is recorded in the
+[dated receipt](evidence/R8-product16-2026-10-07/PUBLICATION.md). The previous
+0.3.15 native upload remains incomplete because of HTTP502 model uploads;
+new publication is accepted only after actual inventory/readback.
 Original issues 075/076 and native warnings 004/084 remain documented.
 Missing `3V3` power metadata remains a separate importer issue.
 
@@ -105,6 +111,10 @@ Read [AGENTS.md](AGENTS.md) and [the current handoff](cloud/HANDOFF.md).
 [Cloud setup](cloud/SETUP.md) uses lightweight `bash cloud/setup.sh` and
 `bash cloud/smoke.sh`. Heavy engineering jobs must run serially through
 `python3 cloud/run-heavy.py` after their qualification gates pass.
-Frozen Nordic boards and previous evidence remain immutable.
+Frozen Nordic boards and previous evidence remain immutable. The active electronics
+source is four files; original route modules and obsolete mechanics/views are
+retained in verified [recovery archives](archive/README.md).
+Native closed/exploded entrypoints and optional qualified print-export commands
+are documented in [product/README.md](product/README.md).
 
 [Earlier README records, preserved unchanged](evidence/R8-inline-notes15-2026-10-07/README-HISTORY.md).

@@ -1,3 +1,23 @@
+# Current R8 0.3.16 — native product assembly,2026-10-07
+
+Read `../product/README.md` and `../evidence/R8-product16-2026-10-07/REVIEW.md`.
+Four active electronics files replace the many trace modules without changing
+any routed coordinate, part/net/width or schematic element. Native closed and
+exploded product entrypoints are `product.assembly.tsx`/`product.exploded.tsx`;
+these never build or reroute a second board. Six optional print-fit STL parts
+are generated from the same plans with native bounds/volume and mesh readback
+verification. Hardware remains physically untested; exact MagSafe array/shield,
+adhesive, fasteners/harness/thermal and phone/case/RF tests remain pending.
+Verified recovery archives retain original routes/Nordic mechanical files.
+Frozen baselines, toolchain/source archives, imports and firmware are unchanged.
+Lightweight setup/smoke/start and memory guards remain unchanged; observed32GiB
+is not a guaranteed allocation. Preserve the current engineering/task branch.
+Publication status is the dated actual receipt; do not assume hosted preview
+passes from local CAD results or reuse the incomplete0.3.15 release as proof.
+Ordering/payment/supplier contact still require separate authorization.
+
+## Earlier records — preserved history
+
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
 GitHub source/build readback passes; native tscircuit **0.3.15-prototype is incomplete** (HTTP502, two STEP model files missing, ready_to_build=false). The same-page schematic implementation and local checks are complete. [Actual publication status](../evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md). README now provides the product overview,44×56×1mm PCB dimensions, controls/power/programming and unqualified MagSafe/physical gates.

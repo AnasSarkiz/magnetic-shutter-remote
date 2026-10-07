@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-07T13:49:32.128549+00:00",
+  "actually_inspected": true,
+  "checks": [
+    "Closed view shows complete shell, USB opening, side shutter, slide cradle and MagSafe contact cover.",
+    "Exploded view shows complete lid/pillars, battery envelope, support, actual PCB, base and separated MagSafe contact stack without clipping."
+  ],
+  "limitation": "Compound renderer displays imported PCB mostly gray; original native model geometry/textures remain unchanged. No physical phone or MagSafe qualification is implied.",
+  "files": {
+    "product/closed.png": "1409536571dd393c19900ed388c1a90d6577bc29aefd7bc513a165280c363137",
+    "product/exploded.png": "e7aadca9e53a36c8eff9f01308df9b344ff21d9874c6e186c5a8fba0ed2b5a76",
+    "dist/product.assembly/circuit.json": "5d617422c78b17009bedb75baf99596203c7ddac43a3a65c80d21fce4cf1a89d",
+    "dist/product.exploded/circuit.json": "1a4b3f8be4a190900edde36fb3ff179f33986b641ee40362c50bf5206ee40be4"
+  }
+}

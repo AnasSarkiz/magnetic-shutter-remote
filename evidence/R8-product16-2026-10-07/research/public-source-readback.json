@@ -1,0 +1,104 @@
+[
+  {
+    "product": "erol--Monitor-lift-assembly",
+    "file": "index.tsx",
+    "bytes": 12476,
+    "sha256": "abe804e10a2cc5afd30ce04d0c3e749ec6b166a5d6936b5c7fa72b4c095af11c"
+  },
+  {
+    "product": "abse--museair-usb-assembly",
+    "file": "README.md",
+    "bytes": 5086,
+    "sha256": "6de5964e7b5b314455a4941aa20bbfeaf9f82efd336ec289ed386f2eb586d05d"
+  },
+  {
+    "product": "abse--museair-usb-assembly",
+    "file": "index.circuit.tsx",
+    "bytes": 883,
+    "sha256": "29a055ee21842a16fa4f105bd2cd5fd70069eb3265c7352168b31095f5346b60"
+  },
+  {
+    "product": "abse--museair-usb-assembly",
+    "file": "internals.circuit.tsx",
+    "bytes": 116,
+    "sha256": "192e08d2546f45a45bc53d2b0f12b5079e41fb9a30c568e82dd4ac607324ac0f"
+  },
+  {
+    "product": "abse--magsafe-twist-counter-prototype",
+    "file": "README.md",
+    "bytes": 11378,
+    "sha256": "9a5c97c75d0fffdabddf737dc67bdc4844e5c57ea556c23d3bf230ff0abda67c"
+  },
+  {
+    "product": "abse--magsafe-twist-counter-prototype",
+    "file": "MagSafeTwistCounter.circuit.tsx",
+    "bytes": 3111,
+    "sha256": "808e51d2d18de53fdf5643094c02a26c988a682117c512c691f9f3808f25d86b"
+  },
+  {
+    "product": "abse--magsafe-twist-counter-prototype",
+    "file": "design-requirements.json",
+    "bytes": 2832,
+    "sha256": "da21f15af327d8a36ad3a64ed4786b0a22c26dfae5e5d8d15da26503ab8dfe89"
+  },
+  {
+    "product": "ShiboSoftwareDev--magsafe-spin-counter",
+    "file": "README.md",
+    "bytes": 3608,
+    "sha256": "a4cb43e5597d336a4519dd966875350cd6307d787ca5d1af131a7402174449c2"
+  },
+  {
+    "product": "ShiboSoftwareDev--magsafe-spin-counter",
+    "file": "index.circuit.tsx",
+    "bytes": 9359,
+    "sha256": "138baea34f21624a2538f16df508f47518b53ec5d4b59f6b1ad6026c81697e1e"
+  },
+  {
+    "product": "AnasSarkiz--magnetic-shutter-remote--01a0f81f",
+    "file": "enclosure-design/remote-enclosure-assembly.tsx",
+    "bytes": 2668,
+    "sha256": "9c8d45edd8bb0ab37ede7d5ef7525667aff0c9f8c320d2d4f4b2edb22665e915"
+  },
+  {
+    "product": "AnasSarkiz--magnetic-shutter-remote--01a0f81f",
+    "file": "enclosure.assembly.tsx",
+    "bytes": 195,
+    "sha256": "239af9900dccb2c6932bdc746eb42ebde99eff2eb05f7c515e1a2b5ba9987fea"
+  },
+  {
+    "product": "AnasSarkiz--tscircuit-ai-agent-remote",
+    "file": "README.md",
+    "bytes": 63302,
+    "sha256": "67d52d9332d8c4bd62938bfad285cace61125f3ec862a246a83e3730d0a7c7b4"
+  },
+  {
+    "product": "AnasSarkiz--tscircuit-ai-agent-remote",
+    "file": "index.circuit.tsx",
+    "bytes": 33,
+    "sha256": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58"
+  },
+  {
+    "product": "tscircuit--standard-jst-programmer",
+    "file": "README.md",
+    "bytes": 18867,
+    "sha256": "c656fa774e92812b1afc4a627fd9f71837f2723b403a31fce2b2bc9efb5ac728"
+  },
+  {
+    "product": "tscircuit--standard-jst-programmer",
+    "file": "connectors.tsx",
+    "bytes": 2928,
+    "sha256": "4f862ed6ccfc40d888cd3fe714b39202ecd98c0112b2199a112c8ff3a2d27c47"
+  },
+  {
+    "product": "0hmX--ov7670-camera-module",
+    "file": "README.md",
+    "bytes": 4560,
+    "sha256": "12de6c097e40cbe8aae9b34ead317259c123520d66a5d572e35498dd95b26a4b"
+  },
+  {
+    "product": "0hmX--ov7670-camera-module",
+    "file": "index.circuit.tsx",
+    "bytes": 15957,
+    "sha256": "1bc89e015a105100fc3724b1e42466a02ea7113fdd3909aa369dfae48dfe9a21"
+  }
+]

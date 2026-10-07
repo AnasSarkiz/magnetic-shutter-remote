@@ -1,0 +1,110 @@
+[
+  {
+    "file": "product/prints/BatterySupport.stl",
+    "triangles": 32,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -22.0,
+        -10.5,
+        14.8
+      ],
+      [
+        22.0,
+        22.5,
+        15.4
+      ]
+    ]
+  },
+  {
+    "file": "product/prints/MagSafeFaceCover.stl",
+    "triangles": 124,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.5,
+        0.0
+      ],
+      [
+        29.5,
+        29.5,
+        0.6
+      ]
+    ]
+  },
+  {
+    "file": "product/prints/MagSafeGrip.stl",
+    "triangles": 782,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -31.0,
+        -94.0,
+        0.6
+      ],
+      [
+        29.5,
+        29.5,
+        13.4
+      ]
+    ]
+  },
+  {
+    "file": "product/prints/RemoteBase.stl",
+    "triangles": 1064,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -29.0,
+        -31.0,
+        6.0
+      ],
+      [
+        25.0,
+        31.0,
+        26.0
+      ]
+    ]
+  },
+  {
+    "file": "product/prints/RemoteLid.stl",
+    "triangles": 732,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -29.0,
+        -31.0,
+        10.0
+      ],
+      [
+        25.0,
+        31.0,
+        27.6
+      ]
+    ]
+  },
+  {
+    "file": "product/prints/SideShutterPlunger.stl",
+    "triangles": 44,
+    "degenerate_triangles": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        22.624,
+        -10.7,
+        9.26
+      ],
+      [
+        25.999,
+        -6.3,
+        12.46
+      ]
+    ]
+  }
+]

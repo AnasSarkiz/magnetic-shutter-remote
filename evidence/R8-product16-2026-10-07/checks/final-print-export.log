@@ -1,0 +1,183 @@
+{
+  "started_utc": "20261007T134500477371Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/export-product-prints.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "tool_versions": {
+    "manifold3d": "3.5.4",
+    "trimesh": "4.8.3",
+    "numpy": "2.5.3"
+  },
+  "source_plans_sha256": "b83b38a03bc910f91159e01595fad9307330e5b27d1c725ea8538debd4d4a26f",
+  "native_geometry_sha256": "ea4cdfed30989c0f715b3338f133938b944e493f707ea54297f73961bd65bd31",
+  "printed_parts": [
+    {
+      "file": "product/prints/RemoteBase.stl",
+      "sha256": "fda97edebdb95aceeb90a220f3cb7de1864901f951bc27a91a639eb02a156a3c",
+      "triangles": 1064,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 4.001776687800884e-11,
+      "bounds_mm": [
+        [
+          -29.0,
+          -31.0,
+          6.0
+        ],
+        [
+          25.0,
+          31.0,
+          26.0
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/BatterySupport.stl",
+      "sha256": "62aac5ad5409b8e35afceccc729d0f98292777b43cd56bf20d3532f6d2200fa5",
+      "triangles": 32,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 4.149569576838985e-12,
+      "bounds_mm": [
+        [
+          -22.0,
+          -10.5,
+          14.800000190734863
+        ],
+        [
+          22.0,
+          22.5,
+          15.399999618530273
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/SideShutterPlunger.stl",
+      "sha256": "95cfae6b7a1b06a127c18c30fc3b6719436169915eab37d16d09bddb366dbeb4",
+      "triangles": 44,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 4.956035581926699e-12,
+      "bounds_mm": [
+        [
+          22.624000549316406,
+          -10.699999809265137,
+          9.260000228881836
+        ],
+        [
+          25.999000549316406,
+          -6.300000190734863,
+          12.460000038146973
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/RemoteLid.stl",
+      "sha256": "5cacfbad9335a5b40424b27ffe10403066dbcc47b32924aa085f64d6608eb5c2",
+      "triangles": 732,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 1.000444171950221e-11,
+      "bounds_mm": [
+        [
+          -29.0,
+          -31.0,
+          10.0
+        ],
+        [
+          25.0,
+          31.0,
+          27.600000381469727
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/MagSafeGrip.stl",
+      "sha256": "4fe7e19286d97e91d16c1879ed95d6fa18b53f262f39c2c4281d66a941f9356b",
+      "triangles": 782,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 3.637978807091713e-12,
+      "bounds_mm": [
+        [
+          -31.0,
+          -94.0,
+          0.6000000238418579
+        ],
+        [
+          29.5,
+          29.5,
+          13.399999618530273
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/MagSafeFaceCover.stl",
+      "sha256": "e39e86371bc9dcc159ed8e3195c7d42b58167bd784494ea5e3f93e5aa0ba2d2e",
+      "triangles": 124,
+      "watertight": true,
+      "winding_consistent": true,
+      "native_volume_delta_mm3": 1.5916157281026244e-12,
+      "bounds_mm": [
+        [
+          -29.5,
+          -29.5,
+          0.0
+        ],
+        [
+          29.5,
+          29.5,
+          0.6000000238418579
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    }
+  ]
+}
+{
+  "started_utc": "20261007T134500477371Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/export-product-prints.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T13:45:00.717962+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 46996,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T134500477371Z.log"
+}
