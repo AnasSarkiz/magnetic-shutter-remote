@@ -1,6 +1,6 @@
 {
 	"name": "@tsci/AnasSarkiz.magnetic-shutter-remote-r8",
-	"version": "0.3.12",
+	"version": "0.3.14",
 	"description": "Routed ESP32-C3 shutter remote engineering prototype; hardware untested",
 	"main": "index.circuit.tsx",
 	"keywords": [

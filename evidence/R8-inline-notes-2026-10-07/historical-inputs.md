@@ -1,0 +1,1 @@
+failed-route10/circuit.json and failed-route20-visual/process-review.json are unchanged historical negative inputs needed by the canonical registry test/source closure. They are not failures of0.3.14. rejected-layout-1 retains the actual first notes layout, rejected for exceeding the A4 drawing area. It is not the accepted build.

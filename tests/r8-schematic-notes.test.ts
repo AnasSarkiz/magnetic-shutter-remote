@@ -23,29 +23,28 @@ test("component explanations cover every fitted BOM reference exactly once", () 
 	expect([...fittedReferences].sort()).toEqual([...explainedReferences].sort());
 });
 
-test("every explanation is actually rendered on its matching native A4 guide", () => {
+test("every explanation is rendered on the same native A4 page as its component", () => {
 	const sheets = circuit.filter(
 		(element) => element.type === "schematic_sheet",
 	);
-	expect(sheets).toHaveLength(6);
+	expect(sheets).toHaveLength(3);
+	expect(sheets.map((sheet) => sheet.name).sort()).toEqual(["Power", "Protection", "Radio"]);
 	for (const [sheetName, componentNotes] of Object.entries(
 		componentNotesBySheet,
 	)) {
 		const diagram = sheets.find((sheet) => sheet.name === sheetName);
-		const guide = sheets.find((sheet) => sheet.name === `${sheetName}Guide`);
 		expect(diagram).toBeDefined();
-		expect(guide).toBeDefined();
-		if (!diagram || !guide)
-			throw new Error(`Missing ${sheetName} diagram/guide`);
-		expect(guide.sheet_size).toBe("a4");
-		const guideTexts = circuit
+		if (!diagram)
+			throw new Error(`Missing ${sheetName} diagram`);
+		expect(diagram.sheet_size).toBe("a4");
+		const diagramTexts = circuit
 			.filter((element) => element.type === "schematic_text")
 			.filter(
-				(element) => element.schematic_sheet_id === guide.schematic_sheet_id,
+				(element) => element.schematic_sheet_id === diagram.schematic_sheet_id,
 			);
-		for (const [reference, title, firstLine, secondLine] of componentNotes) {
-			for (const text of [`${reference}: ${title}`, firstLine, secondLine]) {
-				expect(guideTexts.some((element) => element.text === text)).toBe(true);
+		for (const [reference, , firstLine, secondLine] of componentNotes) {
+			for (const text of [`${reference}: ${firstLine}`, secondLine]) {
+				expect(diagramTexts.some((element) => element.text === text)).toBe(true);
 			}
 			const component = circuit.find(
 				(element) =>

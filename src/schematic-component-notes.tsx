@@ -282,63 +282,48 @@ export function SchematicComponentNotes({
 }: {
 	sheet: CircuitSheetName;
 }) {
-	const componentNotes = componentNotesBySheet[sheet];
-	const rowsPerColumn = Math.ceil(componentNotes.length / 2);
 	return (
 		<>
-			<schematictext
-				text={`${sheet}: component guide`}
-				schX={-13.5}
-				schY={10.1}
-				anchor="left"
-				fontSize={0.4}
-			/>
-			{componentNotes.map(
-				([reference, title, firstLine, secondLine], index) => {
-					const schX = index < rowsPerColumn ? -13.5 : 0.5;
-					const schY = 8.5 - (index % rowsPerColumn) * 1.8;
+			{componentNotesBySheet[sheet].map(
+				([reference, , firstLine, secondLine], index) => {
+					const schY = 9.5 - index * 0.85;
 					return (
 						<Fragment key={reference}>
 							<schematictext
-								text={`${reference}: ${title}`}
-								schX={schX}
+								text={`${reference}: ${firstLine}`}
+								schX={-15.5}
 								schY={schY}
 								anchor="left"
-								fontSize={0.28}
-							/>
-							<schematictext
-								text={firstLine}
-								schX={schX}
-								schY={schY - 0.5}
-								anchor="left"
-								fontSize={0.25}
+								fontSize={0.23}
 							/>
 							<schematictext
 								text={secondLine}
-								schX={schX}
-								schY={schY - 0.88}
+								schX={-15.5}
+								schY={schY - 0.36}
 								anchor="left"
-								fontSize={0.25}
+								fontSize={0.23}
 							/>
 						</Fragment>
 					);
 				},
 			)}
-			<schematictext
-				text="Design intent; prototype operation remains unverified."
-				schX={-13.5}
-				schY={-10}
-				anchor="left"
-				fontSize={0.24}
-			/>
 			{sheet === "Radio" && (
-				<schematictext
-					text="JST programmer J5: straight-through cable; battery ON, R8 USB unplugged; manual BOOT / RESET."
-					schX={-13.5}
-					schY={-8.8}
-					anchor="left"
-					fontSize={0.25}
-				/>
+				<>
+					<schematictext
+						text="J3 programming: battery ON; USB-C unplugged."
+						schX={-15.5}
+						schY={-0.8}
+						anchor="left"
+						fontSize={0.23}
+					/>
+					<schematictext
+						text="Programmer J5: straight-through cable; manual BOOT / RESET."
+						schX={-15.5}
+						schY={-1.22}
+						anchor="left"
+						fontSize={0.23}
+					/>
+				</>
 			)}
 		</>
 	);

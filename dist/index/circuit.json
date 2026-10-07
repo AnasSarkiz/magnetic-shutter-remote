@@ -44,7 +44,7 @@
     "sheet_width": 297,
     "sheet_height": 210,
     "center": {
-      "x": -2.825,
+      "x": -4.3,
       "y": 2.6
     }
   },
@@ -93,7 +93,7 @@
     "sheet_width": 297,
     "sheet_height": 210,
     "center": {
-      "x": -2.6050000000000004,
+      "x": -4.455,
       "y": 0.5149999999999997
     }
   },
@@ -163,50 +163,8 @@
     "sheet_width": 297,
     "sheet_height": 210,
     "center": {
-      "x": -2.7750000000000004,
-      "y": 1.1999999999999993
-    }
-  },
-  {
-    "type": "schematic_sheet",
-    "schematic_sheet_id": "schematic_sheet_3",
-    "name": "PowerGuide",
-    "display_name": "Power: each component explained",
-    "sheet_index": 3,
-    "sheet_size": "a4",
-    "sheet_width": 297,
-    "sheet_height": 210,
-    "center": {
-      "x": -6.8,
-      "y": 0.04999999999999982
-    }
-  },
-  {
-    "type": "schematic_sheet",
-    "schematic_sheet_id": "schematic_sheet_4",
-    "name": "RadioGuide",
-    "display_name": "Radio and programming: each component explained",
-    "sheet_index": 4,
-    "sheet_size": "a4",
-    "sheet_width": 297,
-    "sheet_height": 210,
-    "center": {
-      "x": -7.749999999999999,
-      "y": 0.04999999999999982
-    }
-  },
-  {
-    "type": "schematic_sheet",
-    "schematic_sheet_id": "schematic_sheet_5",
-    "name": "ProtectionGuide",
-    "display_name": "Protection and regulation: each component explained",
-    "sheet_index": 5,
-    "sheet_size": "a4",
-    "sheet_width": 297,
-    "sheet_height": 210,
-    "center": {
-      "x": -6.7749999999999995,
-      "y": 0.04999999999999982
+      "x": -4.175000000000001,
+      "y": 0.5999999999999996
     }
   },
   {
@@ -9770,11 +9728,11 @@
     "type": "schematic_text",
     "schematic_text_id": "schematic_text_16",
     "anchor": "left",
-    "text": "Component explanations: PowerGuide (sheet 4).",
-    "font_size": 0.25,
+    "text": "J1: Accepts 5 V for charging only.",
+    "font_size": 0.23,
     "color": "#000000",
     "position": {
-      "x": -12.5,
+      "x": -15.5,
       "y": 9.5
     },
     "rotation": 0,
@@ -9784,12 +9742,684 @@
     "type": "schematic_text",
     "schematic_text_id": "schematic_text_17",
     "anchor": "left",
-    "text": "Component explanations: RadioGuide (sheet 5).",
-    "font_size": 0.25,
+    "text": "USB present holds the radio power off.",
+    "font_size": 0.23,
     "color": "#000000",
     "position": {
-      "x": -12.5,
+      "x": -15.5,
+      "y": 9.14
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_18",
+    "anchor": "left",
+    "text": "R1: Identifies a USB-C power sink on CC1.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.65
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_19",
+    "anchor": "left",
+    "text": "Allows either cable orientation with R2.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.290000000000001
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_20",
+    "anchor": "left",
+    "text": "R2: Identifies a USB-C power sink on CC2.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.8
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_21",
+    "anchor": "left",
+    "text": "Allows either cable orientation with R1.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.4399999999999995
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_22",
+    "anchor": "left",
+    "text": "U2: Charges the cell at nominal 300 mA.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.95
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_23",
+    "anchor": "left",
+    "text": "Manages USB input and the SYS power path.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.59
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_24",
+    "anchor": "left",
+    "text": "R3: Programs U2 ISET for nominal 300 mA.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_25",
+    "anchor": "left",
+    "text": "Actual current has component tolerance.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.739999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_26",
+    "anchor": "left",
+    "text": "C1: Filters USB5V at the charger input.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.25
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_27",
+    "anchor": "left",
+    "text": "Supplies brief input-current changes.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.89
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_28",
+    "anchor": "left",
+    "text": "C2: Filters VBAT at the charger BAT pin.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.4
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_29",
+    "anchor": "left",
+    "text": "Supports stable battery charging.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.04
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_30",
+    "anchor": "left",
+    "text": "J2: Pin 1 is GND; pin 2 is battery positive.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.55
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_31",
+    "anchor": "left",
+    "text": "Use the qualified protected-cell pack.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.19
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_32",
+    "anchor": "left",
+    "text": "R4: Limits current through red LED1.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.7
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_33",
+    "anchor": "left",
+    "text": "Connects VBAT to the LED anode path.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.3400000000000003
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_34",
+    "anchor": "left",
+    "text": "LED1: Lights when U2 pulls CHARGE_STAT low.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.8500000000000005
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_35",
+    "anchor": "left",
+    "text": "Indicates charger status, not BLE status.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.4900000000000007
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_36",
+    "anchor": "left",
+    "text": "R8: Selects the nominal 4.1 V charge target.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_37",
+    "anchor": "left",
+    "text": "Sets U2's combined VSET / ILIM mode.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 0.64
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_38",
+    "anchor": "left",
+    "text": "R9: Provides the fixed bias on U2 TS input.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 0.15000000000000036
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_39",
+    "anchor": "left",
+    "text": "U5 supplies the separate temperature gate.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -0.20999999999999963
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_40",
+    "anchor": "left",
+    "text": "C8: Decouples the charger's SYS output.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -0.6999999999999993
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_41",
+    "anchor": "left",
+    "text": "The radio regulator uses VBAT, not SYS.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.0599999999999992
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_42",
+    "anchor": "left",
+    "text": "C9: Filters noise at the PROG / ISET node.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.549999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_43",
+    "anchor": "left",
+    "text": "Works with charge-setting resistor R3.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.9099999999999988
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_0"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_44",
+    "anchor": "left",
+    "text": "U1: Runs the Bluetooth HID shutter firmware.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
       "y": 9.5
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_45",
+    "anchor": "left",
+    "text": "Includes flash, crystal and RF antenna.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 9.14
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_46",
+    "anchor": "left",
+    "text": "C5: Shunts fast 3.3 V supply noise to GND.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.65
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_47",
+    "anchor": "left",
+    "text": "Local bypass for the radio module.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.290000000000001
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_48",
+    "anchor": "left",
+    "text": "C10: Supports radio supply-current bursts.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.8
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_49",
+    "anchor": "left",
+    "text": "Complements high-frequency capacitor C5.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.4399999999999995
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_50",
+    "anchor": "left",
+    "text": "SW2: Press grounds SHUTTER on GPIO4.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.95
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_51",
+    "anchor": "left",
+    "text": "Firmware sends a BLE Volume-Up keypress.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.59
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_52",
+    "anchor": "left",
+    "text": "SW3: Press grounds PAIR on GPIO5.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_53",
+    "anchor": "left",
+    "text": "Hold for 3 seconds to request pairing.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.739999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_54",
+    "anchor": "left",
+    "text": "R7: Limits current from GPIO6 into LED2.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.25
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_55",
+    "anchor": "left",
+    "text": "Protects the LED and GPIO output.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.89
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_56",
+    "anchor": "left",
+    "text": "LED2: Firmware controls this red LED via GPIO6.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.4
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_57",
+    "anchor": "left",
+    "text": "Shows pairing / connection activity.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.04
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_58",
+    "anchor": "left",
+    "text": "J3: 1: RX GPIO20; 2: GND; 3: TX GPIO21.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.55
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_59",
+    "anchor": "left",
+    "text": "3.3 V signals; no target-power pin.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.19
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_60",
+    "anchor": "left",
+    "text": "SW4: Grounds GPIO9 for ROM download mode.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.7
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_61",
+    "anchor": "left",
+    "text": "Hold BOOT while pressing / releasing RESET.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.3400000000000003
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_62",
+    "anchor": "left",
+    "text": "SW5: Grounds module EN to reset the ESP32-C3.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.8500000000000005
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_63",
+    "anchor": "left",
+    "text": "Release after selecting normal / BOOT mode.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.4900000000000007
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_64",
+    "anchor": "left",
+    "text": "J3 programming: battery ON; USB-C unplugged.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -0.8
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_1"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_65",
+    "anchor": "left",
+    "text": "Programmer J5: straight-through cable; manual BOOT / RESET.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.22
     },
     "rotation": 0,
     "schematic_sheet_id": "schematic_sheet_1"
@@ -9830,14 +10460,560 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_18",
+    "schematic_text_id": "schematic_text_66",
     "anchor": "left",
-    "text": "Component explanations: ProtectionGuide (sheet 6).",
-    "font_size": 0.25,
+    "text": "SW1: ON feeds BATTERY_OK through R5 to enable.",
+    "font_size": 0.23,
     "color": "#000000",
     "position": {
-      "x": -12.5,
-      "y": 10.7
+      "x": -15.5,
+      "y": 9.5
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_67",
+    "anchor": "left",
+    "text": "OFF grounds that path; charging still works.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 9.14
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_68",
+    "anchor": "left",
+    "text": "R5: Feeds REG_EN from the power-switch output.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.65
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_69",
+    "anchor": "left",
+    "text": "Lets Q1 override enable when USB is present.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 8.290000000000001
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_70",
+    "anchor": "left",
+    "text": "Q1: USB5V turns this 2N7002 MOSFET on.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.8
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_71",
+    "anchor": "left",
+    "text": "Pulls REG_EN low, disabling radio power.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 7.4399999999999995
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_72",
+    "anchor": "left",
+    "text": "R6: Bleeds USB5V when the cable is removed.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.95
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_73",
+    "anchor": "left",
+    "text": "Keeps Q1 gate low without USB input.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.59
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_74",
+    "anchor": "left",
+    "text": "U3: Regulates the battery to fixed 3.3 V.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 6.1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_75",
+    "anchor": "left",
+    "text": "Runs only when REG_EN permits radio power.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.739999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_76",
+    "anchor": "left",
+    "text": "L1: Transfers energy between U3 switch nodes.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 5.25
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_77",
+    "anchor": "left",
+    "text": "Rating includes +/-30% inductance tolerance.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.89
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_78",
+    "anchor": "left",
+    "text": "C3: Supplies switching current on VBAT.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.4
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_79",
+    "anchor": "left",
+    "text": "Works with input bulk capacitor C11.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 4.04
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_80",
+    "anchor": "left",
+    "text": "C11: Adds battery-side energy storage for U3.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.55
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_81",
+    "anchor": "left",
+    "text": "Complements C3 at the power input.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 3.19
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_82",
+    "anchor": "left",
+    "text": "C13: Filters fast noise at U3's VBAT input.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.7
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_83",
+    "anchor": "left",
+    "text": "Complements the larger input capacitors.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 2.3400000000000003
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_84",
+    "anchor": "left",
+    "text": "C4: Smooths the regulated 3.3 V supply.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.8500000000000005
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_85",
+    "anchor": "left",
+    "text": "Works with output capacitor C12.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1.4900000000000007
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_86",
+    "anchor": "left",
+    "text": "C12: Adds output storage for load transients.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_87",
+    "anchor": "left",
+    "text": "Complements C4 on the 3.3 V rail.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 0.64
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_88",
+    "anchor": "left",
+    "text": "U4: Monitors VBAT; nominal threshold 3.08 V.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": 0.15000000000000036
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_89",
+    "anchor": "left",
+    "text": "Drives BATTERY_OK low below that threshold.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -0.20999999999999963
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_90",
+    "anchor": "left",
+    "text": "C6: Decouples U4's battery supply locally.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -0.6999999999999993
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_91",
+    "anchor": "left",
+    "text": "Reduces fast noise at the supervisor.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.0599999999999992
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_92",
+    "anchor": "left",
+    "text": "U5: Allows charging inside the set window.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.549999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_93",
+    "anchor": "left",
+    "text": "Must be thermally coupled to the cell.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -1.9099999999999988
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_94",
+    "anchor": "left",
+    "text": "C7: Decouples USB5V at U5 supply pin.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -2.4000000000000004
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_95",
+    "anchor": "left",
+    "text": "Filters supply noise for the comparators.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -2.7600000000000002
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_96",
+    "anchor": "left",
+    "text": "R10: Sets U5's nominal hot limit near 36 C.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -3.25
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_97",
+    "anchor": "left",
+    "text": "Charging is disabled above this limit.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -3.61
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_98",
+    "anchor": "left",
+    "text": "R11: Sets U5's nominal cold limit near 5 C.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -4.1
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_99",
+    "anchor": "left",
+    "text": "Charging is disabled below this limit.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -4.46
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_100",
+    "anchor": "left",
+    "text": "R12: Pulls U5's open-drain outputs high.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -4.949999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_101",
+    "anchor": "left",
+    "text": "TEMP_OK falls low outside the safe window.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -5.31
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_102",
+    "anchor": "left",
+    "text": "R13: Pulls U2's active-low charge enable high.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -5.799999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_103",
+    "anchor": "left",
+    "text": "Defaults charging off when Q2 is off.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -6.159999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_104",
+    "anchor": "left",
+    "text": "Q2: TEMP_OK high turns this 2N7002 on.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -6.649999999999999
+    },
+    "rotation": 0,
+    "schematic_sheet_id": "schematic_sheet_2"
+  },
+  {
+    "type": "schematic_text",
+    "schematic_text_id": "schematic_text_105",
+    "anchor": "left",
+    "text": "Pulls CHARGE_DISABLE low to allow charging.",
+    "font_size": 0.23,
+    "color": "#000000",
+    "position": {
+      "x": -15.5,
+      "y": -7.009999999999999
     },
     "rotation": 0,
     "schematic_sheet_id": "schematic_sheet_2"
@@ -10276,7 +11452,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_19",
+    "schematic_text_id": "schematic_text_106",
     "schematic_symbol_id": "schematic_symbol_0",
     "schematic_component_id": "schematic_component_24",
     "anchor": "center",
@@ -10573,7 +11749,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_20",
+    "schematic_text_id": "schematic_text_107",
     "schematic_symbol_id": "schematic_symbol_1",
     "schematic_component_id": "schematic_component_26",
     "anchor": "center",
@@ -10904,7 +12080,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_21",
+    "schematic_text_id": "schematic_text_108",
     "schematic_symbol_id": "schematic_symbol_2",
     "schematic_component_id": "schematic_component_43",
     "anchor": "center",
@@ -10917,1952 +12093,6 @@
     },
     "rotation": 0,
     "schematic_sheet_id": "schematic_sheet_2"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_22",
-    "anchor": "left",
-    "text": "Power: component guide",
-    "font_size": 0.4,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 10.1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_23",
-    "anchor": "left",
-    "text": "J1: USB-C charge input",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_24",
-    "anchor": "left",
-    "text": "Accepts 5 V for charging only.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_25",
-    "anchor": "left",
-    "text": "USB present holds the radio power off.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_26",
-    "anchor": "left",
-    "text": "R1: 5.1k CC1 pull-down",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_27",
-    "anchor": "left",
-    "text": "Identifies a USB-C power sink on CC1.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_28",
-    "anchor": "left",
-    "text": "Allows either cable orientation with R2.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_29",
-    "anchor": "left",
-    "text": "R2: 5.1k CC2 pull-down",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_30",
-    "anchor": "left",
-    "text": "Identifies a USB-C power sink on CC2.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_31",
-    "anchor": "left",
-    "text": "Allows either cable orientation with R1.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_32",
-    "anchor": "left",
-    "text": "U2: BQ25185 Li-ion charger",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_33",
-    "anchor": "left",
-    "text": "Charges the cell at nominal 300 mA.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_34",
-    "anchor": "left",
-    "text": "Manages USB input and the SYS power path.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_35",
-    "anchor": "left",
-    "text": "R3: 1k charge-current setting",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_36",
-    "anchor": "left",
-    "text": "Programs U2 ISET for nominal 300 mA.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_37",
-    "anchor": "left",
-    "text": "Actual current has component tolerance.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_38",
-    "anchor": "left",
-    "text": "C1: 4.7uF USB input bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -0.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_39",
-    "anchor": "left",
-    "text": "Filters USB5V at the charger input.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_40",
-    "anchor": "left",
-    "text": "Supplies brief input-current changes.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -1.38
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_41",
-    "anchor": "left",
-    "text": "C2: 4.7uF battery bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -2.3000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_42",
-    "anchor": "left",
-    "text": "Filters VBAT at the charger BAT pin.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -2.8000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_43",
-    "anchor": "left",
-    "text": "Supports stable battery charging.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -3.1800000000000006
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_44",
-    "anchor": "left",
-    "text": "J2: Protected battery connection",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_45",
-    "anchor": "left",
-    "text": "Pin 1 is GND; pin 2 is battery positive.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_46",
-    "anchor": "left",
-    "text": "Use the qualified protected-cell pack.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_47",
-    "anchor": "left",
-    "text": "R4: 1k charge-LED resistor",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_48",
-    "anchor": "left",
-    "text": "Limits current through red LED1.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_49",
-    "anchor": "left",
-    "text": "Connects VBAT to the LED anode path.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_50",
-    "anchor": "left",
-    "text": "LED1: Charge-status indicator",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_51",
-    "anchor": "left",
-    "text": "Lights when U2 pulls CHARGE_STAT low.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_52",
-    "anchor": "left",
-    "text": "Indicates charger status, not BLE status.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_53",
-    "anchor": "left",
-    "text": "R8: 130k charger VSET setting",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_54",
-    "anchor": "left",
-    "text": "Selects the nominal 4.1 V charge target.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_55",
-    "anchor": "left",
-    "text": "Sets U2's combined VSET / ILIM mode.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_56",
-    "anchor": "left",
-    "text": "R9: 10k charger TS bias",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_57",
-    "anchor": "left",
-    "text": "Provides the fixed bias on U2 TS input.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_58",
-    "anchor": "left",
-    "text": "U5 supplies the separate temperature gate.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_59",
-    "anchor": "left",
-    "text": "C8: 10uF SYS output bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -0.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_60",
-    "anchor": "left",
-    "text": "Decouples the charger's SYS output.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_61",
-    "anchor": "left",
-    "text": "The radio regulator uses VBAT, not SYS.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -1.38
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_62",
-    "anchor": "left",
-    "text": "C9: 47pF ISET-node filter",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -2.3000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_63",
-    "anchor": "left",
-    "text": "Filters noise at the PROG / ISET node.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -2.8000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_64",
-    "anchor": "left",
-    "text": "Works with charge-setting resistor R3.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -3.1800000000000006
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_65",
-    "anchor": "left",
-    "text": "Design intent; prototype operation remains unverified.",
-    "font_size": 0.24,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -10
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_3"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_66",
-    "anchor": "left",
-    "text": "Radio: component guide",
-    "font_size": 0.4,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 10.1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_67",
-    "anchor": "left",
-    "text": "U1: DOIT ESP32-C3 BLE module",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_68",
-    "anchor": "left",
-    "text": "Runs the Bluetooth HID shutter firmware.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_69",
-    "anchor": "left",
-    "text": "Includes flash, crystal and RF antenna.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_70",
-    "anchor": "left",
-    "text": "C5: 100nF radio bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_71",
-    "anchor": "left",
-    "text": "Shunts fast 3.3 V supply noise to GND.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_72",
-    "anchor": "left",
-    "text": "Local bypass for the radio module.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_73",
-    "anchor": "left",
-    "text": "C10: 10uF radio bulk bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_74",
-    "anchor": "left",
-    "text": "Supports radio supply-current bursts.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_75",
-    "anchor": "left",
-    "text": "Complements high-frequency capacitor C5.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_76",
-    "anchor": "left",
-    "text": "SW2: Side-actuated shutter button",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_77",
-    "anchor": "left",
-    "text": "Press grounds SHUTTER on GPIO4.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_78",
-    "anchor": "left",
-    "text": "Firmware sends a BLE Volume-Up keypress.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_79",
-    "anchor": "left",
-    "text": "SW3: Pairing button",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_80",
-    "anchor": "left",
-    "text": "Press grounds PAIR on GPIO5.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_81",
-    "anchor": "left",
-    "text": "Hold for 3 seconds to request pairing.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_82",
-    "anchor": "left",
-    "text": "R7: 1k status-LED resistor",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_83",
-    "anchor": "left",
-    "text": "Limits current from GPIO6 into LED2.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_84",
-    "anchor": "left",
-    "text": "Protects the LED and GPIO output.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_85",
-    "anchor": "left",
-    "text": "LED2: BLE status indicator",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_86",
-    "anchor": "left",
-    "text": "Firmware controls this red LED via GPIO6.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_87",
-    "anchor": "left",
-    "text": "Shows pairing / connection activity.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_88",
-    "anchor": "left",
-    "text": "J3: Three-pin JST UART",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_89",
-    "anchor": "left",
-    "text": "1: RX GPIO20; 2: GND; 3: TX GPIO21.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_90",
-    "anchor": "left",
-    "text": "3.3 V signals; no target-power pin.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_91",
-    "anchor": "left",
-    "text": "SW4: Manual BOOT button",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_92",
-    "anchor": "left",
-    "text": "Grounds GPIO9 for ROM download mode.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_93",
-    "anchor": "left",
-    "text": "Hold BOOT while pressing / releasing RESET.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_94",
-    "anchor": "left",
-    "text": "SW5: Manual RESET button",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_95",
-    "anchor": "left",
-    "text": "Grounds module EN to reset the ESP32-C3.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_96",
-    "anchor": "left",
-    "text": "Release after selecting normal / BOOT mode.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_97",
-    "anchor": "left",
-    "text": "Design intent; prototype operation remains unverified.",
-    "font_size": 0.24,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -10
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_98",
-    "anchor": "left",
-    "text": "JST programmer J5: straight-through cable; battery ON, R8 USB unplugged; manual BOOT / RESET.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -8.8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_4"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_99",
-    "anchor": "left",
-    "text": "Protection: component guide",
-    "font_size": 0.4,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 10.1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_100",
-    "anchor": "left",
-    "text": "SW1: Radio ON / OFF slide switch",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_101",
-    "anchor": "left",
-    "text": "ON feeds BATTERY_OK through R5 to enable.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_102",
-    "anchor": "left",
-    "text": "OFF grounds that path; charging still works.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_103",
-    "anchor": "left",
-    "text": "R5: 100k enable-feed resistor",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_104",
-    "anchor": "left",
-    "text": "Feeds REG_EN from the power-switch output.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_105",
-    "anchor": "left",
-    "text": "Lets Q1 override enable when USB is present.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_106",
-    "anchor": "left",
-    "text": "Q1: USB-present radio disable",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_107",
-    "anchor": "left",
-    "text": "USB5V turns this 2N7002 MOSFET on.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_108",
-    "anchor": "left",
-    "text": "Pulls REG_EN low, disabling radio power.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_109",
-    "anchor": "left",
-    "text": "R6: 100k USB / gate pull-down",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_110",
-    "anchor": "left",
-    "text": "Bleeds USB5V when the cable is removed.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_111",
-    "anchor": "left",
-    "text": "Keeps Q1 gate low without USB input.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_112",
-    "anchor": "left",
-    "text": "U3: TPS63031 buck-boost regulator",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_113",
-    "anchor": "left",
-    "text": "Regulates the battery to fixed 3.3 V.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_114",
-    "anchor": "left",
-    "text": "Runs only when REG_EN permits radio power.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_115",
-    "anchor": "left",
-    "text": "L1: 1.5uH switching inductor",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -0.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_116",
-    "anchor": "left",
-    "text": "Transfers energy between U3 switch nodes.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_117",
-    "anchor": "left",
-    "text": "Rating includes +/-30% inductance tolerance.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -1.38
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_118",
-    "anchor": "left",
-    "text": "C3: 10uF regulator input bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -2.3000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_119",
-    "anchor": "left",
-    "text": "Supplies switching current on VBAT.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -2.8000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_120",
-    "anchor": "left",
-    "text": "Works with input bulk capacitor C11.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -3.1800000000000006
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_121",
-    "anchor": "left",
-    "text": "C11: 10uF regulator input bulk",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -4.1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_122",
-    "anchor": "left",
-    "text": "Adds battery-side energy storage for U3.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -4.6
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_123",
-    "anchor": "left",
-    "text": "Complements C3 at the power input.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -4.9799999999999995
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_124",
-    "anchor": "left",
-    "text": "C13: 100nF regulator input bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -5.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_125",
-    "anchor": "left",
-    "text": "Filters fast noise at U3's VBAT input.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -6.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_126",
-    "anchor": "left",
-    "text": "Complements the larger input capacitors.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -6.78
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_127",
-    "anchor": "left",
-    "text": "C4: 10uF regulator output bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -7.699999999999999
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_128",
-    "anchor": "left",
-    "text": "Smooths the regulated 3.3 V supply.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -8.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_129",
-    "anchor": "left",
-    "text": "Works with output capacitor C12.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -8.58
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_130",
-    "anchor": "left",
-    "text": "C12: 10uF regulator output bulk",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_131",
-    "anchor": "left",
-    "text": "Adds output storage for load transients.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 8
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_132",
-    "anchor": "left",
-    "text": "Complements C4 on the 3.3 V rail.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 7.62
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_133",
-    "anchor": "left",
-    "text": "U4: TPS3839 low-battery supervisor",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.7
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_134",
-    "anchor": "left",
-    "text": "Monitors VBAT; nominal threshold 3.08 V.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 6.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_135",
-    "anchor": "left",
-    "text": "Drives BATTERY_OK low below that threshold.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 5.82
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_136",
-    "anchor": "left",
-    "text": "C6: 100nF supervisor bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_137",
-    "anchor": "left",
-    "text": "Decouples U4's battery supply locally.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_138",
-    "anchor": "left",
-    "text": "Reduces fast noise at the supervisor.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 4.0200000000000005
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_139",
-    "anchor": "left",
-    "text": "U5: TMP390 temperature gate",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 3.0999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_140",
-    "anchor": "left",
-    "text": "Allows charging inside the set window.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.5999999999999996
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_141",
-    "anchor": "left",
-    "text": "Must be thermally coupled to the cell.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 2.2199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_142",
-    "anchor": "left",
-    "text": "C7: 100nF temperature-IC bypass",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 1.2999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_143",
-    "anchor": "left",
-    "text": "Decouples USB5V at U5 supply pin.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.7999999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_144",
-    "anchor": "left",
-    "text": "Filters supply noise for the comparators.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": 0.4199999999999998
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_145",
-    "anchor": "left",
-    "text": "R10: 1.62k hot-limit setting",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -0.5
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_146",
-    "anchor": "left",
-    "text": "Sets U5's nominal hot limit near 36 C.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_147",
-    "anchor": "left",
-    "text": "Charging is disabled above this limit.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -1.38
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_148",
-    "anchor": "left",
-    "text": "R11: 18.7k cold-limit setting",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -2.3000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_149",
-    "anchor": "left",
-    "text": "Sets U5's nominal cold limit near 5 C.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -2.8000000000000007
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_150",
-    "anchor": "left",
-    "text": "Charging is disabled below this limit.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -3.1800000000000006
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_151",
-    "anchor": "left",
-    "text": "R12: 100k TEMP_OK pull-up",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -4.1
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_152",
-    "anchor": "left",
-    "text": "Pulls U5's open-drain outputs high.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -4.6
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_153",
-    "anchor": "left",
-    "text": "TEMP_OK falls low outside the safe window.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -4.9799999999999995
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_154",
-    "anchor": "left",
-    "text": "R13: 100k charge-disable pull-up",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -5.9
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_155",
-    "anchor": "left",
-    "text": "Pulls U2's active-low charge enable high.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -6.4
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_156",
-    "anchor": "left",
-    "text": "Defaults charging off when Q2 is off.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -6.78
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_157",
-    "anchor": "left",
-    "text": "Q2: Temperature-to-charge gate",
-    "font_size": 0.28,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -7.699999999999999
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_158",
-    "anchor": "left",
-    "text": "TEMP_OK high turns this 2N7002 on.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -8.2
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_159",
-    "anchor": "left",
-    "text": "Pulls CHARGE_DISABLE low to allow charging.",
-    "font_size": 0.25,
-    "color": "#000000",
-    "position": {
-      "x": 0.5,
-      "y": -8.58
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
-  },
-  {
-    "type": "schematic_text",
-    "schematic_text_id": "schematic_text_160",
-    "anchor": "left",
-    "text": "Design intent; prototype operation remains unverified.",
-    "font_size": 0.24,
-    "color": "#000000",
-    "position": {
-      "x": -13.5,
-      "y": -10
-    },
-    "rotation": 0,
-    "schematic_sheet_id": "schematic_sheet_5"
   },
   {
     "type": "schematic_trace",
@@ -13852,7 +13082,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_161",
+    "schematic_text_id": "schematic_text_109",
     "text": "CC1",
     "source_trace_id": "source_trace_6",
     "anchor": "left",
@@ -13887,7 +13117,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_162",
+    "schematic_text_id": "schematic_text_110",
     "text": "CC1",
     "source_trace_id": "source_trace_12",
     "anchor": "left",
@@ -13922,7 +13152,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_163",
+    "schematic_text_id": "schematic_text_111",
     "text": "CC2",
     "source_trace_id": "source_trace_7",
     "anchor": "left",
@@ -13957,7 +13187,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_164",
+    "schematic_text_id": "schematic_text_112",
     "text": "CC2",
     "source_trace_id": "source_trace_10",
     "anchor": "left",
@@ -13992,7 +13222,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_165",
+    "schematic_text_id": "schematic_text_113",
     "text": "CHARGER_SYS",
     "source_trace_id": "source_trace_14",
     "anchor": "right",
@@ -14027,7 +13257,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_166",
+    "schematic_text_id": "schematic_text_114",
     "text": "CHARGER_SYS",
     "source_trace_id": "source_trace_43",
     "anchor": "left",
@@ -14062,7 +13292,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_167",
+    "schematic_text_id": "schematic_text_115",
     "text": "CHARGE_STAT",
     "source_trace_id": "source_trace_16",
     "anchor": "right",
@@ -14097,7 +13327,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_168",
+    "schematic_text_id": "schematic_text_116",
     "text": "CHARGE_STAT",
     "source_trace_id": "source_trace_34",
     "anchor": "left",
@@ -14132,7 +13362,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_169",
+    "schematic_text_id": "schematic_text_117",
     "text": "CHARGE_DISABLE",
     "source_trace_id": "source_trace_17",
     "anchor": "right",
@@ -14167,7 +13397,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_170",
+    "schematic_text_id": "schematic_text_118",
     "text": "TS_BIAS",
     "source_trace_id": "source_trace_19",
     "anchor": "right",
@@ -14202,7 +13432,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_171",
+    "schematic_text_id": "schematic_text_119",
     "text": "TS_BIAS",
     "source_trace_id": "source_trace_41",
     "anchor": "left",
@@ -14237,7 +13467,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_172",
+    "schematic_text_id": "schematic_text_120",
     "text": "PROG",
     "source_trace_id": "source_trace_21",
     "anchor": "left",
@@ -14272,7 +13502,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_173",
+    "schematic_text_id": "schematic_text_121",
     "text": "PROG",
     "source_trace_id": "source_trace_24",
     "anchor": "left",
@@ -14307,7 +13537,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_174",
+    "schematic_text_id": "schematic_text_122",
     "text": "PROG",
     "source_trace_id": "source_trace_45",
     "anchor": "left",
@@ -14342,7 +13572,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_175",
+    "schematic_text_id": "schematic_text_123",
     "text": "CHARGE_LED_A",
     "source_trace_id": "source_trace_31",
     "anchor": "right",
@@ -14377,7 +13607,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_176",
+    "schematic_text_id": "schematic_text_124",
     "text": "CHARGE_LED_A",
     "source_trace_id": "source_trace_33",
     "anchor": "right",
@@ -14877,7 +14107,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_177",
+    "schematic_text_id": "schematic_text_125",
     "text": "EN",
     "source_trace_id": "source_trace_47",
     "anchor": "right",
@@ -14912,7 +14142,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_178",
+    "schematic_text_id": "schematic_text_126",
     "text": "EN",
     "source_trace_id": "source_trace_79",
     "anchor": "left",
@@ -14947,7 +14177,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_179",
+    "schematic_text_id": "schematic_text_127",
     "text": "SHUTTER",
     "source_trace_id": "source_trace_48",
     "anchor": "right",
@@ -14982,7 +14212,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_180",
+    "schematic_text_id": "schematic_text_128",
     "text": "SHUTTER",
     "source_trace_id": "source_trace_61",
     "anchor": "left",
@@ -15017,7 +14247,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_181",
+    "schematic_text_id": "schematic_text_129",
     "text": "PAIR",
     "source_trace_id": "source_trace_49",
     "anchor": "right",
@@ -15052,7 +14282,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_182",
+    "schematic_text_id": "schematic_text_130",
     "text": "STATUS_LED",
     "source_trace_id": "source_trace_52",
     "anchor": "left",
@@ -15087,7 +14317,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_183",
+    "schematic_text_id": "schematic_text_131",
     "text": "STATUS_LED",
     "source_trace_id": "source_trace_68",
     "anchor": "right",
@@ -15122,7 +14352,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_184",
+    "schematic_text_id": "schematic_text_132",
     "text": "BOOT",
     "source_trace_id": "source_trace_53",
     "anchor": "left",
@@ -15157,7 +14387,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_185",
+    "schematic_text_id": "schematic_text_133",
     "text": "BOOT",
     "source_trace_id": "source_trace_77",
     "anchor": "left",
@@ -15192,7 +14422,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_186",
+    "schematic_text_id": "schematic_text_134",
     "text": "UART_RX",
     "source_trace_id": "source_trace_54",
     "anchor": "left",
@@ -15227,7 +14457,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_187",
+    "schematic_text_id": "schematic_text_135",
     "text": "UART_RX",
     "source_trace_id": "source_trace_72",
     "anchor": "right",
@@ -15262,7 +14492,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_188",
+    "schematic_text_id": "schematic_text_136",
     "text": "UART_TX",
     "source_trace_id": "source_trace_55",
     "anchor": "left",
@@ -15297,7 +14527,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_189",
+    "schematic_text_id": "schematic_text_137",
     "text": "UART_TX",
     "source_trace_id": "source_trace_74",
     "anchor": "right",
@@ -15332,7 +14562,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_190",
+    "schematic_text_id": "schematic_text_138",
     "text": "STATUS_LED_A",
     "source_trace_id": "source_trace_69",
     "anchor": "left",
@@ -15367,7 +14597,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_191",
+    "schematic_text_id": "schematic_text_139",
     "text": "STATUS_LED_A",
     "source_trace_id": "source_trace_70",
     "anchor": "left",
@@ -17074,7 +16304,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_192",
+    "schematic_text_id": "schematic_text_140",
     "text": "POWER_SWITCH",
     "source_trace_id": "source_trace_82",
     "anchor": "left",
@@ -17109,7 +16339,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_193",
+    "schematic_text_id": "schematic_text_141",
     "text": "POWER_SWITCH",
     "source_trace_id": "source_trace_85",
     "anchor": "right",
@@ -17144,7 +16374,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_194",
+    "schematic_text_id": "schematic_text_142",
     "text": "BATTERY_OK",
     "source_trace_id": "source_trace_81",
     "anchor": "left",
@@ -17179,7 +16409,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_195",
+    "schematic_text_id": "schematic_text_143",
     "text": "BATTERY_OK",
     "source_trace_id": "source_trace_117",
     "anchor": "right",
@@ -17194,7 +16424,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_196",
+    "schematic_text_id": "schematic_text_144",
     "text": "REG_EN",
     "source_trace_id": "source_trace_86",
     "anchor": "center",
@@ -17229,7 +16459,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_197",
+    "schematic_text_id": "schematic_text_145",
     "text": "REG_EN",
     "source_trace_id": "source_trace_97",
     "anchor": "right",
@@ -17244,7 +16474,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_198",
+    "schematic_text_id": "schematic_text_146",
     "text": "TEMP_OK",
     "source_trace_id": "source_trace_135",
     "anchor": "center",
@@ -17279,7 +16509,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_199",
+    "schematic_text_id": "schematic_text_147",
     "text": "INDUCTOR_L2",
     "source_trace_id": "source_trace_104",
     "anchor": "right",
@@ -17314,7 +16544,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_200",
+    "schematic_text_id": "schematic_text_148",
     "text": "INDUCTOR_L1",
     "source_trace_id": "source_trace_105",
     "anchor": "left",
@@ -17349,7 +16579,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_201",
+    "schematic_text_id": "schematic_text_149",
     "text": "TEMP_SET_HOT",
     "source_trace_id": "source_trace_122",
     "anchor": "right",
@@ -17384,7 +16614,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_202",
+    "schematic_text_id": "schematic_text_150",
     "text": "TEMP_SET_HOT",
     "source_trace_id": "source_trace_130",
     "anchor": "left",
@@ -17419,7 +16649,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_203",
+    "schematic_text_id": "schematic_text_151",
     "text": "TEMP_SET_COLD",
     "source_trace_id": "source_trace_123",
     "anchor": "right",
@@ -17454,7 +16684,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_204",
+    "schematic_text_id": "schematic_text_152",
     "text": "CHARGE_DISABLE",
     "source_trace_id": "source_trace_137",
     "anchor": "right",
@@ -17489,7 +16719,7 @@
   },
   {
     "type": "schematic_text",
-    "schematic_text_id": "schematic_text_205",
+    "schematic_text_id": "schematic_text_153",
     "text": "CHARGE_DISABLE",
     "source_trace_id": "source_trace_140",
     "anchor": "left",
@@ -64576,6 +63806,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "f4f3c6d4901985b36fd3a8abd719ae71"
+    "source_filesystem_md5_hash": "61238cea1e36b855e017506387ab1527"
   }
 ]

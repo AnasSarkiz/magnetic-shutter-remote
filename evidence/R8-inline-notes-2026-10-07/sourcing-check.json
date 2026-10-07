@@ -1,0 +1,987 @@
+{
+  "checked_date": "2026-10-07",
+  "circuit_sha256": "9aebbc4cf286fd19f6d507c0509f63f323d3558eaf12abdf3727706312549a19",
+  "expected_exact_identities": 25,
+  "fitted_references": 44,
+  "parts": [
+    {
+      "lcsc": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "YAGEO",
+      "package": "0603",
+      "references": [
+        "C5",
+        "C13",
+        "C6",
+        "C7"
+      ],
+      "quantity_per_board": 4,
+      "listing_url": "https://jlcpcb.com/partdetail/C14663",
+      "response_url": "https://jlcpcb.com/partdetail/C14663",
+      "observed_utc": "2026-10-07T11:17:07.685912+00:00",
+      "html_sha256": "0121113639de014db6c492e928877410f5e6950af555c8f16ee03e2e131ef032",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 46980504,
+        "overseasStockCount": 62263581,
+        "preMinPurchaseNum": 1026,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C15516",
+      "mpn": "TPS63031DSKR",
+      "manufacturer": "Texas Instruments",
+      "package": "SON-10-EP(2.5x2.5)",
+      "references": [
+        "U3"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C15516",
+      "response_url": "https://jlcpcb.com/partdetail/C15516",
+      "observed_utc": "2026-10-07T11:17:09.081780+00:00",
+      "html_sha256": "821ce10b104e84474aa5dbe77963c869504ddec9083638b2bd441faa57ad1dfd",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 12949,
+        "overseasStockCount": 13089,
+        "preMinPurchaseNum": 9,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C15850",
+      "mpn": "CL21A106KAYNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0805",
+      "references": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C3",
+        "C4"
+      ],
+      "quantity_per_board": 6,
+      "listing_url": "https://jlcpcb.com/partdetail/C15850",
+      "response_url": "https://jlcpcb.com/partdetail/C15850",
+      "observed_utc": "2026-10-07T11:17:05.800247+00:00",
+      "html_sha256": "10725cb526afaede30152f951ff0eb97b06ca06de98b3d0120e88b2a4dd8d15b",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3332267,
+        "overseasStockCount": 4810374,
+        "preMinPurchaseNum": 139,
+        "encapsulationNumber": 2000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C160389",
+      "mpn": "BM03B-SRSS-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "package": "SMD,P=1mm",
+      "references": [
+        "J3"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C160389",
+      "response_url": "https://jlcpcb.com/partdetail/C160389",
+      "observed_utc": "2026-10-07T11:17:07.594434+00:00",
+      "html_sha256": "639fdf391908f31f9cf07eae911286872b01d9b4c9b5b7149c984d5802ce0eef",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 31629,
+        "overseasStockCount": 32211,
+        "preMinPurchaseNum": 33,
+        "encapsulationNumber": 1500,
+        "lossNumber": 0,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C160402",
+      "mpn": "SM02B-SRSS-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+      "references": [
+        "J2"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C160402",
+      "response_url": "https://jlcpcb.com/partdetail/C160402",
+      "observed_utc": "2026-10-07T11:17:04.721386+00:00",
+      "html_sha256": "1d7f52f34c6b9b87d30829fe24941f4eedb6046e8ccf600986611952d389c6a7",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 30741,
+        "overseasStockCount": 32379,
+        "preMinPurchaseNum": 84,
+        "encapsulationNumber": 3000,
+        "lossNumber": 2,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "package": "0603",
+      "references": [
+        "C2",
+        "C1"
+      ],
+      "quantity_per_board": 2,
+      "listing_url": "https://jlcpcb.com/partdetail/C19666",
+      "response_url": "https://jlcpcb.com/partdetail/C19666",
+      "observed_utc": "2026-10-07T11:17:04.162975+00:00",
+      "html_sha256": "3b90615321adceb4b097894663985b6689c7028c87451ec213bfa57f38702ea3",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 1723877,
+        "overseasStockCount": 2378565,
+        "preMinPurchaseNum": 519,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C19725033",
+      "mpn": "BQ25185DLHR",
+      "manufacturer": "Texas Instruments",
+      "package": "WSON-10-EP(2.2x2)",
+      "references": [
+        "U2"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C19725033",
+      "response_url": "https://jlcpcb.com/partdetail/C19725033",
+      "observed_utc": "2026-10-07T11:17:03.063695+00:00",
+      "html_sha256": "f18483883fc2a8e55821f44fcfa4bd9ece24d53ec223ca6e45d2afbf5699c996",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3435,
+        "overseasStockCount": 3548,
+        "preMinPurchaseNum": 6,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C19949072",
+      "mpn": "ESPC3-12-N4",
+      "manufacturer": "DOIT",
+      "package": "SMD,24x16mm",
+      "references": [
+        "U1"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C19949072",
+      "response_url": "https://jlcpcb.com/partdetail/C19949072",
+      "observed_utc": "2026-10-07T11:17:05.855340+00:00",
+      "html_sha256": "e5fd95c34b24079c5f5bfe8f9ee327e280d9af7a270885b27b6808e893a0b2c4",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3,
+        "overseasStockCount": 66,
+        "preMinPurchaseNum": 4,
+        "encapsulationNumber": 650,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": false,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R3",
+        "R4",
+        "R7"
+      ],
+      "quantity_per_board": 3,
+      "listing_url": "https://jlcpcb.com/partdetail/C21190",
+      "response_url": "https://jlcpcb.com/partdetail/C21190",
+      "observed_utc": "2026-10-07T11:17:03.134215+00:00",
+      "html_sha256": "31de6aa7e026b9c8a3b6e79f64e396c40d82c5a8ade3d43aa52f7b18d130403a",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 15363808,
+        "overseasStockCount": 21169271,
+        "preMinPurchaseNum": 4512,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C22795",
+      "mpn": "0603WAF1303T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R8"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C22795",
+      "response_url": "https://jlcpcb.com/partdetail/C22795",
+      "observed_utc": "2026-10-07T11:17:05.810325+00:00",
+      "html_sha256": "dae7ebac483a85d0e835ff43501e25b3bfae4408013aae2b70ad7f32e9f13a1f",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 530217,
+        "overseasStockCount": 584057,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C22844",
+      "mpn": "0603WAF1621T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R10"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C22844",
+      "response_url": "https://jlcpcb.com/partdetail/C22844",
+      "observed_utc": "2026-10-07T11:17:09.815435+00:00",
+      "html_sha256": "71ab3784c98b8ce86da5d68ff721c0b3370ad6759954f0d925ac5fc12d7914e4",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 26046,
+        "overseasStockCount": 26148,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C2286",
+      "mpn": "KT-0603R",
+      "manufacturer": "Hubei KENTO Elec",
+      "package": "0603",
+      "references": [
+        "LED1",
+        "LED2"
+      ],
+      "quantity_per_board": 2,
+      "listing_url": "https://jlcpcb.com/partdetail/C2286",
+      "response_url": "https://jlcpcb.com/partdetail/C2286",
+      "observed_utc": "2026-10-07T11:17:04.681400+00:00",
+      "html_sha256": "4922ec39f1e80845685aadf62276f6018c64131bea253a801be2ac7e1d8df6bf",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 3",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3996303,
+        "overseasStockCount": 4585858,
+        "preMinPurchaseNum": 1556,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C22893",
+      "mpn": "0603WAF1872T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R11"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C22893",
+      "response_url": "https://jlcpcb.com/partdetail/C22893",
+      "observed_utc": "2026-10-07T11:17:10.567203+00:00",
+      "html_sha256": "e0a224c6e2269dec3d6e5c712ebc5bbb706cd849a48215dbbea82bb91c51802e",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 120764,
+        "overseasStockCount": 127128,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R2",
+        "R1"
+      ],
+      "quantity_per_board": 2,
+      "listing_url": "https://jlcpcb.com/partdetail/C23186",
+      "response_url": "https://jlcpcb.com/partdetail/C23186",
+      "observed_utc": "2026-10-07T11:17:04.081762+00:00",
+      "html_sha256": "fc60f835b3d6d86583cf27bdd7d6ba396eb9b3c61af0c59c4c4215152a9e0447",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 24012181,
+        "overseasStockCount": 25174500,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R5",
+        "R6",
+        "R12",
+        "R13"
+      ],
+      "quantity_per_board": 4,
+      "listing_url": "https://jlcpcb.com/partdetail/C25803",
+      "response_url": "https://jlcpcb.com/partdetail/C25803",
+      "observed_utc": "2026-10-07T11:17:08.961116+00:00",
+      "html_sha256": "30139c8f9deec7debd256573ab10c69c19dd4a49e7ff5189ec2b58c3c7d3ec87",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 19833494,
+        "overseasStockCount": 21916125,
+        "preMinPurchaseNum": 3760,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "package": "0603",
+      "references": [
+        "R9"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C25804",
+      "response_url": "https://jlcpcb.com/partdetail/C25804",
+      "observed_utc": "2026-10-07T11:17:05.152474+00:00",
+      "html_sha256": "293241b6fc1c25261c7c6c0e933e1917265d36185c6a93ba098737f065c43b7e",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 20890919,
+        "overseasStockCount": 29390895,
+        "preMinPurchaseNum": 5000,
+        "encapsulationNumber": 5000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C282505",
+      "mpn": "TCC0603COG470J500CT",
+      "manufacturer": "CCTC",
+      "package": "0603",
+      "references": [
+        "C9"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C282505",
+      "response_url": "https://jlcpcb.com/partdetail/C282505",
+      "observed_utc": "2026-10-07T11:17:05.783133+00:00",
+      "html_sha256": "8d0326e3a6698885253eff1c90ec9d70e4dfd2faece0d488bf6101fe5632e932",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 7986,
+        "overseasStockCount": 8003,
+        "preMinPurchaseNum": 3610,
+        "encapsulationNumber": 4000,
+        "lossNumber": 10,
+        "leastPatchNumber": 20,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C37616412",
+      "mpn": "USB4215-03-A",
+      "manufacturer": "Global Connector Technology",
+      "package": "SMD",
+      "references": [
+        "J1"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C37616412",
+      "response_url": "https://jlcpcb.com/partdetail/C37616412",
+      "observed_utc": "2026-10-07T11:17:03.090723+00:00",
+      "html_sha256": "be34d0c847fa21bb16ca949080047b98164292853ed24d721f5c76258653c3db",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 15,
+        "overseasStockCount": 114,
+        "preMinPurchaseNum": 13,
+        "encapsulationNumber": 1200,
+        "lossNumber": 0,
+        "leastPatchNumber": 0,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C393942",
+      "mpn": "TS24CA",
+      "manufacturer": "SHOU HAN",
+      "package": "SMD,4.6x1.8mm",
+      "references": [
+        "SW2"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C393942",
+      "response_url": "https://jlcpcb.com/partdetail/C393942",
+      "observed_utc": "2026-10-07T11:17:07.545792+00:00",
+      "html_sha256": "2ca3b5877ea52a9f4f67d71a9a0e93d71cde110e6bdd37ffb4cf6d01513fd0d3",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 399890,
+        "overseasStockCount": 406113,
+        "preMinPurchaseNum": 461,
+        "encapsulationNumber": 3000,
+        "lossNumber": 1,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C431540",
+      "mpn": "MSK12C02",
+      "manufacturer": "SHOU HAN",
+      "package": "SMD,8x2.8mm",
+      "references": [
+        "SW1"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C431540",
+      "response_url": "https://jlcpcb.com/partdetail/C431540",
+      "observed_utc": "2026-10-07T11:17:07.845107+00:00",
+      "html_sha256": "811fcae794231eb48394fba39014adc6391a0262ca09cebbbd96a7635f1c2a3f",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": null,
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 184297,
+        "overseasStockCount": 190926,
+        "preMinPurchaseNum": 196,
+        "encapsulationNumber": 3000,
+        "lossNumber": 4,
+        "leastPatchNumber": 2,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C485802",
+      "mpn": "TPS3839G33DBZR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23-3",
+      "references": [
+        "U4"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C485802",
+      "response_url": "https://jlcpcb.com/partdetail/C485802",
+      "observed_utc": "2026-10-07T11:17:09.609758+00:00",
+      "html_sha256": "c3cddcc12ab956e5fd6d2c4d3367412bd128bc30622084d527feed4997a4f38f",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 3357,
+        "overseasStockCount": 3395,
+        "preMinPurchaseNum": 27,
+        "encapsulationNumber": 3000,
+        "lossNumber": 0,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C5219772",
+      "mpn": "TMP390A2DRLR",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-563",
+      "references": [
+        "U5"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C5219772",
+      "response_url": "https://jlcpcb.com/partdetail/C5219772",
+      "observed_utc": "2026-10-07T11:17:10.572831+00:00",
+      "html_sha256": "3c7e6273754ed7c88a25a120cd0630fcb7f320a60b22d26eb69734ddbb1bc32a",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 37517,
+        "overseasStockCount": 37573,
+        "preMinPurchaseNum": 26,
+        "encapsulationNumber": 4000,
+        "lossNumber": 0,
+        "leastPatchNumber": 2,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C56594",
+      "mpn": "SWPA3015S1R5NT",
+      "manufacturer": "Sunlord",
+      "package": "SMD,3x3mm",
+      "references": [
+        "L1"
+      ],
+      "quantity_per_board": 1,
+      "listing_url": "https://jlcpcb.com/partdetail/C56594",
+      "response_url": "https://jlcpcb.com/partdetail/C56594",
+      "observed_utc": "2026-10-07T11:17:08.968701+00:00",
+      "html_sha256": "da2fa80419010e2a8aa7ef6a614fd66477453818313386e481d8125f8e2cb6db",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "expand",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 4029,
+        "overseasStockCount": 4197,
+        "preMinPurchaseNum": 229,
+        "encapsulationNumber": 2000,
+        "lossNumber": 4,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C720477",
+      "mpn": "TS-1088-AR02016",
+      "manufacturer": "XUNPU",
+      "package": "SMD,4x3mm",
+      "references": [
+        "SW3",
+        "SW4",
+        "SW5"
+      ],
+      "quantity_per_board": 3,
+      "listing_url": "https://jlcpcb.com/partdetail/C720477",
+      "response_url": "https://jlcpcb.com/partdetail/C720477",
+      "observed_utc": "2026-10-07T11:17:06.875440+00:00",
+      "html_sha256": "31db064a1deb80c5b8e592aff405ba3830511bf52f4dc15bea4713621b83d7d5",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 709597,
+        "overseasStockCount": 763878,
+        "preMinPurchaseNum": 214,
+        "encapsulationNumber": 4000,
+        "lossNumber": 4,
+        "leastPatchNumber": 5,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    },
+    {
+      "lcsc": "C8545",
+      "mpn": "2N7002",
+      "manufacturer": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+      "package": "SOT-23",
+      "references": [
+        "Q1",
+        "Q2"
+      ],
+      "quantity_per_board": 2,
+      "listing_url": "https://jlcpcb.com/partdetail/C8545",
+      "response_url": "https://jlcpcb.com/partdetail/C8545",
+      "observed_utc": "2026-10-07T11:17:08.920249+00:00",
+      "html_sha256": "96d0a2a4e14c53fac3ff0a3c11fa9e5b12100d4be7fa6473103e6e8999aff83c",
+      "exact_identity_verified": true,
+      "assembly_fields": {
+        "assemblyMode": "smtWeld",
+        "componentLibraryType": "base",
+        "manufacturerBlackFlag": null,
+        "needAuditFlag": false,
+        "fixtureFlag": false,
+        "xrayFlag": false,
+        "moistureSensitivityLevelEn": "MSL 1",
+        "orderInstructionEnglish": ""
+      },
+      "inventory_fields": {
+        "canPresaleNumber": 1377304,
+        "overseasStockCount": 1524792,
+        "preMinPurchaseNum": 640,
+        "encapsulationNumber": 3000,
+        "lossNumber": 5,
+        "leastPatchNumber": 10,
+        "noBuyReason": null
+      },
+      "eligible_smt_listing": true,
+      "one_board_parts_in_stock": true,
+      "five_board_parts_in_stock": true,
+      "stock_allocation_confirmed": false
+    }
+  ],
+  "failures": [],
+  "all_exact_eligible_listings_verified": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": false,
+  "stock_semantics": "Official client: canPresaleNumber is Available Order Qty; overseasStockCount is headline In Stock. Neither reserves inventory.",
+  "procurement_allocation_confirmed": false,
+  "observed_circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "binding": "Same44 fitted identities/poses and exact unchanged BOM as the actual2026-10-07 official observation. All original timestamps and inventory are retained; not a fresh stock observation or reservation.",
+  "original_stock_receipt": "evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing-check.json",
+  "original_stock_receipt_sha256": "b705d2064be9413205cb5151da09cf2e46dd98b994dea8b960b51948fdf9fb38"
+}

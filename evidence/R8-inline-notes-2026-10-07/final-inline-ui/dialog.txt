@@ -1,0 +1,6 @@
+Style Analysis
+Close
+
+Placement and style issues across all schematic sheets. Each image highlights one issue with its description below.
+
+No style issues found.

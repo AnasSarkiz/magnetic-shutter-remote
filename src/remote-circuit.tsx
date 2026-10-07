@@ -227,13 +227,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				sheetIndex={0}
 				sheetSize="A4"
 			>
-				<schematictext
-					text="Component explanations: PowerGuide (sheet 4)."
-					schX={-12.5}
-					schY={9.5}
-					anchor="left"
-					fontSize={0.25}
-				/>
+				<SchematicComponentNotes sheet="Power" />
 				<fanout
 					name="USB_ESCAPE"
 					pcbX={0}
@@ -491,13 +485,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				sheetIndex={1}
 				sheetSize="A4"
 			>
-				<schematictext
-					text="Component explanations: RadioGuide (sheet 5)."
-					schX={-12.5}
-					schY={9.5}
-					anchor="left"
-					fontSize={0.25}
-				/>
+				<SchematicComponentNotes sheet="Radio" />
 				<fanout
 					name="RADIO_GROUND_ESCAPE"
 					pcbX={0}
@@ -692,13 +680,7 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 				sheetIndex={2}
 				sheetSize="A4"
 			>
-				<schematictext
-					text="Component explanations: ProtectionGuide (sheet 6)."
-					schX={-12.5}
-					schY={10.7}
-					anchor="left"
-					fontSize={0.25}
-				/>
+				<SchematicComponentNotes sheet="Protection" />
 				<MSK12C02
 					name="SW1"
 					pcbX="19mm"
@@ -1027,30 +1009,6 @@ export function RemoteCircuit({ routingEnabled }: { routingEnabled: boolean }) {
 						}}
 					/>
 				</fanout>
-			</schematicsheet>
-			<schematicsheet
-				name="PowerGuide"
-				displayName="Power: each component explained"
-				sheetIndex={3}
-				sheetSize="A4"
-			>
-				<SchematicComponentNotes sheet="Power" />
-			</schematicsheet>
-			<schematicsheet
-				name="RadioGuide"
-				displayName="Radio and programming: each component explained"
-				sheetIndex={4}
-				sheetSize="A4"
-			>
-				<SchematicComponentNotes sheet="Radio" />
-			</schematicsheet>
-			<schematicsheet
-				name="ProtectionGuide"
-				displayName="Protection and regulation: each component explained"
-				sheetIndex={5}
-				sheetSize="A4"
-			>
-				<SchematicComponentNotes sheet="Protection" />
 			</schematicsheet>
 			<hole name="H1" pcbX="-19mm" pcbY="25mm" diameter="2.2mm" />
 			<hole name="H2" pcbX="19mm" pcbY="25mm" diameter="2.2mm" />

@@ -1,0 +1,6 @@
+{
+  "previous_circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "circuit_sha256": "9aebbc4cf286fd19f6d507c0509f63f323d3558eaf12abdf3727706312549a19",
+  "physical_elements": 1048,
+  "all_pcb_and_cad_elements_exactly_identical": true
+}

@@ -1,3 +1,17 @@
+# Current R8 0.3.14 — explanations on the component pages, 2026-10-07
+
+All44 component explanations now share their Power/Radio/Protection schematic
+page with the actual components. The3separate guide pages and guide links are
+removed. The3nativeA4pages are inspected; actualUI/CLI Style Analysis passes0.
+Fresh19checks pass0DRC/shorts/dangling and independent manufacturing/process,
+29physical nets,174widths/current paths. All1048PCB/CADelements,44poses and159
+pin/value contracts are identical to0.3.12; all12Gerber/drill geometry and BOM/CPL
+are unchanged. The ring stays deferred. Supplier/physical/MagSafe gates and
+original075/076/native004/084/separate missing3V3metadata records remain explicit.
+[Current review](evidence/R8-inline-notes-2026-10-07/REVIEW.md). Actual publication receipt is recorded separately.
+
+## Earlier records — preserved history
+
 # First prototype scope — RGB ring deferred, 2026-10-07
 
 The user deferred the RGB photo/torch ring entirely. Active board/source is the
