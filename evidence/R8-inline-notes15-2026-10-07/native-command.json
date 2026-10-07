@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-07T12:03:24.830611+00:00",
+  "command": [
+    "python3",
+    "/workspace/magnetic-shutter-remote/cloud/run-heavy.py",
+    "--",
+    "bash",
+    "-c",
+    "set -e; cd -- \"$1\"; test \"$PWD\" = \"$1\"; exec tsci push \"$2\" --include-dist --version-tag prototype --compress",
+    "r8-publish",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-package-r8-inline-notes-0315-20261007",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-package-r8-inline-notes-0315-20261007/index.circuit.tsx"
+  ],
+  "guard_cwd": "/workspace/magnetic-shutter-remote",
+  "explicit_inner_cwd": "/workspace/magnetic-shutter-remote/.codex/runtime/registry-package-r8-inline-notes-0315-20261007",
+  "supported_native_cli_archive_option": true,
+  "secrets_or_user_tokens_in_script": false,
+  "exit_code": 1,
+  "finished_utc": "2026-10-07T12:08:58.747135+00:00",
+  "staged_files_changed": [],
+  "source_head_observed_at_process_start": "3246de3c5ae4c16e739ff28ace1c9861609bdf66",
+  "verified_source_artifact_commit": "99cf0c77f8f4ba603e9fff53bc25fc90785defb5",
+  "publication_timing_note": "A generated-export whitespace check prevented the first commit command; the source/artifact commit was completed and pushed during upload, before the native command finished. Staged files stayed byte-identical."
+}

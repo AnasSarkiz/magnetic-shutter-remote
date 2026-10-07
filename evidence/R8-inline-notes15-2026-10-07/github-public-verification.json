@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-10-07T12:04:26.972206+00:00",
+  "source_artifact_commit": "99cf0c77f8f4ba603e9fff53bc25fc90785defb5",
+  "repository_public": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "2c8c90108799e5f4dcce810db129c47bc26d87b1c2ee854664bc0ce8acc07e4f",
+      "public_without_auth": true,
+      "matches": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "bfe2f6ac1be3cd1bd987c636c65c0b9887f7ba3795eef9e06e25beb64559a707",
+      "public_without_auth": true,
+      "matches": true
+    },
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "sha256": "a21a1811a53c38afffd4bb8d41719b8e6e9de6920e3f895fea18fb9f945be852",
+      "public_without_auth": true,
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "3c35dcbd86531043bb14deba8ad87861d35965c7c3d41b6e284579e70a404ba9",
+      "public_without_auth": true,
+      "matches": true
+    }
+  ],
+  "frozen_main": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "no_header_authentication_used": true
+}

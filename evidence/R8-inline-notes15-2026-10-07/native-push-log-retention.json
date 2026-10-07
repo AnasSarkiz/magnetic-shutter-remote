@@ -1,0 +1,14 @@
+{
+  "raw_sha256": "2de88fcb4133b07411e8eb1ef82a6de475a8e12f70b1e0dad893ece7eb89ce87",
+  "raw_bytes": 80475,
+  "raw_retained_outside_repository": "/workspace/r8-inline-notes-review-20261007/native-push15.log",
+  "public_log_sha256": "d6aa0ff30d0bf6f8c26df63010e30cc4818c75646dc32d99728c379ce8f39622",
+  "omitted_lines": [
+    {
+      "line_sha256": "1fb9494adda6562a36ff764d63fb4f00be6c1d19d1bce28230353b49f1f02ba0",
+      "bytes": 65408,
+      "reason": "Oversized request serialization or authentication-bearing diagnostic omitted from public evidence."
+    }
+  ],
+  "native_exit_code": 1
+}

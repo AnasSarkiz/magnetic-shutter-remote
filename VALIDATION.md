@@ -1,5 +1,7 @@
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
+GitHub source/build readback passes; native tscircuit **0.3.15-prototype is incomplete** (HTTP502, two STEP model files missing, ready_to_build=false). The same-page schematic implementation and local checks are complete. [Actual publication status](evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md). README now provides the product overview,44×56×1mm PCB dimensions, controls/power/programming and unqualified MagSafe/physical gates.
+
 All44 component explanations now share their Power/Radio/Protection schematic
 page with the actual components. The3separate guide pages and guide links are
 removed. The3nativeA4pages are inspected; actualUI/CLI Style Analysis passes0.

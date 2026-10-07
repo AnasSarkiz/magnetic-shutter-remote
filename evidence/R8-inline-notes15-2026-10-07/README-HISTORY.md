@@ -1,7 +1,5 @@
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
-GitHub source/build readback passes; native tscircuit **0.3.15-prototype is incomplete** (HTTP502, two STEP model files missing, ready_to_build=false). The same-page schematic implementation and local checks are complete. [Actual publication status](../evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md). README now provides the product overview,44×56×1mm PCB dimensions, controls/power/programming and unqualified MagSafe/physical gates.
-
 All44 component explanations now share their Power/Radio/Protection schematic
 page with the actual components. The3separate guide pages and guide links are
 removed. The3nativeA4pages are inspected; actualUI/CLI Style Analysis passes0.
@@ -10,7 +8,7 @@ Fresh19checks pass0DRC/shorts/dangling and independent manufacturing/process,
 pin/value contracts are identical to0.3.12; all12Gerber/drill geometry and BOM/CPL
 are unchanged. The ring stays deferred. Supplier/physical/MagSafe gates and
 original075/076/native004/084/separate missing3V3metadata records remain explicit.
-[Current review](../evidence/R8-inline-notes15-2026-10-07/REVIEW.md). Actual publication receipt is recorded separately.
+[Current review](evidence/R8-inline-notes15-2026-10-07/REVIEW.md). Actual publication receipt is recorded separately.
 
 ## Earlier records — preserved history
 
@@ -28,7 +26,7 @@ hosted preview worker reports a30-minute timeout, not a preview pass.
 Supplier processed preview and physical programming/power/BLE/iPhone/MagSafe
 validation remain pending. Original075/076/native004/084 and the separate missing
 3V3 importer metadata issue remain explicit. No ordering/contact/payment.
-[Scope restoration and current review](../evidence/R8-ring-deferred-2026-10-07/REVIEW.md).
+[Scope restoration and current review](evidence/R8-ring-deferred-2026-10-07/REVIEW.md).
 
 # Current R8 0.3.12 — bottom silkscreen cleanup, 2026-10-06
 
@@ -39,7 +37,7 @@ elements match 0.3.11 exactly. Fresh native zero DRC errors/shorts/dangling,
 29 physical nets, 174 measured widths/current paths and complete independent
 manufacturing/process/readback checks pass. All other 11 Gerber/drill files
 match except listed timestamps; BOM/CPL are byte-identical.
-[Current review](../evidence/R8-bottom-silk-2026-10-06/REVIEW.md). Circuit JSON SHA256: cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331.
+[Current review](evidence/R8-bottom-silk-2026-10-06/REVIEW.md). Circuit JSON SHA256: cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331.
 
 Programming still uses JST RX/GND/TX, battery power, USB-C disconnected and
 manual BOOT/RESET; instructions remain in the programmer R8-USAGE.md.
@@ -61,7 +59,7 @@ electrical elements are identical to 0.3.10; PCB placement, routing, values
 and 159 pin contracts are unchanged. Fresh native/independent clearance,
 29 physical nets, 174 track widths/current paths and export/process checks
 pass. Six native A4 pages and reviewed snapshots retain all 44 explanations.
-[Current review](../evidence/R8-capacitor-groups-2026-10-06/REVIEW.md). Circuit JSON SHA256: 7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf.
+[Current review](evidence/R8-capacitor-groups-2026-10-06/REVIEW.md). Circuit JSON SHA256: 7a4c1f7c658e30988676f8ed3d7f9346cf04856a6079d1ae7395ac6fcb9c38bf.
 
 All 91 through vias remain 0.30mm hole/0.45mm pad; power is top/bottom only.
 Exact BOM and dated JLCPCB listing evidence remain unchanged; allocation,
@@ -82,7 +80,7 @@ track widths and seven current paths pass. The two-layer44×56×1mm PCB has
 91 through vias, each0.30mm hole/0.45mm pad, with all power/trace copper
 on top/bottom only. All44 fitted parts/poses and159 pin/value contracts remain
 unchanged. Six native A4 circuit/component-guide pages and both PCB/Gerber
-layers are inspected. [Current review](../evidence/R8-style-vias-2026-10-06/REVIEW.md).
+layers are inspected. [Current review](evidence/R8-style-vias-2026-10-06/REVIEW.md).
 Circuit JSON SHA256: `eb69ddb005aea75aefe12e98c1e4f9f97bee3134a76d356261bf571662143f5b`.
 
 All25 exact JLCPCB MPN/SMT listings verified with dated observations; actual
@@ -100,7 +98,7 @@ is recorded separately after actual remote verification.
 
 Native schematic text explains all44 fitted components on three matching
 A4 guide pages, alongside the three original A4 circuit drawings. Each
-drawing points to its component guide. [Current review](../evidence/R8-schematic-notes-2026-10-06/REVIEW.md).
+drawing points to its component guide. [Current review](evidence/R8-schematic-notes-2026-10-06/REVIEW.md).
 Current Circuit JSON SHA256: `235953a871b8285929d6363f58f8bad3e52072a25123574657b9f6645cdb87ac`.
 All1432 non-schematic elements/PCB artwork are unchanged; fresh0 native
 DRC errors/shorts,29/29 physical nets,164 widths/current budgets and full
@@ -122,21 +120,21 @@ Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths/current budgets
 and native fabrication/silkscreen readback pass; light smoke38 Python+2 Bun
 tests/13 assertions passes. Only bottom silkscreen artwork changes.
 Current Circuit JSON SHA256: `8be85af4b798a3b3d5973784e23afb54c721f1377e06ee1d7aad77ca7c2fb6fd`.
-[Current review](../evidence/R8-uart-silkscreen-2026-10-06/REVIEW.md).
+[Current review](evidence/R8-uart-silkscreen-2026-10-06/REVIEW.md).
 Public publication receipt is recorded separately after remote verification.
 Supplier approval, physical operation and full MagSafe fit remain pending.
 Missing `3V3` metadata remains a separate importer issue.
 
 ## Prior review/publication records — preserved history
 
-# Actual hosted continuation — 2026-10-05
+# Magnetic shutter remote R8 — ESP32-C3 engineering prototype
 
 Published public **0.3.6-prototype**: native367-file upload and22 critical
 anonymous text/binary matches pass, including exact Circuit JSON and UART UF2.
-[Actual publication receipt](../evidence/R8-issue-resolution-2026-10-06/PUBLICATION.md).
+[Actual publication receipt](evidence/R8-issue-resolution-2026-10-06/PUBLICATION.md).
 Hosted preview remains pending; supplier approval/physical/MagSafe fit stay open.
 
-Latest [issue resolution](../evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
+Latest [issue resolution](evidence/R8-issue-resolution-2026-10-06/REVIEW.md):
 pinned standard JST programmer0.8.0 UF2/ELF build and USB/UF2 validation pass.
 Fresh native0 DRC errors/shorts,29/29 physical nets,164 widths and corrected
 ±30% current budgets pass; smoke38 Python+2 Bun/13 assertions and29 CAM pass.
@@ -146,30 +144,42 @@ Official Apple R31 guidance is retained; exact magnet/enclosure/phone fit,
 supplier-processed preview and physical operation remain unqualified.
 See the dated review for evidence and the subsequent publication record.
 
-Canonical `bash cloud/setup.sh` and `bash cloud/smoke.sh` passed in this hosted instance after enabling Node’s supported `NODE_USE_ENV_PROXY=1` and keeping npm cache inside the workspace. Managed proxy/auth and existing network scope are retained. Node25.6.0, Bun1.3.9, Python3.12.14; observed cgroup memory34359738368 bytes (32GiB), CPU quota4 equivalents. This is an observation, not a guaranteed allocation. Setup verifies129 frozen hashes/archive integrity; smoke passes20 Python tests,2 Bun tests/13 assertions, format and typecheck. Original module075 qualification and its separate076 importer omission remain explicit. Logs: `evidence/R8-prototype-2026-10-05/environment/` after final evidence collection.
+Latest [six-point board review](evidence/R8-six-point-review-2026-10-06/REVIEW.md)
+passes fresh placement/netlist/DRC/shorts/29-net connectivity/164-width/current
+and12-file fabrication readback. All25 exact parts are listed for SMT on JLCPCB;
+ESP32C19949072 reports3 direct/66 overseas, so stock for five boards needs
+confirmation. Standard JST programmer0.8.0 UART matches J3, with UART firmware,
+battery power and manual BOOT/RESET required. Physical operation/fit remains untested.
 
-Reusable draft Install/Start instructions are saved with explicit-ref fetch, refusal to discard tracked changes, R8 context guard and preservation of later task branches. Saving draft does not restart or publish an environment. No server, user secret, broadened repository access or network permission was added.
+Latest [functional net review](evidence/R8-functional-review-2026-10-06/REVIEW.md)
+passes power/charge/switch/boot/UART/button design checks and fresh29/29 physical
+nets,0 DRC errors/shorts. Corrected the checker to the fitted inductor's±30%
+tolerance and TI20% saturation margin; existing copper still passes. PCB and
+firmware remain0.3.5 and physically untested; prototype bring-up is documented.
 
-The user subsequently authorized board engineering. Root source now implements the qualified DOIT ESPC3-12-N4; firmware compile/image pass, native/independent routing and shorts now pass0, physical connectivity and all12 local fabrication exports pass; supplier-processed preview and physical validation remain pending. Onboarding restrictions do not permanently prohibit later authorized source edits. Frozen baselines and ordering/contact restrictions remain unchanged.
+The compact redesign must use a MagSafe phone-facing grip and support multiple
+iPhone sizes and compatible cases. [Mechanical requirements](mechanical/R8-MAGSAFE-REQUIREMENTS.md)
+define the model/camera/case and antenna-clearance gates. MagSafe attachment and
+multi-model fit are pending; the historical disc-magnet/steel-plate enclosure is
+not a validated MagSafe mount.
 
-## Earlier pre-hosted record — preserved history
+The active source implements the selected DOIT ESPC3-12-N4 / C19949072 BLE shutter remote, with one protected battery, USB-C charging, TPS63031 3.3 V buck-boost supply and UART programming. Two-layer FR4 board: 44 × 56 × 1 mm, 44 fitted TOP references. No torch. The shutter uses a side-actuated TS24CA/C393942 switch on the right edge, pressed horizontally inward; GPIO4 is unchanged. Hardware revision0.3.5; package0.3.6 evidence/programmer refresh; compact direct3-pin JST UART prototype.
 
-# Cloud setup status — 2026-10-05
+**Routed prototype: 0 native DRC errors, 0 shorts and 0 independent manufacturing failures.** All 29 required nets are physically connected; all 164 track widths and seven power-current paths pass. VIN/inductor necks are 0.30mm. Exact components, local fabrication readback and process/visual checks pass. The BOM, placement and Gerbers are ready for review; supplier-processed preview and physical tests remain pending. See [routed review](evidence/R8-compact-pcb-2026-10-06/REVIEW.md), [validation](VALIDATION.md) and [qualification](evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md).
 
-Board: **R8 COMPONENT QUALIFICATION BLOCKED — NOT FOR FABRICATION**.
+The original issue075 applies to the abandoned C3 module. Its separate missing `3V3` power metadata is issue076; the selected DOIT C3 import already has correct VCC/GND attributes. Issues078/079 describe example-land variations accepted for engineering prototype use after measured geometry and paste review. They are not demonstrated electrical blockers. Original investigations and all frozen Nordic references remain preserved under `baselines/`.
 
-- Repository: `AnasSarkiz/magnetic-shutter-remote`, public.
-- Branch: `cloud/r8-cloud-setup`; `main` remains unchanged.
-- Project handoff/configuration: prepared, self-contained frozen references and toolchain included.
-- Local checks:10 focused tests PASS, TypeScript/format/shell syntax/context hashes PASS. These are not board DFM checks.
-- Linux hosted setup/fixture CI: PASS, GitHub Actions run [37291506181](https://github.com/AnasSarkiz/magnetic-shutter-remote/actions/runs/37291506181), source commit `56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad`. Ubuntu24.04.5, Python3.14.7, Node25.6.0, Bun1.3.9. Locked installation, context/archive hashes, formatting, TypeScript,10 tests and isolated unrouted module PCB/schematic exports passed. This is GitHub Actions execution, not a Codex Cloud task or routing pass.
-- Actual Codex Cloud environment: BLOCKED by repository installation/access. The official repository picker connects as AnasSarkiz but does not list the board; only tscircuit/Abse2001 installation filters appeared. Official GitHub ChatGPT Codex Connector installation is prepared for **only AnasSarkiz/magnetic-shutter-remote**; Install & Authorize has not been clicked. Browser security policy requires action-time confirmation for this new code/workflow/issue/PR access plus account email read permission. No token or password is stored in this project.
-- PCB/source/import/firmware application changes: none during Cloud setup.
-- Routing on Mac/Cloud: not performed during setup.
-- tscircuit board publication: not performed; ESP32 migration gates remain open.
+Preserve the active engineering branch `board/r8-doit-c3-prototype-20261005`; initial environment installation starts from `cloud/r8-cloud-setup` and read [AGENTS.md](AGENTS.md), [handoff](cloud/HANDOFF.md) and [setup](cloud/SETUP.md). Setup/smoke remain lightweight:
 
-Public branch pushed at `56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad`; unauthenticated HTTPS reads of HANDOFF.md, setup.sh and the frozen published reference circuitJSON match local SHA256 hashes. Remote main still equals `5951f419c8314b83648d89e1cfb7e29e87e32eb8`. Logs/metadata are in `evidence/R8-components/cloud-linux-smoke-37291506181.{log,json}`; public file verification is in `cloud-public-verification.json` in that evidence directory.
+```sh
+bash cloud/setup.sh
+bash cloud/smoke.sh
+```
 
-Visible warnings remain recorded: module `U1 has no pin with requires_power=true` (existing issue076), Actions runtime Node20→24 migration notice and action dependency punycode/url.parse deprecations. The fixture export succeeding does not resolve issue076 or qualify the recommended-land discrepancy. No warnings were hidden, no routing/DRC thresholds changed, and no broad historical suites were rerun.
+After qualification and placement pass, run heavy jobs sequentially through `python3 cloud/run-heavy.py -- <command>`. Use the locked toolchain. The observed hosted limit is 32 GiB, not a guaranteed allocation. [Firmware](firmware/README.md) targets ESP32-C3 at40 MHz. Actual C2 BLE build failure and original outputs remain preserved.
 
-Current setup commands and continuation prompt are in SETUP.md/TASK-PROMPT.md. After repository access is authorized, refresh the picker, select this repo and configure/publish the environment for the Cloud branch using those instructions. Only then claim actual Codex Cloud activation. No secrets need to be added for this public/frozen source workflow.
+Battery/RF/thermal/runtime, phone operation and enclosure/shoulder-control fit require POST-PROTOTYPE PHYSICAL VALIDATION. No order, payment, supplier contact or assembler upload is authorized by this task.
+
+Programming via [standard-jst-programmer0.8.0](https://tscircuit.com/tscircuit/standard-jst-programmer): R8 J3 **1 RX /2 GND /3 TX**, straight-through SH cable to programmer J5. Battery power, manual BOOT/RESET, UART-enabled firmware and DTR-enabled host helper are required. See [programming procedure](evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md). Physical flashing remains untested. Published **0.3.5-prototype**: all270 native files and matching anonymous Circuit JSON/key-report readback pass; hosted preview remains pending at observation. See [actual publication](evidence/R8-compact-pcb-2026-10-06/PUBLICATION.md). The prior [0.3.4-prototype publication](evidence/R8-standard-programmer-2026-10-05/PUBLICATION.md) remains historical.
+
+Missing `3V3` metadata remains a separate importer issue.

@@ -56,3 +56,8 @@ Its only generated difference from the accepted0.3.14local circuit is source
 filesystem metadata; every other native element and all inspected A4 PNGs match
 exactly. Corrected publication explicitly enters the verified package inside
 the unchanged guard. Failure receipts remain under ../R8-inline-notes-2026-10-07/publication-attempts/stopped-0314.
+
+Actual native publication remains incomplete; see [PUBLICATION.md](PUBLICATION.md).
+HTTP502 leaves two model files missing. GitHub source/build readback passes.
+Product README follow-up changes documentation only; its prior complete
+contents are preserved in README-HISTORY.md.

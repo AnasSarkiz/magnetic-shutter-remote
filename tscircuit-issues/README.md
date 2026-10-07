@@ -1,5 +1,7 @@
 # Local issue register — magnetic shutter remote R5
 
+Latest publication follow-up: [099 — Registry STEP upload HTTP 502](099-registry-step-upload-502.md). Current schematic/PCB validation passes; native 0.3.15-prototype publication is incomplete with two missing model files and remains unbuilt.
+
 Latest R8 follow-up: [098 — Empty silkscreen process report writes NaN](098-empty-silkscreen-process-report-nan.md). Fixed locally with nullable empty-layer metrics, strict JSON output and all 30 CAM regressions passing. The dated 0.3.12 stock review also verifies official client field semantics for 096: radio headline In Stock 66, Available Order Qty 3, pre-order above 3; actual assembly allocation remains unconfirmed.
 
 All **52** issue reports are retained. [R4 disposition](STATUS-R4.md) remains historical. R5 resolves project grounding (044), printable legend (041), and numeric stencil strategy (037); new local tooling fixes and open investigations are 045-052. Exact USB land qualification (042) and shell process remain open. See [R5 qualification](../R5-QUALIFICATION.md).
@@ -143,3 +145,5 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [096 — Selected radio stock needs confirmation](096-selected-radio-stock-needs-confirmation.md): C19949072 raw fields remain3/66; client semantics/allocation are unconfirmed. This does not establish a shortage or PCB defect. All25 exact parts are listed for SMT; stock is not reserved.
 
 - [097 — Registry release predates corrected power review](097-registry-release-predates-corrected-power-review.md): project publication gap;0.3.5 contains the older±20% audit. Public0.3.6-prototype native367-file upload/22 critical readbacks pass, with corrected±30% audit/current evidence; resolved. PCB remains hardware0.3.5.
+
+- [099 — Registry STEP uploads HTTP 502](099-registry-step-upload-502.md): open native publication blocker; observed service/transport failure with two missing model files, root cause unconfirmed. Current schematic/PCB checks pass.
