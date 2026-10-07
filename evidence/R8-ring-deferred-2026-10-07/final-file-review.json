@@ -1,0 +1,1033 @@
+{
+  "observed_utc": "2026-10-07T11:23:27.674910+00:00",
+  "compared_base": "27086a726b6d5f93df350efc5f1575cbdffbeba4",
+  "existing_tracked_changes": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "cloud/HANDOFF.md",
+    "cloud/STATUS.md"
+  ],
+  "all_other_existing_tracked_paths_unchanged": true,
+  "unchanged_existing_tracked_paths": 4331,
+  "no_new_board_revision": true,
+  "fully_restored_board_source_bom_firmware_and_circuit_json": true,
+  "new_evidence_files": [
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/J1-supplier-terminal-registration.json",
+      "sha256": "48eab1079ffac073eda8f2fdecb2b57b670d79055b5cc4994a64d8c2bf8e7419",
+      "bytes": 82
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/J3-supplier-terminal-registration.json",
+      "sha256": "d0571f0c6b0474efae31cb61086cc6ca06906ef5d69d5d86a89f3ef66fa616b6",
+      "bytes": 79
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/REPRODUCE-COMMANDS.json",
+      "sha256": "b32eb8e2c6b8726a0bad326f0b21f8d840fd5192ba2adda3087e944d9f92b64f",
+      "bytes": 9449
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/REVIEW.md",
+      "sha256": "2e545e32c67442251282b104233a2cd4269fffcfd9c87a1bea42567ace82566d",
+      "bytes": 5370
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/SW2-supplier-terminal-registration.json",
+      "sha256": "3a09c62fbfe0eddb20bfd43a032d93141d03bc5accc3b1bcc77f12b3892ff23e",
+      "bytes": 81
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/assembly-rotations.json",
+      "sha256": "e4cf4d59ebc2ab54614f7bdfdff99093b1f1ad334281249021243dc6bb59a546",
+      "bytes": 4692
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/budget-listing-inputs.json",
+      "sha256": "fd1b7e8bb897783a6bdaeff835ceca6f8deb55a5afbd736e06d9494870aa6092",
+      "bytes": 9550
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/check-results.json",
+      "sha256": "361cdd3f3236c1f46e9041a1140107d1221497b9582439a3dcebfc7697c2747d",
+      "bytes": 8414
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/archive.log",
+      "sha256": "5e0a9af5af3d1da0ea78ae7659315f38d48de61bddfdafce8847f45d172c8fa8",
+      "bytes": 1295
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/assembly.log",
+      "sha256": "8843192eab028ee12b14c68c7784a3bbd8f7cbeeac7b257102e129633ca2124c",
+      "bytes": 1235
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/cli-style-json.log",
+      "sha256": "b35230975a853c3eb88719498d3d5ff4eeccc2ff843779c47a51bc7339aca895",
+      "bytes": 981
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/connectivity.log",
+      "sha256": "264e85ad4120687957c48e986e2dbcf43dd4c413ae6e91e999ec98f20304908d",
+      "bytes": 1616
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/contracts.log",
+      "sha256": "89ad915633ed12906d02578ff065a16c2b77ea1e81d0d8eed7f5e5af23db9036",
+      "bytes": 957
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/electrical-contract.log",
+      "sha256": "9668e08b218d8695514644fe7127cf2d1837df94bc9dae070d5df473114f1e44",
+      "bytes": 1238
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/format.log",
+      "sha256": "2fa8785ff554e8e77d4a474b15035c6488331c1d86ef36f223af615809a2b583",
+      "bytes": 138
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/gerbers.log",
+      "sha256": "155d657dc8b3b1a5f0d3d3f2a3d42011cae0e8ee57f53703c25c6125e0906adf",
+      "bytes": 1139
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/manufacturing.log",
+      "sha256": "f75040b2ef8648e1f7fdaf06a6611804a45bacaa1b9bee4ef7dc3edd18b46f86",
+      "bytes": 1332
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/native.log",
+      "sha256": "91d199f36c076dd077a6e04e8e673a89b404b7b57110841e2c92d7e857cf0ecb",
+      "bytes": 1178
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/power.log",
+      "sha256": "bba2fa8fce06376d9bb8b86381697d28a654b32d47c5e7b48e8e90e1ab9599cd",
+      "bytes": 1420
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/process.log",
+      "sha256": "36bcdc91de5e90cf3f0b138d44e5e4d85809b2e811837bfdc38f426bdae2be93",
+      "bytes": 1531
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/readback.log",
+      "sha256": "0adaca7154e08b96c2a1801b6f46c6535724c32278e887b704c29f8f07925c7b",
+      "bytes": 1511
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/shorts.log",
+      "sha256": "5133e838d7f256a6fd2b4573ad4125041a5a9a16ca179afbf2f843c7fcb4d6af",
+      "bytes": 990
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/shutter-only-container-browser.log",
+      "sha256": "a95b00ce619a4e88c845ae841c4828984ae16aab6e03b585748d963a38c36239",
+      "bytes": 4731
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/smoke.log",
+      "sha256": "a4df8156504c33d910e849eb954e531498fe46fd8fa03e3f9fa87cf6e30138d8",
+      "bytes": 6551
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/typecheck.log",
+      "sha256": "37891e34a461edc1791471783f971a6f884788828fba04579882ad937c989253",
+      "bytes": 908
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/visual.log",
+      "sha256": "857ccc522907c736292d3f8446f2374168eed262c0f50dea821892a7a4d428a2",
+      "bytes": 1064
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/widths.log",
+      "sha256": "6668c7ecfcb6b7d26b9d64e497aa49de20e9c47f297e9d91c75f3bca578b3e8c",
+      "bytes": 1273
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-firmware.tar.gz",
+      "sha256": "9d6baaf4b34c25b39866bc52b26b13846cf23d43d1f9131aad6dea1cd0684eb2",
+      "bytes": 1514842
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-native45-evidence.tar.gz",
+      "sha256": "777d2ec043b5047d35a8d4b860c73a6e67ec54421d851f8695ceb5ee7dffa52d",
+      "bytes": 2265644
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-proposal-source.tar.gz",
+      "sha256": "774a56c94fb6b9b05277c420819cff68699564b57847668c3b3ad51517fa2426",
+      "bytes": 4202006
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/electrical-contract.json",
+      "sha256": "d33b8fd5cc8b37b8a884d7a3f4486adbdc420da9b3eb766850b7ccb77c52ab1f",
+      "bytes": 65393
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-manufacturing.json",
+      "sha256": "85ea1363694755eb4d43df4ead287d13e74b450daf4b3b6563ccb78418b1aeab",
+      "bytes": 2017358
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-native-checks.json",
+      "sha256": "7c5c2b6e6e6c54f14c7d698b98a2814e719777a73bcec39bcd834ea37cb94cb0",
+      "bytes": 2305
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_0.json",
+      "sha256": "10face0e75c1e684ad72e042d29370c15718cfd52ebb1adf5c27a1b93b49fd28",
+      "bytes": 11830
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_0.zip",
+      "sha256": "84bcdd6a03eba375edfabf97ef4e56c94ebe959e32d6cb2e4d48505b4bf31b74",
+      "bytes": 8464
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_1.json",
+      "sha256": "4133af033b532cd0a93466435120b9443efb4f4e46603e0a48cfa55d0d3f55e1",
+      "bytes": 11824
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_1.zip",
+      "sha256": "0dbb791df266cbc225ba05b19e072cc909b97c21278afe23994c85493c62e5a0",
+      "bytes": 8199
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_2.json",
+      "sha256": "3b48faf134441c705d88b0fb318143e02b6ad32178268121ce0dd07b2ec2fb63",
+      "bytes": 11828
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_2.zip",
+      "sha256": "1a6f4ed0d17485682583dbaa344427a4e834d3fa294562610b2ca3b62ab31950",
+      "bytes": 8272
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_3.json",
+      "sha256": "6f0e7330c711e168a0ed41ef621756fd1aaf8d8ed0e1e18f1351ea2f458fa5bd",
+      "bytes": 11828
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_3.zip",
+      "sha256": "8c0ecc1b8224a05b99e3c61312b9071c304d7821f9a84554ca79cc0749d5c7e1",
+      "bytes": 8255
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_4.json",
+      "sha256": "358d0d6ccc0cc5450fed5b010aafe54693f14a058b20a34c40980cfa1ead5bab",
+      "bytes": 11824
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_4.zip",
+      "sha256": "25b121a7bddad200f163651ebf03cd1658cc22ee819e51e7456ad19c5cde7c41",
+      "bytes": 8407
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_5.json",
+      "sha256": "7383900b43924b789ee6d1db9298d7eea617749f6b41e13ce83ecb6983737ccb",
+      "bytes": 11832
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_5.zip",
+      "sha256": "be6cead187c2952519e0053644cca4414106210632219890ae63caa7dd176afc",
+      "bytes": 8275
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_6.json",
+      "sha256": "5583db10eff099feee1dd9740d04bebc6228fe31ee385707b62f348494c0bfdb",
+      "bytes": 11823
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_6.zip",
+      "sha256": "20d9c8753b5d1992fb006f216c9aa19a2ac028e3076871765a285a115bd49f6a",
+      "bytes": 7768
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/process-review.json",
+      "sha256": "ce4d69d51184a5abe4c833fd53ec99c9c5e6eca537d6a72807630b86dfddd5a7",
+      "bytes": 46446
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Cu.svg",
+      "sha256": "aaf0eaa01931cb345ff31c224ac31f90e6903618466d0076780b752a5dd61beb",
+      "bytes": 54077
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Mask.svg",
+      "sha256": "e6045951a9995e032e97f18ded61c95a5ae857e777868ae1bf361d7070c57d5c",
+      "bytes": 1973
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Paste.svg",
+      "sha256": "8732e55ccd64956088537701217a721eabc1ed167114b2b5663c9bff38fc7c46",
+      "bytes": 276
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_SilkScreen.svg",
+      "sha256": "8732e55ccd64956088537701217a721eabc1ed167114b2b5663c9bff38fc7c46",
+      "bytes": 276
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/Edge_Cuts.svg",
+      "sha256": "6077de95c47a2f1eacb6668fc8acd4fb03987aa244e8645630202644650ba105",
+      "bytes": 2871
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Cu.svg",
+      "sha256": "25632f4702629518cc34d7fcc3f0bc12b00b0d72236dd3e8cbfee99cfd017ccf",
+      "bytes": 92404
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Fab.svg",
+      "sha256": "d6af1b7a4c14178d9ac4035c13e744ffdb61cac3289569fd461fe92ef9f3b2c6",
+      "bytes": 13081
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Mask.svg",
+      "sha256": "4cb525de9439a22b63ff71f7985f76af6bafcb6e27e12ab811906a0cc829e7e2",
+      "bytes": 14987
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Paste.svg",
+      "sha256": "c071928e1c84918defd912978c4b3e72cbf93e7e9260606c3688e8e309b0f4bf",
+      "bytes": 23468
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_SilkScreen.svg",
+      "sha256": "6036e76302862692507752188ae9831f22780a26c0c00fbaeec390e5ef100a23",
+      "bytes": 12883
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/exact-source-manufacturing.json",
+      "sha256": "42f6c2c1f7b72e9f0569d3795cb9c25c4a3f9d20a3af311612c45a7140a49a74",
+      "bytes": 2017240
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/readback.json",
+      "sha256": "33f3fdc4e9df5b4746c10e05c4035e23d995f91be4e80eb81edf27fcdf3ac913",
+      "bytes": 31875
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/physical-connectivity.json",
+      "sha256": "831980cd57c93088fa04b011baf0b68a55f159e68f283ac07f27b1717d87a321",
+      "bytes": 17547
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/power-path-measurements.json",
+      "sha256": "dcb8e7fb7c854d0b68ad404d5e0957d96ae6ce7ecc22670b103bb60d9c19e0bd",
+      "bytes": 102658
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/preservation.json",
+      "sha256": "808ad7ef118e836496fd1010ca74b4ded00bd24c521d6d1a0577b5c631b2b15a",
+      "bytes": 257
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/registry-public-verification.json",
+      "sha256": "3d9eee496e142a22d52d0cf01f9c3007e553a4e18eca66686b46a30f4684679a",
+      "bytes": 80179
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/scope-restoration.json",
+      "sha256": "d336eee6006a6cbe128950f8d25b7bb6d6e663f969cf3ecf6f241547a8e825ac",
+      "bytes": 11902
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/analyzer-response-0.js",
+      "sha256": "598a25590702cbce18554dcd23a7516411975d8e2e0de9c0e3a0918574fd2729",
+      "bytes": 725913
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/container-execution.json",
+      "sha256": "349e5d9366a9f6f7501d5f3c37e1d67eefe000a39f498cdc6c5d3e416b0c7550",
+      "bytes": 2935
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/dialog.txt",
+      "sha256": "d328cb7a23b3dc6bb8465d49ef98244770bdedffbdf42ba316495a1bf2164983",
+      "bytes": 162
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/review.json",
+      "sha256": "8521bd8157e7e58c59fe1962a81c86426811249767f8495125d63360281f9219",
+      "bytes": 1193
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/schematic-ui.png",
+      "sha256": "fb0c7199771f36e29fd229be4aa7d62f0f2b51a9a3c455a4290ed6cfbb3b75fd",
+      "bytes": 54591
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/style-dialog.png",
+      "sha256": "8e9dfc472478acf82e30b3ba86fffc6dd24110462826884b831cbc9d5ef77723",
+      "bytes": 68234
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C14663.html",
+      "sha256": "0121113639de014db6c492e928877410f5e6950af555c8f16ee03e2e131ef032",
+      "bytes": 351441
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C14663.json",
+      "sha256": "9ee87d039a75368189fb2bcc7fc6ae7935e805f50f67bcc9d9451359a0e52b2f",
+      "bytes": 1145
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15516.html",
+      "sha256": "821ce10b104e84474aa5dbe77963c869504ddec9083638b2bd441faa57ad1dfd",
+      "bytes": 382203
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15516.json",
+      "sha256": "4041ed257e8c649ecc26e42daa82fa87ed5cff143fa53cb5517b7aa5a602f364",
+      "bytes": 1126
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15850.html",
+      "sha256": "10725cb526afaede30152f951ff0eb97b06ca06de98b3d0120e88b2a4dd8d15b",
+      "bytes": 328624
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15850.json",
+      "sha256": "edfbddd5b45edd002859ccd5f4bfea823cfd35a5b0aefb7415e632c69fe319d4",
+      "bytes": 1182
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160389.html",
+      "sha256": "639fdf391908f31f9cf07eae911286872b01d9b4c9b5b7149c984d5802ce0eef",
+      "bytes": 413085
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160389.json",
+      "sha256": "d75306b5454d0eeb6769c4971cbb71a105e15b64a827346dbada2315173f5872",
+      "bytes": 1116
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160402.html",
+      "sha256": "1d7f52f34c6b9b87d30829fe24941f4eedb6046e8ccf600986611952d389c6a7",
+      "bytes": 428271
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160402.json",
+      "sha256": "3f9d445a616c7aadff29cc38935af06dbf4b5d2036e26f9f33a2d7d06b8ffa70",
+      "bytes": 1147
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19666.html",
+      "sha256": "3b90615321adceb4b097894663985b6689c7028c87451ec213bfa57f38702ea3",
+      "bytes": 334157
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19666.json",
+      "sha256": "64c8221f4bafc778128c27bc5645314563d5368026a407afcb9fc03eef2d9ca5",
+      "bytes": 1139
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19725033.html",
+      "sha256": "f18483883fc2a8e55821f44fcfa4bd9ece24d53ec223ca6e45d2afbf5699c996",
+      "bytes": 353992
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19725033.json",
+      "sha256": "8503d01c73399a18a53416836c5638b532bd3ec09e1a9059e20b84e19d391a1c",
+      "bytes": 1131
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19949072.html",
+      "sha256": "e5fd95c34b24079c5f5bfe8f9ee327e280d9af7a270885b27b6808e893a0b2c4",
+      "bytes": 433004
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19949072.json",
+      "sha256": "e5dcdd5f20c9c8dc2497c2f714408ff072dc4d7a43e5d36f574efca143af63af",
+      "bytes": 1107
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C21190.html",
+      "sha256": "31de6aa7e026b9c8a3b6e79f64e396c40d82c5a8ade3d43aa52f7b18d130403a",
+      "bytes": 377442
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C21190.json",
+      "sha256": "14388bd2f68443a2503246664a80def4c28c34b3aca3bed569ed87a8d622ef05",
+      "bytes": 1147
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22795.html",
+      "sha256": "dae7ebac483a85d0e835ff43501e25b3bfae4408013aae2b70ad7f32e9f13a1f",
+      "bytes": 367166
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22795.json",
+      "sha256": "33300789d4df2d8a4974243b3481fa54007cefc770adf2e5983d8c1aedbaa6c6",
+      "bytes": 1125
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22844.html",
+      "sha256": "71ab3784c98b8ce86da5d68ff721c0b3370ad6759954f0d925ac5fc12d7914e4",
+      "bytes": 362235
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22844.json",
+      "sha256": "9cef6598a2770d99dc280122d2456c63cea1e96596448f62310209e46adee8c4",
+      "bytes": 1124
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C2286.html",
+      "sha256": "4922ec39f1e80845685aadf62276f6018c64131bea253a801be2ac7e1d8df6bf",
+      "bytes": 427384
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C2286.json",
+      "sha256": "63e02003dd43f01cd02165f400474d8a5bb30c25530b6a06502a3e3a6495fe0c",
+      "bytes": 1125
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22893.html",
+      "sha256": "e0a224c6e2269dec3d6e5c712ebc5bbb706cd849a48215dbbea82bb91c51802e",
+      "bytes": 376844
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22893.json",
+      "sha256": "a19bd88c0dd62057a708e3c4e5ce64002757e9b46c6d67a656091d50e843f9f9",
+      "bytes": 1126
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C23186.html",
+      "sha256": "fc60f835b3d6d86583cf27bdd7d6ba396eb9b3c61af0c59c4c4215152a9e0447",
+      "bytes": 367602
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C23186.json",
+      "sha256": "1baab3c05a3fa0bc46ccfbb193c99b0b39b8d4c9bf6e01cb7d9c9a31090f6f1b",
+      "bytes": 1137
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25803.html",
+      "sha256": "30139c8f9deec7debd256573ab10c69c19dd4a49e7ff5189ec2b58c3c7d3ec87",
+      "bytes": 362945
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25803.json",
+      "sha256": "08b7d32ae8a31d3f5b5a2ab54fa9e0d71954342eae168fab5ce6af0bf6e74c71",
+      "bytes": 1159
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25804.html",
+      "sha256": "293241b6fc1c25261c7c6c0e933e1917265d36185c6a93ba098737f065c43b7e",
+      "bytes": 352642
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25804.json",
+      "sha256": "7b972660ba71aab00729f051fbf917fb5d1442e6e37dbe22d9592e49f11dbe8c",
+      "bytes": 1127
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C282505.html",
+      "sha256": "8d0326e3a6698885253eff1c90ec9d70e4dfd2faece0d488bf6101fe5632e932",
+      "bytes": 375711
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C282505.json",
+      "sha256": "e97efb2e76e86be529cdbe1e12524d541b29227f5d9cc5be246d9c8e547b647e",
+      "bytes": 1112
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C37616412.html",
+      "sha256": "be34d0c847fa21bb16ca949080047b98164292853ed24d721f5c76258653c3db",
+      "bytes": 337018
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C37616412.json",
+      "sha256": "b2f3280a9d0e7a89ef8f0da1ad49cdb9957717daeb5ae541c491e548e3681bf2",
+      "bytes": 1126
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C393942.html",
+      "sha256": "2ca3b5877ea52a9f4f67d71a9a0e93d71cde110e6bdd37ffb4cf6d01513fd0d3",
+      "bytes": 428478
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C393942.json",
+      "sha256": "e75d72380378117f30953c2b2a16d11c4decd66cc2990173d61dec4c4cc8af47",
+      "bytes": 1111
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C431540.html",
+      "sha256": "811fcae794231eb48394fba39014adc6391a0262ca09cebbbd96a7635f1c2a3f",
+      "bytes": 431485
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C431540.json",
+      "sha256": "201a99aa57181452f51be48be3f2d7d58763c950f64089802db7d1cfb322fc65",
+      "bytes": 1111
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C485802.html",
+      "sha256": "c3cddcc12ab956e5fd6d2c4d3367412bd128bc30622084d527feed4997a4f38f",
+      "bytes": 341259
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C485802.json",
+      "sha256": "152fe6a653c955c86b9c39cca79b32a56c5159fd353679332fe59077369d4611",
+      "bytes": 1120
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C5219772.html",
+      "sha256": "3c7e6273754ed7c88a25a120cd0630fcb7f320a60b22d26eb69734ddbb1bc32a",
+      "bytes": 354315
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C5219772.json",
+      "sha256": "5b214592f816bc8002b3acab2eae57bb94ec5abff29b65dd9f6ab2c505d4f26b",
+      "bytes": 1117
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C56594.html",
+      "sha256": "da2fa80419010e2a8aa7ef6a614fd66477453818313386e481d8125f8e2cb6db",
+      "bytes": 370279
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C56594.json",
+      "sha256": "090ce6d456fbe55194b0e4c8445b6e86f68d15bc99e62478d60f2ab2d0132c26",
+      "bytes": 1109
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C720477.html",
+      "sha256": "31db064a1deb80c5b8e592aff405ba3830511bf52f4dc15bea4713621b83d7d5",
+      "bytes": 428654
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C720477.json",
+      "sha256": "72d974b7311b7d99bb431e0176158a6a9c3a69de2272121786d9bd6830b4eb07",
+      "bytes": 1131
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C8545.html",
+      "sha256": "96d0a2a4e14c53fac3ff0a3c11fa9e5b12100d4be7fa6473103e6e8999aff83c",
+      "bytes": 414125
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C8545.json",
+      "sha256": "552ccea589cde4bb146ac1d845cc643b43313e826b19d773564cb68ab870d67c",
+      "bytes": 1153
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing-check.json",
+      "sha256": "b705d2064be9413205cb5151da09cf2e46dd98b994dea8b960b51948fdf9fb38",
+      "bytes": 32692
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/trace-width-review.json",
+      "sha256": "c8c26ac65a0c00eefa73d6353f8356574cdb14d6805d9d5fd41b72ae767e2d73",
+      "bytes": 33282
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/verify-restored-board.py",
+      "sha256": "21efb9ac442b6e208a2b30a0a390862c6630c7ba96276a2edb9694b711854a2e",
+      "bytes": 3333
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-a4.png",
+      "sha256": "a291839fdee8b2c9dffadc0b5326e80565487488168941df37568c835a02261f",
+      "bytes": 77937
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-a4.svg",
+      "sha256": "3fbfe8192d4b548f9eed363911660b72f6bd4ed216325e819825577c958bc971",
+      "bytes": 155428
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-detail.png",
+      "sha256": "b073e51bd0e71e407244e6dc780e1266796f13e90044db13038a0d0ede896dc7",
+      "bytes": 70936
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-detail.svg",
+      "sha256": "1540e217cbb22fe6450ad47f5ceecf2146569caed65dc3edafc63ee1356a8900",
+      "bytes": 146233
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-a4.png",
+      "sha256": "8a5834491c1f1d33ba5db56ef1e74741d0c9f8981dcbef741a9e91fc21b78a07",
+      "bytes": 127922
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-a4.svg",
+      "sha256": "4060ec61a4a04c5f430710e635610dc5b417792c2e08d98077f4feb2b5392081",
+      "bytes": 53158
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-detail.png",
+      "sha256": "7d92369bc5ebaa416e84984f231b00cb2df656d97e13c77984f29043999fe35c",
+      "bytes": 129658
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-detail.svg",
+      "sha256": "a81f9f91cb34895a62f977b15ad4ac9dfb733044fca3078865f9f60c34cdda15",
+      "bytes": 43392
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-a4.png",
+      "sha256": "1833ae2ba29d75fb6667da03cfb095c369302c7e5d8ad1531bb0949c15d485a7",
+      "bytes": 91831
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-a4.svg",
+      "sha256": "8de2a06a61a169e69958814bc8841c58e96514b06a86f01fd2fe8d0fe56a985a",
+      "bytes": 208576
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-detail.png",
+      "sha256": "e233b5293285f274abc270aca776beb15bf44709e7cd39c2095374dffd97f56e",
+      "bytes": 81453
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-detail.svg",
+      "sha256": "9af314028d40dbd8c40f65af0a3a25a8ce8ef734101aebda4f302e993e756521",
+      "bytes": 199906
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-a4.png",
+      "sha256": "c6efca0d790b710bc4bf16a052f344a50b8218eb8d807d7b28f87355782a3f05",
+      "bytes": 178836
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-a4.svg",
+      "sha256": "f20a02a1ff003d3eeb7a102889120f8e976ec1db7b83a9cc1855d915125efc7b",
+      "bytes": 59093
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-detail.png",
+      "sha256": "04d6e423c2f8bdcb3ff83fc28bb8f246889ea3d6e0faa1fee641fdd9f3b6adbf",
+      "bytes": 189962
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-detail.svg",
+      "sha256": "94a65c427e1371e506396326f3d8c23eac6ddc01a09504b0ce00a5ff9f53bc60",
+      "bytes": 49367
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-a4.png",
+      "sha256": "dc2ffe9c498235cf86ce9eb4bd0da2f33e448eb9424551d3a97fc4ac8aaf93e8",
+      "bytes": 68389
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-a4.svg",
+      "sha256": "b464e6a732938148b82a36d2302f94891205660f4498ebcbf2f7559f7939a073",
+      "bytes": 136684
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-detail.png",
+      "sha256": "deb8b80dd0a458481b3fb59e44396582e247be600cceda08f3be57c6da41e157",
+      "bytes": 58225
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-detail.svg",
+      "sha256": "c6d0fae78c8d8254863ace6bf2293ba3277be7c20a146aded71976366537b698",
+      "bytes": 127315
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-a4.png",
+      "sha256": "90a96ff53c3f19f35d4062db81b848143b905936273bf53cecf10079a412fa2f",
+      "bytes": 109400
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-a4.svg",
+      "sha256": "33572d1d3df49b6a83c9da67ad508006b44014cdde408efe5c285f9bfed1bc90",
+      "bytes": 49451
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-detail.png",
+      "sha256": "af90f9394025f2cbe29a3091248b2cb32090c8e9d65411c2d4340434e5161156",
+      "bytes": 106070
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-detail.svg",
+      "sha256": "046fb4d37786de55e4ad997608aaec5a1ed513ccb34238f73a49495cf0abf885",
+      "bytes": 39920
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/gerber-bottom.png",
+      "sha256": "53b26685e8b5e4b6d39b8fe12cbad702fd662bbf02984a815d02daf1fea90227",
+      "bytes": 154989
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/gerber-top.png",
+      "sha256": "4a11768697f4bdf718cf7515ed1ec723a3677f69d281b4005ef9896cc2d7e9d2",
+      "bytes": 176411
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/inspection.json",
+      "sha256": "2b38149d4c7256845a988d015af874835688f7f68675c283b54e57fcbf18b2fc",
+      "bytes": 2120
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-bottom.png",
+      "sha256": "b3e82faf713543b615a8de4381780295324be5b50c4595acd233f1705fb29441",
+      "bytes": 186347
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-bottom.svg",
+      "sha256": "42c7f496ff10a01bb30a39594f89f77b4fb940a0707a456174c41fb481cfe119",
+      "bytes": 242127
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-top.png",
+      "sha256": "f0b6ccc5c84623485b71debb115ec66b6f510a475b55ffd71859e6493aa79344",
+      "bytes": 282505
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-top.svg",
+      "sha256": "0687b07a73bc764e4fc17f971bdec14f04a06c633d231d7b603dd85444c7acb8",
+      "bytes": 367347
+    }
+  ],
+  "all_staged_paths_absolute": [
+    "/workspace/magnetic-shutter-remote/AGENTS.md",
+    "/workspace/magnetic-shutter-remote/README.md",
+    "/workspace/magnetic-shutter-remote/VALIDATION.md",
+    "/workspace/magnetic-shutter-remote/cloud/HANDOFF.md",
+    "/workspace/magnetic-shutter-remote/cloud/STATUS.md",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/J1-supplier-terminal-registration.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/J3-supplier-terminal-registration.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/REPRODUCE-COMMANDS.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/REVIEW.md",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/SW2-supplier-terminal-registration.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/assembly-rotations.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/budget-listing-inputs.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/check-results.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/archive.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/assembly.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/cli-style-json.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/connectivity.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/contracts.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/electrical-contract.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/format.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/gerbers.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/manufacturing.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/native.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/power.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/process.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/readback.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/shorts.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/shutter-only-container-browser.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/smoke.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/typecheck.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/visual.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/checks/widths.log",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-firmware.tar.gz",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-native45-evidence.tar.gz",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/deferred-proposal-source.tar.gz",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/electrical-contract.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-file-review.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-manufacturing.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-native-checks.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_0.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_0.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_1.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_1.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_2.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_2.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_3.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_3.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_4.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_4.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_5.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_5.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_6.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/isolated-labels/pcb_silkscreen_text_6.zip",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process/process-review.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Cu.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Mask.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_Paste.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/B_SilkScreen.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/Edge_Cuts.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Cu.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Fab.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Mask.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_Paste.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/F_SilkScreen.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/exact-source-manufacturing.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback/readback.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/physical-connectivity.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/power-path-measurements.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/preservation.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/registry-public-verification.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/scope-restoration.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/analyzer-response-0.js",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/container-execution.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/dialog.txt",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/review.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/schematic-ui.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/shutter-only-ui/style-dialog.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing-check.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C14663.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C14663.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15516.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15516.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15850.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C15850.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160389.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160389.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160402.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C160402.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19666.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19666.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19725033.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19725033.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19949072.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C19949072.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C21190.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C21190.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22795.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22795.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22844.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22844.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C2286.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C2286.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22893.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C22893.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C23186.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C23186.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25803.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25803.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25804.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C25804.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C282505.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C282505.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C37616412.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C37616412.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C393942.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C393942.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C431540.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C431540.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C485802.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C485802.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C5219772.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C5219772.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C56594.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C56594.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C720477.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C720477.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C8545.html",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/sourcing-current/sourcing/C8545.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/trace-width-review.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/verify-restored-board.py",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Power-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/PowerGuide-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Protection-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/ProtectionGuide-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/Radio-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-a4.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-a4.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-detail.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/RadioGuide-detail.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/gerber-bottom.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/gerber-top.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/inspection.json",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-bottom.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-bottom.svg",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-top.png",
+    "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/visual-review/pcb-top.svg",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/JLCPCB-BOM.csv",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/JLCPCB-CPL.csv",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/R8-first-prototype-Gerbers.zip",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Cu.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Mask.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Paste.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_SilkScreen.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/Edge_Cuts.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Cu.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Fab.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Mask.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Paste.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_SilkScreen.gbr",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/drill-L1-L2.drl",
+    "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/drill_npth.drl"
+  ],
+  "new_fabrication_files": [
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/JLCPCB-BOM.csv",
+      "sha256": "238deef759c4bfc407acbc04765b71d3e9059d6812a44f71bfe6082690b7187a"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/JLCPCB-CPL.csv",
+      "sha256": "48c5eb068a8229d9e916c7312e8c2ccc81bd28ef323a3f474ee1b2fb74344598"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/R8-first-prototype-Gerbers.zip",
+      "sha256": "44d0b098e5038592ec0fd6b5402447735ad9e8730bb4b98f205b404533426099"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Cu.gbr",
+      "sha256": "e4966386e36ae5ef6ce51da1de455b698c7d2f586eedf0520615884261e4acaa"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Mask.gbr",
+      "sha256": "09067c42eae60beff64a5ca84e0603fe9f3da2a834cfb1e6d82a127ea3c9d148"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_Paste.gbr",
+      "sha256": "af3afd642803f1b63d648b756c7fd30aafae51758689fabc4a3980468bd7e5b4"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/B_SilkScreen.gbr",
+      "sha256": "5cfb2a5f848775531408dee4a8f4a8090dce96ab1180cc77a2c768c525b5de60"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/Edge_Cuts.gbr",
+      "sha256": "97f17d1f76691972de44d3044649801576253fc3e11675103e221c0984cfd505"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Cu.gbr",
+      "sha256": "09fb1cf46914dd276584e651bc29a3fe14115111a22b1d508b0eb507e756a1c8"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Fab.gbr",
+      "sha256": "9e1f3a25be91046975f8f95db99e6f3a86a21dd708713a7b4aeb0ffb1eef1f44"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Mask.gbr",
+      "sha256": "ac3a9e203be6ddac582b02dbc92dc6771f0bc44968f180887280607dc6b5bb11"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_Paste.gbr",
+      "sha256": "e602ce3621857e7848af31a6b7b9b7e0710d6efa1ea5da2e719a5be35f198b4b"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/F_SilkScreen.gbr",
+      "sha256": "d73e2390a0afdd4475392e08856aa8b9acb7623331b0f69ccb263227abd65a6f"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/drill-L1-L2.drl",
+      "sha256": "ddb4af14c2d9eaaa04e4adad60538a07e9eece4accf0a62d157187d7a0df5090"
+    },
+    {
+      "absolute_path": "/workspace/magnetic-shutter-remote/fabrication/R8-ring-deferred-2026-10-07/gerbers/drill_npth.drl",
+      "sha256": "33fe9371b618f472fe008641530b85fda641e6101625e3e5fffdfaa6ca40498a"
+    }
+  ],
+  "generated_whitespace_observation": "Native SVG whitespace and assembly CSV CRLF are retained byte-for-byte. Hand-authored source/docs formatting passes; generated export bytes are not changed to alter diff diagnostics."
+}

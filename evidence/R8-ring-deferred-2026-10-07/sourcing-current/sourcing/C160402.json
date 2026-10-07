@@ -1,0 +1,38 @@
+{
+  "lcsc": "C160402",
+  "mpn": "SM02B-SRSS-TB(LF)(SN)",
+  "manufacturer": "JST",
+  "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+  "references": [
+    "J2"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C160402",
+  "response_url": "https://jlcpcb.com/partdetail/C160402",
+  "observed_utc": "2026-10-07T11:17:04.721386+00:00",
+  "html_sha256": "1d7f52f34c6b9b87d30829fe24941f4eedb6046e8ccf600986611952d389c6a7",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 30741,
+    "overseasStockCount": 32379,
+    "preMinPurchaseNum": 84,
+    "encapsulationNumber": 3000,
+    "lossNumber": 2,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

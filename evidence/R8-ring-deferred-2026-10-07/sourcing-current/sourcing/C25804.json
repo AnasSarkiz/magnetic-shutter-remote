@@ -1,0 +1,38 @@
+{
+  "lcsc": "C25804",
+  "mpn": "0603WAF1002T5E",
+  "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+  "package": "0603",
+  "references": [
+    "R9"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C25804",
+  "response_url": "https://jlcpcb.com/partdetail/C25804",
+  "observed_utc": "2026-10-07T11:17:05.152474+00:00",
+  "html_sha256": "293241b6fc1c25261c7c6c0e933e1917265d36185c6a93ba098737f065c43b7e",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 20890919,
+    "overseasStockCount": 29390895,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

@@ -1,0 +1,38 @@
+{
+  "lcsc": "C22893",
+  "mpn": "0603WAF1872T5E",
+  "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+  "package": "0603",
+  "references": [
+    "R11"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C22893",
+  "response_url": "https://jlcpcb.com/partdetail/C22893",
+  "observed_utc": "2026-10-07T11:17:10.567203+00:00",
+  "html_sha256": "e0a224c6e2269dec3d6e5c712ebc5bbb706cd849a48215dbbea82bb91c51802e",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 120764,
+    "overseasStockCount": 127128,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

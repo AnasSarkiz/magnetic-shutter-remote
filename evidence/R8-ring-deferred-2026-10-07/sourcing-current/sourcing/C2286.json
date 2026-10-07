@@ -1,0 +1,39 @@
+{
+  "lcsc": "C2286",
+  "mpn": "KT-0603R",
+  "manufacturer": "Hubei KENTO Elec",
+  "package": "0603",
+  "references": [
+    "LED1",
+    "LED2"
+  ],
+  "quantity_per_board": 2,
+  "listing_url": "https://jlcpcb.com/partdetail/C2286",
+  "response_url": "https://jlcpcb.com/partdetail/C2286",
+  "observed_utc": "2026-10-07T11:17:04.681400+00:00",
+  "html_sha256": "4922ec39f1e80845685aadf62276f6018c64131bea253a801be2ac7e1d8df6bf",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 3",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3996303,
+    "overseasStockCount": 4585858,
+    "preMinPurchaseNum": 1556,
+    "encapsulationNumber": 4000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

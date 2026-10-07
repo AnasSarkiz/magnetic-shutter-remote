@@ -1,0 +1,38 @@
+{
+  "lcsc": "C19949072",
+  "mpn": "ESPC3-12-N4",
+  "manufacturer": "DOIT",
+  "package": "SMD,24x16mm",
+  "references": [
+    "U1"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C19949072",
+  "response_url": "https://jlcpcb.com/partdetail/C19949072",
+  "observed_utc": "2026-10-07T11:17:05.855340+00:00",
+  "html_sha256": "e5fd95c34b24079c5f5bfe8f9ee327e280d9af7a270885b27b6808e893a0b2c4",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3,
+    "overseasStockCount": 66,
+    "preMinPurchaseNum": 4,
+    "encapsulationNumber": 650,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": false,
+  "stock_allocation_confirmed": false
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:16:37.639368+00:00",
+    "finished_utc": "2026-10-07T11:16:37.714665+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/format.log"
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:16:37.715051+00:00",
+    "finished_utc": "2026-10-07T11:16:43.613817+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/typecheck.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "bash",
+      "cloud/smoke.sh"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:16:43.614185+00:00",
+    "finished_utc": "2026-10-07T11:16:59.236914+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/smoke.log"
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/audit-r8-circuit.ts"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:16:59.237355+00:00",
+    "finished_utc": "2026-10-07T11:17:02.002888+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/contracts.log"
+  },
+  {
+    "name": "native",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/check-r8-native.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-native-checks.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:02.003459+00:00",
+    "finished_utc": "2026-10-07T11:17:06.829632+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/native.log"
+  },
+  {
+    "name": "shorts",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:06.830004+00:00",
+    "finished_utc": "2026-10-07T11:17:12.286432+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/shorts.log"
+  },
+  {
+    "name": "cli-style-json",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:12.286818+00:00",
+    "finished_utc": "2026-10-07T11:17:15.591660+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/cli-style-json.log"
+  },
+  {
+    "name": "electrical-contract",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "python3",
+      "scripts/review-r8-electrical-contract.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/electrical-contract.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:15.592177+00:00",
+    "finished_utc": "2026-10-07T11:17:15.676831+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/electrical-contract.log"
+  },
+  {
+    "name": "manufacturing",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/manufacturing-audit.py",
+      "--trace-geometry",
+      "gerber",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-manufacturing.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:15.678167+00:00",
+    "finished_utc": "2026-10-07T11:17:39.657784+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/manufacturing.log"
+  },
+  {
+    "name": "connectivity",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-connectivity.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/physical-connectivity.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:39.658243+00:00",
+    "finished_utc": "2026-10-07T11:17:40.214621+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/connectivity.log"
+  },
+  {
+    "name": "widths",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-trace-widths.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/trace-width-review.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:40.215050+00:00",
+    "finished_utc": "2026-10-07T11:17:40.732160+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/widths.log"
+  },
+  {
+    "name": "power",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-power.py",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/power-path-measurements.json"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:40.732682+00:00",
+    "finished_utc": "2026-10-07T11:17:41.282882+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/power.log"
+  },
+  {
+    "name": "gerbers",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/export-gerbers.ts",
+      "dist/index/circuit.json",
+      "fabrication/R8-ring-deferred-2026-10-07/gerbers"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:41.283435+00:00",
+    "finished_utc": "2026-10-07T11:17:44.072822+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/gerbers.log"
+  },
+  {
+    "name": "assembly",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/export-assembly.ts",
+      "fabrication/R8-ring-deferred-2026-10-07",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:44.073531+00:00",
+    "finished_utc": "2026-10-07T11:17:47.007124+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/assembly.log"
+  },
+  {
+    "name": "archive",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "python3",
+      "scripts/export-r8-gerber-zip.py",
+      "fabrication/R8-ring-deferred-2026-10-07/gerbers",
+      "fabrication/R8-ring-deferred-2026-10-07/R8-first-prototype-Gerbers.zip"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:47.008046+00:00",
+    "finished_utc": "2026-10-07T11:17:47.078958+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/archive.log"
+  },
+  {
+    "name": "readback",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-exports.py",
+      "fabrication/R8-ring-deferred-2026-10-07/R8-first-prototype-Gerbers.zip",
+      "dist/index/circuit.json",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-readback"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:17:47.079408+00:00",
+    "finished_utc": "2026-10-07T11:18:20.702855+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/readback.log"
+  },
+  {
+    "name": "process",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "tooling/gerber-review-venv/bin/python",
+      "scripts/review-r8-process.py",
+      "fabrication/R8-ring-deferred-2026-10-07/R8-first-prototype-Gerbers.zip",
+      "dist/index/circuit.json",
+      "--output",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07/final-process"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:18:20.703367+00:00",
+    "finished_utc": "2026-10-07T11:18:24.325819+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/process.log"
+  },
+  {
+    "name": "visual",
+    "command": [
+      "python3",
+      "cloud/run-heavy.py",
+      "--",
+      "bun",
+      "scripts/render-r8-review.ts",
+      "/workspace/magnetic-shutter-remote/evidence/R8-ring-deferred-2026-10-07"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-07T11:18:24.326277+00:00",
+    "finished_utc": "2026-10-07T11:18:45.489806+00:00",
+    "log": "evidence/R8-ring-deferred-2026-10-07/checks/visual.log"
+  }
+]

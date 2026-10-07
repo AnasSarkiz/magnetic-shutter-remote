@@ -1,0 +1,8 @@
+{
+  "r7_manifest_files": 129,
+  "failed_hashes": [],
+  "current_source_equals_base": true,
+  "cgroup_memory_limit_bytes": "34359738368",
+  "cpu_max": "400000 100000",
+  "interpretation": "Observed running-instance limits; not guaranteed plan allocation."
+}

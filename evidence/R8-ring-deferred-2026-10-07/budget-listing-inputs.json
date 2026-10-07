@@ -1,0 +1,286 @@
+{
+  "scope": "Indicative public listing initial-price parts sum. No actual PCBA quote, PCB, assembly/loading/stencil/inspection/MOQ/attrition, accessories, shipping or tax included.",
+  "circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "fitted_parts_sum_usd": "8.0876",
+  "library_identity_counts": {
+    "base": 10,
+    "expand": 15
+  },
+  "parts": [
+    {
+      "lcsc": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "quantity": 4,
+      "listing_initial_price_usd": 0.0123,
+      "price_list": "$undefined",
+      "prices": "$4b",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:07.685912+00:00",
+      "html_sha256": "0121113639de014db6c492e928877410f5e6950af555c8f16ee03e2e131ef032"
+    },
+    {
+      "lcsc": "C15516",
+      "mpn": "TPS63031DSKR",
+      "quantity": 1,
+      "listing_initial_price_usd": 1.0291,
+      "price_list": "$undefined",
+      "prices": "$4a",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:09.081780+00:00",
+      "html_sha256": "821ce10b104e84474aa5dbe77963c869504ddec9083638b2bd441faa57ad1dfd"
+    },
+    {
+      "lcsc": "C15850",
+      "mpn": "CL21A106KAYNNNE",
+      "quantity": 6,
+      "listing_initial_price_usd": 0.0651,
+      "price_list": "$undefined",
+      "prices": "$41",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:05.800247+00:00",
+      "html_sha256": "10725cb526afaede30152f951ff0eb97b06ca06de98b3d0120e88b2a4dd8d15b"
+    },
+    {
+      "lcsc": "C160389",
+      "mpn": "BM03B-SRSS-TB(LF)(SN)",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.2743,
+      "price_list": "$undefined",
+      "prices": "$4b",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:07.594434+00:00",
+      "html_sha256": "639fdf391908f31f9cf07eae911286872b01d9b4c9b5b7149c984d5802ce0eef"
+    },
+    {
+      "lcsc": "C160402",
+      "mpn": "SM02B-SRSS-TB(LF)(SN)",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.1319,
+      "price_list": "$undefined",
+      "prices": "$51",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:04.721386+00:00",
+      "html_sha256": "1d7f52f34c6b9b87d30829fe24941f4eedb6046e8ccf600986611952d389c6a7"
+    },
+    {
+      "lcsc": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "quantity": 2,
+      "listing_initial_price_usd": 0.0295,
+      "price_list": "$undefined",
+      "prices": "$43",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:04.162975+00:00",
+      "html_sha256": "3b90615321adceb4b097894663985b6689c7028c87451ec213bfa57f38702ea3"
+    },
+    {
+      "lcsc": "C19725033",
+      "mpn": "BQ25185DLHR",
+      "quantity": 1,
+      "listing_initial_price_usd": 1.7297,
+      "price_list": "$undefined",
+      "prices": "$45",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:03.063695+00:00",
+      "html_sha256": "f18483883fc2a8e55821f44fcfa4bd9ece24d53ec223ca6e45d2afbf5699c996"
+    },
+    {
+      "lcsc": "C19949072",
+      "mpn": "ESPC3-12-N4",
+      "quantity": 1,
+      "listing_initial_price_usd": 2.2662,
+      "price_list": "$undefined",
+      "prices": "$5f",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:05.855340+00:00",
+      "html_sha256": "e5fd95c34b24079c5f5bfe8f9ee327e280d9af7a270885b27b6808e893a0b2c4"
+    },
+    {
+      "lcsc": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "quantity": 3,
+      "listing_initial_price_usd": 0.0026,
+      "price_list": "$undefined",
+      "prices": "$51",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:03.134215+00:00",
+      "html_sha256": "31de6aa7e026b9c8a3b6e79f64e396c40d82c5a8ade3d43aa52f7b18d130403a"
+    },
+    {
+      "lcsc": "C22795",
+      "mpn": "0603WAF1303T5E",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0014,
+      "price_list": "$undefined",
+      "prices": "$4d",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:05.810325+00:00",
+      "html_sha256": "dae7ebac483a85d0e835ff43501e25b3bfae4408013aae2b70ad7f32e9f13a1f"
+    },
+    {
+      "lcsc": "C22844",
+      "mpn": "0603WAF1621T5E",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0022,
+      "price_list": "$undefined",
+      "prices": "$4b",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:09.815435+00:00",
+      "html_sha256": "71ab3784c98b8ce86da5d68ff721c0b3370ad6759954f0d925ac5fc12d7914e4"
+    },
+    {
+      "lcsc": "C2286",
+      "mpn": "KT-0603R",
+      "quantity": 2,
+      "listing_initial_price_usd": 0.0076,
+      "price_list": "$undefined",
+      "prices": "$5d",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:04.681400+00:00",
+      "html_sha256": "4922ec39f1e80845685aadf62276f6018c64131bea253a801be2ac7e1d8df6bf"
+    },
+    {
+      "lcsc": "C22893",
+      "mpn": "0603WAF1872T5E",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0019,
+      "price_list": "$undefined",
+      "prices": "$51",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:10.567203+00:00",
+      "html_sha256": "e0a224c6e2269dec3d6e5c712ebc5bbb706cd849a48215dbbea82bb91c51802e"
+    },
+    {
+      "lcsc": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "quantity": 2,
+      "listing_initial_price_usd": 0.0015,
+      "price_list": "$undefined",
+      "prices": "$4d",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:04.081762+00:00",
+      "html_sha256": "fc60f835b3d6d86583cf27bdd7d6ba396eb9b3c61af0c59c4c4215152a9e0447"
+    },
+    {
+      "lcsc": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "quantity": 4,
+      "listing_initial_price_usd": 0.0031,
+      "price_list": "$undefined",
+      "prices": "$4b",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:08.961116+00:00",
+      "html_sha256": "30139c8f9deec7debd256573ab10c69c19dd4a49e7ff5189ec2b58c3c7d3ec87"
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0018,
+      "price_list": "$undefined",
+      "prices": "$47",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:05.152474+00:00",
+      "html_sha256": "293241b6fc1c25261c7c6c0e933e1917265d36185c6a93ba098737f065c43b7e"
+    },
+    {
+      "lcsc": "C282505",
+      "mpn": "TCC0603COG470J500CT",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.005,
+      "price_list": "$undefined",
+      "prices": "$55",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:05.783133+00:00",
+      "html_sha256": "8d0326e3a6698885253eff1c90ec9d70e4dfd2faece0d488bf6101fe5632e932"
+    },
+    {
+      "lcsc": "C37616412",
+      "mpn": "USB4215-03-A",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.8974,
+      "price_list": "$undefined",
+      "prices": "$42",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:03.090723+00:00",
+      "html_sha256": "be34d0c847fa21bb16ca949080047b98164292853ed24d721f5c76258653c3db"
+    },
+    {
+      "lcsc": "C393942",
+      "mpn": "TS24CA",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0252,
+      "price_list": "$undefined",
+      "prices": "$59",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:07.545792+00:00",
+      "html_sha256": "2ca3b5877ea52a9f4f67d71a9a0e93d71cde110e6bdd37ffb4cf6d01513fd0d3"
+    },
+    {
+      "lcsc": "C431540",
+      "mpn": "MSK12C02",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0566,
+      "price_list": "$undefined",
+      "prices": "$59",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:07.845107+00:00",
+      "html_sha256": "811fcae794231eb48394fba39014adc6391a0262ca09cebbbd96a7635f1c2a3f"
+    },
+    {
+      "lcsc": "C485802",
+      "mpn": "TPS3839G33DBZR",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.4341,
+      "price_list": "$undefined",
+      "prices": "$42",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:09.609758+00:00",
+      "html_sha256": "c3cddcc12ab956e5fd6d2c4d3367412bd128bc30622084d527feed4997a4f38f"
+    },
+    {
+      "lcsc": "C5219772",
+      "mpn": "TMP390A2DRLR",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.4536,
+      "price_list": "$undefined",
+      "prices": "$46",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:10.572831+00:00",
+      "html_sha256": "3c7e6273754ed7c88a25a120cd0630fcb7f320a60b22d26eb69734ddbb1bc32a"
+    },
+    {
+      "lcsc": "C56594",
+      "mpn": "SWPA3015S1R5NT",
+      "quantity": 1,
+      "listing_initial_price_usd": 0.0478,
+      "price_list": "$undefined",
+      "prices": "$51",
+      "library_type": "expand",
+      "observed_utc": "2026-10-07T11:17:08.968701+00:00",
+      "html_sha256": "da2fa80419010e2a8aa7ef6a614fd66477453818313386e481d8125f8e2cb6db"
+    },
+    {
+      "lcsc": "C720477",
+      "mpn": "TS-1088-AR02016",
+      "quantity": 3,
+      "listing_initial_price_usd": 0.0522,
+      "price_list": "$undefined",
+      "prices": "$5b",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:06.875440+00:00",
+      "html_sha256": "31db064a1deb80c5b8e592aff405ba3830511bf52f4dc15bea4713621b83d7d5"
+    },
+    {
+      "lcsc": "C8545",
+      "mpn": "2N7002",
+      "quantity": 2,
+      "listing_initial_price_usd": 0.0178,
+      "price_list": "$undefined",
+      "prices": "$59",
+      "library_type": "base",
+      "observed_utc": "2026-10-07T11:17:08.920249+00:00",
+      "html_sha256": "96d0a2a4e14c53fac3ff0a3c11fa9e5b12100d4be7fa6473103e6e8999aff83c"
+    }
+  ]
+}

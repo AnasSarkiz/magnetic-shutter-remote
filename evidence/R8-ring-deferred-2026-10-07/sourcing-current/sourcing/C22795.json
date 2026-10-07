@@ -1,0 +1,38 @@
+{
+  "lcsc": "C22795",
+  "mpn": "0603WAF1303T5E",
+  "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+  "package": "0603",
+  "references": [
+    "R8"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C22795",
+  "response_url": "https://jlcpcb.com/partdetail/C22795",
+  "observed_utc": "2026-10-07T11:17:05.810325+00:00",
+  "html_sha256": "dae7ebac483a85d0e835ff43501e25b3bfae4408013aae2b70ad7f32e9f13a1f",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 530217,
+    "overseasStockCount": 584057,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

@@ -1,0 +1,38 @@
+{
+  "lcsc": "C15516",
+  "mpn": "TPS63031DSKR",
+  "manufacturer": "Texas Instruments",
+  "package": "SON-10-EP(2.5x2.5)",
+  "references": [
+    "U3"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C15516",
+  "response_url": "https://jlcpcb.com/partdetail/C15516",
+  "observed_utc": "2026-10-07T11:17:09.081780+00:00",
+  "html_sha256": "821ce10b104e84474aa5dbe77963c869504ddec9083638b2bd441faa57ad1dfd",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 12949,
+    "overseasStockCount": 13089,
+    "preMinPurchaseNum": 9,
+    "encapsulationNumber": 3000,
+    "lossNumber": 0,
+    "leastPatchNumber": 0,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

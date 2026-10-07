@@ -1,0 +1,40 @@
+{
+  "lcsc": "C720477",
+  "mpn": "TS-1088-AR02016",
+  "manufacturer": "XUNPU",
+  "package": "SMD,4x3mm",
+  "references": [
+    "SW3",
+    "SW4",
+    "SW5"
+  ],
+  "quantity_per_board": 3,
+  "listing_url": "https://jlcpcb.com/partdetail/C720477",
+  "response_url": "https://jlcpcb.com/partdetail/C720477",
+  "observed_utc": "2026-10-07T11:17:06.875440+00:00",
+  "html_sha256": "31db064a1deb80c5b8e592aff405ba3830511bf52f4dc15bea4713621b83d7d5",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 709597,
+    "overseasStockCount": 763878,
+    "preMinPurchaseNum": 214,
+    "encapsulationNumber": 4000,
+    "lossNumber": 4,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

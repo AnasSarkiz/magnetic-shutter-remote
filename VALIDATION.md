@@ -1,3 +1,19 @@
+# First prototype scope — RGB ring deferred, 2026-10-07
+
+The user deferred the RGB photo/torch ring entirely. Active board/source is the
+exact previously validated and uploaded **0.3.12-prototype** shutter-only design;
+no ring port, power stage or ring firmware is fitted. Side shutter, direct3-pin
+JST UART programmer and bottom-label removal remain. All18 fresh checks pass:
+0DRC/shorts/dangling,29 physical nets,174 widths/current budgets, independent
+Gerber/process/readback. Actual UI and CLI schematic style both report0 issues.
+All25 exact JLC identities cover one board; radio Available Order Qty3 means
+five boards require pre-order. Matching public native files are verified; the
+hosted preview worker reports a30-minute timeout, not a preview pass.
+Supplier processed preview and physical programming/power/BLE/iPhone/MagSafe
+validation remain pending. Original075/076/native004/084 and the separate missing
+3V3 importer metadata issue remain explicit. No ordering/contact/payment.
+[Scope restoration and current review](evidence/R8-ring-deferred-2026-10-07/REVIEW.md).
+
 # Current R8 0.3.12 — bottom silkscreen cleanup, 2026-10-06
 
 Public **0.3.12-prototype** inventory/visibility/readback PASS:

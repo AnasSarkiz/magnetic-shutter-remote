@@ -1,0 +1,38 @@
+{
+  "lcsc": "C56594",
+  "mpn": "SWPA3015S1R5NT",
+  "manufacturer": "Sunlord",
+  "package": "SMD,3x3mm",
+  "references": [
+    "L1"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C56594",
+  "response_url": "https://jlcpcb.com/partdetail/C56594",
+  "observed_utc": "2026-10-07T11:17:08.968701+00:00",
+  "html_sha256": "da2fa80419010e2a8aa7ef6a614fd66477453818313386e481d8125f8e2cb6db",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 4029,
+    "overseasStockCount": 4197,
+    "preMinPurchaseNum": 229,
+    "encapsulationNumber": 2000,
+    "lossNumber": 4,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

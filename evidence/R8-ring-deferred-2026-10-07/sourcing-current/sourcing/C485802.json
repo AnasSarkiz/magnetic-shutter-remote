@@ -1,0 +1,38 @@
+{
+  "lcsc": "C485802",
+  "mpn": "TPS3839G33DBZR",
+  "manufacturer": "Texas Instruments",
+  "package": "SOT-23-3",
+  "references": [
+    "U4"
+  ],
+  "quantity_per_board": 1,
+  "listing_url": "https://jlcpcb.com/partdetail/C485802",
+  "response_url": "https://jlcpcb.com/partdetail/C485802",
+  "observed_utc": "2026-10-07T11:17:09.609758+00:00",
+  "html_sha256": "c3cddcc12ab956e5fd6d2c4d3367412bd128bc30622084d527feed4997a4f38f",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "expand",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": "MSL 1",
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 3357,
+    "overseasStockCount": 3395,
+    "preMinPurchaseNum": 27,
+    "encapsulationNumber": 3000,
+    "lossNumber": 0,
+    "leastPatchNumber": 5,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

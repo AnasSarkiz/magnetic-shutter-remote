@@ -1,0 +1,49 @@
+{
+  "observed_utc": "2026-10-07T11:21:05.450835+00:00",
+  "circuit_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331",
+  "method": "Actual assistant visual inspection of all listed current renders using view_image.",
+  "scope": "Two PCB faces, both parsed Gerber copper layers and all six native A4 schematic pages.",
+  "findings": "Right-edge side shutter, top USB and direct three-pin UART, original battery connector, empty bottom text, preserved RF exclusion and mounting regions; no light port/stage. Component explanation pages retained. This inspection supplements measured connectivity/manufacturing checks, not physical validation.",
+  "images": [
+    {
+      "path": "visual-review/pcb-top.png",
+      "sha256": "f0b6ccc5c84623485b71debb115ec66b6f510a475b55ffd71859e6493aa79344"
+    },
+    {
+      "path": "visual-review/pcb-bottom.png",
+      "sha256": "b3e82faf713543b615a8de4381780295324be5b50c4595acd233f1705fb29441"
+    },
+    {
+      "path": "visual-review/gerber-top.png",
+      "sha256": "4a11768697f4bdf718cf7515ed1ec723a3677f69d281b4005ef9896cc2d7e9d2"
+    },
+    {
+      "path": "visual-review/gerber-bottom.png",
+      "sha256": "53b26685e8b5e4b6d39b8fe12cbad702fd662bbf02984a815d02daf1fea90227"
+    },
+    {
+      "path": "visual-review/Power-a4.png",
+      "sha256": "a291839fdee8b2c9dffadc0b5326e80565487488168941df37568c835a02261f"
+    },
+    {
+      "path": "visual-review/Radio-a4.png",
+      "sha256": "dc2ffe9c498235cf86ce9eb4bd0da2f33e448eb9424551d3a97fc4ac8aaf93e8"
+    },
+    {
+      "path": "visual-review/Protection-a4.png",
+      "sha256": "1833ae2ba29d75fb6667da03cfb095c369302c7e5d8ad1531bb0949c15d485a7"
+    },
+    {
+      "path": "visual-review/PowerGuide-a4.png",
+      "sha256": "8a5834491c1f1d33ba5db56ef1e74741d0c9f8981dcbef741a9e91fc21b78a07"
+    },
+    {
+      "path": "visual-review/RadioGuide-a4.png",
+      "sha256": "90a96ff53c3f19f35d4062db81b848143b905936273bf53cecf10079a412fa2f"
+    },
+    {
+      "path": "visual-review/ProtectionGuide-a4.png",
+      "sha256": "c6efca0d790b710bc4bf16a052f344a50b8218eb8d807d7b28f87355782a3f05"
+    }
+  ]
+}

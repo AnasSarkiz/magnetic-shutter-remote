@@ -1,0 +1,39 @@
+{
+  "lcsc": "C23186",
+  "mpn": "0603WAF5101T5E",
+  "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+  "package": "0603",
+  "references": [
+    "R2",
+    "R1"
+  ],
+  "quantity_per_board": 2,
+  "listing_url": "https://jlcpcb.com/partdetail/C23186",
+  "response_url": "https://jlcpcb.com/partdetail/C23186",
+  "observed_utc": "2026-10-07T11:17:04.081762+00:00",
+  "html_sha256": "fc60f835b3d6d86583cf27bdd7d6ba396eb9b3c61af0c59c4c4215152a9e0447",
+  "exact_identity_verified": true,
+  "assembly_fields": {
+    "assemblyMode": "smtWeld",
+    "componentLibraryType": "base",
+    "manufacturerBlackFlag": null,
+    "needAuditFlag": false,
+    "fixtureFlag": false,
+    "xrayFlag": false,
+    "moistureSensitivityLevelEn": null,
+    "orderInstructionEnglish": ""
+  },
+  "inventory_fields": {
+    "canPresaleNumber": 24012181,
+    "overseasStockCount": 25174500,
+    "preMinPurchaseNum": 5000,
+    "encapsulationNumber": 5000,
+    "lossNumber": 10,
+    "leastPatchNumber": 20,
+    "noBuyReason": null
+  },
+  "eligible_smt_listing": true,
+  "one_board_parts_in_stock": true,
+  "five_board_parts_in_stock": true,
+  "stock_allocation_confirmed": false
+}

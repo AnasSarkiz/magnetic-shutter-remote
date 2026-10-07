@@ -1,0 +1,177 @@
+ AGENTS.md                                          |     1 +
+ README.md                                          |    16 +
+ VALIDATION.md                                      |    16 +
+ cloud/HANDOFF.md                                   |    16 +
+ cloud/STATUS.md                                    |    16 +
+ .../J1-supplier-terminal-registration.json         |     5 +
+ .../J3-supplier-terminal-registration.json         |     5 +
+ .../REPRODUCE-COMMANDS.json                        |   294 +
+ evidence/R8-ring-deferred-2026-10-07/REVIEW.md     |    79 +
+ .../SW2-supplier-terminal-registration.json        |     5 +
+ .../assembly-rotations.json                        |   310 +
+ .../budget-listing-inputs.json                     |   286 +
+ .../R8-ring-deferred-2026-10-07/check-results.json |   282 +
+ .../R8-ring-deferred-2026-10-07/checks/archive.log |    51 +
+ .../checks/assembly.log                            |    51 +
+ .../checks/cli-style-json.log                      |    51 +
+ .../checks/connectivity.log                        |    51 +
+ .../checks/contracts.log                           |    47 +
+ .../checks/electrical-contract.log                 |    51 +
+ .../R8-ring-deferred-2026-10-07/checks/format.log  |     2 +
+ .../R8-ring-deferred-2026-10-07/checks/gerbers.log |    51 +
+ .../checks/manufacturing.log                       |    55 +
+ .../R8-ring-deferred-2026-10-07/checks/native.log  |    49 +
+ .../R8-ring-deferred-2026-10-07/checks/power.log   |    52 +
+ .../R8-ring-deferred-2026-10-07/checks/process.log |    55 +
+ .../checks/readback.log                            |    55 +
+ .../R8-ring-deferred-2026-10-07/checks/shorts.log  |    51 +
+ .../checks/shutter-only-container-browser.log      |   158 +
+ .../R8-ring-deferred-2026-10-07/checks/smoke.log   |    63 +
+ .../checks/typecheck.log                           |    49 +
+ .../R8-ring-deferred-2026-10-07/checks/visual.log  |    48 +
+ .../R8-ring-deferred-2026-10-07/checks/widths.log  |    51 +
+ .../deferred-firmware.tar.gz                       |   Bin 0 -> 1514842 bytes
+ .../deferred-native45-evidence.tar.gz              |   Bin 0 -> 2265644 bytes
+ .../deferred-proposal-source.tar.gz                |   Bin 0 -> 4202006 bytes
+ .../electrical-contract.json                       |  2882 +
+ .../final-file-review.json                         |   792 +
+ .../final-manufacturing.json                       | 84693 +++++++++++++++++++
+ .../final-native-checks.json                       |    51 +
+ .../isolated-labels/pcb_silkscreen_text_0.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_0.zip      |   Bin 0 -> 8464 bytes
+ .../isolated-labels/pcb_silkscreen_text_1.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_1.zip      |   Bin 0 -> 8199 bytes
+ .../isolated-labels/pcb_silkscreen_text_2.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_2.zip      |   Bin 0 -> 8272 bytes
+ .../isolated-labels/pcb_silkscreen_text_3.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_3.zip      |   Bin 0 -> 8255 bytes
+ .../isolated-labels/pcb_silkscreen_text_4.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_4.zip      |   Bin 0 -> 8407 bytes
+ .../isolated-labels/pcb_silkscreen_text_5.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_5.zip      |   Bin 0 -> 8275 bytes
+ .../isolated-labels/pcb_silkscreen_text_6.json     |   577 +
+ .../isolated-labels/pcb_silkscreen_text_6.zip      |   Bin 0 -> 7768 bytes
+ .../final-process/process-review.json              |  1922 +
+ .../final-readback/B_Cu.svg                        |   214 +
+ .../final-readback/B_Mask.svg                      |    25 +
+ .../final-readback/B_Paste.svg                     |     4 +
+ .../final-readback/B_SilkScreen.svg                |     4 +
+ .../final-readback/Edge_Cuts.svg                   |     6 +
+ .../final-readback/F_Cu.svg                        |   460 +
+ .../final-readback/F_Fab.svg                       |    70 +
+ .../final-readback/F_Mask.svg                      |   180 +
+ .../final-readback/F_Paste.svg                     |   164 +
+ .../final-readback/F_SilkScreen.svg                |    64 +
+ .../final-readback/exact-source-manufacturing.json | 84691 ++++++++++++++++++
+ .../final-readback/readback.json                   |  1394 +
+ .../physical-connectivity.json                     |   836 +
+ .../power-path-measurements.json                   |  3882 +
+ .../R8-ring-deferred-2026-10-07/preservation.json  |     8 +
+ .../registry-public-verification.json              |  1152 +
+ .../scope-restoration.json                         |   254 +
+ .../shutter-only-ui/analyzer-response-0.js         |    53 +
+ .../shutter-only-ui/container-execution.json       |    70 +
+ .../shutter-only-ui/dialog.txt                     |     6 +
+ .../shutter-only-ui/review.json                    |    30 +
+ .../shutter-only-ui/schematic-ui.png               |   Bin 0 -> 54591 bytes
+ .../shutter-only-ui/style-dialog.png               |   Bin 0 -> 68234 bytes
+ .../sourcing-current/sourcing-check.json           |   983 +
+ .../sourcing-current/sourcing/C14663.html          |    48 +
+ .../sourcing-current/sourcing/C14663.json          |    41 +
+ .../sourcing-current/sourcing/C15516.html          |    48 +
+ .../sourcing-current/sourcing/C15516.json          |    38 +
+ .../sourcing-current/sourcing/C15850.html          |    48 +
+ .../sourcing-current/sourcing/C15850.json          |    43 +
+ .../sourcing-current/sourcing/C160389.html         |    48 +
+ .../sourcing-current/sourcing/C160389.json         |    38 +
+ .../sourcing-current/sourcing/C160402.html         |    48 +
+ .../sourcing-current/sourcing/C160402.json         |    38 +
+ .../sourcing-current/sourcing/C19666.html          |    48 +
+ .../sourcing-current/sourcing/C19666.json          |    39 +
+ .../sourcing-current/sourcing/C19725033.html       |    48 +
+ .../sourcing-current/sourcing/C19725033.json       |    38 +
+ .../sourcing-current/sourcing/C19949072.html       |    48 +
+ .../sourcing-current/sourcing/C19949072.json       |    38 +
+ .../sourcing-current/sourcing/C21190.html          |    48 +
+ .../sourcing-current/sourcing/C21190.json          |    40 +
+ .../sourcing-current/sourcing/C22795.html          |    48 +
+ .../sourcing-current/sourcing/C22795.json          |    38 +
+ .../sourcing-current/sourcing/C22844.html          |    48 +
+ .../sourcing-current/sourcing/C22844.json          |    38 +
+ .../sourcing-current/sourcing/C2286.html           |    48 +
+ .../sourcing-current/sourcing/C2286.json           |    39 +
+ .../sourcing-current/sourcing/C22893.html          |    48 +
+ .../sourcing-current/sourcing/C22893.json          |    38 +
+ .../sourcing-current/sourcing/C23186.html          |    48 +
+ .../sourcing-current/sourcing/C23186.json          |    39 +
+ .../sourcing-current/sourcing/C25803.html          |    48 +
+ .../sourcing-current/sourcing/C25803.json          |    41 +
+ .../sourcing-current/sourcing/C25804.html          |    48 +
+ .../sourcing-current/sourcing/C25804.json          |    38 +
+ .../sourcing-current/sourcing/C282505.html         |    48 +
+ .../sourcing-current/sourcing/C282505.json         |    38 +
+ .../sourcing-current/sourcing/C37616412.html       |    48 +
+ .../sourcing-current/sourcing/C37616412.json       |    38 +
+ .../sourcing-current/sourcing/C393942.html         |    48 +
+ .../sourcing-current/sourcing/C393942.json         |    38 +
+ .../sourcing-current/sourcing/C431540.html         |    48 +
+ .../sourcing-current/sourcing/C431540.json         |    38 +
+ .../sourcing-current/sourcing/C485802.html         |    48 +
+ .../sourcing-current/sourcing/C485802.json         |    38 +
+ .../sourcing-current/sourcing/C5219772.html        |    48 +
+ .../sourcing-current/sourcing/C5219772.json        |    38 +
+ .../sourcing-current/sourcing/C56594.html          |    48 +
+ .../sourcing-current/sourcing/C56594.json          |    38 +
+ .../sourcing-current/sourcing/C720477.html         |    48 +
+ .../sourcing-current/sourcing/C720477.json         |    40 +
+ .../sourcing-current/sourcing/C8545.html           |    48 +
+ .../sourcing-current/sourcing/C8545.json           |    39 +
+ .../trace-width-review.json                        |  1613 +
+ .../verify-restored-board.py                       |    47 +
+ .../visual-review/Power-a4.png                     |   Bin 0 -> 77937 bytes
+ .../visual-review/Power-a4.svg                     |    12 +
+ .../visual-review/Power-detail.png                 |   Bin 0 -> 70936 bytes
+ .../visual-review/Power-detail.svg                 |    12 +
+ .../visual-review/PowerGuide-a4.png                |   Bin 0 -> 127922 bytes
+ .../visual-review/PowerGuide-a4.svg                |    12 +
+ .../visual-review/PowerGuide-detail.png            |   Bin 0 -> 129658 bytes
+ .../visual-review/PowerGuide-detail.svg            |    12 +
+ .../visual-review/Protection-a4.png                |   Bin 0 -> 91831 bytes
+ .../visual-review/Protection-a4.svg                |    47 +
+ .../visual-review/Protection-detail.png            |   Bin 0 -> 81453 bytes
+ .../visual-review/Protection-detail.svg            |    47 +
+ .../visual-review/ProtectionGuide-a4.png           |   Bin 0 -> 178836 bytes
+ .../visual-review/ProtectionGuide-a4.svg           |    12 +
+ .../visual-review/ProtectionGuide-detail.png       |   Bin 0 -> 189962 bytes
+ .../visual-review/ProtectionGuide-detail.svg       |    12 +
+ .../visual-review/Radio-a4.png                     |   Bin 0 -> 68389 bytes
+ .../visual-review/Radio-a4.svg                     |    19 +
+ .../visual-review/Radio-detail.png                 |   Bin 0 -> 58225 bytes
+ .../visual-review/Radio-detail.svg                 |    19 +
+ .../visual-review/RadioGuide-a4.png                |   Bin 0 -> 109400 bytes
+ .../visual-review/RadioGuide-a4.svg                |    12 +
+ .../visual-review/RadioGuide-detail.png            |   Bin 0 -> 106070 bytes
+ .../visual-review/RadioGuide-detail.svg            |    12 +
+ .../visual-review/gerber-bottom.png                |   Bin 0 -> 154989 bytes
+ .../visual-review/gerber-top.png                   |   Bin 0 -> 176411 bytes
+ .../visual-review/inspection.json                  |    49 +
+ .../visual-review/pcb-bottom.png                   |   Bin 0 -> 186347 bytes
+ .../visual-review/pcb-bottom.svg                   |     1 +
+ .../visual-review/pcb-top.png                      |   Bin 0 -> 282505 bytes
+ .../visual-review/pcb-top.svg                      |     1 +
+ .../R8-ring-deferred-2026-10-07/JLCPCB-BOM.csv     |    45 +
+ .../R8-ring-deferred-2026-10-07/JLCPCB-CPL.csv     |    45 +
+ .../R8-first-prototype-Gerbers.zip                 |   Bin 0 -> 63700 bytes
+ .../R8-ring-deferred-2026-10-07/gerbers/B_Cu.gbr   |  4637 +
+ .../R8-ring-deferred-2026-10-07/gerbers/B_Mask.gbr |   125 +
+ .../gerbers/B_Paste.gbr                            |    85 +
+ .../gerbers/B_SilkScreen.gbr                       |    85 +
+ .../gerbers/Edge_Cuts.gbr                          |   147 +
+ .../R8-ring-deferred-2026-10-07/gerbers/F_Cu.gbr   |  7172 ++
+ .../R8-ring-deferred-2026-10-07/gerbers/F_Fab.gbr  |   492 +
+ .../R8-ring-deferred-2026-10-07/gerbers/F_Mask.gbr |   500 +
+ .../gerbers/F_Paste.gbr                            |  1050 +
+ .../gerbers/F_SilkScreen.gbr                       |   631 +
+ .../gerbers/drill-L1-L2.drl                        |   117 +
+ .../gerbers/drill_npth.drl                         |    29 +
+ 176 files changed, 210569 insertions(+)

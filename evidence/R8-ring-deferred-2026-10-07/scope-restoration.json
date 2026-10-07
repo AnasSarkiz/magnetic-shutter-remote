@@ -1,0 +1,254 @@
+{
+  "observed_utc": "2026-10-07T11:16:11.685980+00:00",
+  "user_decision": "Skip the RGB photo/torch ring entirely for the first prototype.",
+  "restored_source_commit": "27086a726b6d5f93df350efc5f1575cbdffbeba4",
+  "active_board_version": "0.3.12",
+  "local_complete_deferred_checkout": "/workspace/r8-led-connector-review/deferred-0.3.13-20261007/checkout",
+  "tracked_preservation": [
+    {
+      "path": "AGENTS.md",
+      "deferred_sha256": "d9d87e41087ba8a1e261a0ac06a8196ff04599597f6fb1ea0055160f24cecbaa",
+      "restored_sha256": "ce76d6a0b11190d99c9ffb7ee4ab3995867d8a558694722afbdeb0e1a4c2d6e3"
+    },
+    {
+      "path": "BOM.csv",
+      "deferred_sha256": "7231dc8785dba0cd120f47e9718ee9f3baba3cb24e02cc059199a5d2ea371920",
+      "restored_sha256": "c23b7b10e1b6f26698ec6a3d945b8339e50398d637cf2709f90495f18173b6fc"
+    },
+    {
+      "path": "BOM.md",
+      "deferred_sha256": "555322c802e2e5843b2aae10a806f81adb3c8ba45af6906317469d17fba5a200",
+      "restored_sha256": "530b44b60bbe8f7d67f78ae0b4be9ccdd41fc7fa7b3ef1254cff4fb12ed48919"
+    },
+    {
+      "path": "README.md",
+      "deferred_sha256": "382c045594e8ffb6ee4ce3391e6a3c1cfcdcbf1bd91b4898a4e9e1e2be03f697",
+      "restored_sha256": "1f2b0273acc0f34d133ec2aad6d99456f7bf8d29938727224986ae09b85da166"
+    },
+    {
+      "path": "VALIDATION.md",
+      "deferred_sha256": "892e0a025ea5bef1882b35dc986de3bb13074a3444a1e393ff3d223130e8c546",
+      "restored_sha256": "0878268adc9d39efb55230f28bc9b34068d28c325cbca217fda5299c97e207f2"
+    },
+    {
+      "path": "bom.json",
+      "deferred_sha256": "4884a92b7a744ce431801551f20ce1e0d8506c7de988c443e47a3d432302bb2b",
+      "restored_sha256": "ec103084408e0d2f3b5c176c4420536e36ededeb83156768fce66c253f2d9e0f"
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "deferred_sha256": "aeab5849eb28f4c71052958b621aed2769090151ada1c943fdfebe420cbefeda",
+      "restored_sha256": "b75ce942bbdae39d250092a4c94db30138824727f689ad5d679cc0d0859078b0"
+    },
+    {
+      "path": "cloud/STATUS.md",
+      "deferred_sha256": "2a75336c7390f4f0ea100812a53ea8f291fa1d4b5eb1e7a479e012d314d0a5e7",
+      "restored_sha256": "16c481a8fe761193c04bf65e60d57f93ec495cdafb407a2f347dac84989ac873"
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "deferred_sha256": "247992c40a1b15472c789a1c4dab428660362186399ba636514b9b8ced29586e",
+      "restored_sha256": "cf61cad4bd9972f10607977ab42f06dfe02318f9a42d073d1febe6a3b890f331"
+    },
+    {
+      "path": "mechanical/R8-MAGSAFE-REQUIREMENTS.md",
+      "deferred_sha256": "29c217072c6a05abafe67565efe9c134feb996460f0084bd7565a5d8d1fc2300",
+      "restored_sha256": "8f3e3b00ae4c2f5a99cf31eb998a660fe83fe27ea966a9136342d29c53f81f05"
+    },
+    {
+      "path": "package.json",
+      "deferred_sha256": "5a9511ef5bd852fa4fcd82f618451ef46ef73b4220fa58220c6419240deb5c5d",
+      "restored_sha256": "3472979cde34eba216866feb3e971c36b083b45a1bdd40977005ecdcf07a8762"
+    },
+    {
+      "path": "scripts/audit-r8-circuit.ts",
+      "deferred_sha256": "8a10fde7d97f1ea03b2d2740f8504258adf4b2a15a8abaa2fc652e3516ef3aa5",
+      "restored_sha256": "a7bff71efc681391fcedb469cc78209bd6b2a0b4438845bdfbbb2a69bd60b304"
+    },
+    {
+      "path": "scripts/export-assembly.ts",
+      "deferred_sha256": "1596a8fea0bd33a1d56e0bee06137010aff2694404527b3c8f9993430eeb02c5",
+      "restored_sha256": "fa350459fd8ed0ed5124ffd8fa3bea4a5e1d5b6d0e7c6dfa5f07efd7d4024bd1"
+    },
+    {
+      "path": "scripts/review-r8-electrical-contract.py",
+      "deferred_sha256": "3cd23629da151a3858b19d84af3b58cbf73a67936807194f6305a9e64c5b54fc",
+      "restored_sha256": "9bb01b89dd6cdf9da2d0347f6321ac72d3fd0556c536978f4a7f2e8f68ac82ff"
+    },
+    {
+      "path": "scripts/review-r8-power.py",
+      "deferred_sha256": "34398189976641bf7a86538f47dd903390bf6ebd8e57a08990c78da3c862b1ac",
+      "restored_sha256": "a2ded3b3893e53cbfe7816761fbd7c0914e9acff5d821c0abe59efe6929bab9d"
+    },
+    {
+      "path": "scripts/review-r8-process.py",
+      "deferred_sha256": "8c66108ece25b942e81a3d0b8fa229c20dbceebb0477c421d12020d1180be58c",
+      "restored_sha256": "e8ce17daac3d33ccb31abeb19a01781c7b0071f79db51dc85fdae9e1790e5fed"
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "deferred_sha256": "d64019ebfe43637af6decf5da3ae3078d4118ba4be2867f401d955f1fa33b96f",
+      "restored_sha256": "67906d030a18b2f802958b6c4606f6b5b6db2aefa692337c23e45424a366b3b3"
+    },
+    {
+      "path": "scripts/write-r8-bom.py",
+      "deferred_sha256": "8a8e2d6e4e99700fa46a5abdc60c9a393b9e12d1258eb846fdbde15c9b23b97f",
+      "restored_sha256": "160f21f5bb82841acb09b99fa56b686902b071595758bfa69e4dd87e1b740f48"
+    },
+    {
+      "path": "src/c7-escape-paths.ts",
+      "deferred_sha256": "b278f650ed24df254223f0608703e48e7a0e83c1916ccb2e31c71ae2805638b8",
+      "restored_sha256": "bd6815d4b85aeca89093570a77990d20692dd4fd223be3287ff491f6ea927aa6"
+    },
+    {
+      "path": "src/charger-escape-paths.ts",
+      "deferred_sha256": "d7c130a43e629f914f1093c62bf7392708c224c1c09d5e834948983f0a47e1cf",
+      "restored_sha256": "e8364a0624419b02a0a089211d548139f9ea8a150a6e703cd41966b18b1f7f8f"
+    },
+    {
+      "path": "src/functional-markings.tsx",
+      "deferred_sha256": "bbf578e0bbfbf6396031e4abf9c4db47d6791d5e616469af91bcc7f46f23065a",
+      "restored_sha256": "ad047fff1965ba2981e60f5aeab89478d07bbee5fad892836eace4d2e26d33bf"
+    },
+    {
+      "path": "src/r8-battery-cap-paths.ts",
+      "deferred_sha256": "265550c6d54fd7e355cd4eb422ff3cb7888f1c65f7f09ffabfb5f8b320e894b3",
+      "restored_sha256": "15bed6a0a612631c4c77fc2572e4accdda9354ade1fc0dbef4aed9eddc3c8b71"
+    },
+    {
+      "path": "src/r8-battery-ok-paths.ts",
+      "deferred_sha256": "d6702ab5477787ed96dd65bfe26c351b1cb2bbf4942fbbf1d98e49bf371a94f0",
+      "restored_sha256": "287d5721784d7dad2222e54fe1db7c37e40b138a934df4f992bc8798aeec4c49"
+    },
+    {
+      "path": "src/r8-cc-paths.ts",
+      "deferred_sha256": "ff29337c252488ae6113ce376cce55edafce7fba792d7c981984ec2ba34bb055",
+      "restored_sha256": "7aa340f9fa6d6537faf313d8ecc4b797e3c7cf13fbe7c7554a36d0a679b4d56f"
+    },
+    {
+      "path": "src/r8-charge-disable-paths.ts",
+      "deferred_sha256": "740087661460b0fe6c8513fa3f26444fbd2e85962a9aeb8c2b446808e2941ca1",
+      "restored_sha256": "19841ce6a8476a5dee8dacb8c98a90c9711a7e7feada0466a1d4ab26344a6197"
+    },
+    {
+      "path": "src/r8-connector-paths.ts",
+      "deferred_sha256": "9417fab24ae18e6525a627ce4fd1cdf48c7b007891cb46021bd97aa57cfbfcf8",
+      "restored_sha256": "a4c64bad0914f38e533ba2e94feb12a9d9446db3482e01d47dc58cf55165d9a2"
+    },
+    {
+      "path": "src/r8-mosfet-paths.ts",
+      "deferred_sha256": "b8b82b451f051d0d868bd2276d4137ba433a9065edee5e1e04f74584ceaba76c",
+      "restored_sha256": "15ced1c3cec49ea8d27ea7ff987dde57753a624a252d66e5ba6372d66c649c27"
+    },
+    {
+      "path": "src/r8-power-paths.ts",
+      "deferred_sha256": "1fc781ee2ac26a9b051478082a8be70a5e0082d679ac709c44d94169bd6f10a2",
+      "restored_sha256": "45a376336a4436d51a7f21d57a96fe73f5979c3d459271f820bb8012150566a4"
+    },
+    {
+      "path": "src/r8-prog-routing-paths.ts",
+      "deferred_sha256": "3d56b3c1f1dcdbe2f611bba0a32795abc19101e1f7c75acfb9f231e79c58e492",
+      "restored_sha256": "67f189c279e908292600789ba33375e2b3bdde3f5bd75ec6de20380ecb1b4c69"
+    },
+    {
+      "path": "src/r8-usb-disable-paths.ts",
+      "deferred_sha256": "478766494fdccbef766054d21724c7d02e365fc5cb133aba3cb0caa1ef28c46a",
+      "restored_sha256": "68fb4153200f47bf3a8c57c8145e040a1ab0c90b2b703f83d632839773e03289"
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "deferred_sha256": "0582abbca1d2bce8cd946f90c804254eed5026dd977e8323bd03bd5fae10042b",
+      "restored_sha256": "be838b38271853f1e1f71e3020c0c3838db178491db9aa40cc12e185500e61eb"
+    },
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "deferred_sha256": "470688f69e27ead0f7fef8756a4fee432668d08cb439a368564a2e699ebc0cdc",
+      "restored_sha256": "4adacd774840c62cd7a76b0f922c6b793d2e2405608c0c1edee78db12e1a729b"
+    },
+    {
+      "path": "src/usb-escape-paths.ts",
+      "deferred_sha256": "180c0be1ab63a11eabdb7d666d7bc9473b3e0cbe4037416be04a0e4824c843d0",
+      "restored_sha256": "794fe16248c4cf43b1a49a506aae7438853ca6610a026714d05332603e41a100"
+    },
+    {
+      "path": "tests/cam/test_power_width_budgets.py",
+      "deferred_sha256": "0634ff30fdd8dcfac59746511cd22f6622ebebec459fef32b74a1983ec0082f5",
+      "restored_sha256": "257adcca7b264b62ef16cbe21d15be751eb336723fe8e08fedbdb67cb5d99ce7"
+    },
+    {
+      "path": "tests/cam/test_process_metrics.py",
+      "deferred_sha256": "c9c5545e6beb158fa5569a34b9eae3dbb84b3246dbb5c52659885929f4a11c5d",
+      "restored_sha256": "d00ac2519053ce4c2b220f3d624886858893ae5ffcd6fe0c4eec5ee1a634f17a"
+    },
+    {
+      "path": "tests/r8-schematic-notes.test.ts",
+      "deferred_sha256": "bc673113a1e8462d4cd35427dcceae2e440de3d3cde8a024252abf36336515b2",
+      "restored_sha256": "2704d90b3441ae9a6faf67a857e147e40b48f8ddd9cd5d987f64bda3f0e87356"
+    },
+    {
+      "path": "tscircuit-issues/README.md",
+      "deferred_sha256": "ae5b70682aad22c8c4aad2364fcb223c83c274c869a739acb521f233ea6f67dd",
+      "restored_sha256": "de47da09536de494cb7d20483973ffe7f80d3819fbf754175f57a0b5d4b591d8"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "deferred_sha256": "3aa7fdefc00f9da9f83074bb67bc6b2a82a76ea4d24a7adb4c36c040e61a4cb3",
+      "restored_sha256": "14270502538b67cf92af3d84bf62e19679a9039535b4d0a7a1a9a26c8b3b0336"
+    }
+  ],
+  "untracked_moved_without_deletion": [
+    "evidence/R8-rgbw-port-2026-10-06",
+    "firmware/rgbw-port",
+    "imports/r8-led-port",
+    "scripts/export-r8-authored-paths.ts",
+    "scripts/review-r8-authored-paths.py",
+    "scripts/run-r8-native.py",
+    "src/r8-automatic-routing-phases.tsx",
+    "src/r8-battery-feed-paths.ts",
+    "src/r8-branch-feed-paths.ts",
+    "src/r8-led-port.tsx",
+    "src/r8-led-power-paths.ts",
+    "src/r8-light-ilim-paths.ts",
+    "src/r8-light-signal-paths.ts",
+    "src/r8-light-switch-paths.ts",
+    "src/r8-local-autorouter.ts",
+    "src/r8-temp-ok-feed-path.ts",
+    "src/r8-usb-pad-escape-paths.ts",
+    "src/r8-vset-feed-path.ts",
+    "tests/cam/test_authored_light_collision.py",
+    "tests/cam/test_ground_attachments.py",
+    "tests/cam/test_light_buffer_domain.py",
+    "tests/fixtures/r8-led-supplier.circuit.tsx",
+    "tests/test_bom_availability.py",
+    "tscircuit-issues/099-project-paste-attribution-assumes-centred-apertures.md",
+    "tscircuit-issues/100-inline-schematic-labels-overlap-direct-wire.md",
+    "tscircuit-issues/101-project-fanout-feed-and-stale-phase-assignment.md",
+    "tscircuit-issues/102-project-data-driver-survives-light-power-trip.md",
+    "tscircuit-issues/103-source-placement-generation-stalls-before-analysis.md",
+    "tscircuit-issues/104-bun-generation-host-map-limit.md",
+    "tscircuit-issues/105-project-authored-copper-crosses-rgbw-pads.md",
+    "tscircuit-issues/106-native-cleanup-duplicate-ilim-endpoints.md",
+    "tscircuit-issues/107-native-route-final-clearance-failures.md",
+    "tscircuit-issues/108-authored-preflight-misses-copper-drill-spacing.md",
+    "tscircuit-issues/109-native-repair-evaluator-uses-fixed-relaxed-clearance.md"
+  ],
+  "unrelated_untracked_preserved_in_place": [
+    ".codex",
+    "evidence/R8-style-vias-2026-10-06/before-ui"
+  ],
+  "no_reset_force_checkout_or_history_rewrite": true,
+  "portable_proposal_source_sha256": "774a56c94fb6b9b05277c420819cff68699564b57847668c3b3ad51517fa2426",
+  "portable_proposal_source_bytes": 4202006,
+  "portable_additional_archives": [
+    {
+      "path": "deferred-firmware.tar.gz",
+      "sha256": "9d6baaf4b34c25b39866bc52b26b13846cf23d43d1f9131aad6dea1cd0684eb2",
+      "bytes": 1514842
+    },
+    {
+      "path": "deferred-native45-evidence.tar.gz",
+      "sha256": "777d2ec043b5047d35a8d4b860c73a6e67ec54421d851f8695ceb5ee7dffa52d",
+      "bytes": 2265644
+    }
+  ]
+}
