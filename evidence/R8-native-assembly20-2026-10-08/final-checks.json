@@ -1,0 +1,146 @@
+{
+  "observed_utc": "2026-10-07T23:56:12.057392+00:00",
+  "before_head": "f06c7bd50da28a3e9905bf5f7faa448f6c9da78e",
+  "heavy_checks": [
+    {
+      "name": "geometry",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 327912,
+      "finished_utc": "2026-10-07T23:37:12.723107+00:00"
+    },
+    {
+      "name": "prints",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 62216,
+      "finished_utc": "2026-10-07T23:37:13.158829+00:00"
+    },
+    {
+      "name": "canonical-build",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 7044336,
+      "finished_utc": "2026-10-07T23:37:39.943371+00:00"
+    },
+    {
+      "name": "mechanical-export",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 112844,
+      "finished_utc": "2026-10-07T23:55:34.778323+00:00"
+    },
+    {
+      "name": "closed-build",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 6258988,
+      "finished_utc": "2026-10-07T23:50:31.364224+00:00"
+    },
+    {
+      "name": "exploded-build",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 6419748,
+      "finished_utc": "2026-10-07T23:50:55.295392+00:00"
+    },
+    {
+      "name": "native-model-readback",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 226108,
+      "finished_utc": "2026-10-07T23:51:06.706916+00:00"
+    },
+    {
+      "name": "exported-fit",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 57976,
+      "finished_utc": "2026-10-07T23:55:35.756174+00:00"
+    },
+    {
+      "name": "triangle-negative-controls",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 42308,
+      "finished_utc": "2026-10-07T23:55:35.026154+00:00"
+    },
+    {
+      "name": "exploded-render",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 346448,
+      "finished_utc": "2026-10-07T23:51:08.095760+00:00"
+    },
+    {
+      "name": "phone-render",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 353420,
+      "finished_utc": "2026-10-07T23:51:09.092970+00:00"
+    },
+    {
+      "name": "studio-front",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 492276,
+      "finished_utc": "2026-10-07T23:52:23.249896+00:00"
+    },
+    {
+      "name": "studio-straight",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 489636,
+      "finished_utc": "2026-10-07T23:53:30.207046+00:00"
+    },
+    {
+      "name": "studio-side",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 490628,
+      "finished_utc": "2026-10-07T23:54:09.547971+00:00"
+    },
+    {
+      "name": "studio-back",
+      "exit_code": 0,
+      "oom_increase": false,
+      "peak_child_rss_kib": 487852,
+      "finished_utc": "2026-10-07T23:55:16.572612+00:00"
+    }
+  ],
+  "product_tests": {
+    "passed": 4,
+    "assertions": 194
+  },
+  "smoke": {
+    "python_tests": 38,
+    "bun_tests": 2,
+    "bun_assertions": 13,
+    "old_wroom_qualification_warning_preserved": true
+  },
+  "initial_bare_bun_test_invocation": {
+    "exit_code": 1,
+    "zero_tests_passed": true,
+    "failure": "module path resolution; explicit relative path succeeds"
+  },
+  "observed_memory_limit_bytes": 34359738368,
+  "observed_cpu_limit": "400000 100000",
+  "limits_not_guaranteed_plan_allocation": true,
+  "board_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "root_build_routing_sdk_cam_run": false,
+  "user_visible_generated_illustration_used_as_fit_proof": false,
+  "mechanical_model_byte_reproduction_passes": true,
+  "mechanical_outward_winding_checks_passed": 20,
+  "negative_geometry_controls_rejected": [
+    "moved",
+    "missing",
+    "reshaped",
+    "reversed-winding"
+  ],
+  "rejected_trials": {
+    "reflected_y_up_models": 1,
+    "missing_output_argument": 2,
+    "overlapping_heavy_job_guard_rejected": true,
+    "none_published": true
+  }
+}

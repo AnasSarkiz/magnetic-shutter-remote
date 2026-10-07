@@ -1,6 +1,6 @@
 {
 	"name": "@tsci/AnasSarkiz.magnetic-shutter-remote-r8",
-	"version": "0.3.19",
+	"version": "0.3.20",
 	"description": "Routed ESP32-C3 shutter remote engineering prototype; hardware untested",
 	"main": "index.circuit.tsx",
 	"keywords": [
@@ -17,15 +17,19 @@
 		"start": "tsci dev",
 		"typecheck": "tsc --noEmit",
 		"test": "python3 -m unittest discover -s tests -v",
-		"format": "biome format --write index.circuit.tsx product.assembly.tsx product.exploded.tsx src product/assembly.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts",
-		"format:check": "biome format index.circuit.tsx product.assembly.tsx product.exploded.tsx src product/assembly.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts",
+		"format": "biome format --write index.circuit.tsx product.assembly.tsx product.exploded.tsx product.geometry.tsx src product/assembly.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts",
+		"format:check": "biome format index.circuit.tsx product.assembly.tsx product.exploded.tsx product.geometry.tsx src product/assembly.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts",
 		"render:sheets": "bun scripts/render-sheets.ts",
 		"audit:module": "python3 scripts/audit-r8-module.py",
 		"product:build": "python3 cloud/run-heavy.py -- tsci build product.assembly.tsx --glbs",
 		"product:exploded": "python3 cloud/run-heavy.py -- tsci build product.exploded.tsx --glbs",
 		"product:geometry": "python3 cloud/run-heavy.py -- bun scripts/check-product-geometry.ts",
 		"product:pcb": "python3 cloud/run-heavy.py -- bun scripts/export-product-pcb.ts",
-		"product:prints": "python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-prints.py"
+		"product:prints": "python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-prints.py",
+		"dev:product": "tsci dev product.assembly.tsx",
+		"dev:exploded": "tsci dev product.exploded.tsx",
+		"product:canonical": "python3 cloud/run-heavy.py -- tsci build product.geometry.tsx --glbs",
+		"product:models": "python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-mechanics.py --source-view product.geometry"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",

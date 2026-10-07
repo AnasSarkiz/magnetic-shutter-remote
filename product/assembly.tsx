@@ -7,11 +7,45 @@ import parts4Glb from "./models/r8-parts-4.glb";
 import parts5Glb from "./models/r8-parts-5.glb";
 import parts6Glb from "./models/r8-parts-6.glb";
 import parts7Glb from "./models/r8-parts-7.glb";
+import remoteBaseGlb from "./models/mechanical/RemoteBase.glb";
+import batterySupportGlb from "./models/mechanical/BatterySupport.glb";
+import batteryEnvelopeGlb from "./models/mechanical/ASR00012_MaximumEnvelope.glb";
+import shutterPlungerGlb from "./models/mechanical/SideShutterPlunger.glb";
+import remoteLidGlb from "./models/mechanical/RemoteLid.glb";
+import fingerGripGlb from "./models/mechanical/FingerGripInsert.glb";
+import rearCoverGlb from "./models/mechanical/MagSafeRearCover.glb";
+import phoneDockGlb from "./models/mechanical/MagSafeGrip.glb";
+import phoneCoverGlb from "./models/mechanical/MagSafeFaceCover.glb";
+import magnetReferenceGlb from "./models/mechanical/MagSafeArrayReference.glb";
 import { dimensions as d } from "./dimensions";
 import { createProductParts } from "./geometry";
 import review from "./geometry-review.json";
 import pcbReview from "./pcb-model-review.json";
 const vector = z.tuple([z.number(), z.number(), z.number()]);
+const mechanicalPartName = z.enum([
+	"RemoteBase",
+	"BatterySupport",
+	"ASR00012_MaximumEnvelope",
+	"SideShutterPlunger",
+	"RemoteLid",
+	"FingerGripInsert",
+	"MagSafeRearCover",
+	"MagSafeGrip",
+	"MagSafeFaceCover",
+	"MagSafeArrayReference",
+]);
+const mechanicalModelUrls = {
+	RemoteBase: remoteBaseGlb,
+	BatterySupport: batterySupportGlb,
+	ASR00012_MaximumEnvelope: batteryEnvelopeGlb,
+	SideShutterPlunger: shutterPlungerGlb,
+	RemoteLid: remoteLidGlb,
+	FingerGripInsert: fingerGripGlb,
+	MagSafeRearCover: rearCoverGlb,
+	MagSafeGrip: phoneDockGlb,
+	MagSafeFaceCover: phoneCoverGlb,
+	MagSafeArrayReference: magnetReferenceGlb,
+};
 const measuredParts = z
 	.array(
 		z.object({ name: z.string(), localBoundsMm: z.tuple([vector, vector]) }),
@@ -19,8 +53,10 @@ const measuredParts = z
 	.parse(review.parts);
 export function R8ProductAssembly({
 	exploded = false,
+	mechanicalSource = "imported-models",
 }: {
 	exploded?: boolean;
+	mechanicalSource?: "native-plans" | "imported-models";
 }) {
 	return (
 		<assembly.device name="R8MagneticShutterProductPrototype">
@@ -74,11 +110,20 @@ export function R8ProductAssembly({
 						name={part.name}
 						displayName={part.description}
 						cadModel={{
-							jscad: {
-								type: "translate",
-								vector: [-center.x, -center.y, -center.z],
-								shape: part.plan,
-							},
+							...(mechanicalSource === "native-plans"
+								? {
+										jscad: {
+											type: "translate" as const,
+											vector: [-center.x, -center.y, -center.z],
+											shape: part.plan,
+										},
+									}
+								: {
+										glbUrl:
+											mechanicalModelUrls[mechanicalPartName.parse(part.name)],
+										modelBoardNormalDirection: "z+" as const,
+										modelUnitToMmScale: 1,
+									}),
 							size: {
 								x: max[0] - min[0],
 								y: max[1] - min[1],

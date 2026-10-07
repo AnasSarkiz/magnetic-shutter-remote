@@ -4,7 +4,7 @@
     "trimesh": "4.8.3",
     "numpy": "2.5.3"
   },
-  "source_plans_sha256": "7a495e1c878b8066cfdec6043980f2c627d5e617846d3d2e376a0d5557f7c72a",
+  "source_plans_sha256": "e361e2df5dc6bf17d68a6a33328b031e43520efc121aef0fa3b32c23099a878c",
   "native_geometry_sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
   "printed_parts": [
     {

@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-10-07T23:42:36.722243+00:00",
+  "docs_commit": "840b823f93a37e6bd805883cf335203210e04f1f",
+  "handbook_commit": "0c951d65be1b0bbddf989f8179e8591b0441ec8f",
+  "resources": [
+    {
+      "url": "https://github.com/tscircuit/docs/blob/840b823f93a37e6bd805883cf335203210e04f1f/docs/guides/advanced-assembly.mdx",
+      "sha256": "fb5e71072980e53e4ddab497d3a88ea7c63fbb357adbb273fd08f706288bf7c9"
+    },
+    {
+      "url": "https://github.com/tscircuit/docs/blob/840b823f93a37e6bd805883cf335203210e04f1f/docs/elements/assembly-device.mdx",
+      "sha256": "4176ee827f80e5b104011c45b6ccaf4776f5371a41a1b51692f5d96e42c40673"
+    },
+    {
+      "url": "https://github.com/tscircuit/docs/blob/840b823f93a37e6bd805883cf335203210e04f1f/docs/elements/assembly-subassembly.mdx",
+      "sha256": "1bbef828ae0e509b4142c1db273f66527a5ad5747fca68d72e580c29dc5b26e7"
+    },
+    {
+      "url": "https://github.com/tscircuit/docs/blob/840b823f93a37e6bd805883cf335203210e04f1f/docs/elements/assembly-printedpart.mdx",
+      "sha256": "5c7c03ddff8942c3c69d8e6366c61cd4f987f3e9fc4907f6d6d22e9dd3a12903"
+    }
+  ],
+  "handbook_code_sha256": "8c65950b80f863fe1a507b7729580433848fad702790a8133315f831e49c48e6",
+  "pinned_api_choice": "assembly.device + assembly.subassembly with cadModel.glbUrl, offsets, product z+ normal (existing PCB fragment y+ normal preserved) and modelUnitToMmScale=1",
+  "assembly_printedpart_in_pinned_toolchain": false,
+  "no_dependency_upgrade_or_toolchain_edit": true
+}

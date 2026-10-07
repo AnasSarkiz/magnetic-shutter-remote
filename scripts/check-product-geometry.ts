@@ -370,8 +370,6 @@ await Bun.write(
 					!part.referenceOnly && part.name !== "ASR00012_MaximumEnvelope",
 			)
 			.map((part) => ({ name: part.name, plan: part.plan })),
-		null,
-		2,
 	),
 );
 const report = {

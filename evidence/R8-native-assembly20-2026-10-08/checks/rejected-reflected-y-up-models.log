@@ -1,0 +1,59 @@
+{
+  "started_utc": "20261007T234626281775Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-native-product.py",
+    "--output",
+    "/workspace/r8-tscircuit-assembly-review-20261008/native-model-readback-fixed.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/scripts/review-native-product.py", line 139, in <module>
+    review(parser.parse_args().output)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/scripts/review-native-product.py", line 120, in review
+    vertex_delta = compare_triangles(original_triangles, actual_triangles)
+  File "/workspace/magnetic-shutter-remote/scripts/review-native-product.py", line 56, in compare_triangles
+    raise ValueError('Imported mechanical triangle differs from canonical geometry')
+ValueError: Imported mechanical triangle differs from canonical geometry
+{
+  "started_utc": "20261007T234626281775Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/review-native-product.py",
+    "--output",
+    "/workspace/r8-tscircuit-assembly-review-20261008/native-model-readback-fixed.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T23:46:26.751753+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 147968,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T234626281775Z.log"
+}

@@ -1,0 +1,26 @@
+{
+  "cyclic_face_order_passes": true,
+  "controls": [
+    {
+      "control": "moved",
+      "rejected": true,
+      "error": "Imported mechanical triangle differs from canonical geometry"
+    },
+    {
+      "control": "missing",
+      "rejected": true,
+      "error": "Mechanical triangle count changed"
+    },
+    {
+      "control": "reshaped",
+      "rejected": true,
+      "error": "Imported mechanical triangle differs from canonical geometry"
+    },
+    {
+      "control": "reversed-winding",
+      "rejected": true,
+      "error": "Imported mechanical triangle differs from canonical geometry"
+    }
+  ],
+  "passes": true
+}

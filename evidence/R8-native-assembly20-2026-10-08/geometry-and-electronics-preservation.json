@@ -1,0 +1,122 @@
+{
+  "previous_head": "f06c7bd50da28a3e9905bf5f7faa448f6c9da78e",
+  "preserved_files": [
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "b9a440f84effe51ae4803de57dfc70d2aa591d9f52cb81b2195c8f9505d0c64a",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/geometry.ts",
+      "sha256": "b08c0e62714f99ff0f5832b66294201026dffa9fdcca6e429f28161546a391ae",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/dimensions.ts",
+      "sha256": "83ff675552b5b4c2d5da945d6b83ce7012a320c17a11525080504f6413427749",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/geometry-review.json",
+      "sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/pcb-model-review.json",
+      "sha256": "3d3fee37671c002e1dc940cdff3678fdea25d34c595199829862c8e45791d1c8",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "87646fa426874bbb352134307a3ac0b409d360989ed7353cbbe4337243f94004",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "b27ae253a5a3350b6cff80e3b3f628296e873cc113c858e8039aa03500cd00cb",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "sha256": "99b3fb48f4b614f2eb5f7188e4fff11d3f88bab40a27c86876bee3f16e1473ef",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "sha256": "5f059d82d02bf96d2ff462e9731c3b5f2f49aa43ff59cd9ef3140153131fc2b0",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "sha256": "b6e4a2f31cc52d61dae1253ec1c4f52b36dadd78f05167a8f8b660b7c1d7c692",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "sha256": "db58dd0706ca37fc66065e84a91ede6d4f32805e930ca1d2779060df7aa2c8ec",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "sha256": "cc9e52b7d49429e3f4f87a9a44b060a7250070193e6324af0e6d71c2369ed634",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "sha256": "e8b7b5b72e38c61951d4aa011cce26a1014e24a9409329d92ec53f5303258e19",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "sha256": "eb20c79f6c264bb03271a9c89bc6e47c83f7288b07d405088a754983ef2b6998",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/MagSafeRearCover.stl",
+      "sha256": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/FingerGripInsert.stl",
+      "sha256": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/SideShutterPlunger.stl",
+      "sha256": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/RemoteLid.stl",
+      "sha256": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/RemoteBase.stl",
+      "sha256": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/BatterySupport.stl",
+      "sha256": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/MagSafeGrip.stl",
+      "sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "identical_to_previous_head": true
+    },
+    {
+      "path": "product/prints/MagSafeFaceCover.stl",
+      "sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "identical_to_previous_head": true
+    }
+  ],
+  "print_plans_parsed_content_identical": true,
+  "passes": true
+}

@@ -1,0 +1,55 @@
+{
+  "started_utc": "20261007T235535333964Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "/workspace/r8-fit-check-20261007/check-exported-fit.py",
+    "--root",
+    "/workspace/magnetic-shutter-remote",
+    "--output",
+    "evidence/R8-native-assembly20-2026-10-08/exported-fit-report.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Independent exported fit: 360 PCB/component checks, 8 battery checks, 28 part pairs, four travel positions; 0 clashes
+{
+  "started_utc": "20261007T235535333964Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "/workspace/r8-fit-check-20261007/check-exported-fit.py",
+    "--root",
+    "/workspace/magnetic-shutter-remote",
+    "--output",
+    "evidence/R8-native-assembly20-2026-10-08/exported-fit-report.json"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-07T23:55:35.756174+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 57976,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261007T235535333964Z.log"
+}

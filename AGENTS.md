@@ -1,3 +1,20 @@
+# Current R8 native assembly 0.3.20 — 2026-10-08
+
+Read product/README.md and evidence/R8-native-assembly20-2026-10-08/REVIEW.md.
+Documented assembly.device/subassembly code now imports lossless native models;
+closed/exploded JSON is about 15 KB. product.geometry.tsx and geometry.ts preserve
+editable canonical plans. All mechanical triangle corners/poses and original
+PCB assets are independently read back; actual shape, board, parts and eight
+print meshes are unchanged from 0.3.19. No root PCB/routing/SDK/CAM build or dependency
+upgrade. Product tests (194 assertions), light smoke and native geometry checks pass.
+Physical harness/cable/shutter/magnets/phone/RF/thermal qualification is pending;
+075/076/004/084 and separate 3V3 metadata remain explicit. Publication status is the
+new dated PUBLICATION.md; prior incomplete19 is immutable history. Setup/start,
+active branches, frozen baselines/main, memory guards and ordering/contact gates
+remain unchanged.
+
+## Earlier records — preserved history
+
 # Current R8 sculpted enclosure0.3.19 — reference camera grip,2026-10-07
 
 Read product/README.md and evidence/R8-sculpted19-2026-10-07/REVIEW.md (from

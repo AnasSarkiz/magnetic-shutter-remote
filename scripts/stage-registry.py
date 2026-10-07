@@ -67,6 +67,28 @@ def source_closure(entry):
     return selected
 
 
+def verify_native_product(options):
+    reviews = []
+    for requested in options.supplemental_files:
+        path = (ROOT/requested).resolve()
+        path.relative_to(ROOT)
+        if path.suffix == '.json':
+            report = json.loads(path.read_text())
+            if isinstance(report, dict) and 'native_views_checked' in report:
+                reviews.append(report)
+    if len(reviews) != 1:
+        raise ValueError('Product staging requires one independent native GLB review')
+    report = reviews[0]
+    if not report.get('passes') or set(report['native_views_checked']) != {'product.assembly','product.exploded'}:
+        raise ValueError('Native product views did not pass independent review')
+    for view, sha256 in report['native_glb_sha256'].items():
+        if hashlib.sha256((ROOT/'dist'/view/'3d.glb').read_bytes()).hexdigest() != sha256:
+            raise ValueError(f'Native product GLB changed after review: {view}')
+    mechanical_checks = [row for row in report['actual_glb_geometry_review'] if 'part' in row]
+    if len(mechanical_checks) != 20 or any(not row.get('outward_face_winding_preserved') for row in mechanical_checks):
+        raise ValueError('All ten mechanical face directions must pass in both views')
+
+
 def stage(destination, options):
     evidence = options.evidence.resolve()
     evidence.relative_to(ROOT / 'evidence')
@@ -142,6 +164,13 @@ def stage(destination, options):
     selected.add(evidence / 'failed-route20-visual/process-review.json')
     selected.add(evidence / 'sourcing-check.json')
     if options.include_product_assembly:
+        verify_native_product(options)
+        mechanical_review = json.loads((ROOT/'product/mechanical-model-review.json').read_text())
+        if mechanical_review['source_plans_sha256'] != hashlib.sha256((ROOT/'product/print-plans.json').read_bytes()).hexdigest():
+            raise ValueError('Imported mechanical models belong to stale plans')
+        for model in mechanical_review['models']:
+            if hashlib.sha256((ROOT/model['file']).read_bytes()).hexdigest() != model['sha256']:
+                raise ValueError('Imported mechanical model differs from reviewed bytes')
         model_review = json.loads((ROOT/'product/pcb-model-review.json').read_text())
         if model_review['sourceCircuitSha256'] != circuit_sha256 or model_review['emptyModels']:
             raise ValueError('Product PCB models are stale or incomplete')
@@ -156,6 +185,8 @@ def stage(destination, options):
                 raise ValueError('Product print mesh did not pass readback')
         selected.update(source_closure(ROOT/'product.assembly.tsx'))
         selected.update(source_closure(ROOT/'product.exploded.tsx'))
+        selected.update(source_closure(ROOT/'product.geometry.tsx'))
+        selected.add(ROOT/'product/mechanical-model-review.json')
         selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png','phone-facing.png',
                         'print-requirements.txt','print-plans.json','print-mesh-review.json'])
         selected.update((ROOT/'product').glob('studio-*.png'))

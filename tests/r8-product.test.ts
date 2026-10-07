@@ -43,6 +43,53 @@ test("native product views preserve the board transform and create no second PCB
 	}
 });
 
+test("native assembly uses all ten lossless mechanical models with compact build JSON", async () => {
+	const receipt = z
+		.object({
+			passes: z.boolean(),
+			models: z.array(
+				z.object({
+					part: z.string(),
+					file: z.string(),
+					sha256: z.string(),
+					triangles: z.number(),
+					exported_triangles: z.number(),
+				}),
+			),
+		})
+		.parse(await Bun.file("product/mechanical-model-review.json").json());
+	expect(receipt.passes).toBe(true);
+	expect(receipt.models).toHaveLength(10);
+	for (const view of ["product.assembly", "product.exploded"]) {
+		const file = Bun.file(`dist/${view}/circuit.json`);
+		expect(file.size).toBeLessThan(100_000);
+		const circuit = any_circuit_element.array().parse(await file.json());
+		for (const model of receipt.models) {
+			const component = circuit.find(
+				(element) =>
+					element.type === "source_component" && element.name === model.part,
+			);
+			if (component?.type !== "source_component")
+				throw new Error("Mechanical part is absent from native assembly");
+			const cad = circuit.find(
+				(element) =>
+					element.type === "cad_component" &&
+					element.source_component_id === component.source_component_id,
+			);
+			if (cad?.type !== "cad_component")
+				throw new Error("Mechanical part CAD is absent");
+			expect(cad.model_glb_url).toContain(model.file);
+			expect(cad.model_unit_to_mm_scale_factor).toBe(1);
+			expect(cad.model_board_normal_direction).toBe("z+");
+			expect(model.exported_triangles).toBe(model.triangles);
+			const hash = new Bun.CryptoHasher("sha256")
+				.update(await Bun.file(model.file).arrayBuffer())
+				.digest("hex");
+			expect(hash).toBe(model.sha256);
+		}
+	}
+});
+
 test("all real electronic envelopes fit, magnetic datum clearance and solid separation pass", async () => {
 	const review = z
 		.object({

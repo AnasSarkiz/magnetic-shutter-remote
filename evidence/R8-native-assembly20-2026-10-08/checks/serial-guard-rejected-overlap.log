@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/cloud/run-heavy.py", line 66, in run_command
+    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/magnetic-shutter-remote/cloud/run-heavy.py", line 105, in <module>
+    raise SystemExit(run_command(arguments[1:]))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/magnetic-shutter-remote/cloud/run-heavy.py", line 69, in run_command
+    raise RuntimeError("Another heavy job is running; run routing/builds sequentially")
+RuntimeError: Another heavy job is running; run routing/builds sequentially

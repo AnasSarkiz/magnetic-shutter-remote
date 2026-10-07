@@ -1,5 +1,5 @@
 {
-  "input_native_glb_sha256": "1e50c7d573f17df1ce83dec0a07f773385df480dfb4aa721e318c947e286570d",
+  "input_native_glb_sha256": "2757e986587ce1137f39fc0559642364adc44052e9be1d310bc5cd5a235f6082",
   "actual_native_geometry_verified": [
     {
       "part": "RemoteBase",
@@ -12,7 +12,7 @@
       "part": "BatterySupport",
       "geometry_bounds_delta_mm": 1.716613768465436e-06,
       "unchanged_mesh_sha256": [
-        "958b6983efac1f61d832c27489da347eee6f6cfd16acf684ef106a564cf209e5"
+        "3eeb2b692ac5ece0e062bea16d61deee3133b6cb1f76896d12f5c30112f69bab"
       ]
     },
     {
@@ -26,28 +26,28 @@
       "part": "SideShutterPlunger",
       "geometry_bounds_delta_mm": 2.6350392658969213e-06,
       "unchanged_mesh_sha256": [
-        "c41511aecdd8d79625efec6b5415b286b8b71c0f6a6df0c4e5711056b31ea187"
+        "1fd9981e03b7457682250a89d8de3f2a22b8574d04a85191609bd3558bd3f803"
       ]
     },
     {
       "part": "RemoteLid",
       "geometry_bounds_delta_mm": 3.4990885851016174e-06,
       "unchanged_mesh_sha256": [
-        "91aa01ec292c36c0865f61a5bf381a87f6ed0e7d08acbfc94fca5136f057e6dd"
+        "61ff5e5ebcdf6649f07f14f549554796b318f66fd10a02e2d0cdc37fc688cbd8"
       ]
     },
     {
       "part": "FingerGripInsert",
       "geometry_bounds_delta_mm": 1.282176267380919e-06,
       "unchanged_mesh_sha256": [
-        "20951d34845e6d71fcc15d46b98f970429d02f458c8dd95b6332946557ecf0c7"
+        "8a17b38374cfcb8fd368c95214967c46103ae6f702bd8385ef7d7773351978f9"
       ]
     },
     {
       "part": "MagSafeRearCover",
-      "geometry_bounds_delta_mm": 4.577636715907829e-06,
+      "geometry_bounds_delta_mm": 3.051757815342171e-06,
       "unchanged_mesh_sha256": [
-        "9e25a1c553179ab61e2ca85f3a7799881e1c7d67dbfcb999f2e1bec01c5e66d5"
+        "054ddaaf62425a7f2ab61d1585853a86ef4fef4345f85f7f606f41a03082a619"
       ]
     },
     {
@@ -59,9 +59,9 @@
     },
     {
       "part": "MagSafeFaceCover",
-      "geometry_bounds_delta_mm": 1.4981021649873583e-06,
+      "geometry_bounds_delta_mm": 1.9073486328125e-06,
       "unchanged_mesh_sha256": [
-        "6e838ea027fbec4f2422c557088f77b43dc3155487ee0271ec8082f2f43168b7"
+        "48e08c1caa6b85ed46f9da459ff0c181bd9a3631c404e8e864de182d7b183736"
       ]
     },
     {
@@ -73,10 +73,10 @@
     }
   ],
   "output": "product/closed.png",
-  "output_sha256": "af6ac5825846c6fabedfd86e3c60fbdcad2c99961b34c31df52e0c258c144040",
+  "output_sha256": "04ff00bc8133a3579667e792c6b7391b087157ae43f0960d1738328f67318770",
   "blender_version": "4.3.2",
   "material_and_lighting_presentation_only": true,
   "smooth_shading_angle_degrees": 35,
   "physical_finish_or_fit_claimed": false,
-  "samples": 32
+  "samples": 64
 }

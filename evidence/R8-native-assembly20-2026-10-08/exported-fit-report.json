@@ -1,0 +1,2096 @@
+{
+  "observed_utc": "2026-10-07T23:55:35.710649+00:00",
+  "source_head": "f06c7bd50da28a3e9905bf5f7faa448f6c9da78e",
+  "pcb_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "pcb_dimensions_mm": [
+    44,
+    56,
+    1
+  ],
+  "enclosure_dimensions_mm": [
+    90,
+    78,
+    34
+  ],
+  "component_count": 44,
+  "pcb_plus_component_envelopes": 45,
+  "method": "Independent Manifold intersections of actual emitted STL solids and conservative supplier-model bounds; no mesh repair.",
+  "intersection_failure_threshold_mm3": 0.001,
+  "actual_model_and_print_sha256": {
+    "product/models/r8-pcb.glb": "e8b7b5b72e38c61951d4aa011cce26a1014e24a9409329d92ec53f5303258e19",
+    "product/models/r8-parts-2.glb": "eb20c79f6c264bb03271a9c89bc6e47c83f7288b07d405088a754983ef2b6998",
+    "product/models/r8-parts-3.glb": "b6e4a2f31cc52d61dae1253ec1c4f52b36dadd78f05167a8f8b660b7c1d7c692",
+    "product/models/r8-parts-4.glb": "cc9e52b7d49429e3f4f87a9a44b060a7250070193e6324af0e6d71c2369ed634",
+    "product/models/r8-parts-5.glb": "5f059d82d02bf96d2ff462e9731c3b5f2f49aa43ff59cd9ef3140153131fc2b0",
+    "product/models/r8-parts-6.glb": "db58dd0706ca37fc66065e84a91ede6d4f32805e930ca1d2779060df7aa2c8ec",
+    "product/models/r8-parts-7.glb": "99b3fb48f4b614f2eb5f7188e4fff11d3f88bab40a27c86876bee3f16e1473ef",
+    "product/prints/RemoteBase.stl": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+    "product/prints/BatterySupport.stl": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
+    "product/prints/SideShutterPlunger.stl": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+    "product/prints/RemoteLid.stl": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+    "product/prints/FingerGripInsert.stl": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+    "product/prints/MagSafeRearCover.stl": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+    "product/prints/MagSafeGrip.stl": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+    "product/prints/MagSafeFaceCover.stl": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f"
+  },
+  "pcb_component_vs_print_checks": [
+    {
+      "component": "Box0",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Box0",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R3",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R4",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R8",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R9",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C8",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C9",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C5",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C10",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW3",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R7",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "LED2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "J3",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW4",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW5",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "SW1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R5",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R6",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U3",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "L1",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C11",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C12",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C13",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C3",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C4",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U4",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C6",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "U5",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "C7",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R10",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R11",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R12",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "R13",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "component": "Q2",
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "battery_vs_print_checks": [
+    {
+      "part": "RemoteBase",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "printed_part_vs_part_checks": [
+    {
+      "a": "RemoteBase",
+      "b": "BatterySupport",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteBase",
+      "b": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteBase",
+      "b": "RemoteLid",
+      "overlap_mm3": 3.043057463930625e-06
+    },
+    {
+      "a": "RemoteBase",
+      "b": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteBase",
+      "b": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteBase",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 3.803959374253364e-14
+    },
+    {
+      "a": "RemoteBase",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "SideShutterPlunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "BatterySupport",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "SideShutterPlunger",
+      "b": "RemoteLid",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "SideShutterPlunger",
+      "b": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "SideShutterPlunger",
+      "b": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "SideShutterPlunger",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "SideShutterPlunger",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteLid",
+      "b": "FingerGripInsert",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteLid",
+      "b": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteLid",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "RemoteLid",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "FingerGripInsert",
+      "b": "MagSafeRearCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "FingerGripInsert",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "FingerGripInsert",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "MagSafeRearCover",
+      "b": "MagSafeGrip",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "MagSafeRearCover",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "MagSafeGrip",
+      "b": "MagSafeFaceCover",
+      "overlap_mm3": 5.898059818321144e-17
+    }
+  ],
+  "shutter_travel_checks": [
+    {
+      "travel_mm": 0,
+      "obstacles_checked": 53
+    },
+    {
+      "travel_mm": 0.15,
+      "obstacles_checked": 53
+    },
+    {
+      "travel_mm": 0.25,
+      "obstacles_checked": 53
+    },
+    {
+      "travel_mm": 0.35,
+      "obstacles_checked": 53
+    }
+  ],
+  "four_actual_mounts": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "usb": {
+    "actual_j1_product_bounds_mm": [
+      [
+        -44.35624046325684,
+        -13.469986915588379,
+        9.20000159740448
+      ],
+      [
+        -37.55623931884766,
+        -4.529987335205078,
+        13.26000165939331
+      ]
+    ],
+    "nominal_tunnel_center_product_mm": [
+      -52,
+      -9,
+      11.48
+    ],
+    "nominal_rounded_tunnel_cross_section_mm": [
+      10.2,
+      5.2
+    ],
+    "nominal_tunnel_axis_extent_x_mm": [
+      -63,
+      -41
+    ],
+    "case_material_ray_hits_on_nominal_usb_axis_x_mm": [
+      29.09254696459536,
+      30.708106778394015
+    ],
+    "ray_hits_in_front_of_usb_mating_face": [],
+    "physical_cable_hood_fit_verified": false,
+    "note": "A clear center ray does not establish fit of a USB plug and its overmold."
+  },
+  "collisions": [],
+  "nominal_cad_fit_pass": true,
+  "physical_fit_qualified": false,
+  "generated_image_used_as_fit_evidence": false
+}
