@@ -94,3 +94,24 @@ Do not order a complete product from these geometry files alone.
 Eight public tscircuit projects and official assembly docs were inspected before
 this design; source hashes and screening are recorded in the dated review.
 The old Nordic enclosure/STLs are archived and never used as R8 fit evidence.
+
+## Camera-grip styling follow-up
+
+The user requested a realistic, visually balanced camera-handgrip concept before
+changing this CAD. The generated image is a styling illustration, not measured
+engineering geometry. Adopt smooth continuous contours around the MagSafe
+interface and a rounded palm/finger grip, preserving the detachable remote.
+Do not place or resize internal parts to imitate the illustration.
+
+The outer enclosure must be developed around the actual44×56×1mm PCB outline,
+all44 fitted supplier models and the existing four2.2mm mounting holes at
+PCB XY(-19,25),(19,25),(-19,-14),(19,-14). Keep the maximum43×32×8.5mm protected
+battery envelope, its support and swelling/insulation/lead/connector/service
+allowances. Maintain USB/power/JST access and antenna/metal clearances.
+The cap must drive the actual TS24CA horizontally along X at PCB Y=-8.5mm,
+PCB-relative Z=1.36mm (current product Z=14.86mm). Its contact face must align
+with the actual supplier-model tip X=22.474mm, preserving nominal0.15mm free
+gap before physical switch-stroke/overtravel qualification. The button in the
+illustration is not a placement authority; do not move the routed switch simply
+for appearance. Re-run solid/envelope/mount/alignment/print-readback checks after
+sculpting, then inspect the real closed/exploded native views.
