@@ -44,3 +44,15 @@ or export credentials, or finalize this incomplete release.
 This is separate from importer power metadata (076) and current schematic
 style/PCB checks. The earlier unbuilt0.3.14 draft resulted from our own guarded
 working-directory error, retained separately; it is not this service failure.
+
+## Reference enclosure0.3.18 reproduction,2026-10-07
+
+Normal guarded tsci push reports fourHTTP502 upload failures (twoSTEPs, one
+bounded2,117,500bytePCB GLB fragment, one tooling archive). Actual anonymous
+inventory is290/291 expected files, no extras/duplicates. Only
+product/models/r8-parts-6.glb is absent; bothSTEPs/archive are stored and their
+bytes match. Sixty-two available critical file readbacks pass. Draft stays
+ready_to_build=false/pending. No OOM increase; peak childRSS850916KiB. This
+reproduces the same registry failure for a boundedGLB, rather than establishing
+an enclosure, importer or copper defect. CLI still has no existing-release
+resume flag. [Actual receipt](../evidence/R8-reference18-2026-10-07/PUBLICATION.md).

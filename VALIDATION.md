@@ -15,6 +15,8 @@ retention/RF/phone/case/hardware tests remain pending. Electronics/copper/BOM/
 firmware and frozen baselines are unchanged; electrical checks are explicitly
 carried forward byte-identically. No root board/routing/SDK/CAM build, no RGB
 ring. Original075/076/native004/084 and separate missing3V3metadata stay explicit.
+GitHub28exact readbacks pass. Native18is incomplete290/291files: missing
+product/models/r8-parts-6.glb afterHTTP502; draft remains unready/pending.
 Publication status is the actual dated receipt. Setup/start, branch preservation,
 serial memory guards and ordering/payment/contact restrictions remain unchanged.
 

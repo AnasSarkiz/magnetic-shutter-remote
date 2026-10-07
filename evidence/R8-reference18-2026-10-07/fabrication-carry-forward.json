@@ -1,0 +1,81 @@
+{
+  "not_new_cam_export": true,
+  "files": [
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/R8-reference18-Gerbers.zip",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/R8-enclosure17-Gerbers.zip",
+      "sha256": "4aab87a8e430cb889b3adb6579567f2be17ef6427b851bb5d8b13fc08d4db1cc"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/JLCPCB-BOM.csv",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/JLCPCB-BOM.csv",
+      "sha256": "238deef759c4bfc407acbc04765b71d3e9059d6812a44f71bfe6082690b7187a"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/JLCPCB-CPL.csv",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/JLCPCB-CPL.csv",
+      "sha256": "48c5eb068a8229d9e916c7312e8c2ccc81bd28ef323a3f474ee1b2fb74344598"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/F_Cu.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/F_Cu.gbr",
+      "sha256": "e46d3c4a60e4f5ac4d3c310eed5f43a713f0945786f70e924164ace10875ff9c"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/B_SilkScreen.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/B_SilkScreen.gbr",
+      "sha256": "11181fa392104fbd18bc3cd49f58f971205c1a32d50201def1a1d241c0f46a0f"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/Edge_Cuts.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/Edge_Cuts.gbr",
+      "sha256": "e83c46cd22eb907ddd0fc1ff9e90a3d643981f79de74227b3fce08f3070e9b40"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/B_Mask.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/B_Mask.gbr",
+      "sha256": "1f084820fd495bc0f0648027b07d62b52342065a640bbd19e84ec2dd03e42be6"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/drill-L1-L2.drl",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/drill-L1-L2.drl",
+      "sha256": "2e98f8932f97213d171d6a45767c04222aaf4c6434f6bc4f27c4c511b9a510ff"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/F_Paste.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/F_Paste.gbr",
+      "sha256": "60817a5e358ac61725c88a95522f77907a349727cde7bdb4c68c1dd6a5ba9294"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/B_Cu.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/B_Cu.gbr",
+      "sha256": "1dc881048c0b2ab25c63b71bddb6ed3cbf515bbff8e4a100d3ef0a918343e5b1"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/F_Mask.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/F_Mask.gbr",
+      "sha256": "af9fc28f4398bc7192792b32296c34c97e478158b3b21443d7cf7aebe0c23458"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/F_SilkScreen.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/F_SilkScreen.gbr",
+      "sha256": "42a00e9926c96adcc4e653b440106818aa50453dbc8e1127570b842f1be91149"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/drill_npth.drl",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/drill_npth.drl",
+      "sha256": "296ef85078fe471f5679b439f141376df8760b788d41384a8489b32c13069601"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/B_Paste.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/B_Paste.gbr",
+      "sha256": "dcb53b9fb8304208a20867f9052ff1a64923f076d71b171833da1f8046189129"
+    },
+    {
+      "current": "fabrication/R8-reference18-2026-10-07/gerbers/F_Fab.gbr",
+      "origin": "fabrication/R8-enclosure17-2026-10-07/gerbers/F_Fab.gbr",
+      "sha256": "42d906ac31f1e1d163b3e9ff5efb05a8029dc241d8e20ae9ab87936125c649ea"
+    }
+  ],
+  "all_exact_bytes_preserved": true
+}

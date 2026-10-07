@@ -1,0 +1,149 @@
+{
+  "observed_utc": "2026-10-07T16:21:52.312974+00:00",
+  "public_repository": true,
+  "source_artifact_commit": "92ca999b362bde1f2c50eb233f57d0b3ad22f74b",
+  "public_reads": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "sha256": "dad07659e42dbd21012699cdc83fbabe3b1b0a6da60f613e3a2666bed732c3c4",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "sha256": "7762fc667fe3d688df3a93bea338d66ede67d1443b3ea9aac3293550d05d5891",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "a2f927e23fb93981cae39c98148c0341facda79e512eec6b0c0f16e1823b2058",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "src/trace-paths.ts",
+      "sha256": "2ccc407ca67fa136417fb4cd05fdb0dc768d9f19e055c571e19da2d1a43f1895",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "sha256": "a21a1811a53c38afffd4bb8d41719b8e6e9de6920e3f895fea18fb9f945be852",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product.assembly.tsx",
+      "sha256": "44555ba62f7936169c67c6b2611635336a903bd0578a9a69dc19b5a5c36e5ef5",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product.exploded.tsx",
+      "sha256": "912e02a0aad538769cb40bb2dac81c13f8c1a82e2ce149f0471630ef8d518446",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/assembly.tsx",
+      "sha256": "f1645671ae231d1e06e717ae52b35d987b6c06d801c0fcd6988805e776d8d87e",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/geometry.ts",
+      "sha256": "bf8f7a0442cb727ffe60e7ff575efff145ff82fc125ecd538c15096b019c0b06",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/dimensions.ts",
+      "sha256": "83ff675552b5b4c2d5da945d6b83ce7012a320c17a11525080504f6413427749",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "sha256": "e8b7b5b72e38c61951d4aa011cce26a1014e24a9409329d92ec53f5303258e19",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "sha256": "eb20c79f6c264bb03271a9c89bc6e47c83f7288b07d405088a754983ef2b6998",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "sha256": "b6e4a2f31cc52d61dae1253ec1c4f52b36dadd78f05167a8f8b660b7c1d7c692",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "sha256": "cc9e52b7d49429e3f4f87a9a44b060a7250070193e6324af0e6d71c2369ed634",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "sha256": "5f059d82d02bf96d2ff462e9731c3b5f2f49aa43ff59cd9ef3140153131fc2b0",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "sha256": "db58dd0706ca37fc66065e84a91ede6d4f32805e930ca1d2779060df7aa2c8ec",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "sha256": "99b3fb48f4b614f2eb5f7188e4fff11d3f88bab40a27c86876bee3f16e1473ef",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/prints/RemoteBase.stl",
+      "sha256": "aea0b1978ee6bb6fa9ba9f928386a938aa7a22e51898f7e716dc7568deeaba54",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/prints/RemoteLid.stl",
+      "sha256": "86ebd9a188f0726eaa31b7c1f6c7db77ad31f1f4adc678ce551d269650135af9",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "product/print-mesh-review.json",
+      "sha256": "2dd714127a560013adbc785bd5ef6d372a46c83f25aa2d657a44a16be4bfa1e5",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "archive/legacy-source-2026-10-07.tar.gz",
+      "sha256": "ef7d9f01bd046c72ae33abdd508510183f74ba9d76c66f55b469a95298e75872",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "archive/legacy-mechanics-and-views-2026-10-07.tar.gz",
+      "sha256": "6b3075d3cb740cec7566378ff65fd2123c4a319520e22b89267f7addd81b0d24",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "375d3baa11fdc523ffe90da1ed56dbda6dc15c2b6e178baec8600fc32c5a8527",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "95d7f326c051ae2a9920aed8a60687b888db9ffb998f304035cd5f4cbf9a4fec",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/REVIEW.md",
+      "sha256": "416c8985196d9e666f264cd32c2a0de475ccd31f42f7b6eac1e9b2352a88c226",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/JLCPCB-BOM.csv",
+      "sha256": "238deef759c4bfc407acbc04765b71d3e9059d6812a44f71bfe6082690b7187a",
+      "anonymous_public_bytes_match": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/R8-reference18-Gerbers.zip",
+      "sha256": "4aab87a8e430cb889b3adb6579567f2be17ef6427b851bb5d8b13fc08d4db1cc",
+      "anonymous_public_bytes_match": true
+    }
+  ],
+  "origin_head_matches": true,
+  "frozen_main_unchanged": true
+}

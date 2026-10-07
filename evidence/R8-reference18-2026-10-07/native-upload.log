@@ -1,0 +1,13 @@
+Upload Summary
+  Succeeded: 287 files
+  Failed: 4 files
+    - imports/ESPC3_12_N4/ESPC3_12_N4.step
+      Error: FAIL [502]: POST /package_files/create
+    - imports/TS24CA/TS24CA.step
+      Error: FAIL [502]: POST /package_files/create
+    - product/models/r8-parts-6.glb
+      Error: FAIL [502]: POST /package_files/create
+    - tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+      Error: FAIL [502]: POST /package_files/create
+
+Publish completed with 287 files uploaded and 4 failed upload(s)

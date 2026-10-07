@@ -98,6 +98,8 @@ Supplier-processed fabrication/assembly approval and physical programming,
 charging, temperature, Bluetooth, RF, runtime and MagSafe tests remain pending.
 This is not production or ordering approval.
 
+GitHub source/artifact readback passes. Native0.3.18-prototype is incomplete:
+290/291 files, with one PCB model fragment missing afterHTTP502; draft is unready.
 Current GitHub/native publication status is recorded in the
 [dated receipt](evidence/R8-reference18-2026-10-07/PUBLICATION.md). The previous
 0.3.16/17 native uploads remain incomplete because of HTTP413/502 uploads;
