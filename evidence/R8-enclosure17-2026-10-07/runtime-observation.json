@@ -1,0 +1,45 @@
+{
+  "observed_utc": "2026-10-07T14:49:41.464757+00:00",
+  "observed_not_guaranteed_plan_allocation": true,
+  "cgroup_memory_max": "34359738368",
+  "cgroup_cpu_max": "400000 100000",
+  "heavy_guard_unchanged": true,
+  "node_heap_mib": 14336,
+  "serial_jobs": [
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-closed.log",
+      "peak_child_rss_kib": 6115608,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-exploded.log",
+      "peak_child_rss_kib": 6161380,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-geometry.log",
+      "peak_child_rss_kib": 293808,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-print-export.log",
+      "peak_child_rss_kib": 48052,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-render-closed.log",
+      "peak_child_rss_kib": 265524,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/final-render-exploded.log",
+      "peak_child_rss_kib": 286236,
+      "observed_memory_limit_bytes": 34359738368
+    },
+    {
+      "log": "evidence/R8-enclosure17-2026-10-07/checks/phone-facing.log",
+      "peak_child_rss_kib": 285308,
+      "observed_memory_limit_bytes": 34359738368
+    }
+  ]
+}
