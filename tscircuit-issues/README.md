@@ -147,3 +147,9 @@ Earlier reports are retained unchanged from the R7 source directory. Historical 
 - [097 — Registry release predates corrected power review](097-registry-release-predates-corrected-power-review.md): project publication gap;0.3.5 contains the older±20% audit. Public0.3.6-prototype native367-file upload/22 critical readbacks pass, with corrected±30% audit/current evidence; resolved. PCB remains hardware0.3.5.
 
 - [099 — Registry STEP uploads HTTP 502](099-registry-step-upload-502.md): open native publication blocker; observed service/transport failure with two missing model files, root cause unconfirmed. Current schematic/PCB checks pass.
+
+## R8 native product assembly — 2026-10-07
+
+- [100 — CLI GLB local model base](100-cli-glb-export-local-model-base.md): four local OBJ models exported empty; supported converter project base resolves all44 actual meshes without supplier import edits.
+- [101 — JSCAD STL triangulation](101-jscad-stl-boolean-triangulation.md): native display geometry serializes open STL edges; direct same-plan pinned Manifold manufacturing export passes closed/winding/bounds/volume/readback, rejected inputs retained.
+- Issue099 successor:0.3.16 native upload exits1;272/275 public files stored, two actual PCB GLBs and one STEP absent. Draft remains unready; never finalize missing models.

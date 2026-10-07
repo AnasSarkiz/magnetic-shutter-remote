@@ -1,5 +1,10 @@
 # Current R8 0.3.16 — compact source and native product assembly, 2026-10-07
 
+GitHub public source/artifact readback passes23 files. Native0.3.16 draft is
+**incomplete**:272/275 files, two PCB GLBs and one STEP absent, ready_to_build=false.
+Local checks pass; hosted publication is blocked by upload transport failure.
+[Actual receipt](evidence/R8-product16-2026-10-07/PUBLICATION.md).
+
 Active electronics source is four files instead of42; original source and old
 mechanical assets are recoverable from verified archives. Native closed and
 exploded product assemblies use the actual44-model PCB, protected battery
