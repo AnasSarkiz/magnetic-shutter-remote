@@ -75,17 +75,29 @@
     "type": "source_component",
     "source_component_id": "source_component_12",
     "ftype": "simple_chip",
-    "name": "MagSafeGrip"
+    "name": "FingerGripInsert"
   },
   {
     "type": "source_component",
     "source_component_id": "source_component_13",
     "ftype": "simple_chip",
-    "name": "MagSafeFaceCover"
+    "name": "MagSafeRearCover"
   },
   {
     "type": "source_component",
     "source_component_id": "source_component_14",
+    "ftype": "simple_chip",
+    "name": "MagSafeGrip"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_15",
+    "ftype": "simple_chip",
+    "name": "MagSafeFaceCover"
+  },
+  {
+    "type": "source_component",
+    "source_component_id": "source_component_16",
     "ftype": "simple_chip",
     "name": "MagSafeArrayReference"
   },
@@ -94,9 +106,9 @@
     "cad_component_id": "cad_component_0",
     "model_glb_url": "./product/models/r8-pcb.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -112,11 +124,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 43.999996185302734,
-      "y": 57.15623664855957,
-      "z": 4.260003328323364
+      "x": 57.156240463256836,
+      "y": 44,
+      "z": 4.2600016593933105
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -126,9 +138,9 @@
     "cad_component_id": "cad_component_1",
     "model_glb_url": "./product/models/r8-parts-2.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -144,11 +156,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 29.448509216308594,
-      "y": 15.800049781799316,
-      "z": 2.909999966621399
+      "x": 15.800050735473633,
+      "y": 29.448512077331543,
+      "z": 2.9100000858306885
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -158,9 +170,9 @@
     "cad_component_id": "cad_component_2",
     "model_glb_url": "./product/models/r8-parts-3.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -176,11 +188,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 42.284074783325195,
-      "y": 25.338508009910583,
-      "z": 3.5199987441301346
+      "x": 25.338509798049927,
+      "y": 42.28407859802246,
+      "z": 3.519999086856842
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -190,9 +202,9 @@
     "cad_component_id": "cad_component_3",
     "model_glb_url": "./product/models/r8-parts-4.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -208,11 +220,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 43.95608329772949,
-      "y": 28.16749668121338,
-      "z": 4.759999192823557
+      "x": 28.16749858856201,
+      "y": 43.95608711242676,
+      "z": 4.7599992288818385
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -222,9 +234,9 @@
     "cad_component_id": "cad_component_4",
     "model_glb_url": "./product/models/r8-parts-5.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -240,11 +252,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 8.899999618530273,
-      "y": 10.800024628639221,
-      "z": 1.510000079870224
+      "x": 10.800025701522827,
+      "y": 8.900000095367432,
+      "z": 1.5099999904632568
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -254,9 +266,9 @@
     "cad_component_id": "cad_component_5",
     "model_glb_url": "./product/models/r8-parts-6.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -272,11 +284,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 29.562774658203125,
-      "y": 11.855011343955994,
-      "z": 1.0492050051689148
+      "x": 11.8550124168396,
+      "y": 29.562777519226074,
+      "z": 1.04920494556427
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -286,9 +298,9 @@
     "cad_component_id": "cad_component_6",
     "model_glb_url": "./product/models/r8-parts-7.glb",
     "position": {
-      "x": 52,
-      "y": 0,
-      "z": 13.5
+      "x": -15.2,
+      "y": -9,
+      "z": 9.5
     },
     "rotation": {
       "x": 0,
@@ -304,11 +316,11 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "z+",
+    "model_board_normal_direction": "y+",
     "size": {
-      "x": 2.5055794715881348,
-      "y": 7.855011940002441,
-      "z": 1.0492050647735596
+      "x": 7.8550124168396,
+      "y": 2.505579948425293,
+      "z": 1.04920494556427
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -319,16 +331,16 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        2,
-        0,
-        -16
+        14.00000000000001,
+        13,
+        -17.999999999999996
       ],
       "shape": {
         "type": "colorize",
         "color": [
-          0.12,
-          0.14,
-          0.17
+          0.06,
+          0.065,
+          0.07
         ],
         "shape": {
           "type": "subtract",
@@ -340,150 +352,359 @@
                   "type": "subtract",
                   "shapes": [
                     {
-                      "type": "hull",
+                      "type": "subtract",
                       "shapes": [
                         {
                           "type": "hull",
                           "shapes": [
                             {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                -20,
-                                -22,
-                                6.5
-                              ],
-                              "resolution": 32
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -34,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -3,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -34,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -3,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                -20,
-                                22,
-                                6.5
-                              ],
-                              "resolution": 32
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -42,
+                                            -35,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -42,
+                                            -2,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -34,
+                                            -35,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -34,
+                                            -2,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                16,
-                                -22,
-                                6.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                16,
-                                22,
-                                6.5
-                              ],
-                              "resolution": 32
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -34,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -3,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -34,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -3,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         },
                         {
-                          "type": "hull",
+                          "type": "subtract",
                           "shapes": [
                             {
                               "type": "cylinder",
-                              "radius": 15,
-                              "height": 1,
+                              "radius": 25,
+                              "height": 30,
                               "center": [
-                                -19,
-                                -21,
-                                14.5
+                                3,
+                                -54,
+                                18
                               ],
                               "resolution": 32
                             },
                             {
                               "type": "cylinder",
-                              "radius": 15,
-                              "height": 1,
+                              "radius": 31.8,
+                              "height": 32,
                               "center": [
-                                -19,
-                                21,
-                                14.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 15,
-                              "height": 1,
-                              "center": [
-                                15,
-                                -21,
-                                14.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 15,
-                              "height": 1,
-                              "center": [
-                                15,
-                                21,
-                                14.5
-                              ],
-                              "resolution": 32
-                            }
-                          ]
-                        },
-                        {
-                          "type": "hull",
-                          "shapes": [
-                            {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                -21,
-                                -23,
-                                25.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                -21,
-                                23,
-                                25.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                17,
-                                -23,
-                                25.5
-                              ],
-                              "resolution": 32
-                            },
-                            {
-                              "type": "cylinder",
-                              "radius": 12,
-                              "height": 1,
-                              "center": [
-                                17,
-                                23,
-                                25.5
+                                0,
+                                -5,
+                                18
                               ],
                               "resolution": 32
                             }
@@ -492,163 +713,471 @@
                       ]
                     },
                     {
-                      "type": "hull",
+                      "type": "subtract",
                       "shapes": [
                         {
-                          "type": "cylinder",
-                          "radius": 1.8,
-                          "height": 21,
-                          "center": [
-                            -25.599999999999998,
-                            -27.599999999999998,
-                            18.1
-                          ],
-                          "resolution": 32
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 29.4,
+                              "height": 23,
+                              "center": [
+                                0,
+                                -5,
+                                19.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 10.4,
+                              "height": 23,
+                              "center": [
+                                -43,
+                                5,
+                                19.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "hull",
+                              "shapes": [
+                                {
+                                  "type": "cylinder",
+                                  "radius": 15.4,
+                                  "height": 23,
+                                  "center": [
+                                    -42,
+                                    -35,
+                                    19.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 15.4,
+                                  "height": 23,
+                                  "center": [
+                                    -42,
+                                    -2,
+                                    19.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 15.4,
+                                  "height": 23,
+                                  "center": [
+                                    -34,
+                                    -35,
+                                    19.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 15.4,
+                                  "height": 23,
+                                  "center": [
+                                    -34,
+                                    -2,
+                                    19.5
+                                  ],
+                                  "resolution": 32
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
-                          "type": "cylinder",
-                          "radius": 1.8,
-                          "height": 21,
-                          "center": [
-                            -25.599999999999998,
-                            27.599999999999998,
-                            18.1
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 1.8,
-                          "height": 21,
-                          "center": [
-                            21.599999999999998,
-                            -27.599999999999998,
-                            18.1
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 1.8,
-                          "height": 21,
-                          "center": [
-                            21.599999999999998,
-                            27.599999999999998,
-                            18.1
-                          ],
-                          "resolution": 32
+                          "type": "subtract",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 26.6,
+                              "height": 25,
+                              "center": [
+                                3,
+                                -54,
+                                19.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 30.2,
+                              "height": 27,
+                              "center": [
+                                0,
+                                -5,
+                                19.5
+                              ],
+                              "resolution": 32
+                            }
+                          ]
                         }
                       ]
                     },
                     {
                       "type": "translate",
                       "vector": [
-                        0,
-                        33.8,
+                        -45.5,
+                        16.5,
+                        20
+                      ],
+                      "shape": {
+                        "type": "cuboid",
+                        "size": [
+                          3.5,
+                          5,
+                          2.3
+                        ]
+                      }
+                    },
+                    {
+                      "type": "translate",
+                      "vector": [
+                        -45.5,
+                        17.5,
+                        20
+                      ],
+                      "shape": {
+                        "type": "rotate",
+                        "angles": [
+                          1.5707963267948966,
+                          0,
+                          0
+                        ],
+                        "shape": {
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 3.5,
+                              "height": 3,
+                              "center": [
+                                -3.3,
+                                -0.2999999999999998,
+                                0
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 3.5,
+                              "height": 3,
+                              "center": [
+                                -3.3,
+                                0.2999999999999998,
+                                0
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 3.5,
+                              "height": 3,
+                              "center": [
+                                3.3,
+                                -0.2999999999999998,
+                                0
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 3.5,
+                              "height": 3,
+                              "center": [
+                                3.3,
+                                0.2999999999999998,
+                                0
+                              ],
+                              "resolution": 32
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "translate",
+                      "vector": [
+                        -52,
+                        -9,
                         11.48
                       ],
                       "shape": {
                         "type": "cuboid",
                         "size": [
-                          12,
-                          12,
-                          9.5
+                          22,
+                          10.2,
+                          5.2
                         ]
                       }
                     },
                     {
                       "type": "translate",
                       "vector": [
-                        26,
-                        -8.5,
+                        -45.5,
+                        15,
+                        15.4
+                      ],
+                      "shape": {
+                        "type": "cuboid",
+                        "size": [
+                          3.5,
+                          2.3,
+                          13
+                        ]
+                      }
+                    },
+                    {
+                      "type": "translate",
+                      "vector": [
+                        -6.6999999999999975,
+                        14.8,
                         10.86
                       ],
                       "shape": {
                         "type": "cuboid",
                         "size": [
-                          10,
-                          3.4,
-                          2.2
-                        ]
-                      }
-                    },
-                    {
-                      "type": "translate",
-                      "vector": [
-                        26,
-                        5,
-                        10.8
-                      ],
-                      "shape": {
-                        "type": "cuboid",
-                        "size": [
-                          10,
                           8,
-                          4
+                          2.3,
+                          2.3
                         ]
                       }
                     },
                     {
                       "type": "translate",
                       "vector": [
-                        -29,
+                        -29.2,
+                        15,
+                        10.86
+                      ],
+                      "shape": {
+                        "type": "cuboid",
+                        "size": [
+                          49,
+                          2.3,
+                          2.3
+                        ]
+                      }
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 2.9,
+                      "height": 4,
+                      "center": [
+                        -16,
                         -5,
-                        10.2
+                        7.2
                       ],
-                      "shape": {
-                        "type": "cuboid",
-                        "size": [
-                          14,
-                          2.5,
-                          2
-                        ]
-                      }
+                      "resolution": 32
+                    },
+                    {
+                      "type": "hull",
+                      "shapes": [
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            -20,
+                            -5,
+                            7.2
+                          ],
+                          "resolution": 32
+                        },
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            -16,
+                            -5,
+                            7.2
+                          ],
+                          "resolution": 32
+                        }
+                      ]
                     },
                     {
                       "type": "translate",
                       "vector": [
-                        8,
-                        34,
-                        10.2
+                        -18,
+                        -5,
+                        7.7
                       ],
                       "shape": {
                         "type": "cuboid",
                         "size": [
-                          2.5,
-                          12,
-                          2
+                          9.8,
+                          5.8,
+                          1.4
                         ]
                       }
                     },
                     {
-                      "type": "translate",
-                      "vector": [
-                        -31,
-                        0,
-                        7.8
+                      "type": "cylinder",
+                      "radius": 2.9,
+                      "height": 4,
+                      "center": [
+                        24,
+                        -5,
+                        7.2
                       ],
-                      "shape": {
-                        "type": "cuboid",
-                        "size": [
-                          5.2,
-                          37,
-                          4
-                        ]
-                      }
+                      "resolution": 32
+                    },
+                    {
+                      "type": "hull",
+                      "shapes": [
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            20,
+                            -5,
+                            7.2
+                          ],
+                          "resolution": 32
+                        },
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            24,
+                            -5,
+                            7.2
+                          ],
+                          "resolution": 32
+                        }
+                      ]
                     },
                     {
                       "type": "translate",
                       "vector": [
-                        27,
-                        0,
-                        7.8
+                        22,
+                        -5,
+                        7.7
                       ],
                       "shape": {
                         "type": "cuboid",
                         "size": [
-                          5.2,
-                          37,
-                          4
+                          9.8,
+                          5.8,
+                          1.4
+                        ]
+                      }
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 2.9,
+                      "height": 4,
+                      "center": [
+                        19,
+                        -22,
+                        7.2
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "hull",
+                      "shapes": [
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            15,
+                            -22,
+                            7.2
+                          ],
+                          "resolution": 32
+                        },
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            19,
+                            -22,
+                            7.2
+                          ],
+                          "resolution": 32
+                        }
+                      ]
+                    },
+                    {
+                      "type": "translate",
+                      "vector": [
+                        17,
+                        -22,
+                        7.7
+                      ],
+                      "shape": {
+                        "type": "cuboid",
+                        "size": [
+                          9.8,
+                          5.8,
+                          1.4
+                        ]
+                      }
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 2.9,
+                      "height": 4,
+                      "center": [
+                        4,
+                        15,
+                        7.2
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "hull",
+                      "shapes": [
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            0,
+                            15,
+                            7.2
+                          ],
+                          "resolution": 32
+                        },
+                        {
+                          "type": "cylinder",
+                          "radius": 2.3,
+                          "height": 4,
+                          "center": [
+                            4,
+                            15,
+                            7.2
+                          ],
+                          "resolution": 32
+                        }
+                      ]
+                    },
+                    {
+                      "type": "translate",
+                      "vector": [
+                        2,
+                        15,
+                        7.7
+                      ],
+                      "shape": {
+                        "type": "cuboid",
+                        "size": [
+                          9.8,
+                          5.8,
+                          1.4
                         ]
                       }
                     }
@@ -657,142 +1186,529 @@
                 {
                   "type": "translate",
                   "vector": [
-                    -19,
-                    25,
-                    8.1
+                    -40.2,
+                    -28,
+                    8.4
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      1.8
+                      1.2
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    19,
-                    25,
-                    8.1
+                    -40.2,
+                    10,
+                    8.4
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      1.8
+                      1.2
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    -19,
-                    -14,
-                    8.1
+                    -1.200000000000001,
+                    -28,
+                    8.4
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      1.8
+                      1.2
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    19,
-                    -14,
-                    8.1
+                    -1.1999999999999975,
+                    10,
+                    8.4
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      1.8
+                      1.2
                     ]
                   }
                 },
                 {
-                  "type": "translate",
-                  "vector": [
-                    -24.55,
-                    6,
-                    14.4
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      6,
-                      26,
-                      0.8
-                    ]
-                  }
-                },
-                {
-                  "type": "translate",
-                  "vector": [
-                    22.7,
-                    6,
-                    14.4
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      2,
-                      26,
-                      0.8
-                    ]
-                  }
+                  "type": "intersect",
+                  "shapes": [
+                    {
+                      "type": "union",
+                      "shapes": [
+                        {
+                          "type": "translate",
+                          "vector": [
+                            -55.85,
+                            -21.5,
+                            14.4
+                          ],
+                          "shape": {
+                            "type": "cuboid",
+                            "size": [
+                              3.6,
+                              43,
+                              0.8
+                            ]
+                          }
+                        },
+                        {
+                          "type": "translate",
+                          "vector": [
+                            -20.15,
+                            -21.5,
+                            14.4
+                          ],
+                          "shape": {
+                            "type": "cuboid",
+                            "size": [
+                              3.6,
+                              43,
+                              0.8
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "subtract",
+                      "shapes": [
+                        {
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -34,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -3,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -34,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -3,
+                                            6.5
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        6.5
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -42,
+                                            -35,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -42,
+                                            -2,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -34,
+                                            -35,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -34,
+                                            -2,
+                                            18
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        18
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "subtract",
+                              "shapes": [
+                                {
+                                  "type": "hull",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31,
+                                      "height": 1,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 12,
+                                      "height": 1,
+                                      "center": [
+                                        -43,
+                                        5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "hull",
+                                      "shapes": [
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -34,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -41,
+                                            -3,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -34,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        },
+                                        {
+                                          "type": "cylinder",
+                                          "radius": 17,
+                                          "height": 1,
+                                          "center": [
+                                            -35,
+                                            -3,
+                                            29.5
+                                          ],
+                                          "resolution": 32
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "subtract",
+                                  "shapes": [
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 25,
+                                      "height": 3,
+                                      "center": [
+                                        3,
+                                        -54,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    },
+                                    {
+                                      "type": "cylinder",
+                                      "radius": 31.8,
+                                      "height": 5,
+                                      "center": [
+                                        0,
+                                        -5,
+                                        29.5
+                                      ],
+                                      "resolution": 32
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "subtract",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 25,
+                              "height": 30,
+                              "center": [
+                                3,
+                                -54,
+                                18
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 31.8,
+                              "height": 32,
+                              "center": [
+                                0,
+                                -5,
+                                18
+                              ],
+                              "resolution": 32
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
             {
+              "type": "translate",
+              "vector": [
+                -56.3,
+                -28,
+                20
+              ],
+              "shape": {
+                "type": "cuboid",
+                "size": [
+                  3.2,
+                  4.6,
+                  25
+                ]
+              }
+            },
+            {
               "type": "cylinder",
-              "radius": 0.85,
-              "height": 24,
+              "radius": 1.1,
+              "height": 6,
               "center": [
-                -19,
-                25,
-                17
+                -40.2,
+                -28,
+                8
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 0.85,
-              "height": 24,
+              "radius": 1.1,
+              "height": 6,
               "center": [
-                19,
-                25,
-                17
+                -40.2,
+                10,
+                8
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 0.85,
-              "height": 24,
+              "radius": 1.1,
+              "height": 6,
               "center": [
-                -19,
-                -14,
-                17
+                -1.200000000000001,
+                -28,
+                8
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 0.85,
-              "height": 24,
+              "radius": 1.1,
+              "height": 6,
               "center": [
-                19,
-                -14,
-                17
+                -1.1999999999999975,
+                10,
+                8
               ],
               "resolution": 32
             }
@@ -801,9 +1717,9 @@
       }
     },
     "position": {
-      "x": 50,
-      "y": 0,
-      "z": 20
+      "x": -14.00000000000001,
+      "y": -13,
+      "z": 17.999999999999996
     },
     "rotation": {
       "x": 0,
@@ -820,9 +1736,9 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 64.00000000000001,
-      "y": 72,
-      "z": 20
+      "x": 90.00000000000003,
+      "y": 78,
+      "z": 24.000000000000004
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -833,16 +1749,16 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        0,
-        -6,
+        38,
+        21.5,
         -15.1
       ],
       "shape": {
         "type": "colorize",
         "color": [
-          0.2,
-          0.22,
-          0.25
+          0.1,
+          0.11,
+          0.12
         ],
         "shape": {
           "type": "subtract",
@@ -850,15 +1766,15 @@
             {
               "type": "translate",
               "vector": [
-                0,
-                6,
+                -38,
+                -21.5,
                 15.1
               ],
               "shape": {
                 "type": "cuboid",
                 "size": [
-                  44,
                   33,
+                  44,
                   0.6
                 ]
               }
@@ -866,15 +1782,15 @@
             {
               "type": "translate",
               "vector": [
-                0,
-                6,
+                -38,
+                -21.5,
                 15.1
               ],
               "shape": {
                 "type": "cuboid",
                 "size": [
-                  40,
                   29,
+                  40,
                   2
                 ]
               }
@@ -884,9 +1800,9 @@
       }
     },
     "position": {
-      "x": 52,
-      "y": 6,
-      "z": 19.1
+      "x": -38,
+      "y": -21.5,
+      "z": 15.1
     },
     "rotation": {
       "x": 0,
@@ -903,8 +1819,8 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 44,
-      "y": 33,
+      "x": 33,
+      "y": 44,
       "z": 0.6000000000000014
     },
     "anchor_alignment": "center",
@@ -916,8 +1832,8 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        0,
-        -6,
+        38,
+        21.5,
         -19.65
       ],
       "shape": {
@@ -930,15 +1846,15 @@
         "shape": {
           "type": "translate",
           "vector": [
-            0,
-            6,
+            -38,
+            -21.5,
             19.65
           ],
           "shape": {
             "type": "cuboid",
             "size": [
-              43,
               32,
+              43,
               8.5
             ]
           }
@@ -946,9 +1862,9 @@
       }
     },
     "position": {
-      "x": 52,
-      "y": 6,
-      "z": 23.65
+      "x": -38,
+      "y": -21.5,
+      "z": 19.65
     },
     "rotation": {
       "x": 0,
@@ -965,8 +1881,8 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 43,
-      "y": 32,
+      "x": 32,
+      "y": 43,
       "z": 8.5
     },
     "anchor_alignment": "center",
@@ -978,9 +1894,9 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        -27.012,
-        8.5,
-        -10.86
+        28.599999999999998,
+        -15.962000000000002,
+        -16.73
       ],
       "shape": {
         "type": "colorize",
@@ -995,15 +1911,15 @@
             {
               "type": "translate",
               "vector": [
-                26.412,
-                -8.5,
+                -6.6999999999999975,
+                14.712000000000002,
                 10.86
               ],
               "shape": {
                 "type": "cuboid",
                 "size": [
-                  7.5760000000000005,
                   3,
+                  2.1759999999999993,
                   1.8
                 ]
               }
@@ -1011,76 +1927,124 @@
             {
               "type": "translate",
               "vector": [
-                23.05,
-                -8.5,
+                -26.099999999999998,
+                15,
                 10.86
               ],
               "shape": {
                 "type": "cuboid",
                 "size": [
-                  0.6,
-                  4.4,
-                  3.2
+                  40.300000000000004,
+                  1.8,
+                  1.8
                 ]
               }
             },
             {
-              "type": "hull",
-              "shapes": [
-                {
-                  "type": "cylinder",
-                  "radius": 0.7,
-                  "height": 3,
-                  "center": [
-                    30.5,
-                    -11.3,
-                    10.86
-                  ],
-                  "resolution": 32
-                },
-                {
-                  "type": "cylinder",
-                  "radius": 0.7,
-                  "height": 3,
-                  "center": [
-                    30.5,
-                    -5.7,
-                    10.86
-                  ],
-                  "resolution": 32
-                },
-                {
-                  "type": "cylinder",
-                  "radius": 0.7,
-                  "height": 3,
-                  "center": [
-                    30.700000000000003,
-                    -11.3,
-                    10.86
-                  ],
-                  "resolution": 32
-                },
-                {
-                  "type": "cylinder",
-                  "radius": 0.7,
-                  "height": 3,
-                  "center": [
-                    30.700000000000003,
-                    -5.7,
-                    10.86
-                  ],
-                  "resolution": 32
+              "type": "translate",
+              "vector": [
+                -45.5,
+                15,
+                15.43
+              ],
+              "shape": {
+                "type": "cuboid",
+                "size": [
+                  3,
+                  1.8,
+                  10.94
+                ]
+              }
+            },
+            {
+              "type": "translate",
+              "vector": [
+                -45.5,
+                16.25,
+                20
+              ],
+              "shape": {
+                "type": "cuboid",
+                "size": [
+                  3,
+                  3.3,
+                  1.8
+                ]
+              }
+            },
+            {
+              "type": "translate",
+              "vector": [
+                -45.5,
+                17.5,
+                20
+              ],
+              "shape": {
+                "type": "rotate",
+                "angles": [
+                  1.5707963267948966,
+                  0,
+                  0
+                ],
+                "shape": {
+                  "type": "hull",
+                  "shapes": [
+                    {
+                      "type": "cylinder",
+                      "radius": 3.3,
+                      "height": 1.6,
+                      "center": [
+                        -3.2,
+                        -0.20000000000000018,
+                        0
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 3.3,
+                      "height": 1.6,
+                      "center": [
+                        -3.2,
+                        0.20000000000000018,
+                        0
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 3.3,
+                      "height": 1.6,
+                      "center": [
+                        3.2,
+                        -0.20000000000000018,
+                        0
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 3.3,
+                      "height": 1.6,
+                      "center": [
+                        3.2,
+                        0.20000000000000018,
+                        0
+                      ],
+                      "resolution": 32
+                    }
+                  ]
                 }
-              ]
+              }
             }
           ]
         }
       }
     },
     "position": {
-      "x": 79.012,
-      "y": -8.5,
-      "z": 14.86
+      "x": -28.599999999999998,
+      "y": 15.962000000000002,
+      "z": 16.73
     },
     "rotation": {
       "x": 0,
@@ -1097,9 +2061,9 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 8.776000000000003,
-      "y": 7,
-      "z": 3.1999999999999993
+      "x": 46.800000000000004,
+      "y": 4.675999999999998,
+      "z": 13.540000000000001
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -1110,16 +2074,16 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        2,
-        0,
-        -19.5
+        13.5,
+        12.5,
+        -21.75
       ],
       "shape": {
         "type": "colorize",
         "color": [
-          0.18,
-          0.2,
-          0.23
+          0.065,
+          0.07,
+          0.075
         ],
         "shape": {
           "type": "subtract",
@@ -1131,198 +2095,326 @@
                   "type": "hull",
                   "shapes": [
                     {
-                      "type": "hull",
+                      "type": "subtract",
                       "shapes": [
                         {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            -21,
-                            -23,
-                            26.2
-                          ],
-                          "resolution": 32
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 31,
+                              "height": 1,
+                              "center": [
+                                0,
+                                -5,
+                                30.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 12,
+                              "height": 1,
+                              "center": [
+                                -43,
+                                5,
+                                30.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "hull",
+                              "shapes": [
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -41,
+                                    -34,
+                                    30.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -41,
+                                    -3,
+                                    30.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -35,
+                                    -34,
+                                    30.5
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -35,
+                                    -3,
+                                    30.5
+                                  ],
+                                  "resolution": 32
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            -21,
-                            23,
-                            26.2
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            17,
-                            -23,
-                            26.2
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            17,
-                            23,
-                            26.2
-                          ],
-                          "resolution": 32
+                          "type": "subtract",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 25,
+                              "height": 3,
+                              "center": [
+                                3,
+                                -54,
+                                30.5
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 31.8,
+                              "height": 5,
+                              "center": [
+                                0,
+                                -5,
+                                30.5
+                              ],
+                              "resolution": 32
+                            }
+                          ]
                         }
                       ]
                     },
                     {
-                      "type": "hull",
+                      "type": "subtract",
                       "shapes": [
                         {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            -21,
-                            -23,
-                            27
-                          ],
-                          "resolution": 32
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 30.2,
+                              "height": 1,
+                              "center": [
+                                0,
+                                -5,
+                                32
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 12,
+                              "height": 1,
+                              "center": [
+                                -43,
+                                5,
+                                32
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "hull",
+                              "shapes": [
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -40.5,
+                                    -33.5,
+                                    32
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -40.5,
+                                    -3.5,
+                                    32
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -35.5,
+                                    -33.5,
+                                    32
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 1,
+                                  "center": [
+                                    -35.5,
+                                    -3.5,
+                                    32
+                                  ],
+                                  "resolution": 32
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            -21,
-                            23,
-                            27
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            17,
-                            -23,
-                            27
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 12,
-                          "height": 0.4,
-                          "center": [
-                            17,
-                            23,
-                            27
-                          ],
-                          "resolution": 32
+                          "type": "subtract",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 25,
+                              "height": 3,
+                              "center": [
+                                3,
+                                -54,
+                                32
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 31.8,
+                              "height": 5,
+                              "center": [
+                                0,
+                                -5,
+                                32
+                              ],
+                              "resolution": 32
+                            }
+                          ]
                         }
                       ]
                     },
                     {
-                      "type": "hull",
+                      "type": "subtract",
                       "shapes": [
                         {
-                          "type": "cylinder",
-                          "radius": 14,
-                          "height": 0.4,
-                          "center": [
-                            -17,
-                            -19,
-                            28
-                          ],
-                          "resolution": 32
+                          "type": "hull",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 29.2,
+                              "height": 0.6,
+                              "center": [
+                                0,
+                                -5,
+                                33.2
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 12,
+                              "height": 0.6,
+                              "center": [
+                                -43,
+                                5,
+                                33.2
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "hull",
+                              "shapes": [
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 0.6,
+                                  "center": [
+                                    -39.5,
+                                    -32.5,
+                                    33.2
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 0.6,
+                                  "center": [
+                                    -39.5,
+                                    -4.5,
+                                    33.2
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 0.6,
+                                  "center": [
+                                    -36.5,
+                                    -32.5,
+                                    33.2
+                                  ],
+                                  "resolution": 32
+                                },
+                                {
+                                  "type": "cylinder",
+                                  "radius": 17,
+                                  "height": 0.6,
+                                  "center": [
+                                    -36.5,
+                                    -4.5,
+                                    33.2
+                                  ],
+                                  "resolution": 32
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
-                          "type": "cylinder",
-                          "radius": 14,
-                          "height": 0.4,
-                          "center": [
-                            -17,
-                            19,
-                            28
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 14,
-                          "height": 0.4,
-                          "center": [
-                            13,
-                            -19,
-                            28
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 14,
-                          "height": 0.4,
-                          "center": [
-                            13,
-                            19,
-                            28
-                          ],
-                          "resolution": 32
-                        }
-                      ]
-                    },
-                    {
-                      "type": "hull",
-                      "shapes": [
-                        {
-                          "type": "cylinder",
-                          "radius": 16,
-                          "height": 0.4,
-                          "center": [
-                            -13,
-                            -15,
-                            28.8
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 16,
-                          "height": 0.4,
-                          "center": [
-                            -13,
-                            15,
-                            28.8
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 16,
-                          "height": 0.4,
-                          "center": [
-                            9,
-                            -15,
-                            28.8
-                          ],
-                          "resolution": 32
-                        },
-                        {
-                          "type": "cylinder",
-                          "radius": 16,
-                          "height": 0.4,
-                          "center": [
-                            9,
-                            15,
-                            28.8
-                          ],
-                          "resolution": 32
+                          "type": "subtract",
+                          "shapes": [
+                            {
+                              "type": "cylinder",
+                              "radius": 25,
+                              "height": 2.6,
+                              "center": [
+                                3,
+                                -54,
+                                33.2
+                              ],
+                              "resolution": 32
+                            },
+                            {
+                              "type": "cylinder",
+                              "radius": 31.8,
+                              "height": 4.6,
+                              "center": [
+                                0,
+                                -5,
+                                33.2
+                              ],
+                              "resolution": 32
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1331,121 +2423,294 @@
                 {
                   "type": "translate",
                   "vector": [
-                    -19,
-                    25,
-                    18.2
+                    -40.2,
+                    -28,
+                    11.9
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      16.4
+                      3.8
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    19,
-                    25,
-                    18.2
+                    -48.25,
+                    -28,
+                    11.9
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
+                      18.1,
                       4.2,
-                      4.2,
-                      16.4
+                      3.8
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    -19,
-                    -14,
-                    18.2
+                    -56.3,
+                    -28,
+                    20.75
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
+                      2.8,
                       4.2,
-                      4.2,
-                      16.4
+                      21.5
                     ]
                   }
                 },
                 {
                   "type": "translate",
                   "vector": [
-                    19,
-                    -14,
-                    18.2
+                    -40.2,
+                    10,
+                    20.75
                   ],
                   "shape": {
                     "type": "cuboid",
                     "size": [
                       4.2,
                       4.2,
-                      16.4
+                      21.5
+                    ]
+                  }
+                },
+                {
+                  "type": "translate",
+                  "vector": [
+                    -1.200000000000001,
+                    -28,
+                    20.75
+                  ],
+                  "shape": {
+                    "type": "cuboid",
+                    "size": [
+                      4.2,
+                      4.2,
+                      21.5
+                    ]
+                  }
+                },
+                {
+                  "type": "translate",
+                  "vector": [
+                    -1.1999999999999975,
+                    10,
+                    20.75
+                  ],
+                  "shape": {
+                    "type": "cuboid",
+                    "size": [
+                      4.2,
+                      4.2,
+                      21.5
                     ]
                   }
                 }
               ]
             },
             {
+              "type": "subtract",
+              "shapes": [
+                {
+                  "type": "cylinder",
+                  "radius": 25,
+                  "height": 32,
+                  "center": [
+                    3,
+                    -54,
+                    20
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 31.8,
+                  "height": 34,
+                  "center": [
+                    0,
+                    -5,
+                    20
+                  ],
+                  "resolution": 32
+                }
+              ]
+            },
+            {
               "type": "cylinder",
-              "radius": 1.1,
-              "height": 20,
+              "radius": 0.85,
+              "height": 3.8,
               "center": [
-                -19,
-                25,
-                19
+                -40.2,
+                -28,
+                11.8
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 1.1,
-              "height": 20,
+              "radius": 0.85,
+              "height": 21.2,
               "center": [
-                19,
-                25,
-                19
+                -40.2,
+                10,
+                20.5
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 1.1,
-              "height": 20,
+              "radius": 0.85,
+              "height": 21.2,
               "center": [
-                -19,
-                -14,
-                19
+                -1.200000000000001,
+                -28,
+                20.5
               ],
               "resolution": 32
             },
             {
               "type": "cylinder",
-              "radius": 1.1,
-              "height": 20,
+              "radius": 0.85,
+              "height": 21.2,
               "center": [
-                19,
-                -14,
-                19
+                -1.1999999999999975,
+                10,
+                20.5
               ],
               "resolution": 32
+            },
+            {
+              "type": "hull",
+              "shapes": [
+                {
+                  "type": "cylinder",
+                  "radius": 14.3,
+                  "height": 2.1,
+                  "center": [
+                    -40,
+                    -32,
+                    33.55
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 14.3,
+                  "height": 2.1,
+                  "center": [
+                    -40,
+                    -8,
+                    33.55
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 14.3,
+                  "height": 2.1,
+                  "center": [
+                    -36,
+                    -32,
+                    33.55
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 14.3,
+                  "height": 2.1,
+                  "center": [
+                    -36,
+                    -8,
+                    33.55
+                  ],
+                  "resolution": 32
+                }
+              ]
+            },
+            {
+              "type": "subtract",
+              "shapes": [
+                {
+                  "type": "cylinder",
+                  "radius": 29.4,
+                  "height": 4,
+                  "center": [
+                    0,
+                    -5,
+                    33.3
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "hull",
+                  "shapes": [
+                    {
+                      "type": "cylinder",
+                      "radius": 16.3,
+                      "height": 7,
+                      "center": [
+                        -42,
+                        -35,
+                        33
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 16.3,
+                      "height": 7,
+                      "center": [
+                        -42,
+                        -2.0000000000000036,
+                        33
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 16.3,
+                      "height": 7,
+                      "center": [
+                        -34,
+                        -35,
+                        33
+                      ],
+                      "resolution": 32
+                    },
+                    {
+                      "type": "cylinder",
+                      "radius": 16.3,
+                      "height": 7,
+                      "center": [
+                        -34,
+                        -2.0000000000000036,
+                        33
+                      ],
+                      "resolution": 32
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       }
     },
     "position": {
-      "x": 50,
-      "y": 0,
-      "z": 23.5
+      "x": -13.5,
+      "y": -12.5,
+      "z": 21.75
     },
     "rotation": {
       "x": 0,
@@ -1462,9 +2727,9 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 62,
-      "y": 70,
-      "z": 19
+      "x": 89,
+      "y": 77,
+      "z": 23.5
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -1475,276 +2740,72 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        -27.25,
-        0,
-        -7
+        38,
+        20,
+        -33.3
       ],
       "shape": {
         "type": "colorize",
         "color": [
-          0.17,
-          0.19,
-          0.22
+          0.025,
+          0.028,
+          0.03
         ],
         "shape": {
-          "type": "union",
+          "type": "hull",
           "shapes": [
             {
-              "type": "union",
-              "shapes": [
-                {
-                  "type": "cylinder",
-                  "radius": 29.5,
-                  "height": 2.6,
-                  "center": [
-                    0,
-                    0,
-                    3.5
-                  ],
-                  "resolution": 32
-                },
-                {
-                  "type": "subtract",
-                  "shapes": [
-                    {
-                      "type": "cylinder",
-                      "radius": 29.5,
-                      "height": 1.8,
-                      "center": [
-                        0,
-                        0,
-                        1.5
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 27.3,
-                      "height": 2.2,
-                      "center": [
-                        0,
-                        0,
-                        1.5
-                      ],
-                      "resolution": 32
-                    }
-                  ]
-                },
-                {
-                  "type": "cylinder",
-                  "radius": 22.75,
-                  "height": 1.8,
-                  "center": [
-                    0,
-                    0,
-                    1.5
-                  ],
-                  "resolution": 32
-                }
-              ]
-            },
-            {
               "type": "cylinder",
-              "radius": 27.5,
-              "height": 4,
+              "radius": 14,
+              "height": 1.4,
               "center": [
-                0,
-                0,
-                6.8
+                -40,
+                -32,
+                33.3
               ],
               "resolution": 32
             },
             {
-              "type": "hull",
-              "shapes": [
-                {
-                  "type": "cylinder",
-                  "radius": 27.5,
-                  "height": 2.4,
-                  "center": [
-                    0,
-                    0,
-                    7.6
-                  ],
-                  "resolution": 32
-                },
-                {
-                  "type": "hull",
-                  "shapes": [
-                    {
-                      "type": "cylinder",
-                      "radius": 16,
-                      "height": 2.4,
-                      "center": [
-                        32,
-                        -22,
-                        8.8
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 16,
-                      "height": 2.4,
-                      "center": [
-                        32,
-                        22,
-                        8.8
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 16,
-                      "height": 2.4,
-                      "center": [
-                        68,
-                        -22,
-                        8.8
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 16,
-                      "height": 2.4,
-                      "center": [
-                        68,
-                        22,
-                        8.8
-                      ],
-                      "resolution": 32
-                    }
-                  ]
-                }
-              ]
+              "type": "cylinder",
+              "radius": 14,
+              "height": 1.4,
+              "center": [
+                -40,
+                -8,
+                33.3
+              ],
+              "resolution": 32
             },
             {
-              "type": "union",
-              "shapes": [
-                {
-                  "type": "translate",
-                  "vector": [
-                    20,
-                    0,
-                    10.8
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      2,
-                      36,
-                      4
-                    ]
-                  }
-                },
-                {
-                  "type": "translate",
-                  "vector": [
-                    80,
-                    0,
-                    10.8
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      2,
-                      36,
-                      4
-                    ]
-                  }
-                },
-                {
-                  "type": "translate",
-                  "vector": [
-                    21.5,
-                    0,
-                    12.8
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      3,
-                      36,
-                      1.2
-                    ]
-                  }
-                },
-                {
-                  "type": "translate",
-                  "vector": [
-                    78.5,
-                    0,
-                    12.8
-                  ],
-                  "shape": {
-                    "type": "cuboid",
-                    "size": [
-                      3,
-                      36,
-                      1.2
-                    ]
-                  }
-                },
-                {
-                  "type": "hull",
-                  "shapes": [
-                    {
-                      "type": "cylinder",
-                      "radius": 0.8,
-                      "height": 1.2,
-                      "center": [
-                        22.8,
-                        36.199999999999996,
-                        10.6
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 0.8,
-                      "height": 1.2,
-                      "center": [
-                        22.8,
-                        36.6,
-                        10.6
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 0.8,
-                      "height": 1.2,
-                      "center": [
-                        77.2,
-                        36.199999999999996,
-                        10.6
-                      ],
-                      "resolution": 32
-                    },
-                    {
-                      "type": "cylinder",
-                      "radius": 0.8,
-                      "height": 1.2,
-                      "center": [
-                        77.2,
-                        36.6,
-                        10.6
-                      ],
-                      "resolution": 32
-                    }
-                  ]
-                }
-              ]
+              "type": "cylinder",
+              "radius": 14,
+              "height": 1.4,
+              "center": [
+                -36,
+                -32,
+                33.3
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 14,
+              "height": 1.4,
+              "center": [
+                -36,
+                -8,
+                33.3
+              ],
+              "resolution": 32
             }
           ]
         }
       }
     },
     "position": {
-      "x": 27.25,
-      "y": 0,
-      "z": 7
+      "x": -38,
+      "y": -20,
+      "z": 33.3
     },
     "rotation": {
       "x": 0,
@@ -1761,9 +2822,9 @@
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
     "size": {
-      "x": 113.5,
-      "y": 76,
-      "z": 12.8
+      "x": 32,
+      "y": 52,
+      "z": 1.4000000000000057
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -1774,34 +2835,88 @@
     "model_jscad": {
       "type": "translate",
       "vector": [
-        0,
-        0,
-        -0.3
+        -2.420476076507356,
+        5.000000000000002,
+        -32.8
       ],
       "shape": {
         "type": "colorize",
         "color": [
-          0.18,
-          0.2,
-          0.23
+          0.025,
+          0.028,
+          0.03
         ],
         "shape": {
-          "type": "cylinder",
-          "radius": 29.5,
-          "height": 0.6,
-          "center": [
-            0,
-            0,
-            0.3
-          ],
-          "resolution": 32
+          "type": "subtract",
+          "shapes": [
+            {
+              "type": "cylinder",
+              "radius": 29.2,
+              "height": 1.4,
+              "center": [
+                0,
+                -5,
+                32.8
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "hull",
+              "shapes": [
+                {
+                  "type": "cylinder",
+                  "radius": 16.3,
+                  "height": 7,
+                  "center": [
+                    -42,
+                    -35,
+                    33
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 16.3,
+                  "height": 7,
+                  "center": [
+                    -42,
+                    -2.0000000000000036,
+                    33
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 16.3,
+                  "height": 7,
+                  "center": [
+                    -34,
+                    -35,
+                    33
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 16.3,
+                  "height": 7,
+                  "center": [
+                    -34,
+                    -2.0000000000000036,
+                    33
+                  ],
+                  "resolution": 32
+                }
+              ]
+            }
+          ]
         }
       }
     },
     "position": {
-      "x": 0,
-      "y": 0,
-      "z": 0.3
+      "x": 2.420476076507356,
+      "y": -5.000000000000002,
+      "z": 32.8
     },
     "rotation": {
       "x": 0,
@@ -1810,6 +2925,251 @@
     },
     "layer": "top",
     "source_component_id": "source_component_13",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "size": {
+      "x": 53.55904784698529,
+      "y": 58.400000000000006,
+      "z": 1.4000000000000057
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_14",
+    "model_jscad": {
+      "type": "translate",
+      "vector": [
+        1.7763568394002505e-15,
+        4.999999999999998,
+        -4.45
+      ],
+      "shape": {
+        "type": "colorize",
+        "color": [
+          0.06,
+          0.065,
+          0.07
+        ],
+        "shape": {
+          "type": "union",
+          "shapes": [
+            {
+              "type": "cylinder",
+              "radius": 29.5,
+              "height": 2.6,
+              "center": [
+                0,
+                -5,
+                3.5
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "subtract",
+              "shapes": [
+                {
+                  "type": "cylinder",
+                  "radius": 29.5,
+                  "height": 1.8,
+                  "center": [
+                    0,
+                    -5,
+                    1.5
+                  ],
+                  "resolution": 32
+                },
+                {
+                  "type": "cylinder",
+                  "radius": 27.3,
+                  "height": 2.2,
+                  "center": [
+                    0,
+                    -5,
+                    1.5
+                  ],
+                  "resolution": 32
+                }
+              ]
+            },
+            {
+              "type": "cylinder",
+              "radius": 22.75,
+              "height": 1.8,
+              "center": [
+                0,
+                -5,
+                1.5
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2,
+              "height": 2.5,
+              "center": [
+                -20,
+                -5,
+                6.05
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2.6,
+              "height": 1,
+              "center": [
+                -20,
+                -5,
+                7.8
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2,
+              "height": 2.5,
+              "center": [
+                20,
+                -5,
+                6.05
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2.6,
+              "height": 1,
+              "center": [
+                20,
+                -5,
+                7.8
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2,
+              "height": 2.5,
+              "center": [
+                15,
+                -22,
+                6.05
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2.6,
+              "height": 1,
+              "center": [
+                15,
+                -22,
+                7.8
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2,
+              "height": 2.5,
+              "center": [
+                0,
+                15,
+                6.05
+              ],
+              "resolution": 32
+            },
+            {
+              "type": "cylinder",
+              "radius": 2.6,
+              "height": 1,
+              "center": [
+                0,
+                15,
+                7.8
+              ],
+              "resolution": 32
+            }
+          ]
+        }
+      }
+    },
+    "position": {
+      "x": -1.7763568394002505e-15,
+      "y": -4.999999999999998,
+      "z": 4.45
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_14",
+    "model_origin_position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "model_unit_to_mm_scale_factor": 1,
+    "model_object_fit": "contain_within_bounds",
+    "size": {
+      "x": 59.000000000000014,
+      "y": 59.000000000000014,
+      "z": 7.700000000000001
+    },
+    "anchor_alignment": "center",
+    "show_as_translucent_model": false
+  },
+  {
+    "type": "cad_component",
+    "cad_component_id": "cad_component_15",
+    "model_jscad": {
+      "type": "translate",
+      "vector": [
+        0,
+        5,
+        -0.3
+      ],
+      "shape": {
+        "type": "colorize",
+        "color": [
+          0.055,
+          0.06,
+          0.065
+        ],
+        "shape": {
+          "type": "cylinder",
+          "radius": 29.5,
+          "height": 0.6,
+          "center": [
+            0,
+            -5,
+            0.3
+          ],
+          "resolution": 32
+        }
+      }
+    },
+    "position": {
+      "x": 0,
+      "y": -5,
+      "z": 0.3
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "layer": "top",
+    "source_component_id": "source_component_15",
     "model_origin_position": {
       "x": 0,
       "y": 0,
@@ -1827,12 +3187,12 @@
   },
   {
     "type": "cad_component",
-    "cad_component_id": "cad_component_14",
+    "cad_component_id": "cad_component_16",
     "model_jscad": {
       "type": "translate",
       "vector": [
         0,
-        0,
+        4.999999999999998,
         -1.15
       ],
       "shape": {
@@ -1851,7 +3211,7 @@
               "height": 1.1,
               "center": [
                 0,
-                0,
+                -5,
                 1.15
               ],
               "resolution": 32
@@ -1862,7 +3222,7 @@
               "height": 2,
               "center": [
                 0,
-                0,
+                -5,
                 1.15
               ],
               "resolution": 32
@@ -1873,7 +3233,7 @@
     },
     "position": {
       "x": 0,
-      "y": 0,
+      "y": -4.999999999999998,
       "z": 1.15
     },
     "rotation": {
@@ -1882,7 +3242,7 @@
       "z": 0
     },
     "layer": "top",
-    "source_component_id": "source_component_14",
+    "source_component_id": "source_component_16",
     "model_origin_position": {
       "x": 0,
       "y": 0,
@@ -1892,7 +3252,7 @@
     "model_object_fit": "contain_within_bounds",
     "size": {
       "x": 54.1,
-      "y": 54.1,
+      "y": 54.099999999999994,
       "z": 1.1
     },
     "anchor_alignment": "center",
@@ -1900,6 +3260,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "fd812d53d153a76ac91f955871a34332"
+    "source_filesystem_md5_hash": "754ea2bcb1a603dac3783f5ed19ed739"
   }
 ]
