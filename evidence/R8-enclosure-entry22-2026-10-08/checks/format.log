@@ -1,0 +1,2 @@
+$ biome format --write index.circuit.tsx enclosure.circuit.tsx product.assembly.tsx product.exploded.tsx product.geometry.tsx src product/assembly.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts
+Formatted 37 files in 17ms. No fixes applied.

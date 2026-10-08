@@ -1,0 +1,98 @@
+{
+  "observed_utc": "2026-10-08T18:42:42.871606+00:00",
+  "before_head": "c570975994bed34abef2658d607d2ff7418692cb",
+  "heavy_checks": [
+    {
+      "name": "enclosure-build",
+      "command": [
+        "tsci",
+        "build",
+        "enclosure.circuit.tsx",
+        "--glbs"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-08T18:37:14.655087+00:00",
+      "peak_child_rss_kib": 6316604,
+      "oom_counter_increase": false
+    },
+    {
+      "name": "enclosure-build",
+      "command": [
+        "bun",
+        "scripts/render-product.ts",
+        "enclosure"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-08T18:37:16.257514+00:00",
+      "peak_child_rss_kib": 6316604,
+      "oom_counter_increase": false
+    },
+    {
+      "name": "compatibility-build",
+      "command": [
+        "tsci",
+        "build",
+        "product.assembly.tsx",
+        "--glbs"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-08T18:37:39.594200+00:00",
+      "peak_child_rss_kib": 6276160,
+      "oom_counter_increase": false
+    },
+    {
+      "name": "exploded-build",
+      "command": [
+        "tsci",
+        "build",
+        "product.exploded.tsx",
+        "--glbs"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-08T18:38:02.018608+00:00",
+      "peak_child_rss_kib": 6321968,
+      "oom_counter_increase": false
+    },
+    {
+      "name": "native-model-readback",
+      "command": [
+        "tooling/gerber-review-venv/bin/python",
+        "scripts/review-native-product.py",
+        "--output",
+        "evidence/R8-enclosure-entry22-2026-10-08/native-model-readback.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-08T18:38:05.299389+00:00",
+      "peak_child_rss_kib": 286520,
+      "oom_counter_increase": false
+    }
+  ],
+  "native_geometry_checks": 51,
+  "mechanical_face_winding_checks": 30,
+  "product_tests": {
+    "passed": 4,
+    "assertions": 253
+  },
+  "smoke": {
+    "python_tests": 38,
+    "bun_tests": 2,
+    "bun_assertions": 13,
+    "frozen_r7_hashes": 129,
+    "old_wroom_qualification_warning_preserved": true
+  },
+  "format": {
+    "files": 37,
+    "passes": true
+  },
+  "typecheck": "PASS",
+  "observed_memory_limit_bytes": 34359738368,
+  "observed_cpu_limit": "400000 100000",
+  "limits_not_guaranteed_plan_allocation": true,
+  "board_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "preserved_files": 42,
+  "root_build_routing_sdk_cam_run": false,
+  "configuration_includes_both_pcb_and_enclosure": true,
+  "full_default_build_run": false,
+  "physical_qualification": "pending",
+  "compatibility_json_change": "source_project_metadata filesystem hash only; all geometry elements unchanged"
+}

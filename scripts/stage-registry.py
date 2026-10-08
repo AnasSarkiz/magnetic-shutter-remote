@@ -79,14 +79,14 @@ def verify_native_product(options):
     if len(reviews) != 1:
         raise ValueError('Product staging requires one independent native GLB review')
     report = reviews[0]
-    if not report.get('passes') or set(report['native_views_checked']) != {'product.assembly','product.exploded'}:
+    if not report.get('passes') or set(report['native_views_checked']) != {'product.assembly','product.exploded','enclosure'}:
         raise ValueError('Native product views did not pass independent review')
     for view, sha256 in report['native_glb_sha256'].items():
         if hashlib.sha256((ROOT/'dist'/view/'3d.glb').read_bytes()).hexdigest() != sha256:
             raise ValueError(f'Native product GLB changed after review: {view}')
     mechanical_checks = [row for row in report['actual_glb_geometry_review'] if 'part' in row]
-    if len(mechanical_checks) != 20 or any(not row.get('outward_face_winding_preserved') for row in mechanical_checks):
-        raise ValueError('All ten mechanical face directions must pass in both views')
+    if len(mechanical_checks) != 30 or any(not row.get('outward_face_winding_preserved') for row in mechanical_checks):
+        raise ValueError('All ten mechanical face directions must pass in all three views')
 
 
 def stage(destination, options):
@@ -183,6 +183,7 @@ def stage(destination, options):
             path = ROOT/part['file']
             if not part['watertight'] or not part['winding_consistent'] or hashlib.sha256(path.read_bytes()).hexdigest() != part['sha256']:
                 raise ValueError('Product print mesh did not pass readback')
+        selected.update(source_closure(ROOT/'enclosure.circuit.tsx'))
         selected.update(source_closure(ROOT/'product.assembly.tsx'))
         selected.update(source_closure(ROOT/'product.exploded.tsx'))
         selected.update(source_closure(ROOT/'product.geometry.tsx'))
@@ -193,6 +194,8 @@ def stage(destination, options):
         selected.update((ROOT/'product').glob('studio-*-review.json'))
         selected.update(ROOT/part['file'] for part in mesh_review['printed_parts'])
         selected.update(ROOT/'dist'/name/'circuit.json' for name in ['product.assembly','product.exploded'])
+        selected.add(ROOT/'dist/enclosure/circuit.json')
+        selected.add(ROOT/'dist/enclosure/3d.png')
         selected.add(ROOT/'cloud/run-heavy.py')
     selected.update(supplemental_files(options, circuit_sha256))
     selected.update(evidence / name for name in ['REPRODUCE-COMMANDS.json',

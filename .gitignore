@@ -6,6 +6,10 @@ dist/*
 !dist/index/
 dist/index/*
 !dist/index/circuit.json
+!dist/enclosure/
+dist/enclosure/*
+!dist/enclosure/circuit.json
+!dist/enclosure/3d.png
 build/
 
 # Environment variables

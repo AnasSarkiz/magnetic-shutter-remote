@@ -32,11 +32,16 @@ These are editable prototype dimensions. The PCB remains44×56×1mm.
 
 ![Product assembly](product/closed.png)
 
-The enclosure is part of the native tscircuit code: [closed product](product.assembly.tsx)
-and [exploded assembly](product.exploded.tsx). Run `bun run dev:product` or
+The enclosure is part of the native tscircuit code: [closed enclosure assembly](enclosure.circuit.tsx)
+and [exploded assembly](product.exploded.tsx). Run `bun run dev:enclosure` or
 `bun run dev:exploded` to select those views. Editable enclosure plans remain in
 [product/geometry.ts](product/geometry.ts); imported models preserve their exact
-native triangles and the actual PCB pose. See [assembly instructions](product/README.md).
+native triangles and the actual PCB pose. The standard `*.circuit.tsx` entry is
+listed in `includeBoardFiles` and selected as `previewComponentPath` in
+`tscircuit.config.json`. `bun run build` builds the PCB then enclosure serially;
+`bun run build:enclosure` builds only the fitted assembly, producing
+`dist/enclosure/circuit.json`, `3d.glb` and `3d.png`.
+See [assembly instructions](product/README.md).
 
 The first prototype is **shutter-only**. The RGB photo/torch ring and its
 connector/power circuit are deferred.

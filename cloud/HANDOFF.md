@@ -1,3 +1,18 @@
+# R8 enclosure circuit entry 0.3.22 — 2026-10-08
+
+Read product/README.md and evidence/R8-enclosure-entry22-2026-10-08/REVIEW.md
+(from cloud, use ../ paths). enclosure.circuit.tsx is the standard discovered
+entry; product.assembly.tsx remains an alias. includeBoardFiles explicitly lists
+the PCB and enclosure; previewComponentPath selects the enclosure. Default build
+runs both serially under the existing guard; only enclosure/compatibility views
+were built in this task. All 51 native geometry checks and 253 product assertions
+pass; the 42 protected source/PCB/model/print/setup inputs are unchanged.
+Actual publication status is the dated PUBLICATION.md. Physical qualification,
+075/076/004/084, separate missing 3V3 metadata, frozen baselines/main, light
+setup/start, memory guards and ordering/payment/contact gates remain unchanged.
+
+## Earlier records — preserved history
+
 # R8 native publication 0.3.21 — 2026-10-08
 
 The user-requested retry succeeds: all 314 native files are present and match

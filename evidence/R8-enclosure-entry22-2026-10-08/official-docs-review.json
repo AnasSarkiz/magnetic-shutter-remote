@@ -1,0 +1,28 @@
+{
+  "official_docs_commit": "5c409694efbf2d8f6a60e271c33a328223431a59",
+  "official_cli_commit": "cd764128a8487bebd07611480bf6b2fcd508e48a",
+  "references": [
+    "https://docs.tscircuit.com/command-line/tsci-build",
+    "https://docs.tscircuit.com/elements/assembly-subassembly",
+    "https://docs.tscircuit.com/guides/advanced-assembly"
+  ],
+  "entrypoint": "enclosure.circuit.tsx",
+  "documented_default_pattern": "*.circuit.tsx",
+  "documented_explicit_fields": [
+    "mainEntrypoint",
+    "includeBoardFiles",
+    "previewComponentPath"
+  ],
+  "generated_enclosure_outputs": [
+    "dist/enclosure/circuit.json",
+    "dist/enclosure/3d.glb",
+    "dist/enclosure/3d.png"
+  ],
+  "published_enclosure_outputs": [
+    "dist/enclosure/circuit.json",
+    "dist/enclosure/3d.png"
+  ],
+  "combined_glb_generated_locally": true,
+  "bounded_source_model_assets_published": 17,
+  "no_dependency_upgrade": true
+}

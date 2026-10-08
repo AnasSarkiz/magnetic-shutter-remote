@@ -58,12 +58,22 @@ qualified pose. Ten mechanical/reference models add the enclosure, protected
 battery envelope, shutter linkage and detachable phone dock without creating
 another PCB or electrical circuit.
 
-Open the closed product with `bun run dev:product`, or the exploded product with
+Open the closed product with `bun run dev:enclosure`, or the exploded product with
 `bun run dev:exploded`. These optional engineering commands select the root
-`product.assembly.tsx` and `product.exploded.tsx` files; setup/start stays lightweight
+`enclosure.circuit.tsx` and `product.exploded.tsx` files; setup/start stays lightweight
 and does not launch a server. The electrical board entry remains `index.circuit.tsx`.
 
-Version0.3.20 keeps the same fitted geometry. Its imported mechanical GLBs retain
+`enclosure.circuit.tsx` is the discoverable enclosure entry, matching the official
+`*.circuit.tsx` convention. `product.assembly.tsx` re-exports this same component
+for existing links. `includeBoardFiles` selects the board and enclosure and
+`previewComponentPath` selects the enclosure. `bun run build` calls the guarded
+PCB build and guarded enclosure build serially. This task runs only the enclosure,
+compatibility and exploded builds; it carries forward the unchanged qualified PCB.
+Generated `dist/enclosure/circuit.json` and `3d.png` are tracked and published with
+all seventeen bounded model assets. The complete 15 MB `3d.glb` is generated locally
+from the same source, rather than sent as an oversized registry file.
+
+Version0.3.22 keeps the fitted 0.3.20 geometry. Its imported mechanical GLBs retain
 all canonical native triangles and outward face directions, proven by independent
 closed/exploded readback. Mechanical imports use the supported product Z-up frame
 with no reflected node transforms; the existing PCB fragments keep their Y-up frame.
@@ -76,7 +86,8 @@ The generated illustrative image is not a CAD model or fit evidence.
 
 ## Source and reproduction
 
-`../product.assembly.tsx` and `../product.exploded.tsx` use native
+`../enclosure.circuit.tsx`, its `../product.assembly.tsx` alias and
+`../product.exploded.tsx` use native
 `assembly.device/subassembly` APIs. Editable plans and dimensions are in
 `assembly.tsx`, `geometry.ts` and `dimensions.ts`. Eight fit-print STLs are
 produced from those same plans: base, lid, battery support, shutter linkage,
@@ -100,9 +111,10 @@ python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/expo
 python3 scripts/review-product-stls.py --output evidence/R8-native-assembly20-2026-10-08/independent-stl-review.json
 python3 cloud/run-heavy.py -- tsci build product.geometry.tsx --glbs
 python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-mechanics.py --source-view product.geometry
+bun run build:enclosure
 python3 cloud/run-heavy.py -- tsci build product.assembly.tsx --glbs
 python3 cloud/run-heavy.py -- tsci build product.exploded.tsx --glbs
-python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-native-assembly20-2026-10-08/native-model-readback.json
+python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-enclosure-entry22-2026-10-08/native-model-readback.json
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.exploded
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.assembly phone-facing
 # Optional studio presentation: installed Blender 4.3.2, four CPU threads.

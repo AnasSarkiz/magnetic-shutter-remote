@@ -7,13 +7,13 @@ import {
 import { createProductParts } from "../product/geometry";
 import { z } from "zod";
 const name = z
-	.enum(["product.assembly", "product.exploded"])
+	.enum(["product.assembly", "product.exploded", "enclosure"])
 	.parse(Bun.argv[2]);
 const view = z
 	.enum(["normal", "phone-facing"])
 	.default("normal")
 	.parse(Bun.argv[3]);
-if (view === "phone-facing" && name !== "product.assembly")
+if (view === "phone-facing" && name === "product.exploded")
 	throw new Error("Phone-facing view uses the closed assembly");
 const glb = await Bun.file(`dist/${name}/3d.glb`).arrayBuffer();
 // Presentation materials on exact native geometry; never write an edited GLB.
@@ -79,9 +79,11 @@ const result = renderSceneFromGLTF(scene, {
 	fov: name === "product.exploded" ? 40 : 34,
 });
 const png = await encodePNG(result.bitmap);
-await Bun.write(
-	`product/${view === "phone-facing" ? "phone-facing" : name === "product.assembly" ? "closed" : "exploded"}.png`,
-	png,
-);
+if (name !== "enclosure") {
+	await Bun.write(
+		`product/${view === "phone-facing" ? "phone-facing" : name === "product.assembly" ? "closed" : "exploded"}.png`,
+		png,
+	);
+}
 if (view === "normal") await Bun.write(`dist/${name}/3d.png`, png);
 console.log(`Rendered ${name} with an explicit whole-product camera`);

@@ -4,7 +4,7 @@ import { z } from "zod";
 import { dimensions, pcbPointInProduct } from "../product/dimensions";
 
 test("native product views preserve the board transform and create no second PCB", async () => {
-	for (const name of ["product.assembly", "product.exploded"]) {
+	for (const name of ["product.assembly", "product.exploded", "enclosure"]) {
 		const circuit = any_circuit_element
 			.array()
 			.parse(await Bun.file(`dist/${name}/circuit.json`).json());
@@ -60,7 +60,7 @@ test("native assembly uses all ten lossless mechanical models with compact build
 		.parse(await Bun.file("product/mechanical-model-review.json").json());
 	expect(receipt.passes).toBe(true);
 	expect(receipt.models).toHaveLength(10);
-	for (const view of ["product.assembly", "product.exploded"]) {
+	for (const view of ["product.assembly", "product.exploded", "enclosure"]) {
 		const file = Bun.file(`dist/${view}/circuit.json`);
 		expect(file.size).toBeLessThan(100_000);
 		const circuit = any_circuit_element.array().parse(await file.json());

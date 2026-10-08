@@ -1,2 +1,1 @@
-import { R8ProductAssembly } from "./product/assembly";
-export default () => <R8ProductAssembly />;
+export { default } from "./enclosure.circuit";

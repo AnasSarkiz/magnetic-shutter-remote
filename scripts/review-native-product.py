@@ -67,7 +67,7 @@ def review(output):
     canonical_scene = trimesh.load(canonical_path, force='scene')
     canonical_circuit = json.loads((canonical_path.parent/'circuit.json').read_text())
     rows = []
-    for view in ['product.assembly', 'product.exploded']:
+    for view in ['product.assembly', 'product.exploded', 'enclosure']:
         path = ROOT/'dist'/view/'3d.glb'
         scene = trimesh.load(path, force='scene')
         circuit = json.loads((path.parent/'circuit.json').read_text())
@@ -125,12 +125,12 @@ def review(output):
                          'outward_face_winding_preserved':True,
                          'canonical_triangles':len(original_triangles),
                          'maximum_vertex_delta_mm':vertex_delta})
-    report = {'native_views_checked':['product.assembly','product.exploded'],
+    report = {'native_views_checked':['product.assembly','product.exploded','enclosure'],
               'actual_glb_geometry_review':rows, 'passes':True,
               'physical_fit_or_material_testing_claimed':False,
               'canonical_native_glb_sha256':hashlib.sha256(canonical_path.read_bytes()).hexdigest(),
               'native_glb_sha256':{v:hashlib.sha256((ROOT/'dist'/v/'3d.glb').read_bytes()).hexdigest()
-                                   for v in ['product.assembly','product.exploded']}}
+                                   for v in ['product.assembly','product.exploded','enclosure']}}
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report,indent=2)+'\n')
     print(f'Native GLB PCB triangle/bounds and mechanical placement checks: {len(rows)} pass')
