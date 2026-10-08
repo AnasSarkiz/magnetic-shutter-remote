@@ -1,0 +1,451 @@
+{
+  "public_source_commit": "3060c5da480f999690006d74cbaa41db42da8b6b",
+  "compared_to_previous_head": "f06c7bd50da28a3e9905bf5f7faa448f6c9da78e",
+  "anonymous_exact_byte_readbacks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a869a466d99dc248e388a2b3f67187c02ba0de533875906b770a09a5d5c05f2a",
+      "bytes": 20440,
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "a31a8ccc7baec3480c9214c6068520fa1da72f1e66ebc2d9a8753d177dbafd83",
+      "bytes": 7134,
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "00755675a5e9a616f954682844f517daaec1270f7e8dcef58630f774d7041601",
+      "bytes": 40604,
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "sha256": "83538e49f6600d7cd81efb34f2756db03528ec2fecbbb0dec2bddbd7ea28684e",
+      "bytes": 37822,
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "sha256": "4f31cb3327d26b63113027b3fd640dc80428ccb900391b48f94c657d0669764f",
+      "bytes": 15516,
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "sha256": "3f86854e62340738dc10bbd58b90488611f299c4aa56abd77839c2ddbd0c84ff",
+      "bytes": 15513,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/PUBLICATION.md",
+      "sha256": "227428d157cb3aeefcf49dee6e9439a0f0ca04a2a7a0f7cf580c291ddd31136d",
+      "bytes": 270,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/REVIEW.md",
+      "sha256": "de559a1dcf75b12a0d643d80e1e4662a665cbdfcde2ae85d14af35ca8b6e9f78",
+      "bytes": 3534,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/canonical-build.log",
+      "sha256": "0361e85d277380794ebc00e80f9262276c78cb8480eae71c57d89c25489362dd",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/closed-build.log",
+      "sha256": "ab98705b97afe247d1ad65478a5207558040e7134921d7ef20c1e8f8cabd8681",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/exploded-build.log",
+      "sha256": "68f2293fc5e52ed1a4495ce76e4a8b74a7585df321c021dc57d0c86a72447ea0",
+      "bytes": 1348,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/exploded-render.log",
+      "sha256": "5af541adfba5387edcfb2d766f85e3476a001bb84d2362e3b9659e2abc4c824e",
+      "bytes": 1014,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/exported-fit.log",
+      "sha256": "1e0544d26b1def202bf3c1a1ba4ca882a95b4f47181eff4d3e37d18b40f1dc18",
+      "bytes": 1435,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/format-check.log",
+      "sha256": "556401c7b41ac97f935bf4cefbdd1bd31c257385f3b856ddc03a86114b57af9b",
+      "bytes": 289,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/format-final.log",
+      "sha256": "f485b2390b333af00317ac8f28ffb9521fee68ae799765eab0610447e3318bd4",
+      "bytes": 295,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/format-final2.log",
+      "sha256": "7739e7cd957fdff9cce3cd9fa77f61f75aa6b92a833008e66c389d4c62e81f7d",
+      "bytes": 289,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/geometry.log",
+      "sha256": "fc54dd5aa4d0ed33681ac714de9e26321d69184f4078c951e5be824c728b4cc6",
+      "bytes": 8852,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/independent-stl-review.log",
+      "sha256": "4888d47c9de5e61bf0f73c2e6d94a6723085518ba756cd7f4a2a2e5b9848065f",
+      "bytes": 63,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/mechanical-export.log",
+      "sha256": "aca7cc1aacee8f093ef86ca3bc589099c36c08f1224fcfa01b63fd86a9b89096",
+      "bytes": 1139,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/missing-required-output-argument.log",
+      "sha256": "b06189c05cce4caccbc5795eecd650dd38fea98c93f99c92a03e97a8110adb78",
+      "bytes": 1116,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/native-model-readback.log",
+      "sha256": "faa4218f24ecba9d0a2879ff0a93b2d5e17e9aa1893f6408f71d4dcfd37c0271",
+      "bytes": 1238,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/phone-render.log",
+      "sha256": "70762fdfed82910ae372e01bc835a9b6a4325fb531d3878cbe7abe51be580204",
+      "bytes": 1054,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/prints.log",
+      "sha256": "80ae1365d9ed8a29fc69da51bd8178f5673997a687ca72583ff5d38e04ac6a4d",
+      "bytes": 6076,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/product-tests-explicit.log",
+      "sha256": "439a3f3dffd180ee578107b2becb2d7dd1cef7fb50887c700453a31d706ea411",
+      "bytes": 516,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/product-tests-final.log",
+      "sha256": "79d01c062491224f86d1efe27dd22109755c73fe96eaba91249a774d961d3f8a",
+      "bytes": 516,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/product-tests.log",
+      "sha256": "10ce8506b5c9c0f530f0dd6b4a7f449aaa873f7395e8da5eddec87d6775d20a1",
+      "bytes": 311,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/rejected-reflected-y-up-models.log",
+      "sha256": "ebe68033ffe5a57e62b14f33ef808a0d6f920186a76c648ad8710a4583813539",
+      "bytes": 1846,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/serial-guard-rejected-overlap.log",
+      "sha256": "f6fe59f489206f7753a9dfb939d87ad7225f6153b574520defef4b9aff76da8a",
+      "bytes": 777,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/smoke-final.log",
+      "sha256": "0dd51c061289477a6c2c34b414a3e7b8ce3a419b4a04d670b3ea4a6d1501cd46",
+      "bytes": 6702,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/smoke.log",
+      "sha256": "0138c06595b35460efb89367ed5b883b7d8008cf6ef75bdd3e5cac46e230541f",
+      "bytes": 6702,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/studio-back.log",
+      "sha256": "0f5b063e4a59fdafb2a4a337359fb4e64dda116838271352f031400194d52e71",
+      "bytes": 9676,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/studio-front.log",
+      "sha256": "ab5fadc970e961217d42f40ebff708d2f94b116c2974cbd3d20c07d1a6ffe4e7",
+      "bytes": 9673,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/studio-side.log",
+      "sha256": "99cec2ac770376e6e8afcc5a986bce195b67df91ef6bd122ba6d2f2999fe3eb5",
+      "bytes": 9416,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/studio-straight.log",
+      "sha256": "ca871dd98b8d7edcdc40edd507900d2c8c86534958b605647e3b3d986896e231",
+      "bytes": 9558,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/triangle-negative-controls.log",
+      "sha256": "dac08a0e00caf923a9541f8b16c1a6f72353e93d25785af3fa96c3d3baa0a639",
+      "bytes": 1129,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/typecheck-final2.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/checks/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/exported-fit-report.json",
+      "sha256": "202b27e7795e72b4c34dfea14dc5ebed12d5d5bcdf8abfe17e0409e9b28ff2dc",
+      "bytes": 41630,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/final-checks.json",
+      "sha256": "62a284a7d4e8142297b0b4f73ab6c62ab9de7e35234149e91b19ba368519f825",
+      "bytes": 4070,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/geometry-and-electronics-preservation.json",
+      "sha256": "6829740e9b354f9b653159e6cc463bcdd2482ea4b64fafbf102f0155515ea56d",
+      "bytes": 4374,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/independent-stl-review.json",
+      "sha256": "7cc9863c9d60bd26cc2be8b0837d2dbbc837efdebd39df59b5ae9beb4b9539c6",
+      "bytes": 4066,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/native-model-readback.json",
+      "sha256": "996037c9e3a68893129210f88978ceca31b08419d5ded0642008fbe7c81160e8",
+      "bytes": 9259,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/official-docs-review.json",
+      "sha256": "5b802a7c0f227ed1da0ab136da23b5684420433f0e5d16d99d4647a46d4db5f9",
+      "bytes": 1499,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/triangle-negative-controls.json",
+      "sha256": "0c8f6c116bba1413f269f2ff3c09098b4d7c6e363bd86a9cf50b6e6a172e1599",
+      "bytes": 630,
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "0550034f67b3f036d6f8fa3ca5b535453e0c47e5e7c9a972ad210087f75cfb4c",
+      "bytes": 4715,
+      "matches": true
+    },
+    {
+      "path": "product.geometry.tsx",
+      "sha256": "9223668ee51ce476667c7156e5ebbf5fba552938a6b4725ff52e087312e90108",
+      "bytes": 132,
+      "matches": true
+    },
+    {
+      "path": "product/README.md",
+      "sha256": "252059b592a8dc7506eacddf3b9489531eb95cb549b4e34381c14af55ca4e751",
+      "bytes": 10067,
+      "matches": true
+    },
+    {
+      "path": "product/assembly.tsx",
+      "sha256": "a507835bcf3de381b33203f93205d928e861a642cd14a3f960bb60f3c4ca90f6",
+      "bytes": 4673,
+      "matches": true
+    },
+    {
+      "path": "product/closed.png",
+      "sha256": "04ff00bc8133a3579667e792c6b7391b087157ae43f0960d1738328f67318770",
+      "bytes": 2134061,
+      "matches": true
+    },
+    {
+      "path": "product/mechanical-model-review.json",
+      "sha256": "86f58d6047f3656a1e07b194a5579bcc30869aceb3fa67b8d9de078df7bd5282",
+      "bytes": 3982,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "sha256": "ada951c7aa21a9a7df33eed33c6f20d736ee6cd971c934c849c3bc31cb3c0980",
+      "bytes": 2060,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "sha256": "050506ebac4f0bd2cb658ad54bd977ee946633d647e94c492c6be8e8281bf2e1",
+      "bytes": 3516,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "sha256": "3cc9a6420131606b4c602af0fbec99b9c6a5503b0f2623b25b637d12848a9fa9",
+      "bytes": 34200,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "sha256": "970591c1a0f27a3989295e9d80f07d589e06eab1a280699a11a94d2ad66b5500",
+      "bytes": 47136,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "sha256": "14c5bccdcafd68b9f2e25975f8c6b2ebf530a2759250b9e69cda3ad13fcb7cd4",
+      "bytes": 19368,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "sha256": "073ec55ce5c88df96b98c63c60f91e993517fe4303a3354a4b9da578ccd858f3",
+      "bytes": 244012,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "sha256": "bfe199f58b1c148fa5dea996311de55997fc1d161599fc0ea0fa1ea30562e409",
+      "bytes": 17752,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "sha256": "7c9ffd9d183b3fd2fe24b8beab5ee76e9ed747493000aa2dc2699ebc7c71f0c8",
+      "bytes": 425664,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "sha256": "12108ce257fdef5bbccc67f370b93b93d3e238116b000d46df4d28709ce7fa77",
+      "bytes": 298836,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "sha256": "d3cc8645bbede43c5741c92a3cb4e825b4460d8adcc68eb98e25fd2d2e4c6145",
+      "bytes": 44540,
+      "matches": true
+    },
+    {
+      "path": "product/print-mesh-review.json",
+      "sha256": "e4862f25f804e8e8fce627e111189b26d42fa5074b624ff53900fa86c24309a9",
+      "bytes": 5093,
+      "matches": true
+    },
+    {
+      "path": "product/print-plans.json",
+      "sha256": "e361e2df5dc6bf17d68a6a33328b031e43520efc121aef0fa3b32c23099a878c",
+      "bytes": 780037,
+      "matches": true
+    },
+    {
+      "path": "product/studio-back-review.json",
+      "sha256": "663d4142ce46463bf00bff940879230540c37d07aa65d44f794ce7911e25d683",
+      "bytes": 2644,
+      "matches": true
+    },
+    {
+      "path": "product/studio-back.png",
+      "sha256": "61d3465539b08530d8e522a28fae4adb887f4d91fe626b458b4ef685b0b913cc",
+      "bytes": 2097087,
+      "matches": true
+    },
+    {
+      "path": "product/studio-front-review.json",
+      "sha256": "2fb9a67e03a8acd5929d1dafb351265d32c337c135090e1f05666152e803aee9",
+      "bytes": 2639,
+      "matches": true
+    },
+    {
+      "path": "product/studio-side-review.json",
+      "sha256": "c19b554a91a585c59eb13594929fa03ec19c751dec5a1a4f648b9f2094a9346a",
+      "bytes": 2644,
+      "matches": true
+    },
+    {
+      "path": "product/studio-side.png",
+      "sha256": "920639d4c20fcb8fe0e2cbba0ff3efe92a9fe7492390f61054cf532611042355",
+      "bytes": 1955986,
+      "matches": true
+    },
+    {
+      "path": "product/studio-straight-review.json",
+      "sha256": "1149027b711b67c7ef8fa7c135bc528e4efcd7a00db9a3775520da3947a1cee4",
+      "bytes": 2648,
+      "matches": true
+    },
+    {
+      "path": "product/studio-straight.png",
+      "sha256": "a64e43037a4d593b381d2e4a6d6808981d3f76fd84f9598ddf9bc721d87c90d7",
+      "bytes": 2081315,
+      "matches": true
+    },
+    {
+      "path": "scripts/check-product-geometry.ts",
+      "sha256": "74dfebd4c94ade23f0c22ea62654d31b556d4d85f9e813d2de3958b934888c50",
+      "bytes": 12822,
+      "matches": true
+    },
+    {
+      "path": "scripts/export-product-mechanics.py",
+      "sha256": "387e67ebce62c64e32ac16a8a8cf7984a29ac443d0fa233209d01c6f946b90d4",
+      "bytes": 4295,
+      "matches": true
+    },
+    {
+      "path": "scripts/review-native-product.py",
+      "sha256": "62bcb158f41c8c57d3b30880121357e936c72b2e86589ee2319f04af93389e10",
+      "bytes": 7850,
+      "matches": true
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "sha256": "b05ec2115539a59be714eac9b4bb63a23577ee5520ac84e7790dd68fb8bf6957",
+      "bytes": 13925,
+      "matches": true
+    },
+    {
+      "path": "tests/r8-product.test.ts",
+      "sha256": "e28777de13333b5af67d7f1c2d7e2d22d3a52f41781cb2486c198a0a217928d8",
+      "bytes": 7905,
+      "matches": true
+    }
+  ],
+  "all_changed_files_match": true
+}

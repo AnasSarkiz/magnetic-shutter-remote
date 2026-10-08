@@ -1,0 +1,3 @@
+Public native inventory: 309 files; exact critical text/binary readbacks: 309
+Inventory missing/extra: ['imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step', 'product/closed.png', 'product/models/r8-parts-3.glb', 'tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz'] [] ready_to_build: False
+Hosted worker: pending None
