@@ -1,0 +1,75 @@
+{
+  "observed_utc": "2026-10-08T18:52:34.512752+00:00",
+  "repository": "AnasSarkiz/magnetic-shutter-remote",
+  "source_commit": "5e6bd8daa46ace962b171dda25524e640e48c5f7",
+  "files_checked": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 22649,
+      "sha256": "771533f6c4653c9e7b52a2508f5efd0d63de1fc9bc82c4dbdd47bf20d734c74b",
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 42730,
+      "sha256": "3321b5faba7c0c1971b07bad5cc13db2d1863b00bd72cebc42a344630b071ea3",
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "bytes": 40031,
+      "sha256": "8d8373a518e710d1e370fe56049d5e077dfde7c768a4145228138efd53a5f708",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/PUBLICATION.md",
+      "bytes": 1630,
+      "sha256": "05a603ccd255e78d463330da151515c293f987058a224fe2cae054519698aca5",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/registry-push.log",
+      "bytes": 16150,
+      "sha256": "46c373d831acd5a34b60910ea26b3d5bfd81afc129af5da94e6290f7c672bb50",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/github-upload-observation.json",
+      "bytes": 6696,
+      "sha256": "b8ea014c5643b1b7b5a6937676d7aeca8e4efd9c104f441f1a8e3cd6f5159a08",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/registry-upload-observation.json",
+      "bytes": 158778,
+      "sha256": "51feb46f42d6d8da4cd7fe2cba80f1b2ba2f205a6eb313b68fd804a168e20a47",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-publish23-2026-10-08/PUBLICATION.md",
+      "bytes": 111,
+      "sha256": "60371400306ab785ac55f15a14bd34ae75c9226dbe699316bb3d5c958eabea0b",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-publish23-2026-10-08/REVIEW.md",
+      "bytes": 1415,
+      "sha256": "b2fbe2032846321d7791814e1925f37ad0c11fb4a46b3d71bdefbc44079dc808",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-publish23-2026-10-08/preservation.json",
+      "bytes": 321,
+      "sha256": "0171eade52da53a7a4321b98f86123a4e631832738802e58fde0dd229d6616df",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 5073,
+      "sha256": "25ed353c1605be543dc0593295e0ea388fdbf144d61f7201c29bd5852681dae5",
+      "matches": true
+    }
+  ],
+  "all_matches": true,
+  "no_header_authentication_used": true
+}

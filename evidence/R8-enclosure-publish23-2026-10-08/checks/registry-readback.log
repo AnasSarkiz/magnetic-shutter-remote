@@ -1,0 +1,3 @@
+Public native inventory: 313 files; exact critical text/binary readbacks: 313
+Inventory missing/extra: ['evidence/R8-reference18-2026-10-07/preservation.json', 'evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json', 'imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step', 'product/models/r8-parts-4.glb'] [] ready_to_build: False
+Hosted worker: pending None

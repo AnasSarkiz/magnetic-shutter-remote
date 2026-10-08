@@ -1,3 +1,20 @@
+# R8 enclosure circuit 0.3.23 — GitHub complete, native upload blocked
+
+Standard enclosure.circuit.tsx is included in the serial guarded build and selected
+for preview by documented config. Local51geometry checks/253product assertions
+and light smoke pass. All42protected files remain unchanged. GitHub5e975da/5e6bd8d
+and source/build files are public/exact. Native23is incomplete313/317afterHTTP502/
+503; ready_to_build=false and preview pending. Missing originalPCBmodel fragment
+prevents a complete native assembly publication. Read
+ evidence/R8-enclosure-publish23-2026-10-08/PUBLICATION.md (from cloud, ../).
+One controlled normal retry was attempted; official CLI has no release resume.
+Restore reliable official uploads/supported resume before further publication.
+Prior successful21and incomplete22receipts remain historical. Physical gates,
+075/076/004/084, separate3V3metadata, frozen baselines/main, light setup/start,
+serial guards and order/payment/contact restrictions remain unchanged.
+
+## Earlier records — preserved history
+
 # R8 enclosure publication retry 0.3.23 — 2026-10-08
 
 The enclosure.circuit.tsx/build/preview implementation and validated geometry are
