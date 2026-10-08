@@ -1,0 +1,21 @@
+{
+  "official_handbook": {
+    "sha": "0c951d65be1b0bbddf989f8179e8591b0441ec8f",
+    "observed_source": "official GitHub main"
+  },
+  "official_cli": {
+    "sha": "cd764128a8487bebd07611480bf6b2fcd508e48a",
+    "observed_source": "official GitHub main"
+  },
+  "handbook_code_matches_previously_read": true,
+  "supported_push_flags": [
+    "--include-dist",
+    "--version-tag prototype"
+  ],
+  "existing_release_resume_available": false,
+  "proxy_preserved": true,
+  "tls_verification_enabled": true,
+  "network_policy_observed_state": "unknown",
+  "network_config_changed": false,
+  "user_credentials_read_or_copied": false
+}

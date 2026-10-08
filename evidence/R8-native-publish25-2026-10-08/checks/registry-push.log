@@ -1,0 +1,384 @@
+{
+  "started_utc": "20261008T200217222368Z",
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd -- \"$1\"; test \"$PWD\" = \"$1\"; exec tsci push \"$2\" --include-dist --version-tag prototype",
+    "r8-publish",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25/enclosure.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  }
+}
+⬆︎ BOM.csv
+⬆︎ BOM.md
+⬆︎ README.md
+⬆︎ VALIDATION.md
+⬆︎ bom.json
+⬆︎ bun.lock
+⬆︎ cloud/run-heavy.py
+📦 dist/enclosure/3d.png
+⬆︎ dist/enclosure/circuit.json
+⬆︎ dist/index/circuit.json
+⬆︎ dist/product.assembly/circuit.json
+⬆︎ dist/product.exploded/circuit.json
+⬆︎ enclosure.circuit.tsx
+⬆︎ evidence/R8-native-publish25-2026-10-08/REVIEW.md
+⬆︎ evidence/R8-native-publish25-2026-10-08/preservation.json
+⬆︎ evidence/R8-reference18-2026-10-07/J3-supplier-terminal-registration.json
+⬆︎ evidence/R8-reference18-2026-10-07/REPRODUCE-COMMANDS.json
+⬆︎ evidence/R8-reference18-2026-10-07/REVIEW.md
+⬆︎ evidence/R8-reference18-2026-10-07/SW2-supplier-terminal-registration.json
+⬆︎ evidence/R8-reference18-2026-10-07/electrical-contract.json
+⬆︎ evidence/R8-reference18-2026-10-07/failed-route10/circuit.json
+⬆︎ evidence/R8-reference18-2026-10-07/failed-route20-visual/process-review.json
+⬆︎ evidence/R8-reference18-2026-10-07/final-manufacturing.json
+⬆︎ evidence/R8-reference18-2026-10-07/final-native-checks.json
+⬆︎ evidence/R8-reference18-2026-10-07/final-process/process-review.json
+⬆︎ evidence/R8-reference18-2026-10-07/final-readback/readback.json
+⬆︎ evidence/R8-reference18-2026-10-07/physical-connectivity.json
+⬆︎ evidence/R8-reference18-2026-10-07/placement-preservation.json
+⬆︎ evidence/R8-reference18-2026-10-07/power-path-measurements.json
+⬆︎ evidence/R8-reference18-2026-10-07/preservation.json
+⬆︎ evidence/R8-reference18-2026-10-07/sourcing-check.json
+⬆︎ evidence/R8-reference18-2026-10-07/trace-width-review.json
+⬆︎ evidence/R8-reference18-2026-10-07/visual-review/inspection.json
+⬆︎ evidence/R8-side-shutter-2026-10-05/qualification/supplier-reference/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md
+📦 evidence/R8-standard-programmer-2026-10-05/qualification/C160389-supplier.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/land-audit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/programmer-release.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json
+⬆︎ evidence/R8-standard-programmer-2026-10-05/unrouted/circuit.json
+⬆︎ evidence/R8-viewer24-2026-10-08/REVIEW.md
+⬆︎ evidence/R8-viewer24-2026-10-08/browser-geometry-review.json
+⬆︎ evidence/R8-viewer24-2026-10-08/final-checks.json
+⬆︎ evidence/R8-viewer24-2026-10-08/native-model-readback.json
+⬆︎ evidence/R8-viewer24-2026-10-08/preservation.json
+⬆︎ evidence/USB4215-import-audit/final/circuit.json
+⬆︎ fabrication/R8-reference18-2026-10-07/JLCPCB-BOM.csv
+⬆︎ fabrication/R8-reference18-2026-10-07/JLCPCB-CPL.csv
+📦 fabrication/R8-reference18-2026-10-07/R8-reference18-Gerbers.zip
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/B_Cu.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/B_Mask.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/B_Paste.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/B_SilkScreen.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/Edge_Cuts.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/F_Cu.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/F_Fab.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/F_Mask.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/F_Paste.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/F_SilkScreen.gbr
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/drill-L1-L2.drl
+⬆︎ fabrication/R8-reference18-2026-10-07/gerbers/drill_npth.drl
+📦 fabrication/R8-standard-programmer-2026-10-05/R8-standard-programmer-route04-Gerbers.zip
+⬆︎ firmware/README.md
+⬆︎ firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json
+📦 firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin
+📦 firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.uf2
+⬆︎ imports/A_0603WAF1001T5E.tsx
+⬆︎ imports/A_0603WAF1002T5E.tsx
+⬆︎ imports/A_0603WAF1003T5E.tsx
+⬆︎ imports/A_0603WAF1303T5E.tsx
+⬆︎ imports/A_0603WAF1621T5E.tsx
+⬆︎ imports/A_0603WAF1872T5E.tsx
+⬆︎ imports/A_0603WAF5101T5E.tsx
+⬆︎ imports/A_2N7002.tsx
+📦 imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step
+⬆︎ imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx
+⬆︎ imports/BQ25185DLHR.tsx
+⬆︎ imports/CC0603KRX7R9BB104.tsx
+⬆︎ imports/CL10A475KO8NNNC.tsx
+⬆︎ imports/CL21A106KAYNNNE.tsx
+📦 imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj
+⬆︎ imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step
+⬆︎ imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx
+📦 imports/ESPC2_12E_N4/ESPC2_12E_N4.obj
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.step
+⬆︎ imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx
+📦 imports/ESPC3_12_N4/ESPC3_12_N4.obj
+⬆︎ imports/ESPC3_12_N4/ESPC3_12_N4.step
+⬆︎ imports/ESPC3_12_N4/ESPC3_12_N4.tsx
+⬆︎ imports/KT_0603R.tsx
+⬆︎ imports/MSK12C02.tsx
+📦 imports/SKRTLAE010/SKRTLAE010.obj
+⬆︎ imports/SKRTLAE010/SKRTLAE010.step
+⬆︎ imports/SKRTLAE010/SKRTLAE010.tsx
+📦 imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj
+⬆︎ imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step
+⬆︎ imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx
+📦 imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj
+⬆︎ imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step
+⬆︎ imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx
+⬆︎ imports/TCC0603COG470J500CT.tsx
+⬆︎ imports/TMP390A2DRLR.tsx
+⬆︎ imports/TPS3839G33DBZR.tsx
+📦 imports/TPS63031DSKR/TPS63031DSKR.obj
+⬆︎ imports/TPS63031DSKR/TPS63031DSKR.step
+⬆︎ imports/TPS63031DSKR/TPS63031DSKR.tsx
+📦 imports/TS24CA/TS24CA.obj
+⬆︎ imports/TS24CA/TS24CA.step
+⬆︎ imports/TS24CA/TS24CA.tsx
+⬆︎ imports/TS_1088_AR02016.tsx
+⬆︎ imports/USB4215_03_A.tsx
+⬆︎ index.circuit.tsx
+⬆︎ mechanical/R8-MAGSAFE-REFERENCE-REVIEW.json
+⬆︎ mechanical/R8-MAGSAFE-REQUIREMENTS.md
+⬆︎ mechanical/R8-MAGSAFE-RESEARCH.md
+⬆︎ package.json
+⬆︎ product.assembly.tsx
+⬆︎ product.exploded.tsx
+⬆︎ product.geometry.tsx
+⬆︎ product/README.md
+⬆︎ product/assembly.tsx
+📦 product/closed.png
+⬆︎ product/dimensions.ts
+📦 product/exploded.png
+⬆︎ product/geometry-review.json
+⬆︎ product/geometry.ts
+⬆︎ product/mechanical-model-review.json
+📦 product/models/mechanical/ASR00012_MaximumEnvelope.glb
+📦 product/models/mechanical/BatterySupport.glb
+📦 product/models/mechanical/FingerGripInsert.glb
+📦 product/models/mechanical/MagSafeArrayReference.glb
+📦 product/models/mechanical/MagSafeFaceCover.glb
+📦 product/models/mechanical/MagSafeGrip.glb
+📦 product/models/mechanical/MagSafeRearCover.glb
+📦 product/models/mechanical/RemoteBase.glb
+📦 product/models/mechanical/RemoteLid.glb
+📦 product/models/mechanical/SideShutterPlunger.glb
+📦 product/models/r8-parts-2.glb
+📦 product/models/r8-parts-3.glb
+📦 product/models/r8-parts-4.glb
+📦 product/models/r8-parts-5.glb
+📦 product/models/r8-parts-6.glb
+📦 product/models/r8-parts-7.glb
+📦 product/models/r8-pcb.glb
+⬆︎ product/pcb-model-review.json
+📦 product/phone-facing.png
+⬆︎ product/print-mesh-review.json
+⬆︎ product/print-plans.json
+⬆︎ product/print-requirements.txt
+📦 product/prints/BatterySupport.stl
+📦 product/prints/FingerGripInsert.stl
+📦 product/prints/MagSafeFaceCover.stl
+📦 product/prints/MagSafeGrip.stl
+📦 product/prints/MagSafeRearCover.stl
+📦 product/prints/RemoteBase.stl
+📦 product/prints/RemoteLid.stl
+📦 product/prints/SideShutterPlunger.stl
+⬆︎ product/studio-back-review.json
+📦 product/studio-back.png
+⬆︎ product/studio-front-review.json
+⬆︎ product/studio-side-review.json
+📦 product/studio-side.png
+⬆︎ product/studio-straight-review.json
+📦 product/studio-straight.png
+⬆︎ product/viewer.tsx
+⬆︎ registry-source-manifest.json
+⬆︎ scripts/audit-authored-placements.ts
+⬆︎ scripts/audit-drills.ts
+⬆︎ scripts/audit-r4-qualification.py
+⬆︎ scripts/audit-r6-registration.py
+⬆︎ scripts/audit-r7-led-fixtures.ts
+⬆︎ scripts/audit-r8-circuit.ts
+⬆︎ scripts/audit-r8-jst3.py
+⬆︎ scripts/audit-r8-module.py
+⬆︎ scripts/audit-radio.py
+⬆︎ scripts/audit-side-shutter.py
+⬆︎ scripts/audit_r7_jst7.py
+⬆︎ scripts/audit_r7_paste_fixture.py
+⬆︎ scripts/check-mechanical-meshes.py
+⬆︎ scripts/check-product-geometry.ts
+⬆︎ scripts/check-r6-mechanical-meshes.py
+⬆︎ scripts/check-r6-preservation.py
+⬆︎ scripts/check-r8-native.ts
+⬆︎ scripts/check-r8-output.ts
+⬆︎ scripts/check-routed.ts
+⬆︎ scripts/compare-r5-r6.py
+⬆︎ scripts/curved_geometry.py
+⬆︎ scripts/draw-assembly-review.py
+⬆︎ scripts/draw-r4-assembly.py
+⬆︎ scripts/draw-r5-dimensions.py
+⬆︎ scripts/draw-r5-review.py
+⬆︎ scripts/draw-r6-dimensions.py
+⬆︎ scripts/draw-r6-review.py
+⬆︎ scripts/draw-usb-qualification.py
+⬆︎ scripts/export-assembly.ts
+⬆︎ scripts/export-gerbers.ts
+⬆︎ scripts/export-product-mechanics.py
+⬆︎ scripts/export-product-pcb.ts
+⬆︎ scripts/export-product-prints.py
+⬆︎ scripts/export-product-viewer.ts
+⬆︎ scripts/export-r8-gerber-zip.py
+⬆︎ scripts/fetch-qualified-datasheets.py
+⬆︎ scripts/finalize-r2-bom.py
+⬆︎ scripts/flash-r8-standard-jst.py
+⬆︎ scripts/inspect-exported-slots.py
+⬆︎ scripts/jscad-planner-modeling.d.ts
+⬆︎ scripts/lib/local-module-specifiers.ts
+⬆︎ scripts/lib/qualification-source-placements.ts
+⬆︎ scripts/list-local-imports.ts
+⬆︎ scripts/manufacturing-audit.py
+⬆︎ scripts/measure-j1-export.py
+⬆︎ scripts/normalize-pcb-model.ts
+⬆︎ scripts/package_draft.py
+⬆︎ scripts/package_r2.py
+⬆︎ scripts/package_r3.py
+⬆︎ scripts/package_r4_dfm.py
+⬆︎ scripts/package_r5_dfm.py
+⬆︎ scripts/package_r6_prototype.py
+⬆︎ scripts/place-r5-markings.py
+⬆︎ scripts/qualification_paths.py
+⬆︎ scripts/r7_power_budget.py
+⬆︎ scripts/r8_board_geometry.py
+⬆︎ scripts/recheck_board_sourcing.py
+⬆︎ scripts/record-r3-tooling.py
+⬆︎ scripts/record-r5-tooling.py
+⬆︎ scripts/record-r6-tooling.py
+⬆︎ scripts/render-final-cam.py
+⬆︎ scripts/render-legend-review.py
+⬆︎ scripts/render-product-studio.py
+⬆︎ scripts/render-product.ts
+⬆︎ scripts/render-r6-pcb.ts
+⬆︎ scripts/render-r6-review.ts
+⬆︎ scripts/render-r8-land-comparison.py
+⬆︎ scripts/render-r8-review.ts
+⬆︎ scripts/render-regression.ts
+⬆︎ scripts/render-sheets.ts
+⬆︎ scripts/review-gerbers.py
+⬆︎ scripts/review-native-product.py
+⬆︎ scripts/review-order-usb-mask.py
+⬆︎ scripts/review-product-browser.py
+⬆︎ scripts/review-product-model.ts
+⬆︎ scripts/review-product-stls.py
+⬆︎ scripts/review-r3-exports.py
+⬆︎ scripts/review-r4-manufacturing.py
+⬆︎ scripts/review-r5-ground.py
+⬆︎ scripts/review-r5-legend.py
+⬆︎ scripts/review-r5-manufacturing.py
+⬆︎ scripts/review-r5-stencil.py
+⬆︎ scripts/review-r5-usb-pins.py
+⬆︎ scripts/review-r6-3d.py
+⬆︎ scripts/review-r6-ground.py
+⬆︎ scripts/review-r6-legend.py
+⬆︎ scripts/review-r6-manufacturing.py
+⬆︎ scripts/review-r6-mechanics.py
+⬆︎ scripts/review-r6-stencil.py
+⬆︎ scripts/review-r8-connectivity.py
+⬆︎ scripts/review-r8-electrical-contract.py
+⬆︎ scripts/review-r8-exports.py
+⬆︎ scripts/review-r8-power.py
+⬆︎ scripts/review-r8-process.py
+⬆︎ scripts/review-r8-trace-widths.py
+⬆︎ scripts/stage-registry.py
+⬆︎ scripts/update-r2-bom.py
+⬆︎ scripts/validate-r2.py
+⬆︎ scripts/validate-r5.py
+⬆︎ scripts/validate-r6-outputs.py
+⬆︎ scripts/validate-r6.py
+⬆︎ scripts/write-r3-bom.py
+⬆︎ scripts/write-r4-reviews.py
+⬆︎ scripts/write-r5-issues.py
+⬆︎ scripts/write-r6-documents.py
+⬆︎ scripts/write-r6-issues.py
+⬆︎ scripts/write-r8-bom.py
+⬆︎ src/functional-markings.tsx
+⬆︎ src/remote-circuit.tsx
+⬆︎ src/schematic-component-notes.tsx
+⬆︎ src/trace-paths.ts
+⬆︎ tests/cam/test_board_boundaries.py
+⬆︎ tests/cam/test_exported_trace_geometry.py
+⬆︎ tests/cam/test_power_width_budgets.py
+⬆︎ tests/cam/test_process_metrics.py
+⬆︎ tests/cam/test_through_pad_geometry.py
+⬆︎ tests/fixtures/alps-side-shutter.circuit.tsx
+⬆︎ tests/fixtures/alps-supplier.circuit.tsx
+⬆︎ tests/fixtures/esp32-import.circuit.tsx
+⬆︎ tests/fixtures/espc2-import.circuit.tsx
+⬆︎ tests/fixtures/espc3-import.circuit.tsx
+⬆︎ tests/fixtures/r8-compact-placement.circuit.tsx
+⬆︎ tests/fixtures/r8-jst3-supplier.circuit.tsx
+⬆︎ tests/fixtures/r8-side-placement.circuit.tsx
+⬆︎ tests/fixtures/r8-standard-placement.circuit.tsx
+⬆︎ tests/fixtures/side-shutter-supplier.circuit.tsx
+⬆︎ tests/fixtures/side-shutter.circuit.tsx
+⬆︎ tests/r8-power-metadata.test.ts
+⬆︎ tests/r8-product.test.ts
+⬆︎ tests/r8-schematic-notes.test.ts
+⬆︎ tests/r8-style-vias.test.ts
+⬆︎ tests/test_cloud_runner.py
+⬆︎ tests/test_r8_alternative_radio.py
+⬆︎ tests/test_r8_c3_radio.py
+⬆︎ tests/test_r8_electrical_contract.py
+⬆︎ tests/test_r8_qualification.py
+⬆︎ tests/test_registry_staging.py
+⬆︎ tests/test_side_shutter.py
+⬆︎ tests/test_standard_jst_programmer.py
+📦 tooling/vendor/circuit-json-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
+📦 tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
+📦 tooling/vendor/circuit-json-util-qualified-source.tgz
+📦 tooling/vendor/circuit-to-svg-qualified-source.tgz
+📦 tooling/vendor/core-r8-silk-visibility.tgz
+📦 tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
+📦 tooling/vendor/props-r8-mask-style.tgz
+⬆︎ tscircuit-issues/091-tangent-pour-cutouts-produce-invalid-ring.md
+⬆︎ tscircuit-issues/092-power-width-review-omits-switching-ripple.md
+⬆︎ tscircuit-issues/093-process-audit-omits-overlapping-legends.md
+⬆︎ tscircuit-issues/094-named-schematic-arrangement-produces-invalid-json.md
+⬆︎ tscircuit.config.json
+⬆︎ tsconfig.json
+
+
+Upload Summary
+  Succeeded: 322 files
+
+
+"@tsci/AnasSarkiz.magnetic-shutter-remote-r8@0.3.25-prototype" published!
+https://tscircuit.com/AnasSarkiz/magnetic-shutter-remote-r8
+{
+  "started_utc": "20261008T200217222368Z",
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd -- \"$1\"; test \"$PWD\" = \"$1\"; exec tsci push \"$2\" --include-dist --version-tag prototype",
+    "r8-publish",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25/enclosure.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-08T20:08:29.864654+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 874548,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261008T200217222368Z.log"
+}

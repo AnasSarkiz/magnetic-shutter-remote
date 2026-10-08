@@ -10,6 +10,12 @@ from local viewer success. Physical qualification, original075/076/004/084,
 separate3V3metadata, frozen baselines/main, light setup/start, serial memory
 guards and ordering/payment/contact gates remain unchanged.
 
+Actual publication25succeeds: all322native files are present and match public
+byte readback; ready_to_build=true, hosted job started and preview pending.
+GitHub3b72f8dis public/exact13preparation files. No model/board/geometry changes.
+See the dated PUBLICATION.md; complete upload does not establish hosted render
+completion or physical qualification. Prior24failure remains immutable history.
+
 ## Earlier records — preserved history
 
 # R8 actual 3D viewer parity 0.3.24 — 2026-10-08

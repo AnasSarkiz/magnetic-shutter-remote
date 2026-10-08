@@ -1,0 +1,12 @@
+{
+  "before_head": "7bca38478a46f0f9189dd7624e7113ff7c86fe77",
+  "publication_source_commit": "3b72f8db821179f0b41597a2352c597525b03c72",
+  "unchanged_protected_paths": true,
+  "protected_path_changes": [],
+  "all17_models_and4_circuit_jsons_unchanged": true,
+  "no_local_root_pcb_routing_3d_sdk_cam_build": true,
+  "qualified_pcb_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "frozen_main_expected": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "staged_inputs_removed": [],
+  "passes": true
+}

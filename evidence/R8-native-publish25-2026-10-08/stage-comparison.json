@@ -1,0 +1,18 @@
+{
+  "previous_source_count": 319,
+  "retry_source_count": 321,
+  "expected_native_files_including_manifest": 322,
+  "old_inputs_changed": [
+    "VALIDATION.md",
+    "package.json"
+  ],
+  "new_inputs": [
+    "evidence/R8-native-publish25-2026-10-08/REVIEW.md",
+    "evidence/R8-native-publish25-2026-10-08/preservation.json"
+  ],
+  "inputs_removed": [],
+  "total_bytes": 54108943,
+  "all_model_build_source_archive_bytes_unchanged": true,
+  "no_guards_changed": true,
+  "passes": true
+}

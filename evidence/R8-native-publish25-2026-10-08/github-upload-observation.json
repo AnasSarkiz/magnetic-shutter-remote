@@ -1,0 +1,90 @@
+{
+  "observed_utc": "2026-10-08T20:02:38.285233+00:00",
+  "commit": "3b72f8db821179f0b41597a2352c597525b03c72",
+  "repository": "AnasSarkiz/magnetic-shutter-remote",
+  "private": false,
+  "frozen_main_sha": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "changed_source_file_count": 13,
+  "anonymous_exact_readback": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 25813,
+      "sha256": "7bfab2e0fd804396b883cd03126b7be746628f20aea57b37ca96a9179694f8c3",
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 45894,
+      "sha256": "804e805fb10a728611ace78b0e6e462a5d813b3fc05744ecaef9ad539c3a6ee6",
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "bytes": 43195,
+      "sha256": "94ea0de98e110382301983050231ce035e243c650e9616ddf96c1da0815cc39b",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/PUBLICATION.md",
+      "bytes": 164,
+      "sha256": "89550e2e08bb34580f277e91491f0371e2d17a59c6ea9ac623e3564c22379408",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/REVIEW.md",
+      "bytes": 2703,
+      "sha256": "da6b6590f494929e4a941a90b0647e8d535a8c99ea9242e2fc9697ded1ad4129",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks-result.json",
+      "bytes": 550,
+      "sha256": "fc3e3b15caf44120e35bb11c361d879ddbafa6c7d3ac497d0c0af82900949ac2",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks/format.log",
+      "bytes": 330,
+      "sha256": "75cdb3eeab6cc7fa24f4109bcf538b496ef60064abf75c9494aba595731b5a6f",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks/initial-product-test-path-failure.log",
+      "bytes": 1237,
+      "sha256": "0ce436dc35c7e9eef4a75cbe05043e577819aa61104b26ddd08491d32182a033",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks/product-tests.log",
+      "bytes": 1722,
+      "sha256": "58bad51d2fbf40c93cb5bae1c4ba88e182e1f2b9c2bf67fbbb561ae113f3ce63",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks/smoke.log",
+      "bytes": 6743,
+      "sha256": "307780b43b09218e1a7b9351a8c768d10298b94e5b1ddd51591d4cbb3440ad58",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/checks/stage.log",
+      "bytes": 117,
+      "sha256": "36a25b28a637d2346e442b171289bc50750eab9a2b2dabdd45810ce50f29eabb",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish25-2026-10-08/preservation.json",
+      "bytes": 374,
+      "sha256": "05529a98b4ac9d6959a01a0e08109b7e52ceeddfee2a5517b68ba6f1935965b3",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 5201,
+      "sha256": "d9dd8d490ee7d23ef4895ba546e27ea89c2ddc1c5226ee391eec8714aad99bbc",
+      "matches": true
+    }
+  ],
+  "no_header_authentication": true,
+  "passes": true
+}

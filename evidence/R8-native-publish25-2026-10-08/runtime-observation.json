@@ -1,0 +1,37 @@
+{
+  "started_utc": "20261008T200217222368Z",
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd -- \"$1\"; test \"$PWD\" = \"$1\"; exec tsci push \"$2\" --include-dist --version-tag prototype",
+    "r8-publish",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25",
+    "/workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native25/enclosure.circuit.tsx"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-08T20:08:29.864654+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 874548,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261008T200217222368Z.log",
+  "limit_is_observation_not_guaranteed_allocation": true,
+  "previous_standalone_browser_oom_trial_retained": true,
+  "no_root_pcb_routing_sdk_cam_or_3d_build_run_in_retry": true,
+  "observed_cpu_quota": "400000 100000"
+}
