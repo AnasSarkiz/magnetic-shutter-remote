@@ -1,0 +1,1569 @@
+{
+  "before_head": "d91072c7779bca834ebd056451336abe64ecd5df",
+  "same_validated_artifacts": [
+    {
+      "path": "BOM.csv",
+      "sha256": "c23b7b10e1b6f26698ec6a3d945b8339e50398d637cf2709f90495f18173b6fc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "BOM.md",
+      "sha256": "530b44b60bbe8f7d67f78ae0b4be9ccdd41fc7fa7b3ef1254cff4fb12ed48919",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "a31a8ccc7baec3480c9214c6068520fa1da72f1e66ebc2d9a8753d177dbafd83",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "00755675a5e9a616f954682844f517daaec1270f7e8dcef58630f774d7041601",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "bom.json",
+      "sha256": "ec103084408e0d2f3b5c176c4420536e36ededeb83156768fce66c253f2d9e0f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "87646fa426874bbb352134307a3ac0b409d360989ed7353cbbe4337243f94004",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "cloud/run-heavy.py",
+      "sha256": "6b4dbd7b8837b269e54bb28bc231bfe52bf41096598ff7557600d561bc7e27bc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "sha256": "4f31cb3327d26b63113027b3fd640dc80428ccb900391b48f94c657d0669764f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "sha256": "3f86854e62340738dc10bbd58b90488611f299c4aa56abd77839c2ddbd0c84ff",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/REVIEW.md",
+      "sha256": "de559a1dcf75b12a0d643d80e1e4662a665cbdfcde2ae85d14af35ca8b6e9f78",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/exported-fit-report.json",
+      "sha256": "202b27e7795e72b4c34dfea14dc5ebed12d5d5bcdf8abfe17e0409e9b28ff2dc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/final-checks.json",
+      "sha256": "62a284a7d4e8142297b0b4f73ab6c62ab9de7e35234149e91b19ba368519f825",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/geometry-and-electronics-preservation.json",
+      "sha256": "6829740e9b354f9b653159e6cc463bcdd2482ea4b64fafbf102f0155515ea56d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/native-model-readback.json",
+      "sha256": "996037c9e3a68893129210f88978ceca31b08419d5ded0642008fbe7c81160e8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-native-assembly20-2026-10-08/official-docs-review.json",
+      "sha256": "5b802a7c0f227ed1da0ab136da23b5684420433f0e5d16d99d4647a46d4db5f9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/J3-supplier-terminal-registration.json",
+      "sha256": "d0571f0c6b0474efae31cb61086cc6ca06906ef5d69d5d86a89f3ef66fa616b6",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/REPRODUCE-COMMANDS.json",
+      "sha256": "5f3b304cb91faf2e392b412c89ca59ac1c94b9d08d462839e28f8e38ad9f94b2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/REVIEW.md",
+      "sha256": "416c8985196d9e666f264cd32c2a0de475ccd31f42f7b6eac1e9b2352a88c226",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/SW2-supplier-terminal-registration.json",
+      "sha256": "3a09c62fbfe0eddb20bfd43a032d93141d03bc5accc3b1bcc77f12b3892ff23e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/electrical-contract.json",
+      "sha256": "099fbfa1ebcdcf8c7df88ab038303614bc3c1c43aface36a51a991ffe4dff7be",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/failed-route10/circuit.json",
+      "sha256": "9a350c031af814c77cbc3a52d803bb3f48c47fb31a362a987a120564bae241b3",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/failed-route20-visual/process-review.json",
+      "sha256": "0eed43695b1191c119b6f09c520a8dd7ff18f7f474e2780f93586fe7338e1e2d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/final-manufacturing.json",
+      "sha256": "b0c3009893de988b5c3dc8da82d1100c05ed4100074cedfccf2d484451b1ebc7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/final-native-checks.json",
+      "sha256": "46c646abd09a273e6d9c686f9f81a8dabdb5d5d622cd98ab1c1f5fe786aefec2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/final-process/process-review.json",
+      "sha256": "cdf7a4efdb4a7801aea86e7a6b1f3b9d249e413c45b7e9e4eb84fcc681c69700",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/final-readback/readback.json",
+      "sha256": "96b1dfab0717392007f0e04658981f57cf4ba120af39432f342a91eaf8ec6a9f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/physical-connectivity.json",
+      "sha256": "96d01654c0fbcc0ac652a123c9b5dcdded44423d427ea94855e4c8370f8ccfbd",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/placement-preservation.json",
+      "sha256": "2b47e8c3f6112dc685fe428f0b7d0561fbc8d360c1b1a75888393d1ee58ac59b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/power-path-measurements.json",
+      "sha256": "365a5c9add55c4cf55b522053918b9f8a2302ab5c2b20fa695e0cbc854e8a0c5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/preservation.json",
+      "sha256": "49fb3f278816218ee273e8718ca7c16695bbaf61af80a69dc8e7dbd5ccc0c652",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/sourcing-check.json",
+      "sha256": "e11e418d0c60c6c3bf4d935419605c59f512da32e28ef7c72ad97f71627d68c1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/trace-width-review.json",
+      "sha256": "c9b431341449ef5cb8bb8a755e8e9a0abf860a7942a9ecba6fb8bcb253e02aac",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-reference18-2026-10-07/visual-review/inspection.json",
+      "sha256": "d4f6de8063e6544998247cc027196adf6130fc8c6db41dafb6d58aa77b20ba38",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-side-shutter-2026-10-05/qualification/supplier-reference/circuit.json",
+      "sha256": "9a6ecbf8f055edb49ff899d458e8850405285ed75de4d02c7a92d1727595044a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/PROGRAMMING.md",
+      "sha256": "3a82c4994b2fcf4b63aedc6221b6143c120ac58a535b10a8dbc08315d9a187e5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/C160389-supplier.json",
+      "sha256": "a5a49d24022b9800af910cd4d64385a8c43a714665a6e958bed5542714f1b81f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/QUALIFICATION.md",
+      "sha256": "7e6bbb3b3353b1806d3aff99dfe0b44b775414b1d4640c6e6b55212aa2d8e4d8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/land-audit.json",
+      "sha256": "ba1546b3bd2d165d8122e89ddb4a738e513cd5dff5a30ea0963265ebfcd9846a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json",
+      "sha256": "6bb14764192cf1a4941e70b6fe86bff7a0450be3b2bfa0b9ce13731f15fc3112",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/programmer-release.json",
+      "sha256": "88a828be05cf7541c4ce3e91c8d0bbfc5d470bd5c55f4e9fad4509b84f6a425e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/qualification/supplier-reference/circuit.json",
+      "sha256": "1ac1dfb09d4120013c7a3d19ee63ce3490b3864fb91f749ac2820060f385799a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/R8-standard-programmer-2026-10-05/unrouted/circuit.json",
+      "sha256": "2a558cbb29d6017818dfe45846b8fb2d31cf42b87c228a24e637cc6468777fc6",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "evidence/USB4215-import-audit/final/circuit.json",
+      "sha256": "af653729b5584e3bf3c8e7ac72b0b86ae62139a948bfd3abd49e634534999bbf",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/JLCPCB-BOM.csv",
+      "sha256": "238deef759c4bfc407acbc04765b71d3e9059d6812a44f71bfe6082690b7187a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/JLCPCB-CPL.csv",
+      "sha256": "48c5eb068a8229d9e916c7312e8c2ccc81bd28ef323a3f474ee1b2fb74344598",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/R8-reference18-Gerbers.zip",
+      "sha256": "4aab87a8e430cb889b3adb6579567f2be17ef6427b851bb5d8b13fc08d4db1cc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/B_Cu.gbr",
+      "sha256": "1dc881048c0b2ab25c63b71bddb6ed3cbf515bbff8e4a100d3ef0a918343e5b1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/B_Mask.gbr",
+      "sha256": "1f084820fd495bc0f0648027b07d62b52342065a640bbd19e84ec2dd03e42be6",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/B_Paste.gbr",
+      "sha256": "dcb53b9fb8304208a20867f9052ff1a64923f076d71b171833da1f8046189129",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/B_SilkScreen.gbr",
+      "sha256": "11181fa392104fbd18bc3cd49f58f971205c1a32d50201def1a1d241c0f46a0f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/Edge_Cuts.gbr",
+      "sha256": "e83c46cd22eb907ddd0fc1ff9e90a3d643981f79de74227b3fce08f3070e9b40",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/F_Cu.gbr",
+      "sha256": "e46d3c4a60e4f5ac4d3c310eed5f43a713f0945786f70e924164ace10875ff9c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/F_Fab.gbr",
+      "sha256": "42d906ac31f1e1d163b3e9ff5efb05a8029dc241d8e20ae9ab87936125c649ea",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/F_Mask.gbr",
+      "sha256": "af9fc28f4398bc7192792b32296c34c97e478158b3b21443d7cf7aebe0c23458",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/F_Paste.gbr",
+      "sha256": "60817a5e358ac61725c88a95522f77907a349727cde7bdb4c68c1dd6a5ba9294",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/F_SilkScreen.gbr",
+      "sha256": "42a00e9926c96adcc4e653b440106818aa50453dbc8e1127570b842f1be91149",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/drill-L1-L2.drl",
+      "sha256": "2e98f8932f97213d171d6a45767c04222aaf4c6434f6bc4f27c4c511b9a510ff",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-reference18-2026-10-07/gerbers/drill_npth.drl",
+      "sha256": "296ef85078fe471f5679b439f141376df8760b788d41384a8489b32c13069601",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "fabrication/R8-standard-programmer-2026-10-05/R8-standard-programmer-route04-Gerbers.zip",
+      "sha256": "8e9df750f8089f0fb2a3adfbb5517fc61bf566a22ee565d89b02b1e5ee753542",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "firmware/README.md",
+      "sha256": "b598caa4defe14719530a225910dca479cc4907a9e09a8a8472a09450532d5f3",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/BUILD-MANIFEST.json",
+      "sha256": "0fe45f587862182daaa09d36ac53f9259e6c48db3c6fedf9b5fec008a6fb9a2c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "firmware/artifacts/R8-DOIT-C3-hosted-2026-10-05/zephyr.bin",
+      "sha256": "bef862d532945b309b30fa0f7bf2313db459de81f5261c3f8e4816d43de7e132",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "firmware/artifacts/standard-jst-programmer-0.8.0-2026-10-06/standard-jst-programmer.uf2",
+      "sha256": "8d287101599647dbe25bf876d6c690373dfc1da843692b06eaf88d1436128ebd",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1002T5E.tsx",
+      "sha256": "14e67b635c74e96a370432e3723046ffeea0271eb44df5c5614e155daf9b0a4a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1303T5E.tsx",
+      "sha256": "f2389c6dabc235506aa5635c75b9867a4e198dff72233e4aaa7c25278a475ab5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1621T5E.tsx",
+      "sha256": "ebd1618b03fa9038c187a9a6bd4b57463800923773132a0a2dde8fa07532d134",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF1872T5E.tsx",
+      "sha256": "860459a62194e9cb6ec064f752c6314d897f5180bc72bb3927b283971657e861",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/A_2N7002.tsx",
+      "sha256": "f05d010f18bb42714692e8c4b5e04f418fcd8726c43c9dbaa5c75c2b0aadc34b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj",
+      "sha256": "bfd8026e42221a4b6e384218de65515150333266af0835614ad55eb02d6d9cc0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step",
+      "sha256": "89c26deb97e1abc57c5fe633014c64d54d7512ba6d1c707abfb632a0ba49030e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "7bf9d353fc8c420bb5cb2a6ac795ad9f6fc1a21f249b8079deb3c787a194e198",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/BQ25185DLHR.tsx",
+      "sha256": "d4d4b0d03b130745f14a28f60df8a2b22fd8a0a6249f3108f1db5eee58a89517",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/CL21A106KAYNNNE.tsx",
+      "sha256": "bae4ddb2455163960807007782a51ce608a163ced35f24317c4837bc5df18b57",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.obj",
+      "sha256": "81dc361ce8ded18a36e1fa93de03cffe7e5ec8bb1ba20ea96edce6fddf6ce97f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step",
+      "sha256": "bba95db596c0dad394f36dc2246eed661700e66cecca5bbcc5b17efa93279467",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.tsx",
+      "sha256": "2a4c291692d6281e8e96a834cf482c53d7ef439dd1e225f4bcb24e392968e31b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.obj",
+      "sha256": "6223faf9404c575f350a96b427d8da0da13a2439ab7b0f9b9145452ed78484be",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.step",
+      "sha256": "4eea7f810c4609c7ca56f62558c85a64e5bb19194118cd60fcd2ad6eeeeac8db",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC2_12E_N4/ESPC2_12E_N4.tsx",
+      "sha256": "c3a8b0ac2676cc02fd1c219233c0e1554be613c85c38698468d4e961aadcca77",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC3_12_N4/ESPC3_12_N4.obj",
+      "sha256": "2642b6502d25a4610e5c8a77d1641d2d9e5af38feb9ffa9b7eb3e7fd2f1f5e27",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC3_12_N4/ESPC3_12_N4.step",
+      "sha256": "d16846c481cd1ad6f2780f5177d49dd9f1316ec5d09465b13bdcb9968b899304",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/ESPC3_12_N4/ESPC3_12_N4.tsx",
+      "sha256": "286b7836dc15da3013748126a46da2de4836dccfedb96cf3a32c8ebd18a4c8a4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/KT_0603R.tsx",
+      "sha256": "e1bab4c8e862c0801a35cfd7e14d73ca942feae8b65548f725ce162931592e96",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/MSK12C02.tsx",
+      "sha256": "7b94b10180da219ebe17874486cfa37a596668e29a15ad48e94d67cce7f19658",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.obj",
+      "sha256": "bc68b3514b1c85b7f2a634ff866609d0e07189a3d5b940034a9c366e4499d062",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.step",
+      "sha256": "5320d7a2a54b3be031d3299b84bb107c8397b204852fb2c77e9aa5a217f8ca94",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.tsx",
+      "sha256": "7638ccd88955f4ceebd337fa8d24691de05af97113a3d49ed426dd997d641e49",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj",
+      "sha256": "637e5c864f41bed4c239f8959fb494d1220a2977af89e236ac03fb0c9158fa3a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step",
+      "sha256": "949e2e5a0e11691a024f4dc3d1c939c7d85347c4646a36630e045e8cf768bbe0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "87f29d0433bc9d36b77b12841745dcfddcb3895328ee8d2c6fe2d9cdd605233e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj",
+      "sha256": "74b1a00362fb8946ca60deeb4f9ef94198ef9fce93e084a91cdff1af13fd88d2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step",
+      "sha256": "2de925c4e48a8c9ffbf5df75e8b2e9e6b9e375cbc35b36c6a4920adc85f9fe49",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx",
+      "sha256": "a6baf03f3bd6ec49a98fe029f0d17846c492b4971040943b29226b90ca458973",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TCC0603COG470J500CT.tsx",
+      "sha256": "fe68decd2af2b035d732c3b1a62faeec08e89ed7e56a20ab97b47c9d1e75e47c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TMP390A2DRLR.tsx",
+      "sha256": "38b0189e7e012e95027c5eeb60bb64d0e3c4e3859bbc34378a1fb3dfc2e99124",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TPS3839G33DBZR.tsx",
+      "sha256": "be6475d461bd2a33e320dc674b0b88a3ff52a9bfe8d0bc5dc0f8a8775360f09c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.obj",
+      "sha256": "d2a529438f9e879641c132027628e0bd1c10437513947f367e19dc91268a5633",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.step",
+      "sha256": "796d0eb1f197584d2111f35840402f83d583c9497630171950e7c1164fc1fe9d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+      "sha256": "313da677fe688ca866f49e57ba0aff17e1775470cf47860a440693745d8709cb",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TS24CA/TS24CA.obj",
+      "sha256": "5878da19a70fe00419a487d86114b89066a2290165b2ee4949eccf7451c0d0bc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TS24CA/TS24CA.step",
+      "sha256": "819eb92e92a4876d088c549a8cf5c939caaf645b2315e09e046b4911f737dbd2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TS24CA/TS24CA.tsx",
+      "sha256": "25c69d750795d6a855e275b8b6e3ffd82e367ed892eee17b6e765ed4df2f06fe",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/TS_1088_AR02016.tsx",
+      "sha256": "3316a9df5459737097fe9323ac72a2672687af4b93d0e9414119a3ce7b6aeeb4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "imports/USB4215_03_A.tsx",
+      "sha256": "4acb1cf6bed10acaa982c0546567c4699bc0315195e5f4e3afc3ec60cdfa3ec9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "b9a440f84effe51ae4803de57dfc70d2aa591d9f52cb81b2195c8f9505d0c64a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "mechanical/R8-MAGSAFE-REFERENCE-REVIEW.json",
+      "sha256": "c74895aba8fbe6805b342aae6a36871821d0ed0042f6a8ccd762d0a65f618da3",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "mechanical/R8-MAGSAFE-REQUIREMENTS.md",
+      "sha256": "8f3e3b00ae4c2f5a99cf31eb998a660fe83fe27ea966a9136342d29c53f81f05",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "mechanical/R8-MAGSAFE-RESEARCH.md",
+      "sha256": "0f36b23b76b40eafce70fb425f6480807cce2e8f3d3560094fd3a914fddaf0d0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "0550034f67b3f036d6f8fa3ca5b535453e0c47e5e7c9a972ad210087f75cfb4c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/README.md",
+      "sha256": "252059b592a8dc7506eacddf3b9489531eb95cb549b4e34381c14af55ca4e751",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/assembly.tsx",
+      "sha256": "a507835bcf3de381b33203f93205d928e861a642cd14a3f960bb60f3c4ca90f6",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/closed.png",
+      "sha256": "04ff00bc8133a3579667e792c6b7391b087157ae43f0960d1738328f67318770",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/dimensions.ts",
+      "sha256": "83ff675552b5b4c2d5da945d6b83ce7012a320c17a11525080504f6413427749",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/exploded.png",
+      "sha256": "5a428cfdca3cec6124c0dd9a22c7d0741d296370a6afce089393b05cc3325f81",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/geometry-review.json",
+      "sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/geometry.ts",
+      "sha256": "b08c0e62714f99ff0f5832b66294201026dffa9fdcca6e429f28161546a391ae",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/mechanical-model-review.json",
+      "sha256": "86f58d6047f3656a1e07b194a5579bcc30869aceb3fa67b8d9de078df7bd5282",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "sha256": "ada951c7aa21a9a7df33eed33c6f20d736ee6cd971c934c849c3bc31cb3c0980",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "sha256": "050506ebac4f0bd2cb658ad54bd977ee946633d647e94c492c6be8e8281bf2e1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "sha256": "3cc9a6420131606b4c602af0fbec99b9c6a5503b0f2623b25b637d12848a9fa9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "sha256": "970591c1a0f27a3989295e9d80f07d589e06eab1a280699a11a94d2ad66b5500",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "sha256": "14c5bccdcafd68b9f2e25975f8c6b2ebf530a2759250b9e69cda3ad13fcb7cd4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "sha256": "073ec55ce5c88df96b98c63c60f91e993517fe4303a3354a4b9da578ccd858f3",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "sha256": "bfe199f58b1c148fa5dea996311de55997fc1d161599fc0ea0fa1ea30562e409",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "sha256": "7c9ffd9d183b3fd2fe24b8beab5ee76e9ed747493000aa2dc2699ebc7c71f0c8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "sha256": "12108ce257fdef5bbccc67f370b93b93d3e238116b000d46df4d28709ce7fa77",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "sha256": "d3cc8645bbede43c5741c92a3cb4e825b4460d8adcc68eb98e25fd2d2e4c6145",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "sha256": "eb20c79f6c264bb03271a9c89bc6e47c83f7288b07d405088a754983ef2b6998",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "sha256": "b6e4a2f31cc52d61dae1253ec1c4f52b36dadd78f05167a8f8b660b7c1d7c692",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "sha256": "cc9e52b7d49429e3f4f87a9a44b060a7250070193e6324af0e6d71c2369ed634",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "sha256": "5f059d82d02bf96d2ff462e9731c3b5f2f49aa43ff59cd9ef3140153131fc2b0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "sha256": "db58dd0706ca37fc66065e84a91ede6d4f32805e930ca1d2779060df7aa2c8ec",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "sha256": "99b3fb48f4b614f2eb5f7188e4fff11d3f88bab40a27c86876bee3f16e1473ef",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "sha256": "e8b7b5b72e38c61951d4aa011cce26a1014e24a9409329d92ec53f5303258e19",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/pcb-model-review.json",
+      "sha256": "3d3fee37671c002e1dc940cdff3678fdea25d34c595199829862c8e45791d1c8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/phone-facing.png",
+      "sha256": "07f85eaa67727efd8e64e5ef6fad849bb3b0e3005dac232a2671d305287bcf26",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/print-mesh-review.json",
+      "sha256": "e4862f25f804e8e8fce627e111189b26d42fa5074b624ff53900fa86c24309a9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/print-plans.json",
+      "sha256": "e361e2df5dc6bf17d68a6a33328b031e43520efc121aef0fa3b32c23099a878c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/print-requirements.txt",
+      "sha256": "606fcff716ba22a4e16a14ec42c6dd3b060794f48b09666d3c962cbeddec8c4f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/BatterySupport.stl",
+      "sha256": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/FingerGripInsert.stl",
+      "sha256": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/MagSafeFaceCover.stl",
+      "sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/MagSafeGrip.stl",
+      "sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/MagSafeRearCover.stl",
+      "sha256": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/RemoteBase.stl",
+      "sha256": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/RemoteLid.stl",
+      "sha256": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/prints/SideShutterPlunger.stl",
+      "sha256": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-back-review.json",
+      "sha256": "663d4142ce46463bf00bff940879230540c37d07aa65d44f794ce7911e25d683",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-back.png",
+      "sha256": "61d3465539b08530d8e522a28fae4adb887f4d91fe626b458b4ef685b0b913cc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-front-review.json",
+      "sha256": "2fb9a67e03a8acd5929d1dafb351265d32c337c135090e1f05666152e803aee9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-side-review.json",
+      "sha256": "c19b554a91a585c59eb13594929fa03ec19c751dec5a1a4f648b9f2094a9346a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-side.png",
+      "sha256": "920639d4c20fcb8fe0e2cbba0ff3efe92a9fe7492390f61054cf532611042355",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-straight-review.json",
+      "sha256": "1149027b711b67c7ef8fa7c135bc528e4efcd7a00db9a3775520da3947a1cee4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product/studio-straight.png",
+      "sha256": "a64e43037a4d593b381d2e4a6d6808981d3f76fd84f9598ddf9bc721d87c90d7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product.assembly.tsx",
+      "sha256": "44555ba62f7936169c67c6b2611635336a903bd0578a9a69dc19b5a5c36e5ef5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product.exploded.tsx",
+      "sha256": "912e02a0aad538769cb40bb2dac81c13f8c1a82e2ce149f0471630ef8d518446",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "product.geometry.tsx",
+      "sha256": "9223668ee51ce476667c7156e5ebbf5fba552938a6b4725ff52e087312e90108",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-authored-placements.ts",
+      "sha256": "65de6d6f30d3d878b2d7ed533ab8c1dd64537aa4feb9182d0ca8e9cf5741ed5a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-drills.ts",
+      "sha256": "0dffe1c742417c3c87e4be2c921fcf6ee200128b881d32665dc321dd1393074f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r4-qualification.py",
+      "sha256": "ac69f45aa796d43a4dc0add8b634fa7f9b30e2f5f943f47897b8fc37b7c3f2c9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r6-registration.py",
+      "sha256": "f19f472b19e8decfe21020931e568595030e65d1841aa578f457c3bd0af63c95",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r7-led-fixtures.ts",
+      "sha256": "42083432b9478e07839eff879efd8dda393117546fba06e27a92e61f15877c32",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r8-circuit.ts",
+      "sha256": "a7bff71efc681391fcedb469cc78209bd6b2a0b4438845bdfbbb2a69bd60b304",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r8-jst3.py",
+      "sha256": "b3a490df282b8993b7fc241b744eb261681a860c6abfc5d411756e82dbf60786",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-r8-module.py",
+      "sha256": "770312a45600c8bcf1dbbf4661dcd204c5ac1f5fd8b119ed30c2a0f98d807eb7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-radio.py",
+      "sha256": "322a908352bb2ecd289fef336d15ad27d33eb5bbf9b71254f0e25bdb196b6c9f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit-side-shutter.py",
+      "sha256": "c3366d84678c9c3cf366893f5d0637dd2db7170c40ec77b08a362815b725e419",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit_r7_jst7.py",
+      "sha256": "875cf9f4f609ffe8ff25312f0942320631d9c302ac54ef86ef0ebfa51f28de23",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/audit_r7_paste_fixture.py",
+      "sha256": "b2eb92b899b01e0ed114a0a6a52db1912716bf3a2e59286d68fecf033bd37deb",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-mechanical-meshes.py",
+      "sha256": "5c388d8d69152c4694c1c84fa54d44c4818aba58e6b3fcc6e5ad8ceb699ef555",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-product-geometry.ts",
+      "sha256": "74dfebd4c94ade23f0c22ea62654d31b556d4d85f9e813d2de3958b934888c50",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-r6-mechanical-meshes.py",
+      "sha256": "5bd3a550e04fa768e2a75aded2675b4a41f8f0103a8e6c5ed33974cece8f5e14",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-r6-preservation.py",
+      "sha256": "4db3c0049c536d13cbc29e78ad0854331b3c30012a926f26c9aeec1b308cb766",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-r8-native.ts",
+      "sha256": "3ca23159dd6241642dad85691ea386a5bbb703dd8de7f5260242b6f887b37416",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-r8-output.ts",
+      "sha256": "501f3522f15b9e73d0d83b6ac0079548d39df08b0d542e8394e407341b5eeef9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/check-routed.ts",
+      "sha256": "849fe7f998fed9f968b6452990cb6f297dd39ba0920eb1579c17a5c04e5a52ae",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/compare-r5-r6.py",
+      "sha256": "c9c7c06ac248242e7e235e913f7f8d13339b0eab3fc918e277a95ca3dfc5215b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/curved_geometry.py",
+      "sha256": "88bdc260494aed8823456835bc620c756f8ea1aa4f2b289343c40b83bdb4e7de",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-assembly-review.py",
+      "sha256": "701293e64aaee98629cde4112758afad8969481436bb1e5ddaa08296f5499115",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-r4-assembly.py",
+      "sha256": "22b3143edda1f50241eb1b5488b6fbc8c231b82ce42e2faf0943a1e448269dc6",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-r5-dimensions.py",
+      "sha256": "6eb119697998b12fda9118e5d5fb6467c4e521e581163b010b9d23b6f587c967",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-r5-review.py",
+      "sha256": "4c37c8e6909b784dfa4134e503529e579e7cc17ef3102536479f88bea4c9f9e0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-r6-dimensions.py",
+      "sha256": "662d17f1bbd1e11ef49eeaa940a63d64f79ba312c6d5c06cf02c4549bcd92905",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-r6-review.py",
+      "sha256": "40d8a84fae6792ebc3e282a97185fb0320d0e93cec0b7a62687ee5a20ece16af",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/draw-usb-qualification.py",
+      "sha256": "9da286aff66d658de7e84b7f3ab2d13c275892c8fef3de4b712c68458c71e588",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-assembly.ts",
+      "sha256": "fa350459fd8ed0ed5124ffd8fa3bea4a5e1d5b6d0e7c6dfa5f07efd7d4024bd1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-gerbers.ts",
+      "sha256": "56d4416b25c3229ab6ea0d5840c9afd8d1aaada5f00ce221336114903f094afd",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-product-mechanics.py",
+      "sha256": "387e67ebce62c64e32ac16a8a8cf7984a29ac443d0fa233209d01c6f946b90d4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-product-pcb.ts",
+      "sha256": "c87f2cf6d0f48a7dfa6301f8ddf5abee880d6b9ae7b1128f613bb461943b7fa1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-product-prints.py",
+      "sha256": "ba05ebca3808753c0bcb0c165d596014b7d701ddc99f8032586eca3015329f48",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/export-r8-gerber-zip.py",
+      "sha256": "e60d1856e388a681353d59447d4261d5dc3b02b3ab2cd70422ef7da3167f2474",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/fetch-qualified-datasheets.py",
+      "sha256": "53645504e126de5ba5136aaa6f0024108ce13672478a89fe7bcca58ab2cfd958",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/finalize-r2-bom.py",
+      "sha256": "a92b9589be8145ba8f406545de2ff60462e8e1b481830fc9a7141ac1b1a81e86",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/flash-r8-standard-jst.py",
+      "sha256": "468127d13678cbbb4fb4502d0158cb49ff16e7ab56fdfa39058589714597cf46",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/inspect-exported-slots.py",
+      "sha256": "9731331400e7189e9c3ecba7e2d239580c3a178824ee5a04bdb0d7eb9fa38792",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/jscad-planner-modeling.d.ts",
+      "sha256": "1919a1483637576e163ee3df06144395a79fe1315e3b51d8e05ffa40f50adeb8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/lib/qualification-source-placements.ts",
+      "sha256": "21b00cc88efaac0648e250047da6a6268f3f4c947df92585acc4c494d39c2add",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/manufacturing-audit.py",
+      "sha256": "120751ceff8dc035557a8d82e6a13c89fc1e009ccbbe9119d6e523f16213f828",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/measure-j1-export.py",
+      "sha256": "c3a5be2a53634023451aa38638b216b8023343c0de7ec9ce336ceaaba5e31799",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/normalize-pcb-model.ts",
+      "sha256": "7bb40a65dfe414c49fbeead14c2f612a4803b4854aabb49fbff7875b30e0dfbf",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_draft.py",
+      "sha256": "c33f51283f504fc44a82b67f6093a026dceced14679e0b61ecbd4ff23964a38c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_r2.py",
+      "sha256": "b775ce118f96dc91c08b8e62222bf6c4fff9f64a120864fa95da7f117ed86803",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_r3.py",
+      "sha256": "3e923104e4af53120160788c90591fe5c84bb12256714e1acac5aa807a878b59",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_r4_dfm.py",
+      "sha256": "5ea2c6d3d010e4a495b9336b429efac6df24dd86161ea202a6c95e6932a4a1d0",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_r5_dfm.py",
+      "sha256": "bdef8e94ba1b57114871d0fd4e4fbd7dbe5ccee4895ab8bba96072aeb480ea3b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/package_r6_prototype.py",
+      "sha256": "16fb1104665549faaede87d9bb2783fedc036bead65424db3e70e3e0fd137655",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/place-r5-markings.py",
+      "sha256": "22dd75450e4c54fe6d9e5522c7db846277ab23f94309d856d31e167d7575d40f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/qualification_paths.py",
+      "sha256": "1adf9380024061da1912a3690cab1624aee319310aceb2819ecfcf9d59dc6e14",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/r7_power_budget.py",
+      "sha256": "ac6627b50b695ee17680170a3607f45c248191df66e5bdf582e1c361bb33cf1e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/r8_board_geometry.py",
+      "sha256": "c2a9cf4487ddef823cc46399ddfde91f2e4f59bcd776506d6c384ae97f710cbd",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/recheck_board_sourcing.py",
+      "sha256": "0c1b18e2a8299999101a932ccaad802ace96c16bb79301b779a1033b413731b9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/record-r3-tooling.py",
+      "sha256": "a0bc13915bf94390afbf0655c0456d44217ea4128967d57e7a9898d5106e2277",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/record-r5-tooling.py",
+      "sha256": "737268acb0e0e33e42e60bafe3eaf3e710b39b4a4fdd013638ed59ae222da3ec",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/record-r6-tooling.py",
+      "sha256": "206339721275a2ac5f110c2f2b5e79b6f00e36d1009c0f11b5c50a4f78e2870e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-final-cam.py",
+      "sha256": "1b80cebd950254f3f11f6afab4453cde32617a643fe6655ea4913f2e5cd1f91c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-legend-review.py",
+      "sha256": "b569122c2bb4a54ebc18654b9c7e6dbae5e54094c4e800e679dff5d0142131e7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-product-studio.py",
+      "sha256": "41456fcf6f26148a7ce274766f8aba728939d05fd6c898fb869eea251f121358",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-product.ts",
+      "sha256": "1a25e7586325f2e789cec580b1c2b151710e826a391fb88bff96474185f32a2c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-r6-pcb.ts",
+      "sha256": "4f752eddb50f5169930b5c15d10e780dce452f7dcedf565cf41ddaa926eb5686",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-r6-review.ts",
+      "sha256": "1ba4c3b53ec2aea59dc7f714f36517664079b41162a225fe26de45685b0bc1cc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-r8-land-comparison.py",
+      "sha256": "012382fe74559254b6a3ea2b38094bb4eefad790144820817bc32a80684e66cd",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-r8-review.ts",
+      "sha256": "137078ec930e229270b0d250d8c1878d6628e243507286f22a161ac1f0aace53",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-regression.ts",
+      "sha256": "41a2bac615c21e2969f5260e1a28fac8a78250d4176f64756b6e98a18d6b10dc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/render-sheets.ts",
+      "sha256": "ff054cea26173093fd2bcef8c82ee76653a3ae905c79a98af7443272f440d923",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-gerbers.py",
+      "sha256": "94292251cf3601b7879111ef14d1ce0f80b97c210a70e7fc7fe6190437f570a4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-native-product.py",
+      "sha256": "62bcb158f41c8c57d3b30880121357e936c72b2e86589ee2319f04af93389e10",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-order-usb-mask.py",
+      "sha256": "1b2fa705858521a2b80150267c80f6538930916aa0fa8382d2d006a1c96cf444",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-product-model.ts",
+      "sha256": "4ae4e4b2441e4acdbd1baa84bb12325d569020d7c775119b4c120cd11b63ba15",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-product-stls.py",
+      "sha256": "3402e2bf210859c7d544a36e5eda19c9285d4c156bd20d5b99130e0e7d80a5b1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r3-exports.py",
+      "sha256": "9f2499c10a3856957e49a41dd0751c8abf71716306713e9751b884cffa190146",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r4-manufacturing.py",
+      "sha256": "d4d50bbc5b2f2171d91f0c5c77080d9b5a059158c56bd4c906812d305aacc74c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r5-ground.py",
+      "sha256": "b733f0ea9e8938a1d40152b8706e2a1963b6e321a4146fd4c170b0e35fa37083",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r5-legend.py",
+      "sha256": "0e4bb57ce99571053ddc44b3c05b83254efff91500398566deac7d81b063cdd1",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r5-manufacturing.py",
+      "sha256": "9791fe350b52c38597ed1db7a66604bcadb72ff10089310e35388d8bd655fc68",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r5-stencil.py",
+      "sha256": "160e583db8a577625cdf6e3a9b952cd53e81e79c64c94095536a5f2d2e6c6311",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r5-usb-pins.py",
+      "sha256": "97716f4bcd0db46713019eba03abb9616cd473299a4b5ad8755a6e1dcff421dc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-3d.py",
+      "sha256": "690e5403e312d8e84fa767931cc8d8bf52d49e0b0b2b74b691bb468204950578",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-ground.py",
+      "sha256": "0bc95b5aad55a45e29f03a54fd32a413eb7c109ecf259577ce5381b2ce304d7c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-legend.py",
+      "sha256": "b081c8fc37ff0925980b9b0d2b50e49f7c710c39c642cd7b430724cf681a9c5b",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-manufacturing.py",
+      "sha256": "8585013bdb7687b6fa0a4a1c527f9bc544f8370240746fc1baab8030e442031c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-mechanics.py",
+      "sha256": "cbaa2618bc92c793929f37e18a12239b484b9c0404a96954ca28a12d16eb7405",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r6-stencil.py",
+      "sha256": "85fe7679f31f0a532093b89a8e7fc9972def1690640a77d8e5f5049b1d09af40",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-connectivity.py",
+      "sha256": "aa0a3afa62c00a2a710d482e9f106cdf169e4eb836d730f169baffcfe8e43cdb",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-electrical-contract.py",
+      "sha256": "9bb01b89dd6cdf9da2d0347f6321ac72d3fd0556c536978f4a7f2e8f68ac82ff",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-exports.py",
+      "sha256": "f2c927d3e1c569109117c852f45692426a26611eb9118cc9a9c7ce1f18871350",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-power.py",
+      "sha256": "a2ded3b3893e53cbfe7816761fbd7c0914e9acff5d821c0abe59efe6929bab9d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-process.py",
+      "sha256": "e8ce17daac3d33ccb31abeb19a01781c7b0071f79db51dc85fdae9e1790e5fed",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/review-r8-trace-widths.py",
+      "sha256": "b94b92e9c1337fdaa2d84a60681a9b4b3028ab81291ec3e1977e28a8c58df62a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "sha256": "b05ec2115539a59be714eac9b4bb63a23577ee5520ac84e7790dd68fb8bf6957",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/update-r2-bom.py",
+      "sha256": "522861502a0308a4f89164a4eee253d70b810d5ff682190af0a76839bb626aec",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/validate-r2.py",
+      "sha256": "6b316d6703b4f82a351cad2df00538e6bd45d79e44b22c4388a6477e8256e4bc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/validate-r5.py",
+      "sha256": "04892a34c246a8740fe13466031a880c36a562456064e7f23169d33f435a014f",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/validate-r6-outputs.py",
+      "sha256": "66f4e6fdefdea6ae41d7c40f8b1b58df2dbd5aca935e20f420ba085a86425c45",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/validate-r6.py",
+      "sha256": "5af58a0874d00eaac8e57dbb7aa88437562a55b8e2ed695d5f158e36a061d29a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r3-bom.py",
+      "sha256": "b1bfc6ee0850a9c9fad1e3af254827a2deccc9770d13cc3394d660fd299c190c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r4-reviews.py",
+      "sha256": "d490cacef56867b6d8d4b20c9b9fd68d699adb3c7b279a7c2fec2cd42c26811e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r5-issues.py",
+      "sha256": "9fde3edc24d64d5a297356c39e63c89d27b5a5553d1d5b36b801519ee677fa85",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r6-documents.py",
+      "sha256": "fee5958ef7f5d3087e1bf073f4c8336de350b34cff08a5fbc4f08189d7126f8a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r6-issues.py",
+      "sha256": "15138a1b35636e97af1527d075f42a7f3511c8746780cb13873c0dbb1ef9f18d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "scripts/write-r8-bom.py",
+      "sha256": "160f21f5bb82841acb09b99fa56b686902b071595758bfa69e4dd87e1b740f48",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "src/functional-markings.tsx",
+      "sha256": "ad047fff1965ba2981e60f5aeab89478d07bbee5fad892836eace4d2e26d33bf",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "a2f927e23fb93981cae39c98148c0341facda79e512eec6b0c0f16e1823b2058",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "sha256": "a21a1811a53c38afffd4bb8d41719b8e6e9de6920e3f895fea18fb9f945be852",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "src/trace-paths.ts",
+      "sha256": "2ccc407ca67fa136417fb4cd05fdb0dc768d9f19e055c571e19da2d1a43f1895",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/cam/test_board_boundaries.py",
+      "sha256": "bec05440296cd6ff7118948ac757637083b661d341ccc623350b890a3adbebe5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/cam/test_exported_trace_geometry.py",
+      "sha256": "8cac97aa9e18819b5580b45fdef0fff6fe96f999c5d16cfab5c8662e96235d26",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/cam/test_power_width_budgets.py",
+      "sha256": "257adcca7b264b62ef16cbe21d15be751eb336723fe8e08fedbdb67cb5d99ce7",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/cam/test_process_metrics.py",
+      "sha256": "d00ac2519053ce4c2b220f3d624886858893ae5ffcd6fe0c4eec5ee1a634f17a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/cam/test_through_pad_geometry.py",
+      "sha256": "3a628ddca78aa6104ecf55979d22727ee46c3c7fd57a96793f39d531e0add2f3",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/alps-side-shutter.circuit.tsx",
+      "sha256": "c76e7bbe00e07e45042f3ef3eb88b765145dba9bd086177966b962169a3cad62",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/alps-supplier.circuit.tsx",
+      "sha256": "172ddff824090a39069cc40fd95186f371366329ac56e6b304b5e25ffbc06d78",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/esp32-import.circuit.tsx",
+      "sha256": "5d35e269911b959f871a369fb37a1cd1c0f2d18ca477a7afa38790fe11c277e4",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/espc2-import.circuit.tsx",
+      "sha256": "b4349ff8262c98970f070933bc9d56cd47f2187930eeadc4d9b85315f5413b99",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/espc3-import.circuit.tsx",
+      "sha256": "f97446d60bd6e5516ab5e83fcec817e443ddf4a6a8fc9e8f3d94350c4d2d36ae",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/r8-compact-placement.circuit.tsx",
+      "sha256": "7de204f2ffd5667984b25edc6c243547d83cddec62239498a107b28825161e71",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/r8-jst3-supplier.circuit.tsx",
+      "sha256": "7c5661416d0f6cee3a5854405d2f262c2ee187ccb3cb0b36dce522fb51c2b30a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/r8-side-placement.circuit.tsx",
+      "sha256": "ec3b12e64aa9bc5cc0f302b834d448f482bb4c5ff80b6216cad8a993dd57ec7e",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/r8-standard-placement.circuit.tsx",
+      "sha256": "57ba421abdfedc8559c9a8a0e0cccf2466004096c0dddb762266d21cab9ffbdc",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/side-shutter-supplier.circuit.tsx",
+      "sha256": "930e95fae6b940dd8a4c0a43a8ee956d5a31a8a16d121425b600b531c1f0eb19",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/fixtures/side-shutter.circuit.tsx",
+      "sha256": "37d7349ba9d8f38b89bfa54a6a175b02bbd438f5ef3745843154843f60ddc246",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/r8-power-metadata.test.ts",
+      "sha256": "55c57f95a814e00f66c3c0496f7fb3dad8947dbb08c017d017861e5db572ee76",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/r8-product.test.ts",
+      "sha256": "e28777de13333b5af67d7f1c2d7e2d22d3a52f41781cb2486c198a0a217928d8",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/r8-schematic-notes.test.ts",
+      "sha256": "bf54e4f0ea71fa3b7084834f5cced37259b44aa735874cff8b3ca0824159e49a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/r8-style-vias.test.ts",
+      "sha256": "69858976e2649fe10a8f88bb7385a4932985fd6d4ad0b8e5898c9bfb4778040c",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_cloud_runner.py",
+      "sha256": "5174703384768cfa2305c64c3d5e00c6fe4887b522d9855f4c9da70747fc9d60",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_r8_alternative_radio.py",
+      "sha256": "b38ec05df998b9688eedd50c72c31d4891428577a4a030a523176f04947fc6e5",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_r8_c3_radio.py",
+      "sha256": "731c64fd33afac87cffc3441bb7a03c9d7f7ec9ea3ddd42d68ea6308cc6b019d",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_r8_electrical_contract.py",
+      "sha256": "af885f11b15000de481f3de981b0b3ae6128ba09116e90550c50db8c8dcbbb72",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_r8_qualification.py",
+      "sha256": "1ef1fefeeaf831c2f458113ee3c1f6b0e6d2e1008d82cd148ba4c8345a97f845",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_registry_staging.py",
+      "sha256": "cb6ce23d77af3fa50fe5bf933df9d17171c25fa7b47d37ab57f27ec4b5d9b795",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_side_shutter.py",
+      "sha256": "87838725f6b4ce2ad67bba6713b26281ea4ce204b6990d53fb06b1864bd4a962",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tests/test_standard_jst_programmer.py",
+      "sha256": "4ffeca6ee15326dfc0989670aa1598a41f3cf265d2fde1ff513e7c1cbcb3ff81",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/circuit-json-qualified-source.tgz",
+      "sha256": "3c57c8f7deaff9ab9dc4d823cae9d40e2f962958896700e13ea279d1c427b7db",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/circuit-json-to-gerber-qualified-source.tgz",
+      "sha256": "491b9c0937013290a5adecb247e7dd3c3c8ca903c09464d4c9eb94c8d91f27ea",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz",
+      "sha256": "52dcfad58e8f65633147ccd3ae531aa59111c2a80191be26f3cdd4e64631127a",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/circuit-json-util-qualified-source.tgz",
+      "sha256": "4484e5818b8ea7975cc62e94550bd1dca9eb91f3fe029eabe67fe1cf48e993b2",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/circuit-to-svg-qualified-source.tgz",
+      "sha256": "474295e477b5226dc65094555f62effab3dd8abad4f80d4952912d5296b97ded",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/core-r8-silk-visibility.tgz",
+      "sha256": "3ccff16ee06041890ba68f641f94a0b32c05724b7f966caacb3a219fe2b81a03",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz",
+      "sha256": "4199c36bced646224cd642addad95fa125a84c651bdcbecbe0e7460663e60b01",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tooling/vendor/props-r8-mask-style.tgz",
+      "sha256": "a9ed5b67fd680c2192ea065fe4f3f3125c4a0a96d83da040626bb29827afbd16",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tscircuit-issues/091-tangent-pour-cutouts-produce-invalid-ring.md",
+      "sha256": "646db08587f9a21659d7298f1f06d328ba50603656da1547213414475d6e4627",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tscircuit-issues/092-power-width-review-omits-switching-ripple.md",
+      "sha256": "0d9fe6d90cb273046e17e3512d712a4a1283b0cd1c4d508df0c716a3f1d356c9",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tscircuit-issues/093-process-audit-omits-overlapping-legends.md",
+      "sha256": "ac212a6ceb84fb3f882dd15c81e1a2831e75fcbd6e4e9c2d9696a60572fe57da",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tscircuit-issues/094-named-schematic-arrangement-produces-invalid-json.md",
+      "sha256": "b90fe85502216e5de10b451b11a64a1a2da0a5f8d1f9df830c846bd3a4faf0ef",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "b27ae253a5a3350b6cff80e3b3f628296e873cc113c858e8039aa03500cd00cb",
+      "unchanged_since_validated_assembly20": true
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "47cab4cf625e3e6d5a6c9985e5cbccd7131345ceab4a8df6f07f555fb96bff0a",
+      "unchanged_since_validated_assembly20": true
+    }
+  ],
+  "before_version": "0.3.20",
+  "retry_version": "0.3.21",
+  "no_electronic_or_mechanical_change": true,
+  "passes": true
+}

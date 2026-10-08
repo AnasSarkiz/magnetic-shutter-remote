@@ -1,3 +1,12 @@
+# Native publication retry 0.3.21 — 2026-10-08
+
+User requested another tscircuit push of the validated assembly. Only package
+version/publication records change; all 312 prior staged source/artifact hashes
+match before the metadata update. No PCB/geometry/routing/dependency change or
+root build. Prior geometry, fit, orientation and light smoke checks remain valid.
+Current actual upload status is evidence/R8-native-publish21-2026-10-08/PUBLICATION.md.
+Incomplete 0.3.20 and physical qualification gates remain explicit history.
+
 # Current R8 native assembly 0.3.20 — 2026-10-08
 
 Read product/README.md and evidence/R8-native-assembly20-2026-10-08/REVIEW.md.
