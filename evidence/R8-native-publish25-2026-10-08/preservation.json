@@ -1,0 +1,13 @@
+{
+  "before_head": "7bca38478a46f0f9189dd7624e7113ff7c86fe77",
+  "previous_staged_file_count": 319,
+  "previous_staged_paths_changed": [
+    "VALIDATION.md",
+    "package.json"
+  ],
+  "previous_inputs_unchanged": 317,
+  "all17model_and4circuit_bytes_unchanged": true,
+  "all_engineering_source_unchanged": true,
+  "root_build_routing_sdk_cam_run": false,
+  "passes": true
+}

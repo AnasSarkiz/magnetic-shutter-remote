@@ -1,3 +1,17 @@
+# R8 native publication retry0.3.25 — 2026-10-08
+
+The user explicitly requests another native tscircuit push. The validated24board,
+enclosure,17model assets,110browser poses and51native checks are unchanged;
+only package version and publication context change. Native24failed313/320with
+HTTP502and remains immutable history. Read
+evidence/R8-native-publish25-2026-10-08/REVIEW.md and PUBLICATION.md (from cloud, ../).
+Actual hosted readiness follows exact official upload/readback; do not infer it
+from local viewer success. Physical qualification, original075/076/004/084,
+separate3V3metadata, frozen baselines/main, light setup/start, serial memory
+guards and ordering/payment/contact gates remain unchanged.
+
+## Earlier records — preserved history
+
 # R8 actual 3D viewer parity 0.3.24 — 2026-10-08
 
 Read evidence/R8-viewer24-2026-10-08/REVIEW.md (from cloud, ../). Actual browser

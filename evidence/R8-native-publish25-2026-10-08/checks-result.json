@@ -1,0 +1,16 @@
+{
+  "native_geometry_checks_carried_forward_exact": 51,
+  "mechanical_face_winding_checks_carried_forward_exact": 30,
+  "browser_pose_checks_carried_forward_exact": 110,
+  "model_files_carried_forward_exact": 17,
+  "product_tests_passed": 7,
+  "product_assertions": 315,
+  "smoke_python_tests": 38,
+  "smoke_bun_tests": 2,
+  "smoke_bun_assertions": 13,
+  "frozen_r7_hashes": 129,
+  "format": "PASS",
+  "initial_product_test_bare_path_failure_retained": true,
+  "explicit_relative_path_same_tests_passed": true,
+  "no_tests_or_guards_changed": true
+}
