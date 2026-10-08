@@ -1,0 +1,204 @@
+{
+  "observed_utc": "2026-10-08T18:43:41.031659+00:00",
+  "repository": "AnasSarkiz/magnetic-shutter-remote",
+  "public": true,
+  "source_commit": "5e975da0577b16fdde64ef39c363f0e0bb993468",
+  "branch": "board/r8-doit-c3-prototype-20261005",
+  "frozen_main_head": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "files_checked": [
+    {
+      "path": ".gitignore",
+      "bytes": 1072,
+      "sha256": "027b4c2a6973c9ca8ec34c5c3285f90889aaa443f653595e94c60cf342a0dc4b",
+      "matches": true
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 21942,
+      "sha256": "fadd35e052b63538b5d6008fecd6d86fcd8644dff37f7886fee6921e18e542f8",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 7462,
+      "sha256": "d4fb061934805ee89ef24327436526da103e4b7956928a346e71c3b1ec74a75e",
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 42023,
+      "sha256": "f663a48385ecf63b2c0932ea660dbf35e4b149852c39ca9a664fccfcaa4743d1",
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "bytes": 39324,
+      "sha256": "5254459a1d159a3aa722a446952ed23199c6147eafba8c3edcc5a1c14a35a741",
+      "matches": true
+    },
+    {
+      "path": "dist/enclosure/3d.png",
+      "bytes": 40402,
+      "sha256": "96e410ab109bbb116f1954d1b3575edc1756508cc53a3ef9026741732982a54c",
+      "matches": true
+    },
+    {
+      "path": "dist/enclosure/circuit.json",
+      "bytes": 15516,
+      "sha256": "714f6e8181796511a640311359f4cfa36e77f52a8cc4b490f5e74e2492daeaf9",
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "bytes": 15516,
+      "sha256": "714f6e8181796511a640311359f4cfa36e77f52a8cc4b490f5e74e2492daeaf9",
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "bytes": 15513,
+      "sha256": "17049b14eae7e776b1df6627b4665044761ddc93ecd79176c748b585e6432b39",
+      "matches": true
+    },
+    {
+      "path": "enclosure.circuit.tsx",
+      "bytes": 100,
+      "sha256": "44555ba62f7936169c67c6b2611635336a903bd0578a9a69dc19b5a5c36e5ef5",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/PUBLICATION.md",
+      "bytes": 273,
+      "sha256": "1d758b401cbcdeca91b4d93ba0d699ebf2468025f59c15ecb55a8c3e7e433959",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/REVIEW.md",
+      "bytes": 2708,
+      "sha256": "4fe920d5a8a8c86a28f68c007611842b76f586df22f88db98ffc9c7d78519acd",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/compatibility-build.log",
+      "bytes": 1348,
+      "sha256": "8e1a5fd4abde2f972ee6fa9c2aa728ec6e975d3952ddfedf1fbbb095854b1a22",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/enclosure-build.log",
+      "bytes": 2469,
+      "sha256": "7f096410fec610053c35d719793765240b603ab26790fdba9f5df2637b493892",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/exploded-build.log",
+      "bytes": 1348,
+      "sha256": "a3978e5c13f8a7f0a819b2710a160bb7d86c5d2741bb83bfe3f1e5314989d677",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/format.log",
+      "bytes": 321,
+      "sha256": "d3262c96422b3571801bb3e7865c719f12673f809c30db0917a59848de7e1107",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/native-model-readback.log",
+      "bytes": 1238,
+      "sha256": "e8587e735e699d330fbc24534ac6b4915c2cb38fe5179d9d4bd333204f595dce",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/product-tests.log",
+      "bytes": 517,
+      "sha256": "68399ac13548013799dc30b6f219f1270d607ffebb891219f3b8db2097e09871",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/smoke.log",
+      "bytes": 6724,
+      "sha256": "023823644fbfc6f4f7880f9ae24c405edf367a203689051d6c32fd90c4d87c5f",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/checks/typecheck.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/final-checks.json",
+      "bytes": 2714,
+      "sha256": "3cd50522379616d44263e72be05db524b9c481376b2b231f75492f2463cd4fe0",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/native-model-readback.json",
+      "bytes": 13601,
+      "sha256": "58fa42a8aa87080fcbdfec56bd024131515f06c26be1a9f6291e664d1fce8f7b",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/official-docs-review.json",
+      "bytes": 905,
+      "sha256": "670566be36ce9fbcc45efe0189e21ef176eb6b640f7e6716e2593ae4bb0bd241",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-enclosure-entry22-2026-10-08/preservation.json",
+      "bytes": 7291,
+      "sha256": "cd59cf146193ae00508999108965fac576a3b5218a35820f91649e9a616bfb9d",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 5073,
+      "sha256": "b0381a70a4ffcd1f242972f6d7bd3f3e0fca3931a3b8f2bd1b13cf2f90bf6abf",
+      "matches": true
+    },
+    {
+      "path": "product.assembly.tsx",
+      "bytes": 47,
+      "sha256": "ce9bd7d5166069960be5172ef35fe24ee391c040573f3ce3780606f29448b831",
+      "matches": true
+    },
+    {
+      "path": "product/README.md",
+      "bytes": 10861,
+      "sha256": "8290bc040aec6db51b8675971de1524e8b63fad0943e2ca7761dc9d013311d28",
+      "matches": true
+    },
+    {
+      "path": "scripts/render-product.ts",
+      "bytes": 2805,
+      "sha256": "325e5592e9aa1588504d32edaf73c1f6607af30a7ed5e9ada289b99ddf6079d0",
+      "matches": true
+    },
+    {
+      "path": "scripts/review-native-product.py",
+      "bytes": 7887,
+      "sha256": "f7b8a73632d6e68c5924a5f8bc321bf653789c7d4c8346628b7bcfabab222626",
+      "matches": true
+    },
+    {
+      "path": "scripts/stage-registry.py",
+      "bytes": 14120,
+      "sha256": "30691c3ef79594690228e4ed512565bd05b1f6b34b11d414ac9bd162086c37f7",
+      "matches": true
+    },
+    {
+      "path": "tests/r8-product.test.ts",
+      "bytes": 7931,
+      "sha256": "1dd7c3069c53c2fee25615f5eeb5a248fbf2bf68ef5317eec2256b24da140cd8",
+      "matches": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "bytes": 643,
+      "sha256": "00a2b1e7df3a662b6945c60f2a83c19f5643a210831cf0384aed35423b24ea9c",
+      "matches": true
+    }
+  ],
+  "all_matches": true,
+  "no_header_authentication_used": true
+}

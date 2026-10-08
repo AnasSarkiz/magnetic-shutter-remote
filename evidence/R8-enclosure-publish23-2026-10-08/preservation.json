@@ -1,0 +1,13 @@
+{
+  "prior_staged_files": 314,
+  "unchanged_prior_staged_files": 312,
+  "changed_metadata_only": [
+    "VALIDATION.md",
+    "package.json"
+  ],
+  "new_publication_records": [
+    "evidence/R8-enclosure-entry22-2026-10-08/PUBLICATION.md",
+    "evidence/R8-enclosure-publish23-2026-10-08/REVIEW.md"
+  ],
+  "passes": true
+}

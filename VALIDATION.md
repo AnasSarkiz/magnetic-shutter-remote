@@ -1,3 +1,16 @@
+# R8 enclosure publication retry 0.3.23 — 2026-10-08
+
+The enclosure.circuit.tsx/build/preview implementation and validated geometry are
+unchanged from0.3.22; only package version/publication context change. Native22is
+incomplete312/315afterHTTP502; that receipt remains preserved. Local51geometry
+checks,253product assertions and light smoke remain valid. Read
+ evidence/R8-enclosure-publish23-2026-10-08/REVIEW.md (from cloud, ../).
+Actual remote status follows in its PUBLICATION.md. Original075/076/004/084,
+separate3V3metadata, physical qualification, frozen baselines/main, light
+setup/start, serial guards and order/payment/contact gates remain unchanged.
+
+## Earlier records — preserved history
+
 # R8 enclosure circuit entry 0.3.22 — 2026-10-08
 
 Read product/README.md and evidence/R8-enclosure-entry22-2026-10-08/REVIEW.md
