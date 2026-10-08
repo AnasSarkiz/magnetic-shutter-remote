@@ -1,0 +1,149 @@
+{
+  "before_head": "68d1d15770c57e452c4a64942e33fb10bc8ba52c",
+  "protected_files": [
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "b9a440f84effe51ae4803de57dfc70d2aa591d9f52cb81b2195c8f9505d0c64a",
+      "unchanged": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "unchanged": true
+    },
+    {
+      "path": "product/geometry.ts",
+      "sha256": "b08c0e62714f99ff0f5832b66294201026dffa9fdcca6e429f28161546a391ae",
+      "unchanged": true
+    },
+    {
+      "path": "product/dimensions.ts",
+      "sha256": "83ff675552b5b4c2d5da945d6b83ce7012a320c17a11525080504f6413427749",
+      "unchanged": true
+    },
+    {
+      "path": "product/geometry-review.json",
+      "sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
+      "unchanged": true
+    },
+    {
+      "path": "product/print-plans.json",
+      "sha256": "e361e2df5dc6bf17d68a6a33328b031e43520efc121aef0fa3b32c23099a878c",
+      "unchanged": true
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "87646fa426874bbb352134307a3ac0b409d360989ed7353cbbe4337243f94004",
+      "unchanged": true
+    },
+    {
+      "path": "cloud/setup.sh",
+      "sha256": "74e5f16235e522a27d5d7a8430c95de2e068ba3d7820859696c791e02ce3adf0",
+      "unchanged": true
+    },
+    {
+      "path": "cloud/smoke.sh",
+      "sha256": "f3535d7028f7fb151dcef60485b21842d04202f5c97ba264f34c07d7018b6963",
+      "unchanged": true
+    },
+    {
+      "path": "cloud/run-heavy.py",
+      "sha256": "6b4dbd7b8837b269e54bb28bc231bfe52bf41096598ff7557600d561bc7e27bc",
+      "unchanged": true
+    },
+    {
+      "path": "src/functional-markings.tsx",
+      "sha256": "ad047fff1965ba2981e60f5aeab89478d07bbee5fad892836eace4d2e26d33bf",
+      "unchanged": true
+    },
+    {
+      "path": "src/remote-circuit.tsx",
+      "sha256": "a2f927e23fb93981cae39c98148c0341facda79e512eec6b0c0f16e1823b2058",
+      "unchanged": true
+    },
+    {
+      "path": "src/schematic-component-notes.tsx",
+      "sha256": "a21a1811a53c38afffd4bb8d41719b8e6e9de6920e3f895fea18fb9f945be852",
+      "unchanged": true
+    },
+    {
+      "path": "src/trace-paths.ts",
+      "sha256": "2ccc407ca67fa136417fb4cd05fdb0dc768d9f19e055c571e19da2d1a43f1895",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/MagSafeRearCover.stl",
+      "sha256": "3b7bf88bdaab583e088daadd834df8564b6a5c78273d790b0ba483d61e35a775",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/FingerGripInsert.stl",
+      "sha256": "889edea75d4e8c36f9013a0353a7c74738b8e0510ab10164a50c4769883a6270",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/SideShutterPlunger.stl",
+      "sha256": "9ded0c0d4a7ad01c85069d94e0f0e682b85e36150a8ec09908f50785378a60df",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/RemoteLid.stl",
+      "sha256": "1fc3a422e11a5590c803d699c59ba8fe9da13e45f8809ffb9ebb7ca2d52526e7",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/RemoteBase.stl",
+      "sha256": "244732407f584e48d2cf4974aa1188cc82af569202dfa53e760ce471878fb407",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/BatterySupport.stl",
+      "sha256": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/MagSafeGrip.stl",
+      "sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "unchanged": true
+    },
+    {
+      "path": "product/prints/MagSafeFaceCover.stl",
+      "sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "unchanged": true
+    }
+  ],
+  "pcb_model_binary_chunks": [
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "binary_geometry_material_chunk_unchanged": true
+    }
+  ],
+  "baseline_firmware_toolchain_fabrication_changed": false,
+  "shape_dimensions_or_print_mesh_changed": false,
+  "root_pcb_routing_sdk_cam_run": false,
+  "passes": true
+}

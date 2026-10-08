@@ -8,12 +8,31 @@ import argparse
 from dataclasses import dataclass
 import hashlib
 import json
-import re
 import shutil
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUALIFICATION = ROOT / 'evidence/R8-standard-programmer-2026-10-05'
+IMPORTS_BY_PATH = {}
+
+
+def module_specifiers(path):
+    if not IMPORTS_BY_PATH:
+        sources = {p.resolve() for p in ROOT.iterdir() if p.suffix in {'.ts','.tsx'}}
+        for directory in ['scripts','tests','src','product','imports']:
+            sources.update(p.resolve() for p in (ROOT/directory).rglob('*') if p.is_file() and p.suffix in {'.ts','.tsx'})
+        read_imports(sources)
+    if str(path) not in IMPORTS_BY_PATH:
+        read_imports({path})
+    return IMPORTS_BY_PATH[str(path)]
+
+
+def read_imports(paths):
+    result = subprocess.run(['bun',str(ROOT/'scripts/list-local-imports.ts')],
+                            input=json.dumps(sorted(str(p) for p in paths)),
+                            text=True,capture_output=True,check=True,cwd=ROOT)
+    IMPORTS_BY_PATH.update(json.loads(result.stdout))
 
 
 @dataclass(frozen=True)
@@ -62,13 +81,14 @@ def source_closure(entry):
             continue
         selected.add(path)
         if path.suffix in ['.ts', '.tsx']:
-            specifiers = re.findall(r'''(?:from\s*|import\s*)["'](\.[^"']+)["']''', path.read_text())
+            specifiers = module_specifiers(path)
             pending.extend(resolve_import(specifier, path.parent) for specifier in specifiers)
     return selected
 
 
 def verify_native_product(options):
     reviews = []
+    browser_reviews = []
     for requested in options.supplemental_files:
         path = (ROOT/requested).resolve()
         path.relative_to(ROOT)
@@ -76,6 +96,8 @@ def verify_native_product(options):
             report = json.loads(path.read_text())
             if isinstance(report, dict) and 'native_views_checked' in report:
                 reviews.append(report)
+            if isinstance(report, dict) and report.get('browser_render_review'):
+                browser_reviews.append(report)
     if len(reviews) != 1:
         raise ValueError('Product staging requires one independent native GLB review')
     report = reviews[0]
@@ -87,6 +109,17 @@ def verify_native_product(options):
     mechanical_checks = [row for row in report['actual_glb_geometry_review'] if 'part' in row]
     if len(mechanical_checks) != 30 or any(not row.get('outward_face_winding_preserved') for row in mechanical_checks):
         raise ValueError('All ten mechanical face directions must pass in all three views')
+    if len(browser_reviews) != 1:
+        raise ValueError('Product staging requires one actual native browser geometry review')
+    browser = browser_reviews[0]
+    if not browser.get('passes') or browser.get('browser_errors') or browser.get('geometry_checks') != 110:
+        raise ValueError('Both browser views must preserve all 55 qualified model poses')
+    for path, sha256 in browser['model_sha256'].items():
+        if hashlib.sha256((ROOT/path).read_bytes()).hexdigest() != sha256:
+            raise ValueError(f'Browser loaded a stale model: {path}')
+    for view, sha256 in browser['view_circuit_sha256'].items():
+        if hashlib.sha256((ROOT/'dist'/view/'circuit.json').read_bytes()).hexdigest() != sha256:
+            raise ValueError(f'Browser loaded a stale product circuit: {view}')
 
 
 def stage(destination, options):
@@ -187,6 +220,7 @@ def stage(destination, options):
         selected.update(source_closure(ROOT/'product.assembly.tsx'))
         selected.update(source_closure(ROOT/'product.exploded.tsx'))
         selected.update(source_closure(ROOT/'product.geometry.tsx'))
+        selected.update(source_closure(ROOT/'product/viewer.tsx'))
         selected.add(ROOT/'product/mechanical-model-review.json')
         selected.update(ROOT/'product'/name for name in ['README.md','closed.png','exploded.png','phone-facing.png',
                         'print-requirements.txt','print-plans.json','print-mesh-review.json'])

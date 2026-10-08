@@ -42,6 +42,10 @@ listed in `includeBoardFiles` and selected as `previewComponentPath` in
 `bun run build:enclosure` builds only the fitted assembly, producing
 `dist/enclosure/circuit.json`, `3d.glb` and `3d.png`.
 See [assembly instructions](product/README.md).
+Run `bun run product:viewer` to create `dist/enclosure/viewer.html`, an interactive
+file with both views and all model assets. Open it directly in Chrome; internet
+is needed for the viewer engine, but no local server is required. Actual browser
+[screenshots and checks](evidence/R8-viewer24-2026-10-08/REVIEW.md) verify all component poses.
 
 The first prototype is **shutter-only**. The RGB photo/torch ring and its
 connector/power circuit are deferred.

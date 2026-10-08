@@ -1,0 +1,294 @@
+{
+  "error": "Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================",
+  "browser_errors": [
+    "Maximum call stack size exceeded"
+  ],
+  "http_requests": [
+    {
+      "url": "http://127.0.0.1:42901/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/index.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/closed.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/exploded.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.js",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.wasm",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/5b7bd5a6-55f0-4437-ad1d-1a790f870851",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/08359933-ab16-4f27-80ce-cc986bdc311d",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/6fc000cb-ad4b-4a18-b582-3beecea1de83",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/8fd03d04-ebe5-46ce-a528-7d4c53ce0d1d",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/9d82b77a-69ae-455c-a7a9-3915dbc82681",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/4ea2ed56-8879-40ce-b945-1fa154378086",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-3.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-pcb.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-2.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/64382883-953d-4e5d-a131-48cdc587ee15",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/9e3e5f32-7c59-4f7e-bcdc-169b68f1029f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-5.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-4.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-6.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/r8-parts-7.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/RemoteBase.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/BatterySupport.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/SideShutterPlunger.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/4bb93723-b618-4f7e-bf30-29458de3856d",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/FingerGripInsert.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/RemoteLid.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/MagSafeRearCover.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/MagSafeGrip.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/2604312e-6e4e-42ca-bd1f-067311ca9e70",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/1788fb69-48d4-4c82-bdfb-fd844a064c77",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/b7401c14-5d60-4930-a7a6-94c612b3e737",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/9958c022-ce60-4d9e-83e4-197416bac752",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/MagSafeFaceCover.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42901/product/models/mechanical/MagSafeArrayReference.glb",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/cf820d06-37c5-4603-9460-61d5c916fc7c",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:42901/57f8ce7e-0df0-4eab-869c-e10dbed85bec",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/codepoint-index/plane0/0-ff.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-meta/latin.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-files/latin/sans-serif.normal.400.woff",
+      "status": 200
+    }
+  ],
+  "model_checks": [
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "status": 200,
+      "bytes": 2035712,
+      "sha256": "b6e4a2f31cc52d61dae1253ec1c4f52b36dadd78f05167a8f8b660b7c1d7c692",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "status": 200,
+      "bytes": 1301436,
+      "sha256": "e8b7b5b72e38c61951d4aa011cce26a1014e24a9409329d92ec53f5303258e19",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "status": 200,
+      "bytes": 1119516,
+      "sha256": "eb20c79f6c264bb03271a9c89bc6e47c83f7288b07d405088a754983ef2b6998",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "status": 200,
+      "bytes": 1264776,
+      "sha256": "5f059d82d02bf96d2ff462e9731c3b5f2f49aa43ff59cd9ef3140153131fc2b0",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "status": 200,
+      "bytes": 1987588,
+      "sha256": "cc9e52b7d49429e3f4f87a9a44b060a7250070193e6324af0e6d71c2369ed634",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "status": 200,
+      "bytes": 1332884,
+      "sha256": "99b3fb48f4b614f2eb5f7188e4fff11d3f88bab40a27c86876bee3f16e1473ef",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "status": 200,
+      "bytes": 425664,
+      "sha256": "7c9ffd9d183b3fd2fe24b8beab5ee76e9ed747493000aa2dc2699ebc7c71f0c8",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "status": 200,
+      "bytes": 3516,
+      "sha256": "050506ebac4f0bd2cb658ad54bd977ee946633d647e94c492c6be8e8281bf2e1",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "status": 200,
+      "bytes": 2060,
+      "sha256": "ada951c7aa21a9a7df33eed33c6f20d736ee6cd971c934c849c3bc31cb3c0980",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "status": 200,
+      "bytes": 44540,
+      "sha256": "d3cc8645bbede43c5741c92a3cb4e825b4460d8adcc68eb98e25fd2d2e4c6145",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "status": 200,
+      "bytes": 34200,
+      "sha256": "3cc9a6420131606b4c602af0fbec99b9c6a5503b0f2623b25b637d12848a9fa9",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "status": 200,
+      "bytes": 298836,
+      "sha256": "12108ce257fdef5bbccc67f370b93b93d3e238116b000d46df4d28709ce7fa77",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "status": 200,
+      "bytes": 17752,
+      "sha256": "bfe199f58b1c148fa5dea996311de55997fc1d161599fc0ea0fa1ea30562e409",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "status": 200,
+      "bytes": 244012,
+      "sha256": "073ec55ce5c88df96b98c63c60f91e993517fe4303a3354a4b9da578ccd858f3",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "status": 200,
+      "bytes": 19368,
+      "sha256": "14c5bccdcafd68b9f2e25975f8c6b2ebf530a2759250b9e69cda3ad13fcb7cd4",
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "status": 200,
+      "bytes": 47136,
+      "sha256": "970591c1a0f27a3989295e9d80f07d589e06eab1a280699a11a94d2ad66b5500",
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "status": 200,
+      "bytes": 2117500,
+      "sha256": "db58dd0706ca37fc66065e84a91ede6d4f32805e930ca1d2779060df7aa2c8ec",
+      "matches": true
+    }
+  ],
+  "body": "R8 magnetic shutter grip\n\nActual prototype CAD \u00b7 @tscircuit/3d-viewer 0.0.610\n\nClosed\nExploded\nAngled\nFront\nBack\nMagSafeFaceCover\n@0.0.609\n90 \u00d7 78 \u00d7 34 mm design envelope \u00b7 Physical prototype testing pending \u00b7 Drag to orbit; scroll to zoom"
+}

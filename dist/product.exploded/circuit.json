@@ -124,7 +124,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 57.156240463256836,
       "y": 44,
@@ -156,7 +156,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 15.800050735473633,
       "y": 29.448512077331543,
@@ -188,7 +188,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 25.338509798049927,
       "y": 42.28407859802246,
@@ -220,7 +220,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 28.16749858856201,
       "y": 43.95608711242676,
@@ -252,7 +252,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 10.800025701522827,
       "y": 8.900000095367432,
@@ -284,7 +284,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 11.8550124168396,
       "y": 29.562777519226074,
@@ -316,7 +316,7 @@
     },
     "model_unit_to_mm_scale_factor": 1,
     "model_object_fit": "contain_within_bounds",
-    "model_board_normal_direction": "y+",
+    "model_board_normal_direction": "z+",
     "size": {
       "x": 7.8550124168396,
       "y": 2.505579948425293,
@@ -647,6 +647,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "68503ed5bc31a4bfc6dda7b8fec1c73d"
+    "source_filesystem_md5_hash": "11508c89f2ffc2c7271570ffff18f7c9"
   }
 ]

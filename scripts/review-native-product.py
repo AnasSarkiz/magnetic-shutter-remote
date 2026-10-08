@@ -76,14 +76,14 @@ def review(output):
                       else f'R8QualifiedFittedParts{index+1}')
             component = next(e for e in circuit if e['type']=='source_component' and e['name']==prefix)
             cad = next(e for e in circuit if e['type']=='cad_component' and e['source_component_id']==component['source_component_id'])
-            if cad['rotation'] != {'x':0,'y':0,'z':0} or cad['model_unit_to_mm_scale_factor'] != 1 or cad['model_board_normal_direction'] != 'y+':
+            if cad['rotation'] != {'x':0,'y':0,'z':0} or cad['model_unit_to_mm_scale_factor'] != 1 or cad['model_board_normal_direction'] != 'z+':
                 raise ValueError('Unexpected native PCB transform')
             center = cad['position']
             actual_meshes = meshes_with_prefix(scene, prefix)
             original = trimesh.load(ROOT/'product/models'/asset['filename'], force='scene')
             minimum, maximum = original.bounds
-            expected = np.array([[-center["x"]-maximum[0], center["z"]+minimum[1], center["y"]+minimum[2]],
-                                 [-center["x"]-minimum[0], center["z"]+maximum[1], center["y"]+maximum[2]]])
+            expected = np.array([[-center["x"]-maximum[0], center["z"]+minimum[2], center["y"]+minimum[1]],
+                                 [-center["x"]-minimum[0], center["z"]+maximum[2], center["y"]+maximum[1]]])
             delta = float(np.abs(bounds(actual_meshes)-expected).max())
             original_triangles = sum(len(original.geometry[g].faces)
                                      for g in [original.graph[n][1] for n in original.graph.nodes_geometry])

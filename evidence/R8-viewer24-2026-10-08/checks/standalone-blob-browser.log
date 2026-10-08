@@ -1,0 +1,176 @@
+{
+  "started_utc": "20261008T193233477300Z",
+  "command": [
+    "env",
+    "-u",
+    "DOCKER_HOST",
+    "-u",
+    "DOCKER_CONTEXT",
+    "-u",
+    "DOCKER_TLS",
+    "-u",
+    "DOCKER_TLS_VERIFY",
+    "-u",
+    "DOCKER_CERT_PATH",
+    "docker",
+    "--host=unix:///var/run/docker.sock",
+    "run",
+    "--rm",
+    "--name",
+    "r8-assembly-viewer24",
+    "--user",
+    "1000:1000",
+    "--read-only",
+    "--memory=6g",
+    "--cpus=2",
+    "--pids-limit=512",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--shm-size=256m",
+    "--tmpfs",
+    "/task-home:rw,nosuid,uid=1000,gid=1000,size=64m",
+    "--tmpfs",
+    "/tmp:rw,exec,nosuid,uid=1000,gid=1000,size=2g",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,readonly",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/chromium,dst=/usr/lib/chromium,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/x86_64-linux-gnu,dst=/usr/lib/x86_64-linux-gnu,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fonts,dst=/usr/share/fonts,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fontconfig,dst=/usr/share/fontconfig,readonly",
+    "--mount",
+    "type=bind,src=/etc/fonts,dst=/etc/fonts,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/input,dst=/app,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/output6-blob-viewer,dst=/app/output",
+    "r8-native-browser-scoped:28",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/app/start.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  }
+}
+Traceback (most recent call last):
+  File "/app/start.py", line 3, in <module>
+    runpy.run_path('/app/review-browser.py',run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/app/review-browser.py", line 89, in <module>
+    asyncio.run(review())
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/app/review-browser.py", line 61, in review
+    await page.wait_for_function("document.querySelector('#viewer')?.dataset.ready === 'true'",timeout=30000)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 12687, in wait_for_function
+    await self._impl_obj.wait_for_function(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_page.py", line 1151, in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 940, in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 30000ms exceeded.
+{
+  "started_utc": "20261008T193233477300Z",
+  "command": [
+    "env",
+    "-u",
+    "DOCKER_HOST",
+    "-u",
+    "DOCKER_CONTEXT",
+    "-u",
+    "DOCKER_TLS",
+    "-u",
+    "DOCKER_TLS_VERIFY",
+    "-u",
+    "DOCKER_CERT_PATH",
+    "docker",
+    "--host=unix:///var/run/docker.sock",
+    "run",
+    "--rm",
+    "--name",
+    "r8-assembly-viewer24",
+    "--user",
+    "1000:1000",
+    "--read-only",
+    "--memory=6g",
+    "--cpus=2",
+    "--pids-limit=512",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--shm-size=256m",
+    "--tmpfs",
+    "/task-home:rw,nosuid,uid=1000,gid=1000,size=64m",
+    "--tmpfs",
+    "/tmp:rw,exec,nosuid,uid=1000,gid=1000,size=2g",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,readonly",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/chromium,dst=/usr/lib/chromium,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/x86_64-linux-gnu,dst=/usr/lib/x86_64-linux-gnu,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fonts,dst=/usr/share/fonts,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fontconfig,dst=/usr/share/fontconfig,readonly",
+    "--mount",
+    "type=bind,src=/etc/fonts,dst=/etc/fonts,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/input,dst=/app,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/output6-blob-viewer,dst=/app/output",
+    "r8-native-browser-scoped:28",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/app/start.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-08T19:33:17.920863+00:00",
+  "return_code": 1,
+  "peak_child_rss_kib": 14336,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261008T193233477300Z.log"
+}

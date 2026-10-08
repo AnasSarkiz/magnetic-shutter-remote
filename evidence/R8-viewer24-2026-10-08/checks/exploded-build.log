@@ -1,0 +1,65 @@
+{
+  "started_utc": "20261008T191828355845Z",
+  "command": [
+    "tsci",
+    "build",
+    "product.exploded.tsx",
+    "--glbs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Building 1 file(s)...
+Building product.exploded.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/product.exploded/circuit.json
+Generating GLB models for all builds...
+[product.exploded] Converting circuit to GLB...
+[product.exploded] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
+{
+  "started_utc": "20261008T191828355845Z",
+  "command": [
+    "tsci",
+    "build",
+    "product.exploded.tsx",
+    "--glbs"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-08T19:18:50.908199+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 6321632,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261008T191828355845Z.log"
+}

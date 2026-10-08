@@ -2,6 +2,8 @@ import { expect, test } from "bun:test";
 import { any_circuit_element } from "circuit-json";
 import { z } from "zod";
 import { dimensions, pcbPointInProduct } from "../product/dimensions";
+import { createProductParts } from "../product/geometry";
+import { localModuleSpecifiers } from "../scripts/lib/local-module-specifiers";
 
 test("native product views preserve the board transform and create no second PCB", async () => {
 	for (const name of ["product.assembly", "product.exploded", "enclosure"]) {
@@ -39,7 +41,7 @@ test("native product views preserve the board transform and create no second PCB
 		expect(cad.rotation).toEqual({ x: 0, y: 0, z: 0 });
 		expect(cad.model_glb_url).toContain("r8-pcb.glb");
 		expect(cad.model_unit_to_mm_scale_factor).toBe(1);
-		expect(cad.model_board_normal_direction).toBe("y+");
+		expect(cad.model_board_normal_direction).toBe("z+");
 	}
 });
 
@@ -88,6 +90,74 @@ test("native assembly uses all ten lossless mechanical models with compact build
 			expect(hash).toBe(model.sha256);
 		}
 	}
+});
+
+test("imported enclosure models retain their source black and bronze materials", async () => {
+	const materialSchema = z.object({
+		materials: z.array(
+			z.object({
+				pbrMetallicRoughness: z.object({
+					baseColorFactor: z.tuple([
+						z.number(),
+						z.number(),
+						z.number(),
+						z.number(),
+					]),
+				}),
+			}),
+		),
+	});
+	for (const part of createProductParts()) {
+		if (part.plan.type !== "colorize")
+			throw new Error(`Missing source color: ${part.name}`);
+		const bytes = await Bun.file(
+			`product/models/mechanical/${part.name}.glb`,
+		).arrayBuffer();
+		const header = new DataView(bytes);
+		expect(header.getUint32(0, true)).toBe(0x46546c67);
+		const document = materialSchema.parse(
+			JSON.parse(
+				new TextDecoder().decode(
+					new Uint8Array(bytes, 20, header.getUint32(12, true)),
+				),
+			),
+		);
+		expect(document.materials).toHaveLength(1);
+		const rgba = document.materials[0].pbrMetallicRoughness.baseColorFactor;
+		for (let axis = 0; axis < 3; axis++)
+			expect(Math.abs(rgba[axis] - part.plan.color[axis])).toBeLessThanOrEqual(
+				1 / 255,
+			);
+		expect(
+			Math.abs(rgba[3] - (part.referenceOnly ? 0.45 : 1)),
+		).toBeLessThanOrEqual(1 / 255);
+	}
+});
+
+test("standalone viewer embeds one valid module without external script tags", async () => {
+	const scripts: { type: string | null; src: string | null }[] = [];
+	const rewriter = new HTMLRewriter().on("script", {
+		element(element) {
+			scripts.push({
+				type: element.getAttribute("type"),
+				src: element.getAttribute("src"),
+			});
+		},
+	});
+	await rewriter
+		.transform(new Response(Bun.file("dist/enclosure/viewer.html")))
+		.arrayBuffer();
+	expect(scripts).toEqual([{ type: "module", src: null }]);
+});
+
+test("registry source discovery distinguishes real imports from generated-code strings", () => {
+	expect(
+		localModuleSpecifiers({
+			path: "generator.ts",
+			source:
+				'import actual from "./actual"; export { actual } from "./shared"; const generated = `import inputs from "./inputs.json";`; // import fake from "./fake"\n',
+		}),
+	).toEqual(["./actual", "./shared"]);
 });
 
 test("all real electronic envelopes fit, magnetic datum clearance and solid separation pass", async () => {

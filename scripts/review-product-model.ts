@@ -121,13 +121,9 @@ for (const filename of [
 	const start = meshRows.length;
 	for (const root of doc.scenes[doc.scene ?? 0].nodes)
 		visit(root, {
-			parent: mat4.multiply(
+			parent: mat4.fromZRotation(
 				mat4.create(),
-				mat4.fromZRotation(
-					mat4.create(),
-					(-dimensions.remote.ccwRotationDegrees * Math.PI) / 180,
-				),
-				mat4.fromValues(1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1),
+				(-dimensions.remote.ccwRotationDegrees * Math.PI) / 180,
 			),
 			doc,
 		});
@@ -177,6 +173,7 @@ const report = {
 		.digest("hex"),
 	nativeAssets,
 	assetRotationDegrees: dimensions.remote.ccwRotationDegrees,
+	modelCoordinateFrame: "product XYZ, board normal z+, millimeters",
 	fittedModels: 44,
 	emptyModels: 0,
 	all44CadAnchorsMatch: true,

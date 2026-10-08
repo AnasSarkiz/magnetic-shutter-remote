@@ -1,0 +1,12 @@
+{
+  "initial_browser_coordinate_bug": "mirror of PCB product Y; switch at wrong side",
+  "negative_control": "before-mirrored native browser pose rejected by new check",
+  "initial_native_download_gltf": "Maximum call stack size exceeded",
+  "first_container_launch": "read-only output mountpoint absent; corrected by creating mountpoint before launch",
+  "standalone_first_assertion": "data URI delivery has no equivalent HTTP model requests; correct embedded-byte checks added",
+  "standalone_html_embedding": "String.replace replacement expansion corrupted JavaScript; callback replacement fixes literal embedding",
+  "standalone_failed_trial_oom_events": 1,
+  "final_browser_oom_counter_increase": false,
+  "no_memory_guard_changed": true,
+  "failed_artifacts_not_published_or_shared": true
+}

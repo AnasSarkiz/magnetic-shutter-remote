@@ -1,3 +1,19 @@
+# R8 actual 3D viewer parity 0.3.24 — 2026-10-08
+
+Read evidence/R8-viewer24-2026-10-08/REVIEW.md (from cloud, ../). Actual browser
+checks exposed and fixed a PCB Y reflection using proper productXYZ/z+ exports.
+Physical circuitry/placement/shape/prints remain unchanged;17models are present.
+Mechanical exports preserve source colors. Native51checks and actual browser110
+poses pass;7product tests/315assertions and light smoke pass. product:viewer creates
+one tested interactive HTML with both views/allassets, requiring official CDN
+engine access but no local server. Separate native GLTF download stack overflow
+and failed standalone OOM trial remain explicit; final bounded test passes.
+Actual publication status is the dated PUBLICATION.md. Physical gates, original
+075/076/004/084, separate3V3metadata, frozen baselines/main, light setup/start,
+serial guards and ordering/payment/contact restrictions remain unchanged.
+
+## Earlier records — preserved history
+
 # R8 enclosure circuit 0.3.23 — GitHub complete, native upload blocked
 
 Standard enclosure.circuit.tsx is included in the serial guarded build and selected

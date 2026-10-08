@@ -73,16 +73,35 @@ Generated `dist/enclosure/circuit.json` and `3d.png` are tracked and published w
 all seventeen bounded model assets. The complete 15 MB `3d.glb` is generated locally
 from the same source, rather than sent as an oversized registry file.
 
-Version0.3.22 keeps the fitted 0.3.20 geometry. Its imported mechanical GLBs retain
+Version0.3.24 keeps the fitted 0.3.20 geometry and corrects browser coordinate parity. Its imported mechanical GLBs retain
 all canonical native triangles and outward face directions, proven by independent
-closed/exploded readback. Mechanical imports use the supported product Z-up frame
-with no reflected node transforms; the existing PCB fragments keep their Y-up frame.
+closed/exploded readback. All imports now use the supported product Z-up frame. The earlier Y-up PCB
+interchange mirrored the browser Y axis despite passing the CLI check; the source
+exporter now uses a proper rigid rotation, verified against all44 component poses
+in the actual browser. Mechanical exports retain the canonical black/bronze colors.
 The display Circuit JSON is about15KB instead of4.9MB. Geometry remains editable
 in `geometry.ts`; `product.geometry.tsx` builds the canonical native plans before
 `scripts/export-product-mechanics.py` regenerates the ten bounded models. Do not
 edit exported models to change the enclosure. Print-plan JSON is serialized
 compactly without changing its parsed content; all eight print STL bytes are unchanged.
 The generated illustrative image is not a CAD model or fit evidence.
+
+## Interactive viewer and screenshots
+
+Run `bun run product:viewer` after the enclosure and exploded builds. Open
+`dist/enclosure/viewer.html` directly in Chrome/Chromium: it includes both views
+and all17 model assets, with orbit/zoom and front/back controls. No local server
+or installation is needed for that generated file. The pinned viewer loads its
+Manifold engine from the official jsDelivr CDN on first open, so internet access
+is needed for that engine. Source is `viewer.tsx` and `../scripts/export-product-viewer.ts`.
+The 27MB HTML and complete GLBs stay local under the unchanged5MB staging cap.
+
+Actual Chromium viewer screenshots and110pose checks are in
+`../evidence/R8-viewer24-2026-10-08/`. These show real CAD, not generated concept
+images. The viewer's separate Download GLTF action throws a stack overflow in the
+initial test; use the validated CLI-generated GLBs for interchange. That export
+failure is recorded separately from successful rendering/orbiting and physical
+prototype qualification. Publication status is the dated PUBLICATION.md.
 
 ## Source and reproduction
 
@@ -96,9 +115,10 @@ finger insert, rear face, phone dock and phone-facing cover.
 Seven bounded PCB GLBs contain the actual board and all 44 supplier models.
 Standard glTF scene records preserve binary mesh/material data, expand shared
 mesh instances and bake the rigid 90° board rotation into the assembly loader
-frame. Y-up prevents automatic rescaling. Independent readback verifies all
-source triangles and fragment bounds in both built GLBs, alongside original
-CAD-anchor checks. No supplier import or electronic circuit JSON is edited.
+frame. Explicit millimeter scale and Z-up agree in browser and CLI. Independent
+readback verifies native triangles and 110 actual browser model bounds across closed
+and exploded views, alongside all44 original CAD anchors. No supplier import or
+electronic circuit JSON is edited.
 
 With pinned Node/Bun activated, run these optional mechanical jobs serially.
 The existing Python3.14 print venv is used; setup/start remains lightweight.
@@ -114,7 +134,7 @@ python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/expo
 bun run build:enclosure
 python3 cloud/run-heavy.py -- tsci build product.assembly.tsx --glbs
 python3 cloud/run-heavy.py -- tsci build product.exploded.tsx --glbs
-python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-enclosure-entry22-2026-10-08/native-model-readback.json
+python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-viewer24-2026-10-08/native-model-readback.json
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.exploded
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.assembly phone-facing
 # Optional studio presentation: installed Blender 4.3.2, four CPU threads.

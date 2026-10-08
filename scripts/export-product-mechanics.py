@@ -21,6 +21,15 @@ def export_models(options):
         cad = next(row for row in circuit if row['type']=='cad_component' and row['source_component_id']==component['source_component_id'])
         if 'model_jscad' not in cad:
             raise ValueError('Mechanical export must originate from canonical native plans')
+        colored_plan = cad['model_jscad']
+        while colored_plan['type'] == 'translate':
+            colored_plan = colored_plan['shape']
+        if colored_plan['type'] != 'colorize' or len(colored_plan['color']) != 3:
+            raise ValueError(f'Missing canonical presentation material: {name}')
+        rgba = [*colored_plan['color'], 0.45 if part['referenceOnly'] else 1.0]
+        material = trimesh.visual.material.PBRMaterial(
+            name=name, baseColorFactor=rgba, roughnessFactor=0.85, metallicFactor=0,
+            alphaMode='BLEND' if part['referenceOnly'] else 'OPAQUE')
         lower, upper = np.asarray(part['boundsMm'])
         center = (lower+upper)/2
         if any(abs(cad['position'][axis]-center[index]) > 1e-5 for index,axis in enumerate(['x','y','z'])):
@@ -42,6 +51,7 @@ def export_models(options):
             if abs(np.linalg.det(model_transform[:3,:3])-1) > 1e-6:
                 raise ValueError(f'Mechanical export requires a proper rigid transform: {name}')
             mesh.apply_transform(model_transform)
+            mesh.visual = trimesh.visual.TextureVisuals(material=material)
             selected.add_geometry(mesh, node_name=node, geom_name=node)
             triangles += len(mesh.faces)
         if not triangles:
@@ -58,6 +68,7 @@ def export_models(options):
                         'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
                         'bytes':target.stat().st_size,'triangles':triangles,
                         'exported_triangles':actual_triangles,'bounds_delta_mm':bounds_delta,
+                        'canonical_base_color_rgba':rgba,
                         'no_mesh_repair_or_simplification':True})
     report = {'source_view':options.source_view,
               'canonical_native_glb_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),

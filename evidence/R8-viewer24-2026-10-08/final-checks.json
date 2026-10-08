@@ -1,0 +1,31 @@
+{
+  "observed_utc": "2026-10-08T19:37:35.135723+00:00",
+  "native_geometry_checks": 51,
+  "browser_geometry_checks": 110,
+  "browser_model_assets_exact": 17,
+  "browser_errors": 0,
+  "file_open_without_local_server": true,
+  "product_tests": {
+    "passed": 7,
+    "assertions": 315
+  },
+  "smoke": {
+    "python_tests": 38,
+    "bun_tests": 2,
+    "bun_assertions": 13,
+    "frozen_r7_hashes": 129,
+    "old_wroom_supplier_warning_retained": true
+  },
+  "typecheck": "PASS",
+  "format": "PASS",
+  "qualified_circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "observed_memory_limit_bytes": 34359738368,
+  "browser_container_limit_bytes": 6442450944,
+  "observed_cpu_quota": "400000 100000",
+  "limits_not_guaranteed_allocations": true,
+  "root_pcb_routing_sdk_cam_run": false,
+  "physical_testing_claimed": false,
+  "standalone_viewer_sha256": "0065ee7f1a183e5758f32af7717f335ab10fde2ade463272e224b7540f8c9167",
+  "separate_native_download_gltf": "initial test failed stack overflow; use validated CLI-generated GLBs",
+  "registry_source_discovery": "TypeScript AST; rejects imports appearing only in generated-code strings"
+}

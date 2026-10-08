@@ -1,0 +1,5 @@
+{
+  "original_0_3_23_browser_capture_rejected": true,
+  "reason": "Browser model pose differs from qualified source: exploded/R1: 8.000000000498177 mm",
+  "passes": true
+}

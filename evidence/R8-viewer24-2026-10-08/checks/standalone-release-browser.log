@@ -1,0 +1,265 @@
+{
+  "started_utc": "20261008T193423422541Z",
+  "command": [
+    "env",
+    "-u",
+    "DOCKER_HOST",
+    "-u",
+    "DOCKER_CONTEXT",
+    "-u",
+    "DOCKER_TLS",
+    "-u",
+    "DOCKER_TLS_VERIFY",
+    "-u",
+    "DOCKER_CERT_PATH",
+    "docker",
+    "--host=unix:///var/run/docker.sock",
+    "run",
+    "--rm",
+    "--name",
+    "r8-assembly-viewer24",
+    "--user",
+    "1000:1000",
+    "--read-only",
+    "--memory=6g",
+    "--cpus=2",
+    "--pids-limit=512",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--shm-size=256m",
+    "--tmpfs",
+    "/task-home:rw,nosuid,uid=1000,gid=1000,size=64m",
+    "--tmpfs",
+    "/tmp:rw,exec,nosuid,uid=1000,gid=1000,size=2g",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,readonly",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/chromium,dst=/usr/lib/chromium,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/x86_64-linux-gnu,dst=/usr/lib/x86_64-linux-gnu,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fonts,dst=/usr/share/fonts,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fontconfig,dst=/usr/share/fontconfig,readonly",
+    "--mount",
+    "type=bind,src=/etc/fonts,dst=/etc/fonts,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/input,dst=/app,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/output7-release-viewer,dst=/app/output",
+    "r8-native-browser-scoped:28",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/app/start.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  }
+}
+Exception in callback AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97
+handle: <Handle AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97>
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 105, in callback
+    self.emit("error", exc)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 70, in emit
+    return super().emit(event, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 223, in emit
+    self._emit_handle_potential_error(event, args[0] if args else None)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 181, in _emit_handle_potential_error
+    raise error
+  File "/app/review-browser.py", line 52, in response
+    raw=await res.body()
+        ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 654, in body
+    return mapping.from_maybe_impl(await self._impl_obj.body())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_network.py", line 882, in body
+    binary = await self._channel.send(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Response.body: Protocol error (Network.loadNetworkResource): Unsupported URL scheme
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception in callback AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97
+handle: <Handle AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97>
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 105, in callback
+    self.emit("error", exc)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 70, in emit
+    return super().emit(event, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 223, in emit
+    self._emit_handle_potential_error(event, args[0] if args else None)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 181, in _emit_handle_potential_error
+    raise error
+  File "/app/review-browser.py", line 52, in response
+    raw=await res.body()
+        ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 654, in body
+    return mapping.from_maybe_impl(await self._impl_obj.body())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_network.py", line 882, in body
+    binary = await self._channel.send(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Response.body: Protocol error (Network.loadNetworkResource): Unsupported URL scheme
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception in callback AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97
+handle: <Handle AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97>
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 105, in callback
+    self.emit("error", exc)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 70, in emit
+    return super().emit(event, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 223, in emit
+    self._emit_handle_potential_error(event, args[0] if args else None)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 181, in _emit_handle_potential_error
+    raise error
+  File "/app/review-browser.py", line 52, in response
+    raw=await res.body()
+        ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 654, in body
+    return mapping.from_maybe_impl(await self._impl_obj.body())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_network.py", line 882, in body
+    binary = await self._channel.send(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Response.body: Protocol error (Network.loadNetworkResource): Unsupported URL scheme
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception in callback AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97
+handle: <Handle AsyncIOEventEmitter._emit_run.<locals>.callback(<Task finishe...navigation.')>) at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py:97>
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 105, in callback
+    self.emit("error", exc)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/asyncio.py", line 70, in emit
+    return super().emit(event, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 223, in emit
+    self._emit_handle_potential_error(event, args[0] if args else None)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pyee/base.py", line 181, in _emit_handle_potential_error
+    raise error
+  File "/app/review-browser.py", line 52, in response
+    raw=await res.body()
+        ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 654, in body
+    return mapping.from_maybe_impl(await self._impl_obj.body())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_network.py", line 882, in body
+    binary = await self._channel.send(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Response.body: Protocol error (Network.loadNetworkResource): Unsupported URL scheme
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Native viewer loads all17 exact models; closed/exploded screenshots and native mesh bounds captured; browser errors0
+{
+  "started_utc": "20261008T193423422541Z",
+  "command": [
+    "env",
+    "-u",
+    "DOCKER_HOST",
+    "-u",
+    "DOCKER_CONTEXT",
+    "-u",
+    "DOCKER_TLS",
+    "-u",
+    "DOCKER_TLS_VERIFY",
+    "-u",
+    "DOCKER_CERT_PATH",
+    "docker",
+    "--host=unix:///var/run/docker.sock",
+    "run",
+    "--rm",
+    "--name",
+    "r8-assembly-viewer24",
+    "--user",
+    "1000:1000",
+    "--read-only",
+    "--memory=6g",
+    "--cpus=2",
+    "--pids-limit=512",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--shm-size=256m",
+    "--tmpfs",
+    "/task-home:rw,nosuid,uid=1000,gid=1000,size=64m",
+    "--tmpfs",
+    "/tmp:rw,exec,nosuid,uid=1000,gid=1000,size=2g",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/python,readonly",
+    "--mount",
+    "type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,dst=/opt/codex/runtimes/codex-primary-runtime/dependencies/node,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/chromium,dst=/usr/lib/chromium,readonly",
+    "--mount",
+    "type=bind,src=/usr/lib/x86_64-linux-gnu,dst=/usr/lib/x86_64-linux-gnu,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fonts,dst=/usr/share/fonts,readonly",
+    "--mount",
+    "type=bind,src=/usr/share/fontconfig,dst=/usr/share/fontconfig,readonly",
+    "--mount",
+    "type=bind,src=/etc/fonts,dst=/etc/fonts,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/input,dst=/app,readonly",
+    "--mount",
+    "type=bind,src=/workspace/r8-viewer-check24-20261008/output7-release-viewer,dst=/app/output",
+    "r8-native-browser-scoped:28",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/app/start.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-08T19:35:24.017844+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 14976,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261008T193423422541Z.log"
+}

@@ -1,0 +1,125 @@
+{
+  "html_sha256": "0065ee7f1a183e5758f32af7717f335ab10fde2ade463272e224b7540f8c9167",
+  "exactly_one_inline_module_no_external_script": true,
+  "embedded_model_hashes": [
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "sha256": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+      "bytes": 1332832,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "sha256": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+      "bytes": 1264596,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "sha256": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+      "bytes": 2035532,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "sha256": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+      "bytes": 2117320,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "sha256": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+      "bytes": 1987404,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "sha256": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+      "bytes": 1301228,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "sha256": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+      "bytes": 1119336,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "sha256": "ace5941f9ba4d8e293bca69b976aa511e3190865a47a239e6445604a553c9861",
+      "bytes": 29892,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "bytes": 1592,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "bytes": 2556,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "sha256": "1dffd53d665651c76e158c3aa41c7add8a6f199f703794cef54f846b5da3fc0e",
+      "bytes": 283984,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "bytes": 31632,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "sha256": "6dc830d348b3ef5fdd94685de972b976475574970bb4a5355c32c3547d742292",
+      "bytes": 199412,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "bytes": 13132,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "sha256": "4aabde4a415d19e3814a941a670149120e4567cc0be8a39720c35123680f477e",
+      "bytes": 12036,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "bytes": 162884,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "sha256": "97cd3edcdd6e7af8bfc7c58c0667b79ceec6761ea4a8a3440ce3382a3729d014",
+      "bytes": 23020,
+      "matches": true,
+      "method": "actual HTML GLB data URI decoded and hashed"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-product.test.ts:
+(pass) native product views preserve the board transform and create no second PCB [293.91ms]
+(pass) native assembly uses all ten lossless mechanical models with compact build JSON [178.08ms]
+(pass) imported enclosure models retain their source black and bronze materials [5.83ms]
+(pass) standalone viewer embeds one valid module without external script tags [24.21ms]
+(pass) all real electronic envelopes fit, magnetic datum clearance and solid separation pass [3.28ms]
+(pass) eight manufacturing STL files match the checked plans and pass actual readback [3.35ms]
+
+ 6 pass
+ 0 fail
+ 314 expect() calls
+Ran 6 tests across 1 file. [599.00ms]

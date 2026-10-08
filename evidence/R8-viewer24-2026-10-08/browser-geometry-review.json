@@ -1,0 +1,918 @@
+{
+  "browser_render_review": true,
+  "viewer_version": "0.0.610",
+  "browser_version": "151.0.7922.173",
+  "models_checked": [
+    {
+      "view": "closed",
+      "model": "Box0",
+      "maximum_bounds_delta_mm": 0.0,
+      "vertices": 5028,
+      "triangles": 1676,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "J1",
+      "maximum_bounds_delta_mm": 7.152557373046875e-07,
+      "vertices": 7698,
+      "triangles": 2566,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R2",
+      "maximum_bounds_delta_mm": 6.854534149169922e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R1",
+      "maximum_bounds_delta_mm": 6.854534149169922e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "U2",
+      "maximum_bounds_delta_mm": 4.76837158203125e-07,
+      "vertices": 7854,
+      "triangles": 2618,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R3",
+      "maximum_bounds_delta_mm": 2.682209014892578e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C2",
+      "maximum_bounds_delta_mm": 3.8743019104003906e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C1",
+      "maximum_bounds_delta_mm": 3.8743019104003906e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R4",
+      "maximum_bounds_delta_mm": 1.0213805978764867e-06,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "LED1",
+      "maximum_bounds_delta_mm": 7.067400886739961e-07,
+      "vertices": 2550,
+      "triangles": 850,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "J2",
+      "maximum_bounds_delta_mm": 6.574539597181683e-07,
+      "vertices": 3264,
+      "triangles": 1088,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R8",
+      "maximum_bounds_delta_mm": 9.209110274355226e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R9",
+      "maximum_bounds_delta_mm": 9.352638272730474e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C8",
+      "maximum_bounds_delta_mm": 1.4205194887040307e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C9",
+      "maximum_bounds_delta_mm": 5.395698252641523e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "U1",
+      "maximum_bounds_delta_mm": 8.642751598841869e-07,
+      "vertices": 14448,
+      "triangles": 4816,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C5",
+      "maximum_bounds_delta_mm": 5.581007425092821e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C10",
+      "maximum_bounds_delta_mm": 3.4700326123626724e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SW2",
+      "maximum_bounds_delta_mm": 7.249119473584642e-07,
+      "vertices": 14796,
+      "triangles": 4932,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SW3",
+      "maximum_bounds_delta_mm": 9.782671721580982e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R7",
+      "maximum_bounds_delta_mm": 9.254125465929519e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "LED2",
+      "maximum_bounds_delta_mm": 8.155674038334837e-07,
+      "vertices": 2550,
+      "triangles": 850,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "J3",
+      "maximum_bounds_delta_mm": 4.430446551850764e-07,
+      "vertices": 3162,
+      "triangles": 1054,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SW4",
+      "maximum_bounds_delta_mm": 7.176164302791221e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SW5",
+      "maximum_bounds_delta_mm": 6.52344938956162e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SW1",
+      "maximum_bounds_delta_mm": 1.0862111814446962e-06,
+      "vertices": 8214,
+      "triangles": 2738,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R5",
+      "maximum_bounds_delta_mm": 1.058748786419983e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "Q1",
+      "maximum_bounds_delta_mm": 1.6222822551981153e-07,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R6",
+      "maximum_bounds_delta_mm": 4.568505218571772e-08,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "U3",
+      "maximum_bounds_delta_mm": 3.0953362895047576e-07,
+      "vertices": 6516,
+      "triangles": 2172,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "L1",
+      "maximum_bounds_delta_mm": 9.7893718020714e-08,
+      "vertices": 12666,
+      "triangles": 4222,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C11",
+      "maximum_bounds_delta_mm": 9.473585649288907e-08,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C12",
+      "maximum_bounds_delta_mm": 3.558121761670918e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C13",
+      "maximum_bounds_delta_mm": 1.361433241697796e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C3",
+      "maximum_bounds_delta_mm": 6.947296071757592e-08,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C4",
+      "maximum_bounds_delta_mm": 1.3681429322787153e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "U4",
+      "maximum_bounds_delta_mm": 1.703357103366443e-06,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C6",
+      "maximum_bounds_delta_mm": 1.6672451472743433e-06,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "U5",
+      "maximum_bounds_delta_mm": 4.139603184682983e-07,
+      "vertices": 9183,
+      "triangles": 3061,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "C7",
+      "maximum_bounds_delta_mm": 8.076811575108422e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R10",
+      "maximum_bounds_delta_mm": 5.409258179156495e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R11",
+      "maximum_bounds_delta_mm": 5.149844000129633e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R12",
+      "maximum_bounds_delta_mm": 9.521445449856003e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "R13",
+      "maximum_bounds_delta_mm": 8.743202920546977e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "Q2",
+      "maximum_bounds_delta_mm": 5.992709291025022e-07,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "RemoteBase",
+      "maximum_bounds_delta_mm": 1.3358861714607428e-06,
+      "vertices": 17685,
+      "triangles": 5895,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "BatterySupport",
+      "maximum_bounds_delta_mm": 8.742013690721251e-07,
+      "vertices": 96,
+      "triangles": 32,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "ASR00012_MaximumEnvelope",
+      "maximum_bounds_delta_mm": 0.0,
+      "vertices": 36,
+      "triangles": 12,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "SideShutterPlunger",
+      "maximum_bounds_delta_mm": 1.1829154278331089e-06,
+      "vertices": 1800,
+      "triangles": 600,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "RemoteLid",
+      "maximum_bounds_delta_mm": 2.1492888961915924e-06,
+      "vertices": 12396,
+      "triangles": 4132,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "FingerGripInsert",
+      "maximum_bounds_delta_mm": 8.430270526105232e-07,
+      "vertices": 1374,
+      "triangles": 458,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "MagSafeRearCover",
+      "maximum_bounds_delta_mm": 9.879960991554526e-07,
+      "vertices": 684,
+      "triangles": 228,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "MagSafeGrip",
+      "maximum_bounds_delta_mm": 9.536743128535363e-08,
+      "vertices": 10116,
+      "triangles": 3372,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "MagSafeFaceCover",
+      "maximum_bounds_delta_mm": 1.1722246320289287e-06,
+      "vertices": 756,
+      "triangles": 252,
+      "passes": true
+    },
+    {
+      "view": "closed",
+      "model": "MagSafeArrayReference",
+      "maximum_bounds_delta_mm": 1.3492323844843668e-06,
+      "vertices": 1908,
+      "triangles": 636,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "Box0",
+      "maximum_bounds_delta_mm": 0.0,
+      "vertices": 5028,
+      "triangles": 1676,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "J1",
+      "maximum_bounds_delta_mm": 7.152557373046875e-07,
+      "vertices": 7698,
+      "triangles": 2566,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R2",
+      "maximum_bounds_delta_mm": 6.854534149169922e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R1",
+      "maximum_bounds_delta_mm": 6.854534149169922e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "U2",
+      "maximum_bounds_delta_mm": 4.76837158203125e-07,
+      "vertices": 7854,
+      "triangles": 2618,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R3",
+      "maximum_bounds_delta_mm": 2.682209014892578e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C2",
+      "maximum_bounds_delta_mm": 3.8743019104003906e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C1",
+      "maximum_bounds_delta_mm": 3.8743019104003906e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R4",
+      "maximum_bounds_delta_mm": 1.0213805978764867e-06,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "LED1",
+      "maximum_bounds_delta_mm": 7.067400886739961e-07,
+      "vertices": 2550,
+      "triangles": 850,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "J2",
+      "maximum_bounds_delta_mm": 6.574539597181683e-07,
+      "vertices": 3264,
+      "triangles": 1088,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R8",
+      "maximum_bounds_delta_mm": 9.209110274355226e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R9",
+      "maximum_bounds_delta_mm": 9.352638272730474e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C8",
+      "maximum_bounds_delta_mm": 1.4205194887040307e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C9",
+      "maximum_bounds_delta_mm": 5.395698252641523e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "U1",
+      "maximum_bounds_delta_mm": 8.642751598841869e-07,
+      "vertices": 14448,
+      "triangles": 4816,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C5",
+      "maximum_bounds_delta_mm": 5.581007425092821e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C10",
+      "maximum_bounds_delta_mm": 3.4700326123626724e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SW2",
+      "maximum_bounds_delta_mm": 7.249119473584642e-07,
+      "vertices": 14796,
+      "triangles": 4932,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SW3",
+      "maximum_bounds_delta_mm": 9.782671721580982e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R7",
+      "maximum_bounds_delta_mm": 9.254125465929519e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "LED2",
+      "maximum_bounds_delta_mm": 8.155674038334837e-07,
+      "vertices": 2550,
+      "triangles": 850,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "J3",
+      "maximum_bounds_delta_mm": 4.430446551850764e-07,
+      "vertices": 3162,
+      "triangles": 1054,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SW4",
+      "maximum_bounds_delta_mm": 7.176164302791221e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SW5",
+      "maximum_bounds_delta_mm": 6.52344938956162e-07,
+      "vertices": 6528,
+      "triangles": 2176,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SW1",
+      "maximum_bounds_delta_mm": 1.0862111814446962e-06,
+      "vertices": 8214,
+      "triangles": 2738,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R5",
+      "maximum_bounds_delta_mm": 1.058748786419983e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "Q1",
+      "maximum_bounds_delta_mm": 1.6222822551981153e-07,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R6",
+      "maximum_bounds_delta_mm": 4.568505218571772e-08,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "U3",
+      "maximum_bounds_delta_mm": 3.0953362895047576e-07,
+      "vertices": 6516,
+      "triangles": 2172,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "L1",
+      "maximum_bounds_delta_mm": 9.7893718020714e-08,
+      "vertices": 12666,
+      "triangles": 4222,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C11",
+      "maximum_bounds_delta_mm": 9.473585649288907e-08,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C12",
+      "maximum_bounds_delta_mm": 3.558121761670918e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C13",
+      "maximum_bounds_delta_mm": 1.361433241697796e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C3",
+      "maximum_bounds_delta_mm": 6.947296071757592e-08,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C4",
+      "maximum_bounds_delta_mm": 1.3681429322787153e-07,
+      "vertices": 5166,
+      "triangles": 1722,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "U4",
+      "maximum_bounds_delta_mm": 1.703357103366443e-06,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C6",
+      "maximum_bounds_delta_mm": 1.6672451472743433e-06,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "U5",
+      "maximum_bounds_delta_mm": 4.139603184682983e-07,
+      "vertices": 9183,
+      "triangles": 3061,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "C7",
+      "maximum_bounds_delta_mm": 8.076811575108422e-07,
+      "vertices": 5160,
+      "triangles": 1720,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R10",
+      "maximum_bounds_delta_mm": 5.409258179156495e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R11",
+      "maximum_bounds_delta_mm": 5.149844000129633e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R12",
+      "maximum_bounds_delta_mm": 9.521445449856003e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "R13",
+      "maximum_bounds_delta_mm": 8.743202920546977e-07,
+      "vertices": 7140,
+      "triangles": 2380,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "Q2",
+      "maximum_bounds_delta_mm": 5.992709291025022e-07,
+      "vertices": 29616,
+      "triangles": 9872,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "RemoteBase",
+      "maximum_bounds_delta_mm": 1.3358861714607428e-06,
+      "vertices": 17685,
+      "triangles": 5895,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "BatterySupport",
+      "maximum_bounds_delta_mm": 8.742013690721251e-07,
+      "vertices": 96,
+      "triangles": 32,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "ASR00012_MaximumEnvelope",
+      "maximum_bounds_delta_mm": 0.0,
+      "vertices": 36,
+      "triangles": 12,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "SideShutterPlunger",
+      "maximum_bounds_delta_mm": 1.1829154278331089e-06,
+      "vertices": 1800,
+      "triangles": 600,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "RemoteLid",
+      "maximum_bounds_delta_mm": 2.1492888961915924e-06,
+      "vertices": 12396,
+      "triangles": 4132,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "FingerGripInsert",
+      "maximum_bounds_delta_mm": 8.430270526105232e-07,
+      "vertices": 1374,
+      "triangles": 458,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "MagSafeRearCover",
+      "maximum_bounds_delta_mm": 9.879960991554526e-07,
+      "vertices": 684,
+      "triangles": 228,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "MagSafeGrip",
+      "maximum_bounds_delta_mm": 9.536743128535363e-08,
+      "vertices": 10116,
+      "triangles": 3372,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "MagSafeFaceCover",
+      "maximum_bounds_delta_mm": 1.1722246320289287e-06,
+      "vertices": 756,
+      "triangles": 252,
+      "passes": true
+    },
+    {
+      "view": "exploded",
+      "model": "MagSafeArrayReference",
+      "maximum_bounds_delta_mm": 1.3492323844843668e-06,
+      "vertices": 1908,
+      "triangles": 636,
+      "passes": true
+    }
+  ],
+  "geometry_checks": 110,
+  "all_17_assets_match": true,
+  "model_sha256": {
+    "product/models/r8-parts-7.glb": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+    "product/models/r8-parts-5.glb": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+    "product/models/r8-parts-3.glb": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+    "product/models/r8-parts-6.glb": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+    "product/models/r8-parts-4.glb": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+    "product/models/r8-pcb.glb": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+    "product/models/r8-parts-2.glb": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+    "product/models/mechanical/SideShutterPlunger.glb": "ace5941f9ba4d8e293bca69b976aa511e3190865a47a239e6445604a553c9861",
+    "product/models/mechanical/ASR00012_MaximumEnvelope.glb": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+    "product/models/mechanical/BatterySupport.glb": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+    "product/models/mechanical/RemoteBase.glb": "1dffd53d665651c76e158c3aa41c7add8a6f199f703794cef54f846b5da3fc0e",
+    "product/models/mechanical/MagSafeArrayReference.glb": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+    "product/models/mechanical/RemoteLid.glb": "6dc830d348b3ef5fdd94685de972b976475574970bb4a5355c32c3547d742292",
+    "product/models/mechanical/MagSafeFaceCover.glb": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+    "product/models/mechanical/MagSafeRearCover.glb": "4aabde4a415d19e3814a941a670149120e4567cc0be8a39720c35123680f477e",
+    "product/models/mechanical/MagSafeGrip.glb": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+    "product/models/mechanical/FingerGripInsert.glb": "97cd3edcdd6e7af8bfc7c58c0667b79ceec6761ea4a8a3440ce3382a3729d014"
+  },
+  "circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "view_circuit_sha256": {
+    "enclosure": "a6a6a7be5b6ba86ad3ec6a5625f7c5a410b0729f87179c11b06bb1c7b5db3668",
+    "product.exploded": "e50fd1e4948ee682e30097be3ff79c8afe78749aca50c92720a0f89b321679c1"
+  },
+  "browser_errors": [],
+  "orbit_gesture_executed": true,
+  "physical_fit_testing_claimed": false,
+  "separate_native_gltf_export": "failed in initial test; Maximum call stack size exceeded",
+  "passes": true
+}

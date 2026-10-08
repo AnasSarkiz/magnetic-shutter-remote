@@ -1,8 +1,9 @@
 import { mat3, mat4, quat, vec3 } from "gl-matrix";
 import { z } from "zod";
 
-/** Lossless assembly interchange: export (-PCB X,PCB Z,PCB Y) to loader
- * (PCB X,PCB Z,PCB Y). Flatten scene transforms and give each mesh instance
+/** Lossless assembly interchange: native (-PCB X,PCB Z,PCB Y) to product XYZ.
+ * Use a proper rotation and the documented z+ normal in both browser and CLI.
+ * Flatten scene transforms and give each mesh instance
  * its own record; all accessors, triangles, materials and binary bytes survive.
  */
 export function pcbModelInAssemblyCoordinates(
@@ -43,8 +44,8 @@ export function pcbModelInAssemblyCoordinates(
 		meshes: typeof document.meshes = [];
 	const loaderFromExport = mat4.multiply(
 		mat4.create(),
-		mat4.fromYRotation(mat4.create(), (-rotationDegrees * Math.PI) / 180),
-		mat4.fromScaling(mat4.create(), [-1, 1, 1]),
+		mat4.fromZRotation(mat4.create(), (rotationDegrees * Math.PI) / 180),
+		mat4.fromValues(-1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1),
 	);
 	function visit(index: number, parent: mat4) {
 		const node = document.nodes[index];

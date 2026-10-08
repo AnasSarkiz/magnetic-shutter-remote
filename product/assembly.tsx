@@ -79,7 +79,7 @@ export function R8ProductAssembly({
 					displayName={`Actual unchanged PCB geometry fragment${index + 1} of7`}
 					cadModel={{
 						glbUrl,
-						modelBoardNormalDirection: "y+",
+						modelBoardNormalDirection: "z+",
 						modelUnitToMmScale: 1,
 						size: pcbReview.nativeAssets[index].sizeMm,
 						rotationOffset: { x: 0, y: 0, z: 0 },

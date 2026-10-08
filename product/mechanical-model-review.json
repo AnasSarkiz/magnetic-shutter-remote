@@ -9,101 +9,161 @@
     {
       "part": "RemoteBase",
       "file": "product/models/mechanical/RemoteBase.glb",
-      "sha256": "7c9ffd9d183b3fd2fe24b8beab5ee76e9ed747493000aa2dc2699ebc7c71f0c8",
-      "bytes": 425664,
+      "sha256": "1dffd53d665651c76e158c3aa41c7add8a6f199f703794cef54f846b5da3fc0e",
+      "bytes": 283984,
       "triangles": 5895,
       "exported_triangles": 5895,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.06,
+        0.065,
+        0.07,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "BatterySupport",
       "file": "product/models/mechanical/BatterySupport.glb",
-      "sha256": "050506ebac4f0bd2cb658ad54bd977ee946633d647e94c492c6be8e8281bf2e1",
-      "bytes": 3516,
+      "sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "bytes": 2556,
       "triangles": 32,
       "exported_triangles": 32,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.1,
+        0.11,
+        0.12,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "ASR00012_MaximumEnvelope",
       "file": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
-      "sha256": "ada951c7aa21a9a7df33eed33c6f20d736ee6cd971c934c849c3bc31cb3c0980",
-      "bytes": 2060,
+      "sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "bytes": 1592,
       "triangles": 12,
       "exported_triangles": 12,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.7,
+        0.72,
+        0.75,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "SideShutterPlunger",
       "file": "product/models/mechanical/SideShutterPlunger.glb",
-      "sha256": "d3cc8645bbede43c5741c92a3cb4e825b4460d8adcc68eb98e25fd2d2e4c6145",
-      "bytes": 44540,
+      "sha256": "ace5941f9ba4d8e293bca69b976aa511e3190865a47a239e6445604a553c9861",
+      "bytes": 29892,
       "triangles": 600,
       "exported_triangles": 600,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.48,
+        0.29,
+        0.14,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "RemoteLid",
       "file": "product/models/mechanical/RemoteLid.glb",
-      "sha256": "12108ce257fdef5bbccc67f370b93b93d3e238116b000d46df4d28709ce7fa77",
-      "bytes": 298836,
+      "sha256": "6dc830d348b3ef5fdd94685de972b976475574970bb4a5355c32c3547d742292",
+      "bytes": 199412,
       "triangles": 4132,
       "exported_triangles": 4132,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.065,
+        0.07,
+        0.075,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "FingerGripInsert",
       "file": "product/models/mechanical/FingerGripInsert.glb",
-      "sha256": "3cc9a6420131606b4c602af0fbec99b9c6a5503b0f2623b25b637d12848a9fa9",
-      "bytes": 34200,
+      "sha256": "97cd3edcdd6e7af8bfc7c58c0667b79ceec6761ea4a8a3440ce3382a3729d014",
+      "bytes": 23020,
       "triangles": 458,
       "exported_triangles": 458,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.025,
+        0.028,
+        0.03,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "MagSafeRearCover",
       "file": "product/models/mechanical/MagSafeRearCover.glb",
-      "sha256": "bfe199f58b1c148fa5dea996311de55997fc1d161599fc0ea0fa1ea30562e409",
-      "bytes": 17752,
+      "sha256": "4aabde4a415d19e3814a941a670149120e4567cc0be8a39720c35123680f477e",
+      "bytes": 12036,
       "triangles": 228,
       "exported_triangles": 228,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.025,
+        0.028,
+        0.03,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "MagSafeGrip",
       "file": "product/models/mechanical/MagSafeGrip.glb",
-      "sha256": "073ec55ce5c88df96b98c63c60f91e993517fe4303a3354a4b9da578ccd858f3",
-      "bytes": 244012,
+      "sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "bytes": 162884,
       "triangles": 3372,
       "exported_triangles": 3372,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.06,
+        0.065,
+        0.07,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "MagSafeFaceCover",
       "file": "product/models/mechanical/MagSafeFaceCover.glb",
-      "sha256": "14c5bccdcafd68b9f2e25975f8c6b2ebf530a2759250b9e69cda3ad13fcb7cd4",
-      "bytes": 19368,
+      "sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "bytes": 13132,
       "triangles": 252,
       "exported_triangles": 252,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.055,
+        0.06,
+        0.065,
+        1.0
+      ],
       "no_mesh_repair_or_simplification": true
     },
     {
       "part": "MagSafeArrayReference",
       "file": "product/models/mechanical/MagSafeArrayReference.glb",
-      "sha256": "970591c1a0f27a3989295e9d80f07d589e06eab1a280699a11a94d2ad66b5500",
-      "bytes": 47136,
+      "sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "bytes": 31632,
       "triangles": 636,
       "exported_triangles": 636,
       "bounds_delta_mm": 0.0,
+      "canonical_base_color_rgba": [
+        0.8,
+        0.55,
+        0.15,
+        0.45
+      ],
       "no_mesh_repair_or_simplification": true
     }
   ],
