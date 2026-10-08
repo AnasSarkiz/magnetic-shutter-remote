@@ -1,0 +1,5 @@
+{
+  "observed_memory_limit_bytes": 34359738368,
+  "observed_cpu_limit": "400000 100000",
+  "limits_not_guaranteed_plan_allocation": true
+}

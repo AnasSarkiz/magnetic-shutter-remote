@@ -1,0 +1,36 @@
+{
+  "public_source_commit": "d5aebe7bcf4c6837dcd9edc6b862aa39204aae07",
+  "anonymous_exact_byte_readbacks": [
+    {
+      "path": "VALIDATION.md",
+      "sha256": "f4a81cb429babc1cbaccdcfefa8e64bd0aaa1fefc39024078d015656b579617c",
+      "bytes": 41138,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish21-2026-10-08/PUBLICATION.md",
+      "sha256": "e94fb8b541162b2d56e34508bd739dae72028800a468f6b98ac61ae6ed9e3dea",
+      "bytes": 125,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish21-2026-10-08/REVIEW.md",
+      "sha256": "cfc64ce15bc9fda4717610fd548526a7fc77769a3cafdbc195ca25684f830afd",
+      "bytes": 1349,
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish21-2026-10-08/source-preservation.json",
+      "sha256": "c1ea5c8076c6b9d735f0ec65e188e32e7247e23d1c8e5fd7f2fbe1b79caeeb6e",
+      "bytes": 63583,
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "1a84a090d796ab80650f9aa699c5e10708ac63e41d3bf6400f1d5a2f30e12970",
+      "bytes": 4715,
+      "matches": true
+    }
+  ],
+  "all_changed_files_match": true
+}

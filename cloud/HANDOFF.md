@@ -1,3 +1,13 @@
+# R8 native publication 0.3.21 — 2026-10-08
+
+The user-requested retry succeeds: all 314 native files are present and match
+anonymous byte readback. ready_to_build=true; hosted rendering is pending.
+Read evidence/R8-native-publish21-2026-10-08/PUBLICATION.md (from cloud, ../).
+The validated 0.3.20 assembly, real PCB and all geometry are unchanged; only version
+and publication records change. Incomplete 0.3.20 and earlier receipts stay historical.
+Physical qualification, original 075/076/004/084, separate 3V3 metadata, frozen
+baselines/main, light setup/start, memory guards and ordering/contact gates remain.
+
 # Current R8 native assembly 0.3.20 — 2026-10-08
 
 Read product/README.md and evidence/R8-native-assembly20-2026-10-08/REVIEW.md.
