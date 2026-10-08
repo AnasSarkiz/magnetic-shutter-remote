@@ -1,0 +1,3 @@
+Public native inventory: 313 files; exact critical text/binary readbacks: 313
+Inventory missing/extra: ['evidence/R8-standard-programmer-2026-10-05/qualification/programmer-0.8.0/circuit.json', 'imports/ESPC2_12E_N4/ESPC2_12E_N4.step', 'imports/ESPC3_12_N4/ESPC3_12_N4.step', 'imports/TS24CA/TS24CA.step', 'product/models/r8-parts-5.glb', 'product/models/r8-parts-7.glb', 'product/studio-side.png'] [] ready_to_build: False
+Hosted worker: pending None

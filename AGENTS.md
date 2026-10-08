@@ -12,6 +12,12 @@ Actual publication status is the dated PUBLICATION.md. Physical gates, original
 075/076/004/084, separate3V3metadata, frozen baselines/main, light setup/start,
 serial guards and ordering/payment/contact restrictions remain unchanged.
 
+Actual publication24: GitHub35990a9is public/exact83files. Native upload is
+incomplete313/320after10HTTP502responses; two PCB model fragments are missing,
+ready_to_build=false and hosted preview pending. Tested interactive HTML and
+actual closed/exploded screenshots are available locally. See the dated
+PUBLICATION.md for exact gaps and supported continuation; do not claim hosted success.
+
 ## Earlier records — preserved history
 
 # R8 enclosure circuit 0.3.23 — GitHub complete, native upload blocked
