@@ -1,0 +1,51 @@
+{
+  "started_utc": "20261009T200023974622Z",
+  "command": [
+    "env",
+    "PATH=/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/.bin:/workspace/magnetic-shutter-remote/node_modules/.bin:/usr/local/bin:/usr/bin:/bin",
+    "python3",
+    "/workspace/r8-publish27-20261009/stage.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  }
+}
+325 exact source/build files; 54116459 bytes; /workspace/magnetic-shutter-remote/.codex/runtime/registry-r8-native27
+{
+  "started_utc": "20261009T200023974622Z",
+  "command": [
+    "env",
+    "PATH=/workspace/magnetic-shutter-remote/.codex/runtime/node_modules/.bin:/workspace/magnetic-shutter-remote/node_modules/.bin:/usr/local/bin:/usr/bin:/bin",
+    "python3",
+    "/workspace/r8-publish27-20261009/stage.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-09T20:00:24.856764+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 134792,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 32,
+    "oom": 1,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261009T200023974622Z.log"
+}

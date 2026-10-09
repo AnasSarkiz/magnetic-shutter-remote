@@ -1,0 +1,3 @@
+Public native inventory: 323 files; exact critical text/binary readbacks: 323
+Inventory missing/extra: ['imports/ESP32_C3_WROOM_02_N4/ESP32_C3_WROOM_02_N4.step'] [] ready_to_build: False
+Hosted worker: pending None

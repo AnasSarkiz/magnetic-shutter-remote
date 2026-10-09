@@ -1,3 +1,18 @@
+# R8 native publication retry0.3.27 — 2026-10-09
+
+The user-authorized R8 board/assembly push uses standard viewer controls.
+Native26hit3HTTP502gateway responses; exact public readback verifies323/324files,
+including two reported failures that actually persisted. One historical STEPfile
+is missing;26remains unready. One controlled supported retry27tests that transient
+server failure without dropping inputs. Read evidence/R8-native-publish27-2026-10-09/REVIEW.md and PUBLICATION.md.
+Engineering source/PCB/geometry/17models/fourCircuitJSONs/prints/firmware/archives,
+locks, light setup/start and serial memory guards remain unchanged. Existing
+qualifications and physical gates, original075/076/004/084, separate3V3metadata,
+frozen main/baselines and ordering/payment/contact restrictions remain explicit.
+Shared-viewer addition is fully reverted; PR1024 remains closed/unmerged.
+
+## Earlier records — preserved history
+
 # R8 unchanged native assembly publication 0.3.26 — 2026-10-09
 
 The user requests the R8 board/assembly on tscircuit.com using existing viewer

@@ -1,0 +1,10 @@
+{
+  "prior_staged_files": 323,
+  "prior_inputs_changed": [
+    "VALIDATION.md",
+    "package.json"
+  ],
+  "qualified_circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "all_engineering_source_models_builds_dependencies_firmware_archives_unchanged": true,
+  "passes": true
+}
