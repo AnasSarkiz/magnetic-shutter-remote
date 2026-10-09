@@ -1,3 +1,25 @@
+# R8 electrical package preview correction 0.3.28 — 2026-10-09
+
+The user reported an empty PCB tab on tscircuit.com. The shared package preview
+was incorrectly set to the CAD-only enclosure entry (35 records, no PCB pads,
+traces, schematic or electrical BOM). Select index.circuit.tsx for all shared
+package tabs. The fitted enclosure remains a separate included entry accessible
+through the online editor; the package page has no circuit-entry selector.
+Read evidence/R8-preview28-2026-10-09/REVIEW.md and PUBLICATION.md.
+The qualified electrical source, routing, four Circuit JSONs, geometry/models,
+prints, firmware, dependencies, frozen main/baselines, lightweight setup/start
+and serial memory guards are unchanged. Publication must verify the actual
+public preview payload has a board, 44 component records, pads and traces,
+schematic and BOM, rather than treating a complete file inventory as UI proof.
+Prior HTTP502/finalization failures remain historical. Original075/076/004/084,
+separate3V3metadata and physical qualification remain explicit. No ordering,
+payment, supplier contact, new shared-viewer feature or PR merge.
+Actual publication status follows the dated PUBLICATION.md. Website browser
+access is currently denied for tscircuit.com; a scoped environment draft adding
+that exact host is saved but not applied. Do not claim a live browser pass.
+
+## Earlier records — preserved history
+
 # R8 native publication retry0.3.27 — 2026-10-09
 
 The user-authorized R8 board/assembly push uses standard viewer controls.

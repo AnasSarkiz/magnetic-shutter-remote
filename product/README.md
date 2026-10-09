@@ -66,7 +66,12 @@ and does not launch a server. The electrical board entry remains `index.circuit.
 `enclosure.circuit.tsx` is the discoverable enclosure entry, matching the official
 `*.circuit.tsx` convention. `product.assembly.tsx` re-exports this same component
 for existing links. `includeBoardFiles` selects the board and enclosure and
-`previewComponentPath` selects the enclosure. `bun run build` calls the guarded
+`previewComponentPath` selects the electrical board for the package's shared
+PCB, Schematic, BOM and 3D tabs. This CAD-only assembly has no electrical pads,
+traces or schematic elements and must not replace their shared preview.
+On tscircuit.com, choose **Code → Edit Online → enclosure.circuit.tsx → Run → 3D**
+to view the fitted product; select `index.circuit.tsx` for the electrical board.
+`bun run build` calls the guarded
 PCB build and guarded enclosure build serially. This task runs only the enclosure,
 compatibility and exploded builds; it carries forward the unchanged qualified PCB.
 Generated `dist/enclosure/circuit.json` and `3d.png` are tracked and published with

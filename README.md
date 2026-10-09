@@ -37,8 +37,14 @@ and [exploded assembly](product.exploded.tsx). Run `bun run dev:enclosure` or
 `bun run dev:exploded` to select those views. Editable enclosure plans remain in
 [product/geometry.ts](product/geometry.ts); imported models preserve their exact
 native triangles and the actual PCB pose. The standard `*.circuit.tsx` entry is
-listed in `includeBoardFiles` and selected as `previewComponentPath` in
-`tscircuit.config.json`. `bun run build` builds the PCB then enclosure serially;
+listed in `includeBoardFiles`. The package's shared PCB, Schematic, BOM and 3D
+tabs use `index.circuit.tsx` as `previewComponentPath` in `tscircuit.config.json`.
+The enclosure entry contains CAD models only, so selecting it as the shared
+preview would leave the electrical views empty. For the fitted enclosure,
+choose **Code → Edit Online → enclosure.circuit.tsx → Run → 3D**; choose
+`index.circuit.tsx` for the electrical board. The package page currently has
+one shared preview rather than an entry selector.
+`bun run build` builds the PCB then enclosure serially;
 `bun run build:enclosure` builds only the fitted assembly, producing
 `dist/enclosure/circuit.json`, `3d.glb` and `3d.png`.
 See [assembly instructions](product/README.md).

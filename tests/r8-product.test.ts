@@ -5,6 +5,42 @@ import { dimensions, pcbPointInProduct } from "../product/dimensions";
 import { createProductParts } from "../product/geometry";
 import { localModuleSpecifiers } from "../scripts/lib/local-module-specifiers";
 
+test("the shared package preview contains electrical PCB, schematic and BOM records", async () => {
+	const config = z
+		.object({
+			previewComponentPath: z.string(),
+			includeBoardFiles: z.array(z.string()),
+		})
+		.parse(await Bun.file("tscircuit.config.json").json());
+	expect(config.includeBoardFiles).toContain(config.previewComponentPath);
+	expect(config.includeBoardFiles).toContain("enclosure.circuit.tsx");
+	const entryName = config.previewComponentPath.replace(/\.circuit\.tsx$/, "");
+	const circuit = any_circuit_element
+		.array()
+		.parse(await Bun.file(`dist/${entryName}/circuit.json`).json());
+	expect(
+		circuit.filter((element) => element.type === "pcb_board"),
+	).toHaveLength(1);
+	expect(
+		circuit.filter((element) => element.type === "pcb_component"),
+	).toHaveLength(44);
+	expect(
+		circuit.filter((element) => element.type === "pcb_smtpad").length,
+	).toBeGreaterThan(0);
+	expect(
+		circuit.filter((element) => element.type === "pcb_trace").length,
+	).toBeGreaterThan(0);
+	expect(
+		circuit.filter((element) => element.type === "schematic_component"),
+	).toHaveLength(44);
+	expect(
+		circuit.filter((element) => element.type === "source_component"),
+	).toHaveLength(44);
+	expect(
+		circuit.filter((element) => element.type.endsWith("_error")),
+	).toHaveLength(0);
+});
+
 test("native product views preserve the board transform and create no second PCB", async () => {
 	for (const name of ["product.assembly", "product.exploded", "enclosure"]) {
 		const circuit = any_circuit_element

@@ -1,0 +1,19 @@
+{
+  "missing": [],
+  "added": [
+    "evidence/R8-preview28-2026-10-09/REVIEW.md",
+    "evidence/R8-preview28-2026-10-09/preservation.json"
+  ],
+  "changed": [
+    "README.md",
+    "VALIDATION.md",
+    "package.json",
+    "product/README.md",
+    "tests/r8-product.test.ts",
+    "tscircuit.config.json"
+  ],
+  "source_count": 327,
+  "total_bytes": 55062440,
+  "qualified_board_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "all_previous_inputs_preserved": true
+}

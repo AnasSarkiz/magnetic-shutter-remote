@@ -1,0 +1,8 @@
+{
+  "light_smoke": "passed: configured format/typecheck,38Python tests,2Bun tests/13assertions; accepted supplier-variation warning preserved",
+  "product_tests": "8passed/324assertions",
+  "regression_before_fix": "expected failure with CAD-only shared preview; fixed version passes",
+  "physics_checks": "unchanged qualified source/build/model/prints; prior exact-artifact checks carried forward",
+  "live_website_browser": "blocked: tscircuit.com proxy403; exact-host draft saved, not applied",
+  "no_root_build_or_routing": true
+}

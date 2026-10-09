@@ -1,0 +1,16 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-product.test.ts:
+(pass) the shared package preview contains electrical PCB, schematic and BOM records [2444.90ms]
+(pass) native product views preserve the board transform and create no second PCB [107.44ms]
+(pass) native assembly uses all ten lossless mechanical models with compact build JSON [104.27ms]
+(pass) imported enclosure models retain their source black and bronze materials [6.11ms]
+(pass) standalone viewer embeds one valid module without external script tags [25.56ms]
+(pass) registry source discovery distinguishes real imports from generated-code strings [7.28ms]
+(pass) all real electronic envelopes fit, magnetic datum clearance and solid separation pass [3.22ms]
+(pass) eight manufacturing STL files match the checked plans and pass actual readback [2.98ms]
+
+ 8 pass
+ 0 fail
+ 324 expect() calls
+Ran 8 tests across 1 file. [2.95s]

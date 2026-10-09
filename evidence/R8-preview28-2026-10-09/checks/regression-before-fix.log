@@ -1,0 +1,23 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-product.test.ts:
+18 | 	const circuit = any_circuit_element
+19 | 		.array()
+20 | 		.parse(await Bun.file(`dist/${entryName}/circuit.json`).json());
+21 | 	expect(
+22 | 		circuit.filter((element) => element.type === "pcb_board"),
+23 | 	).toHaveLength(1);
+        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 1
+Received length: 0
+
+      at <anonymous> (/workspace/magnetic-shutter-remote/tests/r8-product.test.ts:23:4)
+(fail) the shared package preview contains electrical PCB, schematic and BOM records [132.69ms]
+
+ 0 pass
+ 7 filtered out
+ 1 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [370.00ms]
