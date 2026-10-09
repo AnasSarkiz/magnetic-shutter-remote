@@ -10,6 +10,12 @@ frozen main/baselines, original075/076/004/084, separate3V3metadata, physical
 qualification, lightweight setup/start, serial memory guards and ordering/payment/
 contact restrictions remain unchanged. This is an untested hardware prototype.
 
+Actual source59dcb03 is public; all13preparation files and four CircuitJSONs
+match anonymous readback. Native26upload stopped before any file upload because
+this instance lacks tscircuit login. Supported browser sign-in is pending;
+PUBLICATION.md records the exact blocker. Previous25remains public/ready with
+hosted preview pending. Do not claim26uploaded or hosted success before readback.
+
 ## Earlier records — preserved history
 
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07

@@ -1,0 +1,112 @@
+{
+  "observed_utc": "2026-10-09T19:42:13.620790+00:00",
+  "source_head": "59dcb0351f4119adc94750ba2cdf08a99da58358",
+  "is_public": true,
+  "header_authentication_used": false,
+  "exact_public_readback": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 27039,
+      "sha256": "da28c67f2d1b15665ac1ac88928103fe0c7236457c8c36c23d279617d7e21c29",
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 47120,
+      "sha256": "82d51767356ae32592c24eb567227d417c51880b3ebd358565ec5df6a3fc845e",
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "bytes": 44421,
+      "sha256": "85812902d96f76d94de164f527b763850ee1fc50f6232418bb706b227cc4ecaa",
+      "matches": true
+    },
+    {
+      "path": "cloud/STATUS.md",
+      "bytes": 14810,
+      "sha256": "f11ed7594aa3a9845d2ed3c3d3b75b101f2962e656965e3d6fbf894d62247464",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/REVIEW.md",
+      "bytes": 2611,
+      "sha256": "5c28197c990a012add47dee940646bb7ec335f98c24af6807a3571c112f53aba",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/product-tests.log",
+      "bytes": 2026,
+      "sha256": "d850b89a76b23e7375c5ab3f2ef1ad94924432b710991df7a4a5b089cb65ff32",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/smoke-initial-nested-guard-failure.log",
+      "bytes": 7070,
+      "sha256": "a783d611216040d0a32115999c8558c371f014ce3ea79ec91c5ca6db9a19a35b",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/smoke.log",
+      "bytes": 6744,
+      "sha256": "8af6eae200e2b71ff554a37079c4ecd5555d32a4566e0311959f19887428c159",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/stage-initial-evidence-classification-failure.log",
+      "bytes": 2199,
+      "sha256": "8175c060758b8271d7a7166a00f6b89fe4d21dcc2eea5d04d747eb2e1ceb8271",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/stage.log",
+      "bytes": 1408,
+      "sha256": "47e3bbaace8365f5dc6e15a614ecafd87c77c784ea03f6c5625087db503e195c",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/preservation.json",
+      "bytes": 454,
+      "sha256": "324d0a680ea81033c9834928deb6e115ebd2ca76939cdeeaa9cce0cfcb7d6e56",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/stage-comparison.json",
+      "bytes": 462,
+      "sha256": "ddb80e20c57f7a8a3df079e2087caba5acdeb8baff91c5b0cacc710537b31a7f",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 5201,
+      "sha256": "5f64817985c8aad316e12130e626b4a3bb6898453e576aaff6b8567bce229187",
+      "matches": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 1521698,
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "matches": true
+    },
+    {
+      "path": "dist/enclosure/circuit.json",
+      "bytes": 15516,
+      "sha256": "a6a6a7be5b6ba86ad3ec6a5625f7c5a410b0729f87179c11b06bb1c7b5db3668",
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "bytes": 15516,
+      "sha256": "a6a6a7be5b6ba86ad3ec6a5625f7c5a410b0729f87179c11b06bb1c7b5db3668",
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "bytes": 15513,
+      "sha256": "e50fd1e4948ee682e30097be3ff79c8afe78749aca50c92720a0f89b321679c1",
+      "matches": true
+    }
+  ],
+  "frozen_main_sha": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "passes": true
+}
