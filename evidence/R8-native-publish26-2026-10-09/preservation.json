@@ -1,0 +1,13 @@
+{
+  "before_head": "266e79624030de558fe85cf34295a78b9194acce",
+  "prior_staged_files": 321,
+  "prior_inputs_changed": [
+    "VALIDATION.md",
+    "package.json"
+  ],
+  "protected_file_changes": "",
+  "qualified_circuit_sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+  "all_models_builds_circuit_sources_dependencies_firmware_archives_unchanged": true,
+  "setup_smoke_serial_memory_guards_unchanged": true,
+  "passes": true
+}

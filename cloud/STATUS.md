@@ -1,3 +1,17 @@
+# R8 unchanged native assembly publication 0.3.26 — 2026-10-09
+
+The user requests the R8 board/assembly on tscircuit.com using existing viewer
+controls. The unnecessary shared-viewer feature was fully reverted and its PR
+remains closed. R8 PCB/source, enclosure/17models/fourCircuitJSONs, dependencies,
+geometry and prints are unchanged; only publication version/context/receipts
+change. Read evidence/R8-native-publish26-2026-10-09/REVIEW.md and PUBLICATION.md.
+Actual hosted status must follow official upload/readback. Previous publications,
+frozen main/baselines, original075/076/004/084, separate3V3metadata, physical
+qualification, lightweight setup/start, serial memory guards and ordering/payment/
+contact restrictions remain unchanged. This is an untested hardware prototype.
+
+## Earlier records — preserved history
+
 # Current R8 0.3.15 — explanations on the component pages, 2026-10-07
 
 GitHub source/build readback passes; native tscircuit **0.3.15-prototype is incomplete** (HTTP502, two STEP model files missing, ready_to_build=false). The same-page schematic implementation and local checks are complete. [Actual publication status](../evidence/R8-inline-notes15-2026-10-07/PUBLICATION.md). README now provides the product overview,44×56×1mm PCB dimensions, controls/power/programming and unqualified MagSafe/physical gates.

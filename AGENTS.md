@@ -1,3 +1,17 @@
+# R8 unchanged native assembly publication 0.3.26 — 2026-10-09
+
+The user requests the R8 board/assembly on tscircuit.com using existing viewer
+controls. The unnecessary shared-viewer feature was fully reverted and its PR
+remains closed. R8 PCB/source, enclosure/17models/fourCircuitJSONs, dependencies,
+geometry and prints are unchanged; only publication version/context/receipts
+change. Read evidence/R8-native-publish26-2026-10-09/REVIEW.md and PUBLICATION.md.
+Actual hosted status must follow official upload/readback. Previous publications,
+frozen main/baselines, original075/076/004/084, separate3V3metadata, physical
+qualification, lightweight setup/start, serial memory guards and ordering/payment/
+contact restrictions remain unchanged. This is an untested hardware prototype.
+
+## Earlier records — preserved history
+
 # R8 native publication retry0.3.25 — 2026-10-08
 
 The user explicitly requests another native tscircuit push. The validated24board,
