@@ -11,6 +11,12 @@ qualifications and physical gates, original075/076/004/084, separate3V3metadata,
 frozen main/baselines and ordering/payment/contact restrictions remain explicit.
 Shared-viewer addition is fully reverted; PR1024 remains closed/unmerged.
 
+Actual27storage upload is complete: all326files match public byte readback,
+including both uploads reported as HTTP502failures. CLI finalization remains
+blocked: ready_to_build=false, hosted preview pending. No supported existing-
+release finalize command; no readiness bypass or further unchanged drafts.
+See the dated PUBLICATION.md for the exact recovery requirement and evidence.
+
 ## Earlier records — preserved history
 
 # R8 unchanged native assembly publication 0.3.26 — 2026-10-09

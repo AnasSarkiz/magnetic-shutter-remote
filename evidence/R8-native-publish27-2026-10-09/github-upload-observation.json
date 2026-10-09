@@ -1,0 +1,112 @@
+{
+  "observed_at": "2026-10-09T22:01:48.338373+02:00",
+  "source_head": "63df487fcf0c25f5e93b3b2b4091b223e738b9cb",
+  "is_public": true,
+  "exact_public_readback": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 28359,
+      "sha256": "769ec067a2504b2c9c6a63913b3177c2610db6327e64fec5a2f74df90bf5b35e",
+      "matches": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 48440,
+      "sha256": "f0eab025be28deda88cc2e03629b735a2c78fdeeddad97964b5f6509116a725e",
+      "matches": true
+    },
+    {
+      "path": "cloud/HANDOFF.md",
+      "bytes": 45741,
+      "sha256": "f1a9055bffb3469286356fa7ac97603e67b16fc98233ac29f42b3b4267ad22ac",
+      "matches": true
+    },
+    {
+      "path": "cloud/STATUS.md",
+      "bytes": 16130,
+      "sha256": "425addb33178241b3b8c1e04d3ac4ae8f88ad818630d00cc70bd5864fd31d4dc",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/PUBLICATION.md",
+      "bytes": 1406,
+      "sha256": "541b0751838fe09c2bec986511a161a8996fd96c233707622bc1653d4385e965",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/registry-push-authenticated.log",
+      "bytes": 16308,
+      "sha256": "316d17deb3ff68e1a0f1277926d06a1db803630499cb8b60a91877f0fa7dde8f",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/checks/registry-readback.log",
+      "bytes": 215,
+      "sha256": "4ce687ff15b7b5f78983e74a9622e0616ef1eeb3ff1620b49c6963437e88267f",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish26-2026-10-09/registry-upload-observation.json",
+      "bytes": 163868,
+      "sha256": "b31e8823469392a4b6ec719117710e408965ac7d1168c8e233fa9793fb09b04d",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish27-2026-10-09/REVIEW.md",
+      "bytes": 1595,
+      "sha256": "af257baa55a0a071470c6a9d6f857173e328fbb83768a0a2f21d26b9aaa9ef45",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish27-2026-10-09/checks/stage.log",
+      "bytes": 1408,
+      "sha256": "a35f469610f07c33987d809545dcf0c0322462d1c717f9f3d98bd3622d0b56f8",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish27-2026-10-09/preservation.json",
+      "bytes": 310,
+      "sha256": "b840ae95a71b87e1bbf9e7ea7cc18c9c63155e5ed515d718b2b6cb052c2bad1a",
+      "matches": true
+    },
+    {
+      "path": "evidence/R8-native-publish27-2026-10-09/stage-comparison.json",
+      "bytes": 428,
+      "sha256": "1e73b16a9057f27c6eca79fbfa226d0f3ff9f98791c398660e5b51782c45b32b",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 5201,
+      "sha256": "0cd58fc02f851b26812efb051436cac75d81be22e22358bb90dd22d582f70b36",
+      "matches": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 1521698,
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "matches": true
+    },
+    {
+      "path": "dist/enclosure/circuit.json",
+      "bytes": 15516,
+      "sha256": "a6a6a7be5b6ba86ad3ec6a5625f7c5a410b0729f87179c11b06bb1c7b5db3668",
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "bytes": 15516,
+      "sha256": "a6a6a7be5b6ba86ad3ec6a5625f7c5a410b0729f87179c11b06bb1c7b5db3668",
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "bytes": 15513,
+      "sha256": "e50fd1e4948ee682e30097be3ff79c8afe78749aca50c92720a0f89b321679c1",
+      "matches": true
+    }
+  ],
+  "frozen_main_sha": "5951f419c8314b83648d89e1cfb7e29e87e32eb8",
+  "header_authentication_used": false,
+  "passes": true
+}
