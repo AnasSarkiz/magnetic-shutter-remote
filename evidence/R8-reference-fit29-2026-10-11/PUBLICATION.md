@@ -9,12 +9,12 @@ Destination: https://tscircuit.com/AnasSarkiz/magnetic-shutter-remote-r8#3d
 The shared preview remains index.circuit.tsx; enclosure.circuit.tsx is included
 for its fitted assembly. Earlier0.3.27 upload/finalization failures and0.3.28
 preview-correction preparation remain historical records, not proof of this
-revision's hosted preview. GitHub source publication is recorded after checks.
+revision's hosted preview. GitHub source is public at c1ce0120c39129b3016bf7649b08b333cb4c7bc5 on branch board/r8-enclosure-reference-20261011. Anonymous readback verifies25source/build files, including allfourCircuitJSONs and all17models, byte-identical to the checked files. See github-public-readback.json.
 
 Supported registry staging PASS:321exact files,54,399,438bytes, all files within
 the unchanged5MB per-file bound, including current PCB/enclosure source,
 all17models, allfourCircuitJSONs and required qualification/reproduction inputs.
 Final staging is `.codex/runtime/r8-reference-fit29-final-registry`; its exact
 manifest is retained outside the board sources. Once the official CLI is signed
-in, run the supported `tsci push` there and verify actual registry bytes and
+in, run the supported `tsci push --include-dist --version-tag prototype` there and verify actual registry bytes and
 release/preview completion. No hosted upload or release readiness is claimed.

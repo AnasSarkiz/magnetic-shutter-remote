@@ -1,0 +1,157 @@
+{
+  "public_commit": "c1ce0120c39129b3016bf7649b08b333cb4c7bc5",
+  "anonymous_public_readback": true,
+  "files": [
+    {
+      "path": "product/geometry.ts",
+      "sha256": "726080e031edf4e20a96156e1f36ce775e28e19337b6b43d28d7ecd82f3f2e4e",
+      "bytes": 18326,
+      "matches": true
+    },
+    {
+      "path": "enclosure.circuit.tsx",
+      "sha256": "44555ba62f7936169c67c6b2611635336a903bd0578a9a69dc19b5a5c36e5ef5",
+      "bytes": 100,
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "9d340916d3ea972a67f5a121e243a98caf97f9f00be675e9d7124330b5384ff8",
+      "bytes": 5201,
+      "matches": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "7074cc06e300bc0c2f569e28c9ff4bf2abf9447d78d21c2cc42525d40bd88b9e",
+      "bytes": 639,
+      "matches": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "7266c060cc5074a4e9bb5082ae77ded4b1be7988eb7b65fa94f139fb0ca471a4",
+      "bytes": 1521698,
+      "matches": true
+    },
+    {
+      "path": "dist/enclosure/circuit.json",
+      "sha256": "fcc280dadcddd9026118cee302794c13cee04cd644122c0f4b4e32b9976fada3",
+      "bytes": 15540,
+      "matches": true
+    },
+    {
+      "path": "dist/product.assembly/circuit.json",
+      "sha256": "fcc280dadcddd9026118cee302794c13cee04cd644122c0f4b4e32b9976fada3",
+      "bytes": 15540,
+      "matches": true
+    },
+    {
+      "path": "dist/product.exploded/circuit.json",
+      "sha256": "0ebd8c1b0cdc663678842db530d9057d5a60a7f794a2a0724eb667020e499c8a",
+      "bytes": 15520,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "sha256": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+      "bytes": 1332832,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "sha256": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+      "bytes": 1987404,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "sha256": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+      "bytes": 1301228,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "sha256": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+      "bytes": 1119336,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "sha256": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+      "bytes": 1264596,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "sha256": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+      "bytes": 2117320,
+      "matches": true
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "sha256": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+      "bytes": 2035532,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "sha256": "f6cebc9f2258dea527b50943fcb8ab3580f7a7748e3fcf2a2eb93ad3cac89a69",
+      "bytes": 273280,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "sha256": "c5e8d32ec7cd393e9ab2c41090b49826faa91f43b9c92ead36fa08587ec401b7",
+      "bytes": 29704,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "bytes": 31632,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "bytes": 1592,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "bytes": 162884,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "sha256": "1f9061a86c006f3cc3f327f6e9149bf867d9703d62222736a3126d29ae488a9e",
+      "bytes": 203460,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "bytes": 13132,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "sha256": "d0240c02bad23703af953b412238938ca5adbf60c4df88a223289c6f2b572dab",
+      "bytes": 12612,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "sha256": "2ea9903133c4aab712598d7b28a630a58c08b135cd20858bba7f3e82694374e7",
+      "bytes": 23068,
+      "matches": true
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "bytes": 2556,
+      "matches": true
+    }
+  ],
+  "passes": true
+}
