@@ -1,3 +1,26 @@
+# R8 reference-fit enclosure0.3.29 — 2026-10-11
+
+The user requested that the actual enclosure match the supplied camera-grip
+reference more closely. The rounded palm, contoured grip insert, smaller
+11.8×5.5mm bronze cap and integrated shoulder replace the raised bezel.
+The circular-face pocket now retains a closed shoulder land. The lid owns this
+land, and the interior cutters are united to avoid coincident STL boundaries.
+Read evidence/R8-reference-fit29-2026-10-11/REVIEW.md and PUBLICATION.md.
+
+The fitted envelope remains90×78×34mm. The actual PCB/electronics/44 supplier
+poses, protected battery, four mounts, switch contact, firmware, routing, frozen
+main/baselines, lockfiles and electrical JSON remain unchanged. Native fit checks
+include151 closure samples, four shutter positions and all44 electronic envelopes.
+Strict print tests remain unchanged. Physical tolerance, shutter/USB/harness,
+thermal/RF/BLE/MagSafe/phone/case testing remains pending. Missing3V3power metadata
+remains a separate importer issue; original075/076/004/084 are retained.
+Setup/start remains light; optional mechanical jobs use the unchanged serial
+memory guard, with an observed32GiB limit rather than a guaranteed allocation.
+No ordering/payment/supplier contact, shared-viewer addition or PR merge.
+Actual checked artifacts and publication outcomes are recorded in the dated evidence.
+
+## Earlier records — preserved history
+
 # R8 electrical package preview correction 0.3.28 — 2026-10-09
 
 The user reported an empty PCB tab on tscircuit.com. The shared package preview

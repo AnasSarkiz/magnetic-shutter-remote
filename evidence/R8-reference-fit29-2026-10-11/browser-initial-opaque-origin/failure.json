@@ -1,0 +1,9 @@
+{
+  "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+  "browser_errors": [
+    "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n    at hyv (<anonymous>:4918:48814)\n    at h2A (<anonymous>:8:37904)\n    at m3A (<anonymous>:8:56947)\n    at w$A (<anonymous>:8:68100)\n    at r$A (<anonymous>:8:113749)\n    at mxv (<anonymous>:8:112765)\n    at l6A (<anonymous>:8:112592)\n    at J$A (<anonymous>:8:109183)\n    at i$A (<anonymous>:8:122038)\n    at MessagePort.ejA (<anonymous>:1:1917)"
+  ],
+  "http_requests": [],
+  "model_checks": [],
+  "body": ""
+}

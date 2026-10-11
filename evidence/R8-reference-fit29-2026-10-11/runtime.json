@@ -1,0 +1,14 @@
+{
+  "observed_memory_limit_bytes": 34359738368,
+  "cpu_max": "400000 100000",
+  "affinity_cpu_count": 5,
+  "ambient_python": "3.12.14",
+  "optional_mechanical_python": "3.14.7",
+  "node": "25.6.0",
+  "bun": "1.3.9",
+  "node_heap_mib": 14336,
+  "guaranteed_plan_allocation_claimed": false,
+  "root_board_route_sdk_or_cam_build_run": false,
+  "memory_guards_changed": false,
+  "network_policy_changed": false
+}

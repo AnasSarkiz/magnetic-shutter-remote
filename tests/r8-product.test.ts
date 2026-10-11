@@ -212,6 +212,13 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 				z.object({ lowerSeatAndUpperPillarVerified: z.boolean() }),
 			),
 			shoulderWallVolumeMm3: z.number(),
+			shoulderClosureReview: z.array(
+				z.object({
+					centerMm: z.tuple([z.number(), z.number(), z.number()]),
+					expectedVolumeMm3: z.number(),
+					missingVolumeMm3: z.number(),
+				}),
+			),
 			shutterTravelReview: z.array(
 				z.object({
 					travelMm: z.number(),
@@ -244,6 +251,11 @@ test("all real electronic envelopes fit, magnetic datum clearance and solid sepa
 		),
 	).toBe(true);
 	expect(review.shoulderWallVolumeMm3).toBeCloseTo(0.008, 5);
+	expect(review.shoulderClosureReview.length).toBeGreaterThanOrEqual(21);
+	for (const sample of review.shoulderClosureReview) {
+		expect(sample.expectedVolumeMm3).toBeGreaterThan(1e-8);
+		expect(sample.missingVolumeMm3).toBeLessThanOrEqual(1e-8);
+	}
 	expect(review.shutterTravelReview.map((step) => step.travelMm)).toEqual([
 		0, 0.15, 0.25, 0.35,
 	]);

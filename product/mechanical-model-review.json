@@ -1,18 +1,18 @@
 {
   "source_view": "product.geometry",
-  "canonical_native_glb_sha256": "1e50c7d573f17df1ce83dec0a07f773385df480dfb4aa721e318c947e286570d",
-  "source_plans_sha256": "e361e2df5dc6bf17d68a6a33328b031e43520efc121aef0fa3b32c23099a878c",
-  "geometry_review_sha256": "0c3f7020b61e459a275c8de162b41be3b4fa69162f74c984626647aab96fa0e9",
+  "canonical_native_glb_sha256": "a030bcfc0fe5c7863dc53d4dda8f61a8246b9142516715480eb2fb290b71b584",
+  "source_plans_sha256": "a1c1de8842f91abd60311415a83a481549a7830954a279d4f88076151222906d",
+  "geometry_review_sha256": "3c2215cd81a66846d625df7079f109291708d69a650ca53732fd1bbd1f680f23",
   "model_coordinate_frame": "product XYZ, board normal z+, millimeters",
   "proper_rigid_transforms_only": true,
   "models": [
     {
       "part": "RemoteBase",
       "file": "product/models/mechanical/RemoteBase.glb",
-      "sha256": "1dffd53d665651c76e158c3aa41c7add8a6f199f703794cef54f846b5da3fc0e",
-      "bytes": 283984,
-      "triangles": 5895,
-      "exported_triangles": 5895,
+      "sha256": "f6cebc9f2258dea527b50943fcb8ab3580f7a7748e3fcf2a2eb93ad3cac89a69",
+      "bytes": 273280,
+      "triangles": 5672,
+      "exported_triangles": 5672,
       "bounds_delta_mm": 0.0,
       "canonical_base_color_rgba": [
         0.06,
@@ -57,10 +57,10 @@
     {
       "part": "SideShutterPlunger",
       "file": "product/models/mechanical/SideShutterPlunger.glb",
-      "sha256": "ace5941f9ba4d8e293bca69b976aa511e3190865a47a239e6445604a553c9861",
-      "bytes": 29892,
-      "triangles": 600,
-      "exported_triangles": 600,
+      "sha256": "c5e8d32ec7cd393e9ab2c41090b49826faa91f43b9c92ead36fa08587ec401b7",
+      "bytes": 29704,
+      "triangles": 596,
+      "exported_triangles": 596,
       "bounds_delta_mm": 0.0,
       "canonical_base_color_rgba": [
         0.48,
@@ -73,10 +73,10 @@
     {
       "part": "RemoteLid",
       "file": "product/models/mechanical/RemoteLid.glb",
-      "sha256": "6dc830d348b3ef5fdd94685de972b976475574970bb4a5355c32c3547d742292",
-      "bytes": 199412,
-      "triangles": 4132,
-      "exported_triangles": 4132,
+      "sha256": "1f9061a86c006f3cc3f327f6e9149bf867d9703d62222736a3126d29ae488a9e",
+      "bytes": 203460,
+      "triangles": 4217,
+      "exported_triangles": 4217,
       "bounds_delta_mm": 0.0,
       "canonical_base_color_rgba": [
         0.065,
@@ -89,8 +89,8 @@
     {
       "part": "FingerGripInsert",
       "file": "product/models/mechanical/FingerGripInsert.glb",
-      "sha256": "97cd3edcdd6e7af8bfc7c58c0667b79ceec6761ea4a8a3440ce3382a3729d014",
-      "bytes": 23020,
+      "sha256": "2ea9903133c4aab712598d7b28a630a58c08b135cd20858bba7f3e82694374e7",
+      "bytes": 23068,
       "triangles": 458,
       "exported_triangles": 458,
       "bounds_delta_mm": 0.0,
@@ -105,10 +105,10 @@
     {
       "part": "MagSafeRearCover",
       "file": "product/models/mechanical/MagSafeRearCover.glb",
-      "sha256": "4aabde4a415d19e3814a941a670149120e4567cc0be8a39720c35123680f477e",
-      "bytes": 12036,
-      "triangles": 228,
-      "exported_triangles": 228,
+      "sha256": "d0240c02bad23703af953b412238938ca5adbf60c4df88a223289c6f2b572dab",
+      "bytes": 12612,
+      "triangles": 240,
+      "exported_triangles": 240,
       "bounds_delta_mm": 0.0,
       "canonical_base_color_rgba": [
         0.025,

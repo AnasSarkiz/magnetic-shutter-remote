@@ -141,6 +141,19 @@ const outerShell = solidFromPlan(
 		explodeZMm: 0,
 	}),
 );
+const gripInsertIndex = parts.findIndex(
+	(part) => part.name === "FingerGripInsert",
+);
+const gripInsertOutsideVolumeMm3 = Math.abs(
+	modeling.measurements.measureVolume(
+		modeling.booleans.subtract(shapes[gripInsertIndex], outerShell),
+	),
+);
+if (gripInsertOutsideVolumeMm3 > 0.001)
+	throw new Error(
+		`Grip insert overhangs the tapered case: ${gripInsertOutsideVolumeMm3}mm3`,
+	);
+console.error(`Grip insert outside case: ${gripInsertOutsideVolumeMm3}mm3`);
 const boardCenter = pcbPointInProduct({ x: 0, y: 0 });
 const boardEnvelope = modeling.transforms.translate(
 	[boardCenter.x, boardCenter.y, d.pcb.centerZMm],
@@ -347,6 +360,71 @@ const shoulderWallVolumeMm3 = modeling.measurements.measureVolume(
 );
 if (Math.abs(shoulderWallVolumeMm3 - 0.008) > 0.00001)
 	throw new Error("Shutter linkage clearance opens the exterior shoulder wall");
+// These points reproduced the visible opening above the circular face in the
+// previous assembly. Check native material, not only containment or mesh bounds.
+const closedCase = modeling.booleans.union(
+	...shapes.filter((_, index) =>
+		[
+			"RemoteBase",
+			"RemoteLid",
+			"MagSafeRearCover",
+			"FingerGripInsert",
+		].includes(parts[index].name),
+	),
+);
+const protectedSideSkin = modeling.booleans.intersect(
+	modeling.booleans.subtract(
+		outerShell,
+		solidFromPlan(createRemoteOuterPlan({ wallInsetMm: 0.6 })),
+	),
+	modeling.primitives.cuboid({ size: [6, 4.6, 6], center: [-57, -28, 12] }),
+);
+const missingSideSkinMm3 = Math.abs(
+	modeling.measurements.measureVolume(
+		modeling.booleans.subtract(protectedSideSkin, closedCase),
+	),
+);
+if (missingSideSkinMm3 > 0.00001)
+	throw new Error(
+		`Wall-post clearance opens the outer grip: ${missingSideSkinMm3}mm3`,
+	);
+console.error(`Wall-post exterior skin missing: ${missingSideSkinMm3}mm3`);
+const shoulderClosureReview = [];
+for (const radiusMm of [26, 27.6, 29.3]) {
+	for (const angleDegrees of [125, 130, 135, 140, 145, 150, 155, 160, 165]) {
+		const angleRadians = (angleDegrees * Math.PI) / 180;
+		for (const zMm of [17.4, 18, 19, 20, 22, 24, 26]) {
+			const centerMm: [number, number, number] = [
+				radiusMm * Math.cos(angleRadians),
+				-5 + radiusMm * Math.sin(angleRadians),
+				zMm,
+			];
+			const witness = modeling.primitives.cuboid({
+				size: [0.1, 0.1, 0.1],
+				center: centerMm,
+			});
+			const expectedMaterial = modeling.booleans.intersect(witness, outerShell);
+			const expectedVolumeMm3 = Math.abs(
+				modeling.measurements.measureVolume(expectedMaterial),
+			);
+			if (expectedVolumeMm3 < 1e-8) continue;
+			const missingVolumeMm3 = Math.abs(
+				modeling.measurements.measureVolume(
+					modeling.booleans.subtract(expectedMaterial, closedCase),
+				),
+			);
+			shoulderClosureReview.push({
+				centerMm,
+				expectedVolumeMm3,
+				missingVolumeMm3,
+			});
+			if (missingVolumeMm3 > 1e-8)
+				throw new Error(
+					`Circular-face pocket opens the shoulder wall: ${JSON.stringify(shoulderClosureReview.at(-1))}`,
+				);
+		}
+	}
+}
 const productBounds = modeling.measurements.measureBoundingBox(
 	modeling.booleans.union(...shapes),
 );
@@ -385,6 +463,7 @@ const report = {
 	shutterAlignment,
 	shutterTravelReview,
 	shoulderWallVolumeMm3,
+	shoulderClosureReview,
 	clashes,
 	phoneDatumZMm: 0,
 	remoteBottomZMm: rows[baseIndex].boundsMm[0][2],

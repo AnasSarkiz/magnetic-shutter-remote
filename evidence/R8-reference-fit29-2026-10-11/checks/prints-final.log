@@ -1,0 +1,241 @@
+{
+  "started_utc": "20261011T193112193019Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/export-product-prints.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+{
+  "tool_versions": {
+    "manifold3d": "3.5.4",
+    "trimesh": "4.8.3",
+    "numpy": "2.5.3"
+  },
+  "source_plans_sha256": "a1c1de8842f91abd60311415a83a481549a7830954a279d4f88076151222906d",
+  "native_geometry_sha256": "3c2215cd81a66846d625df7079f109291708d69a650ca53732fd1bbd1f680f23",
+  "printed_parts": [
+    {
+      "file": "product/prints/RemoteBase.stl",
+      "sha256": "fc4a5e8c8f3977b539a5887468c8868ce2f77975af95eac93832b292afa7f108",
+      "triangles": 4654,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 6.530826794914901e-07,
+      "bounds_mm": [
+        [
+          -59.0,
+          -52.0,
+          4.800000190734863
+        ],
+        [
+          31.0,
+          26.0,
+          30.5
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/BatterySupport.stl",
+      "sha256": "4721db9afd407f1348030683879bf0b40d4f5cac826cc45628c7b83efaf217b4",
+      "triangles": 32,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 2.2737367544323206e-13,
+      "bounds_mm": [
+        [
+          -54.5,
+          -43.5,
+          14.800000190734863
+        ],
+        [
+          -21.5,
+          0.5,
+          15.399999618530273
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/SideShutterPlunger.stl",
+      "sha256": "4895819a2d4f46667e7eeb0a2f55703c8ca12241a5c8ad1e3f783c6d44bd12d3",
+      "triangles": 624,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 1.584345454830327e-08,
+      "bounds_mm": [
+        [
+          -51.400001525878906,
+          13.62399959564209,
+          9.960000038146973
+        ],
+        [
+          -5.199999809265137,
+          17.66781997680664,
+          33.13515853881836
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/RemoteLid.stl",
+      "sha256": "3ddd6fc50aa8c34536ee9743091a19775b68f8be37b31a0992c2b5ec20e1d567",
+      "triangles": 3948,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 4.10989741794765e-07,
+      "bounds_mm": [
+        [
+          -58.49612045288086,
+          -51.006858825683594,
+          10.0
+        ],
+        [
+          31.0,
+          26.0,
+          34.0
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/FingerGripInsert.stl",
+      "sha256": "57c018ee08b5a97b04f26b4ea77a91269c013fe894045d3c23061c8c379ec64d",
+      "triangles": 460,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 3.561217454262078e-08,
+      "bounds_mm": [
+        [
+          -55.0,
+          -48.5,
+          27.744199752807617
+        ],
+        [
+          -22.771484375,
+          7.169682025909424,
+          34.0
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/MagSafeRearCover.stl",
+      "sha256": "e1f0623942579e8b6b5953718e00cdd82246229e9b20fa6ed10457d2e6f31161",
+      "triangles": 240,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 8.34920683701057e-08,
+      "bounds_mm": [
+        [
+          -28.697765350341797,
+          -34.20000076293945,
+          16.450000762939453
+        ],
+        [
+          29.200000762939453,
+          24.200000762939453,
+          17.049999237060547
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/MagSafeGrip.stl",
+      "sha256": "8140ba98a1c855e2b8a112703f38b5dd42d25338345658b89750152dcdad3528",
+      "triangles": 3034,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 5.343390512280166e-07,
+      "bounds_mm": [
+        [
+          -29.5,
+          -34.5,
+          0.6000000238418579
+        ],
+        [
+          29.5,
+          24.5,
+          8.300000190734863
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    },
+    {
+      "file": "product/prints/MagSafeFaceCover.stl",
+      "sha256": "1761dbe7b2bce0cf339487ec20db09a77ffc9b85645033dbca9a90311a68461f",
+      "triangles": 252,
+      "connected_solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "zero_area_triangles": 0,
+      "native_volume_delta_mm3": 4.163825906289276e-08,
+      "bounds_mm": [
+        [
+          -29.5,
+          -34.5,
+          0.0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6000000238418579
+        ]
+      ],
+      "manufacturing_status": "Error.NoError"
+    }
+  ]
+}
+{
+  "started_utc": "20261011T193112193019Z",
+  "command": [
+    "tooling/gerber-review-venv/bin/python",
+    "scripts/export-product-prints.py"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-11T19:31:12.862446+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 72216,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261011T193112193019Z.log"
+}

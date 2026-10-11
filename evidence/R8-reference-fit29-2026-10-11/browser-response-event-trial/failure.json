@@ -1,0 +1,32 @@
+{
+  "error": "(0, [])",
+  "browser_errors": [],
+  "http_requests": [
+    {
+      "url": "http://localhost/r8-viewer.html",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.js",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.wasm",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/codepoint-index/plane0/0-ff.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-meta/latin.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-files/latin/sans-serif.normal.400.woff",
+      "status": 200
+    }
+  ],
+  "model_checks": [],
+  "page_url": "http://localhost/r8-viewer.html"
+}

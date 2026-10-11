@@ -41,7 +41,7 @@ XY(−6.7,13.474), Z10.86, with 0.15mm nominal free gap. The cap and contact are
 at different positions because the existing switch must remain unchanged.
 The manufacturer specifies 0.15 ± 0.05 mm switch travel. The channel's nominal
 0.35 mm stop includes the 0.15 mm free gap and 0.20 mm maximum switch travel.
-The black sleeve blends into the shoulder and covers the linkage.
+The smaller bronze cap sits in an aperture in the continuous shoulder; no separate raised bezel is used.
 Native CAD checks four positions from released to that stop against the case,
 PCB and other 43 component envelopes, permitting the intended SW2 actuator
 contact. A shoulder-wall witness verifies that the linkage opening stays inside
@@ -78,7 +78,9 @@ Generated `dist/enclosure/circuit.json` and `3d.png` are tracked and published w
 all seventeen bounded model assets. The complete 15 MB `3d.glb` is generated locally
 from the same source, rather than sent as an oversized registry file.
 
-Version0.3.24 keeps the fitted 0.3.20 geometry and corrects browser coordinate parity. Its imported mechanical GLBs retain
+Version0.3.29 reshapes the palm silhouette and curved grip insert toward the supplied reference, reduces the bronze cap, and retains a solid sealing land along the upper circular-face pocket. A new native CSG regression checks material coverage at the former opening. The qualified PCB, battery pose, mounting points and switch-contact position remain unchanged.
+
+Version0.3.24 corrected browser coordinate parity. Its imported mechanical GLBs retain
 all canonical native triangles and outward face directions, proven by independent
 closed/exploded readback. All imports now use the supported product Z-up frame. The earlier Y-up PCB
 interchange mirrored the browser Y axis despite passing the CLI check; the source
@@ -101,8 +103,8 @@ Manifold engine from the official jsDelivr CDN on first open, so internet access
 is needed for that engine. Source is `viewer.tsx` and `../scripts/export-product-viewer.ts`.
 The 27MB HTML and complete GLBs stay local under the unchanged5MB staging cap.
 
-Actual Chromium viewer screenshots and110pose checks are in
-`../evidence/R8-viewer24-2026-10-08/`. These show real CAD, not generated concept
+Actual current Chromium viewer screenshots and110pose checks are in
+`../evidence/R8-reference-fit29-2026-10-11/`. These show real CAD, not generated concept
 images. The viewer's separate Download GLTF action throws a stack overflow in the
 initial test; use the validated CLI-generated GLBs for interchange. That export
 failure is recorded separately from successful rendering/orbiting and physical
@@ -133,15 +135,17 @@ python3 cloud/run-heavy.py -- bun scripts/export-product-pcb.ts
 python3 cloud/run-heavy.py -- bun scripts/review-product-model.ts
 python3 cloud/run-heavy.py -- bun scripts/check-product-geometry.ts
 python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-prints.py
-python3 scripts/review-product-stls.py --output evidence/R8-native-assembly20-2026-10-08/independent-stl-review.json
+python3 scripts/review-product-stls.py --output evidence/R8-reference-fit29-2026-10-11/independent-stl-review.json
 python3 cloud/run-heavy.py -- tsci build product.geometry.tsx --glbs
 python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/export-product-mechanics.py --source-view product.geometry
 bun run build:enclosure
 python3 cloud/run-heavy.py -- tsci build product.assembly.tsx --glbs
 python3 cloud/run-heavy.py -- tsci build product.exploded.tsx --glbs
-python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-viewer24-2026-10-08/native-model-readback.json
+python3 cloud/run-heavy.py -- tooling/gerber-review-venv/bin/python scripts/review-native-product.py --output evidence/R8-reference-fit29-2026-10-11/native-model-readback.json
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.exploded
 python3 cloud/run-heavy.py -- bun scripts/render-product.ts product.assembly phone-facing
+# Eight actual CAD views, preserving model geometry and checking bounds:
+python3 cloud/run-heavy.py -- blender --python-exit-code 1 --background --python scripts/render-product-eight.py -- --output evidence/R8-reference-fit29-2026-10-11/eight-views
 # Optional studio presentation: installed Blender 4.3.2, four CPU threads.
 python3 cloud/run-heavy.py -- blender --python-exit-code 1 --background --python scripts/render-product-studio.py -- --view front
 python3 cloud/run-heavy.py -- blender --python-exit-code 1 --background --python scripts/render-product-studio.py -- --view straight
@@ -183,7 +187,7 @@ the30mm contact radius is at least6mm
 above it. This is not proof of fit with every iPhone, camera or MagSafe case.
 
 Install the selected magnets/DC shield before bonding the0.6mm phone cover.
-The finger insert is candidate TPU or a qualified textured covering, with0.3mm lateral and0.1mm adhesive
+The finger insert is candidate TPU or a qualified textured covering, with a nominal0.3mm planar scale allowance and0.1mm adhesive
 allocation. Rear-face/insert materials, bonding and durability remain pending.
 
 ## Remaining qualification
@@ -198,5 +202,5 @@ phone/case clearance, pull force, retention and durability tests remain pending.
 Supplier-processed board/assembly preview remains pending. These are prototype
 fit files, not complete-product order approval. No RGB light is fitted.
 
-[Current review](../evidence/R8-sculpted19-2026-10-07/REVIEW.md).
+[Current shape and fit review](../evidence/R8-reference-fit29-2026-10-11/REVIEW.md).
 Publication outcome is recorded separately in that evidence directory.

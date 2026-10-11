@@ -1,0 +1,316 @@
+{
+  "observed_utc": "2026-10-11T19:44:49.140101+00:00",
+  "browser_version": "151.0.7922.173",
+  "viewer_version": "0.0.610",
+  "actual_CadViewer_component": true,
+  "model_delivery": "embedded GLB data URIs; exact HTML bytes verified",
+  "models_requested": [
+    {
+      "path": "product/models/r8-pcb.glb",
+      "status": 200,
+      "bytes": 1301228,
+      "sha256": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "status": 200,
+      "bytes": 1119336,
+      "sha256": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "status": 200,
+      "bytes": 2035532,
+      "sha256": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "status": 200,
+      "bytes": 1987404,
+      "sha256": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "status": 200,
+      "bytes": 1264596,
+      "sha256": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "status": 200,
+      "bytes": 1332832,
+      "sha256": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "status": 200,
+      "bytes": 273280,
+      "sha256": "f6cebc9f2258dea527b50943fcb8ab3580f7a7748e3fcf2a2eb93ad3cac89a69",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "status": 200,
+      "bytes": 2556,
+      "sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "status": 200,
+      "bytes": 1592,
+      "sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "status": 200,
+      "bytes": 29704,
+      "sha256": "c5e8d32ec7cd393e9ab2c41090b49826faa91f43b9c92ead36fa08587ec401b7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "status": 200,
+      "bytes": 203460,
+      "sha256": "1f9061a86c006f3cc3f327f6e9149bf867d9703d62222736a3126d29ae488a9e",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "status": 200,
+      "bytes": 23068,
+      "sha256": "2ea9903133c4aab712598d7b28a630a58c08b135cd20858bba7f3e82694374e7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "status": 200,
+      "bytes": 12612,
+      "sha256": "d0240c02bad23703af953b412238938ca5adbf60c4df88a223289c6f2b572dab",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "status": 200,
+      "bytes": 162884,
+      "sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "status": 200,
+      "bytes": 13132,
+      "sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "status": 200,
+      "bytes": 31632,
+      "sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "status": 200,
+      "bytes": 2117320,
+      "sha256": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-pcb.glb",
+      "status": 200,
+      "bytes": 1301228,
+      "sha256": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-2.glb",
+      "status": 200,
+      "bytes": 1119336,
+      "sha256": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-3.glb",
+      "status": 200,
+      "bytes": 2035532,
+      "sha256": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-4.glb",
+      "status": 200,
+      "bytes": 1987404,
+      "sha256": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-5.glb",
+      "status": 200,
+      "bytes": 1264596,
+      "sha256": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-7.glb",
+      "status": 200,
+      "bytes": 1332832,
+      "sha256": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/RemoteBase.glb",
+      "status": 200,
+      "bytes": 273280,
+      "sha256": "f6cebc9f2258dea527b50943fcb8ab3580f7a7748e3fcf2a2eb93ad3cac89a69",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/BatterySupport.glb",
+      "status": 200,
+      "bytes": 2556,
+      "sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/ASR00012_MaximumEnvelope.glb",
+      "status": 200,
+      "bytes": 1592,
+      "sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/SideShutterPlunger.glb",
+      "status": 200,
+      "bytes": 29704,
+      "sha256": "c5e8d32ec7cd393e9ab2c41090b49826faa91f43b9c92ead36fa08587ec401b7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/RemoteLid.glb",
+      "status": 200,
+      "bytes": 203460,
+      "sha256": "1f9061a86c006f3cc3f327f6e9149bf867d9703d62222736a3126d29ae488a9e",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/FingerGripInsert.glb",
+      "status": 200,
+      "bytes": 23068,
+      "sha256": "2ea9903133c4aab712598d7b28a630a58c08b135cd20858bba7f3e82694374e7",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeRearCover.glb",
+      "status": 200,
+      "bytes": 12612,
+      "sha256": "d0240c02bad23703af953b412238938ca5adbf60c4df88a223289c6f2b572dab",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeGrip.glb",
+      "status": 200,
+      "bytes": 162884,
+      "sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeFaceCover.glb",
+      "status": 200,
+      "bytes": 13132,
+      "sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/mechanical/MagSafeArrayReference.glb",
+      "status": 200,
+      "bytes": 31632,
+      "sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    },
+    {
+      "path": "product/models/r8-parts-6.glb",
+      "status": 200,
+      "bytes": 2117320,
+      "sha256": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+      "matches": true,
+      "method": "read-only clone of the actual viewer fetch response; original response unchanged"
+    }
+  ],
+  "expected_models": 17,
+  "browser_errors": [],
+  "http_requests": [
+    {
+      "url": "http://localhost/r8-viewer.html",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.js",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/manifold-3d@3.2.1/manifold.wasm",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/codepoint-index/plane0/0-ff.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-meta/latin.json",
+      "status": 200
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lojjic/unicode-font-resolver@v1.0.1/packages/data/font-files/latin/sans-serif.normal.400.woff",
+      "status": 200
+    }
+  ],
+  "downloads": [],
+  "native_download_gltf_menu_used": false,
+  "separate_export_test": "failed stack overflow; retained prior output/failure.json",
+  "orbit_gesture_executed": true,
+  "public_camera_controller_used": true,
+  "tls_verification_enabled": true,
+  "passes": true
+}

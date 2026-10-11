@@ -1,0 +1,26 @@
+{
+  "accepted_checks_weakened": false,
+  "trials": [
+    {
+      "reason": "Duplicated outline endpoint caused cross-kernel volume disagreement",
+      "largest_volume_difference_mm3": 2.7492473200763925
+    },
+    {
+      "reason": "Arbitrary hull/crown intersection exceeded unchanged1e-5mm3 cross-kernel tolerance",
+      "volume_difference_mm3": 0.00015788937525940128
+    },
+    {
+      "reason": "Land split produced a disconnected base sliver",
+      "disconnected_piece_volume_mm3": 246.05260856174613
+    },
+    {
+      "reason": "Separate internal cuts produced6 degenerate STL triangles at shared face boundaries; cutters were united"
+    },
+    {
+      "reason": "First eight-view render exposed a lower corner opening and grip-insert overhang; land and insert footprint were corrected"
+    },
+    {
+      "reason": "Rounded palm needed a matching inset cavity, and wall-post clearance needed an inset exterior guard"
+    }
+  ]
+}

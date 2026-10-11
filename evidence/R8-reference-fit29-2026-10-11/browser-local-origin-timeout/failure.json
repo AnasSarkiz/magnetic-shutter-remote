@@ -1,0 +1,12 @@
+{
+  "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"http://localhost/r8-viewer.html\", waiting until \"domcontentloaded\"\n",
+  "browser_errors": [],
+  "http_requests": [
+    {
+      "url": "http://localhost/r8-viewer.html",
+      "status": 200
+    }
+  ],
+  "model_checks": [],
+  "page_url": "http://localhost/r8-viewer.html"
+}

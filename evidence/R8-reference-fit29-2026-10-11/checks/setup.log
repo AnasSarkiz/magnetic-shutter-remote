@@ -1,0 +1,41 @@
+
+added 7 packages in 11s
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+bun install v1.3.9 (cf6cdbbb)
+
++ @biomejs/biome@2.2.4
++ @resvg/resvg-js@2.6.2
++ @tscircuit/3d-viewer@0.0.610
++ @tscircuit/circuit-json-util@tooling/vendor/circuit-json-util-qualified-source.tgz
++ @tscircuit/cli@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-cli-r7-importer-integration.tgz
++ @tscircuit/core@tooling/vendor/core-r8-silk-visibility.tgz
++ @tscircuit/eval@https://raw.githubusercontent.com/AnasSarkiz/magnetic-shutter-remote/4e899b27e3639b091375757a7d188299f1d60dd9/tooling/vendor/tscircuit-eval-0.0.1506.tgz
++ @tscircuit/pcb-viewer@1.11.415
++ @tscircuit/props@tooling/vendor/props-r8-mask-style.tgz
++ @tscircuit/schematic-viewer@2.0.99
++ @types/bun@1.3.9
++ @types/react-dom@19.3.0
++ archiver@7.0.1
++ bun-match-svg@0.0.13
++ circuit-json@tooling/vendor/circuit-json-qualified-source.tgz
++ circuit-json-to-bom-csv@0.0.19
++ circuit-json-to-gerber@tooling/vendor/circuit-json-to-gerber-qualified-source.tgz
++ circuit-json-to-pnp-csv@tooling/vendor/circuit-json-to-pnp-csv-0.0.19.tgz
++ circuit-to-svg@tooling/vendor/circuit-to-svg-qualified-source.tgz
++ commander@12.1.0
++ easyeda@tooling/vendor/easyeda-converter-r7-circular-paste-v2.tgz
++ tscircuit@0.0.2702
++ tsup@8.5.0
++ typescript@5.9.3
++ zod@3.25.76
+
+531 packages installed [20.43s]
+Frozen R7 snapshot: 129/129 hashes PASS; recorded source/runtime archives PASS
+v25.6.0
+1.3.9
+Python 3.12.14
+Dependency setup complete. No routing, root board build, publishing or ordering was performed.

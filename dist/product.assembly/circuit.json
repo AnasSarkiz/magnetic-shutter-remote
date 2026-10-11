@@ -330,9 +330,9 @@
     "cad_component_id": "cad_component_7",
     "model_glb_url": "./product/models/mechanical/RemoteBase.glb",
     "position": {
-      "x": -14.000000000000004,
-      "y": -12.999999999999998,
-      "z": 17.65
+      "x": -14.000000000000005,
+      "y": -13.000000000000007,
+      "z": 17.650000000000006
     },
     "rotation": {
       "x": 0,
@@ -351,8 +351,8 @@
     "model_board_normal_direction": "z+",
     "size": {
       "x": 90.00000000000003,
-      "y": 78,
-      "z": 25.7
+      "y": 78.00000000000003,
+      "z": 25.70000000000001
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -426,9 +426,9 @@
     "cad_component_id": "cad_component_10",
     "model_glb_url": "./product/models/mechanical/SideShutterPlunger.glb",
     "position": {
-      "x": -28.599999999999998,
-      "y": 16.72091016151378,
-      "z": 21.587291281149714
+      "x": -28.299999999999997,
+      "y": 15.645910161513777,
+      "z": 21.547579849446716
     },
     "rotation": {
       "x": 0,
@@ -446,9 +446,9 @@
     "model_object_fit": "contain_within_bounds",
     "model_board_normal_direction": "z+",
     "size": {
-      "x": 46.800000000000004,
-      "y": 6.193820323027548,
-      "z": 23.254582562299426
+      "x": 46.2,
+      "y": 4.04382032302755,
+      "z": 23.17515969889343
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -458,9 +458,9 @@
     "cad_component_id": "cad_component_11",
     "model_glb_url": "./product/models/mechanical/RemoteLid.glb",
     "position": {
-      "x": -13.748060384244766,
-      "y": -12.405113867953874,
-      "z": 21.95525588832577
+      "x": -13.748060384244765,
+      "y": -12.50342894124222,
+      "z": 22.000000000000007
     },
     "rotation": {
       "x": 0,
@@ -479,8 +479,8 @@
     "model_board_normal_direction": "z+",
     "size": {
       "x": 89.49612076848955,
-      "y": 76.81022773590776,
-      "z": 23.91051177665154
+      "y": 77.00685788248445,
+      "z": 24.000000000000014
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -490,9 +490,9 @@
     "cad_component_id": "cad_component_12",
     "model_glb_url": "./product/models/mechanical/FingerGripInsert.glb",
     "position": {
-      "x": -38.00000000000001,
-      "y": -20.000000000000007,
-      "z": 28.54462687705005
+      "x": -38.88574200000001,
+      "y": -20.66515888926596,
+      "z": 30.872099855022128
     },
     "rotation": {
       "x": 0,
@@ -510,9 +510,9 @@
     "model_object_fit": "contain_within_bounds",
     "model_board_normal_direction": "z+",
     "size": {
-      "x": 36.000000000000014,
-      "y": 56.000000000000014,
-      "z": 10.910746245899912
+      "x": 32.22851600000003,
+      "y": 55.66968222146812,
+      "z": 6.255800289955761
     },
     "anchor_alignment": "center",
     "show_as_translucent_model": false
@@ -647,6 +647,6 @@
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "11508c89f2ffc2c7271570ffff18f7c9"
+    "source_filesystem_md5_hash": "071914c2db2dc890e9e9b166117e29ad"
   }
 ]

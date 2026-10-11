@@ -1,0 +1,1807 @@
+{
+  "started_utc": "20261011T193342041790Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  }
+}
+Evaluated RemoteBase: 1.60s
+Evaluated BatterySupport: 0.00s
+Evaluated ASR00012_MaximumEnvelope: 0.00s
+Evaluated SideShutterPlunger: 0.05s
+Evaluated RemoteLid: 2.80s
+Evaluated FingerGripInsert: 0.18s
+Evaluated MagSafeRearCover: 0.01s
+Evaluated MagSafeGrip: 0.15s
+Evaluated MagSafeFaceCover: 0.00s
+Evaluated MagSafeArrayReference: 0.01s
+Grip insert outside case: 0mm3
+Wall-post exterior skin missing: 0mm3
+{
+  "parts": [
+    {
+      "name": "RemoteBase",
+      "localBoundsMm": [
+        [
+          -59.00000000000002,
+          -52.00000000000002,
+          4.800000000000001
+        ],
+        [
+          31.00000000000001,
+          26.000000000000007,
+          30.50000000000001
+        ]
+      ],
+      "boundsMm": [
+        [
+          -59.00000000000002,
+          -52.00000000000002,
+          4.800000000000001
+        ],
+        [
+          31.00000000000001,
+          26.000000000000007,
+          30.50000000000001
+        ]
+      ],
+      "volumeMm3": 18700.99209539581,
+      "referenceOnly": false
+    },
+    {
+      "name": "BatterySupport",
+      "localBoundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54.5,
+          -43.5,
+          14.799999999999999
+        ],
+        [
+          -21.5,
+          0.5,
+          15.4
+        ]
+      ],
+      "volumeMm3": 175.2000000000006,
+      "referenceOnly": false
+    },
+    {
+      "name": "ASR00012_MaximumEnvelope",
+      "localBoundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "boundsMm": [
+        [
+          -54,
+          -43,
+          15.399999999999999
+        ],
+        [
+          -22,
+          0,
+          23.9
+        ]
+      ],
+      "volumeMm3": 11696.000000000007,
+      "referenceOnly": false
+    },
+    {
+      "name": "SideShutterPlunger",
+      "localBoundsMm": [
+        [
+          -51.4,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          17.667820323027552,
+          33.13515969889343
+        ]
+      ],
+      "boundsMm": [
+        [
+          -51.4,
+          13.624000000000002,
+          9.959999999999999
+        ],
+        [
+          -5.1999999999999975,
+          17.667820323027552,
+          33.13515969889343
+        ]
+      ],
+      "volumeMm3": 324.00232926852186,
+      "referenceOnly": false
+    },
+    {
+      "name": "RemoteLid",
+      "localBoundsMm": [
+        [
+          -58.49612076848954,
+          -51.00685788248445,
+          10
+        ],
+        [
+          31.00000000000001,
+          26.000000000000007,
+          34.000000000000014
+        ]
+      ],
+      "boundsMm": [
+        [
+          -58.49612076848954,
+          -51.00685788248445,
+          10
+        ],
+        [
+          31.00000000000001,
+          26.000000000000007,
+          34.000000000000014
+        ]
+      ],
+      "volumeMm3": 11031.111827946328,
+      "referenceOnly": false
+    },
+    {
+      "name": "FingerGripInsert",
+      "localBoundsMm": [
+        [
+          -55.00000000000002,
+          -48.50000000000002,
+          27.744199710044246
+        ],
+        [
+          -22.771483999999994,
+          7.169682221468101,
+          34.00000000000001
+        ]
+      ],
+      "boundsMm": [
+        [
+          -55.00000000000002,
+          -48.50000000000002,
+          27.744199710044246
+        ],
+        [
+          -22.771483999999994,
+          7.169682221468101,
+          34.00000000000001
+        ]
+      ],
+      "volumeMm3": 2177.758065671232,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeRearCover",
+      "localBoundsMm": [
+        [
+          -28.697765788623837,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "boundsMm": [
+        [
+          -28.697765788623837,
+          -34.2,
+          16.449999999999992
+        ],
+        [
+          29.200000000000003,
+          24.200000000000003,
+          17.05
+        ]
+      ],
+      "volumeMm3": 1479.190908972531,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeGrip",
+      "localBoundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.50000000000001,
+          -34.5,
+          0.5999999999999998
+        ],
+        [
+          29.500000000000007,
+          24.500000000000007,
+          8.3
+        ]
+      ],
+      "volumeMm3": 10531.670416966857,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "localBoundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "boundsMm": [
+        [
+          -29.5,
+          -34.5,
+          0
+        ],
+        [
+          29.5,
+          24.5,
+          0.6
+        ]
+      ],
+      "volumeMm3": 1637.7487943385634,
+      "referenceOnly": false
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "localBoundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "boundsMm": [
+        [
+          -27.050000000000008,
+          -32.050000000000004,
+          0.5999999999999999
+        ],
+        [
+          27.05,
+          22.050000000000004,
+          1.7
+        ]
+      ],
+      "volumeMm3": 699.3648424453771,
+      "referenceOnly": true
+    }
+  ],
+  "electronicEnvelopeClashes": [],
+  "phoneClearanceViolations": [],
+  "fittedComponentEnvelopesChecked": 44,
+  "boardEnvelopeChecked": true,
+  "containmentReview": {
+    "boardOutsideVolumeMm3": 0,
+    "batteryOutsideVolumeMm3": 0
+  },
+  "mountingReview": [
+    {
+      "pcbXmm": -19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": 25,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": -19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    },
+    {
+      "pcbXmm": 19,
+      "pcbYmm": -14,
+      "holeDiameterMm": 2.2,
+      "lowerSeatAndUpperPillarVerified": true
+    }
+  ],
+  "shutterAlignment": {
+    "axis": "horizontal -Y",
+    "freeGapMm": 0.14997236633301014,
+    "centerXMm": -6.6999999999999975,
+    "centerYMm": 13.474027633666992,
+    "centerZMm": 10.86,
+    "contactBoundsMm": [
+      [
+        -8.199999999999998,
+        13.674000000000001,
+        9.959999999999999
+      ],
+      [
+        -5.1999999999999975,
+        13.774000000000003,
+        11.76
+      ]
+    ],
+    "boardRelativeActuatorZMm": 1.3599999999999994,
+    "physicalStrokeAndOvertravelQualified": false
+  },
+  "shutterTravelReview": [
+    {
+      "travelMm": 0,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.15,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.25,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    },
+    {
+      "travelMm": 0.35,
+      "caseAndOther43ComponentEnvelopesClear": true,
+      "intendedSw2ActuatorContactOnly": true
+    }
+  ],
+  "shoulderWallVolumeMm3": 0.007999999999770552,
+  "shoulderClosureReview": [
+    {
+      "centerMm": [
+        -16.712477851850025,
+        14.917155521093427,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999998845654,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.384776310850235,
+        13.384776310850238,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999996098338,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.384776310850235,
+        13.384776310850238,
+        18
+      ],
+      "expectedVolumeMm3": 0.001000000000111946,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.384776310850235,
+        13.384776310850238,
+        19
+      ],
+      "expectedVolumeMm3": 0.001000000000213802,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.384776310850235,
+        13.384776310850238,
+        20
+      ],
+      "expectedVolumeMm3": 0.001000000000391424,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000284712,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999998117418,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000002546444,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000004174864,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999998532016,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.917155521093427,
+        11.712477851850025,
+        24
+      ],
+      "expectedVolumeMm3": 0.001000000000048601,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.001000000000053916,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        18
+      ],
+      "expectedVolumeMm3": 0.0010000000000509601,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999998596965,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        20
+      ],
+      "expectedVolumeMm3": 0.000999999999838394,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999998419468,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999996246345,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.29795315151378,
+        9.912987345127206,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000004086046,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000101109,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999998576425,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000002244602,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999998614728,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000000829484,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999999420056,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.516660498395407,
+        7.999999999999998,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000000331966,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999999467449,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999999435044,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        19
+      ],
+      "expectedVolumeMm3": 0.000999999999824766,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999999292797,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999995817105,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999995698589,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.5640024629529,
+        5.9880748052581865,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000002277076,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000255013,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        18
+      ],
+      "expectedVolumeMm3": 0.001000000000022691,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999999470432,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        20
+      ],
+      "expectedVolumeMm3": 0.001000000000020762,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        22
+      ],
+      "expectedVolumeMm3": 0.001000000000016918,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999998984849,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.432008140433616,
+        3.8925237264673918,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000000092157,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999999895925,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999999278017,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999999252829,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999999556336,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999999511094,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999999503045,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.114071483515772,
+        1.7292951726655463,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999999461412,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -17.740938027348488,
+        16.142826630083793,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000491838,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -17.740938027348488,
+        16.142826630083793,
+        18
+      ],
+      "expectedVolumeMm3": 0.000999999999747203,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -17.740938027348488,
+        16.142826630083793,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000545128,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.516147160748712,
+        14.516147160748712,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999997093167,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.516147160748712,
+        14.516147160748712,
+        18
+      ],
+      "expectedVolumeMm3": 0.000999999999601528,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.516147160748712,
+        14.516147160748712,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999996832404,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.516147160748712,
+        14.516147160748712,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999997685194,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -19.516147160748712,
+        14.516147160748712,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999995393694,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000002256468,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        18
+      ],
+      "expectedVolumeMm3": 0.001000000000230969,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000320239,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000002753778,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000000414816,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000000468107,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -21.142826630083793,
+        12.740938027348491,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000000527226,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000002700488,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999996305534,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000580725,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        20
+      ],
+      "expectedVolumeMm3": 0.000999999999631726,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999996086473,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000002191173,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.60859642237617,
+        10.83070964328888,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999993907521,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.000999999999613678,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        18
+      ],
+      "expectedVolumeMm3": 0.001000000000232447,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000002368808,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000004068282,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        22
+      ],
+      "expectedVolumeMm3": 0.00099999999969215,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999996980619,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -23.902301144450508,
+        8.799999999999999,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999997039738,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.001000000000120231,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        18
+      ],
+      "expectedVolumeMm3": 0.0010000000001184686,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        19
+      ],
+      "expectedVolumeMm3": 0.001000000000004185,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000000068426,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000002522852,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        24
+      ],
+      "expectedVolumeMm3": 0.001000000000017806,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.01409492221154,
+        6.664264024043307,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000000249254,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000001112036,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999999881909,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000001128481,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000001181703,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000002857307,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000000873616,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.93551633369107,
+        4.439755955788462,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999999763531,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000217196,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999999187673,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000196518,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000000952164,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999999514703,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000000893045,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.659552805578283,
+        2.1434056448295804,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999999451142,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -16.805789585085645,
+        19.001154897667465,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000003807727,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -16.805789585085645,
+        19.001154897667465,
+        18
+      ],
+      "expectedVolumeMm3": 0.0000016538452783933336,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.833676963815602,
+        17.445102183386055,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000480042,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.833676963815602,
+        17.445102183386055,
+        18
+      ],
+      "expectedVolumeMm3": 0.000999999999717005,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.833676963815602,
+        17.445102183386055,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000509532,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -18.833676963815602,
+        17.445102183386055,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999997264697,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000391154,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        18
+      ],
+      "expectedVolumeMm3": 0.0010000000004364296,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        19
+      ],
+      "expectedVolumeMm3": 0.001000000000040302,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000004417586,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000004476567,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        24
+      ],
+      "expectedVolumeMm3": 0.001000000000846768,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -20.71822868876584,
+        15.718228688765844,
+        26
+      ],
+      "expectedVolumeMm3": 0.00020137470070717006,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000278536,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        18
+      ],
+      "expectedVolumeMm3": 0.0010000000000272846,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000004589255,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999997756248,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000000420783,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000003819592,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -22.44510218338605,
+        13.833676963815606,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000000533332,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.001000000000562544,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        18
+      ],
+      "expectedVolumeMm3": 0.001000000000363599,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000003789825,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        20
+      ],
+      "expectedVolumeMm3": 0.001000000000401513,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000000018189,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000004891235,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -24.001154897667455,
+        11.805789585085659,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000005329357,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000002469492,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        18
+      ],
+      "expectedVolumeMm3": 0.0010000000002481357,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000002511056,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        20
+      ],
+      "expectedVolumeMm3": 0.0010000000000136428,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        22
+      ],
+      "expectedVolumeMm3": 0.0010000000002605841,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        24
+      ],
+      "expectedVolumeMm3": 0.0010000000000272846,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -25.374544330884056,
+        9.649999999999999,
+        26
+      ],
+      "expectedVolumeMm3": 0.0010000000002688691,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0009999999998286102,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999995716352,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        19
+      ],
+      "expectedVolumeMm3": 0.0010000000000710968,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        20
+      ],
+      "expectedVolumeMm3": 0.001000000000063686,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        22
+      ],
+      "expectedVolumeMm3": 0.00100000000005393,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        24
+      ],
+      "expectedVolumeMm3": 0.001000000000040302,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -26.554818160173845,
+        7.382715069002495,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999997768183,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000429735,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999998147116,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999996222753,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        20
+      ],
+      "expectedVolumeMm3": 0.000999999999617543,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        22
+      ],
+      "expectedVolumeMm3": 0.0009999999998626524,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        24
+      ],
+      "expectedVolumeMm3": 0.000999999999853493,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -27.532993789027113,
+        5.021190199442099,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999995766728,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        17.4
+      ],
+      "expectedVolumeMm3": 0.0010000000000272707,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        18
+      ],
+      "expectedVolumeMm3": 0.0009999999999602202,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        19
+      ],
+      "expectedVolumeMm3": 0.0009999999999577153,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        20
+      ],
+      "expectedVolumeMm3": 0.0009999999999298625,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        22
+      ],
+      "expectedVolumeMm3": 0.00099999999995401,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        24
+      ],
+      "expectedVolumeMm3": 0.0009999999997853948,
+      "missingVolumeMm3": 0
+    },
+    {
+      "centerMm": [
+        -28.301626710269698,
+        2.583398021503866,
+        26
+      ],
+      "expectedVolumeMm3": 0.0009999999998807352,
+      "missingVolumeMm3": 0
+    }
+  ],
+  "clashes": [],
+  "phoneDatumZMm": 0,
+  "remoteBottomZMm": 4.800000000000001,
+  "designHandleBottomZMm": 6,
+  "fullProductBoundingBoxMm": [
+    [
+      -59.00000000000003,
+      -52.00000000000002,
+      0
+    ],
+    [
+      31.00000000000001,
+      26.000000000000007,
+      34.000000000000014
+    ]
+  ]
+}
+{
+  "started_utc": "20261011T193342041790Z",
+  "command": [
+    "bun",
+    "scripts/check-product-geometry.ts"
+  ],
+  "memory_limit_bytes": 34359738368,
+  "node_heap_mib": 14336,
+  "oom_counters_before": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "finished_utc": "2026-10-11T19:34:01.413974+00:00",
+  "return_code": 0,
+  "peak_child_rss_kib": 393204,
+  "oom_counters_after": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "log": ".codex/logs/heavy-20261011T193342041790Z.log"
+}

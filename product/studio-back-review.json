@@ -1,82 +1,419 @@
 {
-  "input_native_glb_sha256": "2757e986587ce1137f39fc0559642364adc44052e9be1d310bc5cd5a235f6082",
+  "source_geometry_sha256": "726080e031edf4e20a96156e1f36ce775e28e19337b6b43d28d7ecd82f3f2e4e",
+  "native_circuit_sha256": "fcc280dadcddd9026118cee302794c13cee04cd644122c0f4b4e32b9976fada3",
   "actual_native_geometry_verified": [
     {
-      "part": "RemoteBase",
-      "geometry_bounds_delta_mm": 1.9073486328125e-06,
-      "unchanged_mesh_sha256": [
-        "345a5a369c58574d6891181ccc193e4533286b7e7c96c3c88f118e96ab6de09f"
+      "name": "R8QualifiedPCBAndFittedParts1",
+      "input_glb_sha256": "7fe655e253ec5d5ff59649371875d5405820e42645634ce56e1774cd6a4f65a7",
+      "placed_bounds_mm": [
+        [
+          -44.356239318847656,
+          -31.0,
+          8.999998092651367
+        ],
+        [
+          12.800000190734863,
+          13.0,
+          13.260002136230469
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "BatterySupport",
-      "geometry_bounds_delta_mm": 1.716613768465436e-06,
-      "unchanged_mesh_sha256": [
-        "3eeb2b692ac5ece0e062bea16d61deee3133b6cb1f76896d12f5c30112f69bab"
+      "name": "R8QualifiedFittedParts2",
+      "input_glb_sha256": "d4b86365650d9aaba8d9b12832e96b0916f9935b9774716e4912b0bfc994a935",
+      "placed_bounds_mm": [
+        [
+          -41.60005187988281,
+          -29.638513565063477,
+          9.999999046325684
+        ],
+        [
+          -25.80000114440918,
+          -0.1899999976158142,
+          12.909998893737793
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "ASR00012_MaximumEnvelope",
-      "geometry_bounds_delta_mm": 1.3351440415476645e-06,
-      "unchanged_mesh_sha256": [
-        "af90c9a5c5f2d7e930a76c2c8d23cfb362639d89557827d9866cf1a6728de9cf"
+      "name": "R8QualifiedFittedParts3",
+      "input_glb_sha256": "6d4e78574c8e5ade4d0d0fe997431332c71a33e1f534f31a46f8128eb0890aa2",
+      "placed_bounds_mm": [
+        [
+          -13.650026321411133,
+          -28.81005096435547,
+          9.60000228881836
+        ],
+        [
+          11.688483238220215,
+          13.474028587341309,
+          13.119999885559082
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "SideShutterPlunger",
-      "geometry_bounds_delta_mm": 2.6350392658969213e-06,
-      "unchanged_mesh_sha256": [
-        "1fd9981e03b7457682250a89d8de3f2a22b8574d04a85191609bd3558bd3f803"
+      "name": "R8QualifiedFittedParts4",
+      "input_glb_sha256": "f8d3def7de7682bc7b95adfcbdf0aa56e7fdec96b28a951a2705b2e76313506b",
+      "placed_bounds_mm": [
+        [
+          -32.91749954223633,
+          -30.399999618530273,
+          9.50000286102295
+        ],
+        [
+          -4.749998569488525,
+          13.556087493896484,
+          14.260001182556152
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "RemoteLid",
-      "geometry_bounds_delta_mm": 3.4990885851016174e-06,
-      "unchanged_mesh_sha256": [
-        "61ff5e5ebcdf6649f07f14f549554796b318f66fd10a02e2d0cdc37fc688cbd8"
+      "name": "R8QualifiedFittedParts5",
+      "input_glb_sha256": "2d8a92020386c8586be767963f3dd50646a00c484f56c1baf4465ea6322ac874",
+      "placed_bounds_mm": [
+        [
+          -24.350013732910156,
+          -24.5,
+          9.999999046325684
+        ],
+        [
+          -13.549986839294434,
+          -15.600000381469727,
+          11.50999927520752
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "FingerGripInsert",
-      "geometry_bounds_delta_mm": 1.282176267380919e-06,
-      "unchanged_mesh_sha256": [
-        "8a17b38374cfcb8fd368c95214967c46103ae6f702bd8385ef7d7773351978f9"
+      "name": "R8QualifiedFittedParts6",
+      "input_glb_sha256": "763086a184d94684ab28e1518ed93cd5eca08db7679b1bafccf4923dad01d58b",
+      "placed_bounds_mm": [
+        [
+          -25.60500144958496,
+          -28.252777099609375,
+          9.999999046325684
+        ],
+        [
+          -13.74998664855957,
+          1.309999942779541,
+          11.049203872680664
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "MagSafeRearCover",
-      "geometry_bounds_delta_mm": 3.051757815342171e-06,
-      "unchanged_mesh_sha256": [
-        "054ddaaf62425a7f2ab61d1585853a86ef4fef4345f85f7f606f41a03082a619"
+      "name": "R8QualifiedFittedParts7",
+      "input_glb_sha256": "fecf1c322fff473f81abed4131c6b457477c256456eeb7f10adf8da18c26dbf2",
+      "placed_bounds_mm": [
+        [
+          -27.60500144958496,
+          -2.252777338027954,
+          10.000000953674316
+        ],
+        [
+          -19.749988555908203,
+          0.2528027296066284,
+          11.049205780029297
+        ]
+      ],
+      "position_from_circuit_json": [
+        -15.199999809265137,
+        -9.0,
+        9.5
       ]
     },
     {
-      "part": "MagSafeGrip",
-      "geometry_bounds_delta_mm": 1.4066696164549697e-06,
+      "name": "RemoteBase",
+      "input_glb_sha256": "f6cebc9f2258dea527b50943fcb8ab3580f7a7748e3fcf2a2eb93ad3cac89a69",
+      "placed_bounds_mm": [
+        [
+          -59.0,
+          -52.0,
+          4.799997806549072
+        ],
+        [
+          31.0,
+          26.0,
+          30.499998092651367
+        ]
+      ],
+      "position_from_circuit_json": [
+        -14.0,
+        -13.0,
+        17.649999618530273
+      ],
+      "native_bounds_delta_mm": 2.1934509284449177e-06,
       "unchanged_mesh_sha256": [
-        "bb78e98dc79173f6aeeb9dce66163f11d48a6d6e26b61a1ad54b7601ac68ae7c"
+        "7173350a035041f672cec298f3e80cda72141e705596c168822b8808c34b8a8e"
       ]
     },
     {
-      "part": "MagSafeFaceCover",
-      "geometry_bounds_delta_mm": 1.9073486328125e-06,
+      "name": "BatterySupport",
+      "input_glb_sha256": "ab5de3cea1466c37d476fa4272128ecb1ff999dc599dd50b97fc42fe372b3b89",
+      "placed_bounds_mm": [
+        [
+          -54.5,
+          -43.5,
+          14.79999828338623
+        ],
+        [
+          -21.5,
+          0.5,
+          15.400002479553223
+        ]
+      ],
+      "position_from_circuit_json": [
+        -38.0,
+        -21.5,
+        15.100000381469727
+      ],
+      "native_bounds_delta_mm": 2.4795532223009786e-06,
       "unchanged_mesh_sha256": [
-        "48e08c1caa6b85ed46f9da459ff0c181bd9a3631c404e8e864de182d7b183736"
+        "b68ebae1daf2a622f6dd4de07d7eb218ede0674ac207941e8229ae5c518a928c"
       ]
     },
     {
-      "part": "MagSafeArrayReference",
-      "geometry_bounds_delta_mm": 3.0517578011313162e-06,
+      "name": "ASR00012_MaximumEnvelope",
+      "input_glb_sha256": "27d47ce4d5390b1027f51b41189e7f4babc34c94a4498c93eb7946831582983b",
+      "placed_bounds_mm": [
+        [
+          -54.0,
+          -43.0,
+          15.39999771118164
+        ],
+        [
+          -22.0,
+          3.20866092806682e-07,
+          23.900001525878906
+        ]
+      ],
+      "position_from_circuit_json": [
+        -38.0,
+        -21.5,
+        19.649999618530273
+      ],
+      "native_bounds_delta_mm": 2.2888183579539145e-06,
       "unchanged_mesh_sha256": [
-        "bac173ca44373eaa7b17df6860d4958cb5bda6bf0f1ed70ed44fe1d0588dcbdc"
+        "23acde002d79f81fc304dc9dc524d00a2e87f9d922edf2094f3669f0e030d639"
+      ]
+    },
+    {
+      "name": "SideShutterPlunger",
+      "input_glb_sha256": "c5e8d32ec7cd393e9ab2c41090b49826faa91f43b9c92ead36fa08587ec401b7",
+      "placed_bounds_mm": [
+        [
+          -51.400001525878906,
+          13.624000549316406,
+          9.960000991821289
+        ],
+        [
+          -5.19999885559082,
+          17.66781997680664,
+          33.13515853881836
+        ]
+      ],
+      "position_from_circuit_json": [
+        -28.299999237060547,
+        15.645910263061523,
+        21.54758071899414
+      ],
+      "native_bounds_delta_mm": 1.5258789076710855e-06,
+      "unchanged_mesh_sha256": [
+        "f37a569775011f42c9911889f435e6ce43984db37c1a6d544c0e059b2f62abfc"
+      ]
+    },
+    {
+      "name": "RemoteLid",
+      "input_glb_sha256": "1f9061a86c006f3cc3f327f6e9149bf867d9703d62222736a3126d29ae488a9e",
+      "placed_bounds_mm": [
+        [
+          -58.496124267578125,
+          -51.006858825683594,
+          9.999999046325684
+        ],
+        [
+          31.000001907348633,
+          26.0,
+          34.000003814697266
+        ]
+      ],
+      "position_from_circuit_json": [
+        -13.74806022644043,
+        -12.503429412841797,
+        22.0
+      ],
+      "native_bounds_delta_mm": 3.8146972514141453e-06,
+      "unchanged_mesh_sha256": [
+        "fe0241307943e6c2a01867ad126c76a75f27671d63d0b56db49756f91b6fdaaa"
+      ]
+    },
+    {
+      "name": "FingerGripInsert",
+      "input_glb_sha256": "2ea9903133c4aab712598d7b28a630a58c08b135cd20858bba7f3e82694374e7",
+      "placed_bounds_mm": [
+        [
+          -55.0,
+          -48.5,
+          27.744197845458984
+        ],
+        [
+          -22.771484375,
+          7.169681549072266,
+          34.0
+        ]
+      ],
+      "position_from_circuit_json": [
+        -38.8857421875,
+        -20.665159225463867,
+        30.872098922729492
+      ],
+      "native_bounds_delta_mm": 1.8645852613019542e-06,
+      "unchanged_mesh_sha256": [
+        "6257959c5c231f02709c482acc55b8e24d526276f9325314d7ee7d9b5f6b6c47"
+      ]
+    },
+    {
+      "name": "MagSafeRearCover",
+      "input_glb_sha256": "d0240c02bad23703af953b412238938ca5adbf60c4df88a223289c6f2b572dab",
+      "placed_bounds_mm": [
+        [
+          -28.697765350341797,
+          -34.20000076293945,
+          16.449996948242188
+        ],
+        [
+          29.200000762939453,
+          24.200000762939453,
+          17.050003051757812
+        ]
+      ],
+      "position_from_circuit_json": [
+        0.25111711025238037,
+        -5.0,
+        16.75
+      ],
+      "native_bounds_delta_mm": 3.0517578117894573e-06,
+      "unchanged_mesh_sha256": [
+        "16adb34d44e269e293c0db117add2a22b998c09cb10f112bd70c0006e7afea86"
+      ]
+    },
+    {
+      "name": "MagSafeGrip",
+      "input_glb_sha256": "b9b1241ba02ae4a629d871a7bd01d07c960ea72a3cb7c8bde93f77573eacf3a1",
+      "placed_bounds_mm": [
+        [
+          -29.5,
+          -34.5,
+          0.5999976992607117
+        ],
+        [
+          29.5,
+          24.5,
+          8.30000114440918
+        ]
+      ],
+      "position_from_circuit_json": [
+        -1.7763568394002505e-15,
+        -5.0,
+        4.449999809265137
+      ],
+      "native_bounds_delta_mm": 2.300739288085829e-06,
+      "unchanged_mesh_sha256": [
+        "79129fc509a74c619c15746654a8c76d89759e270918b6bb13dbef6057e019b0"
+      ]
+    },
+    {
+      "name": "MagSafeFaceCover",
+      "input_glb_sha256": "fd9b3134ffe1ccf26f8b0fe548415542b19c11fb127103af5484a9b4441ef6a1",
+      "placed_bounds_mm": [
+        [
+          -29.5,
+          -34.5,
+          -2.227188133474556e-06
+        ],
+        [
+          29.5,
+          24.5,
+          0.6000022292137146
+        ]
+      ],
+      "position_from_circuit_json": [
+        0.0,
+        -5.0,
+        0.30000001192092896
+      ],
+      "native_bounds_delta_mm": 2.229213714621814e-06,
+      "unchanged_mesh_sha256": [
+        "90441a352274f9bded581461f20432776e4bc0826e67fbbf91061837d63900e1"
+      ]
+    },
+    {
+      "name": "MagSafeArrayReference",
+      "input_glb_sha256": "3c355515c38df562a654430dc815065ff165a9cac6ba436d1b22e0427f7c58ce",
+      "placed_bounds_mm": [
+        [
+          -27.049999237060547,
+          -32.04999923706055,
+          0.5999979376792908
+        ],
+        [
+          27.049999237060547,
+          22.049999237060547,
+          1.7000020742416382
+        ]
+      ],
+      "position_from_circuit_json": [
+        -3.552713678800501e-15,
+        -5.0,
+        1.149999976158142
+      ],
+      "native_bounds_delta_mm": 2.0742416382280027e-06,
+      "unchanged_mesh_sha256": [
+        "5be6b50ded35b65fa65fd17623386a7338a65a28d50c6b78004c12a868753f8a"
       ]
     }
   ],
   "output": "product/studio-back.png",
-  "output_sha256": "61d3465539b08530d8e522a28fae4adb887f4d91fe626b458b4ef685b0b913cc",
-  "blender_version": "4.3.2",
+  "output_sha256": "a1ea611211805e3efb68d55a49cf56333bf5383b563d672ef50d25017e52debb",
+  "source_camera": {
+    "file": "02-phone-facing.png",
+    "label": "Back / phone-facing",
+    "camera_offset_mm": [
+      0,
+      0,
+      -250
+    ],
+    "sha256": "a1ea611211805e3efb68d55a49cf56333bf5383b563d672ef50d25017e52debb"
+  },
   "material_and_lighting_presentation_only": true,
   "smooth_shading_angle_degrees": 35,
   "physical_finish_or_fit_claimed": false,
-  "samples": 64
+  "eight_view_reproduction": "scripts/render-product-eight.py"
 }
