@@ -679,3 +679,14 @@ Local Cloud preparation checks:10 focused tests PASS (5 original qualification +
 Linux install/fixture CI and actual Codex Cloud environment activation are separate results; see `cloud/STATUS.md`. No Cloud memory guarantee or hosted routing result is claimed from local smoke checks. Frozen Nordic JSON is included in the handoff; no new R8 root circuitJSON is fabricated. This is a source/environment setup publication, not a tscircuit board release or fabrication approval.
 
 Hosted Linux preparation subsequently passed on GitHub Actions run37291506181 at source commit56c6cb9f2fd5178ad56a0beae17ea3156b5ab2ad: exact locked runtime/dependencies,129 context hashes and source/archive hashes, formatting, TypeScript,10 focused tests and isolated **unrouted** fixture PCB/schematic exports. The existing requires_power warning remains visible; Actions runtime/dependency deprecation warnings are preserved in the complete log. This is not whole-board or Codex Cloud routing evidence. Anonymous public reads of setup/handoff/frozen circuitJSON match local hashes; remote main remains5951f419c8314b83648d89e1cfb7e29e87e32eb8. Actual Codex Cloud activation is pending specific-repository GitHub connector access, prepared but not granted; see STATUS.md. No active PCB/source/import/firmware application changes were introduced by this follow-up.
+
+
+## R8 toolchain-refresh public maintenance receipt —2026-10-23
+
+Source/evidence8d0ce01da04bffec2a05621209fa6e27af1a297d was pushed on
+maintenance/r8-tscircuit-reimport-20261023. Official repository metadata is public;
+anonymous219/219changed/evidence/preserved-source/build reads match local hashes.
+See evidence/R8-toolchain-refresh-2026-10-23/PUBLICATION.md. This is successful
+GitHub maintenance publication only. Native tscircuit update is BLOCKED by
+13import contracts/28TypeScript errors; no fresh CircuitJSON or board release.
+Prior0.3.29JSONs remain unchanged and must not be mislabelled as updated output.

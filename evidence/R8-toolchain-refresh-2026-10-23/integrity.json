@@ -1,6 +1,7 @@
 {
   "algorithm": "SHA256",
   "files": {
+    "PUBLICATION.md": "75c68877c567ae0a027560278298c3a83ce9830121dee547ce62179c2a874cf8",
     "import-help.txt": "c5f9f5b8bce334fe7973697c03346bf6976aa46b21cf7dc029dbc1423c0c7b86",
     "standalone-network-converter.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "typecheck-after-reimport.log": "e1e3219001a4afa415c8563255b985cf4a3692fa1dffe2023f60ed00d6902658",
@@ -28,6 +29,7 @@
     "C14663-import.log": "44e3c11657b846ab9de7ae9785d30a4bc87e836ef4f05911f8a3eea5774f64a0",
     "reimport-audit-tests.log": "001ef74e7267fce0566303a761741f757b9051c067145c2753f156babd3a851a",
     "j1-import-comparison.png": "05af53956031f6e3e798c1cd11f257beeabee489c3d12b1669c6684f64251dc7",
+    "github-public-readback.json": "e366f9a32fb633842291b9137d209dbd8886ac3acff72f29af0982ab462067e9",
     "model-format-audit.json": "f58937e3140b5e52aae9c66cd78d58925569e116061783d7335e14870504bb23",
     "python-tests.log": "61f4fde7b1d1118674618c3b49d95c429630d3c586dca5c568d095cc422d66f1",
     "C21190-import.log": "ffd24e437b68a001865dff627e6ab6724a3bdf216947913e380dd6c232413acb",
