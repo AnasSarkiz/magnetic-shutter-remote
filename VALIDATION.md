@@ -690,3 +690,18 @@ See evidence/R8-toolchain-refresh-2026-10-23/PUBLICATION.md. This is successful
 GitHub maintenance publication only. Native tscircuit update is BLOCKED by
 13import contracts/28TypeScript errors; no fresh CircuitJSON or board release.
 Prior0.3.29JSONs remain unchanged and must not be mislabelled as updated output.
+
+
+## Standalone USB paste reproduction —2026-10-23
+
+Created repros/usb4215-paste-loss and deliverables/usb4215-paste-loss-repro.zip.
+The15,158-byte archive contains only the exact frozen supplier input, minimal
+public easyeda0.0.381 API probe, three-dependency package/lock, observed output,
+README and integrity hashes. Independent temporary-directory frozen install
+passes; the probe correctly reproduces the bug with exit1:16source paste→0,
+12SMT pads/four plated slots retained. No root build/DFM/firmware/routing work.
+Maintained repro code formatting passes. Existing root dependencies, PCB source,
+active supplier imports, protected archives and all CircuitJSONs are unchanged.
+Issue105 links the repro; no new issue or board version/release.
+ArchiveSHA256:8d8534d81d187e0ad0f6482df88ad7f7bf0180db4a32103e3edf90b3e0050211.
+Native board publication remains blocked by the previously recorded failures.

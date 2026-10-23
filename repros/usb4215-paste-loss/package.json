@@ -1,0 +1,16 @@
+{
+	"name": "usb4215-paste-loss-repro",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"repro": "bun repro.mjs"
+	},
+	"dependencies": {
+		"easyeda": "0.0.381",
+		"zod": "3.25.76"
+	},
+	"devDependencies": {
+		"typescript": "5.9.3"
+	}
+}

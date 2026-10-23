@@ -1,0 +1,10 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [0]
+Saved lockfile
+
++ typescript@5.9.3
++ easyeda@0.0.381
++ zod@3.25.76
+
+3 packages installed [34.00ms]

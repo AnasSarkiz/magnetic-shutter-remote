@@ -1,0 +1,27 @@
+{
+  "part": "GCT USB4215-03-A / C37616412",
+  "supplierPasteRegions": 16,
+  "importedPasteRegions": 0,
+  "copperPads": 12,
+  "platedSlots": 4
+}
+48 | 		2,
+49 | 	),
+50 | );
+51 | assert.equal(copperPads.length, 12, "USB contact copper must remain present");
+52 | assert.equal(platedSlots.length, 4, "All shell slots must remain present");
+53 | assert.equal(
+            ^
+AssertionError: BUG: exact supplier paste regions were dropped during conversion
+
+0 !== 16
+
+ generatedMessage: false,
+     actual: 0,
+   expected: 16,
+   operator: "strictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/repros/usb4215-paste-loss/repro.mjs:53:8
+
+Bun v1.3.9 (macOS arm64)

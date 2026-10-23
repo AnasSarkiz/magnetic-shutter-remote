@@ -1,5 +1,9 @@
 # Current R8 update findings —2026-10-23
 
+USB paste loss now has a [standalone15KB repro](../repros/usb4215-paste-loss/README.md):
+exact easyeda0.0.381 API, frozen supplier JSON, three pinned dependencies, expected
+16→0 assertion failure, independently verified outside the board repository.
+
 | Issue | Package | Current status | Scope |
 |---|---|---|---|
 | [104 — Incompatible retained modelprinter peer](104-upgrade-retains-incompatible-modelprinter-peer.md) | modelprinter0.0.2/core0.0.2199/Bun1.3.9 | fixed locally | Direct exact published0.0.18 pin; control failure and startup test retained |

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-23",
+  "bun": "1.3.9",
+  "easyeda": "0.0.381",
+  "command": "bun repro.mjs",
+  "exit_code": 1,
+  "result": "BUG REPRODUCED \u2014 expected assertion failure, not a passing importer",
+  "metrics": {
+    "part": "GCT USB4215-03-A / C37616412",
+    "supplierPasteRegions": 16,
+    "importedPasteRegions": 0,
+    "copperPads": 12,
+    "platedSlots": 4
+  },
+  "source_sha256": "e9542b03e760cfbf3bf74d1ce814ee83b3314d71111d1b1e0674103cdad2cdae"
+}

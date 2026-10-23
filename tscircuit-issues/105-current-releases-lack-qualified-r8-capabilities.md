@@ -108,3 +108,17 @@ components, remove the process controls or weaken tests to obtain a pass.
 Changed project files are the pinned package/lock, static auditor, meaningful
 audit/release/startup tests and review documentation. No supplier import replacement,
 PCB source/routing/firmware/geometry change, new board version or fabrication release.
+
+
+## Minimal standalone USB paste repro —2026-10-23
+
+[Repro source](../repros/usb4215-paste-loss/README.md) and
+[15KB ZIP](../deliverables/usb4215-paste-loss-repro.zip) isolate USB paste loss
+without the full board, core/CLI, model downloads, local patches or routing.
+The exact public easyeda0.0.381 API converts the frozen supplier input:16paste
+regions→0, while12SMT pads and4plated slots remain. `bun run repro` must fail
+with0!==16. The ZIP was extracted outside the repository and independently
+installed using only its three pinned packages; the same expected exit1 is
+confirmed in deliverables/usb4215-paste-loss-repro-verification.json.
+No board source, active import, root dependency, existing evidence or CircuitJSON
+was changed. This is a runnable reproduction, not a fix or manufacturing release.

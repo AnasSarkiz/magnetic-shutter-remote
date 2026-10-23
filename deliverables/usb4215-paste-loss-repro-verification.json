@@ -1,0 +1,7 @@
+{
+  "install_exit_code": 0,
+  "repro_exit_code": 1,
+  "isolated_from_board_repository": true,
+  "result": "BUG REPRODUCED: 16 supplier paste regions -> 0 imported",
+  "archive": "deliverables/usb4215-paste-loss-repro.zip"
+}
