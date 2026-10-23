@@ -1,0 +1,377 @@
+[
+  {
+    "part": "C56594",
+    "mpn": "SWPA3015S1R5NT",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C56594"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.35
+  },
+  {
+    "part": "C19949072",
+    "mpn": "ESPC3-12-N4",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C19949072"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.73
+  },
+  {
+    "part": "C19725033",
+    "mpn": "BQ25185DLHR",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C19725033"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 7.1
+  },
+  {
+    "part": "C5219772",
+    "mpn": "TMP390A2DRLR",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C5219772"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.22
+  },
+  {
+    "part": "C485802",
+    "mpn": "TPS3839G33DBZR",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C485802"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 8.76
+  },
+  {
+    "part": "C22795",
+    "mpn": "0603WAF1303T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C22795"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.73
+  },
+  {
+    "part": "C25804",
+    "mpn": "0603WAF1002T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C25804"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 7.06
+  },
+  {
+    "part": "C22844",
+    "mpn": "0603WAF1621T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C22844"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 8.15
+  },
+  {
+    "part": "C22893",
+    "mpn": "0603WAF1872T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C22893"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.71
+  },
+  {
+    "part": "C15850",
+    "mpn": "CL21A106KAYNNNE",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C15850"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 5.64
+  },
+  {
+    "part": "C282505",
+    "mpn": "TCC0603COG470J500CT",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C282505"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.88
+  },
+  {
+    "part": "C15516",
+    "mpn": "TPS63031DSKR",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C15516"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.01
+  },
+  {
+    "part": "C37616412",
+    "mpn": "USB4215-03-A",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C37616412"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.53
+  },
+  {
+    "part": "C160402",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C160402"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.78
+  },
+  {
+    "part": "C160389",
+    "mpn": "BM03B-SRSS-TB(LF)(SN)",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C160389"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.3
+  },
+  {
+    "part": "C431540",
+    "mpn": "MSK12C02",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C431540"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 5.03
+  },
+  {
+    "part": "C720477",
+    "mpn": "TS-1088-AR02016",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C720477"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.48
+  },
+  {
+    "part": "C393942",
+    "mpn": "TS24CA",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C393942"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.54
+  },
+  {
+    "part": "C8545",
+    "mpn": "2N7002",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C8545"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 8.7
+  },
+  {
+    "part": "C23186",
+    "mpn": "0603WAF5101T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C23186"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 6.6
+  },
+  {
+    "part": "C21190",
+    "mpn": "0603WAF1001T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C21190"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 5.93
+  },
+  {
+    "part": "C25803",
+    "mpn": "0603WAF1003T5E",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C25803"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 4.73
+  },
+  {
+    "part": "C19666",
+    "mpn": "CL10A475KO8NNNC",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C19666"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 5.82
+  },
+  {
+    "part": "C14663",
+    "mpn": "CC0603KRX7R9BB104",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C14663"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 4.56
+  },
+  {
+    "part": "C2286",
+    "mpn": "KT-0603R",
+    "command": [
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/node_modules/.bin/tsci",
+      "import",
+      "--jlcpcb",
+      "--use-exact-footprint",
+      "--download",
+      "C2286"
+    ],
+    "working_directory": "evidence/R8-toolchain-refresh-2026-10-23/fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 4.63
+  }
+]

@@ -1,3 +1,19 @@
+# Current R8 update findings —2026-10-23
+
+| Issue | Package | Current status | Scope |
+|---|---|---|---|
+| [104 — Incompatible retained modelprinter peer](104-upgrade-retains-incompatible-modelprinter-peer.md) | modelprinter0.0.2/core0.0.2199/Bun1.3.9 | fixed locally | Direct exact published0.0.18 pin; control failure and startup test retained |
+| [105 — Current releases lack qualified R8 capabilities](105-current-releases-lack-qualified-r8-capabilities.md) | CLI0.1.2402/easyeda0.0.381/props0.0.709/PnP0.0.20 | confirmed; blocked | Update integration gate linking existing issues, not thirteen new bugs |
+
+Current supplements are appended to001,004,046,060,073 and USB053/054/056.
+All25fresh imports retain exact copper/drills and pin labels. USB explicit paste
+16→0, process/topology losses and28TypeScript errors prevent adoption. Tests:
+38existing Python PASS;4auditor PASS;1startup PASS; release contracts1PASS/13FAIL.
+No historical full-suite pass is claimed. [Evidence and commands](../evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md).
+No public issue or supplier request was created.
+
+## Prior index — retained history
+
 # Local issue register — magnetic shutter remote R5
 
 Latest publication follow-up: [099 — Registry STEP upload HTTP 502](099-registry-step-upload-502.md). Current schematic/PCB validation passes; native 0.3.15-prototype publication is incomplete with two missing model files and remains unbuilt.

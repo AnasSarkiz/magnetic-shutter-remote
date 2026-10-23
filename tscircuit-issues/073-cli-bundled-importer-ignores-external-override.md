@@ -27,3 +27,8 @@ Torch-only candidates are not fitted on the active board. No upstream fix/public
 ## Evidence / source / regressions
 
 [Failure despite override](../evidence/R7-components/PT4115-final-supported-import.log), [successful supported import](../evidence/R7-components/PT4115-supported-import-rebuilt-cli.log), [CLI build](../evidence/R7-components/cli-integration/build.log), [fixture build](../evidence/R7-components/PT4115-supported-final-build.log), [CLI source](../tooling/r7-cli-source/cli/import/import-jlcpcb-part.ts).
+
+
+## Current CLI/standalone distinction —2026-10-23
+
+Current CLI0.1.2402 successfully imports25exact parts. Both native CLI and separately invoked supported easyeda0.0.381 conversion omit USB4215 explicit paste and switch topology. Thus the present omissions are also in the released standalone importer; blaming only an external-override/bundle mismatch would be unsupported. Original073 root cause/history remains unchanged. See ../evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md, standalone-network-*.tsx and actual logs.

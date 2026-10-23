@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-modelprinter-startup.test.ts:
+(pass) installed modelprinter provides the API imported by current core [0.68ms]
+
+tests/r8-reimport-audit.test.ts:
+(pass) changing a plated slot is detected independently of attribute order [5.82ms]
+(pass) paste loss is visible even when copper remains unchanged [1.25ms]
+(pass) repeated physical contacts and SPDT semantics remain explicit [0.56ms]
+(pass) nonliteral generated geometry cannot silently pass inspection [0.55ms]
+
+ 5 pass
+ 0 fail
+ 11 expect() calls
+Ran 5 tests across 2 files. [271.00ms]

@@ -1,0 +1,11 @@
+{
+  "source_commit": "208aa007ee98d432b6ba510776af323822f832db",
+  "checked_original_files": 5383,
+  "changed": [
+    "bun.lock",
+    "package.json"
+  ],
+  "missing": [],
+  "active_source_and_imports_unchanged": true,
+  "frozen_r7_snapshot_files": 129
+}

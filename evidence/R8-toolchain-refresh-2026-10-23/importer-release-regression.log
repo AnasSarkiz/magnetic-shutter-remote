@@ -1,0 +1,191 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-importer-release.test.ts:
+(pass) all 25 fresh imports retain exact identities, pins and copper/drills [0.74ms]
+35 | 	const imported = inspectImport(
+36 | 		await Bun.file(exactPart("C37616412").freshPath).text(),
+37 | 	);
+38 | 	expect(
+39 | 		imported.features.filter((f) => f.element === "solderpaste"),
+40 | 	).toHaveLength(16);
+        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 16
+Received length: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:40:4)
+(fail) USB4215 exact import must preserve all 16 explicit paste apertures [9.00ms]
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C56594 must preserve supplier paste/mask settings
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C19949072 must preserve supplier paste/mask settings
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C15516 must preserve supplier paste/mask settings
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C37616412 must preserve supplier paste/mask settings [0.17ms]
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C160402 must preserve supplier paste/mask settings [0.01ms]
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C160389 must preserve supplier paste/mask settings
+50 | 	"C393942",
+51 | ]) {
+52 | 	test(`${partNumber} must preserve supplier paste/mask settings`, () => {
+53 | 		expect(
+54 | 			exactPart(partNumber).copperDrillAndProcessAttributesExactlyMatch,
+55 | 		).toBe(true);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:55:5)
+(fail) C393942 must preserve supplier paste/mask settings
+59 | for (const partNumber of ["C37616412", "C160402", "C160389"]) {
+60 | 	test(`${partNumber} must remain a native connector`, async () => {
+61 | 		const imported = inspectImport(
+62 | 			await Bun.file(exactPart(partNumber).freshPath).text(),
+63 | 		);
+64 | 		expect(imported.counts.connector ?? 0).toBe(1);
+                                              ^
+error: expect(received).toBe(expected)
+
+Expected: 1
+Received: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:64:42)
+(fail) C37616412 must remain a native connector [1.43ms]
+59 | for (const partNumber of ["C37616412", "C160402", "C160389"]) {
+60 | 	test(`${partNumber} must remain a native connector`, async () => {
+61 | 		const imported = inspectImport(
+62 | 			await Bun.file(exactPart(partNumber).freshPath).text(),
+63 | 		);
+64 | 		expect(imported.counts.connector ?? 0).toBe(1);
+                                              ^
+error: expect(received).toBe(expected)
+
+Expected: 1
+Received: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:64:42)
+(fail) C160402 must remain a native connector [0.73ms]
+59 | for (const partNumber of ["C37616412", "C160402", "C160389"]) {
+60 | 	test(`${partNumber} must remain a native connector`, async () => {
+61 | 		const imported = inspectImport(
+62 | 			await Bun.file(exactPart(partNumber).freshPath).text(),
+63 | 		);
+64 | 		expect(imported.counts.connector ?? 0).toBe(1);
+                                              ^
+error: expect(received).toBe(expected)
+
+Expected: 1
+Received: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:64:42)
+(fail) C160389 must remain a native connector [0.41ms]
+67 | 
+68 | test("USB4215 must retain its verified mating direction", async () => {
+69 | 	const imported = inspectImport(
+70 | 		await Bun.file(exactPart("C37616412").freshPath).text(),
+71 | 	);
+72 | 	expect(imported.insertionDirection).toBe("from_bottom");
+                                          ^
+error: expect(received).toBe(expected)
+
+Expected: "from_bottom"
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:72:38)
+(fail) USB4215 must retain its verified mating direction [1.22ms]
+74 | 
+75 | test("MSK12C02 must preserve its explicit SPDT switching semantics", async () => {
+76 | 	const imported = inspectImport(
+77 | 		await Bun.file(exactPart("C431540").freshPath).text(),
+78 | 	);
+79 | 	expect(imported.switchType).toBe("spdt");
+                                  ^
+error: expect(received).toBe(expected)
+
+Expected: "spdt"
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/tests/r8-importer-release.test.ts:79:30)
+(fail) MSK12C02 must preserve its explicit SPDT switching semantics [0.78ms]
+
+ 1 pass
+ 13 fail
+ 89 expect() calls
+Ran 14 tests across 1 file. [364.00ms]

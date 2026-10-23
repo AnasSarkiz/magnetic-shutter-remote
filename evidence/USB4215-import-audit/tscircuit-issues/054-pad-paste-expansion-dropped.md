@@ -40,3 +40,8 @@ Confirmed: PadSchema omitted pasteExpansion; PAD extraction omitted the correspo
 Add optional pasteExpansion extraction, preserve it in solderpaste_margin, emit solderPasteMargin in generated TSX. Preserve absence before numeric coercion; no broad type escape or chip-specific rule. Changed source files: schemas/package-detail-shape-schema.ts, convert-easyeda-json-to-tscircuit-soup-json.ts, websafe/generate-footprint-tsx.ts. [Importer patch](../patches/easyeda-converter.patch).
 
 Both focused tests pass (7,685 assertions). The cross-component test independently checks raw fields and all source polygon vertices. Reviewed exact-string/inline expectations retain all previous copper/symbol fields and add only source-backed paste/mask content; original inputs and baseline tests remain archived. Full-suite gate remains blocked as described in 053; manufacturer paste/process qualification is not inferred from fidelity.
+
+
+## Released pipeline check —2026-10-23
+
+Current exact re-import removes pad solderPasteMargin values from seven fitted identities (C56594,C19949072,C15516,C37616412,C160402,C160389,C393942). Copper/drill and pin tables remain identical. Seven explicit process-contract regressions fail; no generated TSX patched. Inputs, logs, image and exact commands: [current review](../../R8-toolchain-refresh-2026-10-23/REVIEW.md).

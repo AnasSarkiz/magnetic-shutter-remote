@@ -1,0 +1,152 @@
+[
+  {
+    "path": "imports/SWPA3015S1R5NT/SWPA3015S1R5NT.tsx",
+    "jlcpcb": "C56594",
+    "mpn": "SWPA3015S1R5NT",
+    "sha256": "a6baf03f3bd6ec49a98fe029f0d17846c492b4971040943b29226b90ca458973"
+  },
+  {
+    "path": "imports/ESPC3_12_N4/ESPC3_12_N4.tsx",
+    "jlcpcb": "C19949072",
+    "mpn": "ESPC3-12-N4",
+    "sha256": "286b7836dc15da3013748126a46da2de4836dccfedb96cf3a32c8ebd18a4c8a4"
+  },
+  {
+    "path": "imports/BQ25185DLHR.tsx",
+    "jlcpcb": "C19725033",
+    "mpn": "BQ25185DLHR",
+    "sha256": "d4d4b0d03b130745f14a28f60df8a2b22fd8a0a6249f3108f1db5eee58a89517"
+  },
+  {
+    "path": "imports/TMP390A2DRLR.tsx",
+    "jlcpcb": "C5219772",
+    "mpn": "TMP390A2DRLR",
+    "sha256": "38b0189e7e012e95027c5eeb60bb64d0e3c4e3859bbc34378a1fb3dfc2e99124"
+  },
+  {
+    "path": "imports/TPS3839G33DBZR.tsx",
+    "jlcpcb": "C485802",
+    "mpn": "TPS3839G33DBZR",
+    "sha256": "be6475d461bd2a33e320dc674b0b88a3ff52a9bfe8d0bc5dc0f8a8775360f09c"
+  },
+  {
+    "path": "imports/A_0603WAF1303T5E.tsx",
+    "jlcpcb": "C22795",
+    "mpn": "0603WAF1303T5E",
+    "sha256": "f2389c6dabc235506aa5635c75b9867a4e198dff72233e4aaa7c25278a475ab5"
+  },
+  {
+    "path": "imports/A_0603WAF1002T5E.tsx",
+    "jlcpcb": "C25804",
+    "mpn": "0603WAF1002T5E",
+    "sha256": "14e67b635c74e96a370432e3723046ffeea0271eb44df5c5614e155daf9b0a4a"
+  },
+  {
+    "path": "imports/A_0603WAF1621T5E.tsx",
+    "jlcpcb": "C22844",
+    "mpn": "0603WAF1621T5E",
+    "sha256": "ebd1618b03fa9038c187a9a6bd4b57463800923773132a0a2dde8fa07532d134"
+  },
+  {
+    "path": "imports/A_0603WAF1872T5E.tsx",
+    "jlcpcb": "C22893",
+    "mpn": "0603WAF1872T5E",
+    "sha256": "860459a62194e9cb6ec064f752c6314d897f5180bc72bb3927b283971657e861"
+  },
+  {
+    "path": "imports/CL21A106KAYNNNE.tsx",
+    "jlcpcb": "C15850",
+    "mpn": "CL21A106KAYNNNE",
+    "sha256": "bae4ddb2455163960807007782a51ce608a163ced35f24317c4837bc5df18b57"
+  },
+  {
+    "path": "imports/TCC0603COG470J500CT.tsx",
+    "jlcpcb": "C282505",
+    "mpn": "TCC0603COG470J500CT",
+    "sha256": "fe68decd2af2b035d732c3b1a62faeec08e89ed7e56a20ab97b47c9d1e75e47c"
+  },
+  {
+    "path": "imports/TPS63031DSKR/TPS63031DSKR.tsx",
+    "jlcpcb": "C15516",
+    "mpn": "TPS63031DSKR",
+    "sha256": "313da677fe688ca866f49e57ba0aff17e1775470cf47860a440693745d8709cb"
+  },
+  {
+    "path": "imports/USB4215_03_A.tsx",
+    "jlcpcb": "C37616412",
+    "mpn": "USB4215-03-A",
+    "sha256": "4acb1cf6bed10acaa982c0546567c4699bc0315195e5f4e3afc3ec60cdfa3ec9"
+  },
+  {
+    "path": "imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.tsx",
+    "jlcpcb": "C160402",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "sha256": "87f29d0433bc9d36b77b12841745dcfddcb3895328ee8d2c6fe2d9cdd605233e"
+  },
+  {
+    "path": "imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.tsx",
+    "jlcpcb": "C160389",
+    "mpn": "BM03B-SRSS-TB(LF)(SN)",
+    "sha256": "7bf9d353fc8c420bb5cb2a6ac795ad9f6fc1a21f249b8079deb3c787a194e198"
+  },
+  {
+    "path": "imports/MSK12C02.tsx",
+    "jlcpcb": "C431540",
+    "mpn": "MSK12C02",
+    "sha256": "7b94b10180da219ebe17874486cfa37a596668e29a15ad48e94d67cce7f19658"
+  },
+  {
+    "path": "imports/TS_1088_AR02016.tsx",
+    "jlcpcb": "C720477",
+    "mpn": "TS-1088-AR02016",
+    "sha256": "3316a9df5459737097fe9323ac72a2672687af4b93d0e9414119a3ce7b6aeeb4"
+  },
+  {
+    "path": "imports/TS24CA/TS24CA.tsx",
+    "jlcpcb": "C393942",
+    "mpn": "TS24CA",
+    "sha256": "25c69d750795d6a855e275b8b6e3ffd82e367ed892eee17b6e765ed4df2f06fe"
+  },
+  {
+    "path": "imports/A_2N7002.tsx",
+    "jlcpcb": "C8545",
+    "mpn": "2N7002",
+    "sha256": "f05d010f18bb42714692e8c4b5e04f418fcd8726c43c9dbaa5c75c2b0aadc34b"
+  },
+  {
+    "path": "imports/A_0603WAF5101T5E.tsx",
+    "jlcpcb": "C23186",
+    "mpn": "0603WAF5101T5E",
+    "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070"
+  },
+  {
+    "path": "imports/A_0603WAF1001T5E.tsx",
+    "jlcpcb": "C21190",
+    "mpn": "0603WAF1001T5E",
+    "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb"
+  },
+  {
+    "path": "imports/A_0603WAF1003T5E.tsx",
+    "jlcpcb": "C25803",
+    "mpn": "0603WAF1003T5E",
+    "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777"
+  },
+  {
+    "path": "imports/CL10A475KO8NNNC.tsx",
+    "jlcpcb": "C19666",
+    "mpn": "CL10A475KO8NNNC",
+    "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462"
+  },
+  {
+    "path": "imports/CC0603KRX7R9BB104.tsx",
+    "jlcpcb": "C14663",
+    "mpn": "CC0603KRX7R9BB104",
+    "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+  },
+  {
+    "path": "imports/KT_0603R.tsx",
+    "jlcpcb": "C2286",
+    "mpn": "KT-0603R",
+    "sha256": "e1bab4c8e862c0801a35cfd7e14d73ca942feae8b65548f725ce162931592e96"
+  }
+]

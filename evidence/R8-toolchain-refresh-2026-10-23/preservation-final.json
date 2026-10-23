@@ -1,0 +1,26 @@
+{
+  "baseline_commit": "208aa007ee98d432b6ba510776af323822f832db",
+  "original_tracked_files_checked": 5383,
+  "original_files_missing": [],
+  "changed_original_files": [
+    "AGENTS.md",
+    "README.md",
+    "VALIDATION.md",
+    "bun.lock",
+    "evidence/USB4215-import-audit/tscircuit-issues/053-explicit-paste-regions-local-fix.md",
+    "evidence/USB4215-import-audit/tscircuit-issues/054-pad-paste-expansion-dropped.md",
+    "evidence/USB4215-import-audit/tscircuit-issues/056-pad-mask-expansion-dropped.md",
+    "package.json",
+    "tscircuit-issues/001-spdt-switch-inferred-as-spst.md",
+    "tscircuit-issues/004-connector-mating-direction-metadata.md",
+    "tscircuit-issues/046-parent-stencil-margin-cannot-style-imports.md",
+    "tscircuit-issues/060-strict-cpl-export-requires-numeric-pin1.md",
+    "tscircuit-issues/073-cli-bundled-importer-ignores-external-override.md",
+    "tscircuit-issues/README.md"
+  ],
+  "protected_current_source_import_model_firmware_artifact_archive_files_checked": 543,
+  "protected_changed": [],
+  "r7_portable_hashes": "129/129 PASS",
+  "pcb_source_routing_changed": false,
+  "fresh_board_build": "NOT RUN \u2014 import/type gates blocked"
+}

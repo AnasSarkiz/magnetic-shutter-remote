@@ -53,3 +53,8 @@ Can affect strict schematic/PCB schema consumption, artwork, stencil generation 
 Added typed unit-aware pcbSx solderPasteMargin with finite-value validation, plus SmtPad resolution. Explicit primitive props retain priority. EP-specific selector overrides the general lead margin. Source copper dimensions and 151 aperture count are tested; before implementation the test fails, after it passes. Native render snapshot is retained.
 
 Verification results are in [R5 qualification summary](../evidence/R5/qualification-summary.json) and the exact linked regression logs. Do not interpret a local mitigation as verified upstream fixed. All reports are local; none was published.
+
+
+## Current release integration —2026-10-23
+
+Released props0.0.709 rejects active pcbSx solderMaskMargin/solderPasteMargin at remote-circuit.tsx lines246,303,305,763. This project relied on a locally qualified extension, so this is an unresolved upstream capability/integration gap, not proof of a newly introduced upstream regression. Exact28-error log and input package/locks are retained in ../evidence/R8-toolchain-refresh-2026-10-23/. Active source and supplier imports were preserved; no style was removed to pass.

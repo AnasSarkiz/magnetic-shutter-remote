@@ -49,3 +49,8 @@ Changed files are enumerated in [source-change-ledger.json](../source-change-led
 Minimal geometry test: 1,255 assertions; expanded raw-field/contour test: 6,430 assertions across 48 existing components. Core transform test covers translation, four rotations, both sides, and an independent copper witness. Gerber test covers both layers and both exporter Y conventions. SVG snapshot and actual CAM checks pass. All seven library and declaration builds pass; locked fixture typecheck and clean reproduction pass.
 
 Full importer run: 278 pass / 33 fail, 311 tests. All 33 failing names also fail the paired unchanged-source control (237 pass / 72 fail). This does not waive failures or establish general release readiness; [logs and comparison](../logs/suite-comparison-final-qualified.json) retain the blocked gate. Missing GCT paste/process guidance and JLCPCB shell coverage remain separate external requirements. USB4215 is BLOCKED; no R6.
+
+
+## Released pipeline check —2026-10-23
+
+USB4215 C37616412 current supplier package3104977db58742e399663286e4a66eac still has16filled layer5regions; both released CLI0.1.2402 and easyeda0.0.381 emit zero explicit solderpaste elements. All16copper/drill contacts remain exact. Released props0.0.709 also rejects the old16polygon elements, so importer fidelity alone cannot close the pipeline. The prior fix remains local, not verified upstream. Inputs, logs, image and exact commands: [current review](../../R8-toolchain-refresh-2026-10-23/REVIEW.md).

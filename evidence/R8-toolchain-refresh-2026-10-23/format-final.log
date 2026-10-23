@@ -1,0 +1,3 @@
+$ biome format index.circuit.tsx enclosure.circuit.tsx product.assembly.tsx product.exploded.tsx product.geometry.tsx src product/assembly.tsx product/viewer.tsx product/geometry.ts product/dimensions.ts scripts package.json tsconfig.json tscircuit.config.json tests/r8-product.test.ts
+Checked 43 files in 11ms. No fixes applied.
+Checked 3 files in 1474µs. No fixes applied.

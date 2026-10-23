@@ -23,3 +23,8 @@ Confirmed pin1-only resolver cannot express this exact terminal numbering. Add e
 Changed source: `src/index.ts`, `src/supplier-terminal-registration.ts`; meaningful positive and negative tests plus actual fixtures. `bun test`55tests/347assertions PASS; TypeScript and build PASS. [Tests](../evidence/R6/pnp-tests.log), [typecheck](../evidence/R6/pnp-typecheck.log), [build](../evidence/R6/pnp-build.log), [terminal pose](../evidence/R6/J1-supplier-terminal-registration.json), [assembly image](../evidence/R6/visual/assembly-2.png). Final J1centroid(0,24.5101989), rotation180°,16/16positionsmatch, independent Python agrees. No PCBcomponent altered. Toolsource and patch/archive reproduced via `tooling/R6-README.md`.
 
 Impact: blocks trustworthy CPLexport until tool capability is fixed. Local fix is prototype-qualified; no upstream publication or upstream-fix claim.
+
+
+## Current published PnP integration —2026-10-23
+
+Published circuit-json-to-pnp-csv0.0.20 does not export the locally qualified registerSupplierTerminals API used by scripts/export-assembly.ts. TypeScript TS2305 prevents trusting this exporter integration. The release update does not establish that original numeric-pin1 behavior is fixed. No CPL was regenerated or registration pass carried forward. Inputs/log: ../evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md.

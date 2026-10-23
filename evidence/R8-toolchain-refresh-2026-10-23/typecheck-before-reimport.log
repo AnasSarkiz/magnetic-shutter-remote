@@ -1,0 +1,29 @@
+$ tsc --noEmit
+imports/A_0603WAF3301T5E/A_0603WAF3301T5E.tsx(21,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/A_0603WAF3301T5E/A_0603WAF3301T5E.tsx(22,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/PT4115.tsx(34,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/PT4115.tsx(35,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/PT4115.tsx(36,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/PT4115.tsx(37,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/PT4115.tsx(38,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(49,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(50,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(51,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(52,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(53,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(54,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(55,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(56,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(57,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(58,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(59,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(60,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(61,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(62,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(63,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+imports/USB4215_03_A.tsx(64,14): error TS2322: Type '"polygon"' is not assignable to type '"circle" | "rect"'.
+scripts/export-assembly.ts(5,2): error TS2305: Module '"circuit-json-to-pnp-csv"' has no exported member 'registerSupplierTerminals'.
+src/remote-circuit.tsx(246,30): error TS2353: Object literal may only specify known properties, and 'solderMaskMargin' does not exist in type 'PcbSxValue'.
+src/remote-circuit.tsx(303,22): error TS2353: Object literal may only specify known properties, and 'solderPasteMargin' does not exist in type 'PcbSxValue'.
+src/remote-circuit.tsx(305,9): error TS2353: Object literal may only specify known properties, and 'solderPasteMargin' does not exist in type 'PcbSxValue'.
+src/remote-circuit.tsx(763,9): error TS2353: Object literal may only specify known properties, and 'solderPasteMargin' does not exist in type 'PcbSxValue'.

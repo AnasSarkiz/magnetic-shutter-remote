@@ -1,0 +1,252 @@
+[
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1001T5E/A_0603WAF1001T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1001T5E/A_0603WAF1001T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1003T5E/A_0603WAF1003T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1303T5E/A_0603WAF1303T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1303T5E/A_0603WAF1303T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1621T5E/A_0603WAF1621T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1621T5E/A_0603WAF1621T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1872T5E/A_0603WAF1872T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF1872T5E/A_0603WAF1872T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF5101T5E/A_0603WAF5101T5E.obj",
+    "bytes": 78929,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_0603WAF5101T5E/A_0603WAF5101T5E.step",
+    "bytes": 1046696,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_2N7002/A_2N7002.obj",
+    "bytes": 357468,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/A_2N7002/A_2N7002.step",
+    "bytes": 2774137,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.obj",
+    "bytes": 32496,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/BM03B_SRSS_TB_LF__SN_/BM03B_SRSS_TB_LF__SN_.step",
+    "bytes": 1680011,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/BQ25185DLHR/BQ25185DLHR.obj",
+    "bytes": 87500,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/BQ25185DLHR/BQ25185DLHR.step",
+    "bytes": 1185290,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.obj",
+    "bytes": 57506,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+    "bytes": 1468156,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CL10A475KO8NNNC/CL10A475KO8NNNC.obj",
+    "bytes": 57506,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CL10A475KO8NNNC/CL10A475KO8NNNC.step",
+    "bytes": 1468156,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CL21A106KAYNNNE/CL21A106KAYNNNE.obj",
+    "bytes": 57153,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/CL21A106KAYNNNE/CL21A106KAYNNNE.step",
+    "bytes": 1480687,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/ESPC3_12_N4/ESPC3_12_N4.obj",
+    "bytes": 161329,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/ESPC3_12_N4/ESPC3_12_N4.step",
+    "bytes": 2071129,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/KT_0603R/KT_0603R.obj",
+    "bytes": 27775,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/KT_0603R/KT_0603R.step",
+    "bytes": 1306372,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/MSK12C02/MSK12C02.obj",
+    "bytes": 91227,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/MSK12C02/MSK12C02.step",
+    "bytes": 1607250,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.obj",
+    "bytes": 34588,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/SM02B_SRSS_TB_LF__SN_/SM02B_SRSS_TB_LF__SN_.step",
+    "bytes": 1645245,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/SWPA3015S1R5NT/SWPA3015S1R5NT.obj",
+    "bytes": 150938,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/SWPA3015S1R5NT/SWPA3015S1R5NT.step",
+    "bytes": 1398223,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TCC0603COG470J500CT/TCC0603COG470J500CT.obj",
+    "bytes": 57506,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TCC0603COG470J500CT/TCC0603COG470J500CT.step",
+    "bytes": 1468156,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TMP390A2DRLR/TMP390A2DRLR.obj",
+    "bytes": 104973,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TMP390A2DRLR/TMP390A2DRLR.step",
+    "bytes": 2388676,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TPS3839G33DBZR/TPS3839G33DBZR.obj",
+    "bytes": 357468,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TPS3839G33DBZR/TPS3839G33DBZR.step",
+    "bytes": 2774137,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TPS63031DSKR/TPS63031DSKR.obj",
+    "bytes": 69520,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TPS63031DSKR/TPS63031DSKR.step",
+    "bytes": 1951783,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TS24CA/TS24CA.obj",
+    "bytes": 170604,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TS24CA/TS24CA.step",
+    "bytes": 1356885,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TS_1088_AR02016/TS_1088_AR02016.obj",
+    "bytes": 72007,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/TS_1088_AR02016/TS_1088_AR02016.step",
+    "bytes": 1904874,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/USB4215_03_A/USB4215_03_A.obj",
+    "bytes": 82788,
+    "valid_format": true
+  },
+  {
+    "path": "evidence/R8-toolchain-refresh-2026-10-23/fresh/imports/USB4215_03_A/USB4215_03_A.step",
+    "bytes": 1956278,
+    "valid_format": true
+  }
+]

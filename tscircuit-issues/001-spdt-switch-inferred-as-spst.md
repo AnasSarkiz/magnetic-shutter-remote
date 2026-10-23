@@ -59,3 +59,8 @@ Supported --switch-type spdt; three real terminals retained. R2 full importer su
 - `tooling/easyeda-converter/tests/convert-to-ts/manufacturer-metadata.test.ts`
 
 Exact local patches: [package patch](../tooling/patches/easyeda-converter.patch). Source fixture paths above and the package lock are required; patches alone do not include untracked tests. No generated component/Circuit JSON edit is a fix. Hardware verification remains pending.
+
+
+## Current release re-import —2026-10-23
+
+CLI0.1.2402/easyeda0.0.381, C431540: all terminal copper and labels match, but exact supported native import now emits a generic chip with no explicit SPDT semantics. The prior local fix is not verified upstream. Current supplier input, original/fresh TSX, exact commands, import log and failing behavioral contract are in ../evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md. No generated import was edited or adopted. Status remains fixed locally; current released pipeline blocked.

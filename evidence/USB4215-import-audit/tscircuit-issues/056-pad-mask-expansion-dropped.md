@@ -34,3 +34,8 @@ PadSchema and raw extraction omitted solderExpansion; converted SMT/PTH records 
 ## Regression and blocker
 
 Focused raw tests pass (7,685 assertions); independent CAM compares all sixteen physical opening bounds with per-land copper plus source margin, within the exporter quantization. This does not establish that GCT recommends these openings or that the resulting mask webs meet an eventual replacement-board process. Manufacturer mask/stencil direction and full importer-suite failures remain explicit. No R5 solder mask or supplier component was hand-edited.
+
+
+## Released pipeline check —2026-10-23
+
+Current exact re-import removes pad solderMaskMargin values from the same seven identities. No default-rendered mask equivalence is assumed. Importer metadata loss is confirmed; final fabrication effects are unmeasured because the new board build is gated. Inputs, logs, image and exact commands: [current review](../../R8-toolchain-refresh-2026-10-23/REVIEW.md).

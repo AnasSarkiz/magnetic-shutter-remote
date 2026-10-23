@@ -1,0 +1,8 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [4]
+Saved lockfile
+
++ @tscircuit/modelprinter@0.0.2
+
+4 packages installed [975.00ms]

@@ -1,3 +1,30 @@
+# Current R8 toolchain refresh —2026-10-23
+
+**UPGRADE BLOCKED — NOT A NEW BOARD/FABRICATION RELEASE.**
+
+The user authorized updating tscircuit and exact-part re-import. The latest saved
+R8 source was recovered at208aa007ee98d432b6ba510776af323822f832db from the public
+board/r8-enclosure-reference-20261011 branch into this task's isolated directory.
+Work continues on maintenance/r8-tscircuit-reimport-20261023.
+Current pinned upstream tscircuit0.0.3008/CLI0.1.2402/easyeda0.0.381 installs and
+imports25/25parts, but adoption is blocked: USB explicit paste16→0, seven pad
+process-setting losses, connector/topology metadata omissions and28TypeScript
+integration errors.13focused release-contract failures remain visible.
+The modelprinter startup conflict is fixed using compatible public0.0.18.
+Read evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md and issues104/105.
+Working imports, electronic source/routing, firmware, mechanics, all four existing
+CircuitJSONs, frozen baselines and protected archives are unchanged. Fresh imports
+are review evidence only. The retained dist JSONs are prior0.3.29 outputs, never
+refreshed output from this toolchain. No build/routing/CAM/3D/firmware execution
+or new package publication occurred; failure gates prohibit claiming an update pass.
+Root package.version remains0.3.29; this branch is a maintenance investigation,
+not R9. Existing Linux-only serial heavy-build guard is unchanged. Later source
+integration must preserve no-custom-footprint, no generated-source/JSON edits,
+no warning suppression, exact sourcing and original qualification gates.
+Physical tests remain POST-PROTOTYPE PHYSICAL VALIDATION.
+
+## Earlier records — retained history
+
 # R8 reference-fit enclosure0.3.29 — 2026-10-11
 
 The user requested that the actual enclosure match the supplied camera-grip

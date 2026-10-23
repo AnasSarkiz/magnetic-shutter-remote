@@ -1,3 +1,9 @@
+> **2026-10-23 maintenance branch:** tscircuit update/re-import is blocked by
+> confirmed paste/process/API omissions. The proven PCB and active imports remain
+> unchanged; fresh imports are isolated review evidence. See
+> [current update review](evidence/R8-toolchain-refresh-2026-10-23/REVIEW.md).
+> Existing dist artifacts are from the prior qualified toolchain, not this update.
+
 # Magnetic shutter remote — R8 prototype
 
 A rechargeable Bluetooth camera shutter remote for a MagSafe phone grip,

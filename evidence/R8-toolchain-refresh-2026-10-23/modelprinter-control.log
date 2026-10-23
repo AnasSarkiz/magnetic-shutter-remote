@@ -1,0 +1,7 @@
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'getJstMotorConnector' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/magnetic-shutter-remote-r8--01a0f81f/evidence/R8-toolchain-refresh-2026-10-23/modelprinter-control/node_modules/@tscircuit/modelprinter/dist/index.js'.
+      at loadAndEvaluateModule (2:1)
+
+Bun v1.3.9 (macOS arm64)

@@ -1,0 +1,24 @@
+Error resolving EasyEDA CAD placement for C37616412: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C37616412.obj?uuid=e55eb8a39d2f4950b43c352c8b7c2422",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C37616412.obj?uuid=e55eb8a39d2f4950b43c352c8b7c2422: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C37616412.obj?uuid=e55eb8a39d2f4950b43c352c8b7c2422",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+Error resolving EasyEDA CAD placement for C431540: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C431540.obj?uuid=fc12522ae2f04394b021187ce17b23bb",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+Error checking model object URL https://modelcdn.tscircuit.com/easyeda_models/assets/C431540.obj?uuid=fc12522ae2f04394b021187ce17b23bb: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C431540.obj?uuid=fc12522ae2f04394b021187ce17b23bb",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+

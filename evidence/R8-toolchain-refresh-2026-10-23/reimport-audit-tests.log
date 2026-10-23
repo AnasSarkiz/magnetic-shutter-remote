@@ -1,0 +1,12 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/r8-reimport-audit.test.ts:
+(pass) changing a plated slot is detected independently of attribute order [4.81ms]
+(pass) paste loss is visible even when copper remains unchanged [0.99ms]
+(pass) repeated physical contacts and SPDT semantics remain explicit [0.63ms]
+(pass) nonliteral generated geometry cannot silently pass inspection [0.50ms]
+
+ 4 pass
+ 0 fail
+ 10 expect() calls
+Ran 4 tests across 1 file. [113.00ms]

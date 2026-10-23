@@ -1,0 +1,336 @@
+{
+  "checked_date": "2026-10-23",
+  "packages": [
+    {
+      "name": "tscircuit",
+      "version": "0.0.3008",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/tscircuit.git",
+        "type": "git"
+      },
+      "integrity": "sha512-cLtHHbMnIcJhHBa4RMrgHlfnUpdiOCMiPE+zENX/1V3ffUiCyLVZH6Gb6kD5XKSO1W7xD5BY4RCkvYWBjHI3HQ==",
+      "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3008.tgz",
+      "gitHead": "36d7dac05457314b9af4fdbdd166dd169b4b42bf",
+      "dependencies": {
+        "zod": "^3.25.67",
+        "debug": "^4.3.6",
+        "react": "^19.1.0",
+        "tslib": "^2.8.1",
+        "rollup": "^4.53.2",
+        "spicey": "^0.0.14",
+        "comlink": "^4.4.2",
+        "kicadts": "^0.0.53",
+        "poppygl": "0.0.36",
+        "spicets": "^0.0.4",
+        "sucrase": "^3.35.0",
+        "flatbush": "^4.5.0",
+        "bpc-graph": "^0.0.57",
+        "gl-matrix": "^3.4.4",
+        "react-dom": "^19.1.0",
+        "@lume/kiwi": "^0.4.3",
+        "css-select": "5.1.0",
+        "jscad-fiber": "^0.0.88",
+        "minicssgrid": "^0.0.9",
+        "circuit-json": "^0.0.534",
+        "s-expression": "^3.1.1",
+        "jscad-planner": "^0.0.18",
+        "@tscircuit/cli": "^0.1.2402",
+        "circuit-to-svg": "^0.0.453",
+        "format-si-unit": "^0.0.12",
+        "graphics-debug": "^0.0.95",
+        "@resvg/resvg-js": "^2.6.2",
+        "@tscircuit/core": "^0.0.2199",
+        "@tscircuit/eval": "^0.0.1657",
+        "calculate-elbow": "^0.0.12",
+        "performance-now": "^2.1.0",
+        "@flatten-js/core": "^1.6.2",
+        "@tscircuit/props": "^0.0.709",
+        "connectivity-map": "^1.0.1",
+        "@tscircuit/checks": "^0.0.261",
+        "calculate-packing": "^0.0.90",
+        "rollup-plugin-dts": "^6.2.3",
+        "schematic-symbols": "^0.0.248",
+        "svg-path-commander": "^2.1.11",
+        "@rollup/plugin-json": "^6.1.0",
+        "@tscircuit/alphabet": "0.0.25",
+        "@tscircuit/krt-wasm": "^0.1.1",
+        "@tscircuit/miniflex": "^0.0.4",
+        "@tscircuit/runframe": "^0.0.3058",
+        "circuit-json-to-bpc": "^0.0.13",
+        "@tscircuit/matchpack": "^0.0.100",
+        "@tscircuit/soup-util": "^0.0.41",
+        "circuit-json-to-gltf": "^0.0.151",
+        "@tscircuit/math-utils": "^0.0.36",
+        "circuit-json-to-spice": "^0.0.45",
+        "kicad-to-circuit-json": "^0.0.142",
+        "transformation-matrix": "^2.16.1",
+        "@tscircuit/footprinter": "^0.0.442",
+        "@tscircuit/image-utils": "^0.0.8",
+        "@rollup/plugin-commonjs": "^29.0.0",
+        "@tscircuit/modelprinter": "^0.0.18",
+        "@tscircuit/solver-utils": "^0.0.16",
+        "circuit-json-to-pnp-csv": "^0.0.20",
+        "@tscircuit/fanout-solver": "0.0.81",
+        "@tscircuit/simple-3d-svg": "^0.0.41",
+        "@rollup/plugin-typescript": "^12.3.0",
+        "calculate-cell-boundaries": "^0.0.25",
+        "circuit-json-to-simple-3d": "^0.0.9",
+        "kicad-component-converter": "^0.1.40",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "@tscircuit/circuit-json-util": "^0.0.123",
+        "@tscircuit/copper-pour-solver": "^0.0.67",
+        "@tscircuit/capacity-autorouter": "^0.0.999",
+        "@tscircuit/infgrid-ijump-astar": "^0.0.35",
+        "@tscircuit/create-fdm-enclosure": "0.0.4",
+        "@tscircuit/ngspice-spice-engine": "^0.0.20",
+        "@tscircuit/schematic-match-adapt": "^0.0.18",
+        "circuit-json-to-connectivity-map": "^0.0.33",
+        "@tscircuit/internal-dynamic-import": "^0.0.11",
+        "@tscircuit/infer-cable-insertion-point": "^0.0.4"
+      }
+    },
+    {
+      "name": "@tscircuit/cli",
+      "version": "0.1.2402",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/cli.git",
+        "type": "git"
+      },
+      "integrity": "sha512-4nu93PS3l/KtXMSuyNju61/zVrVdbEFib5yjl2obaxO+GgV+rhdOhnodhat+QFvFBcUO6sYzJWTqDxpJ45Vl2Q==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2402.tgz",
+      "gitHead": "e3d06f19fa9cd7ae9c39afb505226da6cded4694"
+    },
+    {
+      "name": "@tscircuit/core",
+      "version": "0.0.2199",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/core.git",
+        "type": "git"
+      },
+      "integrity": "sha512-PCkQ7b3FT/gTUEHMMsfqvBpev1GPPxfrtNiSuWcf2u6uoiYRLAsgQm1J2SzNu32MdS1e3l8So5w1kVT3MQW+5A==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/core/-/core-0.0.2199.tgz",
+      "gitHead": "b198cb4116f55a10d5ce709c5c99ecb73799f41e",
+      "dependencies": {
+        "zod": "^3.25.67",
+        "nanoid": "^5.0.7",
+        "gl-matrix": "^3.4.4",
+        "@lume/kiwi": "^0.4.3",
+        "css-select": "5.1.0",
+        "jscad-fiber": "^0.0.88",
+        "jscad-planner": "^0.0.18",
+        "format-si-unit": "^0.0.12",
+        "performance-now": "^2.1.0",
+        "@flatten-js/core": "^1.6.2",
+        "react-reconciler": "^0.32.0",
+        "calculate-packing": "^0.0.90",
+        "svg-path-commander": "^2.1.11",
+        "transformation-matrix": "^2.16.1",
+        "calculate-cell-boundaries": "^0.0.25"
+      }
+    },
+    {
+      "name": "@tscircuit/eval",
+      "version": "0.0.1657",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/eval.git",
+        "type": "git"
+      },
+      "integrity": "sha512-/9KprklYb8OrU29dwJtIjwqia6ZqhLzDXrblDeN2IU/rtjX/6T/29gT+BX7QzSZ54menoCqt46jTqZMO8ViLIw==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/eval/-/eval-0.0.1657.tgz",
+      "gitHead": "a5e4b401a862144ed81b8fa7f62856e5d239b14c"
+    },
+    {
+      "name": "@tscircuit/props",
+      "version": "0.0.709",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/props.git",
+        "type": "git"
+      },
+      "integrity": "sha512-R8hA1VH7BTV5K+CfSoiMTVPq+8Q1cFAsrWLDVnsDF7qqESWgFXzEF+e+63i9AnwH4gB6pHp//rzFDKVKlwCIPA==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/props/-/props-0.0.709.tgz",
+      "gitHead": "cb3dcec001e413c7f4b274e0531b89f7798f7087"
+    },
+    {
+      "name": "circuit-json",
+      "version": "0.0.534",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/circuit-json.git",
+        "type": "git"
+      },
+      "integrity": "sha512-8k1ghwOZ1/V8qrDN3jQ2TW1xeBdATxruulr7ZBKP4L/JvlR4Ru3OG7msCEevZjFN1Uj5ewCAJHGssiZP+xpeuw==",
+      "tarball": "https://registry.npmjs.org/circuit-json/-/circuit-json-0.0.534.tgz",
+      "gitHead": "4cf49a557f195e223a937a1d5cbd0b69eb6ba25c",
+      "dependencies": {
+        "zod": "3"
+      }
+    },
+    {
+      "name": "@tscircuit/circuit-json-util",
+      "version": "0.0.128",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/circuit-json-util.git",
+        "type": "git"
+      },
+      "integrity": "sha512-bTlZILg+GI2MsIaD8oLKitGAUoVQUCCqyP93NX1NCLjHgtTXKXkCRurw399poaSsLPJryZMJXfUxJP/Nhk6sMA==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/circuit-json-util/-/circuit-json-util-0.0.128.tgz",
+      "gitHead": "89095f70fe10347da090d6dd0e686da90ac46566",
+      "dependencies": {
+        "parsel-js": "^1.1.2",
+        "@flatten-js/core": "^1.6.14"
+      }
+    },
+    {
+      "name": "easyeda",
+      "version": "0.0.381",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/easyeda-converter.git",
+        "type": "git"
+      },
+      "integrity": "sha512-yGEPfc7PtPCMhMHXFMWTdvGmqfhOj814oU4zlKKVKMnw3WuUF+8JOfaMwvGEGyz5cESmaK+Dxybcuge8AILZuQ==",
+      "tarball": "https://registry.npmjs.org/easyeda/-/easyeda-0.0.381.tgz",
+      "gitHead": "00905fef07baf2e67f5f0ed64457f3b4c852f87e"
+    },
+    {
+      "name": "circuit-to-svg",
+      "version": "0.0.453",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/circuit-to-svg.git",
+        "type": "git"
+      },
+      "integrity": "sha512-tl9GVwpo17bdCiypOypnc6sLqvJ4rkGz5jWBcy9MNeKnymMzjx/bdj5aznbu0/n8OHAUxxSJDYQcB6auvzuImw==",
+      "tarball": "https://registry.npmjs.org/circuit-to-svg/-/circuit-to-svg-0.0.453.tgz",
+      "gitHead": "822afd37a52e13a43c2bd6c66165b470670db37d",
+      "dependencies": {
+        "color": "^5.0.3",
+        "debug": "^4.4.3",
+        "svgson": "^5.3.1",
+        "bun-types": "^1.1.40",
+        "@types/node": "^22.5.5",
+        "calculate-elbow": "0.0.12",
+        "svg-path-commander": "^2.1.11",
+        "transformation-matrix": "^2.16.1"
+      }
+    },
+    {
+      "name": "circuit-json-to-gerber",
+      "version": "0.0.114",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/circuit-json-to-gerber.git",
+        "type": "git"
+      },
+      "integrity": "sha512-eB8BTiFBnB/o4MX7TX/RXTmhhJVgy6b3zypunF8cTMAIkVdvI37KV7gZsRTLhrtuQ+m8O8IOBE6msvlLO6nfjw==",
+      "tarball": "https://registry.npmjs.org/circuit-json-to-gerber/-/circuit-json-to-gerber-0.0.114.tgz",
+      "gitHead": "a6c5d21b6bf1c5197fb97428ce674c816e4785bd",
+      "dependencies": {
+        "polygon-clipping": "^0.15.7",
+        "@tscircuit/alphabet": "^0.0.25",
+        "transformation-matrix": "^3.0.0",
+        "fast-json-stable-stringify": "^2.1.0"
+      }
+    },
+    {
+      "name": "circuit-json-to-pnp-csv",
+      "version": "0.0.20",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/circuit-json-to-pnp-csv.git",
+        "type": "git"
+      },
+      "integrity": "sha512-8zKl6jNSvhLcVfOz4D7pGyEyNlzZ5WedPPGxEKikhDVANJ7n10ecruszHb6krqsIsNS8yGPJUlQM0RBZ+dXjtQ==",
+      "tarball": "https://registry.npmjs.org/circuit-json-to-pnp-csv/-/circuit-json-to-pnp-csv-0.0.20.tgz",
+      "gitHead": "5c9fb76ce0bfe58809500cb47dba82acba3db54e",
+      "dependencies": {
+        "papaparse": "^5.4.1"
+      }
+    },
+    {
+      "name": "@tscircuit/3d-viewer",
+      "version": "0.0.631",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/3d-viewer.git",
+        "type": "git"
+      },
+      "integrity": "sha512-8JrUQ0oGvKmB8dApNeRI4z2ZGZdS4olIKNzByu/+kZ4A88fZBqtHM5kRTB3sAETXjvx+L5+0IRXeZTl8iLEvCQ==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/3d-viewer/-/3d-viewer-0.0.631.tgz",
+      "gitHead": "75d06ad913acd1549cd37f7380561b78be7d067e",
+      "dependencies": {
+        "three": "^0.165.0",
+        "circuit-json": "^0.0.525",
+        "three-stdlib": "^2.36.0",
+        "react-hot-toast": "^2.6.0",
+        "circuit-to-canvas": "^0.0.135",
+        "jscad-electronics": "^0.0.213",
+        "troika-three-text": "^0.52.4",
+        "@jscad/regl-renderer": "^2.6.12",
+        "@jscad/stl-serializer": "^2.1.20",
+        "@tscircuit/cableprinter": "^0.0.6"
+      }
+    },
+    {
+      "name": "@tscircuit/pcb-viewer",
+      "version": "1.11.433",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/pcb-viewer.git",
+        "type": "git"
+      },
+      "integrity": "sha512-Rhp+BWQ6Kqir71TucIU65pq12NsdU3ULmJq3Xd+5kJgYIKGtsFqhwMnTX/KKdHES5SO0E6uP3NWd/vLbA2iLFg==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/pcb-viewer/-/pcb-viewer-1.11.433.tgz",
+      "gitHead": "da4a677327c6b6ac8b88922df8c1c4b4ae415cc7",
+      "dependencies": {
+        "color": "^4.2.3",
+        "zustand": "^4.5.2",
+        "@emotion/css": "^11.11.2",
+        "circuit-json": "^0.0.518",
+        "react-toastify": "^10.0.5",
+        "react-supergrid": "^1.0.10",
+        "circuit-to-canvas": "0.0.138",
+        "@tscircuit/alphabet": "^0.0.25",
+        "@vitejs/plugin-react": "^5.0.2",
+        "@tscircuit/math-utils": "^0.0.36",
+        "transformation-matrix": "^2.13.0"
+      }
+    },
+    {
+      "name": "@tscircuit/schematic-viewer",
+      "version": "2.0.105",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/schematic-viewer.git",
+        "type": "git"
+      },
+      "integrity": "sha512-UG6DoBcNaIr7JKTDMp9PXa1RLqHReomEh/81QeL50ATyJYwtBwTbbPKhkkMrxb3C+4eNW+3q8Ogr3DV4pMxM1g==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/schematic-viewer/-/schematic-viewer-2.0.105.tgz",
+      "gitHead": "b1b4938d8241cefcbbe3af06130898a52635ed6f",
+      "dependencies": {
+        "debug": "^4.4.0",
+        "circuit-json": "^0.0.479",
+        "circuit-to-svg": "^0.0.432",
+        "performance-now": "^2.1.0",
+        "@tscircuit/props": "^0.0.697",
+        "@tscircuit/soup-util": "^0.0.41",
+        "transformation-matrix": "^2.16.1",
+        "@radix-ui/react-dialog": "^1.1.23",
+        "use-mouse-matrix-transform": "^1.2.2",
+        "@tscircuit/circuit-json-util": "^0.0.108",
+        "@radix-ui/react-dropdown-menu": "^2.1.16",
+        "@tscircuit/internal-dynamic-import": "^0.0.17"
+      }
+    },
+    {
+      "name": "@tscircuit/capacity-autorouter",
+      "version": "0.0.1003",
+      "repository": {
+        "url": "git+https://github.com/tscircuit/tscircuit-autorouter.git",
+        "type": "git"
+      },
+      "integrity": "sha512-CxvXKxhrisaFbM6C8/UJiGcaRxacuV8/b3+hDqz+mVtzArGkCohB6iahRxg4IFClWIvd7LmDTALT6Ye2Npc3pA==",
+      "tarball": "https://registry.npmjs.org/@tscircuit/capacity-autorouter/-/capacity-autorouter-0.0.1003.tgz",
+      "gitHead": "a28339ba614fd7a5392fbcf634c3c68145a57051",
+      "dependencies": {
+        "stack-svgs": "^0.0.1",
+        "object-hash": "^3.0.0",
+        "@tscircuit/solver-utils": "^0.0.23",
+        "fast-json-stable-stringify": "^2.1.0",
+        "@tscircuit/pcb-trace-linter": "github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123"
+      }
+    }
+  ]
+}
